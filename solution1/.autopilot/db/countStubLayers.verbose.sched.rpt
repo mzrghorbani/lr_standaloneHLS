@@ -1,0 +1,215 @@
+
+
+================================================================
+== Vivado HLS Report for 'countStubLayers'
+================================================================
+* Date:           Tue May 21 18:43:36 2019
+
+* Version:        2018.3 (Build 2405991 on Thu Dec 06 23:56:15 MST 2018)
+* Project:        lr_standaloneHLS
+* Solution:       solution1
+* Product family: kintexu
+* Target device:  xcku115-flvb2104-2-e
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |  10.00|     3.762|        1.25|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-----+-----+-----+-----+---------+
+    |  Latency  |  Interval | Pipeline|
+    | min | max | min | max |   Type  |
+    +-----+-----+-----+-----+---------+
+    |    ?|    ?|    ?|    ?|   none  |
+    +-----+-----+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +----------------------+-----+-----+----------+-----------+-----------+------+----------+
+        |                      |  Latency  | Iteration|  Initiation Interval  | Trip |          |
+        |       Loop Name      | min | max |  Latency |  achieved |   target  | Count| Pipelined|
+        +----------------------+-----+-----+----------+-----------+-----------+------+----------+
+        |- memset_foundLayers  |   29|   29|         1|          -|          -|    30|    no    |
+        |- Loop 2              |    ?|    ?|         3|          -|          -|     ?|    no    |
+        +----------------------+-----+-----+----------+-----------+-----------+------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 5
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 
+	2  / true
+2 --> 
+	2  / (!tmp_s)
+	3  / (tmp_s)
+3 --> 
+	4  / (!tmp_138)
+4 --> 
+	5  / true
+5 --> 
+	3  / true
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 0.83>
+ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%onlySeed_read = call i1 @_ssdm_op_Read.ap_auto.i1(i1 %onlySeed)"   --->   Operation 6 'read' 'onlySeed_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%stubs_size_read_1 = call i32 @_ssdm_op_Read.ap_auto.i32(i32 %stubs_size_read)"   --->   Operation 7 'read' 'stubs_size_read_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%foundLayers = alloca [30 x i1], align 16" [lr_standaloneHLS/.settings/LinearRegression.cpp:58]   --->   Operation 8 'alloca' 'foundLayers' <Predicate = true> <Delay = 0.00> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 0.69> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 1> <Depth = 30> <RAM>
+ST_1 : Operation 9 [1/1] (0.83ns)   --->   "br label %meminst"   --->   Operation 9 'br' <Predicate = true> <Delay = 0.83>
+
+State 2 <SV = 1> <Delay = 1.03>
+ST_2 : Operation 10 [1/1] (0.00ns)   --->   "%invdar = phi i5 [ 0, %0 ], [ %indvarinc, %meminst ]" [lr_standaloneHLS/.settings/LinearRegression.cpp:58]   --->   Operation 10 'phi' 'invdar' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 11 [1/1] (1.03ns)   --->   "%indvarinc = add i5 %invdar, 1" [lr_standaloneHLS/.settings/LinearRegression.cpp:58]   --->   Operation 11 'add' 'indvarinc' <Predicate = true> <Delay = 1.03> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.48> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 12 [1/1] (0.00ns)   --->   "%tmp = zext i5 %invdar to i64" [lr_standaloneHLS/.settings/LinearRegression.cpp:58]   --->   Operation 12 'zext' 'tmp' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 13 [1/1] (0.00ns)   --->   "%foundLayers_addr = getelementptr [30 x i1]* %foundLayers, i64 0, i64 %tmp" [lr_standaloneHLS/.settings/LinearRegression.cpp:58]   --->   Operation 13 'getelementptr' 'foundLayers_addr' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 14 [1/1] (0.69ns)   --->   "store i1 false, i1* %foundLayers_addr, align 1" [lr_standaloneHLS/.settings/LinearRegression.cpp:58]   --->   Operation 14 'store' <Predicate = true> <Delay = 0.69> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 0.69> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 1> <Depth = 30> <RAM>
+ST_2 : Operation 15 [1/1] (0.87ns)   --->   "%tmp_s = icmp eq i5 %invdar, -3" [lr_standaloneHLS/.settings/LinearRegression.cpp:58]   --->   Operation 15 'icmp' 'tmp_s' <Predicate = true> <Delay = 0.87> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.14> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 16 [1/1] (0.00ns)   --->   "%empty = call i32 (...)* @_ssdm_op_SpecLoopName([19 x i8]* @memset_foundLayers_s) nounwind"   --->   Operation 16 'specloopname' 'empty' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 17 [1/1] (0.00ns)   --->   "%empty_40 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 30, i64 30, i64 30)"   --->   Operation 17 'speclooptripcount' 'empty_40' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 18 [1/1] (0.00ns)   --->   "br i1 %tmp_s, label %1, label %meminst" [lr_standaloneHLS/.settings/LinearRegression.cpp:58]   --->   Operation 18 'br' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 19 [1/1] (0.00ns)   --->   "%nLayers = alloca i32"   --->   Operation 19 'alloca' 'nLayers' <Predicate = (tmp_s)> <Delay = 0.00>
+ST_2 : Operation 20 [1/1] (0.33ns)   --->   "%onlySeed_not = xor i1 %onlySeed_read, true" [lr_standaloneHLS/.settings/LinearRegression.cpp:62]   --->   Operation 20 'xor' 'onlySeed_not' <Predicate = (tmp_s)> <Delay = 0.33> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.33> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 21 [1/1] (0.83ns)   --->   "store i32 0, i32* %nLayers"   --->   Operation 21 'store' <Predicate = (tmp_s)> <Delay = 0.83>
+ST_2 : Operation 22 [1/1] (0.83ns)   --->   "br label %._crit_edge2" [lr_standaloneHLS/.settings/LinearRegression.cpp:60]   --->   Operation 22 'br' <Predicate = (tmp_s)> <Delay = 0.83>
+
+State 3 <SV = 2> <Delay = 1.48>
+ST_3 : Operation 23 [1/1] (0.00ns)   --->   "%p_begin_0_rec = phi i32 [ 0, %1 ], [ %p_rec, %._crit_edge2.backedge ]" [lr_standaloneHLS/.settings/LinearRegression.cpp:60]   --->   Operation 23 'phi' 'p_begin_0_rec' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 24 [1/1] (0.00ns)   --->   "%p_begin_0_rec_cast = zext i32 %p_begin_0_rec to i64" [lr_standaloneHLS/.settings/LinearRegression.cpp:60]   --->   Operation 24 'zext' 'p_begin_0_rec_cast' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 25 [1/1] (0.00ns)   --->   "%stubs_data_layerId_1 = getelementptr [10 x i32]* %stubs_data_layerId_s, i64 0, i64 %p_begin_0_rec_cast" [lr_standaloneHLS/.settings/LinearRegression.cpp:60]   --->   Operation 25 'getelementptr' 'stubs_data_layerId_1' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 26 [1/1] (0.00ns)   --->   "%stubs_data_psModule = getelementptr [10 x i1]* %stubs_data_psModule_s, i64 0, i64 %p_begin_0_rec_cast" [lr_standaloneHLS/.settings/LinearRegression.cpp:60]   --->   Operation 26 'getelementptr' 'stubs_data_psModule' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 27 [1/1] (0.00ns)   --->   "%stubs_data_barrel_s_41 = getelementptr [10 x i1]* %stubs_data_barrel_s, i64 0, i64 %p_begin_0_rec_cast" [lr_standaloneHLS/.settings/LinearRegression.cpp:60]   --->   Operation 27 'getelementptr' 'stubs_data_barrel_s_41' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 28 [1/1] (1.14ns)   --->   "%tmp_138 = icmp eq i32 %p_begin_0_rec, %stubs_size_read_1" [lr_standaloneHLS/.settings/LinearRegression.cpp:60]   --->   Operation 28 'icmp' 'tmp_138' <Predicate = true> <Delay = 1.14> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.14> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 29 [1/1] (1.48ns)   --->   "%p_rec = add i32 %p_begin_0_rec, 1" [lr_standaloneHLS/.settings/LinearRegression.cpp:60]   --->   Operation 29 'add' 'p_rec' <Predicate = true> <Delay = 1.48> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.48> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 30 [1/1] (0.00ns)   --->   "br i1 %tmp_138, label %4, label %2" [lr_standaloneHLS/.settings/LinearRegression.cpp:60]   --->   Operation 30 'br' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 31 [2/2] (0.69ns)   --->   "%layerId = load i32* %stubs_data_layerId_1, align 4" [lr_standaloneHLS/.settings/LinearRegression.cpp:61]   --->   Operation 31 'load' 'layerId' <Predicate = (!tmp_138)> <Delay = 0.69> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 0.69> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 1> <Depth = 30> <RAM>
+ST_3 : Operation 32 [2/2] (0.69ns)   --->   "%stubs_data_psModule_1 = load i1* %stubs_data_psModule, align 1" [lr_standaloneHLS/.settings/LinearRegression.cpp:61]   --->   Operation 32 'load' 'stubs_data_psModule_1' <Predicate = (!tmp_138)> <Delay = 0.69> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 0.69> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 1> <Depth = 30> <RAM>
+ST_3 : Operation 33 [2/2] (0.69ns)   --->   "%stubs_data_barrel_1 = load i1* %stubs_data_barrel_s_41, align 1" [lr_standaloneHLS/.settings/LinearRegression.cpp:61]   --->   Operation 33 'load' 'stubs_data_barrel_1' <Predicate = (!tmp_138)> <Delay = 0.69> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 0.69> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 1> <Depth = 30> <RAM>
+ST_3 : Operation 34 [1/1] (0.00ns)   --->   "%nLayers_load_1 = load i32* %nLayers" [lr_standaloneHLS/.settings/LinearRegression.cpp:69]   --->   Operation 34 'load' 'nLayers_load_1' <Predicate = (tmp_138)> <Delay = 0.00>
+ST_3 : Operation 35 [1/1] (0.00ns)   --->   "ret i32 %nLayers_load_1" [lr_standaloneHLS/.settings/LinearRegression.cpp:69]   --->   Operation 35 'ret' <Predicate = (tmp_138)> <Delay = 0.00>
+
+State 4 <SV = 3> <Delay = 3.76>
+ST_4 : Operation 36 [1/2] (0.69ns)   --->   "%layerId = load i32* %stubs_data_layerId_1, align 4" [lr_standaloneHLS/.settings/LinearRegression.cpp:61]   --->   Operation 36 'load' 'layerId' <Predicate = true> <Delay = 0.69> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 0.69> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 1> <Depth = 30> <RAM>
+ST_4 : Operation 37 [1/2] (0.69ns)   --->   "%stubs_data_psModule_1 = load i1* %stubs_data_psModule, align 1" [lr_standaloneHLS/.settings/LinearRegression.cpp:61]   --->   Operation 37 'load' 'stubs_data_psModule_1' <Predicate = true> <Delay = 0.69> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 0.69> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 1> <Depth = 30> <RAM>
+ST_4 : Operation 38 [1/2] (0.69ns)   --->   "%stubs_data_barrel_1 = load i1* %stubs_data_barrel_s_41, align 1" [lr_standaloneHLS/.settings/LinearRegression.cpp:61]   --->   Operation 38 'load' 'stubs_data_barrel_1' <Predicate = true> <Delay = 0.69> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 0.69> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 1> <Depth = 30> <RAM>
+ST_4 : Operation 39 [1/1] (1.14ns)   --->   "%tmp_not_i = icmp ugt i32 %layerId, 19" [lr_standaloneHLS/.settings/LinearRegression.cpp:75->lr_standaloneHLS/.settings/LinearRegression.cpp:61]   --->   Operation 39 'icmp' 'tmp_not_i' <Predicate = true> <Delay = 1.14> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.14> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 40 [1/1] (0.33ns)   --->   "%brmerge_i = or i1 %stubs_data_psModule_1, %tmp_not_i" [lr_standaloneHLS/.settings/LinearRegression.cpp:75->lr_standaloneHLS/.settings/LinearRegression.cpp:61]   --->   Operation 40 'or' 'brmerge_i' <Predicate = true> <Delay = 0.33> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.33> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 41 [1/1] (1.14ns)   --->   "%tmp_111_not_i = icmp ult i32 %layerId, 21" [lr_standaloneHLS/.settings/LinearRegression.cpp:77->lr_standaloneHLS/.settings/LinearRegression.cpp:61]   --->   Operation 41 'icmp' 'tmp_111_not_i' <Predicate = true> <Delay = 1.14> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.14> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 42 [1/1] (0.00ns) (grouped into LUT with out node sel_tmp2_i)   --->   "%stub_psModule_read_s = xor i1 %stubs_data_psModule_1, true" [lr_standaloneHLS/.settings/LinearRegression.cpp:77->lr_standaloneHLS/.settings/LinearRegression.cpp:61]   --->   Operation 42 'xor' 'stub_psModule_read_s' <Predicate = true> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.33> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 43 [1/1] (0.00ns) (grouped into LUT with out node sel_tmp2_i)   --->   "%brmerge3_i = or i1 %tmp_111_not_i, %stub_psModule_read_s" [lr_standaloneHLS/.settings/LinearRegression.cpp:77->lr_standaloneHLS/.settings/LinearRegression.cpp:61]   --->   Operation 43 'or' 'brmerge3_i' <Predicate = true> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.33> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 44 [1/1] (1.48ns)   --->   "%tmp_i = add i32 %layerId, 10" [lr_standaloneHLS/.settings/LinearRegression.cpp:76->lr_standaloneHLS/.settings/LinearRegression.cpp:61]   --->   Operation 44 'add' 'tmp_i' <Predicate = true> <Delay = 1.48> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.48> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 45 [1/1] (1.48ns)   --->   "%tmp_93_i = add i32 %layerId, -10" [lr_standaloneHLS/.settings/LinearRegression.cpp:78->lr_standaloneHLS/.settings/LinearRegression.cpp:61]   --->   Operation 45 'add' 'tmp_93_i' <Predicate = true> <Delay = 1.48> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.48> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 46 [1/1] (0.00ns) (grouped into LUT with out node sel_tmp2_i)   --->   "%sel_tmp_i = and i1 %brmerge_i, %brmerge3_i" [lr_standaloneHLS/.settings/LinearRegression.cpp:75->lr_standaloneHLS/.settings/LinearRegression.cpp:61]   --->   Operation 46 'and' 'sel_tmp_i' <Predicate = true> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.33> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 47 [1/1] (0.00ns) (grouped into LUT with out node sel_tmp2_i)   --->   "%sel_tmp1_i = or i1 %stubs_data_barrel_1, %sel_tmp_i" [lr_standaloneHLS/.settings/Stub.h:43->lr_standaloneHLS/.settings/LinearRegression.cpp:74->lr_standaloneHLS/.settings/LinearRegression.cpp:61]   --->   Operation 47 'or' 'sel_tmp1_i' <Predicate = true> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.33> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 48 [1/1] (0.44ns) (out node of the LUT)   --->   "%sel_tmp2_i = select i1 %sel_tmp1_i, i32 %layerId, i32 %tmp_93_i" [lr_standaloneHLS/.settings/LinearRegression.cpp:78->lr_standaloneHLS/.settings/LinearRegression.cpp:61]   --->   Operation 48 'select' 'sel_tmp2_i' <Predicate = true> <Delay = 0.44> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.44> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_4 : Operation 49 [1/1] (0.00ns) (grouped into LUT with out node p_0_i)   --->   "%sel_tmp5_demorgan_i = or i1 %stubs_data_barrel_1, %brmerge_i" [lr_standaloneHLS/.settings/LinearRegression.cpp:75->lr_standaloneHLS/.settings/LinearRegression.cpp:61]   --->   Operation 49 'or' 'sel_tmp5_demorgan_i' <Predicate = true> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.33> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 50 [1/1] (0.44ns) (out node of the LUT)   --->   "%p_0_i = select i1 %sel_tmp5_demorgan_i, i32 %sel_tmp2_i, i32 %tmp_i" [lr_standaloneHLS/.settings/LinearRegression.cpp:78->lr_standaloneHLS/.settings/LinearRegression.cpp:61]   --->   Operation 50 'select' 'p_0_i' <Predicate = true> <Delay = 0.44> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.44> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_4 : Operation 51 [1/1] (0.33ns)   --->   "%brmerge = or i1 %stubs_data_psModule_1, %onlySeed_not" [lr_standaloneHLS/.settings/LinearRegression.cpp:62]   --->   Operation 51 'or' 'brmerge' <Predicate = true> <Delay = 0.33> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.33> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 52 [1/1] (0.00ns)   --->   "br i1 %brmerge, label %._crit_edge, label %._crit_edge2.backedge" [lr_standaloneHLS/.settings/LinearRegression.cpp:62]   --->   Operation 52 'br' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 53 [1/1] (0.00ns)   --->   "%tmp_139 = zext i32 %p_0_i to i64" [lr_standaloneHLS/.settings/LinearRegression.cpp:63]   --->   Operation 53 'zext' 'tmp_139' <Predicate = (brmerge)> <Delay = 0.00>
+ST_4 : Operation 54 [1/1] (0.00ns)   --->   "%foundLayers_addr_1 = getelementptr inbounds [30 x i1]* %foundLayers, i64 0, i64 %tmp_139" [lr_standaloneHLS/.settings/LinearRegression.cpp:63]   --->   Operation 54 'getelementptr' 'foundLayers_addr_1' <Predicate = (brmerge)> <Delay = 0.00>
+ST_4 : Operation 55 [2/2] (0.69ns)   --->   "%foundLayers_load = load i1* %foundLayers_addr_1, align 1" [lr_standaloneHLS/.settings/LinearRegression.cpp:63]   --->   Operation 55 'load' 'foundLayers_load' <Predicate = (brmerge)> <Delay = 0.69> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 0.69> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 1> <Depth = 30> <RAM>
+
+State 5 <SV = 4> <Delay = 2.32>
+ST_5 : Operation 56 [1/2] (0.69ns)   --->   "%foundLayers_load = load i1* %foundLayers_addr_1, align 1" [lr_standaloneHLS/.settings/LinearRegression.cpp:63]   --->   Operation 56 'load' 'foundLayers_load' <Predicate = (brmerge)> <Delay = 0.69> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 0.69> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 1> <Depth = 30> <RAM>
+ST_5 : Operation 57 [1/1] (0.00ns)   --->   "br i1 %foundLayers_load, label %._crit_edge2.backedge, label %3" [lr_standaloneHLS/.settings/LinearRegression.cpp:63]   --->   Operation 57 'br' <Predicate = (brmerge)> <Delay = 0.00>
+ST_5 : Operation 58 [1/1] (0.00ns)   --->   "%nLayers_load = load i32* %nLayers" [lr_standaloneHLS/.settings/LinearRegression.cpp:65]   --->   Operation 58 'load' 'nLayers_load' <Predicate = (brmerge & !foundLayers_load)> <Delay = 0.00>
+ST_5 : Operation 59 [1/1] (0.69ns)   --->   "store i1 true, i1* %foundLayers_addr_1, align 1" [lr_standaloneHLS/.settings/LinearRegression.cpp:64]   --->   Operation 59 'store' <Predicate = (brmerge & !foundLayers_load)> <Delay = 0.69> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 0.69> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 1> <Depth = 30> <RAM>
+ST_5 : Operation 60 [1/1] (1.48ns)   --->   "%nLayers_1 = add i32 %nLayers_load, 1" [lr_standaloneHLS/.settings/LinearRegression.cpp:65]   --->   Operation 60 'add' 'nLayers_1' <Predicate = (brmerge & !foundLayers_load)> <Delay = 1.48> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.48> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 61 [1/1] (0.83ns)   --->   "store i32 %nLayers_1, i32* %nLayers" [lr_standaloneHLS/.settings/LinearRegression.cpp:65]   --->   Operation 61 'store' <Predicate = (brmerge & !foundLayers_load)> <Delay = 0.83>
+ST_5 : Operation 62 [1/1] (0.00ns)   --->   "br label %._crit_edge2.backedge" [lr_standaloneHLS/.settings/LinearRegression.cpp:66]   --->   Operation 62 'br' <Predicate = (brmerge & !foundLayers_load)> <Delay = 0.00>
+ST_5 : Operation 63 [1/1] (0.00ns)   --->   "br label %._crit_edge2"   --->   Operation 63 'br' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10ns, clock uncertainty: 1.25ns.
+
+ <State 1>: 0.835ns
+The critical path consists of the following:
+	multiplexor before 'phi' operation ('invdar', lr_standaloneHLS/.settings/LinearRegression.cpp:58) with incoming values : ('indvarinc', lr_standaloneHLS/.settings/LinearRegression.cpp:58) [11]  (0.835 ns)
+
+ <State 2>: 1.03ns
+The critical path consists of the following:
+	'phi' operation ('invdar', lr_standaloneHLS/.settings/LinearRegression.cpp:58) with incoming values : ('indvarinc', lr_standaloneHLS/.settings/LinearRegression.cpp:58) [11]  (0 ns)
+	'add' operation ('indvarinc', lr_standaloneHLS/.settings/LinearRegression.cpp:58) [12]  (1.03 ns)
+
+ <State 3>: 1.49ns
+The critical path consists of the following:
+	'phi' operation ('p_begin_0_rec', lr_standaloneHLS/.settings/LinearRegression.cpp:60) with incoming values : ('p_rec', lr_standaloneHLS/.settings/LinearRegression.cpp:60) [26]  (0 ns)
+	'add' operation ('p_rec', lr_standaloneHLS/.settings/LinearRegression.cpp:60) [32]  (1.49 ns)
+
+ <State 4>: 3.76ns
+The critical path consists of the following:
+	'load' operation ('stub.layerId_', lr_standaloneHLS/.settings/LinearRegression.cpp:61) on array 'stubs_data_layerId_s' [35]  (0.698 ns)
+	'add' operation ('tmp_93_i', lr_standaloneHLS/.settings/LinearRegression.cpp:78->lr_standaloneHLS/.settings/LinearRegression.cpp:61) [44]  (1.49 ns)
+	'select' operation ('sel_tmp2_i', lr_standaloneHLS/.settings/LinearRegression.cpp:78->lr_standaloneHLS/.settings/LinearRegression.cpp:61) [47]  (0.44 ns)
+	'select' operation ('p_0_i', lr_standaloneHLS/.settings/LinearRegression.cpp:78->lr_standaloneHLS/.settings/LinearRegression.cpp:61) [49]  (0.44 ns)
+	'getelementptr' operation ('foundLayers_addr_1', lr_standaloneHLS/.settings/LinearRegression.cpp:63) [54]  (0 ns)
+	'load' operation ('foundLayers_load', lr_standaloneHLS/.settings/LinearRegression.cpp:63) on array 'foundLayers', lr_standaloneHLS/.settings/LinearRegression.cpp:58 [55]  (0.698 ns)
+
+ <State 5>: 2.32ns
+The critical path consists of the following:
+	'load' operation ('nLayers_load', lr_standaloneHLS/.settings/LinearRegression.cpp:65) on local variable 'nLayers' [58]  (0 ns)
+	'add' operation ('nLayers', lr_standaloneHLS/.settings/LinearRegression.cpp:65) [60]  (1.49 ns)
+	'store' operation (lr_standaloneHLS/.settings/LinearRegression.cpp:65) of variable 'nLayers', lr_standaloneHLS/.settings/LinearRegression.cpp:65 on local variable 'nLayers' [61]  (0.835 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

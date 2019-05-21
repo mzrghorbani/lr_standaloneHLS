@@ -1,0 +1,1567 @@
+
+
+================================================================
+== Vivado HLS Report for 'countStubLayers'
+================================================================
+* Date:           Tue May 21 18:44:36 2019
+
+* Version:        2018.3 (Build 2405991 on Thu Dec 06 23:56:15 MST 2018)
+* Project:        lr_standaloneHLS
+* Solution:       solution1
+* Product family: kintexu
+* Target device:  xcku115-flvb2104-2-e
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |  10.00|     3.762|        1.25|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-----+-----+-----+-----+---------+
+    |  Latency  |  Interval | Pipeline|
+    | min | max | min | max |   Type  |
+    +-----+-----+-----+-----+---------+
+    |    ?|    ?|    ?|    ?|   none  |
+    +-----+-----+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +----------------------+-----+-----+----------+-----------+-----------+------+----------+
+        |                      |  Latency  | Iteration|  Initiation Interval  | Trip |          |
+        |       Loop Name      | min | max |  Latency |  achieved |   target  | Count| Pipelined|
+        +----------------------+-----+-----+----------+-----------+-----------+------+----------+
+        |- memset_foundLayers  |   29|   29|         1|          -|          -|    30|    no    |
+        |- Loop 2              |    ?|    ?|         3|          -|          -|     ?|    no    |
+        +----------------------+-----+-----+----------+-----------+-----------+------+----------+
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++---------------------+---------+-------+---------+--------+
+|         Name        | BRAM_18K| DSP48E|    FF   |   LUT  |
++---------------------+---------+-------+---------+--------+
+|DSP                  |        -|      -|        -|       -|
+|Expression           |        -|      -|        0|     322|
+|FIFO                 |        -|      -|        -|       -|
+|Instance             |        -|      -|        -|       -|
+|Memory               |        0|      -|        2|       1|
+|Multiplexer          |        -|      -|        -|      96|
+|Register             |        -|      -|      113|       -|
++---------------------+---------+-------+---------+--------+
+|Total                |        0|      0|      115|     419|
++---------------------+---------+-------+---------+--------+
+|Available SLR        |     2160|   2760|   663360|  331680|
++---------------------+---------+-------+---------+--------+
+|Utilization SLR (%)  |        0|      0|    ~0   |   ~0   |
++---------------------+---------+-------+---------+--------+
+|Available            |     4320|   5520|  1326720|  663360|
++---------------------+---------+-------+---------+--------+
+|Utilization (%)      |        0|      0|    ~0   |   ~0   |
++---------------------+---------+-------+---------+--------+
+
++ Detail: 
+    * Instance: 
+    N/A
+
+    * DSP48: 
+    N/A
+
+    * Memory: 
+    +---------------+-----------------------------+---------+---+----+------+-----+------+-------------+
+    |     Memory    |            Module           | BRAM_18K| FF| LUT| Words| Bits| Banks| W*Bits*Banks|
+    +---------------+-----------------------------+---------+---+----+------+-----+------+-------------+
+    |foundLayers_U  |countStubLayers_foundLayers  |        0|  2|   1|    30|    1|     1|           30|
+    +---------------+-----------------------------+---------+---+----+------+-----+------+-------------+
+    |Total          |                             |        0|  2|   1|    30|    1|     1|           30|
+    +---------------+-----------------------------+---------+---+----+------+-----+------+-------------+
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +--------------------------------+----------+-------+---+----+------------+------------+
+    |          Variable Name         | Operation| DSP48E| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +--------------------------------+----------+-------+---+----+------------+------------+
+    |indvarinc_fu_153_p2             |     +    |      0|  0|  15|           5|           1|
+    |nLayers_1_fu_284_p2             |     +    |      0|  0|  39|          32|           1|
+    |p_rec_fu_192_p2                 |     +    |      0|  0|  39|          32|           1|
+    |tmp_93_i_fu_234_p2              |     +    |      0|  0|  39|          32|           5|
+    |tmp_i_fu_228_p2                 |     +    |      0|  0|  39|          32|           4|
+    |sel_tmp_i_fu_240_p2             |    and   |      0|  0|   2|           1|           1|
+    |tmp_111_not_i_fu_210_p2         |   icmp   |      0|  0|  20|          32|           5|
+    |tmp_138_fu_187_p2               |   icmp   |      0|  0|  20|          32|          32|
+    |tmp_not_i_fu_198_p2             |   icmp   |      0|  0|  20|          32|           5|
+    |tmp_s_fu_164_p2                 |   icmp   |      0|  0|  11|           5|           3|
+    |brmerge3_i_fu_222_p2            |    or    |      0|  0|   2|           1|           1|
+    |brmerge_fu_274_p2               |    or    |      0|  0|   2|           1|           1|
+    |brmerge_i_fu_204_p2             |    or    |      0|  0|   2|           1|           1|
+    |sel_tmp1_i_fu_246_p2            |    or    |      0|  0|   2|           1|           1|
+    |sel_tmp5_demorgan_i_fu_260_p2   |    or    |      0|  0|   2|           1|           1|
+    |p_0_i_fu_266_p3                 |  select  |      0|  0|  32|           1|          32|
+    |sel_tmp2_i_fu_252_p3            |  select  |      0|  0|  32|           1|          32|
+    |onlySeed_not_fu_170_p2          |    xor   |      0|  0|   2|           1|           2|
+    |stub_psModule_read_s_fu_216_p2  |    xor   |      0|  0|   2|           1|           2|
+    +--------------------------------+----------+-------+---+----+------------+------------+
+    |Total                           |          |      0|  0| 322|         244|         131|
+    +--------------------------------+----------+-------+---+----+------------+------------+
+
+    * Multiplexer: 
+    +-----------------------+----+-----------+-----+-----------+
+    |          Name         | LUT| Input Size| Bits| Total Bits|
+    +-----------------------+----+-----------+-----+-----------+
+    |ap_NS_fsm              |  33|          6|    1|          6|
+    |foundLayers_address0   |  21|          4|    5|         20|
+    |foundLayers_d0         |  15|          3|    1|          3|
+    |invdar_reg_128         |   9|          2|    5|         10|
+    |nLayers_fu_52          |   9|          2|   32|         64|
+    |p_begin_0_rec_reg_139  |   9|          2|   32|         64|
+    +-----------------------+----+-----------+-----+-----------+
+    |Total                  |  96|         19|   76|        167|
+    +-----------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +----------------------------+----+----+-----+-----------+
+    |            Name            | FF | LUT| Bits| Const Bits|
+    +----------------------------+----+----+-----+-----------+
+    |ap_CS_fsm                   |   5|   0|    5|          0|
+    |brmerge_reg_348             |   1|   0|    1|          0|
+    |foundLayers_addr_1_reg_352  |   5|   0|    5|          0|
+    |invdar_reg_128              |   5|   0|    5|          0|
+    |nLayers_fu_52               |  32|   0|   32|          0|
+    |onlySeed_not_reg_320        |   1|   0|    1|          0|
+    |p_begin_0_rec_reg_139       |  32|   0|   32|          0|
+    |p_rec_reg_343               |  32|   0|   32|          0|
+    +----------------------------+----+----+-----+-----------+
+    |Total                       | 113|   0|  113|          0|
+    +----------------------------+----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++--------------------------------+-----+-----+------------+-----------------------+--------------+
+|            RTL Ports           | Dir | Bits|  Protocol  |     Source Object     |    C Type    |
++--------------------------------+-----+-----+------------+-----------------------+--------------+
+|ap_clk                          |  in |    1| ap_ctrl_hs |    countStubLayers    | return value |
+|ap_rst                          |  in |    1| ap_ctrl_hs |    countStubLayers    | return value |
+|ap_start                        |  in |    1| ap_ctrl_hs |    countStubLayers    | return value |
+|ap_done                         | out |    1| ap_ctrl_hs |    countStubLayers    | return value |
+|ap_idle                         | out |    1| ap_ctrl_hs |    countStubLayers    | return value |
+|ap_ready                        | out |    1| ap_ctrl_hs |    countStubLayers    | return value |
+|ap_return                       | out |   32| ap_ctrl_hs |    countStubLayers    | return value |
+|stubs_size_read                 |  in |   32|   ap_none  |    stubs_size_read    |    scalar    |
+|stubs_data_layerId_s_address0   | out |    4|  ap_memory |  stubs_data_layerId_s |     array    |
+|stubs_data_layerId_s_ce0        | out |    1|  ap_memory |  stubs_data_layerId_s |     array    |
+|stubs_data_layerId_s_q0         |  in |   32|  ap_memory |  stubs_data_layerId_s |     array    |
+|stubs_data_psModule_s_address0  | out |    4|  ap_memory | stubs_data_psModule_s |     array    |
+|stubs_data_psModule_s_ce0       | out |    1|  ap_memory | stubs_data_psModule_s |     array    |
+|stubs_data_psModule_s_q0        |  in |    1|  ap_memory | stubs_data_psModule_s |     array    |
+|stubs_data_barrel_s_address0    | out |    4|  ap_memory |  stubs_data_barrel_s  |     array    |
+|stubs_data_barrel_s_ce0         | out |    1|  ap_memory |  stubs_data_barrel_s  |     array    |
+|stubs_data_barrel_s_q0          |  in |    1|  ap_memory |  stubs_data_barrel_s  |     array    |
+|onlySeed                        |  in |    1|   ap_none  |        onlySeed       |    scalar    |
++--------------------------------+-----+-----+------------+-----------------------+--------------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 2
+IsDatapathOnly: 2
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 5
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 
+	2  / true
+2 --> 
+	2  / (!tmp_s)
+	3  / (tmp_s)
+3 --> 
+	4  / (!tmp_138)
+4 --> 
+	5  / true
+5 --> 
+	3  / true
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 0.83>
+ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%onlySeed_read = call i1 @_ssdm_op_Read.ap_auto.i1(i1 %onlySeed)"   --->   Operation 6 'read' 'onlySeed_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%stubs_size_read_1 = call i32 @_ssdm_op_Read.ap_auto.i32(i32 %stubs_size_read)"   --->   Operation 7 'read' 'stubs_size_read_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 8 [1/1] (0.69ns)   --->   "%foundLayers = alloca [30 x i1], align 16" [lr_standaloneHLS/.settings/LinearRegression.cpp:58]   --->   Operation 8 'alloca' 'foundLayers' <Predicate = true> <Delay = 0.69> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 0.69> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 1> <Depth = 30> <RAM>
+ST_1 : Operation 9 [1/1] (0.83ns)   --->   "br label %meminst"   --->   Operation 9 'br' <Predicate = true> <Delay = 0.83>
+
+State 2 <SV = 1> <Delay = 1.03>
+ST_2 : Operation 10 [1/1] (0.00ns)   --->   "%invdar = phi i5 [ 0, %0 ], [ %indvarinc, %meminst ]" [lr_standaloneHLS/.settings/LinearRegression.cpp:58]   --->   Operation 10 'phi' 'invdar' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 11 [1/1] (1.03ns)   --->   "%indvarinc = add i5 %invdar, 1" [lr_standaloneHLS/.settings/LinearRegression.cpp:58]   --->   Operation 11 'add' 'indvarinc' <Predicate = true> <Delay = 1.03> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.48> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 12 [1/1] (0.00ns)   --->   "%tmp = zext i5 %invdar to i64" [lr_standaloneHLS/.settings/LinearRegression.cpp:58]   --->   Operation 12 'zext' 'tmp' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 13 [1/1] (0.00ns)   --->   "%foundLayers_addr = getelementptr [30 x i1]* %foundLayers, i64 0, i64 %tmp" [lr_standaloneHLS/.settings/LinearRegression.cpp:58]   --->   Operation 13 'getelementptr' 'foundLayers_addr' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 14 [1/1] (0.69ns)   --->   "store i1 false, i1* %foundLayers_addr, align 1" [lr_standaloneHLS/.settings/LinearRegression.cpp:58]   --->   Operation 14 'store' <Predicate = true> <Delay = 0.69> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 0.69> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 1> <Depth = 30> <RAM>
+ST_2 : Operation 15 [1/1] (0.87ns)   --->   "%tmp_s = icmp eq i5 %invdar, -3" [lr_standaloneHLS/.settings/LinearRegression.cpp:58]   --->   Operation 15 'icmp' 'tmp_s' <Predicate = true> <Delay = 0.87> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 0.87> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 16 [1/1] (0.00ns)   --->   "%empty = call i32 (...)* @_ssdm_op_SpecLoopName([19 x i8]* @memset_foundLayers_s) nounwind"   --->   Operation 16 'specloopname' 'empty' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 17 [1/1] (0.00ns)   --->   "%empty_40 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 30, i64 30, i64 30)"   --->   Operation 17 'speclooptripcount' 'empty_40' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 18 [1/1] (0.00ns)   --->   "br i1 %tmp_s, label %1, label %meminst" [lr_standaloneHLS/.settings/LinearRegression.cpp:58]   --->   Operation 18 'br' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 19 [1/1] (0.00ns)   --->   "%nLayers = alloca i32"   --->   Operation 19 'alloca' 'nLayers' <Predicate = (tmp_s)> <Delay = 0.00>
+ST_2 : Operation 20 [1/1] (0.33ns)   --->   "%onlySeed_not = xor i1 %onlySeed_read, true" [lr_standaloneHLS/.settings/LinearRegression.cpp:62]   --->   Operation 20 'xor' 'onlySeed_not' <Predicate = (tmp_s)> <Delay = 0.33> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.33> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 21 [1/1] (0.83ns)   --->   "store i32 0, i32* %nLayers"   --->   Operation 21 'store' <Predicate = (tmp_s)> <Delay = 0.83>
+ST_2 : Operation 22 [1/1] (0.83ns)   --->   "br label %._crit_edge2" [lr_standaloneHLS/.settings/LinearRegression.cpp:60]   --->   Operation 22 'br' <Predicate = (tmp_s)> <Delay = 0.83>
+
+State 3 <SV = 2> <Delay = 1.48>
+ST_3 : Operation 23 [1/1] (0.00ns)   --->   "%p_begin_0_rec = phi i32 [ 0, %1 ], [ %p_rec, %._crit_edge2.backedge ]" [lr_standaloneHLS/.settings/LinearRegression.cpp:60]   --->   Operation 23 'phi' 'p_begin_0_rec' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 24 [1/1] (0.00ns)   --->   "%p_begin_0_rec_cast = zext i32 %p_begin_0_rec to i64" [lr_standaloneHLS/.settings/LinearRegression.cpp:60]   --->   Operation 24 'zext' 'p_begin_0_rec_cast' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 25 [1/1] (0.00ns)   --->   "%stubs_data_layerId_1 = getelementptr [10 x i32]* %stubs_data_layerId_s, i64 0, i64 %p_begin_0_rec_cast" [lr_standaloneHLS/.settings/LinearRegression.cpp:60]   --->   Operation 25 'getelementptr' 'stubs_data_layerId_1' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 26 [1/1] (0.00ns)   --->   "%stubs_data_psModule = getelementptr [10 x i1]* %stubs_data_psModule_s, i64 0, i64 %p_begin_0_rec_cast" [lr_standaloneHLS/.settings/LinearRegression.cpp:60]   --->   Operation 26 'getelementptr' 'stubs_data_psModule' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 27 [1/1] (0.00ns)   --->   "%stubs_data_barrel_s_41 = getelementptr [10 x i1]* %stubs_data_barrel_s, i64 0, i64 %p_begin_0_rec_cast" [lr_standaloneHLS/.settings/LinearRegression.cpp:60]   --->   Operation 27 'getelementptr' 'stubs_data_barrel_s_41' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 28 [1/1] (1.14ns)   --->   "%tmp_138 = icmp eq i32 %p_begin_0_rec, %stubs_size_read_1" [lr_standaloneHLS/.settings/LinearRegression.cpp:60]   --->   Operation 28 'icmp' 'tmp_138' <Predicate = true> <Delay = 1.14> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 0.87> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 29 [1/1] (1.48ns)   --->   "%p_rec = add i32 %p_begin_0_rec, 1" [lr_standaloneHLS/.settings/LinearRegression.cpp:60]   --->   Operation 29 'add' 'p_rec' <Predicate = true> <Delay = 1.48> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.48> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 30 [1/1] (0.00ns)   --->   "br i1 %tmp_138, label %4, label %2" [lr_standaloneHLS/.settings/LinearRegression.cpp:60]   --->   Operation 30 'br' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 31 [2/2] (0.69ns)   --->   "%layerId = load i32* %stubs_data_layerId_1, align 4" [lr_standaloneHLS/.settings/LinearRegression.cpp:61]   --->   Operation 31 'load' 'layerId' <Predicate = (!tmp_138)> <Delay = 0.69> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 0.69> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 1> <Depth = 30> <RAM>
+ST_3 : Operation 32 [2/2] (0.69ns)   --->   "%stubs_data_psModule_1 = load i1* %stubs_data_psModule, align 1" [lr_standaloneHLS/.settings/LinearRegression.cpp:61]   --->   Operation 32 'load' 'stubs_data_psModule_1' <Predicate = (!tmp_138)> <Delay = 0.69> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 0.69> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 1> <Depth = 30> <RAM>
+ST_3 : Operation 33 [2/2] (0.69ns)   --->   "%stubs_data_barrel_1 = load i1* %stubs_data_barrel_s_41, align 1" [lr_standaloneHLS/.settings/LinearRegression.cpp:61]   --->   Operation 33 'load' 'stubs_data_barrel_1' <Predicate = (!tmp_138)> <Delay = 0.69> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 0.69> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 1> <Depth = 30> <RAM>
+ST_3 : Operation 34 [1/1] (0.00ns)   --->   "%nLayers_load_1 = load i32* %nLayers" [lr_standaloneHLS/.settings/LinearRegression.cpp:69]   --->   Operation 34 'load' 'nLayers_load_1' <Predicate = (tmp_138)> <Delay = 0.00>
+ST_3 : Operation 35 [1/1] (0.00ns)   --->   "ret i32 %nLayers_load_1" [lr_standaloneHLS/.settings/LinearRegression.cpp:69]   --->   Operation 35 'ret' <Predicate = (tmp_138)> <Delay = 0.00>
+
+State 4 <SV = 3> <Delay = 3.76>
+ST_4 : Operation 36 [1/2] (0.69ns)   --->   "%layerId = load i32* %stubs_data_layerId_1, align 4" [lr_standaloneHLS/.settings/LinearRegression.cpp:61]   --->   Operation 36 'load' 'layerId' <Predicate = true> <Delay = 0.69> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 0.69> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 1> <Depth = 30> <RAM>
+ST_4 : Operation 37 [1/2] (0.69ns)   --->   "%stubs_data_psModule_1 = load i1* %stubs_data_psModule, align 1" [lr_standaloneHLS/.settings/LinearRegression.cpp:61]   --->   Operation 37 'load' 'stubs_data_psModule_1' <Predicate = true> <Delay = 0.69> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 0.69> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 1> <Depth = 30> <RAM>
+ST_4 : Operation 38 [1/2] (0.69ns)   --->   "%stubs_data_barrel_1 = load i1* %stubs_data_barrel_s_41, align 1" [lr_standaloneHLS/.settings/LinearRegression.cpp:61]   --->   Operation 38 'load' 'stubs_data_barrel_1' <Predicate = true> <Delay = 0.69> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 0.69> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 1> <Depth = 30> <RAM>
+ST_4 : Operation 39 [1/1] (1.14ns)   --->   "%tmp_not_i = icmp ugt i32 %layerId, 19" [lr_standaloneHLS/.settings/LinearRegression.cpp:75->lr_standaloneHLS/.settings/LinearRegression.cpp:61]   --->   Operation 39 'icmp' 'tmp_not_i' <Predicate = true> <Delay = 1.14> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 0.87> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 40 [1/1] (0.33ns)   --->   "%brmerge_i = or i1 %stubs_data_psModule_1, %tmp_not_i" [lr_standaloneHLS/.settings/LinearRegression.cpp:75->lr_standaloneHLS/.settings/LinearRegression.cpp:61]   --->   Operation 40 'or' 'brmerge_i' <Predicate = true> <Delay = 0.33> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.33> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 41 [1/1] (1.14ns)   --->   "%tmp_111_not_i = icmp ult i32 %layerId, 21" [lr_standaloneHLS/.settings/LinearRegression.cpp:77->lr_standaloneHLS/.settings/LinearRegression.cpp:61]   --->   Operation 41 'icmp' 'tmp_111_not_i' <Predicate = true> <Delay = 1.14> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 0.87> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 42 [1/1] (0.00ns) (grouped into LUT with out node sel_tmp2_i)   --->   "%stub_psModule_read_s = xor i1 %stubs_data_psModule_1, true" [lr_standaloneHLS/.settings/LinearRegression.cpp:77->lr_standaloneHLS/.settings/LinearRegression.cpp:61]   --->   Operation 42 'xor' 'stub_psModule_read_s' <Predicate = true> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.33> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 43 [1/1] (0.00ns) (grouped into LUT with out node sel_tmp2_i)   --->   "%brmerge3_i = or i1 %tmp_111_not_i, %stub_psModule_read_s" [lr_standaloneHLS/.settings/LinearRegression.cpp:77->lr_standaloneHLS/.settings/LinearRegression.cpp:61]   --->   Operation 43 'or' 'brmerge3_i' <Predicate = true> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.33> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 44 [1/1] (1.48ns)   --->   "%tmp_i = add i32 %layerId, 10" [lr_standaloneHLS/.settings/LinearRegression.cpp:76->lr_standaloneHLS/.settings/LinearRegression.cpp:61]   --->   Operation 44 'add' 'tmp_i' <Predicate = true> <Delay = 1.48> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.48> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 45 [1/1] (1.48ns)   --->   "%tmp_93_i = add i32 %layerId, -10" [lr_standaloneHLS/.settings/LinearRegression.cpp:78->lr_standaloneHLS/.settings/LinearRegression.cpp:61]   --->   Operation 45 'add' 'tmp_93_i' <Predicate = true> <Delay = 1.48> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.48> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 46 [1/1] (0.00ns) (grouped into LUT with out node sel_tmp2_i)   --->   "%sel_tmp_i = and i1 %brmerge_i, %brmerge3_i" [lr_standaloneHLS/.settings/LinearRegression.cpp:75->lr_standaloneHLS/.settings/LinearRegression.cpp:61]   --->   Operation 46 'and' 'sel_tmp_i' <Predicate = true> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.33> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 47 [1/1] (0.00ns) (grouped into LUT with out node sel_tmp2_i)   --->   "%sel_tmp1_i = or i1 %stubs_data_barrel_1, %sel_tmp_i" [lr_standaloneHLS/.settings/Stub.h:43->lr_standaloneHLS/.settings/LinearRegression.cpp:74->lr_standaloneHLS/.settings/LinearRegression.cpp:61]   --->   Operation 47 'or' 'sel_tmp1_i' <Predicate = true> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.33> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 48 [1/1] (0.44ns) (out node of the LUT)   --->   "%sel_tmp2_i = select i1 %sel_tmp1_i, i32 %layerId, i32 %tmp_93_i" [lr_standaloneHLS/.settings/LinearRegression.cpp:78->lr_standaloneHLS/.settings/LinearRegression.cpp:61]   --->   Operation 48 'select' 'sel_tmp2_i' <Predicate = true> <Delay = 0.44> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.44> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_4 : Operation 49 [1/1] (0.00ns) (grouped into LUT with out node p_0_i)   --->   "%sel_tmp5_demorgan_i = or i1 %stubs_data_barrel_1, %brmerge_i" [lr_standaloneHLS/.settings/LinearRegression.cpp:75->lr_standaloneHLS/.settings/LinearRegression.cpp:61]   --->   Operation 49 'or' 'sel_tmp5_demorgan_i' <Predicate = true> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.33> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 50 [1/1] (0.44ns) (out node of the LUT)   --->   "%p_0_i = select i1 %sel_tmp5_demorgan_i, i32 %sel_tmp2_i, i32 %tmp_i" [lr_standaloneHLS/.settings/LinearRegression.cpp:78->lr_standaloneHLS/.settings/LinearRegression.cpp:61]   --->   Operation 50 'select' 'p_0_i' <Predicate = true> <Delay = 0.44> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.44> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_4 : Operation 51 [1/1] (0.33ns)   --->   "%brmerge = or i1 %stubs_data_psModule_1, %onlySeed_not" [lr_standaloneHLS/.settings/LinearRegression.cpp:62]   --->   Operation 51 'or' 'brmerge' <Predicate = true> <Delay = 0.33> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.33> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 52 [1/1] (0.00ns)   --->   "br i1 %brmerge, label %._crit_edge, label %._crit_edge2.backedge" [lr_standaloneHLS/.settings/LinearRegression.cpp:62]   --->   Operation 52 'br' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 53 [1/1] (0.00ns)   --->   "%tmp_139 = zext i32 %p_0_i to i64" [lr_standaloneHLS/.settings/LinearRegression.cpp:63]   --->   Operation 53 'zext' 'tmp_139' <Predicate = (brmerge)> <Delay = 0.00>
+ST_4 : Operation 54 [1/1] (0.00ns)   --->   "%foundLayers_addr_1 = getelementptr inbounds [30 x i1]* %foundLayers, i64 0, i64 %tmp_139" [lr_standaloneHLS/.settings/LinearRegression.cpp:63]   --->   Operation 54 'getelementptr' 'foundLayers_addr_1' <Predicate = (brmerge)> <Delay = 0.00>
+ST_4 : Operation 55 [2/2] (0.69ns)   --->   "%foundLayers_load = load i1* %foundLayers_addr_1, align 1" [lr_standaloneHLS/.settings/LinearRegression.cpp:63]   --->   Operation 55 'load' 'foundLayers_load' <Predicate = (brmerge)> <Delay = 0.69> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 0.69> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 1> <Depth = 30> <RAM>
+
+State 5 <SV = 4> <Delay = 2.32>
+ST_5 : Operation 56 [1/2] (0.69ns)   --->   "%foundLayers_load = load i1* %foundLayers_addr_1, align 1" [lr_standaloneHLS/.settings/LinearRegression.cpp:63]   --->   Operation 56 'load' 'foundLayers_load' <Predicate = (brmerge)> <Delay = 0.69> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 0.69> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 1> <Depth = 30> <RAM>
+ST_5 : Operation 57 [1/1] (0.00ns)   --->   "br i1 %foundLayers_load, label %._crit_edge2.backedge, label %3" [lr_standaloneHLS/.settings/LinearRegression.cpp:63]   --->   Operation 57 'br' <Predicate = (brmerge)> <Delay = 0.00>
+ST_5 : Operation 58 [1/1] (0.00ns)   --->   "%nLayers_load = load i32* %nLayers" [lr_standaloneHLS/.settings/LinearRegression.cpp:65]   --->   Operation 58 'load' 'nLayers_load' <Predicate = (brmerge & !foundLayers_load)> <Delay = 0.00>
+ST_5 : Operation 59 [1/1] (0.69ns)   --->   "store i1 true, i1* %foundLayers_addr_1, align 1" [lr_standaloneHLS/.settings/LinearRegression.cpp:64]   --->   Operation 59 'store' <Predicate = (brmerge & !foundLayers_load)> <Delay = 0.69> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 0.69> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 1> <Depth = 30> <RAM>
+ST_5 : Operation 60 [1/1] (1.48ns)   --->   "%nLayers_1 = add i32 %nLayers_load, 1" [lr_standaloneHLS/.settings/LinearRegression.cpp:65]   --->   Operation 60 'add' 'nLayers_1' <Predicate = (brmerge & !foundLayers_load)> <Delay = 1.48> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.48> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 61 [1/1] (0.83ns)   --->   "store i32 %nLayers_1, i32* %nLayers" [lr_standaloneHLS/.settings/LinearRegression.cpp:65]   --->   Operation 61 'store' <Predicate = (brmerge & !foundLayers_load)> <Delay = 0.83>
+ST_5 : Operation 62 [1/1] (0.00ns)   --->   "br label %._crit_edge2.backedge" [lr_standaloneHLS/.settings/LinearRegression.cpp:66]   --->   Operation 62 'br' <Predicate = (brmerge & !foundLayers_load)> <Delay = 0.00>
+ST_5 : Operation 63 [1/1] (0.00ns)   --->   "br label %._crit_edge2"   --->   Operation 63 'br' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+STG Binding: 
+---------------- STG Properties BEGIN ----------------
+- Is combinational: 0
+- Is one-state seq: 0
+- Is datapath-only: 0
+- Is pipelined: 0
+- Is top level: 0
+Port [ Return ] is wired: 1; IO mode=ap_ctrl_hs:ce=0
+Port [ stubs_size_read]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; pingpong=0; private_global=0; IO mode=ap_none:ce=0
+Port [ stubs_data_layerId_s]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=1; pingpong=0; private_global=0; MemPort=[13]; IO mode=ap_memory:ce=0
+Port [ stubs_data_psModule_s]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=1; pingpong=0; private_global=0; MemPort=[13]; IO mode=ap_memory:ce=0
+Port [ stubs_data_barrel_s]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=1; pingpong=0; private_global=0; MemPort=[13]; IO mode=ap_memory:ce=0
+Port [ onlySeed]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; pingpong=0; private_global=0; IO mode=ap_none:ce=0
+---------------- STG Properties END ------------------
+
+---------------- Datapath Model BEGIN ----------------
+
+<LifeTime>
+<method=bitvector/>
+onlySeed_read          (read             ) [ 001000]
+stubs_size_read_1      (read             ) [ 001111]
+foundLayers            (alloca           ) [ 001111]
+StgValue_9             (br               ) [ 011000]
+invdar                 (phi              ) [ 001000]
+indvarinc              (add              ) [ 011000]
+tmp                    (zext             ) [ 000000]
+foundLayers_addr       (getelementptr    ) [ 000000]
+StgValue_14            (store            ) [ 000000]
+tmp_s                  (icmp             ) [ 001000]
+empty                  (specloopname     ) [ 000000]
+empty_40               (speclooptripcount) [ 000000]
+StgValue_18            (br               ) [ 011000]
+nLayers                (alloca           ) [ 001111]
+onlySeed_not           (xor              ) [ 000111]
+StgValue_21            (store            ) [ 000000]
+StgValue_22            (br               ) [ 001111]
+p_begin_0_rec          (phi              ) [ 000100]
+p_begin_0_rec_cast     (zext             ) [ 000000]
+stubs_data_layerId_1   (getelementptr    ) [ 000010]
+stubs_data_psModule    (getelementptr    ) [ 000010]
+stubs_data_barrel_s_41 (getelementptr    ) [ 000010]
+tmp_138                (icmp             ) [ 000111]
+p_rec                  (add              ) [ 001111]
+StgValue_30            (br               ) [ 000000]
+nLayers_load_1         (load             ) [ 000000]
+StgValue_35            (ret              ) [ 000000]
+layerId                (load             ) [ 000000]
+stubs_data_psModule_1  (load             ) [ 000000]
+stubs_data_barrel_1    (load             ) [ 000000]
+tmp_not_i              (icmp             ) [ 000000]
+brmerge_i              (or               ) [ 000000]
+tmp_111_not_i          (icmp             ) [ 000000]
+stub_psModule_read_s   (xor              ) [ 000000]
+brmerge3_i             (or               ) [ 000000]
+tmp_i                  (add              ) [ 000000]
+tmp_93_i               (add              ) [ 000000]
+sel_tmp_i              (and              ) [ 000000]
+sel_tmp1_i             (or               ) [ 000000]
+sel_tmp2_i             (select           ) [ 000000]
+sel_tmp5_demorgan_i    (or               ) [ 000000]
+p_0_i                  (select           ) [ 000000]
+brmerge                (or               ) [ 000111]
+StgValue_52            (br               ) [ 000000]
+tmp_139                (zext             ) [ 000000]
+foundLayers_addr_1     (getelementptr    ) [ 000001]
+foundLayers_load       (load             ) [ 000111]
+StgValue_57            (br               ) [ 000000]
+nLayers_load           (load             ) [ 000000]
+StgValue_59            (store            ) [ 000000]
+nLayers_1              (add              ) [ 000000]
+StgValue_61            (store            ) [ 000000]
+StgValue_62            (br               ) [ 000000]
+StgValue_63            (br               ) [ 001111]
+</LifeTime>
+
+<model>
+
+<comp_list>
+<comp id="0" class="1000" name="stubs_size_read">
+<pin_list>
+<pin id="1" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="stubs_size_read"/></StgValue>
+</bind>
+</comp>
+
+<comp id="2" class="1000" name="stubs_data_layerId_s">
+<pin_list>
+<pin id="3" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="stubs_data_layerId_s"/><MemPortTyVec>1 3 </MemPortTyVec>
+</StgValue>
+</bind>
+</comp>
+
+<comp id="4" class="1000" name="stubs_data_psModule_s">
+<pin_list>
+<pin id="5" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="stubs_data_psModule_s"/><MemPortTyVec>1 3 </MemPortTyVec>
+</StgValue>
+</bind>
+</comp>
+
+<comp id="6" class="1000" name="stubs_data_barrel_s">
+<pin_list>
+<pin id="7" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="stubs_data_barrel_s"/><MemPortTyVec>1 3 </MemPortTyVec>
+</StgValue>
+</bind>
+</comp>
+
+<comp id="8" class="1000" name="onlySeed">
+<pin_list>
+<pin id="9" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="onlySeed"/></StgValue>
+</bind>
+</comp>
+
+<comp id="10" class="1001" name="const_10">
+<pin_list>
+<pin id="11" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="_ssdm_op_Read.ap_auto.i1"/></StgValue>
+</bind>
+</comp>
+
+<comp id="12" class="1001" name="const_12">
+<pin_list>
+<pin id="13" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="_ssdm_op_Read.ap_auto.i32"/></StgValue>
+</bind>
+</comp>
+
+<comp id="14" class="1001" name="const_14">
+<pin_list>
+<pin id="15" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="16" class="1001" name="const_16">
+<pin_list>
+<pin id="17" dir="1" index="0" bw="1" slack="1"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="18" class="1001" name="const_18">
+<pin_list>
+<pin id="19" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="20" class="1001" name="const_20">
+<pin_list>
+<pin id="21" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="22" class="1001" name="const_22">
+<pin_list>
+<pin id="23" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="24" class="1001" name="const_24">
+<pin_list>
+<pin id="25" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="26" class="1001" name="const_26">
+<pin_list>
+<pin id="27" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="_ssdm_op_SpecLoopName"/></StgValue>
+</bind>
+</comp>
+
+<comp id="28" class="1001" name="const_28">
+<pin_list>
+<pin id="29" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="memset_foundLayers_s"/></StgValue>
+</bind>
+</comp>
+
+<comp id="30" class="1001" name="const_30">
+<pin_list>
+<pin id="31" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="_ssdm_op_SpecLoopTripCount"/></StgValue>
+</bind>
+</comp>
+
+<comp id="32" class="1001" name="const_32">
+<pin_list>
+<pin id="33" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="34" class="1001" name="const_34">
+<pin_list>
+<pin id="35" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="36" class="1001" name="const_36">
+<pin_list>
+<pin id="37" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="38" class="1001" name="const_38">
+<pin_list>
+<pin id="39" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="40" class="1001" name="const_40">
+<pin_list>
+<pin id="41" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="42" class="1001" name="const_42">
+<pin_list>
+<pin id="43" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="44" class="1001" name="const_44">
+<pin_list>
+<pin id="45" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="46" class="1001" name="const_46">
+<pin_list>
+<pin id="47" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="48" class="1004" name="foundLayers_alloca_fu_48">
+<pin_list>
+<pin id="49" dir="0" index="0" bw="1" slack="0"/>
+<pin id="50" dir="1" index="1" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="alloca(26) " fcode="alloca"/>
+<opset="foundLayers/1 "/>
+</bind>
+</comp>
+
+<comp id="52" class="1004" name="nLayers_fu_52">
+<pin_list>
+<pin id="53" dir="0" index="0" bw="1" slack="0"/>
+<pin id="54" dir="1" index="1" bw="32" slack="0"/>
+</pin_list>
+<bind>
+<opcode="alloca(26) " fcode="alloca"/>
+<opset="nLayers/2 "/>
+</bind>
+</comp>
+
+<comp id="56" class="1004" name="onlySeed_read_read_fu_56">
+<pin_list>
+<pin id="57" dir="0" index="0" bw="1" slack="0"/>
+<pin id="58" dir="0" index="1" bw="1" slack="0"/>
+<pin id="59" dir="1" index="2" bw="1" slack="1"/>
+</pin_list>
+<bind>
+<opcode="read(1150) " fcode="read"/>
+<opset="onlySeed_read/1 "/>
+</bind>
+</comp>
+
+<comp id="62" class="1004" name="stubs_size_read_1_read_fu_62">
+<pin_list>
+<pin id="63" dir="0" index="0" bw="32" slack="0"/>
+<pin id="64" dir="0" index="1" bw="32" slack="0"/>
+<pin id="65" dir="1" index="2" bw="32" slack="2"/>
+</pin_list>
+<bind>
+<opcode="read(1150) " fcode="read"/>
+<opset="stubs_size_read_1/1 "/>
+</bind>
+</comp>
+
+<comp id="68" class="1004" name="foundLayers_addr_gep_fu_68">
+<pin_list>
+<pin id="69" dir="0" index="0" bw="1" slack="2147483647"/>
+<pin id="70" dir="0" index="1" bw="1" slack="0"/>
+<pin id="71" dir="0" index="2" bw="5" slack="0"/>
+<pin id="72" dir="1" index="3" bw="5" slack="0"/>
+</pin_list>
+<bind>
+<opcode="getelementptr(29) " fcode="getelementptr"/>
+<opset="foundLayers_addr/2 "/>
+</bind>
+</comp>
+
+<comp id="74" class="1004" name="grp_access_fu_74">
+<pin_list>
+<pin id="75" dir="0" index="0" bw="5" slack="0"/>
+<pin id="76" dir="0" index="1" bw="1" slack="0"/>
+<pin id="77" dir="0" index="2" bw="0" slack="2147483647"/>
+<pin id="78" dir="1" index="3" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="load(27) store(28) " fcode="store"/>
+<opset="StgValue_14/2 foundLayers_load/4 StgValue_59/5 "/>
+</bind>
+</comp>
+
+<comp id="81" class="1004" name="stubs_data_layerId_1_gep_fu_81">
+<pin_list>
+<pin id="82" dir="0" index="0" bw="32" slack="0"/>
+<pin id="83" dir="0" index="1" bw="1" slack="0"/>
+<pin id="84" dir="0" index="2" bw="32" slack="0"/>
+<pin id="85" dir="1" index="3" bw="4" slack="0"/>
+</pin_list>
+<bind>
+<opcode="getelementptr(29) " fcode="getelementptr"/>
+<opset="stubs_data_layerId_1/3 "/>
+</bind>
+</comp>
+
+<comp id="88" class="1004" name="stubs_data_psModule_gep_fu_88">
+<pin_list>
+<pin id="89" dir="0" index="0" bw="1" slack="0"/>
+<pin id="90" dir="0" index="1" bw="1" slack="0"/>
+<pin id="91" dir="0" index="2" bw="32" slack="0"/>
+<pin id="92" dir="1" index="3" bw="4" slack="0"/>
+</pin_list>
+<bind>
+<opcode="getelementptr(29) " fcode="getelementptr"/>
+<opset="stubs_data_psModule/3 "/>
+</bind>
+</comp>
+
+<comp id="95" class="1004" name="stubs_data_barrel_s_41_gep_fu_95">
+<pin_list>
+<pin id="96" dir="0" index="0" bw="1" slack="0"/>
+<pin id="97" dir="0" index="1" bw="1" slack="0"/>
+<pin id="98" dir="0" index="2" bw="32" slack="0"/>
+<pin id="99" dir="1" index="3" bw="4" slack="0"/>
+</pin_list>
+<bind>
+<opcode="getelementptr(29) " fcode="getelementptr"/>
+<opset="stubs_data_barrel_s_41/3 "/>
+</bind>
+</comp>
+
+<comp id="102" class="1004" name="grp_access_fu_102">
+<pin_list>
+<pin id="103" dir="0" index="0" bw="4" slack="0"/>
+<pin id="104" dir="0" index="1" bw="32" slack="2147483647"/>
+<pin id="105" dir="0" index="2" bw="0" slack="2147483647"/>
+<pin id="106" dir="1" index="3" bw="32" slack="0"/>
+</pin_list>
+<bind>
+<opcode="load(27) " fcode="load"/>
+<opset="layerId/3 "/>
+</bind>
+</comp>
+
+<comp id="108" class="1004" name="grp_access_fu_108">
+<pin_list>
+<pin id="109" dir="0" index="0" bw="4" slack="0"/>
+<pin id="110" dir="0" index="1" bw="1" slack="2147483647"/>
+<pin id="111" dir="0" index="2" bw="0" slack="2147483647"/>
+<pin id="112" dir="1" index="3" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<opcode="load(27) " fcode="load"/>
+<opset="stubs_data_psModule_1/3 "/>
+</bind>
+</comp>
+
+<comp id="114" class="1004" name="grp_access_fu_114">
+<pin_list>
+<pin id="115" dir="0" index="0" bw="4" slack="0"/>
+<pin id="116" dir="0" index="1" bw="1" slack="2147483647"/>
+<pin id="117" dir="0" index="2" bw="0" slack="2147483647"/>
+<pin id="118" dir="1" index="3" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<opcode="load(27) " fcode="load"/>
+<opset="stubs_data_barrel_1/3 "/>
+</bind>
+</comp>
+
+<comp id="120" class="1004" name="foundLayers_addr_1_gep_fu_120">
+<pin_list>
+<pin id="121" dir="0" index="0" bw="1" slack="2147483647"/>
+<pin id="122" dir="0" index="1" bw="1" slack="0"/>
+<pin id="123" dir="0" index="2" bw="32" slack="0"/>
+<pin id="124" dir="1" index="3" bw="5" slack="0"/>
+</pin_list>
+<bind>
+<opcode="getelementptr(29) " fcode="getelementptr"/>
+<opset="foundLayers_addr_1/4 "/>
+</bind>
+</comp>
+
+<comp id="128" class="1005" name="invdar_reg_128">
+<pin_list>
+<pin id="129" dir="0" index="0" bw="5" slack="1"/>
+<pin id="130" dir="1" index="1" bw="5" slack="1"/>
+</pin_list>
+<bind>
+<opset="invdar (phireg) "/>
+</bind>
+</comp>
+
+<comp id="132" class="1004" name="invdar_phi_fu_132">
+<pin_list>
+<pin id="133" dir="0" index="0" bw="1" slack="1"/>
+<pin id="134" dir="0" index="1" bw="0" slack="2147483647"/>
+<pin id="135" dir="0" index="2" bw="5" slack="0"/>
+<pin id="136" dir="0" index="3" bw="0" slack="2147483647"/>
+<pin id="137" dir="1" index="4" bw="5" slack="0"/>
+</pin_list>
+<bind>
+<opcode="phi(47) " fcode="phi"/>
+<opset="invdar/2 "/>
+</bind>
+</comp>
+
+<comp id="139" class="1005" name="p_begin_0_rec_reg_139">
+<pin_list>
+<pin id="140" dir="0" index="0" bw="32" slack="1"/>
+<pin id="141" dir="1" index="1" bw="32" slack="1"/>
+</pin_list>
+<bind>
+<opset="p_begin_0_rec (phireg) "/>
+</bind>
+</comp>
+
+<comp id="143" class="1004" name="p_begin_0_rec_phi_fu_143">
+<pin_list>
+<pin id="144" dir="0" index="0" bw="1" slack="1"/>
+<pin id="145" dir="0" index="1" bw="0" slack="2147483647"/>
+<pin id="146" dir="0" index="2" bw="32" slack="0"/>
+<pin id="147" dir="0" index="3" bw="0" slack="2147483647"/>
+<pin id="148" dir="1" index="4" bw="32" slack="0"/>
+</pin_list>
+<bind>
+<opcode="phi(47) " fcode="phi"/>
+<opset="p_begin_0_rec/3 "/>
+</bind>
+</comp>
+
+<comp id="150" class="1004" name="grp_load_fu_150">
+<pin_list>
+<pin id="151" dir="0" index="0" bw="32" slack="1"/>
+<pin id="152" dir="1" index="1" bw="32" slack="0"/>
+</pin_list>
+<bind>
+<opcode="load(27) " fcode="load"/>
+<opset="nLayers_load_1/3 nLayers_load/5 "/>
+</bind>
+</comp>
+
+<comp id="153" class="1004" name="indvarinc_fu_153">
+<pin_list>
+<pin id="154" dir="0" index="0" bw="5" slack="0"/>
+<pin id="155" dir="0" index="1" bw="1" slack="0"/>
+<pin id="156" dir="1" index="2" bw="5" slack="0"/>
+</pin_list>
+<bind>
+<opcode="add(8) " fcode="add"/>
+<opset="indvarinc/2 "/>
+</bind>
+</comp>
+
+<comp id="159" class="1004" name="tmp_fu_159">
+<pin_list>
+<pin id="160" dir="0" index="0" bw="5" slack="0"/>
+<pin id="161" dir="1" index="1" bw="64" slack="0"/>
+</pin_list>
+<bind>
+<opcode="zext(34) " fcode="zext"/>
+<opset="tmp/2 "/>
+</bind>
+</comp>
+
+<comp id="164" class="1004" name="tmp_s_fu_164">
+<pin_list>
+<pin id="165" dir="0" index="0" bw="5" slack="0"/>
+<pin id="166" dir="0" index="1" bw="5" slack="0"/>
+<pin id="167" dir="1" index="2" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="icmp(45) " fcode="icmp"/>
+<opset="tmp_s/2 "/>
+</bind>
+</comp>
+
+<comp id="170" class="1004" name="onlySeed_not_fu_170">
+<pin_list>
+<pin id="171" dir="0" index="0" bw="1" slack="1"/>
+<pin id="172" dir="0" index="1" bw="1" slack="0"/>
+<pin id="173" dir="1" index="2" bw="1" slack="2"/>
+</pin_list>
+<bind>
+<opcode="xor(25) " fcode="xor"/>
+<opset="onlySeed_not/2 "/>
+</bind>
+</comp>
+
+<comp id="175" class="1004" name="StgValue_21_store_fu_175">
+<pin_list>
+<pin id="176" dir="0" index="0" bw="1" slack="0"/>
+<pin id="177" dir="0" index="1" bw="32" slack="0"/>
+<pin id="178" dir="1" index="2" bw="0" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="store(28) " fcode="store"/>
+<opset="StgValue_21/2 "/>
+</bind>
+</comp>
+
+<comp id="180" class="1004" name="p_begin_0_rec_cast_fu_180">
+<pin_list>
+<pin id="181" dir="0" index="0" bw="32" slack="0"/>
+<pin id="182" dir="1" index="1" bw="64" slack="0"/>
+</pin_list>
+<bind>
+<opcode="zext(34) " fcode="zext"/>
+<opset="p_begin_0_rec_cast/3 "/>
+</bind>
+</comp>
+
+<comp id="187" class="1004" name="tmp_138_fu_187">
+<pin_list>
+<pin id="188" dir="0" index="0" bw="32" slack="0"/>
+<pin id="189" dir="0" index="1" bw="32" slack="2"/>
+<pin id="190" dir="1" index="2" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="icmp(45) " fcode="icmp"/>
+<opset="tmp_138/3 "/>
+</bind>
+</comp>
+
+<comp id="192" class="1004" name="p_rec_fu_192">
+<pin_list>
+<pin id="193" dir="0" index="0" bw="32" slack="0"/>
+<pin id="194" dir="0" index="1" bw="1" slack="0"/>
+<pin id="195" dir="1" index="2" bw="32" slack="0"/>
+</pin_list>
+<bind>
+<opcode="add(8) " fcode="add"/>
+<opset="p_rec/3 "/>
+</bind>
+</comp>
+
+<comp id="198" class="1004" name="tmp_not_i_fu_198">
+<pin_list>
+<pin id="199" dir="0" index="0" bw="32" slack="0"/>
+<pin id="200" dir="0" index="1" bw="32" slack="0"/>
+<pin id="201" dir="1" index="2" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<opcode="icmp(45) " fcode="icmp"/>
+<opset="tmp_not_i/4 "/>
+</bind>
+</comp>
+
+<comp id="204" class="1004" name="brmerge_i_fu_204">
+<pin_list>
+<pin id="205" dir="0" index="0" bw="1" slack="0"/>
+<pin id="206" dir="0" index="1" bw="1" slack="0"/>
+<pin id="207" dir="1" index="2" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<opcode="or(24) " fcode="or"/>
+<opset="brmerge_i/4 "/>
+</bind>
+</comp>
+
+<comp id="210" class="1004" name="tmp_111_not_i_fu_210">
+<pin_list>
+<pin id="211" dir="0" index="0" bw="32" slack="0"/>
+<pin id="212" dir="0" index="1" bw="32" slack="0"/>
+<pin id="213" dir="1" index="2" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<opcode="icmp(45) " fcode="icmp"/>
+<opset="tmp_111_not_i/4 "/>
+</bind>
+</comp>
+
+<comp id="216" class="1004" name="stub_psModule_read_s_fu_216">
+<pin_list>
+<pin id="217" dir="0" index="0" bw="1" slack="0"/>
+<pin id="218" dir="0" index="1" bw="1" slack="0"/>
+<pin id="219" dir="1" index="2" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<opcode="xor(25) " fcode="xor"/>
+<opset="stub_psModule_read_s/4 "/>
+</bind>
+</comp>
+
+<comp id="222" class="1004" name="brmerge3_i_fu_222">
+<pin_list>
+<pin id="223" dir="0" index="0" bw="1" slack="0"/>
+<pin id="224" dir="0" index="1" bw="1" slack="0"/>
+<pin id="225" dir="1" index="2" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<opcode="or(24) " fcode="or"/>
+<opset="brmerge3_i/4 "/>
+</bind>
+</comp>
+
+<comp id="228" class="1004" name="tmp_i_fu_228">
+<pin_list>
+<pin id="229" dir="0" index="0" bw="32" slack="0"/>
+<pin id="230" dir="0" index="1" bw="5" slack="0"/>
+<pin id="231" dir="1" index="2" bw="32" slack="0"/>
+</pin_list>
+<bind>
+<opcode="add(8) " fcode="add"/>
+<opset="tmp_i/4 "/>
+</bind>
+</comp>
+
+<comp id="234" class="1004" name="tmp_93_i_fu_234">
+<pin_list>
+<pin id="235" dir="0" index="0" bw="32" slack="0"/>
+<pin id="236" dir="0" index="1" bw="5" slack="0"/>
+<pin id="237" dir="1" index="2" bw="32" slack="0"/>
+</pin_list>
+<bind>
+<opcode="add(8) " fcode="add"/>
+<opset="tmp_93_i/4 "/>
+</bind>
+</comp>
+
+<comp id="240" class="1004" name="sel_tmp_i_fu_240">
+<pin_list>
+<pin id="241" dir="0" index="0" bw="1" slack="0"/>
+<pin id="242" dir="0" index="1" bw="1" slack="0"/>
+<pin id="243" dir="1" index="2" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<opcode="and(23) " fcode="and"/>
+<opset="sel_tmp_i/4 "/>
+</bind>
+</comp>
+
+<comp id="246" class="1004" name="sel_tmp1_i_fu_246">
+<pin_list>
+<pin id="247" dir="0" index="0" bw="1" slack="0"/>
+<pin id="248" dir="0" index="1" bw="1" slack="0"/>
+<pin id="249" dir="1" index="2" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<opcode="or(24) " fcode="or"/>
+<opset="sel_tmp1_i/4 "/>
+</bind>
+</comp>
+
+<comp id="252" class="1004" name="sel_tmp2_i_fu_252">
+<pin_list>
+<pin id="253" dir="0" index="0" bw="1" slack="0"/>
+<pin id="254" dir="0" index="1" bw="32" slack="0"/>
+<pin id="255" dir="0" index="2" bw="32" slack="0"/>
+<pin id="256" dir="1" index="3" bw="32" slack="0"/>
+</pin_list>
+<bind>
+<opcode="select(49) " fcode="select"/>
+<opset="sel_tmp2_i/4 "/>
+</bind>
+</comp>
+
+<comp id="260" class="1004" name="sel_tmp5_demorgan_i_fu_260">
+<pin_list>
+<pin id="261" dir="0" index="0" bw="1" slack="0"/>
+<pin id="262" dir="0" index="1" bw="1" slack="0"/>
+<pin id="263" dir="1" index="2" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<opcode="or(24) " fcode="or"/>
+<opset="sel_tmp5_demorgan_i/4 "/>
+</bind>
+</comp>
+
+<comp id="266" class="1004" name="p_0_i_fu_266">
+<pin_list>
+<pin id="267" dir="0" index="0" bw="1" slack="0"/>
+<pin id="268" dir="0" index="1" bw="32" slack="0"/>
+<pin id="269" dir="0" index="2" bw="32" slack="0"/>
+<pin id="270" dir="1" index="3" bw="32" slack="0"/>
+</pin_list>
+<bind>
+<opcode="select(49) " fcode="select"/>
+<opset="p_0_i/4 "/>
+</bind>
+</comp>
+
+<comp id="274" class="1004" name="brmerge_fu_274">
+<pin_list>
+<pin id="275" dir="0" index="0" bw="1" slack="0"/>
+<pin id="276" dir="0" index="1" bw="1" slack="2"/>
+<pin id="277" dir="1" index="2" bw="1" slack="1"/>
+</pin_list>
+<bind>
+<opcode="or(24) " fcode="or"/>
+<opset="brmerge/4 "/>
+</bind>
+</comp>
+
+<comp id="279" class="1004" name="tmp_139_fu_279">
+<pin_list>
+<pin id="280" dir="0" index="0" bw="32" slack="0"/>
+<pin id="281" dir="1" index="1" bw="64" slack="0"/>
+</pin_list>
+<bind>
+<opcode="zext(34) " fcode="zext"/>
+<opset="tmp_139/4 "/>
+</bind>
+</comp>
+
+<comp id="284" class="1004" name="nLayers_1_fu_284">
+<pin_list>
+<pin id="285" dir="0" index="0" bw="32" slack="0"/>
+<pin id="286" dir="0" index="1" bw="1" slack="0"/>
+<pin id="287" dir="1" index="2" bw="32" slack="0"/>
+</pin_list>
+<bind>
+<opcode="add(8) " fcode="add"/>
+<opset="nLayers_1/5 "/>
+</bind>
+</comp>
+
+<comp id="290" class="1004" name="StgValue_61_store_fu_290">
+<pin_list>
+<pin id="291" dir="0" index="0" bw="32" slack="0"/>
+<pin id="292" dir="0" index="1" bw="32" slack="3"/>
+<pin id="293" dir="1" index="2" bw="0" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="store(28) " fcode="store"/>
+<opset="StgValue_61/5 "/>
+</bind>
+</comp>
+
+<comp id="295" class="1005" name="onlySeed_read_reg_295">
+<pin_list>
+<pin id="296" dir="0" index="0" bw="1" slack="1"/>
+<pin id="297" dir="1" index="1" bw="1" slack="1"/>
+</pin_list>
+<bind>
+<opset="onlySeed_read "/>
+</bind>
+</comp>
+
+<comp id="300" class="1005" name="stubs_size_read_1_reg_300">
+<pin_list>
+<pin id="301" dir="0" index="0" bw="32" slack="2"/>
+<pin id="302" dir="1" index="1" bw="32" slack="2"/>
+</pin_list>
+<bind>
+<opset="stubs_size_read_1 "/>
+</bind>
+</comp>
+
+<comp id="305" class="1005" name="indvarinc_reg_305">
+<pin_list>
+<pin id="306" dir="0" index="0" bw="5" slack="0"/>
+<pin id="307" dir="1" index="1" bw="5" slack="0"/>
+</pin_list>
+<bind>
+<opset="indvarinc "/>
+</bind>
+</comp>
+
+<comp id="313" class="1005" name="nLayers_reg_313">
+<pin_list>
+<pin id="314" dir="0" index="0" bw="32" slack="0"/>
+<pin id="315" dir="1" index="1" bw="32" slack="0"/>
+</pin_list>
+<bind>
+<opset="nLayers "/>
+</bind>
+</comp>
+
+<comp id="320" class="1005" name="onlySeed_not_reg_320">
+<pin_list>
+<pin id="321" dir="0" index="0" bw="1" slack="2"/>
+<pin id="322" dir="1" index="1" bw="1" slack="2"/>
+</pin_list>
+<bind>
+<opset="onlySeed_not "/>
+</bind>
+</comp>
+
+<comp id="325" class="1005" name="stubs_data_layerId_1_reg_325">
+<pin_list>
+<pin id="326" dir="0" index="0" bw="4" slack="1"/>
+<pin id="327" dir="1" index="1" bw="4" slack="1"/>
+</pin_list>
+<bind>
+<opset="stubs_data_layerId_1 "/>
+</bind>
+</comp>
+
+<comp id="330" class="1005" name="stubs_data_psModule_reg_330">
+<pin_list>
+<pin id="331" dir="0" index="0" bw="4" slack="1"/>
+<pin id="332" dir="1" index="1" bw="4" slack="1"/>
+</pin_list>
+<bind>
+<opset="stubs_data_psModule "/>
+</bind>
+</comp>
+
+<comp id="335" class="1005" name="stubs_data_barrel_s_41_reg_335">
+<pin_list>
+<pin id="336" dir="0" index="0" bw="4" slack="1"/>
+<pin id="337" dir="1" index="1" bw="4" slack="1"/>
+</pin_list>
+<bind>
+<opset="stubs_data_barrel_s_41 "/>
+</bind>
+</comp>
+
+<comp id="343" class="1005" name="p_rec_reg_343">
+<pin_list>
+<pin id="344" dir="0" index="0" bw="32" slack="0"/>
+<pin id="345" dir="1" index="1" bw="32" slack="0"/>
+</pin_list>
+<bind>
+<opset="p_rec "/>
+</bind>
+</comp>
+
+<comp id="348" class="1005" name="brmerge_reg_348">
+<pin_list>
+<pin id="349" dir="0" index="0" bw="1" slack="1"/>
+<pin id="350" dir="1" index="1" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<opset="brmerge "/>
+</bind>
+</comp>
+
+<comp id="352" class="1005" name="foundLayers_addr_1_reg_352">
+<pin_list>
+<pin id="353" dir="0" index="0" bw="5" slack="1"/>
+<pin id="354" dir="1" index="1" bw="5" slack="1"/>
+</pin_list>
+<bind>
+<opset="foundLayers_addr_1 "/>
+</bind>
+</comp>
+
+</comp_list>
+
+<net_list>
+<net id="51"><net_src comp="14" pin="0"/><net_sink comp="48" pin=0"/></net>
+
+<net id="55"><net_src comp="34" pin="0"/><net_sink comp="52" pin=0"/></net>
+
+<net id="60"><net_src comp="10" pin="0"/><net_sink comp="56" pin=0"/></net>
+
+<net id="61"><net_src comp="8" pin="0"/><net_sink comp="56" pin=1"/></net>
+
+<net id="66"><net_src comp="12" pin="0"/><net_sink comp="62" pin=0"/></net>
+
+<net id="67"><net_src comp="0" pin="0"/><net_sink comp="62" pin=1"/></net>
+
+<net id="73"><net_src comp="20" pin="0"/><net_sink comp="68" pin=1"/></net>
+
+<net id="79"><net_src comp="22" pin="0"/><net_sink comp="74" pin=1"/></net>
+
+<net id="80"><net_src comp="68" pin="3"/><net_sink comp="74" pin=0"/></net>
+
+<net id="86"><net_src comp="2" pin="0"/><net_sink comp="81" pin=0"/></net>
+
+<net id="87"><net_src comp="20" pin="0"/><net_sink comp="81" pin=1"/></net>
+
+<net id="93"><net_src comp="4" pin="0"/><net_sink comp="88" pin=0"/></net>
+
+<net id="94"><net_src comp="20" pin="0"/><net_sink comp="88" pin=1"/></net>
+
+<net id="100"><net_src comp="6" pin="0"/><net_sink comp="95" pin=0"/></net>
+
+<net id="101"><net_src comp="20" pin="0"/><net_sink comp="95" pin=1"/></net>
+
+<net id="107"><net_src comp="81" pin="3"/><net_sink comp="102" pin=0"/></net>
+
+<net id="113"><net_src comp="88" pin="3"/><net_sink comp="108" pin=0"/></net>
+
+<net id="119"><net_src comp="95" pin="3"/><net_sink comp="114" pin=0"/></net>
+
+<net id="125"><net_src comp="20" pin="0"/><net_sink comp="120" pin=1"/></net>
+
+<net id="126"><net_src comp="120" pin="3"/><net_sink comp="74" pin=0"/></net>
+
+<net id="127"><net_src comp="36" pin="0"/><net_sink comp="74" pin=1"/></net>
+
+<net id="131"><net_src comp="16" pin="0"/><net_sink comp="128" pin=0"/></net>
+
+<net id="138"><net_src comp="128" pin="1"/><net_sink comp="132" pin=0"/></net>
+
+<net id="142"><net_src comp="38" pin="0"/><net_sink comp="139" pin=0"/></net>
+
+<net id="149"><net_src comp="139" pin="1"/><net_sink comp="143" pin=0"/></net>
+
+<net id="157"><net_src comp="132" pin="4"/><net_sink comp="153" pin=0"/></net>
+
+<net id="158"><net_src comp="18" pin="0"/><net_sink comp="153" pin=1"/></net>
+
+<net id="162"><net_src comp="132" pin="4"/><net_sink comp="159" pin=0"/></net>
+
+<net id="163"><net_src comp="159" pin="1"/><net_sink comp="68" pin=2"/></net>
+
+<net id="168"><net_src comp="132" pin="4"/><net_sink comp="164" pin=0"/></net>
+
+<net id="169"><net_src comp="24" pin="0"/><net_sink comp="164" pin=1"/></net>
+
+<net id="174"><net_src comp="36" pin="0"/><net_sink comp="170" pin=1"/></net>
+
+<net id="179"><net_src comp="38" pin="0"/><net_sink comp="175" pin=0"/></net>
+
+<net id="183"><net_src comp="143" pin="4"/><net_sink comp="180" pin=0"/></net>
+
+<net id="184"><net_src comp="180" pin="1"/><net_sink comp="81" pin=2"/></net>
+
+<net id="185"><net_src comp="180" pin="1"/><net_sink comp="88" pin=2"/></net>
+
+<net id="186"><net_src comp="180" pin="1"/><net_sink comp="95" pin=2"/></net>
+
+<net id="191"><net_src comp="143" pin="4"/><net_sink comp="187" pin=0"/></net>
+
+<net id="196"><net_src comp="143" pin="4"/><net_sink comp="192" pin=0"/></net>
+
+<net id="197"><net_src comp="34" pin="0"/><net_sink comp="192" pin=1"/></net>
+
+<net id="202"><net_src comp="102" pin="3"/><net_sink comp="198" pin=0"/></net>
+
+<net id="203"><net_src comp="40" pin="0"/><net_sink comp="198" pin=1"/></net>
+
+<net id="208"><net_src comp="108" pin="3"/><net_sink comp="204" pin=0"/></net>
+
+<net id="209"><net_src comp="198" pin="2"/><net_sink comp="204" pin=1"/></net>
+
+<net id="214"><net_src comp="102" pin="3"/><net_sink comp="210" pin=0"/></net>
+
+<net id="215"><net_src comp="42" pin="0"/><net_sink comp="210" pin=1"/></net>
+
+<net id="220"><net_src comp="108" pin="3"/><net_sink comp="216" pin=0"/></net>
+
+<net id="221"><net_src comp="36" pin="0"/><net_sink comp="216" pin=1"/></net>
+
+<net id="226"><net_src comp="210" pin="2"/><net_sink comp="222" pin=0"/></net>
+
+<net id="227"><net_src comp="216" pin="2"/><net_sink comp="222" pin=1"/></net>
+
+<net id="232"><net_src comp="102" pin="3"/><net_sink comp="228" pin=0"/></net>
+
+<net id="233"><net_src comp="44" pin="0"/><net_sink comp="228" pin=1"/></net>
+
+<net id="238"><net_src comp="102" pin="3"/><net_sink comp="234" pin=0"/></net>
+
+<net id="239"><net_src comp="46" pin="0"/><net_sink comp="234" pin=1"/></net>
+
+<net id="244"><net_src comp="204" pin="2"/><net_sink comp="240" pin=0"/></net>
+
+<net id="245"><net_src comp="222" pin="2"/><net_sink comp="240" pin=1"/></net>
+
+<net id="250"><net_src comp="114" pin="3"/><net_sink comp="246" pin=0"/></net>
+
+<net id="251"><net_src comp="240" pin="2"/><net_sink comp="246" pin=1"/></net>
+
+<net id="257"><net_src comp="246" pin="2"/><net_sink comp="252" pin=0"/></net>
+
+<net id="258"><net_src comp="102" pin="3"/><net_sink comp="252" pin=1"/></net>
+
+<net id="259"><net_src comp="234" pin="2"/><net_sink comp="252" pin=2"/></net>
+
+<net id="264"><net_src comp="114" pin="3"/><net_sink comp="260" pin=0"/></net>
+
+<net id="265"><net_src comp="204" pin="2"/><net_sink comp="260" pin=1"/></net>
+
+<net id="271"><net_src comp="260" pin="2"/><net_sink comp="266" pin=0"/></net>
+
+<net id="272"><net_src comp="252" pin="3"/><net_sink comp="266" pin=1"/></net>
+
+<net id="273"><net_src comp="228" pin="2"/><net_sink comp="266" pin=2"/></net>
+
+<net id="278"><net_src comp="108" pin="3"/><net_sink comp="274" pin=0"/></net>
+
+<net id="282"><net_src comp="266" pin="3"/><net_sink comp="279" pin=0"/></net>
+
+<net id="283"><net_src comp="279" pin="1"/><net_sink comp="120" pin=2"/></net>
+
+<net id="288"><net_src comp="150" pin="1"/><net_sink comp="284" pin=0"/></net>
+
+<net id="289"><net_src comp="34" pin="0"/><net_sink comp="284" pin=1"/></net>
+
+<net id="294"><net_src comp="284" pin="2"/><net_sink comp="290" pin=0"/></net>
+
+<net id="298"><net_src comp="56" pin="2"/><net_sink comp="295" pin=0"/></net>
+
+<net id="299"><net_src comp="295" pin="1"/><net_sink comp="170" pin=0"/></net>
+
+<net id="303"><net_src comp="62" pin="2"/><net_sink comp="300" pin=0"/></net>
+
+<net id="304"><net_src comp="300" pin="1"/><net_sink comp="187" pin=1"/></net>
+
+<net id="308"><net_src comp="153" pin="2"/><net_sink comp="305" pin=0"/></net>
+
+<net id="309"><net_src comp="305" pin="1"/><net_sink comp="132" pin=2"/></net>
+
+<net id="316"><net_src comp="52" pin="1"/><net_sink comp="313" pin=0"/></net>
+
+<net id="317"><net_src comp="313" pin="1"/><net_sink comp="175" pin=1"/></net>
+
+<net id="318"><net_src comp="313" pin="1"/><net_sink comp="150" pin=0"/></net>
+
+<net id="319"><net_src comp="313" pin="1"/><net_sink comp="290" pin=1"/></net>
+
+<net id="323"><net_src comp="170" pin="2"/><net_sink comp="320" pin=0"/></net>
+
+<net id="324"><net_src comp="320" pin="1"/><net_sink comp="274" pin=1"/></net>
+
+<net id="328"><net_src comp="81" pin="3"/><net_sink comp="325" pin=0"/></net>
+
+<net id="329"><net_src comp="325" pin="1"/><net_sink comp="102" pin=0"/></net>
+
+<net id="333"><net_src comp="88" pin="3"/><net_sink comp="330" pin=0"/></net>
+
+<net id="334"><net_src comp="330" pin="1"/><net_sink comp="108" pin=0"/></net>
+
+<net id="338"><net_src comp="95" pin="3"/><net_sink comp="335" pin=0"/></net>
+
+<net id="339"><net_src comp="335" pin="1"/><net_sink comp="114" pin=0"/></net>
+
+<net id="346"><net_src comp="192" pin="2"/><net_sink comp="343" pin=0"/></net>
+
+<net id="347"><net_src comp="343" pin="1"/><net_sink comp="143" pin=2"/></net>
+
+<net id="351"><net_src comp="274" pin="2"/><net_sink comp="348" pin=0"/></net>
+
+<net id="355"><net_src comp="120" pin="3"/><net_sink comp="352" pin=0"/></net>
+
+<net id="356"><net_src comp="352" pin="1"/><net_sink comp="74" pin=0"/></net>
+
+</net_list>
+
+</model> 
+---------------- Datapath Model END ------------------
+
+* FSMD analyzer results:
+  - Output states:
+	Port: stubs_data_layerId_s | {}
+	Port: stubs_data_psModule_s | {}
+	Port: stubs_data_barrel_s | {}
+ - Input state : 
+	Port: countStubLayers : stubs_size_read | {1 }
+	Port: countStubLayers : stubs_data_layerId_s | {3 4 }
+	Port: countStubLayers : stubs_data_psModule_s | {3 4 }
+	Port: countStubLayers : stubs_data_barrel_s | {3 4 }
+	Port: countStubLayers : onlySeed | {1 }
+  - Chain level:
+	State 1
+	State 2
+		indvarinc : 1
+		tmp : 1
+		foundLayers_addr : 2
+		StgValue_14 : 3
+		tmp_s : 1
+		StgValue_18 : 2
+		StgValue_21 : 1
+	State 3
+		p_begin_0_rec_cast : 1
+		stubs_data_layerId_1 : 2
+		stubs_data_psModule : 2
+		stubs_data_barrel_s_41 : 2
+		tmp_138 : 1
+		p_rec : 1
+		StgValue_30 : 2
+		layerId : 3
+		stubs_data_psModule_1 : 3
+		stubs_data_barrel_1 : 3
+		StgValue_35 : 1
+	State 4
+		tmp_not_i : 1
+		brmerge_i : 2
+		tmp_111_not_i : 1
+		stub_psModule_read_s : 1
+		brmerge3_i : 1
+		tmp_i : 1
+		tmp_93_i : 1
+		sel_tmp_i : 1
+		sel_tmp1_i : 1
+		sel_tmp2_i : 1
+		sel_tmp5_demorgan_i : 2
+		p_0_i : 2
+		brmerge : 1
+		StgValue_52 : 1
+		tmp_139 : 3
+		foundLayers_addr_1 : 4
+		foundLayers_load : 5
+	State 5
+		StgValue_57 : 1
+		nLayers_1 : 1
+		StgValue_61 : 2
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+
+* Functional unit list:
+|----------|------------------------------|---------|---------|
+| Operation|        Functional Unit       |    FF   |   LUT   |
+|----------|------------------------------|---------|---------|
+|          |       indvarinc_fu_153       |    0    |    15   |
+|          |         p_rec_fu_192         |    0    |    39   |
+|    add   |         tmp_i_fu_228         |    0    |    39   |
+|          |        tmp_93_i_fu_234       |    0    |    39   |
+|          |       nLayers_1_fu_284       |    0    |    39   |
+|----------|------------------------------|---------|---------|
+|          |         tmp_s_fu_164         |    0    |    11   |
+|   icmp   |        tmp_138_fu_187        |    0    |    20   |
+|          |       tmp_not_i_fu_198       |    0    |    20   |
+|          |     tmp_111_not_i_fu_210     |    0    |    20   |
+|----------|------------------------------|---------|---------|
+|  select  |       sel_tmp2_i_fu_252      |    0    |    32   |
+|          |         p_0_i_fu_266         |    0    |    32   |
+|----------|------------------------------|---------|---------|
+|          |       brmerge_i_fu_204       |    0    |    2    |
+|          |       brmerge3_i_fu_222      |    0    |    2    |
+|    or    |       sel_tmp1_i_fu_246      |    0    |    2    |
+|          |  sel_tmp5_demorgan_i_fu_260  |    0    |    2    |
+|          |        brmerge_fu_274        |    0    |    2    |
+|----------|------------------------------|---------|---------|
+|    xor   |      onlySeed_not_fu_170     |    0    |    2    |
+|          |  stub_psModule_read_s_fu_216 |    0    |    2    |
+|----------|------------------------------|---------|---------|
+|    and   |       sel_tmp_i_fu_240       |    0    |    2    |
+|----------|------------------------------|---------|---------|
+|   read   |   onlySeed_read_read_fu_56   |    0    |    0    |
+|          | stubs_size_read_1_read_fu_62 |    0    |    0    |
+|----------|------------------------------|---------|---------|
+|          |          tmp_fu_159          |    0    |    0    |
+|   zext   |   p_begin_0_rec_cast_fu_180  |    0    |    0    |
+|          |        tmp_139_fu_279        |    0    |    0    |
+|----------|------------------------------|---------|---------|
+|   Total  |                              |    0    |   322   |
+|----------|------------------------------|---------|---------|
+
+Memories:
++-----------+--------+--------+--------+
+|           |  BRAM  |   FF   |   LUT  |
++-----------+--------+--------+--------+
+|foundLayers|    0   |    2   |    1   |
++-----------+--------+--------+--------+
+|   Total   |    0   |    2   |    1   |
++-----------+--------+--------+--------+
+
+* Register list:
++------------------------------+--------+
+|                              |   FF   |
++------------------------------+--------+
+|        brmerge_reg_348       |    1   |
+|  foundLayers_addr_1_reg_352  |    5   |
+|       indvarinc_reg_305      |    5   |
+|        invdar_reg_128        |    5   |
+|        nLayers_reg_313       |   32   |
+|     onlySeed_not_reg_320     |    1   |
+|     onlySeed_read_reg_295    |    1   |
+|     p_begin_0_rec_reg_139    |   32   |
+|         p_rec_reg_343        |   32   |
+|stubs_data_barrel_s_41_reg_335|    4   |
+| stubs_data_layerId_1_reg_325 |    4   |
+|  stubs_data_psModule_reg_330 |    4   |
+|   stubs_size_read_1_reg_300  |   32   |
++------------------------------+--------+
+|             Total            |   158  |
++------------------------------+--------+
+
+* Multiplexer (MUX) list: 
+|-------------------|------|------|------|--------||---------||---------|
+|        Comp       |  Pin | Size |  BW  | S x BW ||  Delay  ||   LUT   |
+|-------------------|------|------|------|--------||---------||---------|
+|  grp_access_fu_74 |  p0  |   3  |   5  |   15   ||    15   |
+|  grp_access_fu_74 |  p1  |   2  |   1  |    2   |
+| grp_access_fu_102 |  p0  |   2  |   4  |    8   ||    9    |
+| grp_access_fu_108 |  p0  |   2  |   4  |    8   ||    9    |
+| grp_access_fu_114 |  p0  |   2  |   4  |    8   ||    9    |
+|-------------------|------|------|------|--------||---------||---------|
+|       Total       |      |      |      |   41   ||  4.2585 ||    42   |
+|-------------------|------|------|------|--------||---------||---------|
+
+
+
+* Summary:
++-----------+--------+--------+--------+--------+
+|           |  BRAM  |  Delay |   FF   |   LUT  |
++-----------+--------+--------+--------+--------+
+|  Function |    -   |    -   |    0   |   322  |
+|   Memory  |    0   |    -   |    2   |    1   |
+|Multiplexer|    -   |    4   |    -   |   42   |
+|  Register |    -   |    -   |   158  |    -   |
++-----------+--------+--------+--------+--------+
+|   Total   |    0   |    4   |   160  |   365  |
++-----------+--------+--------+--------+--------+

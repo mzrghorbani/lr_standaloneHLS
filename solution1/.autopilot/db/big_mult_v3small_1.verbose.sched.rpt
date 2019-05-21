@@ -1,0 +1,270 @@
+
+
+================================================================
+== Vivado HLS Report for 'big_mult_v3small_1'
+================================================================
+* Date:           Tue May 21 18:43:35 2019
+
+* Version:        2018.3 (Build 2405991 on Thu Dec 06 23:56:15 MST 2018)
+* Project:        lr_standaloneHLS
+* Solution:       solution1
+* Product family: kintexu
+* Target device:  xcku115-flvb2104-2-e
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |  10.00|     5.434|        1.25|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-----+-----+-----+-----+---------+
+    |  Latency  |  Interval | Pipeline|
+    | min | max | min | max |   Type  |
+    +-----+-----+-----+-----+---------+
+    |   13|   13|   13|   13|   none  |
+    +-----+-----+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +----------+-----+-----+----------+-----------+-----------+------+----------+
+        |          |  Latency  | Iteration|  Initiation Interval  | Trip |          |
+        | Loop Name| min | max |  Latency |  achieved |   target  | Count| Pipelined|
+        +----------+-----+-----+----------+-----------+-----------+------+----------+
+        |- Loop 1  |    6|    6|         2|          -|          -|     3|    no    |
+        |- Loop 2  |    2|    2|         1|          -|          -|     2|    no    |
+        |- Loop 3  |    2|    2|         1|          -|          -|     2|    no    |
+        +----------+-----+-----+----------+-----------+-----------+------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 5
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 
+	2  / true
+2 --> 
+	3  / (!exitcond3)
+	4  / (exitcond3)
+3 --> 
+	2  / true
+4 --> 
+	4  / (!exitcond4)
+	5  / (exitcond4)
+5 --> 
+	5  / (!exitcond)
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 0.83>
+ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%a_V_read = call i39 @_ssdm_op_Read.ap_auto.i39(i39 %a_V)" [/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_big_mult.h:264]   --->   Operation 6 'read' 'a_V_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 7 [1/1] (0.83ns)   --->   "br label %.preheader167" [/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_big_mult.h:264]   --->   Operation 7 'br' <Predicate = true> <Delay = 0.83>
+
+State 2 <SV = 1> <Delay = 4.86>
+ST_2 : Operation 8 [1/1] (0.00ns)   --->   "%pp_V_2_s = phi i56 [ undef, %.preheader167.preheader ], [ %pp_2_V_2, %_ifconv ]"   --->   Operation 8 'phi' 'pp_V_2_s' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 9 [1/1] (0.00ns)   --->   "%pp_V_1_s = phi i56 [ undef, %.preheader167.preheader ], [ %pp_2_V_4, %_ifconv ]"   --->   Operation 9 'phi' 'pp_V_1_s' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 10 [1/1] (0.00ns)   --->   "%pps_0_V = phi i56 [ undef, %.preheader167.preheader ], [ %pp_2_V_6, %_ifconv ]"   --->   Operation 10 'phi' 'pps_0_V' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 11 [1/1] (0.00ns)   --->   "%i = phi i2 [ 0, %.preheader167.preheader ], [ %i_6, %_ifconv ]"   --->   Operation 11 'phi' 'i' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 12 [1/1] (0.53ns)   --->   "%exitcond3 = icmp eq i2 %i, -1" [/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_big_mult.h:264]   --->   Operation 12 'icmp' 'exitcond3' <Predicate = true> <Delay = 0.53> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 0.84> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 13 [1/1] (0.00ns)   --->   "%empty = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 3, i64 3, i64 3)"   --->   Operation 13 'speclooptripcount' 'empty' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 14 [1/1] (0.72ns)   --->   "%i_6 = add i2 %i, 1" [/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_big_mult.h:264]   --->   Operation 14 'add' 'i_6' <Predicate = true> <Delay = 0.72> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.20> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 15 [1/1] (0.00ns)   --->   "br i1 %exitcond3, label %arrayctor.loop1.preheader.preheader, label %_ifconv" [/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_big_mult.h:264]   --->   Operation 15 'br' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 16 [1/1] (0.53ns)   --->   "%tmp_s = icmp eq i2 %i, -2" [/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_big_mult.h:265]   --->   Operation 16 'icmp' 'tmp_s' <Predicate = (!exitcond3)> <Delay = 0.53> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 0.84> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 17 [1/1] (0.00ns)   --->   "%Lo_assign = call i6 @_ssdm_op_BitConcatenate.i6.i2.i2.i2(i2 %i, i2 0, i2 %i)" [/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_big_mult.h:265]   --->   Operation 17 'bitconcatenate' 'Lo_assign' <Predicate = (!exitcond3)> <Delay = 0.00>
+ST_2 : Operation 18 [1/1] (1.11ns)   --->   "%tmp_63 = add i6 %Lo_assign, 16" [/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_big_mult.h:265]   --->   Operation 18 'add' 'tmp_63' <Predicate = (!exitcond3)> <Delay = 1.11> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.20> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 19 [1/1] (0.25ns)   --->   "%Ui = select i1 %tmp_s, i6 -26, i6 %tmp_63" [/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_big_mult.h:265]   --->   Operation 19 'select' 'Ui' <Predicate = (!exitcond3)> <Delay = 0.25> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.55> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_2 : Operation 20 [1/1] (0.84ns)   --->   "%tmp = icmp ugt i6 %Lo_assign, %Ui" [/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_big_mult.h:266]   --->   Operation 20 'icmp' 'tmp' <Predicate = (!exitcond3)> <Delay = 0.84> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 0.84> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 21 [1/1] (0.00ns) (grouped into LUT with out node tmp_693)   --->   "%tmp_683 = call i39 @llvm.part.select.i39(i39 %a_V_read, i32 38, i32 0)" [/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_big_mult.h:266]   --->   Operation 21 'partselect' 'tmp_683' <Predicate = (!exitcond3)> <Delay = 0.00>
+ST_2 : Operation 22 [1/1] (1.11ns)   --->   "%tmp_684 = sub i6 %Lo_assign, %Ui" [/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_big_mult.h:266]   --->   Operation 22 'sub' 'tmp_684' <Predicate = (!exitcond3)> <Delay = 1.11> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.20> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 23 [1/1] (1.11ns)   --->   "%tmp_685 = sub i6 -26, %Lo_assign" [/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_big_mult.h:266]   --->   Operation 23 'sub' 'tmp_685' <Predicate = (!exitcond3)> <Delay = 1.11> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.20> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 24 [1/1] (1.11ns)   --->   "%tmp_686 = sub i6 %Ui, %Lo_assign" [/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_big_mult.h:266]   --->   Operation 24 'sub' 'tmp_686' <Predicate = (!exitcond3)> <Delay = 1.11> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.20> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 25 [1/1] (0.00ns) (grouped into LUT with out node tmp_690)   --->   "%tmp_687 = select i1 %tmp, i6 %tmp_684, i6 %tmp_686" [/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_big_mult.h:266]   --->   Operation 25 'select' 'tmp_687' <Predicate = (!exitcond3)> <Delay = 0.00> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.55> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_2 : Operation 26 [1/1] (0.00ns) (grouped into LUT with out node tmp_693)   --->   "%tmp_688 = select i1 %tmp, i39 %tmp_683, i39 %a_V_read" [/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_big_mult.h:266]   --->   Operation 26 'select' 'tmp_688' <Predicate = (!exitcond3)> <Delay = 0.00> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.55> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_2 : Operation 27 [1/1] (0.00ns) (grouped into LUT with out node tmp_693)   --->   "%tmp_689 = select i1 %tmp, i6 %tmp_685, i6 %Lo_assign" [/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_big_mult.h:266]   --->   Operation 27 'select' 'tmp_689' <Predicate = (!exitcond3)> <Delay = 0.00> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.55> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_2 : Operation 28 [1/1] (1.11ns) (out node of the LUT)   --->   "%tmp_690 = sub i6 -26, %tmp_687" [/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_big_mult.h:266]   --->   Operation 28 'sub' 'tmp_690' <Predicate = (!exitcond3)> <Delay = 1.11> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.20> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 29 [1/1] (0.00ns) (grouped into LUT with out node tmp_693)   --->   "%tmp_691 = zext i6 %tmp_689 to i39" [/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_big_mult.h:266]   --->   Operation 29 'zext' 'tmp_691' <Predicate = (!exitcond3)> <Delay = 0.00>
+ST_2 : Operation 30 [1/1] (0.00ns) (grouped into LUT with out node p_Result_57)   --->   "%tmp_692 = zext i6 %tmp_690 to i39" [/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_big_mult.h:266]   --->   Operation 30 'zext' 'tmp_692' <Predicate = (!exitcond3)> <Delay = 0.00>
+ST_2 : Operation 31 [1/1] (1.65ns) (out node of the LUT)   --->   "%tmp_693 = lshr i39 %tmp_688, %tmp_691" [/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_big_mult.h:266]   --->   Operation 31 'lshr' 'tmp_693' <Predicate = (!exitcond3)> <Delay = 1.65> <Core = "Shift">   --->   Core 28 'Shift' <Latency = 0> <II = 1> <Delay = 1.05> <FuncUnit> <Opcode : 'shl' 'lshr' 'ashr'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 32 [1/1] (0.00ns) (grouped into LUT with out node p_Result_57)   --->   "%tmp_694 = lshr i39 -1, %tmp_692" [/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_big_mult.h:266]   --->   Operation 32 'lshr' 'tmp_694' <Predicate = (!exitcond3)> <Delay = 0.00> <Core = "Shift">   --->   Core 28 'Shift' <Latency = 0> <II = 1> <Delay = 1.05> <FuncUnit> <Opcode : 'shl' 'lshr' 'ashr'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 33 [1/1] (1.00ns) (out node of the LUT)   --->   "%p_Result_57 = and i39 %tmp_693, %tmp_694" [/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_big_mult.h:266]   --->   Operation 33 'and' 'p_Result_57' <Predicate = (!exitcond3)> <Delay = 1.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.44> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 34 [1/1] (0.83ns)   --->   "br label %arrayctor.loop1.preheader" [/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_big_mult.h:273]   --->   Operation 34 'br' <Predicate = (exitcond3)> <Delay = 0.83>
+
+State 3 <SV = 2> <Delay = 5.43>
+ST_3 : Operation 35 [1/1] (0.00ns)   --->   "%tmp_64 = zext i39 %p_Result_57 to i56" [/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_big_mult.h:266]   --->   Operation 35 'zext' 'tmp_64' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 36 [1/1] (4.92ns)   --->   "%pp_0_V = mul i56 %tmp_64, 381061692392" [/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_big_mult.h:266]   --->   Operation 36 'mul' 'pp_0_V' <Predicate = true> <Delay = 4.92> <Core = "Mul">   --->   Core 16 'Mul' <Latency = 0> <II = 1> <Delay = 4.92> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 37 [1/1] (0.53ns)   --->   "%sel_tmp = icmp eq i2 %i, 1" [/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_big_mult.h:266]   --->   Operation 37 'icmp' 'sel_tmp' <Predicate = true> <Delay = 0.53> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 0.84> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 38 [1/1] (0.00ns) (grouped into LUT with out node pp_2_V_2)   --->   "%pp_2_V = select i1 %sel_tmp, i56 %pp_V_2_s, i56 %pp_0_V" [/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_big_mult.h:266]   --->   Operation 38 'select' 'pp_2_V' <Predicate = true> <Delay = 0.00> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.55> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_3 : Operation 39 [1/1] (0.53ns)   --->   "%sel_tmp2 = icmp eq i2 %i, 0" [/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_big_mult.h:266]   --->   Operation 39 'icmp' 'sel_tmp2' <Predicate = true> <Delay = 0.53> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 0.84> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 40 [1/1] (0.51ns) (out node of the LUT)   --->   "%pp_2_V_2 = select i1 %sel_tmp2, i56 %pp_V_2_s, i56 %pp_2_V" [/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_big_mult.h:266]   --->   Operation 40 'select' 'pp_2_V_2' <Predicate = true> <Delay = 0.51> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.55> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_3 : Operation 41 [1/1] (0.00ns) (grouped into LUT with out node pp_2_V_4)   --->   "%pp_2_V_3 = select i1 %sel_tmp, i56 %pp_0_V, i56 %pp_V_1_s" [/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_big_mult.h:266]   --->   Operation 41 'select' 'pp_2_V_3' <Predicate = true> <Delay = 0.00> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.55> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_3 : Operation 42 [1/1] (0.51ns) (out node of the LUT)   --->   "%pp_2_V_4 = select i1 %sel_tmp2, i56 %pp_V_1_s, i56 %pp_2_V_3" [/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_big_mult.h:266]   --->   Operation 42 'select' 'pp_2_V_4' <Predicate = true> <Delay = 0.51> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.55> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_3 : Operation 43 [1/1] (0.51ns)   --->   "%pp_2_V_6 = select i1 %sel_tmp2, i56 %pp_0_V, i56 %pps_0_V" [/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_big_mult.h:266]   --->   Operation 43 'select' 'pp_2_V_6' <Predicate = true> <Delay = 0.51> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.55> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_3 : Operation 44 [1/1] (0.00ns)   --->   "br label %.preheader167" [/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_big_mult.h:264]   --->   Operation 44 'br' <Predicate = true> <Delay = 0.00>
+
+State 4 <SV = 2> <Delay = 2.64>
+ST_4 : Operation 45 [1/1] (0.00ns)   --->   "%pps_V_1_s = phi i56 [ %pps_2_V_1, %_ZrsILi56ELb0EEN11ap_int_baseIXT_EXT0_EE5RTypeIXT_EXT0_EE4arg1ERKS1_i.exit ], [ undef, %arrayctor.loop1.preheader.preheader ]"   --->   Operation 45 'phi' 'pps_V_1_s' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 46 [1/1] (0.00ns)   --->   "%pps_V_2_s = phi i56 [ %pps_2_V_2, %_ZrsILi56ELb0EEN11ap_int_baseIXT_EXT0_EE5RTypeIXT_EXT0_EE4arg1ERKS1_i.exit ], [ undef, %arrayctor.loop1.preheader.preheader ]"   --->   Operation 46 'phi' 'pps_V_2_s' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 47 [1/1] (0.00ns)   --->   "%i_1 = phi i2 [ %i_5, %_ZrsILi56ELb0EEN11ap_int_baseIXT_EXT0_EE5RTypeIXT_EXT0_EE4arg1ERKS1_i.exit ], [ 1, %arrayctor.loop1.preheader.preheader ]"   --->   Operation 47 'phi' 'i_1' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 48 [1/1] (0.53ns)   --->   "%exitcond4 = icmp eq i2 %i_1, -1" [/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_big_mult.h:273]   --->   Operation 48 'icmp' 'exitcond4' <Predicate = true> <Delay = 0.53> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 0.84> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 49 [1/1] (0.00ns)   --->   "%empty_44 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 2, i64 2, i64 2)"   --->   Operation 49 'speclooptripcount' 'empty_44' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 50 [1/1] (0.00ns)   --->   "br i1 %exitcond4, label %.preheader.preheader, label %_ZrsILi56ELb0EEN11ap_int_baseIXT_EXT0_EE5RTypeIXT_EXT0_EE4arg1ERKS1_i.exit" [/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_big_mult.h:273]   --->   Operation 50 'br' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 51 [1/1] (0.53ns)   --->   "%cond = icmp eq i2 %i_1, 1" [/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_big_mult.h:274]   --->   Operation 51 'icmp' 'cond' <Predicate = (!exitcond4)> <Delay = 0.53> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 0.84> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 52 [1/1] (0.00ns) (grouped into LUT with out node pps_1_V)   --->   "%tmp_640 = call i39 @_ssdm_op_PartSelect.i39.i56.i32.i32(i56 %pps_0_V, i32 17, i32 55)" [/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_big_mult.h:274]   --->   Operation 52 'partselect' 'tmp_640' <Predicate = (!exitcond4)> <Delay = 0.00>
+ST_4 : Operation 53 [1/1] (0.00ns) (grouped into LUT with out node pps_1_V)   --->   "%tmp_641 = call i39 @_ssdm_op_PartSelect.i39.i56.i32.i32(i56 %pps_V_1_s, i32 17, i32 55)" [/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_big_mult.h:274]   --->   Operation 53 'partselect' 'tmp_641' <Predicate = (!exitcond4)> <Delay = 0.00>
+ST_4 : Operation 54 [1/1] (0.00ns) (grouped into LUT with out node pps_1_V)   --->   "%p_v = select i1 %cond, i39 %tmp_640, i39 %tmp_641" [/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_big_mult.h:274]   --->   Operation 54 'select' 'p_v' <Predicate = (!exitcond4)> <Delay = 0.00> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.55> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_4 : Operation 55 [1/1] (0.00ns) (grouped into LUT with out node pps_1_V)   --->   "%r_V = zext i39 %p_v to i56" [/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_big_mult.h:274]   --->   Operation 55 'zext' 'r_V' <Predicate = (!exitcond4)> <Delay = 0.00>
+ST_4 : Operation 56 [1/1] (0.00ns) (grouped into LUT with out node pps_1_V)   --->   "%pp_V_load_2_phi = select i1 %cond, i56 %pp_V_1_s, i56 %pp_V_2_s" [/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_big_mult.h:275]   --->   Operation 56 'select' 'pp_V_load_2_phi' <Predicate = (!exitcond4)> <Delay = 0.00> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.55> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_4 : Operation 57 [1/1] (1.58ns) (out node of the LUT)   --->   "%pps_1_V = add i56 %r_V, %pp_V_load_2_phi" [/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_big_mult.h:275]   --->   Operation 57 'add' 'pps_1_V' <Predicate = (!exitcond4)> <Delay = 1.58> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.20> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 58 [1/1] (0.51ns)   --->   "%pps_2_V_1 = select i1 %cond, i56 %pps_1_V, i56 %pps_V_1_s" [/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_big_mult.h:275]   --->   Operation 58 'select' 'pps_2_V_1' <Predicate = (!exitcond4)> <Delay = 0.51> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.55> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_4 : Operation 59 [1/1] (0.51ns)   --->   "%pps_2_V_2 = select i1 %cond, i56 %pps_V_2_s, i56 %pps_1_V" [/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_big_mult.h:275]   --->   Operation 59 'select' 'pps_2_V_2' <Predicate = (!exitcond4)> <Delay = 0.51> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.55> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_4 : Operation 60 [1/1] (0.72ns)   --->   "%i_5 = add i2 %i_1, 1" [/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_big_mult.h:273]   --->   Operation 60 'add' 'i_5' <Predicate = (!exitcond4)> <Delay = 0.72> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.20> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 61 [1/1] (0.00ns)   --->   "br label %arrayctor.loop1.preheader" [/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_big_mult.h:273]   --->   Operation 61 'br' <Predicate = (!exitcond4)> <Delay = 0.00>
+ST_4 : Operation 62 [1/1] (0.83ns)   --->   "br label %.preheader" [/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_big_mult.h:279]   --->   Operation 62 'br' <Predicate = (exitcond4)> <Delay = 0.83>
+
+State 5 <SV = 3> <Delay = 4.77>
+ST_5 : Operation 63 [1/1] (0.00ns)   --->   "%p_Val2_s = phi i78 [ %p_Result_56, %._crit_edge168 ], [ undef, %.preheader.preheader ]"   --->   Operation 63 'phi' 'p_Val2_s' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 64 [1/1] (0.00ns)   --->   "%i_2 = phi i2 [ %tmp_68, %._crit_edge168 ], [ 0, %.preheader.preheader ]" [/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_big_mult.h:279]   --->   Operation 64 'phi' 'i_2' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 65 [1/1] (0.53ns)   --->   "%exitcond = icmp eq i2 %i_2, -2" [/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_big_mult.h:279]   --->   Operation 65 'icmp' 'exitcond' <Predicate = true> <Delay = 0.53> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 0.84> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 66 [1/1] (0.00ns)   --->   "%empty_45 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 2, i64 2, i64 2)"   --->   Operation 66 'speclooptripcount' 'empty_45' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 67 [1/1] (0.72ns)   --->   "%tmp_68 = add i2 %i_2, 1" [/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_big_mult.h:279]   --->   Operation 67 'add' 'tmp_68' <Predicate = true> <Delay = 0.72> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.20> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 68 [1/1] (0.00ns)   --->   "br i1 %exitcond, label %0, label %._crit_edge168" [/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_big_mult.h:279]   --->   Operation 68 'br' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 69 [1/1] (0.00ns)   --->   "%tmp_697 = trunc i2 %i_2 to i1" [/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_big_mult.h:279]   --->   Operation 69 'trunc' 'tmp_697' <Predicate = (!exitcond)> <Delay = 0.00>
+ST_5 : Operation 70 [1/1] (0.00ns)   --->   "%Li = call i5 @_ssdm_op_BitConcatenate.i5.i1.i2.i2(i1 %tmp_697, i2 0, i2 %i_2)" [/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_big_mult.h:280]   --->   Operation 70 'bitconcatenate' 'Li' <Predicate = (!exitcond)> <Delay = 0.00>
+ST_5 : Operation 71 [1/1] (0.00ns)   --->   "%Li_cast2 = zext i5 %Li to i6" [/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_big_mult.h:280]   --->   Operation 71 'zext' 'Li_cast2' <Predicate = (!exitcond)> <Delay = 0.00>
+ST_5 : Operation 72 [1/1] (0.00ns)   --->   "%Li_cast = zext i5 %Li to i32" [/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_big_mult.h:280]   --->   Operation 72 'zext' 'Li_cast' <Predicate = (!exitcond)> <Delay = 0.00>
+ST_5 : Operation 73 [1/1] (1.11ns)   --->   "%Ui_1 = add i6 16, %Li_cast2" [/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_big_mult.h:282]   --->   Operation 73 'add' 'Ui_1' <Predicate = (!exitcond)> <Delay = 1.11> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.20> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 74 [1/1] (0.00ns)   --->   "%Ui_2_cast = zext i6 %Ui_1 to i32" [/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_big_mult.h:282]   --->   Operation 74 'zext' 'Ui_2_cast' <Predicate = (!exitcond)> <Delay = 0.00>
+ST_5 : Operation 75 [1/1] (0.53ns)   --->   "%cond2 = icmp eq i2 %i_2, 0" [/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_big_mult.h:284]   --->   Operation 75 'icmp' 'cond2' <Predicate = (!exitcond)> <Delay = 0.53> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 0.84> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 76 [1/1] (0.00ns) (grouped into LUT with out node tmp_712)   --->   "%tmp_698 = trunc i56 %pps_0_V to i17" [/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_big_mult.h:284]   --->   Operation 76 'trunc' 'tmp_698' <Predicate = (!exitcond)> <Delay = 0.00>
+ST_5 : Operation 77 [1/1] (0.00ns) (grouped into LUT with out node tmp_712)   --->   "%tmp_699 = trunc i56 %pps_V_1_s to i17" [/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_big_mult.h:284]   --->   Operation 77 'trunc' 'tmp_699' <Predicate = (!exitcond)> <Delay = 0.00>
+ST_5 : Operation 78 [1/1] (0.00ns) (grouped into LUT with out node tmp_712)   --->   "%tmp_700 = select i1 %cond2, i17 %tmp_698, i17 %tmp_699" [/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_big_mult.h:284]   --->   Operation 78 'select' 'tmp_700' <Predicate = (!exitcond)> <Delay = 0.00> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.55> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_5 : Operation 79 [1/1] (0.00ns) (grouped into LUT with out node tmp_712)   --->   "%tmp_V = zext i17 %tmp_700 to i78" [/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_big_mult.h:284]   --->   Operation 79 'zext' 'tmp_V' <Predicate = (!exitcond)> <Delay = 0.00>
+ST_5 : Operation 80 [1/1] (0.84ns)   --->   "%tmp_701 = icmp ugt i32 %Li_cast, %Ui_2_cast" [/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_big_mult.h:284]   --->   Operation 80 'icmp' 'tmp_701' <Predicate = (!exitcond)> <Delay = 0.84> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 0.84> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 81 [1/1] (0.00ns)   --->   "%tmp_702 = zext i5 %Li to i7" [/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_big_mult.h:284]   --->   Operation 81 'zext' 'tmp_702' <Predicate = (!exitcond)> <Delay = 0.00>
+ST_5 : Operation 82 [1/1] (0.00ns)   --->   "%tmp_703 = zext i6 %Ui_1 to i7" [/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_big_mult.h:284]   --->   Operation 82 'zext' 'tmp_703' <Predicate = (!exitcond)> <Delay = 0.00>
+ST_5 : Operation 83 [1/1] (1.20ns)   --->   "%tmp_704 = sub i7 -51, %tmp_702" [/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_big_mult.h:284]   --->   Operation 83 'sub' 'tmp_704' <Predicate = (!exitcond)> <Delay = 1.20> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.20> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 84 [1/1] (0.00ns) (grouped into LUT with out node tmp_708)   --->   "%tmp_705 = select i1 %tmp_701, i7 %tmp_702, i7 %tmp_703" [/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_big_mult.h:284]   --->   Operation 84 'select' 'tmp_705' <Predicate = (!exitcond)> <Delay = 0.00> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.55> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_5 : Operation 85 [1/1] (0.00ns) (grouped into LUT with out node p_demorgan)   --->   "%tmp_706 = select i1 %tmp_701, i7 %tmp_703, i7 %tmp_702" [/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_big_mult.h:284]   --->   Operation 85 'select' 'tmp_706' <Predicate = (!exitcond)> <Delay = 0.00> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.55> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_5 : Operation 86 [1/1] (0.00ns) (grouped into LUT with out node tmp_712)   --->   "%tmp_707 = select i1 %tmp_701, i7 %tmp_704, i7 %tmp_702" [/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_big_mult.h:284]   --->   Operation 86 'select' 'tmp_707' <Predicate = (!exitcond)> <Delay = 0.00> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.55> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_5 : Operation 87 [1/1] (1.20ns) (out node of the LUT)   --->   "%tmp_708 = sub i7 -51, %tmp_705" [/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_big_mult.h:284]   --->   Operation 87 'sub' 'tmp_708' <Predicate = (!exitcond)> <Delay = 1.20> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.20> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 88 [1/1] (0.00ns) (grouped into LUT with out node tmp_712)   --->   "%tmp_709 = zext i7 %tmp_707 to i78" [/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_big_mult.h:284]   --->   Operation 88 'zext' 'tmp_709' <Predicate = (!exitcond)> <Delay = 0.00>
+ST_5 : Operation 89 [1/1] (0.00ns) (grouped into LUT with out node p_demorgan)   --->   "%tmp_710 = zext i7 %tmp_706 to i78" [/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_big_mult.h:284]   --->   Operation 89 'zext' 'tmp_710' <Predicate = (!exitcond)> <Delay = 0.00>
+ST_5 : Operation 90 [1/1] (0.00ns) (grouped into LUT with out node p_demorgan)   --->   "%tmp_711 = zext i7 %tmp_708 to i78" [/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_big_mult.h:284]   --->   Operation 90 'zext' 'tmp_711' <Predicate = (!exitcond)> <Delay = 0.00>
+ST_5 : Operation 91 [1/1] (1.29ns) (out node of the LUT)   --->   "%tmp_712 = shl i78 %tmp_V, %tmp_709" [/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_big_mult.h:284]   --->   Operation 91 'shl' 'tmp_712' <Predicate = (!exitcond)> <Delay = 1.29> <Core = "Shift">   --->   Core 28 'Shift' <Latency = 0> <II = 1> <Delay = 1.05> <FuncUnit> <Opcode : 'shl' 'lshr' 'ashr'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 92 [1/1] (0.00ns) (grouped into LUT with out node p_Result_56)   --->   "%tmp_713 = call i78 @llvm.part.select.i78(i78 %tmp_712, i32 77, i32 0)" [/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_big_mult.h:284]   --->   Operation 92 'partselect' 'tmp_713' <Predicate = (!exitcond)> <Delay = 0.00>
+ST_5 : Operation 93 [1/1] (0.00ns) (grouped into LUT with out node p_Result_56)   --->   "%tmp_714 = select i1 %tmp_701, i78 %tmp_713, i78 %tmp_712" [/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_big_mult.h:284]   --->   Operation 93 'select' 'tmp_714' <Predicate = (!exitcond)> <Delay = 0.00> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.55> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_5 : Operation 94 [1/1] (0.00ns) (grouped into LUT with out node p_demorgan)   --->   "%tmp_715 = shl i78 -1, %tmp_710" [/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_big_mult.h:284]   --->   Operation 94 'shl' 'tmp_715' <Predicate = (!exitcond)> <Delay = 0.00> <Core = "Shift">   --->   Core 28 'Shift' <Latency = 0> <II = 1> <Delay = 1.05> <FuncUnit> <Opcode : 'shl' 'lshr' 'ashr'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 95 [1/1] (0.00ns) (grouped into LUT with out node p_demorgan)   --->   "%tmp_716 = lshr i78 -1, %tmp_711" [/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_big_mult.h:284]   --->   Operation 95 'lshr' 'tmp_716' <Predicate = (!exitcond)> <Delay = 0.00> <Core = "Shift">   --->   Core 28 'Shift' <Latency = 0> <II = 1> <Delay = 1.05> <FuncUnit> <Opcode : 'shl' 'lshr' 'ashr'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 96 [1/1] (1.05ns) (out node of the LUT)   --->   "%p_demorgan = and i78 %tmp_715, %tmp_716" [/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_big_mult.h:284]   --->   Operation 96 'and' 'p_demorgan' <Predicate = (!exitcond)> <Delay = 1.05> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.44> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 97 [1/1] (0.00ns) (grouped into LUT with out node p_Result_56)   --->   "%tmp_717 = xor i78 %p_demorgan, -1" [/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_big_mult.h:284]   --->   Operation 97 'xor' 'tmp_717' <Predicate = (!exitcond)> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.44> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 98 [1/1] (0.00ns) (grouped into LUT with out node p_Result_56)   --->   "%tmp_718 = and i78 %p_Val2_s, %tmp_717" [/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_big_mult.h:284]   --->   Operation 98 'and' 'tmp_718' <Predicate = (!exitcond)> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.44> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 99 [1/1] (0.00ns) (grouped into LUT with out node p_Result_56)   --->   "%tmp_719 = and i78 %tmp_714, %p_demorgan" [/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_big_mult.h:284]   --->   Operation 99 'and' 'tmp_719' <Predicate = (!exitcond)> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.44> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 100 [1/1] (0.55ns) (out node of the LUT)   --->   "%p_Result_56 = or i78 %tmp_718, %tmp_719" [/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_big_mult.h:284]   --->   Operation 100 'or' 'p_Result_56' <Predicate = (!exitcond)> <Delay = 0.55> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.44> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 101 [1/1] (0.00ns)   --->   "br label %.preheader" [/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_big_mult.h:279]   --->   Operation 101 'br' <Predicate = (!exitcond)> <Delay = 0.00>
+ST_5 : Operation 102 [1/1] (0.00ns)   --->   "%tmp_696 = trunc i56 %pps_V_2_s to i44" [/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_big_mult.h:275]   --->   Operation 102 'trunc' 'tmp_696' <Predicate = (exitcond)> <Delay = 0.00>
+ST_5 : Operation 103 [1/1] (0.00ns)   --->   "%p_Result_s = call i78 @llvm.part.set.i78.i44(i78 %p_Val2_s, i44 %tmp_696, i32 34, i32 77)" [/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_big_mult.h:291]   --->   Operation 103 'partset' 'p_Result_s' <Predicate = (exitcond)> <Delay = 0.00>
+ST_5 : Operation 104 [1/1] (0.00ns)   --->   "ret i78 %p_Result_s" [/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_big_mult.h:293]   --->   Operation 104 'ret' <Predicate = (exitcond)> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10ns, clock uncertainty: 1.25ns.
+
+ <State 1>: 0.835ns
+The critical path consists of the following:
+	multiplexor before 'phi' operation ('pp[2].V') with incoming values : ('pp[2].V', /wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_big_mult.h:266) [5]  (0.835 ns)
+
+ <State 2>: 4.87ns
+The critical path consists of the following:
+	'phi' operation ('i') with incoming values : ('i', /wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_big_mult.h:264) [8]  (0 ns)
+	'add' operation ('tmp_63', /wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_big_mult.h:265) [16]  (1.12 ns)
+	'select' operation ('Ui', /wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_big_mult.h:265) [17]  (0.251 ns)
+	'icmp' operation ('tmp', /wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_big_mult.h:266) [18]  (0.846 ns)
+	'select' operation ('tmp_688', /wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_big_mult.h:266) [24]  (0 ns)
+	'lshr' operation ('tmp_693', /wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_big_mult.h:266) [29]  (1.65 ns)
+	'and' operation ('__Result__', /wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_big_mult.h:266) [31]  (1 ns)
+
+ <State 3>: 5.43ns
+The critical path consists of the following:
+	'mul' operation ('pp[0].V', /wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_big_mult.h:266) [33]  (4.92 ns)
+	'select' operation ('pp[2].V', /wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_big_mult.h:266) [35]  (0 ns)
+	'select' operation ('pp[2].V', /wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_big_mult.h:266) [37]  (0.514 ns)
+
+ <State 4>: 2.64ns
+The critical path consists of the following:
+	'phi' operation ('i') with incoming values : ('i', /wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_big_mult.h:273) [47]  (0 ns)
+	'icmp' operation ('cond', /wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_big_mult.h:274) [52]  (0.538 ns)
+	'select' operation ('p_v', /wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_big_mult.h:274) [55]  (0 ns)
+	'add' operation ('pps[1].V', /wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_big_mult.h:275) [58]  (1.59 ns)
+	'select' operation ('pps[2].V', /wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_big_mult.h:275) [59]  (0.514 ns)
+
+ <State 5>: 4.77ns
+The critical path consists of the following:
+	'phi' operation ('i_2', /wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_big_mult.h:279) with incoming values : ('tmp_68', /wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_big_mult.h:279) [67]  (0 ns)
+	'add' operation ('Ui', /wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_big_mult.h:282) [77]  (1.12 ns)
+	'icmp' operation ('tmp_701', /wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_big_mult.h:284) [84]  (0.846 ns)
+	'select' operation ('tmp_705', /wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_big_mult.h:284) [88]  (0 ns)
+	'sub' operation ('tmp_708', /wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_big_mult.h:284) [91]  (1.2 ns)
+	'lshr' operation ('tmp_716', /wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_big_mult.h:284) [99]  (0 ns)
+	'and' operation ('p_demorgan', /wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_big_mult.h:284) [100]  (1.05 ns)
+	'xor' operation ('tmp_717', /wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_big_mult.h:284) [101]  (0 ns)
+	'and' operation ('tmp_718', /wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_big_mult.h:284) [102]  (0 ns)
+	'or' operation ('__Result__', /wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_big_mult.h:284) [104]  (0.558 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

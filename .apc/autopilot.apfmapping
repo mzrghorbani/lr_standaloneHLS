@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="L1fittedTrack.h" path="/home/eepgmmg1/workspace/cpp_projects/lr_standaloneHLS/.settings/L1fittedTrack.h"/>
+    <originFiles name="L1track3D.h" path="/home/eepgmmg1/workspace/cpp_projects/lr_standaloneHLS/.settings/L1track3D.h"/>
+    <originFiles name="LinearRegression.cpp" path="/home/eepgmmg1/workspace/cpp_projects/lr_standaloneHLS/.settings/LinearRegression.cpp"/>
+    <originFiles name="LinearRegression.h" path="/home/eepgmmg1/workspace/cpp_projects/lr_standaloneHLS/.settings/LinearRegression.h"/>
+    <originFiles name="LRupdateHLS.h" path="/home/eepgmmg1/workspace/cpp_projects/lr_standaloneHLS/.settings/LRupdateHLS.h"/>
+    <originFiles name="LRupdateHLS.cpp" path="/home/eepgmmg1/workspace/cpp_projects/lr_standaloneHLS/.settings/LRupdateHLS.cpp"/>
+    <originFiles name="LRstructsHLS.h" path="/home/eepgmmg1/workspace/cpp_projects/lr_standaloneHLS/.settings/LRstructsHLS.h"/>
+    <originFiles name="LRutilityHLS.h" path="/home/eepgmmg1/workspace/cpp_projects/lr_standaloneHLS/.settings/LRutilityHLS.h"/>
+    <originFiles name="Settings.h" path="/home/eepgmmg1/workspace/cpp_projects/lr_standaloneHLS/.settings/Settings.h"/>
+    <originFiles name="Stub.h" path="/home/eepgmmg1/workspace/cpp_projects/lr_standaloneHLS/.settings/Stub.h"/>
+  </source>
+  <testbench>
+    <originFiles name="testbench.cpp" path="/home/eepgmmg1/workspace/cpp_projects/lr_standaloneHLS/.settings/testbench.cpp"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

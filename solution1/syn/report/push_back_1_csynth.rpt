@@ -1,0 +1,368 @@
+
+
+================================================================
+== Vivado HLS Report for 'push_back_1'
+================================================================
+* Date:           Tue May 21 18:44:36 2019
+
+* Version:        2018.3 (Build 2405991 on Thu Dec 06 23:56:15 MST 2018)
+* Project:        lr_standaloneHLS
+* Solution:       solution1
+* Product family: kintexu
+* Target device:  xcku115-flvb2104-2-e
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |  10.00|     3.090|        1.25|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-----+-----+-----+-----+---------+
+    |  Latency  |  Interval | Pipeline|
+    | min | max | min | max |   Type  |
+    +-----+-----+-----+-----+---------+
+    |    4|    4|    4|    4|   none  |
+    +-----+-----+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++---------------------+---------+-------+---------+--------+
+|         Name        | BRAM_18K| DSP48E|    FF   |   LUT  |
++---------------------+---------+-------+---------+--------+
+|DSP                  |        -|      -|        -|       -|
+|Expression           |        -|      -|        0|     202|
+|FIFO                 |        -|      -|        -|       -|
+|Instance             |        -|      -|        -|       -|
+|Memory               |        -|      -|        -|       -|
+|Multiplexer          |        -|      -|        -|    1353|
+|Register             |        -|      -|       14|       -|
++---------------------+---------+-------+---------+--------+
+|Total                |        0|      0|       14|    1555|
++---------------------+---------+-------+---------+--------+
+|Available SLR        |     2160|   2760|   663360|  331680|
++---------------------+---------+-------+---------+--------+
+|Utilization SLR (%)  |        0|      0|    ~0   |   ~0   |
++---------------------+---------+-------+---------+--------+
+|Available            |     4320|   5520|  1326720|  663360|
++---------------------+---------+-------+---------+--------+
+|Utilization (%)      |        0|      0|    ~0   |   ~0   |
++---------------------+---------+-------+---------+--------+
+
++ Detail: 
+    * Instance: 
+    N/A
+
+    * DSP48: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +-------------------+----------+-------+---+----+------------+------------+
+    |   Variable Name   | Operation| DSP48E| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +-------------------+----------+-------+---+----+------------+------------+
+    |ap_return          |     +    |      0|  0|  39|           1|          32|
+    |tmp_54_fu_1990_p2  |     +    |      0|  0|  17|           2|          10|
+    |tmp_55_fu_2009_p2  |     +    |      0|  0|  17|           2|          10|
+    |tmp_56_fu_2058_p2  |     +    |      0|  0|  17|           3|          10|
+    |tmp_57_fu_2077_p2  |     +    |      0|  0|  17|           3|          10|
+    |tmp_58_fu_2126_p2  |     +    |      0|  0|  17|           3|          10|
+    |tmp_59_fu_2145_p2  |     +    |      0|  0|  17|           3|          10|
+    |tmp_60_fu_2199_p2  |     +    |      0|  0|  17|           4|          10|
+    |tmp_61_fu_2218_p2  |     +    |      0|  0|  17|           4|          10|
+    |tmp_s_fu_1920_p2   |     +    |      0|  0|  17|          10|          10|
+    |tmp_53_fu_1940_p2  |    or    |      0|  0|  10|          10|           1|
+    +-------------------+----------+-------+---+----+------------+------------+
+    |Total              |          |      0|  0| 202|          45|         123|
+    +-------------------+----------+-------+---+----+------------+------------+
+
+    * Multiplexer: 
+    +------------------------------------------------------------------------------------------+----+-----------+-----+-----------+
+    |                                           Name                                           | LUT| Input Size| Bits| Total Bits|
+    +------------------------------------------------------------------------------------------+----+-----------+-----+-----------+
+    |ap_NS_fsm                                                                                 |  33|          6|    1|          6|
+    |mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_barrel_s_address0                      |  33|          6|    9|         54|
+    |mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_barrel_s_address1                      |  33|          6|    9|         54|
+    |mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_barrel_s_d0                            |  33|          6|    1|          6|
+    |mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_barrel_s_d1                            |  33|          6|    1|          6|
+    |mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_layerId_s_address0                     |  33|          6|    9|         54|
+    |mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_layerId_s_address1                     |  33|          6|    9|         54|
+    |mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_layerId_s_d0                           |  33|          6|   32|        192|
+    |mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_layerId_s_d1                           |  33|          6|   32|        192|
+    |mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_phi_s_address0                         |  33|          6|    9|         54|
+    |mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_phi_s_address1                         |  33|          6|    9|         54|
+    |mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_phi_s_d0                               |  33|          6|   32|        192|
+    |mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_phi_s_d1                               |  33|          6|   32|        192|
+    |mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_psModule_s_address0                    |  33|          6|    9|         54|
+    |mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_psModule_s_address1                    |  33|          6|    9|         54|
+    |mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_psModule_s_d0                          |  33|          6|    1|          6|
+    |mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_psModule_s_d1                          |  33|          6|    1|          6|
+    |mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_r_s_address0                           |  33|          6|    9|         54|
+    |mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_r_s_address1                           |  33|          6|    9|         54|
+    |mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_r_s_d0                                 |  33|          6|   32|        192|
+    |mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_r_s_d1                                 |  33|          6|   32|        192|
+    |mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofPhi_s_address0       |  33|          6|    9|         54|
+    |mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofPhi_s_address1       |  33|          6|    9|         54|
+    |mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofPhi_s_d0             |  33|          6|   32|        192|
+    |mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofPhi_s_d1             |  33|          6|   32|        192|
+    |mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofZ_s_address0         |  33|          6|    9|         54|
+    |mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofZ_s_address1         |  33|          6|    9|         54|
+    |mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofZ_s_d0               |  33|          6|   32|        192|
+    |mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofZ_s_d1               |  33|          6|   32|        192|
+    |mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minNumMatchLayers_s_address0  |  33|          6|    9|         54|
+    |mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minNumMatchLayers_s_address1  |  33|          6|    9|         54|
+    |mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minNumMatchLayers_s_d0        |  33|          6|   32|        192|
+    |mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minNumMatchLayers_s_d1        |  33|          6|   32|        192|
+    |mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minPSLayers_s_address0        |  33|          6|    9|         54|
+    |mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minPSLayers_s_address1        |  33|          6|    9|         54|
+    |mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minPSLayers_s_d0              |  33|          6|   32|        192|
+    |mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minPSLayers_s_d1              |  33|          6|   32|        192|
+    |mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_z_s_address0                           |  33|          6|    9|         54|
+    |mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_z_s_address1                           |  33|          6|    9|         54|
+    |mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_z_s_d0                                 |  33|          6|   32|        192|
+    |mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_z_s_d1                                 |  33|          6|   32|        192|
+    +------------------------------------------------------------------------------------------+----+-----------+-----+-----------+
+    |Total                                                                                     |1353|        246|  697|       4182|
+    +------------------------------------------------------------------------------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +----------------+---+----+-----+-----------+
+    |      Name      | FF| LUT| Bits| Const Bits|
+    +----------------+---+----+-----+-----------+
+    |ap_CS_fsm       |  5|   0|    5|          0|
+    |tmp_s_reg_2248  |  9|   0|   10|          1|
+    +----------------+---+----+-----+-----------+
+    |Total           | 14|   0|   15|          1|
+    +----------------+---+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++------------------------------------------------------------------------------------------+-----+-----+------------+---------------------------------------------------------------------------------+--------------+
+|                                         RTL Ports                                        | Dir | Bits|  Protocol  |                                  Source Object                                  |    C Type    |
++------------------------------------------------------------------------------------------+-----+-----+------------+---------------------------------------------------------------------------------+--------------+
+|ap_clk                                                                                    |  in |    1| ap_ctrl_hs |                                   push_back.1                                   | return value |
+|ap_rst                                                                                    |  in |    1| ap_ctrl_hs |                                   push_back.1                                   | return value |
+|ap_start                                                                                  |  in |    1| ap_ctrl_hs |                                   push_back.1                                   | return value |
+|ap_done                                                                                   | out |    1| ap_ctrl_hs |                                   push_back.1                                   | return value |
+|ap_idle                                                                                   | out |    1| ap_ctrl_hs |                                   push_back.1                                   | return value |
+|ap_ready                                                                                  | out |    1| ap_ctrl_hs |                                   push_back.1                                   | return value |
+|ap_return                                                                                 | out |   32| ap_ctrl_hs |                                   push_back.1                                   | return value |
+|mapHLS_unsigned_int_arrayHLS_Stub_size_read                                               |  in |   32|   ap_none  |                   mapHLS_unsigned_int_arrayHLS_Stub_size_read                   |    scalar    |
+|mapHLS_unsigned_int_arrayHLS_Stub_data_first_address0                                     | out |    5|  ap_memory |                   mapHLS_unsigned_int_arrayHLS_Stub_data_first                  |     array    |
+|mapHLS_unsigned_int_arrayHLS_Stub_data_first_ce0                                          | out |    1|  ap_memory |                   mapHLS_unsigned_int_arrayHLS_Stub_data_first                  |     array    |
+|mapHLS_unsigned_int_arrayHLS_Stub_data_first_we0                                          | out |    1|  ap_memory |                   mapHLS_unsigned_int_arrayHLS_Stub_data_first                  |     array    |
+|mapHLS_unsigned_int_arrayHLS_Stub_data_first_d0                                           | out |   32|  ap_memory |                   mapHLS_unsigned_int_arrayHLS_Stub_data_first                  |     array    |
+|mapHLS_unsigned_int_arrayHLS_Stub_data_second_size_s_address0                             | out |    5|  ap_memory |               mapHLS_unsigned_int_arrayHLS_Stub_data_second_size_s              |     array    |
+|mapHLS_unsigned_int_arrayHLS_Stub_data_second_size_s_ce0                                  | out |    1|  ap_memory |               mapHLS_unsigned_int_arrayHLS_Stub_data_second_size_s              |     array    |
+|mapHLS_unsigned_int_arrayHLS_Stub_data_second_size_s_we0                                  | out |    1|  ap_memory |               mapHLS_unsigned_int_arrayHLS_Stub_data_second_size_s              |     array    |
+|mapHLS_unsigned_int_arrayHLS_Stub_data_second_size_s_d0                                   | out |   32|  ap_memory |               mapHLS_unsigned_int_arrayHLS_Stub_data_second_size_s              |     array    |
+|mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofPhi_s_address0       | out |    9|  ap_memory |    mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofPhi_s   |     array    |
+|mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofPhi_s_ce0            | out |    1|  ap_memory |    mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofPhi_s   |     array    |
+|mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofPhi_s_we0            | out |    1|  ap_memory |    mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofPhi_s   |     array    |
+|mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofPhi_s_d0             | out |   32|  ap_memory |    mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofPhi_s   |     array    |
+|mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofPhi_s_address1       | out |    9|  ap_memory |    mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofPhi_s   |     array    |
+|mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofPhi_s_ce1            | out |    1|  ap_memory |    mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofPhi_s   |     array    |
+|mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofPhi_s_we1            | out |    1|  ap_memory |    mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofPhi_s   |     array    |
+|mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofPhi_s_d1             | out |   32|  ap_memory |    mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofPhi_s   |     array    |
+|mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofZ_s_address0         | out |    9|  ap_memory |     mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofZ_s    |     array    |
+|mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofZ_s_ce0              | out |    1|  ap_memory |     mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofZ_s    |     array    |
+|mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofZ_s_we0              | out |    1|  ap_memory |     mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofZ_s    |     array    |
+|mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofZ_s_d0               | out |   32|  ap_memory |     mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofZ_s    |     array    |
+|mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofZ_s_address1         | out |    9|  ap_memory |     mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofZ_s    |     array    |
+|mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofZ_s_ce1              | out |    1|  ap_memory |     mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofZ_s    |     array    |
+|mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofZ_s_we1              | out |    1|  ap_memory |     mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofZ_s    |     array    |
+|mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofZ_s_d1               | out |   32|  ap_memory |     mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofZ_s    |     array    |
+|mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minNumMatchLayers_s_address0  | out |    9|  ap_memory | mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minNumMatchLayers_s |     array    |
+|mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minNumMatchLayers_s_ce0       | out |    1|  ap_memory | mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minNumMatchLayers_s |     array    |
+|mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minNumMatchLayers_s_we0       | out |    1|  ap_memory | mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minNumMatchLayers_s |     array    |
+|mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minNumMatchLayers_s_d0        | out |   32|  ap_memory | mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minNumMatchLayers_s |     array    |
+|mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minNumMatchLayers_s_address1  | out |    9|  ap_memory | mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minNumMatchLayers_s |     array    |
+|mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minNumMatchLayers_s_ce1       | out |    1|  ap_memory | mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minNumMatchLayers_s |     array    |
+|mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minNumMatchLayers_s_we1       | out |    1|  ap_memory | mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minNumMatchLayers_s |     array    |
+|mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minNumMatchLayers_s_d1        | out |   32|  ap_memory | mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minNumMatchLayers_s |     array    |
+|mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minPSLayers_s_address0        | out |    9|  ap_memory |    mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minPSLayers_s    |     array    |
+|mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minPSLayers_s_ce0             | out |    1|  ap_memory |    mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minPSLayers_s    |     array    |
+|mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minPSLayers_s_we0             | out |    1|  ap_memory |    mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minPSLayers_s    |     array    |
+|mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minPSLayers_s_d0              | out |   32|  ap_memory |    mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minPSLayers_s    |     array    |
+|mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minPSLayers_s_address1        | out |    9|  ap_memory |    mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minPSLayers_s    |     array    |
+|mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minPSLayers_s_ce1             | out |    1|  ap_memory |    mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minPSLayers_s    |     array    |
+|mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minPSLayers_s_we1             | out |    1|  ap_memory |    mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minPSLayers_s    |     array    |
+|mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minPSLayers_s_d1              | out |   32|  ap_memory |    mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minPSLayers_s    |     array    |
+|mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_r_s_address0                           | out |    9|  ap_memory |              mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_r_s             |     array    |
+|mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_r_s_ce0                                | out |    1|  ap_memory |              mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_r_s             |     array    |
+|mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_r_s_we0                                | out |    1|  ap_memory |              mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_r_s             |     array    |
+|mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_r_s_d0                                 | out |   32|  ap_memory |              mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_r_s             |     array    |
+|mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_r_s_address1                           | out |    9|  ap_memory |              mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_r_s             |     array    |
+|mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_r_s_ce1                                | out |    1|  ap_memory |              mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_r_s             |     array    |
+|mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_r_s_we1                                | out |    1|  ap_memory |              mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_r_s             |     array    |
+|mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_r_s_d1                                 | out |   32|  ap_memory |              mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_r_s             |     array    |
+|mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_phi_s_address0                         | out |    9|  ap_memory |             mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_phi_s            |     array    |
+|mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_phi_s_ce0                              | out |    1|  ap_memory |             mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_phi_s            |     array    |
+|mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_phi_s_we0                              | out |    1|  ap_memory |             mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_phi_s            |     array    |
+|mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_phi_s_d0                               | out |   32|  ap_memory |             mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_phi_s            |     array    |
+|mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_phi_s_address1                         | out |    9|  ap_memory |             mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_phi_s            |     array    |
+|mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_phi_s_ce1                              | out |    1|  ap_memory |             mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_phi_s            |     array    |
+|mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_phi_s_we1                              | out |    1|  ap_memory |             mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_phi_s            |     array    |
+|mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_phi_s_d1                               | out |   32|  ap_memory |             mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_phi_s            |     array    |
+|mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_z_s_address0                           | out |    9|  ap_memory |              mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_z_s             |     array    |
+|mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_z_s_ce0                                | out |    1|  ap_memory |              mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_z_s             |     array    |
+|mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_z_s_we0                                | out |    1|  ap_memory |              mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_z_s             |     array    |
+|mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_z_s_d0                                 | out |   32|  ap_memory |              mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_z_s             |     array    |
+|mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_z_s_address1                           | out |    9|  ap_memory |              mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_z_s             |     array    |
+|mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_z_s_ce1                                | out |    1|  ap_memory |              mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_z_s             |     array    |
+|mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_z_s_we1                                | out |    1|  ap_memory |              mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_z_s             |     array    |
+|mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_z_s_d1                                 | out |   32|  ap_memory |              mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_z_s             |     array    |
+|mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_layerId_s_address0                     | out |    9|  ap_memory |           mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_layerId_s          |     array    |
+|mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_layerId_s_ce0                          | out |    1|  ap_memory |           mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_layerId_s          |     array    |
+|mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_layerId_s_we0                          | out |    1|  ap_memory |           mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_layerId_s          |     array    |
+|mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_layerId_s_d0                           | out |   32|  ap_memory |           mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_layerId_s          |     array    |
+|mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_layerId_s_address1                     | out |    9|  ap_memory |           mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_layerId_s          |     array    |
+|mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_layerId_s_ce1                          | out |    1|  ap_memory |           mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_layerId_s          |     array    |
+|mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_layerId_s_we1                          | out |    1|  ap_memory |           mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_layerId_s          |     array    |
+|mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_layerId_s_d1                           | out |   32|  ap_memory |           mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_layerId_s          |     array    |
+|mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_psModule_s_address0                    | out |    9|  ap_memory |          mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_psModule_s          |     array    |
+|mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_psModule_s_ce0                         | out |    1|  ap_memory |          mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_psModule_s          |     array    |
+|mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_psModule_s_we0                         | out |    1|  ap_memory |          mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_psModule_s          |     array    |
+|mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_psModule_s_d0                          | out |    1|  ap_memory |          mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_psModule_s          |     array    |
+|mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_psModule_s_address1                    | out |    9|  ap_memory |          mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_psModule_s          |     array    |
+|mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_psModule_s_ce1                         | out |    1|  ap_memory |          mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_psModule_s          |     array    |
+|mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_psModule_s_we1                         | out |    1|  ap_memory |          mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_psModule_s          |     array    |
+|mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_psModule_s_d1                          | out |    1|  ap_memory |          mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_psModule_s          |     array    |
+|mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_barrel_s_address0                      | out |    9|  ap_memory |           mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_barrel_s           |     array    |
+|mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_barrel_s_ce0                           | out |    1|  ap_memory |           mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_barrel_s           |     array    |
+|mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_barrel_s_we0                           | out |    1|  ap_memory |           mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_barrel_s           |     array    |
+|mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_barrel_s_d0                            | out |    1|  ap_memory |           mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_barrel_s           |     array    |
+|mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_barrel_s_address1                      | out |    9|  ap_memory |           mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_barrel_s           |     array    |
+|mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_barrel_s_ce1                           | out |    1|  ap_memory |           mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_barrel_s           |     array    |
+|mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_barrel_s_we1                           | out |    1|  ap_memory |           mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_barrel_s           |     array    |
+|mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_barrel_s_d1                            | out |    1|  ap_memory |           mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_barrel_s           |     array    |
+|value_first_read                                                                          |  in |   32|   ap_none  |                                 value_first_read                                |    scalar    |
+|p_read1                                                                                   |  in |   32|   ap_none  |                                     p_read1                                     |    scalar    |
+|p_read3                                                                                   |  in |   32|   ap_none  |                                     p_read3                                     |    scalar    |
+|p_read4                                                                                   |  in |   32|   ap_none  |                                     p_read4                                     |    scalar    |
+|p_read5                                                                                   |  in |   32|   ap_none  |                                     p_read5                                     |    scalar    |
+|p_read6                                                                                   |  in |   32|   ap_none  |                                     p_read6                                     |    scalar    |
+|p_read7                                                                                   |  in |   32|   ap_none  |                                     p_read7                                     |    scalar    |
+|p_read8                                                                                   |  in |   32|   ap_none  |                                     p_read8                                     |    scalar    |
+|p_read9                                                                                   |  in |   32|   ap_none  |                                     p_read9                                     |    scalar    |
+|p_read10                                                                                  |  in |   32|   ap_none  |                                     p_read10                                    |    scalar    |
+|p_read11                                                                                  |  in |   32|   ap_none  |                                     p_read11                                    |    scalar    |
+|p_read12                                                                                  |  in |   32|   ap_none  |                                     p_read12                                    |    scalar    |
+|p_read13                                                                                  |  in |   32|   ap_none  |                                     p_read13                                    |    scalar    |
+|p_read14                                                                                  |  in |   32|   ap_none  |                                     p_read14                                    |    scalar    |
+|p_read15                                                                                  |  in |   32|   ap_none  |                                     p_read15                                    |    scalar    |
+|p_read16                                                                                  |  in |   32|   ap_none  |                                     p_read16                                    |    scalar    |
+|p_read17                                                                                  |  in |   32|   ap_none  |                                     p_read17                                    |    scalar    |
+|p_read18                                                                                  |  in |   32|   ap_none  |                                     p_read18                                    |    scalar    |
+|p_read19                                                                                  |  in |   32|   ap_none  |                                     p_read19                                    |    scalar    |
+|p_read20                                                                                  |  in |   32|   ap_none  |                                     p_read20                                    |    scalar    |
+|p_read21                                                                                  |  in |   32|   ap_none  |                                     p_read21                                    |    scalar    |
+|p_read212                                                                                 |  in |    1|   ap_none  |                                    p_read212                                    |    scalar    |
+|p_read213                                                                                 |  in |    1|   ap_none  |                                    p_read213                                    |    scalar    |
+|p_read214                                                                                 |  in |    1|   ap_none  |                                    p_read214                                    |    scalar    |
+|p_read215                                                                                 |  in |    1|   ap_none  |                                    p_read215                                    |    scalar    |
+|p_read216                                                                                 |  in |    1|   ap_none  |                                    p_read216                                    |    scalar    |
+|p_read217                                                                                 |  in |    1|   ap_none  |                                    p_read217                                    |    scalar    |
+|p_read218                                                                                 |  in |    1|   ap_none  |                                    p_read218                                    |    scalar    |
+|p_read219                                                                                 |  in |    1|   ap_none  |                                    p_read219                                    |    scalar    |
+|p_read220                                                                                 |  in |    1|   ap_none  |                                    p_read220                                    |    scalar    |
+|p_read221                                                                                 |  in |    1|   ap_none  |                                    p_read221                                    |    scalar    |
+|p_read222                                                                                 |  in |    1|   ap_none  |                                    p_read222                                    |    scalar    |
+|p_read223                                                                                 |  in |    1|   ap_none  |                                    p_read223                                    |    scalar    |
+|p_read224                                                                                 |  in |    1|   ap_none  |                                    p_read224                                    |    scalar    |
+|p_read225                                                                                 |  in |    1|   ap_none  |                                    p_read225                                    |    scalar    |
+|p_read226                                                                                 |  in |    1|   ap_none  |                                    p_read226                                    |    scalar    |
+|p_read227                                                                                 |  in |    1|   ap_none  |                                    p_read227                                    |    scalar    |
+|p_read228                                                                                 |  in |    1|   ap_none  |                                    p_read228                                    |    scalar    |
+|p_read229                                                                                 |  in |    1|   ap_none  |                                    p_read229                                    |    scalar    |
+|p_read230                                                                                 |  in |    1|   ap_none  |                                    p_read230                                    |    scalar    |
+|p_read231                                                                                 |  in |    1|   ap_none  |                                    p_read231                                    |    scalar    |
+|p_read232                                                                                 |  in |   32|   ap_none  |                                    p_read232                                    |    scalar    |
+|p_read233                                                                                 |  in |   32|   ap_none  |                                    p_read233                                    |    scalar    |
+|p_read234                                                                                 |  in |   32|   ap_none  |                                    p_read234                                    |    scalar    |
+|p_read235                                                                                 |  in |   32|   ap_none  |                                    p_read235                                    |    scalar    |
+|p_read236                                                                                 |  in |   32|   ap_none  |                                    p_read236                                    |    scalar    |
+|p_read237                                                                                 |  in |   32|   ap_none  |                                    p_read237                                    |    scalar    |
+|p_read238                                                                                 |  in |   32|   ap_none  |                                    p_read238                                    |    scalar    |
+|p_read239                                                                                 |  in |   32|   ap_none  |                                    p_read239                                    |    scalar    |
+|p_read240                                                                                 |  in |   32|   ap_none  |                                    p_read240                                    |    scalar    |
+|p_read241                                                                                 |  in |   32|   ap_none  |                                    p_read241                                    |    scalar    |
+|p_read242                                                                                 |  in |   32|   ap_none  |                                    p_read242                                    |    scalar    |
+|p_read243                                                                                 |  in |   32|   ap_none  |                                    p_read243                                    |    scalar    |
+|p_read244                                                                                 |  in |   32|   ap_none  |                                    p_read244                                    |    scalar    |
+|p_read245                                                                                 |  in |   32|   ap_none  |                                    p_read245                                    |    scalar    |
+|p_read246                                                                                 |  in |   32|   ap_none  |                                    p_read246                                    |    scalar    |
+|p_read247                                                                                 |  in |   32|   ap_none  |                                    p_read247                                    |    scalar    |
+|p_read248                                                                                 |  in |   32|   ap_none  |                                    p_read248                                    |    scalar    |
+|p_read249                                                                                 |  in |   32|   ap_none  |                                    p_read249                                    |    scalar    |
+|p_read250                                                                                 |  in |   32|   ap_none  |                                    p_read250                                    |    scalar    |
+|p_read251                                                                                 |  in |   32|   ap_none  |                                    p_read251                                    |    scalar    |
+|p_read252                                                                                 |  in |   32|   ap_none  |                                    p_read252                                    |    scalar    |
+|p_read253                                                                                 |  in |   32|   ap_none  |                                    p_read253                                    |    scalar    |
+|p_read254                                                                                 |  in |   32|   ap_none  |                                    p_read254                                    |    scalar    |
+|p_read255                                                                                 |  in |   32|   ap_none  |                                    p_read255                                    |    scalar    |
+|p_read256                                                                                 |  in |   32|   ap_none  |                                    p_read256                                    |    scalar    |
+|p_read257                                                                                 |  in |   32|   ap_none  |                                    p_read257                                    |    scalar    |
+|p_read258                                                                                 |  in |   32|   ap_none  |                                    p_read258                                    |    scalar    |
+|p_read259                                                                                 |  in |   32|   ap_none  |                                    p_read259                                    |    scalar    |
+|p_read260                                                                                 |  in |   32|   ap_none  |                                    p_read260                                    |    scalar    |
+|p_read261                                                                                 |  in |   32|   ap_none  |                                    p_read261                                    |    scalar    |
+|p_read262                                                                                 |  in |    1|   ap_none  |                                    p_read262                                    |    scalar    |
+|p_read263                                                                                 |  in |    1|   ap_none  |                                    p_read263                                    |    scalar    |
+|p_read264                                                                                 |  in |    1|   ap_none  |                                    p_read264                                    |    scalar    |
+|p_read265                                                                                 |  in |    1|   ap_none  |                                    p_read265                                    |    scalar    |
+|p_read266                                                                                 |  in |    1|   ap_none  |                                    p_read266                                    |    scalar    |
+|p_read267                                                                                 |  in |    1|   ap_none  |                                    p_read267                                    |    scalar    |
+|p_read268                                                                                 |  in |    1|   ap_none  |                                    p_read268                                    |    scalar    |
+|p_read269                                                                                 |  in |    1|   ap_none  |                                    p_read269                                    |    scalar    |
+|p_read270                                                                                 |  in |    1|   ap_none  |                                    p_read270                                    |    scalar    |
+|p_read271                                                                                 |  in |    1|   ap_none  |                                    p_read271                                    |    scalar    |
+|p_read272                                                                                 |  in |    1|   ap_none  |                                    p_read272                                    |    scalar    |
+|p_read273                                                                                 |  in |    1|   ap_none  |                                    p_read273                                    |    scalar    |
+|p_read274                                                                                 |  in |    1|   ap_none  |                                    p_read274                                    |    scalar    |
+|p_read275                                                                                 |  in |    1|   ap_none  |                                    p_read275                                    |    scalar    |
+|p_read276                                                                                 |  in |    1|   ap_none  |                                    p_read276                                    |    scalar    |
+|p_read277                                                                                 |  in |    1|   ap_none  |                                    p_read277                                    |    scalar    |
+|p_read278                                                                                 |  in |    1|   ap_none  |                                    p_read278                                    |    scalar    |
+|p_read279                                                                                 |  in |    1|   ap_none  |                                    p_read279                                    |    scalar    |
+|p_read280                                                                                 |  in |    1|   ap_none  |                                    p_read280                                    |    scalar    |
+|p_read281                                                                                 |  in |    1|   ap_none  |                                    p_read281                                    |    scalar    |
+|p_read282                                                                                 |  in |    1|   ap_none  |                                    p_read282                                    |    scalar    |
+|p_read283                                                                                 |  in |    1|   ap_none  |                                    p_read283                                    |    scalar    |
+|p_read284                                                                                 |  in |    1|   ap_none  |                                    p_read284                                    |    scalar    |
+|p_read285                                                                                 |  in |    1|   ap_none  |                                    p_read285                                    |    scalar    |
+|p_read286                                                                                 |  in |    1|   ap_none  |                                    p_read286                                    |    scalar    |
+|p_read287                                                                                 |  in |    1|   ap_none  |                                    p_read287                                    |    scalar    |
+|p_read288                                                                                 |  in |    1|   ap_none  |                                    p_read288                                    |    scalar    |
+|p_read289                                                                                 |  in |    1|   ap_none  |                                    p_read289                                    |    scalar    |
+|p_read290                                                                                 |  in |    1|   ap_none  |                                    p_read290                                    |    scalar    |
+|p_read291                                                                                 |  in |    1|   ap_none  |                                    p_read291                                    |    scalar    |
++------------------------------------------------------------------------------------------+-----+-----+------------+---------------------------------------------------------------------------------+--------------+
+

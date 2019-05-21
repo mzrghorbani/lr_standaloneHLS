@@ -1,0 +1,148 @@
+
+
+================================================================
+== Vivado HLS Report for 'has_key'
+================================================================
+* Date:           Tue May 21 18:43:55 2019
+
+* Version:        2018.3 (Build 2405991 on Thu Dec 06 23:56:15 MST 2018)
+* Project:        lr_standaloneHLS
+* Solution:       solution1
+* Product family: kintexu
+* Target device:  xcku115-flvb2104-2-e
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |  10.00|     2.673|        1.25|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-----+-----+-----+-----+---------+
+    |  Latency  |  Interval | Pipeline|
+    | min | max | min | max |   Type  |
+    +-----+-----+-----+-----+---------+
+    |    ?|    ?|    ?|    ?|   none  |
+    +-----+-----+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +----------+-----+-----+----------+-----------+-----------+------+----------+
+        |          |  Latency  | Iteration|  Initiation Interval  | Trip |          |
+        | Loop Name| min | max |  Latency |  achieved |   target  | Count| Pipelined|
+        +----------+-----+-----+----------+-----------+-----------+------+----------+
+        |- Loop 1  |    ?|    ?|         2|          -|          -|     ?|    no    |
+        +----------+-----+-----+----------+-----------+-----------+------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 3
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 
+	2  / true
+2 --> 
+	3  / true
+3 --> 
+	2  / (tmp & !tmp_5)
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 0.83>
+ST_1 : Operation 4 [1/1] (0.00ns)   --->   "%idx_read_1 = call i32 @_ssdm_op_Read.ap_auto.i32(i32 %idx_read)" [lr_standaloneHLS/.settings/LRutilityHLS.h:150]   --->   Operation 4 'read' 'idx_read_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 5 [1/1] (0.00ns)   --->   "%mapHLS_size_read = call i32 @_ssdm_op_Read.ap_auto.i32(i32 %mapHLS_unsigned_int_arrayHLS_Stub_size_read)" [lr_standaloneHLS/.settings/LRutilityHLS.h:150]   --->   Operation 5 'read' 'mapHLS_size_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 6 [1/1] (0.83ns)   --->   "br label %1" [lr_standaloneHLS/.settings/LRutilityHLS.h:151]   --->   Operation 6 'br' <Predicate = true> <Delay = 0.83>
+
+State 2 <SV = 1> <Delay = 1.97>
+ST_2 : Operation 7 [1/1] (0.00ns)   --->   "%i = phi i32 [ 0, %0 ], [ %i_1, %2 ]"   --->   Operation 7 'phi' 'i' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 8 [1/1] (1.14ns)   --->   "%tmp = icmp ult i32 %i, %mapHLS_size_read" [lr_standaloneHLS/.settings/LRutilityHLS.h:151]   --->   Operation 8 'icmp' 'tmp' <Predicate = true> <Delay = 1.14> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.14> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 9 [1/1] (1.48ns)   --->   "%i_1 = add i32 %i, 1" [lr_standaloneHLS/.settings/LRutilityHLS.h:151]   --->   Operation 9 'add' 'i_1' <Predicate = true> <Delay = 1.48> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.48> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 10 [1/1] (0.83ns)   --->   "br i1 %tmp, label %2, label %._crit_edge" [lr_standaloneHLS/.settings/LRutilityHLS.h:151]   --->   Operation 10 'br' <Predicate = true> <Delay = 0.83>
+ST_2 : Operation 11 [1/1] (0.00ns)   --->   "%tmp_s = zext i32 %i to i64" [lr_standaloneHLS/.settings/LRutilityHLS.h:152]   --->   Operation 11 'zext' 'tmp_s' <Predicate = (tmp)> <Delay = 0.00>
+ST_2 : Operation 12 [1/1] (0.00ns)   --->   "%mapHLS_data_first_a = getelementptr [30 x i32]* %mapHLS_unsigned_int_arrayHLS_Stub_data_first, i64 0, i64 %tmp_s" [lr_standaloneHLS/.settings/LRutilityHLS.h:152]   --->   Operation 12 'getelementptr' 'mapHLS_data_first_a' <Predicate = (tmp)> <Delay = 0.00>
+ST_2 : Operation 13 [2/2] (0.69ns)   --->   "%mapHLS_data_first_l = load i32* %mapHLS_data_first_a, align 4" [lr_standaloneHLS/.settings/LRutilityHLS.h:152]   --->   Operation 13 'load' 'mapHLS_data_first_l' <Predicate = (tmp)> <Delay = 0.69> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 0.69> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 30> <RAM>
+
+State 3 <SV = 2> <Delay = 2.67>
+ST_3 : Operation 14 [1/2] (0.69ns)   --->   "%mapHLS_data_first_l = load i32* %mapHLS_data_first_a, align 4" [lr_standaloneHLS/.settings/LRutilityHLS.h:152]   --->   Operation 14 'load' 'mapHLS_data_first_l' <Predicate = (tmp)> <Delay = 0.69> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 0.69> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 30> <RAM>
+ST_3 : Operation 15 [1/1] (1.14ns)   --->   "%tmp_5 = icmp eq i32 %mapHLS_data_first_l, %idx_read_1" [lr_standaloneHLS/.settings/LRutilityHLS.h:152]   --->   Operation 15 'icmp' 'tmp_5' <Predicate = (tmp)> <Delay = 1.14> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.14> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 16 [1/1] (0.83ns)   --->   "br i1 %tmp_5, label %._crit_edge, label %1" [lr_standaloneHLS/.settings/LRutilityHLS.h:152]   --->   Operation 16 'br' <Predicate = (tmp)> <Delay = 0.83>
+ST_3 : Operation 17 [1/1] (0.00ns)   --->   "%p_0 = phi i1 [ false, %1 ], [ true, %2 ]"   --->   Operation 17 'phi' 'p_0' <Predicate = (tmp_5) | (!tmp)> <Delay = 0.00>
+ST_3 : Operation 18 [1/1] (0.00ns)   --->   "ret i1 %p_0" [lr_standaloneHLS/.settings/LRutilityHLS.h:157]   --->   Operation 18 'ret' <Predicate = (tmp_5) | (!tmp)> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10ns, clock uncertainty: 1.25ns.
+
+ <State 1>: 0.835ns
+The critical path consists of the following:
+	multiplexor before 'phi' operation ('i') with incoming values : ('i', lr_standaloneHLS/.settings/LRutilityHLS.h:151) [8]  (0.835 ns)
+
+ <State 2>: 1.97ns
+The critical path consists of the following:
+	'phi' operation ('i') with incoming values : ('i', lr_standaloneHLS/.settings/LRutilityHLS.h:151) [8]  (0 ns)
+	'icmp' operation ('tmp', lr_standaloneHLS/.settings/LRutilityHLS.h:151) [9]  (1.14 ns)
+	multiplexor before 'phi' operation ('p_0') [19]  (0.835 ns)
+
+ <State 3>: 2.67ns
+The critical path consists of the following:
+	'load' operation ('mapHLS_data_first_l', lr_standaloneHLS/.settings/LRutilityHLS.h:152) on array 'mapHLS_unsigned_int_arrayHLS_Stub_data_first' [15]  (0.698 ns)
+	'icmp' operation ('tmp_5', lr_standaloneHLS/.settings/LRutilityHLS.h:152) [16]  (1.14 ns)
+	multiplexor before 'phi' operation ('p_0') [19]  (0.835 ns)
+	'phi' operation ('p_0') [19]  (0 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

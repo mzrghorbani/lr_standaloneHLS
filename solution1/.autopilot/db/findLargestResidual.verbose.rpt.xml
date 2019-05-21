@@ -1,0 +1,552 @@
+<profile>
+
+<section name = "Vivado HLS Report for 'findLargestResidual'" level="0">
+<item name = "Date">Tue May 21 18:44:47 2019
+</item>
+<item name = "Version">2018.3 (Build 2405991 on Thu Dec 06 23:56:15 MST 2018)</item>
+<item name = "Project">lr_standaloneHLS</item>
+<item name = "Solution">solution1</item>
+<item name = "Product family">kintexu</item>
+<item name = "Target device">xcku115-flvb2104-2-e</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing (ns)">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">10.00, 8.208, 1.25</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency (clock cycles)">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">, min, max, min, max, Type</keys>
+<column name="">?, ?, ?, ?, none</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="7">Instance, Module, min, max, min, max, Type</keys>
+<column name="grp_push_back_1_fu_1562">push_back_1, 4, 4, 4, 4, none</column>
+<column name="grp_countStubLayers_fu_1712">countStubLayers, ?, ?, ?, ?, none</column>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+<column name="- Loop 1">?, ?, ?, -, -, ?, no</column>
+<column name=" + Loop 1.1">?, ?, ?, -, -, ?, no</column>
+<column name="  ++ Loop 1.1.1">?, ?, 2, -, -, ?, no</column>
+<column name="  ++ Loop 1.1.2">?, ?, 2, -, -, ?, no</column>
+<column name="  ++ Loop 1.1.3">9, 9, 1, -, -, 10, no</column>
+<column name="  ++ Loop 1.1.4">?, ?, 2, -, -, ?, no</column>
+<column name="  ++ Loop 1.1.5">?, ?, 2, -, -, ?, no</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Utilization Estimates" level="0">
+<item name = "Summary"><table name="" hasTotal="1">
+<keys size="5">Name, BRAM_18K, DSP48E, FF, LUT</keys>
+<column name="DSP">-, -, -, -</column>
+<column name="Expression">-, -, 0, 928</column>
+<column name="FIFO">-, -, -, -</column>
+<column name="Instance">0, 4, 649, 2474</column>
+<column name="Memory">0, -, 330, 30</column>
+<column name="Multiplexer">-, -, -, 1395</column>
+<column name="Register">-, -, 2878, -</column>
+<specialColumn name="Available SLR">2160, 2760, 663360, 331680</specialColumn>
+<specialColumn name="Utilization SLR (%)">0, ~0, ~0, 1</specialColumn>
+<specialColumn name="Available">4320, 5520, 1326720, 663360</specialColumn>
+<specialColumn name="Utilization (%)">0, ~0, ~0, ~0</specialColumn>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="1">
+<keys size="6">Instance, Module, BRAM_18K, DSP48E, FF, LUT</keys>
+<column name="LRupdateHLS_fadd_32ns_32ns_32_4_full_dsp_1_U341">LRupdateHLS_fadd_32ns_32ns_32_4_full_dsp_1, 0, 2, 227, 214</column>
+<column name="LRupdateHLS_fadd_32ns_32ns_32_4_full_dsp_1_U342">LRupdateHLS_fadd_32ns_32ns_32_4_full_dsp_1, 0, 2, 227, 214</column>
+<column name="LRupdateHLS_fcmp_32ns_32ns_1_1_1_U343">LRupdateHLS_fcmp_32ns_32ns_1_1_1, 0, 0, 66, 72</column>
+<column name="grp_countStubLayers_fu_1712">countStubLayers, 0, 0, 115, 419</column>
+<column name="grp_push_back_1_fu_1562">push_back_1, 0, 0, 14, 1555</column>
+</table>
+</item>
+<item name = "DSP48"><table name="" hasTotal="0">
+<keys size="3">Instance, Module, Expression</keys>
+</table>
+</item>
+<item name = "Memory"><table name="" hasTotal="1">
+<keys size="9">Memory, Module, BRAM_18K, FF, LUT, Words, Bits, Banks, W*Bits*Banks</keys>
+<column name="b_data_settings_ch_U">initFit_b_data_settings_ch, 0, 64, 5, 10, 32, 1, 320</column>
+<column name="b_data_settings_ch_131_U">initFit_b_data_settings_ch, 0, 64, 5, 10, 32, 1, 320</column>
+<column name="b_data_r_assign_U">initFit_b_data_settings_ch, 0, 64, 5, 10, 32, 1, 320</column>
+<column name="b_data_phi_assign_U">initFit_b_data_settings_ch, 0, 64, 5, 10, 32, 1, 320</column>
+<column name="b_data_z_assign_U">initFit_b_data_settings_ch, 0, 64, 5, 10, 32, 1, 320</column>
+<column name="b_data_settings_mi_U">initFit_b_data_settings_mi, 0, 2, 1, 10, 1, 1, 10</column>
+<column name="b_data_settings_mi_131_U">initFit_b_data_settings_mi, 0, 2, 1, 10, 1, 1, 10</column>
+<column name="b_data_layerId_ass_U">initFit_b_data_settings_mi, 0, 2, 1, 10, 1, 1, 10</column>
+<column name="b_data_psModule_as_U">initFit_b_data_settings_mi, 0, 2, 1, 10, 1, 1, 10</column>
+<column name="b_data_barrel_assi_U">initFit_b_data_settings_mi, 0, 2, 1, 10, 1, 1, 10</column>
+</table>
+</item>
+<item name = "FIFO"><table name="" hasTotal="1">
+<keys size="7">Name, BRAM_18K, FF, LUT, Depth, Bits, Size:D*B</keys>
+</table>
+</item>
+<item name = "Expression"><table name="" hasTotal="1">
+<keys size="7">Variable Name, Operation, DSP48E, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
+<column name="i_7_fu_1982_p2">+, 0, 0, 39, 32, 1</column>
+<column name="i_8_fu_2163_p2">+, 0, 0, 39, 32, 1</column>
+<column name="i_9_fu_2179_p2">+, 0, 0, 39, 32, 1</column>
+<column name="i_fu_1998_p2">+, 0, 0, 39, 32, 1</column>
+<column name="mapHLS_size_write_a_fu_2195_p2">+, 0, 0, 39, 32, 1</column>
+<column name="p_rec1_fu_1846_p2">+, 0, 0, 39, 1, 32</column>
+<column name="p_rec_fu_1966_p2">+, 0, 0, 39, 1, 32</column>
+<column name="tmp_130_fu_2009_p2">+, 0, 0, 12, 4, 1</column>
+<column name="tmp_145_fu_1835_p2">+, 0, 0, 17, 10, 10</column>
+<column name="tmp_146_fu_1947_p2">+, 0, 0, 17, 10, 10</column>
+<column name="tmp_149_fu_2059_p2">+, 0, 0, 22, 10, 10</column>
+<column name="tmp_150_fu_2069_p2">+, 0, 0, 22, 10, 10</column>
+<column name="tmp_93_i_fu_2118_p2">+, 0, 0, 39, 5, 32</column>
+<column name="tmp_i1_fu_2112_p2">+, 0, 0, 39, 4, 32</column>
+<column name="ap_block_state20_on_subcall_done">and, 0, 0, 2, 1, 1</column>
+<column name="or_cond_fu_1972_p2">and, 0, 0, 2, 1, 1</column>
+<column name="sel_tmp_i_fu_2124_p2">and, 0, 0, 2, 1, 1</column>
+<column name="tmp3_fu_1938_p2">and, 0, 0, 2, 1, 1</column>
+<column name="tmp_162_fu_2281_p2">and, 0, 0, 2, 1, 1</column>
+<column name="tmp_164_fu_2287_p2">and, 0, 0, 2, 1, 1</column>
+<column name="grp_fu_1754_p2">icmp, 0, 0, 20, 32, 32</column>
+<column name="grp_fu_1759_p2">icmp, 0, 0, 20, 32, 32</column>
+<column name="layerCritical_0_not_fu_1914_p2">icmp, 0, 0, 20, 32, 3</column>
+<column name="notPurged_fu_1903_p2">icmp, 0, 0, 20, 32, 32</column>
+<column name="notlhs9_fu_2263_p2">icmp, 0, 0, 11, 8, 2</column>
+<column name="notlhs_fu_2245_p2">icmp, 0, 0, 11, 8, 2</column>
+<column name="notrhs5_fu_2269_p2">icmp, 0, 0, 20, 23, 1</column>
+<column name="notrhs_fu_2251_p2">icmp, 0, 0, 20, 23, 1</column>
+<column name="psCritical_0_not_not_fu_1932_p2">icmp, 0, 0, 20, 32, 2</column>
+<column name="single_0_not_fu_1908_p2">icmp, 0, 0, 20, 32, 1</column>
+<column name="tmp_111_not_i_fu_2094_p2">icmp, 0, 0, 20, 32, 5</column>
+<column name="tmp_122_fu_1764_p2">icmp, 0, 0, 20, 32, 3</column>
+<column name="tmp_125_fu_1961_p2">icmp, 0, 0, 20, 32, 32</column>
+<column name="tmp_126_fu_1993_p2">icmp, 0, 0, 20, 32, 32</column>
+<column name="tmp_132_fu_2029_p2">icmp, 0, 0, 9, 4, 4</column>
+<column name="tmp_134_fu_2174_p2">icmp, 0, 0, 20, 32, 32</column>
+<column name="tmp_137_fu_2205_p2">icmp, 0, 0, 20, 32, 1</column>
+<column name="tmp_i3_fu_2158_p2">icmp, 0, 0, 20, 32, 32</column>
+<column name="tmp_i_fu_1977_p2">icmp, 0, 0, 20, 32, 32</column>
+<column name="tmp_not_i_fu_2082_p2">icmp, 0, 0, 20, 32, 5</column>
+<column name="tmp_s_fu_1841_p2">icmp, 0, 0, 20, 32, 32</column>
+<column name="ap_predicate_op482_call_state20">or, 0, 0, 2, 1, 1</column>
+<column name="brmerge2_fu_1926_p2">or, 0, 0, 2, 1, 1</column>
+<column name="brmerge3_i_fu_2106_p2">or, 0, 0, 2, 1, 1</column>
+<column name="brmerge_i_fu_2088_p2">or, 0, 0, 2, 1, 1</column>
+<column name="sel_tmp1_i_fu_2130_p2">or, 0, 0, 2, 1, 1</column>
+<column name="sel_tmp5_demorgan_i_fu_2144_p2">or, 0, 0, 2, 1, 1</column>
+<column name="tmp2_fu_1920_p2">or, 0, 0, 2, 1, 1</column>
+<column name="tmp_160_fu_2257_p2">or, 0, 0, 2, 1, 1</column>
+<column name="tmp_161_fu_2275_p2">or, 0, 0, 2, 1, 1</column>
+<column name="idx_read_assign_4_fu_2150_p3">select, 0, 0, 32, 1, 32</column>
+<column name="sel_tmp2_i_fu_2136_p3">select, 0, 0, 32, 1, 32</column>
+<column name="stub_psModule_read_s_fu_2100_p2">xor, 0, 0, 2, 2, 1</column>
+</table>
+</item>
+<item name = "Multiplexer"><table name="" hasTotal="1">
+<keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
+<column name="LinearRegression_lar_6_fu_154">9, 2, 32, 64</column>
+<column name="LinearRegression_lar_7_fu_150">9, 2, 32, 64</column>
+<column name="LinearRegression_lar_8_fu_146">9, 2, 32, 64</column>
+<column name="LinearRegression_lar_9_fu_142">9, 2, 1, 2</column>
+<column name="LinearRegression_lar_fu_158">9, 2, 32, 64</column>
+<column name="LinearRegression_lay_29_reg_1502">9, 2, 32, 64</column>
+<column name="LinearRegression_lay_2_reg_1523">9, 2, 32, 64</column>
+<column name="LinearRegression_lay_fu_134">9, 2, 32, 64</column>
+<column name="LinearRegression_layerPopulation_data_first_address0">21, 4, 5, 20</column>
+<column name="LinearRegression_layerPopulation_data_second_address0">15, 3, 5, 15</column>
+<column name="LinearRegression_residuals_data_second_data_ps_address0">15, 3, 9, 27</column>
+<column name="LinearRegression_stu_410_reg_1459">9, 2, 32, 64</column>
+<column name="LinearRegression_stu_7_reg_1512">9, 2, 32, 64</column>
+<column name="LinearRegression_stu_fu_138">9, 2, 32, 64</column>
+<column name="LinearRegression_stubMap_data_first_address0">21, 4, 5, 20</column>
+<column name="LinearRegression_stubMap_data_first_ce0">15, 3, 1, 3</column>
+<column name="LinearRegression_stubMap_data_first_we0">9, 2, 1, 2</column>
+<column name="LinearRegression_stubMap_data_second_data_barrel_s_address0">15, 3, 9, 27</column>
+<column name="LinearRegression_stubMap_data_second_data_barrel_s_ce0">15, 3, 1, 3</column>
+<column name="LinearRegression_stubMap_data_second_data_barrel_s_ce1">9, 2, 1, 2</column>
+<column name="LinearRegression_stubMap_data_second_data_barrel_s_we0">9, 2, 1, 2</column>
+<column name="LinearRegression_stubMap_data_second_data_barrel_s_we1">9, 2, 1, 2</column>
+<column name="LinearRegression_stubMap_data_second_data_layerId_s_address0">15, 3, 9, 27</column>
+<column name="LinearRegression_stubMap_data_second_data_layerId_s_ce0">15, 3, 1, 3</column>
+<column name="LinearRegression_stubMap_data_second_data_layerId_s_ce1">9, 2, 1, 2</column>
+<column name="LinearRegression_stubMap_data_second_data_layerId_s_we0">9, 2, 1, 2</column>
+<column name="LinearRegression_stubMap_data_second_data_layerId_s_we1">9, 2, 1, 2</column>
+<column name="LinearRegression_stubMap_data_second_data_psModule_s_address0">15, 3, 9, 27</column>
+<column name="LinearRegression_stubMap_data_second_data_psModule_s_ce0">15, 3, 1, 3</column>
+<column name="LinearRegression_stubMap_data_second_data_psModule_s_ce1">9, 2, 1, 2</column>
+<column name="LinearRegression_stubMap_data_second_data_psModule_s_we0">9, 2, 1, 2</column>
+<column name="LinearRegression_stubMap_data_second_data_psModule_s_we1">9, 2, 1, 2</column>
+<column name="LinearRegression_stubs_data_barrel_s_ce0">9, 2, 1, 2</column>
+<column name="LinearRegression_stubs_data_layerId_s_ce0">9, 2, 1, 2</column>
+<column name="LinearRegression_stubs_data_psModule_s_ce0">9, 2, 1, 2</column>
+<column name="ap_NS_fsm">157, 35, 1, 35</column>
+<column name="ap_phi_mux_p_pn_in_i3_phi_fu_1495_p4">9, 2, 32, 64</column>
+<column name="b_data_barrel_assi_address0">38, 7, 4, 28</column>
+<column name="b_data_barrel_assi_address1">33, 6, 4, 24</column>
+<column name="b_data_layerId_ass_address0">38, 7, 4, 28</column>
+<column name="b_data_layerId_ass_address1">33, 6, 4, 24</column>
+<column name="b_data_phi_assign_address0">38, 7, 4, 28</column>
+<column name="b_data_phi_assign_address1">33, 6, 4, 24</column>
+<column name="b_data_psModule_as_address0">38, 7, 4, 28</column>
+<column name="b_data_psModule_as_address1">33, 6, 4, 24</column>
+<column name="b_data_r_assign_address0">38, 7, 4, 28</column>
+<column name="b_data_r_assign_address1">33, 6, 4, 24</column>
+<column name="b_data_settings_ch_131_address0">38, 7, 4, 28</column>
+<column name="b_data_settings_ch_131_address1">33, 6, 4, 24</column>
+<column name="b_data_settings_ch_address0">38, 7, 4, 28</column>
+<column name="b_data_settings_ch_address1">33, 6, 4, 24</column>
+<column name="b_data_settings_mi_131_address0">38, 7, 4, 28</column>
+<column name="b_data_settings_mi_131_address1">33, 6, 4, 24</column>
+<column name="b_data_settings_mi_address0">38, 7, 4, 28</column>
+<column name="b_data_settings_mi_address1">33, 6, 4, 24</column>
+<column name="b_data_z_assign_address0">38, 7, 4, 28</column>
+<column name="b_data_z_assign_address1">33, 6, 4, 24</column>
+<column name="grp_countStubLayers_fu_1712_onlySeed">15, 3, 1, 3</column>
+<column name="i_0_i9_reg_1480">9, 2, 32, 64</column>
+<column name="i_0_i_reg_1426">9, 2, 32, 64</column>
+<column name="i_i2_reg_1469">9, 2, 32, 64</column>
+<column name="i_i_reg_1415">9, 2, 32, 64</column>
+<column name="p_begin2_0_rec_reg_1404">9, 2, 32, 64</column>
+<column name="p_begin_0_rec_reg_1393">9, 2, 32, 64</column>
+<column name="p_pn_in_i3_reg_1492">9, 2, 32, 64</column>
+<column name="p_pn_in_i_reg_1449">9, 2, 32, 64</column>
+<column name="temp_4_be_reg_1548">15, 3, 32, 96</column>
+<column name="temp_be_reg_1534">15, 3, 32, 96</column>
+<column name="tmp_129_reg_1438">9, 2, 4, 8</column>
+</table>
+</item>
+<item name = "Register"><table name="" hasTotal="1">
+<keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
+<column name="LinearRegression_lar_6_fu_154">32, 0, 32, 0</column>
+<column name="LinearRegression_lar_7_fu_150">32, 0, 32, 0</column>
+<column name="LinearRegression_lar_8_fu_146">32, 0, 32, 0</column>
+<column name="LinearRegression_lar_9_fu_142">1, 0, 1, 0</column>
+<column name="LinearRegression_lar_fu_158">32, 0, 32, 0</column>
+<column name="LinearRegression_lay_29_reg_1502">32, 0, 32, 0</column>
+<column name="LinearRegression_lay_2_reg_1523">32, 0, 32, 0</column>
+<column name="LinearRegression_lay_fu_134">32, 0, 32, 0</column>
+<column name="LinearRegression_res_10_reg_2986">32, 0, 32, 0</column>
+<column name="LinearRegression_res_12_reg_3617">32, 0, 32, 0</column>
+<column name="LinearRegression_res_13_reg_3623">32, 0, 32, 0</column>
+<column name="LinearRegression_res_1_reg_2896">5, 0, 5, 0</column>
+<column name="LinearRegression_res_3_reg_2914">32, 0, 32, 0</column>
+<column name="LinearRegression_res_4_reg_2949">9, 0, 9, 0</column>
+<column name="LinearRegression_res_5_reg_2954">9, 0, 9, 0</column>
+<column name="LinearRegression_res_6_reg_2959">9, 0, 9, 0</column>
+<column name="LinearRegression_res_7_reg_2964">9, 0, 9, 0</column>
+<column name="LinearRegression_res_8_reg_2969">9, 0, 9, 0</column>
+<column name="LinearRegression_stu_410_reg_1459">32, 0, 32, 0</column>
+<column name="LinearRegression_stu_7_reg_1512">32, 0, 32, 0</column>
+<column name="LinearRegression_stu_fu_138">32, 0, 32, 0</column>
+<column name="ap_CS_fsm">34, 0, 34, 0</column>
+<column name="b_data_barrel_assi_76_reg_3079">1, 0, 1, 0</column>
+<column name="b_data_barrel_assi_77_reg_3129">1, 0, 1, 0</column>
+<column name="b_data_barrel_assi_78_reg_3179">1, 0, 1, 0</column>
+<column name="b_data_barrel_assi_79_reg_3229">1, 0, 1, 0</column>
+<column name="b_data_barrel_assi_80_reg_3279">1, 0, 1, 0</column>
+<column name="b_data_barrel_assi_81_reg_3329">1, 0, 1, 0</column>
+<column name="b_data_barrel_assi_82_reg_3379">1, 0, 1, 0</column>
+<column name="b_data_barrel_assi_83_reg_3429">1, 0, 1, 0</column>
+<column name="b_data_barrel_assi_84_reg_3479">1, 0, 1, 0</column>
+<column name="b_data_barrel_assi_85_reg_3529">1, 0, 1, 0</column>
+<column name="b_data_layerId_ass_76_reg_3069">1, 0, 1, 0</column>
+<column name="b_data_layerId_ass_77_reg_3119">1, 0, 1, 0</column>
+<column name="b_data_layerId_ass_78_reg_3169">1, 0, 1, 0</column>
+<column name="b_data_layerId_ass_79_reg_3219">1, 0, 1, 0</column>
+<column name="b_data_layerId_ass_80_reg_3269">1, 0, 1, 0</column>
+<column name="b_data_layerId_ass_81_reg_3319">1, 0, 1, 0</column>
+<column name="b_data_layerId_ass_82_reg_3369">1, 0, 1, 0</column>
+<column name="b_data_layerId_ass_83_reg_3419">1, 0, 1, 0</column>
+<column name="b_data_layerId_ass_84_reg_3469">1, 0, 1, 0</column>
+<column name="b_data_layerId_ass_85_reg_3519">1, 0, 1, 0</column>
+<column name="b_data_phi_assign_72_reg_3059">32, 0, 32, 0</column>
+<column name="b_data_phi_assign_73_reg_3109">32, 0, 32, 0</column>
+<column name="b_data_phi_assign_74_reg_3159">32, 0, 32, 0</column>
+<column name="b_data_phi_assign_75_reg_3209">32, 0, 32, 0</column>
+<column name="b_data_phi_assign_76_reg_3259">32, 0, 32, 0</column>
+<column name="b_data_phi_assign_77_reg_3309">32, 0, 32, 0</column>
+<column name="b_data_phi_assign_78_reg_3359">32, 0, 32, 0</column>
+<column name="b_data_phi_assign_79_reg_3409">32, 0, 32, 0</column>
+<column name="b_data_phi_assign_80_reg_3459">32, 0, 32, 0</column>
+<column name="b_data_phi_assign_81_reg_3509">32, 0, 32, 0</column>
+<column name="b_data_psModule_as_76_reg_3074">1, 0, 1, 0</column>
+<column name="b_data_psModule_as_77_reg_3124">1, 0, 1, 0</column>
+<column name="b_data_psModule_as_78_reg_3174">1, 0, 1, 0</column>
+<column name="b_data_psModule_as_79_reg_3224">1, 0, 1, 0</column>
+<column name="b_data_psModule_as_80_reg_3274">1, 0, 1, 0</column>
+<column name="b_data_psModule_as_81_reg_3324">1, 0, 1, 0</column>
+<column name="b_data_psModule_as_82_reg_3374">1, 0, 1, 0</column>
+<column name="b_data_psModule_as_83_reg_3424">1, 0, 1, 0</column>
+<column name="b_data_psModule_as_84_reg_3474">1, 0, 1, 0</column>
+<column name="b_data_psModule_as_85_reg_3524">1, 0, 1, 0</column>
+<column name="b_data_r_assign_lo_19_reg_3104">32, 0, 32, 0</column>
+<column name="b_data_r_assign_lo_20_reg_3154">32, 0, 32, 0</column>
+<column name="b_data_r_assign_lo_21_reg_3204">32, 0, 32, 0</column>
+<column name="b_data_r_assign_lo_22_reg_3254">32, 0, 32, 0</column>
+<column name="b_data_r_assign_lo_23_reg_3304">32, 0, 32, 0</column>
+<column name="b_data_r_assign_lo_24_reg_3354">32, 0, 32, 0</column>
+<column name="b_data_r_assign_lo_25_reg_3404">32, 0, 32, 0</column>
+<column name="b_data_r_assign_lo_26_reg_3454">32, 0, 32, 0</column>
+<column name="b_data_r_assign_lo_27_reg_3504">32, 0, 32, 0</column>
+<column name="b_data_r_assign_lo_reg_3054">32, 0, 32, 0</column>
+<column name="b_data_settings_ch_154_reg_3034">32, 0, 32, 0</column>
+<column name="b_data_settings_ch_155_reg_3039">32, 0, 32, 0</column>
+<column name="b_data_settings_ch_156_reg_3084">32, 0, 32, 0</column>
+<column name="b_data_settings_ch_157_reg_3089">32, 0, 32, 0</column>
+<column name="b_data_settings_ch_158_reg_3134">32, 0, 32, 0</column>
+<column name="b_data_settings_ch_159_reg_3139">32, 0, 32, 0</column>
+<column name="b_data_settings_ch_160_reg_3184">32, 0, 32, 0</column>
+<column name="b_data_settings_ch_161_reg_3189">32, 0, 32, 0</column>
+<column name="b_data_settings_ch_162_reg_3234">32, 0, 32, 0</column>
+<column name="b_data_settings_ch_163_reg_3239">32, 0, 32, 0</column>
+<column name="b_data_settings_ch_164_reg_3284">32, 0, 32, 0</column>
+<column name="b_data_settings_ch_165_reg_3289">32, 0, 32, 0</column>
+<column name="b_data_settings_ch_166_reg_3334">32, 0, 32, 0</column>
+<column name="b_data_settings_ch_167_reg_3339">32, 0, 32, 0</column>
+<column name="b_data_settings_ch_168_reg_3384">32, 0, 32, 0</column>
+<column name="b_data_settings_ch_169_reg_3389">32, 0, 32, 0</column>
+<column name="b_data_settings_ch_170_reg_3434">32, 0, 32, 0</column>
+<column name="b_data_settings_ch_171_reg_3439">32, 0, 32, 0</column>
+<column name="b_data_settings_ch_172_reg_3484">32, 0, 32, 0</column>
+<column name="b_data_settings_ch_173_reg_3489">32, 0, 32, 0</column>
+<column name="b_data_settings_mi_154_reg_3044">1, 0, 1, 0</column>
+<column name="b_data_settings_mi_155_reg_3049">1, 0, 1, 0</column>
+<column name="b_data_settings_mi_156_reg_3094">1, 0, 1, 0</column>
+<column name="b_data_settings_mi_157_reg_3099">1, 0, 1, 0</column>
+<column name="b_data_settings_mi_158_reg_3144">1, 0, 1, 0</column>
+<column name="b_data_settings_mi_159_reg_3149">1, 0, 1, 0</column>
+<column name="b_data_settings_mi_160_reg_3194">1, 0, 1, 0</column>
+<column name="b_data_settings_mi_161_reg_3199">1, 0, 1, 0</column>
+<column name="b_data_settings_mi_162_reg_3244">1, 0, 1, 0</column>
+<column name="b_data_settings_mi_163_reg_3249">1, 0, 1, 0</column>
+<column name="b_data_settings_mi_164_reg_3294">1, 0, 1, 0</column>
+<column name="b_data_settings_mi_165_reg_3299">1, 0, 1, 0</column>
+<column name="b_data_settings_mi_166_reg_3344">1, 0, 1, 0</column>
+<column name="b_data_settings_mi_167_reg_3349">1, 0, 1, 0</column>
+<column name="b_data_settings_mi_168_reg_3394">1, 0, 1, 0</column>
+<column name="b_data_settings_mi_169_reg_3399">1, 0, 1, 0</column>
+<column name="b_data_settings_mi_170_reg_3444">1, 0, 1, 0</column>
+<column name="b_data_settings_mi_171_reg_3449">1, 0, 1, 0</column>
+<column name="b_data_settings_mi_172_reg_3494">1, 0, 1, 0</column>
+<column name="b_data_settings_mi_173_reg_3499">1, 0, 1, 0</column>
+<column name="b_data_z_assign_lo_19_reg_3114">32, 0, 32, 0</column>
+<column name="b_data_z_assign_lo_20_reg_3164">32, 0, 32, 0</column>
+<column name="b_data_z_assign_lo_21_reg_3214">32, 0, 32, 0</column>
+<column name="b_data_z_assign_lo_22_reg_3264">32, 0, 32, 0</column>
+<column name="b_data_z_assign_lo_23_reg_3314">32, 0, 32, 0</column>
+<column name="b_data_z_assign_lo_24_reg_3364">32, 0, 32, 0</column>
+<column name="b_data_z_assign_lo_25_reg_3414">32, 0, 32, 0</column>
+<column name="b_data_z_assign_lo_26_reg_3464">32, 0, 32, 0</column>
+<column name="b_data_z_assign_lo_27_reg_3514">32, 0, 32, 0</column>
+<column name="b_data_z_assign_lo_reg_3064">32, 0, 32, 0</column>
+<column name="brmerge2_reg_2919">1, 0, 1, 0</column>
+<column name="grp_countStubLayers_fu_1712_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_push_back_1_fu_1562_ap_start_reg">1, 0, 1, 0</column>
+<column name="i_0_i9_reg_1480">32, 0, 32, 0</column>
+<column name="i_0_i_reg_1426">32, 0, 32, 0</column>
+<column name="i_7_reg_2996">32, 0, 32, 0</column>
+<column name="i_8_reg_3564">32, 0, 32, 0</column>
+<column name="i_9_reg_3581">32, 0, 32, 0</column>
+<column name="i_i2_reg_1469">32, 0, 32, 0</column>
+<column name="i_i_reg_1415">32, 0, 32, 0</column>
+<column name="i_reg_3013">32, 0, 32, 0</column>
+<column name="idx_read_assign_4_reg_3554">32, 0, 32, 0</column>
+<column name="or_cond_reg_2982">1, 0, 1, 0</column>
+<column name="p_begin2_0_rec_reg_1404">32, 0, 32, 0</column>
+<column name="p_begin_0_rec_reg_1393">32, 0, 32, 0</column>
+<column name="p_pn_in_i3_reg_1492">32, 0, 32, 0</column>
+<column name="p_pn_in_i_reg_1449">32, 0, 32, 0</column>
+<column name="p_rec1_reg_2904">32, 0, 32, 0</column>
+<column name="p_rec_reg_2977">32, 0, 32, 0</column>
+<column name="temp_4_be_reg_1548">32, 0, 32, 0</column>
+<column name="temp_6_reg_2928">32, 0, 32, 0</column>
+<column name="temp_be_reg_1534">32, 0, 32, 0</column>
+<column name="temp_reg_2939">32, 0, 32, 0</column>
+<column name="tmp3_reg_2923">1, 0, 1, 0</column>
+<column name="tmp_122_reg_2386">1, 0, 1, 0</column>
+<column name="tmp_126_reg_3009">1, 0, 1, 0</column>
+<column name="tmp_129_reg_1438">4, 0, 4, 0</column>
+<column name="tmp_134_reg_3577">1, 0, 1, 0</column>
+<column name="tmp_145_reg_2891">9, 0, 10, 1</column>
+<column name="tmp_i3_reg_3560">1, 0, 1, 0</column>
+<column name="tmp_i8_reg_3629">32, 0, 32, 0</column>
+<column name="tmp_i9_reg_3635">32, 0, 32, 0</column>
+<column name="tmp_i_reg_2992">1, 0, 1, 0</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Interface" level="0">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">RTL Ports, Dir, Bits, Protocol, Source Object, C Type</keys>
+<column name="ap_clk">in, 1, ap_ctrl_hs, findLargestResidual, return value</column>
+<column name="ap_rst">in, 1, ap_ctrl_hs, findLargestResidual, return value</column>
+<column name="ap_start">in, 1, ap_ctrl_hs, findLargestResidual, return value</column>
+<column name="ap_done">out, 1, ap_ctrl_hs, findLargestResidual, return value</column>
+<column name="ap_idle">out, 1, ap_ctrl_hs, findLargestResidual, return value</column>
+<column name="ap_ready">out, 1, ap_ctrl_hs, findLargestResidual, return value</column>
+<column name="ap_return_0">out, 32, ap_ctrl_hs, findLargestResidual, return value</column>
+<column name="ap_return_1">out, 32, ap_ctrl_hs, findLargestResidual, return value</column>
+<column name="ap_return_2">out, 32, ap_ctrl_hs, findLargestResidual, return value</column>
+<column name="ap_return_3">out, 32, ap_ctrl_hs, findLargestResidual, return value</column>
+<column name="ap_return_4">out, 1, ap_ctrl_hs, findLargestResidual, return value</column>
+<column name="ap_return_5">out, 32, ap_ctrl_hs, findLargestResidual, return value</column>
+<column name="ap_return_6">out, 32, ap_ctrl_hs, findLargestResidual, return value</column>
+<column name="LinearRegression_stubs_size_read">in, 32, ap_none, LinearRegression_stubs_size_read, scalar</column>
+<column name="LinearRegression_stubs_data_layerId_s_address0">out, 4, ap_memory, LinearRegression_stubs_data_layerId_s, array</column>
+<column name="LinearRegression_stubs_data_layerId_s_ce0">out, 1, ap_memory, LinearRegression_stubs_data_layerId_s, array</column>
+<column name="LinearRegression_stubs_data_layerId_s_q0">in, 32, ap_memory, LinearRegression_stubs_data_layerId_s, array</column>
+<column name="LinearRegression_stubs_data_psModule_s_address0">out, 4, ap_memory, LinearRegression_stubs_data_psModule_s, array</column>
+<column name="LinearRegression_stubs_data_psModule_s_ce0">out, 1, ap_memory, LinearRegression_stubs_data_psModule_s, array</column>
+<column name="LinearRegression_stubs_data_psModule_s_q0">in, 1, ap_memory, LinearRegression_stubs_data_psModule_s, array</column>
+<column name="LinearRegression_stubs_data_barrel_s_address0">out, 4, ap_memory, LinearRegression_stubs_data_barrel_s, array</column>
+<column name="LinearRegression_stubs_data_barrel_s_ce0">out, 1, ap_memory, LinearRegression_stubs_data_barrel_s, array</column>
+<column name="LinearRegression_stubs_data_barrel_s_q0">in, 1, ap_memory, LinearRegression_stubs_data_barrel_s, array</column>
+<column name="LinearRegression_stubMap_size_read">in, 32, ap_none, LinearRegression_stubMap_size_read, scalar</column>
+<column name="LinearRegression_stubMap_data_first_address0">out, 5, ap_memory, LinearRegression_stubMap_data_first, array</column>
+<column name="LinearRegression_stubMap_data_first_ce0">out, 1, ap_memory, LinearRegression_stubMap_data_first, array</column>
+<column name="LinearRegression_stubMap_data_first_we0">out, 1, ap_memory, LinearRegression_stubMap_data_first, array</column>
+<column name="LinearRegression_stubMap_data_first_d0">out, 32, ap_memory, LinearRegression_stubMap_data_first, array</column>
+<column name="LinearRegression_stubMap_data_first_q0">in, 32, ap_memory, LinearRegression_stubMap_data_first, array</column>
+<column name="LinearRegression_stubMap_data_second_size_s_address0">out, 5, ap_memory, LinearRegression_stubMap_data_second_size_s, array</column>
+<column name="LinearRegression_stubMap_data_second_size_s_ce0">out, 1, ap_memory, LinearRegression_stubMap_data_second_size_s, array</column>
+<column name="LinearRegression_stubMap_data_second_size_s_we0">out, 1, ap_memory, LinearRegression_stubMap_data_second_size_s, array</column>
+<column name="LinearRegression_stubMap_data_second_size_s_d0">out, 32, ap_memory, LinearRegression_stubMap_data_second_size_s, array</column>
+<column name="LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_address0">out, 9, ap_memory, LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s, array</column>
+<column name="LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_ce0">out, 1, ap_memory, LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s, array</column>
+<column name="LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_we0">out, 1, ap_memory, LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s, array</column>
+<column name="LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_d0">out, 32, ap_memory, LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s, array</column>
+<column name="LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_address1">out, 9, ap_memory, LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s, array</column>
+<column name="LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_ce1">out, 1, ap_memory, LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s, array</column>
+<column name="LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_we1">out, 1, ap_memory, LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s, array</column>
+<column name="LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_d1">out, 32, ap_memory, LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s, array</column>
+<column name="LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_address0">out, 9, ap_memory, LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s, array</column>
+<column name="LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_ce0">out, 1, ap_memory, LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s, array</column>
+<column name="LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_we0">out, 1, ap_memory, LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s, array</column>
+<column name="LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_d0">out, 32, ap_memory, LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s, array</column>
+<column name="LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_address1">out, 9, ap_memory, LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s, array</column>
+<column name="LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_ce1">out, 1, ap_memory, LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s, array</column>
+<column name="LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_we1">out, 1, ap_memory, LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s, array</column>
+<column name="LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_d1">out, 32, ap_memory, LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s, array</column>
+<column name="LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_address0">out, 9, ap_memory, LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s, array</column>
+<column name="LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_ce0">out, 1, ap_memory, LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s, array</column>
+<column name="LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_we0">out, 1, ap_memory, LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s, array</column>
+<column name="LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_d0">out, 32, ap_memory, LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s, array</column>
+<column name="LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_address1">out, 9, ap_memory, LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s, array</column>
+<column name="LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_ce1">out, 1, ap_memory, LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s, array</column>
+<column name="LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_we1">out, 1, ap_memory, LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s, array</column>
+<column name="LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_d1">out, 32, ap_memory, LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s, array</column>
+<column name="LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_address0">out, 9, ap_memory, LinearRegression_stubMap_data_second_data_settings_minPSLayers_s, array</column>
+<column name="LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_ce0">out, 1, ap_memory, LinearRegression_stubMap_data_second_data_settings_minPSLayers_s, array</column>
+<column name="LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_we0">out, 1, ap_memory, LinearRegression_stubMap_data_second_data_settings_minPSLayers_s, array</column>
+<column name="LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_d0">out, 32, ap_memory, LinearRegression_stubMap_data_second_data_settings_minPSLayers_s, array</column>
+<column name="LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_address1">out, 9, ap_memory, LinearRegression_stubMap_data_second_data_settings_minPSLayers_s, array</column>
+<column name="LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_ce1">out, 1, ap_memory, LinearRegression_stubMap_data_second_data_settings_minPSLayers_s, array</column>
+<column name="LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_we1">out, 1, ap_memory, LinearRegression_stubMap_data_second_data_settings_minPSLayers_s, array</column>
+<column name="LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_d1">out, 32, ap_memory, LinearRegression_stubMap_data_second_data_settings_minPSLayers_s, array</column>
+<column name="LinearRegression_stubMap_data_second_data_r_s_address0">out, 9, ap_memory, LinearRegression_stubMap_data_second_data_r_s, array</column>
+<column name="LinearRegression_stubMap_data_second_data_r_s_ce0">out, 1, ap_memory, LinearRegression_stubMap_data_second_data_r_s, array</column>
+<column name="LinearRegression_stubMap_data_second_data_r_s_we0">out, 1, ap_memory, LinearRegression_stubMap_data_second_data_r_s, array</column>
+<column name="LinearRegression_stubMap_data_second_data_r_s_d0">out, 32, ap_memory, LinearRegression_stubMap_data_second_data_r_s, array</column>
+<column name="LinearRegression_stubMap_data_second_data_r_s_address1">out, 9, ap_memory, LinearRegression_stubMap_data_second_data_r_s, array</column>
+<column name="LinearRegression_stubMap_data_second_data_r_s_ce1">out, 1, ap_memory, LinearRegression_stubMap_data_second_data_r_s, array</column>
+<column name="LinearRegression_stubMap_data_second_data_r_s_we1">out, 1, ap_memory, LinearRegression_stubMap_data_second_data_r_s, array</column>
+<column name="LinearRegression_stubMap_data_second_data_r_s_d1">out, 32, ap_memory, LinearRegression_stubMap_data_second_data_r_s, array</column>
+<column name="LinearRegression_stubMap_data_second_data_phi_s_address0">out, 9, ap_memory, LinearRegression_stubMap_data_second_data_phi_s, array</column>
+<column name="LinearRegression_stubMap_data_second_data_phi_s_ce0">out, 1, ap_memory, LinearRegression_stubMap_data_second_data_phi_s, array</column>
+<column name="LinearRegression_stubMap_data_second_data_phi_s_we0">out, 1, ap_memory, LinearRegression_stubMap_data_second_data_phi_s, array</column>
+<column name="LinearRegression_stubMap_data_second_data_phi_s_d0">out, 32, ap_memory, LinearRegression_stubMap_data_second_data_phi_s, array</column>
+<column name="LinearRegression_stubMap_data_second_data_phi_s_address1">out, 9, ap_memory, LinearRegression_stubMap_data_second_data_phi_s, array</column>
+<column name="LinearRegression_stubMap_data_second_data_phi_s_ce1">out, 1, ap_memory, LinearRegression_stubMap_data_second_data_phi_s, array</column>
+<column name="LinearRegression_stubMap_data_second_data_phi_s_we1">out, 1, ap_memory, LinearRegression_stubMap_data_second_data_phi_s, array</column>
+<column name="LinearRegression_stubMap_data_second_data_phi_s_d1">out, 32, ap_memory, LinearRegression_stubMap_data_second_data_phi_s, array</column>
+<column name="LinearRegression_stubMap_data_second_data_z_s_address0">out, 9, ap_memory, LinearRegression_stubMap_data_second_data_z_s, array</column>
+<column name="LinearRegression_stubMap_data_second_data_z_s_ce0">out, 1, ap_memory, LinearRegression_stubMap_data_second_data_z_s, array</column>
+<column name="LinearRegression_stubMap_data_second_data_z_s_we0">out, 1, ap_memory, LinearRegression_stubMap_data_second_data_z_s, array</column>
+<column name="LinearRegression_stubMap_data_second_data_z_s_d0">out, 32, ap_memory, LinearRegression_stubMap_data_second_data_z_s, array</column>
+<column name="LinearRegression_stubMap_data_second_data_z_s_address1">out, 9, ap_memory, LinearRegression_stubMap_data_second_data_z_s, array</column>
+<column name="LinearRegression_stubMap_data_second_data_z_s_ce1">out, 1, ap_memory, LinearRegression_stubMap_data_second_data_z_s, array</column>
+<column name="LinearRegression_stubMap_data_second_data_z_s_we1">out, 1, ap_memory, LinearRegression_stubMap_data_second_data_z_s, array</column>
+<column name="LinearRegression_stubMap_data_second_data_z_s_d1">out, 32, ap_memory, LinearRegression_stubMap_data_second_data_z_s, array</column>
+<column name="LinearRegression_stubMap_data_second_data_layerId_s_address0">out, 9, ap_memory, LinearRegression_stubMap_data_second_data_layerId_s, array</column>
+<column name="LinearRegression_stubMap_data_second_data_layerId_s_ce0">out, 1, ap_memory, LinearRegression_stubMap_data_second_data_layerId_s, array</column>
+<column name="LinearRegression_stubMap_data_second_data_layerId_s_we0">out, 1, ap_memory, LinearRegression_stubMap_data_second_data_layerId_s, array</column>
+<column name="LinearRegression_stubMap_data_second_data_layerId_s_d0">out, 32, ap_memory, LinearRegression_stubMap_data_second_data_layerId_s, array</column>
+<column name="LinearRegression_stubMap_data_second_data_layerId_s_q0">in, 32, ap_memory, LinearRegression_stubMap_data_second_data_layerId_s, array</column>
+<column name="LinearRegression_stubMap_data_second_data_layerId_s_address1">out, 9, ap_memory, LinearRegression_stubMap_data_second_data_layerId_s, array</column>
+<column name="LinearRegression_stubMap_data_second_data_layerId_s_ce1">out, 1, ap_memory, LinearRegression_stubMap_data_second_data_layerId_s, array</column>
+<column name="LinearRegression_stubMap_data_second_data_layerId_s_we1">out, 1, ap_memory, LinearRegression_stubMap_data_second_data_layerId_s, array</column>
+<column name="LinearRegression_stubMap_data_second_data_layerId_s_d1">out, 32, ap_memory, LinearRegression_stubMap_data_second_data_layerId_s, array</column>
+<column name="LinearRegression_stubMap_data_second_data_psModule_s_address0">out, 9, ap_memory, LinearRegression_stubMap_data_second_data_psModule_s, array</column>
+<column name="LinearRegression_stubMap_data_second_data_psModule_s_ce0">out, 1, ap_memory, LinearRegression_stubMap_data_second_data_psModule_s, array</column>
+<column name="LinearRegression_stubMap_data_second_data_psModule_s_we0">out, 1, ap_memory, LinearRegression_stubMap_data_second_data_psModule_s, array</column>
+<column name="LinearRegression_stubMap_data_second_data_psModule_s_d0">out, 1, ap_memory, LinearRegression_stubMap_data_second_data_psModule_s, array</column>
+<column name="LinearRegression_stubMap_data_second_data_psModule_s_q0">in, 1, ap_memory, LinearRegression_stubMap_data_second_data_psModule_s, array</column>
+<column name="LinearRegression_stubMap_data_second_data_psModule_s_address1">out, 9, ap_memory, LinearRegression_stubMap_data_second_data_psModule_s, array</column>
+<column name="LinearRegression_stubMap_data_second_data_psModule_s_ce1">out, 1, ap_memory, LinearRegression_stubMap_data_second_data_psModule_s, array</column>
+<column name="LinearRegression_stubMap_data_second_data_psModule_s_we1">out, 1, ap_memory, LinearRegression_stubMap_data_second_data_psModule_s, array</column>
+<column name="LinearRegression_stubMap_data_second_data_psModule_s_d1">out, 1, ap_memory, LinearRegression_stubMap_data_second_data_psModule_s, array</column>
+<column name="LinearRegression_stubMap_data_second_data_barrel_s_address0">out, 9, ap_memory, LinearRegression_stubMap_data_second_data_barrel_s, array</column>
+<column name="LinearRegression_stubMap_data_second_data_barrel_s_ce0">out, 1, ap_memory, LinearRegression_stubMap_data_second_data_barrel_s, array</column>
+<column name="LinearRegression_stubMap_data_second_data_barrel_s_we0">out, 1, ap_memory, LinearRegression_stubMap_data_second_data_barrel_s, array</column>
+<column name="LinearRegression_stubMap_data_second_data_barrel_s_d0">out, 1, ap_memory, LinearRegression_stubMap_data_second_data_barrel_s, array</column>
+<column name="LinearRegression_stubMap_data_second_data_barrel_s_q0">in, 1, ap_memory, LinearRegression_stubMap_data_second_data_barrel_s, array</column>
+<column name="LinearRegression_stubMap_data_second_data_barrel_s_address1">out, 9, ap_memory, LinearRegression_stubMap_data_second_data_barrel_s, array</column>
+<column name="LinearRegression_stubMap_data_second_data_barrel_s_ce1">out, 1, ap_memory, LinearRegression_stubMap_data_second_data_barrel_s, array</column>
+<column name="LinearRegression_stubMap_data_second_data_barrel_s_we1">out, 1, ap_memory, LinearRegression_stubMap_data_second_data_barrel_s, array</column>
+<column name="LinearRegression_stubMap_data_second_data_barrel_s_d1">out, 1, ap_memory, LinearRegression_stubMap_data_second_data_barrel_s, array</column>
+<column name="LinearRegression_layerPopulation_size_read">in, 32, ap_none, LinearRegression_layerPopulation_size_read, scalar</column>
+<column name="LinearRegression_layerPopulation_data_first_address0">out, 5, ap_memory, LinearRegression_layerPopulation_data_first, array</column>
+<column name="LinearRegression_layerPopulation_data_first_ce0">out, 1, ap_memory, LinearRegression_layerPopulation_data_first, array</column>
+<column name="LinearRegression_layerPopulation_data_first_we0">out, 1, ap_memory, LinearRegression_layerPopulation_data_first, array</column>
+<column name="LinearRegression_layerPopulation_data_first_d0">out, 32, ap_memory, LinearRegression_layerPopulation_data_first, array</column>
+<column name="LinearRegression_layerPopulation_data_first_q0">in, 32, ap_memory, LinearRegression_layerPopulation_data_first, array</column>
+<column name="LinearRegression_layerPopulation_data_second_address0">out, 5, ap_memory, LinearRegression_layerPopulation_data_second, array</column>
+<column name="LinearRegression_layerPopulation_data_second_ce0">out, 1, ap_memory, LinearRegression_layerPopulation_data_second, array</column>
+<column name="LinearRegression_layerPopulation_data_second_we0">out, 1, ap_memory, LinearRegression_layerPopulation_data_second, array</column>
+<column name="LinearRegression_layerPopulation_data_second_d0">out, 32, ap_memory, LinearRegression_layerPopulation_data_second, array</column>
+<column name="LinearRegression_layerPopulation_data_second_q0">in, 32, ap_memory, LinearRegression_layerPopulation_data_second, array</column>
+<column name="LinearRegression_residuals_size_read">in, 32, ap_none, LinearRegression_residuals_size_read, scalar</column>
+<column name="LinearRegression_residuals_data_first_address0">out, 5, ap_memory, LinearRegression_residuals_data_first, array</column>
+<column name="LinearRegression_residuals_data_first_ce0">out, 1, ap_memory, LinearRegression_residuals_data_first, array</column>
+<column name="LinearRegression_residuals_data_first_q0">in, 32, ap_memory, LinearRegression_residuals_data_first, array</column>
+<column name="LinearRegression_residuals_data_second_size_s_address0">out, 5, ap_memory, LinearRegression_residuals_data_second_size_s, array</column>
+<column name="LinearRegression_residuals_data_second_size_s_ce0">out, 1, ap_memory, LinearRegression_residuals_data_second_size_s, array</column>
+<column name="LinearRegression_residuals_data_second_size_s_q0">in, 32, ap_memory, LinearRegression_residuals_data_second_size_s, array</column>
+<column name="LinearRegression_residuals_data_second_data_phi_address0">out, 9, ap_memory, LinearRegression_residuals_data_second_data_phi, array</column>
+<column name="LinearRegression_residuals_data_second_data_phi_ce0">out, 1, ap_memory, LinearRegression_residuals_data_second_data_phi, array</column>
+<column name="LinearRegression_residuals_data_second_data_phi_q0">in, 32, ap_memory, LinearRegression_residuals_data_second_data_phi, array</column>
+<column name="LinearRegression_residuals_data_second_data_z_address0">out, 9, ap_memory, LinearRegression_residuals_data_second_data_z, array</column>
+<column name="LinearRegression_residuals_data_second_data_z_ce0">out, 1, ap_memory, LinearRegression_residuals_data_second_data_z, array</column>
+<column name="LinearRegression_residuals_data_second_data_z_q0">in, 32, ap_memory, LinearRegression_residuals_data_second_data_z, array</column>
+<column name="LinearRegression_residuals_data_second_data_layerId_address0">out, 9, ap_memory, LinearRegression_residuals_data_second_data_layerId, array</column>
+<column name="LinearRegression_residuals_data_second_data_layerId_ce0">out, 1, ap_memory, LinearRegression_residuals_data_second_data_layerId, array</column>
+<column name="LinearRegression_residuals_data_second_data_layerId_q0">in, 32, ap_memory, LinearRegression_residuals_data_second_data_layerId, array</column>
+<column name="LinearRegression_residuals_data_second_data_stubId_address0">out, 9, ap_memory, LinearRegression_residuals_data_second_data_stubId, array</column>
+<column name="LinearRegression_residuals_data_second_data_stubId_ce0">out, 1, ap_memory, LinearRegression_residuals_data_second_data_stubId, array</column>
+<column name="LinearRegression_residuals_data_second_data_stubId_q0">in, 32, ap_memory, LinearRegression_residuals_data_second_data_stubId, array</column>
+<column name="LinearRegression_residuals_data_second_data_ps_address0">out, 9, ap_memory, LinearRegression_residuals_data_second_data_ps, array</column>
+<column name="LinearRegression_residuals_data_second_data_ps_ce0">out, 1, ap_memory, LinearRegression_residuals_data_second_data_ps, array</column>
+<column name="LinearRegression_residuals_data_second_data_ps_q0">in, 1, ap_memory, LinearRegression_residuals_data_second_data_ps, array</column>
+</table>
+</item>
+</section>
+</profile>

@@ -1,0 +1,2923 @@
+<stg><name>LRupdateHLS</name>
+
+
+<trans_list>
+
+<trans id="127" from="1" to="2">
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+</trans>
+</trans_list>
+
+
+
+<state_list>
+
+<state id="1" st_id="1">
+
+<operation id="3" st_id="1" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="153" bw="32" op_0_bw="32" op_1_bw="32">
+<![CDATA[
+._crit_edge.i.i.i.i.i.i.preheader:76  %linearRegression_set = call i32 @_ssdm_op_Read.ap_auto.i32P(i32* %linearRegression_settings_minNumMatchLayers_s)
+
+]]></Node>
+<StgValue><ssdm name="linearRegression_set"/></StgValue>
+</operation>
+
+<operation id="4" st_id="1" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="154" bw="32" op_0_bw="32" op_1_bw="32">
+<![CDATA[
+._crit_edge.i.i.i.i.i.i.preheader:77  %linearRegression_set_1 = call i32 @_ssdm_op_Read.ap_auto.i32P(i32* %linearRegression_settings_minPSLayers_s)
+
+]]></Node>
+<StgValue><ssdm name="linearRegression_set_1"/></StgValue>
+</operation>
+
+<operation id="5" st_id="1" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="155" bw="32" op_0_bw="32" op_1_bw="32">
+<![CDATA[
+._crit_edge.i.i.i.i.i.i.preheader:78  %l1track3D_iPhiSec_r = call i32 @_ssdm_op_Read.ap_auto.i32P(i32* %l1track3D_iPhiSec_s)
+
+]]></Node>
+<StgValue><ssdm name="l1track3D_iPhiSec_r"/></StgValue>
+</operation>
+
+<operation id="6" st_id="1" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="156" bw="32" op_0_bw="32" op_1_bw="32">
+<![CDATA[
+._crit_edge.i.i.i.i.i.i.preheader:79  %l1track3D_iEtaReg_r = call i32 @_ssdm_op_Read.ap_auto.i32P(i32* %l1track3D_iEtaReg_s)
+
+]]></Node>
+<StgValue><ssdm name="l1track3D_iEtaReg_r"/></StgValue>
+</operation>
+
+<operation id="7" st_id="1" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="157" bw="32" op_0_bw="32" op_1_bw="32">
+<![CDATA[
+._crit_edge.i.i.i.i.i.i.preheader:80  %l1track3D_helixRphi_s = call float @_ssdm_op_Read.ap_auto.floatP(float* %l1track3D_helixRphi_first)
+
+]]></Node>
+<StgValue><ssdm name="l1track3D_helixRphi_s"/></StgValue>
+</operation>
+
+<operation id="8" st_id="1" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="158" bw="32" op_0_bw="32" op_1_bw="32">
+<![CDATA[
+._crit_edge.i.i.i.i.i.i.preheader:81  %l1track3D_helixRphi_3 = call float @_ssdm_op_Read.ap_auto.floatP(float* %l1track3D_helixRphi_second)
+
+]]></Node>
+<StgValue><ssdm name="l1track3D_helixRphi_3"/></StgValue>
+</operation>
+
+<operation id="9" st_id="1" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="159" bw="32" op_0_bw="32" op_1_bw="32">
+<![CDATA[
+._crit_edge.i.i.i.i.i.i.preheader:82  %l1track3D_stubs_siz = call i32 @_ssdm_op_Read.ap_auto.i32P(i32* %l1track3D_stubs_size_s)
+
+]]></Node>
+<StgValue><ssdm name="l1track3D_stubs_siz"/></StgValue>
+</operation>
+
+<operation id="10" st_id="1" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="160" bw="32" op_0_bw="32" op_1_bw="32">
+<![CDATA[
+._crit_edge.i.i.i.i.i.i.preheader:83  %linearRegression_set_2 = call float @_ssdm_op_Read.ap_auto.floatP(float* %linearRegression_settings_chosenRofPhi_s)
+
+]]></Node>
+<StgValue><ssdm name="linearRegression_set_2"/></StgValue>
+</operation>
+
+<operation id="11" st_id="1" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="161" bw="32" op_0_bw="32" op_1_bw="32">
+<![CDATA[
+._crit_edge.i.i.i.i.i.i.preheader:84  %linearRegression_set_3 = call float @_ssdm_op_Read.ap_auto.floatP(float* %linearRegression_settings_chosenRofZ_s)
+
+]]></Node>
+<StgValue><ssdm name="linearRegression_set_3"/></StgValue>
+</operation>
+
+<operation id="12" st_id="1" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="162" bw="32" op_0_bw="32" op_1_bw="32">
+<![CDATA[
+._crit_edge.i.i.i.i.i.i.preheader:85  %linearRegression_LRP = call float @_ssdm_op_Read.ap_auto.floatP(float* %linearRegression_LRParameter_qOverPt)
+
+]]></Node>
+<StgValue><ssdm name="linearRegression_LRP"/></StgValue>
+</operation>
+
+<operation id="13" st_id="1" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="163" bw="32" op_0_bw="32" op_1_bw="32">
+<![CDATA[
+._crit_edge.i.i.i.i.i.i.preheader:86  %linearRegression_LRP_1 = call float @_ssdm_op_Read.ap_auto.floatP(float* %linearRegression_LRParameter_phiT)
+
+]]></Node>
+<StgValue><ssdm name="linearRegression_LRP_1"/></StgValue>
+</operation>
+
+<operation id="14" st_id="1" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="164" bw="32" op_0_bw="32" op_1_bw="32">
+<![CDATA[
+._crit_edge.i.i.i.i.i.i.preheader:87  %linearRegression_LRP_2 = call float @_ssdm_op_Read.ap_auto.floatP(float* %linearRegression_LRParameter_cotTheta)
+
+]]></Node>
+<StgValue><ssdm name="linearRegression_LRP_2"/></StgValue>
+</operation>
+
+<operation id="15" st_id="1" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="165" bw="32" op_0_bw="32" op_1_bw="32">
+<![CDATA[
+._crit_edge.i.i.i.i.i.i.preheader:88  %linearRegression_LRP_3 = call float @_ssdm_op_Read.ap_auto.floatP(float* %linearRegression_LRParameter_zT)
+
+]]></Node>
+<StgValue><ssdm name="linearRegression_LRP_3"/></StgValue>
+</operation>
+
+<operation id="16" st_id="1" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="166" bw="32" op_0_bw="32" op_1_bw="32">
+<![CDATA[
+._crit_edge.i.i.i.i.i.i.preheader:89  %linearRegression_stu = call i32 @_ssdm_op_Read.ap_auto.i32P(i32* %linearRegression_stubMap_size_s)
+
+]]></Node>
+<StgValue><ssdm name="linearRegression_stu"/></StgValue>
+</operation>
+
+<operation id="17" st_id="1" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="167" bw="32" op_0_bw="32" op_1_bw="32">
+<![CDATA[
+._crit_edge.i.i.i.i.i.i.preheader:90  %linearRegression_lay = call i32 @_ssdm_op_Read.ap_auto.i32P(i32* %linearRegression_layerPopulation_size_s)
+
+]]></Node>
+<StgValue><ssdm name="linearRegression_lay"/></StgValue>
+</operation>
+
+<operation id="18" st_id="1" stage="2" lat="2">
+<core></core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="168" bw="449" op_0_bw="449" op_1_bw="32" op_2_bw="32" op_3_bw="32" op_4_bw="32" op_5_bw="32" op_6_bw="32" op_7_bw="32" op_8_bw="32" op_9_bw="32" op_10_bw="32" op_11_bw="32" op_12_bw="32" op_13_bw="32" op_14_bw="32" op_15_bw="32" op_16_bw="32" op_17_bw="32" op_18_bw="32" op_19_bw="1" op_20_bw="1" op_21_bw="32" op_22_bw="32" op_23_bw="32" op_24_bw="32" op_25_bw="32" op_26_bw="32" op_27_bw="32" op_28_bw="32" op_29_bw="32" op_30_bw="32" op_31_bw="32" op_32_bw="32" op_33_bw="1" op_34_bw="1" op_35_bw="32" op_36_bw="32" op_37_bw="32" op_38_bw="32" op_39_bw="32" op_40_bw="32" op_41_bw="32" op_42_bw="32" op_43_bw="32" op_44_bw="32" op_45_bw="1" op_46_bw="32" op_47_bw="32" op_48_bw="32" op_49_bw="32" op_50_bw="1" op_51_bw="32" op_52_bw="32" op_53_bw="32" op_54_bw="32" op_55_bw="32" op_56_bw="32" op_57_bw="32" op_58_bw="32" op_59_bw="32" op_60_bw="32" op_61_bw="32" op_62_bw="32" op_63_bw="32" op_64_bw="32" op_65_bw="1" op_66_bw="1">
+<![CDATA[
+._crit_edge.i.i.i.i.i.i.preheader:91  %call_ret1 = call fastcc { i32, i32, i32, i1, float, float, float, float, i32, float, float, float, float, i32, i32 } @fit(float %linearRegression_set_2, float %linearRegression_set_3, [19 x float]* %linearRegression_settings_etaRegions_s, i32 %linearRegression_set, i32 %linearRegression_set_1, float %linearRegression_LRP, float %linearRegression_LRP_1, float %linearRegression_LRP_2, float %linearRegression_LRP_3, [10 x float]* %linearRegression_stubs_data_settings_chosenRofPhi_s, [10 x float]* %linearRegression_stubs_data_settings_chosenRofZ_s, [190 x float]* %linearRegression_stubs_data_settings_etaRegions_s, [10 x i32]* %linearRegression_stubs_data_settings_minNumMatchLayers_s, [10 x i32]* %linearRegression_stubs_data_settings_minPSLayers_s, [10 x float]* %linearRegression_stubs_data_r_s, [10 x float]* %linearRegression_stubs_data_phi_s, [10 x float]* %linearRegression_stubs_data_z_s, [10 x i32]* %linearRegression_stubs_data_layerId_s, [10 x i1]* %linearRegression_stubs_data_psModule_s, [10 x i1]* %linearRegression_stubs_data_barrel_s, i32 %linearRegression_stu, [30 x i32]* %linearRegression_stubMap_data_first, [30 x i32]* %linearRegression_stubMap_data_second_size_s, [300 x float]* %linearRegression_stubMap_data_second_data_settings_chosenRofPhi_s, [300 x float]* %linearRegression_stubMap_data_second_data_settings_chosenRofZ_s, [5700 x float]* %linearRegression_stubMap_data_second_data_settings_etaRegions_s, [300 x i32]* %linearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s, [300 x i32]* %linearRegression_stubMap_data_second_data_settings_minPSLayers_s, [300 x float]* %linearRegression_stubMap_data_second_data_r_s, [300 x float]* %linearRegression_stubMap_data_second_data_phi_s, [300 x float]* %linearRegression_stubMap_data_second_data_z_s, [300 x i32]* %linearRegression_stubMap_data_second_data_layerId_s, [300 x i1]* %linearRegression_stubMap_data_second_data_psModule_s, [300 x i1]* %linearRegression_stubMap_data_second_data_barrel_s, i32 %linearRegression_lay, [30 x i32]* %linearRegression_layerPopulation_data_first, [30 x i32]* %linearRegression_layerPopulation_data_second, i32* %linearRegression_residuals_size_s, [30 x i32]* %linearRegression_residuals_data_first, [30 x i32]* %linearRegression_residuals_data_second_size_s, [300 x float]* %linearRegression_residuals_data_second_data_phi, [300 x float]* %linearRegression_residuals_data_second_data_z, [300 x i32]* %linearRegression_residuals_data_second_data_layerId, [300 x i32]* %linearRegression_residuals_data_second_data_stubId, [300 x i1]* %linearRegression_residuals_data_second_data_ps, float* %linearRegression_largestResid_phi, float* %linearRegression_largestResid_z, i32* %linearRegression_largestResid_layerId, i32* %linearRegression_largestResid_stubId, i1* %linearRegression_largestResid_ps, i32 %l1track3D_iPhiSec_r, i32 %l1track3D_iEtaReg_r, float %l1track3D_helixRphi_s, float %l1track3D_helixRphi_3, i32 %l1track3D_stubs_siz, [10 x float]* %l1track3D_stubs_data_settings_chosenRofPhi_s, [10 x float]* %l1track3D_stubs_data_settings_chosenRofZ_s, [190 x float]* %l1track3D_stubs_data_settings_etaRegions_s, [10 x i32]* %l1track3D_stubs_data_settings_minNumMatchLayers_s, [10 x i32]* %l1track3D_stubs_data_settings_minPSLayers_s, [10 x float]* %l1track3D_stubs_data_r_s, [10 x float]* %l1track3D_stubs_data_phi_s, [10 x float]* %l1track3D_stubs_data_z_s, [10 x i32]* %l1track3D_stubs_data_layerId_s, [10 x i1]* %l1track3D_stubs_data_psModule_s, [10 x i1]* %l1track3D_stubs_data_barrel_s)
+
+]]></Node>
+<StgValue><ssdm name="call_ret1"/></StgValue>
+</operation>
+</state>
+
+<state id="2" st_id="2">
+
+<operation id="19" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="77" bw="0" op_0_bw="0" op_1_bw="32">
+<![CDATA[
+._crit_edge.i.i.i.i.i.i.preheader:0  call void (...)* @_ssdm_op_SpecBitsMap(i32* %l1track3D_iPhiSec_s), !map !122
+
+]]></Node>
+<StgValue><ssdm name=""/></StgValue>
+</operation>
+
+<operation id="20" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="78" bw="0" op_0_bw="0" op_1_bw="32">
+<![CDATA[
+._crit_edge.i.i.i.i.i.i.preheader:1  call void (...)* @_ssdm_op_SpecBitsMap(i32* %l1track3D_iEtaReg_s), !map !126
+
+]]></Node>
+<StgValue><ssdm name=""/></StgValue>
+</operation>
+
+<operation id="21" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="79" bw="0" op_0_bw="0" op_1_bw="32">
+<![CDATA[
+._crit_edge.i.i.i.i.i.i.preheader:2  call void (...)* @_ssdm_op_SpecBitsMap(float* %l1track3D_helixRphi_first), !map !130
+
+]]></Node>
+<StgValue><ssdm name=""/></StgValue>
+</operation>
+
+<operation id="22" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="80" bw="0" op_0_bw="0" op_1_bw="32">
+<![CDATA[
+._crit_edge.i.i.i.i.i.i.preheader:3  call void (...)* @_ssdm_op_SpecBitsMap(float* %l1track3D_helixRphi_second), !map !134
+
+]]></Node>
+<StgValue><ssdm name=""/></StgValue>
+</operation>
+
+<operation id="23" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="81" bw="0" op_0_bw="0" op_1_bw="32">
+<![CDATA[
+._crit_edge.i.i.i.i.i.i.preheader:4  call void (...)* @_ssdm_op_SpecBitsMap(i32* %l1track3D_stubs_size_s), !map !138
+
+]]></Node>
+<StgValue><ssdm name=""/></StgValue>
+</operation>
+
+<operation id="24" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="82" bw="0" op_0_bw="0" op_1_bw="32">
+<![CDATA[
+._crit_edge.i.i.i.i.i.i.preheader:5  call void (...)* @_ssdm_op_SpecBitsMap([10 x float]* %l1track3D_stubs_data_settings_chosenRofPhi_s), !map !142
+
+]]></Node>
+<StgValue><ssdm name=""/></StgValue>
+</operation>
+
+<operation id="25" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="83" bw="0" op_0_bw="0" op_1_bw="32">
+<![CDATA[
+._crit_edge.i.i.i.i.i.i.preheader:6  call void (...)* @_ssdm_op_SpecBitsMap([10 x float]* %l1track3D_stubs_data_settings_chosenRofZ_s), !map !148
+
+]]></Node>
+<StgValue><ssdm name=""/></StgValue>
+</operation>
+
+<operation id="26" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="84" bw="0" op_0_bw="0" op_1_bw="32">
+<![CDATA[
+._crit_edge.i.i.i.i.i.i.preheader:7  call void (...)* @_ssdm_op_SpecBitsMap([190 x float]* %l1track3D_stubs_data_settings_etaRegions_s), !map !152
+
+]]></Node>
+<StgValue><ssdm name=""/></StgValue>
+</operation>
+
+<operation id="27" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="85" bw="0" op_0_bw="0" op_1_bw="32">
+<![CDATA[
+._crit_edge.i.i.i.i.i.i.preheader:8  call void (...)* @_ssdm_op_SpecBitsMap([10 x i32]* %l1track3D_stubs_data_settings_minNumMatchLayers_s), !map !158
+
+]]></Node>
+<StgValue><ssdm name=""/></StgValue>
+</operation>
+
+<operation id="28" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="86" bw="0" op_0_bw="0" op_1_bw="32">
+<![CDATA[
+._crit_edge.i.i.i.i.i.i.preheader:9  call void (...)* @_ssdm_op_SpecBitsMap([10 x i32]* %l1track3D_stubs_data_settings_minPSLayers_s), !map !162
+
+]]></Node>
+<StgValue><ssdm name=""/></StgValue>
+</operation>
+
+<operation id="29" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="87" bw="0" op_0_bw="0" op_1_bw="32">
+<![CDATA[
+._crit_edge.i.i.i.i.i.i.preheader:10  call void (...)* @_ssdm_op_SpecBitsMap([10 x float]* %l1track3D_stubs_data_r_s), !map !166
+
+]]></Node>
+<StgValue><ssdm name=""/></StgValue>
+</operation>
+
+<operation id="30" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="88" bw="0" op_0_bw="0" op_1_bw="32">
+<![CDATA[
+._crit_edge.i.i.i.i.i.i.preheader:11  call void (...)* @_ssdm_op_SpecBitsMap([10 x float]* %l1track3D_stubs_data_phi_s), !map !170
+
+]]></Node>
+<StgValue><ssdm name=""/></StgValue>
+</operation>
+
+<operation id="31" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="89" bw="0" op_0_bw="0" op_1_bw="32">
+<![CDATA[
+._crit_edge.i.i.i.i.i.i.preheader:12  call void (...)* @_ssdm_op_SpecBitsMap([10 x float]* %l1track3D_stubs_data_z_s), !map !174
+
+]]></Node>
+<StgValue><ssdm name=""/></StgValue>
+</operation>
+
+<operation id="32" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="90" bw="0" op_0_bw="0" op_1_bw="32">
+<![CDATA[
+._crit_edge.i.i.i.i.i.i.preheader:13  call void (...)* @_ssdm_op_SpecBitsMap([10 x i32]* %l1track3D_stubs_data_layerId_s), !map !178
+
+]]></Node>
+<StgValue><ssdm name=""/></StgValue>
+</operation>
+
+<operation id="33" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="91" bw="0" op_0_bw="0" op_1_bw="1">
+<![CDATA[
+._crit_edge.i.i.i.i.i.i.preheader:14  call void (...)* @_ssdm_op_SpecBitsMap([10 x i1]* %l1track3D_stubs_data_psModule_s), !map !182
+
+]]></Node>
+<StgValue><ssdm name=""/></StgValue>
+</operation>
+
+<operation id="34" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="92" bw="0" op_0_bw="0" op_1_bw="1">
+<![CDATA[
+._crit_edge.i.i.i.i.i.i.preheader:15  call void (...)* @_ssdm_op_SpecBitsMap([10 x i1]* %l1track3D_stubs_data_barrel_s), !map !186
+
+]]></Node>
+<StgValue><ssdm name=""/></StgValue>
+</operation>
+
+<operation id="35" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="93" bw="0" op_0_bw="0" op_1_bw="32">
+<![CDATA[
+._crit_edge.i.i.i.i.i.i.preheader:16  call void (...)* @_ssdm_op_SpecBitsMap(float* %linearRegression_settings_chosenRofPhi_s), !map !190
+
+]]></Node>
+<StgValue><ssdm name=""/></StgValue>
+</operation>
+
+<operation id="36" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="94" bw="0" op_0_bw="0" op_1_bw="32">
+<![CDATA[
+._crit_edge.i.i.i.i.i.i.preheader:17  call void (...)* @_ssdm_op_SpecBitsMap(float* %linearRegression_settings_chosenRofZ_s), !map !194
+
+]]></Node>
+<StgValue><ssdm name=""/></StgValue>
+</operation>
+
+<operation id="37" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="95" bw="0" op_0_bw="0" op_1_bw="32">
+<![CDATA[
+._crit_edge.i.i.i.i.i.i.preheader:18  call void (...)* @_ssdm_op_SpecBitsMap([19 x float]* %linearRegression_settings_etaRegions_s), !map !198
+
+]]></Node>
+<StgValue><ssdm name=""/></StgValue>
+</operation>
+
+<operation id="38" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="96" bw="0" op_0_bw="0" op_1_bw="32">
+<![CDATA[
+._crit_edge.i.i.i.i.i.i.preheader:19  call void (...)* @_ssdm_op_SpecBitsMap(i32* %linearRegression_settings_minNumMatchLayers_s), !map !203
+
+]]></Node>
+<StgValue><ssdm name=""/></StgValue>
+</operation>
+
+<operation id="39" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="97" bw="0" op_0_bw="0" op_1_bw="32">
+<![CDATA[
+._crit_edge.i.i.i.i.i.i.preheader:20  call void (...)* @_ssdm_op_SpecBitsMap(i32* %linearRegression_settings_minPSLayers_s), !map !207
+
+]]></Node>
+<StgValue><ssdm name=""/></StgValue>
+</operation>
+
+<operation id="40" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="98" bw="0" op_0_bw="0" op_1_bw="32">
+<![CDATA[
+._crit_edge.i.i.i.i.i.i.preheader:21  call void (...)* @_ssdm_op_SpecBitsMap(i32* %linearRegression_iPhiSec_s), !map !211
+
+]]></Node>
+<StgValue><ssdm name=""/></StgValue>
+</operation>
+
+<operation id="41" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="99" bw="0" op_0_bw="0" op_1_bw="32">
+<![CDATA[
+._crit_edge.i.i.i.i.i.i.preheader:22  call void (...)* @_ssdm_op_SpecBitsMap(i32* %linearRegression_iEtaReg_s), !map !215
+
+]]></Node>
+<StgValue><ssdm name=""/></StgValue>
+</operation>
+
+<operation id="42" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="100" bw="0" op_0_bw="0" op_1_bw="32">
+<![CDATA[
+._crit_edge.i.i.i.i.i.i.preheader:23  call void (...)* @_ssdm_op_SpecBitsMap(i32* %linearRegression_nIterations_s), !map !219
+
+]]></Node>
+<StgValue><ssdm name=""/></StgValue>
+</operation>
+
+<operation id="43" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="101" bw="0" op_0_bw="0" op_1_bw="32">
+<![CDATA[
+._crit_edge.i.i.i.i.i.i.preheader:24  call void (...)* @_ssdm_op_SpecBitsMap(float* %linearRegression_HTParameter_qOverPt), !map !223
+
+]]></Node>
+<StgValue><ssdm name=""/></StgValue>
+</operation>
+
+<operation id="44" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="102" bw="0" op_0_bw="0" op_1_bw="32">
+<![CDATA[
+._crit_edge.i.i.i.i.i.i.preheader:25  call void (...)* @_ssdm_op_SpecBitsMap(float* %linearRegression_HTParameter_phiT), !map !227
+
+]]></Node>
+<StgValue><ssdm name=""/></StgValue>
+</operation>
+
+<operation id="45" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="103" bw="0" op_0_bw="0" op_1_bw="32">
+<![CDATA[
+._crit_edge.i.i.i.i.i.i.preheader:26  call void (...)* @_ssdm_op_SpecBitsMap(float* %linearRegression_HTParameter_cotTheta), !map !231
+
+]]></Node>
+<StgValue><ssdm name=""/></StgValue>
+</operation>
+
+<operation id="46" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="104" bw="0" op_0_bw="0" op_1_bw="32">
+<![CDATA[
+._crit_edge.i.i.i.i.i.i.preheader:27  call void (...)* @_ssdm_op_SpecBitsMap(float* %linearRegression_HTParameter_zT), !map !235
+
+]]></Node>
+<StgValue><ssdm name=""/></StgValue>
+</operation>
+
+<operation id="47" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="105" bw="0" op_0_bw="0" op_1_bw="32">
+<![CDATA[
+._crit_edge.i.i.i.i.i.i.preheader:28  call void (...)* @_ssdm_op_SpecBitsMap(float* %linearRegression_LRParameter_qOverPt), !map !239
+
+]]></Node>
+<StgValue><ssdm name=""/></StgValue>
+</operation>
+
+<operation id="48" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="106" bw="0" op_0_bw="0" op_1_bw="32">
+<![CDATA[
+._crit_edge.i.i.i.i.i.i.preheader:29  call void (...)* @_ssdm_op_SpecBitsMap(float* %linearRegression_LRParameter_phiT), !map !243
+
+]]></Node>
+<StgValue><ssdm name=""/></StgValue>
+</operation>
+
+<operation id="49" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="107" bw="0" op_0_bw="0" op_1_bw="32">
+<![CDATA[
+._crit_edge.i.i.i.i.i.i.preheader:30  call void (...)* @_ssdm_op_SpecBitsMap(float* %linearRegression_LRParameter_cotTheta), !map !247
+
+]]></Node>
+<StgValue><ssdm name=""/></StgValue>
+</operation>
+
+<operation id="50" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="108" bw="0" op_0_bw="0" op_1_bw="32">
+<![CDATA[
+._crit_edge.i.i.i.i.i.i.preheader:31  call void (...)* @_ssdm_op_SpecBitsMap(float* %linearRegression_LRParameter_zT), !map !251
+
+]]></Node>
+<StgValue><ssdm name=""/></StgValue>
+</operation>
+
+<operation id="51" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="109" bw="0" op_0_bw="0" op_1_bw="32">
+<![CDATA[
+._crit_edge.i.i.i.i.i.i.preheader:32  call void (...)* @_ssdm_op_SpecBitsMap(i32* %linearRegression_stubs_size_s), !map !255
+
+]]></Node>
+<StgValue><ssdm name=""/></StgValue>
+</operation>
+
+<operation id="52" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="110" bw="0" op_0_bw="0" op_1_bw="32">
+<![CDATA[
+._crit_edge.i.i.i.i.i.i.preheader:33  call void (...)* @_ssdm_op_SpecBitsMap([10 x float]* %linearRegression_stubs_data_settings_chosenRofPhi_s), !map !259
+
+]]></Node>
+<StgValue><ssdm name=""/></StgValue>
+</operation>
+
+<operation id="53" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="111" bw="0" op_0_bw="0" op_1_bw="32">
+<![CDATA[
+._crit_edge.i.i.i.i.i.i.preheader:34  call void (...)* @_ssdm_op_SpecBitsMap([10 x float]* %linearRegression_stubs_data_settings_chosenRofZ_s), !map !263
+
+]]></Node>
+<StgValue><ssdm name=""/></StgValue>
+</operation>
+
+<operation id="54" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="112" bw="0" op_0_bw="0" op_1_bw="32">
+<![CDATA[
+._crit_edge.i.i.i.i.i.i.preheader:35  call void (...)* @_ssdm_op_SpecBitsMap([190 x float]* %linearRegression_stubs_data_settings_etaRegions_s), !map !267
+
+]]></Node>
+<StgValue><ssdm name=""/></StgValue>
+</operation>
+
+<operation id="55" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="113" bw="0" op_0_bw="0" op_1_bw="32">
+<![CDATA[
+._crit_edge.i.i.i.i.i.i.preheader:36  call void (...)* @_ssdm_op_SpecBitsMap([10 x i32]* %linearRegression_stubs_data_settings_minNumMatchLayers_s), !map !271
+
+]]></Node>
+<StgValue><ssdm name=""/></StgValue>
+</operation>
+
+<operation id="56" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="114" bw="0" op_0_bw="0" op_1_bw="32">
+<![CDATA[
+._crit_edge.i.i.i.i.i.i.preheader:37  call void (...)* @_ssdm_op_SpecBitsMap([10 x i32]* %linearRegression_stubs_data_settings_minPSLayers_s), !map !275
+
+]]></Node>
+<StgValue><ssdm name=""/></StgValue>
+</operation>
+
+<operation id="57" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="115" bw="0" op_0_bw="0" op_1_bw="32">
+<![CDATA[
+._crit_edge.i.i.i.i.i.i.preheader:38  call void (...)* @_ssdm_op_SpecBitsMap([10 x float]* %linearRegression_stubs_data_r_s), !map !279
+
+]]></Node>
+<StgValue><ssdm name=""/></StgValue>
+</operation>
+
+<operation id="58" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="116" bw="0" op_0_bw="0" op_1_bw="32">
+<![CDATA[
+._crit_edge.i.i.i.i.i.i.preheader:39  call void (...)* @_ssdm_op_SpecBitsMap([10 x float]* %linearRegression_stubs_data_phi_s), !map !283
+
+]]></Node>
+<StgValue><ssdm name=""/></StgValue>
+</operation>
+
+<operation id="59" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="117" bw="0" op_0_bw="0" op_1_bw="32">
+<![CDATA[
+._crit_edge.i.i.i.i.i.i.preheader:40  call void (...)* @_ssdm_op_SpecBitsMap([10 x float]* %linearRegression_stubs_data_z_s), !map !287
+
+]]></Node>
+<StgValue><ssdm name=""/></StgValue>
+</operation>
+
+<operation id="60" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="118" bw="0" op_0_bw="0" op_1_bw="32">
+<![CDATA[
+._crit_edge.i.i.i.i.i.i.preheader:41  call void (...)* @_ssdm_op_SpecBitsMap([10 x i32]* %linearRegression_stubs_data_layerId_s), !map !291
+
+]]></Node>
+<StgValue><ssdm name=""/></StgValue>
+</operation>
+
+<operation id="61" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="119" bw="0" op_0_bw="0" op_1_bw="1">
+<![CDATA[
+._crit_edge.i.i.i.i.i.i.preheader:42  call void (...)* @_ssdm_op_SpecBitsMap([10 x i1]* %linearRegression_stubs_data_psModule_s), !map !295
+
+]]></Node>
+<StgValue><ssdm name=""/></StgValue>
+</operation>
+
+<operation id="62" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="120" bw="0" op_0_bw="0" op_1_bw="1">
+<![CDATA[
+._crit_edge.i.i.i.i.i.i.preheader:43  call void (...)* @_ssdm_op_SpecBitsMap([10 x i1]* %linearRegression_stubs_data_barrel_s), !map !299
+
+]]></Node>
+<StgValue><ssdm name=""/></StgValue>
+</operation>
+
+<operation id="63" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="121" bw="0" op_0_bw="0" op_1_bw="1">
+<![CDATA[
+._crit_edge.i.i.i.i.i.i.preheader:44  call void (...)* @_ssdm_op_SpecBitsMap(i1* %linearRegression_valid_s), !map !303
+
+]]></Node>
+<StgValue><ssdm name=""/></StgValue>
+</operation>
+
+<operation id="64" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="122" bw="0" op_0_bw="0" op_1_bw="32">
+<![CDATA[
+._crit_edge.i.i.i.i.i.i.preheader:45  call void (...)* @_ssdm_op_SpecBitsMap(i32* %linearRegression_stubMap_size_s), !map !307
+
+]]></Node>
+<StgValue><ssdm name=""/></StgValue>
+</operation>
+
+<operation id="65" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="123" bw="0" op_0_bw="0" op_1_bw="32">
+<![CDATA[
+._crit_edge.i.i.i.i.i.i.preheader:46  call void (...)* @_ssdm_op_SpecBitsMap([30 x i32]* %linearRegression_stubMap_data_first), !map !311
+
+]]></Node>
+<StgValue><ssdm name=""/></StgValue>
+</operation>
+
+<operation id="66" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="124" bw="0" op_0_bw="0" op_1_bw="32">
+<![CDATA[
+._crit_edge.i.i.i.i.i.i.preheader:47  call void (...)* @_ssdm_op_SpecBitsMap([30 x i32]* %linearRegression_stubMap_data_second_size_s), !map !317
+
+]]></Node>
+<StgValue><ssdm name=""/></StgValue>
+</operation>
+
+<operation id="67" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="125" bw="0" op_0_bw="0" op_1_bw="32">
+<![CDATA[
+._crit_edge.i.i.i.i.i.i.preheader:48  call void (...)* @_ssdm_op_SpecBitsMap([300 x float]* %linearRegression_stubMap_data_second_data_settings_chosenRofPhi_s), !map !321
+
+]]></Node>
+<StgValue><ssdm name=""/></StgValue>
+</operation>
+
+<operation id="68" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="126" bw="0" op_0_bw="0" op_1_bw="32">
+<![CDATA[
+._crit_edge.i.i.i.i.i.i.preheader:49  call void (...)* @_ssdm_op_SpecBitsMap([300 x float]* %linearRegression_stubMap_data_second_data_settings_chosenRofZ_s), !map !326
+
+]]></Node>
+<StgValue><ssdm name=""/></StgValue>
+</operation>
+
+<operation id="69" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="127" bw="0" op_0_bw="0" op_1_bw="32">
+<![CDATA[
+._crit_edge.i.i.i.i.i.i.preheader:50  call void (...)* @_ssdm_op_SpecBitsMap([5700 x float]* %linearRegression_stubMap_data_second_data_settings_etaRegions_s), !map !330
+
+]]></Node>
+<StgValue><ssdm name=""/></StgValue>
+</operation>
+
+<operation id="70" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="128" bw="0" op_0_bw="0" op_1_bw="32">
+<![CDATA[
+._crit_edge.i.i.i.i.i.i.preheader:51  call void (...)* @_ssdm_op_SpecBitsMap([300 x i32]* %linearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s), !map !335
+
+]]></Node>
+<StgValue><ssdm name=""/></StgValue>
+</operation>
+
+<operation id="71" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="129" bw="0" op_0_bw="0" op_1_bw="32">
+<![CDATA[
+._crit_edge.i.i.i.i.i.i.preheader:52  call void (...)* @_ssdm_op_SpecBitsMap([300 x i32]* %linearRegression_stubMap_data_second_data_settings_minPSLayers_s), !map !339
+
+]]></Node>
+<StgValue><ssdm name=""/></StgValue>
+</operation>
+
+<operation id="72" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="130" bw="0" op_0_bw="0" op_1_bw="32">
+<![CDATA[
+._crit_edge.i.i.i.i.i.i.preheader:53  call void (...)* @_ssdm_op_SpecBitsMap([300 x float]* %linearRegression_stubMap_data_second_data_r_s), !map !343
+
+]]></Node>
+<StgValue><ssdm name=""/></StgValue>
+</operation>
+
+<operation id="73" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="131" bw="0" op_0_bw="0" op_1_bw="32">
+<![CDATA[
+._crit_edge.i.i.i.i.i.i.preheader:54  call void (...)* @_ssdm_op_SpecBitsMap([300 x float]* %linearRegression_stubMap_data_second_data_phi_s), !map !347
+
+]]></Node>
+<StgValue><ssdm name=""/></StgValue>
+</operation>
+
+<operation id="74" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="132" bw="0" op_0_bw="0" op_1_bw="32">
+<![CDATA[
+._crit_edge.i.i.i.i.i.i.preheader:55  call void (...)* @_ssdm_op_SpecBitsMap([300 x float]* %linearRegression_stubMap_data_second_data_z_s), !map !351
+
+]]></Node>
+<StgValue><ssdm name=""/></StgValue>
+</operation>
+
+<operation id="75" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="133" bw="0" op_0_bw="0" op_1_bw="32">
+<![CDATA[
+._crit_edge.i.i.i.i.i.i.preheader:56  call void (...)* @_ssdm_op_SpecBitsMap([300 x i32]* %linearRegression_stubMap_data_second_data_layerId_s), !map !355
+
+]]></Node>
+<StgValue><ssdm name=""/></StgValue>
+</operation>
+
+<operation id="76" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="134" bw="0" op_0_bw="0" op_1_bw="1">
+<![CDATA[
+._crit_edge.i.i.i.i.i.i.preheader:57  call void (...)* @_ssdm_op_SpecBitsMap([300 x i1]* %linearRegression_stubMap_data_second_data_psModule_s), !map !359
+
+]]></Node>
+<StgValue><ssdm name=""/></StgValue>
+</operation>
+
+<operation id="77" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="135" bw="0" op_0_bw="0" op_1_bw="1">
+<![CDATA[
+._crit_edge.i.i.i.i.i.i.preheader:58  call void (...)* @_ssdm_op_SpecBitsMap([300 x i1]* %linearRegression_stubMap_data_second_data_barrel_s), !map !363
+
+]]></Node>
+<StgValue><ssdm name=""/></StgValue>
+</operation>
+
+<operation id="78" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="136" bw="0" op_0_bw="0" op_1_bw="32">
+<![CDATA[
+._crit_edge.i.i.i.i.i.i.preheader:59  call void (...)* @_ssdm_op_SpecBitsMap(i32* %linearRegression_layerPopulation_size_s), !map !367
+
+]]></Node>
+<StgValue><ssdm name=""/></StgValue>
+</operation>
+
+<operation id="79" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="137" bw="0" op_0_bw="0" op_1_bw="32">
+<![CDATA[
+._crit_edge.i.i.i.i.i.i.preheader:60  call void (...)* @_ssdm_op_SpecBitsMap([30 x i32]* %linearRegression_layerPopulation_data_first), !map !371
+
+]]></Node>
+<StgValue><ssdm name=""/></StgValue>
+</operation>
+
+<operation id="80" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="138" bw="0" op_0_bw="0" op_1_bw="32">
+<![CDATA[
+._crit_edge.i.i.i.i.i.i.preheader:61  call void (...)* @_ssdm_op_SpecBitsMap([30 x i32]* %linearRegression_layerPopulation_data_second), !map !375
+
+]]></Node>
+<StgValue><ssdm name=""/></StgValue>
+</operation>
+
+<operation id="81" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="139" bw="0" op_0_bw="0" op_1_bw="32">
+<![CDATA[
+._crit_edge.i.i.i.i.i.i.preheader:62  call void (...)* @_ssdm_op_SpecBitsMap(i32* %linearRegression_residuals_size_s), !map !379
+
+]]></Node>
+<StgValue><ssdm name=""/></StgValue>
+</operation>
+
+<operation id="82" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="140" bw="0" op_0_bw="0" op_1_bw="32">
+<![CDATA[
+._crit_edge.i.i.i.i.i.i.preheader:63  call void (...)* @_ssdm_op_SpecBitsMap([30 x i32]* %linearRegression_residuals_data_first), !map !383
+
+]]></Node>
+<StgValue><ssdm name=""/></StgValue>
+</operation>
+
+<operation id="83" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="141" bw="0" op_0_bw="0" op_1_bw="32">
+<![CDATA[
+._crit_edge.i.i.i.i.i.i.preheader:64  call void (...)* @_ssdm_op_SpecBitsMap([30 x i32]* %linearRegression_residuals_data_second_size_s), !map !387
+
+]]></Node>
+<StgValue><ssdm name=""/></StgValue>
+</operation>
+
+<operation id="84" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="142" bw="0" op_0_bw="0" op_1_bw="32">
+<![CDATA[
+._crit_edge.i.i.i.i.i.i.preheader:65  call void (...)* @_ssdm_op_SpecBitsMap([300 x float]* %linearRegression_residuals_data_second_data_phi), !map !391
+
+]]></Node>
+<StgValue><ssdm name=""/></StgValue>
+</operation>
+
+<operation id="85" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="143" bw="0" op_0_bw="0" op_1_bw="32">
+<![CDATA[
+._crit_edge.i.i.i.i.i.i.preheader:66  call void (...)* @_ssdm_op_SpecBitsMap([300 x float]* %linearRegression_residuals_data_second_data_z), !map !395
+
+]]></Node>
+<StgValue><ssdm name=""/></StgValue>
+</operation>
+
+<operation id="86" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="144" bw="0" op_0_bw="0" op_1_bw="32">
+<![CDATA[
+._crit_edge.i.i.i.i.i.i.preheader:67  call void (...)* @_ssdm_op_SpecBitsMap([300 x i32]* %linearRegression_residuals_data_second_data_layerId), !map !399
+
+]]></Node>
+<StgValue><ssdm name=""/></StgValue>
+</operation>
+
+<operation id="87" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="145" bw="0" op_0_bw="0" op_1_bw="32">
+<![CDATA[
+._crit_edge.i.i.i.i.i.i.preheader:68  call void (...)* @_ssdm_op_SpecBitsMap([300 x i32]* %linearRegression_residuals_data_second_data_stubId), !map !403
+
+]]></Node>
+<StgValue><ssdm name=""/></StgValue>
+</operation>
+
+<operation id="88" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="146" bw="0" op_0_bw="0" op_1_bw="1">
+<![CDATA[
+._crit_edge.i.i.i.i.i.i.preheader:69  call void (...)* @_ssdm_op_SpecBitsMap([300 x i1]* %linearRegression_residuals_data_second_data_ps), !map !407
+
+]]></Node>
+<StgValue><ssdm name=""/></StgValue>
+</operation>
+
+<operation id="89" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="147" bw="0" op_0_bw="0" op_1_bw="32">
+<![CDATA[
+._crit_edge.i.i.i.i.i.i.preheader:70  call void (...)* @_ssdm_op_SpecBitsMap(float* %linearRegression_largestResid_phi), !map !411
+
+]]></Node>
+<StgValue><ssdm name=""/></StgValue>
+</operation>
+
+<operation id="90" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="148" bw="0" op_0_bw="0" op_1_bw="32">
+<![CDATA[
+._crit_edge.i.i.i.i.i.i.preheader:71  call void (...)* @_ssdm_op_SpecBitsMap(float* %linearRegression_largestResid_z), !map !415
+
+]]></Node>
+<StgValue><ssdm name=""/></StgValue>
+</operation>
+
+<operation id="91" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="149" bw="0" op_0_bw="0" op_1_bw="32">
+<![CDATA[
+._crit_edge.i.i.i.i.i.i.preheader:72  call void (...)* @_ssdm_op_SpecBitsMap(i32* %linearRegression_largestResid_layerId), !map !419
+
+]]></Node>
+<StgValue><ssdm name=""/></StgValue>
+</operation>
+
+<operation id="92" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="150" bw="0" op_0_bw="0" op_1_bw="32">
+<![CDATA[
+._crit_edge.i.i.i.i.i.i.preheader:73  call void (...)* @_ssdm_op_SpecBitsMap(i32* %linearRegression_largestResid_stubId), !map !423
+
+]]></Node>
+<StgValue><ssdm name=""/></StgValue>
+</operation>
+
+<operation id="93" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="151" bw="0" op_0_bw="0" op_1_bw="1">
+<![CDATA[
+._crit_edge.i.i.i.i.i.i.preheader:74  call void (...)* @_ssdm_op_SpecBitsMap(i1* %linearRegression_largestResid_ps), !map !427
+
+]]></Node>
+<StgValue><ssdm name=""/></StgValue>
+</operation>
+
+<operation id="94" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="152" bw="0" op_0_bw="0" op_1_bw="0">
+<![CDATA[
+._crit_edge.i.i.i.i.i.i.preheader:75  call void (...)* @_ssdm_op_SpecTopModule([12 x i8]* @LRupdateHLS_str) nounwind
+
+]]></Node>
+<StgValue><ssdm name=""/></StgValue>
+</operation>
+
+<operation id="95" st_id="2" stage="1" lat="2">
+<core></core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="168" bw="449" op_0_bw="449" op_1_bw="32" op_2_bw="32" op_3_bw="32" op_4_bw="32" op_5_bw="32" op_6_bw="32" op_7_bw="32" op_8_bw="32" op_9_bw="32" op_10_bw="32" op_11_bw="32" op_12_bw="32" op_13_bw="32" op_14_bw="32" op_15_bw="32" op_16_bw="32" op_17_bw="32" op_18_bw="32" op_19_bw="1" op_20_bw="1" op_21_bw="32" op_22_bw="32" op_23_bw="32" op_24_bw="32" op_25_bw="32" op_26_bw="32" op_27_bw="32" op_28_bw="32" op_29_bw="32" op_30_bw="32" op_31_bw="32" op_32_bw="32" op_33_bw="1" op_34_bw="1" op_35_bw="32" op_36_bw="32" op_37_bw="32" op_38_bw="32" op_39_bw="32" op_40_bw="32" op_41_bw="32" op_42_bw="32" op_43_bw="32" op_44_bw="32" op_45_bw="1" op_46_bw="32" op_47_bw="32" op_48_bw="32" op_49_bw="32" op_50_bw="1" op_51_bw="32" op_52_bw="32" op_53_bw="32" op_54_bw="32" op_55_bw="32" op_56_bw="32" op_57_bw="32" op_58_bw="32" op_59_bw="32" op_60_bw="32" op_61_bw="32" op_62_bw="32" op_63_bw="32" op_64_bw="32" op_65_bw="1" op_66_bw="1">
+<![CDATA[
+._crit_edge.i.i.i.i.i.i.preheader:91  %call_ret1 = call fastcc { i32, i32, i32, i1, float, float, float, float, i32, float, float, float, float, i32, i32 } @fit(float %linearRegression_set_2, float %linearRegression_set_3, [19 x float]* %linearRegression_settings_etaRegions_s, i32 %linearRegression_set, i32 %linearRegression_set_1, float %linearRegression_LRP, float %linearRegression_LRP_1, float %linearRegression_LRP_2, float %linearRegression_LRP_3, [10 x float]* %linearRegression_stubs_data_settings_chosenRofPhi_s, [10 x float]* %linearRegression_stubs_data_settings_chosenRofZ_s, [190 x float]* %linearRegression_stubs_data_settings_etaRegions_s, [10 x i32]* %linearRegression_stubs_data_settings_minNumMatchLayers_s, [10 x i32]* %linearRegression_stubs_data_settings_minPSLayers_s, [10 x float]* %linearRegression_stubs_data_r_s, [10 x float]* %linearRegression_stubs_data_phi_s, [10 x float]* %linearRegression_stubs_data_z_s, [10 x i32]* %linearRegression_stubs_data_layerId_s, [10 x i1]* %linearRegression_stubs_data_psModule_s, [10 x i1]* %linearRegression_stubs_data_barrel_s, i32 %linearRegression_stu, [30 x i32]* %linearRegression_stubMap_data_first, [30 x i32]* %linearRegression_stubMap_data_second_size_s, [300 x float]* %linearRegression_stubMap_data_second_data_settings_chosenRofPhi_s, [300 x float]* %linearRegression_stubMap_data_second_data_settings_chosenRofZ_s, [5700 x float]* %linearRegression_stubMap_data_second_data_settings_etaRegions_s, [300 x i32]* %linearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s, [300 x i32]* %linearRegression_stubMap_data_second_data_settings_minPSLayers_s, [300 x float]* %linearRegression_stubMap_data_second_data_r_s, [300 x float]* %linearRegression_stubMap_data_second_data_phi_s, [300 x float]* %linearRegression_stubMap_data_second_data_z_s, [300 x i32]* %linearRegression_stubMap_data_second_data_layerId_s, [300 x i1]* %linearRegression_stubMap_data_second_data_psModule_s, [300 x i1]* %linearRegression_stubMap_data_second_data_barrel_s, i32 %linearRegression_lay, [30 x i32]* %linearRegression_layerPopulation_data_first, [30 x i32]* %linearRegression_layerPopulation_data_second, i32* %linearRegression_residuals_size_s, [30 x i32]* %linearRegression_residuals_data_first, [30 x i32]* %linearRegression_residuals_data_second_size_s, [300 x float]* %linearRegression_residuals_data_second_data_phi, [300 x float]* %linearRegression_residuals_data_second_data_z, [300 x i32]* %linearRegression_residuals_data_second_data_layerId, [300 x i32]* %linearRegression_residuals_data_second_data_stubId, [300 x i1]* %linearRegression_residuals_data_second_data_ps, float* %linearRegression_largestResid_phi, float* %linearRegression_largestResid_z, i32* %linearRegression_largestResid_layerId, i32* %linearRegression_largestResid_stubId, i1* %linearRegression_largestResid_ps, i32 %l1track3D_iPhiSec_r, i32 %l1track3D_iEtaReg_r, float %l1track3D_helixRphi_s, float %l1track3D_helixRphi_3, i32 %l1track3D_stubs_siz, [10 x float]* %l1track3D_stubs_data_settings_chosenRofPhi_s, [10 x float]* %l1track3D_stubs_data_settings_chosenRofZ_s, [190 x float]* %l1track3D_stubs_data_settings_etaRegions_s, [10 x i32]* %l1track3D_stubs_data_settings_minNumMatchLayers_s, [10 x i32]* %l1track3D_stubs_data_settings_minPSLayers_s, [10 x float]* %l1track3D_stubs_data_r_s, [10 x float]* %l1track3D_stubs_data_phi_s, [10 x float]* %l1track3D_stubs_data_z_s, [10 x i32]* %l1track3D_stubs_data_layerId_s, [10 x i1]* %l1track3D_stubs_data_psModule_s, [10 x i1]* %l1track3D_stubs_data_barrel_s)
+
+]]></Node>
+<StgValue><ssdm name="call_ret1"/></StgValue>
+</operation>
+
+<operation id="96" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="169" bw="32" op_0_bw="449">
+<![CDATA[
+._crit_edge.i.i.i.i.i.i.preheader:92  %newret = extractvalue { i32, i32, i32, i1, float, float, float, float, i32, float, float, float, float, i32, i32 } %call_ret1, 0
+
+]]></Node>
+<StgValue><ssdm name="newret"/></StgValue>
+</operation>
+
+<operation id="97" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="170" bw="32" op_0_bw="449">
+<![CDATA[
+._crit_edge.i.i.i.i.i.i.preheader:93  %newret19 = extractvalue { i32, i32, i32, i1, float, float, float, float, i32, float, float, float, float, i32, i32 } %call_ret1, 1
+
+]]></Node>
+<StgValue><ssdm name="newret19"/></StgValue>
+</operation>
+
+<operation id="98" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="171" bw="32" op_0_bw="449">
+<![CDATA[
+._crit_edge.i.i.i.i.i.i.preheader:94  %newret20 = extractvalue { i32, i32, i32, i1, float, float, float, float, i32, float, float, float, float, i32, i32 } %call_ret1, 2
+
+]]></Node>
+<StgValue><ssdm name="newret20"/></StgValue>
+</operation>
+
+<operation id="99" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="172" bw="1" op_0_bw="449">
+<![CDATA[
+._crit_edge.i.i.i.i.i.i.preheader:95  %newret21 = extractvalue { i32, i32, i32, i1, float, float, float, float, i32, float, float, float, float, i32, i32 } %call_ret1, 3
+
+]]></Node>
+<StgValue><ssdm name="newret21"/></StgValue>
+</operation>
+
+<operation id="100" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="173" bw="32" op_0_bw="449">
+<![CDATA[
+._crit_edge.i.i.i.i.i.i.preheader:96  %newret22 = extractvalue { i32, i32, i32, i1, float, float, float, float, i32, float, float, float, float, i32, i32 } %call_ret1, 4
+
+]]></Node>
+<StgValue><ssdm name="newret22"/></StgValue>
+</operation>
+
+<operation id="101" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="174" bw="32" op_0_bw="449">
+<![CDATA[
+._crit_edge.i.i.i.i.i.i.preheader:97  %newret23 = extractvalue { i32, i32, i32, i1, float, float, float, float, i32, float, float, float, float, i32, i32 } %call_ret1, 5
+
+]]></Node>
+<StgValue><ssdm name="newret23"/></StgValue>
+</operation>
+
+<operation id="102" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="175" bw="32" op_0_bw="449">
+<![CDATA[
+._crit_edge.i.i.i.i.i.i.preheader:98  %newret24 = extractvalue { i32, i32, i32, i1, float, float, float, float, i32, float, float, float, float, i32, i32 } %call_ret1, 6
+
+]]></Node>
+<StgValue><ssdm name="newret24"/></StgValue>
+</operation>
+
+<operation id="103" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="176" bw="32" op_0_bw="449">
+<![CDATA[
+._crit_edge.i.i.i.i.i.i.preheader:99  %newret25 = extractvalue { i32, i32, i32, i1, float, float, float, float, i32, float, float, float, float, i32, i32 } %call_ret1, 7
+
+]]></Node>
+<StgValue><ssdm name="newret25"/></StgValue>
+</operation>
+
+<operation id="104" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="177" bw="32" op_0_bw="449">
+<![CDATA[
+._crit_edge.i.i.i.i.i.i.preheader:100  %newret26 = extractvalue { i32, i32, i32, i1, float, float, float, float, i32, float, float, float, float, i32, i32 } %call_ret1, 8
+
+]]></Node>
+<StgValue><ssdm name="newret26"/></StgValue>
+</operation>
+
+<operation id="105" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="178" bw="32" op_0_bw="449">
+<![CDATA[
+._crit_edge.i.i.i.i.i.i.preheader:101  %newret27 = extractvalue { i32, i32, i32, i1, float, float, float, float, i32, float, float, float, float, i32, i32 } %call_ret1, 9
+
+]]></Node>
+<StgValue><ssdm name="newret27"/></StgValue>
+</operation>
+
+<operation id="106" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="179" bw="32" op_0_bw="449">
+<![CDATA[
+._crit_edge.i.i.i.i.i.i.preheader:102  %newret28 = extractvalue { i32, i32, i32, i1, float, float, float, float, i32, float, float, float, float, i32, i32 } %call_ret1, 10
+
+]]></Node>
+<StgValue><ssdm name="newret28"/></StgValue>
+</operation>
+
+<operation id="107" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="180" bw="32" op_0_bw="449">
+<![CDATA[
+._crit_edge.i.i.i.i.i.i.preheader:103  %newret29 = extractvalue { i32, i32, i32, i1, float, float, float, float, i32, float, float, float, float, i32, i32 } %call_ret1, 11
+
+]]></Node>
+<StgValue><ssdm name="newret29"/></StgValue>
+</operation>
+
+<operation id="108" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="181" bw="32" op_0_bw="449">
+<![CDATA[
+._crit_edge.i.i.i.i.i.i.preheader:104  %newret30 = extractvalue { i32, i32, i32, i1, float, float, float, float, i32, float, float, float, float, i32, i32 } %call_ret1, 12
+
+]]></Node>
+<StgValue><ssdm name="newret30"/></StgValue>
+</operation>
+
+<operation id="109" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="182" bw="32" op_0_bw="449">
+<![CDATA[
+._crit_edge.i.i.i.i.i.i.preheader:105  %newret31 = extractvalue { i32, i32, i32, i1, float, float, float, float, i32, float, float, float, float, i32, i32 } %call_ret1, 13
+
+]]></Node>
+<StgValue><ssdm name="newret31"/></StgValue>
+</operation>
+
+<operation id="110" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="183" bw="32" op_0_bw="449">
+<![CDATA[
+._crit_edge.i.i.i.i.i.i.preheader:106  %newret32 = extractvalue { i32, i32, i32, i1, float, float, float, float, i32, float, float, float, float, i32, i32 } %call_ret1, 14
+
+]]></Node>
+<StgValue><ssdm name="newret32"/></StgValue>
+</operation>
+
+<operation id="111" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="184" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32">
+<![CDATA[
+._crit_edge.i.i.i.i.i.i.preheader:107  call void @_ssdm_op_Write.ap_auto.i32P(i32* %linearRegression_stubMap_size_s, i32 %newret31)
+
+]]></Node>
+<StgValue><ssdm name=""/></StgValue>
+</operation>
+
+<operation id="112" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="185" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32">
+<![CDATA[
+._crit_edge.i.i.i.i.i.i.preheader:108  call void @_ssdm_op_Write.ap_auto.i32P(i32* %linearRegression_layerPopulation_size_s, i32 %newret32)
+
+]]></Node>
+<StgValue><ssdm name=""/></StgValue>
+</operation>
+
+<operation id="113" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="186" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32">
+<![CDATA[
+._crit_edge.i.i.i.i.i.i.preheader:109  call void @_ssdm_op_Write.ap_auto.floatP(float* %linearRegression_LRParameter_qOverPt, float %newret27)
+
+]]></Node>
+<StgValue><ssdm name=""/></StgValue>
+</operation>
+
+<operation id="114" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="187" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32">
+<![CDATA[
+._crit_edge.i.i.i.i.i.i.preheader:110  call void @_ssdm_op_Write.ap_auto.floatP(float* %linearRegression_LRParameter_phiT, float %newret28)
+
+]]></Node>
+<StgValue><ssdm name=""/></StgValue>
+</operation>
+
+<operation id="115" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="188" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32">
+<![CDATA[
+._crit_edge.i.i.i.i.i.i.preheader:111  call void @_ssdm_op_Write.ap_auto.floatP(float* %linearRegression_LRParameter_cotTheta, float %newret29)
+
+]]></Node>
+<StgValue><ssdm name=""/></StgValue>
+</operation>
+
+<operation id="116" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="189" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32">
+<![CDATA[
+._crit_edge.i.i.i.i.i.i.preheader:112  call void @_ssdm_op_Write.ap_auto.floatP(float* %linearRegression_LRParameter_zT, float %newret30)
+
+]]></Node>
+<StgValue><ssdm name=""/></StgValue>
+</operation>
+
+<operation id="117" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="190" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32">
+<![CDATA[
+._crit_edge.i.i.i.i.i.i.preheader:113  call void @_ssdm_op_Write.ap_auto.i32P(i32* %linearRegression_stubs_size_s, i32 %newret26)
+
+]]></Node>
+<StgValue><ssdm name=""/></StgValue>
+</operation>
+
+<operation id="118" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="191" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32">
+<![CDATA[
+._crit_edge.i.i.i.i.i.i.preheader:114  call void @_ssdm_op_Write.ap_auto.floatP(float* %linearRegression_HTParameter_qOverPt, float %newret22)
+
+]]></Node>
+<StgValue><ssdm name=""/></StgValue>
+</operation>
+
+<operation id="119" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="192" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32">
+<![CDATA[
+._crit_edge.i.i.i.i.i.i.preheader:115  call void @_ssdm_op_Write.ap_auto.floatP(float* %linearRegression_HTParameter_phiT, float %newret23)
+
+]]></Node>
+<StgValue><ssdm name=""/></StgValue>
+</operation>
+
+<operation id="120" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="193" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32">
+<![CDATA[
+._crit_edge.i.i.i.i.i.i.preheader:116  call void @_ssdm_op_Write.ap_auto.floatP(float* %linearRegression_HTParameter_cotTheta, float %newret24)
+
+]]></Node>
+<StgValue><ssdm name=""/></StgValue>
+</operation>
+
+<operation id="121" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="194" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32">
+<![CDATA[
+._crit_edge.i.i.i.i.i.i.preheader:117  call void @_ssdm_op_Write.ap_auto.floatP(float* %linearRegression_HTParameter_zT, float %newret25)
+
+]]></Node>
+<StgValue><ssdm name=""/></StgValue>
+</operation>
+
+<operation id="122" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="195" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32">
+<![CDATA[
+._crit_edge.i.i.i.i.i.i.preheader:118  call void @_ssdm_op_Write.ap_auto.i32P(i32* %linearRegression_iPhiSec_s, i32 %newret)
+
+]]></Node>
+<StgValue><ssdm name=""/></StgValue>
+</operation>
+
+<operation id="123" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="196" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32">
+<![CDATA[
+._crit_edge.i.i.i.i.i.i.preheader:119  call void @_ssdm_op_Write.ap_auto.i32P(i32* %linearRegression_iEtaReg_s, i32 %newret19)
+
+]]></Node>
+<StgValue><ssdm name=""/></StgValue>
+</operation>
+
+<operation id="124" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="197" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32">
+<![CDATA[
+._crit_edge.i.i.i.i.i.i.preheader:120  call void @_ssdm_op_Write.ap_auto.i32P(i32* %linearRegression_nIterations_s, i32 %newret20)
+
+]]></Node>
+<StgValue><ssdm name=""/></StgValue>
+</operation>
+
+<operation id="125" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="198" bw="0" op_0_bw="0" op_1_bw="1" op_2_bw="1">
+<![CDATA[
+._crit_edge.i.i.i.i.i.i.preheader:121  call void @_ssdm_op_Write.ap_auto.i1P(i1* %linearRegression_valid_s, i1 %newret21)
+
+]]></Node>
+<StgValue><ssdm name=""/></StgValue>
+</operation>
+
+<operation id="126" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="199" bw="0">
+<![CDATA[
+._crit_edge.i.i.i.i.i.i.preheader:122  ret void
+
+]]></Node>
+<StgValue><ssdm name=""/></StgValue>
+</operation>
+</state>
+</state_list>
+
+
+<ports>
+<port id="128" name="l1track3D_iPhiSec_s" dir="0" iftype="0">
+<core>NULL</core><StgValue><ssdm name="l1track3D_iPhiSec_s"/></StgValue>
+</port>
+<port id="129" name="l1track3D_iEtaReg_s" dir="0" iftype="0">
+<core>NULL</core><StgValue><ssdm name="l1track3D_iEtaReg_s"/></StgValue>
+</port>
+<port id="130" name="l1track3D_helixRphi_first" dir="0" iftype="0">
+<core>NULL</core><StgValue><ssdm name="l1track3D_helixRphi_first"/></StgValue>
+</port>
+<port id="131" name="l1track3D_helixRphi_second" dir="0" iftype="0">
+<core>NULL</core><StgValue><ssdm name="l1track3D_helixRphi_second"/></StgValue>
+</port>
+<port id="132" name="l1track3D_stubs_size_s" dir="0" iftype="0">
+<core>NULL</core><StgValue><ssdm name="l1track3D_stubs_size_s"/></StgValue>
+</port>
+<port id="133" name="l1track3D_stubs_data_settings_chosenRofPhi_s" dir="0" iftype="1">
+<core>RAM</core><StgValue><ssdm name="l1track3D_stubs_data_settings_chosenRofPhi_s"/><MemPortTyVec>1 1 </MemPortTyVec>
+</StgValue>
+</port>
+<port id="134" name="l1track3D_stubs_data_settings_chosenRofZ_s" dir="0" iftype="1">
+<core>RAM</core><StgValue><ssdm name="l1track3D_stubs_data_settings_chosenRofZ_s"/><MemPortTyVec>1 1 </MemPortTyVec>
+</StgValue>
+</port>
+<port id="135" name="l1track3D_stubs_data_settings_etaRegions_s" dir="0" iftype="1">
+<core>RAM</core><StgValue><ssdm name="l1track3D_stubs_data_settings_etaRegions_s"/><MemPortTyVec>1 1 </MemPortTyVec>
+</StgValue>
+</port>
+<port id="136" name="l1track3D_stubs_data_settings_minNumMatchLayers_s" dir="0" iftype="1">
+<core>RAM</core><StgValue><ssdm name="l1track3D_stubs_data_settings_minNumMatchLayers_s"/><MemPortTyVec>1 1 </MemPortTyVec>
+</StgValue>
+</port>
+<port id="137" name="l1track3D_stubs_data_settings_minPSLayers_s" dir="0" iftype="1">
+<core>RAM</core><StgValue><ssdm name="l1track3D_stubs_data_settings_minPSLayers_s"/><MemPortTyVec>1 1 </MemPortTyVec>
+</StgValue>
+</port>
+<port id="138" name="l1track3D_stubs_data_r_s" dir="0" iftype="1">
+<core>RAM</core><StgValue><ssdm name="l1track3D_stubs_data_r_s"/><MemPortTyVec>1 1 </MemPortTyVec>
+</StgValue>
+</port>
+<port id="139" name="l1track3D_stubs_data_phi_s" dir="0" iftype="1">
+<core>RAM</core><StgValue><ssdm name="l1track3D_stubs_data_phi_s"/><MemPortTyVec>1 1 </MemPortTyVec>
+</StgValue>
+</port>
+<port id="140" name="l1track3D_stubs_data_z_s" dir="0" iftype="1">
+<core>RAM</core><StgValue><ssdm name="l1track3D_stubs_data_z_s"/><MemPortTyVec>1 1 </MemPortTyVec>
+</StgValue>
+</port>
+<port id="141" name="l1track3D_stubs_data_layerId_s" dir="0" iftype="1">
+<core>RAM</core><StgValue><ssdm name="l1track3D_stubs_data_layerId_s"/><MemPortTyVec>1 1 </MemPortTyVec>
+</StgValue>
+</port>
+<port id="142" name="l1track3D_stubs_data_psModule_s" dir="0" iftype="1">
+<core>RAM</core><StgValue><ssdm name="l1track3D_stubs_data_psModule_s"/><MemPortTyVec>1 1 </MemPortTyVec>
+</StgValue>
+</port>
+<port id="143" name="l1track3D_stubs_data_barrel_s" dir="0" iftype="1">
+<core>RAM</core><StgValue><ssdm name="l1track3D_stubs_data_barrel_s"/><MemPortTyVec>1 1 </MemPortTyVec>
+</StgValue>
+</port>
+<port id="144" name="linearRegression_settings_chosenRofPhi_s" dir="0" iftype="0">
+<core>NULL</core><StgValue><ssdm name="linearRegression_settings_chosenRofPhi_s"/></StgValue>
+</port>
+<port id="145" name="linearRegression_settings_chosenRofZ_s" dir="0" iftype="0">
+<core>NULL</core><StgValue><ssdm name="linearRegression_settings_chosenRofZ_s"/></StgValue>
+</port>
+<port id="146" name="linearRegression_settings_etaRegions_s" dir="0" iftype="1">
+<core>RAM</core><StgValue><ssdm name="linearRegression_settings_etaRegions_s"/><MemPortTyVec>1 3 </MemPortTyVec>
+</StgValue>
+</port>
+<port id="147" name="linearRegression_settings_minNumMatchLayers_s" dir="0" iftype="0">
+<core>NULL</core><StgValue><ssdm name="linearRegression_settings_minNumMatchLayers_s"/></StgValue>
+</port>
+<port id="148" name="linearRegression_settings_minPSLayers_s" dir="0" iftype="0">
+<core>NULL</core><StgValue><ssdm name="linearRegression_settings_minPSLayers_s"/></StgValue>
+</port>
+<port id="149" name="linearRegression_iPhiSec_s" dir="1" iftype="0">
+<core>NULL</core><StgValue><ssdm name="linearRegression_iPhiSec_s"/></StgValue>
+</port>
+<port id="150" name="linearRegression_iEtaReg_s" dir="1" iftype="0">
+<core>NULL</core><StgValue><ssdm name="linearRegression_iEtaReg_s"/></StgValue>
+</port>
+<port id="151" name="linearRegression_nIterations_s" dir="1" iftype="0">
+<core>NULL</core><StgValue><ssdm name="linearRegression_nIterations_s"/></StgValue>
+</port>
+<port id="152" name="linearRegression_HTParameter_qOverPt" dir="1" iftype="0">
+<core>NULL</core><StgValue><ssdm name="linearRegression_HTParameter_qOverPt"/></StgValue>
+</port>
+<port id="153" name="linearRegression_HTParameter_phiT" dir="1" iftype="0">
+<core>NULL</core><StgValue><ssdm name="linearRegression_HTParameter_phiT"/></StgValue>
+</port>
+<port id="154" name="linearRegression_HTParameter_cotTheta" dir="1" iftype="0">
+<core>NULL</core><StgValue><ssdm name="linearRegression_HTParameter_cotTheta"/></StgValue>
+</port>
+<port id="155" name="linearRegression_HTParameter_zT" dir="1" iftype="0">
+<core>NULL</core><StgValue><ssdm name="linearRegression_HTParameter_zT"/></StgValue>
+</port>
+<port id="156" name="linearRegression_LRParameter_qOverPt" dir="2" iftype="0">
+<core>NULL</core><StgValue><ssdm name="linearRegression_LRParameter_qOverPt"/></StgValue>
+</port>
+<port id="157" name="linearRegression_LRParameter_phiT" dir="2" iftype="0">
+<core>NULL</core><StgValue><ssdm name="linearRegression_LRParameter_phiT"/></StgValue>
+</port>
+<port id="158" name="linearRegression_LRParameter_cotTheta" dir="2" iftype="0">
+<core>NULL</core><StgValue><ssdm name="linearRegression_LRParameter_cotTheta"/></StgValue>
+</port>
+<port id="159" name="linearRegression_LRParameter_zT" dir="2" iftype="0">
+<core>NULL</core><StgValue><ssdm name="linearRegression_LRParameter_zT"/></StgValue>
+</port>
+<port id="160" name="linearRegression_stubs_size_s" dir="1" iftype="0">
+<core>NULL</core><StgValue><ssdm name="linearRegression_stubs_size_s"/></StgValue>
+</port>
+<port id="161" name="linearRegression_stubs_data_settings_chosenRofPhi_s" dir="2" iftype="1">
+<core>RAM</core><StgValue><ssdm name="linearRegression_stubs_data_settings_chosenRofPhi_s"/><MemPortTyVec>2 0 </MemPortTyVec>
+</StgValue>
+</port>
+<port id="162" name="linearRegression_stubs_data_settings_chosenRofZ_s" dir="2" iftype="1">
+<core>RAM</core><StgValue><ssdm name="linearRegression_stubs_data_settings_chosenRofZ_s"/><MemPortTyVec>2 0 </MemPortTyVec>
+</StgValue>
+</port>
+<port id="163" name="linearRegression_stubs_data_settings_etaRegions_s" dir="2" iftype="1">
+<core>RAM</core><StgValue><ssdm name="linearRegression_stubs_data_settings_etaRegions_s"/><MemPortTyVec>2 2 </MemPortTyVec>
+</StgValue>
+</port>
+<port id="164" name="linearRegression_stubs_data_settings_minNumMatchLayers_s" dir="2" iftype="1">
+<core>RAM</core><StgValue><ssdm name="linearRegression_stubs_data_settings_minNumMatchLayers_s"/><MemPortTyVec>2 0 </MemPortTyVec>
+</StgValue>
+</port>
+<port id="165" name="linearRegression_stubs_data_settings_minPSLayers_s" dir="2" iftype="1">
+<core>RAM</core><StgValue><ssdm name="linearRegression_stubs_data_settings_minPSLayers_s"/><MemPortTyVec>2 0 </MemPortTyVec>
+</StgValue>
+</port>
+<port id="166" name="linearRegression_stubs_data_r_s" dir="2" iftype="1">
+<core>RAM</core><StgValue><ssdm name="linearRegression_stubs_data_r_s"/><MemPortTyVec>2 0 </MemPortTyVec>
+</StgValue>
+</port>
+<port id="167" name="linearRegression_stubs_data_phi_s" dir="2" iftype="1">
+<core>RAM</core><StgValue><ssdm name="linearRegression_stubs_data_phi_s"/><MemPortTyVec>2 0 </MemPortTyVec>
+</StgValue>
+</port>
+<port id="168" name="linearRegression_stubs_data_z_s" dir="2" iftype="1">
+<core>RAM</core><StgValue><ssdm name="linearRegression_stubs_data_z_s"/><MemPortTyVec>2 0 </MemPortTyVec>
+</StgValue>
+</port>
+<port id="169" name="linearRegression_stubs_data_layerId_s" dir="2" iftype="1">
+<core>RAM</core><StgValue><ssdm name="linearRegression_stubs_data_layerId_s"/><MemPortTyVec>2 2 </MemPortTyVec>
+</StgValue>
+</port>
+<port id="170" name="linearRegression_stubs_data_psModule_s" dir="2" iftype="1">
+<core>RAM</core><StgValue><ssdm name="linearRegression_stubs_data_psModule_s"/><MemPortTyVec>2 2 </MemPortTyVec>
+</StgValue>
+</port>
+<port id="171" name="linearRegression_stubs_data_barrel_s" dir="2" iftype="1">
+<core>RAM</core><StgValue><ssdm name="linearRegression_stubs_data_barrel_s"/><MemPortTyVec>2 2 </MemPortTyVec>
+</StgValue>
+</port>
+<port id="172" name="linearRegression_valid_s" dir="1" iftype="0">
+<core>NULL</core><StgValue><ssdm name="linearRegression_valid_s"/></StgValue>
+</port>
+<port id="173" name="linearRegression_stubMap_size_s" dir="2" iftype="0">
+<core>NULL</core><StgValue><ssdm name="linearRegression_stubMap_size_s"/></StgValue>
+</port>
+<port id="174" name="linearRegression_stubMap_data_first" dir="2" iftype="1">
+<core>RAM</core><StgValue><ssdm name="linearRegression_stubMap_data_first"/><MemPortTyVec>2 3 </MemPortTyVec>
+</StgValue>
+</port>
+<port id="175" name="linearRegression_stubMap_data_second_size_s" dir="2" iftype="1">
+<core>RAM</core><StgValue><ssdm name="linearRegression_stubMap_data_second_size_s"/><MemPortTyVec>2 3 </MemPortTyVec>
+</StgValue>
+</port>
+<port id="176" name="linearRegression_stubMap_data_second_data_settings_chosenRofPhi_s" dir="2" iftype="1">
+<core>RAM</core><StgValue><ssdm name="linearRegression_stubMap_data_second_data_settings_chosenRofPhi_s"/><MemPortTyVec>2 2 </MemPortTyVec>
+</StgValue>
+</port>
+<port id="177" name="linearRegression_stubMap_data_second_data_settings_chosenRofZ_s" dir="2" iftype="1">
+<core>RAM</core><StgValue><ssdm name="linearRegression_stubMap_data_second_data_settings_chosenRofZ_s"/><MemPortTyVec>2 2 </MemPortTyVec>
+</StgValue>
+</port>
+<port id="178" name="linearRegression_stubMap_data_second_data_settings_etaRegions_s" dir="2" iftype="1">
+<core>RAM</core><StgValue><ssdm name="linearRegression_stubMap_data_second_data_settings_etaRegions_s"/><MemPortTyVec>2 2 </MemPortTyVec>
+</StgValue>
+</port>
+<port id="179" name="linearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s" dir="2" iftype="1">
+<core>RAM</core><StgValue><ssdm name="linearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s"/><MemPortTyVec>2 2 </MemPortTyVec>
+</StgValue>
+</port>
+<port id="180" name="linearRegression_stubMap_data_second_data_settings_minPSLayers_s" dir="2" iftype="1">
+<core>RAM</core><StgValue><ssdm name="linearRegression_stubMap_data_second_data_settings_minPSLayers_s"/><MemPortTyVec>2 2 </MemPortTyVec>
+</StgValue>
+</port>
+<port id="181" name="linearRegression_stubMap_data_second_data_r_s" dir="2" iftype="1">
+<core>RAM</core><StgValue><ssdm name="linearRegression_stubMap_data_second_data_r_s"/><MemPortTyVec>2 2 </MemPortTyVec>
+</StgValue>
+</port>
+<port id="182" name="linearRegression_stubMap_data_second_data_phi_s" dir="2" iftype="1">
+<core>RAM</core><StgValue><ssdm name="linearRegression_stubMap_data_second_data_phi_s"/><MemPortTyVec>2 2 </MemPortTyVec>
+</StgValue>
+</port>
+<port id="183" name="linearRegression_stubMap_data_second_data_z_s" dir="2" iftype="1">
+<core>RAM</core><StgValue><ssdm name="linearRegression_stubMap_data_second_data_z_s"/><MemPortTyVec>2 2 </MemPortTyVec>
+</StgValue>
+</port>
+<port id="184" name="linearRegression_stubMap_data_second_data_layerId_s" dir="2" iftype="1">
+<core>RAM</core><StgValue><ssdm name="linearRegression_stubMap_data_second_data_layerId_s"/><MemPortTyVec>2 2 </MemPortTyVec>
+</StgValue>
+</port>
+<port id="185" name="linearRegression_stubMap_data_second_data_psModule_s" dir="2" iftype="1">
+<core>RAM</core><StgValue><ssdm name="linearRegression_stubMap_data_second_data_psModule_s"/><MemPortTyVec>2 2 </MemPortTyVec>
+</StgValue>
+</port>
+<port id="186" name="linearRegression_stubMap_data_second_data_barrel_s" dir="2" iftype="1">
+<core>RAM</core><StgValue><ssdm name="linearRegression_stubMap_data_second_data_barrel_s"/><MemPortTyVec>2 2 </MemPortTyVec>
+</StgValue>
+</port>
+<port id="187" name="linearRegression_layerPopulation_size_s" dir="2" iftype="0">
+<core>NULL</core><StgValue><ssdm name="linearRegression_layerPopulation_size_s"/></StgValue>
+</port>
+<port id="188" name="linearRegression_layerPopulation_data_first" dir="2" iftype="1">
+<core>RAM</core><StgValue><ssdm name="linearRegression_layerPopulation_data_first"/><MemPortTyVec>2 3 </MemPortTyVec>
+</StgValue>
+</port>
+<port id="189" name="linearRegression_layerPopulation_data_second" dir="2" iftype="1">
+<core>RAM</core><StgValue><ssdm name="linearRegression_layerPopulation_data_second"/><MemPortTyVec>2 3 </MemPortTyVec>
+</StgValue>
+</port>
+<port id="190" name="linearRegression_residuals_size_s" dir="1" iftype="0">
+<core>NULL</core><StgValue><ssdm name="linearRegression_residuals_size_s"/></StgValue>
+</port>
+<port id="191" name="linearRegression_residuals_data_first" dir="2" iftype="1">
+<core>RAM</core><StgValue><ssdm name="linearRegression_residuals_data_first"/><MemPortTyVec>2 3 </MemPortTyVec>
+</StgValue>
+</port>
+<port id="192" name="linearRegression_residuals_data_second_size_s" dir="2" iftype="1">
+<core>RAM</core><StgValue><ssdm name="linearRegression_residuals_data_second_size_s"/><MemPortTyVec>2 3 </MemPortTyVec>
+</StgValue>
+</port>
+<port id="193" name="linearRegression_residuals_data_second_data_phi" dir="2" iftype="1">
+<core>RAM</core><StgValue><ssdm name="linearRegression_residuals_data_second_data_phi"/><MemPortTyVec>2 0 </MemPortTyVec>
+</StgValue>
+</port>
+<port id="194" name="linearRegression_residuals_data_second_data_z" dir="2" iftype="1">
+<core>RAM</core><StgValue><ssdm name="linearRegression_residuals_data_second_data_z"/><MemPortTyVec>2 0 </MemPortTyVec>
+</StgValue>
+</port>
+<port id="195" name="linearRegression_residuals_data_second_data_layerId" dir="2" iftype="1">
+<core>RAM</core><StgValue><ssdm name="linearRegression_residuals_data_second_data_layerId"/><MemPortTyVec>2 0 </MemPortTyVec>
+</StgValue>
+</port>
+<port id="196" name="linearRegression_residuals_data_second_data_stubId" dir="2" iftype="1">
+<core>RAM</core><StgValue><ssdm name="linearRegression_residuals_data_second_data_stubId"/><MemPortTyVec>2 0 </MemPortTyVec>
+</StgValue>
+</port>
+<port id="197" name="linearRegression_residuals_data_second_data_ps" dir="2" iftype="1">
+<core>RAM</core><StgValue><ssdm name="linearRegression_residuals_data_second_data_ps"/><MemPortTyVec>2 0 </MemPortTyVec>
+</StgValue>
+</port>
+<port id="198" name="linearRegression_largestResid_phi" dir="1" iftype="0">
+<core>NULL</core><StgValue><ssdm name="linearRegression_largestResid_phi"/></StgValue>
+</port>
+<port id="199" name="linearRegression_largestResid_z" dir="1" iftype="0">
+<core>NULL</core><StgValue><ssdm name="linearRegression_largestResid_z"/></StgValue>
+</port>
+<port id="200" name="linearRegression_largestResid_layerId" dir="1" iftype="0">
+<core>NULL</core><StgValue><ssdm name="linearRegression_largestResid_layerId"/></StgValue>
+</port>
+<port id="201" name="linearRegression_largestResid_stubId" dir="1" iftype="0">
+<core>NULL</core><StgValue><ssdm name="linearRegression_largestResid_stubId"/></StgValue>
+</port>
+<port id="202" name="linearRegression_largestResid_ps" dir="1" iftype="0">
+<core>NULL</core><StgValue><ssdm name="linearRegression_largestResid_ps"/></StgValue>
+</port>
+<port id="203" name="cordic_hyperb_table_s" dir="0" iftype="1">
+<core>ROM_nP</core><StgValue><ssdm name="cordic_hyperb_table_s"/><MemPortTyVec>1 </MemPortTyVec>
+</StgValue>
+</port>
+</ports>
+
+
+<dataflows>
+<dataflow id="205" from="_ssdm_op_Read.ap_auto.i32P" to="linearRegression_set" fromId="204" toId="3">
+</dataflow>
+<dataflow id="206" from="linearRegression_settings_minNumMatchLayers_s" to="linearRegression_set" fromId="147" toId="3">
+</dataflow>
+<dataflow id="207" from="_ssdm_op_Read.ap_auto.i32P" to="linearRegression_set_1" fromId="204" toId="4">
+</dataflow>
+<dataflow id="208" from="linearRegression_settings_minPSLayers_s" to="linearRegression_set_1" fromId="148" toId="4">
+</dataflow>
+<dataflow id="209" from="_ssdm_op_Read.ap_auto.i32P" to="l1track3D_iPhiSec_r" fromId="204" toId="5">
+</dataflow>
+<dataflow id="210" from="l1track3D_iPhiSec_s" to="l1track3D_iPhiSec_r" fromId="128" toId="5">
+</dataflow>
+<dataflow id="211" from="_ssdm_op_Read.ap_auto.i32P" to="l1track3D_iEtaReg_r" fromId="204" toId="6">
+</dataflow>
+<dataflow id="212" from="l1track3D_iEtaReg_s" to="l1track3D_iEtaReg_r" fromId="129" toId="6">
+</dataflow>
+<dataflow id="214" from="_ssdm_op_Read.ap_auto.floatP" to="l1track3D_helixRphi_s" fromId="213" toId="7">
+</dataflow>
+<dataflow id="215" from="l1track3D_helixRphi_first" to="l1track3D_helixRphi_s" fromId="130" toId="7">
+</dataflow>
+<dataflow id="216" from="_ssdm_op_Read.ap_auto.floatP" to="l1track3D_helixRphi_3" fromId="213" toId="8">
+</dataflow>
+<dataflow id="217" from="l1track3D_helixRphi_second" to="l1track3D_helixRphi_3" fromId="131" toId="8">
+</dataflow>
+<dataflow id="218" from="_ssdm_op_Read.ap_auto.i32P" to="l1track3D_stubs_siz" fromId="204" toId="9">
+</dataflow>
+<dataflow id="219" from="l1track3D_stubs_size_s" to="l1track3D_stubs_siz" fromId="132" toId="9">
+</dataflow>
+<dataflow id="220" from="_ssdm_op_Read.ap_auto.floatP" to="linearRegression_set_2" fromId="213" toId="10">
+</dataflow>
+<dataflow id="221" from="linearRegression_settings_chosenRofPhi_s" to="linearRegression_set_2" fromId="144" toId="10">
+</dataflow>
+<dataflow id="222" from="_ssdm_op_Read.ap_auto.floatP" to="linearRegression_set_3" fromId="213" toId="11">
+</dataflow>
+<dataflow id="223" from="linearRegression_settings_chosenRofZ_s" to="linearRegression_set_3" fromId="145" toId="11">
+</dataflow>
+<dataflow id="224" from="_ssdm_op_Read.ap_auto.floatP" to="linearRegression_LRP" fromId="213" toId="12">
+</dataflow>
+<dataflow id="225" from="linearRegression_LRParameter_qOverPt" to="linearRegression_LRP" fromId="156" toId="12">
+</dataflow>
+<dataflow id="226" from="_ssdm_op_Read.ap_auto.floatP" to="linearRegression_LRP_1" fromId="213" toId="13">
+</dataflow>
+<dataflow id="227" from="linearRegression_LRParameter_phiT" to="linearRegression_LRP_1" fromId="157" toId="13">
+</dataflow>
+<dataflow id="228" from="_ssdm_op_Read.ap_auto.floatP" to="linearRegression_LRP_2" fromId="213" toId="14">
+</dataflow>
+<dataflow id="229" from="linearRegression_LRParameter_cotTheta" to="linearRegression_LRP_2" fromId="158" toId="14">
+</dataflow>
+<dataflow id="230" from="_ssdm_op_Read.ap_auto.floatP" to="linearRegression_LRP_3" fromId="213" toId="15">
+</dataflow>
+<dataflow id="231" from="linearRegression_LRParameter_zT" to="linearRegression_LRP_3" fromId="159" toId="15">
+</dataflow>
+<dataflow id="232" from="_ssdm_op_Read.ap_auto.i32P" to="linearRegression_stu" fromId="204" toId="16">
+</dataflow>
+<dataflow id="233" from="linearRegression_stubMap_size_s" to="linearRegression_stu" fromId="173" toId="16">
+</dataflow>
+<dataflow id="234" from="_ssdm_op_Read.ap_auto.i32P" to="linearRegression_lay" fromId="204" toId="17">
+</dataflow>
+<dataflow id="235" from="linearRegression_layerPopulation_size_s" to="linearRegression_lay" fromId="187" toId="17">
+</dataflow>
+<dataflow id="237" from="fit" to="call_ret1" fromId="236" toId="18">
+</dataflow>
+<dataflow id="238" from="linearRegression_set_2" to="call_ret1" fromId="10" toId="18">
+</dataflow>
+<dataflow id="239" from="linearRegression_set_3" to="call_ret1" fromId="11" toId="18">
+</dataflow>
+<dataflow id="240" from="linearRegression_settings_etaRegions_s" to="call_ret1" fromId="146" toId="18">
+</dataflow>
+<dataflow id="241" from="linearRegression_set" to="call_ret1" fromId="3" toId="18">
+</dataflow>
+<dataflow id="242" from="linearRegression_set_1" to="call_ret1" fromId="4" toId="18">
+</dataflow>
+<dataflow id="243" from="linearRegression_LRP" to="call_ret1" fromId="12" toId="18">
+</dataflow>
+<dataflow id="244" from="linearRegression_LRP_1" to="call_ret1" fromId="13" toId="18">
+</dataflow>
+<dataflow id="245" from="linearRegression_LRP_2" to="call_ret1" fromId="14" toId="18">
+</dataflow>
+<dataflow id="246" from="linearRegression_LRP_3" to="call_ret1" fromId="15" toId="18">
+</dataflow>
+<dataflow id="247" from="linearRegression_stubs_data_settings_chosenRofPhi_s" to="call_ret1" fromId="161" toId="18">
+</dataflow>
+<dataflow id="248" from="linearRegression_stubs_data_settings_chosenRofZ_s" to="call_ret1" fromId="162" toId="18">
+</dataflow>
+<dataflow id="249" from="linearRegression_stubs_data_settings_etaRegions_s" to="call_ret1" fromId="163" toId="18">
+</dataflow>
+<dataflow id="250" from="linearRegression_stubs_data_settings_minNumMatchLayers_s" to="call_ret1" fromId="164" toId="18">
+</dataflow>
+<dataflow id="251" from="linearRegression_stubs_data_settings_minPSLayers_s" to="call_ret1" fromId="165" toId="18">
+</dataflow>
+<dataflow id="252" from="linearRegression_stubs_data_r_s" to="call_ret1" fromId="166" toId="18">
+</dataflow>
+<dataflow id="253" from="linearRegression_stubs_data_phi_s" to="call_ret1" fromId="167" toId="18">
+</dataflow>
+<dataflow id="254" from="linearRegression_stubs_data_z_s" to="call_ret1" fromId="168" toId="18">
+</dataflow>
+<dataflow id="255" from="linearRegression_stubs_data_layerId_s" to="call_ret1" fromId="169" toId="18">
+</dataflow>
+<dataflow id="256" from="linearRegression_stubs_data_psModule_s" to="call_ret1" fromId="170" toId="18">
+</dataflow>
+<dataflow id="257" from="linearRegression_stubs_data_barrel_s" to="call_ret1" fromId="171" toId="18">
+</dataflow>
+<dataflow id="258" from="linearRegression_stu" to="call_ret1" fromId="16" toId="18">
+</dataflow>
+<dataflow id="259" from="linearRegression_stubMap_data_first" to="call_ret1" fromId="174" toId="18">
+</dataflow>
+<dataflow id="260" from="linearRegression_stubMap_data_second_size_s" to="call_ret1" fromId="175" toId="18">
+</dataflow>
+<dataflow id="261" from="linearRegression_stubMap_data_second_data_settings_chosenRofPhi_s" to="call_ret1" fromId="176" toId="18">
+</dataflow>
+<dataflow id="262" from="linearRegression_stubMap_data_second_data_settings_chosenRofZ_s" to="call_ret1" fromId="177" toId="18">
+</dataflow>
+<dataflow id="263" from="linearRegression_stubMap_data_second_data_settings_etaRegions_s" to="call_ret1" fromId="178" toId="18">
+</dataflow>
+<dataflow id="264" from="linearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s" to="call_ret1" fromId="179" toId="18">
+</dataflow>
+<dataflow id="265" from="linearRegression_stubMap_data_second_data_settings_minPSLayers_s" to="call_ret1" fromId="180" toId="18">
+</dataflow>
+<dataflow id="266" from="linearRegression_stubMap_data_second_data_r_s" to="call_ret1" fromId="181" toId="18">
+</dataflow>
+<dataflow id="267" from="linearRegression_stubMap_data_second_data_phi_s" to="call_ret1" fromId="182" toId="18">
+</dataflow>
+<dataflow id="268" from="linearRegression_stubMap_data_second_data_z_s" to="call_ret1" fromId="183" toId="18">
+</dataflow>
+<dataflow id="269" from="linearRegression_stubMap_data_second_data_layerId_s" to="call_ret1" fromId="184" toId="18">
+</dataflow>
+<dataflow id="270" from="linearRegression_stubMap_data_second_data_psModule_s" to="call_ret1" fromId="185" toId="18">
+</dataflow>
+<dataflow id="271" from="linearRegression_stubMap_data_second_data_barrel_s" to="call_ret1" fromId="186" toId="18">
+</dataflow>
+<dataflow id="272" from="linearRegression_lay" to="call_ret1" fromId="17" toId="18">
+</dataflow>
+<dataflow id="273" from="linearRegression_layerPopulation_data_first" to="call_ret1" fromId="188" toId="18">
+</dataflow>
+<dataflow id="274" from="linearRegression_layerPopulation_data_second" to="call_ret1" fromId="189" toId="18">
+</dataflow>
+<dataflow id="275" from="linearRegression_residuals_size_s" to="call_ret1" fromId="190" toId="18">
+</dataflow>
+<dataflow id="276" from="linearRegression_residuals_data_first" to="call_ret1" fromId="191" toId="18">
+</dataflow>
+<dataflow id="277" from="linearRegression_residuals_data_second_size_s" to="call_ret1" fromId="192" toId="18">
+</dataflow>
+<dataflow id="278" from="linearRegression_residuals_data_second_data_phi" to="call_ret1" fromId="193" toId="18">
+</dataflow>
+<dataflow id="279" from="linearRegression_residuals_data_second_data_z" to="call_ret1" fromId="194" toId="18">
+</dataflow>
+<dataflow id="280" from="linearRegression_residuals_data_second_data_layerId" to="call_ret1" fromId="195" toId="18">
+</dataflow>
+<dataflow id="281" from="linearRegression_residuals_data_second_data_stubId" to="call_ret1" fromId="196" toId="18">
+</dataflow>
+<dataflow id="282" from="linearRegression_residuals_data_second_data_ps" to="call_ret1" fromId="197" toId="18">
+</dataflow>
+<dataflow id="283" from="linearRegression_largestResid_phi" to="call_ret1" fromId="198" toId="18">
+</dataflow>
+<dataflow id="284" from="linearRegression_largestResid_z" to="call_ret1" fromId="199" toId="18">
+</dataflow>
+<dataflow id="285" from="linearRegression_largestResid_layerId" to="call_ret1" fromId="200" toId="18">
+</dataflow>
+<dataflow id="286" from="linearRegression_largestResid_stubId" to="call_ret1" fromId="201" toId="18">
+</dataflow>
+<dataflow id="287" from="linearRegression_largestResid_ps" to="call_ret1" fromId="202" toId="18">
+</dataflow>
+<dataflow id="288" from="l1track3D_iPhiSec_r" to="call_ret1" fromId="5" toId="18">
+</dataflow>
+<dataflow id="289" from="l1track3D_iEtaReg_r" to="call_ret1" fromId="6" toId="18">
+</dataflow>
+<dataflow id="290" from="l1track3D_helixRphi_s" to="call_ret1" fromId="7" toId="18">
+</dataflow>
+<dataflow id="291" from="l1track3D_helixRphi_3" to="call_ret1" fromId="8" toId="18">
+</dataflow>
+<dataflow id="292" from="l1track3D_stubs_siz" to="call_ret1" fromId="9" toId="18">
+</dataflow>
+<dataflow id="293" from="l1track3D_stubs_data_settings_chosenRofPhi_s" to="call_ret1" fromId="133" toId="18">
+</dataflow>
+<dataflow id="294" from="l1track3D_stubs_data_settings_chosenRofZ_s" to="call_ret1" fromId="134" toId="18">
+</dataflow>
+<dataflow id="295" from="l1track3D_stubs_data_settings_etaRegions_s" to="call_ret1" fromId="135" toId="18">
+</dataflow>
+<dataflow id="296" from="l1track3D_stubs_data_settings_minNumMatchLayers_s" to="call_ret1" fromId="136" toId="18">
+</dataflow>
+<dataflow id="297" from="l1track3D_stubs_data_settings_minPSLayers_s" to="call_ret1" fromId="137" toId="18">
+</dataflow>
+<dataflow id="298" from="l1track3D_stubs_data_r_s" to="call_ret1" fromId="138" toId="18">
+</dataflow>
+<dataflow id="299" from="l1track3D_stubs_data_phi_s" to="call_ret1" fromId="139" toId="18">
+</dataflow>
+<dataflow id="300" from="l1track3D_stubs_data_z_s" to="call_ret1" fromId="140" toId="18">
+</dataflow>
+<dataflow id="301" from="l1track3D_stubs_data_layerId_s" to="call_ret1" fromId="141" toId="18">
+</dataflow>
+<dataflow id="302" from="l1track3D_stubs_data_psModule_s" to="call_ret1" fromId="142" toId="18">
+</dataflow>
+<dataflow id="303" from="l1track3D_stubs_data_barrel_s" to="call_ret1" fromId="143" toId="18">
+</dataflow>
+<dataflow id="304" from="cordic_hyperb_table_s" to="call_ret1" fromId="203" toId="18">
+</dataflow>
+<dataflow id="306" from="_ssdm_op_SpecBitsMap" to="StgValue_19" fromId="305" toId="19">
+</dataflow>
+<dataflow id="307" from="l1track3D_iPhiSec_s" to="StgValue_19" fromId="128" toId="19">
+</dataflow>
+<dataflow id="308" from="_ssdm_op_SpecBitsMap" to="StgValue_20" fromId="305" toId="20">
+</dataflow>
+<dataflow id="309" from="l1track3D_iEtaReg_s" to="StgValue_20" fromId="129" toId="20">
+</dataflow>
+<dataflow id="310" from="_ssdm_op_SpecBitsMap" to="StgValue_21" fromId="305" toId="21">
+</dataflow>
+<dataflow id="311" from="l1track3D_helixRphi_first" to="StgValue_21" fromId="130" toId="21">
+</dataflow>
+<dataflow id="312" from="_ssdm_op_SpecBitsMap" to="StgValue_22" fromId="305" toId="22">
+</dataflow>
+<dataflow id="313" from="l1track3D_helixRphi_second" to="StgValue_22" fromId="131" toId="22">
+</dataflow>
+<dataflow id="314" from="_ssdm_op_SpecBitsMap" to="StgValue_23" fromId="305" toId="23">
+</dataflow>
+<dataflow id="315" from="l1track3D_stubs_size_s" to="StgValue_23" fromId="132" toId="23">
+</dataflow>
+<dataflow id="316" from="_ssdm_op_SpecBitsMap" to="StgValue_24" fromId="305" toId="24">
+</dataflow>
+<dataflow id="317" from="l1track3D_stubs_data_settings_chosenRofPhi_s" to="StgValue_24" fromId="133" toId="24">
+</dataflow>
+<dataflow id="318" from="_ssdm_op_SpecBitsMap" to="StgValue_25" fromId="305" toId="25">
+</dataflow>
+<dataflow id="319" from="l1track3D_stubs_data_settings_chosenRofZ_s" to="StgValue_25" fromId="134" toId="25">
+</dataflow>
+<dataflow id="320" from="_ssdm_op_SpecBitsMap" to="StgValue_26" fromId="305" toId="26">
+</dataflow>
+<dataflow id="321" from="l1track3D_stubs_data_settings_etaRegions_s" to="StgValue_26" fromId="135" toId="26">
+</dataflow>
+<dataflow id="322" from="_ssdm_op_SpecBitsMap" to="StgValue_27" fromId="305" toId="27">
+</dataflow>
+<dataflow id="323" from="l1track3D_stubs_data_settings_minNumMatchLayers_s" to="StgValue_27" fromId="136" toId="27">
+</dataflow>
+<dataflow id="324" from="_ssdm_op_SpecBitsMap" to="StgValue_28" fromId="305" toId="28">
+</dataflow>
+<dataflow id="325" from="l1track3D_stubs_data_settings_minPSLayers_s" to="StgValue_28" fromId="137" toId="28">
+</dataflow>
+<dataflow id="326" from="_ssdm_op_SpecBitsMap" to="StgValue_29" fromId="305" toId="29">
+</dataflow>
+<dataflow id="327" from="l1track3D_stubs_data_r_s" to="StgValue_29" fromId="138" toId="29">
+</dataflow>
+<dataflow id="328" from="_ssdm_op_SpecBitsMap" to="StgValue_30" fromId="305" toId="30">
+</dataflow>
+<dataflow id="329" from="l1track3D_stubs_data_phi_s" to="StgValue_30" fromId="139" toId="30">
+</dataflow>
+<dataflow id="330" from="_ssdm_op_SpecBitsMap" to="StgValue_31" fromId="305" toId="31">
+</dataflow>
+<dataflow id="331" from="l1track3D_stubs_data_z_s" to="StgValue_31" fromId="140" toId="31">
+</dataflow>
+<dataflow id="332" from="_ssdm_op_SpecBitsMap" to="StgValue_32" fromId="305" toId="32">
+</dataflow>
+<dataflow id="333" from="l1track3D_stubs_data_layerId_s" to="StgValue_32" fromId="141" toId="32">
+</dataflow>
+<dataflow id="334" from="_ssdm_op_SpecBitsMap" to="StgValue_33" fromId="305" toId="33">
+</dataflow>
+<dataflow id="335" from="l1track3D_stubs_data_psModule_s" to="StgValue_33" fromId="142" toId="33">
+</dataflow>
+<dataflow id="336" from="_ssdm_op_SpecBitsMap" to="StgValue_34" fromId="305" toId="34">
+</dataflow>
+<dataflow id="337" from="l1track3D_stubs_data_barrel_s" to="StgValue_34" fromId="143" toId="34">
+</dataflow>
+<dataflow id="338" from="_ssdm_op_SpecBitsMap" to="StgValue_35" fromId="305" toId="35">
+</dataflow>
+<dataflow id="339" from="linearRegression_settings_chosenRofPhi_s" to="StgValue_35" fromId="144" toId="35">
+</dataflow>
+<dataflow id="340" from="_ssdm_op_SpecBitsMap" to="StgValue_36" fromId="305" toId="36">
+</dataflow>
+<dataflow id="341" from="linearRegression_settings_chosenRofZ_s" to="StgValue_36" fromId="145" toId="36">
+</dataflow>
+<dataflow id="342" from="_ssdm_op_SpecBitsMap" to="StgValue_37" fromId="305" toId="37">
+</dataflow>
+<dataflow id="343" from="linearRegression_settings_etaRegions_s" to="StgValue_37" fromId="146" toId="37">
+</dataflow>
+<dataflow id="344" from="_ssdm_op_SpecBitsMap" to="StgValue_38" fromId="305" toId="38">
+</dataflow>
+<dataflow id="345" from="linearRegression_settings_minNumMatchLayers_s" to="StgValue_38" fromId="147" toId="38">
+</dataflow>
+<dataflow id="346" from="_ssdm_op_SpecBitsMap" to="StgValue_39" fromId="305" toId="39">
+</dataflow>
+<dataflow id="347" from="linearRegression_settings_minPSLayers_s" to="StgValue_39" fromId="148" toId="39">
+</dataflow>
+<dataflow id="348" from="_ssdm_op_SpecBitsMap" to="StgValue_40" fromId="305" toId="40">
+</dataflow>
+<dataflow id="349" from="linearRegression_iPhiSec_s" to="StgValue_40" fromId="149" toId="40">
+</dataflow>
+<dataflow id="350" from="_ssdm_op_SpecBitsMap" to="StgValue_41" fromId="305" toId="41">
+</dataflow>
+<dataflow id="351" from="linearRegression_iEtaReg_s" to="StgValue_41" fromId="150" toId="41">
+</dataflow>
+<dataflow id="352" from="_ssdm_op_SpecBitsMap" to="StgValue_42" fromId="305" toId="42">
+</dataflow>
+<dataflow id="353" from="linearRegression_nIterations_s" to="StgValue_42" fromId="151" toId="42">
+</dataflow>
+<dataflow id="354" from="_ssdm_op_SpecBitsMap" to="StgValue_43" fromId="305" toId="43">
+</dataflow>
+<dataflow id="355" from="linearRegression_HTParameter_qOverPt" to="StgValue_43" fromId="152" toId="43">
+</dataflow>
+<dataflow id="356" from="_ssdm_op_SpecBitsMap" to="StgValue_44" fromId="305" toId="44">
+</dataflow>
+<dataflow id="357" from="linearRegression_HTParameter_phiT" to="StgValue_44" fromId="153" toId="44">
+</dataflow>
+<dataflow id="358" from="_ssdm_op_SpecBitsMap" to="StgValue_45" fromId="305" toId="45">
+</dataflow>
+<dataflow id="359" from="linearRegression_HTParameter_cotTheta" to="StgValue_45" fromId="154" toId="45">
+</dataflow>
+<dataflow id="360" from="_ssdm_op_SpecBitsMap" to="StgValue_46" fromId="305" toId="46">
+</dataflow>
+<dataflow id="361" from="linearRegression_HTParameter_zT" to="StgValue_46" fromId="155" toId="46">
+</dataflow>
+<dataflow id="362" from="_ssdm_op_SpecBitsMap" to="StgValue_47" fromId="305" toId="47">
+</dataflow>
+<dataflow id="363" from="linearRegression_LRParameter_qOverPt" to="StgValue_47" fromId="156" toId="47">
+</dataflow>
+<dataflow id="364" from="_ssdm_op_SpecBitsMap" to="StgValue_48" fromId="305" toId="48">
+</dataflow>
+<dataflow id="365" from="linearRegression_LRParameter_phiT" to="StgValue_48" fromId="157" toId="48">
+</dataflow>
+<dataflow id="366" from="_ssdm_op_SpecBitsMap" to="StgValue_49" fromId="305" toId="49">
+</dataflow>
+<dataflow id="367" from="linearRegression_LRParameter_cotTheta" to="StgValue_49" fromId="158" toId="49">
+</dataflow>
+<dataflow id="368" from="_ssdm_op_SpecBitsMap" to="StgValue_50" fromId="305" toId="50">
+</dataflow>
+<dataflow id="369" from="linearRegression_LRParameter_zT" to="StgValue_50" fromId="159" toId="50">
+</dataflow>
+<dataflow id="370" from="_ssdm_op_SpecBitsMap" to="StgValue_51" fromId="305" toId="51">
+</dataflow>
+<dataflow id="371" from="linearRegression_stubs_size_s" to="StgValue_51" fromId="160" toId="51">
+</dataflow>
+<dataflow id="372" from="_ssdm_op_SpecBitsMap" to="StgValue_52" fromId="305" toId="52">
+</dataflow>
+<dataflow id="373" from="linearRegression_stubs_data_settings_chosenRofPhi_s" to="StgValue_52" fromId="161" toId="52">
+</dataflow>
+<dataflow id="374" from="_ssdm_op_SpecBitsMap" to="StgValue_53" fromId="305" toId="53">
+</dataflow>
+<dataflow id="375" from="linearRegression_stubs_data_settings_chosenRofZ_s" to="StgValue_53" fromId="162" toId="53">
+</dataflow>
+<dataflow id="376" from="_ssdm_op_SpecBitsMap" to="StgValue_54" fromId="305" toId="54">
+</dataflow>
+<dataflow id="377" from="linearRegression_stubs_data_settings_etaRegions_s" to="StgValue_54" fromId="163" toId="54">
+</dataflow>
+<dataflow id="378" from="_ssdm_op_SpecBitsMap" to="StgValue_55" fromId="305" toId="55">
+</dataflow>
+<dataflow id="379" from="linearRegression_stubs_data_settings_minNumMatchLayers_s" to="StgValue_55" fromId="164" toId="55">
+</dataflow>
+<dataflow id="380" from="_ssdm_op_SpecBitsMap" to="StgValue_56" fromId="305" toId="56">
+</dataflow>
+<dataflow id="381" from="linearRegression_stubs_data_settings_minPSLayers_s" to="StgValue_56" fromId="165" toId="56">
+</dataflow>
+<dataflow id="382" from="_ssdm_op_SpecBitsMap" to="StgValue_57" fromId="305" toId="57">
+</dataflow>
+<dataflow id="383" from="linearRegression_stubs_data_r_s" to="StgValue_57" fromId="166" toId="57">
+</dataflow>
+<dataflow id="384" from="_ssdm_op_SpecBitsMap" to="StgValue_58" fromId="305" toId="58">
+</dataflow>
+<dataflow id="385" from="linearRegression_stubs_data_phi_s" to="StgValue_58" fromId="167" toId="58">
+</dataflow>
+<dataflow id="386" from="_ssdm_op_SpecBitsMap" to="StgValue_59" fromId="305" toId="59">
+</dataflow>
+<dataflow id="387" from="linearRegression_stubs_data_z_s" to="StgValue_59" fromId="168" toId="59">
+</dataflow>
+<dataflow id="388" from="_ssdm_op_SpecBitsMap" to="StgValue_60" fromId="305" toId="60">
+</dataflow>
+<dataflow id="389" from="linearRegression_stubs_data_layerId_s" to="StgValue_60" fromId="169" toId="60">
+</dataflow>
+<dataflow id="390" from="_ssdm_op_SpecBitsMap" to="StgValue_61" fromId="305" toId="61">
+</dataflow>
+<dataflow id="391" from="linearRegression_stubs_data_psModule_s" to="StgValue_61" fromId="170" toId="61">
+</dataflow>
+<dataflow id="392" from="_ssdm_op_SpecBitsMap" to="StgValue_62" fromId="305" toId="62">
+</dataflow>
+<dataflow id="393" from="linearRegression_stubs_data_barrel_s" to="StgValue_62" fromId="171" toId="62">
+</dataflow>
+<dataflow id="394" from="_ssdm_op_SpecBitsMap" to="StgValue_63" fromId="305" toId="63">
+</dataflow>
+<dataflow id="395" from="linearRegression_valid_s" to="StgValue_63" fromId="172" toId="63">
+</dataflow>
+<dataflow id="396" from="_ssdm_op_SpecBitsMap" to="StgValue_64" fromId="305" toId="64">
+</dataflow>
+<dataflow id="397" from="linearRegression_stubMap_size_s" to="StgValue_64" fromId="173" toId="64">
+</dataflow>
+<dataflow id="398" from="_ssdm_op_SpecBitsMap" to="StgValue_65" fromId="305" toId="65">
+</dataflow>
+<dataflow id="399" from="linearRegression_stubMap_data_first" to="StgValue_65" fromId="174" toId="65">
+</dataflow>
+<dataflow id="400" from="_ssdm_op_SpecBitsMap" to="StgValue_66" fromId="305" toId="66">
+</dataflow>
+<dataflow id="401" from="linearRegression_stubMap_data_second_size_s" to="StgValue_66" fromId="175" toId="66">
+</dataflow>
+<dataflow id="402" from="_ssdm_op_SpecBitsMap" to="StgValue_67" fromId="305" toId="67">
+</dataflow>
+<dataflow id="403" from="linearRegression_stubMap_data_second_data_settings_chosenRofPhi_s" to="StgValue_67" fromId="176" toId="67">
+</dataflow>
+<dataflow id="404" from="_ssdm_op_SpecBitsMap" to="StgValue_68" fromId="305" toId="68">
+</dataflow>
+<dataflow id="405" from="linearRegression_stubMap_data_second_data_settings_chosenRofZ_s" to="StgValue_68" fromId="177" toId="68">
+</dataflow>
+<dataflow id="406" from="_ssdm_op_SpecBitsMap" to="StgValue_69" fromId="305" toId="69">
+</dataflow>
+<dataflow id="407" from="linearRegression_stubMap_data_second_data_settings_etaRegions_s" to="StgValue_69" fromId="178" toId="69">
+</dataflow>
+<dataflow id="408" from="_ssdm_op_SpecBitsMap" to="StgValue_70" fromId="305" toId="70">
+</dataflow>
+<dataflow id="409" from="linearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s" to="StgValue_70" fromId="179" toId="70">
+</dataflow>
+<dataflow id="410" from="_ssdm_op_SpecBitsMap" to="StgValue_71" fromId="305" toId="71">
+</dataflow>
+<dataflow id="411" from="linearRegression_stubMap_data_second_data_settings_minPSLayers_s" to="StgValue_71" fromId="180" toId="71">
+</dataflow>
+<dataflow id="412" from="_ssdm_op_SpecBitsMap" to="StgValue_72" fromId="305" toId="72">
+</dataflow>
+<dataflow id="413" from="linearRegression_stubMap_data_second_data_r_s" to="StgValue_72" fromId="181" toId="72">
+</dataflow>
+<dataflow id="414" from="_ssdm_op_SpecBitsMap" to="StgValue_73" fromId="305" toId="73">
+</dataflow>
+<dataflow id="415" from="linearRegression_stubMap_data_second_data_phi_s" to="StgValue_73" fromId="182" toId="73">
+</dataflow>
+<dataflow id="416" from="_ssdm_op_SpecBitsMap" to="StgValue_74" fromId="305" toId="74">
+</dataflow>
+<dataflow id="417" from="linearRegression_stubMap_data_second_data_z_s" to="StgValue_74" fromId="183" toId="74">
+</dataflow>
+<dataflow id="418" from="_ssdm_op_SpecBitsMap" to="StgValue_75" fromId="305" toId="75">
+</dataflow>
+<dataflow id="419" from="linearRegression_stubMap_data_second_data_layerId_s" to="StgValue_75" fromId="184" toId="75">
+</dataflow>
+<dataflow id="420" from="_ssdm_op_SpecBitsMap" to="StgValue_76" fromId="305" toId="76">
+</dataflow>
+<dataflow id="421" from="linearRegression_stubMap_data_second_data_psModule_s" to="StgValue_76" fromId="185" toId="76">
+</dataflow>
+<dataflow id="422" from="_ssdm_op_SpecBitsMap" to="StgValue_77" fromId="305" toId="77">
+</dataflow>
+<dataflow id="423" from="linearRegression_stubMap_data_second_data_barrel_s" to="StgValue_77" fromId="186" toId="77">
+</dataflow>
+<dataflow id="424" from="_ssdm_op_SpecBitsMap" to="StgValue_78" fromId="305" toId="78">
+</dataflow>
+<dataflow id="425" from="linearRegression_layerPopulation_size_s" to="StgValue_78" fromId="187" toId="78">
+</dataflow>
+<dataflow id="426" from="_ssdm_op_SpecBitsMap" to="StgValue_79" fromId="305" toId="79">
+</dataflow>
+<dataflow id="427" from="linearRegression_layerPopulation_data_first" to="StgValue_79" fromId="188" toId="79">
+</dataflow>
+<dataflow id="428" from="_ssdm_op_SpecBitsMap" to="StgValue_80" fromId="305" toId="80">
+</dataflow>
+<dataflow id="429" from="linearRegression_layerPopulation_data_second" to="StgValue_80" fromId="189" toId="80">
+</dataflow>
+<dataflow id="430" from="_ssdm_op_SpecBitsMap" to="StgValue_81" fromId="305" toId="81">
+</dataflow>
+<dataflow id="431" from="linearRegression_residuals_size_s" to="StgValue_81" fromId="190" toId="81">
+</dataflow>
+<dataflow id="432" from="_ssdm_op_SpecBitsMap" to="StgValue_82" fromId="305" toId="82">
+</dataflow>
+<dataflow id="433" from="linearRegression_residuals_data_first" to="StgValue_82" fromId="191" toId="82">
+</dataflow>
+<dataflow id="434" from="_ssdm_op_SpecBitsMap" to="StgValue_83" fromId="305" toId="83">
+</dataflow>
+<dataflow id="435" from="linearRegression_residuals_data_second_size_s" to="StgValue_83" fromId="192" toId="83">
+</dataflow>
+<dataflow id="436" from="_ssdm_op_SpecBitsMap" to="StgValue_84" fromId="305" toId="84">
+</dataflow>
+<dataflow id="437" from="linearRegression_residuals_data_second_data_phi" to="StgValue_84" fromId="193" toId="84">
+</dataflow>
+<dataflow id="438" from="_ssdm_op_SpecBitsMap" to="StgValue_85" fromId="305" toId="85">
+</dataflow>
+<dataflow id="439" from="linearRegression_residuals_data_second_data_z" to="StgValue_85" fromId="194" toId="85">
+</dataflow>
+<dataflow id="440" from="_ssdm_op_SpecBitsMap" to="StgValue_86" fromId="305" toId="86">
+</dataflow>
+<dataflow id="441" from="linearRegression_residuals_data_second_data_layerId" to="StgValue_86" fromId="195" toId="86">
+</dataflow>
+<dataflow id="442" from="_ssdm_op_SpecBitsMap" to="StgValue_87" fromId="305" toId="87">
+</dataflow>
+<dataflow id="443" from="linearRegression_residuals_data_second_data_stubId" to="StgValue_87" fromId="196" toId="87">
+</dataflow>
+<dataflow id="444" from="_ssdm_op_SpecBitsMap" to="StgValue_88" fromId="305" toId="88">
+</dataflow>
+<dataflow id="445" from="linearRegression_residuals_data_second_data_ps" to="StgValue_88" fromId="197" toId="88">
+</dataflow>
+<dataflow id="446" from="_ssdm_op_SpecBitsMap" to="StgValue_89" fromId="305" toId="89">
+</dataflow>
+<dataflow id="447" from="linearRegression_largestResid_phi" to="StgValue_89" fromId="198" toId="89">
+</dataflow>
+<dataflow id="448" from="_ssdm_op_SpecBitsMap" to="StgValue_90" fromId="305" toId="90">
+</dataflow>
+<dataflow id="449" from="linearRegression_largestResid_z" to="StgValue_90" fromId="199" toId="90">
+</dataflow>
+<dataflow id="450" from="_ssdm_op_SpecBitsMap" to="StgValue_91" fromId="305" toId="91">
+</dataflow>
+<dataflow id="451" from="linearRegression_largestResid_layerId" to="StgValue_91" fromId="200" toId="91">
+</dataflow>
+<dataflow id="452" from="_ssdm_op_SpecBitsMap" to="StgValue_92" fromId="305" toId="92">
+</dataflow>
+<dataflow id="453" from="linearRegression_largestResid_stubId" to="StgValue_92" fromId="201" toId="92">
+</dataflow>
+<dataflow id="454" from="_ssdm_op_SpecBitsMap" to="StgValue_93" fromId="305" toId="93">
+</dataflow>
+<dataflow id="455" from="linearRegression_largestResid_ps" to="StgValue_93" fromId="202" toId="93">
+</dataflow>
+<dataflow id="457" from="_ssdm_op_SpecTopModule" to="StgValue_94" fromId="456" toId="94">
+</dataflow>
+<dataflow id="459" from="LRupdateHLS_str" to="StgValue_94" fromId="458" toId="94">
+</dataflow>
+<dataflow id="460" from="fit" to="call_ret1" fromId="236" toId="95">
+</dataflow>
+<dataflow id="461" from="linearRegression_set_2" to="call_ret1" fromId="10" toId="95">
+</dataflow>
+<dataflow id="462" from="linearRegression_set_3" to="call_ret1" fromId="11" toId="95">
+</dataflow>
+<dataflow id="463" from="linearRegression_settings_etaRegions_s" to="call_ret1" fromId="146" toId="95">
+</dataflow>
+<dataflow id="464" from="linearRegression_set" to="call_ret1" fromId="3" toId="95">
+</dataflow>
+<dataflow id="465" from="linearRegression_set_1" to="call_ret1" fromId="4" toId="95">
+</dataflow>
+<dataflow id="466" from="linearRegression_LRP" to="call_ret1" fromId="12" toId="95">
+</dataflow>
+<dataflow id="467" from="linearRegression_LRP_1" to="call_ret1" fromId="13" toId="95">
+</dataflow>
+<dataflow id="468" from="linearRegression_LRP_2" to="call_ret1" fromId="14" toId="95">
+</dataflow>
+<dataflow id="469" from="linearRegression_LRP_3" to="call_ret1" fromId="15" toId="95">
+</dataflow>
+<dataflow id="470" from="linearRegression_stubs_data_settings_chosenRofPhi_s" to="call_ret1" fromId="161" toId="95">
+</dataflow>
+<dataflow id="471" from="linearRegression_stubs_data_settings_chosenRofZ_s" to="call_ret1" fromId="162" toId="95">
+</dataflow>
+<dataflow id="472" from="linearRegression_stubs_data_settings_etaRegions_s" to="call_ret1" fromId="163" toId="95">
+</dataflow>
+<dataflow id="473" from="linearRegression_stubs_data_settings_minNumMatchLayers_s" to="call_ret1" fromId="164" toId="95">
+</dataflow>
+<dataflow id="474" from="linearRegression_stubs_data_settings_minPSLayers_s" to="call_ret1" fromId="165" toId="95">
+</dataflow>
+<dataflow id="475" from="linearRegression_stubs_data_r_s" to="call_ret1" fromId="166" toId="95">
+</dataflow>
+<dataflow id="476" from="linearRegression_stubs_data_phi_s" to="call_ret1" fromId="167" toId="95">
+</dataflow>
+<dataflow id="477" from="linearRegression_stubs_data_z_s" to="call_ret1" fromId="168" toId="95">
+</dataflow>
+<dataflow id="478" from="linearRegression_stubs_data_layerId_s" to="call_ret1" fromId="169" toId="95">
+</dataflow>
+<dataflow id="479" from="linearRegression_stubs_data_psModule_s" to="call_ret1" fromId="170" toId="95">
+</dataflow>
+<dataflow id="480" from="linearRegression_stubs_data_barrel_s" to="call_ret1" fromId="171" toId="95">
+</dataflow>
+<dataflow id="481" from="linearRegression_stu" to="call_ret1" fromId="16" toId="95">
+</dataflow>
+<dataflow id="482" from="linearRegression_stubMap_data_first" to="call_ret1" fromId="174" toId="95">
+</dataflow>
+<dataflow id="483" from="linearRegression_stubMap_data_second_size_s" to="call_ret1" fromId="175" toId="95">
+</dataflow>
+<dataflow id="484" from="linearRegression_stubMap_data_second_data_settings_chosenRofPhi_s" to="call_ret1" fromId="176" toId="95">
+</dataflow>
+<dataflow id="485" from="linearRegression_stubMap_data_second_data_settings_chosenRofZ_s" to="call_ret1" fromId="177" toId="95">
+</dataflow>
+<dataflow id="486" from="linearRegression_stubMap_data_second_data_settings_etaRegions_s" to="call_ret1" fromId="178" toId="95">
+</dataflow>
+<dataflow id="487" from="linearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s" to="call_ret1" fromId="179" toId="95">
+</dataflow>
+<dataflow id="488" from="linearRegression_stubMap_data_second_data_settings_minPSLayers_s" to="call_ret1" fromId="180" toId="95">
+</dataflow>
+<dataflow id="489" from="linearRegression_stubMap_data_second_data_r_s" to="call_ret1" fromId="181" toId="95">
+</dataflow>
+<dataflow id="490" from="linearRegression_stubMap_data_second_data_phi_s" to="call_ret1" fromId="182" toId="95">
+</dataflow>
+<dataflow id="491" from="linearRegression_stubMap_data_second_data_z_s" to="call_ret1" fromId="183" toId="95">
+</dataflow>
+<dataflow id="492" from="linearRegression_stubMap_data_second_data_layerId_s" to="call_ret1" fromId="184" toId="95">
+</dataflow>
+<dataflow id="493" from="linearRegression_stubMap_data_second_data_psModule_s" to="call_ret1" fromId="185" toId="95">
+</dataflow>
+<dataflow id="494" from="linearRegression_stubMap_data_second_data_barrel_s" to="call_ret1" fromId="186" toId="95">
+</dataflow>
+<dataflow id="495" from="linearRegression_lay" to="call_ret1" fromId="17" toId="95">
+</dataflow>
+<dataflow id="496" from="linearRegression_layerPopulation_data_first" to="call_ret1" fromId="188" toId="95">
+</dataflow>
+<dataflow id="497" from="linearRegression_layerPopulation_data_second" to="call_ret1" fromId="189" toId="95">
+</dataflow>
+<dataflow id="498" from="linearRegression_residuals_size_s" to="call_ret1" fromId="190" toId="95">
+</dataflow>
+<dataflow id="499" from="linearRegression_residuals_data_first" to="call_ret1" fromId="191" toId="95">
+</dataflow>
+<dataflow id="500" from="linearRegression_residuals_data_second_size_s" to="call_ret1" fromId="192" toId="95">
+</dataflow>
+<dataflow id="501" from="linearRegression_residuals_data_second_data_phi" to="call_ret1" fromId="193" toId="95">
+</dataflow>
+<dataflow id="502" from="linearRegression_residuals_data_second_data_z" to="call_ret1" fromId="194" toId="95">
+</dataflow>
+<dataflow id="503" from="linearRegression_residuals_data_second_data_layerId" to="call_ret1" fromId="195" toId="95">
+</dataflow>
+<dataflow id="504" from="linearRegression_residuals_data_second_data_stubId" to="call_ret1" fromId="196" toId="95">
+</dataflow>
+<dataflow id="505" from="linearRegression_residuals_data_second_data_ps" to="call_ret1" fromId="197" toId="95">
+</dataflow>
+<dataflow id="506" from="linearRegression_largestResid_phi" to="call_ret1" fromId="198" toId="95">
+</dataflow>
+<dataflow id="507" from="linearRegression_largestResid_z" to="call_ret1" fromId="199" toId="95">
+</dataflow>
+<dataflow id="508" from="linearRegression_largestResid_layerId" to="call_ret1" fromId="200" toId="95">
+</dataflow>
+<dataflow id="509" from="linearRegression_largestResid_stubId" to="call_ret1" fromId="201" toId="95">
+</dataflow>
+<dataflow id="510" from="linearRegression_largestResid_ps" to="call_ret1" fromId="202" toId="95">
+</dataflow>
+<dataflow id="511" from="l1track3D_iPhiSec_r" to="call_ret1" fromId="5" toId="95">
+</dataflow>
+<dataflow id="512" from="l1track3D_iEtaReg_r" to="call_ret1" fromId="6" toId="95">
+</dataflow>
+<dataflow id="513" from="l1track3D_helixRphi_s" to="call_ret1" fromId="7" toId="95">
+</dataflow>
+<dataflow id="514" from="l1track3D_helixRphi_3" to="call_ret1" fromId="8" toId="95">
+</dataflow>
+<dataflow id="515" from="l1track3D_stubs_siz" to="call_ret1" fromId="9" toId="95">
+</dataflow>
+<dataflow id="516" from="l1track3D_stubs_data_settings_chosenRofPhi_s" to="call_ret1" fromId="133" toId="95">
+</dataflow>
+<dataflow id="517" from="l1track3D_stubs_data_settings_chosenRofZ_s" to="call_ret1" fromId="134" toId="95">
+</dataflow>
+<dataflow id="518" from="l1track3D_stubs_data_settings_etaRegions_s" to="call_ret1" fromId="135" toId="95">
+</dataflow>
+<dataflow id="519" from="l1track3D_stubs_data_settings_minNumMatchLayers_s" to="call_ret1" fromId="136" toId="95">
+</dataflow>
+<dataflow id="520" from="l1track3D_stubs_data_settings_minPSLayers_s" to="call_ret1" fromId="137" toId="95">
+</dataflow>
+<dataflow id="521" from="l1track3D_stubs_data_r_s" to="call_ret1" fromId="138" toId="95">
+</dataflow>
+<dataflow id="522" from="l1track3D_stubs_data_phi_s" to="call_ret1" fromId="139" toId="95">
+</dataflow>
+<dataflow id="523" from="l1track3D_stubs_data_z_s" to="call_ret1" fromId="140" toId="95">
+</dataflow>
+<dataflow id="524" from="l1track3D_stubs_data_layerId_s" to="call_ret1" fromId="141" toId="95">
+</dataflow>
+<dataflow id="525" from="l1track3D_stubs_data_psModule_s" to="call_ret1" fromId="142" toId="95">
+</dataflow>
+<dataflow id="526" from="l1track3D_stubs_data_barrel_s" to="call_ret1" fromId="143" toId="95">
+</dataflow>
+<dataflow id="527" from="cordic_hyperb_table_s" to="call_ret1" fromId="203" toId="95">
+</dataflow>
+<dataflow id="528" from="call_ret1" to="newret" fromId="95" toId="96">
+</dataflow>
+<dataflow id="529" from="call_ret1" to="newret19" fromId="95" toId="97">
+</dataflow>
+<dataflow id="530" from="call_ret1" to="newret20" fromId="95" toId="98">
+</dataflow>
+<dataflow id="531" from="call_ret1" to="newret21" fromId="95" toId="99">
+</dataflow>
+<dataflow id="532" from="call_ret1" to="newret22" fromId="95" toId="100">
+</dataflow>
+<dataflow id="533" from="call_ret1" to="newret23" fromId="95" toId="101">
+</dataflow>
+<dataflow id="534" from="call_ret1" to="newret24" fromId="95" toId="102">
+</dataflow>
+<dataflow id="535" from="call_ret1" to="newret25" fromId="95" toId="103">
+</dataflow>
+<dataflow id="536" from="call_ret1" to="newret26" fromId="95" toId="104">
+</dataflow>
+<dataflow id="537" from="call_ret1" to="newret27" fromId="95" toId="105">
+</dataflow>
+<dataflow id="538" from="call_ret1" to="newret28" fromId="95" toId="106">
+</dataflow>
+<dataflow id="539" from="call_ret1" to="newret29" fromId="95" toId="107">
+</dataflow>
+<dataflow id="540" from="call_ret1" to="newret30" fromId="95" toId="108">
+</dataflow>
+<dataflow id="541" from="call_ret1" to="newret31" fromId="95" toId="109">
+</dataflow>
+<dataflow id="542" from="call_ret1" to="newret32" fromId="95" toId="110">
+</dataflow>
+<dataflow id="544" from="_ssdm_op_Write.ap_auto.i32P" to="StgValue_111" fromId="543" toId="111">
+</dataflow>
+<dataflow id="545" from="linearRegression_stubMap_size_s" to="StgValue_111" fromId="173" toId="111">
+</dataflow>
+<dataflow id="546" from="newret31" to="StgValue_111" fromId="109" toId="111">
+</dataflow>
+<dataflow id="547" from="_ssdm_op_Write.ap_auto.i32P" to="StgValue_112" fromId="543" toId="112">
+</dataflow>
+<dataflow id="548" from="linearRegression_layerPopulation_size_s" to="StgValue_112" fromId="187" toId="112">
+</dataflow>
+<dataflow id="549" from="newret32" to="StgValue_112" fromId="110" toId="112">
+</dataflow>
+<dataflow id="551" from="_ssdm_op_Write.ap_auto.floatP" to="StgValue_113" fromId="550" toId="113">
+</dataflow>
+<dataflow id="552" from="linearRegression_LRParameter_qOverPt" to="StgValue_113" fromId="156" toId="113">
+</dataflow>
+<dataflow id="553" from="newret27" to="StgValue_113" fromId="105" toId="113">
+</dataflow>
+<dataflow id="554" from="_ssdm_op_Write.ap_auto.floatP" to="StgValue_114" fromId="550" toId="114">
+</dataflow>
+<dataflow id="555" from="linearRegression_LRParameter_phiT" to="StgValue_114" fromId="157" toId="114">
+</dataflow>
+<dataflow id="556" from="newret28" to="StgValue_114" fromId="106" toId="114">
+</dataflow>
+<dataflow id="557" from="_ssdm_op_Write.ap_auto.floatP" to="StgValue_115" fromId="550" toId="115">
+</dataflow>
+<dataflow id="558" from="linearRegression_LRParameter_cotTheta" to="StgValue_115" fromId="158" toId="115">
+</dataflow>
+<dataflow id="559" from="newret29" to="StgValue_115" fromId="107" toId="115">
+</dataflow>
+<dataflow id="560" from="_ssdm_op_Write.ap_auto.floatP" to="StgValue_116" fromId="550" toId="116">
+</dataflow>
+<dataflow id="561" from="linearRegression_LRParameter_zT" to="StgValue_116" fromId="159" toId="116">
+</dataflow>
+<dataflow id="562" from="newret30" to="StgValue_116" fromId="108" toId="116">
+</dataflow>
+<dataflow id="563" from="_ssdm_op_Write.ap_auto.i32P" to="StgValue_117" fromId="543" toId="117">
+</dataflow>
+<dataflow id="564" from="linearRegression_stubs_size_s" to="StgValue_117" fromId="160" toId="117">
+</dataflow>
+<dataflow id="565" from="newret26" to="StgValue_117" fromId="104" toId="117">
+</dataflow>
+<dataflow id="566" from="_ssdm_op_Write.ap_auto.floatP" to="StgValue_118" fromId="550" toId="118">
+</dataflow>
+<dataflow id="567" from="linearRegression_HTParameter_qOverPt" to="StgValue_118" fromId="152" toId="118">
+</dataflow>
+<dataflow id="568" from="newret22" to="StgValue_118" fromId="100" toId="118">
+</dataflow>
+<dataflow id="569" from="_ssdm_op_Write.ap_auto.floatP" to="StgValue_119" fromId="550" toId="119">
+</dataflow>
+<dataflow id="570" from="linearRegression_HTParameter_phiT" to="StgValue_119" fromId="153" toId="119">
+</dataflow>
+<dataflow id="571" from="newret23" to="StgValue_119" fromId="101" toId="119">
+</dataflow>
+<dataflow id="572" from="_ssdm_op_Write.ap_auto.floatP" to="StgValue_120" fromId="550" toId="120">
+</dataflow>
+<dataflow id="573" from="linearRegression_HTParameter_cotTheta" to="StgValue_120" fromId="154" toId="120">
+</dataflow>
+<dataflow id="574" from="newret24" to="StgValue_120" fromId="102" toId="120">
+</dataflow>
+<dataflow id="575" from="_ssdm_op_Write.ap_auto.floatP" to="StgValue_121" fromId="550" toId="121">
+</dataflow>
+<dataflow id="576" from="linearRegression_HTParameter_zT" to="StgValue_121" fromId="155" toId="121">
+</dataflow>
+<dataflow id="577" from="newret25" to="StgValue_121" fromId="103" toId="121">
+</dataflow>
+<dataflow id="578" from="_ssdm_op_Write.ap_auto.i32P" to="StgValue_122" fromId="543" toId="122">
+</dataflow>
+<dataflow id="579" from="linearRegression_iPhiSec_s" to="StgValue_122" fromId="149" toId="122">
+</dataflow>
+<dataflow id="580" from="newret" to="StgValue_122" fromId="96" toId="122">
+</dataflow>
+<dataflow id="581" from="_ssdm_op_Write.ap_auto.i32P" to="StgValue_123" fromId="543" toId="123">
+</dataflow>
+<dataflow id="582" from="linearRegression_iEtaReg_s" to="StgValue_123" fromId="150" toId="123">
+</dataflow>
+<dataflow id="583" from="newret19" to="StgValue_123" fromId="97" toId="123">
+</dataflow>
+<dataflow id="584" from="_ssdm_op_Write.ap_auto.i32P" to="StgValue_124" fromId="543" toId="124">
+</dataflow>
+<dataflow id="585" from="linearRegression_nIterations_s" to="StgValue_124" fromId="151" toId="124">
+</dataflow>
+<dataflow id="586" from="newret20" to="StgValue_124" fromId="98" toId="124">
+</dataflow>
+<dataflow id="588" from="_ssdm_op_Write.ap_auto.i1P" to="StgValue_125" fromId="587" toId="125">
+</dataflow>
+<dataflow id="589" from="linearRegression_valid_s" to="StgValue_125" fromId="172" toId="125">
+</dataflow>
+<dataflow id="590" from="newret21" to="StgValue_125" fromId="99" toId="125">
+</dataflow>
+</dataflows>
+
+
+</stg>

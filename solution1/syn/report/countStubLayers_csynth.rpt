@@ -1,0 +1,180 @@
+
+
+================================================================
+== Vivado HLS Report for 'countStubLayers'
+================================================================
+* Date:           Tue May 21 18:44:36 2019
+
+* Version:        2018.3 (Build 2405991 on Thu Dec 06 23:56:15 MST 2018)
+* Project:        lr_standaloneHLS
+* Solution:       solution1
+* Product family: kintexu
+* Target device:  xcku115-flvb2104-2-e
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |  10.00|     3.762|        1.25|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-----+-----+-----+-----+---------+
+    |  Latency  |  Interval | Pipeline|
+    | min | max | min | max |   Type  |
+    +-----+-----+-----+-----+---------+
+    |    ?|    ?|    ?|    ?|   none  |
+    +-----+-----+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +----------------------+-----+-----+----------+-----------+-----------+------+----------+
+        |                      |  Latency  | Iteration|  Initiation Interval  | Trip |          |
+        |       Loop Name      | min | max |  Latency |  achieved |   target  | Count| Pipelined|
+        +----------------------+-----+-----+----------+-----------+-----------+------+----------+
+        |- memset_foundLayers  |   29|   29|         1|          -|          -|    30|    no    |
+        |- Loop 2              |    ?|    ?|         3|          -|          -|     ?|    no    |
+        +----------------------+-----+-----+----------+-----------+-----------+------+----------+
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++---------------------+---------+-------+---------+--------+
+|         Name        | BRAM_18K| DSP48E|    FF   |   LUT  |
++---------------------+---------+-------+---------+--------+
+|DSP                  |        -|      -|        -|       -|
+|Expression           |        -|      -|        0|     322|
+|FIFO                 |        -|      -|        -|       -|
+|Instance             |        -|      -|        -|       -|
+|Memory               |        0|      -|        2|       1|
+|Multiplexer          |        -|      -|        -|      96|
+|Register             |        -|      -|      113|       -|
++---------------------+---------+-------+---------+--------+
+|Total                |        0|      0|      115|     419|
++---------------------+---------+-------+---------+--------+
+|Available SLR        |     2160|   2760|   663360|  331680|
++---------------------+---------+-------+---------+--------+
+|Utilization SLR (%)  |        0|      0|    ~0   |   ~0   |
++---------------------+---------+-------+---------+--------+
+|Available            |     4320|   5520|  1326720|  663360|
++---------------------+---------+-------+---------+--------+
+|Utilization (%)      |        0|      0|    ~0   |   ~0   |
++---------------------+---------+-------+---------+--------+
+
++ Detail: 
+    * Instance: 
+    N/A
+
+    * DSP48: 
+    N/A
+
+    * Memory: 
+    +---------------+-----------------------------+---------+---+----+------+-----+------+-------------+
+    |     Memory    |            Module           | BRAM_18K| FF| LUT| Words| Bits| Banks| W*Bits*Banks|
+    +---------------+-----------------------------+---------+---+----+------+-----+------+-------------+
+    |foundLayers_U  |countStubLayers_foundLayers  |        0|  2|   1|    30|    1|     1|           30|
+    +---------------+-----------------------------+---------+---+----+------+-----+------+-------------+
+    |Total          |                             |        0|  2|   1|    30|    1|     1|           30|
+    +---------------+-----------------------------+---------+---+----+------+-----+------+-------------+
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +--------------------------------+----------+-------+---+----+------------+------------+
+    |          Variable Name         | Operation| DSP48E| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +--------------------------------+----------+-------+---+----+------------+------------+
+    |indvarinc_fu_153_p2             |     +    |      0|  0|  15|           5|           1|
+    |nLayers_1_fu_284_p2             |     +    |      0|  0|  39|          32|           1|
+    |p_rec_fu_192_p2                 |     +    |      0|  0|  39|          32|           1|
+    |tmp_93_i_fu_234_p2              |     +    |      0|  0|  39|          32|           5|
+    |tmp_i_fu_228_p2                 |     +    |      0|  0|  39|          32|           4|
+    |sel_tmp_i_fu_240_p2             |    and   |      0|  0|   2|           1|           1|
+    |tmp_111_not_i_fu_210_p2         |   icmp   |      0|  0|  20|          32|           5|
+    |tmp_138_fu_187_p2               |   icmp   |      0|  0|  20|          32|          32|
+    |tmp_not_i_fu_198_p2             |   icmp   |      0|  0|  20|          32|           5|
+    |tmp_s_fu_164_p2                 |   icmp   |      0|  0|  11|           5|           3|
+    |brmerge3_i_fu_222_p2            |    or    |      0|  0|   2|           1|           1|
+    |brmerge_fu_274_p2               |    or    |      0|  0|   2|           1|           1|
+    |brmerge_i_fu_204_p2             |    or    |      0|  0|   2|           1|           1|
+    |sel_tmp1_i_fu_246_p2            |    or    |      0|  0|   2|           1|           1|
+    |sel_tmp5_demorgan_i_fu_260_p2   |    or    |      0|  0|   2|           1|           1|
+    |p_0_i_fu_266_p3                 |  select  |      0|  0|  32|           1|          32|
+    |sel_tmp2_i_fu_252_p3            |  select  |      0|  0|  32|           1|          32|
+    |onlySeed_not_fu_170_p2          |    xor   |      0|  0|   2|           1|           2|
+    |stub_psModule_read_s_fu_216_p2  |    xor   |      0|  0|   2|           1|           2|
+    +--------------------------------+----------+-------+---+----+------------+------------+
+    |Total                           |          |      0|  0| 322|         244|         131|
+    +--------------------------------+----------+-------+---+----+------------+------------+
+
+    * Multiplexer: 
+    +-----------------------+----+-----------+-----+-----------+
+    |          Name         | LUT| Input Size| Bits| Total Bits|
+    +-----------------------+----+-----------+-----+-----------+
+    |ap_NS_fsm              |  33|          6|    1|          6|
+    |foundLayers_address0   |  21|          4|    5|         20|
+    |foundLayers_d0         |  15|          3|    1|          3|
+    |invdar_reg_128         |   9|          2|    5|         10|
+    |nLayers_fu_52          |   9|          2|   32|         64|
+    |p_begin_0_rec_reg_139  |   9|          2|   32|         64|
+    +-----------------------+----+-----------+-----+-----------+
+    |Total                  |  96|         19|   76|        167|
+    +-----------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +----------------------------+----+----+-----+-----------+
+    |            Name            | FF | LUT| Bits| Const Bits|
+    +----------------------------+----+----+-----+-----------+
+    |ap_CS_fsm                   |   5|   0|    5|          0|
+    |brmerge_reg_348             |   1|   0|    1|          0|
+    |foundLayers_addr_1_reg_352  |   5|   0|    5|          0|
+    |invdar_reg_128              |   5|   0|    5|          0|
+    |nLayers_fu_52               |  32|   0|   32|          0|
+    |onlySeed_not_reg_320        |   1|   0|    1|          0|
+    |p_begin_0_rec_reg_139       |  32|   0|   32|          0|
+    |p_rec_reg_343               |  32|   0|   32|          0|
+    +----------------------------+----+----+-----+-----------+
+    |Total                       | 113|   0|  113|          0|
+    +----------------------------+----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++--------------------------------+-----+-----+------------+-----------------------+--------------+
+|            RTL Ports           | Dir | Bits|  Protocol  |     Source Object     |    C Type    |
++--------------------------------+-----+-----+------------+-----------------------+--------------+
+|ap_clk                          |  in |    1| ap_ctrl_hs |    countStubLayers    | return value |
+|ap_rst                          |  in |    1| ap_ctrl_hs |    countStubLayers    | return value |
+|ap_start                        |  in |    1| ap_ctrl_hs |    countStubLayers    | return value |
+|ap_done                         | out |    1| ap_ctrl_hs |    countStubLayers    | return value |
+|ap_idle                         | out |    1| ap_ctrl_hs |    countStubLayers    | return value |
+|ap_ready                        | out |    1| ap_ctrl_hs |    countStubLayers    | return value |
+|ap_return                       | out |   32| ap_ctrl_hs |    countStubLayers    | return value |
+|stubs_size_read                 |  in |   32|   ap_none  |    stubs_size_read    |    scalar    |
+|stubs_data_layerId_s_address0   | out |    4|  ap_memory |  stubs_data_layerId_s |     array    |
+|stubs_data_layerId_s_ce0        | out |    1|  ap_memory |  stubs_data_layerId_s |     array    |
+|stubs_data_layerId_s_q0         |  in |   32|  ap_memory |  stubs_data_layerId_s |     array    |
+|stubs_data_psModule_s_address0  | out |    4|  ap_memory | stubs_data_psModule_s |     array    |
+|stubs_data_psModule_s_ce0       | out |    1|  ap_memory | stubs_data_psModule_s |     array    |
+|stubs_data_psModule_s_q0        |  in |    1|  ap_memory | stubs_data_psModule_s |     array    |
+|stubs_data_barrel_s_address0    | out |    4|  ap_memory |  stubs_data_barrel_s  |     array    |
+|stubs_data_barrel_s_ce0         | out |    1|  ap_memory |  stubs_data_barrel_s  |     array    |
+|stubs_data_barrel_s_q0          |  in |    1|  ap_memory |  stubs_data_barrel_s  |     array    |
+|onlySeed                        |  in |    1|   ap_none  |        onlySeed       |    scalar    |
++--------------------------------+-----+-----+------------+-----------------------+--------------+
+

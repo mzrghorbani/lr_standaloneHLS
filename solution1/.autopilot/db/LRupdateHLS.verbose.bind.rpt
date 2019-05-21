@@ -1,0 +1,2678 @@
+
+
+================================================================
+== Vivado HLS Report for 'LRupdateHLS'
+================================================================
+* Date:           Tue May 21 18:44:29 2019
+
+* Version:        2018.3 (Build 2405991 on Thu Dec 06 23:56:15 MST 2018)
+* Project:        lr_standaloneHLS
+* Solution:       solution1
+* Product family: kintexu
+* Target device:  xcku115-flvb2104-2-e
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |  10.00|     9.121|        1.25|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-----+-----+-----+-----+---------+
+    |  Latency  |  Interval | Pipeline|
+    | min | max | min | max |   Type  |
+    +-----+-----+-----+-----+---------+
+    |    ?|    ?|    ?|    ?|   none  |
+    +-----+-----+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        +----------------+-------+-----+-----+-----+-----+---------+
+        |                |       |  Latency  |  Interval | Pipeline|
+        |    Instance    | Module| min | max | min | max |   Type  |
+        +----------------+-------+-----+-----+-----+-----+---------+
+        |grp_fit_fu_365  |fit    |    ?|    ?|    ?|    ?|   none  |
+        +----------------+-------+-----+-----+-----+-----+---------+
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 1
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 2
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 
+	2  / true
+2 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 8.41>
+ST_1 : Operation 3 [1/1] (0.00ns)   --->   "%linearRegression_set = call i32 @_ssdm_op_Read.ap_auto.i32P(i32* %linearRegression_settings_minNumMatchLayers_s)" [lr_standaloneHLS/.settings/LRupdateHLS.cpp:9]   --->   Operation 3 'read' 'linearRegression_set' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 4 [1/1] (0.00ns)   --->   "%linearRegression_set_1 = call i32 @_ssdm_op_Read.ap_auto.i32P(i32* %linearRegression_settings_minPSLayers_s)" [lr_standaloneHLS/.settings/LRupdateHLS.cpp:9]   --->   Operation 4 'read' 'linearRegression_set_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 5 [1/1] (0.00ns)   --->   "%l1track3D_iPhiSec_r = call i32 @_ssdm_op_Read.ap_auto.i32P(i32* %l1track3D_iPhiSec_s)" [lr_standaloneHLS/.settings/LRupdateHLS.cpp:9]   --->   Operation 5 'read' 'l1track3D_iPhiSec_r' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%l1track3D_iEtaReg_r = call i32 @_ssdm_op_Read.ap_auto.i32P(i32* %l1track3D_iEtaReg_s)" [lr_standaloneHLS/.settings/LRupdateHLS.cpp:9]   --->   Operation 6 'read' 'l1track3D_iEtaReg_r' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%l1track3D_helixRphi_s = call float @_ssdm_op_Read.ap_auto.floatP(float* %l1track3D_helixRphi_first)" [lr_standaloneHLS/.settings/LRupdateHLS.cpp:9]   --->   Operation 7 'read' 'l1track3D_helixRphi_s' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%l1track3D_helixRphi_3 = call float @_ssdm_op_Read.ap_auto.floatP(float* %l1track3D_helixRphi_second)" [lr_standaloneHLS/.settings/LRupdateHLS.cpp:9]   --->   Operation 8 'read' 'l1track3D_helixRphi_3' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%l1track3D_stubs_siz = call i32 @_ssdm_op_Read.ap_auto.i32P(i32* %l1track3D_stubs_size_s)" [lr_standaloneHLS/.settings/LRupdateHLS.cpp:9]   --->   Operation 9 'read' 'l1track3D_stubs_siz' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%linearRegression_set_2 = call float @_ssdm_op_Read.ap_auto.floatP(float* %linearRegression_settings_chosenRofPhi_s)" [lr_standaloneHLS/.settings/LRupdateHLS.cpp:9]   --->   Operation 10 'read' 'linearRegression_set_2' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%linearRegression_set_3 = call float @_ssdm_op_Read.ap_auto.floatP(float* %linearRegression_settings_chosenRofZ_s)" [lr_standaloneHLS/.settings/LRupdateHLS.cpp:9]   --->   Operation 11 'read' 'linearRegression_set_3' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%linearRegression_LRP = call float @_ssdm_op_Read.ap_auto.floatP(float* %linearRegression_LRParameter_qOverPt)" [lr_standaloneHLS/.settings/LRupdateHLS.cpp:9]   --->   Operation 12 'read' 'linearRegression_LRP' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%linearRegression_LRP_1 = call float @_ssdm_op_Read.ap_auto.floatP(float* %linearRegression_LRParameter_phiT)" [lr_standaloneHLS/.settings/LRupdateHLS.cpp:9]   --->   Operation 13 'read' 'linearRegression_LRP_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%linearRegression_LRP_2 = call float @_ssdm_op_Read.ap_auto.floatP(float* %linearRegression_LRParameter_cotTheta)" [lr_standaloneHLS/.settings/LRupdateHLS.cpp:9]   --->   Operation 14 'read' 'linearRegression_LRP_2' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 15 [1/1] (0.00ns)   --->   "%linearRegression_LRP_3 = call float @_ssdm_op_Read.ap_auto.floatP(float* %linearRegression_LRParameter_zT)" [lr_standaloneHLS/.settings/LRupdateHLS.cpp:9]   --->   Operation 15 'read' 'linearRegression_LRP_3' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 16 [1/1] (0.00ns)   --->   "%linearRegression_stu = call i32 @_ssdm_op_Read.ap_auto.i32P(i32* %linearRegression_stubMap_size_s)" [lr_standaloneHLS/.settings/LRupdateHLS.cpp:9]   --->   Operation 16 'read' 'linearRegression_stu' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 17 [1/1] (0.00ns)   --->   "%linearRegression_lay = call i32 @_ssdm_op_Read.ap_auto.i32P(i32* %linearRegression_layerPopulation_size_s)" [lr_standaloneHLS/.settings/LRupdateHLS.cpp:9]   --->   Operation 17 'read' 'linearRegression_lay' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 18 [2/2] (8.41ns)   --->   "%call_ret1 = call fastcc { i32, i32, i32, i1, float, float, float, float, i32, float, float, float, float, i32, i32 } @fit(float %linearRegression_set_2, float %linearRegression_set_3, [19 x float]* %linearRegression_settings_etaRegions_s, i32 %linearRegression_set, i32 %linearRegression_set_1, float %linearRegression_LRP, float %linearRegression_LRP_1, float %linearRegression_LRP_2, float %linearRegression_LRP_3, [10 x float]* %linearRegression_stubs_data_settings_chosenRofPhi_s, [10 x float]* %linearRegression_stubs_data_settings_chosenRofZ_s, [190 x float]* %linearRegression_stubs_data_settings_etaRegions_s, [10 x i32]* %linearRegression_stubs_data_settings_minNumMatchLayers_s, [10 x i32]* %linearRegression_stubs_data_settings_minPSLayers_s, [10 x float]* %linearRegression_stubs_data_r_s, [10 x float]* %linearRegression_stubs_data_phi_s, [10 x float]* %linearRegression_stubs_data_z_s, [10 x i32]* %linearRegression_stubs_data_layerId_s, [10 x i1]* %linearRegression_stubs_data_psModule_s, [10 x i1]* %linearRegression_stubs_data_barrel_s, i32 %linearRegression_stu, [30 x i32]* %linearRegression_stubMap_data_first, [30 x i32]* %linearRegression_stubMap_data_second_size_s, [300 x float]* %linearRegression_stubMap_data_second_data_settings_chosenRofPhi_s, [300 x float]* %linearRegression_stubMap_data_second_data_settings_chosenRofZ_s, [5700 x float]* %linearRegression_stubMap_data_second_data_settings_etaRegions_s, [300 x i32]* %linearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s, [300 x i32]* %linearRegression_stubMap_data_second_data_settings_minPSLayers_s, [300 x float]* %linearRegression_stubMap_data_second_data_r_s, [300 x float]* %linearRegression_stubMap_data_second_data_phi_s, [300 x float]* %linearRegression_stubMap_data_second_data_z_s, [300 x i32]* %linearRegression_stubMap_data_second_data_layerId_s, [300 x i1]* %linearRegression_stubMap_data_second_data_psModule_s, [300 x i1]* %linearRegression_stubMap_data_second_data_barrel_s, i32 %linearRegression_lay, [30 x i32]* %linearRegression_layerPopulation_data_first, [30 x i32]* %linearRegression_layerPopulation_data_second, i32* %linearRegression_residuals_size_s, [30 x i32]* %linearRegression_residuals_data_first, [30 x i32]* %linearRegression_residuals_data_second_size_s, [300 x float]* %linearRegression_residuals_data_second_data_phi, [300 x float]* %linearRegression_residuals_data_second_data_z, [300 x i32]* %linearRegression_residuals_data_second_data_layerId, [300 x i32]* %linearRegression_residuals_data_second_data_stubId, [300 x i1]* %linearRegression_residuals_data_second_data_ps, float* %linearRegression_largestResid_phi, float* %linearRegression_largestResid_z, i32* %linearRegression_largestResid_layerId, i32* %linearRegression_largestResid_stubId, i1* %linearRegression_largestResid_ps, i32 %l1track3D_iPhiSec_r, i32 %l1track3D_iEtaReg_r, float %l1track3D_helixRphi_s, float %l1track3D_helixRphi_3, i32 %l1track3D_stubs_siz, [10 x float]* %l1track3D_stubs_data_settings_chosenRofPhi_s, [10 x float]* %l1track3D_stubs_data_settings_chosenRofZ_s, [190 x float]* %l1track3D_stubs_data_settings_etaRegions_s, [10 x i32]* %l1track3D_stubs_data_settings_minNumMatchLayers_s, [10 x i32]* %l1track3D_stubs_data_settings_minPSLayers_s, [10 x float]* %l1track3D_stubs_data_r_s, [10 x float]* %l1track3D_stubs_data_phi_s, [10 x float]* %l1track3D_stubs_data_z_s, [10 x i32]* %l1track3D_stubs_data_layerId_s, [10 x i1]* %l1track3D_stubs_data_psModule_s, [10 x i1]* %l1track3D_stubs_data_barrel_s)" [lr_standaloneHLS/.settings/LRupdateHLS.cpp:9]   --->   Operation 18 'call' 'call_ret1' <Predicate = true> <Delay = 8.41> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 2 <SV = 1> <Delay = 8.27>
+ST_2 : Operation 19 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i32* %l1track3D_iPhiSec_s), !map !122"   --->   Operation 19 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 20 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i32* %l1track3D_iEtaReg_s), !map !126"   --->   Operation 20 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 21 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(float* %l1track3D_helixRphi_first), !map !130"   --->   Operation 21 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 22 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(float* %l1track3D_helixRphi_second), !map !134"   --->   Operation 22 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 23 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i32* %l1track3D_stubs_size_s), !map !138"   --->   Operation 23 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 24 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap([10 x float]* %l1track3D_stubs_data_settings_chosenRofPhi_s), !map !142"   --->   Operation 24 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 25 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap([10 x float]* %l1track3D_stubs_data_settings_chosenRofZ_s), !map !148"   --->   Operation 25 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 26 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap([190 x float]* %l1track3D_stubs_data_settings_etaRegions_s), !map !152"   --->   Operation 26 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 27 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap([10 x i32]* %l1track3D_stubs_data_settings_minNumMatchLayers_s), !map !158"   --->   Operation 27 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 28 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap([10 x i32]* %l1track3D_stubs_data_settings_minPSLayers_s), !map !162"   --->   Operation 28 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 29 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap([10 x float]* %l1track3D_stubs_data_r_s), !map !166"   --->   Operation 29 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 30 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap([10 x float]* %l1track3D_stubs_data_phi_s), !map !170"   --->   Operation 30 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 31 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap([10 x float]* %l1track3D_stubs_data_z_s), !map !174"   --->   Operation 31 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 32 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap([10 x i32]* %l1track3D_stubs_data_layerId_s), !map !178"   --->   Operation 32 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 33 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap([10 x i1]* %l1track3D_stubs_data_psModule_s), !map !182"   --->   Operation 33 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 34 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap([10 x i1]* %l1track3D_stubs_data_barrel_s), !map !186"   --->   Operation 34 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 35 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(float* %linearRegression_settings_chosenRofPhi_s), !map !190"   --->   Operation 35 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 36 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(float* %linearRegression_settings_chosenRofZ_s), !map !194"   --->   Operation 36 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 37 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap([19 x float]* %linearRegression_settings_etaRegions_s), !map !198"   --->   Operation 37 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 38 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i32* %linearRegression_settings_minNumMatchLayers_s), !map !203"   --->   Operation 38 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 39 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i32* %linearRegression_settings_minPSLayers_s), !map !207"   --->   Operation 39 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 40 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i32* %linearRegression_iPhiSec_s), !map !211"   --->   Operation 40 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 41 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i32* %linearRegression_iEtaReg_s), !map !215"   --->   Operation 41 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 42 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i32* %linearRegression_nIterations_s), !map !219"   --->   Operation 42 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 43 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(float* %linearRegression_HTParameter_qOverPt), !map !223"   --->   Operation 43 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 44 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(float* %linearRegression_HTParameter_phiT), !map !227"   --->   Operation 44 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 45 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(float* %linearRegression_HTParameter_cotTheta), !map !231"   --->   Operation 45 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 46 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(float* %linearRegression_HTParameter_zT), !map !235"   --->   Operation 46 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 47 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(float* %linearRegression_LRParameter_qOverPt), !map !239"   --->   Operation 47 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 48 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(float* %linearRegression_LRParameter_phiT), !map !243"   --->   Operation 48 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 49 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(float* %linearRegression_LRParameter_cotTheta), !map !247"   --->   Operation 49 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 50 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(float* %linearRegression_LRParameter_zT), !map !251"   --->   Operation 50 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 51 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i32* %linearRegression_stubs_size_s), !map !255"   --->   Operation 51 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 52 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap([10 x float]* %linearRegression_stubs_data_settings_chosenRofPhi_s), !map !259"   --->   Operation 52 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 53 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap([10 x float]* %linearRegression_stubs_data_settings_chosenRofZ_s), !map !263"   --->   Operation 53 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 54 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap([190 x float]* %linearRegression_stubs_data_settings_etaRegions_s), !map !267"   --->   Operation 54 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 55 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap([10 x i32]* %linearRegression_stubs_data_settings_minNumMatchLayers_s), !map !271"   --->   Operation 55 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 56 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap([10 x i32]* %linearRegression_stubs_data_settings_minPSLayers_s), !map !275"   --->   Operation 56 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 57 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap([10 x float]* %linearRegression_stubs_data_r_s), !map !279"   --->   Operation 57 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 58 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap([10 x float]* %linearRegression_stubs_data_phi_s), !map !283"   --->   Operation 58 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 59 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap([10 x float]* %linearRegression_stubs_data_z_s), !map !287"   --->   Operation 59 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 60 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap([10 x i32]* %linearRegression_stubs_data_layerId_s), !map !291"   --->   Operation 60 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 61 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap([10 x i1]* %linearRegression_stubs_data_psModule_s), !map !295"   --->   Operation 61 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 62 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap([10 x i1]* %linearRegression_stubs_data_barrel_s), !map !299"   --->   Operation 62 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 63 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i1* %linearRegression_valid_s), !map !303"   --->   Operation 63 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 64 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i32* %linearRegression_stubMap_size_s), !map !307"   --->   Operation 64 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 65 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap([30 x i32]* %linearRegression_stubMap_data_first), !map !311"   --->   Operation 65 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 66 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap([30 x i32]* %linearRegression_stubMap_data_second_size_s), !map !317"   --->   Operation 66 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 67 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap([300 x float]* %linearRegression_stubMap_data_second_data_settings_chosenRofPhi_s), !map !321"   --->   Operation 67 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 68 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap([300 x float]* %linearRegression_stubMap_data_second_data_settings_chosenRofZ_s), !map !326"   --->   Operation 68 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 69 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap([5700 x float]* %linearRegression_stubMap_data_second_data_settings_etaRegions_s), !map !330"   --->   Operation 69 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 70 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap([300 x i32]* %linearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s), !map !335"   --->   Operation 70 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 71 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap([300 x i32]* %linearRegression_stubMap_data_second_data_settings_minPSLayers_s), !map !339"   --->   Operation 71 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 72 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap([300 x float]* %linearRegression_stubMap_data_second_data_r_s), !map !343"   --->   Operation 72 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 73 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap([300 x float]* %linearRegression_stubMap_data_second_data_phi_s), !map !347"   --->   Operation 73 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 74 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap([300 x float]* %linearRegression_stubMap_data_second_data_z_s), !map !351"   --->   Operation 74 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 75 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap([300 x i32]* %linearRegression_stubMap_data_second_data_layerId_s), !map !355"   --->   Operation 75 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 76 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap([300 x i1]* %linearRegression_stubMap_data_second_data_psModule_s), !map !359"   --->   Operation 76 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 77 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap([300 x i1]* %linearRegression_stubMap_data_second_data_barrel_s), !map !363"   --->   Operation 77 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 78 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i32* %linearRegression_layerPopulation_size_s), !map !367"   --->   Operation 78 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 79 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap([30 x i32]* %linearRegression_layerPopulation_data_first), !map !371"   --->   Operation 79 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 80 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap([30 x i32]* %linearRegression_layerPopulation_data_second), !map !375"   --->   Operation 80 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 81 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i32* %linearRegression_residuals_size_s), !map !379"   --->   Operation 81 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 82 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap([30 x i32]* %linearRegression_residuals_data_first), !map !383"   --->   Operation 82 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 83 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap([30 x i32]* %linearRegression_residuals_data_second_size_s), !map !387"   --->   Operation 83 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 84 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap([300 x float]* %linearRegression_residuals_data_second_data_phi), !map !391"   --->   Operation 84 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 85 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap([300 x float]* %linearRegression_residuals_data_second_data_z), !map !395"   --->   Operation 85 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 86 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap([300 x i32]* %linearRegression_residuals_data_second_data_layerId), !map !399"   --->   Operation 86 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 87 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap([300 x i32]* %linearRegression_residuals_data_second_data_stubId), !map !403"   --->   Operation 87 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 88 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap([300 x i1]* %linearRegression_residuals_data_second_data_ps), !map !407"   --->   Operation 88 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 89 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(float* %linearRegression_largestResid_phi), !map !411"   --->   Operation 89 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 90 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(float* %linearRegression_largestResid_z), !map !415"   --->   Operation 90 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 91 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i32* %linearRegression_largestResid_layerId), !map !419"   --->   Operation 91 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 92 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i32* %linearRegression_largestResid_stubId), !map !423"   --->   Operation 92 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 93 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i1* %linearRegression_largestResid_ps), !map !427"   --->   Operation 93 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 94 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecTopModule([12 x i8]* @LRupdateHLS_str) nounwind"   --->   Operation 94 'spectopmodule' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 95 [1/2] (8.27ns)   --->   "%call_ret1 = call fastcc { i32, i32, i32, i1, float, float, float, float, i32, float, float, float, float, i32, i32 } @fit(float %linearRegression_set_2, float %linearRegression_set_3, [19 x float]* %linearRegression_settings_etaRegions_s, i32 %linearRegression_set, i32 %linearRegression_set_1, float %linearRegression_LRP, float %linearRegression_LRP_1, float %linearRegression_LRP_2, float %linearRegression_LRP_3, [10 x float]* %linearRegression_stubs_data_settings_chosenRofPhi_s, [10 x float]* %linearRegression_stubs_data_settings_chosenRofZ_s, [190 x float]* %linearRegression_stubs_data_settings_etaRegions_s, [10 x i32]* %linearRegression_stubs_data_settings_minNumMatchLayers_s, [10 x i32]* %linearRegression_stubs_data_settings_minPSLayers_s, [10 x float]* %linearRegression_stubs_data_r_s, [10 x float]* %linearRegression_stubs_data_phi_s, [10 x float]* %linearRegression_stubs_data_z_s, [10 x i32]* %linearRegression_stubs_data_layerId_s, [10 x i1]* %linearRegression_stubs_data_psModule_s, [10 x i1]* %linearRegression_stubs_data_barrel_s, i32 %linearRegression_stu, [30 x i32]* %linearRegression_stubMap_data_first, [30 x i32]* %linearRegression_stubMap_data_second_size_s, [300 x float]* %linearRegression_stubMap_data_second_data_settings_chosenRofPhi_s, [300 x float]* %linearRegression_stubMap_data_second_data_settings_chosenRofZ_s, [5700 x float]* %linearRegression_stubMap_data_second_data_settings_etaRegions_s, [300 x i32]* %linearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s, [300 x i32]* %linearRegression_stubMap_data_second_data_settings_minPSLayers_s, [300 x float]* %linearRegression_stubMap_data_second_data_r_s, [300 x float]* %linearRegression_stubMap_data_second_data_phi_s, [300 x float]* %linearRegression_stubMap_data_second_data_z_s, [300 x i32]* %linearRegression_stubMap_data_second_data_layerId_s, [300 x i1]* %linearRegression_stubMap_data_second_data_psModule_s, [300 x i1]* %linearRegression_stubMap_data_second_data_barrel_s, i32 %linearRegression_lay, [30 x i32]* %linearRegression_layerPopulation_data_first, [30 x i32]* %linearRegression_layerPopulation_data_second, i32* %linearRegression_residuals_size_s, [30 x i32]* %linearRegression_residuals_data_first, [30 x i32]* %linearRegression_residuals_data_second_size_s, [300 x float]* %linearRegression_residuals_data_second_data_phi, [300 x float]* %linearRegression_residuals_data_second_data_z, [300 x i32]* %linearRegression_residuals_data_second_data_layerId, [300 x i32]* %linearRegression_residuals_data_second_data_stubId, [300 x i1]* %linearRegression_residuals_data_second_data_ps, float* %linearRegression_largestResid_phi, float* %linearRegression_largestResid_z, i32* %linearRegression_largestResid_layerId, i32* %linearRegression_largestResid_stubId, i1* %linearRegression_largestResid_ps, i32 %l1track3D_iPhiSec_r, i32 %l1track3D_iEtaReg_r, float %l1track3D_helixRphi_s, float %l1track3D_helixRphi_3, i32 %l1track3D_stubs_siz, [10 x float]* %l1track3D_stubs_data_settings_chosenRofPhi_s, [10 x float]* %l1track3D_stubs_data_settings_chosenRofZ_s, [190 x float]* %l1track3D_stubs_data_settings_etaRegions_s, [10 x i32]* %l1track3D_stubs_data_settings_minNumMatchLayers_s, [10 x i32]* %l1track3D_stubs_data_settings_minPSLayers_s, [10 x float]* %l1track3D_stubs_data_r_s, [10 x float]* %l1track3D_stubs_data_phi_s, [10 x float]* %l1track3D_stubs_data_z_s, [10 x i32]* %l1track3D_stubs_data_layerId_s, [10 x i1]* %l1track3D_stubs_data_psModule_s, [10 x i1]* %l1track3D_stubs_data_barrel_s)" [lr_standaloneHLS/.settings/LRupdateHLS.cpp:9]   --->   Operation 95 'call' 'call_ret1' <Predicate = true> <Delay = 8.27> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_2 : Operation 96 [1/1] (0.00ns)   --->   "%newret = extractvalue { i32, i32, i32, i1, float, float, float, float, i32, float, float, float, float, i32, i32 } %call_ret1, 0" [lr_standaloneHLS/.settings/LRupdateHLS.cpp:9]   --->   Operation 96 'extractvalue' 'newret' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 97 [1/1] (0.00ns)   --->   "%newret19 = extractvalue { i32, i32, i32, i1, float, float, float, float, i32, float, float, float, float, i32, i32 } %call_ret1, 1" [lr_standaloneHLS/.settings/LRupdateHLS.cpp:9]   --->   Operation 97 'extractvalue' 'newret19' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 98 [1/1] (0.00ns)   --->   "%newret20 = extractvalue { i32, i32, i32, i1, float, float, float, float, i32, float, float, float, float, i32, i32 } %call_ret1, 2" [lr_standaloneHLS/.settings/LRupdateHLS.cpp:9]   --->   Operation 98 'extractvalue' 'newret20' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 99 [1/1] (0.00ns)   --->   "%newret21 = extractvalue { i32, i32, i32, i1, float, float, float, float, i32, float, float, float, float, i32, i32 } %call_ret1, 3" [lr_standaloneHLS/.settings/LRupdateHLS.cpp:9]   --->   Operation 99 'extractvalue' 'newret21' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 100 [1/1] (0.00ns)   --->   "%newret22 = extractvalue { i32, i32, i32, i1, float, float, float, float, i32, float, float, float, float, i32, i32 } %call_ret1, 4" [lr_standaloneHLS/.settings/LRupdateHLS.cpp:9]   --->   Operation 100 'extractvalue' 'newret22' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 101 [1/1] (0.00ns)   --->   "%newret23 = extractvalue { i32, i32, i32, i1, float, float, float, float, i32, float, float, float, float, i32, i32 } %call_ret1, 5" [lr_standaloneHLS/.settings/LRupdateHLS.cpp:9]   --->   Operation 101 'extractvalue' 'newret23' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 102 [1/1] (0.00ns)   --->   "%newret24 = extractvalue { i32, i32, i32, i1, float, float, float, float, i32, float, float, float, float, i32, i32 } %call_ret1, 6" [lr_standaloneHLS/.settings/LRupdateHLS.cpp:9]   --->   Operation 102 'extractvalue' 'newret24' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 103 [1/1] (0.00ns)   --->   "%newret25 = extractvalue { i32, i32, i32, i1, float, float, float, float, i32, float, float, float, float, i32, i32 } %call_ret1, 7" [lr_standaloneHLS/.settings/LRupdateHLS.cpp:9]   --->   Operation 103 'extractvalue' 'newret25' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 104 [1/1] (0.00ns)   --->   "%newret26 = extractvalue { i32, i32, i32, i1, float, float, float, float, i32, float, float, float, float, i32, i32 } %call_ret1, 8" [lr_standaloneHLS/.settings/LRupdateHLS.cpp:9]   --->   Operation 104 'extractvalue' 'newret26' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 105 [1/1] (0.00ns)   --->   "%newret27 = extractvalue { i32, i32, i32, i1, float, float, float, float, i32, float, float, float, float, i32, i32 } %call_ret1, 9" [lr_standaloneHLS/.settings/LRupdateHLS.cpp:9]   --->   Operation 105 'extractvalue' 'newret27' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 106 [1/1] (0.00ns)   --->   "%newret28 = extractvalue { i32, i32, i32, i1, float, float, float, float, i32, float, float, float, float, i32, i32 } %call_ret1, 10" [lr_standaloneHLS/.settings/LRupdateHLS.cpp:9]   --->   Operation 106 'extractvalue' 'newret28' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 107 [1/1] (0.00ns)   --->   "%newret29 = extractvalue { i32, i32, i32, i1, float, float, float, float, i32, float, float, float, float, i32, i32 } %call_ret1, 11" [lr_standaloneHLS/.settings/LRupdateHLS.cpp:9]   --->   Operation 107 'extractvalue' 'newret29' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 108 [1/1] (0.00ns)   --->   "%newret30 = extractvalue { i32, i32, i32, i1, float, float, float, float, i32, float, float, float, float, i32, i32 } %call_ret1, 12" [lr_standaloneHLS/.settings/LRupdateHLS.cpp:9]   --->   Operation 108 'extractvalue' 'newret30' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 109 [1/1] (0.00ns)   --->   "%newret31 = extractvalue { i32, i32, i32, i1, float, float, float, float, i32, float, float, float, float, i32, i32 } %call_ret1, 13" [lr_standaloneHLS/.settings/LRupdateHLS.cpp:9]   --->   Operation 109 'extractvalue' 'newret31' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 110 [1/1] (0.00ns)   --->   "%newret32 = extractvalue { i32, i32, i32, i1, float, float, float, float, i32, float, float, float, float, i32, i32 } %call_ret1, 14" [lr_standaloneHLS/.settings/LRupdateHLS.cpp:9]   --->   Operation 110 'extractvalue' 'newret32' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 111 [1/1] (0.00ns)   --->   "call void @_ssdm_op_Write.ap_auto.i32P(i32* %linearRegression_stubMap_size_s, i32 %newret31)" [lr_standaloneHLS/.settings/LRupdateHLS.cpp:9]   --->   Operation 111 'write' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 112 [1/1] (0.00ns)   --->   "call void @_ssdm_op_Write.ap_auto.i32P(i32* %linearRegression_layerPopulation_size_s, i32 %newret32)" [lr_standaloneHLS/.settings/LRupdateHLS.cpp:9]   --->   Operation 112 'write' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 113 [1/1] (0.00ns)   --->   "call void @_ssdm_op_Write.ap_auto.floatP(float* %linearRegression_LRParameter_qOverPt, float %newret27)" [lr_standaloneHLS/.settings/LRupdateHLS.cpp:9]   --->   Operation 113 'write' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 114 [1/1] (0.00ns)   --->   "call void @_ssdm_op_Write.ap_auto.floatP(float* %linearRegression_LRParameter_phiT, float %newret28)" [lr_standaloneHLS/.settings/LRupdateHLS.cpp:9]   --->   Operation 114 'write' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 115 [1/1] (0.00ns)   --->   "call void @_ssdm_op_Write.ap_auto.floatP(float* %linearRegression_LRParameter_cotTheta, float %newret29)" [lr_standaloneHLS/.settings/LRupdateHLS.cpp:9]   --->   Operation 115 'write' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 116 [1/1] (0.00ns)   --->   "call void @_ssdm_op_Write.ap_auto.floatP(float* %linearRegression_LRParameter_zT, float %newret30)" [lr_standaloneHLS/.settings/LRupdateHLS.cpp:9]   --->   Operation 116 'write' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 117 [1/1] (0.00ns)   --->   "call void @_ssdm_op_Write.ap_auto.i32P(i32* %linearRegression_stubs_size_s, i32 %newret26)" [lr_standaloneHLS/.settings/LRupdateHLS.cpp:9]   --->   Operation 117 'write' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 118 [1/1] (0.00ns)   --->   "call void @_ssdm_op_Write.ap_auto.floatP(float* %linearRegression_HTParameter_qOverPt, float %newret22)" [lr_standaloneHLS/.settings/LRupdateHLS.cpp:9]   --->   Operation 118 'write' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 119 [1/1] (0.00ns)   --->   "call void @_ssdm_op_Write.ap_auto.floatP(float* %linearRegression_HTParameter_phiT, float %newret23)" [lr_standaloneHLS/.settings/LRupdateHLS.cpp:9]   --->   Operation 119 'write' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 120 [1/1] (0.00ns)   --->   "call void @_ssdm_op_Write.ap_auto.floatP(float* %linearRegression_HTParameter_cotTheta, float %newret24)" [lr_standaloneHLS/.settings/LRupdateHLS.cpp:9]   --->   Operation 120 'write' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 121 [1/1] (0.00ns)   --->   "call void @_ssdm_op_Write.ap_auto.floatP(float* %linearRegression_HTParameter_zT, float %newret25)" [lr_standaloneHLS/.settings/LRupdateHLS.cpp:9]   --->   Operation 121 'write' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 122 [1/1] (0.00ns)   --->   "call void @_ssdm_op_Write.ap_auto.i32P(i32* %linearRegression_iPhiSec_s, i32 %newret)" [lr_standaloneHLS/.settings/LRupdateHLS.cpp:9]   --->   Operation 122 'write' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 123 [1/1] (0.00ns)   --->   "call void @_ssdm_op_Write.ap_auto.i32P(i32* %linearRegression_iEtaReg_s, i32 %newret19)" [lr_standaloneHLS/.settings/LRupdateHLS.cpp:9]   --->   Operation 123 'write' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 124 [1/1] (0.00ns)   --->   "call void @_ssdm_op_Write.ap_auto.i32P(i32* %linearRegression_nIterations_s, i32 %newret20)" [lr_standaloneHLS/.settings/LRupdateHLS.cpp:9]   --->   Operation 124 'write' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 125 [1/1] (0.00ns)   --->   "call void @_ssdm_op_Write.ap_auto.i1P(i1* %linearRegression_valid_s, i1 %newret21)" [lr_standaloneHLS/.settings/LRupdateHLS.cpp:9]   --->   Operation 125 'write' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 126 [1/1] (0.00ns)   --->   "ret void" [lr_standaloneHLS/.settings/LRupdateHLS.cpp:10]   --->   Operation 126 'ret' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+STG Binding: 
+---------------- STG Properties BEGIN ----------------
+- Is combinational: 0
+- Is one-state seq: 0
+- Is datapath-only: 0
+- Is pipelined: 0
+- Is top level: 1
+Port [ Return ] is wired: 1; IO mode=ap_ctrl_hs:ce=0
+Port [ l1track3D_iPhiSec_s]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; pingpong=0; private_global=0; IO mode=ap_none:ce=0
+Port [ l1track3D_iEtaReg_s]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; pingpong=0; private_global=0; IO mode=ap_none:ce=0
+Port [ l1track3D_helixRphi_first]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; pingpong=0; private_global=0; IO mode=ap_none:ce=0
+Port [ l1track3D_helixRphi_second]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; pingpong=0; private_global=0; IO mode=ap_none:ce=0
+Port [ l1track3D_stubs_size_s]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; pingpong=0; private_global=0; IO mode=ap_none:ce=0
+Port [ l1track3D_stubs_data_settings_chosenRofPhi_s]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=1; pingpong=0; private_global=0; MemPort=[11]; IO mode=ap_memory:ce=0
+Port [ l1track3D_stubs_data_settings_chosenRofZ_s]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=1; pingpong=0; private_global=0; MemPort=[11]; IO mode=ap_memory:ce=0
+Port [ l1track3D_stubs_data_settings_etaRegions_s]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=1; pingpong=0; private_global=0; MemPort=[11]; IO mode=ap_memory:ce=0
+Port [ l1track3D_stubs_data_settings_minNumMatchLayers_s]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=1; pingpong=0; private_global=0; MemPort=[11]; IO mode=ap_memory:ce=0
+Port [ l1track3D_stubs_data_settings_minPSLayers_s]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=1; pingpong=0; private_global=0; MemPort=[11]; IO mode=ap_memory:ce=0
+Port [ l1track3D_stubs_data_r_s]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=1; pingpong=0; private_global=0; MemPort=[11]; IO mode=ap_memory:ce=0
+Port [ l1track3D_stubs_data_phi_s]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=1; pingpong=0; private_global=0; MemPort=[11]; IO mode=ap_memory:ce=0
+Port [ l1track3D_stubs_data_z_s]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=1; pingpong=0; private_global=0; MemPort=[11]; IO mode=ap_memory:ce=0
+Port [ l1track3D_stubs_data_layerId_s]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=1; pingpong=0; private_global=0; MemPort=[11]; IO mode=ap_memory:ce=0
+Port [ l1track3D_stubs_data_psModule_s]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=1; pingpong=0; private_global=0; MemPort=[11]; IO mode=ap_memory:ce=0
+Port [ l1track3D_stubs_data_barrel_s]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=1; pingpong=0; private_global=0; MemPort=[11]; IO mode=ap_memory:ce=0
+Port [ linearRegression_settings_chosenRofPhi_s]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; pingpong=0; private_global=0; IO mode=ap_none:ce=0
+Port [ linearRegression_settings_chosenRofZ_s]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; pingpong=0; private_global=0; IO mode=ap_none:ce=0
+Port [ linearRegression_settings_etaRegions_s]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=1; pingpong=0; private_global=0; MemPort=[13]; IO mode=ap_memory:ce=0
+Port [ linearRegression_settings_minNumMatchLayers_s]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; pingpong=0; private_global=0; IO mode=ap_none:ce=0
+Port [ linearRegression_settings_minPSLayers_s]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; pingpong=0; private_global=0; IO mode=ap_none:ce=0
+Port [ linearRegression_iPhiSec_s]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=1; type=0; pingpong=0; private_global=0; IO mode=ap_vld:ce=0
+Port [ linearRegression_iEtaReg_s]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=1; type=0; pingpong=0; private_global=0; IO mode=ap_vld:ce=0
+Port [ linearRegression_nIterations_s]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=1; type=0; pingpong=0; private_global=0; IO mode=ap_vld:ce=0
+Port [ linearRegression_HTParameter_qOverPt]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=1; type=0; pingpong=0; private_global=0; IO mode=ap_vld:ce=0
+Port [ linearRegression_HTParameter_phiT]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=1; type=0; pingpong=0; private_global=0; IO mode=ap_vld:ce=0
+Port [ linearRegression_HTParameter_cotTheta]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=1; type=0; pingpong=0; private_global=0; IO mode=ap_vld:ce=0
+Port [ linearRegression_HTParameter_zT]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=1; type=0; pingpong=0; private_global=0; IO mode=ap_vld:ce=0
+Port [ linearRegression_LRParameter_qOverPt]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=2; type=0; pingpong=0; private_global=0; IO mode=ap_ovld:ce=0
+Port [ linearRegression_LRParameter_phiT]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=2; type=0; pingpong=0; private_global=0; IO mode=ap_ovld:ce=0
+Port [ linearRegression_LRParameter_cotTheta]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=2; type=0; pingpong=0; private_global=0; IO mode=ap_ovld:ce=0
+Port [ linearRegression_LRParameter_zT]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=2; type=0; pingpong=0; private_global=0; IO mode=ap_ovld:ce=0
+Port [ linearRegression_stubs_size_s]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=1; type=0; pingpong=0; private_global=0; IO mode=ap_vld:ce=0
+Port [ linearRegression_stubs_data_settings_chosenRofPhi_s]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=2; type=1; pingpong=0; private_global=0; MemPort=[20]; IO mode=ap_memory:ce=0
+Port [ linearRegression_stubs_data_settings_chosenRofZ_s]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=2; type=1; pingpong=0; private_global=0; MemPort=[20]; IO mode=ap_memory:ce=0
+Port [ linearRegression_stubs_data_settings_etaRegions_s]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=2; type=1; pingpong=0; private_global=0; MemPort=[22]; IO mode=ap_memory:ce=0
+Port [ linearRegression_stubs_data_settings_minNumMatchLayers_s]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=2; type=1; pingpong=0; private_global=0; MemPort=[20]; IO mode=ap_memory:ce=0
+Port [ linearRegression_stubs_data_settings_minPSLayers_s]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=2; type=1; pingpong=0; private_global=0; MemPort=[20]; IO mode=ap_memory:ce=0
+Port [ linearRegression_stubs_data_r_s]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=2; type=1; pingpong=0; private_global=0; MemPort=[20]; IO mode=ap_memory:ce=0
+Port [ linearRegression_stubs_data_phi_s]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=2; type=1; pingpong=0; private_global=0; MemPort=[20]; IO mode=ap_memory:ce=0
+Port [ linearRegression_stubs_data_z_s]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=2; type=1; pingpong=0; private_global=0; MemPort=[20]; IO mode=ap_memory:ce=0
+Port [ linearRegression_stubs_data_layerId_s]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=2; type=1; pingpong=0; private_global=0; MemPort=[22]; IO mode=ap_memory:ce=0
+Port [ linearRegression_stubs_data_psModule_s]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=2; type=1; pingpong=0; private_global=0; MemPort=[22]; IO mode=ap_memory:ce=0
+Port [ linearRegression_stubs_data_barrel_s]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=2; type=1; pingpong=0; private_global=0; MemPort=[22]; IO mode=ap_memory:ce=0
+Port [ linearRegression_valid_s]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=1; type=0; pingpong=0; private_global=0; IO mode=ap_vld:ce=0
+Port [ linearRegression_stubMap_size_s]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=2; type=0; pingpong=0; private_global=0; IO mode=ap_ovld:ce=0
+Port [ linearRegression_stubMap_data_first]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=2; type=1; pingpong=0; private_global=0; MemPort=[23]; IO mode=ap_memory:ce=0
+Port [ linearRegression_stubMap_data_second_size_s]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=2; type=1; pingpong=0; private_global=0; MemPort=[23]; IO mode=ap_memory:ce=0
+Port [ linearRegression_stubMap_data_second_data_settings_chosenRofPhi_s]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=2; type=1; pingpong=0; private_global=0; MemPort=[22]; IO mode=ap_memory:ce=0
+Port [ linearRegression_stubMap_data_second_data_settings_chosenRofZ_s]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=2; type=1; pingpong=0; private_global=0; MemPort=[22]; IO mode=ap_memory:ce=0
+Port [ linearRegression_stubMap_data_second_data_settings_etaRegions_s]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=2; type=1; pingpong=0; private_global=0; MemPort=[22]; IO mode=ap_memory:ce=0
+Port [ linearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=2; type=1; pingpong=0; private_global=0; MemPort=[22]; IO mode=ap_memory:ce=0
+Port [ linearRegression_stubMap_data_second_data_settings_minPSLayers_s]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=2; type=1; pingpong=0; private_global=0; MemPort=[22]; IO mode=ap_memory:ce=0
+Port [ linearRegression_stubMap_data_second_data_r_s]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=2; type=1; pingpong=0; private_global=0; MemPort=[22]; IO mode=ap_memory:ce=0
+Port [ linearRegression_stubMap_data_second_data_phi_s]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=2; type=1; pingpong=0; private_global=0; MemPort=[22]; IO mode=ap_memory:ce=0
+Port [ linearRegression_stubMap_data_second_data_z_s]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=2; type=1; pingpong=0; private_global=0; MemPort=[22]; IO mode=ap_memory:ce=0
+Port [ linearRegression_stubMap_data_second_data_layerId_s]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=2; type=1; pingpong=0; private_global=0; MemPort=[22]; IO mode=ap_memory:ce=0
+Port [ linearRegression_stubMap_data_second_data_psModule_s]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=2; type=1; pingpong=0; private_global=0; MemPort=[22]; IO mode=ap_memory:ce=0
+Port [ linearRegression_stubMap_data_second_data_barrel_s]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=2; type=1; pingpong=0; private_global=0; MemPort=[22]; IO mode=ap_memory:ce=0
+Port [ linearRegression_layerPopulation_size_s]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=2; type=0; pingpong=0; private_global=0; IO mode=ap_ovld:ce=0
+Port [ linearRegression_layerPopulation_data_first]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=2; type=1; pingpong=0; private_global=0; MemPort=[23]; IO mode=ap_memory:ce=0
+Port [ linearRegression_layerPopulation_data_second]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=2; type=1; pingpong=0; private_global=0; MemPort=[23]; IO mode=ap_memory:ce=0
+Port [ linearRegression_residuals_size_s]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=1; type=0; pingpong=0; private_global=0; IO mode=ap_vld:ce=0
+Port [ linearRegression_residuals_data_first]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=2; type=1; pingpong=0; private_global=0; MemPort=[23]; IO mode=ap_memory:ce=0
+Port [ linearRegression_residuals_data_second_size_s]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=2; type=1; pingpong=0; private_global=0; MemPort=[23]; IO mode=ap_memory:ce=0
+Port [ linearRegression_residuals_data_second_data_phi]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=2; type=1; pingpong=0; private_global=0; MemPort=[20]; IO mode=ap_memory:ce=0
+Port [ linearRegression_residuals_data_second_data_z]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=2; type=1; pingpong=0; private_global=0; MemPort=[20]; IO mode=ap_memory:ce=0
+Port [ linearRegression_residuals_data_second_data_layerId]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=2; type=1; pingpong=0; private_global=0; MemPort=[20]; IO mode=ap_memory:ce=0
+Port [ linearRegression_residuals_data_second_data_stubId]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=2; type=1; pingpong=0; private_global=0; MemPort=[20]; IO mode=ap_memory:ce=0
+Port [ linearRegression_residuals_data_second_data_ps]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=2; type=1; pingpong=0; private_global=0; MemPort=[20]; IO mode=ap_memory:ce=0
+Port [ linearRegression_largestResid_phi]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=1; type=0; pingpong=0; private_global=0; IO mode=ap_vld:ce=0
+Port [ linearRegression_largestResid_z]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=1; type=0; pingpong=0; private_global=0; IO mode=ap_vld:ce=0
+Port [ linearRegression_largestResid_layerId]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=1; type=0; pingpong=0; private_global=0; IO mode=ap_vld:ce=0
+Port [ linearRegression_largestResid_stubId]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=1; type=0; pingpong=0; private_global=0; IO mode=ap_vld:ce=0
+Port [ linearRegression_largestResid_ps]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=1; type=0; pingpong=0; private_global=0; IO mode=ap_vld:ce=0
+Port [ cordic_hyperb_table_s]:  wired=0; compound=1; hidden=1; nouse=1; global=1; static=1; extern=0; dir=0; type=1; pingpong=0; private_global=0; linkage=7; visibility=0; MemPort=[1]; IO mode=ap_memory:ce=0
+---------------- STG Properties END ------------------
+
+---------------- Datapath Model BEGIN ----------------
+
+<LifeTime>
+<method=bitvector/>
+linearRegression_set   (read         ) [ 001]
+linearRegression_set_1 (read         ) [ 001]
+l1track3D_iPhiSec_r    (read         ) [ 001]
+l1track3D_iEtaReg_r    (read         ) [ 001]
+l1track3D_helixRphi_s  (read         ) [ 001]
+l1track3D_helixRphi_3  (read         ) [ 001]
+l1track3D_stubs_siz    (read         ) [ 001]
+linearRegression_set_2 (read         ) [ 001]
+linearRegression_set_3 (read         ) [ 001]
+linearRegression_LRP   (read         ) [ 001]
+linearRegression_LRP_1 (read         ) [ 001]
+linearRegression_LRP_2 (read         ) [ 001]
+linearRegression_LRP_3 (read         ) [ 001]
+linearRegression_stu   (read         ) [ 001]
+linearRegression_lay   (read         ) [ 001]
+StgValue_19            (specbitsmap  ) [ 000]
+StgValue_20            (specbitsmap  ) [ 000]
+StgValue_21            (specbitsmap  ) [ 000]
+StgValue_22            (specbitsmap  ) [ 000]
+StgValue_23            (specbitsmap  ) [ 000]
+StgValue_24            (specbitsmap  ) [ 000]
+StgValue_25            (specbitsmap  ) [ 000]
+StgValue_26            (specbitsmap  ) [ 000]
+StgValue_27            (specbitsmap  ) [ 000]
+StgValue_28            (specbitsmap  ) [ 000]
+StgValue_29            (specbitsmap  ) [ 000]
+StgValue_30            (specbitsmap  ) [ 000]
+StgValue_31            (specbitsmap  ) [ 000]
+StgValue_32            (specbitsmap  ) [ 000]
+StgValue_33            (specbitsmap  ) [ 000]
+StgValue_34            (specbitsmap  ) [ 000]
+StgValue_35            (specbitsmap  ) [ 000]
+StgValue_36            (specbitsmap  ) [ 000]
+StgValue_37            (specbitsmap  ) [ 000]
+StgValue_38            (specbitsmap  ) [ 000]
+StgValue_39            (specbitsmap  ) [ 000]
+StgValue_40            (specbitsmap  ) [ 000]
+StgValue_41            (specbitsmap  ) [ 000]
+StgValue_42            (specbitsmap  ) [ 000]
+StgValue_43            (specbitsmap  ) [ 000]
+StgValue_44            (specbitsmap  ) [ 000]
+StgValue_45            (specbitsmap  ) [ 000]
+StgValue_46            (specbitsmap  ) [ 000]
+StgValue_47            (specbitsmap  ) [ 000]
+StgValue_48            (specbitsmap  ) [ 000]
+StgValue_49            (specbitsmap  ) [ 000]
+StgValue_50            (specbitsmap  ) [ 000]
+StgValue_51            (specbitsmap  ) [ 000]
+StgValue_52            (specbitsmap  ) [ 000]
+StgValue_53            (specbitsmap  ) [ 000]
+StgValue_54            (specbitsmap  ) [ 000]
+StgValue_55            (specbitsmap  ) [ 000]
+StgValue_56            (specbitsmap  ) [ 000]
+StgValue_57            (specbitsmap  ) [ 000]
+StgValue_58            (specbitsmap  ) [ 000]
+StgValue_59            (specbitsmap  ) [ 000]
+StgValue_60            (specbitsmap  ) [ 000]
+StgValue_61            (specbitsmap  ) [ 000]
+StgValue_62            (specbitsmap  ) [ 000]
+StgValue_63            (specbitsmap  ) [ 000]
+StgValue_64            (specbitsmap  ) [ 000]
+StgValue_65            (specbitsmap  ) [ 000]
+StgValue_66            (specbitsmap  ) [ 000]
+StgValue_67            (specbitsmap  ) [ 000]
+StgValue_68            (specbitsmap  ) [ 000]
+StgValue_69            (specbitsmap  ) [ 000]
+StgValue_70            (specbitsmap  ) [ 000]
+StgValue_71            (specbitsmap  ) [ 000]
+StgValue_72            (specbitsmap  ) [ 000]
+StgValue_73            (specbitsmap  ) [ 000]
+StgValue_74            (specbitsmap  ) [ 000]
+StgValue_75            (specbitsmap  ) [ 000]
+StgValue_76            (specbitsmap  ) [ 000]
+StgValue_77            (specbitsmap  ) [ 000]
+StgValue_78            (specbitsmap  ) [ 000]
+StgValue_79            (specbitsmap  ) [ 000]
+StgValue_80            (specbitsmap  ) [ 000]
+StgValue_81            (specbitsmap  ) [ 000]
+StgValue_82            (specbitsmap  ) [ 000]
+StgValue_83            (specbitsmap  ) [ 000]
+StgValue_84            (specbitsmap  ) [ 000]
+StgValue_85            (specbitsmap  ) [ 000]
+StgValue_86            (specbitsmap  ) [ 000]
+StgValue_87            (specbitsmap  ) [ 000]
+StgValue_88            (specbitsmap  ) [ 000]
+StgValue_89            (specbitsmap  ) [ 000]
+StgValue_90            (specbitsmap  ) [ 000]
+StgValue_91            (specbitsmap  ) [ 000]
+StgValue_92            (specbitsmap  ) [ 000]
+StgValue_93            (specbitsmap  ) [ 000]
+StgValue_94            (spectopmodule) [ 000]
+call_ret1              (call         ) [ 000]
+newret                 (extractvalue ) [ 000]
+newret19               (extractvalue ) [ 000]
+newret20               (extractvalue ) [ 000]
+newret21               (extractvalue ) [ 000]
+newret22               (extractvalue ) [ 000]
+newret23               (extractvalue ) [ 000]
+newret24               (extractvalue ) [ 000]
+newret25               (extractvalue ) [ 000]
+newret26               (extractvalue ) [ 000]
+newret27               (extractvalue ) [ 000]
+newret28               (extractvalue ) [ 000]
+newret29               (extractvalue ) [ 000]
+newret30               (extractvalue ) [ 000]
+newret31               (extractvalue ) [ 000]
+newret32               (extractvalue ) [ 000]
+StgValue_111           (write        ) [ 000]
+StgValue_112           (write        ) [ 000]
+StgValue_113           (write        ) [ 000]
+StgValue_114           (write        ) [ 000]
+StgValue_115           (write        ) [ 000]
+StgValue_116           (write        ) [ 000]
+StgValue_117           (write        ) [ 000]
+StgValue_118           (write        ) [ 000]
+StgValue_119           (write        ) [ 000]
+StgValue_120           (write        ) [ 000]
+StgValue_121           (write        ) [ 000]
+StgValue_122           (write        ) [ 000]
+StgValue_123           (write        ) [ 000]
+StgValue_124           (write        ) [ 000]
+StgValue_125           (write        ) [ 000]
+StgValue_126           (ret          ) [ 000]
+</LifeTime>
+
+<model>
+
+<comp_list>
+<comp id="0" class="1000" name="l1track3D_iPhiSec_s">
+<pin_list>
+<pin id="1" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="l1track3D_iPhiSec_s"/></StgValue>
+</bind>
+</comp>
+
+<comp id="2" class="1000" name="l1track3D_iEtaReg_s">
+<pin_list>
+<pin id="3" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="l1track3D_iEtaReg_s"/></StgValue>
+</bind>
+</comp>
+
+<comp id="4" class="1000" name="l1track3D_helixRphi_first">
+<pin_list>
+<pin id="5" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="l1track3D_helixRphi_first"/></StgValue>
+</bind>
+</comp>
+
+<comp id="6" class="1000" name="l1track3D_helixRphi_second">
+<pin_list>
+<pin id="7" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="l1track3D_helixRphi_second"/></StgValue>
+</bind>
+</comp>
+
+<comp id="8" class="1000" name="l1track3D_stubs_size_s">
+<pin_list>
+<pin id="9" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="l1track3D_stubs_size_s"/></StgValue>
+</bind>
+</comp>
+
+<comp id="10" class="1000" name="l1track3D_stubs_data_settings_chosenRofPhi_s">
+<pin_list>
+<pin id="11" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="l1track3D_stubs_data_settings_chosenRofPhi_s"/><MemPortTyVec>1 1 </MemPortTyVec>
+</StgValue>
+</bind>
+</comp>
+
+<comp id="12" class="1000" name="l1track3D_stubs_data_settings_chosenRofZ_s">
+<pin_list>
+<pin id="13" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="l1track3D_stubs_data_settings_chosenRofZ_s"/><MemPortTyVec>1 1 </MemPortTyVec>
+</StgValue>
+</bind>
+</comp>
+
+<comp id="14" class="1000" name="l1track3D_stubs_data_settings_etaRegions_s">
+<pin_list>
+<pin id="15" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="l1track3D_stubs_data_settings_etaRegions_s"/><MemPortTyVec>1 1 </MemPortTyVec>
+</StgValue>
+</bind>
+</comp>
+
+<comp id="16" class="1000" name="l1track3D_stubs_data_settings_minNumMatchLayers_s">
+<pin_list>
+<pin id="17" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="l1track3D_stubs_data_settings_minNumMatchLayers_s"/><MemPortTyVec>1 1 </MemPortTyVec>
+</StgValue>
+</bind>
+</comp>
+
+<comp id="18" class="1000" name="l1track3D_stubs_data_settings_minPSLayers_s">
+<pin_list>
+<pin id="19" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="l1track3D_stubs_data_settings_minPSLayers_s"/><MemPortTyVec>1 1 </MemPortTyVec>
+</StgValue>
+</bind>
+</comp>
+
+<comp id="20" class="1000" name="l1track3D_stubs_data_r_s">
+<pin_list>
+<pin id="21" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="l1track3D_stubs_data_r_s"/><MemPortTyVec>1 1 </MemPortTyVec>
+</StgValue>
+</bind>
+</comp>
+
+<comp id="22" class="1000" name="l1track3D_stubs_data_phi_s">
+<pin_list>
+<pin id="23" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="l1track3D_stubs_data_phi_s"/><MemPortTyVec>1 1 </MemPortTyVec>
+</StgValue>
+</bind>
+</comp>
+
+<comp id="24" class="1000" name="l1track3D_stubs_data_z_s">
+<pin_list>
+<pin id="25" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="l1track3D_stubs_data_z_s"/><MemPortTyVec>1 1 </MemPortTyVec>
+</StgValue>
+</bind>
+</comp>
+
+<comp id="26" class="1000" name="l1track3D_stubs_data_layerId_s">
+<pin_list>
+<pin id="27" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="l1track3D_stubs_data_layerId_s"/><MemPortTyVec>1 1 </MemPortTyVec>
+</StgValue>
+</bind>
+</comp>
+
+<comp id="28" class="1000" name="l1track3D_stubs_data_psModule_s">
+<pin_list>
+<pin id="29" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="l1track3D_stubs_data_psModule_s"/><MemPortTyVec>1 1 </MemPortTyVec>
+</StgValue>
+</bind>
+</comp>
+
+<comp id="30" class="1000" name="l1track3D_stubs_data_barrel_s">
+<pin_list>
+<pin id="31" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="l1track3D_stubs_data_barrel_s"/><MemPortTyVec>1 1 </MemPortTyVec>
+</StgValue>
+</bind>
+</comp>
+
+<comp id="32" class="1000" name="linearRegression_settings_chosenRofPhi_s">
+<pin_list>
+<pin id="33" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="linearRegression_settings_chosenRofPhi_s"/></StgValue>
+</bind>
+</comp>
+
+<comp id="34" class="1000" name="linearRegression_settings_chosenRofZ_s">
+<pin_list>
+<pin id="35" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="linearRegression_settings_chosenRofZ_s"/></StgValue>
+</bind>
+</comp>
+
+<comp id="36" class="1000" name="linearRegression_settings_etaRegions_s">
+<pin_list>
+<pin id="37" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="linearRegression_settings_etaRegions_s"/><MemPortTyVec>1 3 </MemPortTyVec>
+</StgValue>
+</bind>
+</comp>
+
+<comp id="38" class="1000" name="linearRegression_settings_minNumMatchLayers_s">
+<pin_list>
+<pin id="39" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="linearRegression_settings_minNumMatchLayers_s"/></StgValue>
+</bind>
+</comp>
+
+<comp id="40" class="1000" name="linearRegression_settings_minPSLayers_s">
+<pin_list>
+<pin id="41" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="linearRegression_settings_minPSLayers_s"/></StgValue>
+</bind>
+</comp>
+
+<comp id="42" class="1000" name="linearRegression_iPhiSec_s">
+<pin_list>
+<pin id="43" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="linearRegression_iPhiSec_s"/></StgValue>
+</bind>
+</comp>
+
+<comp id="44" class="1000" name="linearRegression_iEtaReg_s">
+<pin_list>
+<pin id="45" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="linearRegression_iEtaReg_s"/></StgValue>
+</bind>
+</comp>
+
+<comp id="46" class="1000" name="linearRegression_nIterations_s">
+<pin_list>
+<pin id="47" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="linearRegression_nIterations_s"/></StgValue>
+</bind>
+</comp>
+
+<comp id="48" class="1000" name="linearRegression_HTParameter_qOverPt">
+<pin_list>
+<pin id="49" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="linearRegression_HTParameter_qOverPt"/></StgValue>
+</bind>
+</comp>
+
+<comp id="50" class="1000" name="linearRegression_HTParameter_phiT">
+<pin_list>
+<pin id="51" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="linearRegression_HTParameter_phiT"/></StgValue>
+</bind>
+</comp>
+
+<comp id="52" class="1000" name="linearRegression_HTParameter_cotTheta">
+<pin_list>
+<pin id="53" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="linearRegression_HTParameter_cotTheta"/></StgValue>
+</bind>
+</comp>
+
+<comp id="54" class="1000" name="linearRegression_HTParameter_zT">
+<pin_list>
+<pin id="55" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="linearRegression_HTParameter_zT"/></StgValue>
+</bind>
+</comp>
+
+<comp id="56" class="1000" name="linearRegression_LRParameter_qOverPt">
+<pin_list>
+<pin id="57" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="linearRegression_LRParameter_qOverPt"/></StgValue>
+</bind>
+</comp>
+
+<comp id="58" class="1000" name="linearRegression_LRParameter_phiT">
+<pin_list>
+<pin id="59" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="linearRegression_LRParameter_phiT"/></StgValue>
+</bind>
+</comp>
+
+<comp id="60" class="1000" name="linearRegression_LRParameter_cotTheta">
+<pin_list>
+<pin id="61" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="linearRegression_LRParameter_cotTheta"/></StgValue>
+</bind>
+</comp>
+
+<comp id="62" class="1000" name="linearRegression_LRParameter_zT">
+<pin_list>
+<pin id="63" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="linearRegression_LRParameter_zT"/></StgValue>
+</bind>
+</comp>
+
+<comp id="64" class="1000" name="linearRegression_stubs_size_s">
+<pin_list>
+<pin id="65" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="linearRegression_stubs_size_s"/></StgValue>
+</bind>
+</comp>
+
+<comp id="66" class="1000" name="linearRegression_stubs_data_settings_chosenRofPhi_s">
+<pin_list>
+<pin id="67" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="linearRegression_stubs_data_settings_chosenRofPhi_s"/><MemPortTyVec>2 0 </MemPortTyVec>
+</StgValue>
+</bind>
+</comp>
+
+<comp id="68" class="1000" name="linearRegression_stubs_data_settings_chosenRofZ_s">
+<pin_list>
+<pin id="69" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="linearRegression_stubs_data_settings_chosenRofZ_s"/><MemPortTyVec>2 0 </MemPortTyVec>
+</StgValue>
+</bind>
+</comp>
+
+<comp id="70" class="1000" name="linearRegression_stubs_data_settings_etaRegions_s">
+<pin_list>
+<pin id="71" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="linearRegression_stubs_data_settings_etaRegions_s"/><MemPortTyVec>2 2 </MemPortTyVec>
+</StgValue>
+</bind>
+</comp>
+
+<comp id="72" class="1000" name="linearRegression_stubs_data_settings_minNumMatchLayers_s">
+<pin_list>
+<pin id="73" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="linearRegression_stubs_data_settings_minNumMatchLayers_s"/><MemPortTyVec>2 0 </MemPortTyVec>
+</StgValue>
+</bind>
+</comp>
+
+<comp id="74" class="1000" name="linearRegression_stubs_data_settings_minPSLayers_s">
+<pin_list>
+<pin id="75" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="linearRegression_stubs_data_settings_minPSLayers_s"/><MemPortTyVec>2 0 </MemPortTyVec>
+</StgValue>
+</bind>
+</comp>
+
+<comp id="76" class="1000" name="linearRegression_stubs_data_r_s">
+<pin_list>
+<pin id="77" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="linearRegression_stubs_data_r_s"/><MemPortTyVec>2 0 </MemPortTyVec>
+</StgValue>
+</bind>
+</comp>
+
+<comp id="78" class="1000" name="linearRegression_stubs_data_phi_s">
+<pin_list>
+<pin id="79" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="linearRegression_stubs_data_phi_s"/><MemPortTyVec>2 0 </MemPortTyVec>
+</StgValue>
+</bind>
+</comp>
+
+<comp id="80" class="1000" name="linearRegression_stubs_data_z_s">
+<pin_list>
+<pin id="81" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="linearRegression_stubs_data_z_s"/><MemPortTyVec>2 0 </MemPortTyVec>
+</StgValue>
+</bind>
+</comp>
+
+<comp id="82" class="1000" name="linearRegression_stubs_data_layerId_s">
+<pin_list>
+<pin id="83" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="linearRegression_stubs_data_layerId_s"/><MemPortTyVec>2 2 </MemPortTyVec>
+</StgValue>
+</bind>
+</comp>
+
+<comp id="84" class="1000" name="linearRegression_stubs_data_psModule_s">
+<pin_list>
+<pin id="85" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="linearRegression_stubs_data_psModule_s"/><MemPortTyVec>2 2 </MemPortTyVec>
+</StgValue>
+</bind>
+</comp>
+
+<comp id="86" class="1000" name="linearRegression_stubs_data_barrel_s">
+<pin_list>
+<pin id="87" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="linearRegression_stubs_data_barrel_s"/><MemPortTyVec>2 2 </MemPortTyVec>
+</StgValue>
+</bind>
+</comp>
+
+<comp id="88" class="1000" name="linearRegression_valid_s">
+<pin_list>
+<pin id="89" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="linearRegression_valid_s"/></StgValue>
+</bind>
+</comp>
+
+<comp id="90" class="1000" name="linearRegression_stubMap_size_s">
+<pin_list>
+<pin id="91" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="linearRegression_stubMap_size_s"/></StgValue>
+</bind>
+</comp>
+
+<comp id="92" class="1000" name="linearRegression_stubMap_data_first">
+<pin_list>
+<pin id="93" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="linearRegression_stubMap_data_first"/><MemPortTyVec>2 3 </MemPortTyVec>
+</StgValue>
+</bind>
+</comp>
+
+<comp id="94" class="1000" name="linearRegression_stubMap_data_second_size_s">
+<pin_list>
+<pin id="95" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="linearRegression_stubMap_data_second_size_s"/><MemPortTyVec>2 3 </MemPortTyVec>
+</StgValue>
+</bind>
+</comp>
+
+<comp id="96" class="1000" name="linearRegression_stubMap_data_second_data_settings_chosenRofPhi_s">
+<pin_list>
+<pin id="97" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="linearRegression_stubMap_data_second_data_settings_chosenRofPhi_s"/><MemPortTyVec>2 2 </MemPortTyVec>
+</StgValue>
+</bind>
+</comp>
+
+<comp id="98" class="1000" name="linearRegression_stubMap_data_second_data_settings_chosenRofZ_s">
+<pin_list>
+<pin id="99" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="linearRegression_stubMap_data_second_data_settings_chosenRofZ_s"/><MemPortTyVec>2 2 </MemPortTyVec>
+</StgValue>
+</bind>
+</comp>
+
+<comp id="100" class="1000" name="linearRegression_stubMap_data_second_data_settings_etaRegions_s">
+<pin_list>
+<pin id="101" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="linearRegression_stubMap_data_second_data_settings_etaRegions_s"/><MemPortTyVec>2 2 </MemPortTyVec>
+</StgValue>
+</bind>
+</comp>
+
+<comp id="102" class="1000" name="linearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s">
+<pin_list>
+<pin id="103" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="linearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s"/><MemPortTyVec>2 2 </MemPortTyVec>
+</StgValue>
+</bind>
+</comp>
+
+<comp id="104" class="1000" name="linearRegression_stubMap_data_second_data_settings_minPSLayers_s">
+<pin_list>
+<pin id="105" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="linearRegression_stubMap_data_second_data_settings_minPSLayers_s"/><MemPortTyVec>2 2 </MemPortTyVec>
+</StgValue>
+</bind>
+</comp>
+
+<comp id="106" class="1000" name="linearRegression_stubMap_data_second_data_r_s">
+<pin_list>
+<pin id="107" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="linearRegression_stubMap_data_second_data_r_s"/><MemPortTyVec>2 2 </MemPortTyVec>
+</StgValue>
+</bind>
+</comp>
+
+<comp id="108" class="1000" name="linearRegression_stubMap_data_second_data_phi_s">
+<pin_list>
+<pin id="109" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="linearRegression_stubMap_data_second_data_phi_s"/><MemPortTyVec>2 2 </MemPortTyVec>
+</StgValue>
+</bind>
+</comp>
+
+<comp id="110" class="1000" name="linearRegression_stubMap_data_second_data_z_s">
+<pin_list>
+<pin id="111" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="linearRegression_stubMap_data_second_data_z_s"/><MemPortTyVec>2 2 </MemPortTyVec>
+</StgValue>
+</bind>
+</comp>
+
+<comp id="112" class="1000" name="linearRegression_stubMap_data_second_data_layerId_s">
+<pin_list>
+<pin id="113" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="linearRegression_stubMap_data_second_data_layerId_s"/><MemPortTyVec>2 2 </MemPortTyVec>
+</StgValue>
+</bind>
+</comp>
+
+<comp id="114" class="1000" name="linearRegression_stubMap_data_second_data_psModule_s">
+<pin_list>
+<pin id="115" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="linearRegression_stubMap_data_second_data_psModule_s"/><MemPortTyVec>2 2 </MemPortTyVec>
+</StgValue>
+</bind>
+</comp>
+
+<comp id="116" class="1000" name="linearRegression_stubMap_data_second_data_barrel_s">
+<pin_list>
+<pin id="117" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="linearRegression_stubMap_data_second_data_barrel_s"/><MemPortTyVec>2 2 </MemPortTyVec>
+</StgValue>
+</bind>
+</comp>
+
+<comp id="118" class="1000" name="linearRegression_layerPopulation_size_s">
+<pin_list>
+<pin id="119" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="linearRegression_layerPopulation_size_s"/></StgValue>
+</bind>
+</comp>
+
+<comp id="120" class="1000" name="linearRegression_layerPopulation_data_first">
+<pin_list>
+<pin id="121" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="linearRegression_layerPopulation_data_first"/><MemPortTyVec>2 3 </MemPortTyVec>
+</StgValue>
+</bind>
+</comp>
+
+<comp id="122" class="1000" name="linearRegression_layerPopulation_data_second">
+<pin_list>
+<pin id="123" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="linearRegression_layerPopulation_data_second"/><MemPortTyVec>2 3 </MemPortTyVec>
+</StgValue>
+</bind>
+</comp>
+
+<comp id="124" class="1000" name="linearRegression_residuals_size_s">
+<pin_list>
+<pin id="125" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="linearRegression_residuals_size_s"/></StgValue>
+</bind>
+</comp>
+
+<comp id="126" class="1000" name="linearRegression_residuals_data_first">
+<pin_list>
+<pin id="127" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="linearRegression_residuals_data_first"/><MemPortTyVec>2 3 </MemPortTyVec>
+</StgValue>
+</bind>
+</comp>
+
+<comp id="128" class="1000" name="linearRegression_residuals_data_second_size_s">
+<pin_list>
+<pin id="129" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="linearRegression_residuals_data_second_size_s"/><MemPortTyVec>2 3 </MemPortTyVec>
+</StgValue>
+</bind>
+</comp>
+
+<comp id="130" class="1000" name="linearRegression_residuals_data_second_data_phi">
+<pin_list>
+<pin id="131" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="linearRegression_residuals_data_second_data_phi"/><MemPortTyVec>2 0 </MemPortTyVec>
+</StgValue>
+</bind>
+</comp>
+
+<comp id="132" class="1000" name="linearRegression_residuals_data_second_data_z">
+<pin_list>
+<pin id="133" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="linearRegression_residuals_data_second_data_z"/><MemPortTyVec>2 0 </MemPortTyVec>
+</StgValue>
+</bind>
+</comp>
+
+<comp id="134" class="1000" name="linearRegression_residuals_data_second_data_layerId">
+<pin_list>
+<pin id="135" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="linearRegression_residuals_data_second_data_layerId"/><MemPortTyVec>2 0 </MemPortTyVec>
+</StgValue>
+</bind>
+</comp>
+
+<comp id="136" class="1000" name="linearRegression_residuals_data_second_data_stubId">
+<pin_list>
+<pin id="137" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="linearRegression_residuals_data_second_data_stubId"/><MemPortTyVec>2 0 </MemPortTyVec>
+</StgValue>
+</bind>
+</comp>
+
+<comp id="138" class="1000" name="linearRegression_residuals_data_second_data_ps">
+<pin_list>
+<pin id="139" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="linearRegression_residuals_data_second_data_ps"/><MemPortTyVec>2 0 </MemPortTyVec>
+</StgValue>
+</bind>
+</comp>
+
+<comp id="140" class="1000" name="linearRegression_largestResid_phi">
+<pin_list>
+<pin id="141" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="linearRegression_largestResid_phi"/></StgValue>
+</bind>
+</comp>
+
+<comp id="142" class="1000" name="linearRegression_largestResid_z">
+<pin_list>
+<pin id="143" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="linearRegression_largestResid_z"/></StgValue>
+</bind>
+</comp>
+
+<comp id="144" class="1000" name="linearRegression_largestResid_layerId">
+<pin_list>
+<pin id="145" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="linearRegression_largestResid_layerId"/></StgValue>
+</bind>
+</comp>
+
+<comp id="146" class="1000" name="linearRegression_largestResid_stubId">
+<pin_list>
+<pin id="147" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="linearRegression_largestResid_stubId"/></StgValue>
+</bind>
+</comp>
+
+<comp id="148" class="1000" name="linearRegression_largestResid_ps">
+<pin_list>
+<pin id="149" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="linearRegression_largestResid_ps"/></StgValue>
+</bind>
+</comp>
+
+<comp id="150" class="1000" name="cordic_hyperb_table_s">
+<pin_list>
+<pin id="151" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="cordic_hyperb_table_s"/><MemPortTyVec>1 </MemPortTyVec>
+</StgValue>
+</bind>
+</comp>
+
+<comp id="152" class="1001" name="const_152">
+<pin_list>
+<pin id="153" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="_ssdm_op_Read.ap_auto.i32P"/></StgValue>
+</bind>
+</comp>
+
+<comp id="154" class="1001" name="const_154">
+<pin_list>
+<pin id="155" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="_ssdm_op_Read.ap_auto.floatP"/></StgValue>
+</bind>
+</comp>
+
+<comp id="156" class="1001" name="const_156">
+<pin_list>
+<pin id="157" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="fit"/></StgValue>
+</bind>
+</comp>
+
+<comp id="158" class="1001" name="const_158">
+<pin_list>
+<pin id="159" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="_ssdm_op_SpecBitsMap"/></StgValue>
+</bind>
+</comp>
+
+<comp id="160" class="1001" name="const_160">
+<pin_list>
+<pin id="161" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="_ssdm_op_SpecTopModule"/></StgValue>
+</bind>
+</comp>
+
+<comp id="162" class="1001" name="const_162">
+<pin_list>
+<pin id="163" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="LRupdateHLS_str"/></StgValue>
+</bind>
+</comp>
+
+<comp id="164" class="1001" name="const_164">
+<pin_list>
+<pin id="165" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="_ssdm_op_Write.ap_auto.i32P"/></StgValue>
+</bind>
+</comp>
+
+<comp id="166" class="1001" name="const_166">
+<pin_list>
+<pin id="167" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="_ssdm_op_Write.ap_auto.floatP"/></StgValue>
+</bind>
+</comp>
+
+<comp id="168" class="1001" name="const_168">
+<pin_list>
+<pin id="169" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="_ssdm_op_Write.ap_auto.i1P"/></StgValue>
+</bind>
+</comp>
+
+<comp id="170" class="1004" name="linearRegression_set_read_fu_170">
+<pin_list>
+<pin id="171" dir="0" index="0" bw="32" slack="0"/>
+<pin id="172" dir="0" index="1" bw="32" slack="0"/>
+<pin id="173" dir="1" index="2" bw="32" slack="0"/>
+</pin_list>
+<bind>
+<opcode="read(1150) " fcode="read"/>
+<opset="linearRegression_set/1 "/>
+</bind>
+</comp>
+
+<comp id="176" class="1004" name="linearRegression_set_1_read_fu_176">
+<pin_list>
+<pin id="177" dir="0" index="0" bw="32" slack="0"/>
+<pin id="178" dir="0" index="1" bw="32" slack="0"/>
+<pin id="179" dir="1" index="2" bw="32" slack="0"/>
+</pin_list>
+<bind>
+<opcode="read(1150) " fcode="read"/>
+<opset="linearRegression_set_1/1 "/>
+</bind>
+</comp>
+
+<comp id="182" class="1004" name="l1track3D_iPhiSec_r_read_fu_182">
+<pin_list>
+<pin id="183" dir="0" index="0" bw="32" slack="0"/>
+<pin id="184" dir="0" index="1" bw="32" slack="0"/>
+<pin id="185" dir="1" index="2" bw="32" slack="0"/>
+</pin_list>
+<bind>
+<opcode="read(1150) " fcode="read"/>
+<opset="l1track3D_iPhiSec_r/1 "/>
+</bind>
+</comp>
+
+<comp id="188" class="1004" name="l1track3D_iEtaReg_r_read_fu_188">
+<pin_list>
+<pin id="189" dir="0" index="0" bw="32" slack="0"/>
+<pin id="190" dir="0" index="1" bw="32" slack="0"/>
+<pin id="191" dir="1" index="2" bw="32" slack="0"/>
+</pin_list>
+<bind>
+<opcode="read(1150) " fcode="read"/>
+<opset="l1track3D_iEtaReg_r/1 "/>
+</bind>
+</comp>
+
+<comp id="194" class="1004" name="l1track3D_helixRphi_s_read_fu_194">
+<pin_list>
+<pin id="195" dir="0" index="0" bw="32" slack="0"/>
+<pin id="196" dir="0" index="1" bw="32" slack="0"/>
+<pin id="197" dir="1" index="2" bw="32" slack="0"/>
+</pin_list>
+<bind>
+<opcode="read(1150) " fcode="read"/>
+<opset="l1track3D_helixRphi_s/1 "/>
+</bind>
+</comp>
+
+<comp id="200" class="1004" name="l1track3D_helixRphi_3_read_fu_200">
+<pin_list>
+<pin id="201" dir="0" index="0" bw="32" slack="0"/>
+<pin id="202" dir="0" index="1" bw="32" slack="0"/>
+<pin id="203" dir="1" index="2" bw="32" slack="0"/>
+</pin_list>
+<bind>
+<opcode="read(1150) " fcode="read"/>
+<opset="l1track3D_helixRphi_3/1 "/>
+</bind>
+</comp>
+
+<comp id="206" class="1004" name="l1track3D_stubs_siz_read_fu_206">
+<pin_list>
+<pin id="207" dir="0" index="0" bw="32" slack="0"/>
+<pin id="208" dir="0" index="1" bw="32" slack="0"/>
+<pin id="209" dir="1" index="2" bw="32" slack="0"/>
+</pin_list>
+<bind>
+<opcode="read(1150) " fcode="read"/>
+<opset="l1track3D_stubs_siz/1 "/>
+</bind>
+</comp>
+
+<comp id="212" class="1004" name="linearRegression_set_2_read_fu_212">
+<pin_list>
+<pin id="213" dir="0" index="0" bw="32" slack="0"/>
+<pin id="214" dir="0" index="1" bw="32" slack="0"/>
+<pin id="215" dir="1" index="2" bw="32" slack="0"/>
+</pin_list>
+<bind>
+<opcode="read(1150) " fcode="read"/>
+<opset="linearRegression_set_2/1 "/>
+</bind>
+</comp>
+
+<comp id="218" class="1004" name="linearRegression_set_3_read_fu_218">
+<pin_list>
+<pin id="219" dir="0" index="0" bw="32" slack="0"/>
+<pin id="220" dir="0" index="1" bw="32" slack="0"/>
+<pin id="221" dir="1" index="2" bw="32" slack="0"/>
+</pin_list>
+<bind>
+<opcode="read(1150) " fcode="read"/>
+<opset="linearRegression_set_3/1 "/>
+</bind>
+</comp>
+
+<comp id="224" class="1004" name="linearRegression_LRP_read_fu_224">
+<pin_list>
+<pin id="225" dir="0" index="0" bw="32" slack="0"/>
+<pin id="226" dir="0" index="1" bw="32" slack="0"/>
+<pin id="227" dir="1" index="2" bw="32" slack="0"/>
+</pin_list>
+<bind>
+<opcode="read(1150) " fcode="read"/>
+<opset="linearRegression_LRP/1 "/>
+</bind>
+</comp>
+
+<comp id="230" class="1004" name="linearRegression_LRP_1_read_fu_230">
+<pin_list>
+<pin id="231" dir="0" index="0" bw="32" slack="0"/>
+<pin id="232" dir="0" index="1" bw="32" slack="0"/>
+<pin id="233" dir="1" index="2" bw="32" slack="0"/>
+</pin_list>
+<bind>
+<opcode="read(1150) " fcode="read"/>
+<opset="linearRegression_LRP_1/1 "/>
+</bind>
+</comp>
+
+<comp id="236" class="1004" name="linearRegression_LRP_2_read_fu_236">
+<pin_list>
+<pin id="237" dir="0" index="0" bw="32" slack="0"/>
+<pin id="238" dir="0" index="1" bw="32" slack="0"/>
+<pin id="239" dir="1" index="2" bw="32" slack="0"/>
+</pin_list>
+<bind>
+<opcode="read(1150) " fcode="read"/>
+<opset="linearRegression_LRP_2/1 "/>
+</bind>
+</comp>
+
+<comp id="242" class="1004" name="linearRegression_LRP_3_read_fu_242">
+<pin_list>
+<pin id="243" dir="0" index="0" bw="32" slack="0"/>
+<pin id="244" dir="0" index="1" bw="32" slack="0"/>
+<pin id="245" dir="1" index="2" bw="32" slack="0"/>
+</pin_list>
+<bind>
+<opcode="read(1150) " fcode="read"/>
+<opset="linearRegression_LRP_3/1 "/>
+</bind>
+</comp>
+
+<comp id="248" class="1004" name="linearRegression_stu_read_fu_248">
+<pin_list>
+<pin id="249" dir="0" index="0" bw="32" slack="0"/>
+<pin id="250" dir="0" index="1" bw="32" slack="0"/>
+<pin id="251" dir="1" index="2" bw="32" slack="0"/>
+</pin_list>
+<bind>
+<opcode="read(1150) " fcode="read"/>
+<opset="linearRegression_stu/1 "/>
+</bind>
+</comp>
+
+<comp id="254" class="1004" name="linearRegression_lay_read_fu_254">
+<pin_list>
+<pin id="255" dir="0" index="0" bw="32" slack="0"/>
+<pin id="256" dir="0" index="1" bw="32" slack="0"/>
+<pin id="257" dir="1" index="2" bw="32" slack="0"/>
+</pin_list>
+<bind>
+<opcode="read(1150) " fcode="read"/>
+<opset="linearRegression_lay/1 "/>
+</bind>
+</comp>
+
+<comp id="260" class="1004" name="StgValue_111_write_fu_260">
+<pin_list>
+<pin id="261" dir="0" index="0" bw="0" slack="0"/>
+<pin id="262" dir="0" index="1" bw="32" slack="0"/>
+<pin id="263" dir="0" index="2" bw="32" slack="0"/>
+<pin id="264" dir="1" index="3" bw="0" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="write(1151) " fcode="write"/>
+<opset="StgValue_111/2 "/>
+</bind>
+</comp>
+
+<comp id="267" class="1004" name="StgValue_112_write_fu_267">
+<pin_list>
+<pin id="268" dir="0" index="0" bw="0" slack="0"/>
+<pin id="269" dir="0" index="1" bw="32" slack="0"/>
+<pin id="270" dir="0" index="2" bw="32" slack="0"/>
+<pin id="271" dir="1" index="3" bw="0" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="write(1151) " fcode="write"/>
+<opset="StgValue_112/2 "/>
+</bind>
+</comp>
+
+<comp id="274" class="1004" name="StgValue_113_write_fu_274">
+<pin_list>
+<pin id="275" dir="0" index="0" bw="0" slack="0"/>
+<pin id="276" dir="0" index="1" bw="32" slack="0"/>
+<pin id="277" dir="0" index="2" bw="32" slack="0"/>
+<pin id="278" dir="1" index="3" bw="0" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="write(1151) " fcode="write"/>
+<opset="StgValue_113/2 "/>
+</bind>
+</comp>
+
+<comp id="281" class="1004" name="StgValue_114_write_fu_281">
+<pin_list>
+<pin id="282" dir="0" index="0" bw="0" slack="0"/>
+<pin id="283" dir="0" index="1" bw="32" slack="0"/>
+<pin id="284" dir="0" index="2" bw="32" slack="0"/>
+<pin id="285" dir="1" index="3" bw="0" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="write(1151) " fcode="write"/>
+<opset="StgValue_114/2 "/>
+</bind>
+</comp>
+
+<comp id="288" class="1004" name="StgValue_115_write_fu_288">
+<pin_list>
+<pin id="289" dir="0" index="0" bw="0" slack="0"/>
+<pin id="290" dir="0" index="1" bw="32" slack="0"/>
+<pin id="291" dir="0" index="2" bw="32" slack="0"/>
+<pin id="292" dir="1" index="3" bw="0" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="write(1151) " fcode="write"/>
+<opset="StgValue_115/2 "/>
+</bind>
+</comp>
+
+<comp id="295" class="1004" name="StgValue_116_write_fu_295">
+<pin_list>
+<pin id="296" dir="0" index="0" bw="0" slack="0"/>
+<pin id="297" dir="0" index="1" bw="32" slack="0"/>
+<pin id="298" dir="0" index="2" bw="32" slack="0"/>
+<pin id="299" dir="1" index="3" bw="0" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="write(1151) " fcode="write"/>
+<opset="StgValue_116/2 "/>
+</bind>
+</comp>
+
+<comp id="302" class="1004" name="StgValue_117_write_fu_302">
+<pin_list>
+<pin id="303" dir="0" index="0" bw="0" slack="0"/>
+<pin id="304" dir="0" index="1" bw="32" slack="0"/>
+<pin id="305" dir="0" index="2" bw="32" slack="0"/>
+<pin id="306" dir="1" index="3" bw="0" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="write(1151) " fcode="write"/>
+<opset="StgValue_117/2 "/>
+</bind>
+</comp>
+
+<comp id="309" class="1004" name="StgValue_118_write_fu_309">
+<pin_list>
+<pin id="310" dir="0" index="0" bw="0" slack="0"/>
+<pin id="311" dir="0" index="1" bw="32" slack="0"/>
+<pin id="312" dir="0" index="2" bw="32" slack="0"/>
+<pin id="313" dir="1" index="3" bw="0" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="write(1151) " fcode="write"/>
+<opset="StgValue_118/2 "/>
+</bind>
+</comp>
+
+<comp id="316" class="1004" name="StgValue_119_write_fu_316">
+<pin_list>
+<pin id="317" dir="0" index="0" bw="0" slack="0"/>
+<pin id="318" dir="0" index="1" bw="32" slack="0"/>
+<pin id="319" dir="0" index="2" bw="32" slack="0"/>
+<pin id="320" dir="1" index="3" bw="0" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="write(1151) " fcode="write"/>
+<opset="StgValue_119/2 "/>
+</bind>
+</comp>
+
+<comp id="323" class="1004" name="StgValue_120_write_fu_323">
+<pin_list>
+<pin id="324" dir="0" index="0" bw="0" slack="0"/>
+<pin id="325" dir="0" index="1" bw="32" slack="0"/>
+<pin id="326" dir="0" index="2" bw="32" slack="0"/>
+<pin id="327" dir="1" index="3" bw="0" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="write(1151) " fcode="write"/>
+<opset="StgValue_120/2 "/>
+</bind>
+</comp>
+
+<comp id="330" class="1004" name="StgValue_121_write_fu_330">
+<pin_list>
+<pin id="331" dir="0" index="0" bw="0" slack="0"/>
+<pin id="332" dir="0" index="1" bw="32" slack="0"/>
+<pin id="333" dir="0" index="2" bw="32" slack="0"/>
+<pin id="334" dir="1" index="3" bw="0" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="write(1151) " fcode="write"/>
+<opset="StgValue_121/2 "/>
+</bind>
+</comp>
+
+<comp id="337" class="1004" name="StgValue_122_write_fu_337">
+<pin_list>
+<pin id="338" dir="0" index="0" bw="0" slack="0"/>
+<pin id="339" dir="0" index="1" bw="32" slack="0"/>
+<pin id="340" dir="0" index="2" bw="32" slack="0"/>
+<pin id="341" dir="1" index="3" bw="0" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="write(1151) " fcode="write"/>
+<opset="StgValue_122/2 "/>
+</bind>
+</comp>
+
+<comp id="344" class="1004" name="StgValue_123_write_fu_344">
+<pin_list>
+<pin id="345" dir="0" index="0" bw="0" slack="0"/>
+<pin id="346" dir="0" index="1" bw="32" slack="0"/>
+<pin id="347" dir="0" index="2" bw="32" slack="0"/>
+<pin id="348" dir="1" index="3" bw="0" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="write(1151) " fcode="write"/>
+<opset="StgValue_123/2 "/>
+</bind>
+</comp>
+
+<comp id="351" class="1004" name="StgValue_124_write_fu_351">
+<pin_list>
+<pin id="352" dir="0" index="0" bw="0" slack="0"/>
+<pin id="353" dir="0" index="1" bw="32" slack="0"/>
+<pin id="354" dir="0" index="2" bw="32" slack="0"/>
+<pin id="355" dir="1" index="3" bw="0" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="write(1151) " fcode="write"/>
+<opset="StgValue_124/2 "/>
+</bind>
+</comp>
+
+<comp id="358" class="1004" name="StgValue_125_write_fu_358">
+<pin_list>
+<pin id="359" dir="0" index="0" bw="0" slack="0"/>
+<pin id="360" dir="0" index="1" bw="1" slack="0"/>
+<pin id="361" dir="0" index="2" bw="1" slack="0"/>
+<pin id="362" dir="1" index="3" bw="0" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="write(1151) " fcode="write"/>
+<opset="StgValue_125/2 "/>
+</bind>
+</comp>
+
+<comp id="365" class="1004" name="grp_fit_fu_365">
+<pin_list>
+<pin id="366" dir="0" index="0" bw="449" slack="0"/>
+<pin id="367" dir="0" index="1" bw="32" slack="0"/>
+<pin id="368" dir="0" index="2" bw="32" slack="0"/>
+<pin id="369" dir="0" index="3" bw="32" slack="0"/>
+<pin id="370" dir="0" index="4" bw="32" slack="0"/>
+<pin id="371" dir="0" index="5" bw="32" slack="0"/>
+<pin id="372" dir="0" index="6" bw="32" slack="0"/>
+<pin id="373" dir="0" index="7" bw="32" slack="0"/>
+<pin id="374" dir="0" index="8" bw="32" slack="0"/>
+<pin id="375" dir="0" index="9" bw="32" slack="0"/>
+<pin id="376" dir="0" index="10" bw="32" slack="0"/>
+<pin id="377" dir="0" index="11" bw="32" slack="0"/>
+<pin id="378" dir="0" index="12" bw="32" slack="0"/>
+<pin id="379" dir="0" index="13" bw="32" slack="0"/>
+<pin id="380" dir="0" index="14" bw="32" slack="0"/>
+<pin id="381" dir="0" index="15" bw="32" slack="0"/>
+<pin id="382" dir="0" index="16" bw="32" slack="0"/>
+<pin id="383" dir="0" index="17" bw="32" slack="0"/>
+<pin id="384" dir="0" index="18" bw="32" slack="0"/>
+<pin id="385" dir="0" index="19" bw="1" slack="0"/>
+<pin id="386" dir="0" index="20" bw="1" slack="0"/>
+<pin id="387" dir="0" index="21" bw="32" slack="0"/>
+<pin id="388" dir="0" index="22" bw="32" slack="0"/>
+<pin id="389" dir="0" index="23" bw="32" slack="0"/>
+<pin id="390" dir="0" index="24" bw="32" slack="0"/>
+<pin id="391" dir="0" index="25" bw="32" slack="0"/>
+<pin id="392" dir="0" index="26" bw="32" slack="0"/>
+<pin id="393" dir="0" index="27" bw="32" slack="0"/>
+<pin id="394" dir="0" index="28" bw="32" slack="0"/>
+<pin id="395" dir="0" index="29" bw="32" slack="0"/>
+<pin id="396" dir="0" index="30" bw="32" slack="0"/>
+<pin id="397" dir="0" index="31" bw="32" slack="0"/>
+<pin id="398" dir="0" index="32" bw="32" slack="0"/>
+<pin id="399" dir="0" index="33" bw="1" slack="0"/>
+<pin id="400" dir="0" index="34" bw="1" slack="0"/>
+<pin id="401" dir="0" index="35" bw="32" slack="0"/>
+<pin id="402" dir="0" index="36" bw="32" slack="0"/>
+<pin id="403" dir="0" index="37" bw="32" slack="0"/>
+<pin id="404" dir="0" index="38" bw="32" slack="0"/>
+<pin id="405" dir="0" index="39" bw="32" slack="0"/>
+<pin id="406" dir="0" index="40" bw="32" slack="0"/>
+<pin id="407" dir="0" index="41" bw="32" slack="0"/>
+<pin id="408" dir="0" index="42" bw="32" slack="0"/>
+<pin id="409" dir="0" index="43" bw="32" slack="0"/>
+<pin id="410" dir="0" index="44" bw="32" slack="0"/>
+<pin id="411" dir="0" index="45" bw="1" slack="0"/>
+<pin id="412" dir="0" index="46" bw="32" slack="0"/>
+<pin id="413" dir="0" index="47" bw="32" slack="0"/>
+<pin id="414" dir="0" index="48" bw="32" slack="0"/>
+<pin id="415" dir="0" index="49" bw="32" slack="0"/>
+<pin id="416" dir="0" index="50" bw="1" slack="0"/>
+<pin id="417" dir="0" index="51" bw="32" slack="0"/>
+<pin id="418" dir="0" index="52" bw="32" slack="0"/>
+<pin id="419" dir="0" index="53" bw="32" slack="0"/>
+<pin id="420" dir="0" index="54" bw="32" slack="0"/>
+<pin id="421" dir="0" index="55" bw="32" slack="0"/>
+<pin id="422" dir="0" index="56" bw="32" slack="0"/>
+<pin id="423" dir="0" index="57" bw="32" slack="0"/>
+<pin id="424" dir="0" index="58" bw="32" slack="0"/>
+<pin id="425" dir="0" index="59" bw="32" slack="0"/>
+<pin id="426" dir="0" index="60" bw="32" slack="0"/>
+<pin id="427" dir="0" index="61" bw="32" slack="0"/>
+<pin id="428" dir="0" index="62" bw="32" slack="0"/>
+<pin id="429" dir="0" index="63" bw="32" slack="0"/>
+<pin id="430" dir="0" index="64" bw="32" slack="0"/>
+<pin id="431" dir="0" index="65" bw="1" slack="0"/>
+<pin id="432" dir="0" index="66" bw="1" slack="0"/>
+<pin id="433" dir="0" index="67" bw="124" slack="0"/>
+<pin id="434" dir="1" index="68" bw="449" slack="0"/>
+</pin_list>
+<bind>
+<opcode="call(48) " fcode="call"/>
+<opset="call_ret1/1 "/>
+</bind>
+</comp>
+
+<comp id="503" class="1004" name="newret_fu_503">
+<pin_list>
+<pin id="504" dir="0" index="0" bw="449" slack="0"/>
+<pin id="505" dir="1" index="1" bw="32" slack="0"/>
+</pin_list>
+<bind>
+<opcode="extractvalue(56) " fcode="extractvalue"/>
+<opset="newret/2 "/>
+</bind>
+</comp>
+
+<comp id="508" class="1004" name="newret19_fu_508">
+<pin_list>
+<pin id="509" dir="0" index="0" bw="449" slack="0"/>
+<pin id="510" dir="1" index="1" bw="32" slack="0"/>
+</pin_list>
+<bind>
+<opcode="extractvalue(56) " fcode="extractvalue"/>
+<opset="newret19/2 "/>
+</bind>
+</comp>
+
+<comp id="513" class="1004" name="newret20_fu_513">
+<pin_list>
+<pin id="514" dir="0" index="0" bw="449" slack="0"/>
+<pin id="515" dir="1" index="1" bw="32" slack="0"/>
+</pin_list>
+<bind>
+<opcode="extractvalue(56) " fcode="extractvalue"/>
+<opset="newret20/2 "/>
+</bind>
+</comp>
+
+<comp id="518" class="1004" name="newret21_fu_518">
+<pin_list>
+<pin id="519" dir="0" index="0" bw="449" slack="0"/>
+<pin id="520" dir="1" index="1" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<opcode="extractvalue(56) " fcode="extractvalue"/>
+<opset="newret21/2 "/>
+</bind>
+</comp>
+
+<comp id="523" class="1004" name="newret22_fu_523">
+<pin_list>
+<pin id="524" dir="0" index="0" bw="449" slack="0"/>
+<pin id="525" dir="1" index="1" bw="32" slack="0"/>
+</pin_list>
+<bind>
+<opcode="extractvalue(56) " fcode="extractvalue"/>
+<opset="newret22/2 "/>
+</bind>
+</comp>
+
+<comp id="528" class="1004" name="newret23_fu_528">
+<pin_list>
+<pin id="529" dir="0" index="0" bw="449" slack="0"/>
+<pin id="530" dir="1" index="1" bw="32" slack="0"/>
+</pin_list>
+<bind>
+<opcode="extractvalue(56) " fcode="extractvalue"/>
+<opset="newret23/2 "/>
+</bind>
+</comp>
+
+<comp id="533" class="1004" name="newret24_fu_533">
+<pin_list>
+<pin id="534" dir="0" index="0" bw="449" slack="0"/>
+<pin id="535" dir="1" index="1" bw="32" slack="0"/>
+</pin_list>
+<bind>
+<opcode="extractvalue(56) " fcode="extractvalue"/>
+<opset="newret24/2 "/>
+</bind>
+</comp>
+
+<comp id="538" class="1004" name="newret25_fu_538">
+<pin_list>
+<pin id="539" dir="0" index="0" bw="449" slack="0"/>
+<pin id="540" dir="1" index="1" bw="32" slack="0"/>
+</pin_list>
+<bind>
+<opcode="extractvalue(56) " fcode="extractvalue"/>
+<opset="newret25/2 "/>
+</bind>
+</comp>
+
+<comp id="543" class="1004" name="newret26_fu_543">
+<pin_list>
+<pin id="544" dir="0" index="0" bw="449" slack="0"/>
+<pin id="545" dir="1" index="1" bw="32" slack="0"/>
+</pin_list>
+<bind>
+<opcode="extractvalue(56) " fcode="extractvalue"/>
+<opset="newret26/2 "/>
+</bind>
+</comp>
+
+<comp id="548" class="1004" name="newret27_fu_548">
+<pin_list>
+<pin id="549" dir="0" index="0" bw="449" slack="0"/>
+<pin id="550" dir="1" index="1" bw="32" slack="0"/>
+</pin_list>
+<bind>
+<opcode="extractvalue(56) " fcode="extractvalue"/>
+<opset="newret27/2 "/>
+</bind>
+</comp>
+
+<comp id="553" class="1004" name="newret28_fu_553">
+<pin_list>
+<pin id="554" dir="0" index="0" bw="449" slack="0"/>
+<pin id="555" dir="1" index="1" bw="32" slack="0"/>
+</pin_list>
+<bind>
+<opcode="extractvalue(56) " fcode="extractvalue"/>
+<opset="newret28/2 "/>
+</bind>
+</comp>
+
+<comp id="558" class="1004" name="newret29_fu_558">
+<pin_list>
+<pin id="559" dir="0" index="0" bw="449" slack="0"/>
+<pin id="560" dir="1" index="1" bw="32" slack="0"/>
+</pin_list>
+<bind>
+<opcode="extractvalue(56) " fcode="extractvalue"/>
+<opset="newret29/2 "/>
+</bind>
+</comp>
+
+<comp id="563" class="1004" name="newret30_fu_563">
+<pin_list>
+<pin id="564" dir="0" index="0" bw="449" slack="0"/>
+<pin id="565" dir="1" index="1" bw="32" slack="0"/>
+</pin_list>
+<bind>
+<opcode="extractvalue(56) " fcode="extractvalue"/>
+<opset="newret30/2 "/>
+</bind>
+</comp>
+
+<comp id="568" class="1004" name="newret31_fu_568">
+<pin_list>
+<pin id="569" dir="0" index="0" bw="449" slack="0"/>
+<pin id="570" dir="1" index="1" bw="32" slack="0"/>
+</pin_list>
+<bind>
+<opcode="extractvalue(56) " fcode="extractvalue"/>
+<opset="newret31/2 "/>
+</bind>
+</comp>
+
+<comp id="573" class="1004" name="newret32_fu_573">
+<pin_list>
+<pin id="574" dir="0" index="0" bw="449" slack="0"/>
+<pin id="575" dir="1" index="1" bw="32" slack="0"/>
+</pin_list>
+<bind>
+<opcode="extractvalue(56) " fcode="extractvalue"/>
+<opset="newret32/2 "/>
+</bind>
+</comp>
+
+<comp id="578" class="1005" name="linearRegression_set_reg_578">
+<pin_list>
+<pin id="579" dir="0" index="0" bw="32" slack="1"/>
+<pin id="580" dir="1" index="1" bw="32" slack="1"/>
+</pin_list>
+<bind>
+<opset="linearRegression_set "/>
+</bind>
+</comp>
+
+<comp id="583" class="1005" name="linearRegression_set_1_reg_583">
+<pin_list>
+<pin id="584" dir="0" index="0" bw="32" slack="1"/>
+<pin id="585" dir="1" index="1" bw="32" slack="1"/>
+</pin_list>
+<bind>
+<opset="linearRegression_set_1 "/>
+</bind>
+</comp>
+
+<comp id="588" class="1005" name="l1track3D_iPhiSec_r_reg_588">
+<pin_list>
+<pin id="589" dir="0" index="0" bw="32" slack="1"/>
+<pin id="590" dir="1" index="1" bw="32" slack="1"/>
+</pin_list>
+<bind>
+<opset="l1track3D_iPhiSec_r "/>
+</bind>
+</comp>
+
+<comp id="593" class="1005" name="l1track3D_iEtaReg_r_reg_593">
+<pin_list>
+<pin id="594" dir="0" index="0" bw="32" slack="1"/>
+<pin id="595" dir="1" index="1" bw="32" slack="1"/>
+</pin_list>
+<bind>
+<opset="l1track3D_iEtaReg_r "/>
+</bind>
+</comp>
+
+<comp id="598" class="1005" name="l1track3D_helixRphi_s_reg_598">
+<pin_list>
+<pin id="599" dir="0" index="0" bw="32" slack="1"/>
+<pin id="600" dir="1" index="1" bw="32" slack="1"/>
+</pin_list>
+<bind>
+<opset="l1track3D_helixRphi_s "/>
+</bind>
+</comp>
+
+<comp id="603" class="1005" name="l1track3D_helixRphi_3_reg_603">
+<pin_list>
+<pin id="604" dir="0" index="0" bw="32" slack="1"/>
+<pin id="605" dir="1" index="1" bw="32" slack="1"/>
+</pin_list>
+<bind>
+<opset="l1track3D_helixRphi_3 "/>
+</bind>
+</comp>
+
+<comp id="608" class="1005" name="l1track3D_stubs_siz_reg_608">
+<pin_list>
+<pin id="609" dir="0" index="0" bw="32" slack="1"/>
+<pin id="610" dir="1" index="1" bw="32" slack="1"/>
+</pin_list>
+<bind>
+<opset="l1track3D_stubs_siz "/>
+</bind>
+</comp>
+
+<comp id="613" class="1005" name="linearRegression_set_2_reg_613">
+<pin_list>
+<pin id="614" dir="0" index="0" bw="32" slack="1"/>
+<pin id="615" dir="1" index="1" bw="32" slack="1"/>
+</pin_list>
+<bind>
+<opset="linearRegression_set_2 "/>
+</bind>
+</comp>
+
+<comp id="618" class="1005" name="linearRegression_set_3_reg_618">
+<pin_list>
+<pin id="619" dir="0" index="0" bw="32" slack="1"/>
+<pin id="620" dir="1" index="1" bw="32" slack="1"/>
+</pin_list>
+<bind>
+<opset="linearRegression_set_3 "/>
+</bind>
+</comp>
+
+<comp id="623" class="1005" name="linearRegression_LRP_reg_623">
+<pin_list>
+<pin id="624" dir="0" index="0" bw="32" slack="1"/>
+<pin id="625" dir="1" index="1" bw="32" slack="1"/>
+</pin_list>
+<bind>
+<opset="linearRegression_LRP "/>
+</bind>
+</comp>
+
+<comp id="628" class="1005" name="linearRegression_LRP_1_reg_628">
+<pin_list>
+<pin id="629" dir="0" index="0" bw="32" slack="1"/>
+<pin id="630" dir="1" index="1" bw="32" slack="1"/>
+</pin_list>
+<bind>
+<opset="linearRegression_LRP_1 "/>
+</bind>
+</comp>
+
+<comp id="633" class="1005" name="linearRegression_LRP_2_reg_633">
+<pin_list>
+<pin id="634" dir="0" index="0" bw="32" slack="1"/>
+<pin id="635" dir="1" index="1" bw="32" slack="1"/>
+</pin_list>
+<bind>
+<opset="linearRegression_LRP_2 "/>
+</bind>
+</comp>
+
+<comp id="638" class="1005" name="linearRegression_LRP_3_reg_638">
+<pin_list>
+<pin id="639" dir="0" index="0" bw="32" slack="1"/>
+<pin id="640" dir="1" index="1" bw="32" slack="1"/>
+</pin_list>
+<bind>
+<opset="linearRegression_LRP_3 "/>
+</bind>
+</comp>
+
+<comp id="643" class="1005" name="linearRegression_stu_reg_643">
+<pin_list>
+<pin id="644" dir="0" index="0" bw="32" slack="1"/>
+<pin id="645" dir="1" index="1" bw="32" slack="1"/>
+</pin_list>
+<bind>
+<opset="linearRegression_stu "/>
+</bind>
+</comp>
+
+<comp id="648" class="1005" name="linearRegression_lay_reg_648">
+<pin_list>
+<pin id="649" dir="0" index="0" bw="32" slack="1"/>
+<pin id="650" dir="1" index="1" bw="32" slack="1"/>
+</pin_list>
+<bind>
+<opset="linearRegression_lay "/>
+</bind>
+</comp>
+
+</comp_list>
+
+<net_list>
+<net id="174"><net_src comp="152" pin="0"/><net_sink comp="170" pin=0"/></net>
+
+<net id="175"><net_src comp="38" pin="0"/><net_sink comp="170" pin=1"/></net>
+
+<net id="180"><net_src comp="152" pin="0"/><net_sink comp="176" pin=0"/></net>
+
+<net id="181"><net_src comp="40" pin="0"/><net_sink comp="176" pin=1"/></net>
+
+<net id="186"><net_src comp="152" pin="0"/><net_sink comp="182" pin=0"/></net>
+
+<net id="187"><net_src comp="0" pin="0"/><net_sink comp="182" pin=1"/></net>
+
+<net id="192"><net_src comp="152" pin="0"/><net_sink comp="188" pin=0"/></net>
+
+<net id="193"><net_src comp="2" pin="0"/><net_sink comp="188" pin=1"/></net>
+
+<net id="198"><net_src comp="154" pin="0"/><net_sink comp="194" pin=0"/></net>
+
+<net id="199"><net_src comp="4" pin="0"/><net_sink comp="194" pin=1"/></net>
+
+<net id="204"><net_src comp="154" pin="0"/><net_sink comp="200" pin=0"/></net>
+
+<net id="205"><net_src comp="6" pin="0"/><net_sink comp="200" pin=1"/></net>
+
+<net id="210"><net_src comp="152" pin="0"/><net_sink comp="206" pin=0"/></net>
+
+<net id="211"><net_src comp="8" pin="0"/><net_sink comp="206" pin=1"/></net>
+
+<net id="216"><net_src comp="154" pin="0"/><net_sink comp="212" pin=0"/></net>
+
+<net id="217"><net_src comp="32" pin="0"/><net_sink comp="212" pin=1"/></net>
+
+<net id="222"><net_src comp="154" pin="0"/><net_sink comp="218" pin=0"/></net>
+
+<net id="223"><net_src comp="34" pin="0"/><net_sink comp="218" pin=1"/></net>
+
+<net id="228"><net_src comp="154" pin="0"/><net_sink comp="224" pin=0"/></net>
+
+<net id="229"><net_src comp="56" pin="0"/><net_sink comp="224" pin=1"/></net>
+
+<net id="234"><net_src comp="154" pin="0"/><net_sink comp="230" pin=0"/></net>
+
+<net id="235"><net_src comp="58" pin="0"/><net_sink comp="230" pin=1"/></net>
+
+<net id="240"><net_src comp="154" pin="0"/><net_sink comp="236" pin=0"/></net>
+
+<net id="241"><net_src comp="60" pin="0"/><net_sink comp="236" pin=1"/></net>
+
+<net id="246"><net_src comp="154" pin="0"/><net_sink comp="242" pin=0"/></net>
+
+<net id="247"><net_src comp="62" pin="0"/><net_sink comp="242" pin=1"/></net>
+
+<net id="252"><net_src comp="152" pin="0"/><net_sink comp="248" pin=0"/></net>
+
+<net id="253"><net_src comp="90" pin="0"/><net_sink comp="248" pin=1"/></net>
+
+<net id="258"><net_src comp="152" pin="0"/><net_sink comp="254" pin=0"/></net>
+
+<net id="259"><net_src comp="118" pin="0"/><net_sink comp="254" pin=1"/></net>
+
+<net id="265"><net_src comp="164" pin="0"/><net_sink comp="260" pin=0"/></net>
+
+<net id="266"><net_src comp="90" pin="0"/><net_sink comp="260" pin=1"/></net>
+
+<net id="272"><net_src comp="164" pin="0"/><net_sink comp="267" pin=0"/></net>
+
+<net id="273"><net_src comp="118" pin="0"/><net_sink comp="267" pin=1"/></net>
+
+<net id="279"><net_src comp="166" pin="0"/><net_sink comp="274" pin=0"/></net>
+
+<net id="280"><net_src comp="56" pin="0"/><net_sink comp="274" pin=1"/></net>
+
+<net id="286"><net_src comp="166" pin="0"/><net_sink comp="281" pin=0"/></net>
+
+<net id="287"><net_src comp="58" pin="0"/><net_sink comp="281" pin=1"/></net>
+
+<net id="293"><net_src comp="166" pin="0"/><net_sink comp="288" pin=0"/></net>
+
+<net id="294"><net_src comp="60" pin="0"/><net_sink comp="288" pin=1"/></net>
+
+<net id="300"><net_src comp="166" pin="0"/><net_sink comp="295" pin=0"/></net>
+
+<net id="301"><net_src comp="62" pin="0"/><net_sink comp="295" pin=1"/></net>
+
+<net id="307"><net_src comp="164" pin="0"/><net_sink comp="302" pin=0"/></net>
+
+<net id="308"><net_src comp="64" pin="0"/><net_sink comp="302" pin=1"/></net>
+
+<net id="314"><net_src comp="166" pin="0"/><net_sink comp="309" pin=0"/></net>
+
+<net id="315"><net_src comp="48" pin="0"/><net_sink comp="309" pin=1"/></net>
+
+<net id="321"><net_src comp="166" pin="0"/><net_sink comp="316" pin=0"/></net>
+
+<net id="322"><net_src comp="50" pin="0"/><net_sink comp="316" pin=1"/></net>
+
+<net id="328"><net_src comp="166" pin="0"/><net_sink comp="323" pin=0"/></net>
+
+<net id="329"><net_src comp="52" pin="0"/><net_sink comp="323" pin=1"/></net>
+
+<net id="335"><net_src comp="166" pin="0"/><net_sink comp="330" pin=0"/></net>
+
+<net id="336"><net_src comp="54" pin="0"/><net_sink comp="330" pin=1"/></net>
+
+<net id="342"><net_src comp="164" pin="0"/><net_sink comp="337" pin=0"/></net>
+
+<net id="343"><net_src comp="42" pin="0"/><net_sink comp="337" pin=1"/></net>
+
+<net id="349"><net_src comp="164" pin="0"/><net_sink comp="344" pin=0"/></net>
+
+<net id="350"><net_src comp="44" pin="0"/><net_sink comp="344" pin=1"/></net>
+
+<net id="356"><net_src comp="164" pin="0"/><net_sink comp="351" pin=0"/></net>
+
+<net id="357"><net_src comp="46" pin="0"/><net_sink comp="351" pin=1"/></net>
+
+<net id="363"><net_src comp="168" pin="0"/><net_sink comp="358" pin=0"/></net>
+
+<net id="364"><net_src comp="88" pin="0"/><net_sink comp="358" pin=1"/></net>
+
+<net id="435"><net_src comp="156" pin="0"/><net_sink comp="365" pin=0"/></net>
+
+<net id="436"><net_src comp="212" pin="2"/><net_sink comp="365" pin=1"/></net>
+
+<net id="437"><net_src comp="218" pin="2"/><net_sink comp="365" pin=2"/></net>
+
+<net id="438"><net_src comp="36" pin="0"/><net_sink comp="365" pin=3"/></net>
+
+<net id="439"><net_src comp="170" pin="2"/><net_sink comp="365" pin=4"/></net>
+
+<net id="440"><net_src comp="176" pin="2"/><net_sink comp="365" pin=5"/></net>
+
+<net id="441"><net_src comp="224" pin="2"/><net_sink comp="365" pin=6"/></net>
+
+<net id="442"><net_src comp="230" pin="2"/><net_sink comp="365" pin=7"/></net>
+
+<net id="443"><net_src comp="236" pin="2"/><net_sink comp="365" pin=8"/></net>
+
+<net id="444"><net_src comp="242" pin="2"/><net_sink comp="365" pin=9"/></net>
+
+<net id="445"><net_src comp="66" pin="0"/><net_sink comp="365" pin=10"/></net>
+
+<net id="446"><net_src comp="68" pin="0"/><net_sink comp="365" pin=11"/></net>
+
+<net id="447"><net_src comp="70" pin="0"/><net_sink comp="365" pin=12"/></net>
+
+<net id="448"><net_src comp="72" pin="0"/><net_sink comp="365" pin=13"/></net>
+
+<net id="449"><net_src comp="74" pin="0"/><net_sink comp="365" pin=14"/></net>
+
+<net id="450"><net_src comp="76" pin="0"/><net_sink comp="365" pin=15"/></net>
+
+<net id="451"><net_src comp="78" pin="0"/><net_sink comp="365" pin=16"/></net>
+
+<net id="452"><net_src comp="80" pin="0"/><net_sink comp="365" pin=17"/></net>
+
+<net id="453"><net_src comp="82" pin="0"/><net_sink comp="365" pin=18"/></net>
+
+<net id="454"><net_src comp="84" pin="0"/><net_sink comp="365" pin=19"/></net>
+
+<net id="455"><net_src comp="86" pin="0"/><net_sink comp="365" pin=20"/></net>
+
+<net id="456"><net_src comp="248" pin="2"/><net_sink comp="365" pin=21"/></net>
+
+<net id="457"><net_src comp="92" pin="0"/><net_sink comp="365" pin=22"/></net>
+
+<net id="458"><net_src comp="94" pin="0"/><net_sink comp="365" pin=23"/></net>
+
+<net id="459"><net_src comp="96" pin="0"/><net_sink comp="365" pin=24"/></net>
+
+<net id="460"><net_src comp="98" pin="0"/><net_sink comp="365" pin=25"/></net>
+
+<net id="461"><net_src comp="100" pin="0"/><net_sink comp="365" pin=26"/></net>
+
+<net id="462"><net_src comp="102" pin="0"/><net_sink comp="365" pin=27"/></net>
+
+<net id="463"><net_src comp="104" pin="0"/><net_sink comp="365" pin=28"/></net>
+
+<net id="464"><net_src comp="106" pin="0"/><net_sink comp="365" pin=29"/></net>
+
+<net id="465"><net_src comp="108" pin="0"/><net_sink comp="365" pin=30"/></net>
+
+<net id="466"><net_src comp="110" pin="0"/><net_sink comp="365" pin=31"/></net>
+
+<net id="467"><net_src comp="112" pin="0"/><net_sink comp="365" pin=32"/></net>
+
+<net id="468"><net_src comp="114" pin="0"/><net_sink comp="365" pin=33"/></net>
+
+<net id="469"><net_src comp="116" pin="0"/><net_sink comp="365" pin=34"/></net>
+
+<net id="470"><net_src comp="254" pin="2"/><net_sink comp="365" pin=35"/></net>
+
+<net id="471"><net_src comp="120" pin="0"/><net_sink comp="365" pin=36"/></net>
+
+<net id="472"><net_src comp="122" pin="0"/><net_sink comp="365" pin=37"/></net>
+
+<net id="473"><net_src comp="124" pin="0"/><net_sink comp="365" pin=38"/></net>
+
+<net id="474"><net_src comp="126" pin="0"/><net_sink comp="365" pin=39"/></net>
+
+<net id="475"><net_src comp="128" pin="0"/><net_sink comp="365" pin=40"/></net>
+
+<net id="476"><net_src comp="130" pin="0"/><net_sink comp="365" pin=41"/></net>
+
+<net id="477"><net_src comp="132" pin="0"/><net_sink comp="365" pin=42"/></net>
+
+<net id="478"><net_src comp="134" pin="0"/><net_sink comp="365" pin=43"/></net>
+
+<net id="479"><net_src comp="136" pin="0"/><net_sink comp="365" pin=44"/></net>
+
+<net id="480"><net_src comp="138" pin="0"/><net_sink comp="365" pin=45"/></net>
+
+<net id="481"><net_src comp="140" pin="0"/><net_sink comp="365" pin=46"/></net>
+
+<net id="482"><net_src comp="142" pin="0"/><net_sink comp="365" pin=47"/></net>
+
+<net id="483"><net_src comp="144" pin="0"/><net_sink comp="365" pin=48"/></net>
+
+<net id="484"><net_src comp="146" pin="0"/><net_sink comp="365" pin=49"/></net>
+
+<net id="485"><net_src comp="148" pin="0"/><net_sink comp="365" pin=50"/></net>
+
+<net id="486"><net_src comp="182" pin="2"/><net_sink comp="365" pin=51"/></net>
+
+<net id="487"><net_src comp="188" pin="2"/><net_sink comp="365" pin=52"/></net>
+
+<net id="488"><net_src comp="194" pin="2"/><net_sink comp="365" pin=53"/></net>
+
+<net id="489"><net_src comp="200" pin="2"/><net_sink comp="365" pin=54"/></net>
+
+<net id="490"><net_src comp="206" pin="2"/><net_sink comp="365" pin=55"/></net>
+
+<net id="491"><net_src comp="10" pin="0"/><net_sink comp="365" pin=56"/></net>
+
+<net id="492"><net_src comp="12" pin="0"/><net_sink comp="365" pin=57"/></net>
+
+<net id="493"><net_src comp="14" pin="0"/><net_sink comp="365" pin=58"/></net>
+
+<net id="494"><net_src comp="16" pin="0"/><net_sink comp="365" pin=59"/></net>
+
+<net id="495"><net_src comp="18" pin="0"/><net_sink comp="365" pin=60"/></net>
+
+<net id="496"><net_src comp="20" pin="0"/><net_sink comp="365" pin=61"/></net>
+
+<net id="497"><net_src comp="22" pin="0"/><net_sink comp="365" pin=62"/></net>
+
+<net id="498"><net_src comp="24" pin="0"/><net_sink comp="365" pin=63"/></net>
+
+<net id="499"><net_src comp="26" pin="0"/><net_sink comp="365" pin=64"/></net>
+
+<net id="500"><net_src comp="28" pin="0"/><net_sink comp="365" pin=65"/></net>
+
+<net id="501"><net_src comp="30" pin="0"/><net_sink comp="365" pin=66"/></net>
+
+<net id="502"><net_src comp="150" pin="0"/><net_sink comp="365" pin=67"/></net>
+
+<net id="506"><net_src comp="365" pin="68"/><net_sink comp="503" pin=0"/></net>
+
+<net id="507"><net_src comp="503" pin="1"/><net_sink comp="337" pin=2"/></net>
+
+<net id="511"><net_src comp="365" pin="68"/><net_sink comp="508" pin=0"/></net>
+
+<net id="512"><net_src comp="508" pin="1"/><net_sink comp="344" pin=2"/></net>
+
+<net id="516"><net_src comp="365" pin="68"/><net_sink comp="513" pin=0"/></net>
+
+<net id="517"><net_src comp="513" pin="1"/><net_sink comp="351" pin=2"/></net>
+
+<net id="521"><net_src comp="365" pin="68"/><net_sink comp="518" pin=0"/></net>
+
+<net id="522"><net_src comp="518" pin="1"/><net_sink comp="358" pin=2"/></net>
+
+<net id="526"><net_src comp="365" pin="68"/><net_sink comp="523" pin=0"/></net>
+
+<net id="527"><net_src comp="523" pin="1"/><net_sink comp="309" pin=2"/></net>
+
+<net id="531"><net_src comp="365" pin="68"/><net_sink comp="528" pin=0"/></net>
+
+<net id="532"><net_src comp="528" pin="1"/><net_sink comp="316" pin=2"/></net>
+
+<net id="536"><net_src comp="365" pin="68"/><net_sink comp="533" pin=0"/></net>
+
+<net id="537"><net_src comp="533" pin="1"/><net_sink comp="323" pin=2"/></net>
+
+<net id="541"><net_src comp="365" pin="68"/><net_sink comp="538" pin=0"/></net>
+
+<net id="542"><net_src comp="538" pin="1"/><net_sink comp="330" pin=2"/></net>
+
+<net id="546"><net_src comp="365" pin="68"/><net_sink comp="543" pin=0"/></net>
+
+<net id="547"><net_src comp="543" pin="1"/><net_sink comp="302" pin=2"/></net>
+
+<net id="551"><net_src comp="365" pin="68"/><net_sink comp="548" pin=0"/></net>
+
+<net id="552"><net_src comp="548" pin="1"/><net_sink comp="274" pin=2"/></net>
+
+<net id="556"><net_src comp="365" pin="68"/><net_sink comp="553" pin=0"/></net>
+
+<net id="557"><net_src comp="553" pin="1"/><net_sink comp="281" pin=2"/></net>
+
+<net id="561"><net_src comp="365" pin="68"/><net_sink comp="558" pin=0"/></net>
+
+<net id="562"><net_src comp="558" pin="1"/><net_sink comp="288" pin=2"/></net>
+
+<net id="566"><net_src comp="365" pin="68"/><net_sink comp="563" pin=0"/></net>
+
+<net id="567"><net_src comp="563" pin="1"/><net_sink comp="295" pin=2"/></net>
+
+<net id="571"><net_src comp="365" pin="68"/><net_sink comp="568" pin=0"/></net>
+
+<net id="572"><net_src comp="568" pin="1"/><net_sink comp="260" pin=2"/></net>
+
+<net id="576"><net_src comp="365" pin="68"/><net_sink comp="573" pin=0"/></net>
+
+<net id="577"><net_src comp="573" pin="1"/><net_sink comp="267" pin=2"/></net>
+
+<net id="581"><net_src comp="170" pin="2"/><net_sink comp="578" pin=0"/></net>
+
+<net id="582"><net_src comp="578" pin="1"/><net_sink comp="365" pin=4"/></net>
+
+<net id="586"><net_src comp="176" pin="2"/><net_sink comp="583" pin=0"/></net>
+
+<net id="587"><net_src comp="583" pin="1"/><net_sink comp="365" pin=5"/></net>
+
+<net id="591"><net_src comp="182" pin="2"/><net_sink comp="588" pin=0"/></net>
+
+<net id="592"><net_src comp="588" pin="1"/><net_sink comp="365" pin=51"/></net>
+
+<net id="596"><net_src comp="188" pin="2"/><net_sink comp="593" pin=0"/></net>
+
+<net id="597"><net_src comp="593" pin="1"/><net_sink comp="365" pin=52"/></net>
+
+<net id="601"><net_src comp="194" pin="2"/><net_sink comp="598" pin=0"/></net>
+
+<net id="602"><net_src comp="598" pin="1"/><net_sink comp="365" pin=53"/></net>
+
+<net id="606"><net_src comp="200" pin="2"/><net_sink comp="603" pin=0"/></net>
+
+<net id="607"><net_src comp="603" pin="1"/><net_sink comp="365" pin=54"/></net>
+
+<net id="611"><net_src comp="206" pin="2"/><net_sink comp="608" pin=0"/></net>
+
+<net id="612"><net_src comp="608" pin="1"/><net_sink comp="365" pin=55"/></net>
+
+<net id="616"><net_src comp="212" pin="2"/><net_sink comp="613" pin=0"/></net>
+
+<net id="617"><net_src comp="613" pin="1"/><net_sink comp="365" pin=1"/></net>
+
+<net id="621"><net_src comp="218" pin="2"/><net_sink comp="618" pin=0"/></net>
+
+<net id="622"><net_src comp="618" pin="1"/><net_sink comp="365" pin=2"/></net>
+
+<net id="626"><net_src comp="224" pin="2"/><net_sink comp="623" pin=0"/></net>
+
+<net id="627"><net_src comp="623" pin="1"/><net_sink comp="365" pin=6"/></net>
+
+<net id="631"><net_src comp="230" pin="2"/><net_sink comp="628" pin=0"/></net>
+
+<net id="632"><net_src comp="628" pin="1"/><net_sink comp="365" pin=7"/></net>
+
+<net id="636"><net_src comp="236" pin="2"/><net_sink comp="633" pin=0"/></net>
+
+<net id="637"><net_src comp="633" pin="1"/><net_sink comp="365" pin=8"/></net>
+
+<net id="641"><net_src comp="242" pin="2"/><net_sink comp="638" pin=0"/></net>
+
+<net id="642"><net_src comp="638" pin="1"/><net_sink comp="365" pin=9"/></net>
+
+<net id="646"><net_src comp="248" pin="2"/><net_sink comp="643" pin=0"/></net>
+
+<net id="647"><net_src comp="643" pin="1"/><net_sink comp="365" pin=21"/></net>
+
+<net id="651"><net_src comp="254" pin="2"/><net_sink comp="648" pin=0"/></net>
+
+<net id="652"><net_src comp="648" pin="1"/><net_sink comp="365" pin=35"/></net>
+
+</net_list>
+
+</model> 
+---------------- Datapath Model END ------------------
+
+* FSMD analyzer results:
+  - Output states:
+	Port: linearRegression_iPhiSec_s | {2 }
+	Port: linearRegression_iEtaReg_s | {2 }
+	Port: linearRegression_nIterations_s | {2 }
+	Port: linearRegression_HTParameter_qOverPt | {2 }
+	Port: linearRegression_HTParameter_phiT | {2 }
+	Port: linearRegression_HTParameter_cotTheta | {2 }
+	Port: linearRegression_HTParameter_zT | {2 }
+	Port: linearRegression_LRParameter_qOverPt | {2 }
+	Port: linearRegression_LRParameter_phiT | {2 }
+	Port: linearRegression_LRParameter_cotTheta | {2 }
+	Port: linearRegression_LRParameter_zT | {2 }
+	Port: linearRegression_stubs_size_s | {2 }
+	Port: linearRegression_stubs_data_settings_chosenRofPhi_s | {1 2 }
+	Port: linearRegression_stubs_data_settings_chosenRofZ_s | {1 2 }
+	Port: linearRegression_stubs_data_settings_etaRegions_s | {1 2 }
+	Port: linearRegression_stubs_data_settings_minNumMatchLayers_s | {1 2 }
+	Port: linearRegression_stubs_data_settings_minPSLayers_s | {1 2 }
+	Port: linearRegression_stubs_data_r_s | {1 2 }
+	Port: linearRegression_stubs_data_phi_s | {1 2 }
+	Port: linearRegression_stubs_data_z_s | {1 2 }
+	Port: linearRegression_stubs_data_layerId_s | {1 2 }
+	Port: linearRegression_stubs_data_psModule_s | {1 2 }
+	Port: linearRegression_stubs_data_barrel_s | {1 2 }
+	Port: linearRegression_valid_s | {2 }
+	Port: linearRegression_stubMap_size_s | {2 }
+	Port: linearRegression_stubMap_data_first | {1 2 }
+	Port: linearRegression_stubMap_data_second_size_s | {1 2 }
+	Port: linearRegression_stubMap_data_second_data_settings_chosenRofPhi_s | {1 2 }
+	Port: linearRegression_stubMap_data_second_data_settings_chosenRofZ_s | {1 2 }
+	Port: linearRegression_stubMap_data_second_data_settings_etaRegions_s | {1 2 }
+	Port: linearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s | {1 2 }
+	Port: linearRegression_stubMap_data_second_data_settings_minPSLayers_s | {1 2 }
+	Port: linearRegression_stubMap_data_second_data_r_s | {1 2 }
+	Port: linearRegression_stubMap_data_second_data_phi_s | {1 2 }
+	Port: linearRegression_stubMap_data_second_data_z_s | {1 2 }
+	Port: linearRegression_stubMap_data_second_data_layerId_s | {1 2 }
+	Port: linearRegression_stubMap_data_second_data_psModule_s | {1 2 }
+	Port: linearRegression_stubMap_data_second_data_barrel_s | {1 2 }
+	Port: linearRegression_layerPopulation_size_s | {2 }
+	Port: linearRegression_layerPopulation_data_first | {1 2 }
+	Port: linearRegression_layerPopulation_data_second | {1 2 }
+	Port: linearRegression_residuals_size_s | {1 2 }
+	Port: linearRegression_residuals_data_first | {1 2 }
+	Port: linearRegression_residuals_data_second_size_s | {1 2 }
+	Port: linearRegression_residuals_data_second_data_phi | {1 2 }
+	Port: linearRegression_residuals_data_second_data_z | {1 2 }
+	Port: linearRegression_residuals_data_second_data_layerId | {1 2 }
+	Port: linearRegression_residuals_data_second_data_stubId | {1 2 }
+	Port: linearRegression_residuals_data_second_data_ps | {1 2 }
+	Port: linearRegression_largestResid_phi | {1 2 }
+	Port: linearRegression_largestResid_z | {1 2 }
+	Port: linearRegression_largestResid_layerId | {1 2 }
+	Port: linearRegression_largestResid_stubId | {1 2 }
+	Port: linearRegression_largestResid_ps | {1 2 }
+ - Input state : 
+	Port: LRupdateHLS : l1track3D_iPhiSec_s | {1 }
+	Port: LRupdateHLS : l1track3D_iEtaReg_s | {1 }
+	Port: LRupdateHLS : l1track3D_helixRphi_first | {1 }
+	Port: LRupdateHLS : l1track3D_helixRphi_second | {1 }
+	Port: LRupdateHLS : l1track3D_stubs_size_s | {1 }
+	Port: LRupdateHLS : l1track3D_stubs_data_settings_chosenRofPhi_s | {1 2 }
+	Port: LRupdateHLS : l1track3D_stubs_data_settings_chosenRofZ_s | {1 2 }
+	Port: LRupdateHLS : l1track3D_stubs_data_settings_etaRegions_s | {1 2 }
+	Port: LRupdateHLS : l1track3D_stubs_data_settings_minNumMatchLayers_s | {1 2 }
+	Port: LRupdateHLS : l1track3D_stubs_data_settings_minPSLayers_s | {1 2 }
+	Port: LRupdateHLS : l1track3D_stubs_data_r_s | {1 2 }
+	Port: LRupdateHLS : l1track3D_stubs_data_phi_s | {1 2 }
+	Port: LRupdateHLS : l1track3D_stubs_data_z_s | {1 2 }
+	Port: LRupdateHLS : l1track3D_stubs_data_layerId_s | {1 2 }
+	Port: LRupdateHLS : l1track3D_stubs_data_psModule_s | {1 2 }
+	Port: LRupdateHLS : l1track3D_stubs_data_barrel_s | {1 2 }
+	Port: LRupdateHLS : linearRegression_settings_chosenRofPhi_s | {1 }
+	Port: LRupdateHLS : linearRegression_settings_chosenRofZ_s | {1 }
+	Port: LRupdateHLS : linearRegression_settings_etaRegions_s | {1 2 }
+	Port: LRupdateHLS : linearRegression_settings_minNumMatchLayers_s | {1 }
+	Port: LRupdateHLS : linearRegression_settings_minPSLayers_s | {1 }
+	Port: LRupdateHLS : linearRegression_LRParameter_qOverPt | {1 }
+	Port: LRupdateHLS : linearRegression_LRParameter_phiT | {1 }
+	Port: LRupdateHLS : linearRegression_LRParameter_cotTheta | {1 }
+	Port: LRupdateHLS : linearRegression_LRParameter_zT | {1 }
+	Port: LRupdateHLS : linearRegression_stubs_data_settings_chosenRofPhi_s | {1 2 }
+	Port: LRupdateHLS : linearRegression_stubs_data_settings_chosenRofZ_s | {1 2 }
+	Port: LRupdateHLS : linearRegression_stubs_data_settings_etaRegions_s | {1 2 }
+	Port: LRupdateHLS : linearRegression_stubs_data_settings_minNumMatchLayers_s | {1 2 }
+	Port: LRupdateHLS : linearRegression_stubs_data_settings_minPSLayers_s | {1 2 }
+	Port: LRupdateHLS : linearRegression_stubs_data_r_s | {1 2 }
+	Port: LRupdateHLS : linearRegression_stubs_data_phi_s | {1 2 }
+	Port: LRupdateHLS : linearRegression_stubs_data_z_s | {1 2 }
+	Port: LRupdateHLS : linearRegression_stubs_data_layerId_s | {1 2 }
+	Port: LRupdateHLS : linearRegression_stubs_data_psModule_s | {1 2 }
+	Port: LRupdateHLS : linearRegression_stubs_data_barrel_s | {1 2 }
+	Port: LRupdateHLS : linearRegression_stubMap_size_s | {1 }
+	Port: LRupdateHLS : linearRegression_stubMap_data_first | {1 2 }
+	Port: LRupdateHLS : linearRegression_stubMap_data_second_size_s | {1 2 }
+	Port: LRupdateHLS : linearRegression_stubMap_data_second_data_settings_chosenRofPhi_s | {1 2 }
+	Port: LRupdateHLS : linearRegression_stubMap_data_second_data_settings_chosenRofZ_s | {1 2 }
+	Port: LRupdateHLS : linearRegression_stubMap_data_second_data_settings_etaRegions_s | {1 2 }
+	Port: LRupdateHLS : linearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s | {1 2 }
+	Port: LRupdateHLS : linearRegression_stubMap_data_second_data_settings_minPSLayers_s | {1 2 }
+	Port: LRupdateHLS : linearRegression_stubMap_data_second_data_r_s | {1 2 }
+	Port: LRupdateHLS : linearRegression_stubMap_data_second_data_phi_s | {1 2 }
+	Port: LRupdateHLS : linearRegression_stubMap_data_second_data_z_s | {1 2 }
+	Port: LRupdateHLS : linearRegression_stubMap_data_second_data_layerId_s | {1 2 }
+	Port: LRupdateHLS : linearRegression_stubMap_data_second_data_psModule_s | {1 2 }
+	Port: LRupdateHLS : linearRegression_stubMap_data_second_data_barrel_s | {1 2 }
+	Port: LRupdateHLS : linearRegression_layerPopulation_size_s | {1 }
+	Port: LRupdateHLS : linearRegression_layerPopulation_data_first | {1 2 }
+	Port: LRupdateHLS : linearRegression_layerPopulation_data_second | {1 2 }
+	Port: LRupdateHLS : linearRegression_residuals_data_first | {1 2 }
+	Port: LRupdateHLS : linearRegression_residuals_data_second_size_s | {1 2 }
+	Port: LRupdateHLS : linearRegression_residuals_data_second_data_phi | {1 2 }
+	Port: LRupdateHLS : linearRegression_residuals_data_second_data_z | {1 2 }
+	Port: LRupdateHLS : linearRegression_residuals_data_second_data_layerId | {1 2 }
+	Port: LRupdateHLS : linearRegression_residuals_data_second_data_stubId | {1 2 }
+	Port: LRupdateHLS : linearRegression_residuals_data_second_data_ps | {1 2 }
+	Port: LRupdateHLS : cordic_hyperb_table_s | {1 2 }
+  - Chain level:
+	State 1
+	State 2
+		newret : 1
+		newret19 : 1
+		newret20 : 1
+		newret21 : 1
+		newret22 : 1
+		newret23 : 1
+		newret24 : 1
+		newret25 : 1
+		newret26 : 1
+		newret27 : 1
+		newret28 : 1
+		newret29 : 1
+		newret30 : 1
+		newret31 : 1
+		newret32 : 1
+		StgValue_111 : 2
+		StgValue_112 : 2
+		StgValue_113 : 2
+		StgValue_114 : 2
+		StgValue_115 : 2
+		StgValue_116 : 2
+		StgValue_117 : 2
+		StgValue_118 : 2
+		StgValue_119 : 2
+		StgValue_120 : 2
+		StgValue_121 : 2
+		StgValue_122 : 2
+		StgValue_123 : 2
+		StgValue_124 : 2
+		StgValue_125 : 2
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+
+* Functional unit list:
+|----------|------------------------------------|---------|---------|---------|---------|---------|
+| Operation|           Functional Unit          |   BRAM  |  DSP48E |  Delay  |    FF   |   LUT   |
+|----------|------------------------------------|---------|---------|---------|---------|---------|
+|   call   |           grp_fit_fu_365           |    0    |   124   | 708.797 |  53510  |  63719  |
+|----------|------------------------------------|---------|---------|---------|---------|---------|
+|          |  linearRegression_set_read_fu_170  |    0    |    0    |    0    |    0    |    0    |
+|          | linearRegression_set_1_read_fu_176 |    0    |    0    |    0    |    0    |    0    |
+|          |   l1track3D_iPhiSec_r_read_fu_182  |    0    |    0    |    0    |    0    |    0    |
+|          |   l1track3D_iEtaReg_r_read_fu_188  |    0    |    0    |    0    |    0    |    0    |
+|          |  l1track3D_helixRphi_s_read_fu_194 |    0    |    0    |    0    |    0    |    0    |
+|          |  l1track3D_helixRphi_3_read_fu_200 |    0    |    0    |    0    |    0    |    0    |
+|          |   l1track3D_stubs_siz_read_fu_206  |    0    |    0    |    0    |    0    |    0    |
+|   read   | linearRegression_set_2_read_fu_212 |    0    |    0    |    0    |    0    |    0    |
+|          | linearRegression_set_3_read_fu_218 |    0    |    0    |    0    |    0    |    0    |
+|          |  linearRegression_LRP_read_fu_224  |    0    |    0    |    0    |    0    |    0    |
+|          | linearRegression_LRP_1_read_fu_230 |    0    |    0    |    0    |    0    |    0    |
+|          | linearRegression_LRP_2_read_fu_236 |    0    |    0    |    0    |    0    |    0    |
+|          | linearRegression_LRP_3_read_fu_242 |    0    |    0    |    0    |    0    |    0    |
+|          |  linearRegression_stu_read_fu_248  |    0    |    0    |    0    |    0    |    0    |
+|          |  linearRegression_lay_read_fu_254  |    0    |    0    |    0    |    0    |    0    |
+|----------|------------------------------------|---------|---------|---------|---------|---------|
+|          |      StgValue_111_write_fu_260     |    0    |    0    |    0    |    0    |    0    |
+|          |      StgValue_112_write_fu_267     |    0    |    0    |    0    |    0    |    0    |
+|          |      StgValue_113_write_fu_274     |    0    |    0    |    0    |    0    |    0    |
+|          |      StgValue_114_write_fu_281     |    0    |    0    |    0    |    0    |    0    |
+|          |      StgValue_115_write_fu_288     |    0    |    0    |    0    |    0    |    0    |
+|          |      StgValue_116_write_fu_295     |    0    |    0    |    0    |    0    |    0    |
+|          |      StgValue_117_write_fu_302     |    0    |    0    |    0    |    0    |    0    |
+|   write  |      StgValue_118_write_fu_309     |    0    |    0    |    0    |    0    |    0    |
+|          |      StgValue_119_write_fu_316     |    0    |    0    |    0    |    0    |    0    |
+|          |      StgValue_120_write_fu_323     |    0    |    0    |    0    |    0    |    0    |
+|          |      StgValue_121_write_fu_330     |    0    |    0    |    0    |    0    |    0    |
+|          |      StgValue_122_write_fu_337     |    0    |    0    |    0    |    0    |    0    |
+|          |      StgValue_123_write_fu_344     |    0    |    0    |    0    |    0    |    0    |
+|          |      StgValue_124_write_fu_351     |    0    |    0    |    0    |    0    |    0    |
+|          |      StgValue_125_write_fu_358     |    0    |    0    |    0    |    0    |    0    |
+|----------|------------------------------------|---------|---------|---------|---------|---------|
+|          |            newret_fu_503           |    0    |    0    |    0    |    0    |    0    |
+|          |           newret19_fu_508          |    0    |    0    |    0    |    0    |    0    |
+|          |           newret20_fu_513          |    0    |    0    |    0    |    0    |    0    |
+|          |           newret21_fu_518          |    0    |    0    |    0    |    0    |    0    |
+|          |           newret22_fu_523          |    0    |    0    |    0    |    0    |    0    |
+|          |           newret23_fu_528          |    0    |    0    |    0    |    0    |    0    |
+|          |           newret24_fu_533          |    0    |    0    |    0    |    0    |    0    |
+|extractvalue|           newret25_fu_538          |    0    |    0    |    0    |    0    |    0    |
+|          |           newret26_fu_543          |    0    |    0    |    0    |    0    |    0    |
+|          |           newret27_fu_548          |    0    |    0    |    0    |    0    |    0    |
+|          |           newret28_fu_553          |    0    |    0    |    0    |    0    |    0    |
+|          |           newret29_fu_558          |    0    |    0    |    0    |    0    |    0    |
+|          |           newret30_fu_563          |    0    |    0    |    0    |    0    |    0    |
+|          |           newret31_fu_568          |    0    |    0    |    0    |    0    |    0    |
+|          |           newret32_fu_573          |    0    |    0    |    0    |    0    |    0    |
+|----------|------------------------------------|---------|---------|---------|---------|---------|
+|   Total  |                                    |    0    |   124   | 708.797 |  53510  |  63719  |
+|----------|------------------------------------|---------|---------|---------|---------|---------|
+
+Memories:
++---------------------+--------+--------+--------+
+|                     |  BRAM  |   FF   |   LUT  |
++---------------------+--------+--------+--------+
+|cordic_hyperb_table_s|    4   |    0   |    0   |
++---------------------+--------+--------+--------+
+|        Total        |    4   |    0   |    0   |
++---------------------+--------+--------+--------+
+
+* Register list:
++------------------------------+--------+
+|                              |   FF   |
++------------------------------+--------+
+| l1track3D_helixRphi_3_reg_603|   32   |
+| l1track3D_helixRphi_s_reg_598|   32   |
+|  l1track3D_iEtaReg_r_reg_593 |   32   |
+|  l1track3D_iPhiSec_r_reg_588 |   32   |
+|  l1track3D_stubs_siz_reg_608 |   32   |
+|linearRegression_LRP_1_reg_628|   32   |
+|linearRegression_LRP_2_reg_633|   32   |
+|linearRegression_LRP_3_reg_638|   32   |
+| linearRegression_LRP_reg_623 |   32   |
+| linearRegression_lay_reg_648 |   32   |
+|linearRegression_set_1_reg_583|   32   |
+|linearRegression_set_2_reg_613|   32   |
+|linearRegression_set_3_reg_618|   32   |
+| linearRegression_set_reg_578 |   32   |
+| linearRegression_stu_reg_643 |   32   |
++------------------------------+--------+
+|             Total            |   480  |
++------------------------------+--------+
+
+* Multiplexer (MUX) list: 
+|----------------|------|------|------|--------||---------||---------|
+|      Comp      |  Pin | Size |  BW  | S x BW ||  Delay  ||   LUT   |
+|----------------|------|------|------|--------||---------||---------|
+| grp_fit_fu_365 |  p1  |   2  |  32  |   64   ||    9    |
+| grp_fit_fu_365 |  p2  |   2  |  32  |   64   ||    9    |
+| grp_fit_fu_365 |  p4  |   2  |  32  |   64   ||    9    |
+| grp_fit_fu_365 |  p5  |   2  |  32  |   64   ||    9    |
+| grp_fit_fu_365 |  p6  |   2  |  32  |   64   ||    9    |
+| grp_fit_fu_365 |  p7  |   2  |  32  |   64   ||    9    |
+| grp_fit_fu_365 |  p8  |   2  |  32  |   64   ||    9    |
+| grp_fit_fu_365 |  p9  |   2  |  32  |   64   ||    9    |
+| grp_fit_fu_365 |  p21 |   2  |  32  |   64   ||    9    |
+| grp_fit_fu_365 |  p35 |   2  |  32  |   64   ||    9    |
+| grp_fit_fu_365 |  p51 |   2  |  32  |   64   ||    9    |
+| grp_fit_fu_365 |  p52 |   2  |  32  |   64   ||    9    |
+| grp_fit_fu_365 |  p53 |   2  |  32  |   64   ||    9    |
+| grp_fit_fu_365 |  p54 |   2  |  32  |   64   ||    9    |
+| grp_fit_fu_365 |  p55 |   2  |  32  |   64   ||    9    |
+|----------------|------|------|------|--------||---------||---------|
+|      Total     |      |      |      |   960  ||  12.525 ||   135   |
+|----------------|------|------|------|--------||---------||---------|
+
+
+
+* Summary:
++-----------+--------+--------+--------+--------+--------+
+|           |  BRAM  | DSP48E |  Delay |   FF   |   LUT  |
++-----------+--------+--------+--------+--------+--------+
+|  Function |    0   |   124  |   708  |  53510 |  63719 |
+|   Memory  |    4   |    -   |    -   |    0   |    0   |
+|Multiplexer|    -   |    -   |   12   |    -   |   135  |
+|  Register |    -   |    -   |    -   |   480  |    -   |
++-----------+--------+--------+--------+--------+--------+
+|   Total   |    4   |   124  |   721  |  53990 |  63854 |
++-----------+--------+--------+--------+--------+--------+

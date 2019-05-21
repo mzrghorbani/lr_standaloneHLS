@@ -1,0 +1,1893 @@
+<stg><name>LRupdateHLS</name>
+
+
+<trans_list>
+
+<trans id="127" from="1" to="2">
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+</trans>
+</trans_list>
+
+
+
+<state_list>
+
+<state id="1" st_id="1">
+
+<operation id="3" st_id="1" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="153" bw="32" op_0_bw="32" op_1_bw="32">
+<![CDATA[
+._crit_edge.i.i.i.i.i.i.preheader:76  %linearRegression_set = call i32 @_ssdm_op_Read.ap_auto.i32P(i32* %linearRegression_settings_minNumMatchLayers_s)
+
+]]></Node>
+<StgValue><ssdm name="linearRegression_set"/></StgValue>
+</operation>
+
+<operation id="4" st_id="1" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="154" bw="32" op_0_bw="32" op_1_bw="32">
+<![CDATA[
+._crit_edge.i.i.i.i.i.i.preheader:77  %linearRegression_set_1 = call i32 @_ssdm_op_Read.ap_auto.i32P(i32* %linearRegression_settings_minPSLayers_s)
+
+]]></Node>
+<StgValue><ssdm name="linearRegression_set_1"/></StgValue>
+</operation>
+
+<operation id="5" st_id="1" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="155" bw="32" op_0_bw="32" op_1_bw="32">
+<![CDATA[
+._crit_edge.i.i.i.i.i.i.preheader:78  %l1track3D_iPhiSec_r = call i32 @_ssdm_op_Read.ap_auto.i32P(i32* %l1track3D_iPhiSec_s)
+
+]]></Node>
+<StgValue><ssdm name="l1track3D_iPhiSec_r"/></StgValue>
+</operation>
+
+<operation id="6" st_id="1" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="156" bw="32" op_0_bw="32" op_1_bw="32">
+<![CDATA[
+._crit_edge.i.i.i.i.i.i.preheader:79  %l1track3D_iEtaReg_r = call i32 @_ssdm_op_Read.ap_auto.i32P(i32* %l1track3D_iEtaReg_s)
+
+]]></Node>
+<StgValue><ssdm name="l1track3D_iEtaReg_r"/></StgValue>
+</operation>
+
+<operation id="7" st_id="1" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="157" bw="32" op_0_bw="32" op_1_bw="32">
+<![CDATA[
+._crit_edge.i.i.i.i.i.i.preheader:80  %l1track3D_helixRphi_s = call float @_ssdm_op_Read.ap_auto.floatP(float* %l1track3D_helixRphi_first)
+
+]]></Node>
+<StgValue><ssdm name="l1track3D_helixRphi_s"/></StgValue>
+</operation>
+
+<operation id="8" st_id="1" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="158" bw="32" op_0_bw="32" op_1_bw="32">
+<![CDATA[
+._crit_edge.i.i.i.i.i.i.preheader:81  %l1track3D_helixRphi_3 = call float @_ssdm_op_Read.ap_auto.floatP(float* %l1track3D_helixRphi_second)
+
+]]></Node>
+<StgValue><ssdm name="l1track3D_helixRphi_3"/></StgValue>
+</operation>
+
+<operation id="9" st_id="1" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="159" bw="32" op_0_bw="32" op_1_bw="32">
+<![CDATA[
+._crit_edge.i.i.i.i.i.i.preheader:82  %l1track3D_stubs_siz = call i32 @_ssdm_op_Read.ap_auto.i32P(i32* %l1track3D_stubs_size_s)
+
+]]></Node>
+<StgValue><ssdm name="l1track3D_stubs_siz"/></StgValue>
+</operation>
+
+<operation id="10" st_id="1" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="160" bw="32" op_0_bw="32" op_1_bw="32">
+<![CDATA[
+._crit_edge.i.i.i.i.i.i.preheader:83  %linearRegression_set_2 = call float @_ssdm_op_Read.ap_auto.floatP(float* %linearRegression_settings_chosenRofPhi_s)
+
+]]></Node>
+<StgValue><ssdm name="linearRegression_set_2"/></StgValue>
+</operation>
+
+<operation id="11" st_id="1" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="161" bw="32" op_0_bw="32" op_1_bw="32">
+<![CDATA[
+._crit_edge.i.i.i.i.i.i.preheader:84  %linearRegression_set_3 = call float @_ssdm_op_Read.ap_auto.floatP(float* %linearRegression_settings_chosenRofZ_s)
+
+]]></Node>
+<StgValue><ssdm name="linearRegression_set_3"/></StgValue>
+</operation>
+
+<operation id="12" st_id="1" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="162" bw="32" op_0_bw="32" op_1_bw="32">
+<![CDATA[
+._crit_edge.i.i.i.i.i.i.preheader:85  %linearRegression_LRP = call float @_ssdm_op_Read.ap_auto.floatP(float* %linearRegression_LRParameter_qOverPt)
+
+]]></Node>
+<StgValue><ssdm name="linearRegression_LRP"/></StgValue>
+</operation>
+
+<operation id="13" st_id="1" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="163" bw="32" op_0_bw="32" op_1_bw="32">
+<![CDATA[
+._crit_edge.i.i.i.i.i.i.preheader:86  %linearRegression_LRP_1 = call float @_ssdm_op_Read.ap_auto.floatP(float* %linearRegression_LRParameter_phiT)
+
+]]></Node>
+<StgValue><ssdm name="linearRegression_LRP_1"/></StgValue>
+</operation>
+
+<operation id="14" st_id="1" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="164" bw="32" op_0_bw="32" op_1_bw="32">
+<![CDATA[
+._crit_edge.i.i.i.i.i.i.preheader:87  %linearRegression_LRP_2 = call float @_ssdm_op_Read.ap_auto.floatP(float* %linearRegression_LRParameter_cotTheta)
+
+]]></Node>
+<StgValue><ssdm name="linearRegression_LRP_2"/></StgValue>
+</operation>
+
+<operation id="15" st_id="1" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="165" bw="32" op_0_bw="32" op_1_bw="32">
+<![CDATA[
+._crit_edge.i.i.i.i.i.i.preheader:88  %linearRegression_LRP_3 = call float @_ssdm_op_Read.ap_auto.floatP(float* %linearRegression_LRParameter_zT)
+
+]]></Node>
+<StgValue><ssdm name="linearRegression_LRP_3"/></StgValue>
+</operation>
+
+<operation id="16" st_id="1" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="166" bw="32" op_0_bw="32" op_1_bw="32">
+<![CDATA[
+._crit_edge.i.i.i.i.i.i.preheader:89  %linearRegression_stu = call i32 @_ssdm_op_Read.ap_auto.i32P(i32* %linearRegression_stubMap_size_s)
+
+]]></Node>
+<StgValue><ssdm name="linearRegression_stu"/></StgValue>
+</operation>
+
+<operation id="17" st_id="1" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="167" bw="32" op_0_bw="32" op_1_bw="32">
+<![CDATA[
+._crit_edge.i.i.i.i.i.i.preheader:90  %linearRegression_lay = call i32 @_ssdm_op_Read.ap_auto.i32P(i32* %linearRegression_layerPopulation_size_s)
+
+]]></Node>
+<StgValue><ssdm name="linearRegression_lay"/></StgValue>
+</operation>
+
+<operation id="18" st_id="1" stage="2" lat="2">
+<core></core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="168" bw="449" op_0_bw="449" op_1_bw="32" op_2_bw="32" op_3_bw="32" op_4_bw="32" op_5_bw="32" op_6_bw="32" op_7_bw="32" op_8_bw="32" op_9_bw="32" op_10_bw="32" op_11_bw="32" op_12_bw="32" op_13_bw="32" op_14_bw="32" op_15_bw="32" op_16_bw="32" op_17_bw="32" op_18_bw="32" op_19_bw="1" op_20_bw="1" op_21_bw="32" op_22_bw="32" op_23_bw="32" op_24_bw="32" op_25_bw="32" op_26_bw="32" op_27_bw="32" op_28_bw="32" op_29_bw="32" op_30_bw="32" op_31_bw="32" op_32_bw="32" op_33_bw="1" op_34_bw="1" op_35_bw="32" op_36_bw="32" op_37_bw="32" op_38_bw="32" op_39_bw="32" op_40_bw="32" op_41_bw="32" op_42_bw="32" op_43_bw="32" op_44_bw="32" op_45_bw="1" op_46_bw="32" op_47_bw="32" op_48_bw="32" op_49_bw="32" op_50_bw="1" op_51_bw="32" op_52_bw="32" op_53_bw="32" op_54_bw="32" op_55_bw="32" op_56_bw="32" op_57_bw="32" op_58_bw="32" op_59_bw="32" op_60_bw="32" op_61_bw="32" op_62_bw="32" op_63_bw="32" op_64_bw="32" op_65_bw="1" op_66_bw="1">
+<![CDATA[
+._crit_edge.i.i.i.i.i.i.preheader:91  %call_ret1 = call fastcc { i32, i32, i32, i1, float, float, float, float, i32, float, float, float, float, i32, i32 } @fit(float %linearRegression_set_2, float %linearRegression_set_3, [19 x float]* %linearRegression_settings_etaRegions_s, i32 %linearRegression_set, i32 %linearRegression_set_1, float %linearRegression_LRP, float %linearRegression_LRP_1, float %linearRegression_LRP_2, float %linearRegression_LRP_3, [10 x float]* %linearRegression_stubs_data_settings_chosenRofPhi_s, [10 x float]* %linearRegression_stubs_data_settings_chosenRofZ_s, [190 x float]* %linearRegression_stubs_data_settings_etaRegions_s, [10 x i32]* %linearRegression_stubs_data_settings_minNumMatchLayers_s, [10 x i32]* %linearRegression_stubs_data_settings_minPSLayers_s, [10 x float]* %linearRegression_stubs_data_r_s, [10 x float]* %linearRegression_stubs_data_phi_s, [10 x float]* %linearRegression_stubs_data_z_s, [10 x i32]* %linearRegression_stubs_data_layerId_s, [10 x i1]* %linearRegression_stubs_data_psModule_s, [10 x i1]* %linearRegression_stubs_data_barrel_s, i32 %linearRegression_stu, [30 x i32]* %linearRegression_stubMap_data_first, [30 x i32]* %linearRegression_stubMap_data_second_size_s, [300 x float]* %linearRegression_stubMap_data_second_data_settings_chosenRofPhi_s, [300 x float]* %linearRegression_stubMap_data_second_data_settings_chosenRofZ_s, [5700 x float]* %linearRegression_stubMap_data_second_data_settings_etaRegions_s, [300 x i32]* %linearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s, [300 x i32]* %linearRegression_stubMap_data_second_data_settings_minPSLayers_s, [300 x float]* %linearRegression_stubMap_data_second_data_r_s, [300 x float]* %linearRegression_stubMap_data_second_data_phi_s, [300 x float]* %linearRegression_stubMap_data_second_data_z_s, [300 x i32]* %linearRegression_stubMap_data_second_data_layerId_s, [300 x i1]* %linearRegression_stubMap_data_second_data_psModule_s, [300 x i1]* %linearRegression_stubMap_data_second_data_barrel_s, i32 %linearRegression_lay, [30 x i32]* %linearRegression_layerPopulation_data_first, [30 x i32]* %linearRegression_layerPopulation_data_second, i32* %linearRegression_residuals_size_s, [30 x i32]* %linearRegression_residuals_data_first, [30 x i32]* %linearRegression_residuals_data_second_size_s, [300 x float]* %linearRegression_residuals_data_second_data_phi, [300 x float]* %linearRegression_residuals_data_second_data_z, [300 x i32]* %linearRegression_residuals_data_second_data_layerId, [300 x i32]* %linearRegression_residuals_data_second_data_stubId, [300 x i1]* %linearRegression_residuals_data_second_data_ps, float* %linearRegression_largestResid_phi, float* %linearRegression_largestResid_z, i32* %linearRegression_largestResid_layerId, i32* %linearRegression_largestResid_stubId, i1* %linearRegression_largestResid_ps, i32 %l1track3D_iPhiSec_r, i32 %l1track3D_iEtaReg_r, float %l1track3D_helixRphi_s, float %l1track3D_helixRphi_3, i32 %l1track3D_stubs_siz, [10 x float]* %l1track3D_stubs_data_settings_chosenRofPhi_s, [10 x float]* %l1track3D_stubs_data_settings_chosenRofZ_s, [190 x float]* %l1track3D_stubs_data_settings_etaRegions_s, [10 x i32]* %l1track3D_stubs_data_settings_minNumMatchLayers_s, [10 x i32]* %l1track3D_stubs_data_settings_minPSLayers_s, [10 x float]* %l1track3D_stubs_data_r_s, [10 x float]* %l1track3D_stubs_data_phi_s, [10 x float]* %l1track3D_stubs_data_z_s, [10 x i32]* %l1track3D_stubs_data_layerId_s, [10 x i1]* %l1track3D_stubs_data_psModule_s, [10 x i1]* %l1track3D_stubs_data_barrel_s)
+
+]]></Node>
+<StgValue><ssdm name="call_ret1"/></StgValue>
+</operation>
+</state>
+
+<state id="2" st_id="2">
+
+<operation id="19" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="77" bw="0" op_0_bw="0" op_1_bw="32">
+<![CDATA[
+._crit_edge.i.i.i.i.i.i.preheader:0  call void (...)* @_ssdm_op_SpecBitsMap(i32* %l1track3D_iPhiSec_s), !map !122
+
+]]></Node>
+<StgValue><ssdm name=""/></StgValue>
+</operation>
+
+<operation id="20" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="78" bw="0" op_0_bw="0" op_1_bw="32">
+<![CDATA[
+._crit_edge.i.i.i.i.i.i.preheader:1  call void (...)* @_ssdm_op_SpecBitsMap(i32* %l1track3D_iEtaReg_s), !map !126
+
+]]></Node>
+<StgValue><ssdm name=""/></StgValue>
+</operation>
+
+<operation id="21" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="79" bw="0" op_0_bw="0" op_1_bw="32">
+<![CDATA[
+._crit_edge.i.i.i.i.i.i.preheader:2  call void (...)* @_ssdm_op_SpecBitsMap(float* %l1track3D_helixRphi_first), !map !130
+
+]]></Node>
+<StgValue><ssdm name=""/></StgValue>
+</operation>
+
+<operation id="22" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="80" bw="0" op_0_bw="0" op_1_bw="32">
+<![CDATA[
+._crit_edge.i.i.i.i.i.i.preheader:3  call void (...)* @_ssdm_op_SpecBitsMap(float* %l1track3D_helixRphi_second), !map !134
+
+]]></Node>
+<StgValue><ssdm name=""/></StgValue>
+</operation>
+
+<operation id="23" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="81" bw="0" op_0_bw="0" op_1_bw="32">
+<![CDATA[
+._crit_edge.i.i.i.i.i.i.preheader:4  call void (...)* @_ssdm_op_SpecBitsMap(i32* %l1track3D_stubs_size_s), !map !138
+
+]]></Node>
+<StgValue><ssdm name=""/></StgValue>
+</operation>
+
+<operation id="24" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="82" bw="0" op_0_bw="0" op_1_bw="32">
+<![CDATA[
+._crit_edge.i.i.i.i.i.i.preheader:5  call void (...)* @_ssdm_op_SpecBitsMap([10 x float]* %l1track3D_stubs_data_settings_chosenRofPhi_s), !map !142
+
+]]></Node>
+<StgValue><ssdm name=""/></StgValue>
+</operation>
+
+<operation id="25" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="83" bw="0" op_0_bw="0" op_1_bw="32">
+<![CDATA[
+._crit_edge.i.i.i.i.i.i.preheader:6  call void (...)* @_ssdm_op_SpecBitsMap([10 x float]* %l1track3D_stubs_data_settings_chosenRofZ_s), !map !148
+
+]]></Node>
+<StgValue><ssdm name=""/></StgValue>
+</operation>
+
+<operation id="26" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="84" bw="0" op_0_bw="0" op_1_bw="32">
+<![CDATA[
+._crit_edge.i.i.i.i.i.i.preheader:7  call void (...)* @_ssdm_op_SpecBitsMap([190 x float]* %l1track3D_stubs_data_settings_etaRegions_s), !map !152
+
+]]></Node>
+<StgValue><ssdm name=""/></StgValue>
+</operation>
+
+<operation id="27" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="85" bw="0" op_0_bw="0" op_1_bw="32">
+<![CDATA[
+._crit_edge.i.i.i.i.i.i.preheader:8  call void (...)* @_ssdm_op_SpecBitsMap([10 x i32]* %l1track3D_stubs_data_settings_minNumMatchLayers_s), !map !158
+
+]]></Node>
+<StgValue><ssdm name=""/></StgValue>
+</operation>
+
+<operation id="28" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="86" bw="0" op_0_bw="0" op_1_bw="32">
+<![CDATA[
+._crit_edge.i.i.i.i.i.i.preheader:9  call void (...)* @_ssdm_op_SpecBitsMap([10 x i32]* %l1track3D_stubs_data_settings_minPSLayers_s), !map !162
+
+]]></Node>
+<StgValue><ssdm name=""/></StgValue>
+</operation>
+
+<operation id="29" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="87" bw="0" op_0_bw="0" op_1_bw="32">
+<![CDATA[
+._crit_edge.i.i.i.i.i.i.preheader:10  call void (...)* @_ssdm_op_SpecBitsMap([10 x float]* %l1track3D_stubs_data_r_s), !map !166
+
+]]></Node>
+<StgValue><ssdm name=""/></StgValue>
+</operation>
+
+<operation id="30" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="88" bw="0" op_0_bw="0" op_1_bw="32">
+<![CDATA[
+._crit_edge.i.i.i.i.i.i.preheader:11  call void (...)* @_ssdm_op_SpecBitsMap([10 x float]* %l1track3D_stubs_data_phi_s), !map !170
+
+]]></Node>
+<StgValue><ssdm name=""/></StgValue>
+</operation>
+
+<operation id="31" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="89" bw="0" op_0_bw="0" op_1_bw="32">
+<![CDATA[
+._crit_edge.i.i.i.i.i.i.preheader:12  call void (...)* @_ssdm_op_SpecBitsMap([10 x float]* %l1track3D_stubs_data_z_s), !map !174
+
+]]></Node>
+<StgValue><ssdm name=""/></StgValue>
+</operation>
+
+<operation id="32" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="90" bw="0" op_0_bw="0" op_1_bw="32">
+<![CDATA[
+._crit_edge.i.i.i.i.i.i.preheader:13  call void (...)* @_ssdm_op_SpecBitsMap([10 x i32]* %l1track3D_stubs_data_layerId_s), !map !178
+
+]]></Node>
+<StgValue><ssdm name=""/></StgValue>
+</operation>
+
+<operation id="33" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="91" bw="0" op_0_bw="0" op_1_bw="1">
+<![CDATA[
+._crit_edge.i.i.i.i.i.i.preheader:14  call void (...)* @_ssdm_op_SpecBitsMap([10 x i1]* %l1track3D_stubs_data_psModule_s), !map !182
+
+]]></Node>
+<StgValue><ssdm name=""/></StgValue>
+</operation>
+
+<operation id="34" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="92" bw="0" op_0_bw="0" op_1_bw="1">
+<![CDATA[
+._crit_edge.i.i.i.i.i.i.preheader:15  call void (...)* @_ssdm_op_SpecBitsMap([10 x i1]* %l1track3D_stubs_data_barrel_s), !map !186
+
+]]></Node>
+<StgValue><ssdm name=""/></StgValue>
+</operation>
+
+<operation id="35" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="93" bw="0" op_0_bw="0" op_1_bw="32">
+<![CDATA[
+._crit_edge.i.i.i.i.i.i.preheader:16  call void (...)* @_ssdm_op_SpecBitsMap(float* %linearRegression_settings_chosenRofPhi_s), !map !190
+
+]]></Node>
+<StgValue><ssdm name=""/></StgValue>
+</operation>
+
+<operation id="36" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="94" bw="0" op_0_bw="0" op_1_bw="32">
+<![CDATA[
+._crit_edge.i.i.i.i.i.i.preheader:17  call void (...)* @_ssdm_op_SpecBitsMap(float* %linearRegression_settings_chosenRofZ_s), !map !194
+
+]]></Node>
+<StgValue><ssdm name=""/></StgValue>
+</operation>
+
+<operation id="37" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="95" bw="0" op_0_bw="0" op_1_bw="32">
+<![CDATA[
+._crit_edge.i.i.i.i.i.i.preheader:18  call void (...)* @_ssdm_op_SpecBitsMap([19 x float]* %linearRegression_settings_etaRegions_s), !map !198
+
+]]></Node>
+<StgValue><ssdm name=""/></StgValue>
+</operation>
+
+<operation id="38" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="96" bw="0" op_0_bw="0" op_1_bw="32">
+<![CDATA[
+._crit_edge.i.i.i.i.i.i.preheader:19  call void (...)* @_ssdm_op_SpecBitsMap(i32* %linearRegression_settings_minNumMatchLayers_s), !map !203
+
+]]></Node>
+<StgValue><ssdm name=""/></StgValue>
+</operation>
+
+<operation id="39" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="97" bw="0" op_0_bw="0" op_1_bw="32">
+<![CDATA[
+._crit_edge.i.i.i.i.i.i.preheader:20  call void (...)* @_ssdm_op_SpecBitsMap(i32* %linearRegression_settings_minPSLayers_s), !map !207
+
+]]></Node>
+<StgValue><ssdm name=""/></StgValue>
+</operation>
+
+<operation id="40" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="98" bw="0" op_0_bw="0" op_1_bw="32">
+<![CDATA[
+._crit_edge.i.i.i.i.i.i.preheader:21  call void (...)* @_ssdm_op_SpecBitsMap(i32* %linearRegression_iPhiSec_s), !map !211
+
+]]></Node>
+<StgValue><ssdm name=""/></StgValue>
+</operation>
+
+<operation id="41" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="99" bw="0" op_0_bw="0" op_1_bw="32">
+<![CDATA[
+._crit_edge.i.i.i.i.i.i.preheader:22  call void (...)* @_ssdm_op_SpecBitsMap(i32* %linearRegression_iEtaReg_s), !map !215
+
+]]></Node>
+<StgValue><ssdm name=""/></StgValue>
+</operation>
+
+<operation id="42" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="100" bw="0" op_0_bw="0" op_1_bw="32">
+<![CDATA[
+._crit_edge.i.i.i.i.i.i.preheader:23  call void (...)* @_ssdm_op_SpecBitsMap(i32* %linearRegression_nIterations_s), !map !219
+
+]]></Node>
+<StgValue><ssdm name=""/></StgValue>
+</operation>
+
+<operation id="43" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="101" bw="0" op_0_bw="0" op_1_bw="32">
+<![CDATA[
+._crit_edge.i.i.i.i.i.i.preheader:24  call void (...)* @_ssdm_op_SpecBitsMap(float* %linearRegression_HTParameter_qOverPt), !map !223
+
+]]></Node>
+<StgValue><ssdm name=""/></StgValue>
+</operation>
+
+<operation id="44" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="102" bw="0" op_0_bw="0" op_1_bw="32">
+<![CDATA[
+._crit_edge.i.i.i.i.i.i.preheader:25  call void (...)* @_ssdm_op_SpecBitsMap(float* %linearRegression_HTParameter_phiT), !map !227
+
+]]></Node>
+<StgValue><ssdm name=""/></StgValue>
+</operation>
+
+<operation id="45" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="103" bw="0" op_0_bw="0" op_1_bw="32">
+<![CDATA[
+._crit_edge.i.i.i.i.i.i.preheader:26  call void (...)* @_ssdm_op_SpecBitsMap(float* %linearRegression_HTParameter_cotTheta), !map !231
+
+]]></Node>
+<StgValue><ssdm name=""/></StgValue>
+</operation>
+
+<operation id="46" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="104" bw="0" op_0_bw="0" op_1_bw="32">
+<![CDATA[
+._crit_edge.i.i.i.i.i.i.preheader:27  call void (...)* @_ssdm_op_SpecBitsMap(float* %linearRegression_HTParameter_zT), !map !235
+
+]]></Node>
+<StgValue><ssdm name=""/></StgValue>
+</operation>
+
+<operation id="47" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="105" bw="0" op_0_bw="0" op_1_bw="32">
+<![CDATA[
+._crit_edge.i.i.i.i.i.i.preheader:28  call void (...)* @_ssdm_op_SpecBitsMap(float* %linearRegression_LRParameter_qOverPt), !map !239
+
+]]></Node>
+<StgValue><ssdm name=""/></StgValue>
+</operation>
+
+<operation id="48" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="106" bw="0" op_0_bw="0" op_1_bw="32">
+<![CDATA[
+._crit_edge.i.i.i.i.i.i.preheader:29  call void (...)* @_ssdm_op_SpecBitsMap(float* %linearRegression_LRParameter_phiT), !map !243
+
+]]></Node>
+<StgValue><ssdm name=""/></StgValue>
+</operation>
+
+<operation id="49" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="107" bw="0" op_0_bw="0" op_1_bw="32">
+<![CDATA[
+._crit_edge.i.i.i.i.i.i.preheader:30  call void (...)* @_ssdm_op_SpecBitsMap(float* %linearRegression_LRParameter_cotTheta), !map !247
+
+]]></Node>
+<StgValue><ssdm name=""/></StgValue>
+</operation>
+
+<operation id="50" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="108" bw="0" op_0_bw="0" op_1_bw="32">
+<![CDATA[
+._crit_edge.i.i.i.i.i.i.preheader:31  call void (...)* @_ssdm_op_SpecBitsMap(float* %linearRegression_LRParameter_zT), !map !251
+
+]]></Node>
+<StgValue><ssdm name=""/></StgValue>
+</operation>
+
+<operation id="51" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="109" bw="0" op_0_bw="0" op_1_bw="32">
+<![CDATA[
+._crit_edge.i.i.i.i.i.i.preheader:32  call void (...)* @_ssdm_op_SpecBitsMap(i32* %linearRegression_stubs_size_s), !map !255
+
+]]></Node>
+<StgValue><ssdm name=""/></StgValue>
+</operation>
+
+<operation id="52" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="110" bw="0" op_0_bw="0" op_1_bw="32">
+<![CDATA[
+._crit_edge.i.i.i.i.i.i.preheader:33  call void (...)* @_ssdm_op_SpecBitsMap([10 x float]* %linearRegression_stubs_data_settings_chosenRofPhi_s), !map !259
+
+]]></Node>
+<StgValue><ssdm name=""/></StgValue>
+</operation>
+
+<operation id="53" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="111" bw="0" op_0_bw="0" op_1_bw="32">
+<![CDATA[
+._crit_edge.i.i.i.i.i.i.preheader:34  call void (...)* @_ssdm_op_SpecBitsMap([10 x float]* %linearRegression_stubs_data_settings_chosenRofZ_s), !map !263
+
+]]></Node>
+<StgValue><ssdm name=""/></StgValue>
+</operation>
+
+<operation id="54" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="112" bw="0" op_0_bw="0" op_1_bw="32">
+<![CDATA[
+._crit_edge.i.i.i.i.i.i.preheader:35  call void (...)* @_ssdm_op_SpecBitsMap([190 x float]* %linearRegression_stubs_data_settings_etaRegions_s), !map !267
+
+]]></Node>
+<StgValue><ssdm name=""/></StgValue>
+</operation>
+
+<operation id="55" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="113" bw="0" op_0_bw="0" op_1_bw="32">
+<![CDATA[
+._crit_edge.i.i.i.i.i.i.preheader:36  call void (...)* @_ssdm_op_SpecBitsMap([10 x i32]* %linearRegression_stubs_data_settings_minNumMatchLayers_s), !map !271
+
+]]></Node>
+<StgValue><ssdm name=""/></StgValue>
+</operation>
+
+<operation id="56" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="114" bw="0" op_0_bw="0" op_1_bw="32">
+<![CDATA[
+._crit_edge.i.i.i.i.i.i.preheader:37  call void (...)* @_ssdm_op_SpecBitsMap([10 x i32]* %linearRegression_stubs_data_settings_minPSLayers_s), !map !275
+
+]]></Node>
+<StgValue><ssdm name=""/></StgValue>
+</operation>
+
+<operation id="57" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="115" bw="0" op_0_bw="0" op_1_bw="32">
+<![CDATA[
+._crit_edge.i.i.i.i.i.i.preheader:38  call void (...)* @_ssdm_op_SpecBitsMap([10 x float]* %linearRegression_stubs_data_r_s), !map !279
+
+]]></Node>
+<StgValue><ssdm name=""/></StgValue>
+</operation>
+
+<operation id="58" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="116" bw="0" op_0_bw="0" op_1_bw="32">
+<![CDATA[
+._crit_edge.i.i.i.i.i.i.preheader:39  call void (...)* @_ssdm_op_SpecBitsMap([10 x float]* %linearRegression_stubs_data_phi_s), !map !283
+
+]]></Node>
+<StgValue><ssdm name=""/></StgValue>
+</operation>
+
+<operation id="59" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="117" bw="0" op_0_bw="0" op_1_bw="32">
+<![CDATA[
+._crit_edge.i.i.i.i.i.i.preheader:40  call void (...)* @_ssdm_op_SpecBitsMap([10 x float]* %linearRegression_stubs_data_z_s), !map !287
+
+]]></Node>
+<StgValue><ssdm name=""/></StgValue>
+</operation>
+
+<operation id="60" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="118" bw="0" op_0_bw="0" op_1_bw="32">
+<![CDATA[
+._crit_edge.i.i.i.i.i.i.preheader:41  call void (...)* @_ssdm_op_SpecBitsMap([10 x i32]* %linearRegression_stubs_data_layerId_s), !map !291
+
+]]></Node>
+<StgValue><ssdm name=""/></StgValue>
+</operation>
+
+<operation id="61" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="119" bw="0" op_0_bw="0" op_1_bw="1">
+<![CDATA[
+._crit_edge.i.i.i.i.i.i.preheader:42  call void (...)* @_ssdm_op_SpecBitsMap([10 x i1]* %linearRegression_stubs_data_psModule_s), !map !295
+
+]]></Node>
+<StgValue><ssdm name=""/></StgValue>
+</operation>
+
+<operation id="62" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="120" bw="0" op_0_bw="0" op_1_bw="1">
+<![CDATA[
+._crit_edge.i.i.i.i.i.i.preheader:43  call void (...)* @_ssdm_op_SpecBitsMap([10 x i1]* %linearRegression_stubs_data_barrel_s), !map !299
+
+]]></Node>
+<StgValue><ssdm name=""/></StgValue>
+</operation>
+
+<operation id="63" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="121" bw="0" op_0_bw="0" op_1_bw="1">
+<![CDATA[
+._crit_edge.i.i.i.i.i.i.preheader:44  call void (...)* @_ssdm_op_SpecBitsMap(i1* %linearRegression_valid_s), !map !303
+
+]]></Node>
+<StgValue><ssdm name=""/></StgValue>
+</operation>
+
+<operation id="64" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="122" bw="0" op_0_bw="0" op_1_bw="32">
+<![CDATA[
+._crit_edge.i.i.i.i.i.i.preheader:45  call void (...)* @_ssdm_op_SpecBitsMap(i32* %linearRegression_stubMap_size_s), !map !307
+
+]]></Node>
+<StgValue><ssdm name=""/></StgValue>
+</operation>
+
+<operation id="65" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="123" bw="0" op_0_bw="0" op_1_bw="32">
+<![CDATA[
+._crit_edge.i.i.i.i.i.i.preheader:46  call void (...)* @_ssdm_op_SpecBitsMap([30 x i32]* %linearRegression_stubMap_data_first), !map !311
+
+]]></Node>
+<StgValue><ssdm name=""/></StgValue>
+</operation>
+
+<operation id="66" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="124" bw="0" op_0_bw="0" op_1_bw="32">
+<![CDATA[
+._crit_edge.i.i.i.i.i.i.preheader:47  call void (...)* @_ssdm_op_SpecBitsMap([30 x i32]* %linearRegression_stubMap_data_second_size_s), !map !317
+
+]]></Node>
+<StgValue><ssdm name=""/></StgValue>
+</operation>
+
+<operation id="67" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="125" bw="0" op_0_bw="0" op_1_bw="32">
+<![CDATA[
+._crit_edge.i.i.i.i.i.i.preheader:48  call void (...)* @_ssdm_op_SpecBitsMap([300 x float]* %linearRegression_stubMap_data_second_data_settings_chosenRofPhi_s), !map !321
+
+]]></Node>
+<StgValue><ssdm name=""/></StgValue>
+</operation>
+
+<operation id="68" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="126" bw="0" op_0_bw="0" op_1_bw="32">
+<![CDATA[
+._crit_edge.i.i.i.i.i.i.preheader:49  call void (...)* @_ssdm_op_SpecBitsMap([300 x float]* %linearRegression_stubMap_data_second_data_settings_chosenRofZ_s), !map !326
+
+]]></Node>
+<StgValue><ssdm name=""/></StgValue>
+</operation>
+
+<operation id="69" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="127" bw="0" op_0_bw="0" op_1_bw="32">
+<![CDATA[
+._crit_edge.i.i.i.i.i.i.preheader:50  call void (...)* @_ssdm_op_SpecBitsMap([5700 x float]* %linearRegression_stubMap_data_second_data_settings_etaRegions_s), !map !330
+
+]]></Node>
+<StgValue><ssdm name=""/></StgValue>
+</operation>
+
+<operation id="70" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="128" bw="0" op_0_bw="0" op_1_bw="32">
+<![CDATA[
+._crit_edge.i.i.i.i.i.i.preheader:51  call void (...)* @_ssdm_op_SpecBitsMap([300 x i32]* %linearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s), !map !335
+
+]]></Node>
+<StgValue><ssdm name=""/></StgValue>
+</operation>
+
+<operation id="71" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="129" bw="0" op_0_bw="0" op_1_bw="32">
+<![CDATA[
+._crit_edge.i.i.i.i.i.i.preheader:52  call void (...)* @_ssdm_op_SpecBitsMap([300 x i32]* %linearRegression_stubMap_data_second_data_settings_minPSLayers_s), !map !339
+
+]]></Node>
+<StgValue><ssdm name=""/></StgValue>
+</operation>
+
+<operation id="72" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="130" bw="0" op_0_bw="0" op_1_bw="32">
+<![CDATA[
+._crit_edge.i.i.i.i.i.i.preheader:53  call void (...)* @_ssdm_op_SpecBitsMap([300 x float]* %linearRegression_stubMap_data_second_data_r_s), !map !343
+
+]]></Node>
+<StgValue><ssdm name=""/></StgValue>
+</operation>
+
+<operation id="73" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="131" bw="0" op_0_bw="0" op_1_bw="32">
+<![CDATA[
+._crit_edge.i.i.i.i.i.i.preheader:54  call void (...)* @_ssdm_op_SpecBitsMap([300 x float]* %linearRegression_stubMap_data_second_data_phi_s), !map !347
+
+]]></Node>
+<StgValue><ssdm name=""/></StgValue>
+</operation>
+
+<operation id="74" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="132" bw="0" op_0_bw="0" op_1_bw="32">
+<![CDATA[
+._crit_edge.i.i.i.i.i.i.preheader:55  call void (...)* @_ssdm_op_SpecBitsMap([300 x float]* %linearRegression_stubMap_data_second_data_z_s), !map !351
+
+]]></Node>
+<StgValue><ssdm name=""/></StgValue>
+</operation>
+
+<operation id="75" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="133" bw="0" op_0_bw="0" op_1_bw="32">
+<![CDATA[
+._crit_edge.i.i.i.i.i.i.preheader:56  call void (...)* @_ssdm_op_SpecBitsMap([300 x i32]* %linearRegression_stubMap_data_second_data_layerId_s), !map !355
+
+]]></Node>
+<StgValue><ssdm name=""/></StgValue>
+</operation>
+
+<operation id="76" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="134" bw="0" op_0_bw="0" op_1_bw="1">
+<![CDATA[
+._crit_edge.i.i.i.i.i.i.preheader:57  call void (...)* @_ssdm_op_SpecBitsMap([300 x i1]* %linearRegression_stubMap_data_second_data_psModule_s), !map !359
+
+]]></Node>
+<StgValue><ssdm name=""/></StgValue>
+</operation>
+
+<operation id="77" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="135" bw="0" op_0_bw="0" op_1_bw="1">
+<![CDATA[
+._crit_edge.i.i.i.i.i.i.preheader:58  call void (...)* @_ssdm_op_SpecBitsMap([300 x i1]* %linearRegression_stubMap_data_second_data_barrel_s), !map !363
+
+]]></Node>
+<StgValue><ssdm name=""/></StgValue>
+</operation>
+
+<operation id="78" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="136" bw="0" op_0_bw="0" op_1_bw="32">
+<![CDATA[
+._crit_edge.i.i.i.i.i.i.preheader:59  call void (...)* @_ssdm_op_SpecBitsMap(i32* %linearRegression_layerPopulation_size_s), !map !367
+
+]]></Node>
+<StgValue><ssdm name=""/></StgValue>
+</operation>
+
+<operation id="79" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="137" bw="0" op_0_bw="0" op_1_bw="32">
+<![CDATA[
+._crit_edge.i.i.i.i.i.i.preheader:60  call void (...)* @_ssdm_op_SpecBitsMap([30 x i32]* %linearRegression_layerPopulation_data_first), !map !371
+
+]]></Node>
+<StgValue><ssdm name=""/></StgValue>
+</operation>
+
+<operation id="80" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="138" bw="0" op_0_bw="0" op_1_bw="32">
+<![CDATA[
+._crit_edge.i.i.i.i.i.i.preheader:61  call void (...)* @_ssdm_op_SpecBitsMap([30 x i32]* %linearRegression_layerPopulation_data_second), !map !375
+
+]]></Node>
+<StgValue><ssdm name=""/></StgValue>
+</operation>
+
+<operation id="81" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="139" bw="0" op_0_bw="0" op_1_bw="32">
+<![CDATA[
+._crit_edge.i.i.i.i.i.i.preheader:62  call void (...)* @_ssdm_op_SpecBitsMap(i32* %linearRegression_residuals_size_s), !map !379
+
+]]></Node>
+<StgValue><ssdm name=""/></StgValue>
+</operation>
+
+<operation id="82" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="140" bw="0" op_0_bw="0" op_1_bw="32">
+<![CDATA[
+._crit_edge.i.i.i.i.i.i.preheader:63  call void (...)* @_ssdm_op_SpecBitsMap([30 x i32]* %linearRegression_residuals_data_first), !map !383
+
+]]></Node>
+<StgValue><ssdm name=""/></StgValue>
+</operation>
+
+<operation id="83" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="141" bw="0" op_0_bw="0" op_1_bw="32">
+<![CDATA[
+._crit_edge.i.i.i.i.i.i.preheader:64  call void (...)* @_ssdm_op_SpecBitsMap([30 x i32]* %linearRegression_residuals_data_second_size_s), !map !387
+
+]]></Node>
+<StgValue><ssdm name=""/></StgValue>
+</operation>
+
+<operation id="84" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="142" bw="0" op_0_bw="0" op_1_bw="32">
+<![CDATA[
+._crit_edge.i.i.i.i.i.i.preheader:65  call void (...)* @_ssdm_op_SpecBitsMap([300 x float]* %linearRegression_residuals_data_second_data_phi), !map !391
+
+]]></Node>
+<StgValue><ssdm name=""/></StgValue>
+</operation>
+
+<operation id="85" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="143" bw="0" op_0_bw="0" op_1_bw="32">
+<![CDATA[
+._crit_edge.i.i.i.i.i.i.preheader:66  call void (...)* @_ssdm_op_SpecBitsMap([300 x float]* %linearRegression_residuals_data_second_data_z), !map !395
+
+]]></Node>
+<StgValue><ssdm name=""/></StgValue>
+</operation>
+
+<operation id="86" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="144" bw="0" op_0_bw="0" op_1_bw="32">
+<![CDATA[
+._crit_edge.i.i.i.i.i.i.preheader:67  call void (...)* @_ssdm_op_SpecBitsMap([300 x i32]* %linearRegression_residuals_data_second_data_layerId), !map !399
+
+]]></Node>
+<StgValue><ssdm name=""/></StgValue>
+</operation>
+
+<operation id="87" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="145" bw="0" op_0_bw="0" op_1_bw="32">
+<![CDATA[
+._crit_edge.i.i.i.i.i.i.preheader:68  call void (...)* @_ssdm_op_SpecBitsMap([300 x i32]* %linearRegression_residuals_data_second_data_stubId), !map !403
+
+]]></Node>
+<StgValue><ssdm name=""/></StgValue>
+</operation>
+
+<operation id="88" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="146" bw="0" op_0_bw="0" op_1_bw="1">
+<![CDATA[
+._crit_edge.i.i.i.i.i.i.preheader:69  call void (...)* @_ssdm_op_SpecBitsMap([300 x i1]* %linearRegression_residuals_data_second_data_ps), !map !407
+
+]]></Node>
+<StgValue><ssdm name=""/></StgValue>
+</operation>
+
+<operation id="89" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="147" bw="0" op_0_bw="0" op_1_bw="32">
+<![CDATA[
+._crit_edge.i.i.i.i.i.i.preheader:70  call void (...)* @_ssdm_op_SpecBitsMap(float* %linearRegression_largestResid_phi), !map !411
+
+]]></Node>
+<StgValue><ssdm name=""/></StgValue>
+</operation>
+
+<operation id="90" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="148" bw="0" op_0_bw="0" op_1_bw="32">
+<![CDATA[
+._crit_edge.i.i.i.i.i.i.preheader:71  call void (...)* @_ssdm_op_SpecBitsMap(float* %linearRegression_largestResid_z), !map !415
+
+]]></Node>
+<StgValue><ssdm name=""/></StgValue>
+</operation>
+
+<operation id="91" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="149" bw="0" op_0_bw="0" op_1_bw="32">
+<![CDATA[
+._crit_edge.i.i.i.i.i.i.preheader:72  call void (...)* @_ssdm_op_SpecBitsMap(i32* %linearRegression_largestResid_layerId), !map !419
+
+]]></Node>
+<StgValue><ssdm name=""/></StgValue>
+</operation>
+
+<operation id="92" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="150" bw="0" op_0_bw="0" op_1_bw="32">
+<![CDATA[
+._crit_edge.i.i.i.i.i.i.preheader:73  call void (...)* @_ssdm_op_SpecBitsMap(i32* %linearRegression_largestResid_stubId), !map !423
+
+]]></Node>
+<StgValue><ssdm name=""/></StgValue>
+</operation>
+
+<operation id="93" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="151" bw="0" op_0_bw="0" op_1_bw="1">
+<![CDATA[
+._crit_edge.i.i.i.i.i.i.preheader:74  call void (...)* @_ssdm_op_SpecBitsMap(i1* %linearRegression_largestResid_ps), !map !427
+
+]]></Node>
+<StgValue><ssdm name=""/></StgValue>
+</operation>
+
+<operation id="94" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="152" bw="0" op_0_bw="0" op_1_bw="0">
+<![CDATA[
+._crit_edge.i.i.i.i.i.i.preheader:75  call void (...)* @_ssdm_op_SpecTopModule([12 x i8]* @LRupdateHLS_str) nounwind
+
+]]></Node>
+<StgValue><ssdm name=""/></StgValue>
+</operation>
+
+<operation id="95" st_id="2" stage="1" lat="2">
+<core></core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="168" bw="449" op_0_bw="449" op_1_bw="32" op_2_bw="32" op_3_bw="32" op_4_bw="32" op_5_bw="32" op_6_bw="32" op_7_bw="32" op_8_bw="32" op_9_bw="32" op_10_bw="32" op_11_bw="32" op_12_bw="32" op_13_bw="32" op_14_bw="32" op_15_bw="32" op_16_bw="32" op_17_bw="32" op_18_bw="32" op_19_bw="1" op_20_bw="1" op_21_bw="32" op_22_bw="32" op_23_bw="32" op_24_bw="32" op_25_bw="32" op_26_bw="32" op_27_bw="32" op_28_bw="32" op_29_bw="32" op_30_bw="32" op_31_bw="32" op_32_bw="32" op_33_bw="1" op_34_bw="1" op_35_bw="32" op_36_bw="32" op_37_bw="32" op_38_bw="32" op_39_bw="32" op_40_bw="32" op_41_bw="32" op_42_bw="32" op_43_bw="32" op_44_bw="32" op_45_bw="1" op_46_bw="32" op_47_bw="32" op_48_bw="32" op_49_bw="32" op_50_bw="1" op_51_bw="32" op_52_bw="32" op_53_bw="32" op_54_bw="32" op_55_bw="32" op_56_bw="32" op_57_bw="32" op_58_bw="32" op_59_bw="32" op_60_bw="32" op_61_bw="32" op_62_bw="32" op_63_bw="32" op_64_bw="32" op_65_bw="1" op_66_bw="1">
+<![CDATA[
+._crit_edge.i.i.i.i.i.i.preheader:91  %call_ret1 = call fastcc { i32, i32, i32, i1, float, float, float, float, i32, float, float, float, float, i32, i32 } @fit(float %linearRegression_set_2, float %linearRegression_set_3, [19 x float]* %linearRegression_settings_etaRegions_s, i32 %linearRegression_set, i32 %linearRegression_set_1, float %linearRegression_LRP, float %linearRegression_LRP_1, float %linearRegression_LRP_2, float %linearRegression_LRP_3, [10 x float]* %linearRegression_stubs_data_settings_chosenRofPhi_s, [10 x float]* %linearRegression_stubs_data_settings_chosenRofZ_s, [190 x float]* %linearRegression_stubs_data_settings_etaRegions_s, [10 x i32]* %linearRegression_stubs_data_settings_minNumMatchLayers_s, [10 x i32]* %linearRegression_stubs_data_settings_minPSLayers_s, [10 x float]* %linearRegression_stubs_data_r_s, [10 x float]* %linearRegression_stubs_data_phi_s, [10 x float]* %linearRegression_stubs_data_z_s, [10 x i32]* %linearRegression_stubs_data_layerId_s, [10 x i1]* %linearRegression_stubs_data_psModule_s, [10 x i1]* %linearRegression_stubs_data_barrel_s, i32 %linearRegression_stu, [30 x i32]* %linearRegression_stubMap_data_first, [30 x i32]* %linearRegression_stubMap_data_second_size_s, [300 x float]* %linearRegression_stubMap_data_second_data_settings_chosenRofPhi_s, [300 x float]* %linearRegression_stubMap_data_second_data_settings_chosenRofZ_s, [5700 x float]* %linearRegression_stubMap_data_second_data_settings_etaRegions_s, [300 x i32]* %linearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s, [300 x i32]* %linearRegression_stubMap_data_second_data_settings_minPSLayers_s, [300 x float]* %linearRegression_stubMap_data_second_data_r_s, [300 x float]* %linearRegression_stubMap_data_second_data_phi_s, [300 x float]* %linearRegression_stubMap_data_second_data_z_s, [300 x i32]* %linearRegression_stubMap_data_second_data_layerId_s, [300 x i1]* %linearRegression_stubMap_data_second_data_psModule_s, [300 x i1]* %linearRegression_stubMap_data_second_data_barrel_s, i32 %linearRegression_lay, [30 x i32]* %linearRegression_layerPopulation_data_first, [30 x i32]* %linearRegression_layerPopulation_data_second, i32* %linearRegression_residuals_size_s, [30 x i32]* %linearRegression_residuals_data_first, [30 x i32]* %linearRegression_residuals_data_second_size_s, [300 x float]* %linearRegression_residuals_data_second_data_phi, [300 x float]* %linearRegression_residuals_data_second_data_z, [300 x i32]* %linearRegression_residuals_data_second_data_layerId, [300 x i32]* %linearRegression_residuals_data_second_data_stubId, [300 x i1]* %linearRegression_residuals_data_second_data_ps, float* %linearRegression_largestResid_phi, float* %linearRegression_largestResid_z, i32* %linearRegression_largestResid_layerId, i32* %linearRegression_largestResid_stubId, i1* %linearRegression_largestResid_ps, i32 %l1track3D_iPhiSec_r, i32 %l1track3D_iEtaReg_r, float %l1track3D_helixRphi_s, float %l1track3D_helixRphi_3, i32 %l1track3D_stubs_siz, [10 x float]* %l1track3D_stubs_data_settings_chosenRofPhi_s, [10 x float]* %l1track3D_stubs_data_settings_chosenRofZ_s, [190 x float]* %l1track3D_stubs_data_settings_etaRegions_s, [10 x i32]* %l1track3D_stubs_data_settings_minNumMatchLayers_s, [10 x i32]* %l1track3D_stubs_data_settings_minPSLayers_s, [10 x float]* %l1track3D_stubs_data_r_s, [10 x float]* %l1track3D_stubs_data_phi_s, [10 x float]* %l1track3D_stubs_data_z_s, [10 x i32]* %l1track3D_stubs_data_layerId_s, [10 x i1]* %l1track3D_stubs_data_psModule_s, [10 x i1]* %l1track3D_stubs_data_barrel_s)
+
+]]></Node>
+<StgValue><ssdm name="call_ret1"/></StgValue>
+</operation>
+
+<operation id="96" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="169" bw="32" op_0_bw="449">
+<![CDATA[
+._crit_edge.i.i.i.i.i.i.preheader:92  %newret = extractvalue { i32, i32, i32, i1, float, float, float, float, i32, float, float, float, float, i32, i32 } %call_ret1, 0
+
+]]></Node>
+<StgValue><ssdm name="newret"/></StgValue>
+</operation>
+
+<operation id="97" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="170" bw="32" op_0_bw="449">
+<![CDATA[
+._crit_edge.i.i.i.i.i.i.preheader:93  %newret19 = extractvalue { i32, i32, i32, i1, float, float, float, float, i32, float, float, float, float, i32, i32 } %call_ret1, 1
+
+]]></Node>
+<StgValue><ssdm name="newret19"/></StgValue>
+</operation>
+
+<operation id="98" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="171" bw="32" op_0_bw="449">
+<![CDATA[
+._crit_edge.i.i.i.i.i.i.preheader:94  %newret20 = extractvalue { i32, i32, i32, i1, float, float, float, float, i32, float, float, float, float, i32, i32 } %call_ret1, 2
+
+]]></Node>
+<StgValue><ssdm name="newret20"/></StgValue>
+</operation>
+
+<operation id="99" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="172" bw="1" op_0_bw="449">
+<![CDATA[
+._crit_edge.i.i.i.i.i.i.preheader:95  %newret21 = extractvalue { i32, i32, i32, i1, float, float, float, float, i32, float, float, float, float, i32, i32 } %call_ret1, 3
+
+]]></Node>
+<StgValue><ssdm name="newret21"/></StgValue>
+</operation>
+
+<operation id="100" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="173" bw="32" op_0_bw="449">
+<![CDATA[
+._crit_edge.i.i.i.i.i.i.preheader:96  %newret22 = extractvalue { i32, i32, i32, i1, float, float, float, float, i32, float, float, float, float, i32, i32 } %call_ret1, 4
+
+]]></Node>
+<StgValue><ssdm name="newret22"/></StgValue>
+</operation>
+
+<operation id="101" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="174" bw="32" op_0_bw="449">
+<![CDATA[
+._crit_edge.i.i.i.i.i.i.preheader:97  %newret23 = extractvalue { i32, i32, i32, i1, float, float, float, float, i32, float, float, float, float, i32, i32 } %call_ret1, 5
+
+]]></Node>
+<StgValue><ssdm name="newret23"/></StgValue>
+</operation>
+
+<operation id="102" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="175" bw="32" op_0_bw="449">
+<![CDATA[
+._crit_edge.i.i.i.i.i.i.preheader:98  %newret24 = extractvalue { i32, i32, i32, i1, float, float, float, float, i32, float, float, float, float, i32, i32 } %call_ret1, 6
+
+]]></Node>
+<StgValue><ssdm name="newret24"/></StgValue>
+</operation>
+
+<operation id="103" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="176" bw="32" op_0_bw="449">
+<![CDATA[
+._crit_edge.i.i.i.i.i.i.preheader:99  %newret25 = extractvalue { i32, i32, i32, i1, float, float, float, float, i32, float, float, float, float, i32, i32 } %call_ret1, 7
+
+]]></Node>
+<StgValue><ssdm name="newret25"/></StgValue>
+</operation>
+
+<operation id="104" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="177" bw="32" op_0_bw="449">
+<![CDATA[
+._crit_edge.i.i.i.i.i.i.preheader:100  %newret26 = extractvalue { i32, i32, i32, i1, float, float, float, float, i32, float, float, float, float, i32, i32 } %call_ret1, 8
+
+]]></Node>
+<StgValue><ssdm name="newret26"/></StgValue>
+</operation>
+
+<operation id="105" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="178" bw="32" op_0_bw="449">
+<![CDATA[
+._crit_edge.i.i.i.i.i.i.preheader:101  %newret27 = extractvalue { i32, i32, i32, i1, float, float, float, float, i32, float, float, float, float, i32, i32 } %call_ret1, 9
+
+]]></Node>
+<StgValue><ssdm name="newret27"/></StgValue>
+</operation>
+
+<operation id="106" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="179" bw="32" op_0_bw="449">
+<![CDATA[
+._crit_edge.i.i.i.i.i.i.preheader:102  %newret28 = extractvalue { i32, i32, i32, i1, float, float, float, float, i32, float, float, float, float, i32, i32 } %call_ret1, 10
+
+]]></Node>
+<StgValue><ssdm name="newret28"/></StgValue>
+</operation>
+
+<operation id="107" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="180" bw="32" op_0_bw="449">
+<![CDATA[
+._crit_edge.i.i.i.i.i.i.preheader:103  %newret29 = extractvalue { i32, i32, i32, i1, float, float, float, float, i32, float, float, float, float, i32, i32 } %call_ret1, 11
+
+]]></Node>
+<StgValue><ssdm name="newret29"/></StgValue>
+</operation>
+
+<operation id="108" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="181" bw="32" op_0_bw="449">
+<![CDATA[
+._crit_edge.i.i.i.i.i.i.preheader:104  %newret30 = extractvalue { i32, i32, i32, i1, float, float, float, float, i32, float, float, float, float, i32, i32 } %call_ret1, 12
+
+]]></Node>
+<StgValue><ssdm name="newret30"/></StgValue>
+</operation>
+
+<operation id="109" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="182" bw="32" op_0_bw="449">
+<![CDATA[
+._crit_edge.i.i.i.i.i.i.preheader:105  %newret31 = extractvalue { i32, i32, i32, i1, float, float, float, float, i32, float, float, float, float, i32, i32 } %call_ret1, 13
+
+]]></Node>
+<StgValue><ssdm name="newret31"/></StgValue>
+</operation>
+
+<operation id="110" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="183" bw="32" op_0_bw="449">
+<![CDATA[
+._crit_edge.i.i.i.i.i.i.preheader:106  %newret32 = extractvalue { i32, i32, i32, i1, float, float, float, float, i32, float, float, float, float, i32, i32 } %call_ret1, 14
+
+]]></Node>
+<StgValue><ssdm name="newret32"/></StgValue>
+</operation>
+
+<operation id="111" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="184" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32">
+<![CDATA[
+._crit_edge.i.i.i.i.i.i.preheader:107  call void @_ssdm_op_Write.ap_auto.i32P(i32* %linearRegression_stubMap_size_s, i32 %newret31)
+
+]]></Node>
+<StgValue><ssdm name=""/></StgValue>
+</operation>
+
+<operation id="112" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="185" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32">
+<![CDATA[
+._crit_edge.i.i.i.i.i.i.preheader:108  call void @_ssdm_op_Write.ap_auto.i32P(i32* %linearRegression_layerPopulation_size_s, i32 %newret32)
+
+]]></Node>
+<StgValue><ssdm name=""/></StgValue>
+</operation>
+
+<operation id="113" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="186" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32">
+<![CDATA[
+._crit_edge.i.i.i.i.i.i.preheader:109  call void @_ssdm_op_Write.ap_auto.floatP(float* %linearRegression_LRParameter_qOverPt, float %newret27)
+
+]]></Node>
+<StgValue><ssdm name=""/></StgValue>
+</operation>
+
+<operation id="114" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="187" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32">
+<![CDATA[
+._crit_edge.i.i.i.i.i.i.preheader:110  call void @_ssdm_op_Write.ap_auto.floatP(float* %linearRegression_LRParameter_phiT, float %newret28)
+
+]]></Node>
+<StgValue><ssdm name=""/></StgValue>
+</operation>
+
+<operation id="115" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="188" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32">
+<![CDATA[
+._crit_edge.i.i.i.i.i.i.preheader:111  call void @_ssdm_op_Write.ap_auto.floatP(float* %linearRegression_LRParameter_cotTheta, float %newret29)
+
+]]></Node>
+<StgValue><ssdm name=""/></StgValue>
+</operation>
+
+<operation id="116" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="189" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32">
+<![CDATA[
+._crit_edge.i.i.i.i.i.i.preheader:112  call void @_ssdm_op_Write.ap_auto.floatP(float* %linearRegression_LRParameter_zT, float %newret30)
+
+]]></Node>
+<StgValue><ssdm name=""/></StgValue>
+</operation>
+
+<operation id="117" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="190" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32">
+<![CDATA[
+._crit_edge.i.i.i.i.i.i.preheader:113  call void @_ssdm_op_Write.ap_auto.i32P(i32* %linearRegression_stubs_size_s, i32 %newret26)
+
+]]></Node>
+<StgValue><ssdm name=""/></StgValue>
+</operation>
+
+<operation id="118" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="191" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32">
+<![CDATA[
+._crit_edge.i.i.i.i.i.i.preheader:114  call void @_ssdm_op_Write.ap_auto.floatP(float* %linearRegression_HTParameter_qOverPt, float %newret22)
+
+]]></Node>
+<StgValue><ssdm name=""/></StgValue>
+</operation>
+
+<operation id="119" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="192" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32">
+<![CDATA[
+._crit_edge.i.i.i.i.i.i.preheader:115  call void @_ssdm_op_Write.ap_auto.floatP(float* %linearRegression_HTParameter_phiT, float %newret23)
+
+]]></Node>
+<StgValue><ssdm name=""/></StgValue>
+</operation>
+
+<operation id="120" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="193" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32">
+<![CDATA[
+._crit_edge.i.i.i.i.i.i.preheader:116  call void @_ssdm_op_Write.ap_auto.floatP(float* %linearRegression_HTParameter_cotTheta, float %newret24)
+
+]]></Node>
+<StgValue><ssdm name=""/></StgValue>
+</operation>
+
+<operation id="121" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="194" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32">
+<![CDATA[
+._crit_edge.i.i.i.i.i.i.preheader:117  call void @_ssdm_op_Write.ap_auto.floatP(float* %linearRegression_HTParameter_zT, float %newret25)
+
+]]></Node>
+<StgValue><ssdm name=""/></StgValue>
+</operation>
+
+<operation id="122" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="195" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32">
+<![CDATA[
+._crit_edge.i.i.i.i.i.i.preheader:118  call void @_ssdm_op_Write.ap_auto.i32P(i32* %linearRegression_iPhiSec_s, i32 %newret)
+
+]]></Node>
+<StgValue><ssdm name=""/></StgValue>
+</operation>
+
+<operation id="123" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="196" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32">
+<![CDATA[
+._crit_edge.i.i.i.i.i.i.preheader:119  call void @_ssdm_op_Write.ap_auto.i32P(i32* %linearRegression_iEtaReg_s, i32 %newret19)
+
+]]></Node>
+<StgValue><ssdm name=""/></StgValue>
+</operation>
+
+<operation id="124" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="197" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32">
+<![CDATA[
+._crit_edge.i.i.i.i.i.i.preheader:120  call void @_ssdm_op_Write.ap_auto.i32P(i32* %linearRegression_nIterations_s, i32 %newret20)
+
+]]></Node>
+<StgValue><ssdm name=""/></StgValue>
+</operation>
+
+<operation id="125" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="198" bw="0" op_0_bw="0" op_1_bw="1" op_2_bw="1">
+<![CDATA[
+._crit_edge.i.i.i.i.i.i.preheader:121  call void @_ssdm_op_Write.ap_auto.i1P(i1* %linearRegression_valid_s, i1 %newret21)
+
+]]></Node>
+<StgValue><ssdm name=""/></StgValue>
+</operation>
+
+<operation id="126" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="199" bw="0">
+<![CDATA[
+._crit_edge.i.i.i.i.i.i.preheader:122  ret void
+
+]]></Node>
+<StgValue><ssdm name=""/></StgValue>
+</operation>
+</state>
+</state_list>
+
+
+<ports>
+</ports>
+
+
+<dataflows>
+</dataflows>
+
+
+</stg>

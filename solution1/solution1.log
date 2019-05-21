@@ -1,0 +1,940 @@
+==============================================================
+File generated on Tue May 21 18:40:01 BST 2019
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+File generated on Tue May 21 18:41:18 BST 2019
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+File generated on Tue May 21 18:42:48 BST 2019
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xcku115-flvb2104-2-e'
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'lr_standaloneHLS/.settings/LinearRegression.cpp' ... 
+WARNING: [HLS 200-40] In file included from lr_standaloneHLS/.settings/LinearRegression.cpp:1:
+lr_standaloneHLS/.settings/LinearRegression.cpp:38:10: warning: 'auto' type specifier is a C++11 extension [-Wc++11-extensions]
+    for (auto const &stub : stubs_) {
+         ^
+lr_standaloneHLS/.settings/LinearRegression.cpp:38:27: warning: range-based for loop is a C++11 extension [-Wc++11-extensions]
+    for (auto const &stub : stubs_) {
+                          ^
+lr_standaloneHLS/.settings/LinearRegression.cpp:60:10: warning: 'auto' type specifier is a C++11 extension [-Wc++11-extensions]
+    for (auto const &stub : stubs) {
+         ^
+lr_standaloneHLS/.settings/LinearRegression.cpp:60:27: warning: range-based for loop is a C++11 extension [-Wc++11-extensions]
+    for (auto const &stub : stubs) {
+                          ^
+lr_standaloneHLS/.settings/LinearRegression.cpp:94:10: warning: 'auto' type specifier is a C++11 extension [-Wc++11-extensions]
+    for (auto const &layer : stubMap_) {
+         ^
+lr_standaloneHLS/.settings/LinearRegression.cpp:94:28: warning: range-based for loop is a C++11 extension [-Wc++11-extensions]
+    for (auto const &layer : stubMap_) {
+                           ^
+lr_standaloneHLS/.settings/LinearRegression.cpp:99:18: warning: 'auto' type specifier is a C++11 extension [-Wc++11-extensions]
+            for (auto const &stub : layer.second) {
+                 ^
+lr_standaloneHLS/.settings/LinearRegression.cpp:99:35: warning: range-based for loop is a C++11 extension [-Wc++11-extensions]
+            for (auto const &stub : layer.second) {
+                                  ^
+lr_standaloneHLS/.settings/LinearRegression.cpp:127:10: warning: 'auto' type specifier is a C++11 extension [-Wc++11-extensions]
+    for (auto const &layer : stubMap_) {
+         ^
+lr_standaloneHLS/.settings/LinearRegression.cpp:127:28: warning: range-based for loop is a C++11 extension [-Wc++11-extensions]
+    for (auto const &layer : stubMap_) {
+                           ^
+lr_standaloneHLS/.settings/LinearRegression.cpp:130:18: warning: 'auto' type specifier is a C++11 extension [-Wc++11-extensions]
+            for (auto const &stub : layer.second) {
+                 ^
+lr_standaloneHLS/.settings/LinearRegression.cpp:130:35: warning: range-based for loop is a C++11 extension [-Wc++11-extensions]
+            for (auto const &stub : layer.second) {
+                                  ^
+lr_standaloneHLS/.settings/LinearRegression.cpp:165:10: warning: 'auto' type specifier is a C++11 extension [-Wc++11-extensions]
+    for (auto const &layer : residuals_) {
+         ^
+lr_standaloneHLS/.settings/LinearRegression.cpp:165:28: warning: range-based for loop is a C++11 extension [-Wc++11-extensions]
+    for (auto const &layer : residuals_) {
+                           ^
+lr_standaloneHLS/.settings/LinearRegression.cpp:173:14: warning: 'auto' type specifier is a C++11 extension [-Wc++11-extensions]
+        for (auto const &resid : layer.second) {
+             ^
+lr_standaloneHLS/.settings/LinearRegression.cpp:173:32: warning: range-based for loop is a C++11 extension [-Wc++11-extensions]
+        for (auto const &resid : layer.second) {
+                               ^
+lr_standaloneHLS/.settings/LinearRegression.cpp:189:14: warning: 'auto' type specifier is a C++11 extension [-Wc++11-extensions]
+        for (auto const &stub : stubs) {
+             ^
+lr_standaloneHLS/.settings/LinearRegression.cpp:189:31: warning: range-based for loop is a C++11 extension [-Wc++11-extensions]
+        for (auto const &stub : stubs) {
+                              ^
+18 warnings generated.
+INFO: [HLS 200-10] Analyzing design file 'lr_standaloneHLS/.settings/LRupdateHLS.cpp' ... 
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 546.203 ; gain = 21.113 ; free physical = 201 ; free virtual = 18938
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 546.203 ; gain = 21.113 ; free physical = 201 ; free virtual = 18938
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [XFORM 203-603] Inlining function 'Settings::etaRegions' into 'candData::init' (lr_standaloneHLS/.settings/LRstructsHLS.h:52).
+INFO: [XFORM 203-603] Inlining function 'Settings::etaRegions' into 'candData::init' (lr_standaloneHLS/.settings/LRstructsHLS.h:52).
+INFO: [XFORM 203-603] Inlining function 'cordic_::cordic_hyperb_v1<39, 39, 0, 0, 0, ap_fixed<39, 2, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<39, 2, (ap_q_mode)5, (ap_o_mode)3, 0> >' into 'cordic_::sinh_cosh_range_redux_cordic<float>' (/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_cordic.h:968).
+INFO: [XFORM 203-603] Inlining function 'L1track3D::getStubs' into 'LinearRegression::initFit' (lr_standaloneHLS/.settings/LinearRegression.cpp:31).
+INFO: [XFORM 203-603] Inlining function 'arrayHLS<Stub>::begin.1' into 'arrayHLS<Stub>::empty' (lr_standaloneHLS/.settings/LRutilityHLS.h:112).
+INFO: [XFORM 203-603] Inlining function 'arrayHLS<Stub>::begin.1' into 'LinearRegression::countStubLayers' (lr_standaloneHLS/.settings/LinearRegression.cpp:60).
+INFO: [XFORM 203-603] Inlining function 'arrayHLS<Stub>::begin.1' into 'LinearRegression::calcResidual' (lr_standaloneHLS/.settings/LinearRegression.cpp:130).
+INFO: [XFORM 203-603] Inlining function 'arrayHLS<Stub>::begin.1' into 'LinearRegression::calcHelix' (lr_standaloneHLS/.settings/LinearRegression.cpp:99).
+INFO: [XFORM 203-603] Inlining function 'arrayHLS<Stub>::end.1' into 'arrayHLS<Stub>::empty' (lr_standaloneHLS/.settings/LRutilityHLS.h:112).
+INFO: [XFORM 203-603] Inlining function 'arrayHLS<Stub>::end.1' into 'LinearRegression::countStubLayers' (lr_standaloneHLS/.settings/LinearRegression.cpp:60).
+INFO: [XFORM 203-603] Inlining function 'arrayHLS<Stub>::end.1' into 'LinearRegression::calcResidual' (lr_standaloneHLS/.settings/LinearRegression.cpp:130).
+INFO: [XFORM 203-603] Inlining function 'arrayHLS<Stub>::end.1' into 'LinearRegression::calcHelix' (lr_standaloneHLS/.settings/LinearRegression.cpp:99).
+INFO: [XFORM 203-603] Inlining function 'arrayHLS<Stub>::begin' into 'LinearRegression::initFit' (lr_standaloneHLS/.settings/LinearRegression.cpp:38).
+INFO: [XFORM 203-603] Inlining function 'arrayHLS<Stub>::end' into 'LinearRegression::initFit' (lr_standaloneHLS/.settings/LinearRegression.cpp:38).
+INFO: [XFORM 203-603] Inlining function 'mapHLS<unsigned int, arrayHLS<Stub> >::operator[]' into 'LinearRegression::findLargestResidual' (lr_standaloneHLS/.settings/LinearRegression.cpp:175).
+INFO: [XFORM 203-603] Inlining function 'mapHLS<unsigned int, arrayHLS<Stub> >::operator[]' into 'LinearRegression::killLargestResidual' (lr_standaloneHLS/.settings/LinearRegression.cpp:156).
+INFO: [XFORM 203-603] Inlining function 'mapHLS<unsigned int, arrayHLS<Stub> >::operator[]' into 'LinearRegression::killLargestResidual' (lr_standaloneHLS/.settings/LinearRegression.cpp:155).
+INFO: [XFORM 203-603] Inlining function 'mapHLS<unsigned int, arrayHLS<Stub> >::operator[]' into 'LinearRegression::initFit' (lr_standaloneHLS/.settings/LinearRegression.cpp:39).
+INFO: [XFORM 203-603] Inlining function 'mapHLS<unsigned int, unsigned int>::operator[]' into 'LinearRegression::findLargestResidual' (lr_standaloneHLS/.settings/LinearRegression.cpp:175).
+INFO: [XFORM 203-603] Inlining function 'mapHLS<unsigned int, unsigned int>::operator[]' into 'LinearRegression::killLargestResidual' (lr_standaloneHLS/.settings/LinearRegression.cpp:159).
+INFO: [XFORM 203-603] Inlining function 'mapHLS<unsigned int, unsigned int>::operator[]' into 'LinearRegression::initFit' (lr_standaloneHLS/.settings/LinearRegression.cpp:40).
+INFO: [XFORM 203-603] Inlining function 'mapHLS<unsigned int, arrayHLS<Stub> >::begin' into 'LinearRegression::calcResidual' (lr_standaloneHLS/.settings/LinearRegression.cpp:127).
+INFO: [XFORM 203-603] Inlining function 'mapHLS<unsigned int, arrayHLS<Stub> >::begin' into 'LinearRegression::calcHelix' (lr_standaloneHLS/.settings/LinearRegression.cpp:94).
+INFO: [XFORM 203-603] Inlining function 'mapHLS<unsigned int, arrayHLS<Stub> >::end' into 'LinearRegression::calcResidual' (lr_standaloneHLS/.settings/LinearRegression.cpp:127).
+INFO: [XFORM 203-603] Inlining function 'mapHLS<unsigned int, arrayHLS<Stub> >::end' into 'LinearRegression::calcHelix' (lr_standaloneHLS/.settings/LinearRegression.cpp:94).
+INFO: [XFORM 203-603] Inlining function 'mapHLS<unsigned int, arrayHLS<residData> >::operator[]' into 'LinearRegression::calcResidual' (lr_standaloneHLS/.settings/LinearRegression.cpp:143).
+INFO: [XFORM 203-603] Inlining function 'mapHLS<unsigned int, arrayHLS<residData> >::begin' into 'LinearRegression::findLargestResidual' (lr_standaloneHLS/.settings/LinearRegression.cpp:165).
+INFO: [XFORM 203-603] Inlining function 'mapHLS<unsigned int, arrayHLS<residData> >::end' into 'LinearRegression::findLargestResidual' (lr_standaloneHLS/.settings/LinearRegression.cpp:165).
+INFO: [XFORM 203-603] Inlining function 'arrayHLS<residData>::begin' into 'LinearRegression::findLargestResidual' (lr_standaloneHLS/.settings/LinearRegression.cpp:173).
+INFO: [XFORM 203-603] Inlining function 'arrayHLS<residData>::end' into 'LinearRegression::findLargestResidual' (lr_standaloneHLS/.settings/LinearRegression.cpp:173).
+INFO: [XFORM 203-603] Inlining function 'arrayHLS<Stub>::operator[]' into 'mapHLS<unsigned int, arrayHLS<Stub> >::clean' (lr_standaloneHLS/.settings/LRutilityHLS.h:175).
+INFO: [XFORM 203-603] Inlining function 'arrayHLS<Stub>::operator[]' into 'mapHLS<unsigned int, arrayHLS<Stub> >::clean' (lr_standaloneHLS/.settings/LRutilityHLS.h:175).
+INFO: [XFORM 203-603] Inlining function 'arrayHLS<Stub>::operator[]' into 'LinearRegression::findLargestResidual' (lr_standaloneHLS/.settings/LinearRegression.cpp:175).
+INFO: [XFORM 203-603] Inlining function 'arrayHLS<Stub>::operator[]' into 'LinearRegression::killLargestResidual' (lr_standaloneHLS/.settings/LinearRegression.cpp:155).
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 676.195 ; gain = 151.105 ; free physical = 183 ; free virtual = 18884
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [XFORM 203-602] Inlining function 'absHLS<float>' into 'reduceRangeHLS<float>' (lr_standaloneHLS/.settings/LRutilityHLS.h:32) automatically.
+INFO: [XFORM 203-602] Inlining function 'reduceRangeHLS<float>' into 'deltaPhiHLS<float>' (lr_standaloneHLS/.settings/LRutilityHLS.h:40) automatically.
+INFO: [XFORM 203-602] Inlining function 'fp_struct<float>::data' into 'fp_struct<float>::to_float' (/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/src/hls/utils/x_hls_utils.h:348) automatically.
+INFO: [XFORM 203-602] Inlining function 'fp_struct<float>::to_float' into 'fp_struct<float>::to_ieee' (/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/src/hls/utils/x_hls_utils.h:369) automatically.
+INFO: [XFORM 203-602] Inlining function 'big_mult<46, 39>' into 'big_mult<46, 7, 39, 1>' (/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_big_mult.h:363) automatically.
+INFO: [XFORM 203-602] Inlining function 'big_mult<39, 39>' into 'big_mult<39, 0, 39, 0>' (/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_big_mult.h:363) automatically.
+INFO: [XFORM 203-602] Inlining function 'fp_struct<float>::mantissa' into 'cordic_::hyperb_range_redux<float>' (/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_cordic.h:889) automatically.
+INFO: [XFORM 203-602] Inlining function 'fp_struct<float>::expv' into 'cordic_::hyperb_range_redux<float>' (/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_cordic.h:891) automatically.
+INFO: [XFORM 203-602] Inlining function 'big_mult<46, 7, 39, 1>' into 'cordic_::hyperb_range_redux<float>' (/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_cordic.h:897) automatically.
+INFO: [XFORM 203-602] Inlining function 'big_mult<39, 0, 39, 0>' into 'cordic_::hyperb_range_redux<float>' (/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_cordic.h:904) automatically.
+INFO: [XFORM 203-602] Inlining function 'cordic_::addsub<0, 0, ap_fixed<39, 2, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<39, 2, (ap_q_mode)5, (ap_o_mode)3, 0>, bool>' into 'cordic_::sinh_cosh_range_redux_cordic<float>' (/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_cordic.h:250->/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_cordic.h:968) automatically.
+INFO: [XFORM 203-602] Inlining function 'cordic_::addsub<0, 0, ap_fixed<39, 2, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<39, 2, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_uint<1> >' into 'cordic_::sinh_cosh_range_redux_cordic<float>' (/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_cordic.h:254->/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_cordic.h:968) automatically.
+INFO: [XFORM 203-602] Inlining function 'L1track3D::getHelixRphi' into 'candData::init' (lr_standaloneHLS/.settings/LRstructsHLS.h:49) automatically.
+INFO: [XFORM 203-602] Inlining function 'Settings::invPtToDphi' into 'candData::init' (lr_standaloneHLS/.settings/LRstructsHLS.h:50) automatically.
+INFO: [XFORM 203-602] Inlining function 'Settings::chosenRofPhi' into 'candData::init' (lr_standaloneHLS/.settings/LRstructsHLS.h:51) automatically.
+INFO: [XFORM 203-602] Inlining function 'deltaPhiHLS<float>' into 'candData::init' (lr_standaloneHLS/.settings/LRstructsHLS.h:51) automatically.
+INFO: [XFORM 203-602] Inlining function 'sinhf' into 'candData::init' (lr_standaloneHLS/.settings/LRstructsHLS.h:52) automatically.
+INFO: [XFORM 203-602] Inlining function 'Settings::chosenRofZ' into 'candData::init' (lr_standaloneHLS/.settings/LRstructsHLS.h:53) automatically.
+INFO: [XFORM 203-602] Inlining function 'Stub::layerId' into 'LinearRegression::layerId.1' (lr_standaloneHLS/.settings/LinearRegression.cpp:73) automatically.
+INFO: [XFORM 203-602] Inlining function 'Stub::barrel' into 'LinearRegression::layerId.1' (lr_standaloneHLS/.settings/LinearRegression.cpp:74) automatically.
+INFO: [XFORM 203-602] Inlining function 'Stub::psModule' into 'LinearRegression::layerId.1' (lr_standaloneHLS/.settings/LinearRegression.cpp:75) automatically.
+INFO: [XFORM 203-602] Inlining function 'Stub::psModule' into 'LinearRegression::countStubLayers' (lr_standaloneHLS/.settings/LinearRegression.cpp:62) automatically.
+INFO: [XFORM 203-602] Inlining function 'Settings::minNumMatchLayers' into 'LinearRegression::checkValidity' (lr_standaloneHLS/.settings/LinearRegression.cpp:48) automatically.
+INFO: [XFORM 203-602] Inlining function 'Settings::minPSLayers' into 'LinearRegression::checkValidity' (lr_standaloneHLS/.settings/LinearRegression.cpp:51) automatically.
+INFO: [XFORM 203-602] Inlining function 'L1track3D::iPhiSec' into 'LinearRegression::initFit' (lr_standaloneHLS/.settings/LinearRegression.cpp:28) automatically.
+INFO: [XFORM 203-602] Inlining function 'L1track3D::iEtaReg' into 'LinearRegression::initFit' (lr_standaloneHLS/.settings/LinearRegression.cpp:29) automatically.
+INFO: [XFORM 203-602] Inlining function 'candData::init' into 'LinearRegression::initFit' (lr_standaloneHLS/.settings/LinearRegression.cpp:30) automatically.
+INFO: [XFORM 203-602] Inlining function 'LinearRegression::checkValidity' into 'LinearRegression::initFit' (lr_standaloneHLS/.settings/LinearRegression.cpp:32) automatically.
+INFO: [XFORM 203-602] Inlining function 'mapHLS<unsigned int, arrayHLS<Stub> >::clear' into 'LinearRegression::initFit' (lr_standaloneHLS/.settings/LinearRegression.cpp:36) automatically.
+INFO: [XFORM 203-602] Inlining function 'mapHLS<unsigned int, unsigned int>::clear' into 'LinearRegression::initFit' (lr_standaloneHLS/.settings/LinearRegression.cpp:37) automatically.
+INFO: [XFORM 203-602] Inlining function 'mapHLS<unsigned int, arrayHLS<Stub> >::has_key.1' into 'LinearRegression::initFit' (lr_standaloneHLS/.settings/LRutilityHLS.h:160->lr_standaloneHLS/.settings/LinearRegression.cpp:39) automatically.
+INFO: [XFORM 203-602] Inlining function 'mapHLS<unsigned int, unsigned int>::has_key' into 'LinearRegression::initFit' (lr_standaloneHLS/.settings/LRutilityHLS.h:160->lr_standaloneHLS/.settings/LinearRegression.cpp:40) automatically.
+INFO: [XFORM 203-602] Inlining function 'mapHLS<unsigned int, unsigned int>::push_back' into 'LinearRegression::initFit' (lr_standaloneHLS/.settings/LRutilityHLS.h:168->lr_standaloneHLS/.settings/LinearRegression.cpp:40) automatically.
+INFO: [XFORM 203-602] Inlining function 'mapHLS<unsigned int, arrayHLS<residData> >::clear' into 'LinearRegression::initFit' (lr_standaloneHLS/.settings/LinearRegression.cpp:42) automatically.
+INFO: [XFORM 203-602] Inlining function 'deltaPhiHLS<float>' into 'candData::operator+=' (lr_standaloneHLS/.settings/LRstructsHLS.h:24) automatically.
+INFO: [XFORM 203-602] Inlining function 'Settings::chosenRofPhi' into 'candData::convert_back' (lr_standaloneHLS/.settings/LRstructsHLS.h:43) automatically.
+INFO: [XFORM 203-602] Inlining function 'deltaPhiHLS<float>' into 'candData::convert_back' (lr_standaloneHLS/.settings/LRstructsHLS.h:43) automatically.
+INFO: [XFORM 203-602] Inlining function 'Settings::invPtToDphi' into 'candData::convert_back' (lr_standaloneHLS/.settings/LRstructsHLS.h:44) automatically.
+INFO: [XFORM 203-602] Inlining function 'Settings::chosenRofZ' into 'candData::convert_back' (lr_standaloneHLS/.settings/LRstructsHLS.h:45) automatically.
+INFO: [XFORM 203-602] Inlining function 'candData::operator+=' into 'LinearRegression::createTrack' (lr_standaloneHLS/.settings/LinearRegression.cpp:84) automatically.
+INFO: [XFORM 203-602] Inlining function 'candData::convert_back' into 'LinearRegression::createTrack' (lr_standaloneHLS/.settings/LinearRegression.cpp:85) automatically.
+INFO: [XFORM 203-602] Inlining function 'arrayHLS<Stub>::clear' into 'LinearRegression::createTrack' (lr_standaloneHLS/.settings/L1fittedTrack.h:22->lr_standaloneHLS/.settings/L1fittedTrack.h:23->lr_standaloneHLS/.settings/LinearRegression.cpp:87) automatically.
+INFO: [XFORM 203-602] Inlining function 'minHLS<float>' into 'stubData::operator<=' (lr_standaloneHLS/.settings/LRstructsHLS.h:73) automatically.
+INFO: [XFORM 203-602] Inlining function 'maxHLS<float>' into 'stubData::operator>=' (lr_standaloneHLS/.settings/LRstructsHLS.h:81) automatically.
+INFO: [XFORM 203-602] Inlining function 'make_pairHLS<float, float>' into 'sumData::calcLinearParameter' (lr_standaloneHLS/.settings/LRstructsHLS.h:125) automatically.
+INFO: [XFORM 203-602] Inlining function 'arrayHLS<Stub>::empty' into 'LinearRegression::calcHelix' (lr_standaloneHLS/.settings/LinearRegression.cpp:95) automatically.
+INFO: [XFORM 203-602] Inlining function 'Stub::r' into 'LinearRegression::calcHelix' (lr_standaloneHLS/.settings/LRstructsHLS.h:67->lr_standaloneHLS/.settings/LRstructsHLS.h:70->lr_standaloneHLS/.settings/LinearRegression.cpp:100) automatically.
+INFO: [XFORM 203-602] Inlining function 'Settings::chosenRofPhi' into 'LinearRegression::calcHelix' (lr_standaloneHLS/.settings/LRstructsHLS.h:67->lr_standaloneHLS/.settings/LRstructsHLS.h:70->lr_standaloneHLS/.settings/LinearRegression.cpp:100) automatically.
+INFO: [XFORM 203-602] Inlining function 'Stub::phi' into 'LinearRegression::calcHelix' (lr_standaloneHLS/.settings/LRstructsHLS.h:68->lr_standaloneHLS/.settings/LRstructsHLS.h:70->lr_standaloneHLS/.settings/LinearRegression.cpp:100) automatically.
+INFO: [XFORM 203-602] Inlining function 'deltaPhiHLS<float>' into 'LinearRegression::calcHelix' (lr_standaloneHLS/.settings/LRstructsHLS.h:68->lr_standaloneHLS/.settings/LRstructsHLS.h:70->lr_standaloneHLS/.settings/LinearRegression.cpp:100) automatically.
+INFO: [XFORM 203-602] Inlining function 'Settings::chosenRofZ' into 'LinearRegression::calcHelix' (lr_standaloneHLS/.settings/LRstructsHLS.h:69->lr_standaloneHLS/.settings/LRstructsHLS.h:70->lr_standaloneHLS/.settings/LinearRegression.cpp:100) automatically.
+INFO: [XFORM 203-602] Inlining function 'Stub::z' into 'LinearRegression::calcHelix' (lr_standaloneHLS/.settings/LRstructsHLS.h:70->lr_standaloneHLS/.settings/LRstructsHLS.h:70->lr_standaloneHLS/.settings/LinearRegression.cpp:100) automatically.
+INFO: [XFORM 203-602] Inlining function 'Stub::psModule.1' into 'LinearRegression::calcHelix' (lr_standaloneHLS/.settings/LinearRegression.cpp:101) automatically.
+INFO: [XFORM 203-602] Inlining function 'stubData::operator<=' into 'LinearRegression::calcHelix' (lr_standaloneHLS/.settings/LinearRegression.cpp:103) automatically.
+INFO: [XFORM 203-602] Inlining function 'stubData::operator>=' into 'LinearRegression::calcHelix' (lr_standaloneHLS/.settings/LinearRegression.cpp:104) automatically.
+INFO: [XFORM 203-602] Inlining function 'minHLS<float>' into 'LinearRegression::calcHelix' (lr_standaloneHLS/.settings/LinearRegression.cpp:106) automatically.
+INFO: [XFORM 203-602] Inlining function 'maxHLS<float>' into 'LinearRegression::calcHelix' (lr_standaloneHLS/.settings/LinearRegression.cpp:108) automatically.
+INFO: [XFORM 203-602] Inlining function 'stubData::operator+' into 'LinearRegression::calcHelix' (lr_standaloneHLS/.settings/LinearRegression.cpp:112) automatically.
+INFO: [XFORM 203-602] Inlining function 'stubData::operator/=' into 'LinearRegression::calcHelix' (lr_standaloneHLS/.settings/LinearRegression.cpp:113) automatically.
+INFO: [XFORM 203-602] Inlining function 'make_pairHLS<float, float>' into 'LinearRegression::calcHelix' (lr_standaloneHLS/.settings/LinearRegression.cpp:114) automatically.
+INFO: [XFORM 203-602] Inlining function 'sumData::operator+=' into 'LinearRegression::calcHelix' (lr_standaloneHLS/.settings/LinearRegression.cpp:114) automatically.
+INFO: [XFORM 203-602] Inlining function 'sumData::calcLinearParameter' into 'LinearRegression::calcHelix' (lr_standaloneHLS/.settings/LinearRegression.cpp:120) automatically.
+INFO: [XFORM 203-602] Inlining function 'mapHLS<unsigned int, arrayHLS<residData> >::clear' into 'LinearRegression::calcResidual' (lr_standaloneHLS/.settings/LinearRegression.cpp:126) automatically.
+INFO: [XFORM 203-602] Inlining function 'arrayHLS<Stub>::empty' into 'LinearRegression::calcResidual' (lr_standaloneHLS/.settings/LinearRegression.cpp:128) automatically.
+INFO: [XFORM 203-602] Inlining function 'Stub::r' into 'LinearRegression::calcResidual' (lr_standaloneHLS/.settings/LRstructsHLS.h:67->lr_standaloneHLS/.settings/LRstructsHLS.h:70->lr_standaloneHLS/.settings/LinearRegression.cpp:131) automatically.
+INFO: [XFORM 203-602] Inlining function 'Settings::chosenRofPhi' into 'LinearRegression::calcResidual' (lr_standaloneHLS/.settings/LRstructsHLS.h:67->lr_standaloneHLS/.settings/LRstructsHLS.h:70->lr_standaloneHLS/.settings/LinearRegression.cpp:131) automatically.
+INFO: [XFORM 203-602] Inlining function 'Stub::phi' into 'LinearRegression::calcResidual' (lr_standaloneHLS/.settings/LRstructsHLS.h:68->lr_standaloneHLS/.settings/LRstructsHLS.h:70->lr_standaloneHLS/.settings/LinearRegression.cpp:131) automatically.
+INFO: [XFORM 203-602] Inlining function 'Settings::chosenRofZ' into 'LinearRegression::calcResidual' (lr_standaloneHLS/.settings/LRstructsHLS.h:69->lr_standaloneHLS/.settings/LRstructsHLS.h:70->lr_standaloneHLS/.settings/LinearRegression.cpp:131) automatically.
+INFO: [XFORM 203-602] Inlining function 'Stub::z' into 'LinearRegression::calcResidual' (lr_standaloneHLS/.settings/LRstructsHLS.h:70->lr_standaloneHLS/.settings/LRstructsHLS.h:70->lr_standaloneHLS/.settings/LinearRegression.cpp:131) automatically.
+INFO: [XFORM 203-602] Inlining function 'absHLS<float>' into 'LinearRegression::calcResidual' (lr_standaloneHLS/.settings/LinearRegression.cpp:134) automatically.
+INFO: [XFORM 203-602] Inlining function 'Stub::psModule.1' into 'LinearRegression::calcResidual' (lr_standaloneHLS/.settings/LinearRegression.cpp:134) automatically.
+INFO: [XFORM 203-602] Inlining function 'Stub::barrel.1' into 'LinearRegression::calcResidual' (lr_standaloneHLS/.settings/LinearRegression.cpp:137) automatically.
+INFO: [XFORM 203-602] Inlining function 'mapHLS<unsigned int, arrayHLS<residData> >::has_key' into 'LinearRegression::calcResidual' (lr_standaloneHLS/.settings/LRutilityHLS.h:160->lr_standaloneHLS/.settings/LinearRegression.cpp:143) automatically.
+INFO: [XFORM 203-602] Inlining function 'arrayHLS<residData>::push_back' into 'LinearRegression::calcResidual' (lr_standaloneHLS/.settings/LinearRegression.cpp:143) automatically.
+INFO: [XFORM 203-602] Inlining function 'arrayHLS<Stub>::size' into 'LinearRegression::countStubs' (lr_standaloneHLS/.settings/LinearRegression.cpp:196) automatically.
+INFO: [XFORM 203-602] Inlining function 'Stub::layerId.1' into 'LinearRegression::layerId' (lr_standaloneHLS/.settings/LinearRegression.cpp:73) automatically.
+INFO: [XFORM 203-602] Inlining function 'Stub::barrel.1' into 'LinearRegression::layerId' (lr_standaloneHLS/.settings/LinearRegression.cpp:74) automatically.
+INFO: [XFORM 203-602] Inlining function 'Stub::psModule.1' into 'LinearRegression::layerId' (lr_standaloneHLS/.settings/LinearRegression.cpp:75) automatically.
+INFO: [XFORM 203-602] Inlining function 'arrayHLS<residData>::size' into 'LinearRegression::findLargestResidual' (lr_standaloneHLS/.settings/LinearRegression.cpp:166) automatically.
+INFO: [XFORM 203-602] Inlining function 'LinearRegression::countStubs' into 'LinearRegression::findLargestResidual' (lr_standaloneHLS/.settings/LinearRegression.cpp:167) automatically.
+INFO: [XFORM 203-602] Inlining function 'mapHLS<unsigned int, arrayHLS<Stub> >::has_key' into 'LinearRegression::findLargestResidual' (lr_standaloneHLS/.settings/LRutilityHLS.h:160->lr_standaloneHLS/.settings/LinearRegression.cpp:175) automatically.
+INFO: [XFORM 203-602] Inlining function 'mapHLS<unsigned int, unsigned int>::has_key' into 'LinearRegression::findLargestResidual' (lr_standaloneHLS/.settings/LRutilityHLS.h:160->lr_standaloneHLS/.settings/LinearRegression.cpp:175) automatically.
+INFO: [XFORM 203-602] Inlining function 'mapHLS<unsigned int, unsigned int>::push_back' into 'LinearRegression::findLargestResidual' (lr_standaloneHLS/.settings/LRutilityHLS.h:168->lr_standaloneHLS/.settings/LinearRegression.cpp:175) automatically.
+INFO: [XFORM 203-602] Inlining function 'residData::combined' into 'LinearRegression::findLargestResidual' (lr_standaloneHLS/.settings/LinearRegression.cpp:179) automatically.
+INFO: [XFORM 203-602] Inlining function 'residData::combined.1' into 'LinearRegression::findLargestResidual' (lr_standaloneHLS/.settings/LinearRegression.cpp:179) automatically.
+INFO: [XFORM 203-602] Inlining function 'Stub::layerId.2' into 'LinearRegression::layerId.2' (lr_standaloneHLS/.settings/LinearRegression.cpp:73) automatically.
+INFO: [XFORM 203-602] Inlining function 'Stub::barrel.2' into 'LinearRegression::layerId.2' (lr_standaloneHLS/.settings/LinearRegression.cpp:74) automatically.
+INFO: [XFORM 203-602] Inlining function 'Stub::psModule.2' into 'LinearRegression::layerId.2' (lr_standaloneHLS/.settings/LinearRegression.cpp:75) automatically.
+INFO: [XFORM 203-602] Inlining function 'residData::combined.1' into 'LinearRegression::killLargestResidual' (lr_standaloneHLS/.settings/LinearRegression.cpp:151) automatically.
+INFO: [XFORM 203-602] Inlining function 'LinearRegression::countStubs' into 'LinearRegression::killLargestResidual' (lr_standaloneHLS/.settings/LinearRegression.cpp:152) automatically.
+INFO: [XFORM 203-602] Inlining function 'mapHLS<unsigned int, unsigned int>::has_key' into 'LinearRegression::killLargestResidual' (lr_standaloneHLS/.settings/LRutilityHLS.h:160->lr_standaloneHLS/.settings/LinearRegression.cpp:159) automatically.
+INFO: [XFORM 203-602] Inlining function 'mapHLS<unsigned int, unsigned int>::push_back' into 'LinearRegression::killLargestResidual' (lr_standaloneHLS/.settings/LRutilityHLS.h:168->lr_standaloneHLS/.settings/LinearRegression.cpp:159) automatically.
+INFO: [XFORM 203-602] Inlining function 'LinearRegression::fit' into 'LRupdateHLS' (lr_standaloneHLS/.settings/LRupdateHLS.cpp:9) automatically.
+WARNING: [SYNCHK 200-23] /wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_cordic.h:969: variable-indexed range selection may cause suboptimal QoR.
+INFO: [SYNCHK 200-10] 0 error(s), 1 warning(s).
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 738.039 ; gain = 212.949 ; free physical = 142 ; free virtual = 18847
+INFO: [XFORM 203-102] Partitioning array 'value.second.data_.settings_.etaRegions_.0' automatically.
+INFO: [XFORM 203-102] Partitioning array 'value.second.data_.settings_.etaRegions_.1' automatically.
+INFO: [XFORM 203-102] Partitioning array 'value.second.data_.settings_.etaRegions_.2' automatically.
+INFO: [XFORM 203-102] Partitioning array 'value.second.data_.settings_.etaRegions_.3' automatically.
+INFO: [XFORM 203-102] Partitioning array 'value.second.data_.settings_.etaRegions_.4' automatically.
+INFO: [XFORM 203-102] Partitioning array 'value.second.data_.settings_.etaRegions_.5' automatically.
+INFO: [XFORM 203-102] Partitioning array 'value.second.data_.settings_.etaRegions_.6' automatically.
+INFO: [XFORM 203-102] Partitioning array 'value.second.data_.settings_.etaRegions_.7' automatically.
+INFO: [XFORM 203-102] Partitioning array 'value.second.data_.settings_.etaRegions_.8' automatically.
+INFO: [XFORM 203-102] Partitioning array 'value.second.data_.settings_.etaRegions_.9' automatically.
+INFO: [XFORM 203-102] Partitioning array 'this.assign.25.1.1.0.0' automatically.
+INFO: [XFORM 203-102] Partitioning array 'this.assign.25.1.1.0.1' automatically.
+INFO: [XFORM 203-102] Partitioning array 'this.assign.25.1.1.0.2' in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'this.assign.25.1.1.0.3' automatically.
+INFO: [XFORM 203-102] Partitioning array 'this.assign.25.1.1.0.4' automatically.
+INFO: [XFORM 203-102] Partitioning array 'this.assign.25.1.1.1' automatically.
+INFO: [XFORM 203-102] Partitioning array 'this.assign.25.1.1.2' automatically.
+INFO: [XFORM 203-102] Partitioning array 'this.assign.25.1.1.3' automatically.
+INFO: [XFORM 203-102] Partitioning array 'this.assign.25.1.1.4' automatically.
+INFO: [XFORM 203-102] Partitioning array 'this.assign.25.1.1.5' automatically.
+INFO: [XFORM 203-102] Partitioning array 'this.assign.25.1.1.6' automatically.
+INFO: [XFORM 203-102] Partitioning array 'b.data_.settings_.etaRegions_.assign' in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'this.assign.25.1.1.0.2.0' automatically.
+INFO: [XFORM 203-102] Partitioning array 'this.assign.25.1.1.0.2.1' automatically.
+INFO: [XFORM 203-102] Partitioning array 'this.assign.25.1.1.0.2.2' automatically.
+INFO: [XFORM 203-102] Partitioning array 'this.assign.25.1.1.0.2.3' automatically.
+INFO: [XFORM 203-102] Partitioning array 'this.assign.25.1.1.0.2.4' automatically.
+INFO: [XFORM 203-102] Partitioning array 'this.assign.25.1.1.0.2.5' automatically.
+INFO: [XFORM 203-102] Partitioning array 'this.assign.25.1.1.0.2.6' automatically.
+INFO: [XFORM 203-102] Partitioning array 'this.assign.25.1.1.0.2.7' automatically.
+INFO: [XFORM 203-102] Partitioning array 'this.assign.25.1.1.0.2.8' automatically.
+INFO: [XFORM 203-102] Partitioning array 'this.assign.25.1.1.0.2.9' automatically.
+INFO: [XFORM 203-102] Partitioning array 'b.data_.settings_.etaRegions_.assign.0' automatically.
+INFO: [XFORM 203-102] Partitioning array 'b.data_.settings_.etaRegions_.assign.1' automatically.
+INFO: [XFORM 203-102] Partitioning array 'b.data_.settings_.etaRegions_.assign.2' automatically.
+INFO: [XFORM 203-102] Partitioning array 'b.data_.settings_.etaRegions_.assign.3' automatically.
+INFO: [XFORM 203-102] Partitioning array 'b.data_.settings_.etaRegions_.assign.4' automatically.
+INFO: [XFORM 203-102] Partitioning array 'b.data_.settings_.etaRegions_.assign.5' automatically.
+INFO: [XFORM 203-102] Partitioning array 'b.data_.settings_.etaRegions_.assign.6' automatically.
+INFO: [XFORM 203-102] Partitioning array 'b.data_.settings_.etaRegions_.assign.7' automatically.
+INFO: [XFORM 203-102] Partitioning array 'b.data_.settings_.etaRegions_.assign.8' automatically.
+INFO: [XFORM 203-102] Partitioning array 'b.data_.settings_.etaRegions_.assign.9' automatically.
+INFO: [XFORM 203-102] Partitioning array 'agg.result.l1track3D_.stubs_.data_.settings_.etaRegions_.0' automatically.
+INFO: [XFORM 203-102] Partitioning array 'agg.result.l1track3D_.stubs_.data_.settings_.etaRegions_.1' automatically.
+INFO: [XFORM 203-102] Partitioning array 'agg.result.l1track3D_.stubs_.data_.settings_.etaRegions_.2' automatically.
+INFO: [XFORM 203-102] Partitioning array 'agg.result.l1track3D_.stubs_.data_.settings_.etaRegions_.3' automatically.
+INFO: [XFORM 203-102] Partitioning array 'agg.result.l1track3D_.stubs_.data_.settings_.etaRegions_.4' automatically.
+INFO: [XFORM 203-102] Partitioning array 'agg.result.l1track3D_.stubs_.data_.settings_.etaRegions_.5' automatically.
+INFO: [XFORM 203-102] Partitioning array 'agg.result.l1track3D_.stubs_.data_.settings_.etaRegions_.6' automatically.
+INFO: [XFORM 203-102] Partitioning array 'agg.result.l1track3D_.stubs_.data_.settings_.etaRegions_.7' automatically.
+INFO: [XFORM 203-102] Partitioning array 'agg.result.l1track3D_.stubs_.data_.settings_.etaRegions_.8' automatically.
+INFO: [XFORM 203-102] Partitioning array 'agg.result.l1track3D_.stubs_.data_.settings_.etaRegions_.9' automatically.
+INFO: [XFORM 203-102] Partitioning array 'agg.result.stubs_.data_.settings_.etaRegions_.0' automatically.
+INFO: [XFORM 203-102] Partitioning array 'agg.result.stubs_.data_.settings_.etaRegions_.1' automatically.
+INFO: [XFORM 203-102] Partitioning array 'agg.result.stubs_.data_.settings_.etaRegions_.2' automatically.
+INFO: [XFORM 203-102] Partitioning array 'agg.result.stubs_.data_.settings_.etaRegions_.3' automatically.
+INFO: [XFORM 203-102] Partitioning array 'agg.result.stubs_.data_.settings_.etaRegions_.4' automatically.
+INFO: [XFORM 203-102] Partitioning array 'agg.result.stubs_.data_.settings_.etaRegions_.5' automatically.
+INFO: [XFORM 203-102] Partitioning array 'agg.result.stubs_.data_.settings_.etaRegions_.6' automatically.
+INFO: [XFORM 203-102] Partitioning array 'agg.result.stubs_.data_.settings_.etaRegions_.7' automatically.
+INFO: [XFORM 203-102] Partitioning array 'agg.result.stubs_.data_.settings_.etaRegions_.8' automatically.
+INFO: [XFORM 203-102] Partitioning array 'agg.result.stubs_.data_.settings_.etaRegions_.9' automatically.
+INFO: [XFORM 203-102] Partitioning array 'this.assign.36.1.1.0' automatically.
+INFO: [XFORM 203-102] Partitioning array 'this.assign.36.1.1.1' automatically.
+INFO: [XFORM 203-102] Partitioning array 'this.assign.36.1.1.2' automatically.
+INFO: [XFORM 203-102] Partitioning array 'this.assign.36.1.1.3' automatically.
+INFO: [XFORM 203-102] Partitioning array 'this.assign.36.1.1.4' automatically.
+INFO: [XFORM 203-102] Partitioning array 'this.assign.30.1.1.0.0' automatically.
+INFO: [XFORM 203-102] Partitioning array 'this.assign.30.1.1.0.1' automatically.
+INFO: [XFORM 203-102] Partitioning array 'this.assign.30.1.1.0.2' in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'this.assign.30.1.1.0.3' automatically.
+INFO: [XFORM 203-102] Partitioning array 'this.assign.30.1.1.0.4' automatically.
+INFO: [XFORM 203-102] Partitioning array 'this.assign.30.1.1.1' automatically.
+INFO: [XFORM 203-102] Partitioning array 'this.assign.30.1.1.2' automatically.
+INFO: [XFORM 203-102] Partitioning array 'this.assign.30.1.1.3' automatically.
+INFO: [XFORM 203-102] Partitioning array 'this.assign.30.1.1.4' automatically.
+INFO: [XFORM 203-102] Partitioning array 'this.assign.30.1.1.5' automatically.
+INFO: [XFORM 203-102] Partitioning array 'this.assign.30.1.1.6' automatically.
+INFO: [XFORM 203-102] Partitioning array 'b.data_.settings_.etaRegions_.assign' in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'this.assign.30.1.1.0.2.0' automatically.
+INFO: [XFORM 203-102] Partitioning array 'this.assign.30.1.1.0.2.1' automatically.
+INFO: [XFORM 203-102] Partitioning array 'this.assign.30.1.1.0.2.2' automatically.
+INFO: [XFORM 203-102] Partitioning array 'this.assign.30.1.1.0.2.3' automatically.
+INFO: [XFORM 203-102] Partitioning array 'this.assign.30.1.1.0.2.4' automatically.
+INFO: [XFORM 203-102] Partitioning array 'this.assign.30.1.1.0.2.5' automatically.
+INFO: [XFORM 203-102] Partitioning array 'this.assign.30.1.1.0.2.6' automatically.
+INFO: [XFORM 203-102] Partitioning array 'this.assign.30.1.1.0.2.7' automatically.
+INFO: [XFORM 203-102] Partitioning array 'this.assign.30.1.1.0.2.8' automatically.
+INFO: [XFORM 203-102] Partitioning array 'this.assign.30.1.1.0.2.9' automatically.
+INFO: [XFORM 203-102] Partitioning array 'b.data_.settings_.etaRegions_.assign.0' automatically.
+INFO: [XFORM 203-102] Partitioning array 'b.data_.settings_.etaRegions_.assign.1' automatically.
+INFO: [XFORM 203-102] Partitioning array 'b.data_.settings_.etaRegions_.assign.2' automatically.
+INFO: [XFORM 203-102] Partitioning array 'b.data_.settings_.etaRegions_.assign.3' automatically.
+INFO: [XFORM 203-102] Partitioning array 'b.data_.settings_.etaRegions_.assign.4' automatically.
+INFO: [XFORM 203-102] Partitioning array 'b.data_.settings_.etaRegions_.assign.5' automatically.
+INFO: [XFORM 203-102] Partitioning array 'b.data_.settings_.etaRegions_.assign.6' automatically.
+INFO: [XFORM 203-102] Partitioning array 'b.data_.settings_.etaRegions_.assign.7' automatically.
+INFO: [XFORM 203-102] Partitioning array 'b.data_.settings_.etaRegions_.assign.8' automatically.
+INFO: [XFORM 203-102] Partitioning array 'b.data_.settings_.etaRegions_.assign.9' automatically.
+INFO: [XFORM 203-102] Partitioning array 'this.assign.18.1.1.0.0' automatically.
+INFO: [XFORM 203-102] Partitioning array 'this.assign.18.1.1.0.1' automatically.
+INFO: [XFORM 203-102] Partitioning array 'this.assign.18.1.1.0.2' in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'this.assign.18.1.1.0.3' automatically.
+INFO: [XFORM 203-102] Partitioning array 'this.assign.18.1.1.0.4' automatically.
+INFO: [XFORM 203-102] Partitioning array 'this.assign.18.1.1.1' automatically.
+INFO: [XFORM 203-102] Partitioning array 'this.assign.18.1.1.2' automatically.
+INFO: [XFORM 203-102] Partitioning array 'this.assign.18.1.1.3' automatically.
+INFO: [XFORM 203-102] Partitioning array 'this.assign.18.1.1.4' automatically.
+INFO: [XFORM 203-102] Partitioning array 'this.assign.18.1.1.5' automatically.
+INFO: [XFORM 203-102] Partitioning array 'this.assign.18.1.1.6' automatically.
+INFO: [XFORM 203-102] Partitioning array 'b.data_.settings_.etaRegions_.assign' in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'this.assign.1.1.0.0' automatically.
+INFO: [XFORM 203-102] Partitioning array 'this.assign.1.1.0.1' automatically.
+INFO: [XFORM 203-102] Partitioning array 'this.assign.1.1.0.2' in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'this.assign.1.1.0.3' automatically.
+INFO: [XFORM 203-102] Partitioning array 'this.assign.1.1.0.4' automatically.
+INFO: [XFORM 203-102] Partitioning array 'this.assign.1.1.1' automatically.
+INFO: [XFORM 203-102] Partitioning array 'this.assign.1.1.2' automatically.
+INFO: [XFORM 203-102] Partitioning array 'this.assign.1.1.3' automatically.
+INFO: [XFORM 203-102] Partitioning array 'this.assign.1.1.4' automatically.
+INFO: [XFORM 203-102] Partitioning array 'this.assign.1.1.5' automatically.
+INFO: [XFORM 203-102] Partitioning array 'this.assign.1.1.6' automatically.
+INFO: [XFORM 203-102] Partitioning array 'b.data_.settings_.etaRegions_.assign.1' in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'this.assign.18.1.1.0.2.0' automatically.
+INFO: [XFORM 203-102] Partitioning array 'this.assign.18.1.1.0.2.1' automatically.
+INFO: [XFORM 203-102] Partitioning array 'this.assign.18.1.1.0.2.2' automatically.
+INFO: [XFORM 203-102] Partitioning array 'this.assign.18.1.1.0.2.3' automatically.
+INFO: [XFORM 203-102] Partitioning array 'this.assign.18.1.1.0.2.4' automatically.
+INFO: [XFORM 203-102] Partitioning array 'this.assign.18.1.1.0.2.5' automatically.
+INFO: [XFORM 203-102] Partitioning array 'this.assign.18.1.1.0.2.6' automatically.
+INFO: [XFORM 203-102] Partitioning array 'this.assign.18.1.1.0.2.7' automatically.
+INFO: [XFORM 203-102] Partitioning array 'this.assign.18.1.1.0.2.8' automatically.
+INFO: [XFORM 203-102] Partitioning array 'this.assign.18.1.1.0.2.9' automatically.
+INFO: [XFORM 203-102] Partitioning array 'b.data_.settings_.etaRegions_.assign.0' automatically.
+INFO: [XFORM 203-102] Partitioning array 'b.data_.settings_.etaRegions_.assign.1359' automatically.
+INFO: [XFORM 203-102] Partitioning array 'b.data_.settings_.etaRegions_.assign.2' automatically.
+INFO: [XFORM 203-102] Partitioning array 'b.data_.settings_.etaRegions_.assign.3' automatically.
+INFO: [XFORM 203-102] Partitioning array 'b.data_.settings_.etaRegions_.assign.4' automatically.
+INFO: [XFORM 203-102] Partitioning array 'b.data_.settings_.etaRegions_.assign.5' automatically.
+INFO: [XFORM 203-102] Partitioning array 'b.data_.settings_.etaRegions_.assign.6' automatically.
+INFO: [XFORM 203-102] Partitioning array 'b.data_.settings_.etaRegions_.assign.7' automatically.
+INFO: [XFORM 203-102] Partitioning array 'b.data_.settings_.etaRegions_.assign.8' automatically.
+INFO: [XFORM 203-102] Partitioning array 'b.data_.settings_.etaRegions_.assign.9' automatically.
+INFO: [XFORM 203-102] Partitioning array 'this.assign.1.1.0.2.0' automatically.
+INFO: [XFORM 203-102] Partitioning array 'this.assign.1.1.0.2.1' automatically.
+INFO: [XFORM 203-102] Partitioning array 'this.assign.1.1.0.2.2' automatically.
+INFO: [XFORM 203-102] Partitioning array 'this.assign.1.1.0.2.3' automatically.
+INFO: [XFORM 203-102] Partitioning array 'this.assign.1.1.0.2.4' automatically.
+INFO: [XFORM 203-102] Partitioning array 'this.assign.1.1.0.2.5' automatically.
+INFO: [XFORM 203-102] Partitioning array 'this.assign.1.1.0.2.6' automatically.
+INFO: [XFORM 203-102] Partitioning array 'this.assign.1.1.0.2.7' automatically.
+INFO: [XFORM 203-102] Partitioning array 'this.assign.1.1.0.2.8' automatically.
+INFO: [XFORM 203-102] Partitioning array 'this.assign.1.1.0.2.9' automatically.
+INFO: [XFORM 203-102] Partitioning array 'b.data_.settings_.etaRegions_.assign.1.0' automatically.
+INFO: [XFORM 203-102] Partitioning array 'b.data_.settings_.etaRegions_.assign.1.1' automatically.
+INFO: [XFORM 203-102] Partitioning array 'b.data_.settings_.etaRegions_.assign.1.2' automatically.
+INFO: [XFORM 203-102] Partitioning array 'b.data_.settings_.etaRegions_.assign.1.3' automatically.
+INFO: [XFORM 203-102] Partitioning array 'b.data_.settings_.etaRegions_.assign.1.4' automatically.
+INFO: [XFORM 203-102] Partitioning array 'b.data_.settings_.etaRegions_.assign.1.5' automatically.
+INFO: [XFORM 203-102] Partitioning array 'b.data_.settings_.etaRegions_.assign.1.6' automatically.
+INFO: [XFORM 203-102] Partitioning array 'b.data_.settings_.etaRegions_.assign.1.7' automatically.
+INFO: [XFORM 203-102] Partitioning array 'b.data_.settings_.etaRegions_.assign.1.8' automatically.
+INFO: [XFORM 203-102] Partitioning array 'b.data_.settings_.etaRegions_.assign.1.9' automatically.
+INFO: [XFORM 203-102] Partitioning array 'agg.result.l1track3D_.stubs_.data_.settings_.etaRegions_.0' automatically.
+INFO: [XFORM 203-102] Partitioning array 'agg.result.l1track3D_.stubs_.data_.settings_.etaRegions_.1' automatically.
+INFO: [XFORM 203-102] Partitioning array 'agg.result.l1track3D_.stubs_.data_.settings_.etaRegions_.2' automatically.
+INFO: [XFORM 203-102] Partitioning array 'agg.result.l1track3D_.stubs_.data_.settings_.etaRegions_.3' automatically.
+INFO: [XFORM 203-102] Partitioning array 'agg.result.l1track3D_.stubs_.data_.settings_.etaRegions_.4' automatically.
+INFO: [XFORM 203-102] Partitioning array 'agg.result.l1track3D_.stubs_.data_.settings_.etaRegions_.5' automatically.
+INFO: [XFORM 203-102] Partitioning array 'agg.result.l1track3D_.stubs_.data_.settings_.etaRegions_.6' automatically.
+INFO: [XFORM 203-102] Partitioning array 'agg.result.l1track3D_.stubs_.data_.settings_.etaRegions_.7' automatically.
+INFO: [XFORM 203-102] Partitioning array 'agg.result.l1track3D_.stubs_.data_.settings_.etaRegions_.8' automatically.
+INFO: [XFORM 203-102] Partitioning array 'agg.result.l1track3D_.stubs_.data_.settings_.etaRegions_.9' automatically.
+INFO: [XFORM 203-102] Partitioning array 'agg.result.stubs_.data_.settings_.etaRegions_.0' automatically.
+INFO: [XFORM 203-102] Partitioning array 'agg.result.stubs_.data_.settings_.etaRegions_.1' automatically.
+INFO: [XFORM 203-102] Partitioning array 'agg.result.stubs_.data_.settings_.etaRegions_.2' automatically.
+INFO: [XFORM 203-102] Partitioning array 'agg.result.stubs_.data_.settings_.etaRegions_.3' automatically.
+INFO: [XFORM 203-102] Partitioning array 'agg.result.stubs_.data_.settings_.etaRegions_.4' automatically.
+INFO: [XFORM 203-102] Partitioning array 'agg.result.stubs_.data_.settings_.etaRegions_.5' automatically.
+INFO: [XFORM 203-102] Partitioning array 'agg.result.stubs_.data_.settings_.etaRegions_.6' automatically.
+INFO: [XFORM 203-102] Partitioning array 'agg.result.stubs_.data_.settings_.etaRegions_.7' automatically.
+INFO: [XFORM 203-102] Partitioning array 'agg.result.stubs_.data_.settings_.etaRegions_.8' automatically.
+INFO: [XFORM 203-102] Partitioning array 'agg.result.stubs_.data_.settings_.etaRegions_.9' automatically.
+INFO: [XFORM 203-102] Partitioning array 'this.assign.0.2' automatically.
+INFO: [XFORM 203-102] Partitioning array 'this.assign.1.3.1.0.0' automatically.
+INFO: [XFORM 203-102] Partitioning array 'this.assign.1.3.1.0.1' automatically.
+INFO: [XFORM 203-102] Partitioning array 'this.assign.1.3.1.0.2' in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'this.assign.1.3.1.0.3' automatically.
+INFO: [XFORM 203-102] Partitioning array 'this.assign.1.3.1.0.4' automatically.
+INFO: [XFORM 203-102] Partitioning array 'this.assign.1.3.1.1' automatically.
+INFO: [XFORM 203-102] Partitioning array 'this.assign.1.3.1.2' automatically.
+INFO: [XFORM 203-102] Partitioning array 'this.assign.1.3.1.3' automatically.
+INFO: [XFORM 203-102] Partitioning array 'this.assign.1.3.1.4' automatically.
+INFO: [XFORM 203-102] Partitioning array 'this.assign.1.3.1.5' automatically.
+INFO: [XFORM 203-102] Partitioning array 'this.assign.1.3.1.6' automatically.
+INFO: [XFORM 203-102] Partitioning array 'this.assign.2.1.0.0' automatically.
+INFO: [XFORM 203-102] Partitioning array 'this.assign.2.1.0.1' automatically.
+INFO: [XFORM 203-102] Partitioning array 'this.assign.2.1.0.2' in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'this.assign.2.1.0.3' automatically.
+INFO: [XFORM 203-102] Partitioning array 'this.assign.2.1.0.4' automatically.
+INFO: [XFORM 203-102] Partitioning array 'this.assign.2.1.1' automatically.
+INFO: [XFORM 203-102] Partitioning array 'this.assign.2.1.2' automatically.
+INFO: [XFORM 203-102] Partitioning array 'this.assign.2.1.3' automatically.
+INFO: [XFORM 203-102] Partitioning array 'this.assign.2.1.4' automatically.
+INFO: [XFORM 203-102] Partitioning array 'this.assign.2.1.5' automatically.
+INFO: [XFORM 203-102] Partitioning array 'this.assign.2.1.6' automatically.
+INFO: [XFORM 203-102] Partitioning array 'this.assign.1.3.1.0.2.0' automatically.
+INFO: [XFORM 203-102] Partitioning array 'this.assign.1.3.1.0.2.1' automatically.
+INFO: [XFORM 203-102] Partitioning array 'this.assign.1.3.1.0.2.2' automatically.
+INFO: [XFORM 203-102] Partitioning array 'this.assign.1.3.1.0.2.3' automatically.
+INFO: [XFORM 203-102] Partitioning array 'this.assign.1.3.1.0.2.4' automatically.
+INFO: [XFORM 203-102] Partitioning array 'this.assign.1.3.1.0.2.5' automatically.
+INFO: [XFORM 203-102] Partitioning array 'this.assign.1.3.1.0.2.6' automatically.
+INFO: [XFORM 203-102] Partitioning array 'this.assign.1.3.1.0.2.7' automatically.
+INFO: [XFORM 203-102] Partitioning array 'this.assign.1.3.1.0.2.8' automatically.
+INFO: [XFORM 203-102] Partitioning array 'this.assign.1.3.1.0.2.9' automatically.
+INFO: [XFORM 203-102] Partitioning array 'this.assign.2.1.0.2.0' automatically.
+INFO: [XFORM 203-102] Partitioning array 'this.assign.2.1.0.2.1' automatically.
+INFO: [XFORM 203-102] Partitioning array 'this.assign.2.1.0.2.2' automatically.
+INFO: [XFORM 203-102] Partitioning array 'this.assign.2.1.0.2.3' automatically.
+INFO: [XFORM 203-102] Partitioning array 'this.assign.2.1.0.2.4' automatically.
+INFO: [XFORM 203-102] Partitioning array 'this.assign.2.1.0.2.5' automatically.
+INFO: [XFORM 203-102] Partitioning array 'this.assign.2.1.0.2.6' automatically.
+INFO: [XFORM 203-102] Partitioning array 'this.assign.2.1.0.2.7' automatically.
+INFO: [XFORM 203-102] Partitioning array 'this.assign.2.1.0.2.8' automatically.
+INFO: [XFORM 203-102] Partitioning array 'this.assign.2.1.0.2.9' automatically.
+INFO: [XFORM 203-102] Automatically partitioning small array 'pp.V' (/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_big_mult.h:262) completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'pps.V' (/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_big_mult.h:270) completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'pp.V' (/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_big_mult.h:262) completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'pps.V' (/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_big_mult.h:270) completely based on array size.
+INFO: [XFORM 203-101] Partitioning array 'pp.V' (/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_big_mult.h:262) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'pps.V' (/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_big_mult.h:270) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'pp.V' (/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_big_mult.h:262) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'pps.V' (/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_big_mult.h:270) in dimension 1 completely.
+INFO: [XFORM 203-602] Inlining function 'absHLS<float>' into 'reduceRangeHLS<float>' (lr_standaloneHLS/.settings/LRutilityHLS.h:32) automatically.
+INFO: [XFORM 203-602] Inlining function 'reduceRangeHLS<float>' into 'deltaPhiHLS<float>' (lr_standaloneHLS/.settings/LRutilityHLS.h:40) automatically.
+INFO: [XFORM 203-602] Inlining function 'fp_struct<float>::data' into 'fp_struct<float>::to_float' (/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/src/hls/utils/x_hls_utils.h:348) automatically.
+INFO: [XFORM 203-602] Inlining function 'fp_struct<float>::to_float' into 'fp_struct<float>::to_ieee' (/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/src/hls/utils/x_hls_utils.h:369) automatically.
+INFO: [XFORM 203-602] Inlining function 'big_mult<46, 39>' into 'big_mult<46, 7, 39, 1>' (/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_big_mult.h:363) automatically.
+INFO: [XFORM 203-602] Inlining function 'big_mult<39, 39>' into 'big_mult<39, 0, 39, 0>' (/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_big_mult.h:363) automatically.
+INFO: [XFORM 203-602] Inlining function 'fp_struct<float>::mantissa' into 'cordic_::hyperb_range_redux<float>' (/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_cordic.h:889) automatically.
+INFO: [XFORM 203-602] Inlining function 'fp_struct<float>::expv' into 'cordic_::hyperb_range_redux<float>' (/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_cordic.h:891) automatically.
+INFO: [XFORM 203-602] Inlining function 'big_mult<46, 7, 39, 1>' into 'cordic_::hyperb_range_redux<float>' (/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_cordic.h:897) automatically.
+INFO: [XFORM 203-602] Inlining function 'big_mult<39, 0, 39, 0>' into 'cordic_::hyperb_range_redux<float>' (/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_cordic.h:904) automatically.
+INFO: [XFORM 203-602] Inlining function 'fp_struct<float>::to_ieee' into 'cordic_::sinh_cosh_range_redux_cordic<float>' (/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_cordic.h:936) automatically.
+INFO: [XFORM 203-602] Inlining function 'cordic_::hyperb_range_redux<float>' into 'cordic_::sinh_cosh_range_redux_cordic<float>' (/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_cordic.h:961) automatically.
+INFO: [XFORM 203-602] Inlining function 'cordic_::addsub<0, 0, ap_fixed<39, 2, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<39, 2, (ap_q_mode)5, (ap_o_mode)3, 0>, bool>' into 'cordic_::sinh_cosh_range_redux_cordic<float>' (/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_cordic.h:250->/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_cordic.h:968) automatically.
+INFO: [XFORM 203-602] Inlining function 'cordic_::addsub<0, 0, ap_fixed<39, 2, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<39, 2, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_uint<1> >' into 'cordic_::sinh_cosh_range_redux_cordic<float>' (/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_cordic.h:254->/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_cordic.h:968) automatically.
+INFO: [XFORM 203-602] Inlining function 'L1track3D::getHelixRphi' into 'candData::init' (lr_standaloneHLS/.settings/LRstructsHLS.h:49) automatically.
+INFO: [XFORM 203-602] Inlining function 'Settings::chosenRofPhi' into 'candData::init' (lr_standaloneHLS/.settings/LRstructsHLS.h:51) automatically.
+INFO: [XFORM 203-602] Inlining function 'deltaPhiHLS<float>' into 'candData::init' (lr_standaloneHLS/.settings/LRstructsHLS.h:51) automatically.
+INFO: [XFORM 203-602] Inlining function 'sinhf' into 'candData::init' (lr_standaloneHLS/.settings/LRstructsHLS.h:52) automatically.
+INFO: [XFORM 203-602] Inlining function 'Settings::chosenRofZ' into 'candData::init' (lr_standaloneHLS/.settings/LRstructsHLS.h:53) automatically.
+INFO: [XFORM 203-602] Inlining function 'Stub::layerId' into 'LinearRegression::layerId' (lr_standaloneHLS/.settings/LinearRegression.cpp:73) automatically.
+INFO: [XFORM 203-602] Inlining function 'Stub::barrel' into 'LinearRegression::layerId' (lr_standaloneHLS/.settings/LinearRegression.cpp:74) automatically.
+INFO: [XFORM 203-602] Inlining function 'Stub::psModule' into 'LinearRegression::layerId' (lr_standaloneHLS/.settings/LinearRegression.cpp:75) automatically.
+INFO: [XFORM 203-602] Inlining function 'Stub::psModule' into 'LinearRegression::countStubLayers' (lr_standaloneHLS/.settings/LinearRegression.cpp:62) automatically.
+INFO: [XFORM 203-602] Inlining function 'Settings::minNumMatchLayers' into 'LinearRegression::checkValidity' (lr_standaloneHLS/.settings/LinearRegression.cpp:48) automatically.
+INFO: [XFORM 203-602] Inlining function 'Settings::minPSLayers' into 'LinearRegression::checkValidity' (lr_standaloneHLS/.settings/LinearRegression.cpp:51) automatically.
+INFO: [XFORM 203-602] Inlining function 'L1track3D::iPhiSec' into 'LinearRegression::initFit' (lr_standaloneHLS/.settings/LinearRegression.cpp:28) automatically.
+INFO: [XFORM 203-602] Inlining function 'L1track3D::iEtaReg' into 'LinearRegression::initFit' (lr_standaloneHLS/.settings/LinearRegression.cpp:29) automatically.
+INFO: [XFORM 203-602] Inlining function 'candData::init' into 'LinearRegression::initFit' (lr_standaloneHLS/.settings/LinearRegression.cpp:30) automatically.
+INFO: [XFORM 203-602] Inlining function 'LinearRegression::checkValidity' into 'LinearRegression::initFit' (lr_standaloneHLS/.settings/LinearRegression.cpp:32) automatically.
+INFO: [XFORM 203-602] Inlining function 'mapHLS<unsigned int, arrayHLS<Stub> >::has_key' into 'LinearRegression::initFit' (lr_standaloneHLS/.settings/LRutilityHLS.h:160->lr_standaloneHLS/.settings/LinearRegression.cpp:39) automatically.
+INFO: [XFORM 203-602] Inlining function 'mapHLS<unsigned int, unsigned int>::has_key' into 'LinearRegression::initFit' (lr_standaloneHLS/.settings/LRutilityHLS.h:160->lr_standaloneHLS/.settings/LinearRegression.cpp:40) automatically.
+INFO: [XFORM 203-602] Inlining function 'mapHLS<unsigned int, unsigned int>::push_back' into 'LinearRegression::initFit' (lr_standaloneHLS/.settings/LRutilityHLS.h:168->lr_standaloneHLS/.settings/LinearRegression.cpp:40) automatically.
+INFO: [XFORM 203-602] Inlining function 'deltaPhiHLS<float>' into 'candData::operator+=' (lr_standaloneHLS/.settings/LRstructsHLS.h:24) automatically.
+INFO: [XFORM 203-602] Inlining function 'Settings::chosenRofPhi' into 'candData::convert_back' (lr_standaloneHLS/.settings/LRstructsHLS.h:43) automatically.
+INFO: [XFORM 203-602] Inlining function 'deltaPhiHLS<float>' into 'candData::convert_back' (lr_standaloneHLS/.settings/LRstructsHLS.h:43) automatically.
+INFO: [XFORM 203-602] Inlining function 'Settings::chosenRofZ' into 'candData::convert_back' (lr_standaloneHLS/.settings/LRstructsHLS.h:45) automatically.
+INFO: [XFORM 203-602] Inlining function 'candData::operator+=' into 'LinearRegression::createTrack' (lr_standaloneHLS/.settings/LinearRegression.cpp:84) automatically.
+INFO: [XFORM 203-602] Inlining function 'candData::convert_back' into 'LinearRegression::createTrack' (lr_standaloneHLS/.settings/LinearRegression.cpp:85) automatically.
+INFO: [XFORM 203-602] Inlining function 'minHLS<float>' into 'stubData::operator<=' (lr_standaloneHLS/.settings/LRstructsHLS.h:73) automatically.
+INFO: [XFORM 203-602] Inlining function 'maxHLS<float>' into 'stubData::operator>=' (lr_standaloneHLS/.settings/LRstructsHLS.h:81) automatically.
+INFO: [XFORM 203-602] Inlining function 'make_pairHLS<float, float>' into 'sumData::calcLinearParameter' (lr_standaloneHLS/.settings/LRstructsHLS.h:125) automatically.
+INFO: [XFORM 203-602] Inlining function 'arrayHLS<Stub>::empty' into 'LinearRegression::calcHelix' (lr_standaloneHLS/.settings/LinearRegression.cpp:95) automatically.
+INFO: [XFORM 203-602] Inlining function 'Stub::r' into 'LinearRegression::calcHelix' (lr_standaloneHLS/.settings/LRstructsHLS.h:67->lr_standaloneHLS/.settings/LRstructsHLS.h:70->lr_standaloneHLS/.settings/LinearRegression.cpp:100) automatically.
+INFO: [XFORM 203-602] Inlining function 'Settings::chosenRofPhi' into 'LinearRegression::calcHelix' (lr_standaloneHLS/.settings/LRstructsHLS.h:67->lr_standaloneHLS/.settings/LRstructsHLS.h:70->lr_standaloneHLS/.settings/LinearRegression.cpp:100) automatically.
+INFO: [XFORM 203-602] Inlining function 'Stub::phi' into 'LinearRegression::calcHelix' (lr_standaloneHLS/.settings/LRstructsHLS.h:68->lr_standaloneHLS/.settings/LRstructsHLS.h:70->lr_standaloneHLS/.settings/LinearRegression.cpp:100) automatically.
+INFO: [XFORM 203-602] Inlining function 'deltaPhiHLS<float>' into 'LinearRegression::calcHelix' (lr_standaloneHLS/.settings/LRstructsHLS.h:68->lr_standaloneHLS/.settings/LRstructsHLS.h:70->lr_standaloneHLS/.settings/LinearRegression.cpp:100) automatically.
+INFO: [XFORM 203-602] Inlining function 'Settings::chosenRofZ' into 'LinearRegression::calcHelix' (lr_standaloneHLS/.settings/LRstructsHLS.h:69->lr_standaloneHLS/.settings/LRstructsHLS.h:70->lr_standaloneHLS/.settings/LinearRegression.cpp:100) automatically.
+INFO: [XFORM 203-602] Inlining function 'Stub::z' into 'LinearRegression::calcHelix' (lr_standaloneHLS/.settings/LRstructsHLS.h:70->lr_standaloneHLS/.settings/LRstructsHLS.h:70->lr_standaloneHLS/.settings/LinearRegression.cpp:100) automatically.
+INFO: [XFORM 203-602] Inlining function 'Stub::psModule' into 'LinearRegression::calcHelix' (lr_standaloneHLS/.settings/LinearRegression.cpp:101) automatically.
+INFO: [XFORM 203-602] Inlining function 'stubData::operator<=' into 'LinearRegression::calcHelix' (lr_standaloneHLS/.settings/LinearRegression.cpp:103) automatically.
+INFO: [XFORM 203-602] Inlining function 'stubData::operator>=' into 'LinearRegression::calcHelix' (lr_standaloneHLS/.settings/LinearRegression.cpp:104) automatically.
+INFO: [XFORM 203-602] Inlining function 'minHLS<float>' into 'LinearRegression::calcHelix' (lr_standaloneHLS/.settings/LinearRegression.cpp:106) automatically.
+INFO: [XFORM 203-602] Inlining function 'maxHLS<float>' into 'LinearRegression::calcHelix' (lr_standaloneHLS/.settings/LinearRegression.cpp:108) automatically.
+INFO: [XFORM 203-602] Inlining function 'stubData::operator+' into 'LinearRegression::calcHelix' (lr_standaloneHLS/.settings/LinearRegression.cpp:112) automatically.
+INFO: [XFORM 203-602] Inlining function 'stubData::operator/=' into 'LinearRegression::calcHelix' (lr_standaloneHLS/.settings/LinearRegression.cpp:113) automatically.
+INFO: [XFORM 203-602] Inlining function 'make_pairHLS<float, float>' into 'LinearRegression::calcHelix' (lr_standaloneHLS/.settings/LinearRegression.cpp:114) automatically.
+INFO: [XFORM 203-602] Inlining function 'sumData::operator+=' into 'LinearRegression::calcHelix' (lr_standaloneHLS/.settings/LinearRegression.cpp:114) automatically.
+INFO: [XFORM 203-602] Inlining function 'sumData::calcLinearParameter' into 'LinearRegression::calcHelix' (lr_standaloneHLS/.settings/LinearRegression.cpp:120) automatically.
+INFO: [XFORM 203-602] Inlining function 'arrayHLS<Stub>::empty' into 'LinearRegression::calcResidual' (lr_standaloneHLS/.settings/LinearRegression.cpp:128) automatically.
+INFO: [XFORM 203-602] Inlining function 'Stub::r' into 'LinearRegression::calcResidual' (lr_standaloneHLS/.settings/LRstructsHLS.h:67->lr_standaloneHLS/.settings/LRstructsHLS.h:70->lr_standaloneHLS/.settings/LinearRegression.cpp:131) automatically.
+INFO: [XFORM 203-602] Inlining function 'Settings::chosenRofPhi' into 'LinearRegression::calcResidual' (lr_standaloneHLS/.settings/LRstructsHLS.h:67->lr_standaloneHLS/.settings/LRstructsHLS.h:70->lr_standaloneHLS/.settings/LinearRegression.cpp:131) automatically.
+INFO: [XFORM 203-602] Inlining function 'Stub::phi' into 'LinearRegression::calcResidual' (lr_standaloneHLS/.settings/LRstructsHLS.h:68->lr_standaloneHLS/.settings/LRstructsHLS.h:70->lr_standaloneHLS/.settings/LinearRegression.cpp:131) automatically.
+INFO: [XFORM 203-602] Inlining function 'Settings::chosenRofZ' into 'LinearRegression::calcResidual' (lr_standaloneHLS/.settings/LRstructsHLS.h:69->lr_standaloneHLS/.settings/LRstructsHLS.h:70->lr_standaloneHLS/.settings/LinearRegression.cpp:131) automatically.
+INFO: [XFORM 203-602] Inlining function 'Stub::z' into 'LinearRegression::calcResidual' (lr_standaloneHLS/.settings/LRstructsHLS.h:70->lr_standaloneHLS/.settings/LRstructsHLS.h:70->lr_standaloneHLS/.settings/LinearRegression.cpp:131) automatically.
+INFO: [XFORM 203-602] Inlining function 'absHLS<float>' into 'LinearRegression::calcResidual' (lr_standaloneHLS/.settings/LinearRegression.cpp:134) automatically.
+INFO: [XFORM 203-602] Inlining function 'Stub::psModule' into 'LinearRegression::calcResidual' (lr_standaloneHLS/.settings/LinearRegression.cpp:134) automatically.
+INFO: [XFORM 203-602] Inlining function 'Stub::barrel' into 'LinearRegression::calcResidual' (lr_standaloneHLS/.settings/LinearRegression.cpp:137) automatically.
+INFO: [XFORM 203-602] Inlining function 'mapHLS<unsigned int, arrayHLS<residData> >::has_key' into 'LinearRegression::calcResidual' (lr_standaloneHLS/.settings/LRutilityHLS.h:160->lr_standaloneHLS/.settings/LinearRegression.cpp:143) automatically.
+INFO: [XFORM 203-602] Inlining function 'arrayHLS<residData>::push_back' into 'LinearRegression::calcResidual' (lr_standaloneHLS/.settings/LinearRegression.cpp:143) automatically.
+INFO: [XFORM 203-602] Inlining function 'arrayHLS<Stub>::size' into 'LinearRegression::countStubs' (lr_standaloneHLS/.settings/LinearRegression.cpp:196) automatically.
+INFO: [XFORM 203-602] Inlining function 'arrayHLS<residData>::size' into 'LinearRegression::findLargestResidual' (lr_standaloneHLS/.settings/LinearRegression.cpp:166) automatically.
+INFO: [XFORM 203-602] Inlining function 'LinearRegression::countStubs' into 'LinearRegression::findLargestResidual' (lr_standaloneHLS/.settings/LinearRegression.cpp:167) automatically.
+INFO: [XFORM 203-602] Inlining function 'mapHLS<unsigned int, arrayHLS<Stub> >::has_key' into 'LinearRegression::findLargestResidual' (lr_standaloneHLS/.settings/LRutilityHLS.h:160->lr_standaloneHLS/.settings/LinearRegression.cpp:175) automatically.
+INFO: [XFORM 203-602] Inlining function 'mapHLS<unsigned int, unsigned int>::has_key' into 'LinearRegression::findLargestResidual' (lr_standaloneHLS/.settings/LRutilityHLS.h:160->lr_standaloneHLS/.settings/LinearRegression.cpp:175) automatically.
+INFO: [XFORM 203-602] Inlining function 'mapHLS<unsigned int, unsigned int>::push_back' into 'LinearRegression::findLargestResidual' (lr_standaloneHLS/.settings/LRutilityHLS.h:168->lr_standaloneHLS/.settings/LinearRegression.cpp:175) automatically.
+INFO: [XFORM 203-602] Inlining function 'residData::combined' into 'LinearRegression::findLargestResidual' (lr_standaloneHLS/.settings/LinearRegression.cpp:179) automatically.
+INFO: [XFORM 203-602] Inlining function 'residData::combined' into 'LinearRegression::killLargestResidual' (lr_standaloneHLS/.settings/LinearRegression.cpp:151) automatically.
+INFO: [XFORM 203-602] Inlining function 'LinearRegression::countStubs' into 'LinearRegression::killLargestResidual' (lr_standaloneHLS/.settings/LinearRegression.cpp:152) automatically.
+INFO: [XFORM 203-602] Inlining function 'mapHLS<unsigned int, unsigned int>::has_key' into 'LinearRegression::killLargestResidual' (lr_standaloneHLS/.settings/LRutilityHLS.h:160->lr_standaloneHLS/.settings/LinearRegression.cpp:159) automatically.
+INFO: [XFORM 203-602] Inlining function 'mapHLS<unsigned int, unsigned int>::push_back' into 'LinearRegression::killLargestResidual' (lr_standaloneHLS/.settings/LRutilityHLS.h:168->lr_standaloneHLS/.settings/LinearRegression.cpp:159) automatically.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (lr_standaloneHLS/.settings/LRutilityHLS.h:39:17) to (lr_standaloneHLS/.settings/LRutilityHLS.h:40:13) in function 'deltaPhiHLS<float>'... converting 5 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_cordic.h:969:8) to (/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_cordic.h:1039:3) in function 'cordic_::sinh_cosh_range_redux_cordic<float>'... converting 19 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_big_mult.h:265:51) to (/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_big_mult.h:264:24) in function 'big_mult_v3small<46, 39, 17>'... converting 6 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_big_mult.h:265:51) to (/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_big_mult.h:264:24) in function 'big_mult_v3small<39, 39, 17>'... converting 6 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (lr_standaloneHLS/.settings/LinearRegression.cpp:72:52) to (lr_standaloneHLS/.settings/LinearRegression.cpp:81:1) in function 'LinearRegression::layerId'... converting 7 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock to (lr_standaloneHLS/.settings/LinearRegression.cpp:33:5) in function 'LinearRegression::initFit'... converting 5 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (lr_standaloneHLS/.settings/LinearRegression.cpp:83:33) in function 'LinearRegression::createTrack'... converting 9 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (lr_standaloneHLS/.settings/LRstructsHLS.h:66:77) to (lr_standaloneHLS/.settings/LinearRegression.cpp:137:22) in function 'LinearRegression::calcResidual'... converting 5 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (lr_standaloneHLS/.settings/LRstructsHLS.h:66:77) to (lr_standaloneHLS/.settings/LinearRegression.cpp:99:35) in function 'LinearRegression::calcHelix'... converting 8 basic blocks.
+INFO: [XFORM 203-602] Inlining function 'LinearRegression::layerId' into 'LinearRegression::countStubLayers' (lr_standaloneHLS/.settings/LinearRegression.cpp:61) automatically.
+INFO: [XFORM 203-602] Inlining function 'LinearRegression::layerId' into 'LinearRegression::initFit' (lr_standaloneHLS/.settings/LinearRegression.cpp:39) automatically.
+INFO: [XFORM 203-602] Inlining function 'arrayHLS<Stub>::push_back' into 'LinearRegression::initFit' (lr_standaloneHLS/.settings/LinearRegression.cpp:39) automatically.
+INFO: [XFORM 203-602] Inlining function 'deltaPhiHLS<float>' into 'LinearRegression::calcResidual' (lr_standaloneHLS/.settings/LRstructsHLS.h:68->lr_standaloneHLS/.settings/LRstructsHLS.h:70->lr_standaloneHLS/.settings/LinearRegression.cpp:131) automatically.
+INFO: [XFORM 203-602] Inlining function 'LinearRegression::layerId' into 'LinearRegression::findLargestResidual' (lr_standaloneHLS/.settings/LinearRegression.cpp:175) automatically.
+INFO: [XFORM 203-602] Inlining function 'LinearRegression::layerId' into 'LinearRegression::killLargestResidual' (lr_standaloneHLS/.settings/LinearRegression.cpp:159) automatically.
+INFO: [XFORM 203-602] Inlining function 'LinearRegression::createTrack' into 'LinearRegression::fit' (lr_standaloneHLS/.settings/LinearRegression.cpp:10) automatically.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:37 ; elapsed = 00:00:38 . Memory (MB): peak = 802.039 ; gain = 276.949 ; free physical = 126 ; free virtual = 18804
+WARNING: [XFORM 203-631] Renaming function 'mapHLS<unsigned int, arrayHLS<residData> >::push_back' to 'push_back' (lr_standaloneHLS/.settings/LRutilityHLS.h:145)
+WARNING: [XFORM 203-631] Renaming function 'mapHLS<unsigned int, arrayHLS<Stub> >::push_back' to 'push_back.1' (lr_standaloneHLS/.settings/LRutilityHLS.h:55:5)
+WARNING: [XFORM 203-631] Renaming function 'mapHLS<unsigned int, arrayHLS<Stub> >::has_key' to 'has_key' (lr_standaloneHLS/.settings/LRutilityHLS.h:150)
+WARNING: [XFORM 203-631] Renaming function 'mapHLS<unsigned int, arrayHLS<Stub> >::clean' to 'clean' (lr_standaloneHLS/.settings/LRutilityHLS.h:172)
+WARNING: [XFORM 203-631] Renaming function 'cordic_::sinh_cosh_range_redux_cordic<float>' to 'sinh_cosh_range_redu' (/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_cordic.h:122:20)
+WARNING: [XFORM 203-631] Renaming function 'big_mult_v3small<46, 39, 17>' to 'big_mult_v3small' (/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_big_mult.h:264:26)
+WARNING: [XFORM 203-631] Renaming function 'big_mult_v3small<39, 39, 17>' to 'big_mult_v3small.1' (/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_big_mult.h:264:26)
+WARNING: [XFORM 203-631] Renaming function 'arrayHLS<Stub>::erase.1' to 'erase.1' (lr_standaloneHLS/.settings/LRutilityHLS.h:18:53)
+WARNING: [XFORM 203-631] Renaming function 'arrayHLS<Stub>::erase' to 'erase' (lr_standaloneHLS/.settings/LRutilityHLS.h:84)
+WARNING: [XFORM 203-631] Renaming function 'LinearRegression::killLargestResidual' to 'killLargestResidual' (lr_standaloneHLS/.settings/LinearRegression.cpp:149)
+WARNING: [XFORM 203-631] Renaming function 'LinearRegression::initFit' to 'initFit' (lr_standaloneHLS/.settings/LinearRegression.cpp:26)
+WARNING: [XFORM 203-631] Renaming function 'LinearRegression::fit' to 'fit' (lr_standaloneHLS/.settings/LinearRegression.cpp:7)
+WARNING: [XFORM 203-631] Renaming function 'LinearRegression::findLargestResidual' to 'findLargestResidual' (lr_standaloneHLS/.settings/LinearRegression.cpp:163)
+WARNING: [XFORM 203-631] Renaming function 'LinearRegression::countStubLayers' to 'countStubLayers' (lr_standaloneHLS/.settings/LinearRegression.cpp:57)
+WARNING: [XFORM 203-631] Renaming function 'LinearRegression::calcResidual' to 'calcResidual' (lr_standaloneHLS/.settings/LinearRegression.cpp:125)
+WARNING: [XFORM 203-631] Renaming function 'LinearRegression::calcHelix' to 'calcHelix' (lr_standaloneHLS/.settings/LinearRegression.cpp:92)
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:45 ; elapsed = 00:00:46 . Memory (MB): peak = 1002.039 ; gain = 476.949 ; free physical = 136 ; free virtual = 18580
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'LRupdateHLS' ...
+WARNING: [SYN 201-103] Legalizing function name 'big_mult_v3small.1' to 'big_mult_v3small_1'.
+WARNING: [SYN 201-103] Legalizing function name 'push_back.1' to 'push_back_1'.
+WARNING: [SYN 201-103] Legalizing function name 'erase.1' to 'erase_1'.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'big_mult_v3small' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 46.48 seconds; current allocated memory: 440.409 MB.
+INFO: [HLS 200-434] Only 0 loops out of a total 3 loops have been pipelined in this design.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.18 seconds; current allocated memory: 440.950 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'big_mult_v3small_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.31 seconds; current allocated memory: 441.379 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.14 seconds; current allocated memory: 441.794 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'sinh_cosh_range_redu' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.44 seconds; current allocated memory: 442.847 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.46 seconds; current allocated memory: 443.756 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'countStubLayers' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.72 seconds; current allocated memory: 444.140 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.1 seconds; current allocated memory: 444.360 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'push_back_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.4 seconds; current allocated memory: 445.276 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.44 seconds; current allocated memory: 446.450 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'initFit' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 2.4 seconds; current allocated memory: 451.282 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 4.24 seconds; current allocated memory: 458.189 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'calcHelix' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 4.35 seconds; current allocated memory: 459.487 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.6 seconds; current allocated memory: 460.886 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'push_back' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 1 seconds; current allocated memory: 461.561 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.27 seconds; current allocated memory: 462.234 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'calcResidual' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.66 seconds; current allocated memory: 463.457 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.76 seconds; current allocated memory: 465.143 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'findLargestResidual' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 1.2 seconds; current allocated memory: 466.595 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.97 seconds; current allocated memory: 468.544 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'has_key' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 1.06 seconds; current allocated memory: 468.729 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.37 seconds; current allocated memory: 468.816 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'erase' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.37 seconds; current allocated memory: 469.585 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.49 seconds; current allocated memory: 470.674 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'clean' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 3.13 seconds; current allocated memory: 476.347 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 3.89 seconds; current allocated memory: 483.716 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'erase_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 4 seconds; current allocated memory: 484.937 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.46 seconds; current allocated memory: 485.990 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'killLargestResidual' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 1.08 seconds; current allocated memory: 487.962 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 4.32 seconds; current allocated memory: 491.737 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'fit' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 3.72 seconds; current allocated memory: 493.157 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 5.61 seconds; current allocated memory: 495.562 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'LRupdateHLS' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 4.68 seconds; current allocated memory: 497.004 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 1.65 seconds; current allocated memory: 497.821 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'big_mult_v3small' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'big_mult_v3small'.
+INFO: [HLS 200-111]  Elapsed time: 4.47 seconds; current allocated memory: 499.633 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'big_mult_v3small_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'big_mult_v3small_1'.
+INFO: [HLS 200-111]  Elapsed time: 0.53 seconds; current allocated memory: 502.844 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'sinh_cosh_range_redu' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Generating core module 'LRupdateHLS_fadd_32ns_32ns_32_4_full_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'LRupdateHLS_faddfsub_32ns_32ns_32_4_full_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'LRupdateHLS_fcmp_32ns_32ns_1_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'LRupdateHLS_fmul_32ns_32ns_32_2_max_dsp_1': 2 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'sinh_cosh_range_redu'.
+INFO: [HLS 200-111]  Elapsed time: 0.58 seconds; current allocated memory: 506.118 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'countStubLayers' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'countStubLayers'.
+INFO: [HLS 200-111]  Elapsed time: 1.28 seconds; current allocated memory: 509.938 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'push_back_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'push_back_1'.
+INFO: [HLS 200-111]  Elapsed time: 0.36 seconds; current allocated memory: 512.436 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'initFit' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Generating core module 'LRupdateHLS_faddfsub_32ns_32ns_32_4_full_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'LRupdateHLS_fcmp_32ns_32ns_1_1_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'LRupdateHLS_fmul_32ns_32ns_32_2_max_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'LRupdateHLS_mul_mul_6ns_14s_14_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'initFit'.
+INFO: [HLS 200-111]  Elapsed time: 1.37 seconds; current allocated memory: 524.883 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'calcHelix' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Generating core module 'LRupdateHLS_faddfsub_32ns_32ns_32_4_full_dsp_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'LRupdateHLS_fcmp_32ns_32ns_1_1_1': 4 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'LRupdateHLS_fdiv_32ns_32ns_32_8_1': 4 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'LRupdateHLS_fmul_32ns_32ns_32_2_max_dsp_1': 12 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'LRupdateHLS_fsub_32ns_32ns_32_4_full_dsp_1': 4 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'LRupdateHLS_uitofp_32ns_32_3_1': 2 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'calcHelix'.
+INFO: [HLS 200-111]  Elapsed time: 5.24 seconds; current allocated memory: 552.453 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'push_back' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'push_back'.
+INFO: [HLS 200-111]  Elapsed time: 1.73 seconds; current allocated memory: 558.706 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'calcResidual' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Generating core module 'LRupdateHLS_ddiv_64ns_64ns_64_17_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'LRupdateHLS_faddfsub_32ns_32ns_32_4_full_dsp_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'LRupdateHLS_fcmp_32ns_32ns_1_1_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'LRupdateHLS_fdiv_32ns_32ns_32_8_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'LRupdateHLS_fmul_32ns_32ns_32_2_max_dsp_1': 4 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'LRupdateHLS_fpext_32ns_64_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'LRupdateHLS_fptrunc_64ns_32_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'LRupdateHLS_fsub_32ns_32ns_32_4_full_dsp_1': 2 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'calcResidual'.
+INFO: [HLS 200-111]  Elapsed time: 0.71 seconds; current allocated memory: 564.706 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'findLargestResidual' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Generating core module 'LRupdateHLS_fadd_32ns_32ns_32_4_full_dsp_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'LRupdateHLS_fcmp_32ns_32ns_1_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'findLargestResidual'.
+INFO: [HLS 200-111]  Elapsed time: 1.92 seconds; current allocated memory: 573.906 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'has_key' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'has_key'.
+INFO: [HLS 200-111]  Elapsed time: 1.77 seconds; current allocated memory: 581.863 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'erase' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Generating core module 'LRupdateHLS_fcmp_32ns_32ns_1_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'LRupdateHLS_mul_mul_6ns_14s_14_1_1': 2 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'erase'.
+INFO: [HLS 200-111]  Elapsed time: 0.34 seconds; current allocated memory: 584.130 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'clean' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Generating core module 'LRupdateHLS_fcmp_32ns_32ns_1_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'LRupdateHLS_mul_mul_6ns_14s_14_1_1': 18 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'LRupdateHLS_mul_mul_9ns_14s_14_1_1': 2 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'clean'.
+INFO: [HLS 200-111]  Elapsed time: 1.93 seconds; current allocated memory: 598.362 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'erase_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Generating core module 'LRupdateHLS_fcmp_32ns_32ns_1_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'erase_1'.
+INFO: [HLS 200-111]  Elapsed time: 6.74 seconds; current allocated memory: 630.021 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'killLargestResidual' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Generating core module 'LRupdateHLS_fadd_32ns_32ns_32_4_full_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'LRupdateHLS_fcmp_32ns_32ns_1_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'killLargestResidual'.
+INFO: [HLS 200-111]  Elapsed time: 1.75 seconds; current allocated memory: 640.895 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'fit' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Generating core module 'LRupdateHLS_faddfsub_32ns_32ns_32_4_full_dsp_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'LRupdateHLS_fcmp_32ns_32ns_1_1_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'LRupdateHLS_fdiv_32ns_32ns_32_8_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'LRupdateHLS_fmul_32ns_32ns_32_2_max_dsp_1': 2 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'fit'.
+INFO: [HLS 200-111]  Elapsed time: 5.13 seconds; current allocated memory: 658.746 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'LRupdateHLS' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'LRupdateHLS/l1track3D_iPhiSec_s' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'LRupdateHLS/l1track3D_iEtaReg_s' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'LRupdateHLS/l1track3D_helixRphi_first' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'LRupdateHLS/l1track3D_helixRphi_second' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'LRupdateHLS/l1track3D_stubs_size_s' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'LRupdateHLS/l1track3D_stubs_data_settings_chosenRofPhi_s' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'LRupdateHLS/l1track3D_stubs_data_settings_chosenRofZ_s' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'LRupdateHLS/l1track3D_stubs_data_settings_etaRegions_s' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'LRupdateHLS/l1track3D_stubs_data_settings_minNumMatchLayers_s' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'LRupdateHLS/l1track3D_stubs_data_settings_minPSLayers_s' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'LRupdateHLS/l1track3D_stubs_data_r_s' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'LRupdateHLS/l1track3D_stubs_data_phi_s' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'LRupdateHLS/l1track3D_stubs_data_z_s' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'LRupdateHLS/l1track3D_stubs_data_layerId_s' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'LRupdateHLS/l1track3D_stubs_data_psModule_s' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'LRupdateHLS/l1track3D_stubs_data_barrel_s' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'LRupdateHLS/linearRegression_settings_chosenRofPhi_s' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'LRupdateHLS/linearRegression_settings_chosenRofZ_s' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'LRupdateHLS/linearRegression_settings_etaRegions_s' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'LRupdateHLS/linearRegression_settings_minNumMatchLayers_s' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'LRupdateHLS/linearRegression_settings_minPSLayers_s' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'LRupdateHLS/linearRegression_iPhiSec_s' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'LRupdateHLS/linearRegression_iEtaReg_s' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'LRupdateHLS/linearRegression_nIterations_s' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'LRupdateHLS/linearRegression_HTParameter_qOverPt' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'LRupdateHLS/linearRegression_HTParameter_phiT' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'LRupdateHLS/linearRegression_HTParameter_cotTheta' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'LRupdateHLS/linearRegression_HTParameter_zT' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'LRupdateHLS/linearRegression_LRParameter_qOverPt' to 'ap_ovld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'LRupdateHLS/linearRegression_LRParameter_phiT' to 'ap_ovld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'LRupdateHLS/linearRegression_LRParameter_cotTheta' to 'ap_ovld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'LRupdateHLS/linearRegression_LRParameter_zT' to 'ap_ovld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'LRupdateHLS/linearRegression_stubs_size_s' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'LRupdateHLS/linearRegression_stubs_data_settings_chosenRofPhi_s' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'LRupdateHLS/linearRegression_stubs_data_settings_chosenRofZ_s' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'LRupdateHLS/linearRegression_stubs_data_settings_etaRegions_s' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'LRupdateHLS/linearRegression_stubs_data_settings_minNumMatchLayers_s' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'LRupdateHLS/linearRegression_stubs_data_settings_minPSLayers_s' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'LRupdateHLS/linearRegression_stubs_data_r_s' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'LRupdateHLS/linearRegression_stubs_data_phi_s' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'LRupdateHLS/linearRegression_stubs_data_z_s' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'LRupdateHLS/linearRegression_stubs_data_layerId_s' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'LRupdateHLS/linearRegression_stubs_data_psModule_s' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'LRupdateHLS/linearRegression_stubs_data_barrel_s' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'LRupdateHLS/linearRegression_valid_s' to 'ap_vld'.

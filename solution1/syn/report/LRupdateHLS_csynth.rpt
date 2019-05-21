@@ -1,0 +1,546 @@
+
+
+================================================================
+== Vivado HLS Report for 'LRupdateHLS'
+================================================================
+* Date:           Tue May 21 18:45:14 2019
+
+* Version:        2018.3 (Build 2405991 on Thu Dec 06 23:56:15 MST 2018)
+* Project:        lr_standaloneHLS
+* Solution:       solution1
+* Product family: kintexu
+* Target device:  xcku115-flvb2104-2-e
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |  10.00|     9.121|        1.25|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-----+-----+-----+-----+---------+
+    |  Latency  |  Interval | Pipeline|
+    | min | max | min | max |   Type  |
+    +-----+-----+-----+-----+---------+
+    |    ?|    ?|    ?|    ?|   none  |
+    +-----+-----+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        +----------------+-------+-----+-----+-----+-----+---------+
+        |                |       |  Latency  |  Interval | Pipeline|
+        |    Instance    | Module| min | max | min | max |   Type  |
+        +----------------+-------+-----+-----+-----+-----+---------+
+        |grp_fit_fu_365  |fit    |    ?|    ?|    ?|    ?|   none  |
+        +----------------+-------+-----+-----+-----+-----+---------+
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++---------------------+---------+-------+---------+--------+
+|         Name        | BRAM_18K| DSP48E|    FF   |   LUT  |
++---------------------+---------+-------+---------+--------+
+|DSP                  |        -|      -|        -|       -|
+|Expression           |        -|      -|        -|       -|
+|FIFO                 |        -|      -|        -|       -|
+|Instance             |        4|    124|    43432|   75800|
+|Memory               |        -|      -|        -|       -|
+|Multiplexer          |        -|      -|        -|      15|
+|Register             |        -|      -|        3|       -|
++---------------------+---------+-------+---------+--------+
+|Total                |        4|    124|    43435|   75815|
++---------------------+---------+-------+---------+--------+
+|Available SLR        |     2160|   2760|   663360|  331680|
++---------------------+---------+-------+---------+--------+
+|Utilization SLR (%)  |    ~0   |      4|        6|      22|
++---------------------+---------+-------+---------+--------+
+|Available            |     4320|   5520|  1326720|  663360|
++---------------------+---------+-------+---------+--------+
+|Utilization (%)      |    ~0   |      2|        3|      11|
++---------------------+---------+-------+---------+--------+
+
++ Detail: 
+    * Instance: 
+    +----------------+-------+---------+-------+-------+-------+
+    |    Instance    | Module| BRAM_18K| DSP48E|   FF  |  LUT  |
+    +----------------+-------+---------+-------+-------+-------+
+    |grp_fit_fu_365  |fit    |        4|    124|  43432|  75800|
+    +----------------+-------+---------+-------+-------+-------+
+    |Total           |       |        4|    124|  43432|  75800|
+    +----------------+-------+---------+-------+-------+-------+
+
+    * DSP48: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    N/A
+
+    * Multiplexer: 
+    +-----------+----+-----------+-----+-----------+
+    |    Name   | LUT| Input Size| Bits| Total Bits|
+    +-----------+----+-----------+-----+-----------+
+    |ap_NS_fsm  |  15|          3|    1|          3|
+    +-----------+----+-----------+-----+-----------+
+    |Total      |  15|          3|    1|          3|
+    +-----------+----+-----------+-----+-----------+
+
+    * Register: 
+    +-----------------------------+---+----+-----+-----------+
+    |             Name            | FF| LUT| Bits| Const Bits|
+    +-----------------------------+---+----+-----+-----------+
+    |ap_CS_fsm                    |  2|   0|    2|          0|
+    |grp_fit_fu_365_ap_start_reg  |  1|   0|    1|          0|
+    +-----------------------------+---+----+-----+-----------+
+    |Total                        |  3|   0|    3|          0|
+    +-----------------------------+---+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++---------------------------------------------------------------------------------+-----+-----+------------+------------------------------------------------------------------------+--------------+
+|                                    RTL Ports                                    | Dir | Bits|  Protocol  |                              Source Object                             |    C Type    |
++---------------------------------------------------------------------------------+-----+-----+------------+------------------------------------------------------------------------+--------------+
+|ap_clk                                                                           |  in |    1| ap_ctrl_hs |                               LRupdateHLS                              | return value |
+|ap_rst                                                                           |  in |    1| ap_ctrl_hs |                               LRupdateHLS                              | return value |
+|ap_start                                                                         |  in |    1| ap_ctrl_hs |                               LRupdateHLS                              | return value |
+|ap_done                                                                          | out |    1| ap_ctrl_hs |                               LRupdateHLS                              | return value |
+|ap_idle                                                                          | out |    1| ap_ctrl_hs |                               LRupdateHLS                              | return value |
+|ap_ready                                                                         | out |    1| ap_ctrl_hs |                               LRupdateHLS                              | return value |
+|l1track3D_iPhiSec_s                                                              |  in |   32|   ap_none  |                           l1track3D_iPhiSec_s                          |    pointer   |
+|l1track3D_iEtaReg_s                                                              |  in |   32|   ap_none  |                           l1track3D_iEtaReg_s                          |    pointer   |
+|l1track3D_helixRphi_first                                                        |  in |   32|   ap_none  |                        l1track3D_helixRphi_first                       |    pointer   |
+|l1track3D_helixRphi_second                                                       |  in |   32|   ap_none  |                       l1track3D_helixRphi_second                       |    pointer   |
+|l1track3D_stubs_size_s                                                           |  in |   32|   ap_none  |                         l1track3D_stubs_size_s                         |    pointer   |
+|l1track3D_stubs_data_settings_chosenRofPhi_s_address0                            | out |    4|  ap_memory |              l1track3D_stubs_data_settings_chosenRofPhi_s              |     array    |
+|l1track3D_stubs_data_settings_chosenRofPhi_s_ce0                                 | out |    1|  ap_memory |              l1track3D_stubs_data_settings_chosenRofPhi_s              |     array    |
+|l1track3D_stubs_data_settings_chosenRofPhi_s_q0                                  |  in |   32|  ap_memory |              l1track3D_stubs_data_settings_chosenRofPhi_s              |     array    |
+|l1track3D_stubs_data_settings_chosenRofPhi_s_address1                            | out |    4|  ap_memory |              l1track3D_stubs_data_settings_chosenRofPhi_s              |     array    |
+|l1track3D_stubs_data_settings_chosenRofPhi_s_ce1                                 | out |    1|  ap_memory |              l1track3D_stubs_data_settings_chosenRofPhi_s              |     array    |
+|l1track3D_stubs_data_settings_chosenRofPhi_s_q1                                  |  in |   32|  ap_memory |              l1track3D_stubs_data_settings_chosenRofPhi_s              |     array    |
+|l1track3D_stubs_data_settings_chosenRofZ_s_address0                              | out |    4|  ap_memory |               l1track3D_stubs_data_settings_chosenRofZ_s               |     array    |
+|l1track3D_stubs_data_settings_chosenRofZ_s_ce0                                   | out |    1|  ap_memory |               l1track3D_stubs_data_settings_chosenRofZ_s               |     array    |
+|l1track3D_stubs_data_settings_chosenRofZ_s_q0                                    |  in |   32|  ap_memory |               l1track3D_stubs_data_settings_chosenRofZ_s               |     array    |
+|l1track3D_stubs_data_settings_chosenRofZ_s_address1                              | out |    4|  ap_memory |               l1track3D_stubs_data_settings_chosenRofZ_s               |     array    |
+|l1track3D_stubs_data_settings_chosenRofZ_s_ce1                                   | out |    1|  ap_memory |               l1track3D_stubs_data_settings_chosenRofZ_s               |     array    |
+|l1track3D_stubs_data_settings_chosenRofZ_s_q1                                    |  in |   32|  ap_memory |               l1track3D_stubs_data_settings_chosenRofZ_s               |     array    |
+|l1track3D_stubs_data_settings_etaRegions_s_address0                              | out |    8|  ap_memory |               l1track3D_stubs_data_settings_etaRegions_s               |     array    |
+|l1track3D_stubs_data_settings_etaRegions_s_ce0                                   | out |    1|  ap_memory |               l1track3D_stubs_data_settings_etaRegions_s               |     array    |
+|l1track3D_stubs_data_settings_etaRegions_s_q0                                    |  in |   32|  ap_memory |               l1track3D_stubs_data_settings_etaRegions_s               |     array    |
+|l1track3D_stubs_data_settings_etaRegions_s_address1                              | out |    8|  ap_memory |               l1track3D_stubs_data_settings_etaRegions_s               |     array    |
+|l1track3D_stubs_data_settings_etaRegions_s_ce1                                   | out |    1|  ap_memory |               l1track3D_stubs_data_settings_etaRegions_s               |     array    |
+|l1track3D_stubs_data_settings_etaRegions_s_q1                                    |  in |   32|  ap_memory |               l1track3D_stubs_data_settings_etaRegions_s               |     array    |
+|l1track3D_stubs_data_settings_minNumMatchLayers_s_address0                       | out |    4|  ap_memory |            l1track3D_stubs_data_settings_minNumMatchLayers_s           |     array    |
+|l1track3D_stubs_data_settings_minNumMatchLayers_s_ce0                            | out |    1|  ap_memory |            l1track3D_stubs_data_settings_minNumMatchLayers_s           |     array    |
+|l1track3D_stubs_data_settings_minNumMatchLayers_s_q0                             |  in |   32|  ap_memory |            l1track3D_stubs_data_settings_minNumMatchLayers_s           |     array    |
+|l1track3D_stubs_data_settings_minNumMatchLayers_s_address1                       | out |    4|  ap_memory |            l1track3D_stubs_data_settings_minNumMatchLayers_s           |     array    |
+|l1track3D_stubs_data_settings_minNumMatchLayers_s_ce1                            | out |    1|  ap_memory |            l1track3D_stubs_data_settings_minNumMatchLayers_s           |     array    |
+|l1track3D_stubs_data_settings_minNumMatchLayers_s_q1                             |  in |   32|  ap_memory |            l1track3D_stubs_data_settings_minNumMatchLayers_s           |     array    |
+|l1track3D_stubs_data_settings_minPSLayers_s_address0                             | out |    4|  ap_memory |               l1track3D_stubs_data_settings_minPSLayers_s              |     array    |
+|l1track3D_stubs_data_settings_minPSLayers_s_ce0                                  | out |    1|  ap_memory |               l1track3D_stubs_data_settings_minPSLayers_s              |     array    |
+|l1track3D_stubs_data_settings_minPSLayers_s_q0                                   |  in |   32|  ap_memory |               l1track3D_stubs_data_settings_minPSLayers_s              |     array    |
+|l1track3D_stubs_data_settings_minPSLayers_s_address1                             | out |    4|  ap_memory |               l1track3D_stubs_data_settings_minPSLayers_s              |     array    |
+|l1track3D_stubs_data_settings_minPSLayers_s_ce1                                  | out |    1|  ap_memory |               l1track3D_stubs_data_settings_minPSLayers_s              |     array    |
+|l1track3D_stubs_data_settings_minPSLayers_s_q1                                   |  in |   32|  ap_memory |               l1track3D_stubs_data_settings_minPSLayers_s              |     array    |
+|l1track3D_stubs_data_r_s_address0                                                | out |    4|  ap_memory |                        l1track3D_stubs_data_r_s                        |     array    |
+|l1track3D_stubs_data_r_s_ce0                                                     | out |    1|  ap_memory |                        l1track3D_stubs_data_r_s                        |     array    |
+|l1track3D_stubs_data_r_s_q0                                                      |  in |   32|  ap_memory |                        l1track3D_stubs_data_r_s                        |     array    |
+|l1track3D_stubs_data_r_s_address1                                                | out |    4|  ap_memory |                        l1track3D_stubs_data_r_s                        |     array    |
+|l1track3D_stubs_data_r_s_ce1                                                     | out |    1|  ap_memory |                        l1track3D_stubs_data_r_s                        |     array    |
+|l1track3D_stubs_data_r_s_q1                                                      |  in |   32|  ap_memory |                        l1track3D_stubs_data_r_s                        |     array    |
+|l1track3D_stubs_data_phi_s_address0                                              | out |    4|  ap_memory |                       l1track3D_stubs_data_phi_s                       |     array    |
+|l1track3D_stubs_data_phi_s_ce0                                                   | out |    1|  ap_memory |                       l1track3D_stubs_data_phi_s                       |     array    |
+|l1track3D_stubs_data_phi_s_q0                                                    |  in |   32|  ap_memory |                       l1track3D_stubs_data_phi_s                       |     array    |
+|l1track3D_stubs_data_phi_s_address1                                              | out |    4|  ap_memory |                       l1track3D_stubs_data_phi_s                       |     array    |
+|l1track3D_stubs_data_phi_s_ce1                                                   | out |    1|  ap_memory |                       l1track3D_stubs_data_phi_s                       |     array    |
+|l1track3D_stubs_data_phi_s_q1                                                    |  in |   32|  ap_memory |                       l1track3D_stubs_data_phi_s                       |     array    |
+|l1track3D_stubs_data_z_s_address0                                                | out |    4|  ap_memory |                        l1track3D_stubs_data_z_s                        |     array    |
+|l1track3D_stubs_data_z_s_ce0                                                     | out |    1|  ap_memory |                        l1track3D_stubs_data_z_s                        |     array    |
+|l1track3D_stubs_data_z_s_q0                                                      |  in |   32|  ap_memory |                        l1track3D_stubs_data_z_s                        |     array    |
+|l1track3D_stubs_data_z_s_address1                                                | out |    4|  ap_memory |                        l1track3D_stubs_data_z_s                        |     array    |
+|l1track3D_stubs_data_z_s_ce1                                                     | out |    1|  ap_memory |                        l1track3D_stubs_data_z_s                        |     array    |
+|l1track3D_stubs_data_z_s_q1                                                      |  in |   32|  ap_memory |                        l1track3D_stubs_data_z_s                        |     array    |
+|l1track3D_stubs_data_layerId_s_address0                                          | out |    4|  ap_memory |                     l1track3D_stubs_data_layerId_s                     |     array    |
+|l1track3D_stubs_data_layerId_s_ce0                                               | out |    1|  ap_memory |                     l1track3D_stubs_data_layerId_s                     |     array    |
+|l1track3D_stubs_data_layerId_s_q0                                                |  in |   32|  ap_memory |                     l1track3D_stubs_data_layerId_s                     |     array    |
+|l1track3D_stubs_data_layerId_s_address1                                          | out |    4|  ap_memory |                     l1track3D_stubs_data_layerId_s                     |     array    |
+|l1track3D_stubs_data_layerId_s_ce1                                               | out |    1|  ap_memory |                     l1track3D_stubs_data_layerId_s                     |     array    |
+|l1track3D_stubs_data_layerId_s_q1                                                |  in |   32|  ap_memory |                     l1track3D_stubs_data_layerId_s                     |     array    |
+|l1track3D_stubs_data_psModule_s_address0                                         | out |    4|  ap_memory |                     l1track3D_stubs_data_psModule_s                    |     array    |
+|l1track3D_stubs_data_psModule_s_ce0                                              | out |    1|  ap_memory |                     l1track3D_stubs_data_psModule_s                    |     array    |
+|l1track3D_stubs_data_psModule_s_q0                                               |  in |    1|  ap_memory |                     l1track3D_stubs_data_psModule_s                    |     array    |
+|l1track3D_stubs_data_psModule_s_address1                                         | out |    4|  ap_memory |                     l1track3D_stubs_data_psModule_s                    |     array    |
+|l1track3D_stubs_data_psModule_s_ce1                                              | out |    1|  ap_memory |                     l1track3D_stubs_data_psModule_s                    |     array    |
+|l1track3D_stubs_data_psModule_s_q1                                               |  in |    1|  ap_memory |                     l1track3D_stubs_data_psModule_s                    |     array    |
+|l1track3D_stubs_data_barrel_s_address0                                           | out |    4|  ap_memory |                      l1track3D_stubs_data_barrel_s                     |     array    |
+|l1track3D_stubs_data_barrel_s_ce0                                                | out |    1|  ap_memory |                      l1track3D_stubs_data_barrel_s                     |     array    |
+|l1track3D_stubs_data_barrel_s_q0                                                 |  in |    1|  ap_memory |                      l1track3D_stubs_data_barrel_s                     |     array    |
+|l1track3D_stubs_data_barrel_s_address1                                           | out |    4|  ap_memory |                      l1track3D_stubs_data_barrel_s                     |     array    |
+|l1track3D_stubs_data_barrel_s_ce1                                                | out |    1|  ap_memory |                      l1track3D_stubs_data_barrel_s                     |     array    |
+|l1track3D_stubs_data_barrel_s_q1                                                 |  in |    1|  ap_memory |                      l1track3D_stubs_data_barrel_s                     |     array    |
+|linearRegression_settings_chosenRofPhi_s                                         |  in |   32|   ap_none  |                linearRegression_settings_chosenRofPhi_s                |    pointer   |
+|linearRegression_settings_chosenRofZ_s                                           |  in |   32|   ap_none  |                 linearRegression_settings_chosenRofZ_s                 |    pointer   |
+|linearRegression_settings_etaRegions_s_address0                                  | out |    5|  ap_memory |                 linearRegression_settings_etaRegions_s                 |     array    |
+|linearRegression_settings_etaRegions_s_ce0                                       | out |    1|  ap_memory |                 linearRegression_settings_etaRegions_s                 |     array    |
+|linearRegression_settings_etaRegions_s_q0                                        |  in |   32|  ap_memory |                 linearRegression_settings_etaRegions_s                 |     array    |
+|linearRegression_settings_minNumMatchLayers_s                                    |  in |   32|   ap_none  |              linearRegression_settings_minNumMatchLayers_s             |    pointer   |
+|linearRegression_settings_minPSLayers_s                                          |  in |   32|   ap_none  |                 linearRegression_settings_minPSLayers_s                |    pointer   |
+|linearRegression_iPhiSec_s                                                       | out |   32|   ap_vld   |                       linearRegression_iPhiSec_s                       |    pointer   |
+|linearRegression_iPhiSec_s_ap_vld                                                | out |    1|   ap_vld   |                       linearRegression_iPhiSec_s                       |    pointer   |
+|linearRegression_iEtaReg_s                                                       | out |   32|   ap_vld   |                       linearRegression_iEtaReg_s                       |    pointer   |
+|linearRegression_iEtaReg_s_ap_vld                                                | out |    1|   ap_vld   |                       linearRegression_iEtaReg_s                       |    pointer   |
+|linearRegression_nIterations_s                                                   | out |   32|   ap_vld   |                     linearRegression_nIterations_s                     |    pointer   |
+|linearRegression_nIterations_s_ap_vld                                            | out |    1|   ap_vld   |                     linearRegression_nIterations_s                     |    pointer   |
+|linearRegression_HTParameter_qOverPt                                             | out |   32|   ap_vld   |                  linearRegression_HTParameter_qOverPt                  |    pointer   |
+|linearRegression_HTParameter_qOverPt_ap_vld                                      | out |    1|   ap_vld   |                  linearRegression_HTParameter_qOverPt                  |    pointer   |
+|linearRegression_HTParameter_phiT                                                | out |   32|   ap_vld   |                    linearRegression_HTParameter_phiT                   |    pointer   |
+|linearRegression_HTParameter_phiT_ap_vld                                         | out |    1|   ap_vld   |                    linearRegression_HTParameter_phiT                   |    pointer   |
+|linearRegression_HTParameter_cotTheta                                            | out |   32|   ap_vld   |                  linearRegression_HTParameter_cotTheta                 |    pointer   |
+|linearRegression_HTParameter_cotTheta_ap_vld                                     | out |    1|   ap_vld   |                  linearRegression_HTParameter_cotTheta                 |    pointer   |
+|linearRegression_HTParameter_zT                                                  | out |   32|   ap_vld   |                     linearRegression_HTParameter_zT                    |    pointer   |
+|linearRegression_HTParameter_zT_ap_vld                                           | out |    1|   ap_vld   |                     linearRegression_HTParameter_zT                    |    pointer   |
+|linearRegression_LRParameter_qOverPt_i                                           |  in |   32|   ap_ovld  |                  linearRegression_LRParameter_qOverPt                  |    pointer   |
+|linearRegression_LRParameter_qOverPt_o                                           | out |   32|   ap_ovld  |                  linearRegression_LRParameter_qOverPt                  |    pointer   |
+|linearRegression_LRParameter_qOverPt_o_ap_vld                                    | out |    1|   ap_ovld  |                  linearRegression_LRParameter_qOverPt                  |    pointer   |
+|linearRegression_LRParameter_phiT_i                                              |  in |   32|   ap_ovld  |                    linearRegression_LRParameter_phiT                   |    pointer   |
+|linearRegression_LRParameter_phiT_o                                              | out |   32|   ap_ovld  |                    linearRegression_LRParameter_phiT                   |    pointer   |
+|linearRegression_LRParameter_phiT_o_ap_vld                                       | out |    1|   ap_ovld  |                    linearRegression_LRParameter_phiT                   |    pointer   |
+|linearRegression_LRParameter_cotTheta_i                                          |  in |   32|   ap_ovld  |                  linearRegression_LRParameter_cotTheta                 |    pointer   |
+|linearRegression_LRParameter_cotTheta_o                                          | out |   32|   ap_ovld  |                  linearRegression_LRParameter_cotTheta                 |    pointer   |
+|linearRegression_LRParameter_cotTheta_o_ap_vld                                   | out |    1|   ap_ovld  |                  linearRegression_LRParameter_cotTheta                 |    pointer   |
+|linearRegression_LRParameter_zT_i                                                |  in |   32|   ap_ovld  |                     linearRegression_LRParameter_zT                    |    pointer   |
+|linearRegression_LRParameter_zT_o                                                | out |   32|   ap_ovld  |                     linearRegression_LRParameter_zT                    |    pointer   |
+|linearRegression_LRParameter_zT_o_ap_vld                                         | out |    1|   ap_ovld  |                     linearRegression_LRParameter_zT                    |    pointer   |
+|linearRegression_stubs_size_s                                                    | out |   32|   ap_vld   |                      linearRegression_stubs_size_s                     |    pointer   |
+|linearRegression_stubs_size_s_ap_vld                                             | out |    1|   ap_vld   |                      linearRegression_stubs_size_s                     |    pointer   |
+|linearRegression_stubs_data_settings_chosenRofPhi_s_address0                     | out |    4|  ap_memory |           linearRegression_stubs_data_settings_chosenRofPhi_s          |     array    |
+|linearRegression_stubs_data_settings_chosenRofPhi_s_ce0                          | out |    1|  ap_memory |           linearRegression_stubs_data_settings_chosenRofPhi_s          |     array    |
+|linearRegression_stubs_data_settings_chosenRofPhi_s_we0                          | out |    1|  ap_memory |           linearRegression_stubs_data_settings_chosenRofPhi_s          |     array    |
+|linearRegression_stubs_data_settings_chosenRofPhi_s_d0                           | out |   32|  ap_memory |           linearRegression_stubs_data_settings_chosenRofPhi_s          |     array    |
+|linearRegression_stubs_data_settings_chosenRofPhi_s_q0                           |  in |   32|  ap_memory |           linearRegression_stubs_data_settings_chosenRofPhi_s          |     array    |
+|linearRegression_stubs_data_settings_chosenRofPhi_s_address1                     | out |    4|  ap_memory |           linearRegression_stubs_data_settings_chosenRofPhi_s          |     array    |
+|linearRegression_stubs_data_settings_chosenRofPhi_s_ce1                          | out |    1|  ap_memory |           linearRegression_stubs_data_settings_chosenRofPhi_s          |     array    |
+|linearRegression_stubs_data_settings_chosenRofPhi_s_we1                          | out |    1|  ap_memory |           linearRegression_stubs_data_settings_chosenRofPhi_s          |     array    |
+|linearRegression_stubs_data_settings_chosenRofPhi_s_d1                           | out |   32|  ap_memory |           linearRegression_stubs_data_settings_chosenRofPhi_s          |     array    |
+|linearRegression_stubs_data_settings_chosenRofZ_s_address0                       | out |    4|  ap_memory |            linearRegression_stubs_data_settings_chosenRofZ_s           |     array    |
+|linearRegression_stubs_data_settings_chosenRofZ_s_ce0                            | out |    1|  ap_memory |            linearRegression_stubs_data_settings_chosenRofZ_s           |     array    |
+|linearRegression_stubs_data_settings_chosenRofZ_s_we0                            | out |    1|  ap_memory |            linearRegression_stubs_data_settings_chosenRofZ_s           |     array    |
+|linearRegression_stubs_data_settings_chosenRofZ_s_d0                             | out |   32|  ap_memory |            linearRegression_stubs_data_settings_chosenRofZ_s           |     array    |
+|linearRegression_stubs_data_settings_chosenRofZ_s_q0                             |  in |   32|  ap_memory |            linearRegression_stubs_data_settings_chosenRofZ_s           |     array    |
+|linearRegression_stubs_data_settings_chosenRofZ_s_address1                       | out |    4|  ap_memory |            linearRegression_stubs_data_settings_chosenRofZ_s           |     array    |
+|linearRegression_stubs_data_settings_chosenRofZ_s_ce1                            | out |    1|  ap_memory |            linearRegression_stubs_data_settings_chosenRofZ_s           |     array    |
+|linearRegression_stubs_data_settings_chosenRofZ_s_we1                            | out |    1|  ap_memory |            linearRegression_stubs_data_settings_chosenRofZ_s           |     array    |
+|linearRegression_stubs_data_settings_chosenRofZ_s_d1                             | out |   32|  ap_memory |            linearRegression_stubs_data_settings_chosenRofZ_s           |     array    |
+|linearRegression_stubs_data_settings_etaRegions_s_address0                       | out |    8|  ap_memory |            linearRegression_stubs_data_settings_etaRegions_s           |     array    |
+|linearRegression_stubs_data_settings_etaRegions_s_ce0                            | out |    1|  ap_memory |            linearRegression_stubs_data_settings_etaRegions_s           |     array    |
+|linearRegression_stubs_data_settings_etaRegions_s_we0                            | out |    1|  ap_memory |            linearRegression_stubs_data_settings_etaRegions_s           |     array    |
+|linearRegression_stubs_data_settings_etaRegions_s_d0                             | out |   32|  ap_memory |            linearRegression_stubs_data_settings_etaRegions_s           |     array    |
+|linearRegression_stubs_data_settings_etaRegions_s_q0                             |  in |   32|  ap_memory |            linearRegression_stubs_data_settings_etaRegions_s           |     array    |
+|linearRegression_stubs_data_settings_etaRegions_s_address1                       | out |    8|  ap_memory |            linearRegression_stubs_data_settings_etaRegions_s           |     array    |
+|linearRegression_stubs_data_settings_etaRegions_s_ce1                            | out |    1|  ap_memory |            linearRegression_stubs_data_settings_etaRegions_s           |     array    |
+|linearRegression_stubs_data_settings_etaRegions_s_we1                            | out |    1|  ap_memory |            linearRegression_stubs_data_settings_etaRegions_s           |     array    |
+|linearRegression_stubs_data_settings_etaRegions_s_d1                             | out |   32|  ap_memory |            linearRegression_stubs_data_settings_etaRegions_s           |     array    |
+|linearRegression_stubs_data_settings_etaRegions_s_q1                             |  in |   32|  ap_memory |            linearRegression_stubs_data_settings_etaRegions_s           |     array    |
+|linearRegression_stubs_data_settings_minNumMatchLayers_s_address0                | out |    4|  ap_memory |        linearRegression_stubs_data_settings_minNumMatchLayers_s        |     array    |
+|linearRegression_stubs_data_settings_minNumMatchLayers_s_ce0                     | out |    1|  ap_memory |        linearRegression_stubs_data_settings_minNumMatchLayers_s        |     array    |
+|linearRegression_stubs_data_settings_minNumMatchLayers_s_we0                     | out |    1|  ap_memory |        linearRegression_stubs_data_settings_minNumMatchLayers_s        |     array    |
+|linearRegression_stubs_data_settings_minNumMatchLayers_s_d0                      | out |   32|  ap_memory |        linearRegression_stubs_data_settings_minNumMatchLayers_s        |     array    |
+|linearRegression_stubs_data_settings_minNumMatchLayers_s_q0                      |  in |   32|  ap_memory |        linearRegression_stubs_data_settings_minNumMatchLayers_s        |     array    |
+|linearRegression_stubs_data_settings_minNumMatchLayers_s_address1                | out |    4|  ap_memory |        linearRegression_stubs_data_settings_minNumMatchLayers_s        |     array    |
+|linearRegression_stubs_data_settings_minNumMatchLayers_s_ce1                     | out |    1|  ap_memory |        linearRegression_stubs_data_settings_minNumMatchLayers_s        |     array    |
+|linearRegression_stubs_data_settings_minNumMatchLayers_s_we1                     | out |    1|  ap_memory |        linearRegression_stubs_data_settings_minNumMatchLayers_s        |     array    |
+|linearRegression_stubs_data_settings_minNumMatchLayers_s_d1                      | out |   32|  ap_memory |        linearRegression_stubs_data_settings_minNumMatchLayers_s        |     array    |
+|linearRegression_stubs_data_settings_minPSLayers_s_address0                      | out |    4|  ap_memory |           linearRegression_stubs_data_settings_minPSLayers_s           |     array    |
+|linearRegression_stubs_data_settings_minPSLayers_s_ce0                           | out |    1|  ap_memory |           linearRegression_stubs_data_settings_minPSLayers_s           |     array    |
+|linearRegression_stubs_data_settings_minPSLayers_s_we0                           | out |    1|  ap_memory |           linearRegression_stubs_data_settings_minPSLayers_s           |     array    |
+|linearRegression_stubs_data_settings_minPSLayers_s_d0                            | out |   32|  ap_memory |           linearRegression_stubs_data_settings_minPSLayers_s           |     array    |
+|linearRegression_stubs_data_settings_minPSLayers_s_q0                            |  in |   32|  ap_memory |           linearRegression_stubs_data_settings_minPSLayers_s           |     array    |
+|linearRegression_stubs_data_settings_minPSLayers_s_address1                      | out |    4|  ap_memory |           linearRegression_stubs_data_settings_minPSLayers_s           |     array    |
+|linearRegression_stubs_data_settings_minPSLayers_s_ce1                           | out |    1|  ap_memory |           linearRegression_stubs_data_settings_minPSLayers_s           |     array    |
+|linearRegression_stubs_data_settings_minPSLayers_s_we1                           | out |    1|  ap_memory |           linearRegression_stubs_data_settings_minPSLayers_s           |     array    |
+|linearRegression_stubs_data_settings_minPSLayers_s_d1                            | out |   32|  ap_memory |           linearRegression_stubs_data_settings_minPSLayers_s           |     array    |
+|linearRegression_stubs_data_r_s_address0                                         | out |    4|  ap_memory |                     linearRegression_stubs_data_r_s                    |     array    |
+|linearRegression_stubs_data_r_s_ce0                                              | out |    1|  ap_memory |                     linearRegression_stubs_data_r_s                    |     array    |
+|linearRegression_stubs_data_r_s_we0                                              | out |    1|  ap_memory |                     linearRegression_stubs_data_r_s                    |     array    |
+|linearRegression_stubs_data_r_s_d0                                               | out |   32|  ap_memory |                     linearRegression_stubs_data_r_s                    |     array    |
+|linearRegression_stubs_data_r_s_q0                                               |  in |   32|  ap_memory |                     linearRegression_stubs_data_r_s                    |     array    |
+|linearRegression_stubs_data_r_s_address1                                         | out |    4|  ap_memory |                     linearRegression_stubs_data_r_s                    |     array    |
+|linearRegression_stubs_data_r_s_ce1                                              | out |    1|  ap_memory |                     linearRegression_stubs_data_r_s                    |     array    |
+|linearRegression_stubs_data_r_s_we1                                              | out |    1|  ap_memory |                     linearRegression_stubs_data_r_s                    |     array    |
+|linearRegression_stubs_data_r_s_d1                                               | out |   32|  ap_memory |                     linearRegression_stubs_data_r_s                    |     array    |
+|linearRegression_stubs_data_phi_s_address0                                       | out |    4|  ap_memory |                    linearRegression_stubs_data_phi_s                   |     array    |
+|linearRegression_stubs_data_phi_s_ce0                                            | out |    1|  ap_memory |                    linearRegression_stubs_data_phi_s                   |     array    |
+|linearRegression_stubs_data_phi_s_we0                                            | out |    1|  ap_memory |                    linearRegression_stubs_data_phi_s                   |     array    |
+|linearRegression_stubs_data_phi_s_d0                                             | out |   32|  ap_memory |                    linearRegression_stubs_data_phi_s                   |     array    |
+|linearRegression_stubs_data_phi_s_q0                                             |  in |   32|  ap_memory |                    linearRegression_stubs_data_phi_s                   |     array    |
+|linearRegression_stubs_data_phi_s_address1                                       | out |    4|  ap_memory |                    linearRegression_stubs_data_phi_s                   |     array    |
+|linearRegression_stubs_data_phi_s_ce1                                            | out |    1|  ap_memory |                    linearRegression_stubs_data_phi_s                   |     array    |
+|linearRegression_stubs_data_phi_s_we1                                            | out |    1|  ap_memory |                    linearRegression_stubs_data_phi_s                   |     array    |
+|linearRegression_stubs_data_phi_s_d1                                             | out |   32|  ap_memory |                    linearRegression_stubs_data_phi_s                   |     array    |
+|linearRegression_stubs_data_z_s_address0                                         | out |    4|  ap_memory |                     linearRegression_stubs_data_z_s                    |     array    |
+|linearRegression_stubs_data_z_s_ce0                                              | out |    1|  ap_memory |                     linearRegression_stubs_data_z_s                    |     array    |
+|linearRegression_stubs_data_z_s_we0                                              | out |    1|  ap_memory |                     linearRegression_stubs_data_z_s                    |     array    |
+|linearRegression_stubs_data_z_s_d0                                               | out |   32|  ap_memory |                     linearRegression_stubs_data_z_s                    |     array    |
+|linearRegression_stubs_data_z_s_q0                                               |  in |   32|  ap_memory |                     linearRegression_stubs_data_z_s                    |     array    |
+|linearRegression_stubs_data_z_s_address1                                         | out |    4|  ap_memory |                     linearRegression_stubs_data_z_s                    |     array    |
+|linearRegression_stubs_data_z_s_ce1                                              | out |    1|  ap_memory |                     linearRegression_stubs_data_z_s                    |     array    |
+|linearRegression_stubs_data_z_s_we1                                              | out |    1|  ap_memory |                     linearRegression_stubs_data_z_s                    |     array    |
+|linearRegression_stubs_data_z_s_d1                                               | out |   32|  ap_memory |                     linearRegression_stubs_data_z_s                    |     array    |
+|linearRegression_stubs_data_layerId_s_address0                                   | out |    4|  ap_memory |                  linearRegression_stubs_data_layerId_s                 |     array    |
+|linearRegression_stubs_data_layerId_s_ce0                                        | out |    1|  ap_memory |                  linearRegression_stubs_data_layerId_s                 |     array    |
+|linearRegression_stubs_data_layerId_s_we0                                        | out |    1|  ap_memory |                  linearRegression_stubs_data_layerId_s                 |     array    |
+|linearRegression_stubs_data_layerId_s_d0                                         | out |   32|  ap_memory |                  linearRegression_stubs_data_layerId_s                 |     array    |
+|linearRegression_stubs_data_layerId_s_q0                                         |  in |   32|  ap_memory |                  linearRegression_stubs_data_layerId_s                 |     array    |
+|linearRegression_stubs_data_layerId_s_address1                                   | out |    4|  ap_memory |                  linearRegression_stubs_data_layerId_s                 |     array    |
+|linearRegression_stubs_data_layerId_s_ce1                                        | out |    1|  ap_memory |                  linearRegression_stubs_data_layerId_s                 |     array    |
+|linearRegression_stubs_data_layerId_s_we1                                        | out |    1|  ap_memory |                  linearRegression_stubs_data_layerId_s                 |     array    |
+|linearRegression_stubs_data_layerId_s_d1                                         | out |   32|  ap_memory |                  linearRegression_stubs_data_layerId_s                 |     array    |
+|linearRegression_stubs_data_layerId_s_q1                                         |  in |   32|  ap_memory |                  linearRegression_stubs_data_layerId_s                 |     array    |
+|linearRegression_stubs_data_psModule_s_address0                                  | out |    4|  ap_memory |                 linearRegression_stubs_data_psModule_s                 |     array    |
+|linearRegression_stubs_data_psModule_s_ce0                                       | out |    1|  ap_memory |                 linearRegression_stubs_data_psModule_s                 |     array    |
+|linearRegression_stubs_data_psModule_s_we0                                       | out |    1|  ap_memory |                 linearRegression_stubs_data_psModule_s                 |     array    |
+|linearRegression_stubs_data_psModule_s_d0                                        | out |    1|  ap_memory |                 linearRegression_stubs_data_psModule_s                 |     array    |
+|linearRegression_stubs_data_psModule_s_q0                                        |  in |    1|  ap_memory |                 linearRegression_stubs_data_psModule_s                 |     array    |
+|linearRegression_stubs_data_psModule_s_address1                                  | out |    4|  ap_memory |                 linearRegression_stubs_data_psModule_s                 |     array    |
+|linearRegression_stubs_data_psModule_s_ce1                                       | out |    1|  ap_memory |                 linearRegression_stubs_data_psModule_s                 |     array    |
+|linearRegression_stubs_data_psModule_s_we1                                       | out |    1|  ap_memory |                 linearRegression_stubs_data_psModule_s                 |     array    |
+|linearRegression_stubs_data_psModule_s_d1                                        | out |    1|  ap_memory |                 linearRegression_stubs_data_psModule_s                 |     array    |
+|linearRegression_stubs_data_psModule_s_q1                                        |  in |    1|  ap_memory |                 linearRegression_stubs_data_psModule_s                 |     array    |
+|linearRegression_stubs_data_barrel_s_address0                                    | out |    4|  ap_memory |                  linearRegression_stubs_data_barrel_s                  |     array    |
+|linearRegression_stubs_data_barrel_s_ce0                                         | out |    1|  ap_memory |                  linearRegression_stubs_data_barrel_s                  |     array    |
+|linearRegression_stubs_data_barrel_s_we0                                         | out |    1|  ap_memory |                  linearRegression_stubs_data_barrel_s                  |     array    |
+|linearRegression_stubs_data_barrel_s_d0                                          | out |    1|  ap_memory |                  linearRegression_stubs_data_barrel_s                  |     array    |
+|linearRegression_stubs_data_barrel_s_q0                                          |  in |    1|  ap_memory |                  linearRegression_stubs_data_barrel_s                  |     array    |
+|linearRegression_stubs_data_barrel_s_address1                                    | out |    4|  ap_memory |                  linearRegression_stubs_data_barrel_s                  |     array    |
+|linearRegression_stubs_data_barrel_s_ce1                                         | out |    1|  ap_memory |                  linearRegression_stubs_data_barrel_s                  |     array    |
+|linearRegression_stubs_data_barrel_s_we1                                         | out |    1|  ap_memory |                  linearRegression_stubs_data_barrel_s                  |     array    |
+|linearRegression_stubs_data_barrel_s_d1                                          | out |    1|  ap_memory |                  linearRegression_stubs_data_barrel_s                  |     array    |
+|linearRegression_stubs_data_barrel_s_q1                                          |  in |    1|  ap_memory |                  linearRegression_stubs_data_barrel_s                  |     array    |
+|linearRegression_valid_s                                                         | out |    1|   ap_vld   |                        linearRegression_valid_s                        |    pointer   |
+|linearRegression_valid_s_ap_vld                                                  | out |    1|   ap_vld   |                        linearRegression_valid_s                        |    pointer   |
+|linearRegression_stubMap_size_s_i                                                |  in |   32|   ap_ovld  |                     linearRegression_stubMap_size_s                    |    pointer   |
+|linearRegression_stubMap_size_s_o                                                | out |   32|   ap_ovld  |                     linearRegression_stubMap_size_s                    |    pointer   |
+|linearRegression_stubMap_size_s_o_ap_vld                                         | out |    1|   ap_ovld  |                     linearRegression_stubMap_size_s                    |    pointer   |
+|linearRegression_stubMap_data_first_address0                                     | out |    5|  ap_memory |                   linearRegression_stubMap_data_first                  |     array    |
+|linearRegression_stubMap_data_first_ce0                                          | out |    1|  ap_memory |                   linearRegression_stubMap_data_first                  |     array    |
+|linearRegression_stubMap_data_first_we0                                          | out |    1|  ap_memory |                   linearRegression_stubMap_data_first                  |     array    |
+|linearRegression_stubMap_data_first_d0                                           | out |   32|  ap_memory |                   linearRegression_stubMap_data_first                  |     array    |
+|linearRegression_stubMap_data_first_q0                                           |  in |   32|  ap_memory |                   linearRegression_stubMap_data_first                  |     array    |
+|linearRegression_stubMap_data_second_size_s_address0                             | out |    5|  ap_memory |               linearRegression_stubMap_data_second_size_s              |     array    |
+|linearRegression_stubMap_data_second_size_s_ce0                                  | out |    1|  ap_memory |               linearRegression_stubMap_data_second_size_s              |     array    |
+|linearRegression_stubMap_data_second_size_s_we0                                  | out |    1|  ap_memory |               linearRegression_stubMap_data_second_size_s              |     array    |
+|linearRegression_stubMap_data_second_size_s_d0                                   | out |   32|  ap_memory |               linearRegression_stubMap_data_second_size_s              |     array    |
+|linearRegression_stubMap_data_second_size_s_q0                                   |  in |   32|  ap_memory |               linearRegression_stubMap_data_second_size_s              |     array    |
+|linearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_address0       | out |    9|  ap_memory |    linearRegression_stubMap_data_second_data_settings_chosenRofPhi_s   |     array    |
+|linearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_ce0            | out |    1|  ap_memory |    linearRegression_stubMap_data_second_data_settings_chosenRofPhi_s   |     array    |
+|linearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_we0            | out |    1|  ap_memory |    linearRegression_stubMap_data_second_data_settings_chosenRofPhi_s   |     array    |
+|linearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_d0             | out |   32|  ap_memory |    linearRegression_stubMap_data_second_data_settings_chosenRofPhi_s   |     array    |
+|linearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_q0             |  in |   32|  ap_memory |    linearRegression_stubMap_data_second_data_settings_chosenRofPhi_s   |     array    |
+|linearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_address1       | out |    9|  ap_memory |    linearRegression_stubMap_data_second_data_settings_chosenRofPhi_s   |     array    |
+|linearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_ce1            | out |    1|  ap_memory |    linearRegression_stubMap_data_second_data_settings_chosenRofPhi_s   |     array    |
+|linearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_we1            | out |    1|  ap_memory |    linearRegression_stubMap_data_second_data_settings_chosenRofPhi_s   |     array    |
+|linearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_d1             | out |   32|  ap_memory |    linearRegression_stubMap_data_second_data_settings_chosenRofPhi_s   |     array    |
+|linearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_q1             |  in |   32|  ap_memory |    linearRegression_stubMap_data_second_data_settings_chosenRofPhi_s   |     array    |
+|linearRegression_stubMap_data_second_data_settings_chosenRofZ_s_address0         | out |    9|  ap_memory |     linearRegression_stubMap_data_second_data_settings_chosenRofZ_s    |     array    |
+|linearRegression_stubMap_data_second_data_settings_chosenRofZ_s_ce0              | out |    1|  ap_memory |     linearRegression_stubMap_data_second_data_settings_chosenRofZ_s    |     array    |
+|linearRegression_stubMap_data_second_data_settings_chosenRofZ_s_we0              | out |    1|  ap_memory |     linearRegression_stubMap_data_second_data_settings_chosenRofZ_s    |     array    |
+|linearRegression_stubMap_data_second_data_settings_chosenRofZ_s_d0               | out |   32|  ap_memory |     linearRegression_stubMap_data_second_data_settings_chosenRofZ_s    |     array    |
+|linearRegression_stubMap_data_second_data_settings_chosenRofZ_s_q0               |  in |   32|  ap_memory |     linearRegression_stubMap_data_second_data_settings_chosenRofZ_s    |     array    |
+|linearRegression_stubMap_data_second_data_settings_chosenRofZ_s_address1         | out |    9|  ap_memory |     linearRegression_stubMap_data_second_data_settings_chosenRofZ_s    |     array    |
+|linearRegression_stubMap_data_second_data_settings_chosenRofZ_s_ce1              | out |    1|  ap_memory |     linearRegression_stubMap_data_second_data_settings_chosenRofZ_s    |     array    |
+|linearRegression_stubMap_data_second_data_settings_chosenRofZ_s_we1              | out |    1|  ap_memory |     linearRegression_stubMap_data_second_data_settings_chosenRofZ_s    |     array    |
+|linearRegression_stubMap_data_second_data_settings_chosenRofZ_s_d1               | out |   32|  ap_memory |     linearRegression_stubMap_data_second_data_settings_chosenRofZ_s    |     array    |
+|linearRegression_stubMap_data_second_data_settings_chosenRofZ_s_q1               |  in |   32|  ap_memory |     linearRegression_stubMap_data_second_data_settings_chosenRofZ_s    |     array    |
+|linearRegression_stubMap_data_second_data_settings_etaRegions_s_address0         | out |   13|  ap_memory |     linearRegression_stubMap_data_second_data_settings_etaRegions_s    |     array    |
+|linearRegression_stubMap_data_second_data_settings_etaRegions_s_ce0              | out |    1|  ap_memory |     linearRegression_stubMap_data_second_data_settings_etaRegions_s    |     array    |
+|linearRegression_stubMap_data_second_data_settings_etaRegions_s_we0              | out |    1|  ap_memory |     linearRegression_stubMap_data_second_data_settings_etaRegions_s    |     array    |
+|linearRegression_stubMap_data_second_data_settings_etaRegions_s_d0               | out |   32|  ap_memory |     linearRegression_stubMap_data_second_data_settings_etaRegions_s    |     array    |
+|linearRegression_stubMap_data_second_data_settings_etaRegions_s_q0               |  in |   32|  ap_memory |     linearRegression_stubMap_data_second_data_settings_etaRegions_s    |     array    |
+|linearRegression_stubMap_data_second_data_settings_etaRegions_s_address1         | out |   13|  ap_memory |     linearRegression_stubMap_data_second_data_settings_etaRegions_s    |     array    |
+|linearRegression_stubMap_data_second_data_settings_etaRegions_s_ce1              | out |    1|  ap_memory |     linearRegression_stubMap_data_second_data_settings_etaRegions_s    |     array    |
+|linearRegression_stubMap_data_second_data_settings_etaRegions_s_we1              | out |    1|  ap_memory |     linearRegression_stubMap_data_second_data_settings_etaRegions_s    |     array    |
+|linearRegression_stubMap_data_second_data_settings_etaRegions_s_d1               | out |   32|  ap_memory |     linearRegression_stubMap_data_second_data_settings_etaRegions_s    |     array    |
+|linearRegression_stubMap_data_second_data_settings_etaRegions_s_q1               |  in |   32|  ap_memory |     linearRegression_stubMap_data_second_data_settings_etaRegions_s    |     array    |
+|linearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_address0  | out |    9|  ap_memory | linearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s |     array    |
+|linearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_ce0       | out |    1|  ap_memory | linearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s |     array    |
+|linearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_we0       | out |    1|  ap_memory | linearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s |     array    |
+|linearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_d0        | out |   32|  ap_memory | linearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s |     array    |
+|linearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_q0        |  in |   32|  ap_memory | linearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s |     array    |
+|linearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_address1  | out |    9|  ap_memory | linearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s |     array    |
+|linearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_ce1       | out |    1|  ap_memory | linearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s |     array    |
+|linearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_we1       | out |    1|  ap_memory | linearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s |     array    |
+|linearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_d1        | out |   32|  ap_memory | linearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s |     array    |
+|linearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_q1        |  in |   32|  ap_memory | linearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s |     array    |
+|linearRegression_stubMap_data_second_data_settings_minPSLayers_s_address0        | out |    9|  ap_memory |    linearRegression_stubMap_data_second_data_settings_minPSLayers_s    |     array    |
+|linearRegression_stubMap_data_second_data_settings_minPSLayers_s_ce0             | out |    1|  ap_memory |    linearRegression_stubMap_data_second_data_settings_minPSLayers_s    |     array    |
+|linearRegression_stubMap_data_second_data_settings_minPSLayers_s_we0             | out |    1|  ap_memory |    linearRegression_stubMap_data_second_data_settings_minPSLayers_s    |     array    |
+|linearRegression_stubMap_data_second_data_settings_minPSLayers_s_d0              | out |   32|  ap_memory |    linearRegression_stubMap_data_second_data_settings_minPSLayers_s    |     array    |
+|linearRegression_stubMap_data_second_data_settings_minPSLayers_s_q0              |  in |   32|  ap_memory |    linearRegression_stubMap_data_second_data_settings_minPSLayers_s    |     array    |
+|linearRegression_stubMap_data_second_data_settings_minPSLayers_s_address1        | out |    9|  ap_memory |    linearRegression_stubMap_data_second_data_settings_minPSLayers_s    |     array    |
+|linearRegression_stubMap_data_second_data_settings_minPSLayers_s_ce1             | out |    1|  ap_memory |    linearRegression_stubMap_data_second_data_settings_minPSLayers_s    |     array    |
+|linearRegression_stubMap_data_second_data_settings_minPSLayers_s_we1             | out |    1|  ap_memory |    linearRegression_stubMap_data_second_data_settings_minPSLayers_s    |     array    |
+|linearRegression_stubMap_data_second_data_settings_minPSLayers_s_d1              | out |   32|  ap_memory |    linearRegression_stubMap_data_second_data_settings_minPSLayers_s    |     array    |
+|linearRegression_stubMap_data_second_data_settings_minPSLayers_s_q1              |  in |   32|  ap_memory |    linearRegression_stubMap_data_second_data_settings_minPSLayers_s    |     array    |
+|linearRegression_stubMap_data_second_data_r_s_address0                           | out |    9|  ap_memory |              linearRegression_stubMap_data_second_data_r_s             |     array    |
+|linearRegression_stubMap_data_second_data_r_s_ce0                                | out |    1|  ap_memory |              linearRegression_stubMap_data_second_data_r_s             |     array    |
+|linearRegression_stubMap_data_second_data_r_s_we0                                | out |    1|  ap_memory |              linearRegression_stubMap_data_second_data_r_s             |     array    |
+|linearRegression_stubMap_data_second_data_r_s_d0                                 | out |   32|  ap_memory |              linearRegression_stubMap_data_second_data_r_s             |     array    |
+|linearRegression_stubMap_data_second_data_r_s_q0                                 |  in |   32|  ap_memory |              linearRegression_stubMap_data_second_data_r_s             |     array    |
+|linearRegression_stubMap_data_second_data_r_s_address1                           | out |    9|  ap_memory |              linearRegression_stubMap_data_second_data_r_s             |     array    |
+|linearRegression_stubMap_data_second_data_r_s_ce1                                | out |    1|  ap_memory |              linearRegression_stubMap_data_second_data_r_s             |     array    |
+|linearRegression_stubMap_data_second_data_r_s_we1                                | out |    1|  ap_memory |              linearRegression_stubMap_data_second_data_r_s             |     array    |
+|linearRegression_stubMap_data_second_data_r_s_d1                                 | out |   32|  ap_memory |              linearRegression_stubMap_data_second_data_r_s             |     array    |
+|linearRegression_stubMap_data_second_data_r_s_q1                                 |  in |   32|  ap_memory |              linearRegression_stubMap_data_second_data_r_s             |     array    |
+|linearRegression_stubMap_data_second_data_phi_s_address0                         | out |    9|  ap_memory |             linearRegression_stubMap_data_second_data_phi_s            |     array    |
+|linearRegression_stubMap_data_second_data_phi_s_ce0                              | out |    1|  ap_memory |             linearRegression_stubMap_data_second_data_phi_s            |     array    |
+|linearRegression_stubMap_data_second_data_phi_s_we0                              | out |    1|  ap_memory |             linearRegression_stubMap_data_second_data_phi_s            |     array    |
+|linearRegression_stubMap_data_second_data_phi_s_d0                               | out |   32|  ap_memory |             linearRegression_stubMap_data_second_data_phi_s            |     array    |
+|linearRegression_stubMap_data_second_data_phi_s_q0                               |  in |   32|  ap_memory |             linearRegression_stubMap_data_second_data_phi_s            |     array    |
+|linearRegression_stubMap_data_second_data_phi_s_address1                         | out |    9|  ap_memory |             linearRegression_stubMap_data_second_data_phi_s            |     array    |
+|linearRegression_stubMap_data_second_data_phi_s_ce1                              | out |    1|  ap_memory |             linearRegression_stubMap_data_second_data_phi_s            |     array    |
+|linearRegression_stubMap_data_second_data_phi_s_we1                              | out |    1|  ap_memory |             linearRegression_stubMap_data_second_data_phi_s            |     array    |
+|linearRegression_stubMap_data_second_data_phi_s_d1                               | out |   32|  ap_memory |             linearRegression_stubMap_data_second_data_phi_s            |     array    |
+|linearRegression_stubMap_data_second_data_phi_s_q1                               |  in |   32|  ap_memory |             linearRegression_stubMap_data_second_data_phi_s            |     array    |
+|linearRegression_stubMap_data_second_data_z_s_address0                           | out |    9|  ap_memory |              linearRegression_stubMap_data_second_data_z_s             |     array    |
+|linearRegression_stubMap_data_second_data_z_s_ce0                                | out |    1|  ap_memory |              linearRegression_stubMap_data_second_data_z_s             |     array    |
+|linearRegression_stubMap_data_second_data_z_s_we0                                | out |    1|  ap_memory |              linearRegression_stubMap_data_second_data_z_s             |     array    |
+|linearRegression_stubMap_data_second_data_z_s_d0                                 | out |   32|  ap_memory |              linearRegression_stubMap_data_second_data_z_s             |     array    |
+|linearRegression_stubMap_data_second_data_z_s_q0                                 |  in |   32|  ap_memory |              linearRegression_stubMap_data_second_data_z_s             |     array    |
+|linearRegression_stubMap_data_second_data_z_s_address1                           | out |    9|  ap_memory |              linearRegression_stubMap_data_second_data_z_s             |     array    |
+|linearRegression_stubMap_data_second_data_z_s_ce1                                | out |    1|  ap_memory |              linearRegression_stubMap_data_second_data_z_s             |     array    |
+|linearRegression_stubMap_data_second_data_z_s_we1                                | out |    1|  ap_memory |              linearRegression_stubMap_data_second_data_z_s             |     array    |
+|linearRegression_stubMap_data_second_data_z_s_d1                                 | out |   32|  ap_memory |              linearRegression_stubMap_data_second_data_z_s             |     array    |
+|linearRegression_stubMap_data_second_data_z_s_q1                                 |  in |   32|  ap_memory |              linearRegression_stubMap_data_second_data_z_s             |     array    |
+|linearRegression_stubMap_data_second_data_layerId_s_address0                     | out |    9|  ap_memory |           linearRegression_stubMap_data_second_data_layerId_s          |     array    |
+|linearRegression_stubMap_data_second_data_layerId_s_ce0                          | out |    1|  ap_memory |           linearRegression_stubMap_data_second_data_layerId_s          |     array    |
+|linearRegression_stubMap_data_second_data_layerId_s_we0                          | out |    1|  ap_memory |           linearRegression_stubMap_data_second_data_layerId_s          |     array    |
+|linearRegression_stubMap_data_second_data_layerId_s_d0                           | out |   32|  ap_memory |           linearRegression_stubMap_data_second_data_layerId_s          |     array    |
+|linearRegression_stubMap_data_second_data_layerId_s_q0                           |  in |   32|  ap_memory |           linearRegression_stubMap_data_second_data_layerId_s          |     array    |
+|linearRegression_stubMap_data_second_data_layerId_s_address1                     | out |    9|  ap_memory |           linearRegression_stubMap_data_second_data_layerId_s          |     array    |
+|linearRegression_stubMap_data_second_data_layerId_s_ce1                          | out |    1|  ap_memory |           linearRegression_stubMap_data_second_data_layerId_s          |     array    |
+|linearRegression_stubMap_data_second_data_layerId_s_we1                          | out |    1|  ap_memory |           linearRegression_stubMap_data_second_data_layerId_s          |     array    |
+|linearRegression_stubMap_data_second_data_layerId_s_d1                           | out |   32|  ap_memory |           linearRegression_stubMap_data_second_data_layerId_s          |     array    |
+|linearRegression_stubMap_data_second_data_layerId_s_q1                           |  in |   32|  ap_memory |           linearRegression_stubMap_data_second_data_layerId_s          |     array    |
+|linearRegression_stubMap_data_second_data_psModule_s_address0                    | out |    9|  ap_memory |          linearRegression_stubMap_data_second_data_psModule_s          |     array    |
+|linearRegression_stubMap_data_second_data_psModule_s_ce0                         | out |    1|  ap_memory |          linearRegression_stubMap_data_second_data_psModule_s          |     array    |
+|linearRegression_stubMap_data_second_data_psModule_s_we0                         | out |    1|  ap_memory |          linearRegression_stubMap_data_second_data_psModule_s          |     array    |
+|linearRegression_stubMap_data_second_data_psModule_s_d0                          | out |    1|  ap_memory |          linearRegression_stubMap_data_second_data_psModule_s          |     array    |
+|linearRegression_stubMap_data_second_data_psModule_s_q0                          |  in |    1|  ap_memory |          linearRegression_stubMap_data_second_data_psModule_s          |     array    |
+|linearRegression_stubMap_data_second_data_psModule_s_address1                    | out |    9|  ap_memory |          linearRegression_stubMap_data_second_data_psModule_s          |     array    |
+|linearRegression_stubMap_data_second_data_psModule_s_ce1                         | out |    1|  ap_memory |          linearRegression_stubMap_data_second_data_psModule_s          |     array    |
+|linearRegression_stubMap_data_second_data_psModule_s_we1                         | out |    1|  ap_memory |          linearRegression_stubMap_data_second_data_psModule_s          |     array    |
+|linearRegression_stubMap_data_second_data_psModule_s_d1                          | out |    1|  ap_memory |          linearRegression_stubMap_data_second_data_psModule_s          |     array    |
+|linearRegression_stubMap_data_second_data_psModule_s_q1                          |  in |    1|  ap_memory |          linearRegression_stubMap_data_second_data_psModule_s          |     array    |
+|linearRegression_stubMap_data_second_data_barrel_s_address0                      | out |    9|  ap_memory |           linearRegression_stubMap_data_second_data_barrel_s           |     array    |
+|linearRegression_stubMap_data_second_data_barrel_s_ce0                           | out |    1|  ap_memory |           linearRegression_stubMap_data_second_data_barrel_s           |     array    |
+|linearRegression_stubMap_data_second_data_barrel_s_we0                           | out |    1|  ap_memory |           linearRegression_stubMap_data_second_data_barrel_s           |     array    |
+|linearRegression_stubMap_data_second_data_barrel_s_d0                            | out |    1|  ap_memory |           linearRegression_stubMap_data_second_data_barrel_s           |     array    |
+|linearRegression_stubMap_data_second_data_barrel_s_q0                            |  in |    1|  ap_memory |           linearRegression_stubMap_data_second_data_barrel_s           |     array    |
+|linearRegression_stubMap_data_second_data_barrel_s_address1                      | out |    9|  ap_memory |           linearRegression_stubMap_data_second_data_barrel_s           |     array    |
+|linearRegression_stubMap_data_second_data_barrel_s_ce1                           | out |    1|  ap_memory |           linearRegression_stubMap_data_second_data_barrel_s           |     array    |
+|linearRegression_stubMap_data_second_data_barrel_s_we1                           | out |    1|  ap_memory |           linearRegression_stubMap_data_second_data_barrel_s           |     array    |
+|linearRegression_stubMap_data_second_data_barrel_s_d1                            | out |    1|  ap_memory |           linearRegression_stubMap_data_second_data_barrel_s           |     array    |
+|linearRegression_stubMap_data_second_data_barrel_s_q1                            |  in |    1|  ap_memory |           linearRegression_stubMap_data_second_data_barrel_s           |     array    |
+|linearRegression_layerPopulation_size_s_i                                        |  in |   32|   ap_ovld  |                 linearRegression_layerPopulation_size_s                |    pointer   |
+|linearRegression_layerPopulation_size_s_o                                        | out |   32|   ap_ovld  |                 linearRegression_layerPopulation_size_s                |    pointer   |
+|linearRegression_layerPopulation_size_s_o_ap_vld                                 | out |    1|   ap_ovld  |                 linearRegression_layerPopulation_size_s                |    pointer   |
+|linearRegression_layerPopulation_data_first_address0                             | out |    5|  ap_memory |               linearRegression_layerPopulation_data_first              |     array    |
+|linearRegression_layerPopulation_data_first_ce0                                  | out |    1|  ap_memory |               linearRegression_layerPopulation_data_first              |     array    |
+|linearRegression_layerPopulation_data_first_we0                                  | out |    1|  ap_memory |               linearRegression_layerPopulation_data_first              |     array    |
+|linearRegression_layerPopulation_data_first_d0                                   | out |   32|  ap_memory |               linearRegression_layerPopulation_data_first              |     array    |
+|linearRegression_layerPopulation_data_first_q0                                   |  in |   32|  ap_memory |               linearRegression_layerPopulation_data_first              |     array    |
+|linearRegression_layerPopulation_data_second_address0                            | out |    5|  ap_memory |              linearRegression_layerPopulation_data_second              |     array    |
+|linearRegression_layerPopulation_data_second_ce0                                 | out |    1|  ap_memory |              linearRegression_layerPopulation_data_second              |     array    |
+|linearRegression_layerPopulation_data_second_we0                                 | out |    1|  ap_memory |              linearRegression_layerPopulation_data_second              |     array    |
+|linearRegression_layerPopulation_data_second_d0                                  | out |   32|  ap_memory |              linearRegression_layerPopulation_data_second              |     array    |
+|linearRegression_layerPopulation_data_second_q0                                  |  in |   32|  ap_memory |              linearRegression_layerPopulation_data_second              |     array    |
+|linearRegression_residuals_size_s                                                | out |   32|   ap_vld   |                    linearRegression_residuals_size_s                   |    pointer   |
+|linearRegression_residuals_size_s_ap_vld                                         | out |    1|   ap_vld   |                    linearRegression_residuals_size_s                   |    pointer   |
+|linearRegression_residuals_data_first_address0                                   | out |    5|  ap_memory |                  linearRegression_residuals_data_first                 |     array    |
+|linearRegression_residuals_data_first_ce0                                        | out |    1|  ap_memory |                  linearRegression_residuals_data_first                 |     array    |
+|linearRegression_residuals_data_first_we0                                        | out |    1|  ap_memory |                  linearRegression_residuals_data_first                 |     array    |
+|linearRegression_residuals_data_first_d0                                         | out |   32|  ap_memory |                  linearRegression_residuals_data_first                 |     array    |
+|linearRegression_residuals_data_first_q0                                         |  in |   32|  ap_memory |                  linearRegression_residuals_data_first                 |     array    |
+|linearRegression_residuals_data_second_size_s_address0                           | out |    5|  ap_memory |              linearRegression_residuals_data_second_size_s             |     array    |
+|linearRegression_residuals_data_second_size_s_ce0                                | out |    1|  ap_memory |              linearRegression_residuals_data_second_size_s             |     array    |
+|linearRegression_residuals_data_second_size_s_we0                                | out |    1|  ap_memory |              linearRegression_residuals_data_second_size_s             |     array    |
+|linearRegression_residuals_data_second_size_s_d0                                 | out |   32|  ap_memory |              linearRegression_residuals_data_second_size_s             |     array    |
+|linearRegression_residuals_data_second_size_s_q0                                 |  in |   32|  ap_memory |              linearRegression_residuals_data_second_size_s             |     array    |
+|linearRegression_residuals_data_second_data_phi_address0                         | out |    9|  ap_memory |             linearRegression_residuals_data_second_data_phi            |     array    |
+|linearRegression_residuals_data_second_data_phi_ce0                              | out |    1|  ap_memory |             linearRegression_residuals_data_second_data_phi            |     array    |
+|linearRegression_residuals_data_second_data_phi_we0                              | out |    1|  ap_memory |             linearRegression_residuals_data_second_data_phi            |     array    |
+|linearRegression_residuals_data_second_data_phi_d0                               | out |   32|  ap_memory |             linearRegression_residuals_data_second_data_phi            |     array    |
+|linearRegression_residuals_data_second_data_phi_q0                               |  in |   32|  ap_memory |             linearRegression_residuals_data_second_data_phi            |     array    |
+|linearRegression_residuals_data_second_data_phi_address1                         | out |    9|  ap_memory |             linearRegression_residuals_data_second_data_phi            |     array    |
+|linearRegression_residuals_data_second_data_phi_ce1                              | out |    1|  ap_memory |             linearRegression_residuals_data_second_data_phi            |     array    |
+|linearRegression_residuals_data_second_data_phi_we1                              | out |    1|  ap_memory |             linearRegression_residuals_data_second_data_phi            |     array    |
+|linearRegression_residuals_data_second_data_phi_d1                               | out |   32|  ap_memory |             linearRegression_residuals_data_second_data_phi            |     array    |
+|linearRegression_residuals_data_second_data_z_address0                           | out |    9|  ap_memory |              linearRegression_residuals_data_second_data_z             |     array    |
+|linearRegression_residuals_data_second_data_z_ce0                                | out |    1|  ap_memory |              linearRegression_residuals_data_second_data_z             |     array    |
+|linearRegression_residuals_data_second_data_z_we0                                | out |    1|  ap_memory |              linearRegression_residuals_data_second_data_z             |     array    |
+|linearRegression_residuals_data_second_data_z_d0                                 | out |   32|  ap_memory |              linearRegression_residuals_data_second_data_z             |     array    |
+|linearRegression_residuals_data_second_data_z_q0                                 |  in |   32|  ap_memory |              linearRegression_residuals_data_second_data_z             |     array    |
+|linearRegression_residuals_data_second_data_z_address1                           | out |    9|  ap_memory |              linearRegression_residuals_data_second_data_z             |     array    |
+|linearRegression_residuals_data_second_data_z_ce1                                | out |    1|  ap_memory |              linearRegression_residuals_data_second_data_z             |     array    |
+|linearRegression_residuals_data_second_data_z_we1                                | out |    1|  ap_memory |              linearRegression_residuals_data_second_data_z             |     array    |
+|linearRegression_residuals_data_second_data_z_d1                                 | out |   32|  ap_memory |              linearRegression_residuals_data_second_data_z             |     array    |
+|linearRegression_residuals_data_second_data_layerId_address0                     | out |    9|  ap_memory |           linearRegression_residuals_data_second_data_layerId          |     array    |
+|linearRegression_residuals_data_second_data_layerId_ce0                          | out |    1|  ap_memory |           linearRegression_residuals_data_second_data_layerId          |     array    |
+|linearRegression_residuals_data_second_data_layerId_we0                          | out |    1|  ap_memory |           linearRegression_residuals_data_second_data_layerId          |     array    |
+|linearRegression_residuals_data_second_data_layerId_d0                           | out |   32|  ap_memory |           linearRegression_residuals_data_second_data_layerId          |     array    |
+|linearRegression_residuals_data_second_data_layerId_q0                           |  in |   32|  ap_memory |           linearRegression_residuals_data_second_data_layerId          |     array    |
+|linearRegression_residuals_data_second_data_layerId_address1                     | out |    9|  ap_memory |           linearRegression_residuals_data_second_data_layerId          |     array    |
+|linearRegression_residuals_data_second_data_layerId_ce1                          | out |    1|  ap_memory |           linearRegression_residuals_data_second_data_layerId          |     array    |
+|linearRegression_residuals_data_second_data_layerId_we1                          | out |    1|  ap_memory |           linearRegression_residuals_data_second_data_layerId          |     array    |
+|linearRegression_residuals_data_second_data_layerId_d1                           | out |   32|  ap_memory |           linearRegression_residuals_data_second_data_layerId          |     array    |
+|linearRegression_residuals_data_second_data_stubId_address0                      | out |    9|  ap_memory |           linearRegression_residuals_data_second_data_stubId           |     array    |
+|linearRegression_residuals_data_second_data_stubId_ce0                           | out |    1|  ap_memory |           linearRegression_residuals_data_second_data_stubId           |     array    |
+|linearRegression_residuals_data_second_data_stubId_we0                           | out |    1|  ap_memory |           linearRegression_residuals_data_second_data_stubId           |     array    |
+|linearRegression_residuals_data_second_data_stubId_d0                            | out |   32|  ap_memory |           linearRegression_residuals_data_second_data_stubId           |     array    |
+|linearRegression_residuals_data_second_data_stubId_q0                            |  in |   32|  ap_memory |           linearRegression_residuals_data_second_data_stubId           |     array    |
+|linearRegression_residuals_data_second_data_stubId_address1                      | out |    9|  ap_memory |           linearRegression_residuals_data_second_data_stubId           |     array    |
+|linearRegression_residuals_data_second_data_stubId_ce1                           | out |    1|  ap_memory |           linearRegression_residuals_data_second_data_stubId           |     array    |
+|linearRegression_residuals_data_second_data_stubId_we1                           | out |    1|  ap_memory |           linearRegression_residuals_data_second_data_stubId           |     array    |
+|linearRegression_residuals_data_second_data_stubId_d1                            | out |   32|  ap_memory |           linearRegression_residuals_data_second_data_stubId           |     array    |
+|linearRegression_residuals_data_second_data_ps_address0                          | out |    9|  ap_memory |             linearRegression_residuals_data_second_data_ps             |     array    |
+|linearRegression_residuals_data_second_data_ps_ce0                               | out |    1|  ap_memory |             linearRegression_residuals_data_second_data_ps             |     array    |
+|linearRegression_residuals_data_second_data_ps_we0                               | out |    1|  ap_memory |             linearRegression_residuals_data_second_data_ps             |     array    |
+|linearRegression_residuals_data_second_data_ps_d0                                | out |    1|  ap_memory |             linearRegression_residuals_data_second_data_ps             |     array    |
+|linearRegression_residuals_data_second_data_ps_q0                                |  in |    1|  ap_memory |             linearRegression_residuals_data_second_data_ps             |     array    |
+|linearRegression_residuals_data_second_data_ps_address1                          | out |    9|  ap_memory |             linearRegression_residuals_data_second_data_ps             |     array    |
+|linearRegression_residuals_data_second_data_ps_ce1                               | out |    1|  ap_memory |             linearRegression_residuals_data_second_data_ps             |     array    |
+|linearRegression_residuals_data_second_data_ps_we1                               | out |    1|  ap_memory |             linearRegression_residuals_data_second_data_ps             |     array    |
+|linearRegression_residuals_data_second_data_ps_d1                                | out |    1|  ap_memory |             linearRegression_residuals_data_second_data_ps             |     array    |
+|linearRegression_largestResid_phi                                                | out |   32|   ap_vld   |                    linearRegression_largestResid_phi                   |    pointer   |
+|linearRegression_largestResid_phi_ap_vld                                         | out |    1|   ap_vld   |                    linearRegression_largestResid_phi                   |    pointer   |
+|linearRegression_largestResid_z                                                  | out |   32|   ap_vld   |                     linearRegression_largestResid_z                    |    pointer   |
+|linearRegression_largestResid_z_ap_vld                                           | out |    1|   ap_vld   |                     linearRegression_largestResid_z                    |    pointer   |
+|linearRegression_largestResid_layerId                                            | out |   32|   ap_vld   |                  linearRegression_largestResid_layerId                 |    pointer   |
+|linearRegression_largestResid_layerId_ap_vld                                     | out |    1|   ap_vld   |                  linearRegression_largestResid_layerId                 |    pointer   |
+|linearRegression_largestResid_stubId                                             | out |   32|   ap_vld   |                  linearRegression_largestResid_stubId                  |    pointer   |
+|linearRegression_largestResid_stubId_ap_vld                                      | out |    1|   ap_vld   |                  linearRegression_largestResid_stubId                  |    pointer   |
+|linearRegression_largestResid_ps                                                 | out |    1|   ap_vld   |                    linearRegression_largestResid_ps                    |    pointer   |
+|linearRegression_largestResid_ps_ap_vld                                          | out |    1|   ap_vld   |                    linearRegression_largestResid_ps                    |    pointer   |
++---------------------------------------------------------------------------------+-----+-----+------------+------------------------------------------------------------------------+--------------+
+
