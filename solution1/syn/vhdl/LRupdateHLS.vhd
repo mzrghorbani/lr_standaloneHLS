@@ -34,12 +34,12 @@ port (
     l1track3D_stubs_data_settings_chosenRofZ_s_address1 : OUT STD_LOGIC_VECTOR (3 downto 0);
     l1track3D_stubs_data_settings_chosenRofZ_s_ce1 : OUT STD_LOGIC;
     l1track3D_stubs_data_settings_chosenRofZ_s_q1 : IN STD_LOGIC_VECTOR (31 downto 0);
-    l1track3D_stubs_data_settings_etaRegions_s_address0 : OUT STD_LOGIC_VECTOR (7 downto 0);
-    l1track3D_stubs_data_settings_etaRegions_s_ce0 : OUT STD_LOGIC;
-    l1track3D_stubs_data_settings_etaRegions_s_q0 : IN STD_LOGIC_VECTOR (31 downto 0);
-    l1track3D_stubs_data_settings_etaRegions_s_address1 : OUT STD_LOGIC_VECTOR (7 downto 0);
-    l1track3D_stubs_data_settings_etaRegions_s_ce1 : OUT STD_LOGIC;
-    l1track3D_stubs_data_settings_etaRegions_s_q1 : IN STD_LOGIC_VECTOR (31 downto 0);
+    l1track3D_stubs_data_settings_sinh_etaRegions_s_address0 : OUT STD_LOGIC_VECTOR (7 downto 0);
+    l1track3D_stubs_data_settings_sinh_etaRegions_s_ce0 : OUT STD_LOGIC;
+    l1track3D_stubs_data_settings_sinh_etaRegions_s_q0 : IN STD_LOGIC_VECTOR (31 downto 0);
+    l1track3D_stubs_data_settings_sinh_etaRegions_s_address1 : OUT STD_LOGIC_VECTOR (7 downto 0);
+    l1track3D_stubs_data_settings_sinh_etaRegions_s_ce1 : OUT STD_LOGIC;
+    l1track3D_stubs_data_settings_sinh_etaRegions_s_q1 : IN STD_LOGIC_VECTOR (31 downto 0);
     l1track3D_stubs_data_settings_minNumMatchLayers_s_address0 : OUT STD_LOGIC_VECTOR (3 downto 0);
     l1track3D_stubs_data_settings_minNumMatchLayers_s_ce0 : OUT STD_LOGIC;
     l1track3D_stubs_data_settings_minNumMatchLayers_s_q0 : IN STD_LOGIC_VECTOR (31 downto 0);
@@ -90,9 +90,12 @@ port (
     l1track3D_stubs_data_barrel_s_q1 : IN STD_LOGIC_VECTOR (0 downto 0);
     linearRegression_settings_chosenRofPhi_s : IN STD_LOGIC_VECTOR (31 downto 0);
     linearRegression_settings_chosenRofZ_s : IN STD_LOGIC_VECTOR (31 downto 0);
-    linearRegression_settings_etaRegions_s_address0 : OUT STD_LOGIC_VECTOR (4 downto 0);
-    linearRegression_settings_etaRegions_s_ce0 : OUT STD_LOGIC;
-    linearRegression_settings_etaRegions_s_q0 : IN STD_LOGIC_VECTOR (31 downto 0);
+    linearRegression_settings_sinh_etaRegions_s_address0 : OUT STD_LOGIC_VECTOR (4 downto 0);
+    linearRegression_settings_sinh_etaRegions_s_ce0 : OUT STD_LOGIC;
+    linearRegression_settings_sinh_etaRegions_s_q0 : IN STD_LOGIC_VECTOR (31 downto 0);
+    linearRegression_settings_sinh_etaRegions_s_address1 : OUT STD_LOGIC_VECTOR (4 downto 0);
+    linearRegression_settings_sinh_etaRegions_s_ce1 : OUT STD_LOGIC;
+    linearRegression_settings_sinh_etaRegions_s_q1 : IN STD_LOGIC_VECTOR (31 downto 0);
     linearRegression_settings_minNumMatchLayers_s : IN STD_LOGIC_VECTOR (31 downto 0);
     linearRegression_settings_minPSLayers_s : IN STD_LOGIC_VECTOR (31 downto 0);
     linearRegression_iPhiSec_s : OUT STD_LOGIC_VECTOR (31 downto 0);
@@ -141,16 +144,16 @@ port (
     linearRegression_stubs_data_settings_chosenRofZ_s_ce1 : OUT STD_LOGIC;
     linearRegression_stubs_data_settings_chosenRofZ_s_we1 : OUT STD_LOGIC;
     linearRegression_stubs_data_settings_chosenRofZ_s_d1 : OUT STD_LOGIC_VECTOR (31 downto 0);
-    linearRegression_stubs_data_settings_etaRegions_s_address0 : OUT STD_LOGIC_VECTOR (7 downto 0);
-    linearRegression_stubs_data_settings_etaRegions_s_ce0 : OUT STD_LOGIC;
-    linearRegression_stubs_data_settings_etaRegions_s_we0 : OUT STD_LOGIC;
-    linearRegression_stubs_data_settings_etaRegions_s_d0 : OUT STD_LOGIC_VECTOR (31 downto 0);
-    linearRegression_stubs_data_settings_etaRegions_s_q0 : IN STD_LOGIC_VECTOR (31 downto 0);
-    linearRegression_stubs_data_settings_etaRegions_s_address1 : OUT STD_LOGIC_VECTOR (7 downto 0);
-    linearRegression_stubs_data_settings_etaRegions_s_ce1 : OUT STD_LOGIC;
-    linearRegression_stubs_data_settings_etaRegions_s_we1 : OUT STD_LOGIC;
-    linearRegression_stubs_data_settings_etaRegions_s_d1 : OUT STD_LOGIC_VECTOR (31 downto 0);
-    linearRegression_stubs_data_settings_etaRegions_s_q1 : IN STD_LOGIC_VECTOR (31 downto 0);
+    linearRegression_stubs_data_settings_sinh_etaRegions_s_address0 : OUT STD_LOGIC_VECTOR (7 downto 0);
+    linearRegression_stubs_data_settings_sinh_etaRegions_s_ce0 : OUT STD_LOGIC;
+    linearRegression_stubs_data_settings_sinh_etaRegions_s_we0 : OUT STD_LOGIC;
+    linearRegression_stubs_data_settings_sinh_etaRegions_s_d0 : OUT STD_LOGIC_VECTOR (31 downto 0);
+    linearRegression_stubs_data_settings_sinh_etaRegions_s_q0 : IN STD_LOGIC_VECTOR (31 downto 0);
+    linearRegression_stubs_data_settings_sinh_etaRegions_s_address1 : OUT STD_LOGIC_VECTOR (7 downto 0);
+    linearRegression_stubs_data_settings_sinh_etaRegions_s_ce1 : OUT STD_LOGIC;
+    linearRegression_stubs_data_settings_sinh_etaRegions_s_we1 : OUT STD_LOGIC;
+    linearRegression_stubs_data_settings_sinh_etaRegions_s_d1 : OUT STD_LOGIC_VECTOR (31 downto 0);
+    linearRegression_stubs_data_settings_sinh_etaRegions_s_q1 : IN STD_LOGIC_VECTOR (31 downto 0);
     linearRegression_stubs_data_settings_minNumMatchLayers_s_address0 : OUT STD_LOGIC_VECTOR (3 downto 0);
     linearRegression_stubs_data_settings_minNumMatchLayers_s_ce0 : OUT STD_LOGIC;
     linearRegression_stubs_data_settings_minNumMatchLayers_s_we0 : OUT STD_LOGIC;
@@ -261,16 +264,16 @@ port (
     linearRegression_stubMap_data_second_data_settings_chosenRofZ_s_we1 : OUT STD_LOGIC;
     linearRegression_stubMap_data_second_data_settings_chosenRofZ_s_d1 : OUT STD_LOGIC_VECTOR (31 downto 0);
     linearRegression_stubMap_data_second_data_settings_chosenRofZ_s_q1 : IN STD_LOGIC_VECTOR (31 downto 0);
-    linearRegression_stubMap_data_second_data_settings_etaRegions_s_address0 : OUT STD_LOGIC_VECTOR (12 downto 0);
-    linearRegression_stubMap_data_second_data_settings_etaRegions_s_ce0 : OUT STD_LOGIC;
-    linearRegression_stubMap_data_second_data_settings_etaRegions_s_we0 : OUT STD_LOGIC;
-    linearRegression_stubMap_data_second_data_settings_etaRegions_s_d0 : OUT STD_LOGIC_VECTOR (31 downto 0);
-    linearRegression_stubMap_data_second_data_settings_etaRegions_s_q0 : IN STD_LOGIC_VECTOR (31 downto 0);
-    linearRegression_stubMap_data_second_data_settings_etaRegions_s_address1 : OUT STD_LOGIC_VECTOR (12 downto 0);
-    linearRegression_stubMap_data_second_data_settings_etaRegions_s_ce1 : OUT STD_LOGIC;
-    linearRegression_stubMap_data_second_data_settings_etaRegions_s_we1 : OUT STD_LOGIC;
-    linearRegression_stubMap_data_second_data_settings_etaRegions_s_d1 : OUT STD_LOGIC_VECTOR (31 downto 0);
-    linearRegression_stubMap_data_second_data_settings_etaRegions_s_q1 : IN STD_LOGIC_VECTOR (31 downto 0);
+    linearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_address0 : OUT STD_LOGIC_VECTOR (12 downto 0);
+    linearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_ce0 : OUT STD_LOGIC;
+    linearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_we0 : OUT STD_LOGIC;
+    linearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_d0 : OUT STD_LOGIC_VECTOR (31 downto 0);
+    linearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_q0 : IN STD_LOGIC_VECTOR (31 downto 0);
+    linearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_address1 : OUT STD_LOGIC_VECTOR (12 downto 0);
+    linearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_ce1 : OUT STD_LOGIC;
+    linearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_we1 : OUT STD_LOGIC;
+    linearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_d1 : OUT STD_LOGIC_VECTOR (31 downto 0);
+    linearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_q1 : IN STD_LOGIC_VECTOR (31 downto 0);
     linearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_address0 : OUT STD_LOGIC_VECTOR (8 downto 0);
     linearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_ce0 : OUT STD_LOGIC;
     linearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_we0 : OUT STD_LOGIC;
@@ -437,7 +440,7 @@ end;
 architecture behav of LRupdateHLS is 
     attribute CORE_GENERATION_INFO : STRING;
     attribute CORE_GENERATION_INFO of behav : architecture is
-    "LRupdateHLS,hls_ip_2018_3,{HLS_INPUT_TYPE=cxx,HLS_INPUT_FLOAT=0,HLS_INPUT_FIXED=0,HLS_INPUT_PART=xcku115-flvb2104-2-e,HLS_INPUT_CLOCK=10.000000,HLS_INPUT_ARCH=others,HLS_SYN_CLOCK=9.120600,HLS_SYN_LAT=-1,HLS_SYN_TPT=none,HLS_SYN_MEM=4,HLS_SYN_DSP=124,HLS_SYN_FF=43435,HLS_SYN_LUT=75815,HLS_VERSION=2018_3}";
+    "LRupdateHLS,hls_ip_2018_3,{HLS_INPUT_TYPE=cxx,HLS_INPUT_FLOAT=0,HLS_INPUT_FIXED=0,HLS_INPUT_PART=xcku115-flvb2104-2-e,HLS_INPUT_CLOCK=10.000000,HLS_INPUT_ARCH=others,HLS_SYN_CLOCK=9.120600,HLS_SYN_LAT=-1,HLS_SYN_TPT=none,HLS_SYN_MEM=0,HLS_SYN_DSP=112,HLS_SYN_FF=40073,HLS_SYN_LUT=65507,HLS_VERSION=2018_3}";
     constant ap_const_logic_1 : STD_LOGIC := '1';
     constant ap_const_logic_0 : STD_LOGIC := '0';
     constant ap_ST_fsm_state1 : STD_LOGIC_VECTOR (1 downto 0) := "01";
@@ -451,324 +454,326 @@ architecture behav of LRupdateHLS is
     attribute fsm_encoding of ap_CS_fsm : signal is "none";
     signal ap_CS_fsm_state1 : STD_LOGIC;
     attribute fsm_encoding of ap_CS_fsm_state1 : signal is "none";
-    signal grp_fit_fu_365_ap_start : STD_LOGIC;
-    signal grp_fit_fu_365_ap_done : STD_LOGIC;
-    signal grp_fit_fu_365_ap_idle : STD_LOGIC;
-    signal grp_fit_fu_365_ap_ready : STD_LOGIC;
-    signal grp_fit_fu_365_LinearRegression_settings_etaRegions_s_address0 : STD_LOGIC_VECTOR (4 downto 0);
-    signal grp_fit_fu_365_LinearRegression_settings_etaRegions_s_ce0 : STD_LOGIC;
-    signal grp_fit_fu_365_LinearRegression_stubs_data_settings_chosenRofPhi_s_address0 : STD_LOGIC_VECTOR (3 downto 0);
-    signal grp_fit_fu_365_LinearRegression_stubs_data_settings_chosenRofPhi_s_ce0 : STD_LOGIC;
-    signal grp_fit_fu_365_LinearRegression_stubs_data_settings_chosenRofPhi_s_we0 : STD_LOGIC;
-    signal grp_fit_fu_365_LinearRegression_stubs_data_settings_chosenRofPhi_s_d0 : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_fit_fu_365_LinearRegression_stubs_data_settings_chosenRofPhi_s_address1 : STD_LOGIC_VECTOR (3 downto 0);
-    signal grp_fit_fu_365_LinearRegression_stubs_data_settings_chosenRofPhi_s_ce1 : STD_LOGIC;
-    signal grp_fit_fu_365_LinearRegression_stubs_data_settings_chosenRofPhi_s_we1 : STD_LOGIC;
-    signal grp_fit_fu_365_LinearRegression_stubs_data_settings_chosenRofPhi_s_d1 : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_fit_fu_365_LinearRegression_stubs_data_settings_chosenRofZ_s_address0 : STD_LOGIC_VECTOR (3 downto 0);
-    signal grp_fit_fu_365_LinearRegression_stubs_data_settings_chosenRofZ_s_ce0 : STD_LOGIC;
-    signal grp_fit_fu_365_LinearRegression_stubs_data_settings_chosenRofZ_s_we0 : STD_LOGIC;
-    signal grp_fit_fu_365_LinearRegression_stubs_data_settings_chosenRofZ_s_d0 : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_fit_fu_365_LinearRegression_stubs_data_settings_chosenRofZ_s_address1 : STD_LOGIC_VECTOR (3 downto 0);
-    signal grp_fit_fu_365_LinearRegression_stubs_data_settings_chosenRofZ_s_ce1 : STD_LOGIC;
-    signal grp_fit_fu_365_LinearRegression_stubs_data_settings_chosenRofZ_s_we1 : STD_LOGIC;
-    signal grp_fit_fu_365_LinearRegression_stubs_data_settings_chosenRofZ_s_d1 : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_fit_fu_365_LinearRegression_stubs_data_settings_etaRegions_s_address0 : STD_LOGIC_VECTOR (7 downto 0);
-    signal grp_fit_fu_365_LinearRegression_stubs_data_settings_etaRegions_s_ce0 : STD_LOGIC;
-    signal grp_fit_fu_365_LinearRegression_stubs_data_settings_etaRegions_s_we0 : STD_LOGIC;
-    signal grp_fit_fu_365_LinearRegression_stubs_data_settings_etaRegions_s_d0 : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_fit_fu_365_LinearRegression_stubs_data_settings_etaRegions_s_address1 : STD_LOGIC_VECTOR (7 downto 0);
-    signal grp_fit_fu_365_LinearRegression_stubs_data_settings_etaRegions_s_ce1 : STD_LOGIC;
-    signal grp_fit_fu_365_LinearRegression_stubs_data_settings_etaRegions_s_we1 : STD_LOGIC;
-    signal grp_fit_fu_365_LinearRegression_stubs_data_settings_etaRegions_s_d1 : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_fit_fu_365_LinearRegression_stubs_data_settings_minNumMatchLayers_s_address0 : STD_LOGIC_VECTOR (3 downto 0);
-    signal grp_fit_fu_365_LinearRegression_stubs_data_settings_minNumMatchLayers_s_ce0 : STD_LOGIC;
-    signal grp_fit_fu_365_LinearRegression_stubs_data_settings_minNumMatchLayers_s_we0 : STD_LOGIC;
-    signal grp_fit_fu_365_LinearRegression_stubs_data_settings_minNumMatchLayers_s_d0 : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_fit_fu_365_LinearRegression_stubs_data_settings_minNumMatchLayers_s_address1 : STD_LOGIC_VECTOR (3 downto 0);
-    signal grp_fit_fu_365_LinearRegression_stubs_data_settings_minNumMatchLayers_s_ce1 : STD_LOGIC;
-    signal grp_fit_fu_365_LinearRegression_stubs_data_settings_minNumMatchLayers_s_we1 : STD_LOGIC;
-    signal grp_fit_fu_365_LinearRegression_stubs_data_settings_minNumMatchLayers_s_d1 : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_fit_fu_365_LinearRegression_stubs_data_settings_minPSLayers_s_address0 : STD_LOGIC_VECTOR (3 downto 0);
-    signal grp_fit_fu_365_LinearRegression_stubs_data_settings_minPSLayers_s_ce0 : STD_LOGIC;
-    signal grp_fit_fu_365_LinearRegression_stubs_data_settings_minPSLayers_s_we0 : STD_LOGIC;
-    signal grp_fit_fu_365_LinearRegression_stubs_data_settings_minPSLayers_s_d0 : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_fit_fu_365_LinearRegression_stubs_data_settings_minPSLayers_s_address1 : STD_LOGIC_VECTOR (3 downto 0);
-    signal grp_fit_fu_365_LinearRegression_stubs_data_settings_minPSLayers_s_ce1 : STD_LOGIC;
-    signal grp_fit_fu_365_LinearRegression_stubs_data_settings_minPSLayers_s_we1 : STD_LOGIC;
-    signal grp_fit_fu_365_LinearRegression_stubs_data_settings_minPSLayers_s_d1 : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_fit_fu_365_LinearRegression_stubs_data_r_s_address0 : STD_LOGIC_VECTOR (3 downto 0);
-    signal grp_fit_fu_365_LinearRegression_stubs_data_r_s_ce0 : STD_LOGIC;
-    signal grp_fit_fu_365_LinearRegression_stubs_data_r_s_we0 : STD_LOGIC;
-    signal grp_fit_fu_365_LinearRegression_stubs_data_r_s_d0 : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_fit_fu_365_LinearRegression_stubs_data_r_s_address1 : STD_LOGIC_VECTOR (3 downto 0);
-    signal grp_fit_fu_365_LinearRegression_stubs_data_r_s_ce1 : STD_LOGIC;
-    signal grp_fit_fu_365_LinearRegression_stubs_data_r_s_we1 : STD_LOGIC;
-    signal grp_fit_fu_365_LinearRegression_stubs_data_r_s_d1 : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_fit_fu_365_LinearRegression_stubs_data_phi_s_address0 : STD_LOGIC_VECTOR (3 downto 0);
-    signal grp_fit_fu_365_LinearRegression_stubs_data_phi_s_ce0 : STD_LOGIC;
-    signal grp_fit_fu_365_LinearRegression_stubs_data_phi_s_we0 : STD_LOGIC;
-    signal grp_fit_fu_365_LinearRegression_stubs_data_phi_s_d0 : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_fit_fu_365_LinearRegression_stubs_data_phi_s_address1 : STD_LOGIC_VECTOR (3 downto 0);
-    signal grp_fit_fu_365_LinearRegression_stubs_data_phi_s_ce1 : STD_LOGIC;
-    signal grp_fit_fu_365_LinearRegression_stubs_data_phi_s_we1 : STD_LOGIC;
-    signal grp_fit_fu_365_LinearRegression_stubs_data_phi_s_d1 : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_fit_fu_365_LinearRegression_stubs_data_z_s_address0 : STD_LOGIC_VECTOR (3 downto 0);
-    signal grp_fit_fu_365_LinearRegression_stubs_data_z_s_ce0 : STD_LOGIC;
-    signal grp_fit_fu_365_LinearRegression_stubs_data_z_s_we0 : STD_LOGIC;
-    signal grp_fit_fu_365_LinearRegression_stubs_data_z_s_d0 : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_fit_fu_365_LinearRegression_stubs_data_z_s_address1 : STD_LOGIC_VECTOR (3 downto 0);
-    signal grp_fit_fu_365_LinearRegression_stubs_data_z_s_ce1 : STD_LOGIC;
-    signal grp_fit_fu_365_LinearRegression_stubs_data_z_s_we1 : STD_LOGIC;
-    signal grp_fit_fu_365_LinearRegression_stubs_data_z_s_d1 : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_fit_fu_365_LinearRegression_stubs_data_layerId_s_address0 : STD_LOGIC_VECTOR (3 downto 0);
-    signal grp_fit_fu_365_LinearRegression_stubs_data_layerId_s_ce0 : STD_LOGIC;
-    signal grp_fit_fu_365_LinearRegression_stubs_data_layerId_s_we0 : STD_LOGIC;
-    signal grp_fit_fu_365_LinearRegression_stubs_data_layerId_s_d0 : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_fit_fu_365_LinearRegression_stubs_data_layerId_s_address1 : STD_LOGIC_VECTOR (3 downto 0);
-    signal grp_fit_fu_365_LinearRegression_stubs_data_layerId_s_ce1 : STD_LOGIC;
-    signal grp_fit_fu_365_LinearRegression_stubs_data_layerId_s_we1 : STD_LOGIC;
-    signal grp_fit_fu_365_LinearRegression_stubs_data_layerId_s_d1 : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_fit_fu_365_LinearRegression_stubs_data_psModule_s_address0 : STD_LOGIC_VECTOR (3 downto 0);
-    signal grp_fit_fu_365_LinearRegression_stubs_data_psModule_s_ce0 : STD_LOGIC;
-    signal grp_fit_fu_365_LinearRegression_stubs_data_psModule_s_we0 : STD_LOGIC;
-    signal grp_fit_fu_365_LinearRegression_stubs_data_psModule_s_d0 : STD_LOGIC_VECTOR (0 downto 0);
-    signal grp_fit_fu_365_LinearRegression_stubs_data_psModule_s_address1 : STD_LOGIC_VECTOR (3 downto 0);
-    signal grp_fit_fu_365_LinearRegression_stubs_data_psModule_s_ce1 : STD_LOGIC;
-    signal grp_fit_fu_365_LinearRegression_stubs_data_psModule_s_we1 : STD_LOGIC;
-    signal grp_fit_fu_365_LinearRegression_stubs_data_psModule_s_d1 : STD_LOGIC_VECTOR (0 downto 0);
-    signal grp_fit_fu_365_LinearRegression_stubs_data_barrel_s_address0 : STD_LOGIC_VECTOR (3 downto 0);
-    signal grp_fit_fu_365_LinearRegression_stubs_data_barrel_s_ce0 : STD_LOGIC;
-    signal grp_fit_fu_365_LinearRegression_stubs_data_barrel_s_we0 : STD_LOGIC;
-    signal grp_fit_fu_365_LinearRegression_stubs_data_barrel_s_d0 : STD_LOGIC_VECTOR (0 downto 0);
-    signal grp_fit_fu_365_LinearRegression_stubs_data_barrel_s_address1 : STD_LOGIC_VECTOR (3 downto 0);
-    signal grp_fit_fu_365_LinearRegression_stubs_data_barrel_s_ce1 : STD_LOGIC;
-    signal grp_fit_fu_365_LinearRegression_stubs_data_barrel_s_we1 : STD_LOGIC;
-    signal grp_fit_fu_365_LinearRegression_stubs_data_barrel_s_d1 : STD_LOGIC_VECTOR (0 downto 0);
-    signal grp_fit_fu_365_LinearRegression_stubMap_data_first_address0 : STD_LOGIC_VECTOR (4 downto 0);
-    signal grp_fit_fu_365_LinearRegression_stubMap_data_first_ce0 : STD_LOGIC;
-    signal grp_fit_fu_365_LinearRegression_stubMap_data_first_we0 : STD_LOGIC;
-    signal grp_fit_fu_365_LinearRegression_stubMap_data_first_d0 : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_fit_fu_365_LinearRegression_stubMap_data_second_size_s_address0 : STD_LOGIC_VECTOR (4 downto 0);
-    signal grp_fit_fu_365_LinearRegression_stubMap_data_second_size_s_ce0 : STD_LOGIC;
-    signal grp_fit_fu_365_LinearRegression_stubMap_data_second_size_s_we0 : STD_LOGIC;
-    signal grp_fit_fu_365_LinearRegression_stubMap_data_second_size_s_d0 : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_fit_fu_365_LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_address0 : STD_LOGIC_VECTOR (8 downto 0);
-    signal grp_fit_fu_365_LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_ce0 : STD_LOGIC;
-    signal grp_fit_fu_365_LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_we0 : STD_LOGIC;
-    signal grp_fit_fu_365_LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_d0 : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_fit_fu_365_LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_address1 : STD_LOGIC_VECTOR (8 downto 0);
-    signal grp_fit_fu_365_LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_ce1 : STD_LOGIC;
-    signal grp_fit_fu_365_LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_we1 : STD_LOGIC;
-    signal grp_fit_fu_365_LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_d1 : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_fit_fu_365_LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_address0 : STD_LOGIC_VECTOR (8 downto 0);
-    signal grp_fit_fu_365_LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_ce0 : STD_LOGIC;
-    signal grp_fit_fu_365_LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_we0 : STD_LOGIC;
-    signal grp_fit_fu_365_LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_d0 : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_fit_fu_365_LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_address1 : STD_LOGIC_VECTOR (8 downto 0);
-    signal grp_fit_fu_365_LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_ce1 : STD_LOGIC;
-    signal grp_fit_fu_365_LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_we1 : STD_LOGIC;
-    signal grp_fit_fu_365_LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_d1 : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_fit_fu_365_LinearRegression_stubMap_data_second_data_settings_etaRegions_s_address0 : STD_LOGIC_VECTOR (12 downto 0);
-    signal grp_fit_fu_365_LinearRegression_stubMap_data_second_data_settings_etaRegions_s_ce0 : STD_LOGIC;
-    signal grp_fit_fu_365_LinearRegression_stubMap_data_second_data_settings_etaRegions_s_we0 : STD_LOGIC;
-    signal grp_fit_fu_365_LinearRegression_stubMap_data_second_data_settings_etaRegions_s_d0 : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_fit_fu_365_LinearRegression_stubMap_data_second_data_settings_etaRegions_s_address1 : STD_LOGIC_VECTOR (12 downto 0);
-    signal grp_fit_fu_365_LinearRegression_stubMap_data_second_data_settings_etaRegions_s_ce1 : STD_LOGIC;
-    signal grp_fit_fu_365_LinearRegression_stubMap_data_second_data_settings_etaRegions_s_we1 : STD_LOGIC;
-    signal grp_fit_fu_365_LinearRegression_stubMap_data_second_data_settings_etaRegions_s_d1 : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_fit_fu_365_LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_address0 : STD_LOGIC_VECTOR (8 downto 0);
-    signal grp_fit_fu_365_LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_ce0 : STD_LOGIC;
-    signal grp_fit_fu_365_LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_we0 : STD_LOGIC;
-    signal grp_fit_fu_365_LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_d0 : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_fit_fu_365_LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_address1 : STD_LOGIC_VECTOR (8 downto 0);
-    signal grp_fit_fu_365_LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_ce1 : STD_LOGIC;
-    signal grp_fit_fu_365_LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_we1 : STD_LOGIC;
-    signal grp_fit_fu_365_LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_d1 : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_fit_fu_365_LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_address0 : STD_LOGIC_VECTOR (8 downto 0);
-    signal grp_fit_fu_365_LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_ce0 : STD_LOGIC;
-    signal grp_fit_fu_365_LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_we0 : STD_LOGIC;
-    signal grp_fit_fu_365_LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_d0 : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_fit_fu_365_LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_address1 : STD_LOGIC_VECTOR (8 downto 0);
-    signal grp_fit_fu_365_LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_ce1 : STD_LOGIC;
-    signal grp_fit_fu_365_LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_we1 : STD_LOGIC;
-    signal grp_fit_fu_365_LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_d1 : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_fit_fu_365_LinearRegression_stubMap_data_second_data_r_s_address0 : STD_LOGIC_VECTOR (8 downto 0);
-    signal grp_fit_fu_365_LinearRegression_stubMap_data_second_data_r_s_ce0 : STD_LOGIC;
-    signal grp_fit_fu_365_LinearRegression_stubMap_data_second_data_r_s_we0 : STD_LOGIC;
-    signal grp_fit_fu_365_LinearRegression_stubMap_data_second_data_r_s_d0 : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_fit_fu_365_LinearRegression_stubMap_data_second_data_r_s_address1 : STD_LOGIC_VECTOR (8 downto 0);
-    signal grp_fit_fu_365_LinearRegression_stubMap_data_second_data_r_s_ce1 : STD_LOGIC;
-    signal grp_fit_fu_365_LinearRegression_stubMap_data_second_data_r_s_we1 : STD_LOGIC;
-    signal grp_fit_fu_365_LinearRegression_stubMap_data_second_data_r_s_d1 : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_fit_fu_365_LinearRegression_stubMap_data_second_data_phi_s_address0 : STD_LOGIC_VECTOR (8 downto 0);
-    signal grp_fit_fu_365_LinearRegression_stubMap_data_second_data_phi_s_ce0 : STD_LOGIC;
-    signal grp_fit_fu_365_LinearRegression_stubMap_data_second_data_phi_s_we0 : STD_LOGIC;
-    signal grp_fit_fu_365_LinearRegression_stubMap_data_second_data_phi_s_d0 : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_fit_fu_365_LinearRegression_stubMap_data_second_data_phi_s_address1 : STD_LOGIC_VECTOR (8 downto 0);
-    signal grp_fit_fu_365_LinearRegression_stubMap_data_second_data_phi_s_ce1 : STD_LOGIC;
-    signal grp_fit_fu_365_LinearRegression_stubMap_data_second_data_phi_s_we1 : STD_LOGIC;
-    signal grp_fit_fu_365_LinearRegression_stubMap_data_second_data_phi_s_d1 : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_fit_fu_365_LinearRegression_stubMap_data_second_data_z_s_address0 : STD_LOGIC_VECTOR (8 downto 0);
-    signal grp_fit_fu_365_LinearRegression_stubMap_data_second_data_z_s_ce0 : STD_LOGIC;
-    signal grp_fit_fu_365_LinearRegression_stubMap_data_second_data_z_s_we0 : STD_LOGIC;
-    signal grp_fit_fu_365_LinearRegression_stubMap_data_second_data_z_s_d0 : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_fit_fu_365_LinearRegression_stubMap_data_second_data_z_s_address1 : STD_LOGIC_VECTOR (8 downto 0);
-    signal grp_fit_fu_365_LinearRegression_stubMap_data_second_data_z_s_ce1 : STD_LOGIC;
-    signal grp_fit_fu_365_LinearRegression_stubMap_data_second_data_z_s_we1 : STD_LOGIC;
-    signal grp_fit_fu_365_LinearRegression_stubMap_data_second_data_z_s_d1 : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_fit_fu_365_LinearRegression_stubMap_data_second_data_layerId_s_address0 : STD_LOGIC_VECTOR (8 downto 0);
-    signal grp_fit_fu_365_LinearRegression_stubMap_data_second_data_layerId_s_ce0 : STD_LOGIC;
-    signal grp_fit_fu_365_LinearRegression_stubMap_data_second_data_layerId_s_we0 : STD_LOGIC;
-    signal grp_fit_fu_365_LinearRegression_stubMap_data_second_data_layerId_s_d0 : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_fit_fu_365_LinearRegression_stubMap_data_second_data_layerId_s_address1 : STD_LOGIC_VECTOR (8 downto 0);
-    signal grp_fit_fu_365_LinearRegression_stubMap_data_second_data_layerId_s_ce1 : STD_LOGIC;
-    signal grp_fit_fu_365_LinearRegression_stubMap_data_second_data_layerId_s_we1 : STD_LOGIC;
-    signal grp_fit_fu_365_LinearRegression_stubMap_data_second_data_layerId_s_d1 : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_fit_fu_365_LinearRegression_stubMap_data_second_data_psModule_s_address0 : STD_LOGIC_VECTOR (8 downto 0);
-    signal grp_fit_fu_365_LinearRegression_stubMap_data_second_data_psModule_s_ce0 : STD_LOGIC;
-    signal grp_fit_fu_365_LinearRegression_stubMap_data_second_data_psModule_s_we0 : STD_LOGIC;
-    signal grp_fit_fu_365_LinearRegression_stubMap_data_second_data_psModule_s_d0 : STD_LOGIC_VECTOR (0 downto 0);
-    signal grp_fit_fu_365_LinearRegression_stubMap_data_second_data_psModule_s_address1 : STD_LOGIC_VECTOR (8 downto 0);
-    signal grp_fit_fu_365_LinearRegression_stubMap_data_second_data_psModule_s_ce1 : STD_LOGIC;
-    signal grp_fit_fu_365_LinearRegression_stubMap_data_second_data_psModule_s_we1 : STD_LOGIC;
-    signal grp_fit_fu_365_LinearRegression_stubMap_data_second_data_psModule_s_d1 : STD_LOGIC_VECTOR (0 downto 0);
-    signal grp_fit_fu_365_LinearRegression_stubMap_data_second_data_barrel_s_address0 : STD_LOGIC_VECTOR (8 downto 0);
-    signal grp_fit_fu_365_LinearRegression_stubMap_data_second_data_barrel_s_ce0 : STD_LOGIC;
-    signal grp_fit_fu_365_LinearRegression_stubMap_data_second_data_barrel_s_we0 : STD_LOGIC;
-    signal grp_fit_fu_365_LinearRegression_stubMap_data_second_data_barrel_s_d0 : STD_LOGIC_VECTOR (0 downto 0);
-    signal grp_fit_fu_365_LinearRegression_stubMap_data_second_data_barrel_s_address1 : STD_LOGIC_VECTOR (8 downto 0);
-    signal grp_fit_fu_365_LinearRegression_stubMap_data_second_data_barrel_s_ce1 : STD_LOGIC;
-    signal grp_fit_fu_365_LinearRegression_stubMap_data_second_data_barrel_s_we1 : STD_LOGIC;
-    signal grp_fit_fu_365_LinearRegression_stubMap_data_second_data_barrel_s_d1 : STD_LOGIC_VECTOR (0 downto 0);
-    signal grp_fit_fu_365_LinearRegression_layerPopulation_data_first_address0 : STD_LOGIC_VECTOR (4 downto 0);
-    signal grp_fit_fu_365_LinearRegression_layerPopulation_data_first_ce0 : STD_LOGIC;
-    signal grp_fit_fu_365_LinearRegression_layerPopulation_data_first_we0 : STD_LOGIC;
-    signal grp_fit_fu_365_LinearRegression_layerPopulation_data_first_d0 : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_fit_fu_365_LinearRegression_layerPopulation_data_second_address0 : STD_LOGIC_VECTOR (4 downto 0);
-    signal grp_fit_fu_365_LinearRegression_layerPopulation_data_second_ce0 : STD_LOGIC;
-    signal grp_fit_fu_365_LinearRegression_layerPopulation_data_second_we0 : STD_LOGIC;
-    signal grp_fit_fu_365_LinearRegression_layerPopulation_data_second_d0 : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_fit_fu_365_LinearRegression_residuals_size_s : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_fit_fu_365_LinearRegression_residuals_size_s_ap_vld : STD_LOGIC;
-    signal grp_fit_fu_365_LinearRegression_residuals_data_first_address0 : STD_LOGIC_VECTOR (4 downto 0);
-    signal grp_fit_fu_365_LinearRegression_residuals_data_first_ce0 : STD_LOGIC;
-    signal grp_fit_fu_365_LinearRegression_residuals_data_first_we0 : STD_LOGIC;
-    signal grp_fit_fu_365_LinearRegression_residuals_data_first_d0 : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_fit_fu_365_LinearRegression_residuals_data_second_size_s_address0 : STD_LOGIC_VECTOR (4 downto 0);
-    signal grp_fit_fu_365_LinearRegression_residuals_data_second_size_s_ce0 : STD_LOGIC;
-    signal grp_fit_fu_365_LinearRegression_residuals_data_second_size_s_we0 : STD_LOGIC;
-    signal grp_fit_fu_365_LinearRegression_residuals_data_second_size_s_d0 : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_fit_fu_365_LinearRegression_residuals_data_second_data_phi_address0 : STD_LOGIC_VECTOR (8 downto 0);
-    signal grp_fit_fu_365_LinearRegression_residuals_data_second_data_phi_ce0 : STD_LOGIC;
-    signal grp_fit_fu_365_LinearRegression_residuals_data_second_data_phi_we0 : STD_LOGIC;
-    signal grp_fit_fu_365_LinearRegression_residuals_data_second_data_phi_d0 : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_fit_fu_365_LinearRegression_residuals_data_second_data_phi_address1 : STD_LOGIC_VECTOR (8 downto 0);
-    signal grp_fit_fu_365_LinearRegression_residuals_data_second_data_phi_ce1 : STD_LOGIC;
-    signal grp_fit_fu_365_LinearRegression_residuals_data_second_data_phi_we1 : STD_LOGIC;
-    signal grp_fit_fu_365_LinearRegression_residuals_data_second_data_phi_d1 : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_fit_fu_365_LinearRegression_residuals_data_second_data_z_address0 : STD_LOGIC_VECTOR (8 downto 0);
-    signal grp_fit_fu_365_LinearRegression_residuals_data_second_data_z_ce0 : STD_LOGIC;
-    signal grp_fit_fu_365_LinearRegression_residuals_data_second_data_z_we0 : STD_LOGIC;
-    signal grp_fit_fu_365_LinearRegression_residuals_data_second_data_z_d0 : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_fit_fu_365_LinearRegression_residuals_data_second_data_z_address1 : STD_LOGIC_VECTOR (8 downto 0);
-    signal grp_fit_fu_365_LinearRegression_residuals_data_second_data_z_ce1 : STD_LOGIC;
-    signal grp_fit_fu_365_LinearRegression_residuals_data_second_data_z_we1 : STD_LOGIC;
-    signal grp_fit_fu_365_LinearRegression_residuals_data_second_data_z_d1 : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_fit_fu_365_LinearRegression_residuals_data_second_data_layerId_address0 : STD_LOGIC_VECTOR (8 downto 0);
-    signal grp_fit_fu_365_LinearRegression_residuals_data_second_data_layerId_ce0 : STD_LOGIC;
-    signal grp_fit_fu_365_LinearRegression_residuals_data_second_data_layerId_we0 : STD_LOGIC;
-    signal grp_fit_fu_365_LinearRegression_residuals_data_second_data_layerId_d0 : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_fit_fu_365_LinearRegression_residuals_data_second_data_layerId_address1 : STD_LOGIC_VECTOR (8 downto 0);
-    signal grp_fit_fu_365_LinearRegression_residuals_data_second_data_layerId_ce1 : STD_LOGIC;
-    signal grp_fit_fu_365_LinearRegression_residuals_data_second_data_layerId_we1 : STD_LOGIC;
-    signal grp_fit_fu_365_LinearRegression_residuals_data_second_data_layerId_d1 : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_fit_fu_365_LinearRegression_residuals_data_second_data_stubId_address0 : STD_LOGIC_VECTOR (8 downto 0);
-    signal grp_fit_fu_365_LinearRegression_residuals_data_second_data_stubId_ce0 : STD_LOGIC;
-    signal grp_fit_fu_365_LinearRegression_residuals_data_second_data_stubId_we0 : STD_LOGIC;
-    signal grp_fit_fu_365_LinearRegression_residuals_data_second_data_stubId_d0 : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_fit_fu_365_LinearRegression_residuals_data_second_data_stubId_address1 : STD_LOGIC_VECTOR (8 downto 0);
-    signal grp_fit_fu_365_LinearRegression_residuals_data_second_data_stubId_ce1 : STD_LOGIC;
-    signal grp_fit_fu_365_LinearRegression_residuals_data_second_data_stubId_we1 : STD_LOGIC;
-    signal grp_fit_fu_365_LinearRegression_residuals_data_second_data_stubId_d1 : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_fit_fu_365_LinearRegression_residuals_data_second_data_ps_address0 : STD_LOGIC_VECTOR (8 downto 0);
-    signal grp_fit_fu_365_LinearRegression_residuals_data_second_data_ps_ce0 : STD_LOGIC;
-    signal grp_fit_fu_365_LinearRegression_residuals_data_second_data_ps_we0 : STD_LOGIC;
-    signal grp_fit_fu_365_LinearRegression_residuals_data_second_data_ps_d0 : STD_LOGIC_VECTOR (0 downto 0);
-    signal grp_fit_fu_365_LinearRegression_residuals_data_second_data_ps_address1 : STD_LOGIC_VECTOR (8 downto 0);
-    signal grp_fit_fu_365_LinearRegression_residuals_data_second_data_ps_ce1 : STD_LOGIC;
-    signal grp_fit_fu_365_LinearRegression_residuals_data_second_data_ps_we1 : STD_LOGIC;
-    signal grp_fit_fu_365_LinearRegression_residuals_data_second_data_ps_d1 : STD_LOGIC_VECTOR (0 downto 0);
-    signal grp_fit_fu_365_LinearRegression_largestResid_phi : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_fit_fu_365_LinearRegression_largestResid_phi_ap_vld : STD_LOGIC;
-    signal grp_fit_fu_365_LinearRegression_largestResid_z : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_fit_fu_365_LinearRegression_largestResid_z_ap_vld : STD_LOGIC;
-    signal grp_fit_fu_365_LinearRegression_largestResid_layerId : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_fit_fu_365_LinearRegression_largestResid_layerId_ap_vld : STD_LOGIC;
-    signal grp_fit_fu_365_LinearRegression_largestResid_stubId : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_fit_fu_365_LinearRegression_largestResid_stubId_ap_vld : STD_LOGIC;
-    signal grp_fit_fu_365_LinearRegression_largestResid_ps : STD_LOGIC;
-    signal grp_fit_fu_365_LinearRegression_largestResid_ps_ap_vld : STD_LOGIC;
-    signal grp_fit_fu_365_l1track3D_stubs_data_settings_chosenRofPhi_s_address0 : STD_LOGIC_VECTOR (3 downto 0);
-    signal grp_fit_fu_365_l1track3D_stubs_data_settings_chosenRofPhi_s_ce0 : STD_LOGIC;
-    signal grp_fit_fu_365_l1track3D_stubs_data_settings_chosenRofPhi_s_address1 : STD_LOGIC_VECTOR (3 downto 0);
-    signal grp_fit_fu_365_l1track3D_stubs_data_settings_chosenRofPhi_s_ce1 : STD_LOGIC;
-    signal grp_fit_fu_365_l1track3D_stubs_data_settings_chosenRofZ_s_address0 : STD_LOGIC_VECTOR (3 downto 0);
-    signal grp_fit_fu_365_l1track3D_stubs_data_settings_chosenRofZ_s_ce0 : STD_LOGIC;
-    signal grp_fit_fu_365_l1track3D_stubs_data_settings_chosenRofZ_s_address1 : STD_LOGIC_VECTOR (3 downto 0);
-    signal grp_fit_fu_365_l1track3D_stubs_data_settings_chosenRofZ_s_ce1 : STD_LOGIC;
-    signal grp_fit_fu_365_l1track3D_stubs_data_settings_etaRegions_s_address0 : STD_LOGIC_VECTOR (7 downto 0);
-    signal grp_fit_fu_365_l1track3D_stubs_data_settings_etaRegions_s_ce0 : STD_LOGIC;
-    signal grp_fit_fu_365_l1track3D_stubs_data_settings_etaRegions_s_address1 : STD_LOGIC_VECTOR (7 downto 0);
-    signal grp_fit_fu_365_l1track3D_stubs_data_settings_etaRegions_s_ce1 : STD_LOGIC;
-    signal grp_fit_fu_365_l1track3D_stubs_data_settings_minNumMatchLayers_s_address0 : STD_LOGIC_VECTOR (3 downto 0);
-    signal grp_fit_fu_365_l1track3D_stubs_data_settings_minNumMatchLayers_s_ce0 : STD_LOGIC;
-    signal grp_fit_fu_365_l1track3D_stubs_data_settings_minNumMatchLayers_s_address1 : STD_LOGIC_VECTOR (3 downto 0);
-    signal grp_fit_fu_365_l1track3D_stubs_data_settings_minNumMatchLayers_s_ce1 : STD_LOGIC;
-    signal grp_fit_fu_365_l1track3D_stubs_data_settings_minPSLayers_s_address0 : STD_LOGIC_VECTOR (3 downto 0);
-    signal grp_fit_fu_365_l1track3D_stubs_data_settings_minPSLayers_s_ce0 : STD_LOGIC;
-    signal grp_fit_fu_365_l1track3D_stubs_data_settings_minPSLayers_s_address1 : STD_LOGIC_VECTOR (3 downto 0);
-    signal grp_fit_fu_365_l1track3D_stubs_data_settings_minPSLayers_s_ce1 : STD_LOGIC;
-    signal grp_fit_fu_365_l1track3D_stubs_data_r_s_address0 : STD_LOGIC_VECTOR (3 downto 0);
-    signal grp_fit_fu_365_l1track3D_stubs_data_r_s_ce0 : STD_LOGIC;
-    signal grp_fit_fu_365_l1track3D_stubs_data_r_s_address1 : STD_LOGIC_VECTOR (3 downto 0);
-    signal grp_fit_fu_365_l1track3D_stubs_data_r_s_ce1 : STD_LOGIC;
-    signal grp_fit_fu_365_l1track3D_stubs_data_phi_s_address0 : STD_LOGIC_VECTOR (3 downto 0);
-    signal grp_fit_fu_365_l1track3D_stubs_data_phi_s_ce0 : STD_LOGIC;
-    signal grp_fit_fu_365_l1track3D_stubs_data_phi_s_address1 : STD_LOGIC_VECTOR (3 downto 0);
-    signal grp_fit_fu_365_l1track3D_stubs_data_phi_s_ce1 : STD_LOGIC;
-    signal grp_fit_fu_365_l1track3D_stubs_data_z_s_address0 : STD_LOGIC_VECTOR (3 downto 0);
-    signal grp_fit_fu_365_l1track3D_stubs_data_z_s_ce0 : STD_LOGIC;
-    signal grp_fit_fu_365_l1track3D_stubs_data_z_s_address1 : STD_LOGIC_VECTOR (3 downto 0);
-    signal grp_fit_fu_365_l1track3D_stubs_data_z_s_ce1 : STD_LOGIC;
-    signal grp_fit_fu_365_l1track3D_stubs_data_layerId_s_address0 : STD_LOGIC_VECTOR (3 downto 0);
-    signal grp_fit_fu_365_l1track3D_stubs_data_layerId_s_ce0 : STD_LOGIC;
-    signal grp_fit_fu_365_l1track3D_stubs_data_layerId_s_address1 : STD_LOGIC_VECTOR (3 downto 0);
-    signal grp_fit_fu_365_l1track3D_stubs_data_layerId_s_ce1 : STD_LOGIC;
-    signal grp_fit_fu_365_l1track3D_stubs_data_psModule_s_address0 : STD_LOGIC_VECTOR (3 downto 0);
-    signal grp_fit_fu_365_l1track3D_stubs_data_psModule_s_ce0 : STD_LOGIC;
-    signal grp_fit_fu_365_l1track3D_stubs_data_psModule_s_address1 : STD_LOGIC_VECTOR (3 downto 0);
-    signal grp_fit_fu_365_l1track3D_stubs_data_psModule_s_ce1 : STD_LOGIC;
-    signal grp_fit_fu_365_l1track3D_stubs_data_barrel_s_address0 : STD_LOGIC_VECTOR (3 downto 0);
-    signal grp_fit_fu_365_l1track3D_stubs_data_barrel_s_ce0 : STD_LOGIC;
-    signal grp_fit_fu_365_l1track3D_stubs_data_barrel_s_address1 : STD_LOGIC_VECTOR (3 downto 0);
-    signal grp_fit_fu_365_l1track3D_stubs_data_barrel_s_ce1 : STD_LOGIC;
-    signal grp_fit_fu_365_ap_return_0 : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_fit_fu_365_ap_return_1 : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_fit_fu_365_ap_return_2 : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_fit_fu_365_ap_return_3 : STD_LOGIC_VECTOR (0 downto 0);
-    signal grp_fit_fu_365_ap_return_4 : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_fit_fu_365_ap_return_5 : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_fit_fu_365_ap_return_6 : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_fit_fu_365_ap_return_7 : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_fit_fu_365_ap_return_8 : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_fit_fu_365_ap_return_9 : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_fit_fu_365_ap_return_10 : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_fit_fu_365_ap_return_11 : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_fit_fu_365_ap_return_12 : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_fit_fu_365_ap_return_13 : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_fit_fu_365_ap_return_14 : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_fit_fu_365_ap_start_reg : STD_LOGIC := '0';
+    signal grp_fit_fu_363_ap_start : STD_LOGIC;
+    signal grp_fit_fu_363_ap_done : STD_LOGIC;
+    signal grp_fit_fu_363_ap_idle : STD_LOGIC;
+    signal grp_fit_fu_363_ap_ready : STD_LOGIC;
+    signal grp_fit_fu_363_LinearRegression_settings_sinh_etaRegions_s_address0 : STD_LOGIC_VECTOR (4 downto 0);
+    signal grp_fit_fu_363_LinearRegression_settings_sinh_etaRegions_s_ce0 : STD_LOGIC;
+    signal grp_fit_fu_363_LinearRegression_settings_sinh_etaRegions_s_address1 : STD_LOGIC_VECTOR (4 downto 0);
+    signal grp_fit_fu_363_LinearRegression_settings_sinh_etaRegions_s_ce1 : STD_LOGIC;
+    signal grp_fit_fu_363_LinearRegression_stubs_data_settings_chosenRofPhi_s_address0 : STD_LOGIC_VECTOR (3 downto 0);
+    signal grp_fit_fu_363_LinearRegression_stubs_data_settings_chosenRofPhi_s_ce0 : STD_LOGIC;
+    signal grp_fit_fu_363_LinearRegression_stubs_data_settings_chosenRofPhi_s_we0 : STD_LOGIC;
+    signal grp_fit_fu_363_LinearRegression_stubs_data_settings_chosenRofPhi_s_d0 : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_fit_fu_363_LinearRegression_stubs_data_settings_chosenRofPhi_s_address1 : STD_LOGIC_VECTOR (3 downto 0);
+    signal grp_fit_fu_363_LinearRegression_stubs_data_settings_chosenRofPhi_s_ce1 : STD_LOGIC;
+    signal grp_fit_fu_363_LinearRegression_stubs_data_settings_chosenRofPhi_s_we1 : STD_LOGIC;
+    signal grp_fit_fu_363_LinearRegression_stubs_data_settings_chosenRofPhi_s_d1 : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_fit_fu_363_LinearRegression_stubs_data_settings_chosenRofZ_s_address0 : STD_LOGIC_VECTOR (3 downto 0);
+    signal grp_fit_fu_363_LinearRegression_stubs_data_settings_chosenRofZ_s_ce0 : STD_LOGIC;
+    signal grp_fit_fu_363_LinearRegression_stubs_data_settings_chosenRofZ_s_we0 : STD_LOGIC;
+    signal grp_fit_fu_363_LinearRegression_stubs_data_settings_chosenRofZ_s_d0 : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_fit_fu_363_LinearRegression_stubs_data_settings_chosenRofZ_s_address1 : STD_LOGIC_VECTOR (3 downto 0);
+    signal grp_fit_fu_363_LinearRegression_stubs_data_settings_chosenRofZ_s_ce1 : STD_LOGIC;
+    signal grp_fit_fu_363_LinearRegression_stubs_data_settings_chosenRofZ_s_we1 : STD_LOGIC;
+    signal grp_fit_fu_363_LinearRegression_stubs_data_settings_chosenRofZ_s_d1 : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_fit_fu_363_LinearRegression_stubs_data_settings_sinh_etaRegions_s_address0 : STD_LOGIC_VECTOR (7 downto 0);
+    signal grp_fit_fu_363_LinearRegression_stubs_data_settings_sinh_etaRegions_s_ce0 : STD_LOGIC;
+    signal grp_fit_fu_363_LinearRegression_stubs_data_settings_sinh_etaRegions_s_we0 : STD_LOGIC;
+    signal grp_fit_fu_363_LinearRegression_stubs_data_settings_sinh_etaRegions_s_d0 : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_fit_fu_363_LinearRegression_stubs_data_settings_sinh_etaRegions_s_address1 : STD_LOGIC_VECTOR (7 downto 0);
+    signal grp_fit_fu_363_LinearRegression_stubs_data_settings_sinh_etaRegions_s_ce1 : STD_LOGIC;
+    signal grp_fit_fu_363_LinearRegression_stubs_data_settings_sinh_etaRegions_s_we1 : STD_LOGIC;
+    signal grp_fit_fu_363_LinearRegression_stubs_data_settings_sinh_etaRegions_s_d1 : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_fit_fu_363_LinearRegression_stubs_data_settings_minNumMatchLayers_s_address0 : STD_LOGIC_VECTOR (3 downto 0);
+    signal grp_fit_fu_363_LinearRegression_stubs_data_settings_minNumMatchLayers_s_ce0 : STD_LOGIC;
+    signal grp_fit_fu_363_LinearRegression_stubs_data_settings_minNumMatchLayers_s_we0 : STD_LOGIC;
+    signal grp_fit_fu_363_LinearRegression_stubs_data_settings_minNumMatchLayers_s_d0 : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_fit_fu_363_LinearRegression_stubs_data_settings_minNumMatchLayers_s_address1 : STD_LOGIC_VECTOR (3 downto 0);
+    signal grp_fit_fu_363_LinearRegression_stubs_data_settings_minNumMatchLayers_s_ce1 : STD_LOGIC;
+    signal grp_fit_fu_363_LinearRegression_stubs_data_settings_minNumMatchLayers_s_we1 : STD_LOGIC;
+    signal grp_fit_fu_363_LinearRegression_stubs_data_settings_minNumMatchLayers_s_d1 : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_fit_fu_363_LinearRegression_stubs_data_settings_minPSLayers_s_address0 : STD_LOGIC_VECTOR (3 downto 0);
+    signal grp_fit_fu_363_LinearRegression_stubs_data_settings_minPSLayers_s_ce0 : STD_LOGIC;
+    signal grp_fit_fu_363_LinearRegression_stubs_data_settings_minPSLayers_s_we0 : STD_LOGIC;
+    signal grp_fit_fu_363_LinearRegression_stubs_data_settings_minPSLayers_s_d0 : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_fit_fu_363_LinearRegression_stubs_data_settings_minPSLayers_s_address1 : STD_LOGIC_VECTOR (3 downto 0);
+    signal grp_fit_fu_363_LinearRegression_stubs_data_settings_minPSLayers_s_ce1 : STD_LOGIC;
+    signal grp_fit_fu_363_LinearRegression_stubs_data_settings_minPSLayers_s_we1 : STD_LOGIC;
+    signal grp_fit_fu_363_LinearRegression_stubs_data_settings_minPSLayers_s_d1 : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_fit_fu_363_LinearRegression_stubs_data_r_s_address0 : STD_LOGIC_VECTOR (3 downto 0);
+    signal grp_fit_fu_363_LinearRegression_stubs_data_r_s_ce0 : STD_LOGIC;
+    signal grp_fit_fu_363_LinearRegression_stubs_data_r_s_we0 : STD_LOGIC;
+    signal grp_fit_fu_363_LinearRegression_stubs_data_r_s_d0 : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_fit_fu_363_LinearRegression_stubs_data_r_s_address1 : STD_LOGIC_VECTOR (3 downto 0);
+    signal grp_fit_fu_363_LinearRegression_stubs_data_r_s_ce1 : STD_LOGIC;
+    signal grp_fit_fu_363_LinearRegression_stubs_data_r_s_we1 : STD_LOGIC;
+    signal grp_fit_fu_363_LinearRegression_stubs_data_r_s_d1 : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_fit_fu_363_LinearRegression_stubs_data_phi_s_address0 : STD_LOGIC_VECTOR (3 downto 0);
+    signal grp_fit_fu_363_LinearRegression_stubs_data_phi_s_ce0 : STD_LOGIC;
+    signal grp_fit_fu_363_LinearRegression_stubs_data_phi_s_we0 : STD_LOGIC;
+    signal grp_fit_fu_363_LinearRegression_stubs_data_phi_s_d0 : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_fit_fu_363_LinearRegression_stubs_data_phi_s_address1 : STD_LOGIC_VECTOR (3 downto 0);
+    signal grp_fit_fu_363_LinearRegression_stubs_data_phi_s_ce1 : STD_LOGIC;
+    signal grp_fit_fu_363_LinearRegression_stubs_data_phi_s_we1 : STD_LOGIC;
+    signal grp_fit_fu_363_LinearRegression_stubs_data_phi_s_d1 : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_fit_fu_363_LinearRegression_stubs_data_z_s_address0 : STD_LOGIC_VECTOR (3 downto 0);
+    signal grp_fit_fu_363_LinearRegression_stubs_data_z_s_ce0 : STD_LOGIC;
+    signal grp_fit_fu_363_LinearRegression_stubs_data_z_s_we0 : STD_LOGIC;
+    signal grp_fit_fu_363_LinearRegression_stubs_data_z_s_d0 : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_fit_fu_363_LinearRegression_stubs_data_z_s_address1 : STD_LOGIC_VECTOR (3 downto 0);
+    signal grp_fit_fu_363_LinearRegression_stubs_data_z_s_ce1 : STD_LOGIC;
+    signal grp_fit_fu_363_LinearRegression_stubs_data_z_s_we1 : STD_LOGIC;
+    signal grp_fit_fu_363_LinearRegression_stubs_data_z_s_d1 : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_fit_fu_363_LinearRegression_stubs_data_layerId_s_address0 : STD_LOGIC_VECTOR (3 downto 0);
+    signal grp_fit_fu_363_LinearRegression_stubs_data_layerId_s_ce0 : STD_LOGIC;
+    signal grp_fit_fu_363_LinearRegression_stubs_data_layerId_s_we0 : STD_LOGIC;
+    signal grp_fit_fu_363_LinearRegression_stubs_data_layerId_s_d0 : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_fit_fu_363_LinearRegression_stubs_data_layerId_s_address1 : STD_LOGIC_VECTOR (3 downto 0);
+    signal grp_fit_fu_363_LinearRegression_stubs_data_layerId_s_ce1 : STD_LOGIC;
+    signal grp_fit_fu_363_LinearRegression_stubs_data_layerId_s_we1 : STD_LOGIC;
+    signal grp_fit_fu_363_LinearRegression_stubs_data_layerId_s_d1 : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_fit_fu_363_LinearRegression_stubs_data_psModule_s_address0 : STD_LOGIC_VECTOR (3 downto 0);
+    signal grp_fit_fu_363_LinearRegression_stubs_data_psModule_s_ce0 : STD_LOGIC;
+    signal grp_fit_fu_363_LinearRegression_stubs_data_psModule_s_we0 : STD_LOGIC;
+    signal grp_fit_fu_363_LinearRegression_stubs_data_psModule_s_d0 : STD_LOGIC_VECTOR (0 downto 0);
+    signal grp_fit_fu_363_LinearRegression_stubs_data_psModule_s_address1 : STD_LOGIC_VECTOR (3 downto 0);
+    signal grp_fit_fu_363_LinearRegression_stubs_data_psModule_s_ce1 : STD_LOGIC;
+    signal grp_fit_fu_363_LinearRegression_stubs_data_psModule_s_we1 : STD_LOGIC;
+    signal grp_fit_fu_363_LinearRegression_stubs_data_psModule_s_d1 : STD_LOGIC_VECTOR (0 downto 0);
+    signal grp_fit_fu_363_LinearRegression_stubs_data_barrel_s_address0 : STD_LOGIC_VECTOR (3 downto 0);
+    signal grp_fit_fu_363_LinearRegression_stubs_data_barrel_s_ce0 : STD_LOGIC;
+    signal grp_fit_fu_363_LinearRegression_stubs_data_barrel_s_we0 : STD_LOGIC;
+    signal grp_fit_fu_363_LinearRegression_stubs_data_barrel_s_d0 : STD_LOGIC_VECTOR (0 downto 0);
+    signal grp_fit_fu_363_LinearRegression_stubs_data_barrel_s_address1 : STD_LOGIC_VECTOR (3 downto 0);
+    signal grp_fit_fu_363_LinearRegression_stubs_data_barrel_s_ce1 : STD_LOGIC;
+    signal grp_fit_fu_363_LinearRegression_stubs_data_barrel_s_we1 : STD_LOGIC;
+    signal grp_fit_fu_363_LinearRegression_stubs_data_barrel_s_d1 : STD_LOGIC_VECTOR (0 downto 0);
+    signal grp_fit_fu_363_LinearRegression_stubMap_data_first_address0 : STD_LOGIC_VECTOR (4 downto 0);
+    signal grp_fit_fu_363_LinearRegression_stubMap_data_first_ce0 : STD_LOGIC;
+    signal grp_fit_fu_363_LinearRegression_stubMap_data_first_we0 : STD_LOGIC;
+    signal grp_fit_fu_363_LinearRegression_stubMap_data_first_d0 : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_fit_fu_363_LinearRegression_stubMap_data_second_size_s_address0 : STD_LOGIC_VECTOR (4 downto 0);
+    signal grp_fit_fu_363_LinearRegression_stubMap_data_second_size_s_ce0 : STD_LOGIC;
+    signal grp_fit_fu_363_LinearRegression_stubMap_data_second_size_s_we0 : STD_LOGIC;
+    signal grp_fit_fu_363_LinearRegression_stubMap_data_second_size_s_d0 : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_fit_fu_363_LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_address0 : STD_LOGIC_VECTOR (8 downto 0);
+    signal grp_fit_fu_363_LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_ce0 : STD_LOGIC;
+    signal grp_fit_fu_363_LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_we0 : STD_LOGIC;
+    signal grp_fit_fu_363_LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_d0 : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_fit_fu_363_LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_address1 : STD_LOGIC_VECTOR (8 downto 0);
+    signal grp_fit_fu_363_LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_ce1 : STD_LOGIC;
+    signal grp_fit_fu_363_LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_we1 : STD_LOGIC;
+    signal grp_fit_fu_363_LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_d1 : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_fit_fu_363_LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_address0 : STD_LOGIC_VECTOR (8 downto 0);
+    signal grp_fit_fu_363_LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_ce0 : STD_LOGIC;
+    signal grp_fit_fu_363_LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_we0 : STD_LOGIC;
+    signal grp_fit_fu_363_LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_d0 : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_fit_fu_363_LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_address1 : STD_LOGIC_VECTOR (8 downto 0);
+    signal grp_fit_fu_363_LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_ce1 : STD_LOGIC;
+    signal grp_fit_fu_363_LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_we1 : STD_LOGIC;
+    signal grp_fit_fu_363_LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_d1 : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_fit_fu_363_LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_address0 : STD_LOGIC_VECTOR (12 downto 0);
+    signal grp_fit_fu_363_LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_ce0 : STD_LOGIC;
+    signal grp_fit_fu_363_LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_we0 : STD_LOGIC;
+    signal grp_fit_fu_363_LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_d0 : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_fit_fu_363_LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_address1 : STD_LOGIC_VECTOR (12 downto 0);
+    signal grp_fit_fu_363_LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_ce1 : STD_LOGIC;
+    signal grp_fit_fu_363_LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_we1 : STD_LOGIC;
+    signal grp_fit_fu_363_LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_d1 : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_fit_fu_363_LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_address0 : STD_LOGIC_VECTOR (8 downto 0);
+    signal grp_fit_fu_363_LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_ce0 : STD_LOGIC;
+    signal grp_fit_fu_363_LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_we0 : STD_LOGIC;
+    signal grp_fit_fu_363_LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_d0 : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_fit_fu_363_LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_address1 : STD_LOGIC_VECTOR (8 downto 0);
+    signal grp_fit_fu_363_LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_ce1 : STD_LOGIC;
+    signal grp_fit_fu_363_LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_we1 : STD_LOGIC;
+    signal grp_fit_fu_363_LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_d1 : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_fit_fu_363_LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_address0 : STD_LOGIC_VECTOR (8 downto 0);
+    signal grp_fit_fu_363_LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_ce0 : STD_LOGIC;
+    signal grp_fit_fu_363_LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_we0 : STD_LOGIC;
+    signal grp_fit_fu_363_LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_d0 : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_fit_fu_363_LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_address1 : STD_LOGIC_VECTOR (8 downto 0);
+    signal grp_fit_fu_363_LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_ce1 : STD_LOGIC;
+    signal grp_fit_fu_363_LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_we1 : STD_LOGIC;
+    signal grp_fit_fu_363_LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_d1 : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_fit_fu_363_LinearRegression_stubMap_data_second_data_r_s_address0 : STD_LOGIC_VECTOR (8 downto 0);
+    signal grp_fit_fu_363_LinearRegression_stubMap_data_second_data_r_s_ce0 : STD_LOGIC;
+    signal grp_fit_fu_363_LinearRegression_stubMap_data_second_data_r_s_we0 : STD_LOGIC;
+    signal grp_fit_fu_363_LinearRegression_stubMap_data_second_data_r_s_d0 : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_fit_fu_363_LinearRegression_stubMap_data_second_data_r_s_address1 : STD_LOGIC_VECTOR (8 downto 0);
+    signal grp_fit_fu_363_LinearRegression_stubMap_data_second_data_r_s_ce1 : STD_LOGIC;
+    signal grp_fit_fu_363_LinearRegression_stubMap_data_second_data_r_s_we1 : STD_LOGIC;
+    signal grp_fit_fu_363_LinearRegression_stubMap_data_second_data_r_s_d1 : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_fit_fu_363_LinearRegression_stubMap_data_second_data_phi_s_address0 : STD_LOGIC_VECTOR (8 downto 0);
+    signal grp_fit_fu_363_LinearRegression_stubMap_data_second_data_phi_s_ce0 : STD_LOGIC;
+    signal grp_fit_fu_363_LinearRegression_stubMap_data_second_data_phi_s_we0 : STD_LOGIC;
+    signal grp_fit_fu_363_LinearRegression_stubMap_data_second_data_phi_s_d0 : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_fit_fu_363_LinearRegression_stubMap_data_second_data_phi_s_address1 : STD_LOGIC_VECTOR (8 downto 0);
+    signal grp_fit_fu_363_LinearRegression_stubMap_data_second_data_phi_s_ce1 : STD_LOGIC;
+    signal grp_fit_fu_363_LinearRegression_stubMap_data_second_data_phi_s_we1 : STD_LOGIC;
+    signal grp_fit_fu_363_LinearRegression_stubMap_data_second_data_phi_s_d1 : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_fit_fu_363_LinearRegression_stubMap_data_second_data_z_s_address0 : STD_LOGIC_VECTOR (8 downto 0);
+    signal grp_fit_fu_363_LinearRegression_stubMap_data_second_data_z_s_ce0 : STD_LOGIC;
+    signal grp_fit_fu_363_LinearRegression_stubMap_data_second_data_z_s_we0 : STD_LOGIC;
+    signal grp_fit_fu_363_LinearRegression_stubMap_data_second_data_z_s_d0 : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_fit_fu_363_LinearRegression_stubMap_data_second_data_z_s_address1 : STD_LOGIC_VECTOR (8 downto 0);
+    signal grp_fit_fu_363_LinearRegression_stubMap_data_second_data_z_s_ce1 : STD_LOGIC;
+    signal grp_fit_fu_363_LinearRegression_stubMap_data_second_data_z_s_we1 : STD_LOGIC;
+    signal grp_fit_fu_363_LinearRegression_stubMap_data_second_data_z_s_d1 : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_fit_fu_363_LinearRegression_stubMap_data_second_data_layerId_s_address0 : STD_LOGIC_VECTOR (8 downto 0);
+    signal grp_fit_fu_363_LinearRegression_stubMap_data_second_data_layerId_s_ce0 : STD_LOGIC;
+    signal grp_fit_fu_363_LinearRegression_stubMap_data_second_data_layerId_s_we0 : STD_LOGIC;
+    signal grp_fit_fu_363_LinearRegression_stubMap_data_second_data_layerId_s_d0 : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_fit_fu_363_LinearRegression_stubMap_data_second_data_layerId_s_address1 : STD_LOGIC_VECTOR (8 downto 0);
+    signal grp_fit_fu_363_LinearRegression_stubMap_data_second_data_layerId_s_ce1 : STD_LOGIC;
+    signal grp_fit_fu_363_LinearRegression_stubMap_data_second_data_layerId_s_we1 : STD_LOGIC;
+    signal grp_fit_fu_363_LinearRegression_stubMap_data_second_data_layerId_s_d1 : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_fit_fu_363_LinearRegression_stubMap_data_second_data_psModule_s_address0 : STD_LOGIC_VECTOR (8 downto 0);
+    signal grp_fit_fu_363_LinearRegression_stubMap_data_second_data_psModule_s_ce0 : STD_LOGIC;
+    signal grp_fit_fu_363_LinearRegression_stubMap_data_second_data_psModule_s_we0 : STD_LOGIC;
+    signal grp_fit_fu_363_LinearRegression_stubMap_data_second_data_psModule_s_d0 : STD_LOGIC_VECTOR (0 downto 0);
+    signal grp_fit_fu_363_LinearRegression_stubMap_data_second_data_psModule_s_address1 : STD_LOGIC_VECTOR (8 downto 0);
+    signal grp_fit_fu_363_LinearRegression_stubMap_data_second_data_psModule_s_ce1 : STD_LOGIC;
+    signal grp_fit_fu_363_LinearRegression_stubMap_data_second_data_psModule_s_we1 : STD_LOGIC;
+    signal grp_fit_fu_363_LinearRegression_stubMap_data_second_data_psModule_s_d1 : STD_LOGIC_VECTOR (0 downto 0);
+    signal grp_fit_fu_363_LinearRegression_stubMap_data_second_data_barrel_s_address0 : STD_LOGIC_VECTOR (8 downto 0);
+    signal grp_fit_fu_363_LinearRegression_stubMap_data_second_data_barrel_s_ce0 : STD_LOGIC;
+    signal grp_fit_fu_363_LinearRegression_stubMap_data_second_data_barrel_s_we0 : STD_LOGIC;
+    signal grp_fit_fu_363_LinearRegression_stubMap_data_second_data_barrel_s_d0 : STD_LOGIC_VECTOR (0 downto 0);
+    signal grp_fit_fu_363_LinearRegression_stubMap_data_second_data_barrel_s_address1 : STD_LOGIC_VECTOR (8 downto 0);
+    signal grp_fit_fu_363_LinearRegression_stubMap_data_second_data_barrel_s_ce1 : STD_LOGIC;
+    signal grp_fit_fu_363_LinearRegression_stubMap_data_second_data_barrel_s_we1 : STD_LOGIC;
+    signal grp_fit_fu_363_LinearRegression_stubMap_data_second_data_barrel_s_d1 : STD_LOGIC_VECTOR (0 downto 0);
+    signal grp_fit_fu_363_LinearRegression_layerPopulation_data_first_address0 : STD_LOGIC_VECTOR (4 downto 0);
+    signal grp_fit_fu_363_LinearRegression_layerPopulation_data_first_ce0 : STD_LOGIC;
+    signal grp_fit_fu_363_LinearRegression_layerPopulation_data_first_we0 : STD_LOGIC;
+    signal grp_fit_fu_363_LinearRegression_layerPopulation_data_first_d0 : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_fit_fu_363_LinearRegression_layerPopulation_data_second_address0 : STD_LOGIC_VECTOR (4 downto 0);
+    signal grp_fit_fu_363_LinearRegression_layerPopulation_data_second_ce0 : STD_LOGIC;
+    signal grp_fit_fu_363_LinearRegression_layerPopulation_data_second_we0 : STD_LOGIC;
+    signal grp_fit_fu_363_LinearRegression_layerPopulation_data_second_d0 : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_fit_fu_363_LinearRegression_residuals_size_s : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_fit_fu_363_LinearRegression_residuals_size_s_ap_vld : STD_LOGIC;
+    signal grp_fit_fu_363_LinearRegression_residuals_data_first_address0 : STD_LOGIC_VECTOR (4 downto 0);
+    signal grp_fit_fu_363_LinearRegression_residuals_data_first_ce0 : STD_LOGIC;
+    signal grp_fit_fu_363_LinearRegression_residuals_data_first_we0 : STD_LOGIC;
+    signal grp_fit_fu_363_LinearRegression_residuals_data_first_d0 : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_fit_fu_363_LinearRegression_residuals_data_second_size_s_address0 : STD_LOGIC_VECTOR (4 downto 0);
+    signal grp_fit_fu_363_LinearRegression_residuals_data_second_size_s_ce0 : STD_LOGIC;
+    signal grp_fit_fu_363_LinearRegression_residuals_data_second_size_s_we0 : STD_LOGIC;
+    signal grp_fit_fu_363_LinearRegression_residuals_data_second_size_s_d0 : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_fit_fu_363_LinearRegression_residuals_data_second_data_phi_address0 : STD_LOGIC_VECTOR (8 downto 0);
+    signal grp_fit_fu_363_LinearRegression_residuals_data_second_data_phi_ce0 : STD_LOGIC;
+    signal grp_fit_fu_363_LinearRegression_residuals_data_second_data_phi_we0 : STD_LOGIC;
+    signal grp_fit_fu_363_LinearRegression_residuals_data_second_data_phi_d0 : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_fit_fu_363_LinearRegression_residuals_data_second_data_phi_address1 : STD_LOGIC_VECTOR (8 downto 0);
+    signal grp_fit_fu_363_LinearRegression_residuals_data_second_data_phi_ce1 : STD_LOGIC;
+    signal grp_fit_fu_363_LinearRegression_residuals_data_second_data_phi_we1 : STD_LOGIC;
+    signal grp_fit_fu_363_LinearRegression_residuals_data_second_data_phi_d1 : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_fit_fu_363_LinearRegression_residuals_data_second_data_z_address0 : STD_LOGIC_VECTOR (8 downto 0);
+    signal grp_fit_fu_363_LinearRegression_residuals_data_second_data_z_ce0 : STD_LOGIC;
+    signal grp_fit_fu_363_LinearRegression_residuals_data_second_data_z_we0 : STD_LOGIC;
+    signal grp_fit_fu_363_LinearRegression_residuals_data_second_data_z_d0 : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_fit_fu_363_LinearRegression_residuals_data_second_data_z_address1 : STD_LOGIC_VECTOR (8 downto 0);
+    signal grp_fit_fu_363_LinearRegression_residuals_data_second_data_z_ce1 : STD_LOGIC;
+    signal grp_fit_fu_363_LinearRegression_residuals_data_second_data_z_we1 : STD_LOGIC;
+    signal grp_fit_fu_363_LinearRegression_residuals_data_second_data_z_d1 : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_fit_fu_363_LinearRegression_residuals_data_second_data_layerId_address0 : STD_LOGIC_VECTOR (8 downto 0);
+    signal grp_fit_fu_363_LinearRegression_residuals_data_second_data_layerId_ce0 : STD_LOGIC;
+    signal grp_fit_fu_363_LinearRegression_residuals_data_second_data_layerId_we0 : STD_LOGIC;
+    signal grp_fit_fu_363_LinearRegression_residuals_data_second_data_layerId_d0 : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_fit_fu_363_LinearRegression_residuals_data_second_data_layerId_address1 : STD_LOGIC_VECTOR (8 downto 0);
+    signal grp_fit_fu_363_LinearRegression_residuals_data_second_data_layerId_ce1 : STD_LOGIC;
+    signal grp_fit_fu_363_LinearRegression_residuals_data_second_data_layerId_we1 : STD_LOGIC;
+    signal grp_fit_fu_363_LinearRegression_residuals_data_second_data_layerId_d1 : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_fit_fu_363_LinearRegression_residuals_data_second_data_stubId_address0 : STD_LOGIC_VECTOR (8 downto 0);
+    signal grp_fit_fu_363_LinearRegression_residuals_data_second_data_stubId_ce0 : STD_LOGIC;
+    signal grp_fit_fu_363_LinearRegression_residuals_data_second_data_stubId_we0 : STD_LOGIC;
+    signal grp_fit_fu_363_LinearRegression_residuals_data_second_data_stubId_d0 : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_fit_fu_363_LinearRegression_residuals_data_second_data_stubId_address1 : STD_LOGIC_VECTOR (8 downto 0);
+    signal grp_fit_fu_363_LinearRegression_residuals_data_second_data_stubId_ce1 : STD_LOGIC;
+    signal grp_fit_fu_363_LinearRegression_residuals_data_second_data_stubId_we1 : STD_LOGIC;
+    signal grp_fit_fu_363_LinearRegression_residuals_data_second_data_stubId_d1 : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_fit_fu_363_LinearRegression_residuals_data_second_data_ps_address0 : STD_LOGIC_VECTOR (8 downto 0);
+    signal grp_fit_fu_363_LinearRegression_residuals_data_second_data_ps_ce0 : STD_LOGIC;
+    signal grp_fit_fu_363_LinearRegression_residuals_data_second_data_ps_we0 : STD_LOGIC;
+    signal grp_fit_fu_363_LinearRegression_residuals_data_second_data_ps_d0 : STD_LOGIC_VECTOR (0 downto 0);
+    signal grp_fit_fu_363_LinearRegression_residuals_data_second_data_ps_address1 : STD_LOGIC_VECTOR (8 downto 0);
+    signal grp_fit_fu_363_LinearRegression_residuals_data_second_data_ps_ce1 : STD_LOGIC;
+    signal grp_fit_fu_363_LinearRegression_residuals_data_second_data_ps_we1 : STD_LOGIC;
+    signal grp_fit_fu_363_LinearRegression_residuals_data_second_data_ps_d1 : STD_LOGIC_VECTOR (0 downto 0);
+    signal grp_fit_fu_363_LinearRegression_largestResid_phi : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_fit_fu_363_LinearRegression_largestResid_phi_ap_vld : STD_LOGIC;
+    signal grp_fit_fu_363_LinearRegression_largestResid_z : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_fit_fu_363_LinearRegression_largestResid_z_ap_vld : STD_LOGIC;
+    signal grp_fit_fu_363_LinearRegression_largestResid_layerId : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_fit_fu_363_LinearRegression_largestResid_layerId_ap_vld : STD_LOGIC;
+    signal grp_fit_fu_363_LinearRegression_largestResid_stubId : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_fit_fu_363_LinearRegression_largestResid_stubId_ap_vld : STD_LOGIC;
+    signal grp_fit_fu_363_LinearRegression_largestResid_ps : STD_LOGIC;
+    signal grp_fit_fu_363_LinearRegression_largestResid_ps_ap_vld : STD_LOGIC;
+    signal grp_fit_fu_363_l1track3D_stubs_data_settings_chosenRofPhi_s_address0 : STD_LOGIC_VECTOR (3 downto 0);
+    signal grp_fit_fu_363_l1track3D_stubs_data_settings_chosenRofPhi_s_ce0 : STD_LOGIC;
+    signal grp_fit_fu_363_l1track3D_stubs_data_settings_chosenRofPhi_s_address1 : STD_LOGIC_VECTOR (3 downto 0);
+    signal grp_fit_fu_363_l1track3D_stubs_data_settings_chosenRofPhi_s_ce1 : STD_LOGIC;
+    signal grp_fit_fu_363_l1track3D_stubs_data_settings_chosenRofZ_s_address0 : STD_LOGIC_VECTOR (3 downto 0);
+    signal grp_fit_fu_363_l1track3D_stubs_data_settings_chosenRofZ_s_ce0 : STD_LOGIC;
+    signal grp_fit_fu_363_l1track3D_stubs_data_settings_chosenRofZ_s_address1 : STD_LOGIC_VECTOR (3 downto 0);
+    signal grp_fit_fu_363_l1track3D_stubs_data_settings_chosenRofZ_s_ce1 : STD_LOGIC;
+    signal grp_fit_fu_363_l1track3D_stubs_data_settings_sinh_etaRegions_s_address0 : STD_LOGIC_VECTOR (7 downto 0);
+    signal grp_fit_fu_363_l1track3D_stubs_data_settings_sinh_etaRegions_s_ce0 : STD_LOGIC;
+    signal grp_fit_fu_363_l1track3D_stubs_data_settings_sinh_etaRegions_s_address1 : STD_LOGIC_VECTOR (7 downto 0);
+    signal grp_fit_fu_363_l1track3D_stubs_data_settings_sinh_etaRegions_s_ce1 : STD_LOGIC;
+    signal grp_fit_fu_363_l1track3D_stubs_data_settings_minNumMatchLayers_s_address0 : STD_LOGIC_VECTOR (3 downto 0);
+    signal grp_fit_fu_363_l1track3D_stubs_data_settings_minNumMatchLayers_s_ce0 : STD_LOGIC;
+    signal grp_fit_fu_363_l1track3D_stubs_data_settings_minNumMatchLayers_s_address1 : STD_LOGIC_VECTOR (3 downto 0);
+    signal grp_fit_fu_363_l1track3D_stubs_data_settings_minNumMatchLayers_s_ce1 : STD_LOGIC;
+    signal grp_fit_fu_363_l1track3D_stubs_data_settings_minPSLayers_s_address0 : STD_LOGIC_VECTOR (3 downto 0);
+    signal grp_fit_fu_363_l1track3D_stubs_data_settings_minPSLayers_s_ce0 : STD_LOGIC;
+    signal grp_fit_fu_363_l1track3D_stubs_data_settings_minPSLayers_s_address1 : STD_LOGIC_VECTOR (3 downto 0);
+    signal grp_fit_fu_363_l1track3D_stubs_data_settings_minPSLayers_s_ce1 : STD_LOGIC;
+    signal grp_fit_fu_363_l1track3D_stubs_data_r_s_address0 : STD_LOGIC_VECTOR (3 downto 0);
+    signal grp_fit_fu_363_l1track3D_stubs_data_r_s_ce0 : STD_LOGIC;
+    signal grp_fit_fu_363_l1track3D_stubs_data_r_s_address1 : STD_LOGIC_VECTOR (3 downto 0);
+    signal grp_fit_fu_363_l1track3D_stubs_data_r_s_ce1 : STD_LOGIC;
+    signal grp_fit_fu_363_l1track3D_stubs_data_phi_s_address0 : STD_LOGIC_VECTOR (3 downto 0);
+    signal grp_fit_fu_363_l1track3D_stubs_data_phi_s_ce0 : STD_LOGIC;
+    signal grp_fit_fu_363_l1track3D_stubs_data_phi_s_address1 : STD_LOGIC_VECTOR (3 downto 0);
+    signal grp_fit_fu_363_l1track3D_stubs_data_phi_s_ce1 : STD_LOGIC;
+    signal grp_fit_fu_363_l1track3D_stubs_data_z_s_address0 : STD_LOGIC_VECTOR (3 downto 0);
+    signal grp_fit_fu_363_l1track3D_stubs_data_z_s_ce0 : STD_LOGIC;
+    signal grp_fit_fu_363_l1track3D_stubs_data_z_s_address1 : STD_LOGIC_VECTOR (3 downto 0);
+    signal grp_fit_fu_363_l1track3D_stubs_data_z_s_ce1 : STD_LOGIC;
+    signal grp_fit_fu_363_l1track3D_stubs_data_layerId_s_address0 : STD_LOGIC_VECTOR (3 downto 0);
+    signal grp_fit_fu_363_l1track3D_stubs_data_layerId_s_ce0 : STD_LOGIC;
+    signal grp_fit_fu_363_l1track3D_stubs_data_layerId_s_address1 : STD_LOGIC_VECTOR (3 downto 0);
+    signal grp_fit_fu_363_l1track3D_stubs_data_layerId_s_ce1 : STD_LOGIC;
+    signal grp_fit_fu_363_l1track3D_stubs_data_psModule_s_address0 : STD_LOGIC_VECTOR (3 downto 0);
+    signal grp_fit_fu_363_l1track3D_stubs_data_psModule_s_ce0 : STD_LOGIC;
+    signal grp_fit_fu_363_l1track3D_stubs_data_psModule_s_address1 : STD_LOGIC_VECTOR (3 downto 0);
+    signal grp_fit_fu_363_l1track3D_stubs_data_psModule_s_ce1 : STD_LOGIC;
+    signal grp_fit_fu_363_l1track3D_stubs_data_barrel_s_address0 : STD_LOGIC_VECTOR (3 downto 0);
+    signal grp_fit_fu_363_l1track3D_stubs_data_barrel_s_ce0 : STD_LOGIC;
+    signal grp_fit_fu_363_l1track3D_stubs_data_barrel_s_address1 : STD_LOGIC_VECTOR (3 downto 0);
+    signal grp_fit_fu_363_l1track3D_stubs_data_barrel_s_ce1 : STD_LOGIC;
+    signal grp_fit_fu_363_ap_return_0 : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_fit_fu_363_ap_return_1 : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_fit_fu_363_ap_return_2 : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_fit_fu_363_ap_return_3 : STD_LOGIC_VECTOR (0 downto 0);
+    signal grp_fit_fu_363_ap_return_4 : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_fit_fu_363_ap_return_5 : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_fit_fu_363_ap_return_6 : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_fit_fu_363_ap_return_7 : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_fit_fu_363_ap_return_8 : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_fit_fu_363_ap_return_9 : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_fit_fu_363_ap_return_10 : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_fit_fu_363_ap_return_11 : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_fit_fu_363_ap_return_12 : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_fit_fu_363_ap_return_13 : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_fit_fu_363_ap_return_14 : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_fit_fu_363_ap_start_reg : STD_LOGIC := '0';
     signal ap_CS_fsm_state2 : STD_LOGIC;
     attribute fsm_encoding of ap_CS_fsm_state2 : signal is "none";
     signal ap_NS_fsm : STD_LOGIC_VECTOR (1 downto 0);
@@ -783,9 +788,12 @@ architecture behav of LRupdateHLS is
         ap_ready : OUT STD_LOGIC;
         LinearRegression_settings_chosenRofPhi_read : IN STD_LOGIC_VECTOR (31 downto 0);
         LinearRegression_settings_chosenRofZ_read : IN STD_LOGIC_VECTOR (31 downto 0);
-        LinearRegression_settings_etaRegions_s_address0 : OUT STD_LOGIC_VECTOR (4 downto 0);
-        LinearRegression_settings_etaRegions_s_ce0 : OUT STD_LOGIC;
-        LinearRegression_settings_etaRegions_s_q0 : IN STD_LOGIC_VECTOR (31 downto 0);
+        LinearRegression_settings_sinh_etaRegions_s_address0 : OUT STD_LOGIC_VECTOR (4 downto 0);
+        LinearRegression_settings_sinh_etaRegions_s_ce0 : OUT STD_LOGIC;
+        LinearRegression_settings_sinh_etaRegions_s_q0 : IN STD_LOGIC_VECTOR (31 downto 0);
+        LinearRegression_settings_sinh_etaRegions_s_address1 : OUT STD_LOGIC_VECTOR (4 downto 0);
+        LinearRegression_settings_sinh_etaRegions_s_ce1 : OUT STD_LOGIC;
+        LinearRegression_settings_sinh_etaRegions_s_q1 : IN STD_LOGIC_VECTOR (31 downto 0);
         LinearRegression_settings_minNumMatchLayers_read : IN STD_LOGIC_VECTOR (31 downto 0);
         LinearRegression_settings_minPSLayers_read : IN STD_LOGIC_VECTOR (31 downto 0);
         LinearRegression_LRParameter_qOverPt_read : IN STD_LOGIC_VECTOR (31 downto 0);
@@ -810,16 +818,16 @@ architecture behav of LRupdateHLS is
         LinearRegression_stubs_data_settings_chosenRofZ_s_ce1 : OUT STD_LOGIC;
         LinearRegression_stubs_data_settings_chosenRofZ_s_we1 : OUT STD_LOGIC;
         LinearRegression_stubs_data_settings_chosenRofZ_s_d1 : OUT STD_LOGIC_VECTOR (31 downto 0);
-        LinearRegression_stubs_data_settings_etaRegions_s_address0 : OUT STD_LOGIC_VECTOR (7 downto 0);
-        LinearRegression_stubs_data_settings_etaRegions_s_ce0 : OUT STD_LOGIC;
-        LinearRegression_stubs_data_settings_etaRegions_s_we0 : OUT STD_LOGIC;
-        LinearRegression_stubs_data_settings_etaRegions_s_d0 : OUT STD_LOGIC_VECTOR (31 downto 0);
-        LinearRegression_stubs_data_settings_etaRegions_s_q0 : IN STD_LOGIC_VECTOR (31 downto 0);
-        LinearRegression_stubs_data_settings_etaRegions_s_address1 : OUT STD_LOGIC_VECTOR (7 downto 0);
-        LinearRegression_stubs_data_settings_etaRegions_s_ce1 : OUT STD_LOGIC;
-        LinearRegression_stubs_data_settings_etaRegions_s_we1 : OUT STD_LOGIC;
-        LinearRegression_stubs_data_settings_etaRegions_s_d1 : OUT STD_LOGIC_VECTOR (31 downto 0);
-        LinearRegression_stubs_data_settings_etaRegions_s_q1 : IN STD_LOGIC_VECTOR (31 downto 0);
+        LinearRegression_stubs_data_settings_sinh_etaRegions_s_address0 : OUT STD_LOGIC_VECTOR (7 downto 0);
+        LinearRegression_stubs_data_settings_sinh_etaRegions_s_ce0 : OUT STD_LOGIC;
+        LinearRegression_stubs_data_settings_sinh_etaRegions_s_we0 : OUT STD_LOGIC;
+        LinearRegression_stubs_data_settings_sinh_etaRegions_s_d0 : OUT STD_LOGIC_VECTOR (31 downto 0);
+        LinearRegression_stubs_data_settings_sinh_etaRegions_s_q0 : IN STD_LOGIC_VECTOR (31 downto 0);
+        LinearRegression_stubs_data_settings_sinh_etaRegions_s_address1 : OUT STD_LOGIC_VECTOR (7 downto 0);
+        LinearRegression_stubs_data_settings_sinh_etaRegions_s_ce1 : OUT STD_LOGIC;
+        LinearRegression_stubs_data_settings_sinh_etaRegions_s_we1 : OUT STD_LOGIC;
+        LinearRegression_stubs_data_settings_sinh_etaRegions_s_d1 : OUT STD_LOGIC_VECTOR (31 downto 0);
+        LinearRegression_stubs_data_settings_sinh_etaRegions_s_q1 : IN STD_LOGIC_VECTOR (31 downto 0);
         LinearRegression_stubs_data_settings_minNumMatchLayers_s_address0 : OUT STD_LOGIC_VECTOR (3 downto 0);
         LinearRegression_stubs_data_settings_minNumMatchLayers_s_ce0 : OUT STD_LOGIC;
         LinearRegression_stubs_data_settings_minNumMatchLayers_s_we0 : OUT STD_LOGIC;
@@ -926,16 +934,16 @@ architecture behav of LRupdateHLS is
         LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_we1 : OUT STD_LOGIC;
         LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_d1 : OUT STD_LOGIC_VECTOR (31 downto 0);
         LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_q1 : IN STD_LOGIC_VECTOR (31 downto 0);
-        LinearRegression_stubMap_data_second_data_settings_etaRegions_s_address0 : OUT STD_LOGIC_VECTOR (12 downto 0);
-        LinearRegression_stubMap_data_second_data_settings_etaRegions_s_ce0 : OUT STD_LOGIC;
-        LinearRegression_stubMap_data_second_data_settings_etaRegions_s_we0 : OUT STD_LOGIC;
-        LinearRegression_stubMap_data_second_data_settings_etaRegions_s_d0 : OUT STD_LOGIC_VECTOR (31 downto 0);
-        LinearRegression_stubMap_data_second_data_settings_etaRegions_s_q0 : IN STD_LOGIC_VECTOR (31 downto 0);
-        LinearRegression_stubMap_data_second_data_settings_etaRegions_s_address1 : OUT STD_LOGIC_VECTOR (12 downto 0);
-        LinearRegression_stubMap_data_second_data_settings_etaRegions_s_ce1 : OUT STD_LOGIC;
-        LinearRegression_stubMap_data_second_data_settings_etaRegions_s_we1 : OUT STD_LOGIC;
-        LinearRegression_stubMap_data_second_data_settings_etaRegions_s_d1 : OUT STD_LOGIC_VECTOR (31 downto 0);
-        LinearRegression_stubMap_data_second_data_settings_etaRegions_s_q1 : IN STD_LOGIC_VECTOR (31 downto 0);
+        LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_address0 : OUT STD_LOGIC_VECTOR (12 downto 0);
+        LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_ce0 : OUT STD_LOGIC;
+        LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_we0 : OUT STD_LOGIC;
+        LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_d0 : OUT STD_LOGIC_VECTOR (31 downto 0);
+        LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_q0 : IN STD_LOGIC_VECTOR (31 downto 0);
+        LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_address1 : OUT STD_LOGIC_VECTOR (12 downto 0);
+        LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_ce1 : OUT STD_LOGIC;
+        LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_we1 : OUT STD_LOGIC;
+        LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_d1 : OUT STD_LOGIC_VECTOR (31 downto 0);
+        LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_q1 : IN STD_LOGIC_VECTOR (31 downto 0);
         LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_address0 : OUT STD_LOGIC_VECTOR (8 downto 0);
         LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_ce0 : OUT STD_LOGIC;
         LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_we0 : OUT STD_LOGIC;
@@ -1111,12 +1119,12 @@ architecture behav of LRupdateHLS is
         l1track3D_stubs_data_settings_chosenRofZ_s_address1 : OUT STD_LOGIC_VECTOR (3 downto 0);
         l1track3D_stubs_data_settings_chosenRofZ_s_ce1 : OUT STD_LOGIC;
         l1track3D_stubs_data_settings_chosenRofZ_s_q1 : IN STD_LOGIC_VECTOR (31 downto 0);
-        l1track3D_stubs_data_settings_etaRegions_s_address0 : OUT STD_LOGIC_VECTOR (7 downto 0);
-        l1track3D_stubs_data_settings_etaRegions_s_ce0 : OUT STD_LOGIC;
-        l1track3D_stubs_data_settings_etaRegions_s_q0 : IN STD_LOGIC_VECTOR (31 downto 0);
-        l1track3D_stubs_data_settings_etaRegions_s_address1 : OUT STD_LOGIC_VECTOR (7 downto 0);
-        l1track3D_stubs_data_settings_etaRegions_s_ce1 : OUT STD_LOGIC;
-        l1track3D_stubs_data_settings_etaRegions_s_q1 : IN STD_LOGIC_VECTOR (31 downto 0);
+        l1track3D_stubs_data_settings_sinh_etaRegions_s_address0 : OUT STD_LOGIC_VECTOR (7 downto 0);
+        l1track3D_stubs_data_settings_sinh_etaRegions_s_ce0 : OUT STD_LOGIC;
+        l1track3D_stubs_data_settings_sinh_etaRegions_s_q0 : IN STD_LOGIC_VECTOR (31 downto 0);
+        l1track3D_stubs_data_settings_sinh_etaRegions_s_address1 : OUT STD_LOGIC_VECTOR (7 downto 0);
+        l1track3D_stubs_data_settings_sinh_etaRegions_s_ce1 : OUT STD_LOGIC;
+        l1track3D_stubs_data_settings_sinh_etaRegions_s_q1 : IN STD_LOGIC_VECTOR (31 downto 0);
         l1track3D_stubs_data_settings_minNumMatchLayers_s_address0 : OUT STD_LOGIC_VECTOR (3 downto 0);
         l1track3D_stubs_data_settings_minNumMatchLayers_s_ce0 : OUT STD_LOGIC;
         l1track3D_stubs_data_settings_minNumMatchLayers_s_q0 : IN STD_LOGIC_VECTOR (31 downto 0);
@@ -1185,413 +1193,416 @@ architecture behav of LRupdateHLS is
 
 
 begin
-    grp_fit_fu_365 : component fit
+    grp_fit_fu_363 : component fit
     port map (
         ap_clk => ap_clk,
         ap_rst => ap_rst,
-        ap_start => grp_fit_fu_365_ap_start,
-        ap_done => grp_fit_fu_365_ap_done,
-        ap_idle => grp_fit_fu_365_ap_idle,
-        ap_ready => grp_fit_fu_365_ap_ready,
+        ap_start => grp_fit_fu_363_ap_start,
+        ap_done => grp_fit_fu_363_ap_done,
+        ap_idle => grp_fit_fu_363_ap_idle,
+        ap_ready => grp_fit_fu_363_ap_ready,
         LinearRegression_settings_chosenRofPhi_read => linearRegression_settings_chosenRofPhi_s,
         LinearRegression_settings_chosenRofZ_read => linearRegression_settings_chosenRofZ_s,
-        LinearRegression_settings_etaRegions_s_address0 => grp_fit_fu_365_LinearRegression_settings_etaRegions_s_address0,
-        LinearRegression_settings_etaRegions_s_ce0 => grp_fit_fu_365_LinearRegression_settings_etaRegions_s_ce0,
-        LinearRegression_settings_etaRegions_s_q0 => linearRegression_settings_etaRegions_s_q0,
+        LinearRegression_settings_sinh_etaRegions_s_address0 => grp_fit_fu_363_LinearRegression_settings_sinh_etaRegions_s_address0,
+        LinearRegression_settings_sinh_etaRegions_s_ce0 => grp_fit_fu_363_LinearRegression_settings_sinh_etaRegions_s_ce0,
+        LinearRegression_settings_sinh_etaRegions_s_q0 => linearRegression_settings_sinh_etaRegions_s_q0,
+        LinearRegression_settings_sinh_etaRegions_s_address1 => grp_fit_fu_363_LinearRegression_settings_sinh_etaRegions_s_address1,
+        LinearRegression_settings_sinh_etaRegions_s_ce1 => grp_fit_fu_363_LinearRegression_settings_sinh_etaRegions_s_ce1,
+        LinearRegression_settings_sinh_etaRegions_s_q1 => linearRegression_settings_sinh_etaRegions_s_q1,
         LinearRegression_settings_minNumMatchLayers_read => linearRegression_settings_minNumMatchLayers_s,
         LinearRegression_settings_minPSLayers_read => linearRegression_settings_minPSLayers_s,
         LinearRegression_LRParameter_qOverPt_read => linearRegression_LRParameter_qOverPt_i,
         LinearRegression_LRParameter_phiT_read => linearRegression_LRParameter_phiT_i,
         LinearRegression_LRParameter_cotTheta_read => linearRegression_LRParameter_cotTheta_i,
         LinearRegression_LRParameter_zT_read => linearRegression_LRParameter_zT_i,
-        LinearRegression_stubs_data_settings_chosenRofPhi_s_address0 => grp_fit_fu_365_LinearRegression_stubs_data_settings_chosenRofPhi_s_address0,
-        LinearRegression_stubs_data_settings_chosenRofPhi_s_ce0 => grp_fit_fu_365_LinearRegression_stubs_data_settings_chosenRofPhi_s_ce0,
-        LinearRegression_stubs_data_settings_chosenRofPhi_s_we0 => grp_fit_fu_365_LinearRegression_stubs_data_settings_chosenRofPhi_s_we0,
-        LinearRegression_stubs_data_settings_chosenRofPhi_s_d0 => grp_fit_fu_365_LinearRegression_stubs_data_settings_chosenRofPhi_s_d0,
+        LinearRegression_stubs_data_settings_chosenRofPhi_s_address0 => grp_fit_fu_363_LinearRegression_stubs_data_settings_chosenRofPhi_s_address0,
+        LinearRegression_stubs_data_settings_chosenRofPhi_s_ce0 => grp_fit_fu_363_LinearRegression_stubs_data_settings_chosenRofPhi_s_ce0,
+        LinearRegression_stubs_data_settings_chosenRofPhi_s_we0 => grp_fit_fu_363_LinearRegression_stubs_data_settings_chosenRofPhi_s_we0,
+        LinearRegression_stubs_data_settings_chosenRofPhi_s_d0 => grp_fit_fu_363_LinearRegression_stubs_data_settings_chosenRofPhi_s_d0,
         LinearRegression_stubs_data_settings_chosenRofPhi_s_q0 => linearRegression_stubs_data_settings_chosenRofPhi_s_q0,
-        LinearRegression_stubs_data_settings_chosenRofPhi_s_address1 => grp_fit_fu_365_LinearRegression_stubs_data_settings_chosenRofPhi_s_address1,
-        LinearRegression_stubs_data_settings_chosenRofPhi_s_ce1 => grp_fit_fu_365_LinearRegression_stubs_data_settings_chosenRofPhi_s_ce1,
-        LinearRegression_stubs_data_settings_chosenRofPhi_s_we1 => grp_fit_fu_365_LinearRegression_stubs_data_settings_chosenRofPhi_s_we1,
-        LinearRegression_stubs_data_settings_chosenRofPhi_s_d1 => grp_fit_fu_365_LinearRegression_stubs_data_settings_chosenRofPhi_s_d1,
-        LinearRegression_stubs_data_settings_chosenRofZ_s_address0 => grp_fit_fu_365_LinearRegression_stubs_data_settings_chosenRofZ_s_address0,
-        LinearRegression_stubs_data_settings_chosenRofZ_s_ce0 => grp_fit_fu_365_LinearRegression_stubs_data_settings_chosenRofZ_s_ce0,
-        LinearRegression_stubs_data_settings_chosenRofZ_s_we0 => grp_fit_fu_365_LinearRegression_stubs_data_settings_chosenRofZ_s_we0,
-        LinearRegression_stubs_data_settings_chosenRofZ_s_d0 => grp_fit_fu_365_LinearRegression_stubs_data_settings_chosenRofZ_s_d0,
+        LinearRegression_stubs_data_settings_chosenRofPhi_s_address1 => grp_fit_fu_363_LinearRegression_stubs_data_settings_chosenRofPhi_s_address1,
+        LinearRegression_stubs_data_settings_chosenRofPhi_s_ce1 => grp_fit_fu_363_LinearRegression_stubs_data_settings_chosenRofPhi_s_ce1,
+        LinearRegression_stubs_data_settings_chosenRofPhi_s_we1 => grp_fit_fu_363_LinearRegression_stubs_data_settings_chosenRofPhi_s_we1,
+        LinearRegression_stubs_data_settings_chosenRofPhi_s_d1 => grp_fit_fu_363_LinearRegression_stubs_data_settings_chosenRofPhi_s_d1,
+        LinearRegression_stubs_data_settings_chosenRofZ_s_address0 => grp_fit_fu_363_LinearRegression_stubs_data_settings_chosenRofZ_s_address0,
+        LinearRegression_stubs_data_settings_chosenRofZ_s_ce0 => grp_fit_fu_363_LinearRegression_stubs_data_settings_chosenRofZ_s_ce0,
+        LinearRegression_stubs_data_settings_chosenRofZ_s_we0 => grp_fit_fu_363_LinearRegression_stubs_data_settings_chosenRofZ_s_we0,
+        LinearRegression_stubs_data_settings_chosenRofZ_s_d0 => grp_fit_fu_363_LinearRegression_stubs_data_settings_chosenRofZ_s_d0,
         LinearRegression_stubs_data_settings_chosenRofZ_s_q0 => linearRegression_stubs_data_settings_chosenRofZ_s_q0,
-        LinearRegression_stubs_data_settings_chosenRofZ_s_address1 => grp_fit_fu_365_LinearRegression_stubs_data_settings_chosenRofZ_s_address1,
-        LinearRegression_stubs_data_settings_chosenRofZ_s_ce1 => grp_fit_fu_365_LinearRegression_stubs_data_settings_chosenRofZ_s_ce1,
-        LinearRegression_stubs_data_settings_chosenRofZ_s_we1 => grp_fit_fu_365_LinearRegression_stubs_data_settings_chosenRofZ_s_we1,
-        LinearRegression_stubs_data_settings_chosenRofZ_s_d1 => grp_fit_fu_365_LinearRegression_stubs_data_settings_chosenRofZ_s_d1,
-        LinearRegression_stubs_data_settings_etaRegions_s_address0 => grp_fit_fu_365_LinearRegression_stubs_data_settings_etaRegions_s_address0,
-        LinearRegression_stubs_data_settings_etaRegions_s_ce0 => grp_fit_fu_365_LinearRegression_stubs_data_settings_etaRegions_s_ce0,
-        LinearRegression_stubs_data_settings_etaRegions_s_we0 => grp_fit_fu_365_LinearRegression_stubs_data_settings_etaRegions_s_we0,
-        LinearRegression_stubs_data_settings_etaRegions_s_d0 => grp_fit_fu_365_LinearRegression_stubs_data_settings_etaRegions_s_d0,
-        LinearRegression_stubs_data_settings_etaRegions_s_q0 => linearRegression_stubs_data_settings_etaRegions_s_q0,
-        LinearRegression_stubs_data_settings_etaRegions_s_address1 => grp_fit_fu_365_LinearRegression_stubs_data_settings_etaRegions_s_address1,
-        LinearRegression_stubs_data_settings_etaRegions_s_ce1 => grp_fit_fu_365_LinearRegression_stubs_data_settings_etaRegions_s_ce1,
-        LinearRegression_stubs_data_settings_etaRegions_s_we1 => grp_fit_fu_365_LinearRegression_stubs_data_settings_etaRegions_s_we1,
-        LinearRegression_stubs_data_settings_etaRegions_s_d1 => grp_fit_fu_365_LinearRegression_stubs_data_settings_etaRegions_s_d1,
-        LinearRegression_stubs_data_settings_etaRegions_s_q1 => linearRegression_stubs_data_settings_etaRegions_s_q1,
-        LinearRegression_stubs_data_settings_minNumMatchLayers_s_address0 => grp_fit_fu_365_LinearRegression_stubs_data_settings_minNumMatchLayers_s_address0,
-        LinearRegression_stubs_data_settings_minNumMatchLayers_s_ce0 => grp_fit_fu_365_LinearRegression_stubs_data_settings_minNumMatchLayers_s_ce0,
-        LinearRegression_stubs_data_settings_minNumMatchLayers_s_we0 => grp_fit_fu_365_LinearRegression_stubs_data_settings_minNumMatchLayers_s_we0,
-        LinearRegression_stubs_data_settings_minNumMatchLayers_s_d0 => grp_fit_fu_365_LinearRegression_stubs_data_settings_minNumMatchLayers_s_d0,
+        LinearRegression_stubs_data_settings_chosenRofZ_s_address1 => grp_fit_fu_363_LinearRegression_stubs_data_settings_chosenRofZ_s_address1,
+        LinearRegression_stubs_data_settings_chosenRofZ_s_ce1 => grp_fit_fu_363_LinearRegression_stubs_data_settings_chosenRofZ_s_ce1,
+        LinearRegression_stubs_data_settings_chosenRofZ_s_we1 => grp_fit_fu_363_LinearRegression_stubs_data_settings_chosenRofZ_s_we1,
+        LinearRegression_stubs_data_settings_chosenRofZ_s_d1 => grp_fit_fu_363_LinearRegression_stubs_data_settings_chosenRofZ_s_d1,
+        LinearRegression_stubs_data_settings_sinh_etaRegions_s_address0 => grp_fit_fu_363_LinearRegression_stubs_data_settings_sinh_etaRegions_s_address0,
+        LinearRegression_stubs_data_settings_sinh_etaRegions_s_ce0 => grp_fit_fu_363_LinearRegression_stubs_data_settings_sinh_etaRegions_s_ce0,
+        LinearRegression_stubs_data_settings_sinh_etaRegions_s_we0 => grp_fit_fu_363_LinearRegression_stubs_data_settings_sinh_etaRegions_s_we0,
+        LinearRegression_stubs_data_settings_sinh_etaRegions_s_d0 => grp_fit_fu_363_LinearRegression_stubs_data_settings_sinh_etaRegions_s_d0,
+        LinearRegression_stubs_data_settings_sinh_etaRegions_s_q0 => linearRegression_stubs_data_settings_sinh_etaRegions_s_q0,
+        LinearRegression_stubs_data_settings_sinh_etaRegions_s_address1 => grp_fit_fu_363_LinearRegression_stubs_data_settings_sinh_etaRegions_s_address1,
+        LinearRegression_stubs_data_settings_sinh_etaRegions_s_ce1 => grp_fit_fu_363_LinearRegression_stubs_data_settings_sinh_etaRegions_s_ce1,
+        LinearRegression_stubs_data_settings_sinh_etaRegions_s_we1 => grp_fit_fu_363_LinearRegression_stubs_data_settings_sinh_etaRegions_s_we1,
+        LinearRegression_stubs_data_settings_sinh_etaRegions_s_d1 => grp_fit_fu_363_LinearRegression_stubs_data_settings_sinh_etaRegions_s_d1,
+        LinearRegression_stubs_data_settings_sinh_etaRegions_s_q1 => linearRegression_stubs_data_settings_sinh_etaRegions_s_q1,
+        LinearRegression_stubs_data_settings_minNumMatchLayers_s_address0 => grp_fit_fu_363_LinearRegression_stubs_data_settings_minNumMatchLayers_s_address0,
+        LinearRegression_stubs_data_settings_minNumMatchLayers_s_ce0 => grp_fit_fu_363_LinearRegression_stubs_data_settings_minNumMatchLayers_s_ce0,
+        LinearRegression_stubs_data_settings_minNumMatchLayers_s_we0 => grp_fit_fu_363_LinearRegression_stubs_data_settings_minNumMatchLayers_s_we0,
+        LinearRegression_stubs_data_settings_minNumMatchLayers_s_d0 => grp_fit_fu_363_LinearRegression_stubs_data_settings_minNumMatchLayers_s_d0,
         LinearRegression_stubs_data_settings_minNumMatchLayers_s_q0 => linearRegression_stubs_data_settings_minNumMatchLayers_s_q0,
-        LinearRegression_stubs_data_settings_minNumMatchLayers_s_address1 => grp_fit_fu_365_LinearRegression_stubs_data_settings_minNumMatchLayers_s_address1,
-        LinearRegression_stubs_data_settings_minNumMatchLayers_s_ce1 => grp_fit_fu_365_LinearRegression_stubs_data_settings_minNumMatchLayers_s_ce1,
-        LinearRegression_stubs_data_settings_minNumMatchLayers_s_we1 => grp_fit_fu_365_LinearRegression_stubs_data_settings_minNumMatchLayers_s_we1,
-        LinearRegression_stubs_data_settings_minNumMatchLayers_s_d1 => grp_fit_fu_365_LinearRegression_stubs_data_settings_minNumMatchLayers_s_d1,
-        LinearRegression_stubs_data_settings_minPSLayers_s_address0 => grp_fit_fu_365_LinearRegression_stubs_data_settings_minPSLayers_s_address0,
-        LinearRegression_stubs_data_settings_minPSLayers_s_ce0 => grp_fit_fu_365_LinearRegression_stubs_data_settings_minPSLayers_s_ce0,
-        LinearRegression_stubs_data_settings_minPSLayers_s_we0 => grp_fit_fu_365_LinearRegression_stubs_data_settings_minPSLayers_s_we0,
-        LinearRegression_stubs_data_settings_minPSLayers_s_d0 => grp_fit_fu_365_LinearRegression_stubs_data_settings_minPSLayers_s_d0,
+        LinearRegression_stubs_data_settings_minNumMatchLayers_s_address1 => grp_fit_fu_363_LinearRegression_stubs_data_settings_minNumMatchLayers_s_address1,
+        LinearRegression_stubs_data_settings_minNumMatchLayers_s_ce1 => grp_fit_fu_363_LinearRegression_stubs_data_settings_minNumMatchLayers_s_ce1,
+        LinearRegression_stubs_data_settings_minNumMatchLayers_s_we1 => grp_fit_fu_363_LinearRegression_stubs_data_settings_minNumMatchLayers_s_we1,
+        LinearRegression_stubs_data_settings_minNumMatchLayers_s_d1 => grp_fit_fu_363_LinearRegression_stubs_data_settings_minNumMatchLayers_s_d1,
+        LinearRegression_stubs_data_settings_minPSLayers_s_address0 => grp_fit_fu_363_LinearRegression_stubs_data_settings_minPSLayers_s_address0,
+        LinearRegression_stubs_data_settings_minPSLayers_s_ce0 => grp_fit_fu_363_LinearRegression_stubs_data_settings_minPSLayers_s_ce0,
+        LinearRegression_stubs_data_settings_minPSLayers_s_we0 => grp_fit_fu_363_LinearRegression_stubs_data_settings_minPSLayers_s_we0,
+        LinearRegression_stubs_data_settings_minPSLayers_s_d0 => grp_fit_fu_363_LinearRegression_stubs_data_settings_minPSLayers_s_d0,
         LinearRegression_stubs_data_settings_minPSLayers_s_q0 => linearRegression_stubs_data_settings_minPSLayers_s_q0,
-        LinearRegression_stubs_data_settings_minPSLayers_s_address1 => grp_fit_fu_365_LinearRegression_stubs_data_settings_minPSLayers_s_address1,
-        LinearRegression_stubs_data_settings_minPSLayers_s_ce1 => grp_fit_fu_365_LinearRegression_stubs_data_settings_minPSLayers_s_ce1,
-        LinearRegression_stubs_data_settings_minPSLayers_s_we1 => grp_fit_fu_365_LinearRegression_stubs_data_settings_minPSLayers_s_we1,
-        LinearRegression_stubs_data_settings_minPSLayers_s_d1 => grp_fit_fu_365_LinearRegression_stubs_data_settings_minPSLayers_s_d1,
-        LinearRegression_stubs_data_r_s_address0 => grp_fit_fu_365_LinearRegression_stubs_data_r_s_address0,
-        LinearRegression_stubs_data_r_s_ce0 => grp_fit_fu_365_LinearRegression_stubs_data_r_s_ce0,
-        LinearRegression_stubs_data_r_s_we0 => grp_fit_fu_365_LinearRegression_stubs_data_r_s_we0,
-        LinearRegression_stubs_data_r_s_d0 => grp_fit_fu_365_LinearRegression_stubs_data_r_s_d0,
+        LinearRegression_stubs_data_settings_minPSLayers_s_address1 => grp_fit_fu_363_LinearRegression_stubs_data_settings_minPSLayers_s_address1,
+        LinearRegression_stubs_data_settings_minPSLayers_s_ce1 => grp_fit_fu_363_LinearRegression_stubs_data_settings_minPSLayers_s_ce1,
+        LinearRegression_stubs_data_settings_minPSLayers_s_we1 => grp_fit_fu_363_LinearRegression_stubs_data_settings_minPSLayers_s_we1,
+        LinearRegression_stubs_data_settings_minPSLayers_s_d1 => grp_fit_fu_363_LinearRegression_stubs_data_settings_minPSLayers_s_d1,
+        LinearRegression_stubs_data_r_s_address0 => grp_fit_fu_363_LinearRegression_stubs_data_r_s_address0,
+        LinearRegression_stubs_data_r_s_ce0 => grp_fit_fu_363_LinearRegression_stubs_data_r_s_ce0,
+        LinearRegression_stubs_data_r_s_we0 => grp_fit_fu_363_LinearRegression_stubs_data_r_s_we0,
+        LinearRegression_stubs_data_r_s_d0 => grp_fit_fu_363_LinearRegression_stubs_data_r_s_d0,
         LinearRegression_stubs_data_r_s_q0 => linearRegression_stubs_data_r_s_q0,
-        LinearRegression_stubs_data_r_s_address1 => grp_fit_fu_365_LinearRegression_stubs_data_r_s_address1,
-        LinearRegression_stubs_data_r_s_ce1 => grp_fit_fu_365_LinearRegression_stubs_data_r_s_ce1,
-        LinearRegression_stubs_data_r_s_we1 => grp_fit_fu_365_LinearRegression_stubs_data_r_s_we1,
-        LinearRegression_stubs_data_r_s_d1 => grp_fit_fu_365_LinearRegression_stubs_data_r_s_d1,
-        LinearRegression_stubs_data_phi_s_address0 => grp_fit_fu_365_LinearRegression_stubs_data_phi_s_address0,
-        LinearRegression_stubs_data_phi_s_ce0 => grp_fit_fu_365_LinearRegression_stubs_data_phi_s_ce0,
-        LinearRegression_stubs_data_phi_s_we0 => grp_fit_fu_365_LinearRegression_stubs_data_phi_s_we0,
-        LinearRegression_stubs_data_phi_s_d0 => grp_fit_fu_365_LinearRegression_stubs_data_phi_s_d0,
+        LinearRegression_stubs_data_r_s_address1 => grp_fit_fu_363_LinearRegression_stubs_data_r_s_address1,
+        LinearRegression_stubs_data_r_s_ce1 => grp_fit_fu_363_LinearRegression_stubs_data_r_s_ce1,
+        LinearRegression_stubs_data_r_s_we1 => grp_fit_fu_363_LinearRegression_stubs_data_r_s_we1,
+        LinearRegression_stubs_data_r_s_d1 => grp_fit_fu_363_LinearRegression_stubs_data_r_s_d1,
+        LinearRegression_stubs_data_phi_s_address0 => grp_fit_fu_363_LinearRegression_stubs_data_phi_s_address0,
+        LinearRegression_stubs_data_phi_s_ce0 => grp_fit_fu_363_LinearRegression_stubs_data_phi_s_ce0,
+        LinearRegression_stubs_data_phi_s_we0 => grp_fit_fu_363_LinearRegression_stubs_data_phi_s_we0,
+        LinearRegression_stubs_data_phi_s_d0 => grp_fit_fu_363_LinearRegression_stubs_data_phi_s_d0,
         LinearRegression_stubs_data_phi_s_q0 => linearRegression_stubs_data_phi_s_q0,
-        LinearRegression_stubs_data_phi_s_address1 => grp_fit_fu_365_LinearRegression_stubs_data_phi_s_address1,
-        LinearRegression_stubs_data_phi_s_ce1 => grp_fit_fu_365_LinearRegression_stubs_data_phi_s_ce1,
-        LinearRegression_stubs_data_phi_s_we1 => grp_fit_fu_365_LinearRegression_stubs_data_phi_s_we1,
-        LinearRegression_stubs_data_phi_s_d1 => grp_fit_fu_365_LinearRegression_stubs_data_phi_s_d1,
-        LinearRegression_stubs_data_z_s_address0 => grp_fit_fu_365_LinearRegression_stubs_data_z_s_address0,
-        LinearRegression_stubs_data_z_s_ce0 => grp_fit_fu_365_LinearRegression_stubs_data_z_s_ce0,
-        LinearRegression_stubs_data_z_s_we0 => grp_fit_fu_365_LinearRegression_stubs_data_z_s_we0,
-        LinearRegression_stubs_data_z_s_d0 => grp_fit_fu_365_LinearRegression_stubs_data_z_s_d0,
+        LinearRegression_stubs_data_phi_s_address1 => grp_fit_fu_363_LinearRegression_stubs_data_phi_s_address1,
+        LinearRegression_stubs_data_phi_s_ce1 => grp_fit_fu_363_LinearRegression_stubs_data_phi_s_ce1,
+        LinearRegression_stubs_data_phi_s_we1 => grp_fit_fu_363_LinearRegression_stubs_data_phi_s_we1,
+        LinearRegression_stubs_data_phi_s_d1 => grp_fit_fu_363_LinearRegression_stubs_data_phi_s_d1,
+        LinearRegression_stubs_data_z_s_address0 => grp_fit_fu_363_LinearRegression_stubs_data_z_s_address0,
+        LinearRegression_stubs_data_z_s_ce0 => grp_fit_fu_363_LinearRegression_stubs_data_z_s_ce0,
+        LinearRegression_stubs_data_z_s_we0 => grp_fit_fu_363_LinearRegression_stubs_data_z_s_we0,
+        LinearRegression_stubs_data_z_s_d0 => grp_fit_fu_363_LinearRegression_stubs_data_z_s_d0,
         LinearRegression_stubs_data_z_s_q0 => linearRegression_stubs_data_z_s_q0,
-        LinearRegression_stubs_data_z_s_address1 => grp_fit_fu_365_LinearRegression_stubs_data_z_s_address1,
-        LinearRegression_stubs_data_z_s_ce1 => grp_fit_fu_365_LinearRegression_stubs_data_z_s_ce1,
-        LinearRegression_stubs_data_z_s_we1 => grp_fit_fu_365_LinearRegression_stubs_data_z_s_we1,
-        LinearRegression_stubs_data_z_s_d1 => grp_fit_fu_365_LinearRegression_stubs_data_z_s_d1,
-        LinearRegression_stubs_data_layerId_s_address0 => grp_fit_fu_365_LinearRegression_stubs_data_layerId_s_address0,
-        LinearRegression_stubs_data_layerId_s_ce0 => grp_fit_fu_365_LinearRegression_stubs_data_layerId_s_ce0,
-        LinearRegression_stubs_data_layerId_s_we0 => grp_fit_fu_365_LinearRegression_stubs_data_layerId_s_we0,
-        LinearRegression_stubs_data_layerId_s_d0 => grp_fit_fu_365_LinearRegression_stubs_data_layerId_s_d0,
+        LinearRegression_stubs_data_z_s_address1 => grp_fit_fu_363_LinearRegression_stubs_data_z_s_address1,
+        LinearRegression_stubs_data_z_s_ce1 => grp_fit_fu_363_LinearRegression_stubs_data_z_s_ce1,
+        LinearRegression_stubs_data_z_s_we1 => grp_fit_fu_363_LinearRegression_stubs_data_z_s_we1,
+        LinearRegression_stubs_data_z_s_d1 => grp_fit_fu_363_LinearRegression_stubs_data_z_s_d1,
+        LinearRegression_stubs_data_layerId_s_address0 => grp_fit_fu_363_LinearRegression_stubs_data_layerId_s_address0,
+        LinearRegression_stubs_data_layerId_s_ce0 => grp_fit_fu_363_LinearRegression_stubs_data_layerId_s_ce0,
+        LinearRegression_stubs_data_layerId_s_we0 => grp_fit_fu_363_LinearRegression_stubs_data_layerId_s_we0,
+        LinearRegression_stubs_data_layerId_s_d0 => grp_fit_fu_363_LinearRegression_stubs_data_layerId_s_d0,
         LinearRegression_stubs_data_layerId_s_q0 => linearRegression_stubs_data_layerId_s_q0,
-        LinearRegression_stubs_data_layerId_s_address1 => grp_fit_fu_365_LinearRegression_stubs_data_layerId_s_address1,
-        LinearRegression_stubs_data_layerId_s_ce1 => grp_fit_fu_365_LinearRegression_stubs_data_layerId_s_ce1,
-        LinearRegression_stubs_data_layerId_s_we1 => grp_fit_fu_365_LinearRegression_stubs_data_layerId_s_we1,
-        LinearRegression_stubs_data_layerId_s_d1 => grp_fit_fu_365_LinearRegression_stubs_data_layerId_s_d1,
+        LinearRegression_stubs_data_layerId_s_address1 => grp_fit_fu_363_LinearRegression_stubs_data_layerId_s_address1,
+        LinearRegression_stubs_data_layerId_s_ce1 => grp_fit_fu_363_LinearRegression_stubs_data_layerId_s_ce1,
+        LinearRegression_stubs_data_layerId_s_we1 => grp_fit_fu_363_LinearRegression_stubs_data_layerId_s_we1,
+        LinearRegression_stubs_data_layerId_s_d1 => grp_fit_fu_363_LinearRegression_stubs_data_layerId_s_d1,
         LinearRegression_stubs_data_layerId_s_q1 => linearRegression_stubs_data_layerId_s_q1,
-        LinearRegression_stubs_data_psModule_s_address0 => grp_fit_fu_365_LinearRegression_stubs_data_psModule_s_address0,
-        LinearRegression_stubs_data_psModule_s_ce0 => grp_fit_fu_365_LinearRegression_stubs_data_psModule_s_ce0,
-        LinearRegression_stubs_data_psModule_s_we0 => grp_fit_fu_365_LinearRegression_stubs_data_psModule_s_we0,
-        LinearRegression_stubs_data_psModule_s_d0 => grp_fit_fu_365_LinearRegression_stubs_data_psModule_s_d0,
+        LinearRegression_stubs_data_psModule_s_address0 => grp_fit_fu_363_LinearRegression_stubs_data_psModule_s_address0,
+        LinearRegression_stubs_data_psModule_s_ce0 => grp_fit_fu_363_LinearRegression_stubs_data_psModule_s_ce0,
+        LinearRegression_stubs_data_psModule_s_we0 => grp_fit_fu_363_LinearRegression_stubs_data_psModule_s_we0,
+        LinearRegression_stubs_data_psModule_s_d0 => grp_fit_fu_363_LinearRegression_stubs_data_psModule_s_d0,
         LinearRegression_stubs_data_psModule_s_q0 => linearRegression_stubs_data_psModule_s_q0,
-        LinearRegression_stubs_data_psModule_s_address1 => grp_fit_fu_365_LinearRegression_stubs_data_psModule_s_address1,
-        LinearRegression_stubs_data_psModule_s_ce1 => grp_fit_fu_365_LinearRegression_stubs_data_psModule_s_ce1,
-        LinearRegression_stubs_data_psModule_s_we1 => grp_fit_fu_365_LinearRegression_stubs_data_psModule_s_we1,
-        LinearRegression_stubs_data_psModule_s_d1 => grp_fit_fu_365_LinearRegression_stubs_data_psModule_s_d1,
+        LinearRegression_stubs_data_psModule_s_address1 => grp_fit_fu_363_LinearRegression_stubs_data_psModule_s_address1,
+        LinearRegression_stubs_data_psModule_s_ce1 => grp_fit_fu_363_LinearRegression_stubs_data_psModule_s_ce1,
+        LinearRegression_stubs_data_psModule_s_we1 => grp_fit_fu_363_LinearRegression_stubs_data_psModule_s_we1,
+        LinearRegression_stubs_data_psModule_s_d1 => grp_fit_fu_363_LinearRegression_stubs_data_psModule_s_d1,
         LinearRegression_stubs_data_psModule_s_q1 => linearRegression_stubs_data_psModule_s_q1,
-        LinearRegression_stubs_data_barrel_s_address0 => grp_fit_fu_365_LinearRegression_stubs_data_barrel_s_address0,
-        LinearRegression_stubs_data_barrel_s_ce0 => grp_fit_fu_365_LinearRegression_stubs_data_barrel_s_ce0,
-        LinearRegression_stubs_data_barrel_s_we0 => grp_fit_fu_365_LinearRegression_stubs_data_barrel_s_we0,
-        LinearRegression_stubs_data_barrel_s_d0 => grp_fit_fu_365_LinearRegression_stubs_data_barrel_s_d0,
+        LinearRegression_stubs_data_barrel_s_address0 => grp_fit_fu_363_LinearRegression_stubs_data_barrel_s_address0,
+        LinearRegression_stubs_data_barrel_s_ce0 => grp_fit_fu_363_LinearRegression_stubs_data_barrel_s_ce0,
+        LinearRegression_stubs_data_barrel_s_we0 => grp_fit_fu_363_LinearRegression_stubs_data_barrel_s_we0,
+        LinearRegression_stubs_data_barrel_s_d0 => grp_fit_fu_363_LinearRegression_stubs_data_barrel_s_d0,
         LinearRegression_stubs_data_barrel_s_q0 => linearRegression_stubs_data_barrel_s_q0,
-        LinearRegression_stubs_data_barrel_s_address1 => grp_fit_fu_365_LinearRegression_stubs_data_barrel_s_address1,
-        LinearRegression_stubs_data_barrel_s_ce1 => grp_fit_fu_365_LinearRegression_stubs_data_barrel_s_ce1,
-        LinearRegression_stubs_data_barrel_s_we1 => grp_fit_fu_365_LinearRegression_stubs_data_barrel_s_we1,
-        LinearRegression_stubs_data_barrel_s_d1 => grp_fit_fu_365_LinearRegression_stubs_data_barrel_s_d1,
+        LinearRegression_stubs_data_barrel_s_address1 => grp_fit_fu_363_LinearRegression_stubs_data_barrel_s_address1,
+        LinearRegression_stubs_data_barrel_s_ce1 => grp_fit_fu_363_LinearRegression_stubs_data_barrel_s_ce1,
+        LinearRegression_stubs_data_barrel_s_we1 => grp_fit_fu_363_LinearRegression_stubs_data_barrel_s_we1,
+        LinearRegression_stubs_data_barrel_s_d1 => grp_fit_fu_363_LinearRegression_stubs_data_barrel_s_d1,
         LinearRegression_stubs_data_barrel_s_q1 => linearRegression_stubs_data_barrel_s_q1,
         LinearRegression_stubMap_size_read => linearRegression_stubMap_size_s_i,
-        LinearRegression_stubMap_data_first_address0 => grp_fit_fu_365_LinearRegression_stubMap_data_first_address0,
-        LinearRegression_stubMap_data_first_ce0 => grp_fit_fu_365_LinearRegression_stubMap_data_first_ce0,
-        LinearRegression_stubMap_data_first_we0 => grp_fit_fu_365_LinearRegression_stubMap_data_first_we0,
-        LinearRegression_stubMap_data_first_d0 => grp_fit_fu_365_LinearRegression_stubMap_data_first_d0,
+        LinearRegression_stubMap_data_first_address0 => grp_fit_fu_363_LinearRegression_stubMap_data_first_address0,
+        LinearRegression_stubMap_data_first_ce0 => grp_fit_fu_363_LinearRegression_stubMap_data_first_ce0,
+        LinearRegression_stubMap_data_first_we0 => grp_fit_fu_363_LinearRegression_stubMap_data_first_we0,
+        LinearRegression_stubMap_data_first_d0 => grp_fit_fu_363_LinearRegression_stubMap_data_first_d0,
         LinearRegression_stubMap_data_first_q0 => linearRegression_stubMap_data_first_q0,
-        LinearRegression_stubMap_data_second_size_s_address0 => grp_fit_fu_365_LinearRegression_stubMap_data_second_size_s_address0,
-        LinearRegression_stubMap_data_second_size_s_ce0 => grp_fit_fu_365_LinearRegression_stubMap_data_second_size_s_ce0,
-        LinearRegression_stubMap_data_second_size_s_we0 => grp_fit_fu_365_LinearRegression_stubMap_data_second_size_s_we0,
-        LinearRegression_stubMap_data_second_size_s_d0 => grp_fit_fu_365_LinearRegression_stubMap_data_second_size_s_d0,
+        LinearRegression_stubMap_data_second_size_s_address0 => grp_fit_fu_363_LinearRegression_stubMap_data_second_size_s_address0,
+        LinearRegression_stubMap_data_second_size_s_ce0 => grp_fit_fu_363_LinearRegression_stubMap_data_second_size_s_ce0,
+        LinearRegression_stubMap_data_second_size_s_we0 => grp_fit_fu_363_LinearRegression_stubMap_data_second_size_s_we0,
+        LinearRegression_stubMap_data_second_size_s_d0 => grp_fit_fu_363_LinearRegression_stubMap_data_second_size_s_d0,
         LinearRegression_stubMap_data_second_size_s_q0 => linearRegression_stubMap_data_second_size_s_q0,
-        LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_address0 => grp_fit_fu_365_LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_address0,
-        LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_ce0 => grp_fit_fu_365_LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_ce0,
-        LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_we0 => grp_fit_fu_365_LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_we0,
-        LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_d0 => grp_fit_fu_365_LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_d0,
+        LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_address0 => grp_fit_fu_363_LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_address0,
+        LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_ce0 => grp_fit_fu_363_LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_ce0,
+        LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_we0 => grp_fit_fu_363_LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_we0,
+        LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_d0 => grp_fit_fu_363_LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_d0,
         LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_q0 => linearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_q0,
-        LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_address1 => grp_fit_fu_365_LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_address1,
-        LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_ce1 => grp_fit_fu_365_LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_ce1,
-        LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_we1 => grp_fit_fu_365_LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_we1,
-        LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_d1 => grp_fit_fu_365_LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_d1,
+        LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_address1 => grp_fit_fu_363_LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_address1,
+        LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_ce1 => grp_fit_fu_363_LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_ce1,
+        LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_we1 => grp_fit_fu_363_LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_we1,
+        LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_d1 => grp_fit_fu_363_LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_d1,
         LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_q1 => linearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_q1,
-        LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_address0 => grp_fit_fu_365_LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_address0,
-        LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_ce0 => grp_fit_fu_365_LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_ce0,
-        LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_we0 => grp_fit_fu_365_LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_we0,
-        LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_d0 => grp_fit_fu_365_LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_d0,
+        LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_address0 => grp_fit_fu_363_LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_address0,
+        LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_ce0 => grp_fit_fu_363_LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_ce0,
+        LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_we0 => grp_fit_fu_363_LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_we0,
+        LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_d0 => grp_fit_fu_363_LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_d0,
         LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_q0 => linearRegression_stubMap_data_second_data_settings_chosenRofZ_s_q0,
-        LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_address1 => grp_fit_fu_365_LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_address1,
-        LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_ce1 => grp_fit_fu_365_LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_ce1,
-        LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_we1 => grp_fit_fu_365_LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_we1,
-        LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_d1 => grp_fit_fu_365_LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_d1,
+        LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_address1 => grp_fit_fu_363_LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_address1,
+        LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_ce1 => grp_fit_fu_363_LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_ce1,
+        LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_we1 => grp_fit_fu_363_LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_we1,
+        LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_d1 => grp_fit_fu_363_LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_d1,
         LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_q1 => linearRegression_stubMap_data_second_data_settings_chosenRofZ_s_q1,
-        LinearRegression_stubMap_data_second_data_settings_etaRegions_s_address0 => grp_fit_fu_365_LinearRegression_stubMap_data_second_data_settings_etaRegions_s_address0,
-        LinearRegression_stubMap_data_second_data_settings_etaRegions_s_ce0 => grp_fit_fu_365_LinearRegression_stubMap_data_second_data_settings_etaRegions_s_ce0,
-        LinearRegression_stubMap_data_second_data_settings_etaRegions_s_we0 => grp_fit_fu_365_LinearRegression_stubMap_data_second_data_settings_etaRegions_s_we0,
-        LinearRegression_stubMap_data_second_data_settings_etaRegions_s_d0 => grp_fit_fu_365_LinearRegression_stubMap_data_second_data_settings_etaRegions_s_d0,
-        LinearRegression_stubMap_data_second_data_settings_etaRegions_s_q0 => linearRegression_stubMap_data_second_data_settings_etaRegions_s_q0,
-        LinearRegression_stubMap_data_second_data_settings_etaRegions_s_address1 => grp_fit_fu_365_LinearRegression_stubMap_data_second_data_settings_etaRegions_s_address1,
-        LinearRegression_stubMap_data_second_data_settings_etaRegions_s_ce1 => grp_fit_fu_365_LinearRegression_stubMap_data_second_data_settings_etaRegions_s_ce1,
-        LinearRegression_stubMap_data_second_data_settings_etaRegions_s_we1 => grp_fit_fu_365_LinearRegression_stubMap_data_second_data_settings_etaRegions_s_we1,
-        LinearRegression_stubMap_data_second_data_settings_etaRegions_s_d1 => grp_fit_fu_365_LinearRegression_stubMap_data_second_data_settings_etaRegions_s_d1,
-        LinearRegression_stubMap_data_second_data_settings_etaRegions_s_q1 => linearRegression_stubMap_data_second_data_settings_etaRegions_s_q1,
-        LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_address0 => grp_fit_fu_365_LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_address0,
-        LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_ce0 => grp_fit_fu_365_LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_ce0,
-        LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_we0 => grp_fit_fu_365_LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_we0,
-        LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_d0 => grp_fit_fu_365_LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_d0,
+        LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_address0 => grp_fit_fu_363_LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_address0,
+        LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_ce0 => grp_fit_fu_363_LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_ce0,
+        LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_we0 => grp_fit_fu_363_LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_we0,
+        LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_d0 => grp_fit_fu_363_LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_d0,
+        LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_q0 => linearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_q0,
+        LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_address1 => grp_fit_fu_363_LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_address1,
+        LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_ce1 => grp_fit_fu_363_LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_ce1,
+        LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_we1 => grp_fit_fu_363_LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_we1,
+        LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_d1 => grp_fit_fu_363_LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_d1,
+        LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_q1 => linearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_q1,
+        LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_address0 => grp_fit_fu_363_LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_address0,
+        LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_ce0 => grp_fit_fu_363_LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_ce0,
+        LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_we0 => grp_fit_fu_363_LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_we0,
+        LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_d0 => grp_fit_fu_363_LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_d0,
         LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_q0 => linearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_q0,
-        LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_address1 => grp_fit_fu_365_LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_address1,
-        LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_ce1 => grp_fit_fu_365_LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_ce1,
-        LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_we1 => grp_fit_fu_365_LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_we1,
-        LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_d1 => grp_fit_fu_365_LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_d1,
+        LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_address1 => grp_fit_fu_363_LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_address1,
+        LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_ce1 => grp_fit_fu_363_LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_ce1,
+        LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_we1 => grp_fit_fu_363_LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_we1,
+        LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_d1 => grp_fit_fu_363_LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_d1,
         LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_q1 => linearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_q1,
-        LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_address0 => grp_fit_fu_365_LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_address0,
-        LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_ce0 => grp_fit_fu_365_LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_ce0,
-        LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_we0 => grp_fit_fu_365_LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_we0,
-        LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_d0 => grp_fit_fu_365_LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_d0,
+        LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_address0 => grp_fit_fu_363_LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_address0,
+        LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_ce0 => grp_fit_fu_363_LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_ce0,
+        LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_we0 => grp_fit_fu_363_LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_we0,
+        LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_d0 => grp_fit_fu_363_LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_d0,
         LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_q0 => linearRegression_stubMap_data_second_data_settings_minPSLayers_s_q0,
-        LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_address1 => grp_fit_fu_365_LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_address1,
-        LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_ce1 => grp_fit_fu_365_LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_ce1,
-        LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_we1 => grp_fit_fu_365_LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_we1,
-        LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_d1 => grp_fit_fu_365_LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_d1,
+        LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_address1 => grp_fit_fu_363_LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_address1,
+        LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_ce1 => grp_fit_fu_363_LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_ce1,
+        LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_we1 => grp_fit_fu_363_LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_we1,
+        LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_d1 => grp_fit_fu_363_LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_d1,
         LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_q1 => linearRegression_stubMap_data_second_data_settings_minPSLayers_s_q1,
-        LinearRegression_stubMap_data_second_data_r_s_address0 => grp_fit_fu_365_LinearRegression_stubMap_data_second_data_r_s_address0,
-        LinearRegression_stubMap_data_second_data_r_s_ce0 => grp_fit_fu_365_LinearRegression_stubMap_data_second_data_r_s_ce0,
-        LinearRegression_stubMap_data_second_data_r_s_we0 => grp_fit_fu_365_LinearRegression_stubMap_data_second_data_r_s_we0,
-        LinearRegression_stubMap_data_second_data_r_s_d0 => grp_fit_fu_365_LinearRegression_stubMap_data_second_data_r_s_d0,
+        LinearRegression_stubMap_data_second_data_r_s_address0 => grp_fit_fu_363_LinearRegression_stubMap_data_second_data_r_s_address0,
+        LinearRegression_stubMap_data_second_data_r_s_ce0 => grp_fit_fu_363_LinearRegression_stubMap_data_second_data_r_s_ce0,
+        LinearRegression_stubMap_data_second_data_r_s_we0 => grp_fit_fu_363_LinearRegression_stubMap_data_second_data_r_s_we0,
+        LinearRegression_stubMap_data_second_data_r_s_d0 => grp_fit_fu_363_LinearRegression_stubMap_data_second_data_r_s_d0,
         LinearRegression_stubMap_data_second_data_r_s_q0 => linearRegression_stubMap_data_second_data_r_s_q0,
-        LinearRegression_stubMap_data_second_data_r_s_address1 => grp_fit_fu_365_LinearRegression_stubMap_data_second_data_r_s_address1,
-        LinearRegression_stubMap_data_second_data_r_s_ce1 => grp_fit_fu_365_LinearRegression_stubMap_data_second_data_r_s_ce1,
-        LinearRegression_stubMap_data_second_data_r_s_we1 => grp_fit_fu_365_LinearRegression_stubMap_data_second_data_r_s_we1,
-        LinearRegression_stubMap_data_second_data_r_s_d1 => grp_fit_fu_365_LinearRegression_stubMap_data_second_data_r_s_d1,
+        LinearRegression_stubMap_data_second_data_r_s_address1 => grp_fit_fu_363_LinearRegression_stubMap_data_second_data_r_s_address1,
+        LinearRegression_stubMap_data_second_data_r_s_ce1 => grp_fit_fu_363_LinearRegression_stubMap_data_second_data_r_s_ce1,
+        LinearRegression_stubMap_data_second_data_r_s_we1 => grp_fit_fu_363_LinearRegression_stubMap_data_second_data_r_s_we1,
+        LinearRegression_stubMap_data_second_data_r_s_d1 => grp_fit_fu_363_LinearRegression_stubMap_data_second_data_r_s_d1,
         LinearRegression_stubMap_data_second_data_r_s_q1 => linearRegression_stubMap_data_second_data_r_s_q1,
-        LinearRegression_stubMap_data_second_data_phi_s_address0 => grp_fit_fu_365_LinearRegression_stubMap_data_second_data_phi_s_address0,
-        LinearRegression_stubMap_data_second_data_phi_s_ce0 => grp_fit_fu_365_LinearRegression_stubMap_data_second_data_phi_s_ce0,
-        LinearRegression_stubMap_data_second_data_phi_s_we0 => grp_fit_fu_365_LinearRegression_stubMap_data_second_data_phi_s_we0,
-        LinearRegression_stubMap_data_second_data_phi_s_d0 => grp_fit_fu_365_LinearRegression_stubMap_data_second_data_phi_s_d0,
+        LinearRegression_stubMap_data_second_data_phi_s_address0 => grp_fit_fu_363_LinearRegression_stubMap_data_second_data_phi_s_address0,
+        LinearRegression_stubMap_data_second_data_phi_s_ce0 => grp_fit_fu_363_LinearRegression_stubMap_data_second_data_phi_s_ce0,
+        LinearRegression_stubMap_data_second_data_phi_s_we0 => grp_fit_fu_363_LinearRegression_stubMap_data_second_data_phi_s_we0,
+        LinearRegression_stubMap_data_second_data_phi_s_d0 => grp_fit_fu_363_LinearRegression_stubMap_data_second_data_phi_s_d0,
         LinearRegression_stubMap_data_second_data_phi_s_q0 => linearRegression_stubMap_data_second_data_phi_s_q0,
-        LinearRegression_stubMap_data_second_data_phi_s_address1 => grp_fit_fu_365_LinearRegression_stubMap_data_second_data_phi_s_address1,
-        LinearRegression_stubMap_data_second_data_phi_s_ce1 => grp_fit_fu_365_LinearRegression_stubMap_data_second_data_phi_s_ce1,
-        LinearRegression_stubMap_data_second_data_phi_s_we1 => grp_fit_fu_365_LinearRegression_stubMap_data_second_data_phi_s_we1,
-        LinearRegression_stubMap_data_second_data_phi_s_d1 => grp_fit_fu_365_LinearRegression_stubMap_data_second_data_phi_s_d1,
+        LinearRegression_stubMap_data_second_data_phi_s_address1 => grp_fit_fu_363_LinearRegression_stubMap_data_second_data_phi_s_address1,
+        LinearRegression_stubMap_data_second_data_phi_s_ce1 => grp_fit_fu_363_LinearRegression_stubMap_data_second_data_phi_s_ce1,
+        LinearRegression_stubMap_data_second_data_phi_s_we1 => grp_fit_fu_363_LinearRegression_stubMap_data_second_data_phi_s_we1,
+        LinearRegression_stubMap_data_second_data_phi_s_d1 => grp_fit_fu_363_LinearRegression_stubMap_data_second_data_phi_s_d1,
         LinearRegression_stubMap_data_second_data_phi_s_q1 => linearRegression_stubMap_data_second_data_phi_s_q1,
-        LinearRegression_stubMap_data_second_data_z_s_address0 => grp_fit_fu_365_LinearRegression_stubMap_data_second_data_z_s_address0,
-        LinearRegression_stubMap_data_second_data_z_s_ce0 => grp_fit_fu_365_LinearRegression_stubMap_data_second_data_z_s_ce0,
-        LinearRegression_stubMap_data_second_data_z_s_we0 => grp_fit_fu_365_LinearRegression_stubMap_data_second_data_z_s_we0,
-        LinearRegression_stubMap_data_second_data_z_s_d0 => grp_fit_fu_365_LinearRegression_stubMap_data_second_data_z_s_d0,
+        LinearRegression_stubMap_data_second_data_z_s_address0 => grp_fit_fu_363_LinearRegression_stubMap_data_second_data_z_s_address0,
+        LinearRegression_stubMap_data_second_data_z_s_ce0 => grp_fit_fu_363_LinearRegression_stubMap_data_second_data_z_s_ce0,
+        LinearRegression_stubMap_data_second_data_z_s_we0 => grp_fit_fu_363_LinearRegression_stubMap_data_second_data_z_s_we0,
+        LinearRegression_stubMap_data_second_data_z_s_d0 => grp_fit_fu_363_LinearRegression_stubMap_data_second_data_z_s_d0,
         LinearRegression_stubMap_data_second_data_z_s_q0 => linearRegression_stubMap_data_second_data_z_s_q0,
-        LinearRegression_stubMap_data_second_data_z_s_address1 => grp_fit_fu_365_LinearRegression_stubMap_data_second_data_z_s_address1,
-        LinearRegression_stubMap_data_second_data_z_s_ce1 => grp_fit_fu_365_LinearRegression_stubMap_data_second_data_z_s_ce1,
-        LinearRegression_stubMap_data_second_data_z_s_we1 => grp_fit_fu_365_LinearRegression_stubMap_data_second_data_z_s_we1,
-        LinearRegression_stubMap_data_second_data_z_s_d1 => grp_fit_fu_365_LinearRegression_stubMap_data_second_data_z_s_d1,
+        LinearRegression_stubMap_data_second_data_z_s_address1 => grp_fit_fu_363_LinearRegression_stubMap_data_second_data_z_s_address1,
+        LinearRegression_stubMap_data_second_data_z_s_ce1 => grp_fit_fu_363_LinearRegression_stubMap_data_second_data_z_s_ce1,
+        LinearRegression_stubMap_data_second_data_z_s_we1 => grp_fit_fu_363_LinearRegression_stubMap_data_second_data_z_s_we1,
+        LinearRegression_stubMap_data_second_data_z_s_d1 => grp_fit_fu_363_LinearRegression_stubMap_data_second_data_z_s_d1,
         LinearRegression_stubMap_data_second_data_z_s_q1 => linearRegression_stubMap_data_second_data_z_s_q1,
-        LinearRegression_stubMap_data_second_data_layerId_s_address0 => grp_fit_fu_365_LinearRegression_stubMap_data_second_data_layerId_s_address0,
-        LinearRegression_stubMap_data_second_data_layerId_s_ce0 => grp_fit_fu_365_LinearRegression_stubMap_data_second_data_layerId_s_ce0,
-        LinearRegression_stubMap_data_second_data_layerId_s_we0 => grp_fit_fu_365_LinearRegression_stubMap_data_second_data_layerId_s_we0,
-        LinearRegression_stubMap_data_second_data_layerId_s_d0 => grp_fit_fu_365_LinearRegression_stubMap_data_second_data_layerId_s_d0,
+        LinearRegression_stubMap_data_second_data_layerId_s_address0 => grp_fit_fu_363_LinearRegression_stubMap_data_second_data_layerId_s_address0,
+        LinearRegression_stubMap_data_second_data_layerId_s_ce0 => grp_fit_fu_363_LinearRegression_stubMap_data_second_data_layerId_s_ce0,
+        LinearRegression_stubMap_data_second_data_layerId_s_we0 => grp_fit_fu_363_LinearRegression_stubMap_data_second_data_layerId_s_we0,
+        LinearRegression_stubMap_data_second_data_layerId_s_d0 => grp_fit_fu_363_LinearRegression_stubMap_data_second_data_layerId_s_d0,
         LinearRegression_stubMap_data_second_data_layerId_s_q0 => linearRegression_stubMap_data_second_data_layerId_s_q0,
-        LinearRegression_stubMap_data_second_data_layerId_s_address1 => grp_fit_fu_365_LinearRegression_stubMap_data_second_data_layerId_s_address1,
-        LinearRegression_stubMap_data_second_data_layerId_s_ce1 => grp_fit_fu_365_LinearRegression_stubMap_data_second_data_layerId_s_ce1,
-        LinearRegression_stubMap_data_second_data_layerId_s_we1 => grp_fit_fu_365_LinearRegression_stubMap_data_second_data_layerId_s_we1,
-        LinearRegression_stubMap_data_second_data_layerId_s_d1 => grp_fit_fu_365_LinearRegression_stubMap_data_second_data_layerId_s_d1,
+        LinearRegression_stubMap_data_second_data_layerId_s_address1 => grp_fit_fu_363_LinearRegression_stubMap_data_second_data_layerId_s_address1,
+        LinearRegression_stubMap_data_second_data_layerId_s_ce1 => grp_fit_fu_363_LinearRegression_stubMap_data_second_data_layerId_s_ce1,
+        LinearRegression_stubMap_data_second_data_layerId_s_we1 => grp_fit_fu_363_LinearRegression_stubMap_data_second_data_layerId_s_we1,
+        LinearRegression_stubMap_data_second_data_layerId_s_d1 => grp_fit_fu_363_LinearRegression_stubMap_data_second_data_layerId_s_d1,
         LinearRegression_stubMap_data_second_data_layerId_s_q1 => linearRegression_stubMap_data_second_data_layerId_s_q1,
-        LinearRegression_stubMap_data_second_data_psModule_s_address0 => grp_fit_fu_365_LinearRegression_stubMap_data_second_data_psModule_s_address0,
-        LinearRegression_stubMap_data_second_data_psModule_s_ce0 => grp_fit_fu_365_LinearRegression_stubMap_data_second_data_psModule_s_ce0,
-        LinearRegression_stubMap_data_second_data_psModule_s_we0 => grp_fit_fu_365_LinearRegression_stubMap_data_second_data_psModule_s_we0,
-        LinearRegression_stubMap_data_second_data_psModule_s_d0 => grp_fit_fu_365_LinearRegression_stubMap_data_second_data_psModule_s_d0,
+        LinearRegression_stubMap_data_second_data_psModule_s_address0 => grp_fit_fu_363_LinearRegression_stubMap_data_second_data_psModule_s_address0,
+        LinearRegression_stubMap_data_second_data_psModule_s_ce0 => grp_fit_fu_363_LinearRegression_stubMap_data_second_data_psModule_s_ce0,
+        LinearRegression_stubMap_data_second_data_psModule_s_we0 => grp_fit_fu_363_LinearRegression_stubMap_data_second_data_psModule_s_we0,
+        LinearRegression_stubMap_data_second_data_psModule_s_d0 => grp_fit_fu_363_LinearRegression_stubMap_data_second_data_psModule_s_d0,
         LinearRegression_stubMap_data_second_data_psModule_s_q0 => linearRegression_stubMap_data_second_data_psModule_s_q0,
-        LinearRegression_stubMap_data_second_data_psModule_s_address1 => grp_fit_fu_365_LinearRegression_stubMap_data_second_data_psModule_s_address1,
-        LinearRegression_stubMap_data_second_data_psModule_s_ce1 => grp_fit_fu_365_LinearRegression_stubMap_data_second_data_psModule_s_ce1,
-        LinearRegression_stubMap_data_second_data_psModule_s_we1 => grp_fit_fu_365_LinearRegression_stubMap_data_second_data_psModule_s_we1,
-        LinearRegression_stubMap_data_second_data_psModule_s_d1 => grp_fit_fu_365_LinearRegression_stubMap_data_second_data_psModule_s_d1,
+        LinearRegression_stubMap_data_second_data_psModule_s_address1 => grp_fit_fu_363_LinearRegression_stubMap_data_second_data_psModule_s_address1,
+        LinearRegression_stubMap_data_second_data_psModule_s_ce1 => grp_fit_fu_363_LinearRegression_stubMap_data_second_data_psModule_s_ce1,
+        LinearRegression_stubMap_data_second_data_psModule_s_we1 => grp_fit_fu_363_LinearRegression_stubMap_data_second_data_psModule_s_we1,
+        LinearRegression_stubMap_data_second_data_psModule_s_d1 => grp_fit_fu_363_LinearRegression_stubMap_data_second_data_psModule_s_d1,
         LinearRegression_stubMap_data_second_data_psModule_s_q1 => linearRegression_stubMap_data_second_data_psModule_s_q1,
-        LinearRegression_stubMap_data_second_data_barrel_s_address0 => grp_fit_fu_365_LinearRegression_stubMap_data_second_data_barrel_s_address0,
-        LinearRegression_stubMap_data_second_data_barrel_s_ce0 => grp_fit_fu_365_LinearRegression_stubMap_data_second_data_barrel_s_ce0,
-        LinearRegression_stubMap_data_second_data_barrel_s_we0 => grp_fit_fu_365_LinearRegression_stubMap_data_second_data_barrel_s_we0,
-        LinearRegression_stubMap_data_second_data_barrel_s_d0 => grp_fit_fu_365_LinearRegression_stubMap_data_second_data_barrel_s_d0,
+        LinearRegression_stubMap_data_second_data_barrel_s_address0 => grp_fit_fu_363_LinearRegression_stubMap_data_second_data_barrel_s_address0,
+        LinearRegression_stubMap_data_second_data_barrel_s_ce0 => grp_fit_fu_363_LinearRegression_stubMap_data_second_data_barrel_s_ce0,
+        LinearRegression_stubMap_data_second_data_barrel_s_we0 => grp_fit_fu_363_LinearRegression_stubMap_data_second_data_barrel_s_we0,
+        LinearRegression_stubMap_data_second_data_barrel_s_d0 => grp_fit_fu_363_LinearRegression_stubMap_data_second_data_barrel_s_d0,
         LinearRegression_stubMap_data_second_data_barrel_s_q0 => linearRegression_stubMap_data_second_data_barrel_s_q0,
-        LinearRegression_stubMap_data_second_data_barrel_s_address1 => grp_fit_fu_365_LinearRegression_stubMap_data_second_data_barrel_s_address1,
-        LinearRegression_stubMap_data_second_data_barrel_s_ce1 => grp_fit_fu_365_LinearRegression_stubMap_data_second_data_barrel_s_ce1,
-        LinearRegression_stubMap_data_second_data_barrel_s_we1 => grp_fit_fu_365_LinearRegression_stubMap_data_second_data_barrel_s_we1,
-        LinearRegression_stubMap_data_second_data_barrel_s_d1 => grp_fit_fu_365_LinearRegression_stubMap_data_second_data_barrel_s_d1,
+        LinearRegression_stubMap_data_second_data_barrel_s_address1 => grp_fit_fu_363_LinearRegression_stubMap_data_second_data_barrel_s_address1,
+        LinearRegression_stubMap_data_second_data_barrel_s_ce1 => grp_fit_fu_363_LinearRegression_stubMap_data_second_data_barrel_s_ce1,
+        LinearRegression_stubMap_data_second_data_barrel_s_we1 => grp_fit_fu_363_LinearRegression_stubMap_data_second_data_barrel_s_we1,
+        LinearRegression_stubMap_data_second_data_barrel_s_d1 => grp_fit_fu_363_LinearRegression_stubMap_data_second_data_barrel_s_d1,
         LinearRegression_stubMap_data_second_data_barrel_s_q1 => linearRegression_stubMap_data_second_data_barrel_s_q1,
         LinearRegression_layerPopulation_size_read => linearRegression_layerPopulation_size_s_i,
-        LinearRegression_layerPopulation_data_first_address0 => grp_fit_fu_365_LinearRegression_layerPopulation_data_first_address0,
-        LinearRegression_layerPopulation_data_first_ce0 => grp_fit_fu_365_LinearRegression_layerPopulation_data_first_ce0,
-        LinearRegression_layerPopulation_data_first_we0 => grp_fit_fu_365_LinearRegression_layerPopulation_data_first_we0,
-        LinearRegression_layerPopulation_data_first_d0 => grp_fit_fu_365_LinearRegression_layerPopulation_data_first_d0,
+        LinearRegression_layerPopulation_data_first_address0 => grp_fit_fu_363_LinearRegression_layerPopulation_data_first_address0,
+        LinearRegression_layerPopulation_data_first_ce0 => grp_fit_fu_363_LinearRegression_layerPopulation_data_first_ce0,
+        LinearRegression_layerPopulation_data_first_we0 => grp_fit_fu_363_LinearRegression_layerPopulation_data_first_we0,
+        LinearRegression_layerPopulation_data_first_d0 => grp_fit_fu_363_LinearRegression_layerPopulation_data_first_d0,
         LinearRegression_layerPopulation_data_first_q0 => linearRegression_layerPopulation_data_first_q0,
-        LinearRegression_layerPopulation_data_second_address0 => grp_fit_fu_365_LinearRegression_layerPopulation_data_second_address0,
-        LinearRegression_layerPopulation_data_second_ce0 => grp_fit_fu_365_LinearRegression_layerPopulation_data_second_ce0,
-        LinearRegression_layerPopulation_data_second_we0 => grp_fit_fu_365_LinearRegression_layerPopulation_data_second_we0,
-        LinearRegression_layerPopulation_data_second_d0 => grp_fit_fu_365_LinearRegression_layerPopulation_data_second_d0,
+        LinearRegression_layerPopulation_data_second_address0 => grp_fit_fu_363_LinearRegression_layerPopulation_data_second_address0,
+        LinearRegression_layerPopulation_data_second_ce0 => grp_fit_fu_363_LinearRegression_layerPopulation_data_second_ce0,
+        LinearRegression_layerPopulation_data_second_we0 => grp_fit_fu_363_LinearRegression_layerPopulation_data_second_we0,
+        LinearRegression_layerPopulation_data_second_d0 => grp_fit_fu_363_LinearRegression_layerPopulation_data_second_d0,
         LinearRegression_layerPopulation_data_second_q0 => linearRegression_layerPopulation_data_second_q0,
-        LinearRegression_residuals_size_s => grp_fit_fu_365_LinearRegression_residuals_size_s,
-        LinearRegression_residuals_size_s_ap_vld => grp_fit_fu_365_LinearRegression_residuals_size_s_ap_vld,
-        LinearRegression_residuals_data_first_address0 => grp_fit_fu_365_LinearRegression_residuals_data_first_address0,
-        LinearRegression_residuals_data_first_ce0 => grp_fit_fu_365_LinearRegression_residuals_data_first_ce0,
-        LinearRegression_residuals_data_first_we0 => grp_fit_fu_365_LinearRegression_residuals_data_first_we0,
-        LinearRegression_residuals_data_first_d0 => grp_fit_fu_365_LinearRegression_residuals_data_first_d0,
+        LinearRegression_residuals_size_s => grp_fit_fu_363_LinearRegression_residuals_size_s,
+        LinearRegression_residuals_size_s_ap_vld => grp_fit_fu_363_LinearRegression_residuals_size_s_ap_vld,
+        LinearRegression_residuals_data_first_address0 => grp_fit_fu_363_LinearRegression_residuals_data_first_address0,
+        LinearRegression_residuals_data_first_ce0 => grp_fit_fu_363_LinearRegression_residuals_data_first_ce0,
+        LinearRegression_residuals_data_first_we0 => grp_fit_fu_363_LinearRegression_residuals_data_first_we0,
+        LinearRegression_residuals_data_first_d0 => grp_fit_fu_363_LinearRegression_residuals_data_first_d0,
         LinearRegression_residuals_data_first_q0 => linearRegression_residuals_data_first_q0,
-        LinearRegression_residuals_data_second_size_s_address0 => grp_fit_fu_365_LinearRegression_residuals_data_second_size_s_address0,
-        LinearRegression_residuals_data_second_size_s_ce0 => grp_fit_fu_365_LinearRegression_residuals_data_second_size_s_ce0,
-        LinearRegression_residuals_data_second_size_s_we0 => grp_fit_fu_365_LinearRegression_residuals_data_second_size_s_we0,
-        LinearRegression_residuals_data_second_size_s_d0 => grp_fit_fu_365_LinearRegression_residuals_data_second_size_s_d0,
+        LinearRegression_residuals_data_second_size_s_address0 => grp_fit_fu_363_LinearRegression_residuals_data_second_size_s_address0,
+        LinearRegression_residuals_data_second_size_s_ce0 => grp_fit_fu_363_LinearRegression_residuals_data_second_size_s_ce0,
+        LinearRegression_residuals_data_second_size_s_we0 => grp_fit_fu_363_LinearRegression_residuals_data_second_size_s_we0,
+        LinearRegression_residuals_data_second_size_s_d0 => grp_fit_fu_363_LinearRegression_residuals_data_second_size_s_d0,
         LinearRegression_residuals_data_second_size_s_q0 => linearRegression_residuals_data_second_size_s_q0,
-        LinearRegression_residuals_data_second_data_phi_address0 => grp_fit_fu_365_LinearRegression_residuals_data_second_data_phi_address0,
-        LinearRegression_residuals_data_second_data_phi_ce0 => grp_fit_fu_365_LinearRegression_residuals_data_second_data_phi_ce0,
-        LinearRegression_residuals_data_second_data_phi_we0 => grp_fit_fu_365_LinearRegression_residuals_data_second_data_phi_we0,
-        LinearRegression_residuals_data_second_data_phi_d0 => grp_fit_fu_365_LinearRegression_residuals_data_second_data_phi_d0,
+        LinearRegression_residuals_data_second_data_phi_address0 => grp_fit_fu_363_LinearRegression_residuals_data_second_data_phi_address0,
+        LinearRegression_residuals_data_second_data_phi_ce0 => grp_fit_fu_363_LinearRegression_residuals_data_second_data_phi_ce0,
+        LinearRegression_residuals_data_second_data_phi_we0 => grp_fit_fu_363_LinearRegression_residuals_data_second_data_phi_we0,
+        LinearRegression_residuals_data_second_data_phi_d0 => grp_fit_fu_363_LinearRegression_residuals_data_second_data_phi_d0,
         LinearRegression_residuals_data_second_data_phi_q0 => linearRegression_residuals_data_second_data_phi_q0,
-        LinearRegression_residuals_data_second_data_phi_address1 => grp_fit_fu_365_LinearRegression_residuals_data_second_data_phi_address1,
-        LinearRegression_residuals_data_second_data_phi_ce1 => grp_fit_fu_365_LinearRegression_residuals_data_second_data_phi_ce1,
-        LinearRegression_residuals_data_second_data_phi_we1 => grp_fit_fu_365_LinearRegression_residuals_data_second_data_phi_we1,
-        LinearRegression_residuals_data_second_data_phi_d1 => grp_fit_fu_365_LinearRegression_residuals_data_second_data_phi_d1,
-        LinearRegression_residuals_data_second_data_z_address0 => grp_fit_fu_365_LinearRegression_residuals_data_second_data_z_address0,
-        LinearRegression_residuals_data_second_data_z_ce0 => grp_fit_fu_365_LinearRegression_residuals_data_second_data_z_ce0,
-        LinearRegression_residuals_data_second_data_z_we0 => grp_fit_fu_365_LinearRegression_residuals_data_second_data_z_we0,
-        LinearRegression_residuals_data_second_data_z_d0 => grp_fit_fu_365_LinearRegression_residuals_data_second_data_z_d0,
+        LinearRegression_residuals_data_second_data_phi_address1 => grp_fit_fu_363_LinearRegression_residuals_data_second_data_phi_address1,
+        LinearRegression_residuals_data_second_data_phi_ce1 => grp_fit_fu_363_LinearRegression_residuals_data_second_data_phi_ce1,
+        LinearRegression_residuals_data_second_data_phi_we1 => grp_fit_fu_363_LinearRegression_residuals_data_second_data_phi_we1,
+        LinearRegression_residuals_data_second_data_phi_d1 => grp_fit_fu_363_LinearRegression_residuals_data_second_data_phi_d1,
+        LinearRegression_residuals_data_second_data_z_address0 => grp_fit_fu_363_LinearRegression_residuals_data_second_data_z_address0,
+        LinearRegression_residuals_data_second_data_z_ce0 => grp_fit_fu_363_LinearRegression_residuals_data_second_data_z_ce0,
+        LinearRegression_residuals_data_second_data_z_we0 => grp_fit_fu_363_LinearRegression_residuals_data_second_data_z_we0,
+        LinearRegression_residuals_data_second_data_z_d0 => grp_fit_fu_363_LinearRegression_residuals_data_second_data_z_d0,
         LinearRegression_residuals_data_second_data_z_q0 => linearRegression_residuals_data_second_data_z_q0,
-        LinearRegression_residuals_data_second_data_z_address1 => grp_fit_fu_365_LinearRegression_residuals_data_second_data_z_address1,
-        LinearRegression_residuals_data_second_data_z_ce1 => grp_fit_fu_365_LinearRegression_residuals_data_second_data_z_ce1,
-        LinearRegression_residuals_data_second_data_z_we1 => grp_fit_fu_365_LinearRegression_residuals_data_second_data_z_we1,
-        LinearRegression_residuals_data_second_data_z_d1 => grp_fit_fu_365_LinearRegression_residuals_data_second_data_z_d1,
-        LinearRegression_residuals_data_second_data_layerId_address0 => grp_fit_fu_365_LinearRegression_residuals_data_second_data_layerId_address0,
-        LinearRegression_residuals_data_second_data_layerId_ce0 => grp_fit_fu_365_LinearRegression_residuals_data_second_data_layerId_ce0,
-        LinearRegression_residuals_data_second_data_layerId_we0 => grp_fit_fu_365_LinearRegression_residuals_data_second_data_layerId_we0,
-        LinearRegression_residuals_data_second_data_layerId_d0 => grp_fit_fu_365_LinearRegression_residuals_data_second_data_layerId_d0,
+        LinearRegression_residuals_data_second_data_z_address1 => grp_fit_fu_363_LinearRegression_residuals_data_second_data_z_address1,
+        LinearRegression_residuals_data_second_data_z_ce1 => grp_fit_fu_363_LinearRegression_residuals_data_second_data_z_ce1,
+        LinearRegression_residuals_data_second_data_z_we1 => grp_fit_fu_363_LinearRegression_residuals_data_second_data_z_we1,
+        LinearRegression_residuals_data_second_data_z_d1 => grp_fit_fu_363_LinearRegression_residuals_data_second_data_z_d1,
+        LinearRegression_residuals_data_second_data_layerId_address0 => grp_fit_fu_363_LinearRegression_residuals_data_second_data_layerId_address0,
+        LinearRegression_residuals_data_second_data_layerId_ce0 => grp_fit_fu_363_LinearRegression_residuals_data_second_data_layerId_ce0,
+        LinearRegression_residuals_data_second_data_layerId_we0 => grp_fit_fu_363_LinearRegression_residuals_data_second_data_layerId_we0,
+        LinearRegression_residuals_data_second_data_layerId_d0 => grp_fit_fu_363_LinearRegression_residuals_data_second_data_layerId_d0,
         LinearRegression_residuals_data_second_data_layerId_q0 => linearRegression_residuals_data_second_data_layerId_q0,
-        LinearRegression_residuals_data_second_data_layerId_address1 => grp_fit_fu_365_LinearRegression_residuals_data_second_data_layerId_address1,
-        LinearRegression_residuals_data_second_data_layerId_ce1 => grp_fit_fu_365_LinearRegression_residuals_data_second_data_layerId_ce1,
-        LinearRegression_residuals_data_second_data_layerId_we1 => grp_fit_fu_365_LinearRegression_residuals_data_second_data_layerId_we1,
-        LinearRegression_residuals_data_second_data_layerId_d1 => grp_fit_fu_365_LinearRegression_residuals_data_second_data_layerId_d1,
-        LinearRegression_residuals_data_second_data_stubId_address0 => grp_fit_fu_365_LinearRegression_residuals_data_second_data_stubId_address0,
-        LinearRegression_residuals_data_second_data_stubId_ce0 => grp_fit_fu_365_LinearRegression_residuals_data_second_data_stubId_ce0,
-        LinearRegression_residuals_data_second_data_stubId_we0 => grp_fit_fu_365_LinearRegression_residuals_data_second_data_stubId_we0,
-        LinearRegression_residuals_data_second_data_stubId_d0 => grp_fit_fu_365_LinearRegression_residuals_data_second_data_stubId_d0,
+        LinearRegression_residuals_data_second_data_layerId_address1 => grp_fit_fu_363_LinearRegression_residuals_data_second_data_layerId_address1,
+        LinearRegression_residuals_data_second_data_layerId_ce1 => grp_fit_fu_363_LinearRegression_residuals_data_second_data_layerId_ce1,
+        LinearRegression_residuals_data_second_data_layerId_we1 => grp_fit_fu_363_LinearRegression_residuals_data_second_data_layerId_we1,
+        LinearRegression_residuals_data_second_data_layerId_d1 => grp_fit_fu_363_LinearRegression_residuals_data_second_data_layerId_d1,
+        LinearRegression_residuals_data_second_data_stubId_address0 => grp_fit_fu_363_LinearRegression_residuals_data_second_data_stubId_address0,
+        LinearRegression_residuals_data_second_data_stubId_ce0 => grp_fit_fu_363_LinearRegression_residuals_data_second_data_stubId_ce0,
+        LinearRegression_residuals_data_second_data_stubId_we0 => grp_fit_fu_363_LinearRegression_residuals_data_second_data_stubId_we0,
+        LinearRegression_residuals_data_second_data_stubId_d0 => grp_fit_fu_363_LinearRegression_residuals_data_second_data_stubId_d0,
         LinearRegression_residuals_data_second_data_stubId_q0 => linearRegression_residuals_data_second_data_stubId_q0,
-        LinearRegression_residuals_data_second_data_stubId_address1 => grp_fit_fu_365_LinearRegression_residuals_data_second_data_stubId_address1,
-        LinearRegression_residuals_data_second_data_stubId_ce1 => grp_fit_fu_365_LinearRegression_residuals_data_second_data_stubId_ce1,
-        LinearRegression_residuals_data_second_data_stubId_we1 => grp_fit_fu_365_LinearRegression_residuals_data_second_data_stubId_we1,
-        LinearRegression_residuals_data_second_data_stubId_d1 => grp_fit_fu_365_LinearRegression_residuals_data_second_data_stubId_d1,
-        LinearRegression_residuals_data_second_data_ps_address0 => grp_fit_fu_365_LinearRegression_residuals_data_second_data_ps_address0,
-        LinearRegression_residuals_data_second_data_ps_ce0 => grp_fit_fu_365_LinearRegression_residuals_data_second_data_ps_ce0,
-        LinearRegression_residuals_data_second_data_ps_we0 => grp_fit_fu_365_LinearRegression_residuals_data_second_data_ps_we0,
-        LinearRegression_residuals_data_second_data_ps_d0 => grp_fit_fu_365_LinearRegression_residuals_data_second_data_ps_d0,
+        LinearRegression_residuals_data_second_data_stubId_address1 => grp_fit_fu_363_LinearRegression_residuals_data_second_data_stubId_address1,
+        LinearRegression_residuals_data_second_data_stubId_ce1 => grp_fit_fu_363_LinearRegression_residuals_data_second_data_stubId_ce1,
+        LinearRegression_residuals_data_second_data_stubId_we1 => grp_fit_fu_363_LinearRegression_residuals_data_second_data_stubId_we1,
+        LinearRegression_residuals_data_second_data_stubId_d1 => grp_fit_fu_363_LinearRegression_residuals_data_second_data_stubId_d1,
+        LinearRegression_residuals_data_second_data_ps_address0 => grp_fit_fu_363_LinearRegression_residuals_data_second_data_ps_address0,
+        LinearRegression_residuals_data_second_data_ps_ce0 => grp_fit_fu_363_LinearRegression_residuals_data_second_data_ps_ce0,
+        LinearRegression_residuals_data_second_data_ps_we0 => grp_fit_fu_363_LinearRegression_residuals_data_second_data_ps_we0,
+        LinearRegression_residuals_data_second_data_ps_d0 => grp_fit_fu_363_LinearRegression_residuals_data_second_data_ps_d0,
         LinearRegression_residuals_data_second_data_ps_q0 => linearRegression_residuals_data_second_data_ps_q0,
-        LinearRegression_residuals_data_second_data_ps_address1 => grp_fit_fu_365_LinearRegression_residuals_data_second_data_ps_address1,
-        LinearRegression_residuals_data_second_data_ps_ce1 => grp_fit_fu_365_LinearRegression_residuals_data_second_data_ps_ce1,
-        LinearRegression_residuals_data_second_data_ps_we1 => grp_fit_fu_365_LinearRegression_residuals_data_second_data_ps_we1,
-        LinearRegression_residuals_data_second_data_ps_d1 => grp_fit_fu_365_LinearRegression_residuals_data_second_data_ps_d1,
-        LinearRegression_largestResid_phi => grp_fit_fu_365_LinearRegression_largestResid_phi,
-        LinearRegression_largestResid_phi_ap_vld => grp_fit_fu_365_LinearRegression_largestResid_phi_ap_vld,
-        LinearRegression_largestResid_z => grp_fit_fu_365_LinearRegression_largestResid_z,
-        LinearRegression_largestResid_z_ap_vld => grp_fit_fu_365_LinearRegression_largestResid_z_ap_vld,
-        LinearRegression_largestResid_layerId => grp_fit_fu_365_LinearRegression_largestResid_layerId,
-        LinearRegression_largestResid_layerId_ap_vld => grp_fit_fu_365_LinearRegression_largestResid_layerId_ap_vld,
-        LinearRegression_largestResid_stubId => grp_fit_fu_365_LinearRegression_largestResid_stubId,
-        LinearRegression_largestResid_stubId_ap_vld => grp_fit_fu_365_LinearRegression_largestResid_stubId_ap_vld,
-        LinearRegression_largestResid_ps => grp_fit_fu_365_LinearRegression_largestResid_ps,
-        LinearRegression_largestResid_ps_ap_vld => grp_fit_fu_365_LinearRegression_largestResid_ps_ap_vld,
+        LinearRegression_residuals_data_second_data_ps_address1 => grp_fit_fu_363_LinearRegression_residuals_data_second_data_ps_address1,
+        LinearRegression_residuals_data_second_data_ps_ce1 => grp_fit_fu_363_LinearRegression_residuals_data_second_data_ps_ce1,
+        LinearRegression_residuals_data_second_data_ps_we1 => grp_fit_fu_363_LinearRegression_residuals_data_second_data_ps_we1,
+        LinearRegression_residuals_data_second_data_ps_d1 => grp_fit_fu_363_LinearRegression_residuals_data_second_data_ps_d1,
+        LinearRegression_largestResid_phi => grp_fit_fu_363_LinearRegression_largestResid_phi,
+        LinearRegression_largestResid_phi_ap_vld => grp_fit_fu_363_LinearRegression_largestResid_phi_ap_vld,
+        LinearRegression_largestResid_z => grp_fit_fu_363_LinearRegression_largestResid_z,
+        LinearRegression_largestResid_z_ap_vld => grp_fit_fu_363_LinearRegression_largestResid_z_ap_vld,
+        LinearRegression_largestResid_layerId => grp_fit_fu_363_LinearRegression_largestResid_layerId,
+        LinearRegression_largestResid_layerId_ap_vld => grp_fit_fu_363_LinearRegression_largestResid_layerId_ap_vld,
+        LinearRegression_largestResid_stubId => grp_fit_fu_363_LinearRegression_largestResid_stubId,
+        LinearRegression_largestResid_stubId_ap_vld => grp_fit_fu_363_LinearRegression_largestResid_stubId_ap_vld,
+        LinearRegression_largestResid_ps => grp_fit_fu_363_LinearRegression_largestResid_ps,
+        LinearRegression_largestResid_ps_ap_vld => grp_fit_fu_363_LinearRegression_largestResid_ps_ap_vld,
         l1track3D_iPhiSec_read => l1track3D_iPhiSec_s,
         l1track3D_iEtaReg_read => l1track3D_iEtaReg_s,
         l1track3D_helixRphi_first_read => l1track3D_helixRphi_first,
         l1track3D_helixRphi_second_read => l1track3D_helixRphi_second,
         l1track3D_stubs_size_read => l1track3D_stubs_size_s,
-        l1track3D_stubs_data_settings_chosenRofPhi_s_address0 => grp_fit_fu_365_l1track3D_stubs_data_settings_chosenRofPhi_s_address0,
-        l1track3D_stubs_data_settings_chosenRofPhi_s_ce0 => grp_fit_fu_365_l1track3D_stubs_data_settings_chosenRofPhi_s_ce0,
+        l1track3D_stubs_data_settings_chosenRofPhi_s_address0 => grp_fit_fu_363_l1track3D_stubs_data_settings_chosenRofPhi_s_address0,
+        l1track3D_stubs_data_settings_chosenRofPhi_s_ce0 => grp_fit_fu_363_l1track3D_stubs_data_settings_chosenRofPhi_s_ce0,
         l1track3D_stubs_data_settings_chosenRofPhi_s_q0 => l1track3D_stubs_data_settings_chosenRofPhi_s_q0,
-        l1track3D_stubs_data_settings_chosenRofPhi_s_address1 => grp_fit_fu_365_l1track3D_stubs_data_settings_chosenRofPhi_s_address1,
-        l1track3D_stubs_data_settings_chosenRofPhi_s_ce1 => grp_fit_fu_365_l1track3D_stubs_data_settings_chosenRofPhi_s_ce1,
+        l1track3D_stubs_data_settings_chosenRofPhi_s_address1 => grp_fit_fu_363_l1track3D_stubs_data_settings_chosenRofPhi_s_address1,
+        l1track3D_stubs_data_settings_chosenRofPhi_s_ce1 => grp_fit_fu_363_l1track3D_stubs_data_settings_chosenRofPhi_s_ce1,
         l1track3D_stubs_data_settings_chosenRofPhi_s_q1 => l1track3D_stubs_data_settings_chosenRofPhi_s_q1,
-        l1track3D_stubs_data_settings_chosenRofZ_s_address0 => grp_fit_fu_365_l1track3D_stubs_data_settings_chosenRofZ_s_address0,
-        l1track3D_stubs_data_settings_chosenRofZ_s_ce0 => grp_fit_fu_365_l1track3D_stubs_data_settings_chosenRofZ_s_ce0,
+        l1track3D_stubs_data_settings_chosenRofZ_s_address0 => grp_fit_fu_363_l1track3D_stubs_data_settings_chosenRofZ_s_address0,
+        l1track3D_stubs_data_settings_chosenRofZ_s_ce0 => grp_fit_fu_363_l1track3D_stubs_data_settings_chosenRofZ_s_ce0,
         l1track3D_stubs_data_settings_chosenRofZ_s_q0 => l1track3D_stubs_data_settings_chosenRofZ_s_q0,
-        l1track3D_stubs_data_settings_chosenRofZ_s_address1 => grp_fit_fu_365_l1track3D_stubs_data_settings_chosenRofZ_s_address1,
-        l1track3D_stubs_data_settings_chosenRofZ_s_ce1 => grp_fit_fu_365_l1track3D_stubs_data_settings_chosenRofZ_s_ce1,
+        l1track3D_stubs_data_settings_chosenRofZ_s_address1 => grp_fit_fu_363_l1track3D_stubs_data_settings_chosenRofZ_s_address1,
+        l1track3D_stubs_data_settings_chosenRofZ_s_ce1 => grp_fit_fu_363_l1track3D_stubs_data_settings_chosenRofZ_s_ce1,
         l1track3D_stubs_data_settings_chosenRofZ_s_q1 => l1track3D_stubs_data_settings_chosenRofZ_s_q1,
-        l1track3D_stubs_data_settings_etaRegions_s_address0 => grp_fit_fu_365_l1track3D_stubs_data_settings_etaRegions_s_address0,
-        l1track3D_stubs_data_settings_etaRegions_s_ce0 => grp_fit_fu_365_l1track3D_stubs_data_settings_etaRegions_s_ce0,
-        l1track3D_stubs_data_settings_etaRegions_s_q0 => l1track3D_stubs_data_settings_etaRegions_s_q0,
-        l1track3D_stubs_data_settings_etaRegions_s_address1 => grp_fit_fu_365_l1track3D_stubs_data_settings_etaRegions_s_address1,
-        l1track3D_stubs_data_settings_etaRegions_s_ce1 => grp_fit_fu_365_l1track3D_stubs_data_settings_etaRegions_s_ce1,
-        l1track3D_stubs_data_settings_etaRegions_s_q1 => l1track3D_stubs_data_settings_etaRegions_s_q1,
-        l1track3D_stubs_data_settings_minNumMatchLayers_s_address0 => grp_fit_fu_365_l1track3D_stubs_data_settings_minNumMatchLayers_s_address0,
-        l1track3D_stubs_data_settings_minNumMatchLayers_s_ce0 => grp_fit_fu_365_l1track3D_stubs_data_settings_minNumMatchLayers_s_ce0,
+        l1track3D_stubs_data_settings_sinh_etaRegions_s_address0 => grp_fit_fu_363_l1track3D_stubs_data_settings_sinh_etaRegions_s_address0,
+        l1track3D_stubs_data_settings_sinh_etaRegions_s_ce0 => grp_fit_fu_363_l1track3D_stubs_data_settings_sinh_etaRegions_s_ce0,
+        l1track3D_stubs_data_settings_sinh_etaRegions_s_q0 => l1track3D_stubs_data_settings_sinh_etaRegions_s_q0,
+        l1track3D_stubs_data_settings_sinh_etaRegions_s_address1 => grp_fit_fu_363_l1track3D_stubs_data_settings_sinh_etaRegions_s_address1,
+        l1track3D_stubs_data_settings_sinh_etaRegions_s_ce1 => grp_fit_fu_363_l1track3D_stubs_data_settings_sinh_etaRegions_s_ce1,
+        l1track3D_stubs_data_settings_sinh_etaRegions_s_q1 => l1track3D_stubs_data_settings_sinh_etaRegions_s_q1,
+        l1track3D_stubs_data_settings_minNumMatchLayers_s_address0 => grp_fit_fu_363_l1track3D_stubs_data_settings_minNumMatchLayers_s_address0,
+        l1track3D_stubs_data_settings_minNumMatchLayers_s_ce0 => grp_fit_fu_363_l1track3D_stubs_data_settings_minNumMatchLayers_s_ce0,
         l1track3D_stubs_data_settings_minNumMatchLayers_s_q0 => l1track3D_stubs_data_settings_minNumMatchLayers_s_q0,
-        l1track3D_stubs_data_settings_minNumMatchLayers_s_address1 => grp_fit_fu_365_l1track3D_stubs_data_settings_minNumMatchLayers_s_address1,
-        l1track3D_stubs_data_settings_minNumMatchLayers_s_ce1 => grp_fit_fu_365_l1track3D_stubs_data_settings_minNumMatchLayers_s_ce1,
+        l1track3D_stubs_data_settings_minNumMatchLayers_s_address1 => grp_fit_fu_363_l1track3D_stubs_data_settings_minNumMatchLayers_s_address1,
+        l1track3D_stubs_data_settings_minNumMatchLayers_s_ce1 => grp_fit_fu_363_l1track3D_stubs_data_settings_minNumMatchLayers_s_ce1,
         l1track3D_stubs_data_settings_minNumMatchLayers_s_q1 => l1track3D_stubs_data_settings_minNumMatchLayers_s_q1,
-        l1track3D_stubs_data_settings_minPSLayers_s_address0 => grp_fit_fu_365_l1track3D_stubs_data_settings_minPSLayers_s_address0,
-        l1track3D_stubs_data_settings_minPSLayers_s_ce0 => grp_fit_fu_365_l1track3D_stubs_data_settings_minPSLayers_s_ce0,
+        l1track3D_stubs_data_settings_minPSLayers_s_address0 => grp_fit_fu_363_l1track3D_stubs_data_settings_minPSLayers_s_address0,
+        l1track3D_stubs_data_settings_minPSLayers_s_ce0 => grp_fit_fu_363_l1track3D_stubs_data_settings_minPSLayers_s_ce0,
         l1track3D_stubs_data_settings_minPSLayers_s_q0 => l1track3D_stubs_data_settings_minPSLayers_s_q0,
-        l1track3D_stubs_data_settings_minPSLayers_s_address1 => grp_fit_fu_365_l1track3D_stubs_data_settings_minPSLayers_s_address1,
-        l1track3D_stubs_data_settings_minPSLayers_s_ce1 => grp_fit_fu_365_l1track3D_stubs_data_settings_minPSLayers_s_ce1,
+        l1track3D_stubs_data_settings_minPSLayers_s_address1 => grp_fit_fu_363_l1track3D_stubs_data_settings_minPSLayers_s_address1,
+        l1track3D_stubs_data_settings_minPSLayers_s_ce1 => grp_fit_fu_363_l1track3D_stubs_data_settings_minPSLayers_s_ce1,
         l1track3D_stubs_data_settings_minPSLayers_s_q1 => l1track3D_stubs_data_settings_minPSLayers_s_q1,
-        l1track3D_stubs_data_r_s_address0 => grp_fit_fu_365_l1track3D_stubs_data_r_s_address0,
-        l1track3D_stubs_data_r_s_ce0 => grp_fit_fu_365_l1track3D_stubs_data_r_s_ce0,
+        l1track3D_stubs_data_r_s_address0 => grp_fit_fu_363_l1track3D_stubs_data_r_s_address0,
+        l1track3D_stubs_data_r_s_ce0 => grp_fit_fu_363_l1track3D_stubs_data_r_s_ce0,
         l1track3D_stubs_data_r_s_q0 => l1track3D_stubs_data_r_s_q0,
-        l1track3D_stubs_data_r_s_address1 => grp_fit_fu_365_l1track3D_stubs_data_r_s_address1,
-        l1track3D_stubs_data_r_s_ce1 => grp_fit_fu_365_l1track3D_stubs_data_r_s_ce1,
+        l1track3D_stubs_data_r_s_address1 => grp_fit_fu_363_l1track3D_stubs_data_r_s_address1,
+        l1track3D_stubs_data_r_s_ce1 => grp_fit_fu_363_l1track3D_stubs_data_r_s_ce1,
         l1track3D_stubs_data_r_s_q1 => l1track3D_stubs_data_r_s_q1,
-        l1track3D_stubs_data_phi_s_address0 => grp_fit_fu_365_l1track3D_stubs_data_phi_s_address0,
-        l1track3D_stubs_data_phi_s_ce0 => grp_fit_fu_365_l1track3D_stubs_data_phi_s_ce0,
+        l1track3D_stubs_data_phi_s_address0 => grp_fit_fu_363_l1track3D_stubs_data_phi_s_address0,
+        l1track3D_stubs_data_phi_s_ce0 => grp_fit_fu_363_l1track3D_stubs_data_phi_s_ce0,
         l1track3D_stubs_data_phi_s_q0 => l1track3D_stubs_data_phi_s_q0,
-        l1track3D_stubs_data_phi_s_address1 => grp_fit_fu_365_l1track3D_stubs_data_phi_s_address1,
-        l1track3D_stubs_data_phi_s_ce1 => grp_fit_fu_365_l1track3D_stubs_data_phi_s_ce1,
+        l1track3D_stubs_data_phi_s_address1 => grp_fit_fu_363_l1track3D_stubs_data_phi_s_address1,
+        l1track3D_stubs_data_phi_s_ce1 => grp_fit_fu_363_l1track3D_stubs_data_phi_s_ce1,
         l1track3D_stubs_data_phi_s_q1 => l1track3D_stubs_data_phi_s_q1,
-        l1track3D_stubs_data_z_s_address0 => grp_fit_fu_365_l1track3D_stubs_data_z_s_address0,
-        l1track3D_stubs_data_z_s_ce0 => grp_fit_fu_365_l1track3D_stubs_data_z_s_ce0,
+        l1track3D_stubs_data_z_s_address0 => grp_fit_fu_363_l1track3D_stubs_data_z_s_address0,
+        l1track3D_stubs_data_z_s_ce0 => grp_fit_fu_363_l1track3D_stubs_data_z_s_ce0,
         l1track3D_stubs_data_z_s_q0 => l1track3D_stubs_data_z_s_q0,
-        l1track3D_stubs_data_z_s_address1 => grp_fit_fu_365_l1track3D_stubs_data_z_s_address1,
-        l1track3D_stubs_data_z_s_ce1 => grp_fit_fu_365_l1track3D_stubs_data_z_s_ce1,
+        l1track3D_stubs_data_z_s_address1 => grp_fit_fu_363_l1track3D_stubs_data_z_s_address1,
+        l1track3D_stubs_data_z_s_ce1 => grp_fit_fu_363_l1track3D_stubs_data_z_s_ce1,
         l1track3D_stubs_data_z_s_q1 => l1track3D_stubs_data_z_s_q1,
-        l1track3D_stubs_data_layerId_s_address0 => grp_fit_fu_365_l1track3D_stubs_data_layerId_s_address0,
-        l1track3D_stubs_data_layerId_s_ce0 => grp_fit_fu_365_l1track3D_stubs_data_layerId_s_ce0,
+        l1track3D_stubs_data_layerId_s_address0 => grp_fit_fu_363_l1track3D_stubs_data_layerId_s_address0,
+        l1track3D_stubs_data_layerId_s_ce0 => grp_fit_fu_363_l1track3D_stubs_data_layerId_s_ce0,
         l1track3D_stubs_data_layerId_s_q0 => l1track3D_stubs_data_layerId_s_q0,
-        l1track3D_stubs_data_layerId_s_address1 => grp_fit_fu_365_l1track3D_stubs_data_layerId_s_address1,
-        l1track3D_stubs_data_layerId_s_ce1 => grp_fit_fu_365_l1track3D_stubs_data_layerId_s_ce1,
+        l1track3D_stubs_data_layerId_s_address1 => grp_fit_fu_363_l1track3D_stubs_data_layerId_s_address1,
+        l1track3D_stubs_data_layerId_s_ce1 => grp_fit_fu_363_l1track3D_stubs_data_layerId_s_ce1,
         l1track3D_stubs_data_layerId_s_q1 => l1track3D_stubs_data_layerId_s_q1,
-        l1track3D_stubs_data_psModule_s_address0 => grp_fit_fu_365_l1track3D_stubs_data_psModule_s_address0,
-        l1track3D_stubs_data_psModule_s_ce0 => grp_fit_fu_365_l1track3D_stubs_data_psModule_s_ce0,
+        l1track3D_stubs_data_psModule_s_address0 => grp_fit_fu_363_l1track3D_stubs_data_psModule_s_address0,
+        l1track3D_stubs_data_psModule_s_ce0 => grp_fit_fu_363_l1track3D_stubs_data_psModule_s_ce0,
         l1track3D_stubs_data_psModule_s_q0 => l1track3D_stubs_data_psModule_s_q0,
-        l1track3D_stubs_data_psModule_s_address1 => grp_fit_fu_365_l1track3D_stubs_data_psModule_s_address1,
-        l1track3D_stubs_data_psModule_s_ce1 => grp_fit_fu_365_l1track3D_stubs_data_psModule_s_ce1,
+        l1track3D_stubs_data_psModule_s_address1 => grp_fit_fu_363_l1track3D_stubs_data_psModule_s_address1,
+        l1track3D_stubs_data_psModule_s_ce1 => grp_fit_fu_363_l1track3D_stubs_data_psModule_s_ce1,
         l1track3D_stubs_data_psModule_s_q1 => l1track3D_stubs_data_psModule_s_q1,
-        l1track3D_stubs_data_barrel_s_address0 => grp_fit_fu_365_l1track3D_stubs_data_barrel_s_address0,
-        l1track3D_stubs_data_barrel_s_ce0 => grp_fit_fu_365_l1track3D_stubs_data_barrel_s_ce0,
+        l1track3D_stubs_data_barrel_s_address0 => grp_fit_fu_363_l1track3D_stubs_data_barrel_s_address0,
+        l1track3D_stubs_data_barrel_s_ce0 => grp_fit_fu_363_l1track3D_stubs_data_barrel_s_ce0,
         l1track3D_stubs_data_barrel_s_q0 => l1track3D_stubs_data_barrel_s_q0,
-        l1track3D_stubs_data_barrel_s_address1 => grp_fit_fu_365_l1track3D_stubs_data_barrel_s_address1,
-        l1track3D_stubs_data_barrel_s_ce1 => grp_fit_fu_365_l1track3D_stubs_data_barrel_s_ce1,
+        l1track3D_stubs_data_barrel_s_address1 => grp_fit_fu_363_l1track3D_stubs_data_barrel_s_address1,
+        l1track3D_stubs_data_barrel_s_ce1 => grp_fit_fu_363_l1track3D_stubs_data_barrel_s_ce1,
         l1track3D_stubs_data_barrel_s_q1 => l1track3D_stubs_data_barrel_s_q1,
-        ap_return_0 => grp_fit_fu_365_ap_return_0,
-        ap_return_1 => grp_fit_fu_365_ap_return_1,
-        ap_return_2 => grp_fit_fu_365_ap_return_2,
-        ap_return_3 => grp_fit_fu_365_ap_return_3,
-        ap_return_4 => grp_fit_fu_365_ap_return_4,
-        ap_return_5 => grp_fit_fu_365_ap_return_5,
-        ap_return_6 => grp_fit_fu_365_ap_return_6,
-        ap_return_7 => grp_fit_fu_365_ap_return_7,
-        ap_return_8 => grp_fit_fu_365_ap_return_8,
-        ap_return_9 => grp_fit_fu_365_ap_return_9,
-        ap_return_10 => grp_fit_fu_365_ap_return_10,
-        ap_return_11 => grp_fit_fu_365_ap_return_11,
-        ap_return_12 => grp_fit_fu_365_ap_return_12,
-        ap_return_13 => grp_fit_fu_365_ap_return_13,
-        ap_return_14 => grp_fit_fu_365_ap_return_14);
+        ap_return_0 => grp_fit_fu_363_ap_return_0,
+        ap_return_1 => grp_fit_fu_363_ap_return_1,
+        ap_return_2 => grp_fit_fu_363_ap_return_2,
+        ap_return_3 => grp_fit_fu_363_ap_return_3,
+        ap_return_4 => grp_fit_fu_363_ap_return_4,
+        ap_return_5 => grp_fit_fu_363_ap_return_5,
+        ap_return_6 => grp_fit_fu_363_ap_return_6,
+        ap_return_7 => grp_fit_fu_363_ap_return_7,
+        ap_return_8 => grp_fit_fu_363_ap_return_8,
+        ap_return_9 => grp_fit_fu_363_ap_return_9,
+        ap_return_10 => grp_fit_fu_363_ap_return_10,
+        ap_return_11 => grp_fit_fu_363_ap_return_11,
+        ap_return_12 => grp_fit_fu_363_ap_return_12,
+        ap_return_13 => grp_fit_fu_363_ap_return_13,
+        ap_return_14 => grp_fit_fu_363_ap_return_14);
 
 
 
@@ -1609,23 +1620,23 @@ begin
     end process;
 
 
-    grp_fit_fu_365_ap_start_reg_assign_proc : process(ap_clk)
+    grp_fit_fu_363_ap_start_reg_assign_proc : process(ap_clk)
     begin
         if (ap_clk'event and ap_clk =  '1') then
             if (ap_rst = '1') then
-                grp_fit_fu_365_ap_start_reg <= ap_const_logic_0;
+                grp_fit_fu_363_ap_start_reg <= ap_const_logic_0;
             else
                 if (((ap_start = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state1))) then 
-                    grp_fit_fu_365_ap_start_reg <= ap_const_logic_1;
-                elsif ((grp_fit_fu_365_ap_ready = ap_const_logic_1)) then 
-                    grp_fit_fu_365_ap_start_reg <= ap_const_logic_0;
+                    grp_fit_fu_363_ap_start_reg <= ap_const_logic_1;
+                elsif ((grp_fit_fu_363_ap_ready = ap_const_logic_1)) then 
+                    grp_fit_fu_363_ap_start_reg <= ap_const_logic_0;
                 end if; 
             end if;
         end if;
     end process;
 
 
-    ap_NS_fsm_assign_proc : process (ap_start, ap_CS_fsm, ap_CS_fsm_state1, grp_fit_fu_365_ap_done, ap_CS_fsm_state2)
+    ap_NS_fsm_assign_proc : process (ap_start, ap_CS_fsm, ap_CS_fsm_state1, grp_fit_fu_363_ap_done, ap_CS_fsm_state2)
     begin
         case ap_CS_fsm is
             when ap_ST_fsm_state1 => 
@@ -1635,7 +1646,7 @@ begin
                     ap_NS_fsm <= ap_ST_fsm_state1;
                 end if;
             when ap_ST_fsm_state2 => 
-                if (((grp_fit_fu_365_ap_done = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state2))) then
+                if (((grp_fit_fu_363_ap_done = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state2))) then
                     ap_NS_fsm <= ap_ST_fsm_state1;
                 else
                     ap_NS_fsm <= ap_ST_fsm_state2;
@@ -1647,9 +1658,9 @@ begin
     ap_CS_fsm_state1 <= ap_CS_fsm(0);
     ap_CS_fsm_state2 <= ap_CS_fsm(1);
 
-    ap_done_assign_proc : process(grp_fit_fu_365_ap_done, ap_CS_fsm_state2)
+    ap_done_assign_proc : process(grp_fit_fu_363_ap_done, ap_CS_fsm_state2)
     begin
-        if (((grp_fit_fu_365_ap_done = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state2))) then 
+        if (((grp_fit_fu_363_ap_done = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state2))) then 
             ap_done <= ap_const_logic_1;
         else 
             ap_done <= ap_const_logic_0;
@@ -1667,473 +1678,475 @@ begin
     end process;
 
 
-    ap_ready_assign_proc : process(grp_fit_fu_365_ap_done, ap_CS_fsm_state2)
+    ap_ready_assign_proc : process(grp_fit_fu_363_ap_done, ap_CS_fsm_state2)
     begin
-        if (((grp_fit_fu_365_ap_done = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state2))) then 
+        if (((grp_fit_fu_363_ap_done = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state2))) then 
             ap_ready <= ap_const_logic_1;
         else 
             ap_ready <= ap_const_logic_0;
         end if; 
     end process;
 
-    grp_fit_fu_365_ap_start <= grp_fit_fu_365_ap_start_reg;
-    l1track3D_stubs_data_barrel_s_address0 <= grp_fit_fu_365_l1track3D_stubs_data_barrel_s_address0;
-    l1track3D_stubs_data_barrel_s_address1 <= grp_fit_fu_365_l1track3D_stubs_data_barrel_s_address1;
-    l1track3D_stubs_data_barrel_s_ce0 <= grp_fit_fu_365_l1track3D_stubs_data_barrel_s_ce0;
-    l1track3D_stubs_data_barrel_s_ce1 <= grp_fit_fu_365_l1track3D_stubs_data_barrel_s_ce1;
-    l1track3D_stubs_data_layerId_s_address0 <= grp_fit_fu_365_l1track3D_stubs_data_layerId_s_address0;
-    l1track3D_stubs_data_layerId_s_address1 <= grp_fit_fu_365_l1track3D_stubs_data_layerId_s_address1;
-    l1track3D_stubs_data_layerId_s_ce0 <= grp_fit_fu_365_l1track3D_stubs_data_layerId_s_ce0;
-    l1track3D_stubs_data_layerId_s_ce1 <= grp_fit_fu_365_l1track3D_stubs_data_layerId_s_ce1;
-    l1track3D_stubs_data_phi_s_address0 <= grp_fit_fu_365_l1track3D_stubs_data_phi_s_address0;
-    l1track3D_stubs_data_phi_s_address1 <= grp_fit_fu_365_l1track3D_stubs_data_phi_s_address1;
-    l1track3D_stubs_data_phi_s_ce0 <= grp_fit_fu_365_l1track3D_stubs_data_phi_s_ce0;
-    l1track3D_stubs_data_phi_s_ce1 <= grp_fit_fu_365_l1track3D_stubs_data_phi_s_ce1;
-    l1track3D_stubs_data_psModule_s_address0 <= grp_fit_fu_365_l1track3D_stubs_data_psModule_s_address0;
-    l1track3D_stubs_data_psModule_s_address1 <= grp_fit_fu_365_l1track3D_stubs_data_psModule_s_address1;
-    l1track3D_stubs_data_psModule_s_ce0 <= grp_fit_fu_365_l1track3D_stubs_data_psModule_s_ce0;
-    l1track3D_stubs_data_psModule_s_ce1 <= grp_fit_fu_365_l1track3D_stubs_data_psModule_s_ce1;
-    l1track3D_stubs_data_r_s_address0 <= grp_fit_fu_365_l1track3D_stubs_data_r_s_address0;
-    l1track3D_stubs_data_r_s_address1 <= grp_fit_fu_365_l1track3D_stubs_data_r_s_address1;
-    l1track3D_stubs_data_r_s_ce0 <= grp_fit_fu_365_l1track3D_stubs_data_r_s_ce0;
-    l1track3D_stubs_data_r_s_ce1 <= grp_fit_fu_365_l1track3D_stubs_data_r_s_ce1;
-    l1track3D_stubs_data_settings_chosenRofPhi_s_address0 <= grp_fit_fu_365_l1track3D_stubs_data_settings_chosenRofPhi_s_address0;
-    l1track3D_stubs_data_settings_chosenRofPhi_s_address1 <= grp_fit_fu_365_l1track3D_stubs_data_settings_chosenRofPhi_s_address1;
-    l1track3D_stubs_data_settings_chosenRofPhi_s_ce0 <= grp_fit_fu_365_l1track3D_stubs_data_settings_chosenRofPhi_s_ce0;
-    l1track3D_stubs_data_settings_chosenRofPhi_s_ce1 <= grp_fit_fu_365_l1track3D_stubs_data_settings_chosenRofPhi_s_ce1;
-    l1track3D_stubs_data_settings_chosenRofZ_s_address0 <= grp_fit_fu_365_l1track3D_stubs_data_settings_chosenRofZ_s_address0;
-    l1track3D_stubs_data_settings_chosenRofZ_s_address1 <= grp_fit_fu_365_l1track3D_stubs_data_settings_chosenRofZ_s_address1;
-    l1track3D_stubs_data_settings_chosenRofZ_s_ce0 <= grp_fit_fu_365_l1track3D_stubs_data_settings_chosenRofZ_s_ce0;
-    l1track3D_stubs_data_settings_chosenRofZ_s_ce1 <= grp_fit_fu_365_l1track3D_stubs_data_settings_chosenRofZ_s_ce1;
-    l1track3D_stubs_data_settings_etaRegions_s_address0 <= grp_fit_fu_365_l1track3D_stubs_data_settings_etaRegions_s_address0;
-    l1track3D_stubs_data_settings_etaRegions_s_address1 <= grp_fit_fu_365_l1track3D_stubs_data_settings_etaRegions_s_address1;
-    l1track3D_stubs_data_settings_etaRegions_s_ce0 <= grp_fit_fu_365_l1track3D_stubs_data_settings_etaRegions_s_ce0;
-    l1track3D_stubs_data_settings_etaRegions_s_ce1 <= grp_fit_fu_365_l1track3D_stubs_data_settings_etaRegions_s_ce1;
-    l1track3D_stubs_data_settings_minNumMatchLayers_s_address0 <= grp_fit_fu_365_l1track3D_stubs_data_settings_minNumMatchLayers_s_address0;
-    l1track3D_stubs_data_settings_minNumMatchLayers_s_address1 <= grp_fit_fu_365_l1track3D_stubs_data_settings_minNumMatchLayers_s_address1;
-    l1track3D_stubs_data_settings_minNumMatchLayers_s_ce0 <= grp_fit_fu_365_l1track3D_stubs_data_settings_minNumMatchLayers_s_ce0;
-    l1track3D_stubs_data_settings_minNumMatchLayers_s_ce1 <= grp_fit_fu_365_l1track3D_stubs_data_settings_minNumMatchLayers_s_ce1;
-    l1track3D_stubs_data_settings_minPSLayers_s_address0 <= grp_fit_fu_365_l1track3D_stubs_data_settings_minPSLayers_s_address0;
-    l1track3D_stubs_data_settings_minPSLayers_s_address1 <= grp_fit_fu_365_l1track3D_stubs_data_settings_minPSLayers_s_address1;
-    l1track3D_stubs_data_settings_minPSLayers_s_ce0 <= grp_fit_fu_365_l1track3D_stubs_data_settings_minPSLayers_s_ce0;
-    l1track3D_stubs_data_settings_minPSLayers_s_ce1 <= grp_fit_fu_365_l1track3D_stubs_data_settings_minPSLayers_s_ce1;
-    l1track3D_stubs_data_z_s_address0 <= grp_fit_fu_365_l1track3D_stubs_data_z_s_address0;
-    l1track3D_stubs_data_z_s_address1 <= grp_fit_fu_365_l1track3D_stubs_data_z_s_address1;
-    l1track3D_stubs_data_z_s_ce0 <= grp_fit_fu_365_l1track3D_stubs_data_z_s_ce0;
-    l1track3D_stubs_data_z_s_ce1 <= grp_fit_fu_365_l1track3D_stubs_data_z_s_ce1;
-    linearRegression_HTParameter_cotTheta <= grp_fit_fu_365_ap_return_6;
+    grp_fit_fu_363_ap_start <= grp_fit_fu_363_ap_start_reg;
+    l1track3D_stubs_data_barrel_s_address0 <= grp_fit_fu_363_l1track3D_stubs_data_barrel_s_address0;
+    l1track3D_stubs_data_barrel_s_address1 <= grp_fit_fu_363_l1track3D_stubs_data_barrel_s_address1;
+    l1track3D_stubs_data_barrel_s_ce0 <= grp_fit_fu_363_l1track3D_stubs_data_barrel_s_ce0;
+    l1track3D_stubs_data_barrel_s_ce1 <= grp_fit_fu_363_l1track3D_stubs_data_barrel_s_ce1;
+    l1track3D_stubs_data_layerId_s_address0 <= grp_fit_fu_363_l1track3D_stubs_data_layerId_s_address0;
+    l1track3D_stubs_data_layerId_s_address1 <= grp_fit_fu_363_l1track3D_stubs_data_layerId_s_address1;
+    l1track3D_stubs_data_layerId_s_ce0 <= grp_fit_fu_363_l1track3D_stubs_data_layerId_s_ce0;
+    l1track3D_stubs_data_layerId_s_ce1 <= grp_fit_fu_363_l1track3D_stubs_data_layerId_s_ce1;
+    l1track3D_stubs_data_phi_s_address0 <= grp_fit_fu_363_l1track3D_stubs_data_phi_s_address0;
+    l1track3D_stubs_data_phi_s_address1 <= grp_fit_fu_363_l1track3D_stubs_data_phi_s_address1;
+    l1track3D_stubs_data_phi_s_ce0 <= grp_fit_fu_363_l1track3D_stubs_data_phi_s_ce0;
+    l1track3D_stubs_data_phi_s_ce1 <= grp_fit_fu_363_l1track3D_stubs_data_phi_s_ce1;
+    l1track3D_stubs_data_psModule_s_address0 <= grp_fit_fu_363_l1track3D_stubs_data_psModule_s_address0;
+    l1track3D_stubs_data_psModule_s_address1 <= grp_fit_fu_363_l1track3D_stubs_data_psModule_s_address1;
+    l1track3D_stubs_data_psModule_s_ce0 <= grp_fit_fu_363_l1track3D_stubs_data_psModule_s_ce0;
+    l1track3D_stubs_data_psModule_s_ce1 <= grp_fit_fu_363_l1track3D_stubs_data_psModule_s_ce1;
+    l1track3D_stubs_data_r_s_address0 <= grp_fit_fu_363_l1track3D_stubs_data_r_s_address0;
+    l1track3D_stubs_data_r_s_address1 <= grp_fit_fu_363_l1track3D_stubs_data_r_s_address1;
+    l1track3D_stubs_data_r_s_ce0 <= grp_fit_fu_363_l1track3D_stubs_data_r_s_ce0;
+    l1track3D_stubs_data_r_s_ce1 <= grp_fit_fu_363_l1track3D_stubs_data_r_s_ce1;
+    l1track3D_stubs_data_settings_chosenRofPhi_s_address0 <= grp_fit_fu_363_l1track3D_stubs_data_settings_chosenRofPhi_s_address0;
+    l1track3D_stubs_data_settings_chosenRofPhi_s_address1 <= grp_fit_fu_363_l1track3D_stubs_data_settings_chosenRofPhi_s_address1;
+    l1track3D_stubs_data_settings_chosenRofPhi_s_ce0 <= grp_fit_fu_363_l1track3D_stubs_data_settings_chosenRofPhi_s_ce0;
+    l1track3D_stubs_data_settings_chosenRofPhi_s_ce1 <= grp_fit_fu_363_l1track3D_stubs_data_settings_chosenRofPhi_s_ce1;
+    l1track3D_stubs_data_settings_chosenRofZ_s_address0 <= grp_fit_fu_363_l1track3D_stubs_data_settings_chosenRofZ_s_address0;
+    l1track3D_stubs_data_settings_chosenRofZ_s_address1 <= grp_fit_fu_363_l1track3D_stubs_data_settings_chosenRofZ_s_address1;
+    l1track3D_stubs_data_settings_chosenRofZ_s_ce0 <= grp_fit_fu_363_l1track3D_stubs_data_settings_chosenRofZ_s_ce0;
+    l1track3D_stubs_data_settings_chosenRofZ_s_ce1 <= grp_fit_fu_363_l1track3D_stubs_data_settings_chosenRofZ_s_ce1;
+    l1track3D_stubs_data_settings_minNumMatchLayers_s_address0 <= grp_fit_fu_363_l1track3D_stubs_data_settings_minNumMatchLayers_s_address0;
+    l1track3D_stubs_data_settings_minNumMatchLayers_s_address1 <= grp_fit_fu_363_l1track3D_stubs_data_settings_minNumMatchLayers_s_address1;
+    l1track3D_stubs_data_settings_minNumMatchLayers_s_ce0 <= grp_fit_fu_363_l1track3D_stubs_data_settings_minNumMatchLayers_s_ce0;
+    l1track3D_stubs_data_settings_minNumMatchLayers_s_ce1 <= grp_fit_fu_363_l1track3D_stubs_data_settings_minNumMatchLayers_s_ce1;
+    l1track3D_stubs_data_settings_minPSLayers_s_address0 <= grp_fit_fu_363_l1track3D_stubs_data_settings_minPSLayers_s_address0;
+    l1track3D_stubs_data_settings_minPSLayers_s_address1 <= grp_fit_fu_363_l1track3D_stubs_data_settings_minPSLayers_s_address1;
+    l1track3D_stubs_data_settings_minPSLayers_s_ce0 <= grp_fit_fu_363_l1track3D_stubs_data_settings_minPSLayers_s_ce0;
+    l1track3D_stubs_data_settings_minPSLayers_s_ce1 <= grp_fit_fu_363_l1track3D_stubs_data_settings_minPSLayers_s_ce1;
+    l1track3D_stubs_data_settings_sinh_etaRegions_s_address0 <= grp_fit_fu_363_l1track3D_stubs_data_settings_sinh_etaRegions_s_address0;
+    l1track3D_stubs_data_settings_sinh_etaRegions_s_address1 <= grp_fit_fu_363_l1track3D_stubs_data_settings_sinh_etaRegions_s_address1;
+    l1track3D_stubs_data_settings_sinh_etaRegions_s_ce0 <= grp_fit_fu_363_l1track3D_stubs_data_settings_sinh_etaRegions_s_ce0;
+    l1track3D_stubs_data_settings_sinh_etaRegions_s_ce1 <= grp_fit_fu_363_l1track3D_stubs_data_settings_sinh_etaRegions_s_ce1;
+    l1track3D_stubs_data_z_s_address0 <= grp_fit_fu_363_l1track3D_stubs_data_z_s_address0;
+    l1track3D_stubs_data_z_s_address1 <= grp_fit_fu_363_l1track3D_stubs_data_z_s_address1;
+    l1track3D_stubs_data_z_s_ce0 <= grp_fit_fu_363_l1track3D_stubs_data_z_s_ce0;
+    l1track3D_stubs_data_z_s_ce1 <= grp_fit_fu_363_l1track3D_stubs_data_z_s_ce1;
+    linearRegression_HTParameter_cotTheta <= grp_fit_fu_363_ap_return_6;
 
-    linearRegression_HTParameter_cotTheta_ap_vld_assign_proc : process(grp_fit_fu_365_ap_done, ap_CS_fsm_state2)
+    linearRegression_HTParameter_cotTheta_ap_vld_assign_proc : process(grp_fit_fu_363_ap_done, ap_CS_fsm_state2)
     begin
-        if (((grp_fit_fu_365_ap_done = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state2))) then 
+        if (((grp_fit_fu_363_ap_done = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state2))) then 
             linearRegression_HTParameter_cotTheta_ap_vld <= ap_const_logic_1;
         else 
             linearRegression_HTParameter_cotTheta_ap_vld <= ap_const_logic_0;
         end if; 
     end process;
 
-    linearRegression_HTParameter_phiT <= grp_fit_fu_365_ap_return_5;
+    linearRegression_HTParameter_phiT <= grp_fit_fu_363_ap_return_5;
 
-    linearRegression_HTParameter_phiT_ap_vld_assign_proc : process(grp_fit_fu_365_ap_done, ap_CS_fsm_state2)
+    linearRegression_HTParameter_phiT_ap_vld_assign_proc : process(grp_fit_fu_363_ap_done, ap_CS_fsm_state2)
     begin
-        if (((grp_fit_fu_365_ap_done = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state2))) then 
+        if (((grp_fit_fu_363_ap_done = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state2))) then 
             linearRegression_HTParameter_phiT_ap_vld <= ap_const_logic_1;
         else 
             linearRegression_HTParameter_phiT_ap_vld <= ap_const_logic_0;
         end if; 
     end process;
 
-    linearRegression_HTParameter_qOverPt <= grp_fit_fu_365_ap_return_4;
+    linearRegression_HTParameter_qOverPt <= grp_fit_fu_363_ap_return_4;
 
-    linearRegression_HTParameter_qOverPt_ap_vld_assign_proc : process(grp_fit_fu_365_ap_done, ap_CS_fsm_state2)
+    linearRegression_HTParameter_qOverPt_ap_vld_assign_proc : process(grp_fit_fu_363_ap_done, ap_CS_fsm_state2)
     begin
-        if (((grp_fit_fu_365_ap_done = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state2))) then 
+        if (((grp_fit_fu_363_ap_done = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state2))) then 
             linearRegression_HTParameter_qOverPt_ap_vld <= ap_const_logic_1;
         else 
             linearRegression_HTParameter_qOverPt_ap_vld <= ap_const_logic_0;
         end if; 
     end process;
 
-    linearRegression_HTParameter_zT <= grp_fit_fu_365_ap_return_7;
+    linearRegression_HTParameter_zT <= grp_fit_fu_363_ap_return_7;
 
-    linearRegression_HTParameter_zT_ap_vld_assign_proc : process(grp_fit_fu_365_ap_done, ap_CS_fsm_state2)
+    linearRegression_HTParameter_zT_ap_vld_assign_proc : process(grp_fit_fu_363_ap_done, ap_CS_fsm_state2)
     begin
-        if (((grp_fit_fu_365_ap_done = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state2))) then 
+        if (((grp_fit_fu_363_ap_done = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state2))) then 
             linearRegression_HTParameter_zT_ap_vld <= ap_const_logic_1;
         else 
             linearRegression_HTParameter_zT_ap_vld <= ap_const_logic_0;
         end if; 
     end process;
 
-    linearRegression_LRParameter_cotTheta_o <= grp_fit_fu_365_ap_return_11;
+    linearRegression_LRParameter_cotTheta_o <= grp_fit_fu_363_ap_return_11;
 
-    linearRegression_LRParameter_cotTheta_o_ap_vld_assign_proc : process(grp_fit_fu_365_ap_done, ap_CS_fsm_state2)
+    linearRegression_LRParameter_cotTheta_o_ap_vld_assign_proc : process(grp_fit_fu_363_ap_done, ap_CS_fsm_state2)
     begin
-        if (((grp_fit_fu_365_ap_done = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state2))) then 
+        if (((grp_fit_fu_363_ap_done = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state2))) then 
             linearRegression_LRParameter_cotTheta_o_ap_vld <= ap_const_logic_1;
         else 
             linearRegression_LRParameter_cotTheta_o_ap_vld <= ap_const_logic_0;
         end if; 
     end process;
 
-    linearRegression_LRParameter_phiT_o <= grp_fit_fu_365_ap_return_10;
+    linearRegression_LRParameter_phiT_o <= grp_fit_fu_363_ap_return_10;
 
-    linearRegression_LRParameter_phiT_o_ap_vld_assign_proc : process(grp_fit_fu_365_ap_done, ap_CS_fsm_state2)
+    linearRegression_LRParameter_phiT_o_ap_vld_assign_proc : process(grp_fit_fu_363_ap_done, ap_CS_fsm_state2)
     begin
-        if (((grp_fit_fu_365_ap_done = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state2))) then 
+        if (((grp_fit_fu_363_ap_done = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state2))) then 
             linearRegression_LRParameter_phiT_o_ap_vld <= ap_const_logic_1;
         else 
             linearRegression_LRParameter_phiT_o_ap_vld <= ap_const_logic_0;
         end if; 
     end process;
 
-    linearRegression_LRParameter_qOverPt_o <= grp_fit_fu_365_ap_return_9;
+    linearRegression_LRParameter_qOverPt_o <= grp_fit_fu_363_ap_return_9;
 
-    linearRegression_LRParameter_qOverPt_o_ap_vld_assign_proc : process(grp_fit_fu_365_ap_done, ap_CS_fsm_state2)
+    linearRegression_LRParameter_qOverPt_o_ap_vld_assign_proc : process(grp_fit_fu_363_ap_done, ap_CS_fsm_state2)
     begin
-        if (((grp_fit_fu_365_ap_done = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state2))) then 
+        if (((grp_fit_fu_363_ap_done = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state2))) then 
             linearRegression_LRParameter_qOverPt_o_ap_vld <= ap_const_logic_1;
         else 
             linearRegression_LRParameter_qOverPt_o_ap_vld <= ap_const_logic_0;
         end if; 
     end process;
 
-    linearRegression_LRParameter_zT_o <= grp_fit_fu_365_ap_return_12;
+    linearRegression_LRParameter_zT_o <= grp_fit_fu_363_ap_return_12;
 
-    linearRegression_LRParameter_zT_o_ap_vld_assign_proc : process(grp_fit_fu_365_ap_done, ap_CS_fsm_state2)
+    linearRegression_LRParameter_zT_o_ap_vld_assign_proc : process(grp_fit_fu_363_ap_done, ap_CS_fsm_state2)
     begin
-        if (((grp_fit_fu_365_ap_done = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state2))) then 
+        if (((grp_fit_fu_363_ap_done = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state2))) then 
             linearRegression_LRParameter_zT_o_ap_vld <= ap_const_logic_1;
         else 
             linearRegression_LRParameter_zT_o_ap_vld <= ap_const_logic_0;
         end if; 
     end process;
 
-    linearRegression_iEtaReg_s <= grp_fit_fu_365_ap_return_1;
+    linearRegression_iEtaReg_s <= grp_fit_fu_363_ap_return_1;
 
-    linearRegression_iEtaReg_s_ap_vld_assign_proc : process(grp_fit_fu_365_ap_done, ap_CS_fsm_state2)
+    linearRegression_iEtaReg_s_ap_vld_assign_proc : process(grp_fit_fu_363_ap_done, ap_CS_fsm_state2)
     begin
-        if (((grp_fit_fu_365_ap_done = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state2))) then 
+        if (((grp_fit_fu_363_ap_done = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state2))) then 
             linearRegression_iEtaReg_s_ap_vld <= ap_const_logic_1;
         else 
             linearRegression_iEtaReg_s_ap_vld <= ap_const_logic_0;
         end if; 
     end process;
 
-    linearRegression_iPhiSec_s <= grp_fit_fu_365_ap_return_0;
+    linearRegression_iPhiSec_s <= grp_fit_fu_363_ap_return_0;
 
-    linearRegression_iPhiSec_s_ap_vld_assign_proc : process(grp_fit_fu_365_ap_done, ap_CS_fsm_state2)
+    linearRegression_iPhiSec_s_ap_vld_assign_proc : process(grp_fit_fu_363_ap_done, ap_CS_fsm_state2)
     begin
-        if (((grp_fit_fu_365_ap_done = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state2))) then 
+        if (((grp_fit_fu_363_ap_done = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state2))) then 
             linearRegression_iPhiSec_s_ap_vld <= ap_const_logic_1;
         else 
             linearRegression_iPhiSec_s_ap_vld <= ap_const_logic_0;
         end if; 
     end process;
 
-    linearRegression_largestResid_layerId <= grp_fit_fu_365_LinearRegression_largestResid_layerId;
-    linearRegression_largestResid_layerId_ap_vld <= grp_fit_fu_365_LinearRegression_largestResid_layerId_ap_vld;
-    linearRegression_largestResid_phi <= grp_fit_fu_365_LinearRegression_largestResid_phi;
-    linearRegression_largestResid_phi_ap_vld <= grp_fit_fu_365_LinearRegression_largestResid_phi_ap_vld;
-    linearRegression_largestResid_ps <= grp_fit_fu_365_LinearRegression_largestResid_ps;
-    linearRegression_largestResid_ps_ap_vld <= grp_fit_fu_365_LinearRegression_largestResid_ps_ap_vld;
-    linearRegression_largestResid_stubId <= grp_fit_fu_365_LinearRegression_largestResid_stubId;
-    linearRegression_largestResid_stubId_ap_vld <= grp_fit_fu_365_LinearRegression_largestResid_stubId_ap_vld;
-    linearRegression_largestResid_z <= grp_fit_fu_365_LinearRegression_largestResid_z;
-    linearRegression_largestResid_z_ap_vld <= grp_fit_fu_365_LinearRegression_largestResid_z_ap_vld;
-    linearRegression_layerPopulation_data_first_address0 <= grp_fit_fu_365_LinearRegression_layerPopulation_data_first_address0;
-    linearRegression_layerPopulation_data_first_ce0 <= grp_fit_fu_365_LinearRegression_layerPopulation_data_first_ce0;
-    linearRegression_layerPopulation_data_first_d0 <= grp_fit_fu_365_LinearRegression_layerPopulation_data_first_d0;
-    linearRegression_layerPopulation_data_first_we0 <= grp_fit_fu_365_LinearRegression_layerPopulation_data_first_we0;
-    linearRegression_layerPopulation_data_second_address0 <= grp_fit_fu_365_LinearRegression_layerPopulation_data_second_address0;
-    linearRegression_layerPopulation_data_second_ce0 <= grp_fit_fu_365_LinearRegression_layerPopulation_data_second_ce0;
-    linearRegression_layerPopulation_data_second_d0 <= grp_fit_fu_365_LinearRegression_layerPopulation_data_second_d0;
-    linearRegression_layerPopulation_data_second_we0 <= grp_fit_fu_365_LinearRegression_layerPopulation_data_second_we0;
-    linearRegression_layerPopulation_size_s_o <= grp_fit_fu_365_ap_return_14;
+    linearRegression_largestResid_layerId <= grp_fit_fu_363_LinearRegression_largestResid_layerId;
+    linearRegression_largestResid_layerId_ap_vld <= grp_fit_fu_363_LinearRegression_largestResid_layerId_ap_vld;
+    linearRegression_largestResid_phi <= grp_fit_fu_363_LinearRegression_largestResid_phi;
+    linearRegression_largestResid_phi_ap_vld <= grp_fit_fu_363_LinearRegression_largestResid_phi_ap_vld;
+    linearRegression_largestResid_ps <= grp_fit_fu_363_LinearRegression_largestResid_ps;
+    linearRegression_largestResid_ps_ap_vld <= grp_fit_fu_363_LinearRegression_largestResid_ps_ap_vld;
+    linearRegression_largestResid_stubId <= grp_fit_fu_363_LinearRegression_largestResid_stubId;
+    linearRegression_largestResid_stubId_ap_vld <= grp_fit_fu_363_LinearRegression_largestResid_stubId_ap_vld;
+    linearRegression_largestResid_z <= grp_fit_fu_363_LinearRegression_largestResid_z;
+    linearRegression_largestResid_z_ap_vld <= grp_fit_fu_363_LinearRegression_largestResid_z_ap_vld;
+    linearRegression_layerPopulation_data_first_address0 <= grp_fit_fu_363_LinearRegression_layerPopulation_data_first_address0;
+    linearRegression_layerPopulation_data_first_ce0 <= grp_fit_fu_363_LinearRegression_layerPopulation_data_first_ce0;
+    linearRegression_layerPopulation_data_first_d0 <= grp_fit_fu_363_LinearRegression_layerPopulation_data_first_d0;
+    linearRegression_layerPopulation_data_first_we0 <= grp_fit_fu_363_LinearRegression_layerPopulation_data_first_we0;
+    linearRegression_layerPopulation_data_second_address0 <= grp_fit_fu_363_LinearRegression_layerPopulation_data_second_address0;
+    linearRegression_layerPopulation_data_second_ce0 <= grp_fit_fu_363_LinearRegression_layerPopulation_data_second_ce0;
+    linearRegression_layerPopulation_data_second_d0 <= grp_fit_fu_363_LinearRegression_layerPopulation_data_second_d0;
+    linearRegression_layerPopulation_data_second_we0 <= grp_fit_fu_363_LinearRegression_layerPopulation_data_second_we0;
+    linearRegression_layerPopulation_size_s_o <= grp_fit_fu_363_ap_return_14;
 
-    linearRegression_layerPopulation_size_s_o_ap_vld_assign_proc : process(grp_fit_fu_365_ap_done, ap_CS_fsm_state2)
+    linearRegression_layerPopulation_size_s_o_ap_vld_assign_proc : process(grp_fit_fu_363_ap_done, ap_CS_fsm_state2)
     begin
-        if (((grp_fit_fu_365_ap_done = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state2))) then 
+        if (((grp_fit_fu_363_ap_done = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state2))) then 
             linearRegression_layerPopulation_size_s_o_ap_vld <= ap_const_logic_1;
         else 
             linearRegression_layerPopulation_size_s_o_ap_vld <= ap_const_logic_0;
         end if; 
     end process;
 
-    linearRegression_nIterations_s <= grp_fit_fu_365_ap_return_2;
+    linearRegression_nIterations_s <= grp_fit_fu_363_ap_return_2;
 
-    linearRegression_nIterations_s_ap_vld_assign_proc : process(grp_fit_fu_365_ap_done, ap_CS_fsm_state2)
+    linearRegression_nIterations_s_ap_vld_assign_proc : process(grp_fit_fu_363_ap_done, ap_CS_fsm_state2)
     begin
-        if (((grp_fit_fu_365_ap_done = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state2))) then 
+        if (((grp_fit_fu_363_ap_done = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state2))) then 
             linearRegression_nIterations_s_ap_vld <= ap_const_logic_1;
         else 
             linearRegression_nIterations_s_ap_vld <= ap_const_logic_0;
         end if; 
     end process;
 
-    linearRegression_residuals_data_first_address0 <= grp_fit_fu_365_LinearRegression_residuals_data_first_address0;
-    linearRegression_residuals_data_first_ce0 <= grp_fit_fu_365_LinearRegression_residuals_data_first_ce0;
-    linearRegression_residuals_data_first_d0 <= grp_fit_fu_365_LinearRegression_residuals_data_first_d0;
-    linearRegression_residuals_data_first_we0 <= grp_fit_fu_365_LinearRegression_residuals_data_first_we0;
-    linearRegression_residuals_data_second_data_layerId_address0 <= grp_fit_fu_365_LinearRegression_residuals_data_second_data_layerId_address0;
-    linearRegression_residuals_data_second_data_layerId_address1 <= grp_fit_fu_365_LinearRegression_residuals_data_second_data_layerId_address1;
-    linearRegression_residuals_data_second_data_layerId_ce0 <= grp_fit_fu_365_LinearRegression_residuals_data_second_data_layerId_ce0;
-    linearRegression_residuals_data_second_data_layerId_ce1 <= grp_fit_fu_365_LinearRegression_residuals_data_second_data_layerId_ce1;
-    linearRegression_residuals_data_second_data_layerId_d0 <= grp_fit_fu_365_LinearRegression_residuals_data_second_data_layerId_d0;
-    linearRegression_residuals_data_second_data_layerId_d1 <= grp_fit_fu_365_LinearRegression_residuals_data_second_data_layerId_d1;
-    linearRegression_residuals_data_second_data_layerId_we0 <= grp_fit_fu_365_LinearRegression_residuals_data_second_data_layerId_we0;
-    linearRegression_residuals_data_second_data_layerId_we1 <= grp_fit_fu_365_LinearRegression_residuals_data_second_data_layerId_we1;
-    linearRegression_residuals_data_second_data_phi_address0 <= grp_fit_fu_365_LinearRegression_residuals_data_second_data_phi_address0;
-    linearRegression_residuals_data_second_data_phi_address1 <= grp_fit_fu_365_LinearRegression_residuals_data_second_data_phi_address1;
-    linearRegression_residuals_data_second_data_phi_ce0 <= grp_fit_fu_365_LinearRegression_residuals_data_second_data_phi_ce0;
-    linearRegression_residuals_data_second_data_phi_ce1 <= grp_fit_fu_365_LinearRegression_residuals_data_second_data_phi_ce1;
-    linearRegression_residuals_data_second_data_phi_d0 <= grp_fit_fu_365_LinearRegression_residuals_data_second_data_phi_d0;
-    linearRegression_residuals_data_second_data_phi_d1 <= grp_fit_fu_365_LinearRegression_residuals_data_second_data_phi_d1;
-    linearRegression_residuals_data_second_data_phi_we0 <= grp_fit_fu_365_LinearRegression_residuals_data_second_data_phi_we0;
-    linearRegression_residuals_data_second_data_phi_we1 <= grp_fit_fu_365_LinearRegression_residuals_data_second_data_phi_we1;
-    linearRegression_residuals_data_second_data_ps_address0 <= grp_fit_fu_365_LinearRegression_residuals_data_second_data_ps_address0;
-    linearRegression_residuals_data_second_data_ps_address1 <= grp_fit_fu_365_LinearRegression_residuals_data_second_data_ps_address1;
-    linearRegression_residuals_data_second_data_ps_ce0 <= grp_fit_fu_365_LinearRegression_residuals_data_second_data_ps_ce0;
-    linearRegression_residuals_data_second_data_ps_ce1 <= grp_fit_fu_365_LinearRegression_residuals_data_second_data_ps_ce1;
-    linearRegression_residuals_data_second_data_ps_d0 <= grp_fit_fu_365_LinearRegression_residuals_data_second_data_ps_d0;
-    linearRegression_residuals_data_second_data_ps_d1 <= grp_fit_fu_365_LinearRegression_residuals_data_second_data_ps_d1;
-    linearRegression_residuals_data_second_data_ps_we0 <= grp_fit_fu_365_LinearRegression_residuals_data_second_data_ps_we0;
-    linearRegression_residuals_data_second_data_ps_we1 <= grp_fit_fu_365_LinearRegression_residuals_data_second_data_ps_we1;
-    linearRegression_residuals_data_second_data_stubId_address0 <= grp_fit_fu_365_LinearRegression_residuals_data_second_data_stubId_address0;
-    linearRegression_residuals_data_second_data_stubId_address1 <= grp_fit_fu_365_LinearRegression_residuals_data_second_data_stubId_address1;
-    linearRegression_residuals_data_second_data_stubId_ce0 <= grp_fit_fu_365_LinearRegression_residuals_data_second_data_stubId_ce0;
-    linearRegression_residuals_data_second_data_stubId_ce1 <= grp_fit_fu_365_LinearRegression_residuals_data_second_data_stubId_ce1;
-    linearRegression_residuals_data_second_data_stubId_d0 <= grp_fit_fu_365_LinearRegression_residuals_data_second_data_stubId_d0;
-    linearRegression_residuals_data_second_data_stubId_d1 <= grp_fit_fu_365_LinearRegression_residuals_data_second_data_stubId_d1;
-    linearRegression_residuals_data_second_data_stubId_we0 <= grp_fit_fu_365_LinearRegression_residuals_data_second_data_stubId_we0;
-    linearRegression_residuals_data_second_data_stubId_we1 <= grp_fit_fu_365_LinearRegression_residuals_data_second_data_stubId_we1;
-    linearRegression_residuals_data_second_data_z_address0 <= grp_fit_fu_365_LinearRegression_residuals_data_second_data_z_address0;
-    linearRegression_residuals_data_second_data_z_address1 <= grp_fit_fu_365_LinearRegression_residuals_data_second_data_z_address1;
-    linearRegression_residuals_data_second_data_z_ce0 <= grp_fit_fu_365_LinearRegression_residuals_data_second_data_z_ce0;
-    linearRegression_residuals_data_second_data_z_ce1 <= grp_fit_fu_365_LinearRegression_residuals_data_second_data_z_ce1;
-    linearRegression_residuals_data_second_data_z_d0 <= grp_fit_fu_365_LinearRegression_residuals_data_second_data_z_d0;
-    linearRegression_residuals_data_second_data_z_d1 <= grp_fit_fu_365_LinearRegression_residuals_data_second_data_z_d1;
-    linearRegression_residuals_data_second_data_z_we0 <= grp_fit_fu_365_LinearRegression_residuals_data_second_data_z_we0;
-    linearRegression_residuals_data_second_data_z_we1 <= grp_fit_fu_365_LinearRegression_residuals_data_second_data_z_we1;
-    linearRegression_residuals_data_second_size_s_address0 <= grp_fit_fu_365_LinearRegression_residuals_data_second_size_s_address0;
-    linearRegression_residuals_data_second_size_s_ce0 <= grp_fit_fu_365_LinearRegression_residuals_data_second_size_s_ce0;
-    linearRegression_residuals_data_second_size_s_d0 <= grp_fit_fu_365_LinearRegression_residuals_data_second_size_s_d0;
-    linearRegression_residuals_data_second_size_s_we0 <= grp_fit_fu_365_LinearRegression_residuals_data_second_size_s_we0;
-    linearRegression_residuals_size_s <= grp_fit_fu_365_LinearRegression_residuals_size_s;
-    linearRegression_residuals_size_s_ap_vld <= grp_fit_fu_365_LinearRegression_residuals_size_s_ap_vld;
-    linearRegression_settings_etaRegions_s_address0 <= grp_fit_fu_365_LinearRegression_settings_etaRegions_s_address0;
-    linearRegression_settings_etaRegions_s_ce0 <= grp_fit_fu_365_LinearRegression_settings_etaRegions_s_ce0;
-    linearRegression_stubMap_data_first_address0 <= grp_fit_fu_365_LinearRegression_stubMap_data_first_address0;
-    linearRegression_stubMap_data_first_ce0 <= grp_fit_fu_365_LinearRegression_stubMap_data_first_ce0;
-    linearRegression_stubMap_data_first_d0 <= grp_fit_fu_365_LinearRegression_stubMap_data_first_d0;
-    linearRegression_stubMap_data_first_we0 <= grp_fit_fu_365_LinearRegression_stubMap_data_first_we0;
-    linearRegression_stubMap_data_second_data_barrel_s_address0 <= grp_fit_fu_365_LinearRegression_stubMap_data_second_data_barrel_s_address0;
-    linearRegression_stubMap_data_second_data_barrel_s_address1 <= grp_fit_fu_365_LinearRegression_stubMap_data_second_data_barrel_s_address1;
-    linearRegression_stubMap_data_second_data_barrel_s_ce0 <= grp_fit_fu_365_LinearRegression_stubMap_data_second_data_barrel_s_ce0;
-    linearRegression_stubMap_data_second_data_barrel_s_ce1 <= grp_fit_fu_365_LinearRegression_stubMap_data_second_data_barrel_s_ce1;
-    linearRegression_stubMap_data_second_data_barrel_s_d0 <= grp_fit_fu_365_LinearRegression_stubMap_data_second_data_barrel_s_d0;
-    linearRegression_stubMap_data_second_data_barrel_s_d1 <= grp_fit_fu_365_LinearRegression_stubMap_data_second_data_barrel_s_d1;
-    linearRegression_stubMap_data_second_data_barrel_s_we0 <= grp_fit_fu_365_LinearRegression_stubMap_data_second_data_barrel_s_we0;
-    linearRegression_stubMap_data_second_data_barrel_s_we1 <= grp_fit_fu_365_LinearRegression_stubMap_data_second_data_barrel_s_we1;
-    linearRegression_stubMap_data_second_data_layerId_s_address0 <= grp_fit_fu_365_LinearRegression_stubMap_data_second_data_layerId_s_address0;
-    linearRegression_stubMap_data_second_data_layerId_s_address1 <= grp_fit_fu_365_LinearRegression_stubMap_data_second_data_layerId_s_address1;
-    linearRegression_stubMap_data_second_data_layerId_s_ce0 <= grp_fit_fu_365_LinearRegression_stubMap_data_second_data_layerId_s_ce0;
-    linearRegression_stubMap_data_second_data_layerId_s_ce1 <= grp_fit_fu_365_LinearRegression_stubMap_data_second_data_layerId_s_ce1;
-    linearRegression_stubMap_data_second_data_layerId_s_d0 <= grp_fit_fu_365_LinearRegression_stubMap_data_second_data_layerId_s_d0;
-    linearRegression_stubMap_data_second_data_layerId_s_d1 <= grp_fit_fu_365_LinearRegression_stubMap_data_second_data_layerId_s_d1;
-    linearRegression_stubMap_data_second_data_layerId_s_we0 <= grp_fit_fu_365_LinearRegression_stubMap_data_second_data_layerId_s_we0;
-    linearRegression_stubMap_data_second_data_layerId_s_we1 <= grp_fit_fu_365_LinearRegression_stubMap_data_second_data_layerId_s_we1;
-    linearRegression_stubMap_data_second_data_phi_s_address0 <= grp_fit_fu_365_LinearRegression_stubMap_data_second_data_phi_s_address0;
-    linearRegression_stubMap_data_second_data_phi_s_address1 <= grp_fit_fu_365_LinearRegression_stubMap_data_second_data_phi_s_address1;
-    linearRegression_stubMap_data_second_data_phi_s_ce0 <= grp_fit_fu_365_LinearRegression_stubMap_data_second_data_phi_s_ce0;
-    linearRegression_stubMap_data_second_data_phi_s_ce1 <= grp_fit_fu_365_LinearRegression_stubMap_data_second_data_phi_s_ce1;
-    linearRegression_stubMap_data_second_data_phi_s_d0 <= grp_fit_fu_365_LinearRegression_stubMap_data_second_data_phi_s_d0;
-    linearRegression_stubMap_data_second_data_phi_s_d1 <= grp_fit_fu_365_LinearRegression_stubMap_data_second_data_phi_s_d1;
-    linearRegression_stubMap_data_second_data_phi_s_we0 <= grp_fit_fu_365_LinearRegression_stubMap_data_second_data_phi_s_we0;
-    linearRegression_stubMap_data_second_data_phi_s_we1 <= grp_fit_fu_365_LinearRegression_stubMap_data_second_data_phi_s_we1;
-    linearRegression_stubMap_data_second_data_psModule_s_address0 <= grp_fit_fu_365_LinearRegression_stubMap_data_second_data_psModule_s_address0;
-    linearRegression_stubMap_data_second_data_psModule_s_address1 <= grp_fit_fu_365_LinearRegression_stubMap_data_second_data_psModule_s_address1;
-    linearRegression_stubMap_data_second_data_psModule_s_ce0 <= grp_fit_fu_365_LinearRegression_stubMap_data_second_data_psModule_s_ce0;
-    linearRegression_stubMap_data_second_data_psModule_s_ce1 <= grp_fit_fu_365_LinearRegression_stubMap_data_second_data_psModule_s_ce1;
-    linearRegression_stubMap_data_second_data_psModule_s_d0 <= grp_fit_fu_365_LinearRegression_stubMap_data_second_data_psModule_s_d0;
-    linearRegression_stubMap_data_second_data_psModule_s_d1 <= grp_fit_fu_365_LinearRegression_stubMap_data_second_data_psModule_s_d1;
-    linearRegression_stubMap_data_second_data_psModule_s_we0 <= grp_fit_fu_365_LinearRegression_stubMap_data_second_data_psModule_s_we0;
-    linearRegression_stubMap_data_second_data_psModule_s_we1 <= grp_fit_fu_365_LinearRegression_stubMap_data_second_data_psModule_s_we1;
-    linearRegression_stubMap_data_second_data_r_s_address0 <= grp_fit_fu_365_LinearRegression_stubMap_data_second_data_r_s_address0;
-    linearRegression_stubMap_data_second_data_r_s_address1 <= grp_fit_fu_365_LinearRegression_stubMap_data_second_data_r_s_address1;
-    linearRegression_stubMap_data_second_data_r_s_ce0 <= grp_fit_fu_365_LinearRegression_stubMap_data_second_data_r_s_ce0;
-    linearRegression_stubMap_data_second_data_r_s_ce1 <= grp_fit_fu_365_LinearRegression_stubMap_data_second_data_r_s_ce1;
-    linearRegression_stubMap_data_second_data_r_s_d0 <= grp_fit_fu_365_LinearRegression_stubMap_data_second_data_r_s_d0;
-    linearRegression_stubMap_data_second_data_r_s_d1 <= grp_fit_fu_365_LinearRegression_stubMap_data_second_data_r_s_d1;
-    linearRegression_stubMap_data_second_data_r_s_we0 <= grp_fit_fu_365_LinearRegression_stubMap_data_second_data_r_s_we0;
-    linearRegression_stubMap_data_second_data_r_s_we1 <= grp_fit_fu_365_LinearRegression_stubMap_data_second_data_r_s_we1;
-    linearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_address0 <= grp_fit_fu_365_LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_address0;
-    linearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_address1 <= grp_fit_fu_365_LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_address1;
-    linearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_ce0 <= grp_fit_fu_365_LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_ce0;
-    linearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_ce1 <= grp_fit_fu_365_LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_ce1;
-    linearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_d0 <= grp_fit_fu_365_LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_d0;
-    linearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_d1 <= grp_fit_fu_365_LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_d1;
-    linearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_we0 <= grp_fit_fu_365_LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_we0;
-    linearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_we1 <= grp_fit_fu_365_LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_we1;
-    linearRegression_stubMap_data_second_data_settings_chosenRofZ_s_address0 <= grp_fit_fu_365_LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_address0;
-    linearRegression_stubMap_data_second_data_settings_chosenRofZ_s_address1 <= grp_fit_fu_365_LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_address1;
-    linearRegression_stubMap_data_second_data_settings_chosenRofZ_s_ce0 <= grp_fit_fu_365_LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_ce0;
-    linearRegression_stubMap_data_second_data_settings_chosenRofZ_s_ce1 <= grp_fit_fu_365_LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_ce1;
-    linearRegression_stubMap_data_second_data_settings_chosenRofZ_s_d0 <= grp_fit_fu_365_LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_d0;
-    linearRegression_stubMap_data_second_data_settings_chosenRofZ_s_d1 <= grp_fit_fu_365_LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_d1;
-    linearRegression_stubMap_data_second_data_settings_chosenRofZ_s_we0 <= grp_fit_fu_365_LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_we0;
-    linearRegression_stubMap_data_second_data_settings_chosenRofZ_s_we1 <= grp_fit_fu_365_LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_we1;
-    linearRegression_stubMap_data_second_data_settings_etaRegions_s_address0 <= grp_fit_fu_365_LinearRegression_stubMap_data_second_data_settings_etaRegions_s_address0;
-    linearRegression_stubMap_data_second_data_settings_etaRegions_s_address1 <= grp_fit_fu_365_LinearRegression_stubMap_data_second_data_settings_etaRegions_s_address1;
-    linearRegression_stubMap_data_second_data_settings_etaRegions_s_ce0 <= grp_fit_fu_365_LinearRegression_stubMap_data_second_data_settings_etaRegions_s_ce0;
-    linearRegression_stubMap_data_second_data_settings_etaRegions_s_ce1 <= grp_fit_fu_365_LinearRegression_stubMap_data_second_data_settings_etaRegions_s_ce1;
-    linearRegression_stubMap_data_second_data_settings_etaRegions_s_d0 <= grp_fit_fu_365_LinearRegression_stubMap_data_second_data_settings_etaRegions_s_d0;
-    linearRegression_stubMap_data_second_data_settings_etaRegions_s_d1 <= grp_fit_fu_365_LinearRegression_stubMap_data_second_data_settings_etaRegions_s_d1;
-    linearRegression_stubMap_data_second_data_settings_etaRegions_s_we0 <= grp_fit_fu_365_LinearRegression_stubMap_data_second_data_settings_etaRegions_s_we0;
-    linearRegression_stubMap_data_second_data_settings_etaRegions_s_we1 <= grp_fit_fu_365_LinearRegression_stubMap_data_second_data_settings_etaRegions_s_we1;
-    linearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_address0 <= grp_fit_fu_365_LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_address0;
-    linearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_address1 <= grp_fit_fu_365_LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_address1;
-    linearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_ce0 <= grp_fit_fu_365_LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_ce0;
-    linearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_ce1 <= grp_fit_fu_365_LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_ce1;
-    linearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_d0 <= grp_fit_fu_365_LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_d0;
-    linearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_d1 <= grp_fit_fu_365_LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_d1;
-    linearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_we0 <= grp_fit_fu_365_LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_we0;
-    linearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_we1 <= grp_fit_fu_365_LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_we1;
-    linearRegression_stubMap_data_second_data_settings_minPSLayers_s_address0 <= grp_fit_fu_365_LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_address0;
-    linearRegression_stubMap_data_second_data_settings_minPSLayers_s_address1 <= grp_fit_fu_365_LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_address1;
-    linearRegression_stubMap_data_second_data_settings_minPSLayers_s_ce0 <= grp_fit_fu_365_LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_ce0;
-    linearRegression_stubMap_data_second_data_settings_minPSLayers_s_ce1 <= grp_fit_fu_365_LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_ce1;
-    linearRegression_stubMap_data_second_data_settings_minPSLayers_s_d0 <= grp_fit_fu_365_LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_d0;
-    linearRegression_stubMap_data_second_data_settings_minPSLayers_s_d1 <= grp_fit_fu_365_LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_d1;
-    linearRegression_stubMap_data_second_data_settings_minPSLayers_s_we0 <= grp_fit_fu_365_LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_we0;
-    linearRegression_stubMap_data_second_data_settings_minPSLayers_s_we1 <= grp_fit_fu_365_LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_we1;
-    linearRegression_stubMap_data_second_data_z_s_address0 <= grp_fit_fu_365_LinearRegression_stubMap_data_second_data_z_s_address0;
-    linearRegression_stubMap_data_second_data_z_s_address1 <= grp_fit_fu_365_LinearRegression_stubMap_data_second_data_z_s_address1;
-    linearRegression_stubMap_data_second_data_z_s_ce0 <= grp_fit_fu_365_LinearRegression_stubMap_data_second_data_z_s_ce0;
-    linearRegression_stubMap_data_second_data_z_s_ce1 <= grp_fit_fu_365_LinearRegression_stubMap_data_second_data_z_s_ce1;
-    linearRegression_stubMap_data_second_data_z_s_d0 <= grp_fit_fu_365_LinearRegression_stubMap_data_second_data_z_s_d0;
-    linearRegression_stubMap_data_second_data_z_s_d1 <= grp_fit_fu_365_LinearRegression_stubMap_data_second_data_z_s_d1;
-    linearRegression_stubMap_data_second_data_z_s_we0 <= grp_fit_fu_365_LinearRegression_stubMap_data_second_data_z_s_we0;
-    linearRegression_stubMap_data_second_data_z_s_we1 <= grp_fit_fu_365_LinearRegression_stubMap_data_second_data_z_s_we1;
-    linearRegression_stubMap_data_second_size_s_address0 <= grp_fit_fu_365_LinearRegression_stubMap_data_second_size_s_address0;
-    linearRegression_stubMap_data_second_size_s_ce0 <= grp_fit_fu_365_LinearRegression_stubMap_data_second_size_s_ce0;
-    linearRegression_stubMap_data_second_size_s_d0 <= grp_fit_fu_365_LinearRegression_stubMap_data_second_size_s_d0;
-    linearRegression_stubMap_data_second_size_s_we0 <= grp_fit_fu_365_LinearRegression_stubMap_data_second_size_s_we0;
-    linearRegression_stubMap_size_s_o <= grp_fit_fu_365_ap_return_13;
+    linearRegression_residuals_data_first_address0 <= grp_fit_fu_363_LinearRegression_residuals_data_first_address0;
+    linearRegression_residuals_data_first_ce0 <= grp_fit_fu_363_LinearRegression_residuals_data_first_ce0;
+    linearRegression_residuals_data_first_d0 <= grp_fit_fu_363_LinearRegression_residuals_data_first_d0;
+    linearRegression_residuals_data_first_we0 <= grp_fit_fu_363_LinearRegression_residuals_data_first_we0;
+    linearRegression_residuals_data_second_data_layerId_address0 <= grp_fit_fu_363_LinearRegression_residuals_data_second_data_layerId_address0;
+    linearRegression_residuals_data_second_data_layerId_address1 <= grp_fit_fu_363_LinearRegression_residuals_data_second_data_layerId_address1;
+    linearRegression_residuals_data_second_data_layerId_ce0 <= grp_fit_fu_363_LinearRegression_residuals_data_second_data_layerId_ce0;
+    linearRegression_residuals_data_second_data_layerId_ce1 <= grp_fit_fu_363_LinearRegression_residuals_data_second_data_layerId_ce1;
+    linearRegression_residuals_data_second_data_layerId_d0 <= grp_fit_fu_363_LinearRegression_residuals_data_second_data_layerId_d0;
+    linearRegression_residuals_data_second_data_layerId_d1 <= grp_fit_fu_363_LinearRegression_residuals_data_second_data_layerId_d1;
+    linearRegression_residuals_data_second_data_layerId_we0 <= grp_fit_fu_363_LinearRegression_residuals_data_second_data_layerId_we0;
+    linearRegression_residuals_data_second_data_layerId_we1 <= grp_fit_fu_363_LinearRegression_residuals_data_second_data_layerId_we1;
+    linearRegression_residuals_data_second_data_phi_address0 <= grp_fit_fu_363_LinearRegression_residuals_data_second_data_phi_address0;
+    linearRegression_residuals_data_second_data_phi_address1 <= grp_fit_fu_363_LinearRegression_residuals_data_second_data_phi_address1;
+    linearRegression_residuals_data_second_data_phi_ce0 <= grp_fit_fu_363_LinearRegression_residuals_data_second_data_phi_ce0;
+    linearRegression_residuals_data_second_data_phi_ce1 <= grp_fit_fu_363_LinearRegression_residuals_data_second_data_phi_ce1;
+    linearRegression_residuals_data_second_data_phi_d0 <= grp_fit_fu_363_LinearRegression_residuals_data_second_data_phi_d0;
+    linearRegression_residuals_data_second_data_phi_d1 <= grp_fit_fu_363_LinearRegression_residuals_data_second_data_phi_d1;
+    linearRegression_residuals_data_second_data_phi_we0 <= grp_fit_fu_363_LinearRegression_residuals_data_second_data_phi_we0;
+    linearRegression_residuals_data_second_data_phi_we1 <= grp_fit_fu_363_LinearRegression_residuals_data_second_data_phi_we1;
+    linearRegression_residuals_data_second_data_ps_address0 <= grp_fit_fu_363_LinearRegression_residuals_data_second_data_ps_address0;
+    linearRegression_residuals_data_second_data_ps_address1 <= grp_fit_fu_363_LinearRegression_residuals_data_second_data_ps_address1;
+    linearRegression_residuals_data_second_data_ps_ce0 <= grp_fit_fu_363_LinearRegression_residuals_data_second_data_ps_ce0;
+    linearRegression_residuals_data_second_data_ps_ce1 <= grp_fit_fu_363_LinearRegression_residuals_data_second_data_ps_ce1;
+    linearRegression_residuals_data_second_data_ps_d0 <= grp_fit_fu_363_LinearRegression_residuals_data_second_data_ps_d0;
+    linearRegression_residuals_data_second_data_ps_d1 <= grp_fit_fu_363_LinearRegression_residuals_data_second_data_ps_d1;
+    linearRegression_residuals_data_second_data_ps_we0 <= grp_fit_fu_363_LinearRegression_residuals_data_second_data_ps_we0;
+    linearRegression_residuals_data_second_data_ps_we1 <= grp_fit_fu_363_LinearRegression_residuals_data_second_data_ps_we1;
+    linearRegression_residuals_data_second_data_stubId_address0 <= grp_fit_fu_363_LinearRegression_residuals_data_second_data_stubId_address0;
+    linearRegression_residuals_data_second_data_stubId_address1 <= grp_fit_fu_363_LinearRegression_residuals_data_second_data_stubId_address1;
+    linearRegression_residuals_data_second_data_stubId_ce0 <= grp_fit_fu_363_LinearRegression_residuals_data_second_data_stubId_ce0;
+    linearRegression_residuals_data_second_data_stubId_ce1 <= grp_fit_fu_363_LinearRegression_residuals_data_second_data_stubId_ce1;
+    linearRegression_residuals_data_second_data_stubId_d0 <= grp_fit_fu_363_LinearRegression_residuals_data_second_data_stubId_d0;
+    linearRegression_residuals_data_second_data_stubId_d1 <= grp_fit_fu_363_LinearRegression_residuals_data_second_data_stubId_d1;
+    linearRegression_residuals_data_second_data_stubId_we0 <= grp_fit_fu_363_LinearRegression_residuals_data_second_data_stubId_we0;
+    linearRegression_residuals_data_second_data_stubId_we1 <= grp_fit_fu_363_LinearRegression_residuals_data_second_data_stubId_we1;
+    linearRegression_residuals_data_second_data_z_address0 <= grp_fit_fu_363_LinearRegression_residuals_data_second_data_z_address0;
+    linearRegression_residuals_data_second_data_z_address1 <= grp_fit_fu_363_LinearRegression_residuals_data_second_data_z_address1;
+    linearRegression_residuals_data_second_data_z_ce0 <= grp_fit_fu_363_LinearRegression_residuals_data_second_data_z_ce0;
+    linearRegression_residuals_data_second_data_z_ce1 <= grp_fit_fu_363_LinearRegression_residuals_data_second_data_z_ce1;
+    linearRegression_residuals_data_second_data_z_d0 <= grp_fit_fu_363_LinearRegression_residuals_data_second_data_z_d0;
+    linearRegression_residuals_data_second_data_z_d1 <= grp_fit_fu_363_LinearRegression_residuals_data_second_data_z_d1;
+    linearRegression_residuals_data_second_data_z_we0 <= grp_fit_fu_363_LinearRegression_residuals_data_second_data_z_we0;
+    linearRegression_residuals_data_second_data_z_we1 <= grp_fit_fu_363_LinearRegression_residuals_data_second_data_z_we1;
+    linearRegression_residuals_data_second_size_s_address0 <= grp_fit_fu_363_LinearRegression_residuals_data_second_size_s_address0;
+    linearRegression_residuals_data_second_size_s_ce0 <= grp_fit_fu_363_LinearRegression_residuals_data_second_size_s_ce0;
+    linearRegression_residuals_data_second_size_s_d0 <= grp_fit_fu_363_LinearRegression_residuals_data_second_size_s_d0;
+    linearRegression_residuals_data_second_size_s_we0 <= grp_fit_fu_363_LinearRegression_residuals_data_second_size_s_we0;
+    linearRegression_residuals_size_s <= grp_fit_fu_363_LinearRegression_residuals_size_s;
+    linearRegression_residuals_size_s_ap_vld <= grp_fit_fu_363_LinearRegression_residuals_size_s_ap_vld;
+    linearRegression_settings_sinh_etaRegions_s_address0 <= grp_fit_fu_363_LinearRegression_settings_sinh_etaRegions_s_address0;
+    linearRegression_settings_sinh_etaRegions_s_address1 <= grp_fit_fu_363_LinearRegression_settings_sinh_etaRegions_s_address1;
+    linearRegression_settings_sinh_etaRegions_s_ce0 <= grp_fit_fu_363_LinearRegression_settings_sinh_etaRegions_s_ce0;
+    linearRegression_settings_sinh_etaRegions_s_ce1 <= grp_fit_fu_363_LinearRegression_settings_sinh_etaRegions_s_ce1;
+    linearRegression_stubMap_data_first_address0 <= grp_fit_fu_363_LinearRegression_stubMap_data_first_address0;
+    linearRegression_stubMap_data_first_ce0 <= grp_fit_fu_363_LinearRegression_stubMap_data_first_ce0;
+    linearRegression_stubMap_data_first_d0 <= grp_fit_fu_363_LinearRegression_stubMap_data_first_d0;
+    linearRegression_stubMap_data_first_we0 <= grp_fit_fu_363_LinearRegression_stubMap_data_first_we0;
+    linearRegression_stubMap_data_second_data_barrel_s_address0 <= grp_fit_fu_363_LinearRegression_stubMap_data_second_data_barrel_s_address0;
+    linearRegression_stubMap_data_second_data_barrel_s_address1 <= grp_fit_fu_363_LinearRegression_stubMap_data_second_data_barrel_s_address1;
+    linearRegression_stubMap_data_second_data_barrel_s_ce0 <= grp_fit_fu_363_LinearRegression_stubMap_data_second_data_barrel_s_ce0;
+    linearRegression_stubMap_data_second_data_barrel_s_ce1 <= grp_fit_fu_363_LinearRegression_stubMap_data_second_data_barrel_s_ce1;
+    linearRegression_stubMap_data_second_data_barrel_s_d0 <= grp_fit_fu_363_LinearRegression_stubMap_data_second_data_barrel_s_d0;
+    linearRegression_stubMap_data_second_data_barrel_s_d1 <= grp_fit_fu_363_LinearRegression_stubMap_data_second_data_barrel_s_d1;
+    linearRegression_stubMap_data_second_data_barrel_s_we0 <= grp_fit_fu_363_LinearRegression_stubMap_data_second_data_barrel_s_we0;
+    linearRegression_stubMap_data_second_data_barrel_s_we1 <= grp_fit_fu_363_LinearRegression_stubMap_data_second_data_barrel_s_we1;
+    linearRegression_stubMap_data_second_data_layerId_s_address0 <= grp_fit_fu_363_LinearRegression_stubMap_data_second_data_layerId_s_address0;
+    linearRegression_stubMap_data_second_data_layerId_s_address1 <= grp_fit_fu_363_LinearRegression_stubMap_data_second_data_layerId_s_address1;
+    linearRegression_stubMap_data_second_data_layerId_s_ce0 <= grp_fit_fu_363_LinearRegression_stubMap_data_second_data_layerId_s_ce0;
+    linearRegression_stubMap_data_second_data_layerId_s_ce1 <= grp_fit_fu_363_LinearRegression_stubMap_data_second_data_layerId_s_ce1;
+    linearRegression_stubMap_data_second_data_layerId_s_d0 <= grp_fit_fu_363_LinearRegression_stubMap_data_second_data_layerId_s_d0;
+    linearRegression_stubMap_data_second_data_layerId_s_d1 <= grp_fit_fu_363_LinearRegression_stubMap_data_second_data_layerId_s_d1;
+    linearRegression_stubMap_data_second_data_layerId_s_we0 <= grp_fit_fu_363_LinearRegression_stubMap_data_second_data_layerId_s_we0;
+    linearRegression_stubMap_data_second_data_layerId_s_we1 <= grp_fit_fu_363_LinearRegression_stubMap_data_second_data_layerId_s_we1;
+    linearRegression_stubMap_data_second_data_phi_s_address0 <= grp_fit_fu_363_LinearRegression_stubMap_data_second_data_phi_s_address0;
+    linearRegression_stubMap_data_second_data_phi_s_address1 <= grp_fit_fu_363_LinearRegression_stubMap_data_second_data_phi_s_address1;
+    linearRegression_stubMap_data_second_data_phi_s_ce0 <= grp_fit_fu_363_LinearRegression_stubMap_data_second_data_phi_s_ce0;
+    linearRegression_stubMap_data_second_data_phi_s_ce1 <= grp_fit_fu_363_LinearRegression_stubMap_data_second_data_phi_s_ce1;
+    linearRegression_stubMap_data_second_data_phi_s_d0 <= grp_fit_fu_363_LinearRegression_stubMap_data_second_data_phi_s_d0;
+    linearRegression_stubMap_data_second_data_phi_s_d1 <= grp_fit_fu_363_LinearRegression_stubMap_data_second_data_phi_s_d1;
+    linearRegression_stubMap_data_second_data_phi_s_we0 <= grp_fit_fu_363_LinearRegression_stubMap_data_second_data_phi_s_we0;
+    linearRegression_stubMap_data_second_data_phi_s_we1 <= grp_fit_fu_363_LinearRegression_stubMap_data_second_data_phi_s_we1;
+    linearRegression_stubMap_data_second_data_psModule_s_address0 <= grp_fit_fu_363_LinearRegression_stubMap_data_second_data_psModule_s_address0;
+    linearRegression_stubMap_data_second_data_psModule_s_address1 <= grp_fit_fu_363_LinearRegression_stubMap_data_second_data_psModule_s_address1;
+    linearRegression_stubMap_data_second_data_psModule_s_ce0 <= grp_fit_fu_363_LinearRegression_stubMap_data_second_data_psModule_s_ce0;
+    linearRegression_stubMap_data_second_data_psModule_s_ce1 <= grp_fit_fu_363_LinearRegression_stubMap_data_second_data_psModule_s_ce1;
+    linearRegression_stubMap_data_second_data_psModule_s_d0 <= grp_fit_fu_363_LinearRegression_stubMap_data_second_data_psModule_s_d0;
+    linearRegression_stubMap_data_second_data_psModule_s_d1 <= grp_fit_fu_363_LinearRegression_stubMap_data_second_data_psModule_s_d1;
+    linearRegression_stubMap_data_second_data_psModule_s_we0 <= grp_fit_fu_363_LinearRegression_stubMap_data_second_data_psModule_s_we0;
+    linearRegression_stubMap_data_second_data_psModule_s_we1 <= grp_fit_fu_363_LinearRegression_stubMap_data_second_data_psModule_s_we1;
+    linearRegression_stubMap_data_second_data_r_s_address0 <= grp_fit_fu_363_LinearRegression_stubMap_data_second_data_r_s_address0;
+    linearRegression_stubMap_data_second_data_r_s_address1 <= grp_fit_fu_363_LinearRegression_stubMap_data_second_data_r_s_address1;
+    linearRegression_stubMap_data_second_data_r_s_ce0 <= grp_fit_fu_363_LinearRegression_stubMap_data_second_data_r_s_ce0;
+    linearRegression_stubMap_data_second_data_r_s_ce1 <= grp_fit_fu_363_LinearRegression_stubMap_data_second_data_r_s_ce1;
+    linearRegression_stubMap_data_second_data_r_s_d0 <= grp_fit_fu_363_LinearRegression_stubMap_data_second_data_r_s_d0;
+    linearRegression_stubMap_data_second_data_r_s_d1 <= grp_fit_fu_363_LinearRegression_stubMap_data_second_data_r_s_d1;
+    linearRegression_stubMap_data_second_data_r_s_we0 <= grp_fit_fu_363_LinearRegression_stubMap_data_second_data_r_s_we0;
+    linearRegression_stubMap_data_second_data_r_s_we1 <= grp_fit_fu_363_LinearRegression_stubMap_data_second_data_r_s_we1;
+    linearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_address0 <= grp_fit_fu_363_LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_address0;
+    linearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_address1 <= grp_fit_fu_363_LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_address1;
+    linearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_ce0 <= grp_fit_fu_363_LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_ce0;
+    linearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_ce1 <= grp_fit_fu_363_LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_ce1;
+    linearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_d0 <= grp_fit_fu_363_LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_d0;
+    linearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_d1 <= grp_fit_fu_363_LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_d1;
+    linearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_we0 <= grp_fit_fu_363_LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_we0;
+    linearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_we1 <= grp_fit_fu_363_LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_we1;
+    linearRegression_stubMap_data_second_data_settings_chosenRofZ_s_address0 <= grp_fit_fu_363_LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_address0;
+    linearRegression_stubMap_data_second_data_settings_chosenRofZ_s_address1 <= grp_fit_fu_363_LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_address1;
+    linearRegression_stubMap_data_second_data_settings_chosenRofZ_s_ce0 <= grp_fit_fu_363_LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_ce0;
+    linearRegression_stubMap_data_second_data_settings_chosenRofZ_s_ce1 <= grp_fit_fu_363_LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_ce1;
+    linearRegression_stubMap_data_second_data_settings_chosenRofZ_s_d0 <= grp_fit_fu_363_LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_d0;
+    linearRegression_stubMap_data_second_data_settings_chosenRofZ_s_d1 <= grp_fit_fu_363_LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_d1;
+    linearRegression_stubMap_data_second_data_settings_chosenRofZ_s_we0 <= grp_fit_fu_363_LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_we0;
+    linearRegression_stubMap_data_second_data_settings_chosenRofZ_s_we1 <= grp_fit_fu_363_LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_we1;
+    linearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_address0 <= grp_fit_fu_363_LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_address0;
+    linearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_address1 <= grp_fit_fu_363_LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_address1;
+    linearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_ce0 <= grp_fit_fu_363_LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_ce0;
+    linearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_ce1 <= grp_fit_fu_363_LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_ce1;
+    linearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_d0 <= grp_fit_fu_363_LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_d0;
+    linearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_d1 <= grp_fit_fu_363_LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_d1;
+    linearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_we0 <= grp_fit_fu_363_LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_we0;
+    linearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_we1 <= grp_fit_fu_363_LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_we1;
+    linearRegression_stubMap_data_second_data_settings_minPSLayers_s_address0 <= grp_fit_fu_363_LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_address0;
+    linearRegression_stubMap_data_second_data_settings_minPSLayers_s_address1 <= grp_fit_fu_363_LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_address1;
+    linearRegression_stubMap_data_second_data_settings_minPSLayers_s_ce0 <= grp_fit_fu_363_LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_ce0;
+    linearRegression_stubMap_data_second_data_settings_minPSLayers_s_ce1 <= grp_fit_fu_363_LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_ce1;
+    linearRegression_stubMap_data_second_data_settings_minPSLayers_s_d0 <= grp_fit_fu_363_LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_d0;
+    linearRegression_stubMap_data_second_data_settings_minPSLayers_s_d1 <= grp_fit_fu_363_LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_d1;
+    linearRegression_stubMap_data_second_data_settings_minPSLayers_s_we0 <= grp_fit_fu_363_LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_we0;
+    linearRegression_stubMap_data_second_data_settings_minPSLayers_s_we1 <= grp_fit_fu_363_LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_we1;
+    linearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_address0 <= grp_fit_fu_363_LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_address0;
+    linearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_address1 <= grp_fit_fu_363_LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_address1;
+    linearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_ce0 <= grp_fit_fu_363_LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_ce0;
+    linearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_ce1 <= grp_fit_fu_363_LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_ce1;
+    linearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_d0 <= grp_fit_fu_363_LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_d0;
+    linearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_d1 <= grp_fit_fu_363_LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_d1;
+    linearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_we0 <= grp_fit_fu_363_LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_we0;
+    linearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_we1 <= grp_fit_fu_363_LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_we1;
+    linearRegression_stubMap_data_second_data_z_s_address0 <= grp_fit_fu_363_LinearRegression_stubMap_data_second_data_z_s_address0;
+    linearRegression_stubMap_data_second_data_z_s_address1 <= grp_fit_fu_363_LinearRegression_stubMap_data_second_data_z_s_address1;
+    linearRegression_stubMap_data_second_data_z_s_ce0 <= grp_fit_fu_363_LinearRegression_stubMap_data_second_data_z_s_ce0;
+    linearRegression_stubMap_data_second_data_z_s_ce1 <= grp_fit_fu_363_LinearRegression_stubMap_data_second_data_z_s_ce1;
+    linearRegression_stubMap_data_second_data_z_s_d0 <= grp_fit_fu_363_LinearRegression_stubMap_data_second_data_z_s_d0;
+    linearRegression_stubMap_data_second_data_z_s_d1 <= grp_fit_fu_363_LinearRegression_stubMap_data_second_data_z_s_d1;
+    linearRegression_stubMap_data_second_data_z_s_we0 <= grp_fit_fu_363_LinearRegression_stubMap_data_second_data_z_s_we0;
+    linearRegression_stubMap_data_second_data_z_s_we1 <= grp_fit_fu_363_LinearRegression_stubMap_data_second_data_z_s_we1;
+    linearRegression_stubMap_data_second_size_s_address0 <= grp_fit_fu_363_LinearRegression_stubMap_data_second_size_s_address0;
+    linearRegression_stubMap_data_second_size_s_ce0 <= grp_fit_fu_363_LinearRegression_stubMap_data_second_size_s_ce0;
+    linearRegression_stubMap_data_second_size_s_d0 <= grp_fit_fu_363_LinearRegression_stubMap_data_second_size_s_d0;
+    linearRegression_stubMap_data_second_size_s_we0 <= grp_fit_fu_363_LinearRegression_stubMap_data_second_size_s_we0;
+    linearRegression_stubMap_size_s_o <= grp_fit_fu_363_ap_return_13;
 
-    linearRegression_stubMap_size_s_o_ap_vld_assign_proc : process(grp_fit_fu_365_ap_done, ap_CS_fsm_state2)
+    linearRegression_stubMap_size_s_o_ap_vld_assign_proc : process(grp_fit_fu_363_ap_done, ap_CS_fsm_state2)
     begin
-        if (((grp_fit_fu_365_ap_done = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state2))) then 
+        if (((grp_fit_fu_363_ap_done = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state2))) then 
             linearRegression_stubMap_size_s_o_ap_vld <= ap_const_logic_1;
         else 
             linearRegression_stubMap_size_s_o_ap_vld <= ap_const_logic_0;
         end if; 
     end process;
 
-    linearRegression_stubs_data_barrel_s_address0 <= grp_fit_fu_365_LinearRegression_stubs_data_barrel_s_address0;
-    linearRegression_stubs_data_barrel_s_address1 <= grp_fit_fu_365_LinearRegression_stubs_data_barrel_s_address1;
-    linearRegression_stubs_data_barrel_s_ce0 <= grp_fit_fu_365_LinearRegression_stubs_data_barrel_s_ce0;
-    linearRegression_stubs_data_barrel_s_ce1 <= grp_fit_fu_365_LinearRegression_stubs_data_barrel_s_ce1;
-    linearRegression_stubs_data_barrel_s_d0 <= grp_fit_fu_365_LinearRegression_stubs_data_barrel_s_d0;
-    linearRegression_stubs_data_barrel_s_d1 <= grp_fit_fu_365_LinearRegression_stubs_data_barrel_s_d1;
-    linearRegression_stubs_data_barrel_s_we0 <= grp_fit_fu_365_LinearRegression_stubs_data_barrel_s_we0;
-    linearRegression_stubs_data_barrel_s_we1 <= grp_fit_fu_365_LinearRegression_stubs_data_barrel_s_we1;
-    linearRegression_stubs_data_layerId_s_address0 <= grp_fit_fu_365_LinearRegression_stubs_data_layerId_s_address0;
-    linearRegression_stubs_data_layerId_s_address1 <= grp_fit_fu_365_LinearRegression_stubs_data_layerId_s_address1;
-    linearRegression_stubs_data_layerId_s_ce0 <= grp_fit_fu_365_LinearRegression_stubs_data_layerId_s_ce0;
-    linearRegression_stubs_data_layerId_s_ce1 <= grp_fit_fu_365_LinearRegression_stubs_data_layerId_s_ce1;
-    linearRegression_stubs_data_layerId_s_d0 <= grp_fit_fu_365_LinearRegression_stubs_data_layerId_s_d0;
-    linearRegression_stubs_data_layerId_s_d1 <= grp_fit_fu_365_LinearRegression_stubs_data_layerId_s_d1;
-    linearRegression_stubs_data_layerId_s_we0 <= grp_fit_fu_365_LinearRegression_stubs_data_layerId_s_we0;
-    linearRegression_stubs_data_layerId_s_we1 <= grp_fit_fu_365_LinearRegression_stubs_data_layerId_s_we1;
-    linearRegression_stubs_data_phi_s_address0 <= grp_fit_fu_365_LinearRegression_stubs_data_phi_s_address0;
-    linearRegression_stubs_data_phi_s_address1 <= grp_fit_fu_365_LinearRegression_stubs_data_phi_s_address1;
-    linearRegression_stubs_data_phi_s_ce0 <= grp_fit_fu_365_LinearRegression_stubs_data_phi_s_ce0;
-    linearRegression_stubs_data_phi_s_ce1 <= grp_fit_fu_365_LinearRegression_stubs_data_phi_s_ce1;
-    linearRegression_stubs_data_phi_s_d0 <= grp_fit_fu_365_LinearRegression_stubs_data_phi_s_d0;
-    linearRegression_stubs_data_phi_s_d1 <= grp_fit_fu_365_LinearRegression_stubs_data_phi_s_d1;
-    linearRegression_stubs_data_phi_s_we0 <= grp_fit_fu_365_LinearRegression_stubs_data_phi_s_we0;
-    linearRegression_stubs_data_phi_s_we1 <= grp_fit_fu_365_LinearRegression_stubs_data_phi_s_we1;
-    linearRegression_stubs_data_psModule_s_address0 <= grp_fit_fu_365_LinearRegression_stubs_data_psModule_s_address0;
-    linearRegression_stubs_data_psModule_s_address1 <= grp_fit_fu_365_LinearRegression_stubs_data_psModule_s_address1;
-    linearRegression_stubs_data_psModule_s_ce0 <= grp_fit_fu_365_LinearRegression_stubs_data_psModule_s_ce0;
-    linearRegression_stubs_data_psModule_s_ce1 <= grp_fit_fu_365_LinearRegression_stubs_data_psModule_s_ce1;
-    linearRegression_stubs_data_psModule_s_d0 <= grp_fit_fu_365_LinearRegression_stubs_data_psModule_s_d0;
-    linearRegression_stubs_data_psModule_s_d1 <= grp_fit_fu_365_LinearRegression_stubs_data_psModule_s_d1;
-    linearRegression_stubs_data_psModule_s_we0 <= grp_fit_fu_365_LinearRegression_stubs_data_psModule_s_we0;
-    linearRegression_stubs_data_psModule_s_we1 <= grp_fit_fu_365_LinearRegression_stubs_data_psModule_s_we1;
-    linearRegression_stubs_data_r_s_address0 <= grp_fit_fu_365_LinearRegression_stubs_data_r_s_address0;
-    linearRegression_stubs_data_r_s_address1 <= grp_fit_fu_365_LinearRegression_stubs_data_r_s_address1;
-    linearRegression_stubs_data_r_s_ce0 <= grp_fit_fu_365_LinearRegression_stubs_data_r_s_ce0;
-    linearRegression_stubs_data_r_s_ce1 <= grp_fit_fu_365_LinearRegression_stubs_data_r_s_ce1;
-    linearRegression_stubs_data_r_s_d0 <= grp_fit_fu_365_LinearRegression_stubs_data_r_s_d0;
-    linearRegression_stubs_data_r_s_d1 <= grp_fit_fu_365_LinearRegression_stubs_data_r_s_d1;
-    linearRegression_stubs_data_r_s_we0 <= grp_fit_fu_365_LinearRegression_stubs_data_r_s_we0;
-    linearRegression_stubs_data_r_s_we1 <= grp_fit_fu_365_LinearRegression_stubs_data_r_s_we1;
-    linearRegression_stubs_data_settings_chosenRofPhi_s_address0 <= grp_fit_fu_365_LinearRegression_stubs_data_settings_chosenRofPhi_s_address0;
-    linearRegression_stubs_data_settings_chosenRofPhi_s_address1 <= grp_fit_fu_365_LinearRegression_stubs_data_settings_chosenRofPhi_s_address1;
-    linearRegression_stubs_data_settings_chosenRofPhi_s_ce0 <= grp_fit_fu_365_LinearRegression_stubs_data_settings_chosenRofPhi_s_ce0;
-    linearRegression_stubs_data_settings_chosenRofPhi_s_ce1 <= grp_fit_fu_365_LinearRegression_stubs_data_settings_chosenRofPhi_s_ce1;
-    linearRegression_stubs_data_settings_chosenRofPhi_s_d0 <= grp_fit_fu_365_LinearRegression_stubs_data_settings_chosenRofPhi_s_d0;
-    linearRegression_stubs_data_settings_chosenRofPhi_s_d1 <= grp_fit_fu_365_LinearRegression_stubs_data_settings_chosenRofPhi_s_d1;
-    linearRegression_stubs_data_settings_chosenRofPhi_s_we0 <= grp_fit_fu_365_LinearRegression_stubs_data_settings_chosenRofPhi_s_we0;
-    linearRegression_stubs_data_settings_chosenRofPhi_s_we1 <= grp_fit_fu_365_LinearRegression_stubs_data_settings_chosenRofPhi_s_we1;
-    linearRegression_stubs_data_settings_chosenRofZ_s_address0 <= grp_fit_fu_365_LinearRegression_stubs_data_settings_chosenRofZ_s_address0;
-    linearRegression_stubs_data_settings_chosenRofZ_s_address1 <= grp_fit_fu_365_LinearRegression_stubs_data_settings_chosenRofZ_s_address1;
-    linearRegression_stubs_data_settings_chosenRofZ_s_ce0 <= grp_fit_fu_365_LinearRegression_stubs_data_settings_chosenRofZ_s_ce0;
-    linearRegression_stubs_data_settings_chosenRofZ_s_ce1 <= grp_fit_fu_365_LinearRegression_stubs_data_settings_chosenRofZ_s_ce1;
-    linearRegression_stubs_data_settings_chosenRofZ_s_d0 <= grp_fit_fu_365_LinearRegression_stubs_data_settings_chosenRofZ_s_d0;
-    linearRegression_stubs_data_settings_chosenRofZ_s_d1 <= grp_fit_fu_365_LinearRegression_stubs_data_settings_chosenRofZ_s_d1;
-    linearRegression_stubs_data_settings_chosenRofZ_s_we0 <= grp_fit_fu_365_LinearRegression_stubs_data_settings_chosenRofZ_s_we0;
-    linearRegression_stubs_data_settings_chosenRofZ_s_we1 <= grp_fit_fu_365_LinearRegression_stubs_data_settings_chosenRofZ_s_we1;
-    linearRegression_stubs_data_settings_etaRegions_s_address0 <= grp_fit_fu_365_LinearRegression_stubs_data_settings_etaRegions_s_address0;
-    linearRegression_stubs_data_settings_etaRegions_s_address1 <= grp_fit_fu_365_LinearRegression_stubs_data_settings_etaRegions_s_address1;
-    linearRegression_stubs_data_settings_etaRegions_s_ce0 <= grp_fit_fu_365_LinearRegression_stubs_data_settings_etaRegions_s_ce0;
-    linearRegression_stubs_data_settings_etaRegions_s_ce1 <= grp_fit_fu_365_LinearRegression_stubs_data_settings_etaRegions_s_ce1;
-    linearRegression_stubs_data_settings_etaRegions_s_d0 <= grp_fit_fu_365_LinearRegression_stubs_data_settings_etaRegions_s_d0;
-    linearRegression_stubs_data_settings_etaRegions_s_d1 <= grp_fit_fu_365_LinearRegression_stubs_data_settings_etaRegions_s_d1;
-    linearRegression_stubs_data_settings_etaRegions_s_we0 <= grp_fit_fu_365_LinearRegression_stubs_data_settings_etaRegions_s_we0;
-    linearRegression_stubs_data_settings_etaRegions_s_we1 <= grp_fit_fu_365_LinearRegression_stubs_data_settings_etaRegions_s_we1;
-    linearRegression_stubs_data_settings_minNumMatchLayers_s_address0 <= grp_fit_fu_365_LinearRegression_stubs_data_settings_minNumMatchLayers_s_address0;
-    linearRegression_stubs_data_settings_minNumMatchLayers_s_address1 <= grp_fit_fu_365_LinearRegression_stubs_data_settings_minNumMatchLayers_s_address1;
-    linearRegression_stubs_data_settings_minNumMatchLayers_s_ce0 <= grp_fit_fu_365_LinearRegression_stubs_data_settings_minNumMatchLayers_s_ce0;
-    linearRegression_stubs_data_settings_minNumMatchLayers_s_ce1 <= grp_fit_fu_365_LinearRegression_stubs_data_settings_minNumMatchLayers_s_ce1;
-    linearRegression_stubs_data_settings_minNumMatchLayers_s_d0 <= grp_fit_fu_365_LinearRegression_stubs_data_settings_minNumMatchLayers_s_d0;
-    linearRegression_stubs_data_settings_minNumMatchLayers_s_d1 <= grp_fit_fu_365_LinearRegression_stubs_data_settings_minNumMatchLayers_s_d1;
-    linearRegression_stubs_data_settings_minNumMatchLayers_s_we0 <= grp_fit_fu_365_LinearRegression_stubs_data_settings_minNumMatchLayers_s_we0;
-    linearRegression_stubs_data_settings_minNumMatchLayers_s_we1 <= grp_fit_fu_365_LinearRegression_stubs_data_settings_minNumMatchLayers_s_we1;
-    linearRegression_stubs_data_settings_minPSLayers_s_address0 <= grp_fit_fu_365_LinearRegression_stubs_data_settings_minPSLayers_s_address0;
-    linearRegression_stubs_data_settings_minPSLayers_s_address1 <= grp_fit_fu_365_LinearRegression_stubs_data_settings_minPSLayers_s_address1;
-    linearRegression_stubs_data_settings_minPSLayers_s_ce0 <= grp_fit_fu_365_LinearRegression_stubs_data_settings_minPSLayers_s_ce0;
-    linearRegression_stubs_data_settings_minPSLayers_s_ce1 <= grp_fit_fu_365_LinearRegression_stubs_data_settings_minPSLayers_s_ce1;
-    linearRegression_stubs_data_settings_minPSLayers_s_d0 <= grp_fit_fu_365_LinearRegression_stubs_data_settings_minPSLayers_s_d0;
-    linearRegression_stubs_data_settings_minPSLayers_s_d1 <= grp_fit_fu_365_LinearRegression_stubs_data_settings_minPSLayers_s_d1;
-    linearRegression_stubs_data_settings_minPSLayers_s_we0 <= grp_fit_fu_365_LinearRegression_stubs_data_settings_minPSLayers_s_we0;
-    linearRegression_stubs_data_settings_minPSLayers_s_we1 <= grp_fit_fu_365_LinearRegression_stubs_data_settings_minPSLayers_s_we1;
-    linearRegression_stubs_data_z_s_address0 <= grp_fit_fu_365_LinearRegression_stubs_data_z_s_address0;
-    linearRegression_stubs_data_z_s_address1 <= grp_fit_fu_365_LinearRegression_stubs_data_z_s_address1;
-    linearRegression_stubs_data_z_s_ce0 <= grp_fit_fu_365_LinearRegression_stubs_data_z_s_ce0;
-    linearRegression_stubs_data_z_s_ce1 <= grp_fit_fu_365_LinearRegression_stubs_data_z_s_ce1;
-    linearRegression_stubs_data_z_s_d0 <= grp_fit_fu_365_LinearRegression_stubs_data_z_s_d0;
-    linearRegression_stubs_data_z_s_d1 <= grp_fit_fu_365_LinearRegression_stubs_data_z_s_d1;
-    linearRegression_stubs_data_z_s_we0 <= grp_fit_fu_365_LinearRegression_stubs_data_z_s_we0;
-    linearRegression_stubs_data_z_s_we1 <= grp_fit_fu_365_LinearRegression_stubs_data_z_s_we1;
-    linearRegression_stubs_size_s <= grp_fit_fu_365_ap_return_8;
+    linearRegression_stubs_data_barrel_s_address0 <= grp_fit_fu_363_LinearRegression_stubs_data_barrel_s_address0;
+    linearRegression_stubs_data_barrel_s_address1 <= grp_fit_fu_363_LinearRegression_stubs_data_barrel_s_address1;
+    linearRegression_stubs_data_barrel_s_ce0 <= grp_fit_fu_363_LinearRegression_stubs_data_barrel_s_ce0;
+    linearRegression_stubs_data_barrel_s_ce1 <= grp_fit_fu_363_LinearRegression_stubs_data_barrel_s_ce1;
+    linearRegression_stubs_data_barrel_s_d0 <= grp_fit_fu_363_LinearRegression_stubs_data_barrel_s_d0;
+    linearRegression_stubs_data_barrel_s_d1 <= grp_fit_fu_363_LinearRegression_stubs_data_barrel_s_d1;
+    linearRegression_stubs_data_barrel_s_we0 <= grp_fit_fu_363_LinearRegression_stubs_data_barrel_s_we0;
+    linearRegression_stubs_data_barrel_s_we1 <= grp_fit_fu_363_LinearRegression_stubs_data_barrel_s_we1;
+    linearRegression_stubs_data_layerId_s_address0 <= grp_fit_fu_363_LinearRegression_stubs_data_layerId_s_address0;
+    linearRegression_stubs_data_layerId_s_address1 <= grp_fit_fu_363_LinearRegression_stubs_data_layerId_s_address1;
+    linearRegression_stubs_data_layerId_s_ce0 <= grp_fit_fu_363_LinearRegression_stubs_data_layerId_s_ce0;
+    linearRegression_stubs_data_layerId_s_ce1 <= grp_fit_fu_363_LinearRegression_stubs_data_layerId_s_ce1;
+    linearRegression_stubs_data_layerId_s_d0 <= grp_fit_fu_363_LinearRegression_stubs_data_layerId_s_d0;
+    linearRegression_stubs_data_layerId_s_d1 <= grp_fit_fu_363_LinearRegression_stubs_data_layerId_s_d1;
+    linearRegression_stubs_data_layerId_s_we0 <= grp_fit_fu_363_LinearRegression_stubs_data_layerId_s_we0;
+    linearRegression_stubs_data_layerId_s_we1 <= grp_fit_fu_363_LinearRegression_stubs_data_layerId_s_we1;
+    linearRegression_stubs_data_phi_s_address0 <= grp_fit_fu_363_LinearRegression_stubs_data_phi_s_address0;
+    linearRegression_stubs_data_phi_s_address1 <= grp_fit_fu_363_LinearRegression_stubs_data_phi_s_address1;
+    linearRegression_stubs_data_phi_s_ce0 <= grp_fit_fu_363_LinearRegression_stubs_data_phi_s_ce0;
+    linearRegression_stubs_data_phi_s_ce1 <= grp_fit_fu_363_LinearRegression_stubs_data_phi_s_ce1;
+    linearRegression_stubs_data_phi_s_d0 <= grp_fit_fu_363_LinearRegression_stubs_data_phi_s_d0;
+    linearRegression_stubs_data_phi_s_d1 <= grp_fit_fu_363_LinearRegression_stubs_data_phi_s_d1;
+    linearRegression_stubs_data_phi_s_we0 <= grp_fit_fu_363_LinearRegression_stubs_data_phi_s_we0;
+    linearRegression_stubs_data_phi_s_we1 <= grp_fit_fu_363_LinearRegression_stubs_data_phi_s_we1;
+    linearRegression_stubs_data_psModule_s_address0 <= grp_fit_fu_363_LinearRegression_stubs_data_psModule_s_address0;
+    linearRegression_stubs_data_psModule_s_address1 <= grp_fit_fu_363_LinearRegression_stubs_data_psModule_s_address1;
+    linearRegression_stubs_data_psModule_s_ce0 <= grp_fit_fu_363_LinearRegression_stubs_data_psModule_s_ce0;
+    linearRegression_stubs_data_psModule_s_ce1 <= grp_fit_fu_363_LinearRegression_stubs_data_psModule_s_ce1;
+    linearRegression_stubs_data_psModule_s_d0 <= grp_fit_fu_363_LinearRegression_stubs_data_psModule_s_d0;
+    linearRegression_stubs_data_psModule_s_d1 <= grp_fit_fu_363_LinearRegression_stubs_data_psModule_s_d1;
+    linearRegression_stubs_data_psModule_s_we0 <= grp_fit_fu_363_LinearRegression_stubs_data_psModule_s_we0;
+    linearRegression_stubs_data_psModule_s_we1 <= grp_fit_fu_363_LinearRegression_stubs_data_psModule_s_we1;
+    linearRegression_stubs_data_r_s_address0 <= grp_fit_fu_363_LinearRegression_stubs_data_r_s_address0;
+    linearRegression_stubs_data_r_s_address1 <= grp_fit_fu_363_LinearRegression_stubs_data_r_s_address1;
+    linearRegression_stubs_data_r_s_ce0 <= grp_fit_fu_363_LinearRegression_stubs_data_r_s_ce0;
+    linearRegression_stubs_data_r_s_ce1 <= grp_fit_fu_363_LinearRegression_stubs_data_r_s_ce1;
+    linearRegression_stubs_data_r_s_d0 <= grp_fit_fu_363_LinearRegression_stubs_data_r_s_d0;
+    linearRegression_stubs_data_r_s_d1 <= grp_fit_fu_363_LinearRegression_stubs_data_r_s_d1;
+    linearRegression_stubs_data_r_s_we0 <= grp_fit_fu_363_LinearRegression_stubs_data_r_s_we0;
+    linearRegression_stubs_data_r_s_we1 <= grp_fit_fu_363_LinearRegression_stubs_data_r_s_we1;
+    linearRegression_stubs_data_settings_chosenRofPhi_s_address0 <= grp_fit_fu_363_LinearRegression_stubs_data_settings_chosenRofPhi_s_address0;
+    linearRegression_stubs_data_settings_chosenRofPhi_s_address1 <= grp_fit_fu_363_LinearRegression_stubs_data_settings_chosenRofPhi_s_address1;
+    linearRegression_stubs_data_settings_chosenRofPhi_s_ce0 <= grp_fit_fu_363_LinearRegression_stubs_data_settings_chosenRofPhi_s_ce0;
+    linearRegression_stubs_data_settings_chosenRofPhi_s_ce1 <= grp_fit_fu_363_LinearRegression_stubs_data_settings_chosenRofPhi_s_ce1;
+    linearRegression_stubs_data_settings_chosenRofPhi_s_d0 <= grp_fit_fu_363_LinearRegression_stubs_data_settings_chosenRofPhi_s_d0;
+    linearRegression_stubs_data_settings_chosenRofPhi_s_d1 <= grp_fit_fu_363_LinearRegression_stubs_data_settings_chosenRofPhi_s_d1;
+    linearRegression_stubs_data_settings_chosenRofPhi_s_we0 <= grp_fit_fu_363_LinearRegression_stubs_data_settings_chosenRofPhi_s_we0;
+    linearRegression_stubs_data_settings_chosenRofPhi_s_we1 <= grp_fit_fu_363_LinearRegression_stubs_data_settings_chosenRofPhi_s_we1;
+    linearRegression_stubs_data_settings_chosenRofZ_s_address0 <= grp_fit_fu_363_LinearRegression_stubs_data_settings_chosenRofZ_s_address0;
+    linearRegression_stubs_data_settings_chosenRofZ_s_address1 <= grp_fit_fu_363_LinearRegression_stubs_data_settings_chosenRofZ_s_address1;
+    linearRegression_stubs_data_settings_chosenRofZ_s_ce0 <= grp_fit_fu_363_LinearRegression_stubs_data_settings_chosenRofZ_s_ce0;
+    linearRegression_stubs_data_settings_chosenRofZ_s_ce1 <= grp_fit_fu_363_LinearRegression_stubs_data_settings_chosenRofZ_s_ce1;
+    linearRegression_stubs_data_settings_chosenRofZ_s_d0 <= grp_fit_fu_363_LinearRegression_stubs_data_settings_chosenRofZ_s_d0;
+    linearRegression_stubs_data_settings_chosenRofZ_s_d1 <= grp_fit_fu_363_LinearRegression_stubs_data_settings_chosenRofZ_s_d1;
+    linearRegression_stubs_data_settings_chosenRofZ_s_we0 <= grp_fit_fu_363_LinearRegression_stubs_data_settings_chosenRofZ_s_we0;
+    linearRegression_stubs_data_settings_chosenRofZ_s_we1 <= grp_fit_fu_363_LinearRegression_stubs_data_settings_chosenRofZ_s_we1;
+    linearRegression_stubs_data_settings_minNumMatchLayers_s_address0 <= grp_fit_fu_363_LinearRegression_stubs_data_settings_minNumMatchLayers_s_address0;
+    linearRegression_stubs_data_settings_minNumMatchLayers_s_address1 <= grp_fit_fu_363_LinearRegression_stubs_data_settings_minNumMatchLayers_s_address1;
+    linearRegression_stubs_data_settings_minNumMatchLayers_s_ce0 <= grp_fit_fu_363_LinearRegression_stubs_data_settings_minNumMatchLayers_s_ce0;
+    linearRegression_stubs_data_settings_minNumMatchLayers_s_ce1 <= grp_fit_fu_363_LinearRegression_stubs_data_settings_minNumMatchLayers_s_ce1;
+    linearRegression_stubs_data_settings_minNumMatchLayers_s_d0 <= grp_fit_fu_363_LinearRegression_stubs_data_settings_minNumMatchLayers_s_d0;
+    linearRegression_stubs_data_settings_minNumMatchLayers_s_d1 <= grp_fit_fu_363_LinearRegression_stubs_data_settings_minNumMatchLayers_s_d1;
+    linearRegression_stubs_data_settings_minNumMatchLayers_s_we0 <= grp_fit_fu_363_LinearRegression_stubs_data_settings_minNumMatchLayers_s_we0;
+    linearRegression_stubs_data_settings_minNumMatchLayers_s_we1 <= grp_fit_fu_363_LinearRegression_stubs_data_settings_minNumMatchLayers_s_we1;
+    linearRegression_stubs_data_settings_minPSLayers_s_address0 <= grp_fit_fu_363_LinearRegression_stubs_data_settings_minPSLayers_s_address0;
+    linearRegression_stubs_data_settings_minPSLayers_s_address1 <= grp_fit_fu_363_LinearRegression_stubs_data_settings_minPSLayers_s_address1;
+    linearRegression_stubs_data_settings_minPSLayers_s_ce0 <= grp_fit_fu_363_LinearRegression_stubs_data_settings_minPSLayers_s_ce0;
+    linearRegression_stubs_data_settings_minPSLayers_s_ce1 <= grp_fit_fu_363_LinearRegression_stubs_data_settings_minPSLayers_s_ce1;
+    linearRegression_stubs_data_settings_minPSLayers_s_d0 <= grp_fit_fu_363_LinearRegression_stubs_data_settings_minPSLayers_s_d0;
+    linearRegression_stubs_data_settings_minPSLayers_s_d1 <= grp_fit_fu_363_LinearRegression_stubs_data_settings_minPSLayers_s_d1;
+    linearRegression_stubs_data_settings_minPSLayers_s_we0 <= grp_fit_fu_363_LinearRegression_stubs_data_settings_minPSLayers_s_we0;
+    linearRegression_stubs_data_settings_minPSLayers_s_we1 <= grp_fit_fu_363_LinearRegression_stubs_data_settings_minPSLayers_s_we1;
+    linearRegression_stubs_data_settings_sinh_etaRegions_s_address0 <= grp_fit_fu_363_LinearRegression_stubs_data_settings_sinh_etaRegions_s_address0;
+    linearRegression_stubs_data_settings_sinh_etaRegions_s_address1 <= grp_fit_fu_363_LinearRegression_stubs_data_settings_sinh_etaRegions_s_address1;
+    linearRegression_stubs_data_settings_sinh_etaRegions_s_ce0 <= grp_fit_fu_363_LinearRegression_stubs_data_settings_sinh_etaRegions_s_ce0;
+    linearRegression_stubs_data_settings_sinh_etaRegions_s_ce1 <= grp_fit_fu_363_LinearRegression_stubs_data_settings_sinh_etaRegions_s_ce1;
+    linearRegression_stubs_data_settings_sinh_etaRegions_s_d0 <= grp_fit_fu_363_LinearRegression_stubs_data_settings_sinh_etaRegions_s_d0;
+    linearRegression_stubs_data_settings_sinh_etaRegions_s_d1 <= grp_fit_fu_363_LinearRegression_stubs_data_settings_sinh_etaRegions_s_d1;
+    linearRegression_stubs_data_settings_sinh_etaRegions_s_we0 <= grp_fit_fu_363_LinearRegression_stubs_data_settings_sinh_etaRegions_s_we0;
+    linearRegression_stubs_data_settings_sinh_etaRegions_s_we1 <= grp_fit_fu_363_LinearRegression_stubs_data_settings_sinh_etaRegions_s_we1;
+    linearRegression_stubs_data_z_s_address0 <= grp_fit_fu_363_LinearRegression_stubs_data_z_s_address0;
+    linearRegression_stubs_data_z_s_address1 <= grp_fit_fu_363_LinearRegression_stubs_data_z_s_address1;
+    linearRegression_stubs_data_z_s_ce0 <= grp_fit_fu_363_LinearRegression_stubs_data_z_s_ce0;
+    linearRegression_stubs_data_z_s_ce1 <= grp_fit_fu_363_LinearRegression_stubs_data_z_s_ce1;
+    linearRegression_stubs_data_z_s_d0 <= grp_fit_fu_363_LinearRegression_stubs_data_z_s_d0;
+    linearRegression_stubs_data_z_s_d1 <= grp_fit_fu_363_LinearRegression_stubs_data_z_s_d1;
+    linearRegression_stubs_data_z_s_we0 <= grp_fit_fu_363_LinearRegression_stubs_data_z_s_we0;
+    linearRegression_stubs_data_z_s_we1 <= grp_fit_fu_363_LinearRegression_stubs_data_z_s_we1;
+    linearRegression_stubs_size_s <= grp_fit_fu_363_ap_return_8;
 
-    linearRegression_stubs_size_s_ap_vld_assign_proc : process(grp_fit_fu_365_ap_done, ap_CS_fsm_state2)
+    linearRegression_stubs_size_s_ap_vld_assign_proc : process(grp_fit_fu_363_ap_done, ap_CS_fsm_state2)
     begin
-        if (((grp_fit_fu_365_ap_done = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state2))) then 
+        if (((grp_fit_fu_363_ap_done = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state2))) then 
             linearRegression_stubs_size_s_ap_vld <= ap_const_logic_1;
         else 
             linearRegression_stubs_size_s_ap_vld <= ap_const_logic_0;
         end if; 
     end process;
 
-    linearRegression_valid_s <= grp_fit_fu_365_ap_return_3(0);
+    linearRegression_valid_s <= grp_fit_fu_363_ap_return_3(0);
 
-    linearRegression_valid_s_ap_vld_assign_proc : process(grp_fit_fu_365_ap_done, ap_CS_fsm_state2)
+    linearRegression_valid_s_ap_vld_assign_proc : process(grp_fit_fu_363_ap_done, ap_CS_fsm_state2)
     begin
-        if (((grp_fit_fu_365_ap_done = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state2))) then 
+        if (((grp_fit_fu_363_ap_done = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state2))) then 
             linearRegression_valid_s_ap_vld <= ap_const_logic_1;
         else 
             linearRegression_valid_s_ap_vld <= ap_const_logic_0;

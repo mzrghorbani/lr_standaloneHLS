@@ -1022,7 +1022,7 @@
             <Obj>
               <type>0</type>
               <id>30</id>
-              <name>stubs_data_barrel_s_41</name>
+              <name>stubs_data_barrel_s_11</name>
               <fileName>lr_standaloneHLS/.settings/LinearRegression.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>60</lineNumber>
@@ -1072,7 +1072,7 @@
             <Obj>
               <type>0</type>
               <id>31</id>
-              <name>tmp_138</name>
+              <name>tmp_51</name>
               <fileName>lr_standaloneHLS/.settings/LinearRegression.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>60</lineNumber>
@@ -1096,7 +1096,7 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>tmp_138_fu_187_p2</rtlName>
+              <rtlName>tmp_51_fu_187_p2</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>1</bitwidth>
@@ -1476,7 +1476,7 @@
             <Obj>
               <type>0</type>
               <id>40</id>
-              <name>tmp_111_not_i</name>
+              <name>tmp_36_not_i</name>
               <fileName>lr_standaloneHLS/.settings/LinearRegression.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>77</lineNumber>
@@ -1507,7 +1507,7 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>tmp_111_not_i_fu_210_p2</rtlName>
+              <rtlName>tmp_36_not_i_fu_210_p2</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>1</bitwidth>
@@ -1700,7 +1700,7 @@
             <Obj>
               <type>0</type>
               <id>44</id>
-              <name>tmp_93_i</name>
+              <name>tmp_17_i</name>
               <fileName>lr_standaloneHLS/.settings/LinearRegression.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>78</lineNumber>
@@ -1731,7 +1731,7 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>tmp_93_i_fu_234_p2</rtlName>
+              <rtlName>tmp_17_i_fu_234_p2</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>32</bitwidth>
@@ -2144,7 +2144,7 @@
             <Obj>
               <type>0</type>
               <id>53</id>
-              <name>tmp_139</name>
+              <name>tmp_52</name>
               <fileName>lr_standaloneHLS/.settings/LinearRegression.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>63</lineNumber>
@@ -2168,7 +2168,7 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>tmp_139_fu_279_p1</rtlName>
+              <rtlName>tmp_52_fu_279_p1</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>64</bitwidth>
@@ -5008,53 +5008,7 @@
           </second>
         </item>
         <item>
-          <first>tmp_111_not_i_fu_210_p2 ( icmp ) </first>
-          <second>
-            <count>4</count>
-            <item_version>0</item_version>
-            <item>
-              <first>(0P0)</first>
-              <second>32</second>
-            </item>
-            <item>
-              <first>(1P1)</first>
-              <second>5</second>
-            </item>
-            <item>
-              <first>FF</first>
-              <second>0</second>
-            </item>
-            <item>
-              <first>LUT</first>
-              <second>20</second>
-            </item>
-          </second>
-        </item>
-        <item>
-          <first>tmp_138_fu_187_p2 ( icmp ) </first>
-          <second>
-            <count>4</count>
-            <item_version>0</item_version>
-            <item>
-              <first>(0P0)</first>
-              <second>32</second>
-            </item>
-            <item>
-              <first>(1P1)</first>
-              <second>32</second>
-            </item>
-            <item>
-              <first>FF</first>
-              <second>0</second>
-            </item>
-            <item>
-              <first>LUT</first>
-              <second>20</second>
-            </item>
-          </second>
-        </item>
-        <item>
-          <first>tmp_93_i_fu_234_p2 ( + ) </first>
+          <first>tmp_17_i_fu_234_p2 ( + ) </first>
           <second>
             <count>4</count>
             <item_version>0</item_version>
@@ -5073,6 +5027,52 @@
             <item>
               <first>LUT</first>
               <second>39</second>
+            </item>
+          </second>
+        </item>
+        <item>
+          <first>tmp_36_not_i_fu_210_p2 ( icmp ) </first>
+          <second>
+            <count>4</count>
+            <item_version>0</item_version>
+            <item>
+              <first>(0P0)</first>
+              <second>32</second>
+            </item>
+            <item>
+              <first>(1P1)</first>
+              <second>5</second>
+            </item>
+            <item>
+              <first>FF</first>
+              <second>0</second>
+            </item>
+            <item>
+              <first>LUT</first>
+              <second>20</second>
+            </item>
+          </second>
+        </item>
+        <item>
+          <first>tmp_51_fu_187_p2 ( icmp ) </first>
+          <second>
+            <count>4</count>
+            <item_version>0</item_version>
+            <item>
+              <first>(0P0)</first>
+              <second>32</second>
+            </item>
+            <item>
+              <first>(1P1)</first>
+              <second>32</second>
+            </item>
+            <item>
+              <first>FF</first>
+              <second>0</second>
+            </item>
+            <item>
+              <first>LUT</first>
+              <second>20</second>
             </item>
           </second>
         </item>
@@ -5603,7 +5603,15 @@
           </second>
         </item>
         <item>
-          <first>tmp_111_not_i_fu_210_p2 ( icmp ) </first>
+          <first>tmp_17_i_fu_234_p2 ( + ) </first>
+          <second>
+            <count>1</count>
+            <item_version>0</item_version>
+            <item>44</item>
+          </second>
+        </item>
+        <item>
+          <first>tmp_36_not_i_fu_210_p2 ( icmp ) </first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -5611,19 +5619,11 @@
           </second>
         </item>
         <item>
-          <first>tmp_138_fu_187_p2 ( icmp ) </first>
+          <first>tmp_51_fu_187_p2 ( icmp ) </first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
             <item>31</item>
-          </second>
-        </item>
-        <item>
-          <first>tmp_93_i_fu_234_p2 ( + ) </first>
-          <second>
-            <count>1</count>
-            <item_version>0</item_version>
-            <item>44</item>
           </second>
         </item>
         <item>
@@ -6602,7 +6602,7 @@
         </second>
       </item>
       <item>
-        <first>stubs_data_barrel_s_41_gep_fu_95</first>
+        <first>stubs_data_barrel_s_11_gep_fu_95</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -6626,7 +6626,15 @@
         </second>
       </item>
       <item>
-        <first>tmp_111_not_i_fu_210</first>
+        <first>tmp_17_i_fu_234</first>
+        <second>
+          <count>1</count>
+          <item_version>0</item_version>
+          <item>44</item>
+        </second>
+      </item>
+      <item>
+        <first>tmp_36_not_i_fu_210</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -6634,7 +6642,7 @@
         </second>
       </item>
       <item>
-        <first>tmp_138_fu_187</first>
+        <first>tmp_51_fu_187</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -6642,19 +6650,11 @@
         </second>
       </item>
       <item>
-        <first>tmp_139_fu_279</first>
+        <first>tmp_52_fu_279</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
           <item>53</item>
-        </second>
-      </item>
-      <item>
-        <first>tmp_93_i_fu_234</first>
-        <second>
-          <count>1</count>
-          <item_version>0</item_version>
-          <item>44</item>
         </second>
       </item>
       <item>
@@ -6989,7 +6989,7 @@
         </second>
       </item>
       <item>
-        <first>stubs_data_barrel_s_41_reg_335</first>
+        <first>stubs_data_barrel_s_11_reg_335</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>

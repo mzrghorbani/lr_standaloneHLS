@@ -2,6 +2,8 @@
 // Created by eepgmmg1 on 25/04/19.
 //
 
+#include <cmath>
+
 #ifndef __LRUTILITYHLS__
 #define __LRUTILITYHLS__
 
@@ -27,16 +29,22 @@ inline T absHLS(T a) {
 }
 
 template<typename T>
-T reduceRangeHLS(T x) {
+inline T sinhHLS(T x) {
+	const T ex = 2.718281828459;
+	return ((pow(ex, x)-pow(ex, -x)) / 2);
+}
+
+template<typename T>
+inline T reduceRangeHLS(T x) {
     const T o2pi = 0.159154943;
     if (absHLS(x) <= T(3.141592653589))
         return (x);
-    T n = x * o2pi;
+    const T n = x * o2pi;
     return (x - n * T(6.283185307));
 }
 
 template<typename T>
-T deltaPhiHLS(T phi1, T phi2) {
+inline T deltaPhiHLS(T phi1, T phi2) {
     return (reduceRangeHLS(phi1 - phi2));
 }
 
@@ -81,15 +89,29 @@ public:
         size_++;
     }
 
+//    void erase(const T &value) {
+//        for(unsigned int i = 0; i < size_; ++i) {
+//            if (data_[i] == value) {
+//                for (unsigned int j = i; j < size_; ++j) {
+//                    data_[j] = data_[j + 1];
+//                }
+//            }
+//        }
+//        size_--;
+//    }
+
     void erase(const T &value) {
-        for (unsigned int i = 0; i < size_; ++i) {
-            if (data_[i] == value) {
-                for (unsigned int j = i; j < size_; ++j) {
-                    data_[j] = data_[j + 1];
-                }
-            }
-        }
-        size_--;
+    	unsigned int i = 0;
+    	unsigned int temp = 0;
+
+    	if(!(data_[i] == value) && (i < size_)) {
+    		i++;
+    	} else {
+			for (unsigned int j = temp; j < size_-1; ++j) {
+				data_[j] = data_[j + 1];
+			}
+    	}
+		size_--;
     }
 
     T &operator[](unsigned int idx) {
@@ -157,13 +179,13 @@ public:
     }
 
     T &operator[](const unsigned int &idx) {
-        if (has_key(idx)) {
+//        if (has_key(idx)) {
             for (unsigned int i = 0; i < size_; ++i) {
                 if (data_[i].first == idx) {
                     return (data_[i].second);
                 }
             }
-        }
+//        }
         unsigned int temp = size_;
         push_back(pairHLS<unsigned int, T>(idx, T()));
         return (data_[temp].second);

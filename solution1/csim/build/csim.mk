@@ -1,5 +1,5 @@
 # ==============================================================
-# File generated on Tue May 21 18:41:18 BST 2019
+# File generated on Thu May 23 19:39:10 BST 2019
 # Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
 # SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
 # IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
@@ -21,7 +21,7 @@ __SIM_DDS__ = 1
 
 ObjDir = obj
 
-HLS_SOURCES = ../../../.settings/testbench.cpp ../../../.settings/LRupdateHLS.cpp ../../../.settings/LinearRegression.cpp
+HLS_SOURCES = ../../../.settings/testbench.cpp ../../../.settings/LinearRegression.cpp ../../../.settings/LRupdateHLS.cpp
 
 TARGET := csim.exe
 
@@ -59,6 +59,7 @@ IFLAG += -D__SIM_FIR__
 IFLAG += -D__SIM_DDS__
 
 IFLAG += -D__DSP48E2__
+IFLAG += -Wno-unknown-pragmas 
 IFLAG += -g
 DFLAG += -D__xilinx_ip_top= -DAESL_TB
 CCFLAG += 
@@ -74,18 +75,18 @@ all: $(TARGET)
 
 $(ObjDir)/testbench.o: ../../../.settings/testbench.cpp $(ObjDir)/.dir
 	$(Echo) "   Compiling ../../../.settings/testbench.cpp in $(BuildMode) mode" $(AVE_DIR_DLOG)
-	$(Verb)  $(CC) ${CCFLAG} -c -MMD  $(IFLAG) $(DFLAG) $< -o $@ ; \
+	$(Verb)  $(CC) ${CCFLAG} -c -MMD -Wno-unknown-pragmas  $(IFLAG) $(DFLAG) $< -o $@ ; \
 
 -include $(ObjDir)/testbench.d
-
-$(ObjDir)/LRupdateHLS.o: ../../../.settings/LRupdateHLS.cpp $(ObjDir)/.dir
-	$(Echo) "   Compiling ../../../.settings/LRupdateHLS.cpp in $(BuildMode) mode" $(AVE_DIR_DLOG)
-	$(Verb)  $(CC) ${CCFLAG} -c -MMD  $(IFLAG) $(DFLAG) $< -o $@ ; \
-
--include $(ObjDir)/LRupdateHLS.d
 
 $(ObjDir)/LinearRegression.o: ../../../.settings/LinearRegression.cpp $(ObjDir)/.dir
 	$(Echo) "   Compiling ../../../.settings/LinearRegression.cpp in $(BuildMode) mode" $(AVE_DIR_DLOG)
 	$(Verb)  $(CC) ${CCFLAG} -c -MMD  $(IFLAG) $(DFLAG) $< -o $@ ; \
 
 -include $(ObjDir)/LinearRegression.d
+
+$(ObjDir)/LRupdateHLS.o: ../../../.settings/LRupdateHLS.cpp $(ObjDir)/.dir
+	$(Echo) "   Compiling ../../../.settings/LRupdateHLS.cpp in $(BuildMode) mode" $(AVE_DIR_DLOG)
+	$(Verb)  $(CC) ${CCFLAG} -c -MMD  $(IFLAG) $(DFLAG) $< -o $@ ; \
+
+-include $(ObjDir)/LRupdateHLS.d

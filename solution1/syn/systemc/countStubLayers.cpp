@@ -68,7 +68,7 @@ countStubLayers::countStubLayers(sc_module_name name) : sc_module(name), mVcdFil
     sensitive << ( ap_start );
     sensitive << ( ap_CS_fsm_state1 );
     sensitive << ( ap_CS_fsm_state3 );
-    sensitive << ( tmp_138_fu_187_p2 );
+    sensitive << ( tmp_51_fu_187_p2 );
 
     SC_METHOD(thread_ap_idle);
     sensitive << ( ap_start );
@@ -76,15 +76,15 @@ countStubLayers::countStubLayers(sc_module_name name) : sc_module(name), mVcdFil
 
     SC_METHOD(thread_ap_ready);
     sensitive << ( ap_CS_fsm_state3 );
-    sensitive << ( tmp_138_fu_187_p2 );
+    sensitive << ( tmp_51_fu_187_p2 );
 
     SC_METHOD(thread_ap_return);
     sensitive << ( ap_CS_fsm_state3 );
     sensitive << ( nLayers_fu_52 );
-    sensitive << ( tmp_138_fu_187_p2 );
+    sensitive << ( tmp_51_fu_187_p2 );
 
     SC_METHOD(thread_brmerge3_i_fu_222_p2);
-    sensitive << ( tmp_111_not_i_fu_210_p2 );
+    sensitive << ( tmp_36_not_i_fu_210_p2 );
     sensitive << ( stub_psModule_read_s_fu_216_p2 );
 
     SC_METHOD(thread_brmerge_fu_274_p2);
@@ -101,7 +101,7 @@ countStubLayers::countStubLayers(sc_module_name name) : sc_module(name), mVcdFil
     sensitive << ( foundLayers_addr_1_reg_352 );
     sensitive << ( ap_CS_fsm_state5 );
     sensitive << ( tmp_fu_159_p1 );
-    sensitive << ( tmp_139_fu_279_p1 );
+    sensitive << ( tmp_52_fu_279_p1 );
 
     SC_METHOD(thread_foundLayers_ce0);
     sensitive << ( ap_CS_fsm_state2 );
@@ -149,7 +149,7 @@ countStubLayers::countStubLayers(sc_module_name name) : sc_module(name), mVcdFil
     SC_METHOD(thread_sel_tmp2_i_fu_252_p3);
     sensitive << ( stubs_data_layerId_s_q0 );
     sensitive << ( sel_tmp1_i_fu_246_p2 );
-    sensitive << ( tmp_93_i_fu_234_p2 );
+    sensitive << ( tmp_17_i_fu_234_p2 );
 
     SC_METHOD(thread_sel_tmp5_demorgan_i_fu_260_p2);
     sensitive << ( stubs_data_barrel_s_q0 );
@@ -183,20 +183,20 @@ countStubLayers::countStubLayers(sc_module_name name) : sc_module(name), mVcdFil
     SC_METHOD(thread_stubs_data_psModule_s_ce0);
     sensitive << ( ap_CS_fsm_state3 );
 
-    SC_METHOD(thread_tmp_111_not_i_fu_210_p2);
+    SC_METHOD(thread_tmp_17_i_fu_234_p2);
+    sensitive << ( stubs_data_layerId_s_q0 );
+
+    SC_METHOD(thread_tmp_36_not_i_fu_210_p2);
     sensitive << ( stubs_data_layerId_s_q0 );
     sensitive << ( ap_CS_fsm_state4 );
 
-    SC_METHOD(thread_tmp_138_fu_187_p2);
+    SC_METHOD(thread_tmp_51_fu_187_p2);
     sensitive << ( stubs_size_read );
     sensitive << ( ap_CS_fsm_state3 );
     sensitive << ( p_begin_0_rec_reg_139 );
 
-    SC_METHOD(thread_tmp_139_fu_279_p1);
+    SC_METHOD(thread_tmp_52_fu_279_p1);
     sensitive << ( p_0_i_fu_266_p3 );
-
-    SC_METHOD(thread_tmp_93_i_fu_234_p2);
-    sensitive << ( stubs_data_layerId_s_q0 );
 
     SC_METHOD(thread_tmp_fu_159_p1);
     sensitive << ( invdar_reg_128 );
@@ -219,7 +219,7 @@ countStubLayers::countStubLayers(sc_module_name name) : sc_module(name), mVcdFil
     sensitive << ( ap_CS_fsm_state2 );
     sensitive << ( tmp_s_fu_164_p2 );
     sensitive << ( ap_CS_fsm_state3 );
-    sensitive << ( tmp_138_fu_187_p2 );
+    sensitive << ( tmp_51_fu_187_p2 );
 
     ap_CS_fsm = "00001";
     static int apTFileNum = 0;
@@ -274,19 +274,19 @@ countStubLayers::countStubLayers(sc_module_name name) : sc_module(name), mVcdFil
     sc_trace(mVcdFile, ap_CS_fsm_state5, "ap_CS_fsm_state5");
     sc_trace(mVcdFile, tmp_fu_159_p1, "tmp_fu_159_p1");
     sc_trace(mVcdFile, p_begin_0_rec_cast_fu_180_p1, "p_begin_0_rec_cast_fu_180_p1");
-    sc_trace(mVcdFile, tmp_139_fu_279_p1, "tmp_139_fu_279_p1");
+    sc_trace(mVcdFile, tmp_52_fu_279_p1, "tmp_52_fu_279_p1");
     sc_trace(mVcdFile, nLayers_fu_52, "nLayers_fu_52");
     sc_trace(mVcdFile, nLayers_1_fu_284_p2, "nLayers_1_fu_284_p2");
-    sc_trace(mVcdFile, tmp_138_fu_187_p2, "tmp_138_fu_187_p2");
+    sc_trace(mVcdFile, tmp_51_fu_187_p2, "tmp_51_fu_187_p2");
     sc_trace(mVcdFile, onlySeed_not_fu_170_p0, "onlySeed_not_fu_170_p0");
     sc_trace(mVcdFile, tmp_not_i_fu_198_p2, "tmp_not_i_fu_198_p2");
-    sc_trace(mVcdFile, tmp_111_not_i_fu_210_p2, "tmp_111_not_i_fu_210_p2");
+    sc_trace(mVcdFile, tmp_36_not_i_fu_210_p2, "tmp_36_not_i_fu_210_p2");
     sc_trace(mVcdFile, stub_psModule_read_s_fu_216_p2, "stub_psModule_read_s_fu_216_p2");
     sc_trace(mVcdFile, brmerge_i_fu_204_p2, "brmerge_i_fu_204_p2");
     sc_trace(mVcdFile, brmerge3_i_fu_222_p2, "brmerge3_i_fu_222_p2");
     sc_trace(mVcdFile, sel_tmp_i_fu_240_p2, "sel_tmp_i_fu_240_p2");
     sc_trace(mVcdFile, sel_tmp1_i_fu_246_p2, "sel_tmp1_i_fu_246_p2");
-    sc_trace(mVcdFile, tmp_93_i_fu_234_p2, "tmp_93_i_fu_234_p2");
+    sc_trace(mVcdFile, tmp_17_i_fu_234_p2, "tmp_17_i_fu_234_p2");
     sc_trace(mVcdFile, sel_tmp5_demorgan_i_fu_260_p2, "sel_tmp5_demorgan_i_fu_260_p2");
     sc_trace(mVcdFile, sel_tmp2_i_fu_252_p3, "sel_tmp2_i_fu_252_p3");
     sc_trace(mVcdFile, tmp_i_fu_228_p2, "tmp_i_fu_228_p2");
@@ -335,7 +335,7 @@ void countStubLayers::thread_ap_clk_no_reset_() {
         brmerge_reg_348 = brmerge_fu_274_p2.read();
     }
     if ((esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state4.read()) && esl_seteq<1,1,1>(ap_const_lv1_1, brmerge_fu_274_p2.read()))) {
-        foundLayers_addr_1_reg_352 =  (sc_lv<5>) (tmp_139_fu_279_p1.read());
+        foundLayers_addr_1_reg_352 =  (sc_lv<5>) (tmp_52_fu_279_p1.read());
     }
     if ((esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state2.read()) && esl_seteq<1,1,1>(tmp_s_fu_164_p2.read(), ap_const_lv1_1))) {
         onlySeed_not_reg_320 = onlySeed_not_fu_170_p2.read();
@@ -369,7 +369,7 @@ void countStubLayers::thread_ap_done() {
     if (((esl_seteq<1,1,1>(ap_const_logic_0, ap_start.read()) && 
           esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state1.read())) || 
          (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state3.read()) && 
-          esl_seteq<1,1,1>(ap_const_lv1_1, tmp_138_fu_187_p2.read())))) {
+          esl_seteq<1,1,1>(ap_const_lv1_1, tmp_51_fu_187_p2.read())))) {
         ap_done = ap_const_logic_1;
     } else {
         ap_done = ap_const_logic_0;
@@ -387,7 +387,7 @@ void countStubLayers::thread_ap_idle() {
 
 void countStubLayers::thread_ap_ready() {
     if ((esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state3.read()) && 
-         esl_seteq<1,1,1>(ap_const_lv1_1, tmp_138_fu_187_p2.read()))) {
+         esl_seteq<1,1,1>(ap_const_lv1_1, tmp_51_fu_187_p2.read()))) {
         ap_ready = ap_const_logic_1;
     } else {
         ap_ready = ap_const_logic_0;
@@ -399,7 +399,7 @@ void countStubLayers::thread_ap_return() {
 }
 
 void countStubLayers::thread_brmerge3_i_fu_222_p2() {
-    brmerge3_i_fu_222_p2 = (tmp_111_not_i_fu_210_p2.read() | stub_psModule_read_s_fu_216_p2.read());
+    brmerge3_i_fu_222_p2 = (tmp_36_not_i_fu_210_p2.read() | stub_psModule_read_s_fu_216_p2.read());
 }
 
 void countStubLayers::thread_brmerge_fu_274_p2() {
@@ -414,7 +414,7 @@ void countStubLayers::thread_foundLayers_address0() {
     if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state5.read())) {
         foundLayers_address0 = foundLayers_addr_1_reg_352.read();
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state4.read())) {
-        foundLayers_address0 =  (sc_lv<5>) (tmp_139_fu_279_p1.read());
+        foundLayers_address0 =  (sc_lv<5>) (tmp_52_fu_279_p1.read());
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state2.read())) {
         foundLayers_address0 =  (sc_lv<5>) (tmp_fu_159_p1.read());
     } else {
@@ -486,7 +486,7 @@ void countStubLayers::thread_sel_tmp1_i_fu_246_p2() {
 }
 
 void countStubLayers::thread_sel_tmp2_i_fu_252_p3() {
-    sel_tmp2_i_fu_252_p3 = (!sel_tmp1_i_fu_246_p2.read()[0].is_01())? sc_lv<32>(): ((sel_tmp1_i_fu_246_p2.read()[0].to_bool())? stubs_data_layerId_s_q0.read(): tmp_93_i_fu_234_p2.read());
+    sel_tmp2_i_fu_252_p3 = (!sel_tmp1_i_fu_246_p2.read()[0].is_01())? sc_lv<32>(): ((sel_tmp1_i_fu_246_p2.read()[0].to_bool())? stubs_data_layerId_s_q0.read(): tmp_17_i_fu_234_p2.read());
 }
 
 void countStubLayers::thread_sel_tmp5_demorgan_i_fu_260_p2() {
@@ -537,20 +537,20 @@ void countStubLayers::thread_stubs_data_psModule_s_ce0() {
     }
 }
 
-void countStubLayers::thread_tmp_111_not_i_fu_210_p2() {
-    tmp_111_not_i_fu_210_p2 = (!stubs_data_layerId_s_q0.read().is_01() || !ap_const_lv32_15.is_01())? sc_lv<1>(): (sc_biguint<32>(stubs_data_layerId_s_q0.read()) < sc_biguint<32>(ap_const_lv32_15));
+void countStubLayers::thread_tmp_17_i_fu_234_p2() {
+    tmp_17_i_fu_234_p2 = (!stubs_data_layerId_s_q0.read().is_01() || !ap_const_lv32_FFFFFFF6.is_01())? sc_lv<32>(): (sc_biguint<32>(stubs_data_layerId_s_q0.read()) + sc_bigint<32>(ap_const_lv32_FFFFFFF6));
 }
 
-void countStubLayers::thread_tmp_138_fu_187_p2() {
-    tmp_138_fu_187_p2 = (!p_begin_0_rec_reg_139.read().is_01() || !stubs_size_read.read().is_01())? sc_lv<1>(): sc_lv<1>(p_begin_0_rec_reg_139.read() == stubs_size_read.read());
+void countStubLayers::thread_tmp_36_not_i_fu_210_p2() {
+    tmp_36_not_i_fu_210_p2 = (!stubs_data_layerId_s_q0.read().is_01() || !ap_const_lv32_15.is_01())? sc_lv<1>(): (sc_biguint<32>(stubs_data_layerId_s_q0.read()) < sc_biguint<32>(ap_const_lv32_15));
 }
 
-void countStubLayers::thread_tmp_139_fu_279_p1() {
-    tmp_139_fu_279_p1 = esl_zext<64,32>(p_0_i_fu_266_p3.read());
+void countStubLayers::thread_tmp_51_fu_187_p2() {
+    tmp_51_fu_187_p2 = (!p_begin_0_rec_reg_139.read().is_01() || !stubs_size_read.read().is_01())? sc_lv<1>(): sc_lv<1>(p_begin_0_rec_reg_139.read() == stubs_size_read.read());
 }
 
-void countStubLayers::thread_tmp_93_i_fu_234_p2() {
-    tmp_93_i_fu_234_p2 = (!stubs_data_layerId_s_q0.read().is_01() || !ap_const_lv32_FFFFFFF6.is_01())? sc_lv<32>(): (sc_biguint<32>(stubs_data_layerId_s_q0.read()) + sc_bigint<32>(ap_const_lv32_FFFFFFF6));
+void countStubLayers::thread_tmp_52_fu_279_p1() {
+    tmp_52_fu_279_p1 = esl_zext<64,32>(p_0_i_fu_266_p3.read());
 }
 
 void countStubLayers::thread_tmp_fu_159_p1() {
@@ -586,7 +586,7 @@ void countStubLayers::thread_ap_NS_fsm() {
             }
             break;
         case 4 : 
-            if ((esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state3.read()) && esl_seteq<1,1,1>(ap_const_lv1_1, tmp_138_fu_187_p2.read()))) {
+            if ((esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state3.read()) && esl_seteq<1,1,1>(ap_const_lv1_1, tmp_51_fu_187_p2.read()))) {
                 ap_NS_fsm = ap_ST_fsm_state1;
             } else {
                 ap_NS_fsm = ap_ST_fsm_state4;

@@ -11,7 +11,7 @@ if {${::AESL::PGuard_autoexp_gen}} {
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 436 \
+    id 424 \
     name arrayHLS_Stub_data_settings_chosenRofPhi_s \
     reset_level 1 \
     sync_rst true \
@@ -30,7 +30,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 437 \
+    id 425 \
     name arrayHLS_Stub_data_settings_chosenRofZ_s \
     reset_level 1 \
     sync_rst true \
@@ -49,17 +49,17 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 438 \
-    name arrayHLS_Stub_data_settings_etaRegions_s \
+    id 426 \
+    name arrayHLS_Stub_data_settings_sinh_etaRegions_s \
     reset_level 1 \
     sync_rst true \
     dir IO \
-    corename arrayHLS_Stub_data_settings_etaRegions_s \
+    corename arrayHLS_Stub_data_settings_sinh_etaRegions_s \
     op interface \
-    ports { arrayHLS_Stub_data_settings_etaRegions_s_address0 { O 8 vector } arrayHLS_Stub_data_settings_etaRegions_s_ce0 { O 1 bit } arrayHLS_Stub_data_settings_etaRegions_s_we0 { O 1 bit } arrayHLS_Stub_data_settings_etaRegions_s_d0 { O 32 vector } arrayHLS_Stub_data_settings_etaRegions_s_q0 { I 32 vector } arrayHLS_Stub_data_settings_etaRegions_s_address1 { O 8 vector } arrayHLS_Stub_data_settings_etaRegions_s_ce1 { O 1 bit } arrayHLS_Stub_data_settings_etaRegions_s_we1 { O 1 bit } arrayHLS_Stub_data_settings_etaRegions_s_d1 { O 32 vector } arrayHLS_Stub_data_settings_etaRegions_s_q1 { I 32 vector } } \
+    ports { arrayHLS_Stub_data_settings_sinh_etaRegions_s_address0 { O 8 vector } arrayHLS_Stub_data_settings_sinh_etaRegions_s_ce0 { O 1 bit } arrayHLS_Stub_data_settings_sinh_etaRegions_s_we0 { O 1 bit } arrayHLS_Stub_data_settings_sinh_etaRegions_s_d0 { O 32 vector } arrayHLS_Stub_data_settings_sinh_etaRegions_s_q0 { I 32 vector } arrayHLS_Stub_data_settings_sinh_etaRegions_s_address1 { O 8 vector } arrayHLS_Stub_data_settings_sinh_etaRegions_s_ce1 { O 1 bit } arrayHLS_Stub_data_settings_sinh_etaRegions_s_we1 { O 1 bit } arrayHLS_Stub_data_settings_sinh_etaRegions_s_d1 { O 32 vector } arrayHLS_Stub_data_settings_sinh_etaRegions_s_q1 { I 32 vector } } \
 } "
 } else {
-puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'arrayHLS_Stub_data_settings_etaRegions_s'"
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'arrayHLS_Stub_data_settings_sinh_etaRegions_s'"
 }
 }
 
@@ -68,7 +68,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 439 \
+    id 427 \
     name arrayHLS_Stub_data_settings_minNumMatchLayers_s \
     reset_level 1 \
     sync_rst true \
@@ -87,7 +87,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 440 \
+    id 428 \
     name arrayHLS_Stub_data_settings_minPSLayers_s \
     reset_level 1 \
     sync_rst true \
@@ -106,7 +106,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 441 \
+    id 429 \
     name arrayHLS_Stub_data_r_s \
     reset_level 1 \
     sync_rst true \
@@ -125,7 +125,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 442 \
+    id 430 \
     name arrayHLS_Stub_data_phi_s \
     reset_level 1 \
     sync_rst true \
@@ -144,7 +144,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 443 \
+    id 431 \
     name arrayHLS_Stub_data_z_s \
     reset_level 1 \
     sync_rst true \
@@ -163,7 +163,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 444 \
+    id 432 \
     name arrayHLS_Stub_data_layerId_s \
     reset_level 1 \
     sync_rst true \
@@ -182,7 +182,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 445 \
+    id 433 \
     name arrayHLS_Stub_data_psModule_s \
     reset_level 1 \
     sync_rst true \
@@ -201,7 +201,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 446 \
+    id 434 \
     name arrayHLS_Stub_data_barrel_s \
     reset_level 1 \
     sync_rst true \
@@ -219,7 +219,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 435 \
+    id 423 \
     name arrayHLS_Stub_size_read \
     type other \
     dir I \
@@ -234,7 +234,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 447 \
+    id 435 \
     name value_r_read \
     type other \
     dir I \
@@ -249,7 +249,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 448 \
+    id 436 \
     name value_phi_read \
     type other \
     dir I \
@@ -264,7 +264,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 449 \
+    id 437 \
     name value_z_read \
     type other \
     dir I \
@@ -279,7 +279,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 450 \
+    id 438 \
     name value_layerId_read \
     type other \
     dir I \
@@ -294,7 +294,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 451 \
+    id 439 \
     name value_psModule_read \
     type other \
     dir I \
@@ -309,7 +309,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 452 \
+    id 440 \
     name value_barrel_read \
     type other \
     dir I \

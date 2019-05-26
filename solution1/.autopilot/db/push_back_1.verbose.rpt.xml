@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'push_back_1'" level="0">
-<item name = "Date">Tue May 21 18:44:36 2019
+<item name = "Date">Thu May 23 17:57:25 2019
 </item>
 <item name = "Version">2018.3 (Build 2405991 on Thu Dec 06 23:56:15 MST 2018)</item>
 <item name = "Project">lr_standaloneHLS</item>
@@ -80,16 +80,16 @@
 <item name = "Expression"><table name="" hasTotal="1">
 <keys size="7">Variable Name, Operation, DSP48E, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
 <column name="ap_return">+, 0, 0, 39, 1, 32</column>
-<column name="tmp_54_fu_1990_p2">+, 0, 0, 17, 2, 10</column>
-<column name="tmp_55_fu_2009_p2">+, 0, 0, 17, 2, 10</column>
-<column name="tmp_56_fu_2058_p2">+, 0, 0, 17, 3, 10</column>
-<column name="tmp_57_fu_2077_p2">+, 0, 0, 17, 3, 10</column>
-<column name="tmp_58_fu_2126_p2">+, 0, 0, 17, 3, 10</column>
-<column name="tmp_59_fu_2145_p2">+, 0, 0, 17, 3, 10</column>
-<column name="tmp_60_fu_2199_p2">+, 0, 0, 17, 4, 10</column>
-<column name="tmp_61_fu_2218_p2">+, 0, 0, 17, 4, 10</column>
-<column name="tmp_s_fu_1920_p2">+, 0, 0, 17, 10, 10</column>
-<column name="tmp_53_fu_1940_p2">or, 0, 0, 10, 10, 1</column>
+<column name="tmp_10_fu_2199_p2">+, 0, 0, 17, 4, 10</column>
+<column name="tmp_11_fu_2218_p2">+, 0, 0, 17, 4, 10</column>
+<column name="tmp_3_fu_1920_p2">+, 0, 0, 17, 10, 10</column>
+<column name="tmp_5_fu_1990_p2">+, 0, 0, 17, 2, 10</column>
+<column name="tmp_6_fu_2009_p2">+, 0, 0, 17, 2, 10</column>
+<column name="tmp_7_fu_2058_p2">+, 0, 0, 17, 3, 10</column>
+<column name="tmp_8_fu_2077_p2">+, 0, 0, 17, 3, 10</column>
+<column name="tmp_9_fu_2126_p2">+, 0, 0, 17, 3, 10</column>
+<column name="tmp_s_fu_2145_p2">+, 0, 0, 17, 3, 10</column>
+<column name="tmp_4_fu_1940_p2">or, 0, 0, 10, 10, 1</column>
 </table>
 </item>
 <item name = "Multiplexer"><table name="" hasTotal="1">
@@ -140,7 +140,7 @@
 <item name = "Register"><table name="" hasTotal="1">
 <keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
 <column name="ap_CS_fsm">5, 0, 5, 0</column>
-<column name="tmp_s_reg_2248">9, 0, 10, 1</column>
+<column name="tmp_3_reg_2248">9, 0, 10, 1</column>
 </table>
 </item>
 </section>

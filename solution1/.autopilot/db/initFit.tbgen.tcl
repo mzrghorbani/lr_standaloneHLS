@@ -14,12 +14,12 @@ set C_modelType { int 289 }
 set C_modelArgList {
 	{ LinearRegression_settings_chosenRofPhi_read float 32 regular  }
 	{ LinearRegression_settings_chosenRofZ_read float 32 regular  }
-	{ LinearRegression_settings_etaRegions_s float 32 regular {array 19 { 1 3 } 1 1 }  }
+	{ LinearRegression_settings_sinh_etaRegions_s float 32 regular {array 19 { 1 1 } 1 1 }  }
 	{ LinearRegression_settings_minNumMatchLayers_read int 32 regular  }
 	{ LinearRegression_settings_minPSLayers_read int 32 regular  }
 	{ LinearRegression_stubs_data_settings_chosenRofPhi_s float 32 regular {array 10 { 2 0 } 1 1 }  }
 	{ LinearRegression_stubs_data_settings_chosenRofZ_s float 32 regular {array 10 { 2 0 } 1 1 }  }
-	{ LinearRegression_stubs_data_settings_etaRegions_s float 32 regular {array 190 { 2 2 } 1 1 }  }
+	{ LinearRegression_stubs_data_settings_sinh_etaRegions_s float 32 regular {array 190 { 2 2 } 1 1 }  }
 	{ LinearRegression_stubs_data_settings_minNumMatchLayers_s int 32 regular {array 10 { 2 0 } 1 1 }  }
 	{ LinearRegression_stubs_data_settings_minPSLayers_s int 32 regular {array 10 { 2 0 } 1 1 }  }
 	{ LinearRegression_stubs_data_r_s float 32 regular {array 10 { 2 0 } 1 1 }  }
@@ -33,7 +33,7 @@ set C_modelArgList {
 	{ LinearRegression_stubMap_data_second_size_s int 32 regular {array 30 { 2 3 } 1 1 }  }
 	{ LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s float 32 regular {array 300 { 0 0 } 0 1 }  }
 	{ LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s float 32 regular {array 300 { 0 0 } 0 1 }  }
-	{ LinearRegression_stubMap_data_second_data_settings_etaRegions_s float 32 regular {array 5700 { 0 0 } 0 1 }  }
+	{ LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s float 32 regular {array 5700 { 0 0 } 0 1 }  }
 	{ LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s int 32 regular {array 300 { 0 0 } 0 1 }  }
 	{ LinearRegression_stubMap_data_second_data_settings_minPSLayers_s int 32 regular {array 300 { 0 0 } 0 1 }  }
 	{ LinearRegression_stubMap_data_second_data_r_s float 32 regular {array 300 { 0 0 } 0 1 }  }
@@ -58,7 +58,7 @@ set C_modelArgList {
 	{ l1track3D_stubs_size_read int 32 regular  }
 	{ l1track3D_stubs_data_settings_chosenRofPhi_s float 32 regular {array 10 { 1 1 } 1 1 }  }
 	{ l1track3D_stubs_data_settings_chosenRofZ_s float 32 regular {array 10 { 1 1 } 1 1 }  }
-	{ l1track3D_stubs_data_settings_etaRegions_s float 32 regular {array 190 { 1 1 } 1 1 }  }
+	{ l1track3D_stubs_data_settings_sinh_etaRegions_s float 32 regular {array 190 { 1 1 } 1 1 }  }
 	{ l1track3D_stubs_data_settings_minNumMatchLayers_s int 32 regular {array 10 { 1 1 } 1 1 }  }
 	{ l1track3D_stubs_data_settings_minPSLayers_s int 32 regular {array 10 { 1 1 } 1 1 }  }
 	{ l1track3D_stubs_data_r_s float 32 regular {array 10 { 1 1 } 1 1 }  }
@@ -71,12 +71,12 @@ set C_modelArgList {
 set C_modelArgMapList {[ 
 	{ "Name" : "LinearRegression_settings_chosenRofPhi_read", "interface" : "wire", "bitwidth" : 32, "direction" : "READONLY"} , 
  	{ "Name" : "LinearRegression_settings_chosenRofZ_read", "interface" : "wire", "bitwidth" : 32, "direction" : "READONLY"} , 
- 	{ "Name" : "LinearRegression_settings_etaRegions_s", "interface" : "memory", "bitwidth" : 32, "direction" : "READONLY"} , 
+ 	{ "Name" : "LinearRegression_settings_sinh_etaRegions_s", "interface" : "memory", "bitwidth" : 32, "direction" : "READONLY"} , 
  	{ "Name" : "LinearRegression_settings_minNumMatchLayers_read", "interface" : "wire", "bitwidth" : 32, "direction" : "READONLY"} , 
  	{ "Name" : "LinearRegression_settings_minPSLayers_read", "interface" : "wire", "bitwidth" : 32, "direction" : "READONLY"} , 
  	{ "Name" : "LinearRegression_stubs_data_settings_chosenRofPhi_s", "interface" : "memory", "bitwidth" : 32, "direction" : "READWRITE"} , 
  	{ "Name" : "LinearRegression_stubs_data_settings_chosenRofZ_s", "interface" : "memory", "bitwidth" : 32, "direction" : "READWRITE"} , 
- 	{ "Name" : "LinearRegression_stubs_data_settings_etaRegions_s", "interface" : "memory", "bitwidth" : 32, "direction" : "READWRITE"} , 
+ 	{ "Name" : "LinearRegression_stubs_data_settings_sinh_etaRegions_s", "interface" : "memory", "bitwidth" : 32, "direction" : "READWRITE"} , 
  	{ "Name" : "LinearRegression_stubs_data_settings_minNumMatchLayers_s", "interface" : "memory", "bitwidth" : 32, "direction" : "READWRITE"} , 
  	{ "Name" : "LinearRegression_stubs_data_settings_minPSLayers_s", "interface" : "memory", "bitwidth" : 32, "direction" : "READWRITE"} , 
  	{ "Name" : "LinearRegression_stubs_data_r_s", "interface" : "memory", "bitwidth" : 32, "direction" : "READWRITE"} , 
@@ -90,7 +90,7 @@ set C_modelArgMapList {[
  	{ "Name" : "LinearRegression_stubMap_data_second_size_s", "interface" : "memory", "bitwidth" : 32, "direction" : "READWRITE"} , 
  	{ "Name" : "LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s", "interface" : "memory", "bitwidth" : 32, "direction" : "WRITEONLY"} , 
  	{ "Name" : "LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s", "interface" : "memory", "bitwidth" : 32, "direction" : "WRITEONLY"} , 
- 	{ "Name" : "LinearRegression_stubMap_data_second_data_settings_etaRegions_s", "interface" : "memory", "bitwidth" : 32, "direction" : "WRITEONLY"} , 
+ 	{ "Name" : "LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s", "interface" : "memory", "bitwidth" : 32, "direction" : "WRITEONLY"} , 
  	{ "Name" : "LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s", "interface" : "memory", "bitwidth" : 32, "direction" : "WRITEONLY"} , 
  	{ "Name" : "LinearRegression_stubMap_data_second_data_settings_minPSLayers_s", "interface" : "memory", "bitwidth" : 32, "direction" : "WRITEONLY"} , 
  	{ "Name" : "LinearRegression_stubMap_data_second_data_r_s", "interface" : "memory", "bitwidth" : 32, "direction" : "WRITEONLY"} , 
@@ -115,7 +115,7 @@ set C_modelArgMapList {[
  	{ "Name" : "l1track3D_stubs_size_read", "interface" : "wire", "bitwidth" : 32, "direction" : "READONLY"} , 
  	{ "Name" : "l1track3D_stubs_data_settings_chosenRofPhi_s", "interface" : "memory", "bitwidth" : 32, "direction" : "READONLY"} , 
  	{ "Name" : "l1track3D_stubs_data_settings_chosenRofZ_s", "interface" : "memory", "bitwidth" : 32, "direction" : "READONLY"} , 
- 	{ "Name" : "l1track3D_stubs_data_settings_etaRegions_s", "interface" : "memory", "bitwidth" : 32, "direction" : "READONLY"} , 
+ 	{ "Name" : "l1track3D_stubs_data_settings_sinh_etaRegions_s", "interface" : "memory", "bitwidth" : 32, "direction" : "READONLY"} , 
  	{ "Name" : "l1track3D_stubs_data_settings_minNumMatchLayers_s", "interface" : "memory", "bitwidth" : 32, "direction" : "READONLY"} , 
  	{ "Name" : "l1track3D_stubs_data_settings_minPSLayers_s", "interface" : "memory", "bitwidth" : 32, "direction" : "READONLY"} , 
  	{ "Name" : "l1track3D_stubs_data_r_s", "interface" : "memory", "bitwidth" : 32, "direction" : "READONLY"} , 
@@ -126,7 +126,7 @@ set C_modelArgMapList {[
  	{ "Name" : "l1track3D_stubs_data_barrel_s", "interface" : "memory", "bitwidth" : 1, "direction" : "READONLY"} , 
  	{ "Name" : "ap_return", "interface" : "wire", "bitwidth" : 289} ]}
 # RTL Port declarations: 
-set portNum 319
+set portNum 322
 set portList { 
 	{ ap_clk sc_in sc_logic 1 clock -1 } 
 	{ ap_rst sc_in sc_logic 1 reset -1 active_high_sync } 
@@ -136,9 +136,12 @@ set portList {
 	{ ap_ready sc_out sc_logic 1 ready -1 } 
 	{ LinearRegression_settings_chosenRofPhi_read sc_in sc_lv 32 signal 0 } 
 	{ LinearRegression_settings_chosenRofZ_read sc_in sc_lv 32 signal 1 } 
-	{ LinearRegression_settings_etaRegions_s_address0 sc_out sc_lv 5 signal 2 } 
-	{ LinearRegression_settings_etaRegions_s_ce0 sc_out sc_logic 1 signal 2 } 
-	{ LinearRegression_settings_etaRegions_s_q0 sc_in sc_lv 32 signal 2 } 
+	{ LinearRegression_settings_sinh_etaRegions_s_address0 sc_out sc_lv 5 signal 2 } 
+	{ LinearRegression_settings_sinh_etaRegions_s_ce0 sc_out sc_logic 1 signal 2 } 
+	{ LinearRegression_settings_sinh_etaRegions_s_q0 sc_in sc_lv 32 signal 2 } 
+	{ LinearRegression_settings_sinh_etaRegions_s_address1 sc_out sc_lv 5 signal 2 } 
+	{ LinearRegression_settings_sinh_etaRegions_s_ce1 sc_out sc_logic 1 signal 2 } 
+	{ LinearRegression_settings_sinh_etaRegions_s_q1 sc_in sc_lv 32 signal 2 } 
 	{ LinearRegression_settings_minNumMatchLayers_read sc_in sc_lv 32 signal 3 } 
 	{ LinearRegression_settings_minPSLayers_read sc_in sc_lv 32 signal 4 } 
 	{ LinearRegression_stubs_data_settings_chosenRofPhi_s_address0 sc_out sc_lv 4 signal 5 } 
@@ -159,16 +162,16 @@ set portList {
 	{ LinearRegression_stubs_data_settings_chosenRofZ_s_ce1 sc_out sc_logic 1 signal 6 } 
 	{ LinearRegression_stubs_data_settings_chosenRofZ_s_we1 sc_out sc_logic 1 signal 6 } 
 	{ LinearRegression_stubs_data_settings_chosenRofZ_s_d1 sc_out sc_lv 32 signal 6 } 
-	{ LinearRegression_stubs_data_settings_etaRegions_s_address0 sc_out sc_lv 8 signal 7 } 
-	{ LinearRegression_stubs_data_settings_etaRegions_s_ce0 sc_out sc_logic 1 signal 7 } 
-	{ LinearRegression_stubs_data_settings_etaRegions_s_we0 sc_out sc_logic 1 signal 7 } 
-	{ LinearRegression_stubs_data_settings_etaRegions_s_d0 sc_out sc_lv 32 signal 7 } 
-	{ LinearRegression_stubs_data_settings_etaRegions_s_q0 sc_in sc_lv 32 signal 7 } 
-	{ LinearRegression_stubs_data_settings_etaRegions_s_address1 sc_out sc_lv 8 signal 7 } 
-	{ LinearRegression_stubs_data_settings_etaRegions_s_ce1 sc_out sc_logic 1 signal 7 } 
-	{ LinearRegression_stubs_data_settings_etaRegions_s_we1 sc_out sc_logic 1 signal 7 } 
-	{ LinearRegression_stubs_data_settings_etaRegions_s_d1 sc_out sc_lv 32 signal 7 } 
-	{ LinearRegression_stubs_data_settings_etaRegions_s_q1 sc_in sc_lv 32 signal 7 } 
+	{ LinearRegression_stubs_data_settings_sinh_etaRegions_s_address0 sc_out sc_lv 8 signal 7 } 
+	{ LinearRegression_stubs_data_settings_sinh_etaRegions_s_ce0 sc_out sc_logic 1 signal 7 } 
+	{ LinearRegression_stubs_data_settings_sinh_etaRegions_s_we0 sc_out sc_logic 1 signal 7 } 
+	{ LinearRegression_stubs_data_settings_sinh_etaRegions_s_d0 sc_out sc_lv 32 signal 7 } 
+	{ LinearRegression_stubs_data_settings_sinh_etaRegions_s_q0 sc_in sc_lv 32 signal 7 } 
+	{ LinearRegression_stubs_data_settings_sinh_etaRegions_s_address1 sc_out sc_lv 8 signal 7 } 
+	{ LinearRegression_stubs_data_settings_sinh_etaRegions_s_ce1 sc_out sc_logic 1 signal 7 } 
+	{ LinearRegression_stubs_data_settings_sinh_etaRegions_s_we1 sc_out sc_logic 1 signal 7 } 
+	{ LinearRegression_stubs_data_settings_sinh_etaRegions_s_d1 sc_out sc_lv 32 signal 7 } 
+	{ LinearRegression_stubs_data_settings_sinh_etaRegions_s_q1 sc_in sc_lv 32 signal 7 } 
 	{ LinearRegression_stubs_data_settings_minNumMatchLayers_s_address0 sc_out sc_lv 4 signal 8 } 
 	{ LinearRegression_stubs_data_settings_minNumMatchLayers_s_ce0 sc_out sc_logic 1 signal 8 } 
 	{ LinearRegression_stubs_data_settings_minNumMatchLayers_s_we0 sc_out sc_logic 1 signal 8 } 
@@ -271,14 +274,14 @@ set portList {
 	{ LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_ce1 sc_out sc_logic 1 signal 20 } 
 	{ LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_we1 sc_out sc_logic 1 signal 20 } 
 	{ LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_d1 sc_out sc_lv 32 signal 20 } 
-	{ LinearRegression_stubMap_data_second_data_settings_etaRegions_s_address0 sc_out sc_lv 13 signal 21 } 
-	{ LinearRegression_stubMap_data_second_data_settings_etaRegions_s_ce0 sc_out sc_logic 1 signal 21 } 
-	{ LinearRegression_stubMap_data_second_data_settings_etaRegions_s_we0 sc_out sc_logic 1 signal 21 } 
-	{ LinearRegression_stubMap_data_second_data_settings_etaRegions_s_d0 sc_out sc_lv 32 signal 21 } 
-	{ LinearRegression_stubMap_data_second_data_settings_etaRegions_s_address1 sc_out sc_lv 13 signal 21 } 
-	{ LinearRegression_stubMap_data_second_data_settings_etaRegions_s_ce1 sc_out sc_logic 1 signal 21 } 
-	{ LinearRegression_stubMap_data_second_data_settings_etaRegions_s_we1 sc_out sc_logic 1 signal 21 } 
-	{ LinearRegression_stubMap_data_second_data_settings_etaRegions_s_d1 sc_out sc_lv 32 signal 21 } 
+	{ LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_address0 sc_out sc_lv 13 signal 21 } 
+	{ LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_ce0 sc_out sc_logic 1 signal 21 } 
+	{ LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_we0 sc_out sc_logic 1 signal 21 } 
+	{ LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_d0 sc_out sc_lv 32 signal 21 } 
+	{ LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_address1 sc_out sc_lv 13 signal 21 } 
+	{ LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_ce1 sc_out sc_logic 1 signal 21 } 
+	{ LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_we1 sc_out sc_logic 1 signal 21 } 
+	{ LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_d1 sc_out sc_lv 32 signal 21 } 
 	{ LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_address0 sc_out sc_lv 9 signal 22 } 
 	{ LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_ce0 sc_out sc_logic 1 signal 22 } 
 	{ LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_we0 sc_out sc_logic 1 signal 22 } 
@@ -383,12 +386,12 @@ set portList {
 	{ l1track3D_stubs_data_settings_chosenRofZ_s_address1 sc_out sc_lv 4 signal 45 } 
 	{ l1track3D_stubs_data_settings_chosenRofZ_s_ce1 sc_out sc_logic 1 signal 45 } 
 	{ l1track3D_stubs_data_settings_chosenRofZ_s_q1 sc_in sc_lv 32 signal 45 } 
-	{ l1track3D_stubs_data_settings_etaRegions_s_address0 sc_out sc_lv 8 signal 46 } 
-	{ l1track3D_stubs_data_settings_etaRegions_s_ce0 sc_out sc_logic 1 signal 46 } 
-	{ l1track3D_stubs_data_settings_etaRegions_s_q0 sc_in sc_lv 32 signal 46 } 
-	{ l1track3D_stubs_data_settings_etaRegions_s_address1 sc_out sc_lv 8 signal 46 } 
-	{ l1track3D_stubs_data_settings_etaRegions_s_ce1 sc_out sc_logic 1 signal 46 } 
-	{ l1track3D_stubs_data_settings_etaRegions_s_q1 sc_in sc_lv 32 signal 46 } 
+	{ l1track3D_stubs_data_settings_sinh_etaRegions_s_address0 sc_out sc_lv 8 signal 46 } 
+	{ l1track3D_stubs_data_settings_sinh_etaRegions_s_ce0 sc_out sc_logic 1 signal 46 } 
+	{ l1track3D_stubs_data_settings_sinh_etaRegions_s_q0 sc_in sc_lv 32 signal 46 } 
+	{ l1track3D_stubs_data_settings_sinh_etaRegions_s_address1 sc_out sc_lv 8 signal 46 } 
+	{ l1track3D_stubs_data_settings_sinh_etaRegions_s_ce1 sc_out sc_logic 1 signal 46 } 
+	{ l1track3D_stubs_data_settings_sinh_etaRegions_s_q1 sc_in sc_lv 32 signal 46 } 
 	{ l1track3D_stubs_data_settings_minNumMatchLayers_s_address0 sc_out sc_lv 4 signal 47 } 
 	{ l1track3D_stubs_data_settings_minNumMatchLayers_s_ce0 sc_out sc_logic 1 signal 47 } 
 	{ l1track3D_stubs_data_settings_minNumMatchLayers_s_q0 sc_in sc_lv 32 signal 47 } 
@@ -457,9 +460,12 @@ set NewPortList {[
  	{ "name": "ap_ready", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "ready", "bundle":{"name": "ap_ready", "role": "default" }} , 
  	{ "name": "LinearRegression_settings_chosenRofPhi_read", "direction": "in", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "LinearRegression_settings_chosenRofPhi_read", "role": "default" }} , 
  	{ "name": "LinearRegression_settings_chosenRofZ_read", "direction": "in", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "LinearRegression_settings_chosenRofZ_read", "role": "default" }} , 
- 	{ "name": "LinearRegression_settings_etaRegions_s_address0", "direction": "out", "datatype": "sc_lv", "bitwidth":5, "type": "signal", "bundle":{"name": "LinearRegression_settings_etaRegions_s", "role": "address0" }} , 
- 	{ "name": "LinearRegression_settings_etaRegions_s_ce0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "LinearRegression_settings_etaRegions_s", "role": "ce0" }} , 
- 	{ "name": "LinearRegression_settings_etaRegions_s_q0", "direction": "in", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "LinearRegression_settings_etaRegions_s", "role": "q0" }} , 
+ 	{ "name": "LinearRegression_settings_sinh_etaRegions_s_address0", "direction": "out", "datatype": "sc_lv", "bitwidth":5, "type": "signal", "bundle":{"name": "LinearRegression_settings_sinh_etaRegions_s", "role": "address0" }} , 
+ 	{ "name": "LinearRegression_settings_sinh_etaRegions_s_ce0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "LinearRegression_settings_sinh_etaRegions_s", "role": "ce0" }} , 
+ 	{ "name": "LinearRegression_settings_sinh_etaRegions_s_q0", "direction": "in", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "LinearRegression_settings_sinh_etaRegions_s", "role": "q0" }} , 
+ 	{ "name": "LinearRegression_settings_sinh_etaRegions_s_address1", "direction": "out", "datatype": "sc_lv", "bitwidth":5, "type": "signal", "bundle":{"name": "LinearRegression_settings_sinh_etaRegions_s", "role": "address1" }} , 
+ 	{ "name": "LinearRegression_settings_sinh_etaRegions_s_ce1", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "LinearRegression_settings_sinh_etaRegions_s", "role": "ce1" }} , 
+ 	{ "name": "LinearRegression_settings_sinh_etaRegions_s_q1", "direction": "in", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "LinearRegression_settings_sinh_etaRegions_s", "role": "q1" }} , 
  	{ "name": "LinearRegression_settings_minNumMatchLayers_read", "direction": "in", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "LinearRegression_settings_minNumMatchLayers_read", "role": "default" }} , 
  	{ "name": "LinearRegression_settings_minPSLayers_read", "direction": "in", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "LinearRegression_settings_minPSLayers_read", "role": "default" }} , 
  	{ "name": "LinearRegression_stubs_data_settings_chosenRofPhi_s_address0", "direction": "out", "datatype": "sc_lv", "bitwidth":4, "type": "signal", "bundle":{"name": "LinearRegression_stubs_data_settings_chosenRofPhi_s", "role": "address0" }} , 
@@ -480,16 +486,16 @@ set NewPortList {[
  	{ "name": "LinearRegression_stubs_data_settings_chosenRofZ_s_ce1", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "LinearRegression_stubs_data_settings_chosenRofZ_s", "role": "ce1" }} , 
  	{ "name": "LinearRegression_stubs_data_settings_chosenRofZ_s_we1", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "LinearRegression_stubs_data_settings_chosenRofZ_s", "role": "we1" }} , 
  	{ "name": "LinearRegression_stubs_data_settings_chosenRofZ_s_d1", "direction": "out", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "LinearRegression_stubs_data_settings_chosenRofZ_s", "role": "d1" }} , 
- 	{ "name": "LinearRegression_stubs_data_settings_etaRegions_s_address0", "direction": "out", "datatype": "sc_lv", "bitwidth":8, "type": "signal", "bundle":{"name": "LinearRegression_stubs_data_settings_etaRegions_s", "role": "address0" }} , 
- 	{ "name": "LinearRegression_stubs_data_settings_etaRegions_s_ce0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "LinearRegression_stubs_data_settings_etaRegions_s", "role": "ce0" }} , 
- 	{ "name": "LinearRegression_stubs_data_settings_etaRegions_s_we0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "LinearRegression_stubs_data_settings_etaRegions_s", "role": "we0" }} , 
- 	{ "name": "LinearRegression_stubs_data_settings_etaRegions_s_d0", "direction": "out", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "LinearRegression_stubs_data_settings_etaRegions_s", "role": "d0" }} , 
- 	{ "name": "LinearRegression_stubs_data_settings_etaRegions_s_q0", "direction": "in", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "LinearRegression_stubs_data_settings_etaRegions_s", "role": "q0" }} , 
- 	{ "name": "LinearRegression_stubs_data_settings_etaRegions_s_address1", "direction": "out", "datatype": "sc_lv", "bitwidth":8, "type": "signal", "bundle":{"name": "LinearRegression_stubs_data_settings_etaRegions_s", "role": "address1" }} , 
- 	{ "name": "LinearRegression_stubs_data_settings_etaRegions_s_ce1", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "LinearRegression_stubs_data_settings_etaRegions_s", "role": "ce1" }} , 
- 	{ "name": "LinearRegression_stubs_data_settings_etaRegions_s_we1", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "LinearRegression_stubs_data_settings_etaRegions_s", "role": "we1" }} , 
- 	{ "name": "LinearRegression_stubs_data_settings_etaRegions_s_d1", "direction": "out", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "LinearRegression_stubs_data_settings_etaRegions_s", "role": "d1" }} , 
- 	{ "name": "LinearRegression_stubs_data_settings_etaRegions_s_q1", "direction": "in", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "LinearRegression_stubs_data_settings_etaRegions_s", "role": "q1" }} , 
+ 	{ "name": "LinearRegression_stubs_data_settings_sinh_etaRegions_s_address0", "direction": "out", "datatype": "sc_lv", "bitwidth":8, "type": "signal", "bundle":{"name": "LinearRegression_stubs_data_settings_sinh_etaRegions_s", "role": "address0" }} , 
+ 	{ "name": "LinearRegression_stubs_data_settings_sinh_etaRegions_s_ce0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "LinearRegression_stubs_data_settings_sinh_etaRegions_s", "role": "ce0" }} , 
+ 	{ "name": "LinearRegression_stubs_data_settings_sinh_etaRegions_s_we0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "LinearRegression_stubs_data_settings_sinh_etaRegions_s", "role": "we0" }} , 
+ 	{ "name": "LinearRegression_stubs_data_settings_sinh_etaRegions_s_d0", "direction": "out", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "LinearRegression_stubs_data_settings_sinh_etaRegions_s", "role": "d0" }} , 
+ 	{ "name": "LinearRegression_stubs_data_settings_sinh_etaRegions_s_q0", "direction": "in", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "LinearRegression_stubs_data_settings_sinh_etaRegions_s", "role": "q0" }} , 
+ 	{ "name": "LinearRegression_stubs_data_settings_sinh_etaRegions_s_address1", "direction": "out", "datatype": "sc_lv", "bitwidth":8, "type": "signal", "bundle":{"name": "LinearRegression_stubs_data_settings_sinh_etaRegions_s", "role": "address1" }} , 
+ 	{ "name": "LinearRegression_stubs_data_settings_sinh_etaRegions_s_ce1", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "LinearRegression_stubs_data_settings_sinh_etaRegions_s", "role": "ce1" }} , 
+ 	{ "name": "LinearRegression_stubs_data_settings_sinh_etaRegions_s_we1", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "LinearRegression_stubs_data_settings_sinh_etaRegions_s", "role": "we1" }} , 
+ 	{ "name": "LinearRegression_stubs_data_settings_sinh_etaRegions_s_d1", "direction": "out", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "LinearRegression_stubs_data_settings_sinh_etaRegions_s", "role": "d1" }} , 
+ 	{ "name": "LinearRegression_stubs_data_settings_sinh_etaRegions_s_q1", "direction": "in", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "LinearRegression_stubs_data_settings_sinh_etaRegions_s", "role": "q1" }} , 
  	{ "name": "LinearRegression_stubs_data_settings_minNumMatchLayers_s_address0", "direction": "out", "datatype": "sc_lv", "bitwidth":4, "type": "signal", "bundle":{"name": "LinearRegression_stubs_data_settings_minNumMatchLayers_s", "role": "address0" }} , 
  	{ "name": "LinearRegression_stubs_data_settings_minNumMatchLayers_s_ce0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "LinearRegression_stubs_data_settings_minNumMatchLayers_s", "role": "ce0" }} , 
  	{ "name": "LinearRegression_stubs_data_settings_minNumMatchLayers_s_we0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "LinearRegression_stubs_data_settings_minNumMatchLayers_s", "role": "we0" }} , 
@@ -592,14 +598,14 @@ set NewPortList {[
  	{ "name": "LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_ce1", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s", "role": "ce1" }} , 
  	{ "name": "LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_we1", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s", "role": "we1" }} , 
  	{ "name": "LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_d1", "direction": "out", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s", "role": "d1" }} , 
- 	{ "name": "LinearRegression_stubMap_data_second_data_settings_etaRegions_s_address0", "direction": "out", "datatype": "sc_lv", "bitwidth":13, "type": "signal", "bundle":{"name": "LinearRegression_stubMap_data_second_data_settings_etaRegions_s", "role": "address0" }} , 
- 	{ "name": "LinearRegression_stubMap_data_second_data_settings_etaRegions_s_ce0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "LinearRegression_stubMap_data_second_data_settings_etaRegions_s", "role": "ce0" }} , 
- 	{ "name": "LinearRegression_stubMap_data_second_data_settings_etaRegions_s_we0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "LinearRegression_stubMap_data_second_data_settings_etaRegions_s", "role": "we0" }} , 
- 	{ "name": "LinearRegression_stubMap_data_second_data_settings_etaRegions_s_d0", "direction": "out", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "LinearRegression_stubMap_data_second_data_settings_etaRegions_s", "role": "d0" }} , 
- 	{ "name": "LinearRegression_stubMap_data_second_data_settings_etaRegions_s_address1", "direction": "out", "datatype": "sc_lv", "bitwidth":13, "type": "signal", "bundle":{"name": "LinearRegression_stubMap_data_second_data_settings_etaRegions_s", "role": "address1" }} , 
- 	{ "name": "LinearRegression_stubMap_data_second_data_settings_etaRegions_s_ce1", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "LinearRegression_stubMap_data_second_data_settings_etaRegions_s", "role": "ce1" }} , 
- 	{ "name": "LinearRegression_stubMap_data_second_data_settings_etaRegions_s_we1", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "LinearRegression_stubMap_data_second_data_settings_etaRegions_s", "role": "we1" }} , 
- 	{ "name": "LinearRegression_stubMap_data_second_data_settings_etaRegions_s_d1", "direction": "out", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "LinearRegression_stubMap_data_second_data_settings_etaRegions_s", "role": "d1" }} , 
+ 	{ "name": "LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_address0", "direction": "out", "datatype": "sc_lv", "bitwidth":13, "type": "signal", "bundle":{"name": "LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s", "role": "address0" }} , 
+ 	{ "name": "LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_ce0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s", "role": "ce0" }} , 
+ 	{ "name": "LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_we0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s", "role": "we0" }} , 
+ 	{ "name": "LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_d0", "direction": "out", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s", "role": "d0" }} , 
+ 	{ "name": "LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_address1", "direction": "out", "datatype": "sc_lv", "bitwidth":13, "type": "signal", "bundle":{"name": "LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s", "role": "address1" }} , 
+ 	{ "name": "LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_ce1", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s", "role": "ce1" }} , 
+ 	{ "name": "LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_we1", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s", "role": "we1" }} , 
+ 	{ "name": "LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_d1", "direction": "out", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s", "role": "d1" }} , 
  	{ "name": "LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_address0", "direction": "out", "datatype": "sc_lv", "bitwidth":9, "type": "signal", "bundle":{"name": "LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s", "role": "address0" }} , 
  	{ "name": "LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_ce0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s", "role": "ce0" }} , 
  	{ "name": "LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_we0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s", "role": "we0" }} , 
@@ -704,12 +710,12 @@ set NewPortList {[
  	{ "name": "l1track3D_stubs_data_settings_chosenRofZ_s_address1", "direction": "out", "datatype": "sc_lv", "bitwidth":4, "type": "signal", "bundle":{"name": "l1track3D_stubs_data_settings_chosenRofZ_s", "role": "address1" }} , 
  	{ "name": "l1track3D_stubs_data_settings_chosenRofZ_s_ce1", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "l1track3D_stubs_data_settings_chosenRofZ_s", "role": "ce1" }} , 
  	{ "name": "l1track3D_stubs_data_settings_chosenRofZ_s_q1", "direction": "in", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "l1track3D_stubs_data_settings_chosenRofZ_s", "role": "q1" }} , 
- 	{ "name": "l1track3D_stubs_data_settings_etaRegions_s_address0", "direction": "out", "datatype": "sc_lv", "bitwidth":8, "type": "signal", "bundle":{"name": "l1track3D_stubs_data_settings_etaRegions_s", "role": "address0" }} , 
- 	{ "name": "l1track3D_stubs_data_settings_etaRegions_s_ce0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "l1track3D_stubs_data_settings_etaRegions_s", "role": "ce0" }} , 
- 	{ "name": "l1track3D_stubs_data_settings_etaRegions_s_q0", "direction": "in", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "l1track3D_stubs_data_settings_etaRegions_s", "role": "q0" }} , 
- 	{ "name": "l1track3D_stubs_data_settings_etaRegions_s_address1", "direction": "out", "datatype": "sc_lv", "bitwidth":8, "type": "signal", "bundle":{"name": "l1track3D_stubs_data_settings_etaRegions_s", "role": "address1" }} , 
- 	{ "name": "l1track3D_stubs_data_settings_etaRegions_s_ce1", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "l1track3D_stubs_data_settings_etaRegions_s", "role": "ce1" }} , 
- 	{ "name": "l1track3D_stubs_data_settings_etaRegions_s_q1", "direction": "in", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "l1track3D_stubs_data_settings_etaRegions_s", "role": "q1" }} , 
+ 	{ "name": "l1track3D_stubs_data_settings_sinh_etaRegions_s_address0", "direction": "out", "datatype": "sc_lv", "bitwidth":8, "type": "signal", "bundle":{"name": "l1track3D_stubs_data_settings_sinh_etaRegions_s", "role": "address0" }} , 
+ 	{ "name": "l1track3D_stubs_data_settings_sinh_etaRegions_s_ce0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "l1track3D_stubs_data_settings_sinh_etaRegions_s", "role": "ce0" }} , 
+ 	{ "name": "l1track3D_stubs_data_settings_sinh_etaRegions_s_q0", "direction": "in", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "l1track3D_stubs_data_settings_sinh_etaRegions_s", "role": "q0" }} , 
+ 	{ "name": "l1track3D_stubs_data_settings_sinh_etaRegions_s_address1", "direction": "out", "datatype": "sc_lv", "bitwidth":8, "type": "signal", "bundle":{"name": "l1track3D_stubs_data_settings_sinh_etaRegions_s", "role": "address1" }} , 
+ 	{ "name": "l1track3D_stubs_data_settings_sinh_etaRegions_s_ce1", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "l1track3D_stubs_data_settings_sinh_etaRegions_s", "role": "ce1" }} , 
+ 	{ "name": "l1track3D_stubs_data_settings_sinh_etaRegions_s_q1", "direction": "in", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "l1track3D_stubs_data_settings_sinh_etaRegions_s", "role": "q1" }} , 
  	{ "name": "l1track3D_stubs_data_settings_minNumMatchLayers_s_address0", "direction": "out", "datatype": "sc_lv", "bitwidth":4, "type": "signal", "bundle":{"name": "l1track3D_stubs_data_settings_minNumMatchLayers_s", "role": "address0" }} , 
  	{ "name": "l1track3D_stubs_data_settings_minNumMatchLayers_s_ce0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "l1track3D_stubs_data_settings_minNumMatchLayers_s", "role": "ce0" }} , 
  	{ "name": "l1track3D_stubs_data_settings_minNumMatchLayers_s_q0", "direction": "in", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "l1track3D_stubs_data_settings_minNumMatchLayers_s", "role": "q0" }} , 
@@ -770,7 +776,7 @@ set NewPortList {[
  	{ "name": "ap_return_9", "direction": "out", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "ap_return_9", "role": "default" }}  ]}
 
 set RtlHierarchyInfo {[
-	{"ID" : "0", "Level" : "0", "Path" : "`AUTOTB_DUT_INST", "Parent" : "", "Child" : ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "20", "21", "23", "24", "25", "26", "27"],
+	{"ID" : "0", "Level" : "0", "Path" : "`AUTOTB_DUT_INST", "Parent" : "", "Child" : ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "14", "15", "16", "17", "18"],
 		"CDFG" : "initFit",
 		"Protocol" : "ap_ctrl_hs",
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1",
@@ -784,20 +790,18 @@ set RtlHierarchyInfo {[
 		"InDataflowNetwork" : "0",
 		"HasNonBlockingOperation" : "0",
 		"WaitState" : [
-			{"State" : "ap_ST_fsm_state86", "FSM" : "ap_CS_fsm", "SubInstance" : "grp_sinh_cosh_range_redu_fu_7846"},
-			{"State" : "ap_ST_fsm_state88", "FSM" : "ap_CS_fsm", "SubInstance" : "grp_sinh_cosh_range_redu_fu_7846"},
-			{"State" : "ap_ST_fsm_state110", "FSM" : "ap_CS_fsm", "SubInstance" : "grp_push_back_1_fu_7854"},
-			{"State" : "ap_ST_fsm_state86", "FSM" : "ap_CS_fsm", "SubInstance" : "grp_countStubLayers_fu_8004"},
-			{"State" : "ap_ST_fsm_state88", "FSM" : "ap_CS_fsm", "SubInstance" : "grp_countStubLayers_fu_8004"}],
+			{"State" : "ap_ST_fsm_state108", "FSM" : "ap_CS_fsm", "SubInstance" : "grp_push_back_1_fu_7806"},
+			{"State" : "ap_ST_fsm_state94", "FSM" : "ap_CS_fsm", "SubInstance" : "grp_countStubLayers_fu_7956"},
+			{"State" : "ap_ST_fsm_state96", "FSM" : "ap_CS_fsm", "SubInstance" : "grp_countStubLayers_fu_7956"}],
 		"Port" : [
 			{"Name" : "LinearRegression_settings_chosenRofPhi_read", "Type" : "None", "Direction" : "I"},
 			{"Name" : "LinearRegression_settings_chosenRofZ_read", "Type" : "None", "Direction" : "I"},
-			{"Name" : "LinearRegression_settings_etaRegions_s", "Type" : "Memory", "Direction" : "I"},
+			{"Name" : "LinearRegression_settings_sinh_etaRegions_s", "Type" : "Memory", "Direction" : "I"},
 			{"Name" : "LinearRegression_settings_minNumMatchLayers_read", "Type" : "None", "Direction" : "I"},
 			{"Name" : "LinearRegression_settings_minPSLayers_read", "Type" : "None", "Direction" : "I"},
 			{"Name" : "LinearRegression_stubs_data_settings_chosenRofPhi_s", "Type" : "Memory", "Direction" : "IO"},
 			{"Name" : "LinearRegression_stubs_data_settings_chosenRofZ_s", "Type" : "Memory", "Direction" : "IO"},
-			{"Name" : "LinearRegression_stubs_data_settings_etaRegions_s", "Type" : "Memory", "Direction" : "IO"},
+			{"Name" : "LinearRegression_stubs_data_settings_sinh_etaRegions_s", "Type" : "Memory", "Direction" : "IO"},
 			{"Name" : "LinearRegression_stubs_data_settings_minNumMatchLayers_s", "Type" : "Memory", "Direction" : "IO"},
 			{"Name" : "LinearRegression_stubs_data_settings_minPSLayers_s", "Type" : "Memory", "Direction" : "IO"},
 			{"Name" : "LinearRegression_stubs_data_r_s", "Type" : "Memory", "Direction" : "IO"},
@@ -805,51 +809,51 @@ set RtlHierarchyInfo {[
 			{"Name" : "LinearRegression_stubs_data_z_s", "Type" : "Memory", "Direction" : "IO"},
 			{"Name" : "LinearRegression_stubs_data_layerId_s", "Type" : "Memory", "Direction" : "IO",
 				"SubConnect" : [
-					{"ID" : "21", "SubInstance" : "grp_countStubLayers_fu_8004", "Port" : "stubs_data_layerId_s"}]},
+					{"ID" : "12", "SubInstance" : "grp_countStubLayers_fu_7956", "Port" : "stubs_data_layerId_s"}]},
 			{"Name" : "LinearRegression_stubs_data_psModule_s", "Type" : "Memory", "Direction" : "IO",
 				"SubConnect" : [
-					{"ID" : "21", "SubInstance" : "grp_countStubLayers_fu_8004", "Port" : "stubs_data_psModule_s"}]},
+					{"ID" : "12", "SubInstance" : "grp_countStubLayers_fu_7956", "Port" : "stubs_data_psModule_s"}]},
 			{"Name" : "LinearRegression_stubs_data_barrel_s", "Type" : "Memory", "Direction" : "IO",
 				"SubConnect" : [
-					{"ID" : "21", "SubInstance" : "grp_countStubLayers_fu_8004", "Port" : "stubs_data_barrel_s"}]},
+					{"ID" : "12", "SubInstance" : "grp_countStubLayers_fu_7956", "Port" : "stubs_data_barrel_s"}]},
 			{"Name" : "LinearRegression_stubMap_size_read", "Type" : "None", "Direction" : "I"},
 			{"Name" : "LinearRegression_stubMap_data_first", "Type" : "Memory", "Direction" : "IO",
 				"SubConnect" : [
-					{"ID" : "20", "SubInstance" : "grp_push_back_1_fu_7854", "Port" : "mapHLS_unsigned_int_arrayHLS_Stub_data_first"}]},
+					{"ID" : "11", "SubInstance" : "grp_push_back_1_fu_7806", "Port" : "mapHLS_unsigned_int_arrayHLS_Stub_data_first"}]},
 			{"Name" : "LinearRegression_stubMap_data_second_size_s", "Type" : "Memory", "Direction" : "IO",
 				"SubConnect" : [
-					{"ID" : "20", "SubInstance" : "grp_push_back_1_fu_7854", "Port" : "mapHLS_unsigned_int_arrayHLS_Stub_data_second_size_s"}]},
+					{"ID" : "11", "SubInstance" : "grp_push_back_1_fu_7806", "Port" : "mapHLS_unsigned_int_arrayHLS_Stub_data_second_size_s"}]},
 			{"Name" : "LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s", "Type" : "Memory", "Direction" : "O",
 				"SubConnect" : [
-					{"ID" : "20", "SubInstance" : "grp_push_back_1_fu_7854", "Port" : "mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofPhi_s"}]},
+					{"ID" : "11", "SubInstance" : "grp_push_back_1_fu_7806", "Port" : "mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofPhi_s"}]},
 			{"Name" : "LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s", "Type" : "Memory", "Direction" : "O",
 				"SubConnect" : [
-					{"ID" : "20", "SubInstance" : "grp_push_back_1_fu_7854", "Port" : "mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofZ_s"}]},
-			{"Name" : "LinearRegression_stubMap_data_second_data_settings_etaRegions_s", "Type" : "Memory", "Direction" : "O"},
+					{"ID" : "11", "SubInstance" : "grp_push_back_1_fu_7806", "Port" : "mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofZ_s"}]},
+			{"Name" : "LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s", "Type" : "Memory", "Direction" : "O"},
 			{"Name" : "LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s", "Type" : "Memory", "Direction" : "O",
 				"SubConnect" : [
-					{"ID" : "20", "SubInstance" : "grp_push_back_1_fu_7854", "Port" : "mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minNumMatchLayers_s"}]},
+					{"ID" : "11", "SubInstance" : "grp_push_back_1_fu_7806", "Port" : "mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minNumMatchLayers_s"}]},
 			{"Name" : "LinearRegression_stubMap_data_second_data_settings_minPSLayers_s", "Type" : "Memory", "Direction" : "O",
 				"SubConnect" : [
-					{"ID" : "20", "SubInstance" : "grp_push_back_1_fu_7854", "Port" : "mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minPSLayers_s"}]},
+					{"ID" : "11", "SubInstance" : "grp_push_back_1_fu_7806", "Port" : "mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minPSLayers_s"}]},
 			{"Name" : "LinearRegression_stubMap_data_second_data_r_s", "Type" : "Memory", "Direction" : "O",
 				"SubConnect" : [
-					{"ID" : "20", "SubInstance" : "grp_push_back_1_fu_7854", "Port" : "mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_r_s"}]},
+					{"ID" : "11", "SubInstance" : "grp_push_back_1_fu_7806", "Port" : "mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_r_s"}]},
 			{"Name" : "LinearRegression_stubMap_data_second_data_phi_s", "Type" : "Memory", "Direction" : "O",
 				"SubConnect" : [
-					{"ID" : "20", "SubInstance" : "grp_push_back_1_fu_7854", "Port" : "mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_phi_s"}]},
+					{"ID" : "11", "SubInstance" : "grp_push_back_1_fu_7806", "Port" : "mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_phi_s"}]},
 			{"Name" : "LinearRegression_stubMap_data_second_data_z_s", "Type" : "Memory", "Direction" : "O",
 				"SubConnect" : [
-					{"ID" : "20", "SubInstance" : "grp_push_back_1_fu_7854", "Port" : "mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_z_s"}]},
+					{"ID" : "11", "SubInstance" : "grp_push_back_1_fu_7806", "Port" : "mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_z_s"}]},
 			{"Name" : "LinearRegression_stubMap_data_second_data_layerId_s", "Type" : "Memory", "Direction" : "O",
 				"SubConnect" : [
-					{"ID" : "20", "SubInstance" : "grp_push_back_1_fu_7854", "Port" : "mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_layerId_s"}]},
+					{"ID" : "11", "SubInstance" : "grp_push_back_1_fu_7806", "Port" : "mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_layerId_s"}]},
 			{"Name" : "LinearRegression_stubMap_data_second_data_psModule_s", "Type" : "Memory", "Direction" : "O",
 				"SubConnect" : [
-					{"ID" : "20", "SubInstance" : "grp_push_back_1_fu_7854", "Port" : "mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_psModule_s"}]},
+					{"ID" : "11", "SubInstance" : "grp_push_back_1_fu_7806", "Port" : "mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_psModule_s"}]},
 			{"Name" : "LinearRegression_stubMap_data_second_data_barrel_s", "Type" : "Memory", "Direction" : "O",
 				"SubConnect" : [
-					{"ID" : "20", "SubInstance" : "grp_push_back_1_fu_7854", "Port" : "mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_barrel_s"}]},
+					{"ID" : "11", "SubInstance" : "grp_push_back_1_fu_7806", "Port" : "mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_barrel_s"}]},
 			{"Name" : "LinearRegression_layerPopulation_size_read", "Type" : "None", "Direction" : "I"},
 			{"Name" : "LinearRegression_layerPopulation_data_first", "Type" : "Memory", "Direction" : "IO"},
 			{"Name" : "LinearRegression_layerPopulation_data_second", "Type" : "Memory", "Direction" : "IO"},
@@ -866,7 +870,7 @@ set RtlHierarchyInfo {[
 			{"Name" : "l1track3D_stubs_size_read", "Type" : "None", "Direction" : "I"},
 			{"Name" : "l1track3D_stubs_data_settings_chosenRofPhi_s", "Type" : "Memory", "Direction" : "I"},
 			{"Name" : "l1track3D_stubs_data_settings_chosenRofZ_s", "Type" : "Memory", "Direction" : "I"},
-			{"Name" : "l1track3D_stubs_data_settings_etaRegions_s", "Type" : "Memory", "Direction" : "I"},
+			{"Name" : "l1track3D_stubs_data_settings_sinh_etaRegions_s", "Type" : "Memory", "Direction" : "I"},
 			{"Name" : "l1track3D_stubs_data_settings_minNumMatchLayers_s", "Type" : "Memory", "Direction" : "I"},
 			{"Name" : "l1track3D_stubs_data_settings_minPSLayers_s", "Type" : "Memory", "Direction" : "I"},
 			{"Name" : "l1track3D_stubs_data_r_s", "Type" : "Memory", "Direction" : "I"},
@@ -874,10 +878,7 @@ set RtlHierarchyInfo {[
 			{"Name" : "l1track3D_stubs_data_z_s", "Type" : "Memory", "Direction" : "I"},
 			{"Name" : "l1track3D_stubs_data_layerId_s", "Type" : "Memory", "Direction" : "I"},
 			{"Name" : "l1track3D_stubs_data_psModule_s", "Type" : "Memory", "Direction" : "I"},
-			{"Name" : "l1track3D_stubs_data_barrel_s", "Type" : "Memory", "Direction" : "I"},
-			{"Name" : "cordic_hyperb_table_s", "Type" : "Memory", "Direction" : "I",
-				"SubConnect" : [
-					{"ID" : "11", "SubInstance" : "grp_sinh_cosh_range_redu_fu_7846", "Port" : "cordic_hyperb_table_s"}]}]},
+			{"Name" : "l1track3D_stubs_data_barrel_s", "Type" : "Memory", "Direction" : "I"}]},
 	{"ID" : "1", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.b_data_settings_ch_U", "Parent" : "0"},
 	{"ID" : "2", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.b_data_settings_ch_88_U", "Parent" : "0"},
 	{"ID" : "3", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.b_data_settings_mi_U", "Parent" : "0"},
@@ -888,62 +889,7 @@ set RtlHierarchyInfo {[
 	{"ID" : "8", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.b_data_layerId_ass_U", "Parent" : "0"},
 	{"ID" : "9", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.b_data_psModule_as_U", "Parent" : "0"},
 	{"ID" : "10", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.b_data_barrel_assi_U", "Parent" : "0"},
-	{"ID" : "11", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.grp_sinh_cosh_range_redu_fu_7846", "Parent" : "0", "Child" : ["12", "13", "14", "15", "16", "17", "18", "19"],
-		"CDFG" : "sinh_cosh_range_redu",
-		"Protocol" : "ap_ctrl_hs",
-		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1",
-		"Pipeline" : "None", "UnalignedPipeline" : "0", "RewindPipeline" : "0", "ProcessNetwork" : "0",
-		"II" : "0",
-		"VariableLatency" : "1", "ExactLatency" : "-1", "EstimateLatencyMin" : "1", "EstimateLatencyMax" : "134",
-		"Combinational" : "0",
-		"Datapath" : "0",
-		"ClockEnable" : "0",
-		"HasSubDataflow" : "0",
-		"InDataflowNetwork" : "0",
-		"HasNonBlockingOperation" : "0",
-		"WaitState" : [
-			{"State" : "ap_ST_fsm_state2", "FSM" : "ap_CS_fsm", "SubInstance" : "grp_big_mult_v3small_fu_243"},
-			{"State" : "ap_ST_fsm_state3", "FSM" : "ap_CS_fsm", "SubInstance" : "grp_big_mult_v3small_1_fu_248"}],
-		"Port" : [
-			{"Name" : "d", "Type" : "None", "Direction" : "I"},
-			{"Name" : "cordic_hyperb_table_s", "Type" : "Memory", "Direction" : "I"}]},
-	{"ID" : "12", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_sinh_cosh_range_redu_fu_7846.cordic_hyperb_table_s_U", "Parent" : "11"},
-	{"ID" : "13", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_sinh_cosh_range_redu_fu_7846.grp_big_mult_v3small_fu_243", "Parent" : "11",
-		"CDFG" : "big_mult_v3small",
-		"Protocol" : "ap_ctrl_hs",
-		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1",
-		"Pipeline" : "None", "UnalignedPipeline" : "0", "RewindPipeline" : "0", "ProcessNetwork" : "0",
-		"II" : "0",
-		"VariableLatency" : "1", "ExactLatency" : "-1", "EstimateLatencyMin" : "13", "EstimateLatencyMax" : "13",
-		"Combinational" : "0",
-		"Datapath" : "0",
-		"ClockEnable" : "0",
-		"HasSubDataflow" : "0",
-		"InDataflowNetwork" : "0",
-		"HasNonBlockingOperation" : "0",
-		"Port" : [
-			{"Name" : "a_V", "Type" : "None", "Direction" : "I"}]},
-	{"ID" : "14", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_sinh_cosh_range_redu_fu_7846.grp_big_mult_v3small_1_fu_248", "Parent" : "11",
-		"CDFG" : "big_mult_v3small_1",
-		"Protocol" : "ap_ctrl_hs",
-		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1",
-		"Pipeline" : "None", "UnalignedPipeline" : "0", "RewindPipeline" : "0", "ProcessNetwork" : "0",
-		"II" : "0",
-		"VariableLatency" : "1", "ExactLatency" : "-1", "EstimateLatencyMin" : "13", "EstimateLatencyMax" : "13",
-		"Combinational" : "0",
-		"Datapath" : "0",
-		"ClockEnable" : "0",
-		"HasSubDataflow" : "0",
-		"InDataflowNetwork" : "0",
-		"HasNonBlockingOperation" : "0",
-		"Port" : [
-			{"Name" : "a_V", "Type" : "None", "Direction" : "I"}]},
-	{"ID" : "15", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_sinh_cosh_range_redu_fu_7846.LRupdateHLS_faddfsub_32ns_32ns_32_4_full_dsp_1_U3", "Parent" : "11"},
-	{"ID" : "16", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_sinh_cosh_range_redu_fu_7846.LRupdateHLS_fadd_32ns_32ns_32_4_full_dsp_1_U4", "Parent" : "11"},
-	{"ID" : "17", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_sinh_cosh_range_redu_fu_7846.LRupdateHLS_fmul_32ns_32ns_32_2_max_dsp_1_U5", "Parent" : "11"},
-	{"ID" : "18", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_sinh_cosh_range_redu_fu_7846.LRupdateHLS_fmul_32ns_32ns_32_2_max_dsp_1_U6", "Parent" : "11"},
-	{"ID" : "19", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_sinh_cosh_range_redu_fu_7846.LRupdateHLS_fcmp_32ns_32ns_1_1_1_U7", "Parent" : "11"},
-	{"ID" : "20", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.grp_push_back_1_fu_7854", "Parent" : "0",
+	{"ID" : "11", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.grp_push_back_1_fu_7806", "Parent" : "0",
 		"CDFG" : "push_back_1",
 		"Protocol" : "ap_ctrl_hs",
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1",
@@ -1071,7 +1017,7 @@ set RtlHierarchyInfo {[
 			{"Name" : "p_read289", "Type" : "None", "Direction" : "I"},
 			{"Name" : "p_read290", "Type" : "None", "Direction" : "I"},
 			{"Name" : "p_read291", "Type" : "None", "Direction" : "I"}]},
-	{"ID" : "21", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.grp_countStubLayers_fu_8004", "Parent" : "0", "Child" : ["22"],
+	{"ID" : "12", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.grp_countStubLayers_fu_7956", "Parent" : "0", "Child" : ["13"],
 		"CDFG" : "countStubLayers",
 		"Protocol" : "ap_ctrl_hs",
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1",
@@ -1090,38 +1036,38 @@ set RtlHierarchyInfo {[
 			{"Name" : "stubs_data_psModule_s", "Type" : "Memory", "Direction" : "I"},
 			{"Name" : "stubs_data_barrel_s", "Type" : "Memory", "Direction" : "I"},
 			{"Name" : "onlySeed", "Type" : "None", "Direction" : "I"}]},
-	{"ID" : "22", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_countStubLayers_fu_8004.foundLayers_U", "Parent" : "21"},
-	{"ID" : "23", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.LRupdateHLS_faddfsub_32ns_32ns_32_4_full_dsp_1_U134", "Parent" : "0"},
-	{"ID" : "24", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.LRupdateHLS_fmul_32ns_32ns_32_2_max_dsp_1_U135", "Parent" : "0"},
-	{"ID" : "25", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.LRupdateHLS_fcmp_32ns_32ns_1_1_1_U136", "Parent" : "0"},
-	{"ID" : "26", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.LRupdateHLS_fcmp_32ns_32ns_1_1_1_U137", "Parent" : "0"},
-	{"ID" : "27", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.LRupdateHLS_mul_mul_6ns_14s_14_1_1_U138", "Parent" : "0"}]}
+	{"ID" : "13", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_countStubLayers_fu_7956.foundLayers_U", "Parent" : "12"},
+	{"ID" : "14", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.LRupdateHLS_faddfsub_32ns_32ns_32_4_full_dsp_1_U121", "Parent" : "0"},
+	{"ID" : "15", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.LRupdateHLS_fmul_32ns_32ns_32_2_max_dsp_1_U122", "Parent" : "0"},
+	{"ID" : "16", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.LRupdateHLS_fcmp_32ns_32ns_1_1_1_U123", "Parent" : "0"},
+	{"ID" : "17", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.LRupdateHLS_fcmp_32ns_32ns_1_1_1_U124", "Parent" : "0"},
+	{"ID" : "18", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.LRupdateHLS_mul_mul_6ns_14s_14_1_1_U125", "Parent" : "0"}]}
 
 
 set ArgLastReadFirstWriteLatency {
 	initFit {
 		LinearRegression_settings_chosenRofPhi_read {Type I LastRead 82 FirstWrite -1}
 		LinearRegression_settings_chosenRofZ_read {Type I LastRead 94 FirstWrite -1}
-		LinearRegression_settings_etaRegions_s {Type I LastRead 85 FirstWrite -1}
-		LinearRegression_settings_minNumMatchLayers_read {Type I LastRead 85 FirstWrite -1}
-		LinearRegression_settings_minPSLayers_read {Type I LastRead 87 FirstWrite -1}
-		LinearRegression_stubs_data_settings_chosenRofPhi_s {Type IO LastRead 109 FirstWrite 91}
-		LinearRegression_stubs_data_settings_chosenRofZ_s {Type IO LastRead 109 FirstWrite 91}
-		LinearRegression_stubs_data_settings_etaRegions_s {Type IO LastRead 119 FirstWrite 1}
-		LinearRegression_stubs_data_settings_minNumMatchLayers_s {Type IO LastRead 109 FirstWrite 91}
-		LinearRegression_stubs_data_settings_minPSLayers_s {Type IO LastRead 109 FirstWrite 91}
-		LinearRegression_stubs_data_r_s {Type IO LastRead 109 FirstWrite 91}
-		LinearRegression_stubs_data_phi_s {Type IO LastRead 109 FirstWrite 91}
-		LinearRegression_stubs_data_z_s {Type IO LastRead 109 FirstWrite 91}
-		LinearRegression_stubs_data_layerId_s {Type IO LastRead 109 FirstWrite -1}
-		LinearRegression_stubs_data_psModule_s {Type IO LastRead 108 FirstWrite -1}
-		LinearRegression_stubs_data_barrel_s {Type IO LastRead 108 FirstWrite -1}
+		LinearRegression_settings_sinh_etaRegions_s {Type I LastRead 90 FirstWrite -1}
+		LinearRegression_settings_minNumMatchLayers_read {Type I LastRead 93 FirstWrite -1}
+		LinearRegression_settings_minPSLayers_read {Type I LastRead 95 FirstWrite -1}
+		LinearRegression_stubs_data_settings_chosenRofPhi_s {Type IO LastRead 107 FirstWrite 91}
+		LinearRegression_stubs_data_settings_chosenRofZ_s {Type IO LastRead 107 FirstWrite 91}
+		LinearRegression_stubs_data_settings_sinh_etaRegions_s {Type IO LastRead 117 FirstWrite 1}
+		LinearRegression_stubs_data_settings_minNumMatchLayers_s {Type IO LastRead 107 FirstWrite 91}
+		LinearRegression_stubs_data_settings_minPSLayers_s {Type IO LastRead 107 FirstWrite 91}
+		LinearRegression_stubs_data_r_s {Type IO LastRead 107 FirstWrite 91}
+		LinearRegression_stubs_data_phi_s {Type IO LastRead 107 FirstWrite 91}
+		LinearRegression_stubs_data_z_s {Type IO LastRead 107 FirstWrite 91}
+		LinearRegression_stubs_data_layerId_s {Type IO LastRead 107 FirstWrite -1}
+		LinearRegression_stubs_data_psModule_s {Type IO LastRead 106 FirstWrite -1}
+		LinearRegression_stubs_data_barrel_s {Type IO LastRead 106 FirstWrite -1}
 		LinearRegression_stubMap_size_read {Type I LastRead 95 FirstWrite -1}
-		LinearRegression_stubMap_data_first {Type IO LastRead 100 FirstWrite 4}
-		LinearRegression_stubMap_data_second_size_s {Type IO LastRead 109 FirstWrite 4}
+		LinearRegression_stubMap_data_first {Type IO LastRead 98 FirstWrite 4}
+		LinearRegression_stubMap_data_second_size_s {Type IO LastRead 107 FirstWrite 4}
 		LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s {Type O LastRead -1 FirstWrite 0}
 		LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s {Type O LastRead -1 FirstWrite 0}
-		LinearRegression_stubMap_data_second_data_settings_etaRegions_s {Type O LastRead -1 FirstWrite 110}
+		LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s {Type O LastRead -1 FirstWrite 108}
 		LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s {Type O LastRead -1 FirstWrite 0}
 		LinearRegression_stubMap_data_second_data_settings_minPSLayers_s {Type O LastRead -1 FirstWrite 0}
 		LinearRegression_stubMap_data_second_data_r_s {Type O LastRead -1 FirstWrite 0}
@@ -1131,8 +1077,8 @@ set ArgLastReadFirstWriteLatency {
 		LinearRegression_stubMap_data_second_data_psModule_s {Type O LastRead -1 FirstWrite 0}
 		LinearRegression_stubMap_data_second_data_barrel_s {Type O LastRead -1 FirstWrite 0}
 		LinearRegression_layerPopulation_size_read {Type I LastRead 95 FirstWrite -1}
-		LinearRegression_layerPopulation_data_first {Type IO LastRead 122 FirstWrite 122}
-		LinearRegression_layerPopulation_data_second {Type IO LastRead 123 FirstWrite 122}
+		LinearRegression_layerPopulation_data_first {Type IO LastRead 118 FirstWrite 118}
+		LinearRegression_layerPopulation_data_second {Type IO LastRead 119 FirstWrite 118}
 		LinearRegression_residuals_size_s {Type O LastRead -1 FirstWrite 96}
 		LinearRegression_largestResid_phi {Type O LastRead -1 FirstWrite 96}
 		LinearRegression_largestResid_z {Type O LastRead -1 FirstWrite 96}
@@ -1140,29 +1086,21 @@ set ArgLastReadFirstWriteLatency {
 		LinearRegression_largestResid_stubId {Type O LastRead -1 FirstWrite 96}
 		LinearRegression_largestResid_ps {Type O LastRead -1 FirstWrite 96}
 		l1track3D_iPhiSec_read {Type I LastRead 95 FirstWrite -1}
-		l1track3D_iEtaReg_read {Type I LastRead 83 FirstWrite -1}
+		l1track3D_iEtaReg_read {Type I LastRead 89 FirstWrite -1}
 		l1track3D_helixRphi_first_read {Type I LastRead 80 FirstWrite -1}
 		l1track3D_helixRphi_second_read {Type I LastRead 84 FirstWrite -1}
-		l1track3D_stubs_size_read {Type I LastRead 84 FirstWrite -1}
+		l1track3D_stubs_size_read {Type I LastRead 92 FirstWrite -1}
 		l1track3D_stubs_data_settings_chosenRofPhi_s {Type I LastRead 95 FirstWrite -1}
 		l1track3D_stubs_data_settings_chosenRofZ_s {Type I LastRead 95 FirstWrite -1}
-		l1track3D_stubs_data_settings_etaRegions_s {Type I LastRead 95 FirstWrite -1}
+		l1track3D_stubs_data_settings_sinh_etaRegions_s {Type I LastRead 95 FirstWrite -1}
 		l1track3D_stubs_data_settings_minNumMatchLayers_s {Type I LastRead 95 FirstWrite -1}
 		l1track3D_stubs_data_settings_minPSLayers_s {Type I LastRead 95 FirstWrite -1}
 		l1track3D_stubs_data_r_s {Type I LastRead 95 FirstWrite -1}
 		l1track3D_stubs_data_phi_s {Type I LastRead 95 FirstWrite -1}
 		l1track3D_stubs_data_z_s {Type I LastRead 95 FirstWrite -1}
-		l1track3D_stubs_data_layerId_s {Type I LastRead 83 FirstWrite -1}
-		l1track3D_stubs_data_psModule_s {Type I LastRead 83 FirstWrite -1}
-		l1track3D_stubs_data_barrel_s {Type I LastRead 83 FirstWrite -1}
-		cordic_hyperb_table_s {Type I LastRead -1 FirstWrite -1}}
-	sinh_cosh_range_redu {
-		d {Type I LastRead 0 FirstWrite -1}
-		cordic_hyperb_table_s {Type I LastRead -1 FirstWrite -1}}
-	big_mult_v3small {
-		a_V {Type I LastRead 0 FirstWrite -1}}
-	big_mult_v3small_1 {
-		a_V {Type I LastRead 0 FirstWrite -1}}
+		l1track3D_stubs_data_layerId_s {Type I LastRead 91 FirstWrite -1}
+		l1track3D_stubs_data_psModule_s {Type I LastRead 91 FirstWrite -1}
+		l1track3D_stubs_data_barrel_s {Type I LastRead 91 FirstWrite -1}}
 	push_back_1 {
 		mapHLS_unsigned_int_arrayHLS_Stub_size_read {Type I LastRead 0 FirstWrite -1}
 		mapHLS_unsigned_int_arrayHLS_Stub_data_first {Type O LastRead -1 FirstWrite 4}
@@ -1298,12 +1236,12 @@ set PipelineEnableSignalInfo {[
 set Spec2ImplPortList { 
 	LinearRegression_settings_chosenRofPhi_read { ap_none {  { LinearRegression_settings_chosenRofPhi_read in_data 0 32 } } }
 	LinearRegression_settings_chosenRofZ_read { ap_none {  { LinearRegression_settings_chosenRofZ_read in_data 0 32 } } }
-	LinearRegression_settings_etaRegions_s { ap_memory {  { LinearRegression_settings_etaRegions_s_address0 mem_address 1 5 }  { LinearRegression_settings_etaRegions_s_ce0 mem_ce 1 1 }  { LinearRegression_settings_etaRegions_s_q0 mem_dout 0 32 } } }
+	LinearRegression_settings_sinh_etaRegions_s { ap_memory {  { LinearRegression_settings_sinh_etaRegions_s_address0 mem_address 1 5 }  { LinearRegression_settings_sinh_etaRegions_s_ce0 mem_ce 1 1 }  { LinearRegression_settings_sinh_etaRegions_s_q0 mem_dout 0 32 }  { LinearRegression_settings_sinh_etaRegions_s_address1 MemPortADDR2 1 5 }  { LinearRegression_settings_sinh_etaRegions_s_ce1 MemPortCE2 1 1 }  { LinearRegression_settings_sinh_etaRegions_s_q1 MemPortDOUT2 0 32 } } }
 	LinearRegression_settings_minNumMatchLayers_read { ap_none {  { LinearRegression_settings_minNumMatchLayers_read in_data 0 32 } } }
 	LinearRegression_settings_minPSLayers_read { ap_none {  { LinearRegression_settings_minPSLayers_read in_data 0 32 } } }
 	LinearRegression_stubs_data_settings_chosenRofPhi_s { ap_memory {  { LinearRegression_stubs_data_settings_chosenRofPhi_s_address0 mem_address 1 4 }  { LinearRegression_stubs_data_settings_chosenRofPhi_s_ce0 mem_ce 1 1 }  { LinearRegression_stubs_data_settings_chosenRofPhi_s_we0 mem_we 1 1 }  { LinearRegression_stubs_data_settings_chosenRofPhi_s_d0 mem_din 1 32 }  { LinearRegression_stubs_data_settings_chosenRofPhi_s_q0 mem_dout 0 32 }  { LinearRegression_stubs_data_settings_chosenRofPhi_s_address1 MemPortADDR2 1 4 }  { LinearRegression_stubs_data_settings_chosenRofPhi_s_ce1 MemPortCE2 1 1 }  { LinearRegression_stubs_data_settings_chosenRofPhi_s_we1 MemPortWE2 1 1 }  { LinearRegression_stubs_data_settings_chosenRofPhi_s_d1 MemPortDIN2 1 32 } } }
 	LinearRegression_stubs_data_settings_chosenRofZ_s { ap_memory {  { LinearRegression_stubs_data_settings_chosenRofZ_s_address0 mem_address 1 4 }  { LinearRegression_stubs_data_settings_chosenRofZ_s_ce0 mem_ce 1 1 }  { LinearRegression_stubs_data_settings_chosenRofZ_s_we0 mem_we 1 1 }  { LinearRegression_stubs_data_settings_chosenRofZ_s_d0 mem_din 1 32 }  { LinearRegression_stubs_data_settings_chosenRofZ_s_q0 mem_dout 0 32 }  { LinearRegression_stubs_data_settings_chosenRofZ_s_address1 MemPortADDR2 1 4 }  { LinearRegression_stubs_data_settings_chosenRofZ_s_ce1 MemPortCE2 1 1 }  { LinearRegression_stubs_data_settings_chosenRofZ_s_we1 MemPortWE2 1 1 }  { LinearRegression_stubs_data_settings_chosenRofZ_s_d1 MemPortDIN2 1 32 } } }
-	LinearRegression_stubs_data_settings_etaRegions_s { ap_memory {  { LinearRegression_stubs_data_settings_etaRegions_s_address0 mem_address 1 8 }  { LinearRegression_stubs_data_settings_etaRegions_s_ce0 mem_ce 1 1 }  { LinearRegression_stubs_data_settings_etaRegions_s_we0 mem_we 1 1 }  { LinearRegression_stubs_data_settings_etaRegions_s_d0 mem_din 1 32 }  { LinearRegression_stubs_data_settings_etaRegions_s_q0 mem_dout 0 32 }  { LinearRegression_stubs_data_settings_etaRegions_s_address1 MemPortADDR2 1 8 }  { LinearRegression_stubs_data_settings_etaRegions_s_ce1 MemPortCE2 1 1 }  { LinearRegression_stubs_data_settings_etaRegions_s_we1 MemPortWE2 1 1 }  { LinearRegression_stubs_data_settings_etaRegions_s_d1 MemPortDIN2 1 32 }  { LinearRegression_stubs_data_settings_etaRegions_s_q1 MemPortDOUT2 0 32 } } }
+	LinearRegression_stubs_data_settings_sinh_etaRegions_s { ap_memory {  { LinearRegression_stubs_data_settings_sinh_etaRegions_s_address0 mem_address 1 8 }  { LinearRegression_stubs_data_settings_sinh_etaRegions_s_ce0 mem_ce 1 1 }  { LinearRegression_stubs_data_settings_sinh_etaRegions_s_we0 mem_we 1 1 }  { LinearRegression_stubs_data_settings_sinh_etaRegions_s_d0 mem_din 1 32 }  { LinearRegression_stubs_data_settings_sinh_etaRegions_s_q0 mem_dout 0 32 }  { LinearRegression_stubs_data_settings_sinh_etaRegions_s_address1 MemPortADDR2 1 8 }  { LinearRegression_stubs_data_settings_sinh_etaRegions_s_ce1 MemPortCE2 1 1 }  { LinearRegression_stubs_data_settings_sinh_etaRegions_s_we1 MemPortWE2 1 1 }  { LinearRegression_stubs_data_settings_sinh_etaRegions_s_d1 MemPortDIN2 1 32 }  { LinearRegression_stubs_data_settings_sinh_etaRegions_s_q1 MemPortDOUT2 0 32 } } }
 	LinearRegression_stubs_data_settings_minNumMatchLayers_s { ap_memory {  { LinearRegression_stubs_data_settings_minNumMatchLayers_s_address0 mem_address 1 4 }  { LinearRegression_stubs_data_settings_minNumMatchLayers_s_ce0 mem_ce 1 1 }  { LinearRegression_stubs_data_settings_minNumMatchLayers_s_we0 mem_we 1 1 }  { LinearRegression_stubs_data_settings_minNumMatchLayers_s_d0 mem_din 1 32 }  { LinearRegression_stubs_data_settings_minNumMatchLayers_s_q0 mem_dout 0 32 }  { LinearRegression_stubs_data_settings_minNumMatchLayers_s_address1 MemPortADDR2 1 4 }  { LinearRegression_stubs_data_settings_minNumMatchLayers_s_ce1 MemPortCE2 1 1 }  { LinearRegression_stubs_data_settings_minNumMatchLayers_s_we1 MemPortWE2 1 1 }  { LinearRegression_stubs_data_settings_minNumMatchLayers_s_d1 MemPortDIN2 1 32 } } }
 	LinearRegression_stubs_data_settings_minPSLayers_s { ap_memory {  { LinearRegression_stubs_data_settings_minPSLayers_s_address0 mem_address 1 4 }  { LinearRegression_stubs_data_settings_minPSLayers_s_ce0 mem_ce 1 1 }  { LinearRegression_stubs_data_settings_minPSLayers_s_we0 mem_we 1 1 }  { LinearRegression_stubs_data_settings_minPSLayers_s_d0 mem_din 1 32 }  { LinearRegression_stubs_data_settings_minPSLayers_s_q0 mem_dout 0 32 }  { LinearRegression_stubs_data_settings_minPSLayers_s_address1 MemPortADDR2 1 4 }  { LinearRegression_stubs_data_settings_minPSLayers_s_ce1 MemPortCE2 1 1 }  { LinearRegression_stubs_data_settings_minPSLayers_s_we1 MemPortWE2 1 1 }  { LinearRegression_stubs_data_settings_minPSLayers_s_d1 MemPortDIN2 1 32 } } }
 	LinearRegression_stubs_data_r_s { ap_memory {  { LinearRegression_stubs_data_r_s_address0 mem_address 1 4 }  { LinearRegression_stubs_data_r_s_ce0 mem_ce 1 1 }  { LinearRegression_stubs_data_r_s_we0 mem_we 1 1 }  { LinearRegression_stubs_data_r_s_d0 mem_din 1 32 }  { LinearRegression_stubs_data_r_s_q0 mem_dout 0 32 }  { LinearRegression_stubs_data_r_s_address1 MemPortADDR2 1 4 }  { LinearRegression_stubs_data_r_s_ce1 MemPortCE2 1 1 }  { LinearRegression_stubs_data_r_s_we1 MemPortWE2 1 1 }  { LinearRegression_stubs_data_r_s_d1 MemPortDIN2 1 32 } } }
@@ -1317,7 +1255,7 @@ set Spec2ImplPortList {
 	LinearRegression_stubMap_data_second_size_s { ap_memory {  { LinearRegression_stubMap_data_second_size_s_address0 mem_address 1 5 }  { LinearRegression_stubMap_data_second_size_s_ce0 mem_ce 1 1 }  { LinearRegression_stubMap_data_second_size_s_we0 mem_we 1 1 }  { LinearRegression_stubMap_data_second_size_s_d0 mem_din 1 32 }  { LinearRegression_stubMap_data_second_size_s_q0 mem_dout 0 32 } } }
 	LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s { ap_memory {  { LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_address0 mem_address 1 9 }  { LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_ce0 mem_ce 1 1 }  { LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_we0 mem_we 1 1 }  { LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_d0 mem_din 1 32 }  { LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_address1 MemPortADDR2 1 9 }  { LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_ce1 MemPortCE2 1 1 }  { LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_we1 MemPortWE2 1 1 }  { LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_d1 MemPortDIN2 1 32 } } }
 	LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s { ap_memory {  { LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_address0 mem_address 1 9 }  { LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_ce0 mem_ce 1 1 }  { LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_we0 mem_we 1 1 }  { LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_d0 mem_din 1 32 }  { LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_address1 MemPortADDR2 1 9 }  { LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_ce1 MemPortCE2 1 1 }  { LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_we1 MemPortWE2 1 1 }  { LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_d1 MemPortDIN2 1 32 } } }
-	LinearRegression_stubMap_data_second_data_settings_etaRegions_s { ap_memory {  { LinearRegression_stubMap_data_second_data_settings_etaRegions_s_address0 mem_address 1 13 }  { LinearRegression_stubMap_data_second_data_settings_etaRegions_s_ce0 mem_ce 1 1 }  { LinearRegression_stubMap_data_second_data_settings_etaRegions_s_we0 mem_we 1 1 }  { LinearRegression_stubMap_data_second_data_settings_etaRegions_s_d0 mem_din 1 32 }  { LinearRegression_stubMap_data_second_data_settings_etaRegions_s_address1 MemPortADDR2 1 13 }  { LinearRegression_stubMap_data_second_data_settings_etaRegions_s_ce1 MemPortCE2 1 1 }  { LinearRegression_stubMap_data_second_data_settings_etaRegions_s_we1 MemPortWE2 1 1 }  { LinearRegression_stubMap_data_second_data_settings_etaRegions_s_d1 MemPortDIN2 1 32 } } }
+	LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s { ap_memory {  { LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_address0 mem_address 1 13 }  { LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_ce0 mem_ce 1 1 }  { LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_we0 mem_we 1 1 }  { LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_d0 mem_din 1 32 }  { LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_address1 MemPortADDR2 1 13 }  { LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_ce1 MemPortCE2 1 1 }  { LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_we1 MemPortWE2 1 1 }  { LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_d1 MemPortDIN2 1 32 } } }
 	LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s { ap_memory {  { LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_address0 mem_address 1 9 }  { LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_ce0 mem_ce 1 1 }  { LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_we0 mem_we 1 1 }  { LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_d0 mem_din 1 32 }  { LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_address1 MemPortADDR2 1 9 }  { LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_ce1 MemPortCE2 1 1 }  { LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_we1 MemPortWE2 1 1 }  { LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_d1 MemPortDIN2 1 32 } } }
 	LinearRegression_stubMap_data_second_data_settings_minPSLayers_s { ap_memory {  { LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_address0 mem_address 1 9 }  { LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_ce0 mem_ce 1 1 }  { LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_we0 mem_we 1 1 }  { LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_d0 mem_din 1 32 }  { LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_address1 MemPortADDR2 1 9 }  { LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_ce1 MemPortCE2 1 1 }  { LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_we1 MemPortWE2 1 1 }  { LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_d1 MemPortDIN2 1 32 } } }
 	LinearRegression_stubMap_data_second_data_r_s { ap_memory {  { LinearRegression_stubMap_data_second_data_r_s_address0 mem_address 1 9 }  { LinearRegression_stubMap_data_second_data_r_s_ce0 mem_ce 1 1 }  { LinearRegression_stubMap_data_second_data_r_s_we0 mem_we 1 1 }  { LinearRegression_stubMap_data_second_data_r_s_d0 mem_din 1 32 }  { LinearRegression_stubMap_data_second_data_r_s_address1 MemPortADDR2 1 9 }  { LinearRegression_stubMap_data_second_data_r_s_ce1 MemPortCE2 1 1 }  { LinearRegression_stubMap_data_second_data_r_s_we1 MemPortWE2 1 1 }  { LinearRegression_stubMap_data_second_data_r_s_d1 MemPortDIN2 1 32 } } }
@@ -1342,7 +1280,7 @@ set Spec2ImplPortList {
 	l1track3D_stubs_size_read { ap_none {  { l1track3D_stubs_size_read in_data 0 32 } } }
 	l1track3D_stubs_data_settings_chosenRofPhi_s { ap_memory {  { l1track3D_stubs_data_settings_chosenRofPhi_s_address0 mem_address 1 4 }  { l1track3D_stubs_data_settings_chosenRofPhi_s_ce0 mem_ce 1 1 }  { l1track3D_stubs_data_settings_chosenRofPhi_s_q0 mem_dout 0 32 }  { l1track3D_stubs_data_settings_chosenRofPhi_s_address1 MemPortADDR2 1 4 }  { l1track3D_stubs_data_settings_chosenRofPhi_s_ce1 MemPortCE2 1 1 }  { l1track3D_stubs_data_settings_chosenRofPhi_s_q1 MemPortDOUT2 0 32 } } }
 	l1track3D_stubs_data_settings_chosenRofZ_s { ap_memory {  { l1track3D_stubs_data_settings_chosenRofZ_s_address0 mem_address 1 4 }  { l1track3D_stubs_data_settings_chosenRofZ_s_ce0 mem_ce 1 1 }  { l1track3D_stubs_data_settings_chosenRofZ_s_q0 mem_dout 0 32 }  { l1track3D_stubs_data_settings_chosenRofZ_s_address1 MemPortADDR2 1 4 }  { l1track3D_stubs_data_settings_chosenRofZ_s_ce1 MemPortCE2 1 1 }  { l1track3D_stubs_data_settings_chosenRofZ_s_q1 MemPortDOUT2 0 32 } } }
-	l1track3D_stubs_data_settings_etaRegions_s { ap_memory {  { l1track3D_stubs_data_settings_etaRegions_s_address0 mem_address 1 8 }  { l1track3D_stubs_data_settings_etaRegions_s_ce0 mem_ce 1 1 }  { l1track3D_stubs_data_settings_etaRegions_s_q0 mem_dout 0 32 }  { l1track3D_stubs_data_settings_etaRegions_s_address1 MemPortADDR2 1 8 }  { l1track3D_stubs_data_settings_etaRegions_s_ce1 MemPortCE2 1 1 }  { l1track3D_stubs_data_settings_etaRegions_s_q1 MemPortDOUT2 0 32 } } }
+	l1track3D_stubs_data_settings_sinh_etaRegions_s { ap_memory {  { l1track3D_stubs_data_settings_sinh_etaRegions_s_address0 mem_address 1 8 }  { l1track3D_stubs_data_settings_sinh_etaRegions_s_ce0 mem_ce 1 1 }  { l1track3D_stubs_data_settings_sinh_etaRegions_s_q0 mem_dout 0 32 }  { l1track3D_stubs_data_settings_sinh_etaRegions_s_address1 MemPortADDR2 1 8 }  { l1track3D_stubs_data_settings_sinh_etaRegions_s_ce1 MemPortCE2 1 1 }  { l1track3D_stubs_data_settings_sinh_etaRegions_s_q1 MemPortDOUT2 0 32 } } }
 	l1track3D_stubs_data_settings_minNumMatchLayers_s { ap_memory {  { l1track3D_stubs_data_settings_minNumMatchLayers_s_address0 mem_address 1 4 }  { l1track3D_stubs_data_settings_minNumMatchLayers_s_ce0 mem_ce 1 1 }  { l1track3D_stubs_data_settings_minNumMatchLayers_s_q0 mem_dout 0 32 }  { l1track3D_stubs_data_settings_minNumMatchLayers_s_address1 MemPortADDR2 1 4 }  { l1track3D_stubs_data_settings_minNumMatchLayers_s_ce1 MemPortCE2 1 1 }  { l1track3D_stubs_data_settings_minNumMatchLayers_s_q1 MemPortDOUT2 0 32 } } }
 	l1track3D_stubs_data_settings_minPSLayers_s { ap_memory {  { l1track3D_stubs_data_settings_minPSLayers_s_address0 mem_address 1 4 }  { l1track3D_stubs_data_settings_minPSLayers_s_ce0 mem_ce 1 1 }  { l1track3D_stubs_data_settings_minPSLayers_s_q0 mem_dout 0 32 }  { l1track3D_stubs_data_settings_minPSLayers_s_address1 MemPortADDR2 1 4 }  { l1track3D_stubs_data_settings_minPSLayers_s_ce1 MemPortCE2 1 1 }  { l1track3D_stubs_data_settings_minPSLayers_s_q1 MemPortDOUT2 0 32 } } }
 	l1track3D_stubs_data_r_s { ap_memory {  { l1track3D_stubs_data_r_s_address0 mem_address 1 4 }  { l1track3D_stubs_data_r_s_ce0 mem_ce 1 1 }  { l1track3D_stubs_data_r_s_q0 mem_dout 0 32 }  { l1track3D_stubs_data_r_s_address1 MemPortADDR2 1 4 }  { l1track3D_stubs_data_r_s_ce1 MemPortCE2 1 1 }  { l1track3D_stubs_data_r_s_q1 MemPortDOUT2 0 32 } } }

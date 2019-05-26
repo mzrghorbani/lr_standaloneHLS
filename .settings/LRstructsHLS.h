@@ -5,7 +5,6 @@
 #include "L1track3D.h"
 #include "Stub.h"
 #include "L1fittedTrack.h"
-#include <cmath>
 
 class candData {
 public:
@@ -49,7 +48,8 @@ public:
         const pairHLS<float, float> &helixRPhi = l1track3D.getHelixRphi();
         qOverPt = helixRPhi.first * settings.invPtToDphi();
         phiT = deltaPhiHLS(helixRPhi.second + qOverPt * settings.chosenRofPhi(), 0.f);
-        cotTheta = (sinhf(settings.etaRegions()[iEtaReg]) + sinhf(settings.etaRegions()[iEtaReg + 1])) / 2.;
+//        cotTheta = (sinhf(settings.etaRegions()[iEtaReg]) + sinhf(settings.etaRegions()[iEtaReg + 1])) / 2.f;
+        cotTheta = (settings.sinh_etaRegions_div2()[iEtaReg] + settings.sinh_etaRegions_div2()[iEtaReg + 1]);
         zT = cotTheta * settings.chosenRofZ();
     }
 };
@@ -106,8 +106,8 @@ public:
     float y;
     float xx;
 
-    sumData(unsigned int n = 0, float xy = 0., float x = 0., float y = 0., float xx = 0.) : n(n), xy(xy), x(x), y(y),
-                                                                                            xx(xx) {}
+    sumData(unsigned int n = 0, float xy = 0., float x = 0., float y = 0., float xx = 0.) :
+    	n(n), xy(xy), x(x), y(y), xx(xx) {}
 
     sumData &operator+=(const pairHLS<float, float> &stub) {
         n++;

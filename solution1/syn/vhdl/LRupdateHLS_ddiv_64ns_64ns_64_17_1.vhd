@@ -1,5 +1,5 @@
 -- ==============================================================
--- File generated on Tue May 21 18:45:20 BST 2019
+-- File generated on Thu May 23 17:58:04 BST 2019
 -- Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
 -- SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
 -- IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
@@ -10,7 +10,7 @@ use ieee.std_logic_1164.all;
 
 entity LRupdateHLS_ddiv_64ns_64ns_64_17_1 is
     generic (
-        ID         : integer := 312;
+        ID         : integer := 302;
         NUM_STAGE  : integer := 17;
         din0_WIDTH : integer := 64;
         din1_WIDTH : integer := 64;

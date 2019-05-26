@@ -40,7 +40,7 @@ set SCTraceFileName mytrace
 set SCTraceFileFormat vcd
 set SCTraceOption all
 set TargetInfo xcku115:-flvb2104:-2-e
-set SourceFiles {sc {} c {../.settings/LinearRegression.cpp ../.settings/LRupdateHLS.cpp}}
+set SourceFiles {sc {} c {../.settings/LRupdateHLS.cpp ../.settings/LinearRegression.cpp}}
 set SourceFlags {sc {} c {{} {}}}
 set DirectiveFile /home/eepgmmg1/workspace/cpp_projects/lr_standaloneHLS/solution1/solution1.directive
 set TBFiles {verilog ../.settings/testbench.cpp bc ../.settings/testbench.cpp vhdl ../.settings/testbench.cpp sc ../.settings/testbench.cpp cas ../.settings/testbench.cpp c {}}

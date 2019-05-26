@@ -25,16 +25,16 @@ module killLargestResidual (
         LinearRegression_stubs_data_settings_chosenRofZ_s_we0,
         LinearRegression_stubs_data_settings_chosenRofZ_s_d0,
         LinearRegression_stubs_data_settings_chosenRofZ_s_q0,
-        LinearRegression_stubs_data_settings_etaRegions_s_address0,
-        LinearRegression_stubs_data_settings_etaRegions_s_ce0,
-        LinearRegression_stubs_data_settings_etaRegions_s_we0,
-        LinearRegression_stubs_data_settings_etaRegions_s_d0,
-        LinearRegression_stubs_data_settings_etaRegions_s_q0,
-        LinearRegression_stubs_data_settings_etaRegions_s_address1,
-        LinearRegression_stubs_data_settings_etaRegions_s_ce1,
-        LinearRegression_stubs_data_settings_etaRegions_s_we1,
-        LinearRegression_stubs_data_settings_etaRegions_s_d1,
-        LinearRegression_stubs_data_settings_etaRegions_s_q1,
+        LinearRegression_stubs_data_settings_sinh_etaRegions_s_address0,
+        LinearRegression_stubs_data_settings_sinh_etaRegions_s_ce0,
+        LinearRegression_stubs_data_settings_sinh_etaRegions_s_we0,
+        LinearRegression_stubs_data_settings_sinh_etaRegions_s_d0,
+        LinearRegression_stubs_data_settings_sinh_etaRegions_s_q0,
+        LinearRegression_stubs_data_settings_sinh_etaRegions_s_address1,
+        LinearRegression_stubs_data_settings_sinh_etaRegions_s_ce1,
+        LinearRegression_stubs_data_settings_sinh_etaRegions_s_we1,
+        LinearRegression_stubs_data_settings_sinh_etaRegions_s_d1,
+        LinearRegression_stubs_data_settings_sinh_etaRegions_s_q1,
         LinearRegression_stubs_data_settings_minNumMatchLayers_s_address0,
         LinearRegression_stubs_data_settings_minNumMatchLayers_s_ce0,
         LinearRegression_stubs_data_settings_minNumMatchLayers_s_we0,
@@ -106,16 +106,16 @@ module killLargestResidual (
         LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_we1,
         LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_d1,
         LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_q1,
-        LinearRegression_stubMap_data_second_data_settings_etaRegions_s_address0,
-        LinearRegression_stubMap_data_second_data_settings_etaRegions_s_ce0,
-        LinearRegression_stubMap_data_second_data_settings_etaRegions_s_we0,
-        LinearRegression_stubMap_data_second_data_settings_etaRegions_s_d0,
-        LinearRegression_stubMap_data_second_data_settings_etaRegions_s_q0,
-        LinearRegression_stubMap_data_second_data_settings_etaRegions_s_address1,
-        LinearRegression_stubMap_data_second_data_settings_etaRegions_s_ce1,
-        LinearRegression_stubMap_data_second_data_settings_etaRegions_s_we1,
-        LinearRegression_stubMap_data_second_data_settings_etaRegions_s_d1,
-        LinearRegression_stubMap_data_second_data_settings_etaRegions_s_q1,
+        LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_address0,
+        LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_ce0,
+        LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_we0,
+        LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_d0,
+        LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_q0,
+        LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_address1,
+        LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_ce1,
+        LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_we1,
+        LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_d1,
+        LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_q1,
         LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_address0,
         LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_ce0,
         LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_we0,
@@ -241,45 +241,42 @@ module killLargestResidual (
         ap_return_9
 );
 
-parameter    ap_ST_fsm_state1 = 39'd1;
-parameter    ap_ST_fsm_state2 = 39'd2;
-parameter    ap_ST_fsm_state3 = 39'd4;
-parameter    ap_ST_fsm_state4 = 39'd8;
-parameter    ap_ST_fsm_state5 = 39'd16;
-parameter    ap_ST_fsm_state6 = 39'd32;
-parameter    ap_ST_fsm_state7 = 39'd64;
-parameter    ap_ST_fsm_state8 = 39'd128;
-parameter    ap_ST_fsm_state9 = 39'd256;
-parameter    ap_ST_fsm_state10 = 39'd512;
-parameter    ap_ST_fsm_state11 = 39'd1024;
-parameter    ap_ST_fsm_state12 = 39'd2048;
-parameter    ap_ST_fsm_state13 = 39'd4096;
-parameter    ap_ST_fsm_state14 = 39'd8192;
-parameter    ap_ST_fsm_state15 = 39'd16384;
-parameter    ap_ST_fsm_state16 = 39'd32768;
-parameter    ap_ST_fsm_state17 = 39'd65536;
-parameter    ap_ST_fsm_state18 = 39'd131072;
-parameter    ap_ST_fsm_state19 = 39'd262144;
-parameter    ap_ST_fsm_state20 = 39'd524288;
-parameter    ap_ST_fsm_state21 = 39'd1048576;
-parameter    ap_ST_fsm_state22 = 39'd2097152;
-parameter    ap_ST_fsm_state23 = 39'd4194304;
-parameter    ap_ST_fsm_state24 = 39'd8388608;
-parameter    ap_ST_fsm_state25 = 39'd16777216;
-parameter    ap_ST_fsm_state26 = 39'd33554432;
-parameter    ap_ST_fsm_state27 = 39'd67108864;
-parameter    ap_ST_fsm_state28 = 39'd134217728;
-parameter    ap_ST_fsm_state29 = 39'd268435456;
-parameter    ap_ST_fsm_state30 = 39'd536870912;
-parameter    ap_ST_fsm_state31 = 39'd1073741824;
-parameter    ap_ST_fsm_state32 = 39'd2147483648;
-parameter    ap_ST_fsm_state33 = 39'd4294967296;
-parameter    ap_ST_fsm_state34 = 39'd8589934592;
-parameter    ap_ST_fsm_state35 = 39'd17179869184;
-parameter    ap_ST_fsm_state36 = 39'd34359738368;
-parameter    ap_ST_fsm_state37 = 39'd68719476736;
-parameter    ap_ST_fsm_state38 = 39'd137438953472;
-parameter    ap_ST_fsm_state39 = 39'd274877906944;
+parameter    ap_ST_fsm_state1 = 36'd1;
+parameter    ap_ST_fsm_state2 = 36'd2;
+parameter    ap_ST_fsm_state3 = 36'd4;
+parameter    ap_ST_fsm_state4 = 36'd8;
+parameter    ap_ST_fsm_state5 = 36'd16;
+parameter    ap_ST_fsm_state6 = 36'd32;
+parameter    ap_ST_fsm_state7 = 36'd64;
+parameter    ap_ST_fsm_state8 = 36'd128;
+parameter    ap_ST_fsm_state9 = 36'd256;
+parameter    ap_ST_fsm_state10 = 36'd512;
+parameter    ap_ST_fsm_state11 = 36'd1024;
+parameter    ap_ST_fsm_state12 = 36'd2048;
+parameter    ap_ST_fsm_state13 = 36'd4096;
+parameter    ap_ST_fsm_state14 = 36'd8192;
+parameter    ap_ST_fsm_state15 = 36'd16384;
+parameter    ap_ST_fsm_state16 = 36'd32768;
+parameter    ap_ST_fsm_state17 = 36'd65536;
+parameter    ap_ST_fsm_state18 = 36'd131072;
+parameter    ap_ST_fsm_state19 = 36'd262144;
+parameter    ap_ST_fsm_state20 = 36'd524288;
+parameter    ap_ST_fsm_state21 = 36'd1048576;
+parameter    ap_ST_fsm_state22 = 36'd2097152;
+parameter    ap_ST_fsm_state23 = 36'd4194304;
+parameter    ap_ST_fsm_state24 = 36'd8388608;
+parameter    ap_ST_fsm_state25 = 36'd16777216;
+parameter    ap_ST_fsm_state26 = 36'd33554432;
+parameter    ap_ST_fsm_state27 = 36'd67108864;
+parameter    ap_ST_fsm_state28 = 36'd134217728;
+parameter    ap_ST_fsm_state29 = 36'd268435456;
+parameter    ap_ST_fsm_state30 = 36'd536870912;
+parameter    ap_ST_fsm_state31 = 36'd1073741824;
+parameter    ap_ST_fsm_state32 = 36'd2147483648;
+parameter    ap_ST_fsm_state33 = 36'd4294967296;
+parameter    ap_ST_fsm_state34 = 36'd8589934592;
+parameter    ap_ST_fsm_state35 = 36'd17179869184;
+parameter    ap_ST_fsm_state36 = 36'd34359738368;
 
 input   ap_clk;
 input   ap_rst;
@@ -298,16 +295,16 @@ output   LinearRegression_stubs_data_settings_chosenRofZ_s_ce0;
 output   LinearRegression_stubs_data_settings_chosenRofZ_s_we0;
 output  [31:0] LinearRegression_stubs_data_settings_chosenRofZ_s_d0;
 input  [31:0] LinearRegression_stubs_data_settings_chosenRofZ_s_q0;
-output  [7:0] LinearRegression_stubs_data_settings_etaRegions_s_address0;
-output   LinearRegression_stubs_data_settings_etaRegions_s_ce0;
-output   LinearRegression_stubs_data_settings_etaRegions_s_we0;
-output  [31:0] LinearRegression_stubs_data_settings_etaRegions_s_d0;
-input  [31:0] LinearRegression_stubs_data_settings_etaRegions_s_q0;
-output  [7:0] LinearRegression_stubs_data_settings_etaRegions_s_address1;
-output   LinearRegression_stubs_data_settings_etaRegions_s_ce1;
-output   LinearRegression_stubs_data_settings_etaRegions_s_we1;
-output  [31:0] LinearRegression_stubs_data_settings_etaRegions_s_d1;
-input  [31:0] LinearRegression_stubs_data_settings_etaRegions_s_q1;
+output  [7:0] LinearRegression_stubs_data_settings_sinh_etaRegions_s_address0;
+output   LinearRegression_stubs_data_settings_sinh_etaRegions_s_ce0;
+output   LinearRegression_stubs_data_settings_sinh_etaRegions_s_we0;
+output  [31:0] LinearRegression_stubs_data_settings_sinh_etaRegions_s_d0;
+input  [31:0] LinearRegression_stubs_data_settings_sinh_etaRegions_s_q0;
+output  [7:0] LinearRegression_stubs_data_settings_sinh_etaRegions_s_address1;
+output   LinearRegression_stubs_data_settings_sinh_etaRegions_s_ce1;
+output   LinearRegression_stubs_data_settings_sinh_etaRegions_s_we1;
+output  [31:0] LinearRegression_stubs_data_settings_sinh_etaRegions_s_d1;
+input  [31:0] LinearRegression_stubs_data_settings_sinh_etaRegions_s_q1;
 output  [3:0] LinearRegression_stubs_data_settings_minNumMatchLayers_s_address0;
 output   LinearRegression_stubs_data_settings_minNumMatchLayers_s_ce0;
 output   LinearRegression_stubs_data_settings_minNumMatchLayers_s_we0;
@@ -379,16 +376,16 @@ output   LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_ce1;
 output   LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_we1;
 output  [31:0] LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_d1;
 input  [31:0] LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_q1;
-output  [12:0] LinearRegression_stubMap_data_second_data_settings_etaRegions_s_address0;
-output   LinearRegression_stubMap_data_second_data_settings_etaRegions_s_ce0;
-output   LinearRegression_stubMap_data_second_data_settings_etaRegions_s_we0;
-output  [31:0] LinearRegression_stubMap_data_second_data_settings_etaRegions_s_d0;
-input  [31:0] LinearRegression_stubMap_data_second_data_settings_etaRegions_s_q0;
-output  [12:0] LinearRegression_stubMap_data_second_data_settings_etaRegions_s_address1;
-output   LinearRegression_stubMap_data_second_data_settings_etaRegions_s_ce1;
-output   LinearRegression_stubMap_data_second_data_settings_etaRegions_s_we1;
-output  [31:0] LinearRegression_stubMap_data_second_data_settings_etaRegions_s_d1;
-input  [31:0] LinearRegression_stubMap_data_second_data_settings_etaRegions_s_q1;
+output  [12:0] LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_address0;
+output   LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_ce0;
+output   LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_we0;
+output  [31:0] LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_d0;
+input  [31:0] LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_q0;
+output  [12:0] LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_address1;
+output   LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_ce1;
+output   LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_we1;
+output  [31:0] LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_d1;
+input  [31:0] LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_q1;
 output  [8:0] LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_address0;
 output   LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_ce0;
 output   LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_we0;
@@ -549,14 +546,14 @@ reg[8:0] LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_address
 reg LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_ce1;
 reg LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_we1;
 reg[31:0] LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_d1;
-reg[12:0] LinearRegression_stubMap_data_second_data_settings_etaRegions_s_address0;
-reg LinearRegression_stubMap_data_second_data_settings_etaRegions_s_ce0;
-reg LinearRegression_stubMap_data_second_data_settings_etaRegions_s_we0;
-reg[31:0] LinearRegression_stubMap_data_second_data_settings_etaRegions_s_d0;
-reg[12:0] LinearRegression_stubMap_data_second_data_settings_etaRegions_s_address1;
-reg LinearRegression_stubMap_data_second_data_settings_etaRegions_s_ce1;
-reg LinearRegression_stubMap_data_second_data_settings_etaRegions_s_we1;
-reg[31:0] LinearRegression_stubMap_data_second_data_settings_etaRegions_s_d1;
+reg[12:0] LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_address0;
+reg LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_ce0;
+reg LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_we0;
+reg[31:0] LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_d0;
+reg[12:0] LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_address1;
+reg LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_ce1;
+reg LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_we1;
+reg[31:0] LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_d1;
 reg[8:0] LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_address0;
 reg LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_ce0;
 reg LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_we0;
@@ -640,348 +637,335 @@ reg[0:0] ap_return_7;
 reg[31:0] ap_return_8;
 reg[31:0] ap_return_9;
 
-(* fsm_encoding = "none" *) reg   [38:0] ap_CS_fsm;
+(* fsm_encoding = "none" *) reg   [35:0] ap_CS_fsm;
 wire    ap_CS_fsm_state1;
-wire   [31:0] grp_push_back_1_fu_2701_ap_return;
-wire    ap_CS_fsm_state17;
-wire    grp_push_back_1_fu_2701_ap_ready;
-wire    grp_push_back_1_fu_2701_ap_done;
-reg   [0:0] tmp_60_reg_3391;
-reg   [0:0] tmp_59_reg_3387;
-reg    ap_predicate_op431_call_state17;
-reg    ap_block_state17_on_subcall_done;
-wire    ap_CS_fsm_state29;
-reg   [0:0] tmp_69_reg_4495;
-reg   [0:0] tmp_68_reg_4491;
-reg    ap_predicate_op805_call_state29;
-reg    ap_block_state29_on_subcall_done;
-reg   [31:0] residData_phi_read_a_reg_3319;
-wire    ap_CS_fsm_state2;
-wire    grp_findLargestResidual_fu_2571_ap_ready;
-wire    grp_findLargestResidual_fu_2571_ap_done;
-reg   [31:0] residData_z_read_ass_reg_3325;
-reg   [31:0] LinearRegression_lar_reg_3331;
-reg   [31:0] idx_assign_reg_3340;
-reg   [0:0] LinearRegression_lar_1_reg_3346;
-reg   [31:0] temp_reg_3351;
-reg   [31:0] temp_2_reg_3361;
-wire   [31:0] grp_fu_2881_p2;
-reg   [31:0] tmp_i_reg_3372;
-wire    ap_CS_fsm_state5;
-wire   [0:0] LinearRegression_val_fu_2971_p2;
-reg   [0:0] LinearRegression_val_reg_3378;
-wire    ap_CS_fsm_state6;
-wire   [0:0] tmp_s_fu_2977_p2;
-reg   [0:0] tmp_s_reg_3383;
-wire   [0:0] grp_has_key_fu_2872_ap_return;
-wire    ap_CS_fsm_state7;
-wire    grp_has_key_fu_2872_ap_ready;
-wire    grp_has_key_fu_2872_ap_done;
-wire   [0:0] tmp_60_fu_2982_p2;
-wire    ap_CS_fsm_state8;
-wire   [31:0] i_fu_2987_p2;
-reg   [31:0] i_reg_3395;
-wire   [3:0] tmp_64_fu_2998_p2;
-wire    ap_CS_fsm_state10;
-wire    ap_CS_fsm_state11;
-wire   [31:0] b_data_settings_ch_q0;
-reg   [31:0] b_data_settings_ch_7_reg_3516;
-wire    ap_CS_fsm_state12;
-wire   [31:0] b_data_settings_ch_1_q0;
-reg   [31:0] b_data_settings_ch_9_reg_3521;
-wire   [0:0] b_data_settings_mi_q0;
-reg   [0:0] b_data_settings_mi_7_reg_3526;
-wire   [0:0] b_data_settings_mi_1_q0;
-reg   [0:0] b_data_settings_mi_9_reg_3531;
-wire   [31:0] b_data_r_assign_q0;
-reg   [31:0] b_data_r_assign_lo_reg_3536;
-wire   [31:0] b_data_phi_assign_q0;
-reg   [31:0] b_data_phi_assign_2_reg_3541;
-wire   [31:0] b_data_z_assign_q0;
-reg   [31:0] b_data_z_assign_lo_reg_3546;
-wire   [0:0] b_data_layerId_ass_q0;
-reg   [0:0] b_data_layerId_ass_4_reg_3551;
-wire   [0:0] b_data_psModule_as_q0;
-reg   [0:0] b_data_psModule_as_4_reg_3556;
-wire   [0:0] b_data_barrel_assi_q0;
-reg   [0:0] b_data_barrel_assi_4_reg_3561;
-wire   [31:0] b_data_settings_ch_q1;
-reg   [31:0] b_data_settings_ch_11_reg_3566;
-wire   [31:0] b_data_settings_ch_1_q1;
-reg   [31:0] b_data_settings_ch_13_reg_3571;
-wire   [0:0] b_data_settings_mi_q1;
-reg   [0:0] b_data_settings_mi_11_reg_3576;
-wire   [0:0] b_data_settings_mi_1_q1;
-reg   [0:0] b_data_settings_mi_13_reg_3581;
-wire   [31:0] b_data_r_assign_q1;
-reg   [31:0] b_data_r_assign_lo_1_reg_3586;
-wire   [31:0] b_data_phi_assign_q1;
-reg   [31:0] b_data_phi_assign_4_reg_3591;
-wire   [31:0] b_data_z_assign_q1;
-reg   [31:0] b_data_z_assign_lo_1_reg_3596;
-wire   [0:0] b_data_layerId_ass_q1;
-reg   [0:0] b_data_layerId_ass_6_reg_3601;
-wire   [0:0] b_data_psModule_as_q1;
-reg   [0:0] b_data_psModule_as_6_reg_3606;
-wire   [0:0] b_data_barrel_assi_q1;
-reg   [0:0] b_data_barrel_assi_6_reg_3611;
-reg   [31:0] b_data_settings_ch_15_reg_3716;
-wire    ap_CS_fsm_state13;
-reg   [31:0] b_data_settings_ch_17_reg_3721;
-reg   [0:0] b_data_settings_mi_15_reg_3726;
-reg   [0:0] b_data_settings_mi_17_reg_3731;
-reg   [31:0] b_data_r_assign_lo_2_reg_3736;
-reg   [31:0] b_data_phi_assign_6_reg_3741;
-reg   [31:0] b_data_z_assign_lo_2_reg_3746;
-reg   [0:0] b_data_layerId_ass_8_reg_3751;
-reg   [0:0] b_data_psModule_as_8_reg_3756;
-reg   [0:0] b_data_barrel_assi_8_reg_3761;
-reg   [31:0] b_data_settings_ch_19_reg_3766;
-reg   [31:0] b_data_settings_ch_21_reg_3771;
-reg   [0:0] b_data_settings_mi_19_reg_3776;
-reg   [0:0] b_data_settings_mi_21_reg_3781;
-reg   [31:0] b_data_r_assign_lo_3_reg_3786;
-reg   [31:0] b_data_phi_assign_8_reg_3791;
-reg   [31:0] b_data_z_assign_lo_3_reg_3796;
-reg   [0:0] b_data_layerId_ass_10_reg_3801;
-reg   [0:0] b_data_psModule_as_10_reg_3806;
-reg   [0:0] b_data_barrel_assi_10_reg_3811;
-reg   [31:0] b_data_settings_ch_23_reg_3916;
-wire    ap_CS_fsm_state14;
-reg   [31:0] b_data_settings_ch_25_reg_3921;
-reg   [0:0] b_data_settings_mi_23_reg_3926;
-reg   [0:0] b_data_settings_mi_25_reg_3931;
-reg   [31:0] b_data_r_assign_lo_4_reg_3936;
-reg   [31:0] b_data_phi_assign_10_reg_3941;
-reg   [31:0] b_data_z_assign_lo_4_reg_3946;
-reg   [0:0] b_data_layerId_ass_12_reg_3951;
-reg   [0:0] b_data_psModule_as_12_reg_3956;
-reg   [0:0] b_data_barrel_assi_12_reg_3961;
-reg   [31:0] b_data_settings_ch_27_reg_3966;
-reg   [31:0] b_data_settings_ch_29_reg_3971;
-reg   [0:0] b_data_settings_mi_27_reg_3976;
-reg   [0:0] b_data_settings_mi_29_reg_3981;
-reg   [31:0] b_data_r_assign_lo_5_reg_3986;
-reg   [31:0] b_data_phi_assign_12_reg_3991;
-reg   [31:0] b_data_z_assign_lo_5_reg_3996;
-reg   [0:0] b_data_layerId_ass_14_reg_4001;
-reg   [0:0] b_data_psModule_as_14_reg_4006;
-reg   [0:0] b_data_barrel_assi_14_reg_4011;
-reg   [31:0] b_data_settings_ch_31_reg_4116;
-wire    ap_CS_fsm_state15;
-reg   [31:0] b_data_settings_ch_33_reg_4121;
-reg   [0:0] b_data_settings_mi_31_reg_4126;
-reg   [0:0] b_data_settings_mi_33_reg_4131;
-reg   [31:0] b_data_r_assign_lo_6_reg_4136;
-reg   [31:0] b_data_phi_assign_14_reg_4141;
-reg   [31:0] b_data_z_assign_lo_6_reg_4146;
-reg   [0:0] b_data_layerId_ass_16_reg_4151;
-reg   [0:0] b_data_psModule_as_16_reg_4156;
-reg   [0:0] b_data_barrel_assi_16_reg_4161;
-reg   [31:0] b_data_settings_ch_35_reg_4166;
-reg   [31:0] b_data_settings_ch_37_reg_4171;
-reg   [0:0] b_data_settings_mi_35_reg_4176;
-reg   [0:0] b_data_settings_mi_37_reg_4181;
-reg   [31:0] b_data_r_assign_lo_7_reg_4186;
-reg   [31:0] b_data_phi_assign_16_reg_4191;
-reg   [31:0] b_data_z_assign_lo_7_reg_4196;
-reg   [0:0] b_data_layerId_ass_18_reg_4201;
-reg   [0:0] b_data_psModule_as_18_reg_4206;
-reg   [0:0] b_data_barrel_assi_18_reg_4211;
-reg   [31:0] b_data_settings_ch_39_reg_4316;
+wire   [31:0] grp_push_back_1_fu_2680_ap_return;
 wire    ap_CS_fsm_state16;
-reg   [31:0] b_data_settings_ch_41_reg_4321;
-reg   [0:0] b_data_settings_mi_39_reg_4326;
-reg   [0:0] b_data_settings_mi_41_reg_4331;
-reg   [31:0] b_data_r_assign_lo_8_reg_4336;
-reg   [31:0] b_data_phi_assign_18_reg_4341;
-reg   [31:0] b_data_z_assign_lo_8_reg_4346;
-reg   [0:0] b_data_layerId_ass_20_reg_4351;
-reg   [0:0] b_data_psModule_as_20_reg_4356;
-reg   [0:0] b_data_barrel_assi_20_reg_4361;
-reg   [31:0] b_data_settings_ch_43_reg_4366;
-reg   [31:0] b_data_settings_ch_45_reg_4371;
-reg   [0:0] b_data_settings_mi_43_reg_4376;
-reg   [0:0] b_data_settings_mi_45_reg_4381;
-reg   [31:0] b_data_r_assign_lo_9_reg_4386;
-reg   [31:0] b_data_phi_assign_20_reg_4391;
-reg   [31:0] b_data_z_assign_lo_9_reg_4396;
-reg   [0:0] b_data_layerId_ass_22_reg_4401;
-reg   [0:0] b_data_psModule_as_22_reg_4406;
-reg   [0:0] b_data_barrel_assi_22_reg_4411;
-wire    ap_CS_fsm_state18;
-reg   [31:0] stub_r_s_reg_4446;
-wire    ap_CS_fsm_state19;
-reg   [31:0] stub_phi_s_reg_4452;
-reg   [31:0] stub_z_s_reg_4458;
-reg   [31:0] stub_layerId_s_reg_4464;
-reg   [0:0] stub_psModule_s_reg_4475;
-reg   [0:0] stub_barrel_s_reg_4483;
-wire   [0:0] tmp_69_fu_3073_p2;
-wire    ap_CS_fsm_state20;
-wire   [31:0] i_1_fu_3079_p2;
-reg   [31:0] i_1_reg_4499;
-wire   [3:0] tmp_73_fu_3090_p2;
-wire    ap_CS_fsm_state22;
-wire    ap_CS_fsm_state23;
-wire   [31:0] b_data_settings_ch_2_q0;
-reg   [31:0] b_data_settings_ch_49_reg_4620;
-wire    ap_CS_fsm_state24;
-wire   [31:0] b_data_settings_ch_3_q0;
-reg   [31:0] b_data_settings_ch_51_reg_4625;
-wire   [0:0] b_data_settings_mi_2_q0;
-reg   [0:0] b_data_settings_mi_49_reg_4630;
-wire   [0:0] b_data_settings_mi_3_q0;
-reg   [0:0] b_data_settings_mi_51_reg_4635;
-wire   [31:0] b_data_r_assign_1_q0;
-reg   [31:0] b_data_r_assign_1_2_reg_4640;
-wire   [31:0] b_data_phi_assign_1_q0;
-reg   [31:0] b_data_phi_assign_23_reg_4645;
-wire   [31:0] b_data_z_assign_1_q0;
-reg   [31:0] b_data_z_assign_1_2_reg_4650;
-wire   [0:0] b_data_layerId_ass_1_q0;
-reg   [0:0] b_data_layerId_ass_25_reg_4655;
-wire   [0:0] b_data_psModule_as_1_q0;
-reg   [0:0] b_data_psModule_as_25_reg_4660;
-wire   [0:0] b_data_barrel_assi_1_q0;
-reg   [0:0] b_data_barrel_assi_25_reg_4665;
-wire   [31:0] b_data_settings_ch_2_q1;
-reg   [31:0] b_data_settings_ch_53_reg_4670;
-wire   [31:0] b_data_settings_ch_3_q1;
-reg   [31:0] b_data_settings_ch_55_reg_4675;
-wire   [0:0] b_data_settings_mi_2_q1;
-reg   [0:0] b_data_settings_mi_53_reg_4680;
-wire   [0:0] b_data_settings_mi_3_q1;
-reg   [0:0] b_data_settings_mi_55_reg_4685;
-wire   [31:0] b_data_r_assign_1_q1;
-reg   [31:0] b_data_r_assign_1_4_reg_4690;
-wire   [31:0] b_data_phi_assign_1_q1;
-reg   [31:0] b_data_phi_assign_25_reg_4695;
-wire   [31:0] b_data_z_assign_1_q1;
-reg   [31:0] b_data_z_assign_1_4_reg_4700;
-wire   [0:0] b_data_layerId_ass_1_q1;
-reg   [0:0] b_data_layerId_ass_27_reg_4705;
-wire   [0:0] b_data_psModule_as_1_q1;
-reg   [0:0] b_data_psModule_as_27_reg_4710;
-wire   [0:0] b_data_barrel_assi_1_q1;
-reg   [0:0] b_data_barrel_assi_27_reg_4715;
-reg   [31:0] b_data_settings_ch_57_reg_4820;
-wire    ap_CS_fsm_state25;
-reg   [31:0] b_data_settings_ch_59_reg_4825;
-reg   [0:0] b_data_settings_mi_57_reg_4830;
-reg   [0:0] b_data_settings_mi_59_reg_4835;
-reg   [31:0] b_data_r_assign_1_6_reg_4840;
-reg   [31:0] b_data_phi_assign_27_reg_4845;
-reg   [31:0] b_data_z_assign_1_6_reg_4850;
-reg   [0:0] b_data_layerId_ass_29_reg_4855;
-reg   [0:0] b_data_psModule_as_29_reg_4860;
-reg   [0:0] b_data_barrel_assi_29_reg_4865;
-reg   [31:0] b_data_settings_ch_61_reg_4870;
-reg   [31:0] b_data_settings_ch_63_reg_4875;
-reg   [0:0] b_data_settings_mi_61_reg_4880;
-reg   [0:0] b_data_settings_mi_63_reg_4885;
-reg   [31:0] b_data_r_assign_1_8_reg_4890;
-reg   [31:0] b_data_phi_assign_29_reg_4895;
-reg   [31:0] b_data_z_assign_1_8_reg_4900;
-reg   [0:0] b_data_layerId_ass_31_reg_4905;
-reg   [0:0] b_data_psModule_as_31_reg_4910;
-reg   [0:0] b_data_barrel_assi_31_reg_4915;
-reg   [31:0] b_data_settings_ch_65_reg_5020;
-wire    ap_CS_fsm_state26;
-reg   [31:0] b_data_settings_ch_67_reg_5025;
-reg   [0:0] b_data_settings_mi_65_reg_5030;
-reg   [0:0] b_data_settings_mi_67_reg_5035;
-reg   [31:0] b_data_r_assign_1_10_reg_5040;
-reg   [31:0] b_data_phi_assign_31_reg_5045;
-reg   [31:0] b_data_z_assign_1_10_reg_5050;
-reg   [0:0] b_data_layerId_ass_33_reg_5055;
-reg   [0:0] b_data_psModule_as_33_reg_5060;
-reg   [0:0] b_data_barrel_assi_33_reg_5065;
-reg   [31:0] b_data_settings_ch_69_reg_5070;
-reg   [31:0] b_data_settings_ch_71_reg_5075;
-reg   [0:0] b_data_settings_mi_69_reg_5080;
-reg   [0:0] b_data_settings_mi_71_reg_5085;
-reg   [31:0] b_data_r_assign_1_12_reg_5090;
-reg   [31:0] b_data_phi_assign_33_reg_5095;
-reg   [31:0] b_data_z_assign_1_12_reg_5100;
-reg   [0:0] b_data_layerId_ass_35_reg_5105;
-reg   [0:0] b_data_psModule_as_35_reg_5110;
-reg   [0:0] b_data_barrel_assi_35_reg_5115;
-reg   [31:0] b_data_settings_ch_73_reg_5220;
-wire    ap_CS_fsm_state27;
-reg   [31:0] b_data_settings_ch_75_reg_5225;
-reg   [0:0] b_data_settings_mi_73_reg_5230;
-reg   [0:0] b_data_settings_mi_75_reg_5235;
-reg   [31:0] b_data_r_assign_1_14_reg_5240;
-reg   [31:0] b_data_phi_assign_35_reg_5245;
-reg   [31:0] b_data_z_assign_1_14_reg_5250;
-reg   [0:0] b_data_layerId_ass_37_reg_5255;
-reg   [0:0] b_data_psModule_as_37_reg_5260;
-reg   [0:0] b_data_barrel_assi_37_reg_5265;
-reg   [31:0] b_data_settings_ch_77_reg_5270;
-reg   [31:0] b_data_settings_ch_79_reg_5275;
-reg   [0:0] b_data_settings_mi_77_reg_5280;
-reg   [0:0] b_data_settings_mi_79_reg_5285;
-reg   [31:0] b_data_r_assign_1_16_reg_5290;
-reg   [31:0] b_data_phi_assign_37_reg_5295;
-reg   [31:0] b_data_z_assign_1_16_reg_5300;
-reg   [0:0] b_data_layerId_ass_39_reg_5305;
-reg   [0:0] b_data_psModule_as_39_reg_5310;
-reg   [0:0] b_data_barrel_assi_39_reg_5315;
-reg   [31:0] b_data_settings_ch_81_reg_5420;
+wire    grp_push_back_1_fu_2680_ap_ready;
+wire    grp_push_back_1_fu_2680_ap_done;
+reg   [0:0] tmp_5_reg_3338;
+reg    ap_block_state16_on_subcall_done;
 wire    ap_CS_fsm_state28;
-reg   [31:0] b_data_settings_ch_83_reg_5425;
-reg   [0:0] b_data_settings_mi_81_reg_5430;
-reg   [0:0] b_data_settings_mi_83_reg_5435;
-reg   [31:0] b_data_r_assign_1_18_reg_5440;
-reg   [31:0] b_data_phi_assign_39_reg_5445;
-reg   [31:0] b_data_z_assign_1_18_reg_5450;
-reg   [0:0] b_data_layerId_ass_41_reg_5455;
-reg   [0:0] b_data_psModule_as_41_reg_5460;
-reg   [0:0] b_data_barrel_assi_41_reg_5465;
-reg   [31:0] b_data_settings_ch_85_reg_5470;
-reg   [31:0] b_data_settings_ch_87_reg_5475;
-reg   [0:0] b_data_settings_mi_85_reg_5480;
-reg   [0:0] b_data_settings_mi_87_reg_5485;
-reg   [31:0] b_data_r_assign_1_20_reg_5490;
-reg   [31:0] b_data_phi_assign_41_reg_5495;
-reg   [31:0] b_data_z_assign_1_20_reg_5500;
-reg   [0:0] b_data_layerId_ass_43_reg_5505;
-reg   [0:0] b_data_psModule_as_43_reg_5510;
-reg   [0:0] b_data_barrel_assi_43_reg_5515;
-reg   [4:0] LinearRegression_stu_15_reg_5520;
+reg   [0:0] tmp_12_reg_4438;
+reg    ap_block_state28_on_subcall_done;
+reg   [31:0] residData_phi_read_a_reg_3273;
+wire    ap_CS_fsm_state2;
+wire    grp_findLargestResidual_fu_2550_ap_ready;
+wire    grp_findLargestResidual_fu_2550_ap_done;
+reg   [31:0] residData_z_read_ass_reg_3279;
+reg   [31:0] LinearRegression_lar_reg_3285;
+reg   [31:0] idx_assign_reg_3293;
+reg   [0:0] LinearRegression_lar_1_reg_3299;
+reg   [31:0] temp_reg_3304;
+reg   [31:0] temp_2_reg_3313;
+wire   [31:0] grp_fu_2851_p2;
+reg   [31:0] tmp_i_reg_3323;
+wire    ap_CS_fsm_state5;
+wire   [0:0] LinearRegression_val_fu_2936_p2;
+reg   [0:0] LinearRegression_val_reg_3329;
+wire    ap_CS_fsm_state6;
+wire   [0:0] tmp_s_fu_2942_p2;
+reg   [0:0] tmp_s_reg_3334;
+wire   [0:0] tmp_5_fu_2947_p2;
+wire    ap_CS_fsm_state7;
+wire   [31:0] i_fu_2952_p2;
+reg   [31:0] i_reg_3342;
+wire   [3:0] tmp_9_fu_2963_p2;
+wire    ap_CS_fsm_state9;
+wire    ap_CS_fsm_state10;
+wire   [31:0] b_data_settings_ch_q0;
+reg   [31:0] b_data_settings_ch_7_reg_3463;
+wire    ap_CS_fsm_state11;
+wire   [31:0] b_data_settings_ch_1_q0;
+reg   [31:0] b_data_settings_ch_9_reg_3468;
+wire   [0:0] b_data_settings_mi_q0;
+reg   [0:0] b_data_settings_mi_7_reg_3473;
+wire   [0:0] b_data_settings_mi_1_q0;
+reg   [0:0] b_data_settings_mi_9_reg_3478;
+wire   [31:0] b_data_r_assign_q0;
+reg   [31:0] b_data_r_assign_lo_reg_3483;
+wire   [31:0] b_data_phi_assign_q0;
+reg   [31:0] b_data_phi_assign_2_reg_3488;
+wire   [31:0] b_data_z_assign_q0;
+reg   [31:0] b_data_z_assign_lo_reg_3493;
+wire   [0:0] b_data_layerId_ass_q0;
+reg   [0:0] b_data_layerId_ass_4_reg_3498;
+wire   [0:0] b_data_psModule_as_q0;
+reg   [0:0] b_data_psModule_as_4_reg_3503;
+wire   [0:0] b_data_barrel_assi_q0;
+reg   [0:0] b_data_barrel_assi_4_reg_3508;
+wire   [31:0] b_data_settings_ch_q1;
+reg   [31:0] b_data_settings_ch_11_reg_3513;
+wire   [31:0] b_data_settings_ch_1_q1;
+reg   [31:0] b_data_settings_ch_13_reg_3518;
+wire   [0:0] b_data_settings_mi_q1;
+reg   [0:0] b_data_settings_mi_11_reg_3523;
+wire   [0:0] b_data_settings_mi_1_q1;
+reg   [0:0] b_data_settings_mi_13_reg_3528;
+wire   [31:0] b_data_r_assign_q1;
+reg   [31:0] b_data_r_assign_lo_1_reg_3533;
+wire   [31:0] b_data_phi_assign_q1;
+reg   [31:0] b_data_phi_assign_4_reg_3538;
+wire   [31:0] b_data_z_assign_q1;
+reg   [31:0] b_data_z_assign_lo_1_reg_3543;
+wire   [0:0] b_data_layerId_ass_q1;
+reg   [0:0] b_data_layerId_ass_6_reg_3548;
+wire   [0:0] b_data_psModule_as_q1;
+reg   [0:0] b_data_psModule_as_6_reg_3553;
+wire   [0:0] b_data_barrel_assi_q1;
+reg   [0:0] b_data_barrel_assi_6_reg_3558;
+reg   [31:0] b_data_settings_ch_15_reg_3663;
+wire    ap_CS_fsm_state12;
+reg   [31:0] b_data_settings_ch_17_reg_3668;
+reg   [0:0] b_data_settings_mi_15_reg_3673;
+reg   [0:0] b_data_settings_mi_17_reg_3678;
+reg   [31:0] b_data_r_assign_lo_2_reg_3683;
+reg   [31:0] b_data_phi_assign_6_reg_3688;
+reg   [31:0] b_data_z_assign_lo_2_reg_3693;
+reg   [0:0] b_data_layerId_ass_8_reg_3698;
+reg   [0:0] b_data_psModule_as_8_reg_3703;
+reg   [0:0] b_data_barrel_assi_8_reg_3708;
+reg   [31:0] b_data_settings_ch_19_reg_3713;
+reg   [31:0] b_data_settings_ch_21_reg_3718;
+reg   [0:0] b_data_settings_mi_19_reg_3723;
+reg   [0:0] b_data_settings_mi_21_reg_3728;
+reg   [31:0] b_data_r_assign_lo_3_reg_3733;
+reg   [31:0] b_data_phi_assign_8_reg_3738;
+reg   [31:0] b_data_z_assign_lo_3_reg_3743;
+reg   [0:0] b_data_layerId_ass_10_reg_3748;
+reg   [0:0] b_data_psModule_as_10_reg_3753;
+reg   [0:0] b_data_barrel_assi_10_reg_3758;
+reg   [31:0] b_data_settings_ch_23_reg_3863;
+wire    ap_CS_fsm_state13;
+reg   [31:0] b_data_settings_ch_25_reg_3868;
+reg   [0:0] b_data_settings_mi_23_reg_3873;
+reg   [0:0] b_data_settings_mi_25_reg_3878;
+reg   [31:0] b_data_r_assign_lo_4_reg_3883;
+reg   [31:0] b_data_phi_assign_10_reg_3888;
+reg   [31:0] b_data_z_assign_lo_4_reg_3893;
+reg   [0:0] b_data_layerId_ass_12_reg_3898;
+reg   [0:0] b_data_psModule_as_12_reg_3903;
+reg   [0:0] b_data_barrel_assi_12_reg_3908;
+reg   [31:0] b_data_settings_ch_27_reg_3913;
+reg   [31:0] b_data_settings_ch_29_reg_3918;
+reg   [0:0] b_data_settings_mi_27_reg_3923;
+reg   [0:0] b_data_settings_mi_29_reg_3928;
+reg   [31:0] b_data_r_assign_lo_5_reg_3933;
+reg   [31:0] b_data_phi_assign_12_reg_3938;
+reg   [31:0] b_data_z_assign_lo_5_reg_3943;
+reg   [0:0] b_data_layerId_ass_14_reg_3948;
+reg   [0:0] b_data_psModule_as_14_reg_3953;
+reg   [0:0] b_data_barrel_assi_14_reg_3958;
+reg   [31:0] b_data_settings_ch_31_reg_4063;
+wire    ap_CS_fsm_state14;
+reg   [31:0] b_data_settings_ch_33_reg_4068;
+reg   [0:0] b_data_settings_mi_31_reg_4073;
+reg   [0:0] b_data_settings_mi_33_reg_4078;
+reg   [31:0] b_data_r_assign_lo_6_reg_4083;
+reg   [31:0] b_data_phi_assign_14_reg_4088;
+reg   [31:0] b_data_z_assign_lo_6_reg_4093;
+reg   [0:0] b_data_layerId_ass_16_reg_4098;
+reg   [0:0] b_data_psModule_as_16_reg_4103;
+reg   [0:0] b_data_barrel_assi_16_reg_4108;
+reg   [31:0] b_data_settings_ch_35_reg_4113;
+reg   [31:0] b_data_settings_ch_37_reg_4118;
+reg   [0:0] b_data_settings_mi_35_reg_4123;
+reg   [0:0] b_data_settings_mi_37_reg_4128;
+reg   [31:0] b_data_r_assign_lo_7_reg_4133;
+reg   [31:0] b_data_phi_assign_16_reg_4138;
+reg   [31:0] b_data_z_assign_lo_7_reg_4143;
+reg   [0:0] b_data_layerId_ass_18_reg_4148;
+reg   [0:0] b_data_psModule_as_18_reg_4153;
+reg   [0:0] b_data_barrel_assi_18_reg_4158;
+reg   [31:0] b_data_settings_ch_39_reg_4263;
+wire    ap_CS_fsm_state15;
+reg   [31:0] b_data_settings_ch_41_reg_4268;
+reg   [0:0] b_data_settings_mi_39_reg_4273;
+reg   [0:0] b_data_settings_mi_41_reg_4278;
+reg   [31:0] b_data_r_assign_lo_8_reg_4283;
+reg   [31:0] b_data_phi_assign_18_reg_4288;
+reg   [31:0] b_data_z_assign_lo_8_reg_4293;
+reg   [0:0] b_data_layerId_ass_20_reg_4298;
+reg   [0:0] b_data_psModule_as_20_reg_4303;
+reg   [0:0] b_data_barrel_assi_20_reg_4308;
+reg   [31:0] b_data_settings_ch_43_reg_4313;
+reg   [31:0] b_data_settings_ch_45_reg_4318;
+reg   [0:0] b_data_settings_mi_43_reg_4323;
+reg   [0:0] b_data_settings_mi_45_reg_4328;
+reg   [31:0] b_data_r_assign_lo_9_reg_4333;
+reg   [31:0] b_data_phi_assign_20_reg_4338;
+reg   [31:0] b_data_z_assign_lo_9_reg_4343;
+reg   [0:0] b_data_layerId_ass_22_reg_4348;
+reg   [0:0] b_data_psModule_as_22_reg_4353;
+reg   [0:0] b_data_barrel_assi_22_reg_4358;
+wire    ap_CS_fsm_state17;
+reg   [31:0] stub_r_s_reg_4393;
+wire    ap_CS_fsm_state18;
+reg   [31:0] stub_phi_s_reg_4399;
+reg   [31:0] stub_z_s_reg_4405;
+reg   [31:0] stub_layerId_s_reg_4411;
+reg   [0:0] stub_psModule_s_reg_4422;
+reg   [0:0] stub_barrel_s_reg_4430;
+wire   [0:0] tmp_12_fu_3038_p2;
+wire    ap_CS_fsm_state19;
+wire   [31:0] i_1_fu_3044_p2;
+reg   [31:0] i_1_reg_4442;
+wire   [3:0] tmp_16_fu_3055_p2;
+wire    ap_CS_fsm_state21;
+wire    ap_CS_fsm_state22;
+wire   [31:0] b_data_settings_ch_2_q0;
+reg   [31:0] b_data_settings_ch_49_reg_4563;
+wire    ap_CS_fsm_state23;
+wire   [31:0] b_data_settings_ch_3_q0;
+reg   [31:0] b_data_settings_ch_51_reg_4568;
+wire   [0:0] b_data_settings_mi_2_q0;
+reg   [0:0] b_data_settings_mi_49_reg_4573;
+wire   [0:0] b_data_settings_mi_3_q0;
+reg   [0:0] b_data_settings_mi_51_reg_4578;
+wire   [31:0] b_data_r_assign_1_q0;
+reg   [31:0] b_data_r_assign_1_2_reg_4583;
+wire   [31:0] b_data_phi_assign_1_q0;
+reg   [31:0] b_data_phi_assign_23_reg_4588;
+wire   [31:0] b_data_z_assign_1_q0;
+reg   [31:0] b_data_z_assign_1_2_reg_4593;
+wire   [0:0] b_data_layerId_ass_1_q0;
+reg   [0:0] b_data_layerId_ass_25_reg_4598;
+wire   [0:0] b_data_psModule_as_1_q0;
+reg   [0:0] b_data_psModule_as_25_reg_4603;
+wire   [0:0] b_data_barrel_assi_1_q0;
+reg   [0:0] b_data_barrel_assi_25_reg_4608;
+wire   [31:0] b_data_settings_ch_2_q1;
+reg   [31:0] b_data_settings_ch_53_reg_4613;
+wire   [31:0] b_data_settings_ch_3_q1;
+reg   [31:0] b_data_settings_ch_55_reg_4618;
+wire   [0:0] b_data_settings_mi_2_q1;
+reg   [0:0] b_data_settings_mi_53_reg_4623;
+wire   [0:0] b_data_settings_mi_3_q1;
+reg   [0:0] b_data_settings_mi_55_reg_4628;
+wire   [31:0] b_data_r_assign_1_q1;
+reg   [31:0] b_data_r_assign_1_4_reg_4633;
+wire   [31:0] b_data_phi_assign_1_q1;
+reg   [31:0] b_data_phi_assign_25_reg_4638;
+wire   [31:0] b_data_z_assign_1_q1;
+reg   [31:0] b_data_z_assign_1_4_reg_4643;
+wire   [0:0] b_data_layerId_ass_1_q1;
+reg   [0:0] b_data_layerId_ass_27_reg_4648;
+wire   [0:0] b_data_psModule_as_1_q1;
+reg   [0:0] b_data_psModule_as_27_reg_4653;
+wire   [0:0] b_data_barrel_assi_1_q1;
+reg   [0:0] b_data_barrel_assi_27_reg_4658;
+reg   [31:0] b_data_settings_ch_57_reg_4763;
+wire    ap_CS_fsm_state24;
+reg   [31:0] b_data_settings_ch_59_reg_4768;
+reg   [0:0] b_data_settings_mi_57_reg_4773;
+reg   [0:0] b_data_settings_mi_59_reg_4778;
+reg   [31:0] b_data_r_assign_1_6_reg_4783;
+reg   [31:0] b_data_phi_assign_27_reg_4788;
+reg   [31:0] b_data_z_assign_1_6_reg_4793;
+reg   [0:0] b_data_layerId_ass_29_reg_4798;
+reg   [0:0] b_data_psModule_as_29_reg_4803;
+reg   [0:0] b_data_barrel_assi_29_reg_4808;
+reg   [31:0] b_data_settings_ch_61_reg_4813;
+reg   [31:0] b_data_settings_ch_63_reg_4818;
+reg   [0:0] b_data_settings_mi_61_reg_4823;
+reg   [0:0] b_data_settings_mi_63_reg_4828;
+reg   [31:0] b_data_r_assign_1_8_reg_4833;
+reg   [31:0] b_data_phi_assign_29_reg_4838;
+reg   [31:0] b_data_z_assign_1_8_reg_4843;
+reg   [0:0] b_data_layerId_ass_31_reg_4848;
+reg   [0:0] b_data_psModule_as_31_reg_4853;
+reg   [0:0] b_data_barrel_assi_31_reg_4858;
+reg   [31:0] b_data_settings_ch_65_reg_4963;
+wire    ap_CS_fsm_state25;
+reg   [31:0] b_data_settings_ch_67_reg_4968;
+reg   [0:0] b_data_settings_mi_65_reg_4973;
+reg   [0:0] b_data_settings_mi_67_reg_4978;
+reg   [31:0] b_data_r_assign_1_10_reg_4983;
+reg   [31:0] b_data_phi_assign_31_reg_4988;
+reg   [31:0] b_data_z_assign_1_10_reg_4993;
+reg   [0:0] b_data_layerId_ass_33_reg_4998;
+reg   [0:0] b_data_psModule_as_33_reg_5003;
+reg   [0:0] b_data_barrel_assi_33_reg_5008;
+reg   [31:0] b_data_settings_ch_69_reg_5013;
+reg   [31:0] b_data_settings_ch_71_reg_5018;
+reg   [0:0] b_data_settings_mi_69_reg_5023;
+reg   [0:0] b_data_settings_mi_71_reg_5028;
+reg   [31:0] b_data_r_assign_1_12_reg_5033;
+reg   [31:0] b_data_phi_assign_33_reg_5038;
+reg   [31:0] b_data_z_assign_1_12_reg_5043;
+reg   [0:0] b_data_layerId_ass_35_reg_5048;
+reg   [0:0] b_data_psModule_as_35_reg_5053;
+reg   [0:0] b_data_barrel_assi_35_reg_5058;
+reg   [31:0] b_data_settings_ch_73_reg_5163;
+wire    ap_CS_fsm_state26;
+reg   [31:0] b_data_settings_ch_75_reg_5168;
+reg   [0:0] b_data_settings_mi_73_reg_5173;
+reg   [0:0] b_data_settings_mi_75_reg_5178;
+reg   [31:0] b_data_r_assign_1_14_reg_5183;
+reg   [31:0] b_data_phi_assign_35_reg_5188;
+reg   [31:0] b_data_z_assign_1_14_reg_5193;
+reg   [0:0] b_data_layerId_ass_37_reg_5198;
+reg   [0:0] b_data_psModule_as_37_reg_5203;
+reg   [0:0] b_data_barrel_assi_37_reg_5208;
+reg   [31:0] b_data_settings_ch_77_reg_5213;
+reg   [31:0] b_data_settings_ch_79_reg_5218;
+reg   [0:0] b_data_settings_mi_77_reg_5223;
+reg   [0:0] b_data_settings_mi_79_reg_5228;
+reg   [31:0] b_data_r_assign_1_16_reg_5233;
+reg   [31:0] b_data_phi_assign_37_reg_5238;
+reg   [31:0] b_data_z_assign_1_16_reg_5243;
+reg   [0:0] b_data_layerId_ass_39_reg_5248;
+reg   [0:0] b_data_psModule_as_39_reg_5253;
+reg   [0:0] b_data_barrel_assi_39_reg_5258;
+reg   [31:0] b_data_settings_ch_81_reg_5363;
+wire    ap_CS_fsm_state27;
+reg   [31:0] b_data_settings_ch_83_reg_5368;
+reg   [0:0] b_data_settings_mi_81_reg_5373;
+reg   [0:0] b_data_settings_mi_83_reg_5378;
+reg   [31:0] b_data_r_assign_1_18_reg_5383;
+reg   [31:0] b_data_phi_assign_39_reg_5388;
+reg   [31:0] b_data_z_assign_1_18_reg_5393;
+reg   [0:0] b_data_layerId_ass_41_reg_5398;
+reg   [0:0] b_data_psModule_as_41_reg_5403;
+reg   [0:0] b_data_barrel_assi_41_reg_5408;
+reg   [31:0] b_data_settings_ch_85_reg_5413;
+reg   [31:0] b_data_settings_ch_87_reg_5418;
+reg   [0:0] b_data_settings_mi_85_reg_5423;
+reg   [0:0] b_data_settings_mi_87_reg_5428;
+reg   [31:0] b_data_r_assign_1_20_reg_5433;
+reg   [31:0] b_data_phi_assign_41_reg_5438;
+reg   [31:0] b_data_z_assign_1_20_reg_5443;
+reg   [0:0] b_data_layerId_ass_43_reg_5448;
+reg   [0:0] b_data_psModule_as_43_reg_5453;
+reg   [0:0] b_data_barrel_assi_43_reg_5458;
+reg   [4:0] LinearRegression_stu_15_reg_5463;
+wire    ap_CS_fsm_state29;
+reg   [31:0] LinearRegression_stu_16_reg_5468;
 wire    ap_CS_fsm_state30;
-reg   [31:0] LinearRegression_stu_16_reg_5525;
+wire   [31:0] value_first_read_ass_fu_3145_p3;
+reg   [31:0] value_first_read_ass_reg_5473;
+wire   [31:0] grp_erase_1_fu_2647_ap_return;
+reg   [31:0] call_ret4_reg_5479;
 wire    ap_CS_fsm_state31;
-wire   [31:0] idx_read_assign_fu_3180_p3;
-reg   [31:0] idx_read_assign_reg_5530;
-wire   [31:0] grp_erase_1_fu_2668_ap_return;
-reg   [31:0] call_ret4_reg_5536;
-wire    ap_CS_fsm_state32;
-wire    grp_erase_fu_2631_ap_ready;
-wire    grp_erase_fu_2631_ap_done;
-wire    grp_erase_1_fu_2668_ap_ready;
-wire    grp_erase_1_fu_2668_ap_done;
-reg    ap_block_state32_on_subcall_done;
-wire   [31:0] grp_clean_fu_2538_ap_return;
-reg   [31:0] call_ret2_reg_5541;
+wire    grp_erase_fu_2610_ap_ready;
+wire    grp_erase_fu_2610_ap_done;
+wire    grp_erase_1_fu_2647_ap_ready;
+wire    grp_erase_1_fu_2647_ap_done;
+reg    ap_block_state31_on_subcall_done;
+wire   [31:0] grp_clean_fu_2517_ap_return;
+reg   [31:0] call_ret3_reg_5484;
+wire    ap_CS_fsm_state33;
+wire    grp_clean_fu_2517_ap_ready;
+wire    grp_clean_fu_2517_ap_done;
+wire   [0:0] tmp_20_fu_3153_p2;
+reg   [0:0] tmp_20_reg_5489;
 wire    ap_CS_fsm_state34;
-wire    grp_clean_fu_2538_ap_ready;
-wire    grp_clean_fu_2538_ap_done;
-wire   [0:0] tmp_i1_35_fu_3188_p2;
-reg   [0:0] tmp_i1_35_reg_5546;
+wire   [31:0] i_2_fu_3158_p2;
+reg   [31:0] i_2_reg_5493;
+wire   [31:0] mapHLS_size_write_a_fu_3174_p2;
+reg   [4:0] LinearRegression_lay_6_reg_5511;
 wire    ap_CS_fsm_state35;
-wire   [31:0] i_2_fu_3193_p2;
-reg   [31:0] i_2_reg_5550;
-wire   [0:0] tmp_77_fu_3204_p2;
-reg   [0:0] tmp_77_reg_5563;
-wire    ap_CS_fsm_state37;
-wire   [31:0] i_3_fu_3209_p2;
-reg   [31:0] i_3_reg_5567;
-wire   [31:0] mapHLS_size_write_a_fu_3225_p2;
-reg   [4:0] LinearRegression_lay_8_reg_5585;
-wire    ap_CS_fsm_state38;
-wire   [0:0] grp_fu_2895_p2;
+wire   [0:0] tmp_22_fu_3179_p2;
 reg   [3:0] b_data_settings_ch_address0;
 reg    b_data_settings_ch_ce0;
 reg    b_data_settings_ch_we0;
@@ -1082,602 +1066,593 @@ reg    b_data_barrel_assi_1_ce0;
 reg    b_data_barrel_assi_1_we0;
 reg   [3:0] b_data_barrel_assi_1_address1;
 reg    b_data_barrel_assi_1_ce1;
-wire    grp_clean_fu_2538_ap_start;
-wire    grp_clean_fu_2538_ap_idle;
-wire   [4:0] grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_first_address0;
-wire    grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_first_ce0;
-wire    grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_first_we0;
-wire   [31:0] grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_first_d0;
-wire   [4:0] grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_second_size_s_address0;
-wire    grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_second_size_s_ce0;
-wire    grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_second_size_s_we0;
-wire   [31:0] grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_second_size_s_d0;
-wire   [8:0] grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofPhi_s_address0;
-wire    grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofPhi_s_ce0;
-wire    grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofPhi_s_we0;
-wire   [31:0] grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofPhi_s_d0;
-wire   [8:0] grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofPhi_s_address1;
-wire    grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofPhi_s_ce1;
-wire    grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofPhi_s_we1;
-wire   [31:0] grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofPhi_s_d1;
-wire   [8:0] grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofZ_s_address0;
-wire    grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofZ_s_ce0;
-wire    grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofZ_s_we0;
-wire   [31:0] grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofZ_s_d0;
-wire   [8:0] grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofZ_s_address1;
-wire    grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofZ_s_ce1;
-wire    grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofZ_s_we1;
-wire   [31:0] grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofZ_s_d1;
-wire   [12:0] grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_etaRegions_s_address0;
-wire    grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_etaRegions_s_ce0;
-wire    grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_etaRegions_s_we0;
-wire   [31:0] grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_etaRegions_s_d0;
-wire   [12:0] grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_etaRegions_s_address1;
-wire    grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_etaRegions_s_ce1;
-wire    grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_etaRegions_s_we1;
-wire   [31:0] grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_etaRegions_s_d1;
-wire   [8:0] grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minNumMatchLayers_s_address0;
-wire    grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minNumMatchLayers_s_ce0;
-wire    grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minNumMatchLayers_s_we0;
-wire   [31:0] grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minNumMatchLayers_s_d0;
-wire   [8:0] grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minNumMatchLayers_s_address1;
-wire    grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minNumMatchLayers_s_ce1;
-wire    grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minNumMatchLayers_s_we1;
-wire   [31:0] grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minNumMatchLayers_s_d1;
-wire   [8:0] grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minPSLayers_s_address0;
-wire    grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minPSLayers_s_ce0;
-wire    grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minPSLayers_s_we0;
-wire   [31:0] grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minPSLayers_s_d0;
-wire   [8:0] grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minPSLayers_s_address1;
-wire    grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minPSLayers_s_ce1;
-wire    grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minPSLayers_s_we1;
-wire   [31:0] grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minPSLayers_s_d1;
-wire   [8:0] grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_r_s_address0;
-wire    grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_r_s_ce0;
-wire    grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_r_s_we0;
-wire   [31:0] grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_r_s_d0;
-wire   [8:0] grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_r_s_address1;
-wire    grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_r_s_ce1;
-wire    grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_r_s_we1;
-wire   [31:0] grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_r_s_d1;
-wire   [8:0] grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_phi_s_address0;
-wire    grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_phi_s_ce0;
-wire    grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_phi_s_we0;
-wire   [31:0] grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_phi_s_d0;
-wire   [8:0] grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_phi_s_address1;
-wire    grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_phi_s_ce1;
-wire    grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_phi_s_we1;
-wire   [31:0] grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_phi_s_d1;
-wire   [8:0] grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_z_s_address0;
-wire    grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_z_s_ce0;
-wire    grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_z_s_we0;
-wire   [31:0] grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_z_s_d0;
-wire   [8:0] grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_z_s_address1;
-wire    grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_z_s_ce1;
-wire    grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_z_s_we1;
-wire   [31:0] grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_z_s_d1;
-wire   [8:0] grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_layerId_s_address0;
-wire    grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_layerId_s_ce0;
-wire    grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_layerId_s_we0;
-wire   [31:0] grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_layerId_s_d0;
-wire   [8:0] grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_layerId_s_address1;
-wire    grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_layerId_s_ce1;
-wire    grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_layerId_s_we1;
-wire   [31:0] grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_layerId_s_d1;
-wire   [8:0] grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_psModule_s_address0;
-wire    grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_psModule_s_ce0;
-wire    grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_psModule_s_we0;
-wire   [0:0] grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_psModule_s_d0;
-wire   [8:0] grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_psModule_s_address1;
-wire    grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_psModule_s_ce1;
-wire    grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_psModule_s_we1;
-wire   [0:0] grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_psModule_s_d1;
-wire   [8:0] grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_barrel_s_address0;
-wire    grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_barrel_s_ce0;
-wire    grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_barrel_s_we0;
-wire   [0:0] grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_barrel_s_d0;
-wire   [8:0] grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_barrel_s_address1;
-wire    grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_barrel_s_ce1;
-wire    grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_barrel_s_we1;
-wire   [0:0] grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_barrel_s_d1;
-wire    grp_findLargestResidual_fu_2571_ap_start;
-wire    grp_findLargestResidual_fu_2571_ap_idle;
-wire   [3:0] grp_findLargestResidual_fu_2571_LinearRegression_stubs_data_layerId_s_address0;
-wire    grp_findLargestResidual_fu_2571_LinearRegression_stubs_data_layerId_s_ce0;
-wire   [3:0] grp_findLargestResidual_fu_2571_LinearRegression_stubs_data_psModule_s_address0;
-wire    grp_findLargestResidual_fu_2571_LinearRegression_stubs_data_psModule_s_ce0;
-wire   [3:0] grp_findLargestResidual_fu_2571_LinearRegression_stubs_data_barrel_s_address0;
-wire    grp_findLargestResidual_fu_2571_LinearRegression_stubs_data_barrel_s_ce0;
-wire   [4:0] grp_findLargestResidual_fu_2571_LinearRegression_stubMap_data_first_address0;
-wire    grp_findLargestResidual_fu_2571_LinearRegression_stubMap_data_first_ce0;
-wire    grp_findLargestResidual_fu_2571_LinearRegression_stubMap_data_first_we0;
-wire   [31:0] grp_findLargestResidual_fu_2571_LinearRegression_stubMap_data_first_d0;
-wire   [4:0] grp_findLargestResidual_fu_2571_LinearRegression_stubMap_data_second_size_s_address0;
-wire    grp_findLargestResidual_fu_2571_LinearRegression_stubMap_data_second_size_s_ce0;
-wire    grp_findLargestResidual_fu_2571_LinearRegression_stubMap_data_second_size_s_we0;
-wire   [31:0] grp_findLargestResidual_fu_2571_LinearRegression_stubMap_data_second_size_s_d0;
-wire   [8:0] grp_findLargestResidual_fu_2571_LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_address0;
-wire    grp_findLargestResidual_fu_2571_LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_ce0;
-wire    grp_findLargestResidual_fu_2571_LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_we0;
-wire   [31:0] grp_findLargestResidual_fu_2571_LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_d0;
-wire   [8:0] grp_findLargestResidual_fu_2571_LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_address1;
-wire    grp_findLargestResidual_fu_2571_LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_ce1;
-wire    grp_findLargestResidual_fu_2571_LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_we1;
-wire   [31:0] grp_findLargestResidual_fu_2571_LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_d1;
-wire   [8:0] grp_findLargestResidual_fu_2571_LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_address0;
-wire    grp_findLargestResidual_fu_2571_LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_ce0;
-wire    grp_findLargestResidual_fu_2571_LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_we0;
-wire   [31:0] grp_findLargestResidual_fu_2571_LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_d0;
-wire   [8:0] grp_findLargestResidual_fu_2571_LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_address1;
-wire    grp_findLargestResidual_fu_2571_LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_ce1;
-wire    grp_findLargestResidual_fu_2571_LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_we1;
-wire   [31:0] grp_findLargestResidual_fu_2571_LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_d1;
-wire   [8:0] grp_findLargestResidual_fu_2571_LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_address0;
-wire    grp_findLargestResidual_fu_2571_LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_ce0;
-wire    grp_findLargestResidual_fu_2571_LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_we0;
-wire   [31:0] grp_findLargestResidual_fu_2571_LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_d0;
-wire   [8:0] grp_findLargestResidual_fu_2571_LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_address1;
-wire    grp_findLargestResidual_fu_2571_LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_ce1;
-wire    grp_findLargestResidual_fu_2571_LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_we1;
-wire   [31:0] grp_findLargestResidual_fu_2571_LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_d1;
-wire   [8:0] grp_findLargestResidual_fu_2571_LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_address0;
-wire    grp_findLargestResidual_fu_2571_LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_ce0;
-wire    grp_findLargestResidual_fu_2571_LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_we0;
-wire   [31:0] grp_findLargestResidual_fu_2571_LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_d0;
-wire   [8:0] grp_findLargestResidual_fu_2571_LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_address1;
-wire    grp_findLargestResidual_fu_2571_LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_ce1;
-wire    grp_findLargestResidual_fu_2571_LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_we1;
-wire   [31:0] grp_findLargestResidual_fu_2571_LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_d1;
-wire   [8:0] grp_findLargestResidual_fu_2571_LinearRegression_stubMap_data_second_data_r_s_address0;
-wire    grp_findLargestResidual_fu_2571_LinearRegression_stubMap_data_second_data_r_s_ce0;
-wire    grp_findLargestResidual_fu_2571_LinearRegression_stubMap_data_second_data_r_s_we0;
-wire   [31:0] grp_findLargestResidual_fu_2571_LinearRegression_stubMap_data_second_data_r_s_d0;
-wire   [8:0] grp_findLargestResidual_fu_2571_LinearRegression_stubMap_data_second_data_r_s_address1;
-wire    grp_findLargestResidual_fu_2571_LinearRegression_stubMap_data_second_data_r_s_ce1;
-wire    grp_findLargestResidual_fu_2571_LinearRegression_stubMap_data_second_data_r_s_we1;
-wire   [31:0] grp_findLargestResidual_fu_2571_LinearRegression_stubMap_data_second_data_r_s_d1;
-wire   [8:0] grp_findLargestResidual_fu_2571_LinearRegression_stubMap_data_second_data_phi_s_address0;
-wire    grp_findLargestResidual_fu_2571_LinearRegression_stubMap_data_second_data_phi_s_ce0;
-wire    grp_findLargestResidual_fu_2571_LinearRegression_stubMap_data_second_data_phi_s_we0;
-wire   [31:0] grp_findLargestResidual_fu_2571_LinearRegression_stubMap_data_second_data_phi_s_d0;
-wire   [8:0] grp_findLargestResidual_fu_2571_LinearRegression_stubMap_data_second_data_phi_s_address1;
-wire    grp_findLargestResidual_fu_2571_LinearRegression_stubMap_data_second_data_phi_s_ce1;
-wire    grp_findLargestResidual_fu_2571_LinearRegression_stubMap_data_second_data_phi_s_we1;
-wire   [31:0] grp_findLargestResidual_fu_2571_LinearRegression_stubMap_data_second_data_phi_s_d1;
-wire   [8:0] grp_findLargestResidual_fu_2571_LinearRegression_stubMap_data_second_data_z_s_address0;
-wire    grp_findLargestResidual_fu_2571_LinearRegression_stubMap_data_second_data_z_s_ce0;
-wire    grp_findLargestResidual_fu_2571_LinearRegression_stubMap_data_second_data_z_s_we0;
-wire   [31:0] grp_findLargestResidual_fu_2571_LinearRegression_stubMap_data_second_data_z_s_d0;
-wire   [8:0] grp_findLargestResidual_fu_2571_LinearRegression_stubMap_data_second_data_z_s_address1;
-wire    grp_findLargestResidual_fu_2571_LinearRegression_stubMap_data_second_data_z_s_ce1;
-wire    grp_findLargestResidual_fu_2571_LinearRegression_stubMap_data_second_data_z_s_we1;
-wire   [31:0] grp_findLargestResidual_fu_2571_LinearRegression_stubMap_data_second_data_z_s_d1;
-wire   [8:0] grp_findLargestResidual_fu_2571_LinearRegression_stubMap_data_second_data_layerId_s_address0;
-wire    grp_findLargestResidual_fu_2571_LinearRegression_stubMap_data_second_data_layerId_s_ce0;
-wire    grp_findLargestResidual_fu_2571_LinearRegression_stubMap_data_second_data_layerId_s_we0;
-wire   [31:0] grp_findLargestResidual_fu_2571_LinearRegression_stubMap_data_second_data_layerId_s_d0;
-wire   [8:0] grp_findLargestResidual_fu_2571_LinearRegression_stubMap_data_second_data_layerId_s_address1;
-wire    grp_findLargestResidual_fu_2571_LinearRegression_stubMap_data_second_data_layerId_s_ce1;
-wire    grp_findLargestResidual_fu_2571_LinearRegression_stubMap_data_second_data_layerId_s_we1;
-wire   [31:0] grp_findLargestResidual_fu_2571_LinearRegression_stubMap_data_second_data_layerId_s_d1;
-wire   [8:0] grp_findLargestResidual_fu_2571_LinearRegression_stubMap_data_second_data_psModule_s_address0;
-wire    grp_findLargestResidual_fu_2571_LinearRegression_stubMap_data_second_data_psModule_s_ce0;
-wire    grp_findLargestResidual_fu_2571_LinearRegression_stubMap_data_second_data_psModule_s_we0;
-wire   [0:0] grp_findLargestResidual_fu_2571_LinearRegression_stubMap_data_second_data_psModule_s_d0;
-wire   [8:0] grp_findLargestResidual_fu_2571_LinearRegression_stubMap_data_second_data_psModule_s_address1;
-wire    grp_findLargestResidual_fu_2571_LinearRegression_stubMap_data_second_data_psModule_s_ce1;
-wire    grp_findLargestResidual_fu_2571_LinearRegression_stubMap_data_second_data_psModule_s_we1;
-wire   [0:0] grp_findLargestResidual_fu_2571_LinearRegression_stubMap_data_second_data_psModule_s_d1;
-wire   [8:0] grp_findLargestResidual_fu_2571_LinearRegression_stubMap_data_second_data_barrel_s_address0;
-wire    grp_findLargestResidual_fu_2571_LinearRegression_stubMap_data_second_data_barrel_s_ce0;
-wire    grp_findLargestResidual_fu_2571_LinearRegression_stubMap_data_second_data_barrel_s_we0;
-wire   [0:0] grp_findLargestResidual_fu_2571_LinearRegression_stubMap_data_second_data_barrel_s_d0;
-wire   [8:0] grp_findLargestResidual_fu_2571_LinearRegression_stubMap_data_second_data_barrel_s_address1;
-wire    grp_findLargestResidual_fu_2571_LinearRegression_stubMap_data_second_data_barrel_s_ce1;
-wire    grp_findLargestResidual_fu_2571_LinearRegression_stubMap_data_second_data_barrel_s_we1;
-wire   [0:0] grp_findLargestResidual_fu_2571_LinearRegression_stubMap_data_second_data_barrel_s_d1;
-wire   [4:0] grp_findLargestResidual_fu_2571_LinearRegression_layerPopulation_data_first_address0;
-wire    grp_findLargestResidual_fu_2571_LinearRegression_layerPopulation_data_first_ce0;
-wire    grp_findLargestResidual_fu_2571_LinearRegression_layerPopulation_data_first_we0;
-wire   [31:0] grp_findLargestResidual_fu_2571_LinearRegression_layerPopulation_data_first_d0;
-wire   [4:0] grp_findLargestResidual_fu_2571_LinearRegression_layerPopulation_data_second_address0;
-wire    grp_findLargestResidual_fu_2571_LinearRegression_layerPopulation_data_second_ce0;
-wire    grp_findLargestResidual_fu_2571_LinearRegression_layerPopulation_data_second_we0;
-wire   [31:0] grp_findLargestResidual_fu_2571_LinearRegression_layerPopulation_data_second_d0;
-wire   [4:0] grp_findLargestResidual_fu_2571_LinearRegression_residuals_data_first_address0;
-wire    grp_findLargestResidual_fu_2571_LinearRegression_residuals_data_first_ce0;
-wire   [4:0] grp_findLargestResidual_fu_2571_LinearRegression_residuals_data_second_size_s_address0;
-wire    grp_findLargestResidual_fu_2571_LinearRegression_residuals_data_second_size_s_ce0;
-wire   [8:0] grp_findLargestResidual_fu_2571_LinearRegression_residuals_data_second_data_phi_address0;
-wire    grp_findLargestResidual_fu_2571_LinearRegression_residuals_data_second_data_phi_ce0;
-wire   [8:0] grp_findLargestResidual_fu_2571_LinearRegression_residuals_data_second_data_z_address0;
-wire    grp_findLargestResidual_fu_2571_LinearRegression_residuals_data_second_data_z_ce0;
-wire   [8:0] grp_findLargestResidual_fu_2571_LinearRegression_residuals_data_second_data_layerId_address0;
-wire    grp_findLargestResidual_fu_2571_LinearRegression_residuals_data_second_data_layerId_ce0;
-wire   [8:0] grp_findLargestResidual_fu_2571_LinearRegression_residuals_data_second_data_stubId_address0;
-wire    grp_findLargestResidual_fu_2571_LinearRegression_residuals_data_second_data_stubId_ce0;
-wire   [8:0] grp_findLargestResidual_fu_2571_LinearRegression_residuals_data_second_data_ps_address0;
-wire    grp_findLargestResidual_fu_2571_LinearRegression_residuals_data_second_data_ps_ce0;
-wire   [31:0] grp_findLargestResidual_fu_2571_ap_return_0;
-wire   [31:0] grp_findLargestResidual_fu_2571_ap_return_1;
-wire   [31:0] grp_findLargestResidual_fu_2571_ap_return_2;
-wire   [31:0] grp_findLargestResidual_fu_2571_ap_return_3;
-wire   [0:0] grp_findLargestResidual_fu_2571_ap_return_4;
-wire   [31:0] grp_findLargestResidual_fu_2571_ap_return_5;
-wire   [31:0] grp_findLargestResidual_fu_2571_ap_return_6;
-wire    grp_erase_fu_2631_ap_start;
-wire    grp_erase_fu_2631_ap_idle;
-wire   [8:0] grp_erase_fu_2631_arrayHLS_Stub_data_settings_chosenRofPhi_s_address0;
-wire    grp_erase_fu_2631_arrayHLS_Stub_data_settings_chosenRofPhi_s_ce0;
-wire    grp_erase_fu_2631_arrayHLS_Stub_data_settings_chosenRofPhi_s_we0;
-wire   [31:0] grp_erase_fu_2631_arrayHLS_Stub_data_settings_chosenRofPhi_s_d0;
-wire   [8:0] grp_erase_fu_2631_arrayHLS_Stub_data_settings_chosenRofZ_s_address0;
-wire    grp_erase_fu_2631_arrayHLS_Stub_data_settings_chosenRofZ_s_ce0;
-wire    grp_erase_fu_2631_arrayHLS_Stub_data_settings_chosenRofZ_s_we0;
-wire   [31:0] grp_erase_fu_2631_arrayHLS_Stub_data_settings_chosenRofZ_s_d0;
-wire   [12:0] grp_erase_fu_2631_arrayHLS_Stub_data_settings_etaRegions_s_address0;
-wire    grp_erase_fu_2631_arrayHLS_Stub_data_settings_etaRegions_s_ce0;
-wire    grp_erase_fu_2631_arrayHLS_Stub_data_settings_etaRegions_s_we0;
-wire   [31:0] grp_erase_fu_2631_arrayHLS_Stub_data_settings_etaRegions_s_d0;
-wire   [12:0] grp_erase_fu_2631_arrayHLS_Stub_data_settings_etaRegions_s_address1;
-wire    grp_erase_fu_2631_arrayHLS_Stub_data_settings_etaRegions_s_ce1;
-wire    grp_erase_fu_2631_arrayHLS_Stub_data_settings_etaRegions_s_we1;
-wire   [31:0] grp_erase_fu_2631_arrayHLS_Stub_data_settings_etaRegions_s_d1;
-wire   [8:0] grp_erase_fu_2631_arrayHLS_Stub_data_settings_minNumMatchLayers_s_address0;
-wire    grp_erase_fu_2631_arrayHLS_Stub_data_settings_minNumMatchLayers_s_ce0;
-wire    grp_erase_fu_2631_arrayHLS_Stub_data_settings_minNumMatchLayers_s_we0;
-wire   [31:0] grp_erase_fu_2631_arrayHLS_Stub_data_settings_minNumMatchLayers_s_d0;
-wire   [8:0] grp_erase_fu_2631_arrayHLS_Stub_data_settings_minPSLayers_s_address0;
-wire    grp_erase_fu_2631_arrayHLS_Stub_data_settings_minPSLayers_s_ce0;
-wire    grp_erase_fu_2631_arrayHLS_Stub_data_settings_minPSLayers_s_we0;
-wire   [31:0] grp_erase_fu_2631_arrayHLS_Stub_data_settings_minPSLayers_s_d0;
-wire   [8:0] grp_erase_fu_2631_arrayHLS_Stub_data_r_s_address0;
-wire    grp_erase_fu_2631_arrayHLS_Stub_data_r_s_ce0;
-wire    grp_erase_fu_2631_arrayHLS_Stub_data_r_s_we0;
-wire   [31:0] grp_erase_fu_2631_arrayHLS_Stub_data_r_s_d0;
-wire   [8:0] grp_erase_fu_2631_arrayHLS_Stub_data_phi_s_address0;
-wire    grp_erase_fu_2631_arrayHLS_Stub_data_phi_s_ce0;
-wire    grp_erase_fu_2631_arrayHLS_Stub_data_phi_s_we0;
-wire   [31:0] grp_erase_fu_2631_arrayHLS_Stub_data_phi_s_d0;
-wire   [8:0] grp_erase_fu_2631_arrayHLS_Stub_data_z_s_address0;
-wire    grp_erase_fu_2631_arrayHLS_Stub_data_z_s_ce0;
-wire    grp_erase_fu_2631_arrayHLS_Stub_data_z_s_we0;
-wire   [31:0] grp_erase_fu_2631_arrayHLS_Stub_data_z_s_d0;
-wire   [8:0] grp_erase_fu_2631_arrayHLS_Stub_data_layerId_s_address0;
-wire    grp_erase_fu_2631_arrayHLS_Stub_data_layerId_s_ce0;
-wire    grp_erase_fu_2631_arrayHLS_Stub_data_layerId_s_we0;
-wire   [31:0] grp_erase_fu_2631_arrayHLS_Stub_data_layerId_s_d0;
-wire   [8:0] grp_erase_fu_2631_arrayHLS_Stub_data_psModule_s_address0;
-wire    grp_erase_fu_2631_arrayHLS_Stub_data_psModule_s_ce0;
-wire    grp_erase_fu_2631_arrayHLS_Stub_data_psModule_s_we0;
-wire   [0:0] grp_erase_fu_2631_arrayHLS_Stub_data_psModule_s_d0;
-wire   [8:0] grp_erase_fu_2631_arrayHLS_Stub_data_barrel_s_address0;
-wire    grp_erase_fu_2631_arrayHLS_Stub_data_barrel_s_ce0;
-wire    grp_erase_fu_2631_arrayHLS_Stub_data_barrel_s_we0;
-wire   [0:0] grp_erase_fu_2631_arrayHLS_Stub_data_barrel_s_d0;
-wire    grp_erase_fu_2631_value_psModule_read;
-wire    grp_erase_fu_2631_value_barrel_read;
-wire   [31:0] grp_erase_fu_2631_ap_return;
-wire    grp_erase_1_fu_2668_ap_start;
-wire    grp_erase_1_fu_2668_ap_idle;
-wire   [3:0] grp_erase_1_fu_2668_arrayHLS_Stub_data_settings_chosenRofPhi_s_address0;
-wire    grp_erase_1_fu_2668_arrayHLS_Stub_data_settings_chosenRofPhi_s_ce0;
-wire    grp_erase_1_fu_2668_arrayHLS_Stub_data_settings_chosenRofPhi_s_we0;
-wire   [31:0] grp_erase_1_fu_2668_arrayHLS_Stub_data_settings_chosenRofPhi_s_d0;
-wire   [3:0] grp_erase_1_fu_2668_arrayHLS_Stub_data_settings_chosenRofZ_s_address0;
-wire    grp_erase_1_fu_2668_arrayHLS_Stub_data_settings_chosenRofZ_s_ce0;
-wire    grp_erase_1_fu_2668_arrayHLS_Stub_data_settings_chosenRofZ_s_we0;
-wire   [31:0] grp_erase_1_fu_2668_arrayHLS_Stub_data_settings_chosenRofZ_s_d0;
-wire   [7:0] grp_erase_1_fu_2668_arrayHLS_Stub_data_settings_etaRegions_s_address0;
-wire    grp_erase_1_fu_2668_arrayHLS_Stub_data_settings_etaRegions_s_ce0;
-wire    grp_erase_1_fu_2668_arrayHLS_Stub_data_settings_etaRegions_s_we0;
-wire   [31:0] grp_erase_1_fu_2668_arrayHLS_Stub_data_settings_etaRegions_s_d0;
-wire   [7:0] grp_erase_1_fu_2668_arrayHLS_Stub_data_settings_etaRegions_s_address1;
-wire    grp_erase_1_fu_2668_arrayHLS_Stub_data_settings_etaRegions_s_ce1;
-wire    grp_erase_1_fu_2668_arrayHLS_Stub_data_settings_etaRegions_s_we1;
-wire   [31:0] grp_erase_1_fu_2668_arrayHLS_Stub_data_settings_etaRegions_s_d1;
-wire   [3:0] grp_erase_1_fu_2668_arrayHLS_Stub_data_settings_minNumMatchLayers_s_address0;
-wire    grp_erase_1_fu_2668_arrayHLS_Stub_data_settings_minNumMatchLayers_s_ce0;
-wire    grp_erase_1_fu_2668_arrayHLS_Stub_data_settings_minNumMatchLayers_s_we0;
-wire   [31:0] grp_erase_1_fu_2668_arrayHLS_Stub_data_settings_minNumMatchLayers_s_d0;
-wire   [3:0] grp_erase_1_fu_2668_arrayHLS_Stub_data_settings_minPSLayers_s_address0;
-wire    grp_erase_1_fu_2668_arrayHLS_Stub_data_settings_minPSLayers_s_ce0;
-wire    grp_erase_1_fu_2668_arrayHLS_Stub_data_settings_minPSLayers_s_we0;
-wire   [31:0] grp_erase_1_fu_2668_arrayHLS_Stub_data_settings_minPSLayers_s_d0;
-wire   [3:0] grp_erase_1_fu_2668_arrayHLS_Stub_data_r_s_address0;
-wire    grp_erase_1_fu_2668_arrayHLS_Stub_data_r_s_ce0;
-wire    grp_erase_1_fu_2668_arrayHLS_Stub_data_r_s_we0;
-wire   [31:0] grp_erase_1_fu_2668_arrayHLS_Stub_data_r_s_d0;
-wire   [3:0] grp_erase_1_fu_2668_arrayHLS_Stub_data_phi_s_address0;
-wire    grp_erase_1_fu_2668_arrayHLS_Stub_data_phi_s_ce0;
-wire    grp_erase_1_fu_2668_arrayHLS_Stub_data_phi_s_we0;
-wire   [31:0] grp_erase_1_fu_2668_arrayHLS_Stub_data_phi_s_d0;
-wire   [3:0] grp_erase_1_fu_2668_arrayHLS_Stub_data_z_s_address0;
-wire    grp_erase_1_fu_2668_arrayHLS_Stub_data_z_s_ce0;
-wire    grp_erase_1_fu_2668_arrayHLS_Stub_data_z_s_we0;
-wire   [31:0] grp_erase_1_fu_2668_arrayHLS_Stub_data_z_s_d0;
-wire   [3:0] grp_erase_1_fu_2668_arrayHLS_Stub_data_layerId_s_address0;
-wire    grp_erase_1_fu_2668_arrayHLS_Stub_data_layerId_s_ce0;
-wire    grp_erase_1_fu_2668_arrayHLS_Stub_data_layerId_s_we0;
-wire   [31:0] grp_erase_1_fu_2668_arrayHLS_Stub_data_layerId_s_d0;
-wire   [3:0] grp_erase_1_fu_2668_arrayHLS_Stub_data_psModule_s_address0;
-wire    grp_erase_1_fu_2668_arrayHLS_Stub_data_psModule_s_ce0;
-wire    grp_erase_1_fu_2668_arrayHLS_Stub_data_psModule_s_we0;
-wire   [0:0] grp_erase_1_fu_2668_arrayHLS_Stub_data_psModule_s_d0;
-wire   [3:0] grp_erase_1_fu_2668_arrayHLS_Stub_data_barrel_s_address0;
-wire    grp_erase_1_fu_2668_arrayHLS_Stub_data_barrel_s_ce0;
-wire    grp_erase_1_fu_2668_arrayHLS_Stub_data_barrel_s_we0;
-wire   [0:0] grp_erase_1_fu_2668_arrayHLS_Stub_data_barrel_s_d0;
-wire    grp_erase_1_fu_2668_value_psModule_read;
-wire    grp_erase_1_fu_2668_value_barrel_read;
-wire    grp_push_back_1_fu_2701_ap_start;
-wire    grp_push_back_1_fu_2701_ap_idle;
-reg   [31:0] grp_push_back_1_fu_2701_mapHLS_unsigned_int_arrayHLS_Stub_size_read;
-wire   [4:0] grp_push_back_1_fu_2701_mapHLS_unsigned_int_arrayHLS_Stub_data_first_address0;
-wire    grp_push_back_1_fu_2701_mapHLS_unsigned_int_arrayHLS_Stub_data_first_ce0;
-wire    grp_push_back_1_fu_2701_mapHLS_unsigned_int_arrayHLS_Stub_data_first_we0;
-wire   [31:0] grp_push_back_1_fu_2701_mapHLS_unsigned_int_arrayHLS_Stub_data_first_d0;
-wire   [4:0] grp_push_back_1_fu_2701_mapHLS_unsigned_int_arrayHLS_Stub_data_second_size_s_address0;
-wire    grp_push_back_1_fu_2701_mapHLS_unsigned_int_arrayHLS_Stub_data_second_size_s_ce0;
-wire    grp_push_back_1_fu_2701_mapHLS_unsigned_int_arrayHLS_Stub_data_second_size_s_we0;
-wire   [31:0] grp_push_back_1_fu_2701_mapHLS_unsigned_int_arrayHLS_Stub_data_second_size_s_d0;
-wire   [8:0] grp_push_back_1_fu_2701_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofPhi_s_address0;
-wire    grp_push_back_1_fu_2701_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofPhi_s_ce0;
-wire    grp_push_back_1_fu_2701_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofPhi_s_we0;
-wire   [31:0] grp_push_back_1_fu_2701_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofPhi_s_d0;
-wire   [8:0] grp_push_back_1_fu_2701_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofPhi_s_address1;
-wire    grp_push_back_1_fu_2701_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofPhi_s_ce1;
-wire    grp_push_back_1_fu_2701_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofPhi_s_we1;
-wire   [31:0] grp_push_back_1_fu_2701_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofPhi_s_d1;
-wire   [8:0] grp_push_back_1_fu_2701_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofZ_s_address0;
-wire    grp_push_back_1_fu_2701_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofZ_s_ce0;
-wire    grp_push_back_1_fu_2701_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofZ_s_we0;
-wire   [31:0] grp_push_back_1_fu_2701_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofZ_s_d0;
-wire   [8:0] grp_push_back_1_fu_2701_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofZ_s_address1;
-wire    grp_push_back_1_fu_2701_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofZ_s_ce1;
-wire    grp_push_back_1_fu_2701_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofZ_s_we1;
-wire   [31:0] grp_push_back_1_fu_2701_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofZ_s_d1;
-wire   [8:0] grp_push_back_1_fu_2701_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minNumMatchLayers_s_address0;
-wire    grp_push_back_1_fu_2701_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minNumMatchLayers_s_ce0;
-wire    grp_push_back_1_fu_2701_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minNumMatchLayers_s_we0;
-wire   [31:0] grp_push_back_1_fu_2701_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minNumMatchLayers_s_d0;
-wire   [8:0] grp_push_back_1_fu_2701_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minNumMatchLayers_s_address1;
-wire    grp_push_back_1_fu_2701_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minNumMatchLayers_s_ce1;
-wire    grp_push_back_1_fu_2701_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minNumMatchLayers_s_we1;
-wire   [31:0] grp_push_back_1_fu_2701_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minNumMatchLayers_s_d1;
-wire   [8:0] grp_push_back_1_fu_2701_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minPSLayers_s_address0;
-wire    grp_push_back_1_fu_2701_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minPSLayers_s_ce0;
-wire    grp_push_back_1_fu_2701_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minPSLayers_s_we0;
-wire   [31:0] grp_push_back_1_fu_2701_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minPSLayers_s_d0;
-wire   [8:0] grp_push_back_1_fu_2701_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minPSLayers_s_address1;
-wire    grp_push_back_1_fu_2701_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minPSLayers_s_ce1;
-wire    grp_push_back_1_fu_2701_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minPSLayers_s_we1;
-wire   [31:0] grp_push_back_1_fu_2701_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minPSLayers_s_d1;
-wire   [8:0] grp_push_back_1_fu_2701_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_r_s_address0;
-wire    grp_push_back_1_fu_2701_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_r_s_ce0;
-wire    grp_push_back_1_fu_2701_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_r_s_we0;
-wire   [31:0] grp_push_back_1_fu_2701_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_r_s_d0;
-wire   [8:0] grp_push_back_1_fu_2701_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_r_s_address1;
-wire    grp_push_back_1_fu_2701_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_r_s_ce1;
-wire    grp_push_back_1_fu_2701_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_r_s_we1;
-wire   [31:0] grp_push_back_1_fu_2701_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_r_s_d1;
-wire   [8:0] grp_push_back_1_fu_2701_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_phi_s_address0;
-wire    grp_push_back_1_fu_2701_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_phi_s_ce0;
-wire    grp_push_back_1_fu_2701_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_phi_s_we0;
-wire   [31:0] grp_push_back_1_fu_2701_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_phi_s_d0;
-wire   [8:0] grp_push_back_1_fu_2701_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_phi_s_address1;
-wire    grp_push_back_1_fu_2701_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_phi_s_ce1;
-wire    grp_push_back_1_fu_2701_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_phi_s_we1;
-wire   [31:0] grp_push_back_1_fu_2701_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_phi_s_d1;
-wire   [8:0] grp_push_back_1_fu_2701_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_z_s_address0;
-wire    grp_push_back_1_fu_2701_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_z_s_ce0;
-wire    grp_push_back_1_fu_2701_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_z_s_we0;
-wire   [31:0] grp_push_back_1_fu_2701_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_z_s_d0;
-wire   [8:0] grp_push_back_1_fu_2701_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_z_s_address1;
-wire    grp_push_back_1_fu_2701_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_z_s_ce1;
-wire    grp_push_back_1_fu_2701_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_z_s_we1;
-wire   [31:0] grp_push_back_1_fu_2701_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_z_s_d1;
-wire   [8:0] grp_push_back_1_fu_2701_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_layerId_s_address0;
-wire    grp_push_back_1_fu_2701_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_layerId_s_ce0;
-wire    grp_push_back_1_fu_2701_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_layerId_s_we0;
-wire   [31:0] grp_push_back_1_fu_2701_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_layerId_s_d0;
-wire   [8:0] grp_push_back_1_fu_2701_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_layerId_s_address1;
-wire    grp_push_back_1_fu_2701_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_layerId_s_ce1;
-wire    grp_push_back_1_fu_2701_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_layerId_s_we1;
-wire   [31:0] grp_push_back_1_fu_2701_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_layerId_s_d1;
-wire   [8:0] grp_push_back_1_fu_2701_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_psModule_s_address0;
-wire    grp_push_back_1_fu_2701_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_psModule_s_ce0;
-wire    grp_push_back_1_fu_2701_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_psModule_s_we0;
-wire   [0:0] grp_push_back_1_fu_2701_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_psModule_s_d0;
-wire   [8:0] grp_push_back_1_fu_2701_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_psModule_s_address1;
-wire    grp_push_back_1_fu_2701_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_psModule_s_ce1;
-wire    grp_push_back_1_fu_2701_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_psModule_s_we1;
-wire   [0:0] grp_push_back_1_fu_2701_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_psModule_s_d1;
-wire   [8:0] grp_push_back_1_fu_2701_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_barrel_s_address0;
-wire    grp_push_back_1_fu_2701_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_barrel_s_ce0;
-wire    grp_push_back_1_fu_2701_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_barrel_s_we0;
-wire   [0:0] grp_push_back_1_fu_2701_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_barrel_s_d0;
-wire   [8:0] grp_push_back_1_fu_2701_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_barrel_s_address1;
-wire    grp_push_back_1_fu_2701_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_barrel_s_ce1;
-wire    grp_push_back_1_fu_2701_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_barrel_s_we1;
-wire   [0:0] grp_push_back_1_fu_2701_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_barrel_s_d1;
-reg   [31:0] grp_push_back_1_fu_2701_p_read1;
-reg   [31:0] grp_push_back_1_fu_2701_p_read3;
-reg   [31:0] grp_push_back_1_fu_2701_p_read4;
-reg   [31:0] grp_push_back_1_fu_2701_p_read5;
-reg   [31:0] grp_push_back_1_fu_2701_p_read6;
-reg   [31:0] grp_push_back_1_fu_2701_p_read7;
-reg   [31:0] grp_push_back_1_fu_2701_p_read8;
-reg   [31:0] grp_push_back_1_fu_2701_p_read9;
-reg   [31:0] grp_push_back_1_fu_2701_p_read10;
-reg   [31:0] grp_push_back_1_fu_2701_p_read11;
-reg   [31:0] grp_push_back_1_fu_2701_p_read12;
-reg   [31:0] grp_push_back_1_fu_2701_p_read13;
-reg   [31:0] grp_push_back_1_fu_2701_p_read14;
-reg   [31:0] grp_push_back_1_fu_2701_p_read15;
-reg   [31:0] grp_push_back_1_fu_2701_p_read16;
-reg   [31:0] grp_push_back_1_fu_2701_p_read17;
-reg   [31:0] grp_push_back_1_fu_2701_p_read18;
-reg   [31:0] grp_push_back_1_fu_2701_p_read19;
-reg   [31:0] grp_push_back_1_fu_2701_p_read20;
-reg   [31:0] grp_push_back_1_fu_2701_p_read21;
-reg   [0:0] grp_push_back_1_fu_2701_p_read212;
-reg   [0:0] grp_push_back_1_fu_2701_p_read213;
-reg   [0:0] grp_push_back_1_fu_2701_p_read214;
-reg   [0:0] grp_push_back_1_fu_2701_p_read215;
-reg   [0:0] grp_push_back_1_fu_2701_p_read216;
-reg   [0:0] grp_push_back_1_fu_2701_p_read217;
-reg   [0:0] grp_push_back_1_fu_2701_p_read218;
-reg   [0:0] grp_push_back_1_fu_2701_p_read219;
-reg   [0:0] grp_push_back_1_fu_2701_p_read220;
-reg   [0:0] grp_push_back_1_fu_2701_p_read221;
-reg   [0:0] grp_push_back_1_fu_2701_p_read222;
-reg   [0:0] grp_push_back_1_fu_2701_p_read223;
-reg   [0:0] grp_push_back_1_fu_2701_p_read224;
-reg   [0:0] grp_push_back_1_fu_2701_p_read225;
-reg   [0:0] grp_push_back_1_fu_2701_p_read226;
-reg   [0:0] grp_push_back_1_fu_2701_p_read227;
-reg   [0:0] grp_push_back_1_fu_2701_p_read228;
-reg   [0:0] grp_push_back_1_fu_2701_p_read229;
-reg   [0:0] grp_push_back_1_fu_2701_p_read230;
-reg   [0:0] grp_push_back_1_fu_2701_p_read231;
-reg   [31:0] grp_push_back_1_fu_2701_p_read232;
-reg   [31:0] grp_push_back_1_fu_2701_p_read233;
-reg   [31:0] grp_push_back_1_fu_2701_p_read234;
-reg   [31:0] grp_push_back_1_fu_2701_p_read235;
-reg   [31:0] grp_push_back_1_fu_2701_p_read236;
-reg   [31:0] grp_push_back_1_fu_2701_p_read237;
-reg   [31:0] grp_push_back_1_fu_2701_p_read238;
-reg   [31:0] grp_push_back_1_fu_2701_p_read239;
-reg   [31:0] grp_push_back_1_fu_2701_p_read240;
-reg   [31:0] grp_push_back_1_fu_2701_p_read241;
-reg   [31:0] grp_push_back_1_fu_2701_p_read242;
-reg   [31:0] grp_push_back_1_fu_2701_p_read243;
-reg   [31:0] grp_push_back_1_fu_2701_p_read244;
-reg   [31:0] grp_push_back_1_fu_2701_p_read245;
-reg   [31:0] grp_push_back_1_fu_2701_p_read246;
-reg   [31:0] grp_push_back_1_fu_2701_p_read247;
-reg   [31:0] grp_push_back_1_fu_2701_p_read248;
-reg   [31:0] grp_push_back_1_fu_2701_p_read249;
-reg   [31:0] grp_push_back_1_fu_2701_p_read250;
-reg   [31:0] grp_push_back_1_fu_2701_p_read251;
-reg   [31:0] grp_push_back_1_fu_2701_p_read252;
-reg   [31:0] grp_push_back_1_fu_2701_p_read253;
-reg   [31:0] grp_push_back_1_fu_2701_p_read254;
-reg   [31:0] grp_push_back_1_fu_2701_p_read255;
-reg   [31:0] grp_push_back_1_fu_2701_p_read256;
-reg   [31:0] grp_push_back_1_fu_2701_p_read257;
-reg   [31:0] grp_push_back_1_fu_2701_p_read258;
-reg   [31:0] grp_push_back_1_fu_2701_p_read259;
-reg   [31:0] grp_push_back_1_fu_2701_p_read260;
-reg   [31:0] grp_push_back_1_fu_2701_p_read261;
-reg   [0:0] grp_push_back_1_fu_2701_p_read262;
-reg   [0:0] grp_push_back_1_fu_2701_p_read263;
-reg   [0:0] grp_push_back_1_fu_2701_p_read264;
-reg   [0:0] grp_push_back_1_fu_2701_p_read265;
-reg   [0:0] grp_push_back_1_fu_2701_p_read266;
-reg   [0:0] grp_push_back_1_fu_2701_p_read267;
-reg   [0:0] grp_push_back_1_fu_2701_p_read268;
-reg   [0:0] grp_push_back_1_fu_2701_p_read269;
-reg   [0:0] grp_push_back_1_fu_2701_p_read270;
-reg   [0:0] grp_push_back_1_fu_2701_p_read271;
-reg   [0:0] grp_push_back_1_fu_2701_p_read272;
-reg   [0:0] grp_push_back_1_fu_2701_p_read273;
-reg   [0:0] grp_push_back_1_fu_2701_p_read274;
-reg   [0:0] grp_push_back_1_fu_2701_p_read275;
-reg   [0:0] grp_push_back_1_fu_2701_p_read276;
-reg   [0:0] grp_push_back_1_fu_2701_p_read277;
-reg   [0:0] grp_push_back_1_fu_2701_p_read278;
-reg   [0:0] grp_push_back_1_fu_2701_p_read279;
-reg   [0:0] grp_push_back_1_fu_2701_p_read280;
-reg   [0:0] grp_push_back_1_fu_2701_p_read281;
-reg   [0:0] grp_push_back_1_fu_2701_p_read282;
-reg   [0:0] grp_push_back_1_fu_2701_p_read283;
-reg   [0:0] grp_push_back_1_fu_2701_p_read284;
-reg   [0:0] grp_push_back_1_fu_2701_p_read285;
-reg   [0:0] grp_push_back_1_fu_2701_p_read286;
-reg   [0:0] grp_push_back_1_fu_2701_p_read287;
-reg   [0:0] grp_push_back_1_fu_2701_p_read288;
-reg   [0:0] grp_push_back_1_fu_2701_p_read289;
-reg   [0:0] grp_push_back_1_fu_2701_p_read290;
-reg   [0:0] grp_push_back_1_fu_2701_p_read291;
-wire    grp_has_key_fu_2872_ap_start;
-wire    grp_has_key_fu_2872_ap_idle;
-reg   [31:0] grp_has_key_fu_2872_mapHLS_unsigned_int_arrayHLS_Stub_size_read;
-wire   [4:0] grp_has_key_fu_2872_mapHLS_unsigned_int_arrayHLS_Stub_data_first_address0;
-wire    grp_has_key_fu_2872_mapHLS_unsigned_int_arrayHLS_Stub_data_first_ce0;
-reg   [31:0] i_0_i2_reg_2367;
-wire    ap_CS_fsm_state9;
-wire   [0:0] grp_fu_2890_p2;
-reg   [3:0] tmp_63_reg_2379;
-wire   [0:0] tmp_66_fu_3018_p2;
+wire    grp_clean_fu_2517_ap_start;
+wire    grp_clean_fu_2517_ap_idle;
+wire   [4:0] grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_first_address0;
+wire    grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_first_ce0;
+wire    grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_first_we0;
+wire   [31:0] grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_first_d0;
+wire   [4:0] grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_second_size_s_address0;
+wire    grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_second_size_s_ce0;
+wire    grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_second_size_s_we0;
+wire   [31:0] grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_second_size_s_d0;
+wire   [8:0] grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofPhi_s_address0;
+wire    grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofPhi_s_ce0;
+wire    grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofPhi_s_we0;
+wire   [31:0] grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofPhi_s_d0;
+wire   [8:0] grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofPhi_s_address1;
+wire    grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofPhi_s_ce1;
+wire    grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofPhi_s_we1;
+wire   [31:0] grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofPhi_s_d1;
+wire   [8:0] grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofZ_s_address0;
+wire    grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofZ_s_ce0;
+wire    grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofZ_s_we0;
+wire   [31:0] grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofZ_s_d0;
+wire   [8:0] grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofZ_s_address1;
+wire    grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofZ_s_ce1;
+wire    grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofZ_s_we1;
+wire   [31:0] grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofZ_s_d1;
+wire   [12:0] grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_sinh_etaRegions_s_address0;
+wire    grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_sinh_etaRegions_s_ce0;
+wire    grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_sinh_etaRegions_s_we0;
+wire   [31:0] grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_sinh_etaRegions_s_d0;
+wire   [12:0] grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_sinh_etaRegions_s_address1;
+wire    grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_sinh_etaRegions_s_ce1;
+wire    grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_sinh_etaRegions_s_we1;
+wire   [31:0] grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_sinh_etaRegions_s_d1;
+wire   [8:0] grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minNumMatchLayers_s_address0;
+wire    grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minNumMatchLayers_s_ce0;
+wire    grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minNumMatchLayers_s_we0;
+wire   [31:0] grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minNumMatchLayers_s_d0;
+wire   [8:0] grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minNumMatchLayers_s_address1;
+wire    grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minNumMatchLayers_s_ce1;
+wire    grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minNumMatchLayers_s_we1;
+wire   [31:0] grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minNumMatchLayers_s_d1;
+wire   [8:0] grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minPSLayers_s_address0;
+wire    grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minPSLayers_s_ce0;
+wire    grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minPSLayers_s_we0;
+wire   [31:0] grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minPSLayers_s_d0;
+wire   [8:0] grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minPSLayers_s_address1;
+wire    grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minPSLayers_s_ce1;
+wire    grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minPSLayers_s_we1;
+wire   [31:0] grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minPSLayers_s_d1;
+wire   [8:0] grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_r_s_address0;
+wire    grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_r_s_ce0;
+wire    grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_r_s_we0;
+wire   [31:0] grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_r_s_d0;
+wire   [8:0] grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_r_s_address1;
+wire    grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_r_s_ce1;
+wire    grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_r_s_we1;
+wire   [31:0] grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_r_s_d1;
+wire   [8:0] grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_phi_s_address0;
+wire    grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_phi_s_ce0;
+wire    grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_phi_s_we0;
+wire   [31:0] grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_phi_s_d0;
+wire   [8:0] grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_phi_s_address1;
+wire    grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_phi_s_ce1;
+wire    grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_phi_s_we1;
+wire   [31:0] grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_phi_s_d1;
+wire   [8:0] grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_z_s_address0;
+wire    grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_z_s_ce0;
+wire    grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_z_s_we0;
+wire   [31:0] grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_z_s_d0;
+wire   [8:0] grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_z_s_address1;
+wire    grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_z_s_ce1;
+wire    grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_z_s_we1;
+wire   [31:0] grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_z_s_d1;
+wire   [8:0] grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_layerId_s_address0;
+wire    grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_layerId_s_ce0;
+wire    grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_layerId_s_we0;
+wire   [31:0] grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_layerId_s_d0;
+wire   [8:0] grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_layerId_s_address1;
+wire    grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_layerId_s_ce1;
+wire    grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_layerId_s_we1;
+wire   [31:0] grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_layerId_s_d1;
+wire   [8:0] grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_psModule_s_address0;
+wire    grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_psModule_s_ce0;
+wire    grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_psModule_s_we0;
+wire   [0:0] grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_psModule_s_d0;
+wire   [8:0] grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_psModule_s_address1;
+wire    grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_psModule_s_ce1;
+wire    grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_psModule_s_we1;
+wire   [0:0] grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_psModule_s_d1;
+wire   [8:0] grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_barrel_s_address0;
+wire    grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_barrel_s_ce0;
+wire    grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_barrel_s_we0;
+wire   [0:0] grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_barrel_s_d0;
+wire   [8:0] grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_barrel_s_address1;
+wire    grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_barrel_s_ce1;
+wire    grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_barrel_s_we1;
+wire   [0:0] grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_barrel_s_d1;
+wire    grp_findLargestResidual_fu_2550_ap_start;
+wire    grp_findLargestResidual_fu_2550_ap_idle;
+wire   [3:0] grp_findLargestResidual_fu_2550_LinearRegression_stubs_data_layerId_s_address0;
+wire    grp_findLargestResidual_fu_2550_LinearRegression_stubs_data_layerId_s_ce0;
+wire   [3:0] grp_findLargestResidual_fu_2550_LinearRegression_stubs_data_psModule_s_address0;
+wire    grp_findLargestResidual_fu_2550_LinearRegression_stubs_data_psModule_s_ce0;
+wire   [3:0] grp_findLargestResidual_fu_2550_LinearRegression_stubs_data_barrel_s_address0;
+wire    grp_findLargestResidual_fu_2550_LinearRegression_stubs_data_barrel_s_ce0;
+wire   [4:0] grp_findLargestResidual_fu_2550_LinearRegression_stubMap_data_first_address0;
+wire    grp_findLargestResidual_fu_2550_LinearRegression_stubMap_data_first_ce0;
+wire    grp_findLargestResidual_fu_2550_LinearRegression_stubMap_data_first_we0;
+wire   [31:0] grp_findLargestResidual_fu_2550_LinearRegression_stubMap_data_first_d0;
+wire   [4:0] grp_findLargestResidual_fu_2550_LinearRegression_stubMap_data_second_size_s_address0;
+wire    grp_findLargestResidual_fu_2550_LinearRegression_stubMap_data_second_size_s_ce0;
+wire    grp_findLargestResidual_fu_2550_LinearRegression_stubMap_data_second_size_s_we0;
+wire   [31:0] grp_findLargestResidual_fu_2550_LinearRegression_stubMap_data_second_size_s_d0;
+wire   [8:0] grp_findLargestResidual_fu_2550_LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_address0;
+wire    grp_findLargestResidual_fu_2550_LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_ce0;
+wire    grp_findLargestResidual_fu_2550_LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_we0;
+wire   [31:0] grp_findLargestResidual_fu_2550_LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_d0;
+wire   [8:0] grp_findLargestResidual_fu_2550_LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_address1;
+wire    grp_findLargestResidual_fu_2550_LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_ce1;
+wire    grp_findLargestResidual_fu_2550_LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_we1;
+wire   [31:0] grp_findLargestResidual_fu_2550_LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_d1;
+wire   [8:0] grp_findLargestResidual_fu_2550_LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_address0;
+wire    grp_findLargestResidual_fu_2550_LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_ce0;
+wire    grp_findLargestResidual_fu_2550_LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_we0;
+wire   [31:0] grp_findLargestResidual_fu_2550_LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_d0;
+wire   [8:0] grp_findLargestResidual_fu_2550_LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_address1;
+wire    grp_findLargestResidual_fu_2550_LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_ce1;
+wire    grp_findLargestResidual_fu_2550_LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_we1;
+wire   [31:0] grp_findLargestResidual_fu_2550_LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_d1;
+wire   [8:0] grp_findLargestResidual_fu_2550_LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_address0;
+wire    grp_findLargestResidual_fu_2550_LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_ce0;
+wire    grp_findLargestResidual_fu_2550_LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_we0;
+wire   [31:0] grp_findLargestResidual_fu_2550_LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_d0;
+wire   [8:0] grp_findLargestResidual_fu_2550_LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_address1;
+wire    grp_findLargestResidual_fu_2550_LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_ce1;
+wire    grp_findLargestResidual_fu_2550_LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_we1;
+wire   [31:0] grp_findLargestResidual_fu_2550_LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_d1;
+wire   [8:0] grp_findLargestResidual_fu_2550_LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_address0;
+wire    grp_findLargestResidual_fu_2550_LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_ce0;
+wire    grp_findLargestResidual_fu_2550_LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_we0;
+wire   [31:0] grp_findLargestResidual_fu_2550_LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_d0;
+wire   [8:0] grp_findLargestResidual_fu_2550_LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_address1;
+wire    grp_findLargestResidual_fu_2550_LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_ce1;
+wire    grp_findLargestResidual_fu_2550_LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_we1;
+wire   [31:0] grp_findLargestResidual_fu_2550_LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_d1;
+wire   [8:0] grp_findLargestResidual_fu_2550_LinearRegression_stubMap_data_second_data_r_s_address0;
+wire    grp_findLargestResidual_fu_2550_LinearRegression_stubMap_data_second_data_r_s_ce0;
+wire    grp_findLargestResidual_fu_2550_LinearRegression_stubMap_data_second_data_r_s_we0;
+wire   [31:0] grp_findLargestResidual_fu_2550_LinearRegression_stubMap_data_second_data_r_s_d0;
+wire   [8:0] grp_findLargestResidual_fu_2550_LinearRegression_stubMap_data_second_data_r_s_address1;
+wire    grp_findLargestResidual_fu_2550_LinearRegression_stubMap_data_second_data_r_s_ce1;
+wire    grp_findLargestResidual_fu_2550_LinearRegression_stubMap_data_second_data_r_s_we1;
+wire   [31:0] grp_findLargestResidual_fu_2550_LinearRegression_stubMap_data_second_data_r_s_d1;
+wire   [8:0] grp_findLargestResidual_fu_2550_LinearRegression_stubMap_data_second_data_phi_s_address0;
+wire    grp_findLargestResidual_fu_2550_LinearRegression_stubMap_data_second_data_phi_s_ce0;
+wire    grp_findLargestResidual_fu_2550_LinearRegression_stubMap_data_second_data_phi_s_we0;
+wire   [31:0] grp_findLargestResidual_fu_2550_LinearRegression_stubMap_data_second_data_phi_s_d0;
+wire   [8:0] grp_findLargestResidual_fu_2550_LinearRegression_stubMap_data_second_data_phi_s_address1;
+wire    grp_findLargestResidual_fu_2550_LinearRegression_stubMap_data_second_data_phi_s_ce1;
+wire    grp_findLargestResidual_fu_2550_LinearRegression_stubMap_data_second_data_phi_s_we1;
+wire   [31:0] grp_findLargestResidual_fu_2550_LinearRegression_stubMap_data_second_data_phi_s_d1;
+wire   [8:0] grp_findLargestResidual_fu_2550_LinearRegression_stubMap_data_second_data_z_s_address0;
+wire    grp_findLargestResidual_fu_2550_LinearRegression_stubMap_data_second_data_z_s_ce0;
+wire    grp_findLargestResidual_fu_2550_LinearRegression_stubMap_data_second_data_z_s_we0;
+wire   [31:0] grp_findLargestResidual_fu_2550_LinearRegression_stubMap_data_second_data_z_s_d0;
+wire   [8:0] grp_findLargestResidual_fu_2550_LinearRegression_stubMap_data_second_data_z_s_address1;
+wire    grp_findLargestResidual_fu_2550_LinearRegression_stubMap_data_second_data_z_s_ce1;
+wire    grp_findLargestResidual_fu_2550_LinearRegression_stubMap_data_second_data_z_s_we1;
+wire   [31:0] grp_findLargestResidual_fu_2550_LinearRegression_stubMap_data_second_data_z_s_d1;
+wire   [8:0] grp_findLargestResidual_fu_2550_LinearRegression_stubMap_data_second_data_layerId_s_address0;
+wire    grp_findLargestResidual_fu_2550_LinearRegression_stubMap_data_second_data_layerId_s_ce0;
+wire    grp_findLargestResidual_fu_2550_LinearRegression_stubMap_data_second_data_layerId_s_we0;
+wire   [31:0] grp_findLargestResidual_fu_2550_LinearRegression_stubMap_data_second_data_layerId_s_d0;
+wire   [8:0] grp_findLargestResidual_fu_2550_LinearRegression_stubMap_data_second_data_layerId_s_address1;
+wire    grp_findLargestResidual_fu_2550_LinearRegression_stubMap_data_second_data_layerId_s_ce1;
+wire    grp_findLargestResidual_fu_2550_LinearRegression_stubMap_data_second_data_layerId_s_we1;
+wire   [31:0] grp_findLargestResidual_fu_2550_LinearRegression_stubMap_data_second_data_layerId_s_d1;
+wire   [8:0] grp_findLargestResidual_fu_2550_LinearRegression_stubMap_data_second_data_psModule_s_address0;
+wire    grp_findLargestResidual_fu_2550_LinearRegression_stubMap_data_second_data_psModule_s_ce0;
+wire    grp_findLargestResidual_fu_2550_LinearRegression_stubMap_data_second_data_psModule_s_we0;
+wire   [0:0] grp_findLargestResidual_fu_2550_LinearRegression_stubMap_data_second_data_psModule_s_d0;
+wire   [8:0] grp_findLargestResidual_fu_2550_LinearRegression_stubMap_data_second_data_psModule_s_address1;
+wire    grp_findLargestResidual_fu_2550_LinearRegression_stubMap_data_second_data_psModule_s_ce1;
+wire    grp_findLargestResidual_fu_2550_LinearRegression_stubMap_data_second_data_psModule_s_we1;
+wire   [0:0] grp_findLargestResidual_fu_2550_LinearRegression_stubMap_data_second_data_psModule_s_d1;
+wire   [8:0] grp_findLargestResidual_fu_2550_LinearRegression_stubMap_data_second_data_barrel_s_address0;
+wire    grp_findLargestResidual_fu_2550_LinearRegression_stubMap_data_second_data_barrel_s_ce0;
+wire    grp_findLargestResidual_fu_2550_LinearRegression_stubMap_data_second_data_barrel_s_we0;
+wire   [0:0] grp_findLargestResidual_fu_2550_LinearRegression_stubMap_data_second_data_barrel_s_d0;
+wire   [8:0] grp_findLargestResidual_fu_2550_LinearRegression_stubMap_data_second_data_barrel_s_address1;
+wire    grp_findLargestResidual_fu_2550_LinearRegression_stubMap_data_second_data_barrel_s_ce1;
+wire    grp_findLargestResidual_fu_2550_LinearRegression_stubMap_data_second_data_barrel_s_we1;
+wire   [0:0] grp_findLargestResidual_fu_2550_LinearRegression_stubMap_data_second_data_barrel_s_d1;
+wire   [4:0] grp_findLargestResidual_fu_2550_LinearRegression_layerPopulation_data_first_address0;
+wire    grp_findLargestResidual_fu_2550_LinearRegression_layerPopulation_data_first_ce0;
+wire    grp_findLargestResidual_fu_2550_LinearRegression_layerPopulation_data_first_we0;
+wire   [31:0] grp_findLargestResidual_fu_2550_LinearRegression_layerPopulation_data_first_d0;
+wire   [4:0] grp_findLargestResidual_fu_2550_LinearRegression_layerPopulation_data_second_address0;
+wire    grp_findLargestResidual_fu_2550_LinearRegression_layerPopulation_data_second_ce0;
+wire    grp_findLargestResidual_fu_2550_LinearRegression_layerPopulation_data_second_we0;
+wire   [31:0] grp_findLargestResidual_fu_2550_LinearRegression_layerPopulation_data_second_d0;
+wire   [4:0] grp_findLargestResidual_fu_2550_LinearRegression_residuals_data_first_address0;
+wire    grp_findLargestResidual_fu_2550_LinearRegression_residuals_data_first_ce0;
+wire   [4:0] grp_findLargestResidual_fu_2550_LinearRegression_residuals_data_second_size_s_address0;
+wire    grp_findLargestResidual_fu_2550_LinearRegression_residuals_data_second_size_s_ce0;
+wire   [8:0] grp_findLargestResidual_fu_2550_LinearRegression_residuals_data_second_data_phi_address0;
+wire    grp_findLargestResidual_fu_2550_LinearRegression_residuals_data_second_data_phi_ce0;
+wire   [8:0] grp_findLargestResidual_fu_2550_LinearRegression_residuals_data_second_data_z_address0;
+wire    grp_findLargestResidual_fu_2550_LinearRegression_residuals_data_second_data_z_ce0;
+wire   [8:0] grp_findLargestResidual_fu_2550_LinearRegression_residuals_data_second_data_layerId_address0;
+wire    grp_findLargestResidual_fu_2550_LinearRegression_residuals_data_second_data_layerId_ce0;
+wire   [8:0] grp_findLargestResidual_fu_2550_LinearRegression_residuals_data_second_data_stubId_address0;
+wire    grp_findLargestResidual_fu_2550_LinearRegression_residuals_data_second_data_stubId_ce0;
+wire   [8:0] grp_findLargestResidual_fu_2550_LinearRegression_residuals_data_second_data_ps_address0;
+wire    grp_findLargestResidual_fu_2550_LinearRegression_residuals_data_second_data_ps_ce0;
+wire   [31:0] grp_findLargestResidual_fu_2550_ap_return_0;
+wire   [31:0] grp_findLargestResidual_fu_2550_ap_return_1;
+wire   [31:0] grp_findLargestResidual_fu_2550_ap_return_2;
+wire   [31:0] grp_findLargestResidual_fu_2550_ap_return_3;
+wire   [0:0] grp_findLargestResidual_fu_2550_ap_return_4;
+wire   [31:0] grp_findLargestResidual_fu_2550_ap_return_5;
+wire   [31:0] grp_findLargestResidual_fu_2550_ap_return_6;
+wire    grp_erase_fu_2610_ap_start;
+wire    grp_erase_fu_2610_ap_idle;
+wire   [8:0] grp_erase_fu_2610_arrayHLS_Stub_data_settings_chosenRofPhi_s_address0;
+wire    grp_erase_fu_2610_arrayHLS_Stub_data_settings_chosenRofPhi_s_ce0;
+wire    grp_erase_fu_2610_arrayHLS_Stub_data_settings_chosenRofPhi_s_we0;
+wire   [31:0] grp_erase_fu_2610_arrayHLS_Stub_data_settings_chosenRofPhi_s_d0;
+wire   [8:0] grp_erase_fu_2610_arrayHLS_Stub_data_settings_chosenRofZ_s_address0;
+wire    grp_erase_fu_2610_arrayHLS_Stub_data_settings_chosenRofZ_s_ce0;
+wire    grp_erase_fu_2610_arrayHLS_Stub_data_settings_chosenRofZ_s_we0;
+wire   [31:0] grp_erase_fu_2610_arrayHLS_Stub_data_settings_chosenRofZ_s_d0;
+wire   [12:0] grp_erase_fu_2610_arrayHLS_Stub_data_settings_sinh_etaRegions_s_address0;
+wire    grp_erase_fu_2610_arrayHLS_Stub_data_settings_sinh_etaRegions_s_ce0;
+wire    grp_erase_fu_2610_arrayHLS_Stub_data_settings_sinh_etaRegions_s_we0;
+wire   [31:0] grp_erase_fu_2610_arrayHLS_Stub_data_settings_sinh_etaRegions_s_d0;
+wire   [12:0] grp_erase_fu_2610_arrayHLS_Stub_data_settings_sinh_etaRegions_s_address1;
+wire    grp_erase_fu_2610_arrayHLS_Stub_data_settings_sinh_etaRegions_s_ce1;
+wire    grp_erase_fu_2610_arrayHLS_Stub_data_settings_sinh_etaRegions_s_we1;
+wire   [31:0] grp_erase_fu_2610_arrayHLS_Stub_data_settings_sinh_etaRegions_s_d1;
+wire   [8:0] grp_erase_fu_2610_arrayHLS_Stub_data_settings_minNumMatchLayers_s_address0;
+wire    grp_erase_fu_2610_arrayHLS_Stub_data_settings_minNumMatchLayers_s_ce0;
+wire    grp_erase_fu_2610_arrayHLS_Stub_data_settings_minNumMatchLayers_s_we0;
+wire   [31:0] grp_erase_fu_2610_arrayHLS_Stub_data_settings_minNumMatchLayers_s_d0;
+wire   [8:0] grp_erase_fu_2610_arrayHLS_Stub_data_settings_minPSLayers_s_address0;
+wire    grp_erase_fu_2610_arrayHLS_Stub_data_settings_minPSLayers_s_ce0;
+wire    grp_erase_fu_2610_arrayHLS_Stub_data_settings_minPSLayers_s_we0;
+wire   [31:0] grp_erase_fu_2610_arrayHLS_Stub_data_settings_minPSLayers_s_d0;
+wire   [8:0] grp_erase_fu_2610_arrayHLS_Stub_data_r_s_address0;
+wire    grp_erase_fu_2610_arrayHLS_Stub_data_r_s_ce0;
+wire    grp_erase_fu_2610_arrayHLS_Stub_data_r_s_we0;
+wire   [31:0] grp_erase_fu_2610_arrayHLS_Stub_data_r_s_d0;
+wire   [8:0] grp_erase_fu_2610_arrayHLS_Stub_data_phi_s_address0;
+wire    grp_erase_fu_2610_arrayHLS_Stub_data_phi_s_ce0;
+wire    grp_erase_fu_2610_arrayHLS_Stub_data_phi_s_we0;
+wire   [31:0] grp_erase_fu_2610_arrayHLS_Stub_data_phi_s_d0;
+wire   [8:0] grp_erase_fu_2610_arrayHLS_Stub_data_z_s_address0;
+wire    grp_erase_fu_2610_arrayHLS_Stub_data_z_s_ce0;
+wire    grp_erase_fu_2610_arrayHLS_Stub_data_z_s_we0;
+wire   [31:0] grp_erase_fu_2610_arrayHLS_Stub_data_z_s_d0;
+wire   [8:0] grp_erase_fu_2610_arrayHLS_Stub_data_layerId_s_address0;
+wire    grp_erase_fu_2610_arrayHLS_Stub_data_layerId_s_ce0;
+wire    grp_erase_fu_2610_arrayHLS_Stub_data_layerId_s_we0;
+wire   [31:0] grp_erase_fu_2610_arrayHLS_Stub_data_layerId_s_d0;
+wire   [8:0] grp_erase_fu_2610_arrayHLS_Stub_data_psModule_s_address0;
+wire    grp_erase_fu_2610_arrayHLS_Stub_data_psModule_s_ce0;
+wire    grp_erase_fu_2610_arrayHLS_Stub_data_psModule_s_we0;
+wire   [0:0] grp_erase_fu_2610_arrayHLS_Stub_data_psModule_s_d0;
+wire   [8:0] grp_erase_fu_2610_arrayHLS_Stub_data_barrel_s_address0;
+wire    grp_erase_fu_2610_arrayHLS_Stub_data_barrel_s_ce0;
+wire    grp_erase_fu_2610_arrayHLS_Stub_data_barrel_s_we0;
+wire   [0:0] grp_erase_fu_2610_arrayHLS_Stub_data_barrel_s_d0;
+wire    grp_erase_fu_2610_value_psModule_read;
+wire    grp_erase_fu_2610_value_barrel_read;
+wire   [31:0] grp_erase_fu_2610_ap_return;
+wire    grp_erase_1_fu_2647_ap_start;
+wire    grp_erase_1_fu_2647_ap_idle;
+wire   [3:0] grp_erase_1_fu_2647_arrayHLS_Stub_data_settings_chosenRofPhi_s_address0;
+wire    grp_erase_1_fu_2647_arrayHLS_Stub_data_settings_chosenRofPhi_s_ce0;
+wire    grp_erase_1_fu_2647_arrayHLS_Stub_data_settings_chosenRofPhi_s_we0;
+wire   [31:0] grp_erase_1_fu_2647_arrayHLS_Stub_data_settings_chosenRofPhi_s_d0;
+wire   [3:0] grp_erase_1_fu_2647_arrayHLS_Stub_data_settings_chosenRofZ_s_address0;
+wire    grp_erase_1_fu_2647_arrayHLS_Stub_data_settings_chosenRofZ_s_ce0;
+wire    grp_erase_1_fu_2647_arrayHLS_Stub_data_settings_chosenRofZ_s_we0;
+wire   [31:0] grp_erase_1_fu_2647_arrayHLS_Stub_data_settings_chosenRofZ_s_d0;
+wire   [7:0] grp_erase_1_fu_2647_arrayHLS_Stub_data_settings_sinh_etaRegions_s_address0;
+wire    grp_erase_1_fu_2647_arrayHLS_Stub_data_settings_sinh_etaRegions_s_ce0;
+wire    grp_erase_1_fu_2647_arrayHLS_Stub_data_settings_sinh_etaRegions_s_we0;
+wire   [31:0] grp_erase_1_fu_2647_arrayHLS_Stub_data_settings_sinh_etaRegions_s_d0;
+wire   [7:0] grp_erase_1_fu_2647_arrayHLS_Stub_data_settings_sinh_etaRegions_s_address1;
+wire    grp_erase_1_fu_2647_arrayHLS_Stub_data_settings_sinh_etaRegions_s_ce1;
+wire    grp_erase_1_fu_2647_arrayHLS_Stub_data_settings_sinh_etaRegions_s_we1;
+wire   [31:0] grp_erase_1_fu_2647_arrayHLS_Stub_data_settings_sinh_etaRegions_s_d1;
+wire   [3:0] grp_erase_1_fu_2647_arrayHLS_Stub_data_settings_minNumMatchLayers_s_address0;
+wire    grp_erase_1_fu_2647_arrayHLS_Stub_data_settings_minNumMatchLayers_s_ce0;
+wire    grp_erase_1_fu_2647_arrayHLS_Stub_data_settings_minNumMatchLayers_s_we0;
+wire   [31:0] grp_erase_1_fu_2647_arrayHLS_Stub_data_settings_minNumMatchLayers_s_d0;
+wire   [3:0] grp_erase_1_fu_2647_arrayHLS_Stub_data_settings_minPSLayers_s_address0;
+wire    grp_erase_1_fu_2647_arrayHLS_Stub_data_settings_minPSLayers_s_ce0;
+wire    grp_erase_1_fu_2647_arrayHLS_Stub_data_settings_minPSLayers_s_we0;
+wire   [31:0] grp_erase_1_fu_2647_arrayHLS_Stub_data_settings_minPSLayers_s_d0;
+wire   [3:0] grp_erase_1_fu_2647_arrayHLS_Stub_data_r_s_address0;
+wire    grp_erase_1_fu_2647_arrayHLS_Stub_data_r_s_ce0;
+wire    grp_erase_1_fu_2647_arrayHLS_Stub_data_r_s_we0;
+wire   [31:0] grp_erase_1_fu_2647_arrayHLS_Stub_data_r_s_d0;
+wire   [3:0] grp_erase_1_fu_2647_arrayHLS_Stub_data_phi_s_address0;
+wire    grp_erase_1_fu_2647_arrayHLS_Stub_data_phi_s_ce0;
+wire    grp_erase_1_fu_2647_arrayHLS_Stub_data_phi_s_we0;
+wire   [31:0] grp_erase_1_fu_2647_arrayHLS_Stub_data_phi_s_d0;
+wire   [3:0] grp_erase_1_fu_2647_arrayHLS_Stub_data_z_s_address0;
+wire    grp_erase_1_fu_2647_arrayHLS_Stub_data_z_s_ce0;
+wire    grp_erase_1_fu_2647_arrayHLS_Stub_data_z_s_we0;
+wire   [31:0] grp_erase_1_fu_2647_arrayHLS_Stub_data_z_s_d0;
+wire   [3:0] grp_erase_1_fu_2647_arrayHLS_Stub_data_layerId_s_address0;
+wire    grp_erase_1_fu_2647_arrayHLS_Stub_data_layerId_s_ce0;
+wire    grp_erase_1_fu_2647_arrayHLS_Stub_data_layerId_s_we0;
+wire   [31:0] grp_erase_1_fu_2647_arrayHLS_Stub_data_layerId_s_d0;
+wire   [3:0] grp_erase_1_fu_2647_arrayHLS_Stub_data_psModule_s_address0;
+wire    grp_erase_1_fu_2647_arrayHLS_Stub_data_psModule_s_ce0;
+wire    grp_erase_1_fu_2647_arrayHLS_Stub_data_psModule_s_we0;
+wire   [0:0] grp_erase_1_fu_2647_arrayHLS_Stub_data_psModule_s_d0;
+wire   [3:0] grp_erase_1_fu_2647_arrayHLS_Stub_data_barrel_s_address0;
+wire    grp_erase_1_fu_2647_arrayHLS_Stub_data_barrel_s_ce0;
+wire    grp_erase_1_fu_2647_arrayHLS_Stub_data_barrel_s_we0;
+wire   [0:0] grp_erase_1_fu_2647_arrayHLS_Stub_data_barrel_s_d0;
+wire    grp_erase_1_fu_2647_value_psModule_read;
+wire    grp_erase_1_fu_2647_value_barrel_read;
+wire    grp_push_back_1_fu_2680_ap_start;
+wire    grp_push_back_1_fu_2680_ap_idle;
+reg   [31:0] grp_push_back_1_fu_2680_mapHLS_unsigned_int_arrayHLS_Stub_size_read;
+wire   [4:0] grp_push_back_1_fu_2680_mapHLS_unsigned_int_arrayHLS_Stub_data_first_address0;
+wire    grp_push_back_1_fu_2680_mapHLS_unsigned_int_arrayHLS_Stub_data_first_ce0;
+wire    grp_push_back_1_fu_2680_mapHLS_unsigned_int_arrayHLS_Stub_data_first_we0;
+wire   [31:0] grp_push_back_1_fu_2680_mapHLS_unsigned_int_arrayHLS_Stub_data_first_d0;
+wire   [4:0] grp_push_back_1_fu_2680_mapHLS_unsigned_int_arrayHLS_Stub_data_second_size_s_address0;
+wire    grp_push_back_1_fu_2680_mapHLS_unsigned_int_arrayHLS_Stub_data_second_size_s_ce0;
+wire    grp_push_back_1_fu_2680_mapHLS_unsigned_int_arrayHLS_Stub_data_second_size_s_we0;
+wire   [31:0] grp_push_back_1_fu_2680_mapHLS_unsigned_int_arrayHLS_Stub_data_second_size_s_d0;
+wire   [8:0] grp_push_back_1_fu_2680_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofPhi_s_address0;
+wire    grp_push_back_1_fu_2680_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofPhi_s_ce0;
+wire    grp_push_back_1_fu_2680_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofPhi_s_we0;
+wire   [31:0] grp_push_back_1_fu_2680_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofPhi_s_d0;
+wire   [8:0] grp_push_back_1_fu_2680_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofPhi_s_address1;
+wire    grp_push_back_1_fu_2680_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofPhi_s_ce1;
+wire    grp_push_back_1_fu_2680_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofPhi_s_we1;
+wire   [31:0] grp_push_back_1_fu_2680_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofPhi_s_d1;
+wire   [8:0] grp_push_back_1_fu_2680_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofZ_s_address0;
+wire    grp_push_back_1_fu_2680_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofZ_s_ce0;
+wire    grp_push_back_1_fu_2680_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofZ_s_we0;
+wire   [31:0] grp_push_back_1_fu_2680_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofZ_s_d0;
+wire   [8:0] grp_push_back_1_fu_2680_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofZ_s_address1;
+wire    grp_push_back_1_fu_2680_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofZ_s_ce1;
+wire    grp_push_back_1_fu_2680_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofZ_s_we1;
+wire   [31:0] grp_push_back_1_fu_2680_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofZ_s_d1;
+wire   [8:0] grp_push_back_1_fu_2680_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minNumMatchLayers_s_address0;
+wire    grp_push_back_1_fu_2680_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minNumMatchLayers_s_ce0;
+wire    grp_push_back_1_fu_2680_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minNumMatchLayers_s_we0;
+wire   [31:0] grp_push_back_1_fu_2680_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minNumMatchLayers_s_d0;
+wire   [8:0] grp_push_back_1_fu_2680_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minNumMatchLayers_s_address1;
+wire    grp_push_back_1_fu_2680_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minNumMatchLayers_s_ce1;
+wire    grp_push_back_1_fu_2680_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minNumMatchLayers_s_we1;
+wire   [31:0] grp_push_back_1_fu_2680_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minNumMatchLayers_s_d1;
+wire   [8:0] grp_push_back_1_fu_2680_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minPSLayers_s_address0;
+wire    grp_push_back_1_fu_2680_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minPSLayers_s_ce0;
+wire    grp_push_back_1_fu_2680_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minPSLayers_s_we0;
+wire   [31:0] grp_push_back_1_fu_2680_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minPSLayers_s_d0;
+wire   [8:0] grp_push_back_1_fu_2680_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minPSLayers_s_address1;
+wire    grp_push_back_1_fu_2680_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minPSLayers_s_ce1;
+wire    grp_push_back_1_fu_2680_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minPSLayers_s_we1;
+wire   [31:0] grp_push_back_1_fu_2680_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minPSLayers_s_d1;
+wire   [8:0] grp_push_back_1_fu_2680_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_r_s_address0;
+wire    grp_push_back_1_fu_2680_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_r_s_ce0;
+wire    grp_push_back_1_fu_2680_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_r_s_we0;
+wire   [31:0] grp_push_back_1_fu_2680_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_r_s_d0;
+wire   [8:0] grp_push_back_1_fu_2680_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_r_s_address1;
+wire    grp_push_back_1_fu_2680_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_r_s_ce1;
+wire    grp_push_back_1_fu_2680_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_r_s_we1;
+wire   [31:0] grp_push_back_1_fu_2680_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_r_s_d1;
+wire   [8:0] grp_push_back_1_fu_2680_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_phi_s_address0;
+wire    grp_push_back_1_fu_2680_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_phi_s_ce0;
+wire    grp_push_back_1_fu_2680_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_phi_s_we0;
+wire   [31:0] grp_push_back_1_fu_2680_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_phi_s_d0;
+wire   [8:0] grp_push_back_1_fu_2680_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_phi_s_address1;
+wire    grp_push_back_1_fu_2680_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_phi_s_ce1;
+wire    grp_push_back_1_fu_2680_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_phi_s_we1;
+wire   [31:0] grp_push_back_1_fu_2680_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_phi_s_d1;
+wire   [8:0] grp_push_back_1_fu_2680_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_z_s_address0;
+wire    grp_push_back_1_fu_2680_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_z_s_ce0;
+wire    grp_push_back_1_fu_2680_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_z_s_we0;
+wire   [31:0] grp_push_back_1_fu_2680_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_z_s_d0;
+wire   [8:0] grp_push_back_1_fu_2680_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_z_s_address1;
+wire    grp_push_back_1_fu_2680_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_z_s_ce1;
+wire    grp_push_back_1_fu_2680_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_z_s_we1;
+wire   [31:0] grp_push_back_1_fu_2680_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_z_s_d1;
+wire   [8:0] grp_push_back_1_fu_2680_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_layerId_s_address0;
+wire    grp_push_back_1_fu_2680_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_layerId_s_ce0;
+wire    grp_push_back_1_fu_2680_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_layerId_s_we0;
+wire   [31:0] grp_push_back_1_fu_2680_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_layerId_s_d0;
+wire   [8:0] grp_push_back_1_fu_2680_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_layerId_s_address1;
+wire    grp_push_back_1_fu_2680_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_layerId_s_ce1;
+wire    grp_push_back_1_fu_2680_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_layerId_s_we1;
+wire   [31:0] grp_push_back_1_fu_2680_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_layerId_s_d1;
+wire   [8:0] grp_push_back_1_fu_2680_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_psModule_s_address0;
+wire    grp_push_back_1_fu_2680_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_psModule_s_ce0;
+wire    grp_push_back_1_fu_2680_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_psModule_s_we0;
+wire   [0:0] grp_push_back_1_fu_2680_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_psModule_s_d0;
+wire   [8:0] grp_push_back_1_fu_2680_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_psModule_s_address1;
+wire    grp_push_back_1_fu_2680_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_psModule_s_ce1;
+wire    grp_push_back_1_fu_2680_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_psModule_s_we1;
+wire   [0:0] grp_push_back_1_fu_2680_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_psModule_s_d1;
+wire   [8:0] grp_push_back_1_fu_2680_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_barrel_s_address0;
+wire    grp_push_back_1_fu_2680_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_barrel_s_ce0;
+wire    grp_push_back_1_fu_2680_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_barrel_s_we0;
+wire   [0:0] grp_push_back_1_fu_2680_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_barrel_s_d0;
+wire   [8:0] grp_push_back_1_fu_2680_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_barrel_s_address1;
+wire    grp_push_back_1_fu_2680_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_barrel_s_ce1;
+wire    grp_push_back_1_fu_2680_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_barrel_s_we1;
+wire   [0:0] grp_push_back_1_fu_2680_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_barrel_s_d1;
+reg   [31:0] grp_push_back_1_fu_2680_p_read1;
+reg   [31:0] grp_push_back_1_fu_2680_p_read3;
+reg   [31:0] grp_push_back_1_fu_2680_p_read4;
+reg   [31:0] grp_push_back_1_fu_2680_p_read5;
+reg   [31:0] grp_push_back_1_fu_2680_p_read6;
+reg   [31:0] grp_push_back_1_fu_2680_p_read7;
+reg   [31:0] grp_push_back_1_fu_2680_p_read8;
+reg   [31:0] grp_push_back_1_fu_2680_p_read9;
+reg   [31:0] grp_push_back_1_fu_2680_p_read10;
+reg   [31:0] grp_push_back_1_fu_2680_p_read11;
+reg   [31:0] grp_push_back_1_fu_2680_p_read12;
+reg   [31:0] grp_push_back_1_fu_2680_p_read13;
+reg   [31:0] grp_push_back_1_fu_2680_p_read14;
+reg   [31:0] grp_push_back_1_fu_2680_p_read15;
+reg   [31:0] grp_push_back_1_fu_2680_p_read16;
+reg   [31:0] grp_push_back_1_fu_2680_p_read17;
+reg   [31:0] grp_push_back_1_fu_2680_p_read18;
+reg   [31:0] grp_push_back_1_fu_2680_p_read19;
+reg   [31:0] grp_push_back_1_fu_2680_p_read20;
+reg   [31:0] grp_push_back_1_fu_2680_p_read21;
+reg   [0:0] grp_push_back_1_fu_2680_p_read212;
+reg   [0:0] grp_push_back_1_fu_2680_p_read213;
+reg   [0:0] grp_push_back_1_fu_2680_p_read214;
+reg   [0:0] grp_push_back_1_fu_2680_p_read215;
+reg   [0:0] grp_push_back_1_fu_2680_p_read216;
+reg   [0:0] grp_push_back_1_fu_2680_p_read217;
+reg   [0:0] grp_push_back_1_fu_2680_p_read218;
+reg   [0:0] grp_push_back_1_fu_2680_p_read219;
+reg   [0:0] grp_push_back_1_fu_2680_p_read220;
+reg   [0:0] grp_push_back_1_fu_2680_p_read221;
+reg   [0:0] grp_push_back_1_fu_2680_p_read222;
+reg   [0:0] grp_push_back_1_fu_2680_p_read223;
+reg   [0:0] grp_push_back_1_fu_2680_p_read224;
+reg   [0:0] grp_push_back_1_fu_2680_p_read225;
+reg   [0:0] grp_push_back_1_fu_2680_p_read226;
+reg   [0:0] grp_push_back_1_fu_2680_p_read227;
+reg   [0:0] grp_push_back_1_fu_2680_p_read228;
+reg   [0:0] grp_push_back_1_fu_2680_p_read229;
+reg   [0:0] grp_push_back_1_fu_2680_p_read230;
+reg   [0:0] grp_push_back_1_fu_2680_p_read231;
+reg   [31:0] grp_push_back_1_fu_2680_p_read232;
+reg   [31:0] grp_push_back_1_fu_2680_p_read233;
+reg   [31:0] grp_push_back_1_fu_2680_p_read234;
+reg   [31:0] grp_push_back_1_fu_2680_p_read235;
+reg   [31:0] grp_push_back_1_fu_2680_p_read236;
+reg   [31:0] grp_push_back_1_fu_2680_p_read237;
+reg   [31:0] grp_push_back_1_fu_2680_p_read238;
+reg   [31:0] grp_push_back_1_fu_2680_p_read239;
+reg   [31:0] grp_push_back_1_fu_2680_p_read240;
+reg   [31:0] grp_push_back_1_fu_2680_p_read241;
+reg   [31:0] grp_push_back_1_fu_2680_p_read242;
+reg   [31:0] grp_push_back_1_fu_2680_p_read243;
+reg   [31:0] grp_push_back_1_fu_2680_p_read244;
+reg   [31:0] grp_push_back_1_fu_2680_p_read245;
+reg   [31:0] grp_push_back_1_fu_2680_p_read246;
+reg   [31:0] grp_push_back_1_fu_2680_p_read247;
+reg   [31:0] grp_push_back_1_fu_2680_p_read248;
+reg   [31:0] grp_push_back_1_fu_2680_p_read249;
+reg   [31:0] grp_push_back_1_fu_2680_p_read250;
+reg   [31:0] grp_push_back_1_fu_2680_p_read251;
+reg   [31:0] grp_push_back_1_fu_2680_p_read252;
+reg   [31:0] grp_push_back_1_fu_2680_p_read253;
+reg   [31:0] grp_push_back_1_fu_2680_p_read254;
+reg   [31:0] grp_push_back_1_fu_2680_p_read255;
+reg   [31:0] grp_push_back_1_fu_2680_p_read256;
+reg   [31:0] grp_push_back_1_fu_2680_p_read257;
+reg   [31:0] grp_push_back_1_fu_2680_p_read258;
+reg   [31:0] grp_push_back_1_fu_2680_p_read259;
+reg   [31:0] grp_push_back_1_fu_2680_p_read260;
+reg   [31:0] grp_push_back_1_fu_2680_p_read261;
+reg   [0:0] grp_push_back_1_fu_2680_p_read262;
+reg   [0:0] grp_push_back_1_fu_2680_p_read263;
+reg   [0:0] grp_push_back_1_fu_2680_p_read264;
+reg   [0:0] grp_push_back_1_fu_2680_p_read265;
+reg   [0:0] grp_push_back_1_fu_2680_p_read266;
+reg   [0:0] grp_push_back_1_fu_2680_p_read267;
+reg   [0:0] grp_push_back_1_fu_2680_p_read268;
+reg   [0:0] grp_push_back_1_fu_2680_p_read269;
+reg   [0:0] grp_push_back_1_fu_2680_p_read270;
+reg   [0:0] grp_push_back_1_fu_2680_p_read271;
+reg   [0:0] grp_push_back_1_fu_2680_p_read272;
+reg   [0:0] grp_push_back_1_fu_2680_p_read273;
+reg   [0:0] grp_push_back_1_fu_2680_p_read274;
+reg   [0:0] grp_push_back_1_fu_2680_p_read275;
+reg   [0:0] grp_push_back_1_fu_2680_p_read276;
+reg   [0:0] grp_push_back_1_fu_2680_p_read277;
+reg   [0:0] grp_push_back_1_fu_2680_p_read278;
+reg   [0:0] grp_push_back_1_fu_2680_p_read279;
+reg   [0:0] grp_push_back_1_fu_2680_p_read280;
+reg   [0:0] grp_push_back_1_fu_2680_p_read281;
+reg   [0:0] grp_push_back_1_fu_2680_p_read282;
+reg   [0:0] grp_push_back_1_fu_2680_p_read283;
+reg   [0:0] grp_push_back_1_fu_2680_p_read284;
+reg   [0:0] grp_push_back_1_fu_2680_p_read285;
+reg   [0:0] grp_push_back_1_fu_2680_p_read286;
+reg   [0:0] grp_push_back_1_fu_2680_p_read287;
+reg   [0:0] grp_push_back_1_fu_2680_p_read288;
+reg   [0:0] grp_push_back_1_fu_2680_p_read289;
+reg   [0:0] grp_push_back_1_fu_2680_p_read290;
+reg   [0:0] grp_push_back_1_fu_2680_p_read291;
+reg   [31:0] i_0_i1_reg_2357;
+wire    ap_CS_fsm_state8;
+wire   [0:0] grp_fu_2860_p2;
+reg   [3:0] tmp_8_reg_2369;
+wire   [0:0] tmp_10_fu_2983_p2;
+reg   [31:0] p_pn_in_i1_reg_2380;
 reg   [31:0] temp_1_reg_2390;
-reg   [31:0] p_pn_in_i1_reg_2400;
-reg   [31:0] i_0_i_reg_2410;
-wire    ap_CS_fsm_state21;
-reg   [3:0] tmp_72_reg_2422;
-wire   [0:0] tmp_75_fu_3110_p2;
-reg   [31:0] LinearRegression_stu_14_reg_2433;
-reg   [31:0] p_pn_in_i_reg_2444;
-reg   [31:0] i_i_reg_2456;
+reg   [31:0] i_0_i_reg_2400;
+wire    ap_CS_fsm_state20;
+reg   [3:0] tmp_15_reg_2412;
+wire   [0:0] tmp_18_fu_3075_p2;
+reg   [31:0] LinearRegression_stu_14_reg_2423;
+reg   [31:0] p_pn_in_i_reg_2434;
+reg   [31:0] i_0_i2_reg_2446;
+reg   [31:0] ap_phi_mux_p_pn_in_i2_phi_fu_2461_p4;
+reg   [31:0] p_pn_in_i2_reg_2458;
+reg   [31:0] LinearRegression_lay_4_reg_2468;
+reg   [31:0] ap_phi_mux_LinearRegression_stu_1_phi_fu_2480_p4;
+reg   [31:0] LinearRegression_stu_1_reg_2477;
 wire    ap_CS_fsm_state36;
-reg   [31:0] i_0_i1_reg_2467;
-reg   [31:0] ap_phi_mux_p_pn_in_i2_phi_fu_2482_p4;
-reg   [31:0] p_pn_in_i2_reg_2479;
-reg   [31:0] LinearRegression_lay_6_reg_2489;
-reg   [31:0] ap_phi_mux_LinearRegression_stu_1_phi_fu_2501_p4;
-reg   [31:0] LinearRegression_stu_1_reg_2498;
-wire    ap_CS_fsm_state39;
-reg   [31:0] ap_phi_mux_LinearRegression_stu_2_phi_fu_2510_p4;
-reg   [31:0] LinearRegression_stu_2_reg_2507;
-reg   [31:0] ap_phi_mux_LinearRegression_lay_9_phi_fu_2519_p4;
-reg   [31:0] LinearRegression_lay_9_reg_2516;
-reg   [0:0] ap_phi_mux_p_0_phi_fu_2530_p4;
-reg   [0:0] p_0_reg_2526;
-reg    grp_clean_fu_2538_ap_start_reg;
-wire    ap_CS_fsm_state33;
-reg    grp_findLargestResidual_fu_2571_ap_start_reg;
-reg    grp_erase_fu_2631_ap_start_reg;
-reg    grp_erase_1_fu_2668_ap_start_reg;
-reg    grp_push_back_1_fu_2701_ap_start_reg;
-reg    grp_has_key_fu_2872_ap_start_reg;
-wire   [63:0] tmp_61_fu_2993_p1;
-wire   [63:0] tmp_65_fu_3004_p1;
-wire   [63:0] tmp_85_cast_fu_3063_p1;
-wire   [63:0] tmp_70_fu_3085_p1;
-wire   [63:0] tmp_74_fu_3096_p1;
-wire   [63:0] p_pn_i_fu_3116_p1;
-wire   [63:0] tmp_i_36_fu_3199_p1;
-wire   [63:0] tmp_78_fu_3215_p1;
-wire   [63:0] tmp_i2_fu_3220_p1;
-wire   [63:0] p_pn_i2_fu_3230_p1;
-wire   [31:0] tmp_80_fu_3235_p2;
-wire   [31:0] tmp_i_to_int_fu_2936_p1;
-wire   [7:0] tmp_fu_2939_p4;
-wire   [22:0] tmp_86_fu_2949_p1;
-wire   [0:0] notrhs_fu_2959_p2;
-wire   [0:0] notlhs_fu_2953_p2;
-wire   [0:0] tmp_57_fu_2965_p2;
-wire   [0:0] tmp_58_fu_2885_p2;
-wire   [6:0] tmp_87_fu_3024_p1;
-wire   [8:0] tmp_88_fu_3036_p1;
-wire   [9:0] p_shl_cast_fu_3028_p3;
-wire   [9:0] p_shl8_cast_fu_3040_p3;
-wire   [9:0] tmp_89_fu_3054_p1;
-wire   [9:0] tmp_81_fu_3048_p2;
-wire   [9:0] tmp_82_fu_3057_p2;
-wire   [0:0] tmp_not_i_fu_3121_p2;
-wire   [0:0] tmp_111_not_i_fu_3131_p2;
-wire   [0:0] stub_psModule_read_s_fu_3136_p2;
-wire   [0:0] brmerge_i_fu_3126_p2;
-wire   [0:0] brmerge3_i_fu_3141_p2;
-wire   [0:0] sel_tmp_i_fu_3157_p2;
-wire   [0:0] sel_tmp1_i_fu_3163_p2;
-wire   [31:0] tmp_93_i_fu_3152_p2;
-wire   [0:0] sel_tmp5_demorgan_i_fu_3175_p2;
-wire   [31:0] sel_tmp2_i_fu_3168_p3;
-wire   [31:0] tmp_i1_fu_3147_p2;
-reg    grp_fu_2881_ce;
+reg   [31:0] ap_phi_mux_LinearRegression_stu_2_phi_fu_2489_p4;
+reg   [31:0] LinearRegression_stu_2_reg_2486;
+reg   [31:0] ap_phi_mux_LinearRegression_lay_7_phi_fu_2498_p4;
+reg   [31:0] LinearRegression_lay_7_reg_2495;
+reg   [0:0] ap_phi_mux_p_0_phi_fu_2509_p4;
+reg   [0:0] p_0_reg_2505;
+reg    grp_clean_fu_2517_ap_start_reg;
+wire    ap_CS_fsm_state32;
+reg    grp_findLargestResidual_fu_2550_ap_start_reg;
+reg    grp_erase_fu_2610_ap_start_reg;
+reg    grp_erase_1_fu_2647_ap_start_reg;
+reg    grp_push_back_1_fu_2680_ap_start_reg;
+wire   [63:0] tmp_6_fu_2958_p1;
+wire   [63:0] tmp_4_fu_2969_p1;
+wire   [63:0] tmp_28_cast_fu_3028_p1;
+wire   [63:0] tmp_13_fu_3050_p1;
+wire   [63:0] tmp_17_fu_3061_p1;
+wire   [63:0] p_pn_i_fu_3081_p1;
+wire   [63:0] tmp_21_fu_3164_p1;
+wire   [63:0] tmp_i1_fu_3169_p1;
+wire   [63:0] p_pn_i2_fu_3184_p1;
+wire   [31:0] tmp_23_fu_3189_p2;
+wire   [31:0] tmp_i_to_int_fu_2901_p1;
+wire   [7:0] tmp_fu_2904_p4;
+wire   [22:0] tmp_11_fu_2914_p1;
+wire   [0:0] notrhs_fu_2924_p2;
+wire   [0:0] notlhs_fu_2918_p2;
+wire   [0:0] tmp_2_fu_2930_p2;
+wire   [0:0] tmp_3_fu_2855_p2;
+wire   [6:0] tmp_24_fu_2989_p1;
+wire   [8:0] tmp_25_fu_3001_p1;
+wire   [9:0] p_shl_cast_fu_2993_p3;
+wire   [9:0] p_shl1_cast_fu_3005_p3;
+wire   [9:0] tmp_27_fu_3019_p1;
+wire   [9:0] tmp_26_fu_3013_p2;
+wire   [9:0] tmp_28_fu_3022_p2;
+wire   [0:0] tmp_not_i_fu_3086_p2;
+wire   [0:0] tmp_36_not_i_fu_3096_p2;
+wire   [0:0] stub_psModule_read_s_fu_3101_p2;
+wire   [0:0] brmerge_i_fu_3091_p2;
+wire   [0:0] brmerge3_i_fu_3106_p2;
+wire   [0:0] sel_tmp_i_fu_3122_p2;
+wire   [0:0] sel_tmp1_i_fu_3128_p2;
+wire   [31:0] tmp_17_i_fu_3117_p2;
+wire   [0:0] sel_tmp5_demorgan_i_fu_3140_p2;
+wire   [31:0] sel_tmp2_i_fu_3133_p3;
+wire   [31:0] tmp_i_7_fu_3112_p2;
+reg    grp_fu_2851_ce;
 wire    ap_CS_fsm_state3;
 wire    ap_CS_fsm_state4;
 reg   [0:0] ap_return_0_preg;
@@ -1690,17 +1665,16 @@ reg   [31:0] ap_return_6_preg;
 reg   [0:0] ap_return_7_preg;
 reg   [31:0] ap_return_8_preg;
 reg   [31:0] ap_return_9_preg;
-reg   [38:0] ap_NS_fsm;
+reg   [35:0] ap_NS_fsm;
 
 // power-on initialization
 initial begin
-#0 ap_CS_fsm = 39'd1;
-#0 grp_clean_fu_2538_ap_start_reg = 1'b0;
-#0 grp_findLargestResidual_fu_2571_ap_start_reg = 1'b0;
-#0 grp_erase_fu_2631_ap_start_reg = 1'b0;
-#0 grp_erase_1_fu_2668_ap_start_reg = 1'b0;
-#0 grp_push_back_1_fu_2701_ap_start_reg = 1'b0;
-#0 grp_has_key_fu_2872_ap_start_reg = 1'b0;
+#0 ap_CS_fsm = 36'd1;
+#0 grp_clean_fu_2517_ap_start_reg = 1'b0;
+#0 grp_findLargestResidual_fu_2550_ap_start_reg = 1'b0;
+#0 grp_erase_fu_2610_ap_start_reg = 1'b0;
+#0 grp_erase_1_fu_2647_ap_start_reg = 1'b0;
+#0 grp_push_back_1_fu_2680_ap_start_reg = 1'b0;
 #0 ap_return_0_preg = 1'd0;
 #0 ap_return_1_preg = 1'd0;
 #0 ap_return_2_preg = 32'd0;
@@ -2053,658 +2027,643 @@ b_data_barrel_assi_1_U(
     .q1(b_data_barrel_assi_1_q1)
 );
 
-clean grp_clean_fu_2538(
+clean grp_clean_fu_2517(
     .ap_clk(ap_clk),
     .ap_rst(ap_rst),
-    .ap_start(grp_clean_fu_2538_ap_start),
-    .ap_done(grp_clean_fu_2538_ap_done),
-    .ap_idle(grp_clean_fu_2538_ap_idle),
-    .ap_ready(grp_clean_fu_2538_ap_ready),
-    .mapHLS_unsigned_int_arrayHLS_Stub_size_read(LinearRegression_stu_14_reg_2433),
-    .mapHLS_unsigned_int_arrayHLS_Stub_data_first_address0(grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_first_address0),
-    .mapHLS_unsigned_int_arrayHLS_Stub_data_first_ce0(grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_first_ce0),
-    .mapHLS_unsigned_int_arrayHLS_Stub_data_first_we0(grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_first_we0),
-    .mapHLS_unsigned_int_arrayHLS_Stub_data_first_d0(grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_first_d0),
+    .ap_start(grp_clean_fu_2517_ap_start),
+    .ap_done(grp_clean_fu_2517_ap_done),
+    .ap_idle(grp_clean_fu_2517_ap_idle),
+    .ap_ready(grp_clean_fu_2517_ap_ready),
+    .mapHLS_unsigned_int_arrayHLS_Stub_size_read(LinearRegression_stu_14_reg_2423),
+    .mapHLS_unsigned_int_arrayHLS_Stub_data_first_address0(grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_first_address0),
+    .mapHLS_unsigned_int_arrayHLS_Stub_data_first_ce0(grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_first_ce0),
+    .mapHLS_unsigned_int_arrayHLS_Stub_data_first_we0(grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_first_we0),
+    .mapHLS_unsigned_int_arrayHLS_Stub_data_first_d0(grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_first_d0),
     .mapHLS_unsigned_int_arrayHLS_Stub_data_first_q0(LinearRegression_stubMap_data_first_q0),
-    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_size_s_address0(grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_second_size_s_address0),
-    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_size_s_ce0(grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_second_size_s_ce0),
-    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_size_s_we0(grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_second_size_s_we0),
-    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_size_s_d0(grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_second_size_s_d0),
+    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_size_s_address0(grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_second_size_s_address0),
+    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_size_s_ce0(grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_second_size_s_ce0),
+    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_size_s_we0(grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_second_size_s_we0),
+    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_size_s_d0(grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_second_size_s_d0),
     .mapHLS_unsigned_int_arrayHLS_Stub_data_second_size_s_q0(LinearRegression_stubMap_data_second_size_s_q0),
-    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofPhi_s_address0(grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofPhi_s_address0),
-    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofPhi_s_ce0(grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofPhi_s_ce0),
-    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofPhi_s_we0(grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofPhi_s_we0),
-    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofPhi_s_d0(grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofPhi_s_d0),
+    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofPhi_s_address0(grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofPhi_s_address0),
+    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofPhi_s_ce0(grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofPhi_s_ce0),
+    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofPhi_s_we0(grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofPhi_s_we0),
+    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofPhi_s_d0(grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofPhi_s_d0),
     .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofPhi_s_q0(LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_q0),
-    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofPhi_s_address1(grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofPhi_s_address1),
-    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofPhi_s_ce1(grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofPhi_s_ce1),
-    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofPhi_s_we1(grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofPhi_s_we1),
-    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofPhi_s_d1(grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofPhi_s_d1),
+    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofPhi_s_address1(grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofPhi_s_address1),
+    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofPhi_s_ce1(grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofPhi_s_ce1),
+    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofPhi_s_we1(grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofPhi_s_we1),
+    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofPhi_s_d1(grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofPhi_s_d1),
     .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofPhi_s_q1(LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_q1),
-    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofZ_s_address0(grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofZ_s_address0),
-    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofZ_s_ce0(grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofZ_s_ce0),
-    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofZ_s_we0(grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofZ_s_we0),
-    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofZ_s_d0(grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofZ_s_d0),
+    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofZ_s_address0(grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofZ_s_address0),
+    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofZ_s_ce0(grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofZ_s_ce0),
+    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofZ_s_we0(grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofZ_s_we0),
+    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofZ_s_d0(grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofZ_s_d0),
     .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofZ_s_q0(LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_q0),
-    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofZ_s_address1(grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofZ_s_address1),
-    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofZ_s_ce1(grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofZ_s_ce1),
-    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofZ_s_we1(grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofZ_s_we1),
-    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofZ_s_d1(grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofZ_s_d1),
+    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofZ_s_address1(grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofZ_s_address1),
+    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofZ_s_ce1(grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofZ_s_ce1),
+    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofZ_s_we1(grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofZ_s_we1),
+    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofZ_s_d1(grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofZ_s_d1),
     .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofZ_s_q1(LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_q1),
-    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_etaRegions_s_address0(grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_etaRegions_s_address0),
-    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_etaRegions_s_ce0(grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_etaRegions_s_ce0),
-    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_etaRegions_s_we0(grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_etaRegions_s_we0),
-    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_etaRegions_s_d0(grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_etaRegions_s_d0),
-    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_etaRegions_s_q0(LinearRegression_stubMap_data_second_data_settings_etaRegions_s_q0),
-    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_etaRegions_s_address1(grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_etaRegions_s_address1),
-    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_etaRegions_s_ce1(grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_etaRegions_s_ce1),
-    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_etaRegions_s_we1(grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_etaRegions_s_we1),
-    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_etaRegions_s_d1(grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_etaRegions_s_d1),
-    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_etaRegions_s_q1(LinearRegression_stubMap_data_second_data_settings_etaRegions_s_q1),
-    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minNumMatchLayers_s_address0(grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minNumMatchLayers_s_address0),
-    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minNumMatchLayers_s_ce0(grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minNumMatchLayers_s_ce0),
-    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minNumMatchLayers_s_we0(grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minNumMatchLayers_s_we0),
-    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minNumMatchLayers_s_d0(grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minNumMatchLayers_s_d0),
+    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_sinh_etaRegions_s_address0(grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_sinh_etaRegions_s_address0),
+    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_sinh_etaRegions_s_ce0(grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_sinh_etaRegions_s_ce0),
+    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_sinh_etaRegions_s_we0(grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_sinh_etaRegions_s_we0),
+    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_sinh_etaRegions_s_d0(grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_sinh_etaRegions_s_d0),
+    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_sinh_etaRegions_s_q0(LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_q0),
+    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_sinh_etaRegions_s_address1(grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_sinh_etaRegions_s_address1),
+    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_sinh_etaRegions_s_ce1(grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_sinh_etaRegions_s_ce1),
+    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_sinh_etaRegions_s_we1(grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_sinh_etaRegions_s_we1),
+    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_sinh_etaRegions_s_d1(grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_sinh_etaRegions_s_d1),
+    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_sinh_etaRegions_s_q1(LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_q1),
+    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minNumMatchLayers_s_address0(grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minNumMatchLayers_s_address0),
+    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minNumMatchLayers_s_ce0(grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minNumMatchLayers_s_ce0),
+    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minNumMatchLayers_s_we0(grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minNumMatchLayers_s_we0),
+    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minNumMatchLayers_s_d0(grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minNumMatchLayers_s_d0),
     .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minNumMatchLayers_s_q0(LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_q0),
-    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minNumMatchLayers_s_address1(grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minNumMatchLayers_s_address1),
-    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minNumMatchLayers_s_ce1(grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minNumMatchLayers_s_ce1),
-    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minNumMatchLayers_s_we1(grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minNumMatchLayers_s_we1),
-    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minNumMatchLayers_s_d1(grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minNumMatchLayers_s_d1),
+    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minNumMatchLayers_s_address1(grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minNumMatchLayers_s_address1),
+    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minNumMatchLayers_s_ce1(grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minNumMatchLayers_s_ce1),
+    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minNumMatchLayers_s_we1(grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minNumMatchLayers_s_we1),
+    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minNumMatchLayers_s_d1(grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minNumMatchLayers_s_d1),
     .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minNumMatchLayers_s_q1(LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_q1),
-    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minPSLayers_s_address0(grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minPSLayers_s_address0),
-    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minPSLayers_s_ce0(grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minPSLayers_s_ce0),
-    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minPSLayers_s_we0(grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minPSLayers_s_we0),
-    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minPSLayers_s_d0(grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minPSLayers_s_d0),
+    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minPSLayers_s_address0(grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minPSLayers_s_address0),
+    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minPSLayers_s_ce0(grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minPSLayers_s_ce0),
+    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minPSLayers_s_we0(grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minPSLayers_s_we0),
+    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minPSLayers_s_d0(grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minPSLayers_s_d0),
     .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minPSLayers_s_q0(LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_q0),
-    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minPSLayers_s_address1(grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minPSLayers_s_address1),
-    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minPSLayers_s_ce1(grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minPSLayers_s_ce1),
-    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minPSLayers_s_we1(grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minPSLayers_s_we1),
-    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minPSLayers_s_d1(grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minPSLayers_s_d1),
+    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minPSLayers_s_address1(grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minPSLayers_s_address1),
+    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minPSLayers_s_ce1(grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minPSLayers_s_ce1),
+    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minPSLayers_s_we1(grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minPSLayers_s_we1),
+    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minPSLayers_s_d1(grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minPSLayers_s_d1),
     .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minPSLayers_s_q1(LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_q1),
-    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_r_s_address0(grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_r_s_address0),
-    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_r_s_ce0(grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_r_s_ce0),
-    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_r_s_we0(grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_r_s_we0),
-    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_r_s_d0(grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_r_s_d0),
+    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_r_s_address0(grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_r_s_address0),
+    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_r_s_ce0(grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_r_s_ce0),
+    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_r_s_we0(grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_r_s_we0),
+    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_r_s_d0(grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_r_s_d0),
     .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_r_s_q0(LinearRegression_stubMap_data_second_data_r_s_q0),
-    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_r_s_address1(grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_r_s_address1),
-    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_r_s_ce1(grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_r_s_ce1),
-    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_r_s_we1(grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_r_s_we1),
-    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_r_s_d1(grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_r_s_d1),
+    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_r_s_address1(grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_r_s_address1),
+    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_r_s_ce1(grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_r_s_ce1),
+    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_r_s_we1(grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_r_s_we1),
+    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_r_s_d1(grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_r_s_d1),
     .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_r_s_q1(LinearRegression_stubMap_data_second_data_r_s_q1),
-    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_phi_s_address0(grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_phi_s_address0),
-    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_phi_s_ce0(grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_phi_s_ce0),
-    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_phi_s_we0(grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_phi_s_we0),
-    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_phi_s_d0(grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_phi_s_d0),
+    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_phi_s_address0(grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_phi_s_address0),
+    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_phi_s_ce0(grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_phi_s_ce0),
+    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_phi_s_we0(grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_phi_s_we0),
+    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_phi_s_d0(grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_phi_s_d0),
     .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_phi_s_q0(LinearRegression_stubMap_data_second_data_phi_s_q0),
-    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_phi_s_address1(grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_phi_s_address1),
-    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_phi_s_ce1(grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_phi_s_ce1),
-    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_phi_s_we1(grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_phi_s_we1),
-    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_phi_s_d1(grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_phi_s_d1),
+    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_phi_s_address1(grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_phi_s_address1),
+    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_phi_s_ce1(grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_phi_s_ce1),
+    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_phi_s_we1(grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_phi_s_we1),
+    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_phi_s_d1(grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_phi_s_d1),
     .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_phi_s_q1(LinearRegression_stubMap_data_second_data_phi_s_q1),
-    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_z_s_address0(grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_z_s_address0),
-    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_z_s_ce0(grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_z_s_ce0),
-    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_z_s_we0(grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_z_s_we0),
-    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_z_s_d0(grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_z_s_d0),
+    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_z_s_address0(grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_z_s_address0),
+    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_z_s_ce0(grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_z_s_ce0),
+    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_z_s_we0(grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_z_s_we0),
+    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_z_s_d0(grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_z_s_d0),
     .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_z_s_q0(LinearRegression_stubMap_data_second_data_z_s_q0),
-    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_z_s_address1(grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_z_s_address1),
-    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_z_s_ce1(grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_z_s_ce1),
-    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_z_s_we1(grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_z_s_we1),
-    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_z_s_d1(grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_z_s_d1),
+    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_z_s_address1(grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_z_s_address1),
+    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_z_s_ce1(grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_z_s_ce1),
+    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_z_s_we1(grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_z_s_we1),
+    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_z_s_d1(grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_z_s_d1),
     .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_z_s_q1(LinearRegression_stubMap_data_second_data_z_s_q1),
-    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_layerId_s_address0(grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_layerId_s_address0),
-    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_layerId_s_ce0(grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_layerId_s_ce0),
-    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_layerId_s_we0(grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_layerId_s_we0),
-    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_layerId_s_d0(grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_layerId_s_d0),
+    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_layerId_s_address0(grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_layerId_s_address0),
+    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_layerId_s_ce0(grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_layerId_s_ce0),
+    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_layerId_s_we0(grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_layerId_s_we0),
+    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_layerId_s_d0(grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_layerId_s_d0),
     .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_layerId_s_q0(LinearRegression_stubMap_data_second_data_layerId_s_q0),
-    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_layerId_s_address1(grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_layerId_s_address1),
-    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_layerId_s_ce1(grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_layerId_s_ce1),
-    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_layerId_s_we1(grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_layerId_s_we1),
-    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_layerId_s_d1(grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_layerId_s_d1),
+    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_layerId_s_address1(grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_layerId_s_address1),
+    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_layerId_s_ce1(grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_layerId_s_ce1),
+    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_layerId_s_we1(grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_layerId_s_we1),
+    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_layerId_s_d1(grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_layerId_s_d1),
     .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_layerId_s_q1(LinearRegression_stubMap_data_second_data_layerId_s_q1),
-    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_psModule_s_address0(grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_psModule_s_address0),
-    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_psModule_s_ce0(grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_psModule_s_ce0),
-    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_psModule_s_we0(grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_psModule_s_we0),
-    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_psModule_s_d0(grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_psModule_s_d0),
+    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_psModule_s_address0(grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_psModule_s_address0),
+    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_psModule_s_ce0(grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_psModule_s_ce0),
+    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_psModule_s_we0(grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_psModule_s_we0),
+    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_psModule_s_d0(grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_psModule_s_d0),
     .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_psModule_s_q0(LinearRegression_stubMap_data_second_data_psModule_s_q0),
-    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_psModule_s_address1(grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_psModule_s_address1),
-    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_psModule_s_ce1(grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_psModule_s_ce1),
-    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_psModule_s_we1(grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_psModule_s_we1),
-    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_psModule_s_d1(grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_psModule_s_d1),
+    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_psModule_s_address1(grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_psModule_s_address1),
+    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_psModule_s_ce1(grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_psModule_s_ce1),
+    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_psModule_s_we1(grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_psModule_s_we1),
+    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_psModule_s_d1(grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_psModule_s_d1),
     .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_psModule_s_q1(LinearRegression_stubMap_data_second_data_psModule_s_q1),
-    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_barrel_s_address0(grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_barrel_s_address0),
-    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_barrel_s_ce0(grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_barrel_s_ce0),
-    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_barrel_s_we0(grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_barrel_s_we0),
-    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_barrel_s_d0(grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_barrel_s_d0),
+    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_barrel_s_address0(grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_barrel_s_address0),
+    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_barrel_s_ce0(grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_barrel_s_ce0),
+    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_barrel_s_we0(grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_barrel_s_we0),
+    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_barrel_s_d0(grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_barrel_s_d0),
     .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_barrel_s_q0(LinearRegression_stubMap_data_second_data_barrel_s_q0),
-    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_barrel_s_address1(grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_barrel_s_address1),
-    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_barrel_s_ce1(grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_barrel_s_ce1),
-    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_barrel_s_we1(grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_barrel_s_we1),
-    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_barrel_s_d1(grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_barrel_s_d1),
+    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_barrel_s_address1(grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_barrel_s_address1),
+    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_barrel_s_ce1(grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_barrel_s_ce1),
+    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_barrel_s_we1(grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_barrel_s_we1),
+    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_barrel_s_d1(grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_barrel_s_d1),
     .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_barrel_s_q1(LinearRegression_stubMap_data_second_data_barrel_s_q1),
-    .idx_read(LinearRegression_lar_reg_3331),
-    .ap_return(grp_clean_fu_2538_ap_return)
+    .idx_read(LinearRegression_lar_reg_3285),
+    .ap_return(grp_clean_fu_2517_ap_return)
 );
 
-findLargestResidual grp_findLargestResidual_fu_2571(
+findLargestResidual grp_findLargestResidual_fu_2550(
     .ap_clk(ap_clk),
     .ap_rst(ap_rst),
-    .ap_start(grp_findLargestResidual_fu_2571_ap_start),
-    .ap_done(grp_findLargestResidual_fu_2571_ap_done),
-    .ap_idle(grp_findLargestResidual_fu_2571_ap_idle),
-    .ap_ready(grp_findLargestResidual_fu_2571_ap_ready),
+    .ap_start(grp_findLargestResidual_fu_2550_ap_start),
+    .ap_done(grp_findLargestResidual_fu_2550_ap_done),
+    .ap_idle(grp_findLargestResidual_fu_2550_ap_idle),
+    .ap_ready(grp_findLargestResidual_fu_2550_ap_ready),
     .LinearRegression_stubs_size_read(LinearRegression_stubs_size_read),
-    .LinearRegression_stubs_data_layerId_s_address0(grp_findLargestResidual_fu_2571_LinearRegression_stubs_data_layerId_s_address0),
-    .LinearRegression_stubs_data_layerId_s_ce0(grp_findLargestResidual_fu_2571_LinearRegression_stubs_data_layerId_s_ce0),
+    .LinearRegression_stubs_data_layerId_s_address0(grp_findLargestResidual_fu_2550_LinearRegression_stubs_data_layerId_s_address0),
+    .LinearRegression_stubs_data_layerId_s_ce0(grp_findLargestResidual_fu_2550_LinearRegression_stubs_data_layerId_s_ce0),
     .LinearRegression_stubs_data_layerId_s_q0(LinearRegression_stubs_data_layerId_s_q0),
-    .LinearRegression_stubs_data_psModule_s_address0(grp_findLargestResidual_fu_2571_LinearRegression_stubs_data_psModule_s_address0),
-    .LinearRegression_stubs_data_psModule_s_ce0(grp_findLargestResidual_fu_2571_LinearRegression_stubs_data_psModule_s_ce0),
+    .LinearRegression_stubs_data_psModule_s_address0(grp_findLargestResidual_fu_2550_LinearRegression_stubs_data_psModule_s_address0),
+    .LinearRegression_stubs_data_psModule_s_ce0(grp_findLargestResidual_fu_2550_LinearRegression_stubs_data_psModule_s_ce0),
     .LinearRegression_stubs_data_psModule_s_q0(LinearRegression_stubs_data_psModule_s_q0),
-    .LinearRegression_stubs_data_barrel_s_address0(grp_findLargestResidual_fu_2571_LinearRegression_stubs_data_barrel_s_address0),
-    .LinearRegression_stubs_data_barrel_s_ce0(grp_findLargestResidual_fu_2571_LinearRegression_stubs_data_barrel_s_ce0),
+    .LinearRegression_stubs_data_barrel_s_address0(grp_findLargestResidual_fu_2550_LinearRegression_stubs_data_barrel_s_address0),
+    .LinearRegression_stubs_data_barrel_s_ce0(grp_findLargestResidual_fu_2550_LinearRegression_stubs_data_barrel_s_ce0),
     .LinearRegression_stubs_data_barrel_s_q0(LinearRegression_stubs_data_barrel_s_q0),
     .LinearRegression_stubMap_size_read(LinearRegression_stubMap_size_read),
-    .LinearRegression_stubMap_data_first_address0(grp_findLargestResidual_fu_2571_LinearRegression_stubMap_data_first_address0),
-    .LinearRegression_stubMap_data_first_ce0(grp_findLargestResidual_fu_2571_LinearRegression_stubMap_data_first_ce0),
-    .LinearRegression_stubMap_data_first_we0(grp_findLargestResidual_fu_2571_LinearRegression_stubMap_data_first_we0),
-    .LinearRegression_stubMap_data_first_d0(grp_findLargestResidual_fu_2571_LinearRegression_stubMap_data_first_d0),
+    .LinearRegression_stubMap_data_first_address0(grp_findLargestResidual_fu_2550_LinearRegression_stubMap_data_first_address0),
+    .LinearRegression_stubMap_data_first_ce0(grp_findLargestResidual_fu_2550_LinearRegression_stubMap_data_first_ce0),
+    .LinearRegression_stubMap_data_first_we0(grp_findLargestResidual_fu_2550_LinearRegression_stubMap_data_first_we0),
+    .LinearRegression_stubMap_data_first_d0(grp_findLargestResidual_fu_2550_LinearRegression_stubMap_data_first_d0),
     .LinearRegression_stubMap_data_first_q0(LinearRegression_stubMap_data_first_q0),
-    .LinearRegression_stubMap_data_second_size_s_address0(grp_findLargestResidual_fu_2571_LinearRegression_stubMap_data_second_size_s_address0),
-    .LinearRegression_stubMap_data_second_size_s_ce0(grp_findLargestResidual_fu_2571_LinearRegression_stubMap_data_second_size_s_ce0),
-    .LinearRegression_stubMap_data_second_size_s_we0(grp_findLargestResidual_fu_2571_LinearRegression_stubMap_data_second_size_s_we0),
-    .LinearRegression_stubMap_data_second_size_s_d0(grp_findLargestResidual_fu_2571_LinearRegression_stubMap_data_second_size_s_d0),
-    .LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_address0(grp_findLargestResidual_fu_2571_LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_address0),
-    .LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_ce0(grp_findLargestResidual_fu_2571_LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_ce0),
-    .LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_we0(grp_findLargestResidual_fu_2571_LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_we0),
-    .LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_d0(grp_findLargestResidual_fu_2571_LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_d0),
-    .LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_address1(grp_findLargestResidual_fu_2571_LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_address1),
-    .LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_ce1(grp_findLargestResidual_fu_2571_LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_ce1),
-    .LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_we1(grp_findLargestResidual_fu_2571_LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_we1),
-    .LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_d1(grp_findLargestResidual_fu_2571_LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_d1),
-    .LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_address0(grp_findLargestResidual_fu_2571_LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_address0),
-    .LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_ce0(grp_findLargestResidual_fu_2571_LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_ce0),
-    .LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_we0(grp_findLargestResidual_fu_2571_LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_we0),
-    .LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_d0(grp_findLargestResidual_fu_2571_LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_d0),
-    .LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_address1(grp_findLargestResidual_fu_2571_LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_address1),
-    .LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_ce1(grp_findLargestResidual_fu_2571_LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_ce1),
-    .LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_we1(grp_findLargestResidual_fu_2571_LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_we1),
-    .LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_d1(grp_findLargestResidual_fu_2571_LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_d1),
-    .LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_address0(grp_findLargestResidual_fu_2571_LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_address0),
-    .LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_ce0(grp_findLargestResidual_fu_2571_LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_ce0),
-    .LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_we0(grp_findLargestResidual_fu_2571_LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_we0),
-    .LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_d0(grp_findLargestResidual_fu_2571_LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_d0),
-    .LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_address1(grp_findLargestResidual_fu_2571_LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_address1),
-    .LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_ce1(grp_findLargestResidual_fu_2571_LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_ce1),
-    .LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_we1(grp_findLargestResidual_fu_2571_LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_we1),
-    .LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_d1(grp_findLargestResidual_fu_2571_LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_d1),
-    .LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_address0(grp_findLargestResidual_fu_2571_LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_address0),
-    .LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_ce0(grp_findLargestResidual_fu_2571_LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_ce0),
-    .LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_we0(grp_findLargestResidual_fu_2571_LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_we0),
-    .LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_d0(grp_findLargestResidual_fu_2571_LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_d0),
-    .LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_address1(grp_findLargestResidual_fu_2571_LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_address1),
-    .LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_ce1(grp_findLargestResidual_fu_2571_LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_ce1),
-    .LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_we1(grp_findLargestResidual_fu_2571_LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_we1),
-    .LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_d1(grp_findLargestResidual_fu_2571_LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_d1),
-    .LinearRegression_stubMap_data_second_data_r_s_address0(grp_findLargestResidual_fu_2571_LinearRegression_stubMap_data_second_data_r_s_address0),
-    .LinearRegression_stubMap_data_second_data_r_s_ce0(grp_findLargestResidual_fu_2571_LinearRegression_stubMap_data_second_data_r_s_ce0),
-    .LinearRegression_stubMap_data_second_data_r_s_we0(grp_findLargestResidual_fu_2571_LinearRegression_stubMap_data_second_data_r_s_we0),
-    .LinearRegression_stubMap_data_second_data_r_s_d0(grp_findLargestResidual_fu_2571_LinearRegression_stubMap_data_second_data_r_s_d0),
-    .LinearRegression_stubMap_data_second_data_r_s_address1(grp_findLargestResidual_fu_2571_LinearRegression_stubMap_data_second_data_r_s_address1),
-    .LinearRegression_stubMap_data_second_data_r_s_ce1(grp_findLargestResidual_fu_2571_LinearRegression_stubMap_data_second_data_r_s_ce1),
-    .LinearRegression_stubMap_data_second_data_r_s_we1(grp_findLargestResidual_fu_2571_LinearRegression_stubMap_data_second_data_r_s_we1),
-    .LinearRegression_stubMap_data_second_data_r_s_d1(grp_findLargestResidual_fu_2571_LinearRegression_stubMap_data_second_data_r_s_d1),
-    .LinearRegression_stubMap_data_second_data_phi_s_address0(grp_findLargestResidual_fu_2571_LinearRegression_stubMap_data_second_data_phi_s_address0),
-    .LinearRegression_stubMap_data_second_data_phi_s_ce0(grp_findLargestResidual_fu_2571_LinearRegression_stubMap_data_second_data_phi_s_ce0),
-    .LinearRegression_stubMap_data_second_data_phi_s_we0(grp_findLargestResidual_fu_2571_LinearRegression_stubMap_data_second_data_phi_s_we0),
-    .LinearRegression_stubMap_data_second_data_phi_s_d0(grp_findLargestResidual_fu_2571_LinearRegression_stubMap_data_second_data_phi_s_d0),
-    .LinearRegression_stubMap_data_second_data_phi_s_address1(grp_findLargestResidual_fu_2571_LinearRegression_stubMap_data_second_data_phi_s_address1),
-    .LinearRegression_stubMap_data_second_data_phi_s_ce1(grp_findLargestResidual_fu_2571_LinearRegression_stubMap_data_second_data_phi_s_ce1),
-    .LinearRegression_stubMap_data_second_data_phi_s_we1(grp_findLargestResidual_fu_2571_LinearRegression_stubMap_data_second_data_phi_s_we1),
-    .LinearRegression_stubMap_data_second_data_phi_s_d1(grp_findLargestResidual_fu_2571_LinearRegression_stubMap_data_second_data_phi_s_d1),
-    .LinearRegression_stubMap_data_second_data_z_s_address0(grp_findLargestResidual_fu_2571_LinearRegression_stubMap_data_second_data_z_s_address0),
-    .LinearRegression_stubMap_data_second_data_z_s_ce0(grp_findLargestResidual_fu_2571_LinearRegression_stubMap_data_second_data_z_s_ce0),
-    .LinearRegression_stubMap_data_second_data_z_s_we0(grp_findLargestResidual_fu_2571_LinearRegression_stubMap_data_second_data_z_s_we0),
-    .LinearRegression_stubMap_data_second_data_z_s_d0(grp_findLargestResidual_fu_2571_LinearRegression_stubMap_data_second_data_z_s_d0),
-    .LinearRegression_stubMap_data_second_data_z_s_address1(grp_findLargestResidual_fu_2571_LinearRegression_stubMap_data_second_data_z_s_address1),
-    .LinearRegression_stubMap_data_second_data_z_s_ce1(grp_findLargestResidual_fu_2571_LinearRegression_stubMap_data_second_data_z_s_ce1),
-    .LinearRegression_stubMap_data_second_data_z_s_we1(grp_findLargestResidual_fu_2571_LinearRegression_stubMap_data_second_data_z_s_we1),
-    .LinearRegression_stubMap_data_second_data_z_s_d1(grp_findLargestResidual_fu_2571_LinearRegression_stubMap_data_second_data_z_s_d1),
-    .LinearRegression_stubMap_data_second_data_layerId_s_address0(grp_findLargestResidual_fu_2571_LinearRegression_stubMap_data_second_data_layerId_s_address0),
-    .LinearRegression_stubMap_data_second_data_layerId_s_ce0(grp_findLargestResidual_fu_2571_LinearRegression_stubMap_data_second_data_layerId_s_ce0),
-    .LinearRegression_stubMap_data_second_data_layerId_s_we0(grp_findLargestResidual_fu_2571_LinearRegression_stubMap_data_second_data_layerId_s_we0),
-    .LinearRegression_stubMap_data_second_data_layerId_s_d0(grp_findLargestResidual_fu_2571_LinearRegression_stubMap_data_second_data_layerId_s_d0),
+    .LinearRegression_stubMap_data_second_size_s_address0(grp_findLargestResidual_fu_2550_LinearRegression_stubMap_data_second_size_s_address0),
+    .LinearRegression_stubMap_data_second_size_s_ce0(grp_findLargestResidual_fu_2550_LinearRegression_stubMap_data_second_size_s_ce0),
+    .LinearRegression_stubMap_data_second_size_s_we0(grp_findLargestResidual_fu_2550_LinearRegression_stubMap_data_second_size_s_we0),
+    .LinearRegression_stubMap_data_second_size_s_d0(grp_findLargestResidual_fu_2550_LinearRegression_stubMap_data_second_size_s_d0),
+    .LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_address0(grp_findLargestResidual_fu_2550_LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_address0),
+    .LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_ce0(grp_findLargestResidual_fu_2550_LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_ce0),
+    .LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_we0(grp_findLargestResidual_fu_2550_LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_we0),
+    .LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_d0(grp_findLargestResidual_fu_2550_LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_d0),
+    .LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_address1(grp_findLargestResidual_fu_2550_LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_address1),
+    .LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_ce1(grp_findLargestResidual_fu_2550_LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_ce1),
+    .LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_we1(grp_findLargestResidual_fu_2550_LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_we1),
+    .LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_d1(grp_findLargestResidual_fu_2550_LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_d1),
+    .LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_address0(grp_findLargestResidual_fu_2550_LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_address0),
+    .LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_ce0(grp_findLargestResidual_fu_2550_LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_ce0),
+    .LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_we0(grp_findLargestResidual_fu_2550_LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_we0),
+    .LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_d0(grp_findLargestResidual_fu_2550_LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_d0),
+    .LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_address1(grp_findLargestResidual_fu_2550_LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_address1),
+    .LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_ce1(grp_findLargestResidual_fu_2550_LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_ce1),
+    .LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_we1(grp_findLargestResidual_fu_2550_LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_we1),
+    .LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_d1(grp_findLargestResidual_fu_2550_LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_d1),
+    .LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_address0(grp_findLargestResidual_fu_2550_LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_address0),
+    .LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_ce0(grp_findLargestResidual_fu_2550_LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_ce0),
+    .LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_we0(grp_findLargestResidual_fu_2550_LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_we0),
+    .LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_d0(grp_findLargestResidual_fu_2550_LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_d0),
+    .LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_address1(grp_findLargestResidual_fu_2550_LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_address1),
+    .LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_ce1(grp_findLargestResidual_fu_2550_LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_ce1),
+    .LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_we1(grp_findLargestResidual_fu_2550_LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_we1),
+    .LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_d1(grp_findLargestResidual_fu_2550_LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_d1),
+    .LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_address0(grp_findLargestResidual_fu_2550_LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_address0),
+    .LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_ce0(grp_findLargestResidual_fu_2550_LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_ce0),
+    .LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_we0(grp_findLargestResidual_fu_2550_LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_we0),
+    .LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_d0(grp_findLargestResidual_fu_2550_LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_d0),
+    .LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_address1(grp_findLargestResidual_fu_2550_LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_address1),
+    .LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_ce1(grp_findLargestResidual_fu_2550_LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_ce1),
+    .LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_we1(grp_findLargestResidual_fu_2550_LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_we1),
+    .LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_d1(grp_findLargestResidual_fu_2550_LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_d1),
+    .LinearRegression_stubMap_data_second_data_r_s_address0(grp_findLargestResidual_fu_2550_LinearRegression_stubMap_data_second_data_r_s_address0),
+    .LinearRegression_stubMap_data_second_data_r_s_ce0(grp_findLargestResidual_fu_2550_LinearRegression_stubMap_data_second_data_r_s_ce0),
+    .LinearRegression_stubMap_data_second_data_r_s_we0(grp_findLargestResidual_fu_2550_LinearRegression_stubMap_data_second_data_r_s_we0),
+    .LinearRegression_stubMap_data_second_data_r_s_d0(grp_findLargestResidual_fu_2550_LinearRegression_stubMap_data_second_data_r_s_d0),
+    .LinearRegression_stubMap_data_second_data_r_s_address1(grp_findLargestResidual_fu_2550_LinearRegression_stubMap_data_second_data_r_s_address1),
+    .LinearRegression_stubMap_data_second_data_r_s_ce1(grp_findLargestResidual_fu_2550_LinearRegression_stubMap_data_second_data_r_s_ce1),
+    .LinearRegression_stubMap_data_second_data_r_s_we1(grp_findLargestResidual_fu_2550_LinearRegression_stubMap_data_second_data_r_s_we1),
+    .LinearRegression_stubMap_data_second_data_r_s_d1(grp_findLargestResidual_fu_2550_LinearRegression_stubMap_data_second_data_r_s_d1),
+    .LinearRegression_stubMap_data_second_data_phi_s_address0(grp_findLargestResidual_fu_2550_LinearRegression_stubMap_data_second_data_phi_s_address0),
+    .LinearRegression_stubMap_data_second_data_phi_s_ce0(grp_findLargestResidual_fu_2550_LinearRegression_stubMap_data_second_data_phi_s_ce0),
+    .LinearRegression_stubMap_data_second_data_phi_s_we0(grp_findLargestResidual_fu_2550_LinearRegression_stubMap_data_second_data_phi_s_we0),
+    .LinearRegression_stubMap_data_second_data_phi_s_d0(grp_findLargestResidual_fu_2550_LinearRegression_stubMap_data_second_data_phi_s_d0),
+    .LinearRegression_stubMap_data_second_data_phi_s_address1(grp_findLargestResidual_fu_2550_LinearRegression_stubMap_data_second_data_phi_s_address1),
+    .LinearRegression_stubMap_data_second_data_phi_s_ce1(grp_findLargestResidual_fu_2550_LinearRegression_stubMap_data_second_data_phi_s_ce1),
+    .LinearRegression_stubMap_data_second_data_phi_s_we1(grp_findLargestResidual_fu_2550_LinearRegression_stubMap_data_second_data_phi_s_we1),
+    .LinearRegression_stubMap_data_second_data_phi_s_d1(grp_findLargestResidual_fu_2550_LinearRegression_stubMap_data_second_data_phi_s_d1),
+    .LinearRegression_stubMap_data_second_data_z_s_address0(grp_findLargestResidual_fu_2550_LinearRegression_stubMap_data_second_data_z_s_address0),
+    .LinearRegression_stubMap_data_second_data_z_s_ce0(grp_findLargestResidual_fu_2550_LinearRegression_stubMap_data_second_data_z_s_ce0),
+    .LinearRegression_stubMap_data_second_data_z_s_we0(grp_findLargestResidual_fu_2550_LinearRegression_stubMap_data_second_data_z_s_we0),
+    .LinearRegression_stubMap_data_second_data_z_s_d0(grp_findLargestResidual_fu_2550_LinearRegression_stubMap_data_second_data_z_s_d0),
+    .LinearRegression_stubMap_data_second_data_z_s_address1(grp_findLargestResidual_fu_2550_LinearRegression_stubMap_data_second_data_z_s_address1),
+    .LinearRegression_stubMap_data_second_data_z_s_ce1(grp_findLargestResidual_fu_2550_LinearRegression_stubMap_data_second_data_z_s_ce1),
+    .LinearRegression_stubMap_data_second_data_z_s_we1(grp_findLargestResidual_fu_2550_LinearRegression_stubMap_data_second_data_z_s_we1),
+    .LinearRegression_stubMap_data_second_data_z_s_d1(grp_findLargestResidual_fu_2550_LinearRegression_stubMap_data_second_data_z_s_d1),
+    .LinearRegression_stubMap_data_second_data_layerId_s_address0(grp_findLargestResidual_fu_2550_LinearRegression_stubMap_data_second_data_layerId_s_address0),
+    .LinearRegression_stubMap_data_second_data_layerId_s_ce0(grp_findLargestResidual_fu_2550_LinearRegression_stubMap_data_second_data_layerId_s_ce0),
+    .LinearRegression_stubMap_data_second_data_layerId_s_we0(grp_findLargestResidual_fu_2550_LinearRegression_stubMap_data_second_data_layerId_s_we0),
+    .LinearRegression_stubMap_data_second_data_layerId_s_d0(grp_findLargestResidual_fu_2550_LinearRegression_stubMap_data_second_data_layerId_s_d0),
     .LinearRegression_stubMap_data_second_data_layerId_s_q0(LinearRegression_stubMap_data_second_data_layerId_s_q0),
-    .LinearRegression_stubMap_data_second_data_layerId_s_address1(grp_findLargestResidual_fu_2571_LinearRegression_stubMap_data_second_data_layerId_s_address1),
-    .LinearRegression_stubMap_data_second_data_layerId_s_ce1(grp_findLargestResidual_fu_2571_LinearRegression_stubMap_data_second_data_layerId_s_ce1),
-    .LinearRegression_stubMap_data_second_data_layerId_s_we1(grp_findLargestResidual_fu_2571_LinearRegression_stubMap_data_second_data_layerId_s_we1),
-    .LinearRegression_stubMap_data_second_data_layerId_s_d1(grp_findLargestResidual_fu_2571_LinearRegression_stubMap_data_second_data_layerId_s_d1),
-    .LinearRegression_stubMap_data_second_data_psModule_s_address0(grp_findLargestResidual_fu_2571_LinearRegression_stubMap_data_second_data_psModule_s_address0),
-    .LinearRegression_stubMap_data_second_data_psModule_s_ce0(grp_findLargestResidual_fu_2571_LinearRegression_stubMap_data_second_data_psModule_s_ce0),
-    .LinearRegression_stubMap_data_second_data_psModule_s_we0(grp_findLargestResidual_fu_2571_LinearRegression_stubMap_data_second_data_psModule_s_we0),
-    .LinearRegression_stubMap_data_second_data_psModule_s_d0(grp_findLargestResidual_fu_2571_LinearRegression_stubMap_data_second_data_psModule_s_d0),
+    .LinearRegression_stubMap_data_second_data_layerId_s_address1(grp_findLargestResidual_fu_2550_LinearRegression_stubMap_data_second_data_layerId_s_address1),
+    .LinearRegression_stubMap_data_second_data_layerId_s_ce1(grp_findLargestResidual_fu_2550_LinearRegression_stubMap_data_second_data_layerId_s_ce1),
+    .LinearRegression_stubMap_data_second_data_layerId_s_we1(grp_findLargestResidual_fu_2550_LinearRegression_stubMap_data_second_data_layerId_s_we1),
+    .LinearRegression_stubMap_data_second_data_layerId_s_d1(grp_findLargestResidual_fu_2550_LinearRegression_stubMap_data_second_data_layerId_s_d1),
+    .LinearRegression_stubMap_data_second_data_psModule_s_address0(grp_findLargestResidual_fu_2550_LinearRegression_stubMap_data_second_data_psModule_s_address0),
+    .LinearRegression_stubMap_data_second_data_psModule_s_ce0(grp_findLargestResidual_fu_2550_LinearRegression_stubMap_data_second_data_psModule_s_ce0),
+    .LinearRegression_stubMap_data_second_data_psModule_s_we0(grp_findLargestResidual_fu_2550_LinearRegression_stubMap_data_second_data_psModule_s_we0),
+    .LinearRegression_stubMap_data_second_data_psModule_s_d0(grp_findLargestResidual_fu_2550_LinearRegression_stubMap_data_second_data_psModule_s_d0),
     .LinearRegression_stubMap_data_second_data_psModule_s_q0(LinearRegression_stubMap_data_second_data_psModule_s_q0),
-    .LinearRegression_stubMap_data_second_data_psModule_s_address1(grp_findLargestResidual_fu_2571_LinearRegression_stubMap_data_second_data_psModule_s_address1),
-    .LinearRegression_stubMap_data_second_data_psModule_s_ce1(grp_findLargestResidual_fu_2571_LinearRegression_stubMap_data_second_data_psModule_s_ce1),
-    .LinearRegression_stubMap_data_second_data_psModule_s_we1(grp_findLargestResidual_fu_2571_LinearRegression_stubMap_data_second_data_psModule_s_we1),
-    .LinearRegression_stubMap_data_second_data_psModule_s_d1(grp_findLargestResidual_fu_2571_LinearRegression_stubMap_data_second_data_psModule_s_d1),
-    .LinearRegression_stubMap_data_second_data_barrel_s_address0(grp_findLargestResidual_fu_2571_LinearRegression_stubMap_data_second_data_barrel_s_address0),
-    .LinearRegression_stubMap_data_second_data_barrel_s_ce0(grp_findLargestResidual_fu_2571_LinearRegression_stubMap_data_second_data_barrel_s_ce0),
-    .LinearRegression_stubMap_data_second_data_barrel_s_we0(grp_findLargestResidual_fu_2571_LinearRegression_stubMap_data_second_data_barrel_s_we0),
-    .LinearRegression_stubMap_data_second_data_barrel_s_d0(grp_findLargestResidual_fu_2571_LinearRegression_stubMap_data_second_data_barrel_s_d0),
+    .LinearRegression_stubMap_data_second_data_psModule_s_address1(grp_findLargestResidual_fu_2550_LinearRegression_stubMap_data_second_data_psModule_s_address1),
+    .LinearRegression_stubMap_data_second_data_psModule_s_ce1(grp_findLargestResidual_fu_2550_LinearRegression_stubMap_data_second_data_psModule_s_ce1),
+    .LinearRegression_stubMap_data_second_data_psModule_s_we1(grp_findLargestResidual_fu_2550_LinearRegression_stubMap_data_second_data_psModule_s_we1),
+    .LinearRegression_stubMap_data_second_data_psModule_s_d1(grp_findLargestResidual_fu_2550_LinearRegression_stubMap_data_second_data_psModule_s_d1),
+    .LinearRegression_stubMap_data_second_data_barrel_s_address0(grp_findLargestResidual_fu_2550_LinearRegression_stubMap_data_second_data_barrel_s_address0),
+    .LinearRegression_stubMap_data_second_data_barrel_s_ce0(grp_findLargestResidual_fu_2550_LinearRegression_stubMap_data_second_data_barrel_s_ce0),
+    .LinearRegression_stubMap_data_second_data_barrel_s_we0(grp_findLargestResidual_fu_2550_LinearRegression_stubMap_data_second_data_barrel_s_we0),
+    .LinearRegression_stubMap_data_second_data_barrel_s_d0(grp_findLargestResidual_fu_2550_LinearRegression_stubMap_data_second_data_barrel_s_d0),
     .LinearRegression_stubMap_data_second_data_barrel_s_q0(LinearRegression_stubMap_data_second_data_barrel_s_q0),
-    .LinearRegression_stubMap_data_second_data_barrel_s_address1(grp_findLargestResidual_fu_2571_LinearRegression_stubMap_data_second_data_barrel_s_address1),
-    .LinearRegression_stubMap_data_second_data_barrel_s_ce1(grp_findLargestResidual_fu_2571_LinearRegression_stubMap_data_second_data_barrel_s_ce1),
-    .LinearRegression_stubMap_data_second_data_barrel_s_we1(grp_findLargestResidual_fu_2571_LinearRegression_stubMap_data_second_data_barrel_s_we1),
-    .LinearRegression_stubMap_data_second_data_barrel_s_d1(grp_findLargestResidual_fu_2571_LinearRegression_stubMap_data_second_data_barrel_s_d1),
+    .LinearRegression_stubMap_data_second_data_barrel_s_address1(grp_findLargestResidual_fu_2550_LinearRegression_stubMap_data_second_data_barrel_s_address1),
+    .LinearRegression_stubMap_data_second_data_barrel_s_ce1(grp_findLargestResidual_fu_2550_LinearRegression_stubMap_data_second_data_barrel_s_ce1),
+    .LinearRegression_stubMap_data_second_data_barrel_s_we1(grp_findLargestResidual_fu_2550_LinearRegression_stubMap_data_second_data_barrel_s_we1),
+    .LinearRegression_stubMap_data_second_data_barrel_s_d1(grp_findLargestResidual_fu_2550_LinearRegression_stubMap_data_second_data_barrel_s_d1),
     .LinearRegression_layerPopulation_size_read(LinearRegression_layerPopulation_size_read),
-    .LinearRegression_layerPopulation_data_first_address0(grp_findLargestResidual_fu_2571_LinearRegression_layerPopulation_data_first_address0),
-    .LinearRegression_layerPopulation_data_first_ce0(grp_findLargestResidual_fu_2571_LinearRegression_layerPopulation_data_first_ce0),
-    .LinearRegression_layerPopulation_data_first_we0(grp_findLargestResidual_fu_2571_LinearRegression_layerPopulation_data_first_we0),
-    .LinearRegression_layerPopulation_data_first_d0(grp_findLargestResidual_fu_2571_LinearRegression_layerPopulation_data_first_d0),
+    .LinearRegression_layerPopulation_data_first_address0(grp_findLargestResidual_fu_2550_LinearRegression_layerPopulation_data_first_address0),
+    .LinearRegression_layerPopulation_data_first_ce0(grp_findLargestResidual_fu_2550_LinearRegression_layerPopulation_data_first_ce0),
+    .LinearRegression_layerPopulation_data_first_we0(grp_findLargestResidual_fu_2550_LinearRegression_layerPopulation_data_first_we0),
+    .LinearRegression_layerPopulation_data_first_d0(grp_findLargestResidual_fu_2550_LinearRegression_layerPopulation_data_first_d0),
     .LinearRegression_layerPopulation_data_first_q0(LinearRegression_layerPopulation_data_first_q0),
-    .LinearRegression_layerPopulation_data_second_address0(grp_findLargestResidual_fu_2571_LinearRegression_layerPopulation_data_second_address0),
-    .LinearRegression_layerPopulation_data_second_ce0(grp_findLargestResidual_fu_2571_LinearRegression_layerPopulation_data_second_ce0),
-    .LinearRegression_layerPopulation_data_second_we0(grp_findLargestResidual_fu_2571_LinearRegression_layerPopulation_data_second_we0),
-    .LinearRegression_layerPopulation_data_second_d0(grp_findLargestResidual_fu_2571_LinearRegression_layerPopulation_data_second_d0),
+    .LinearRegression_layerPopulation_data_second_address0(grp_findLargestResidual_fu_2550_LinearRegression_layerPopulation_data_second_address0),
+    .LinearRegression_layerPopulation_data_second_ce0(grp_findLargestResidual_fu_2550_LinearRegression_layerPopulation_data_second_ce0),
+    .LinearRegression_layerPopulation_data_second_we0(grp_findLargestResidual_fu_2550_LinearRegression_layerPopulation_data_second_we0),
+    .LinearRegression_layerPopulation_data_second_d0(grp_findLargestResidual_fu_2550_LinearRegression_layerPopulation_data_second_d0),
     .LinearRegression_layerPopulation_data_second_q0(LinearRegression_layerPopulation_data_second_q0),
     .LinearRegression_residuals_size_read(LinearRegression_residuals_size_read),
-    .LinearRegression_residuals_data_first_address0(grp_findLargestResidual_fu_2571_LinearRegression_residuals_data_first_address0),
-    .LinearRegression_residuals_data_first_ce0(grp_findLargestResidual_fu_2571_LinearRegression_residuals_data_first_ce0),
+    .LinearRegression_residuals_data_first_address0(grp_findLargestResidual_fu_2550_LinearRegression_residuals_data_first_address0),
+    .LinearRegression_residuals_data_first_ce0(grp_findLargestResidual_fu_2550_LinearRegression_residuals_data_first_ce0),
     .LinearRegression_residuals_data_first_q0(LinearRegression_residuals_data_first_q0),
-    .LinearRegression_residuals_data_second_size_s_address0(grp_findLargestResidual_fu_2571_LinearRegression_residuals_data_second_size_s_address0),
-    .LinearRegression_residuals_data_second_size_s_ce0(grp_findLargestResidual_fu_2571_LinearRegression_residuals_data_second_size_s_ce0),
+    .LinearRegression_residuals_data_second_size_s_address0(grp_findLargestResidual_fu_2550_LinearRegression_residuals_data_second_size_s_address0),
+    .LinearRegression_residuals_data_second_size_s_ce0(grp_findLargestResidual_fu_2550_LinearRegression_residuals_data_second_size_s_ce0),
     .LinearRegression_residuals_data_second_size_s_q0(LinearRegression_residuals_data_second_size_s_q0),
-    .LinearRegression_residuals_data_second_data_phi_address0(grp_findLargestResidual_fu_2571_LinearRegression_residuals_data_second_data_phi_address0),
-    .LinearRegression_residuals_data_second_data_phi_ce0(grp_findLargestResidual_fu_2571_LinearRegression_residuals_data_second_data_phi_ce0),
+    .LinearRegression_residuals_data_second_data_phi_address0(grp_findLargestResidual_fu_2550_LinearRegression_residuals_data_second_data_phi_address0),
+    .LinearRegression_residuals_data_second_data_phi_ce0(grp_findLargestResidual_fu_2550_LinearRegression_residuals_data_second_data_phi_ce0),
     .LinearRegression_residuals_data_second_data_phi_q0(LinearRegression_residuals_data_second_data_phi_q0),
-    .LinearRegression_residuals_data_second_data_z_address0(grp_findLargestResidual_fu_2571_LinearRegression_residuals_data_second_data_z_address0),
-    .LinearRegression_residuals_data_second_data_z_ce0(grp_findLargestResidual_fu_2571_LinearRegression_residuals_data_second_data_z_ce0),
+    .LinearRegression_residuals_data_second_data_z_address0(grp_findLargestResidual_fu_2550_LinearRegression_residuals_data_second_data_z_address0),
+    .LinearRegression_residuals_data_second_data_z_ce0(grp_findLargestResidual_fu_2550_LinearRegression_residuals_data_second_data_z_ce0),
     .LinearRegression_residuals_data_second_data_z_q0(LinearRegression_residuals_data_second_data_z_q0),
-    .LinearRegression_residuals_data_second_data_layerId_address0(grp_findLargestResidual_fu_2571_LinearRegression_residuals_data_second_data_layerId_address0),
-    .LinearRegression_residuals_data_second_data_layerId_ce0(grp_findLargestResidual_fu_2571_LinearRegression_residuals_data_second_data_layerId_ce0),
+    .LinearRegression_residuals_data_second_data_layerId_address0(grp_findLargestResidual_fu_2550_LinearRegression_residuals_data_second_data_layerId_address0),
+    .LinearRegression_residuals_data_second_data_layerId_ce0(grp_findLargestResidual_fu_2550_LinearRegression_residuals_data_second_data_layerId_ce0),
     .LinearRegression_residuals_data_second_data_layerId_q0(LinearRegression_residuals_data_second_data_layerId_q0),
-    .LinearRegression_residuals_data_second_data_stubId_address0(grp_findLargestResidual_fu_2571_LinearRegression_residuals_data_second_data_stubId_address0),
-    .LinearRegression_residuals_data_second_data_stubId_ce0(grp_findLargestResidual_fu_2571_LinearRegression_residuals_data_second_data_stubId_ce0),
+    .LinearRegression_residuals_data_second_data_stubId_address0(grp_findLargestResidual_fu_2550_LinearRegression_residuals_data_second_data_stubId_address0),
+    .LinearRegression_residuals_data_second_data_stubId_ce0(grp_findLargestResidual_fu_2550_LinearRegression_residuals_data_second_data_stubId_ce0),
     .LinearRegression_residuals_data_second_data_stubId_q0(LinearRegression_residuals_data_second_data_stubId_q0),
-    .LinearRegression_residuals_data_second_data_ps_address0(grp_findLargestResidual_fu_2571_LinearRegression_residuals_data_second_data_ps_address0),
-    .LinearRegression_residuals_data_second_data_ps_ce0(grp_findLargestResidual_fu_2571_LinearRegression_residuals_data_second_data_ps_ce0),
+    .LinearRegression_residuals_data_second_data_ps_address0(grp_findLargestResidual_fu_2550_LinearRegression_residuals_data_second_data_ps_address0),
+    .LinearRegression_residuals_data_second_data_ps_ce0(grp_findLargestResidual_fu_2550_LinearRegression_residuals_data_second_data_ps_ce0),
     .LinearRegression_residuals_data_second_data_ps_q0(LinearRegression_residuals_data_second_data_ps_q0),
-    .ap_return_0(grp_findLargestResidual_fu_2571_ap_return_0),
-    .ap_return_1(grp_findLargestResidual_fu_2571_ap_return_1),
-    .ap_return_2(grp_findLargestResidual_fu_2571_ap_return_2),
-    .ap_return_3(grp_findLargestResidual_fu_2571_ap_return_3),
-    .ap_return_4(grp_findLargestResidual_fu_2571_ap_return_4),
-    .ap_return_5(grp_findLargestResidual_fu_2571_ap_return_5),
-    .ap_return_6(grp_findLargestResidual_fu_2571_ap_return_6)
+    .ap_return_0(grp_findLargestResidual_fu_2550_ap_return_0),
+    .ap_return_1(grp_findLargestResidual_fu_2550_ap_return_1),
+    .ap_return_2(grp_findLargestResidual_fu_2550_ap_return_2),
+    .ap_return_3(grp_findLargestResidual_fu_2550_ap_return_3),
+    .ap_return_4(grp_findLargestResidual_fu_2550_ap_return_4),
+    .ap_return_5(grp_findLargestResidual_fu_2550_ap_return_5),
+    .ap_return_6(grp_findLargestResidual_fu_2550_ap_return_6)
 );
 
-erase grp_erase_fu_2631(
+erase grp_erase_fu_2610(
     .ap_clk(ap_clk),
     .ap_rst(ap_rst),
-    .ap_start(grp_erase_fu_2631_ap_start),
-    .ap_done(grp_erase_fu_2631_ap_done),
-    .ap_idle(grp_erase_fu_2631_ap_idle),
-    .ap_ready(grp_erase_fu_2631_ap_ready),
-    .arrayHLS_Stub_size_read(LinearRegression_stu_16_reg_5525),
-    .arrayHLS_Stub_data_settings_chosenRofPhi_s_address0(grp_erase_fu_2631_arrayHLS_Stub_data_settings_chosenRofPhi_s_address0),
-    .arrayHLS_Stub_data_settings_chosenRofPhi_s_ce0(grp_erase_fu_2631_arrayHLS_Stub_data_settings_chosenRofPhi_s_ce0),
-    .arrayHLS_Stub_data_settings_chosenRofPhi_s_we0(grp_erase_fu_2631_arrayHLS_Stub_data_settings_chosenRofPhi_s_we0),
-    .arrayHLS_Stub_data_settings_chosenRofPhi_s_d0(grp_erase_fu_2631_arrayHLS_Stub_data_settings_chosenRofPhi_s_d0),
+    .ap_start(grp_erase_fu_2610_ap_start),
+    .ap_done(grp_erase_fu_2610_ap_done),
+    .ap_idle(grp_erase_fu_2610_ap_idle),
+    .ap_ready(grp_erase_fu_2610_ap_ready),
+    .arrayHLS_Stub_size_read(LinearRegression_stu_16_reg_5468),
+    .arrayHLS_Stub_data_settings_chosenRofPhi_s_address0(grp_erase_fu_2610_arrayHLS_Stub_data_settings_chosenRofPhi_s_address0),
+    .arrayHLS_Stub_data_settings_chosenRofPhi_s_ce0(grp_erase_fu_2610_arrayHLS_Stub_data_settings_chosenRofPhi_s_ce0),
+    .arrayHLS_Stub_data_settings_chosenRofPhi_s_we0(grp_erase_fu_2610_arrayHLS_Stub_data_settings_chosenRofPhi_s_we0),
+    .arrayHLS_Stub_data_settings_chosenRofPhi_s_d0(grp_erase_fu_2610_arrayHLS_Stub_data_settings_chosenRofPhi_s_d0),
     .arrayHLS_Stub_data_settings_chosenRofPhi_s_q0(LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_q0),
-    .arrayHLS_Stub_data_settings_chosenRofPhi_offset(p_pn_in_i_reg_2444),
-    .arrayHLS_Stub_data_settings_chosenRofZ_s_address0(grp_erase_fu_2631_arrayHLS_Stub_data_settings_chosenRofZ_s_address0),
-    .arrayHLS_Stub_data_settings_chosenRofZ_s_ce0(grp_erase_fu_2631_arrayHLS_Stub_data_settings_chosenRofZ_s_ce0),
-    .arrayHLS_Stub_data_settings_chosenRofZ_s_we0(grp_erase_fu_2631_arrayHLS_Stub_data_settings_chosenRofZ_s_we0),
-    .arrayHLS_Stub_data_settings_chosenRofZ_s_d0(grp_erase_fu_2631_arrayHLS_Stub_data_settings_chosenRofZ_s_d0),
+    .arrayHLS_Stub_data_settings_chosenRofPhi_offset(p_pn_in_i_reg_2434),
+    .arrayHLS_Stub_data_settings_chosenRofZ_s_address0(grp_erase_fu_2610_arrayHLS_Stub_data_settings_chosenRofZ_s_address0),
+    .arrayHLS_Stub_data_settings_chosenRofZ_s_ce0(grp_erase_fu_2610_arrayHLS_Stub_data_settings_chosenRofZ_s_ce0),
+    .arrayHLS_Stub_data_settings_chosenRofZ_s_we0(grp_erase_fu_2610_arrayHLS_Stub_data_settings_chosenRofZ_s_we0),
+    .arrayHLS_Stub_data_settings_chosenRofZ_s_d0(grp_erase_fu_2610_arrayHLS_Stub_data_settings_chosenRofZ_s_d0),
     .arrayHLS_Stub_data_settings_chosenRofZ_s_q0(LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_q0),
-    .arrayHLS_Stub_data_settings_etaRegions_s_address0(grp_erase_fu_2631_arrayHLS_Stub_data_settings_etaRegions_s_address0),
-    .arrayHLS_Stub_data_settings_etaRegions_s_ce0(grp_erase_fu_2631_arrayHLS_Stub_data_settings_etaRegions_s_ce0),
-    .arrayHLS_Stub_data_settings_etaRegions_s_we0(grp_erase_fu_2631_arrayHLS_Stub_data_settings_etaRegions_s_we0),
-    .arrayHLS_Stub_data_settings_etaRegions_s_d0(grp_erase_fu_2631_arrayHLS_Stub_data_settings_etaRegions_s_d0),
-    .arrayHLS_Stub_data_settings_etaRegions_s_q0(LinearRegression_stubMap_data_second_data_settings_etaRegions_s_q0),
-    .arrayHLS_Stub_data_settings_etaRegions_s_address1(grp_erase_fu_2631_arrayHLS_Stub_data_settings_etaRegions_s_address1),
-    .arrayHLS_Stub_data_settings_etaRegions_s_ce1(grp_erase_fu_2631_arrayHLS_Stub_data_settings_etaRegions_s_ce1),
-    .arrayHLS_Stub_data_settings_etaRegions_s_we1(grp_erase_fu_2631_arrayHLS_Stub_data_settings_etaRegions_s_we1),
-    .arrayHLS_Stub_data_settings_etaRegions_s_d1(grp_erase_fu_2631_arrayHLS_Stub_data_settings_etaRegions_s_d1),
-    .arrayHLS_Stub_data_settings_etaRegions_s_q1(LinearRegression_stubMap_data_second_data_settings_etaRegions_s_q1),
-    .arrayHLS_Stub_data_settings_minNumMatchLayers_s_address0(grp_erase_fu_2631_arrayHLS_Stub_data_settings_minNumMatchLayers_s_address0),
-    .arrayHLS_Stub_data_settings_minNumMatchLayers_s_ce0(grp_erase_fu_2631_arrayHLS_Stub_data_settings_minNumMatchLayers_s_ce0),
-    .arrayHLS_Stub_data_settings_minNumMatchLayers_s_we0(grp_erase_fu_2631_arrayHLS_Stub_data_settings_minNumMatchLayers_s_we0),
-    .arrayHLS_Stub_data_settings_minNumMatchLayers_s_d0(grp_erase_fu_2631_arrayHLS_Stub_data_settings_minNumMatchLayers_s_d0),
+    .arrayHLS_Stub_data_settings_sinh_etaRegions_s_address0(grp_erase_fu_2610_arrayHLS_Stub_data_settings_sinh_etaRegions_s_address0),
+    .arrayHLS_Stub_data_settings_sinh_etaRegions_s_ce0(grp_erase_fu_2610_arrayHLS_Stub_data_settings_sinh_etaRegions_s_ce0),
+    .arrayHLS_Stub_data_settings_sinh_etaRegions_s_we0(grp_erase_fu_2610_arrayHLS_Stub_data_settings_sinh_etaRegions_s_we0),
+    .arrayHLS_Stub_data_settings_sinh_etaRegions_s_d0(grp_erase_fu_2610_arrayHLS_Stub_data_settings_sinh_etaRegions_s_d0),
+    .arrayHLS_Stub_data_settings_sinh_etaRegions_s_q0(LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_q0),
+    .arrayHLS_Stub_data_settings_sinh_etaRegions_s_address1(grp_erase_fu_2610_arrayHLS_Stub_data_settings_sinh_etaRegions_s_address1),
+    .arrayHLS_Stub_data_settings_sinh_etaRegions_s_ce1(grp_erase_fu_2610_arrayHLS_Stub_data_settings_sinh_etaRegions_s_ce1),
+    .arrayHLS_Stub_data_settings_sinh_etaRegions_s_we1(grp_erase_fu_2610_arrayHLS_Stub_data_settings_sinh_etaRegions_s_we1),
+    .arrayHLS_Stub_data_settings_sinh_etaRegions_s_d1(grp_erase_fu_2610_arrayHLS_Stub_data_settings_sinh_etaRegions_s_d1),
+    .arrayHLS_Stub_data_settings_sinh_etaRegions_s_q1(LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_q1),
+    .arrayHLS_Stub_data_settings_minNumMatchLayers_s_address0(grp_erase_fu_2610_arrayHLS_Stub_data_settings_minNumMatchLayers_s_address0),
+    .arrayHLS_Stub_data_settings_minNumMatchLayers_s_ce0(grp_erase_fu_2610_arrayHLS_Stub_data_settings_minNumMatchLayers_s_ce0),
+    .arrayHLS_Stub_data_settings_minNumMatchLayers_s_we0(grp_erase_fu_2610_arrayHLS_Stub_data_settings_minNumMatchLayers_s_we0),
+    .arrayHLS_Stub_data_settings_minNumMatchLayers_s_d0(grp_erase_fu_2610_arrayHLS_Stub_data_settings_minNumMatchLayers_s_d0),
     .arrayHLS_Stub_data_settings_minNumMatchLayers_s_q0(LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_q0),
-    .arrayHLS_Stub_data_settings_minPSLayers_s_address0(grp_erase_fu_2631_arrayHLS_Stub_data_settings_minPSLayers_s_address0),
-    .arrayHLS_Stub_data_settings_minPSLayers_s_ce0(grp_erase_fu_2631_arrayHLS_Stub_data_settings_minPSLayers_s_ce0),
-    .arrayHLS_Stub_data_settings_minPSLayers_s_we0(grp_erase_fu_2631_arrayHLS_Stub_data_settings_minPSLayers_s_we0),
-    .arrayHLS_Stub_data_settings_minPSLayers_s_d0(grp_erase_fu_2631_arrayHLS_Stub_data_settings_minPSLayers_s_d0),
+    .arrayHLS_Stub_data_settings_minPSLayers_s_address0(grp_erase_fu_2610_arrayHLS_Stub_data_settings_minPSLayers_s_address0),
+    .arrayHLS_Stub_data_settings_minPSLayers_s_ce0(grp_erase_fu_2610_arrayHLS_Stub_data_settings_minPSLayers_s_ce0),
+    .arrayHLS_Stub_data_settings_minPSLayers_s_we0(grp_erase_fu_2610_arrayHLS_Stub_data_settings_minPSLayers_s_we0),
+    .arrayHLS_Stub_data_settings_minPSLayers_s_d0(grp_erase_fu_2610_arrayHLS_Stub_data_settings_minPSLayers_s_d0),
     .arrayHLS_Stub_data_settings_minPSLayers_s_q0(LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_q0),
-    .arrayHLS_Stub_data_r_s_address0(grp_erase_fu_2631_arrayHLS_Stub_data_r_s_address0),
-    .arrayHLS_Stub_data_r_s_ce0(grp_erase_fu_2631_arrayHLS_Stub_data_r_s_ce0),
-    .arrayHLS_Stub_data_r_s_we0(grp_erase_fu_2631_arrayHLS_Stub_data_r_s_we0),
-    .arrayHLS_Stub_data_r_s_d0(grp_erase_fu_2631_arrayHLS_Stub_data_r_s_d0),
+    .arrayHLS_Stub_data_r_s_address0(grp_erase_fu_2610_arrayHLS_Stub_data_r_s_address0),
+    .arrayHLS_Stub_data_r_s_ce0(grp_erase_fu_2610_arrayHLS_Stub_data_r_s_ce0),
+    .arrayHLS_Stub_data_r_s_we0(grp_erase_fu_2610_arrayHLS_Stub_data_r_s_we0),
+    .arrayHLS_Stub_data_r_s_d0(grp_erase_fu_2610_arrayHLS_Stub_data_r_s_d0),
     .arrayHLS_Stub_data_r_s_q0(LinearRegression_stubMap_data_second_data_r_s_q0),
-    .arrayHLS_Stub_data_phi_s_address0(grp_erase_fu_2631_arrayHLS_Stub_data_phi_s_address0),
-    .arrayHLS_Stub_data_phi_s_ce0(grp_erase_fu_2631_arrayHLS_Stub_data_phi_s_ce0),
-    .arrayHLS_Stub_data_phi_s_we0(grp_erase_fu_2631_arrayHLS_Stub_data_phi_s_we0),
-    .arrayHLS_Stub_data_phi_s_d0(grp_erase_fu_2631_arrayHLS_Stub_data_phi_s_d0),
+    .arrayHLS_Stub_data_phi_s_address0(grp_erase_fu_2610_arrayHLS_Stub_data_phi_s_address0),
+    .arrayHLS_Stub_data_phi_s_ce0(grp_erase_fu_2610_arrayHLS_Stub_data_phi_s_ce0),
+    .arrayHLS_Stub_data_phi_s_we0(grp_erase_fu_2610_arrayHLS_Stub_data_phi_s_we0),
+    .arrayHLS_Stub_data_phi_s_d0(grp_erase_fu_2610_arrayHLS_Stub_data_phi_s_d0),
     .arrayHLS_Stub_data_phi_s_q0(LinearRegression_stubMap_data_second_data_phi_s_q0),
-    .arrayHLS_Stub_data_z_s_address0(grp_erase_fu_2631_arrayHLS_Stub_data_z_s_address0),
-    .arrayHLS_Stub_data_z_s_ce0(grp_erase_fu_2631_arrayHLS_Stub_data_z_s_ce0),
-    .arrayHLS_Stub_data_z_s_we0(grp_erase_fu_2631_arrayHLS_Stub_data_z_s_we0),
-    .arrayHLS_Stub_data_z_s_d0(grp_erase_fu_2631_arrayHLS_Stub_data_z_s_d0),
+    .arrayHLS_Stub_data_z_s_address0(grp_erase_fu_2610_arrayHLS_Stub_data_z_s_address0),
+    .arrayHLS_Stub_data_z_s_ce0(grp_erase_fu_2610_arrayHLS_Stub_data_z_s_ce0),
+    .arrayHLS_Stub_data_z_s_we0(grp_erase_fu_2610_arrayHLS_Stub_data_z_s_we0),
+    .arrayHLS_Stub_data_z_s_d0(grp_erase_fu_2610_arrayHLS_Stub_data_z_s_d0),
     .arrayHLS_Stub_data_z_s_q0(LinearRegression_stubMap_data_second_data_z_s_q0),
-    .arrayHLS_Stub_data_layerId_s_address0(grp_erase_fu_2631_arrayHLS_Stub_data_layerId_s_address0),
-    .arrayHLS_Stub_data_layerId_s_ce0(grp_erase_fu_2631_arrayHLS_Stub_data_layerId_s_ce0),
-    .arrayHLS_Stub_data_layerId_s_we0(grp_erase_fu_2631_arrayHLS_Stub_data_layerId_s_we0),
-    .arrayHLS_Stub_data_layerId_s_d0(grp_erase_fu_2631_arrayHLS_Stub_data_layerId_s_d0),
+    .arrayHLS_Stub_data_layerId_s_address0(grp_erase_fu_2610_arrayHLS_Stub_data_layerId_s_address0),
+    .arrayHLS_Stub_data_layerId_s_ce0(grp_erase_fu_2610_arrayHLS_Stub_data_layerId_s_ce0),
+    .arrayHLS_Stub_data_layerId_s_we0(grp_erase_fu_2610_arrayHLS_Stub_data_layerId_s_we0),
+    .arrayHLS_Stub_data_layerId_s_d0(grp_erase_fu_2610_arrayHLS_Stub_data_layerId_s_d0),
     .arrayHLS_Stub_data_layerId_s_q0(LinearRegression_stubMap_data_second_data_layerId_s_q0),
-    .arrayHLS_Stub_data_psModule_s_address0(grp_erase_fu_2631_arrayHLS_Stub_data_psModule_s_address0),
-    .arrayHLS_Stub_data_psModule_s_ce0(grp_erase_fu_2631_arrayHLS_Stub_data_psModule_s_ce0),
-    .arrayHLS_Stub_data_psModule_s_we0(grp_erase_fu_2631_arrayHLS_Stub_data_psModule_s_we0),
-    .arrayHLS_Stub_data_psModule_s_d0(grp_erase_fu_2631_arrayHLS_Stub_data_psModule_s_d0),
+    .arrayHLS_Stub_data_psModule_s_address0(grp_erase_fu_2610_arrayHLS_Stub_data_psModule_s_address0),
+    .arrayHLS_Stub_data_psModule_s_ce0(grp_erase_fu_2610_arrayHLS_Stub_data_psModule_s_ce0),
+    .arrayHLS_Stub_data_psModule_s_we0(grp_erase_fu_2610_arrayHLS_Stub_data_psModule_s_we0),
+    .arrayHLS_Stub_data_psModule_s_d0(grp_erase_fu_2610_arrayHLS_Stub_data_psModule_s_d0),
     .arrayHLS_Stub_data_psModule_s_q0(LinearRegression_stubMap_data_second_data_psModule_s_q0),
-    .arrayHLS_Stub_data_barrel_s_address0(grp_erase_fu_2631_arrayHLS_Stub_data_barrel_s_address0),
-    .arrayHLS_Stub_data_barrel_s_ce0(grp_erase_fu_2631_arrayHLS_Stub_data_barrel_s_ce0),
-    .arrayHLS_Stub_data_barrel_s_we0(grp_erase_fu_2631_arrayHLS_Stub_data_barrel_s_we0),
-    .arrayHLS_Stub_data_barrel_s_d0(grp_erase_fu_2631_arrayHLS_Stub_data_barrel_s_d0),
+    .arrayHLS_Stub_data_barrel_s_address0(grp_erase_fu_2610_arrayHLS_Stub_data_barrel_s_address0),
+    .arrayHLS_Stub_data_barrel_s_ce0(grp_erase_fu_2610_arrayHLS_Stub_data_barrel_s_ce0),
+    .arrayHLS_Stub_data_barrel_s_we0(grp_erase_fu_2610_arrayHLS_Stub_data_barrel_s_we0),
+    .arrayHLS_Stub_data_barrel_s_d0(grp_erase_fu_2610_arrayHLS_Stub_data_barrel_s_d0),
     .arrayHLS_Stub_data_barrel_s_q0(LinearRegression_stubMap_data_second_data_barrel_s_q0),
-    .value_r_read(stub_r_s_reg_4446),
-    .value_phi_read(stub_phi_s_reg_4452),
-    .value_z_read(stub_z_s_reg_4458),
-    .value_layerId_read(stub_layerId_s_reg_4464),
-    .value_psModule_read(grp_erase_fu_2631_value_psModule_read),
-    .value_barrel_read(grp_erase_fu_2631_value_barrel_read),
-    .ap_return(grp_erase_fu_2631_ap_return)
+    .value_r_read(stub_r_s_reg_4393),
+    .value_phi_read(stub_phi_s_reg_4399),
+    .value_z_read(stub_z_s_reg_4405),
+    .value_layerId_read(stub_layerId_s_reg_4411),
+    .value_psModule_read(grp_erase_fu_2610_value_psModule_read),
+    .value_barrel_read(grp_erase_fu_2610_value_barrel_read),
+    .ap_return(grp_erase_fu_2610_ap_return)
 );
 
-erase_1 grp_erase_1_fu_2668(
+erase_1 grp_erase_1_fu_2647(
     .ap_clk(ap_clk),
     .ap_rst(ap_rst),
-    .ap_start(grp_erase_1_fu_2668_ap_start),
-    .ap_done(grp_erase_1_fu_2668_ap_done),
-    .ap_idle(grp_erase_1_fu_2668_ap_idle),
-    .ap_ready(grp_erase_1_fu_2668_ap_ready),
+    .ap_start(grp_erase_1_fu_2647_ap_start),
+    .ap_done(grp_erase_1_fu_2647_ap_done),
+    .ap_idle(grp_erase_1_fu_2647_ap_idle),
+    .ap_ready(grp_erase_1_fu_2647_ap_ready),
     .arrayHLS_Stub_size_read(LinearRegression_stubs_size_read),
-    .arrayHLS_Stub_data_settings_chosenRofPhi_s_address0(grp_erase_1_fu_2668_arrayHLS_Stub_data_settings_chosenRofPhi_s_address0),
-    .arrayHLS_Stub_data_settings_chosenRofPhi_s_ce0(grp_erase_1_fu_2668_arrayHLS_Stub_data_settings_chosenRofPhi_s_ce0),
-    .arrayHLS_Stub_data_settings_chosenRofPhi_s_we0(grp_erase_1_fu_2668_arrayHLS_Stub_data_settings_chosenRofPhi_s_we0),
-    .arrayHLS_Stub_data_settings_chosenRofPhi_s_d0(grp_erase_1_fu_2668_arrayHLS_Stub_data_settings_chosenRofPhi_s_d0),
+    .arrayHLS_Stub_data_settings_chosenRofPhi_s_address0(grp_erase_1_fu_2647_arrayHLS_Stub_data_settings_chosenRofPhi_s_address0),
+    .arrayHLS_Stub_data_settings_chosenRofPhi_s_ce0(grp_erase_1_fu_2647_arrayHLS_Stub_data_settings_chosenRofPhi_s_ce0),
+    .arrayHLS_Stub_data_settings_chosenRofPhi_s_we0(grp_erase_1_fu_2647_arrayHLS_Stub_data_settings_chosenRofPhi_s_we0),
+    .arrayHLS_Stub_data_settings_chosenRofPhi_s_d0(grp_erase_1_fu_2647_arrayHLS_Stub_data_settings_chosenRofPhi_s_d0),
     .arrayHLS_Stub_data_settings_chosenRofPhi_s_q0(LinearRegression_stubs_data_settings_chosenRofPhi_s_q0),
-    .arrayHLS_Stub_data_settings_chosenRofZ_s_address0(grp_erase_1_fu_2668_arrayHLS_Stub_data_settings_chosenRofZ_s_address0),
-    .arrayHLS_Stub_data_settings_chosenRofZ_s_ce0(grp_erase_1_fu_2668_arrayHLS_Stub_data_settings_chosenRofZ_s_ce0),
-    .arrayHLS_Stub_data_settings_chosenRofZ_s_we0(grp_erase_1_fu_2668_arrayHLS_Stub_data_settings_chosenRofZ_s_we0),
-    .arrayHLS_Stub_data_settings_chosenRofZ_s_d0(grp_erase_1_fu_2668_arrayHLS_Stub_data_settings_chosenRofZ_s_d0),
+    .arrayHLS_Stub_data_settings_chosenRofZ_s_address0(grp_erase_1_fu_2647_arrayHLS_Stub_data_settings_chosenRofZ_s_address0),
+    .arrayHLS_Stub_data_settings_chosenRofZ_s_ce0(grp_erase_1_fu_2647_arrayHLS_Stub_data_settings_chosenRofZ_s_ce0),
+    .arrayHLS_Stub_data_settings_chosenRofZ_s_we0(grp_erase_1_fu_2647_arrayHLS_Stub_data_settings_chosenRofZ_s_we0),
+    .arrayHLS_Stub_data_settings_chosenRofZ_s_d0(grp_erase_1_fu_2647_arrayHLS_Stub_data_settings_chosenRofZ_s_d0),
     .arrayHLS_Stub_data_settings_chosenRofZ_s_q0(LinearRegression_stubs_data_settings_chosenRofZ_s_q0),
-    .arrayHLS_Stub_data_settings_etaRegions_s_address0(grp_erase_1_fu_2668_arrayHLS_Stub_data_settings_etaRegions_s_address0),
-    .arrayHLS_Stub_data_settings_etaRegions_s_ce0(grp_erase_1_fu_2668_arrayHLS_Stub_data_settings_etaRegions_s_ce0),
-    .arrayHLS_Stub_data_settings_etaRegions_s_we0(grp_erase_1_fu_2668_arrayHLS_Stub_data_settings_etaRegions_s_we0),
-    .arrayHLS_Stub_data_settings_etaRegions_s_d0(grp_erase_1_fu_2668_arrayHLS_Stub_data_settings_etaRegions_s_d0),
-    .arrayHLS_Stub_data_settings_etaRegions_s_q0(LinearRegression_stubs_data_settings_etaRegions_s_q0),
-    .arrayHLS_Stub_data_settings_etaRegions_s_address1(grp_erase_1_fu_2668_arrayHLS_Stub_data_settings_etaRegions_s_address1),
-    .arrayHLS_Stub_data_settings_etaRegions_s_ce1(grp_erase_1_fu_2668_arrayHLS_Stub_data_settings_etaRegions_s_ce1),
-    .arrayHLS_Stub_data_settings_etaRegions_s_we1(grp_erase_1_fu_2668_arrayHLS_Stub_data_settings_etaRegions_s_we1),
-    .arrayHLS_Stub_data_settings_etaRegions_s_d1(grp_erase_1_fu_2668_arrayHLS_Stub_data_settings_etaRegions_s_d1),
-    .arrayHLS_Stub_data_settings_etaRegions_s_q1(LinearRegression_stubs_data_settings_etaRegions_s_q1),
-    .arrayHLS_Stub_data_settings_minNumMatchLayers_s_address0(grp_erase_1_fu_2668_arrayHLS_Stub_data_settings_minNumMatchLayers_s_address0),
-    .arrayHLS_Stub_data_settings_minNumMatchLayers_s_ce0(grp_erase_1_fu_2668_arrayHLS_Stub_data_settings_minNumMatchLayers_s_ce0),
-    .arrayHLS_Stub_data_settings_minNumMatchLayers_s_we0(grp_erase_1_fu_2668_arrayHLS_Stub_data_settings_minNumMatchLayers_s_we0),
-    .arrayHLS_Stub_data_settings_minNumMatchLayers_s_d0(grp_erase_1_fu_2668_arrayHLS_Stub_data_settings_minNumMatchLayers_s_d0),
+    .arrayHLS_Stub_data_settings_sinh_etaRegions_s_address0(grp_erase_1_fu_2647_arrayHLS_Stub_data_settings_sinh_etaRegions_s_address0),
+    .arrayHLS_Stub_data_settings_sinh_etaRegions_s_ce0(grp_erase_1_fu_2647_arrayHLS_Stub_data_settings_sinh_etaRegions_s_ce0),
+    .arrayHLS_Stub_data_settings_sinh_etaRegions_s_we0(grp_erase_1_fu_2647_arrayHLS_Stub_data_settings_sinh_etaRegions_s_we0),
+    .arrayHLS_Stub_data_settings_sinh_etaRegions_s_d0(grp_erase_1_fu_2647_arrayHLS_Stub_data_settings_sinh_etaRegions_s_d0),
+    .arrayHLS_Stub_data_settings_sinh_etaRegions_s_q0(LinearRegression_stubs_data_settings_sinh_etaRegions_s_q0),
+    .arrayHLS_Stub_data_settings_sinh_etaRegions_s_address1(grp_erase_1_fu_2647_arrayHLS_Stub_data_settings_sinh_etaRegions_s_address1),
+    .arrayHLS_Stub_data_settings_sinh_etaRegions_s_ce1(grp_erase_1_fu_2647_arrayHLS_Stub_data_settings_sinh_etaRegions_s_ce1),
+    .arrayHLS_Stub_data_settings_sinh_etaRegions_s_we1(grp_erase_1_fu_2647_arrayHLS_Stub_data_settings_sinh_etaRegions_s_we1),
+    .arrayHLS_Stub_data_settings_sinh_etaRegions_s_d1(grp_erase_1_fu_2647_arrayHLS_Stub_data_settings_sinh_etaRegions_s_d1),
+    .arrayHLS_Stub_data_settings_sinh_etaRegions_s_q1(LinearRegression_stubs_data_settings_sinh_etaRegions_s_q1),
+    .arrayHLS_Stub_data_settings_minNumMatchLayers_s_address0(grp_erase_1_fu_2647_arrayHLS_Stub_data_settings_minNumMatchLayers_s_address0),
+    .arrayHLS_Stub_data_settings_minNumMatchLayers_s_ce0(grp_erase_1_fu_2647_arrayHLS_Stub_data_settings_minNumMatchLayers_s_ce0),
+    .arrayHLS_Stub_data_settings_minNumMatchLayers_s_we0(grp_erase_1_fu_2647_arrayHLS_Stub_data_settings_minNumMatchLayers_s_we0),
+    .arrayHLS_Stub_data_settings_minNumMatchLayers_s_d0(grp_erase_1_fu_2647_arrayHLS_Stub_data_settings_minNumMatchLayers_s_d0),
     .arrayHLS_Stub_data_settings_minNumMatchLayers_s_q0(LinearRegression_stubs_data_settings_minNumMatchLayers_s_q0),
-    .arrayHLS_Stub_data_settings_minPSLayers_s_address0(grp_erase_1_fu_2668_arrayHLS_Stub_data_settings_minPSLayers_s_address0),
-    .arrayHLS_Stub_data_settings_minPSLayers_s_ce0(grp_erase_1_fu_2668_arrayHLS_Stub_data_settings_minPSLayers_s_ce0),
-    .arrayHLS_Stub_data_settings_minPSLayers_s_we0(grp_erase_1_fu_2668_arrayHLS_Stub_data_settings_minPSLayers_s_we0),
-    .arrayHLS_Stub_data_settings_minPSLayers_s_d0(grp_erase_1_fu_2668_arrayHLS_Stub_data_settings_minPSLayers_s_d0),
+    .arrayHLS_Stub_data_settings_minPSLayers_s_address0(grp_erase_1_fu_2647_arrayHLS_Stub_data_settings_minPSLayers_s_address0),
+    .arrayHLS_Stub_data_settings_minPSLayers_s_ce0(grp_erase_1_fu_2647_arrayHLS_Stub_data_settings_minPSLayers_s_ce0),
+    .arrayHLS_Stub_data_settings_minPSLayers_s_we0(grp_erase_1_fu_2647_arrayHLS_Stub_data_settings_minPSLayers_s_we0),
+    .arrayHLS_Stub_data_settings_minPSLayers_s_d0(grp_erase_1_fu_2647_arrayHLS_Stub_data_settings_minPSLayers_s_d0),
     .arrayHLS_Stub_data_settings_minPSLayers_s_q0(LinearRegression_stubs_data_settings_minPSLayers_s_q0),
-    .arrayHLS_Stub_data_r_s_address0(grp_erase_1_fu_2668_arrayHLS_Stub_data_r_s_address0),
-    .arrayHLS_Stub_data_r_s_ce0(grp_erase_1_fu_2668_arrayHLS_Stub_data_r_s_ce0),
-    .arrayHLS_Stub_data_r_s_we0(grp_erase_1_fu_2668_arrayHLS_Stub_data_r_s_we0),
-    .arrayHLS_Stub_data_r_s_d0(grp_erase_1_fu_2668_arrayHLS_Stub_data_r_s_d0),
+    .arrayHLS_Stub_data_r_s_address0(grp_erase_1_fu_2647_arrayHLS_Stub_data_r_s_address0),
+    .arrayHLS_Stub_data_r_s_ce0(grp_erase_1_fu_2647_arrayHLS_Stub_data_r_s_ce0),
+    .arrayHLS_Stub_data_r_s_we0(grp_erase_1_fu_2647_arrayHLS_Stub_data_r_s_we0),
+    .arrayHLS_Stub_data_r_s_d0(grp_erase_1_fu_2647_arrayHLS_Stub_data_r_s_d0),
     .arrayHLS_Stub_data_r_s_q0(LinearRegression_stubs_data_r_s_q0),
-    .arrayHLS_Stub_data_phi_s_address0(grp_erase_1_fu_2668_arrayHLS_Stub_data_phi_s_address0),
-    .arrayHLS_Stub_data_phi_s_ce0(grp_erase_1_fu_2668_arrayHLS_Stub_data_phi_s_ce0),
-    .arrayHLS_Stub_data_phi_s_we0(grp_erase_1_fu_2668_arrayHLS_Stub_data_phi_s_we0),
-    .arrayHLS_Stub_data_phi_s_d0(grp_erase_1_fu_2668_arrayHLS_Stub_data_phi_s_d0),
+    .arrayHLS_Stub_data_phi_s_address0(grp_erase_1_fu_2647_arrayHLS_Stub_data_phi_s_address0),
+    .arrayHLS_Stub_data_phi_s_ce0(grp_erase_1_fu_2647_arrayHLS_Stub_data_phi_s_ce0),
+    .arrayHLS_Stub_data_phi_s_we0(grp_erase_1_fu_2647_arrayHLS_Stub_data_phi_s_we0),
+    .arrayHLS_Stub_data_phi_s_d0(grp_erase_1_fu_2647_arrayHLS_Stub_data_phi_s_d0),
     .arrayHLS_Stub_data_phi_s_q0(LinearRegression_stubs_data_phi_s_q0),
-    .arrayHLS_Stub_data_z_s_address0(grp_erase_1_fu_2668_arrayHLS_Stub_data_z_s_address0),
-    .arrayHLS_Stub_data_z_s_ce0(grp_erase_1_fu_2668_arrayHLS_Stub_data_z_s_ce0),
-    .arrayHLS_Stub_data_z_s_we0(grp_erase_1_fu_2668_arrayHLS_Stub_data_z_s_we0),
-    .arrayHLS_Stub_data_z_s_d0(grp_erase_1_fu_2668_arrayHLS_Stub_data_z_s_d0),
+    .arrayHLS_Stub_data_z_s_address0(grp_erase_1_fu_2647_arrayHLS_Stub_data_z_s_address0),
+    .arrayHLS_Stub_data_z_s_ce0(grp_erase_1_fu_2647_arrayHLS_Stub_data_z_s_ce0),
+    .arrayHLS_Stub_data_z_s_we0(grp_erase_1_fu_2647_arrayHLS_Stub_data_z_s_we0),
+    .arrayHLS_Stub_data_z_s_d0(grp_erase_1_fu_2647_arrayHLS_Stub_data_z_s_d0),
     .arrayHLS_Stub_data_z_s_q0(LinearRegression_stubs_data_z_s_q0),
-    .arrayHLS_Stub_data_layerId_s_address0(grp_erase_1_fu_2668_arrayHLS_Stub_data_layerId_s_address0),
-    .arrayHLS_Stub_data_layerId_s_ce0(grp_erase_1_fu_2668_arrayHLS_Stub_data_layerId_s_ce0),
-    .arrayHLS_Stub_data_layerId_s_we0(grp_erase_1_fu_2668_arrayHLS_Stub_data_layerId_s_we0),
-    .arrayHLS_Stub_data_layerId_s_d0(grp_erase_1_fu_2668_arrayHLS_Stub_data_layerId_s_d0),
+    .arrayHLS_Stub_data_layerId_s_address0(grp_erase_1_fu_2647_arrayHLS_Stub_data_layerId_s_address0),
+    .arrayHLS_Stub_data_layerId_s_ce0(grp_erase_1_fu_2647_arrayHLS_Stub_data_layerId_s_ce0),
+    .arrayHLS_Stub_data_layerId_s_we0(grp_erase_1_fu_2647_arrayHLS_Stub_data_layerId_s_we0),
+    .arrayHLS_Stub_data_layerId_s_d0(grp_erase_1_fu_2647_arrayHLS_Stub_data_layerId_s_d0),
     .arrayHLS_Stub_data_layerId_s_q0(LinearRegression_stubs_data_layerId_s_q0),
-    .arrayHLS_Stub_data_psModule_s_address0(grp_erase_1_fu_2668_arrayHLS_Stub_data_psModule_s_address0),
-    .arrayHLS_Stub_data_psModule_s_ce0(grp_erase_1_fu_2668_arrayHLS_Stub_data_psModule_s_ce0),
-    .arrayHLS_Stub_data_psModule_s_we0(grp_erase_1_fu_2668_arrayHLS_Stub_data_psModule_s_we0),
-    .arrayHLS_Stub_data_psModule_s_d0(grp_erase_1_fu_2668_arrayHLS_Stub_data_psModule_s_d0),
+    .arrayHLS_Stub_data_psModule_s_address0(grp_erase_1_fu_2647_arrayHLS_Stub_data_psModule_s_address0),
+    .arrayHLS_Stub_data_psModule_s_ce0(grp_erase_1_fu_2647_arrayHLS_Stub_data_psModule_s_ce0),
+    .arrayHLS_Stub_data_psModule_s_we0(grp_erase_1_fu_2647_arrayHLS_Stub_data_psModule_s_we0),
+    .arrayHLS_Stub_data_psModule_s_d0(grp_erase_1_fu_2647_arrayHLS_Stub_data_psModule_s_d0),
     .arrayHLS_Stub_data_psModule_s_q0(LinearRegression_stubs_data_psModule_s_q0),
-    .arrayHLS_Stub_data_barrel_s_address0(grp_erase_1_fu_2668_arrayHLS_Stub_data_barrel_s_address0),
-    .arrayHLS_Stub_data_barrel_s_ce0(grp_erase_1_fu_2668_arrayHLS_Stub_data_barrel_s_ce0),
-    .arrayHLS_Stub_data_barrel_s_we0(grp_erase_1_fu_2668_arrayHLS_Stub_data_barrel_s_we0),
-    .arrayHLS_Stub_data_barrel_s_d0(grp_erase_1_fu_2668_arrayHLS_Stub_data_barrel_s_d0),
+    .arrayHLS_Stub_data_barrel_s_address0(grp_erase_1_fu_2647_arrayHLS_Stub_data_barrel_s_address0),
+    .arrayHLS_Stub_data_barrel_s_ce0(grp_erase_1_fu_2647_arrayHLS_Stub_data_barrel_s_ce0),
+    .arrayHLS_Stub_data_barrel_s_we0(grp_erase_1_fu_2647_arrayHLS_Stub_data_barrel_s_we0),
+    .arrayHLS_Stub_data_barrel_s_d0(grp_erase_1_fu_2647_arrayHLS_Stub_data_barrel_s_d0),
     .arrayHLS_Stub_data_barrel_s_q0(LinearRegression_stubs_data_barrel_s_q0),
-    .value_r_read(stub_r_s_reg_4446),
-    .value_phi_read(stub_phi_s_reg_4452),
-    .value_z_read(stub_z_s_reg_4458),
-    .value_layerId_read(stub_layerId_s_reg_4464),
-    .value_psModule_read(grp_erase_1_fu_2668_value_psModule_read),
-    .value_barrel_read(grp_erase_1_fu_2668_value_barrel_read),
-    .ap_return(grp_erase_1_fu_2668_ap_return)
+    .value_r_read(stub_r_s_reg_4393),
+    .value_phi_read(stub_phi_s_reg_4399),
+    .value_z_read(stub_z_s_reg_4405),
+    .value_layerId_read(stub_layerId_s_reg_4411),
+    .value_psModule_read(grp_erase_1_fu_2647_value_psModule_read),
+    .value_barrel_read(grp_erase_1_fu_2647_value_barrel_read),
+    .ap_return(grp_erase_1_fu_2647_ap_return)
 );
 
-push_back_1 grp_push_back_1_fu_2701(
+push_back_1 grp_push_back_1_fu_2680(
     .ap_clk(ap_clk),
     .ap_rst(ap_rst),
-    .ap_start(grp_push_back_1_fu_2701_ap_start),
-    .ap_done(grp_push_back_1_fu_2701_ap_done),
-    .ap_idle(grp_push_back_1_fu_2701_ap_idle),
-    .ap_ready(grp_push_back_1_fu_2701_ap_ready),
-    .mapHLS_unsigned_int_arrayHLS_Stub_size_read(grp_push_back_1_fu_2701_mapHLS_unsigned_int_arrayHLS_Stub_size_read),
-    .mapHLS_unsigned_int_arrayHLS_Stub_data_first_address0(grp_push_back_1_fu_2701_mapHLS_unsigned_int_arrayHLS_Stub_data_first_address0),
-    .mapHLS_unsigned_int_arrayHLS_Stub_data_first_ce0(grp_push_back_1_fu_2701_mapHLS_unsigned_int_arrayHLS_Stub_data_first_ce0),
-    .mapHLS_unsigned_int_arrayHLS_Stub_data_first_we0(grp_push_back_1_fu_2701_mapHLS_unsigned_int_arrayHLS_Stub_data_first_we0),
-    .mapHLS_unsigned_int_arrayHLS_Stub_data_first_d0(grp_push_back_1_fu_2701_mapHLS_unsigned_int_arrayHLS_Stub_data_first_d0),
-    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_size_s_address0(grp_push_back_1_fu_2701_mapHLS_unsigned_int_arrayHLS_Stub_data_second_size_s_address0),
-    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_size_s_ce0(grp_push_back_1_fu_2701_mapHLS_unsigned_int_arrayHLS_Stub_data_second_size_s_ce0),
-    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_size_s_we0(grp_push_back_1_fu_2701_mapHLS_unsigned_int_arrayHLS_Stub_data_second_size_s_we0),
-    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_size_s_d0(grp_push_back_1_fu_2701_mapHLS_unsigned_int_arrayHLS_Stub_data_second_size_s_d0),
-    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofPhi_s_address0(grp_push_back_1_fu_2701_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofPhi_s_address0),
-    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofPhi_s_ce0(grp_push_back_1_fu_2701_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofPhi_s_ce0),
-    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofPhi_s_we0(grp_push_back_1_fu_2701_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofPhi_s_we0),
-    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofPhi_s_d0(grp_push_back_1_fu_2701_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofPhi_s_d0),
-    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofPhi_s_address1(grp_push_back_1_fu_2701_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofPhi_s_address1),
-    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofPhi_s_ce1(grp_push_back_1_fu_2701_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofPhi_s_ce1),
-    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofPhi_s_we1(grp_push_back_1_fu_2701_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofPhi_s_we1),
-    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofPhi_s_d1(grp_push_back_1_fu_2701_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofPhi_s_d1),
-    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofZ_s_address0(grp_push_back_1_fu_2701_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofZ_s_address0),
-    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofZ_s_ce0(grp_push_back_1_fu_2701_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofZ_s_ce0),
-    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofZ_s_we0(grp_push_back_1_fu_2701_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofZ_s_we0),
-    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofZ_s_d0(grp_push_back_1_fu_2701_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofZ_s_d0),
-    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofZ_s_address1(grp_push_back_1_fu_2701_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofZ_s_address1),
-    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofZ_s_ce1(grp_push_back_1_fu_2701_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofZ_s_ce1),
-    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofZ_s_we1(grp_push_back_1_fu_2701_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofZ_s_we1),
-    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofZ_s_d1(grp_push_back_1_fu_2701_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofZ_s_d1),
-    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minNumMatchLayers_s_address0(grp_push_back_1_fu_2701_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minNumMatchLayers_s_address0),
-    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minNumMatchLayers_s_ce0(grp_push_back_1_fu_2701_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minNumMatchLayers_s_ce0),
-    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minNumMatchLayers_s_we0(grp_push_back_1_fu_2701_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minNumMatchLayers_s_we0),
-    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minNumMatchLayers_s_d0(grp_push_back_1_fu_2701_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minNumMatchLayers_s_d0),
-    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minNumMatchLayers_s_address1(grp_push_back_1_fu_2701_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minNumMatchLayers_s_address1),
-    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minNumMatchLayers_s_ce1(grp_push_back_1_fu_2701_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minNumMatchLayers_s_ce1),
-    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minNumMatchLayers_s_we1(grp_push_back_1_fu_2701_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minNumMatchLayers_s_we1),
-    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minNumMatchLayers_s_d1(grp_push_back_1_fu_2701_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minNumMatchLayers_s_d1),
-    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minPSLayers_s_address0(grp_push_back_1_fu_2701_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minPSLayers_s_address0),
-    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minPSLayers_s_ce0(grp_push_back_1_fu_2701_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minPSLayers_s_ce0),
-    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minPSLayers_s_we0(grp_push_back_1_fu_2701_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minPSLayers_s_we0),
-    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minPSLayers_s_d0(grp_push_back_1_fu_2701_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minPSLayers_s_d0),
-    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minPSLayers_s_address1(grp_push_back_1_fu_2701_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minPSLayers_s_address1),
-    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minPSLayers_s_ce1(grp_push_back_1_fu_2701_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minPSLayers_s_ce1),
-    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minPSLayers_s_we1(grp_push_back_1_fu_2701_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minPSLayers_s_we1),
-    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minPSLayers_s_d1(grp_push_back_1_fu_2701_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minPSLayers_s_d1),
-    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_r_s_address0(grp_push_back_1_fu_2701_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_r_s_address0),
-    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_r_s_ce0(grp_push_back_1_fu_2701_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_r_s_ce0),
-    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_r_s_we0(grp_push_back_1_fu_2701_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_r_s_we0),
-    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_r_s_d0(grp_push_back_1_fu_2701_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_r_s_d0),
-    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_r_s_address1(grp_push_back_1_fu_2701_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_r_s_address1),
-    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_r_s_ce1(grp_push_back_1_fu_2701_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_r_s_ce1),
-    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_r_s_we1(grp_push_back_1_fu_2701_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_r_s_we1),
-    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_r_s_d1(grp_push_back_1_fu_2701_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_r_s_d1),
-    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_phi_s_address0(grp_push_back_1_fu_2701_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_phi_s_address0),
-    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_phi_s_ce0(grp_push_back_1_fu_2701_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_phi_s_ce0),
-    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_phi_s_we0(grp_push_back_1_fu_2701_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_phi_s_we0),
-    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_phi_s_d0(grp_push_back_1_fu_2701_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_phi_s_d0),
-    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_phi_s_address1(grp_push_back_1_fu_2701_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_phi_s_address1),
-    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_phi_s_ce1(grp_push_back_1_fu_2701_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_phi_s_ce1),
-    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_phi_s_we1(grp_push_back_1_fu_2701_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_phi_s_we1),
-    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_phi_s_d1(grp_push_back_1_fu_2701_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_phi_s_d1),
-    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_z_s_address0(grp_push_back_1_fu_2701_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_z_s_address0),
-    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_z_s_ce0(grp_push_back_1_fu_2701_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_z_s_ce0),
-    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_z_s_we0(grp_push_back_1_fu_2701_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_z_s_we0),
-    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_z_s_d0(grp_push_back_1_fu_2701_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_z_s_d0),
-    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_z_s_address1(grp_push_back_1_fu_2701_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_z_s_address1),
-    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_z_s_ce1(grp_push_back_1_fu_2701_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_z_s_ce1),
-    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_z_s_we1(grp_push_back_1_fu_2701_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_z_s_we1),
-    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_z_s_d1(grp_push_back_1_fu_2701_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_z_s_d1),
-    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_layerId_s_address0(grp_push_back_1_fu_2701_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_layerId_s_address0),
-    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_layerId_s_ce0(grp_push_back_1_fu_2701_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_layerId_s_ce0),
-    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_layerId_s_we0(grp_push_back_1_fu_2701_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_layerId_s_we0),
-    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_layerId_s_d0(grp_push_back_1_fu_2701_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_layerId_s_d0),
-    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_layerId_s_address1(grp_push_back_1_fu_2701_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_layerId_s_address1),
-    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_layerId_s_ce1(grp_push_back_1_fu_2701_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_layerId_s_ce1),
-    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_layerId_s_we1(grp_push_back_1_fu_2701_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_layerId_s_we1),
-    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_layerId_s_d1(grp_push_back_1_fu_2701_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_layerId_s_d1),
-    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_psModule_s_address0(grp_push_back_1_fu_2701_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_psModule_s_address0),
-    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_psModule_s_ce0(grp_push_back_1_fu_2701_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_psModule_s_ce0),
-    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_psModule_s_we0(grp_push_back_1_fu_2701_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_psModule_s_we0),
-    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_psModule_s_d0(grp_push_back_1_fu_2701_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_psModule_s_d0),
-    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_psModule_s_address1(grp_push_back_1_fu_2701_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_psModule_s_address1),
-    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_psModule_s_ce1(grp_push_back_1_fu_2701_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_psModule_s_ce1),
-    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_psModule_s_we1(grp_push_back_1_fu_2701_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_psModule_s_we1),
-    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_psModule_s_d1(grp_push_back_1_fu_2701_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_psModule_s_d1),
-    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_barrel_s_address0(grp_push_back_1_fu_2701_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_barrel_s_address0),
-    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_barrel_s_ce0(grp_push_back_1_fu_2701_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_barrel_s_ce0),
-    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_barrel_s_we0(grp_push_back_1_fu_2701_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_barrel_s_we0),
-    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_barrel_s_d0(grp_push_back_1_fu_2701_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_barrel_s_d0),
-    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_barrel_s_address1(grp_push_back_1_fu_2701_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_barrel_s_address1),
-    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_barrel_s_ce1(grp_push_back_1_fu_2701_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_barrel_s_ce1),
-    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_barrel_s_we1(grp_push_back_1_fu_2701_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_barrel_s_we1),
-    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_barrel_s_d1(grp_push_back_1_fu_2701_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_barrel_s_d1),
-    .value_first_read(LinearRegression_lar_reg_3331),
-    .p_read1(grp_push_back_1_fu_2701_p_read1),
-    .p_read3(grp_push_back_1_fu_2701_p_read3),
-    .p_read4(grp_push_back_1_fu_2701_p_read4),
-    .p_read5(grp_push_back_1_fu_2701_p_read5),
-    .p_read6(grp_push_back_1_fu_2701_p_read6),
-    .p_read7(grp_push_back_1_fu_2701_p_read7),
-    .p_read8(grp_push_back_1_fu_2701_p_read8),
-    .p_read9(grp_push_back_1_fu_2701_p_read9),
-    .p_read10(grp_push_back_1_fu_2701_p_read10),
-    .p_read11(grp_push_back_1_fu_2701_p_read11),
-    .p_read12(grp_push_back_1_fu_2701_p_read12),
-    .p_read13(grp_push_back_1_fu_2701_p_read13),
-    .p_read14(grp_push_back_1_fu_2701_p_read14),
-    .p_read15(grp_push_back_1_fu_2701_p_read15),
-    .p_read16(grp_push_back_1_fu_2701_p_read16),
-    .p_read17(grp_push_back_1_fu_2701_p_read17),
-    .p_read18(grp_push_back_1_fu_2701_p_read18),
-    .p_read19(grp_push_back_1_fu_2701_p_read19),
-    .p_read20(grp_push_back_1_fu_2701_p_read20),
-    .p_read21(grp_push_back_1_fu_2701_p_read21),
-    .p_read212(grp_push_back_1_fu_2701_p_read212),
-    .p_read213(grp_push_back_1_fu_2701_p_read213),
-    .p_read214(grp_push_back_1_fu_2701_p_read214),
-    .p_read215(grp_push_back_1_fu_2701_p_read215),
-    .p_read216(grp_push_back_1_fu_2701_p_read216),
-    .p_read217(grp_push_back_1_fu_2701_p_read217),
-    .p_read218(grp_push_back_1_fu_2701_p_read218),
-    .p_read219(grp_push_back_1_fu_2701_p_read219),
-    .p_read220(grp_push_back_1_fu_2701_p_read220),
-    .p_read221(grp_push_back_1_fu_2701_p_read221),
-    .p_read222(grp_push_back_1_fu_2701_p_read222),
-    .p_read223(grp_push_back_1_fu_2701_p_read223),
-    .p_read224(grp_push_back_1_fu_2701_p_read224),
-    .p_read225(grp_push_back_1_fu_2701_p_read225),
-    .p_read226(grp_push_back_1_fu_2701_p_read226),
-    .p_read227(grp_push_back_1_fu_2701_p_read227),
-    .p_read228(grp_push_back_1_fu_2701_p_read228),
-    .p_read229(grp_push_back_1_fu_2701_p_read229),
-    .p_read230(grp_push_back_1_fu_2701_p_read230),
-    .p_read231(grp_push_back_1_fu_2701_p_read231),
-    .p_read232(grp_push_back_1_fu_2701_p_read232),
-    .p_read233(grp_push_back_1_fu_2701_p_read233),
-    .p_read234(grp_push_back_1_fu_2701_p_read234),
-    .p_read235(grp_push_back_1_fu_2701_p_read235),
-    .p_read236(grp_push_back_1_fu_2701_p_read236),
-    .p_read237(grp_push_back_1_fu_2701_p_read237),
-    .p_read238(grp_push_back_1_fu_2701_p_read238),
-    .p_read239(grp_push_back_1_fu_2701_p_read239),
-    .p_read240(grp_push_back_1_fu_2701_p_read240),
-    .p_read241(grp_push_back_1_fu_2701_p_read241),
-    .p_read242(grp_push_back_1_fu_2701_p_read242),
-    .p_read243(grp_push_back_1_fu_2701_p_read243),
-    .p_read244(grp_push_back_1_fu_2701_p_read244),
-    .p_read245(grp_push_back_1_fu_2701_p_read245),
-    .p_read246(grp_push_back_1_fu_2701_p_read246),
-    .p_read247(grp_push_back_1_fu_2701_p_read247),
-    .p_read248(grp_push_back_1_fu_2701_p_read248),
-    .p_read249(grp_push_back_1_fu_2701_p_read249),
-    .p_read250(grp_push_back_1_fu_2701_p_read250),
-    .p_read251(grp_push_back_1_fu_2701_p_read251),
-    .p_read252(grp_push_back_1_fu_2701_p_read252),
-    .p_read253(grp_push_back_1_fu_2701_p_read253),
-    .p_read254(grp_push_back_1_fu_2701_p_read254),
-    .p_read255(grp_push_back_1_fu_2701_p_read255),
-    .p_read256(grp_push_back_1_fu_2701_p_read256),
-    .p_read257(grp_push_back_1_fu_2701_p_read257),
-    .p_read258(grp_push_back_1_fu_2701_p_read258),
-    .p_read259(grp_push_back_1_fu_2701_p_read259),
-    .p_read260(grp_push_back_1_fu_2701_p_read260),
-    .p_read261(grp_push_back_1_fu_2701_p_read261),
-    .p_read262(grp_push_back_1_fu_2701_p_read262),
-    .p_read263(grp_push_back_1_fu_2701_p_read263),
-    .p_read264(grp_push_back_1_fu_2701_p_read264),
-    .p_read265(grp_push_back_1_fu_2701_p_read265),
-    .p_read266(grp_push_back_1_fu_2701_p_read266),
-    .p_read267(grp_push_back_1_fu_2701_p_read267),
-    .p_read268(grp_push_back_1_fu_2701_p_read268),
-    .p_read269(grp_push_back_1_fu_2701_p_read269),
-    .p_read270(grp_push_back_1_fu_2701_p_read270),
-    .p_read271(grp_push_back_1_fu_2701_p_read271),
-    .p_read272(grp_push_back_1_fu_2701_p_read272),
-    .p_read273(grp_push_back_1_fu_2701_p_read273),
-    .p_read274(grp_push_back_1_fu_2701_p_read274),
-    .p_read275(grp_push_back_1_fu_2701_p_read275),
-    .p_read276(grp_push_back_1_fu_2701_p_read276),
-    .p_read277(grp_push_back_1_fu_2701_p_read277),
-    .p_read278(grp_push_back_1_fu_2701_p_read278),
-    .p_read279(grp_push_back_1_fu_2701_p_read279),
-    .p_read280(grp_push_back_1_fu_2701_p_read280),
-    .p_read281(grp_push_back_1_fu_2701_p_read281),
-    .p_read282(grp_push_back_1_fu_2701_p_read282),
-    .p_read283(grp_push_back_1_fu_2701_p_read283),
-    .p_read284(grp_push_back_1_fu_2701_p_read284),
-    .p_read285(grp_push_back_1_fu_2701_p_read285),
-    .p_read286(grp_push_back_1_fu_2701_p_read286),
-    .p_read287(grp_push_back_1_fu_2701_p_read287),
-    .p_read288(grp_push_back_1_fu_2701_p_read288),
-    .p_read289(grp_push_back_1_fu_2701_p_read289),
-    .p_read290(grp_push_back_1_fu_2701_p_read290),
-    .p_read291(grp_push_back_1_fu_2701_p_read291),
-    .ap_return(grp_push_back_1_fu_2701_ap_return)
-);
-
-has_key grp_has_key_fu_2872(
-    .ap_clk(ap_clk),
-    .ap_rst(ap_rst),
-    .ap_start(grp_has_key_fu_2872_ap_start),
-    .ap_done(grp_has_key_fu_2872_ap_done),
-    .ap_idle(grp_has_key_fu_2872_ap_idle),
-    .ap_ready(grp_has_key_fu_2872_ap_ready),
-    .mapHLS_unsigned_int_arrayHLS_Stub_size_read(grp_has_key_fu_2872_mapHLS_unsigned_int_arrayHLS_Stub_size_read),
-    .mapHLS_unsigned_int_arrayHLS_Stub_data_first_address0(grp_has_key_fu_2872_mapHLS_unsigned_int_arrayHLS_Stub_data_first_address0),
-    .mapHLS_unsigned_int_arrayHLS_Stub_data_first_ce0(grp_has_key_fu_2872_mapHLS_unsigned_int_arrayHLS_Stub_data_first_ce0),
-    .mapHLS_unsigned_int_arrayHLS_Stub_data_first_q0(LinearRegression_stubMap_data_first_q0),
-    .idx_read(LinearRegression_lar_reg_3331),
-    .ap_return(grp_has_key_fu_2872_ap_return)
+    .ap_start(grp_push_back_1_fu_2680_ap_start),
+    .ap_done(grp_push_back_1_fu_2680_ap_done),
+    .ap_idle(grp_push_back_1_fu_2680_ap_idle),
+    .ap_ready(grp_push_back_1_fu_2680_ap_ready),
+    .mapHLS_unsigned_int_arrayHLS_Stub_size_read(grp_push_back_1_fu_2680_mapHLS_unsigned_int_arrayHLS_Stub_size_read),
+    .mapHLS_unsigned_int_arrayHLS_Stub_data_first_address0(grp_push_back_1_fu_2680_mapHLS_unsigned_int_arrayHLS_Stub_data_first_address0),
+    .mapHLS_unsigned_int_arrayHLS_Stub_data_first_ce0(grp_push_back_1_fu_2680_mapHLS_unsigned_int_arrayHLS_Stub_data_first_ce0),
+    .mapHLS_unsigned_int_arrayHLS_Stub_data_first_we0(grp_push_back_1_fu_2680_mapHLS_unsigned_int_arrayHLS_Stub_data_first_we0),
+    .mapHLS_unsigned_int_arrayHLS_Stub_data_first_d0(grp_push_back_1_fu_2680_mapHLS_unsigned_int_arrayHLS_Stub_data_first_d0),
+    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_size_s_address0(grp_push_back_1_fu_2680_mapHLS_unsigned_int_arrayHLS_Stub_data_second_size_s_address0),
+    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_size_s_ce0(grp_push_back_1_fu_2680_mapHLS_unsigned_int_arrayHLS_Stub_data_second_size_s_ce0),
+    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_size_s_we0(grp_push_back_1_fu_2680_mapHLS_unsigned_int_arrayHLS_Stub_data_second_size_s_we0),
+    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_size_s_d0(grp_push_back_1_fu_2680_mapHLS_unsigned_int_arrayHLS_Stub_data_second_size_s_d0),
+    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofPhi_s_address0(grp_push_back_1_fu_2680_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofPhi_s_address0),
+    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofPhi_s_ce0(grp_push_back_1_fu_2680_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofPhi_s_ce0),
+    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofPhi_s_we0(grp_push_back_1_fu_2680_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofPhi_s_we0),
+    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofPhi_s_d0(grp_push_back_1_fu_2680_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofPhi_s_d0),
+    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofPhi_s_address1(grp_push_back_1_fu_2680_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofPhi_s_address1),
+    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofPhi_s_ce1(grp_push_back_1_fu_2680_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofPhi_s_ce1),
+    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofPhi_s_we1(grp_push_back_1_fu_2680_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofPhi_s_we1),
+    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofPhi_s_d1(grp_push_back_1_fu_2680_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofPhi_s_d1),
+    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofZ_s_address0(grp_push_back_1_fu_2680_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofZ_s_address0),
+    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofZ_s_ce0(grp_push_back_1_fu_2680_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofZ_s_ce0),
+    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofZ_s_we0(grp_push_back_1_fu_2680_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofZ_s_we0),
+    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofZ_s_d0(grp_push_back_1_fu_2680_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofZ_s_d0),
+    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofZ_s_address1(grp_push_back_1_fu_2680_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofZ_s_address1),
+    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofZ_s_ce1(grp_push_back_1_fu_2680_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofZ_s_ce1),
+    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofZ_s_we1(grp_push_back_1_fu_2680_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofZ_s_we1),
+    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofZ_s_d1(grp_push_back_1_fu_2680_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofZ_s_d1),
+    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minNumMatchLayers_s_address0(grp_push_back_1_fu_2680_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minNumMatchLayers_s_address0),
+    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minNumMatchLayers_s_ce0(grp_push_back_1_fu_2680_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minNumMatchLayers_s_ce0),
+    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minNumMatchLayers_s_we0(grp_push_back_1_fu_2680_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minNumMatchLayers_s_we0),
+    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minNumMatchLayers_s_d0(grp_push_back_1_fu_2680_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minNumMatchLayers_s_d0),
+    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minNumMatchLayers_s_address1(grp_push_back_1_fu_2680_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minNumMatchLayers_s_address1),
+    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minNumMatchLayers_s_ce1(grp_push_back_1_fu_2680_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minNumMatchLayers_s_ce1),
+    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minNumMatchLayers_s_we1(grp_push_back_1_fu_2680_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minNumMatchLayers_s_we1),
+    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minNumMatchLayers_s_d1(grp_push_back_1_fu_2680_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minNumMatchLayers_s_d1),
+    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minPSLayers_s_address0(grp_push_back_1_fu_2680_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minPSLayers_s_address0),
+    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minPSLayers_s_ce0(grp_push_back_1_fu_2680_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minPSLayers_s_ce0),
+    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minPSLayers_s_we0(grp_push_back_1_fu_2680_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minPSLayers_s_we0),
+    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minPSLayers_s_d0(grp_push_back_1_fu_2680_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minPSLayers_s_d0),
+    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minPSLayers_s_address1(grp_push_back_1_fu_2680_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minPSLayers_s_address1),
+    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minPSLayers_s_ce1(grp_push_back_1_fu_2680_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minPSLayers_s_ce1),
+    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minPSLayers_s_we1(grp_push_back_1_fu_2680_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minPSLayers_s_we1),
+    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minPSLayers_s_d1(grp_push_back_1_fu_2680_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minPSLayers_s_d1),
+    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_r_s_address0(grp_push_back_1_fu_2680_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_r_s_address0),
+    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_r_s_ce0(grp_push_back_1_fu_2680_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_r_s_ce0),
+    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_r_s_we0(grp_push_back_1_fu_2680_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_r_s_we0),
+    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_r_s_d0(grp_push_back_1_fu_2680_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_r_s_d0),
+    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_r_s_address1(grp_push_back_1_fu_2680_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_r_s_address1),
+    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_r_s_ce1(grp_push_back_1_fu_2680_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_r_s_ce1),
+    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_r_s_we1(grp_push_back_1_fu_2680_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_r_s_we1),
+    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_r_s_d1(grp_push_back_1_fu_2680_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_r_s_d1),
+    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_phi_s_address0(grp_push_back_1_fu_2680_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_phi_s_address0),
+    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_phi_s_ce0(grp_push_back_1_fu_2680_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_phi_s_ce0),
+    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_phi_s_we0(grp_push_back_1_fu_2680_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_phi_s_we0),
+    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_phi_s_d0(grp_push_back_1_fu_2680_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_phi_s_d0),
+    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_phi_s_address1(grp_push_back_1_fu_2680_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_phi_s_address1),
+    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_phi_s_ce1(grp_push_back_1_fu_2680_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_phi_s_ce1),
+    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_phi_s_we1(grp_push_back_1_fu_2680_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_phi_s_we1),
+    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_phi_s_d1(grp_push_back_1_fu_2680_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_phi_s_d1),
+    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_z_s_address0(grp_push_back_1_fu_2680_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_z_s_address0),
+    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_z_s_ce0(grp_push_back_1_fu_2680_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_z_s_ce0),
+    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_z_s_we0(grp_push_back_1_fu_2680_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_z_s_we0),
+    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_z_s_d0(grp_push_back_1_fu_2680_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_z_s_d0),
+    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_z_s_address1(grp_push_back_1_fu_2680_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_z_s_address1),
+    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_z_s_ce1(grp_push_back_1_fu_2680_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_z_s_ce1),
+    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_z_s_we1(grp_push_back_1_fu_2680_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_z_s_we1),
+    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_z_s_d1(grp_push_back_1_fu_2680_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_z_s_d1),
+    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_layerId_s_address0(grp_push_back_1_fu_2680_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_layerId_s_address0),
+    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_layerId_s_ce0(grp_push_back_1_fu_2680_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_layerId_s_ce0),
+    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_layerId_s_we0(grp_push_back_1_fu_2680_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_layerId_s_we0),
+    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_layerId_s_d0(grp_push_back_1_fu_2680_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_layerId_s_d0),
+    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_layerId_s_address1(grp_push_back_1_fu_2680_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_layerId_s_address1),
+    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_layerId_s_ce1(grp_push_back_1_fu_2680_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_layerId_s_ce1),
+    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_layerId_s_we1(grp_push_back_1_fu_2680_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_layerId_s_we1),
+    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_layerId_s_d1(grp_push_back_1_fu_2680_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_layerId_s_d1),
+    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_psModule_s_address0(grp_push_back_1_fu_2680_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_psModule_s_address0),
+    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_psModule_s_ce0(grp_push_back_1_fu_2680_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_psModule_s_ce0),
+    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_psModule_s_we0(grp_push_back_1_fu_2680_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_psModule_s_we0),
+    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_psModule_s_d0(grp_push_back_1_fu_2680_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_psModule_s_d0),
+    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_psModule_s_address1(grp_push_back_1_fu_2680_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_psModule_s_address1),
+    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_psModule_s_ce1(grp_push_back_1_fu_2680_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_psModule_s_ce1),
+    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_psModule_s_we1(grp_push_back_1_fu_2680_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_psModule_s_we1),
+    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_psModule_s_d1(grp_push_back_1_fu_2680_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_psModule_s_d1),
+    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_barrel_s_address0(grp_push_back_1_fu_2680_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_barrel_s_address0),
+    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_barrel_s_ce0(grp_push_back_1_fu_2680_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_barrel_s_ce0),
+    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_barrel_s_we0(grp_push_back_1_fu_2680_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_barrel_s_we0),
+    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_barrel_s_d0(grp_push_back_1_fu_2680_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_barrel_s_d0),
+    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_barrel_s_address1(grp_push_back_1_fu_2680_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_barrel_s_address1),
+    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_barrel_s_ce1(grp_push_back_1_fu_2680_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_barrel_s_ce1),
+    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_barrel_s_we1(grp_push_back_1_fu_2680_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_barrel_s_we1),
+    .mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_barrel_s_d1(grp_push_back_1_fu_2680_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_barrel_s_d1),
+    .value_first_read(LinearRegression_lar_reg_3285),
+    .p_read1(grp_push_back_1_fu_2680_p_read1),
+    .p_read3(grp_push_back_1_fu_2680_p_read3),
+    .p_read4(grp_push_back_1_fu_2680_p_read4),
+    .p_read5(grp_push_back_1_fu_2680_p_read5),
+    .p_read6(grp_push_back_1_fu_2680_p_read6),
+    .p_read7(grp_push_back_1_fu_2680_p_read7),
+    .p_read8(grp_push_back_1_fu_2680_p_read8),
+    .p_read9(grp_push_back_1_fu_2680_p_read9),
+    .p_read10(grp_push_back_1_fu_2680_p_read10),
+    .p_read11(grp_push_back_1_fu_2680_p_read11),
+    .p_read12(grp_push_back_1_fu_2680_p_read12),
+    .p_read13(grp_push_back_1_fu_2680_p_read13),
+    .p_read14(grp_push_back_1_fu_2680_p_read14),
+    .p_read15(grp_push_back_1_fu_2680_p_read15),
+    .p_read16(grp_push_back_1_fu_2680_p_read16),
+    .p_read17(grp_push_back_1_fu_2680_p_read17),
+    .p_read18(grp_push_back_1_fu_2680_p_read18),
+    .p_read19(grp_push_back_1_fu_2680_p_read19),
+    .p_read20(grp_push_back_1_fu_2680_p_read20),
+    .p_read21(grp_push_back_1_fu_2680_p_read21),
+    .p_read212(grp_push_back_1_fu_2680_p_read212),
+    .p_read213(grp_push_back_1_fu_2680_p_read213),
+    .p_read214(grp_push_back_1_fu_2680_p_read214),
+    .p_read215(grp_push_back_1_fu_2680_p_read215),
+    .p_read216(grp_push_back_1_fu_2680_p_read216),
+    .p_read217(grp_push_back_1_fu_2680_p_read217),
+    .p_read218(grp_push_back_1_fu_2680_p_read218),
+    .p_read219(grp_push_back_1_fu_2680_p_read219),
+    .p_read220(grp_push_back_1_fu_2680_p_read220),
+    .p_read221(grp_push_back_1_fu_2680_p_read221),
+    .p_read222(grp_push_back_1_fu_2680_p_read222),
+    .p_read223(grp_push_back_1_fu_2680_p_read223),
+    .p_read224(grp_push_back_1_fu_2680_p_read224),
+    .p_read225(grp_push_back_1_fu_2680_p_read225),
+    .p_read226(grp_push_back_1_fu_2680_p_read226),
+    .p_read227(grp_push_back_1_fu_2680_p_read227),
+    .p_read228(grp_push_back_1_fu_2680_p_read228),
+    .p_read229(grp_push_back_1_fu_2680_p_read229),
+    .p_read230(grp_push_back_1_fu_2680_p_read230),
+    .p_read231(grp_push_back_1_fu_2680_p_read231),
+    .p_read232(grp_push_back_1_fu_2680_p_read232),
+    .p_read233(grp_push_back_1_fu_2680_p_read233),
+    .p_read234(grp_push_back_1_fu_2680_p_read234),
+    .p_read235(grp_push_back_1_fu_2680_p_read235),
+    .p_read236(grp_push_back_1_fu_2680_p_read236),
+    .p_read237(grp_push_back_1_fu_2680_p_read237),
+    .p_read238(grp_push_back_1_fu_2680_p_read238),
+    .p_read239(grp_push_back_1_fu_2680_p_read239),
+    .p_read240(grp_push_back_1_fu_2680_p_read240),
+    .p_read241(grp_push_back_1_fu_2680_p_read241),
+    .p_read242(grp_push_back_1_fu_2680_p_read242),
+    .p_read243(grp_push_back_1_fu_2680_p_read243),
+    .p_read244(grp_push_back_1_fu_2680_p_read244),
+    .p_read245(grp_push_back_1_fu_2680_p_read245),
+    .p_read246(grp_push_back_1_fu_2680_p_read246),
+    .p_read247(grp_push_back_1_fu_2680_p_read247),
+    .p_read248(grp_push_back_1_fu_2680_p_read248),
+    .p_read249(grp_push_back_1_fu_2680_p_read249),
+    .p_read250(grp_push_back_1_fu_2680_p_read250),
+    .p_read251(grp_push_back_1_fu_2680_p_read251),
+    .p_read252(grp_push_back_1_fu_2680_p_read252),
+    .p_read253(grp_push_back_1_fu_2680_p_read253),
+    .p_read254(grp_push_back_1_fu_2680_p_read254),
+    .p_read255(grp_push_back_1_fu_2680_p_read255),
+    .p_read256(grp_push_back_1_fu_2680_p_read256),
+    .p_read257(grp_push_back_1_fu_2680_p_read257),
+    .p_read258(grp_push_back_1_fu_2680_p_read258),
+    .p_read259(grp_push_back_1_fu_2680_p_read259),
+    .p_read260(grp_push_back_1_fu_2680_p_read260),
+    .p_read261(grp_push_back_1_fu_2680_p_read261),
+    .p_read262(grp_push_back_1_fu_2680_p_read262),
+    .p_read263(grp_push_back_1_fu_2680_p_read263),
+    .p_read264(grp_push_back_1_fu_2680_p_read264),
+    .p_read265(grp_push_back_1_fu_2680_p_read265),
+    .p_read266(grp_push_back_1_fu_2680_p_read266),
+    .p_read267(grp_push_back_1_fu_2680_p_read267),
+    .p_read268(grp_push_back_1_fu_2680_p_read268),
+    .p_read269(grp_push_back_1_fu_2680_p_read269),
+    .p_read270(grp_push_back_1_fu_2680_p_read270),
+    .p_read271(grp_push_back_1_fu_2680_p_read271),
+    .p_read272(grp_push_back_1_fu_2680_p_read272),
+    .p_read273(grp_push_back_1_fu_2680_p_read273),
+    .p_read274(grp_push_back_1_fu_2680_p_read274),
+    .p_read275(grp_push_back_1_fu_2680_p_read275),
+    .p_read276(grp_push_back_1_fu_2680_p_read276),
+    .p_read277(grp_push_back_1_fu_2680_p_read277),
+    .p_read278(grp_push_back_1_fu_2680_p_read278),
+    .p_read279(grp_push_back_1_fu_2680_p_read279),
+    .p_read280(grp_push_back_1_fu_2680_p_read280),
+    .p_read281(grp_push_back_1_fu_2680_p_read281),
+    .p_read282(grp_push_back_1_fu_2680_p_read282),
+    .p_read283(grp_push_back_1_fu_2680_p_read283),
+    .p_read284(grp_push_back_1_fu_2680_p_read284),
+    .p_read285(grp_push_back_1_fu_2680_p_read285),
+    .p_read286(grp_push_back_1_fu_2680_p_read286),
+    .p_read287(grp_push_back_1_fu_2680_p_read287),
+    .p_read288(grp_push_back_1_fu_2680_p_read288),
+    .p_read289(grp_push_back_1_fu_2680_p_read289),
+    .p_read290(grp_push_back_1_fu_2680_p_read290),
+    .p_read291(grp_push_back_1_fu_2680_p_read291),
+    .ap_return(grp_push_back_1_fu_2680_ap_return)
 );
 
 LRupdateHLS_fadd_32ns_32ns_32_4_full_dsp_1 #(
@@ -2713,13 +2672,13 @@ LRupdateHLS_fadd_32ns_32ns_32_4_full_dsp_1 #(
     .din0_WIDTH( 32 ),
     .din1_WIDTH( 32 ),
     .dout_WIDTH( 32 ))
-LRupdateHLS_fadd_32ns_32ns_32_4_full_dsp_1_U453(
+LRupdateHLS_fadd_32ns_32ns_32_4_full_dsp_1_U441(
     .clk(ap_clk),
     .reset(ap_rst),
-    .din0(grp_findLargestResidual_fu_2571_ap_return_0),
-    .din1(grp_findLargestResidual_fu_2571_ap_return_1),
-    .ce(grp_fu_2881_ce),
-    .dout(grp_fu_2881_p2)
+    .din0(grp_findLargestResidual_fu_2550_ap_return_0),
+    .din1(grp_findLargestResidual_fu_2550_ap_return_1),
+    .ce(grp_fu_2851_ce),
+    .dout(grp_fu_2851_p2)
 );
 
 LRupdateHLS_fcmp_32ns_32ns_1_1_1 #(
@@ -2728,11 +2687,11 @@ LRupdateHLS_fcmp_32ns_32ns_1_1_1 #(
     .din0_WIDTH( 32 ),
     .din1_WIDTH( 32 ),
     .dout_WIDTH( 1 ))
-LRupdateHLS_fcmp_32ns_32ns_1_1_1_U454(
-    .din0(tmp_i_reg_3372),
+LRupdateHLS_fcmp_32ns_32ns_1_1_1_U442(
+    .din0(tmp_i_reg_3323),
     .din1(32'd1073741824),
     .opcode(5'd4),
-    .dout(tmp_58_fu_2885_p2)
+    .dout(tmp_3_fu_2855_p2)
 );
 
 always @ (posedge ap_clk) begin
@@ -2747,8 +2706,8 @@ always @ (posedge ap_clk) begin
     if (ap_rst == 1'b1) begin
         ap_return_0_preg <= 1'd0;
     end else begin
-        if ((1'b1 == ap_CS_fsm_state39)) begin
-            ap_return_0_preg <= ap_phi_mux_p_0_phi_fu_2530_p4;
+        if ((1'b1 == ap_CS_fsm_state36)) begin
+            ap_return_0_preg <= ap_phi_mux_p_0_phi_fu_2509_p4;
         end
     end
 end
@@ -2757,8 +2716,8 @@ always @ (posedge ap_clk) begin
     if (ap_rst == 1'b1) begin
         ap_return_1_preg <= 1'd0;
     end else begin
-        if ((1'b1 == ap_CS_fsm_state39)) begin
-            ap_return_1_preg <= LinearRegression_val_reg_3378;
+        if ((1'b1 == ap_CS_fsm_state36)) begin
+            ap_return_1_preg <= LinearRegression_val_reg_3329;
         end
     end
 end
@@ -2767,8 +2726,8 @@ always @ (posedge ap_clk) begin
     if (ap_rst == 1'b1) begin
         ap_return_2_preg <= 32'd0;
     end else begin
-        if ((1'b1 == ap_CS_fsm_state39)) begin
-            ap_return_2_preg <= ap_phi_mux_LinearRegression_stu_1_phi_fu_2501_p4;
+        if ((1'b1 == ap_CS_fsm_state36)) begin
+            ap_return_2_preg <= ap_phi_mux_LinearRegression_stu_1_phi_fu_2480_p4;
         end
     end
 end
@@ -2777,8 +2736,8 @@ always @ (posedge ap_clk) begin
     if (ap_rst == 1'b1) begin
         ap_return_3_preg <= 32'd0;
     end else begin
-        if ((1'b1 == ap_CS_fsm_state39)) begin
-            ap_return_3_preg <= residData_phi_read_a_reg_3319;
+        if ((1'b1 == ap_CS_fsm_state36)) begin
+            ap_return_3_preg <= residData_phi_read_a_reg_3273;
         end
     end
 end
@@ -2787,8 +2746,8 @@ always @ (posedge ap_clk) begin
     if (ap_rst == 1'b1) begin
         ap_return_4_preg <= 32'd0;
     end else begin
-        if ((1'b1 == ap_CS_fsm_state39)) begin
-            ap_return_4_preg <= residData_z_read_ass_reg_3325;
+        if ((1'b1 == ap_CS_fsm_state36)) begin
+            ap_return_4_preg <= residData_z_read_ass_reg_3279;
         end
     end
 end
@@ -2797,8 +2756,8 @@ always @ (posedge ap_clk) begin
     if (ap_rst == 1'b1) begin
         ap_return_5_preg <= 32'd0;
     end else begin
-        if ((1'b1 == ap_CS_fsm_state39)) begin
-            ap_return_5_preg <= LinearRegression_lar_reg_3331;
+        if ((1'b1 == ap_CS_fsm_state36)) begin
+            ap_return_5_preg <= LinearRegression_lar_reg_3285;
         end
     end
 end
@@ -2807,8 +2766,8 @@ always @ (posedge ap_clk) begin
     if (ap_rst == 1'b1) begin
         ap_return_6_preg <= 32'd0;
     end else begin
-        if ((1'b1 == ap_CS_fsm_state39)) begin
-            ap_return_6_preg <= idx_assign_reg_3340;
+        if ((1'b1 == ap_CS_fsm_state36)) begin
+            ap_return_6_preg <= idx_assign_reg_3293;
         end
     end
 end
@@ -2817,8 +2776,8 @@ always @ (posedge ap_clk) begin
     if (ap_rst == 1'b1) begin
         ap_return_7_preg <= 1'd0;
     end else begin
-        if ((1'b1 == ap_CS_fsm_state39)) begin
-            ap_return_7_preg <= LinearRegression_lar_1_reg_3346;
+        if ((1'b1 == ap_CS_fsm_state36)) begin
+            ap_return_7_preg <= LinearRegression_lar_1_reg_3299;
         end
     end
 end
@@ -2827,8 +2786,8 @@ always @ (posedge ap_clk) begin
     if (ap_rst == 1'b1) begin
         ap_return_8_preg <= 32'd0;
     end else begin
-        if ((1'b1 == ap_CS_fsm_state39)) begin
-            ap_return_8_preg <= ap_phi_mux_LinearRegression_stu_2_phi_fu_2510_p4;
+        if ((1'b1 == ap_CS_fsm_state36)) begin
+            ap_return_8_preg <= ap_phi_mux_LinearRegression_stu_2_phi_fu_2489_p4;
         end
     end
 end
@@ -2837,2000 +2796,1960 @@ always @ (posedge ap_clk) begin
     if (ap_rst == 1'b1) begin
         ap_return_9_preg <= 32'd0;
     end else begin
-        if ((1'b1 == ap_CS_fsm_state39)) begin
-            ap_return_9_preg <= ap_phi_mux_LinearRegression_lay_9_phi_fu_2519_p4;
+        if ((1'b1 == ap_CS_fsm_state36)) begin
+            ap_return_9_preg <= ap_phi_mux_LinearRegression_lay_7_phi_fu_2498_p4;
         end
     end
 end
 
 always @ (posedge ap_clk) begin
     if (ap_rst == 1'b1) begin
-        grp_clean_fu_2538_ap_start_reg <= 1'b0;
+        grp_clean_fu_2517_ap_start_reg <= 1'b0;
     end else begin
-        if ((1'b1 == ap_CS_fsm_state33)) begin
-            grp_clean_fu_2538_ap_start_reg <= 1'b1;
-        end else if ((grp_clean_fu_2538_ap_ready == 1'b1)) begin
-            grp_clean_fu_2538_ap_start_reg <= 1'b0;
+        if ((1'b1 == ap_CS_fsm_state32)) begin
+            grp_clean_fu_2517_ap_start_reg <= 1'b1;
+        end else if ((grp_clean_fu_2517_ap_ready == 1'b1)) begin
+            grp_clean_fu_2517_ap_start_reg <= 1'b0;
         end
     end
 end
 
 always @ (posedge ap_clk) begin
     if (ap_rst == 1'b1) begin
-        grp_erase_1_fu_2668_ap_start_reg <= 1'b0;
+        grp_erase_1_fu_2647_ap_start_reg <= 1'b0;
     end else begin
-        if ((1'b1 == ap_CS_fsm_state31)) begin
-            grp_erase_1_fu_2668_ap_start_reg <= 1'b1;
-        end else if ((grp_erase_1_fu_2668_ap_ready == 1'b1)) begin
-            grp_erase_1_fu_2668_ap_start_reg <= 1'b0;
+        if ((1'b1 == ap_CS_fsm_state30)) begin
+            grp_erase_1_fu_2647_ap_start_reg <= 1'b1;
+        end else if ((grp_erase_1_fu_2647_ap_ready == 1'b1)) begin
+            grp_erase_1_fu_2647_ap_start_reg <= 1'b0;
         end
     end
 end
 
 always @ (posedge ap_clk) begin
     if (ap_rst == 1'b1) begin
-        grp_erase_fu_2631_ap_start_reg <= 1'b0;
+        grp_erase_fu_2610_ap_start_reg <= 1'b0;
     end else begin
-        if ((1'b1 == ap_CS_fsm_state31)) begin
-            grp_erase_fu_2631_ap_start_reg <= 1'b1;
-        end else if ((grp_erase_fu_2631_ap_ready == 1'b1)) begin
-            grp_erase_fu_2631_ap_start_reg <= 1'b0;
+        if ((1'b1 == ap_CS_fsm_state30)) begin
+            grp_erase_fu_2610_ap_start_reg <= 1'b1;
+        end else if ((grp_erase_fu_2610_ap_ready == 1'b1)) begin
+            grp_erase_fu_2610_ap_start_reg <= 1'b0;
         end
     end
 end
 
 always @ (posedge ap_clk) begin
     if (ap_rst == 1'b1) begin
-        grp_findLargestResidual_fu_2571_ap_start_reg <= 1'b0;
+        grp_findLargestResidual_fu_2550_ap_start_reg <= 1'b0;
     end else begin
         if (((ap_start == 1'b1) & (1'b1 == ap_CS_fsm_state1))) begin
-            grp_findLargestResidual_fu_2571_ap_start_reg <= 1'b1;
-        end else if ((grp_findLargestResidual_fu_2571_ap_ready == 1'b1)) begin
-            grp_findLargestResidual_fu_2571_ap_start_reg <= 1'b0;
+            grp_findLargestResidual_fu_2550_ap_start_reg <= 1'b1;
+        end else if ((grp_findLargestResidual_fu_2550_ap_ready == 1'b1)) begin
+            grp_findLargestResidual_fu_2550_ap_start_reg <= 1'b0;
         end
     end
 end
 
 always @ (posedge ap_clk) begin
     if (ap_rst == 1'b1) begin
-        grp_has_key_fu_2872_ap_start_reg <= 1'b0;
+        grp_push_back_1_fu_2680_ap_start_reg <= 1'b0;
     end else begin
-        if (((1'b1 == ap_CS_fsm_state18) | ((tmp_s_fu_2977_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state6)))) begin
-            grp_has_key_fu_2872_ap_start_reg <= 1'b1;
-        end else if ((grp_has_key_fu_2872_ap_ready == 1'b1)) begin
-            grp_has_key_fu_2872_ap_start_reg <= 1'b0;
+        if (((1'b1 == ap_CS_fsm_state15) | (1'b1 == ap_CS_fsm_state27))) begin
+            grp_push_back_1_fu_2680_ap_start_reg <= 1'b1;
+        end else if ((grp_push_back_1_fu_2680_ap_ready == 1'b1)) begin
+            grp_push_back_1_fu_2680_ap_start_reg <= 1'b0;
         end
     end
 end
 
 always @ (posedge ap_clk) begin
-    if (ap_rst == 1'b1) begin
-        grp_push_back_1_fu_2701_ap_start_reg <= 1'b0;
-    end else begin
-        if (((1'b1 == ap_CS_fsm_state16) | (1'b1 == ap_CS_fsm_state28))) begin
-            grp_push_back_1_fu_2701_ap_start_reg <= 1'b1;
-        end else if ((grp_push_back_1_fu_2701_ap_ready == 1'b1)) begin
-            grp_push_back_1_fu_2701_ap_start_reg <= 1'b0;
-        end
+    if (((tmp_22_fu_3179_p2 == 1'd1) & (tmp_20_reg_5489 == 1'd1) & (1'b1 == ap_CS_fsm_state35))) begin
+        LinearRegression_lay_4_reg_2468 <= temp_2_reg_3313;
+    end else if (((tmp_20_fu_3153_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state34))) begin
+        LinearRegression_lay_4_reg_2468 <= mapHLS_size_write_a_fu_3174_p2;
     end
 end
 
 always @ (posedge ap_clk) begin
-    if (((grp_fu_2895_p2 == 1'd1) & (tmp_77_reg_5563 == 1'd1) & (tmp_i1_35_reg_5546 == 1'd1) & (1'b1 == ap_CS_fsm_state38))) begin
-        LinearRegression_lay_6_reg_2489 <= temp_2_reg_3361;
-    end else if (((1'b1 == ap_CS_fsm_state37) & ((tmp_77_fu_3204_p2 == 1'd0) | (tmp_i1_35_reg_5546 == 1'd0)))) begin
-        LinearRegression_lay_6_reg_2489 <= mapHLS_size_write_a_fu_3225_p2;
+    if (((tmp_s_reg_3334 == 1'd0) & (1'b1 == ap_CS_fsm_state36))) begin
+        LinearRegression_lay_7_reg_2495 <= LinearRegression_lay_4_reg_2468;
+    end else if (((tmp_s_fu_2942_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state6))) begin
+        LinearRegression_lay_7_reg_2495 <= temp_2_reg_3313;
     end
 end
 
 always @ (posedge ap_clk) begin
-    if (((tmp_s_reg_3383 == 1'd0) & (1'b1 == ap_CS_fsm_state39))) begin
-        LinearRegression_lay_9_reg_2516 <= LinearRegression_lay_6_reg_2489;
-    end else if (((tmp_s_fu_2977_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state6))) begin
-        LinearRegression_lay_9_reg_2516 <= temp_2_reg_3361;
+    if (((grp_fu_2860_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state20))) begin
+        LinearRegression_stu_14_reg_2423 <= temp_1_reg_2390;
+    end else if (((1'b0 == ap_block_state28_on_subcall_done) & (tmp_12_reg_4438 == 1'd0) & (1'b1 == ap_CS_fsm_state28))) begin
+        LinearRegression_stu_14_reg_2423 <= grp_push_back_1_fu_2680_ap_return;
     end
 end
 
 always @ (posedge ap_clk) begin
-    if (((grp_fu_2890_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state21))) begin
-        LinearRegression_stu_14_reg_2433 <= temp_1_reg_2390;
-    end else if (((1'b0 == ap_block_state29_on_subcall_done) & (1'b1 == ap_CS_fsm_state29) & ((tmp_68_reg_4491 == 1'd0) | (tmp_69_reg_4495 == 1'd0)))) begin
-        LinearRegression_stu_14_reg_2433 <= grp_push_back_1_fu_2701_ap_return;
+    if (((tmp_s_reg_3334 == 1'd0) & (1'b1 == ap_CS_fsm_state36))) begin
+        LinearRegression_stu_1_reg_2477 <= call_ret4_reg_5479;
+    end else if (((tmp_s_fu_2942_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state6))) begin
+        LinearRegression_stu_1_reg_2477 <= LinearRegression_stubs_size_read;
     end
 end
 
 always @ (posedge ap_clk) begin
-    if (((tmp_s_reg_3383 == 1'd0) & (1'b1 == ap_CS_fsm_state39))) begin
-        LinearRegression_stu_1_reg_2498 <= call_ret4_reg_5536;
-    end else if (((tmp_s_fu_2977_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state6))) begin
-        LinearRegression_stu_1_reg_2498 <= LinearRegression_stubs_size_read;
+    if (((tmp_s_reg_3334 == 1'd0) & (1'b1 == ap_CS_fsm_state36))) begin
+        LinearRegression_stu_2_reg_2486 <= call_ret3_reg_5484;
+    end else if (((tmp_s_fu_2942_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state6))) begin
+        LinearRegression_stu_2_reg_2486 <= temp_reg_3304;
     end
 end
 
 always @ (posedge ap_clk) begin
-    if (((tmp_s_reg_3383 == 1'd0) & (1'b1 == ap_CS_fsm_state39))) begin
-        LinearRegression_stu_2_reg_2507 <= call_ret2_reg_5541;
-    end else if (((tmp_s_fu_2977_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state6))) begin
-        LinearRegression_stu_2_reg_2507 <= temp_reg_3351;
+    if (((tmp_s_fu_2942_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state6))) begin
+        i_0_i1_reg_2357 <= 32'd0;
+    end else if (((grp_fu_2860_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state8))) begin
+        i_0_i1_reg_2357 <= i_reg_3342;
     end
 end
 
 always @ (posedge ap_clk) begin
-    if (((grp_fu_2895_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state36))) begin
-        i_0_i1_reg_2467 <= 32'd0;
-    end else if (((tmp_77_reg_5563 == 1'd1) & (tmp_i1_35_reg_5546 == 1'd1) & (grp_fu_2895_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state38))) begin
-        i_0_i1_reg_2467 <= i_3_reg_5567;
+    if (((tmp_20_reg_5489 == 1'd1) & (tmp_22_fu_3179_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state35))) begin
+        i_0_i2_reg_2446 <= i_2_reg_5493;
+    end else if (((1'b1 == ap_CS_fsm_state33) & (grp_clean_fu_2517_ap_done == 1'b1))) begin
+        i_0_i2_reg_2446 <= 32'd0;
     end
 end
 
 always @ (posedge ap_clk) begin
-    if (((grp_has_key_fu_2872_ap_done == 1'b1) & (grp_has_key_fu_2872_ap_return == 1'd1) & (1'b1 == ap_CS_fsm_state7))) begin
-        i_0_i2_reg_2367 <= 32'd0;
-    end else if (((grp_fu_2890_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state9))) begin
-        i_0_i2_reg_2367 <= i_reg_3395;
+    if (((grp_fu_2860_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state20))) begin
+        i_0_i_reg_2400 <= i_1_reg_4442;
+    end else if ((1'b1 == ap_CS_fsm_state18)) begin
+        i_0_i_reg_2400 <= 32'd0;
     end
 end
 
 always @ (posedge ap_clk) begin
-    if (((grp_has_key_fu_2872_ap_done == 1'b1) & (grp_has_key_fu_2872_ap_return == 1'd1) & (1'b1 == ap_CS_fsm_state19))) begin
-        i_0_i_reg_2410 <= 32'd0;
-    end else if (((grp_fu_2890_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state21))) begin
-        i_0_i_reg_2410 <= i_1_reg_4499;
+    if (((tmp_s_reg_3334 == 1'd0) & (1'b1 == ap_CS_fsm_state36))) begin
+        p_0_reg_2505 <= 1'd0;
+    end else if (((tmp_s_fu_2942_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state6))) begin
+        p_0_reg_2505 <= 1'd1;
     end
 end
 
 always @ (posedge ap_clk) begin
-    if (((grp_fu_2895_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state36))) begin
-        i_i_reg_2456 <= i_2_reg_5550;
-    end else if (((1'b1 == ap_CS_fsm_state34) & (grp_clean_fu_2538_ap_done == 1'b1))) begin
-        i_i_reg_2456 <= 32'd0;
+    if (((grp_fu_2860_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state8))) begin
+        p_pn_in_i1_reg_2380 <= i_0_i1_reg_2357;
+    end else if (((1'b0 == ap_block_state16_on_subcall_done) & (tmp_5_reg_3338 == 1'd0) & (1'b1 == ap_CS_fsm_state16))) begin
+        p_pn_in_i1_reg_2380 <= temp_reg_3304;
     end
 end
 
 always @ (posedge ap_clk) begin
-    if (((tmp_s_reg_3383 == 1'd0) & (1'b1 == ap_CS_fsm_state39))) begin
-        p_0_reg_2526 <= 1'd0;
-    end else if (((tmp_s_fu_2977_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state6))) begin
-        p_0_reg_2526 <= 1'd1;
+    if (((tmp_22_fu_3179_p2 == 1'd1) & (tmp_20_reg_5489 == 1'd1) & (1'b1 == ap_CS_fsm_state35))) begin
+        p_pn_in_i2_reg_2458 <= i_0_i2_reg_2446;
+    end else if (((tmp_20_fu_3153_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state34))) begin
+        p_pn_in_i2_reg_2458 <= temp_2_reg_3313;
     end
 end
 
 always @ (posedge ap_clk) begin
-    if (((grp_fu_2890_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state9))) begin
-        p_pn_in_i1_reg_2400 <= i_0_i2_reg_2367;
-    end else if (((1'b0 == ap_block_state17_on_subcall_done) & (1'b1 == ap_CS_fsm_state17) & ((tmp_59_reg_3387 == 1'd0) | (tmp_60_reg_3391 == 1'd0)))) begin
-        p_pn_in_i1_reg_2400 <= temp_reg_3351;
+    if (((grp_fu_2860_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state20))) begin
+        p_pn_in_i_reg_2434 <= i_0_i_reg_2400;
+    end else if (((1'b0 == ap_block_state28_on_subcall_done) & (tmp_12_reg_4438 == 1'd0) & (1'b1 == ap_CS_fsm_state28))) begin
+        p_pn_in_i_reg_2434 <= temp_1_reg_2390;
     end
 end
 
 always @ (posedge ap_clk) begin
-    if (((grp_fu_2895_p2 == 1'd1) & (tmp_77_reg_5563 == 1'd1) & (tmp_i1_35_reg_5546 == 1'd1) & (1'b1 == ap_CS_fsm_state38))) begin
-        p_pn_in_i2_reg_2479 <= i_0_i1_reg_2467;
-    end else if (((1'b1 == ap_CS_fsm_state37) & ((tmp_77_fu_3204_p2 == 1'd0) | (tmp_i1_35_reg_5546 == 1'd0)))) begin
-        p_pn_in_i2_reg_2479 <= temp_2_reg_3361;
+    if (((grp_fu_2860_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state8))) begin
+        temp_1_reg_2390 <= temp_reg_3304;
+    end else if (((1'b0 == ap_block_state16_on_subcall_done) & (tmp_5_reg_3338 == 1'd0) & (1'b1 == ap_CS_fsm_state16))) begin
+        temp_1_reg_2390 <= grp_push_back_1_fu_2680_ap_return;
     end
 end
 
 always @ (posedge ap_clk) begin
-    if (((grp_fu_2890_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state21))) begin
-        p_pn_in_i_reg_2444 <= i_0_i_reg_2410;
-    end else if (((1'b0 == ap_block_state29_on_subcall_done) & (1'b1 == ap_CS_fsm_state29) & ((tmp_68_reg_4491 == 1'd0) | (tmp_69_reg_4495 == 1'd0)))) begin
-        p_pn_in_i_reg_2444 <= temp_1_reg_2390;
+    if (((tmp_12_fu_3038_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state19))) begin
+        tmp_15_reg_2412 <= 4'd0;
+    end else if (((tmp_18_fu_3075_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state21))) begin
+        tmp_15_reg_2412 <= tmp_16_fu_3055_p2;
     end
 end
 
 always @ (posedge ap_clk) begin
-    if (((grp_fu_2890_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state9))) begin
-        temp_1_reg_2390 <= temp_reg_3351;
-    end else if (((1'b0 == ap_block_state17_on_subcall_done) & (1'b1 == ap_CS_fsm_state17) & ((tmp_59_reg_3387 == 1'd0) | (tmp_60_reg_3391 == 1'd0)))) begin
-        temp_1_reg_2390 <= grp_push_back_1_fu_2701_ap_return;
+    if (((tmp_5_fu_2947_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state7))) begin
+        tmp_8_reg_2369 <= 4'd0;
+    end else if (((tmp_10_fu_2983_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state9))) begin
+        tmp_8_reg_2369 <= tmp_9_fu_2963_p2;
     end
 end
 
 always @ (posedge ap_clk) begin
-    if (((tmp_66_fu_3018_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state10))) begin
-        tmp_63_reg_2379 <= tmp_64_fu_2998_p2;
-    end else if (((1'b1 == ap_CS_fsm_state8) & ((tmp_60_fu_2982_p2 == 1'd0) | (tmp_59_reg_3387 == 1'd0)))) begin
-        tmp_63_reg_2379 <= 4'd0;
+    if (((grp_findLargestResidual_fu_2550_ap_done == 1'b1) & (1'b1 == ap_CS_fsm_state2))) begin
+        LinearRegression_lar_1_reg_3299 <= grp_findLargestResidual_fu_2550_ap_return_4;
+        LinearRegression_lar_reg_3285 <= grp_findLargestResidual_fu_2550_ap_return_2;
+        idx_assign_reg_3293 <= grp_findLargestResidual_fu_2550_ap_return_3;
+        residData_phi_read_a_reg_3273 <= grp_findLargestResidual_fu_2550_ap_return_0;
+        residData_z_read_ass_reg_3279 <= grp_findLargestResidual_fu_2550_ap_return_1;
+        temp_2_reg_3313 <= grp_findLargestResidual_fu_2550_ap_return_6;
+        temp_reg_3304 <= grp_findLargestResidual_fu_2550_ap_return_5;
     end
 end
 
 always @ (posedge ap_clk) begin
-    if (((tmp_75_fu_3110_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state22))) begin
-        tmp_72_reg_2422 <= tmp_73_fu_3090_p2;
-    end else if (((1'b1 == ap_CS_fsm_state20) & ((tmp_69_fu_3073_p2 == 1'd0) | (tmp_68_reg_4491 == 1'd0)))) begin
-        tmp_72_reg_2422 <= 4'd0;
+    if (((1'b1 == ap_CS_fsm_state35) & ((tmp_22_fu_3179_p2 == 1'd1) | (tmp_20_reg_5489 == 1'd0)))) begin
+        LinearRegression_lay_6_reg_5511 <= p_pn_i2_fu_3184_p1;
     end
 end
 
 always @ (posedge ap_clk) begin
-    if (((grp_findLargestResidual_fu_2571_ap_done == 1'b1) & (1'b1 == ap_CS_fsm_state2))) begin
-        LinearRegression_lar_1_reg_3346 <= grp_findLargestResidual_fu_2571_ap_return_4;
-        LinearRegression_lar_reg_3331 <= grp_findLargestResidual_fu_2571_ap_return_2;
-        idx_assign_reg_3340 <= grp_findLargestResidual_fu_2571_ap_return_3;
-        residData_phi_read_a_reg_3319 <= grp_findLargestResidual_fu_2571_ap_return_0;
-        residData_z_read_ass_reg_3325 <= grp_findLargestResidual_fu_2571_ap_return_1;
-        temp_2_reg_3361 <= grp_findLargestResidual_fu_2571_ap_return_6;
-        temp_reg_3351 <= grp_findLargestResidual_fu_2571_ap_return_5;
-    end
-end
-
-always @ (posedge ap_clk) begin
-    if (((1'b1 == ap_CS_fsm_state38) & ((tmp_i1_35_reg_5546 == 1'd0) | ((grp_fu_2895_p2 == 1'd1) | (tmp_77_reg_5563 == 1'd0))))) begin
-        LinearRegression_lay_8_reg_5585 <= p_pn_i2_fu_3230_p1;
+    if ((1'b1 == ap_CS_fsm_state29)) begin
+        LinearRegression_stu_15_reg_5463 <= p_pn_i_fu_3081_p1;
     end
 end
 
 always @ (posedge ap_clk) begin
     if ((1'b1 == ap_CS_fsm_state30)) begin
-        LinearRegression_stu_15_reg_5520 <= p_pn_i_fu_3116_p1;
-    end
-end
-
-always @ (posedge ap_clk) begin
-    if ((1'b1 == ap_CS_fsm_state31)) begin
-        LinearRegression_stu_16_reg_5525 <= LinearRegression_stubMap_data_second_size_s_q0;
-        idx_read_assign_reg_5530 <= idx_read_assign_fu_3180_p3;
+        LinearRegression_stu_16_reg_5468 <= LinearRegression_stubMap_data_second_size_s_q0;
+        value_first_read_ass_reg_5473 <= value_first_read_ass_fu_3145_p3;
     end
 end
 
 always @ (posedge ap_clk) begin
     if ((1'b1 == ap_CS_fsm_state6)) begin
-        LinearRegression_val_reg_3378 <= LinearRegression_val_fu_2971_p2;
-        tmp_s_reg_3383 <= tmp_s_fu_2977_p2;
-    end
-end
-
-always @ (posedge ap_clk) begin
-    if ((1'b1 == ap_CS_fsm_state13)) begin
-        b_data_barrel_assi_10_reg_3811 <= b_data_barrel_assi_q0;
-        b_data_barrel_assi_8_reg_3761 <= b_data_barrel_assi_q1;
-        b_data_layerId_ass_10_reg_3801 <= b_data_layerId_ass_q0;
-        b_data_layerId_ass_8_reg_3751 <= b_data_layerId_ass_q1;
-        b_data_phi_assign_6_reg_3741 <= b_data_phi_assign_q1;
-        b_data_phi_assign_8_reg_3791 <= b_data_phi_assign_q0;
-        b_data_psModule_as_10_reg_3806 <= b_data_psModule_as_q0;
-        b_data_psModule_as_8_reg_3756 <= b_data_psModule_as_q1;
-        b_data_r_assign_lo_2_reg_3736 <= b_data_r_assign_q1;
-        b_data_r_assign_lo_3_reg_3786 <= b_data_r_assign_q0;
-        b_data_settings_ch_15_reg_3716 <= b_data_settings_ch_q1;
-        b_data_settings_ch_17_reg_3721 <= b_data_settings_ch_1_q1;
-        b_data_settings_ch_19_reg_3766 <= b_data_settings_ch_q0;
-        b_data_settings_ch_21_reg_3771 <= b_data_settings_ch_1_q0;
-        b_data_settings_mi_15_reg_3726 <= b_data_settings_mi_q1;
-        b_data_settings_mi_17_reg_3731 <= b_data_settings_mi_1_q1;
-        b_data_settings_mi_19_reg_3776 <= b_data_settings_mi_q0;
-        b_data_settings_mi_21_reg_3781 <= b_data_settings_mi_1_q0;
-        b_data_z_assign_lo_2_reg_3746 <= b_data_z_assign_q1;
-        b_data_z_assign_lo_3_reg_3796 <= b_data_z_assign_q0;
-    end
-end
-
-always @ (posedge ap_clk) begin
-    if ((1'b1 == ap_CS_fsm_state14)) begin
-        b_data_barrel_assi_12_reg_3961 <= b_data_barrel_assi_q1;
-        b_data_barrel_assi_14_reg_4011 <= b_data_barrel_assi_q0;
-        b_data_layerId_ass_12_reg_3951 <= b_data_layerId_ass_q1;
-        b_data_layerId_ass_14_reg_4001 <= b_data_layerId_ass_q0;
-        b_data_phi_assign_10_reg_3941 <= b_data_phi_assign_q1;
-        b_data_phi_assign_12_reg_3991 <= b_data_phi_assign_q0;
-        b_data_psModule_as_12_reg_3956 <= b_data_psModule_as_q1;
-        b_data_psModule_as_14_reg_4006 <= b_data_psModule_as_q0;
-        b_data_r_assign_lo_4_reg_3936 <= b_data_r_assign_q1;
-        b_data_r_assign_lo_5_reg_3986 <= b_data_r_assign_q0;
-        b_data_settings_ch_23_reg_3916 <= b_data_settings_ch_q1;
-        b_data_settings_ch_25_reg_3921 <= b_data_settings_ch_1_q1;
-        b_data_settings_ch_27_reg_3966 <= b_data_settings_ch_q0;
-        b_data_settings_ch_29_reg_3971 <= b_data_settings_ch_1_q0;
-        b_data_settings_mi_23_reg_3926 <= b_data_settings_mi_q1;
-        b_data_settings_mi_25_reg_3931 <= b_data_settings_mi_1_q1;
-        b_data_settings_mi_27_reg_3976 <= b_data_settings_mi_q0;
-        b_data_settings_mi_29_reg_3981 <= b_data_settings_mi_1_q0;
-        b_data_z_assign_lo_4_reg_3946 <= b_data_z_assign_q1;
-        b_data_z_assign_lo_5_reg_3996 <= b_data_z_assign_q0;
-    end
-end
-
-always @ (posedge ap_clk) begin
-    if ((1'b1 == ap_CS_fsm_state15)) begin
-        b_data_barrel_assi_16_reg_4161 <= b_data_barrel_assi_q1;
-        b_data_barrel_assi_18_reg_4211 <= b_data_barrel_assi_q0;
-        b_data_layerId_ass_16_reg_4151 <= b_data_layerId_ass_q1;
-        b_data_layerId_ass_18_reg_4201 <= b_data_layerId_ass_q0;
-        b_data_phi_assign_14_reg_4141 <= b_data_phi_assign_q1;
-        b_data_phi_assign_16_reg_4191 <= b_data_phi_assign_q0;
-        b_data_psModule_as_16_reg_4156 <= b_data_psModule_as_q1;
-        b_data_psModule_as_18_reg_4206 <= b_data_psModule_as_q0;
-        b_data_r_assign_lo_6_reg_4136 <= b_data_r_assign_q1;
-        b_data_r_assign_lo_7_reg_4186 <= b_data_r_assign_q0;
-        b_data_settings_ch_31_reg_4116 <= b_data_settings_ch_q1;
-        b_data_settings_ch_33_reg_4121 <= b_data_settings_ch_1_q1;
-        b_data_settings_ch_35_reg_4166 <= b_data_settings_ch_q0;
-        b_data_settings_ch_37_reg_4171 <= b_data_settings_ch_1_q0;
-        b_data_settings_mi_31_reg_4126 <= b_data_settings_mi_q1;
-        b_data_settings_mi_33_reg_4131 <= b_data_settings_mi_1_q1;
-        b_data_settings_mi_35_reg_4176 <= b_data_settings_mi_q0;
-        b_data_settings_mi_37_reg_4181 <= b_data_settings_mi_1_q0;
-        b_data_z_assign_lo_6_reg_4146 <= b_data_z_assign_q1;
-        b_data_z_assign_lo_7_reg_4196 <= b_data_z_assign_q0;
-    end
-end
-
-always @ (posedge ap_clk) begin
-    if ((1'b1 == ap_CS_fsm_state16)) begin
-        b_data_barrel_assi_20_reg_4361 <= b_data_barrel_assi_q1;
-        b_data_barrel_assi_22_reg_4411 <= b_data_barrel_assi_q0;
-        b_data_layerId_ass_20_reg_4351 <= b_data_layerId_ass_q1;
-        b_data_layerId_ass_22_reg_4401 <= b_data_layerId_ass_q0;
-        b_data_phi_assign_18_reg_4341 <= b_data_phi_assign_q1;
-        b_data_phi_assign_20_reg_4391 <= b_data_phi_assign_q0;
-        b_data_psModule_as_20_reg_4356 <= b_data_psModule_as_q1;
-        b_data_psModule_as_22_reg_4406 <= b_data_psModule_as_q0;
-        b_data_r_assign_lo_8_reg_4336 <= b_data_r_assign_q1;
-        b_data_r_assign_lo_9_reg_4386 <= b_data_r_assign_q0;
-        b_data_settings_ch_39_reg_4316 <= b_data_settings_ch_q1;
-        b_data_settings_ch_41_reg_4321 <= b_data_settings_ch_1_q1;
-        b_data_settings_ch_43_reg_4366 <= b_data_settings_ch_q0;
-        b_data_settings_ch_45_reg_4371 <= b_data_settings_ch_1_q0;
-        b_data_settings_mi_39_reg_4326 <= b_data_settings_mi_q1;
-        b_data_settings_mi_41_reg_4331 <= b_data_settings_mi_1_q1;
-        b_data_settings_mi_43_reg_4376 <= b_data_settings_mi_q0;
-        b_data_settings_mi_45_reg_4381 <= b_data_settings_mi_1_q0;
-        b_data_z_assign_lo_8_reg_4346 <= b_data_z_assign_q1;
-        b_data_z_assign_lo_9_reg_4396 <= b_data_z_assign_q0;
-    end
-end
-
-always @ (posedge ap_clk) begin
-    if ((1'b1 == ap_CS_fsm_state24)) begin
-        b_data_barrel_assi_25_reg_4665 <= b_data_barrel_assi_1_q0;
-        b_data_barrel_assi_27_reg_4715 <= b_data_barrel_assi_1_q1;
-        b_data_layerId_ass_25_reg_4655 <= b_data_layerId_ass_1_q0;
-        b_data_layerId_ass_27_reg_4705 <= b_data_layerId_ass_1_q1;
-        b_data_phi_assign_23_reg_4645 <= b_data_phi_assign_1_q0;
-        b_data_phi_assign_25_reg_4695 <= b_data_phi_assign_1_q1;
-        b_data_psModule_as_25_reg_4660 <= b_data_psModule_as_1_q0;
-        b_data_psModule_as_27_reg_4710 <= b_data_psModule_as_1_q1;
-        b_data_r_assign_1_2_reg_4640 <= b_data_r_assign_1_q0;
-        b_data_r_assign_1_4_reg_4690 <= b_data_r_assign_1_q1;
-        b_data_settings_ch_49_reg_4620 <= b_data_settings_ch_2_q0;
-        b_data_settings_ch_51_reg_4625 <= b_data_settings_ch_3_q0;
-        b_data_settings_ch_53_reg_4670 <= b_data_settings_ch_2_q1;
-        b_data_settings_ch_55_reg_4675 <= b_data_settings_ch_3_q1;
-        b_data_settings_mi_49_reg_4630 <= b_data_settings_mi_2_q0;
-        b_data_settings_mi_51_reg_4635 <= b_data_settings_mi_3_q0;
-        b_data_settings_mi_53_reg_4680 <= b_data_settings_mi_2_q1;
-        b_data_settings_mi_55_reg_4685 <= b_data_settings_mi_3_q1;
-        b_data_z_assign_1_2_reg_4650 <= b_data_z_assign_1_q0;
-        b_data_z_assign_1_4_reg_4700 <= b_data_z_assign_1_q1;
-    end
-end
-
-always @ (posedge ap_clk) begin
-    if ((1'b1 == ap_CS_fsm_state25)) begin
-        b_data_barrel_assi_29_reg_4865 <= b_data_barrel_assi_1_q1;
-        b_data_barrel_assi_31_reg_4915 <= b_data_barrel_assi_1_q0;
-        b_data_layerId_ass_29_reg_4855 <= b_data_layerId_ass_1_q1;
-        b_data_layerId_ass_31_reg_4905 <= b_data_layerId_ass_1_q0;
-        b_data_phi_assign_27_reg_4845 <= b_data_phi_assign_1_q1;
-        b_data_phi_assign_29_reg_4895 <= b_data_phi_assign_1_q0;
-        b_data_psModule_as_29_reg_4860 <= b_data_psModule_as_1_q1;
-        b_data_psModule_as_31_reg_4910 <= b_data_psModule_as_1_q0;
-        b_data_r_assign_1_6_reg_4840 <= b_data_r_assign_1_q1;
-        b_data_r_assign_1_8_reg_4890 <= b_data_r_assign_1_q0;
-        b_data_settings_ch_57_reg_4820 <= b_data_settings_ch_2_q1;
-        b_data_settings_ch_59_reg_4825 <= b_data_settings_ch_3_q1;
-        b_data_settings_ch_61_reg_4870 <= b_data_settings_ch_2_q0;
-        b_data_settings_ch_63_reg_4875 <= b_data_settings_ch_3_q0;
-        b_data_settings_mi_57_reg_4830 <= b_data_settings_mi_2_q1;
-        b_data_settings_mi_59_reg_4835 <= b_data_settings_mi_3_q1;
-        b_data_settings_mi_61_reg_4880 <= b_data_settings_mi_2_q0;
-        b_data_settings_mi_63_reg_4885 <= b_data_settings_mi_3_q0;
-        b_data_z_assign_1_6_reg_4850 <= b_data_z_assign_1_q1;
-        b_data_z_assign_1_8_reg_4900 <= b_data_z_assign_1_q0;
-    end
-end
-
-always @ (posedge ap_clk) begin
-    if ((1'b1 == ap_CS_fsm_state26)) begin
-        b_data_barrel_assi_33_reg_5065 <= b_data_barrel_assi_1_q1;
-        b_data_barrel_assi_35_reg_5115 <= b_data_barrel_assi_1_q0;
-        b_data_layerId_ass_33_reg_5055 <= b_data_layerId_ass_1_q1;
-        b_data_layerId_ass_35_reg_5105 <= b_data_layerId_ass_1_q0;
-        b_data_phi_assign_31_reg_5045 <= b_data_phi_assign_1_q1;
-        b_data_phi_assign_33_reg_5095 <= b_data_phi_assign_1_q0;
-        b_data_psModule_as_33_reg_5060 <= b_data_psModule_as_1_q1;
-        b_data_psModule_as_35_reg_5110 <= b_data_psModule_as_1_q0;
-        b_data_r_assign_1_10_reg_5040 <= b_data_r_assign_1_q1;
-        b_data_r_assign_1_12_reg_5090 <= b_data_r_assign_1_q0;
-        b_data_settings_ch_65_reg_5020 <= b_data_settings_ch_2_q1;
-        b_data_settings_ch_67_reg_5025 <= b_data_settings_ch_3_q1;
-        b_data_settings_ch_69_reg_5070 <= b_data_settings_ch_2_q0;
-        b_data_settings_ch_71_reg_5075 <= b_data_settings_ch_3_q0;
-        b_data_settings_mi_65_reg_5030 <= b_data_settings_mi_2_q1;
-        b_data_settings_mi_67_reg_5035 <= b_data_settings_mi_3_q1;
-        b_data_settings_mi_69_reg_5080 <= b_data_settings_mi_2_q0;
-        b_data_settings_mi_71_reg_5085 <= b_data_settings_mi_3_q0;
-        b_data_z_assign_1_10_reg_5050 <= b_data_z_assign_1_q1;
-        b_data_z_assign_1_12_reg_5100 <= b_data_z_assign_1_q0;
-    end
-end
-
-always @ (posedge ap_clk) begin
-    if ((1'b1 == ap_CS_fsm_state27)) begin
-        b_data_barrel_assi_37_reg_5265 <= b_data_barrel_assi_1_q1;
-        b_data_barrel_assi_39_reg_5315 <= b_data_barrel_assi_1_q0;
-        b_data_layerId_ass_37_reg_5255 <= b_data_layerId_ass_1_q1;
-        b_data_layerId_ass_39_reg_5305 <= b_data_layerId_ass_1_q0;
-        b_data_phi_assign_35_reg_5245 <= b_data_phi_assign_1_q1;
-        b_data_phi_assign_37_reg_5295 <= b_data_phi_assign_1_q0;
-        b_data_psModule_as_37_reg_5260 <= b_data_psModule_as_1_q1;
-        b_data_psModule_as_39_reg_5310 <= b_data_psModule_as_1_q0;
-        b_data_r_assign_1_14_reg_5240 <= b_data_r_assign_1_q1;
-        b_data_r_assign_1_16_reg_5290 <= b_data_r_assign_1_q0;
-        b_data_settings_ch_73_reg_5220 <= b_data_settings_ch_2_q1;
-        b_data_settings_ch_75_reg_5225 <= b_data_settings_ch_3_q1;
-        b_data_settings_ch_77_reg_5270 <= b_data_settings_ch_2_q0;
-        b_data_settings_ch_79_reg_5275 <= b_data_settings_ch_3_q0;
-        b_data_settings_mi_73_reg_5230 <= b_data_settings_mi_2_q1;
-        b_data_settings_mi_75_reg_5235 <= b_data_settings_mi_3_q1;
-        b_data_settings_mi_77_reg_5280 <= b_data_settings_mi_2_q0;
-        b_data_settings_mi_79_reg_5285 <= b_data_settings_mi_3_q0;
-        b_data_z_assign_1_14_reg_5250 <= b_data_z_assign_1_q1;
-        b_data_z_assign_1_16_reg_5300 <= b_data_z_assign_1_q0;
-    end
-end
-
-always @ (posedge ap_clk) begin
-    if ((1'b1 == ap_CS_fsm_state28)) begin
-        b_data_barrel_assi_41_reg_5465 <= b_data_barrel_assi_1_q1;
-        b_data_barrel_assi_43_reg_5515 <= b_data_barrel_assi_1_q0;
-        b_data_layerId_ass_41_reg_5455 <= b_data_layerId_ass_1_q1;
-        b_data_layerId_ass_43_reg_5505 <= b_data_layerId_ass_1_q0;
-        b_data_phi_assign_39_reg_5445 <= b_data_phi_assign_1_q1;
-        b_data_phi_assign_41_reg_5495 <= b_data_phi_assign_1_q0;
-        b_data_psModule_as_41_reg_5460 <= b_data_psModule_as_1_q1;
-        b_data_psModule_as_43_reg_5510 <= b_data_psModule_as_1_q0;
-        b_data_r_assign_1_18_reg_5440 <= b_data_r_assign_1_q1;
-        b_data_r_assign_1_20_reg_5490 <= b_data_r_assign_1_q0;
-        b_data_settings_ch_81_reg_5420 <= b_data_settings_ch_2_q1;
-        b_data_settings_ch_83_reg_5425 <= b_data_settings_ch_3_q1;
-        b_data_settings_ch_85_reg_5470 <= b_data_settings_ch_2_q0;
-        b_data_settings_ch_87_reg_5475 <= b_data_settings_ch_3_q0;
-        b_data_settings_mi_81_reg_5430 <= b_data_settings_mi_2_q1;
-        b_data_settings_mi_83_reg_5435 <= b_data_settings_mi_3_q1;
-        b_data_settings_mi_85_reg_5480 <= b_data_settings_mi_2_q0;
-        b_data_settings_mi_87_reg_5485 <= b_data_settings_mi_3_q0;
-        b_data_z_assign_1_18_reg_5450 <= b_data_z_assign_1_q1;
-        b_data_z_assign_1_20_reg_5500 <= b_data_z_assign_1_q0;
+        LinearRegression_val_reg_3329 <= LinearRegression_val_fu_2936_p2;
+        tmp_s_reg_3334 <= tmp_s_fu_2942_p2;
     end
 end
 
 always @ (posedge ap_clk) begin
     if ((1'b1 == ap_CS_fsm_state12)) begin
-        b_data_barrel_assi_4_reg_3561 <= b_data_barrel_assi_q0;
-        b_data_barrel_assi_6_reg_3611 <= b_data_barrel_assi_q1;
-        b_data_layerId_ass_4_reg_3551 <= b_data_layerId_ass_q0;
-        b_data_layerId_ass_6_reg_3601 <= b_data_layerId_ass_q1;
-        b_data_phi_assign_2_reg_3541 <= b_data_phi_assign_q0;
-        b_data_phi_assign_4_reg_3591 <= b_data_phi_assign_q1;
-        b_data_psModule_as_4_reg_3556 <= b_data_psModule_as_q0;
-        b_data_psModule_as_6_reg_3606 <= b_data_psModule_as_q1;
-        b_data_r_assign_lo_1_reg_3586 <= b_data_r_assign_q1;
-        b_data_r_assign_lo_reg_3536 <= b_data_r_assign_q0;
-        b_data_settings_ch_11_reg_3566 <= b_data_settings_ch_q1;
-        b_data_settings_ch_13_reg_3571 <= b_data_settings_ch_1_q1;
-        b_data_settings_ch_7_reg_3516 <= b_data_settings_ch_q0;
-        b_data_settings_ch_9_reg_3521 <= b_data_settings_ch_1_q0;
-        b_data_settings_mi_11_reg_3576 <= b_data_settings_mi_q1;
-        b_data_settings_mi_13_reg_3581 <= b_data_settings_mi_1_q1;
-        b_data_settings_mi_7_reg_3526 <= b_data_settings_mi_q0;
-        b_data_settings_mi_9_reg_3531 <= b_data_settings_mi_1_q0;
-        b_data_z_assign_lo_1_reg_3596 <= b_data_z_assign_q1;
-        b_data_z_assign_lo_reg_3546 <= b_data_z_assign_q0;
+        b_data_barrel_assi_10_reg_3758 <= b_data_barrel_assi_q0;
+        b_data_barrel_assi_8_reg_3708 <= b_data_barrel_assi_q1;
+        b_data_layerId_ass_10_reg_3748 <= b_data_layerId_ass_q0;
+        b_data_layerId_ass_8_reg_3698 <= b_data_layerId_ass_q1;
+        b_data_phi_assign_6_reg_3688 <= b_data_phi_assign_q1;
+        b_data_phi_assign_8_reg_3738 <= b_data_phi_assign_q0;
+        b_data_psModule_as_10_reg_3753 <= b_data_psModule_as_q0;
+        b_data_psModule_as_8_reg_3703 <= b_data_psModule_as_q1;
+        b_data_r_assign_lo_2_reg_3683 <= b_data_r_assign_q1;
+        b_data_r_assign_lo_3_reg_3733 <= b_data_r_assign_q0;
+        b_data_settings_ch_15_reg_3663 <= b_data_settings_ch_q1;
+        b_data_settings_ch_17_reg_3668 <= b_data_settings_ch_1_q1;
+        b_data_settings_ch_19_reg_3713 <= b_data_settings_ch_q0;
+        b_data_settings_ch_21_reg_3718 <= b_data_settings_ch_1_q0;
+        b_data_settings_mi_15_reg_3673 <= b_data_settings_mi_q1;
+        b_data_settings_mi_17_reg_3678 <= b_data_settings_mi_1_q1;
+        b_data_settings_mi_19_reg_3723 <= b_data_settings_mi_q0;
+        b_data_settings_mi_21_reg_3728 <= b_data_settings_mi_1_q0;
+        b_data_z_assign_lo_2_reg_3693 <= b_data_z_assign_q1;
+        b_data_z_assign_lo_3_reg_3743 <= b_data_z_assign_q0;
     end
 end
 
 always @ (posedge ap_clk) begin
-    if (((1'b1 == ap_CS_fsm_state34) & (grp_clean_fu_2538_ap_done == 1'b1))) begin
-        call_ret2_reg_5541 <= grp_clean_fu_2538_ap_return;
+    if ((1'b1 == ap_CS_fsm_state13)) begin
+        b_data_barrel_assi_12_reg_3908 <= b_data_barrel_assi_q1;
+        b_data_barrel_assi_14_reg_3958 <= b_data_barrel_assi_q0;
+        b_data_layerId_ass_12_reg_3898 <= b_data_layerId_ass_q1;
+        b_data_layerId_ass_14_reg_3948 <= b_data_layerId_ass_q0;
+        b_data_phi_assign_10_reg_3888 <= b_data_phi_assign_q1;
+        b_data_phi_assign_12_reg_3938 <= b_data_phi_assign_q0;
+        b_data_psModule_as_12_reg_3903 <= b_data_psModule_as_q1;
+        b_data_psModule_as_14_reg_3953 <= b_data_psModule_as_q0;
+        b_data_r_assign_lo_4_reg_3883 <= b_data_r_assign_q1;
+        b_data_r_assign_lo_5_reg_3933 <= b_data_r_assign_q0;
+        b_data_settings_ch_23_reg_3863 <= b_data_settings_ch_q1;
+        b_data_settings_ch_25_reg_3868 <= b_data_settings_ch_1_q1;
+        b_data_settings_ch_27_reg_3913 <= b_data_settings_ch_q0;
+        b_data_settings_ch_29_reg_3918 <= b_data_settings_ch_1_q0;
+        b_data_settings_mi_23_reg_3873 <= b_data_settings_mi_q1;
+        b_data_settings_mi_25_reg_3878 <= b_data_settings_mi_1_q1;
+        b_data_settings_mi_27_reg_3923 <= b_data_settings_mi_q0;
+        b_data_settings_mi_29_reg_3928 <= b_data_settings_mi_1_q0;
+        b_data_z_assign_lo_4_reg_3893 <= b_data_z_assign_q1;
+        b_data_z_assign_lo_5_reg_3943 <= b_data_z_assign_q0;
     end
 end
 
 always @ (posedge ap_clk) begin
-    if (((1'b1 == ap_CS_fsm_state32) & (1'b0 == ap_block_state32_on_subcall_done))) begin
-        call_ret4_reg_5536 <= grp_erase_1_fu_2668_ap_return;
+    if ((1'b1 == ap_CS_fsm_state14)) begin
+        b_data_barrel_assi_16_reg_4108 <= b_data_barrel_assi_q1;
+        b_data_barrel_assi_18_reg_4158 <= b_data_barrel_assi_q0;
+        b_data_layerId_ass_16_reg_4098 <= b_data_layerId_ass_q1;
+        b_data_layerId_ass_18_reg_4148 <= b_data_layerId_ass_q0;
+        b_data_phi_assign_14_reg_4088 <= b_data_phi_assign_q1;
+        b_data_phi_assign_16_reg_4138 <= b_data_phi_assign_q0;
+        b_data_psModule_as_16_reg_4103 <= b_data_psModule_as_q1;
+        b_data_psModule_as_18_reg_4153 <= b_data_psModule_as_q0;
+        b_data_r_assign_lo_6_reg_4083 <= b_data_r_assign_q1;
+        b_data_r_assign_lo_7_reg_4133 <= b_data_r_assign_q0;
+        b_data_settings_ch_31_reg_4063 <= b_data_settings_ch_q1;
+        b_data_settings_ch_33_reg_4068 <= b_data_settings_ch_1_q1;
+        b_data_settings_ch_35_reg_4113 <= b_data_settings_ch_q0;
+        b_data_settings_ch_37_reg_4118 <= b_data_settings_ch_1_q0;
+        b_data_settings_mi_31_reg_4073 <= b_data_settings_mi_q1;
+        b_data_settings_mi_33_reg_4078 <= b_data_settings_mi_1_q1;
+        b_data_settings_mi_35_reg_4123 <= b_data_settings_mi_q0;
+        b_data_settings_mi_37_reg_4128 <= b_data_settings_mi_1_q0;
+        b_data_z_assign_lo_6_reg_4093 <= b_data_z_assign_q1;
+        b_data_z_assign_lo_7_reg_4143 <= b_data_z_assign_q0;
     end
 end
 
 always @ (posedge ap_clk) begin
-    if (((tmp_68_reg_4491 == 1'd1) & (1'b1 == ap_CS_fsm_state20))) begin
-        i_1_reg_4499 <= i_1_fu_3079_p2;
-        tmp_69_reg_4495 <= tmp_69_fu_3073_p2;
+    if ((1'b1 == ap_CS_fsm_state15)) begin
+        b_data_barrel_assi_20_reg_4308 <= b_data_barrel_assi_q1;
+        b_data_barrel_assi_22_reg_4358 <= b_data_barrel_assi_q0;
+        b_data_layerId_ass_20_reg_4298 <= b_data_layerId_ass_q1;
+        b_data_layerId_ass_22_reg_4348 <= b_data_layerId_ass_q0;
+        b_data_phi_assign_18_reg_4288 <= b_data_phi_assign_q1;
+        b_data_phi_assign_20_reg_4338 <= b_data_phi_assign_q0;
+        b_data_psModule_as_20_reg_4303 <= b_data_psModule_as_q1;
+        b_data_psModule_as_22_reg_4353 <= b_data_psModule_as_q0;
+        b_data_r_assign_lo_8_reg_4283 <= b_data_r_assign_q1;
+        b_data_r_assign_lo_9_reg_4333 <= b_data_r_assign_q0;
+        b_data_settings_ch_39_reg_4263 <= b_data_settings_ch_q1;
+        b_data_settings_ch_41_reg_4268 <= b_data_settings_ch_1_q1;
+        b_data_settings_ch_43_reg_4313 <= b_data_settings_ch_q0;
+        b_data_settings_ch_45_reg_4318 <= b_data_settings_ch_1_q0;
+        b_data_settings_mi_39_reg_4273 <= b_data_settings_mi_q1;
+        b_data_settings_mi_41_reg_4278 <= b_data_settings_mi_1_q1;
+        b_data_settings_mi_43_reg_4323 <= b_data_settings_mi_q0;
+        b_data_settings_mi_45_reg_4328 <= b_data_settings_mi_1_q0;
+        b_data_z_assign_lo_8_reg_4293 <= b_data_z_assign_q1;
+        b_data_z_assign_lo_9_reg_4343 <= b_data_z_assign_q0;
     end
 end
 
 always @ (posedge ap_clk) begin
-    if ((1'b1 == ap_CS_fsm_state35)) begin
-        i_2_reg_5550 <= i_2_fu_3193_p2;
-        tmp_i1_35_reg_5546 <= tmp_i1_35_fu_3188_p2;
+    if ((1'b1 == ap_CS_fsm_state23)) begin
+        b_data_barrel_assi_25_reg_4608 <= b_data_barrel_assi_1_q0;
+        b_data_barrel_assi_27_reg_4658 <= b_data_barrel_assi_1_q1;
+        b_data_layerId_ass_25_reg_4598 <= b_data_layerId_ass_1_q0;
+        b_data_layerId_ass_27_reg_4648 <= b_data_layerId_ass_1_q1;
+        b_data_phi_assign_23_reg_4588 <= b_data_phi_assign_1_q0;
+        b_data_phi_assign_25_reg_4638 <= b_data_phi_assign_1_q1;
+        b_data_psModule_as_25_reg_4603 <= b_data_psModule_as_1_q0;
+        b_data_psModule_as_27_reg_4653 <= b_data_psModule_as_1_q1;
+        b_data_r_assign_1_2_reg_4583 <= b_data_r_assign_1_q0;
+        b_data_r_assign_1_4_reg_4633 <= b_data_r_assign_1_q1;
+        b_data_settings_ch_49_reg_4563 <= b_data_settings_ch_2_q0;
+        b_data_settings_ch_51_reg_4568 <= b_data_settings_ch_3_q0;
+        b_data_settings_ch_53_reg_4613 <= b_data_settings_ch_2_q1;
+        b_data_settings_ch_55_reg_4618 <= b_data_settings_ch_3_q1;
+        b_data_settings_mi_49_reg_4573 <= b_data_settings_mi_2_q0;
+        b_data_settings_mi_51_reg_4578 <= b_data_settings_mi_3_q0;
+        b_data_settings_mi_53_reg_4623 <= b_data_settings_mi_2_q1;
+        b_data_settings_mi_55_reg_4628 <= b_data_settings_mi_3_q1;
+        b_data_z_assign_1_2_reg_4593 <= b_data_z_assign_1_q0;
+        b_data_z_assign_1_4_reg_4643 <= b_data_z_assign_1_q1;
     end
 end
 
 always @ (posedge ap_clk) begin
-    if (((tmp_i1_35_reg_5546 == 1'd1) & (1'b1 == ap_CS_fsm_state37))) begin
-        i_3_reg_5567 <= i_3_fu_3209_p2;
-        tmp_77_reg_5563 <= tmp_77_fu_3204_p2;
+    if ((1'b1 == ap_CS_fsm_state24)) begin
+        b_data_barrel_assi_29_reg_4808 <= b_data_barrel_assi_1_q1;
+        b_data_barrel_assi_31_reg_4858 <= b_data_barrel_assi_1_q0;
+        b_data_layerId_ass_29_reg_4798 <= b_data_layerId_ass_1_q1;
+        b_data_layerId_ass_31_reg_4848 <= b_data_layerId_ass_1_q0;
+        b_data_phi_assign_27_reg_4788 <= b_data_phi_assign_1_q1;
+        b_data_phi_assign_29_reg_4838 <= b_data_phi_assign_1_q0;
+        b_data_psModule_as_29_reg_4803 <= b_data_psModule_as_1_q1;
+        b_data_psModule_as_31_reg_4853 <= b_data_psModule_as_1_q0;
+        b_data_r_assign_1_6_reg_4783 <= b_data_r_assign_1_q1;
+        b_data_r_assign_1_8_reg_4833 <= b_data_r_assign_1_q0;
+        b_data_settings_ch_57_reg_4763 <= b_data_settings_ch_2_q1;
+        b_data_settings_ch_59_reg_4768 <= b_data_settings_ch_3_q1;
+        b_data_settings_ch_61_reg_4813 <= b_data_settings_ch_2_q0;
+        b_data_settings_ch_63_reg_4818 <= b_data_settings_ch_3_q0;
+        b_data_settings_mi_57_reg_4773 <= b_data_settings_mi_2_q1;
+        b_data_settings_mi_59_reg_4778 <= b_data_settings_mi_3_q1;
+        b_data_settings_mi_61_reg_4823 <= b_data_settings_mi_2_q0;
+        b_data_settings_mi_63_reg_4828 <= b_data_settings_mi_3_q0;
+        b_data_z_assign_1_6_reg_4793 <= b_data_z_assign_1_q1;
+        b_data_z_assign_1_8_reg_4843 <= b_data_z_assign_1_q0;
     end
 end
 
 always @ (posedge ap_clk) begin
-    if (((tmp_59_reg_3387 == 1'd1) & (1'b1 == ap_CS_fsm_state8))) begin
-        i_reg_3395 <= i_fu_2987_p2;
-        tmp_60_reg_3391 <= tmp_60_fu_2982_p2;
+    if ((1'b1 == ap_CS_fsm_state25)) begin
+        b_data_barrel_assi_33_reg_5008 <= b_data_barrel_assi_1_q1;
+        b_data_barrel_assi_35_reg_5058 <= b_data_barrel_assi_1_q0;
+        b_data_layerId_ass_33_reg_4998 <= b_data_layerId_ass_1_q1;
+        b_data_layerId_ass_35_reg_5048 <= b_data_layerId_ass_1_q0;
+        b_data_phi_assign_31_reg_4988 <= b_data_phi_assign_1_q1;
+        b_data_phi_assign_33_reg_5038 <= b_data_phi_assign_1_q0;
+        b_data_psModule_as_33_reg_5003 <= b_data_psModule_as_1_q1;
+        b_data_psModule_as_35_reg_5053 <= b_data_psModule_as_1_q0;
+        b_data_r_assign_1_10_reg_4983 <= b_data_r_assign_1_q1;
+        b_data_r_assign_1_12_reg_5033 <= b_data_r_assign_1_q0;
+        b_data_settings_ch_65_reg_4963 <= b_data_settings_ch_2_q1;
+        b_data_settings_ch_67_reg_4968 <= b_data_settings_ch_3_q1;
+        b_data_settings_ch_69_reg_5013 <= b_data_settings_ch_2_q0;
+        b_data_settings_ch_71_reg_5018 <= b_data_settings_ch_3_q0;
+        b_data_settings_mi_65_reg_4973 <= b_data_settings_mi_2_q1;
+        b_data_settings_mi_67_reg_4978 <= b_data_settings_mi_3_q1;
+        b_data_settings_mi_69_reg_5023 <= b_data_settings_mi_2_q0;
+        b_data_settings_mi_71_reg_5028 <= b_data_settings_mi_3_q0;
+        b_data_z_assign_1_10_reg_4993 <= b_data_z_assign_1_q1;
+        b_data_z_assign_1_12_reg_5043 <= b_data_z_assign_1_q0;
     end
 end
 
 always @ (posedge ap_clk) begin
-    if (((grp_has_key_fu_2872_ap_done == 1'b1) & (1'b1 == ap_CS_fsm_state19))) begin
-        stub_barrel_s_reg_4483 <= LinearRegression_stubMap_data_second_data_barrel_s_q0;
-        stub_layerId_s_reg_4464 <= LinearRegression_stubMap_data_second_data_layerId_s_q0;
-        stub_phi_s_reg_4452 <= LinearRegression_stubMap_data_second_data_phi_s_q0;
-        stub_psModule_s_reg_4475 <= LinearRegression_stubMap_data_second_data_psModule_s_q0;
-        stub_r_s_reg_4446 <= LinearRegression_stubMap_data_second_data_r_s_q0;
-        stub_z_s_reg_4458 <= LinearRegression_stubMap_data_second_data_z_s_q0;
-        tmp_68_reg_4491 <= grp_has_key_fu_2872_ap_return;
+    if ((1'b1 == ap_CS_fsm_state26)) begin
+        b_data_barrel_assi_37_reg_5208 <= b_data_barrel_assi_1_q1;
+        b_data_barrel_assi_39_reg_5258 <= b_data_barrel_assi_1_q0;
+        b_data_layerId_ass_37_reg_5198 <= b_data_layerId_ass_1_q1;
+        b_data_layerId_ass_39_reg_5248 <= b_data_layerId_ass_1_q0;
+        b_data_phi_assign_35_reg_5188 <= b_data_phi_assign_1_q1;
+        b_data_phi_assign_37_reg_5238 <= b_data_phi_assign_1_q0;
+        b_data_psModule_as_37_reg_5203 <= b_data_psModule_as_1_q1;
+        b_data_psModule_as_39_reg_5253 <= b_data_psModule_as_1_q0;
+        b_data_r_assign_1_14_reg_5183 <= b_data_r_assign_1_q1;
+        b_data_r_assign_1_16_reg_5233 <= b_data_r_assign_1_q0;
+        b_data_settings_ch_73_reg_5163 <= b_data_settings_ch_2_q1;
+        b_data_settings_ch_75_reg_5168 <= b_data_settings_ch_3_q1;
+        b_data_settings_ch_77_reg_5213 <= b_data_settings_ch_2_q0;
+        b_data_settings_ch_79_reg_5218 <= b_data_settings_ch_3_q0;
+        b_data_settings_mi_73_reg_5173 <= b_data_settings_mi_2_q1;
+        b_data_settings_mi_75_reg_5178 <= b_data_settings_mi_3_q1;
+        b_data_settings_mi_77_reg_5223 <= b_data_settings_mi_2_q0;
+        b_data_settings_mi_79_reg_5228 <= b_data_settings_mi_3_q0;
+        b_data_z_assign_1_14_reg_5193 <= b_data_z_assign_1_q1;
+        b_data_z_assign_1_16_reg_5243 <= b_data_z_assign_1_q0;
     end
 end
 
 always @ (posedge ap_clk) begin
-    if (((grp_has_key_fu_2872_ap_done == 1'b1) & (1'b1 == ap_CS_fsm_state7))) begin
-        tmp_59_reg_3387 <= grp_has_key_fu_2872_ap_return;
+    if ((1'b1 == ap_CS_fsm_state27)) begin
+        b_data_barrel_assi_41_reg_5408 <= b_data_barrel_assi_1_q1;
+        b_data_barrel_assi_43_reg_5458 <= b_data_barrel_assi_1_q0;
+        b_data_layerId_ass_41_reg_5398 <= b_data_layerId_ass_1_q1;
+        b_data_layerId_ass_43_reg_5448 <= b_data_layerId_ass_1_q0;
+        b_data_phi_assign_39_reg_5388 <= b_data_phi_assign_1_q1;
+        b_data_phi_assign_41_reg_5438 <= b_data_phi_assign_1_q0;
+        b_data_psModule_as_41_reg_5403 <= b_data_psModule_as_1_q1;
+        b_data_psModule_as_43_reg_5453 <= b_data_psModule_as_1_q0;
+        b_data_r_assign_1_18_reg_5383 <= b_data_r_assign_1_q1;
+        b_data_r_assign_1_20_reg_5433 <= b_data_r_assign_1_q0;
+        b_data_settings_ch_81_reg_5363 <= b_data_settings_ch_2_q1;
+        b_data_settings_ch_83_reg_5368 <= b_data_settings_ch_3_q1;
+        b_data_settings_ch_85_reg_5413 <= b_data_settings_ch_2_q0;
+        b_data_settings_ch_87_reg_5418 <= b_data_settings_ch_3_q0;
+        b_data_settings_mi_81_reg_5373 <= b_data_settings_mi_2_q1;
+        b_data_settings_mi_83_reg_5378 <= b_data_settings_mi_3_q1;
+        b_data_settings_mi_85_reg_5423 <= b_data_settings_mi_2_q0;
+        b_data_settings_mi_87_reg_5428 <= b_data_settings_mi_3_q0;
+        b_data_z_assign_1_18_reg_5393 <= b_data_z_assign_1_q1;
+        b_data_z_assign_1_20_reg_5443 <= b_data_z_assign_1_q0;
+    end
+end
+
+always @ (posedge ap_clk) begin
+    if ((1'b1 == ap_CS_fsm_state11)) begin
+        b_data_barrel_assi_4_reg_3508 <= b_data_barrel_assi_q0;
+        b_data_barrel_assi_6_reg_3558 <= b_data_barrel_assi_q1;
+        b_data_layerId_ass_4_reg_3498 <= b_data_layerId_ass_q0;
+        b_data_layerId_ass_6_reg_3548 <= b_data_layerId_ass_q1;
+        b_data_phi_assign_2_reg_3488 <= b_data_phi_assign_q0;
+        b_data_phi_assign_4_reg_3538 <= b_data_phi_assign_q1;
+        b_data_psModule_as_4_reg_3503 <= b_data_psModule_as_q0;
+        b_data_psModule_as_6_reg_3553 <= b_data_psModule_as_q1;
+        b_data_r_assign_lo_1_reg_3533 <= b_data_r_assign_q1;
+        b_data_r_assign_lo_reg_3483 <= b_data_r_assign_q0;
+        b_data_settings_ch_11_reg_3513 <= b_data_settings_ch_q1;
+        b_data_settings_ch_13_reg_3518 <= b_data_settings_ch_1_q1;
+        b_data_settings_ch_7_reg_3463 <= b_data_settings_ch_q0;
+        b_data_settings_ch_9_reg_3468 <= b_data_settings_ch_1_q0;
+        b_data_settings_mi_11_reg_3523 <= b_data_settings_mi_q1;
+        b_data_settings_mi_13_reg_3528 <= b_data_settings_mi_1_q1;
+        b_data_settings_mi_7_reg_3473 <= b_data_settings_mi_q0;
+        b_data_settings_mi_9_reg_3478 <= b_data_settings_mi_1_q0;
+        b_data_z_assign_lo_1_reg_3543 <= b_data_z_assign_q1;
+        b_data_z_assign_lo_reg_3493 <= b_data_z_assign_q0;
+    end
+end
+
+always @ (posedge ap_clk) begin
+    if (((1'b1 == ap_CS_fsm_state33) & (grp_clean_fu_2517_ap_done == 1'b1))) begin
+        call_ret3_reg_5484 <= grp_clean_fu_2517_ap_return;
+    end
+end
+
+always @ (posedge ap_clk) begin
+    if (((1'b1 == ap_CS_fsm_state31) & (1'b0 == ap_block_state31_on_subcall_done))) begin
+        call_ret4_reg_5479 <= grp_erase_1_fu_2647_ap_return;
+    end
+end
+
+always @ (posedge ap_clk) begin
+    if ((1'b1 == ap_CS_fsm_state19)) begin
+        i_1_reg_4442 <= i_1_fu_3044_p2;
+        tmp_12_reg_4438 <= tmp_12_fu_3038_p2;
+    end
+end
+
+always @ (posedge ap_clk) begin
+    if ((1'b1 == ap_CS_fsm_state34)) begin
+        i_2_reg_5493 <= i_2_fu_3158_p2;
+        tmp_20_reg_5489 <= tmp_20_fu_3153_p2;
+    end
+end
+
+always @ (posedge ap_clk) begin
+    if ((1'b1 == ap_CS_fsm_state7)) begin
+        i_reg_3342 <= i_fu_2952_p2;
+        tmp_5_reg_3338 <= tmp_5_fu_2947_p2;
+    end
+end
+
+always @ (posedge ap_clk) begin
+    if ((1'b1 == ap_CS_fsm_state18)) begin
+        stub_barrel_s_reg_4430 <= LinearRegression_stubMap_data_second_data_barrel_s_q0;
+        stub_layerId_s_reg_4411 <= LinearRegression_stubMap_data_second_data_layerId_s_q0;
+        stub_phi_s_reg_4399 <= LinearRegression_stubMap_data_second_data_phi_s_q0;
+        stub_psModule_s_reg_4422 <= LinearRegression_stubMap_data_second_data_psModule_s_q0;
+        stub_r_s_reg_4393 <= LinearRegression_stubMap_data_second_data_r_s_q0;
+        stub_z_s_reg_4405 <= LinearRegression_stubMap_data_second_data_z_s_q0;
     end
 end
 
 always @ (posedge ap_clk) begin
     if ((1'b1 == ap_CS_fsm_state5)) begin
-        tmp_i_reg_3372 <= grp_fu_2881_p2;
+        tmp_i_reg_3323 <= grp_fu_2851_p2;
     end
 end
 
 always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state37) & ((tmp_77_fu_3204_p2 == 1'd0) | (tmp_i1_35_reg_5546 == 1'd0)))) begin
-        LinearRegression_layerPopulation_data_first_address0 = tmp_i2_fu_3220_p1;
-    end else if (((tmp_77_fu_3204_p2 == 1'd1) & (tmp_i1_35_reg_5546 == 1'd1) & (1'b1 == ap_CS_fsm_state37))) begin
-        LinearRegression_layerPopulation_data_first_address0 = tmp_78_fu_3215_p1;
-    end else if ((1'b1 == ap_CS_fsm_state35)) begin
-        LinearRegression_layerPopulation_data_first_address0 = tmp_i_36_fu_3199_p1;
+    if (((tmp_20_fu_3153_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state34))) begin
+        LinearRegression_layerPopulation_data_first_address0 = tmp_i1_fu_3169_p1;
+    end else if (((tmp_20_fu_3153_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state34))) begin
+        LinearRegression_layerPopulation_data_first_address0 = tmp_21_fu_3164_p1;
     end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        LinearRegression_layerPopulation_data_first_address0 = grp_findLargestResidual_fu_2571_LinearRegression_layerPopulation_data_first_address0;
+        LinearRegression_layerPopulation_data_first_address0 = grp_findLargestResidual_fu_2550_LinearRegression_layerPopulation_data_first_address0;
     end else begin
         LinearRegression_layerPopulation_data_first_address0 = 'bx;
     end
 end
 
 always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state35) | ((1'b1 == ap_CS_fsm_state37) & ((tmp_77_fu_3204_p2 == 1'd0) | (tmp_i1_35_reg_5546 == 1'd0))) | ((tmp_77_fu_3204_p2 == 1'd1) & (tmp_i1_35_reg_5546 == 1'd1) & (1'b1 == ap_CS_fsm_state37)))) begin
+    if ((((tmp_20_fu_3153_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state34)) | ((tmp_20_fu_3153_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state34)))) begin
         LinearRegression_layerPopulation_data_first_ce0 = 1'b1;
     end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        LinearRegression_layerPopulation_data_first_ce0 = grp_findLargestResidual_fu_2571_LinearRegression_layerPopulation_data_first_ce0;
+        LinearRegression_layerPopulation_data_first_ce0 = grp_findLargestResidual_fu_2550_LinearRegression_layerPopulation_data_first_ce0;
     end else begin
         LinearRegression_layerPopulation_data_first_ce0 = 1'b0;
     end
 end
 
 always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state37) & ((tmp_77_fu_3204_p2 == 1'd0) | (tmp_i1_35_reg_5546 == 1'd0)))) begin
-        LinearRegression_layerPopulation_data_first_d0 = idx_read_assign_reg_5530;
+    if (((tmp_20_fu_3153_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state34))) begin
+        LinearRegression_layerPopulation_data_first_d0 = value_first_read_ass_reg_5473;
     end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        LinearRegression_layerPopulation_data_first_d0 = grp_findLargestResidual_fu_2571_LinearRegression_layerPopulation_data_first_d0;
+        LinearRegression_layerPopulation_data_first_d0 = grp_findLargestResidual_fu_2550_LinearRegression_layerPopulation_data_first_d0;
     end else begin
         LinearRegression_layerPopulation_data_first_d0 = 'bx;
     end
 end
 
 always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state37) & ((tmp_77_fu_3204_p2 == 1'd0) | (tmp_i1_35_reg_5546 == 1'd0)))) begin
+    if (((tmp_20_fu_3153_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state34))) begin
         LinearRegression_layerPopulation_data_first_we0 = 1'b1;
     end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        LinearRegression_layerPopulation_data_first_we0 = grp_findLargestResidual_fu_2571_LinearRegression_layerPopulation_data_first_we0;
+        LinearRegression_layerPopulation_data_first_we0 = grp_findLargestResidual_fu_2550_LinearRegression_layerPopulation_data_first_we0;
     end else begin
         LinearRegression_layerPopulation_data_first_we0 = 1'b0;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state39)) begin
-        LinearRegression_layerPopulation_data_second_address0 = LinearRegression_lay_8_reg_5585;
-    end else if ((1'b1 == ap_CS_fsm_state38)) begin
-        LinearRegression_layerPopulation_data_second_address0 = p_pn_i2_fu_3230_p1;
-    end else if ((1'b1 == ap_CS_fsm_state37)) begin
-        LinearRegression_layerPopulation_data_second_address0 = tmp_i2_fu_3220_p1;
+    if ((1'b1 == ap_CS_fsm_state36)) begin
+        LinearRegression_layerPopulation_data_second_address0 = LinearRegression_lay_6_reg_5511;
+    end else if ((1'b1 == ap_CS_fsm_state35)) begin
+        LinearRegression_layerPopulation_data_second_address0 = p_pn_i2_fu_3184_p1;
+    end else if ((1'b1 == ap_CS_fsm_state34)) begin
+        LinearRegression_layerPopulation_data_second_address0 = tmp_i1_fu_3169_p1;
     end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        LinearRegression_layerPopulation_data_second_address0 = grp_findLargestResidual_fu_2571_LinearRegression_layerPopulation_data_second_address0;
+        LinearRegression_layerPopulation_data_second_address0 = grp_findLargestResidual_fu_2550_LinearRegression_layerPopulation_data_second_address0;
     end else begin
         LinearRegression_layerPopulation_data_second_address0 = 'bx;
     end
 end
 
 always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state39) | (1'b1 == ap_CS_fsm_state38) | (1'b1 == ap_CS_fsm_state37))) begin
+    if (((1'b1 == ap_CS_fsm_state36) | (1'b1 == ap_CS_fsm_state35) | (1'b1 == ap_CS_fsm_state34))) begin
         LinearRegression_layerPopulation_data_second_ce0 = 1'b1;
     end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        LinearRegression_layerPopulation_data_second_ce0 = grp_findLargestResidual_fu_2571_LinearRegression_layerPopulation_data_second_ce0;
+        LinearRegression_layerPopulation_data_second_ce0 = grp_findLargestResidual_fu_2550_LinearRegression_layerPopulation_data_second_ce0;
     end else begin
         LinearRegression_layerPopulation_data_second_ce0 = 1'b0;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state39)) begin
-        LinearRegression_layerPopulation_data_second_d0 = tmp_80_fu_3235_p2;
-    end else if ((1'b1 == ap_CS_fsm_state37)) begin
+    if ((1'b1 == ap_CS_fsm_state36)) begin
+        LinearRegression_layerPopulation_data_second_d0 = tmp_23_fu_3189_p2;
+    end else if ((1'b1 == ap_CS_fsm_state34)) begin
         LinearRegression_layerPopulation_data_second_d0 = 32'd0;
     end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        LinearRegression_layerPopulation_data_second_d0 = grp_findLargestResidual_fu_2571_LinearRegression_layerPopulation_data_second_d0;
+        LinearRegression_layerPopulation_data_second_d0 = grp_findLargestResidual_fu_2550_LinearRegression_layerPopulation_data_second_d0;
     end else begin
         LinearRegression_layerPopulation_data_second_d0 = 'bx;
     end
 end
 
 always @ (*) begin
-    if ((((tmp_s_reg_3383 == 1'd0) & (1'b1 == ap_CS_fsm_state39)) | ((1'b1 == ap_CS_fsm_state37) & ((tmp_77_fu_3204_p2 == 1'd0) | (tmp_i1_35_reg_5546 == 1'd0))))) begin
+    if ((((tmp_s_reg_3334 == 1'd0) & (1'b1 == ap_CS_fsm_state36)) | ((tmp_20_fu_3153_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state34)))) begin
         LinearRegression_layerPopulation_data_second_we0 = 1'b1;
     end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        LinearRegression_layerPopulation_data_second_we0 = grp_findLargestResidual_fu_2571_LinearRegression_layerPopulation_data_second_we0;
+        LinearRegression_layerPopulation_data_second_we0 = grp_findLargestResidual_fu_2550_LinearRegression_layerPopulation_data_second_we0;
     end else begin
         LinearRegression_layerPopulation_data_second_we0 = 1'b0;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state20)) begin
-        LinearRegression_stubMap_data_first_address0 = tmp_70_fu_3085_p1;
-    end else if ((1'b1 == ap_CS_fsm_state8)) begin
-        LinearRegression_stubMap_data_first_address0 = tmp_61_fu_2993_p1;
-    end else if (((1'b1 == ap_CS_fsm_state19) | (1'b1 == ap_CS_fsm_state7))) begin
-        LinearRegression_stubMap_data_first_address0 = grp_has_key_fu_2872_mapHLS_unsigned_int_arrayHLS_Stub_data_first_address0;
-    end else if ((((ap_predicate_op805_call_state29 == 1'b1) & (1'b1 == ap_CS_fsm_state29)) | ((ap_predicate_op431_call_state17 == 1'b1) & (1'b1 == ap_CS_fsm_state17)))) begin
-        LinearRegression_stubMap_data_first_address0 = grp_push_back_1_fu_2701_mapHLS_unsigned_int_arrayHLS_Stub_data_first_address0;
+    if ((1'b1 == ap_CS_fsm_state19)) begin
+        LinearRegression_stubMap_data_first_address0 = tmp_13_fu_3050_p1;
+    end else if ((1'b1 == ap_CS_fsm_state7)) begin
+        LinearRegression_stubMap_data_first_address0 = tmp_6_fu_2958_p1;
+    end else if ((((tmp_12_reg_4438 == 1'd0) & (1'b1 == ap_CS_fsm_state28)) | ((tmp_5_reg_3338 == 1'd0) & (1'b1 == ap_CS_fsm_state16)))) begin
+        LinearRegression_stubMap_data_first_address0 = grp_push_back_1_fu_2680_mapHLS_unsigned_int_arrayHLS_Stub_data_first_address0;
     end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        LinearRegression_stubMap_data_first_address0 = grp_findLargestResidual_fu_2571_LinearRegression_stubMap_data_first_address0;
-    end else if ((1'b1 == ap_CS_fsm_state34)) begin
-        LinearRegression_stubMap_data_first_address0 = grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_first_address0;
+        LinearRegression_stubMap_data_first_address0 = grp_findLargestResidual_fu_2550_LinearRegression_stubMap_data_first_address0;
+    end else if ((1'b1 == ap_CS_fsm_state33)) begin
+        LinearRegression_stubMap_data_first_address0 = grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_first_address0;
     end else begin
         LinearRegression_stubMap_data_first_address0 = 'bx;
     end
 end
 
 always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state20) | (1'b1 == ap_CS_fsm_state8))) begin
+    if (((1'b1 == ap_CS_fsm_state19) | (1'b1 == ap_CS_fsm_state7))) begin
         LinearRegression_stubMap_data_first_ce0 = 1'b1;
-    end else if (((1'b1 == ap_CS_fsm_state19) | (1'b1 == ap_CS_fsm_state7))) begin
-        LinearRegression_stubMap_data_first_ce0 = grp_has_key_fu_2872_mapHLS_unsigned_int_arrayHLS_Stub_data_first_ce0;
-    end else if ((((ap_predicate_op805_call_state29 == 1'b1) & (1'b1 == ap_CS_fsm_state29)) | ((ap_predicate_op431_call_state17 == 1'b1) & (1'b1 == ap_CS_fsm_state17)))) begin
-        LinearRegression_stubMap_data_first_ce0 = grp_push_back_1_fu_2701_mapHLS_unsigned_int_arrayHLS_Stub_data_first_ce0;
+    end else if ((((tmp_12_reg_4438 == 1'd0) & (1'b1 == ap_CS_fsm_state28)) | ((tmp_5_reg_3338 == 1'd0) & (1'b1 == ap_CS_fsm_state16)))) begin
+        LinearRegression_stubMap_data_first_ce0 = grp_push_back_1_fu_2680_mapHLS_unsigned_int_arrayHLS_Stub_data_first_ce0;
     end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        LinearRegression_stubMap_data_first_ce0 = grp_findLargestResidual_fu_2571_LinearRegression_stubMap_data_first_ce0;
-    end else if ((1'b1 == ap_CS_fsm_state34)) begin
-        LinearRegression_stubMap_data_first_ce0 = grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_first_ce0;
+        LinearRegression_stubMap_data_first_ce0 = grp_findLargestResidual_fu_2550_LinearRegression_stubMap_data_first_ce0;
+    end else if ((1'b1 == ap_CS_fsm_state33)) begin
+        LinearRegression_stubMap_data_first_ce0 = grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_first_ce0;
     end else begin
         LinearRegression_stubMap_data_first_ce0 = 1'b0;
     end
 end
 
 always @ (*) begin
-    if ((((ap_predicate_op805_call_state29 == 1'b1) & (1'b1 == ap_CS_fsm_state29)) | ((ap_predicate_op431_call_state17 == 1'b1) & (1'b1 == ap_CS_fsm_state17)))) begin
-        LinearRegression_stubMap_data_first_d0 = grp_push_back_1_fu_2701_mapHLS_unsigned_int_arrayHLS_Stub_data_first_d0;
+    if ((((tmp_12_reg_4438 == 1'd0) & (1'b1 == ap_CS_fsm_state28)) | ((tmp_5_reg_3338 == 1'd0) & (1'b1 == ap_CS_fsm_state16)))) begin
+        LinearRegression_stubMap_data_first_d0 = grp_push_back_1_fu_2680_mapHLS_unsigned_int_arrayHLS_Stub_data_first_d0;
     end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        LinearRegression_stubMap_data_first_d0 = grp_findLargestResidual_fu_2571_LinearRegression_stubMap_data_first_d0;
-    end else if ((1'b1 == ap_CS_fsm_state34)) begin
-        LinearRegression_stubMap_data_first_d0 = grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_first_d0;
+        LinearRegression_stubMap_data_first_d0 = grp_findLargestResidual_fu_2550_LinearRegression_stubMap_data_first_d0;
+    end else if ((1'b1 == ap_CS_fsm_state33)) begin
+        LinearRegression_stubMap_data_first_d0 = grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_first_d0;
     end else begin
         LinearRegression_stubMap_data_first_d0 = 'bx;
     end
 end
 
 always @ (*) begin
-    if ((((ap_predicate_op805_call_state29 == 1'b1) & (1'b1 == ap_CS_fsm_state29)) | ((ap_predicate_op431_call_state17 == 1'b1) & (1'b1 == ap_CS_fsm_state17)))) begin
-        LinearRegression_stubMap_data_first_we0 = grp_push_back_1_fu_2701_mapHLS_unsigned_int_arrayHLS_Stub_data_first_we0;
+    if ((((tmp_12_reg_4438 == 1'd0) & (1'b1 == ap_CS_fsm_state28)) | ((tmp_5_reg_3338 == 1'd0) & (1'b1 == ap_CS_fsm_state16)))) begin
+        LinearRegression_stubMap_data_first_we0 = grp_push_back_1_fu_2680_mapHLS_unsigned_int_arrayHLS_Stub_data_first_we0;
     end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        LinearRegression_stubMap_data_first_we0 = grp_findLargestResidual_fu_2571_LinearRegression_stubMap_data_first_we0;
-    end else if ((1'b1 == ap_CS_fsm_state34)) begin
-        LinearRegression_stubMap_data_first_we0 = grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_first_we0;
+        LinearRegression_stubMap_data_first_we0 = grp_findLargestResidual_fu_2550_LinearRegression_stubMap_data_first_we0;
+    end else if ((1'b1 == ap_CS_fsm_state33)) begin
+        LinearRegression_stubMap_data_first_we0 = grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_first_we0;
     end else begin
         LinearRegression_stubMap_data_first_we0 = 1'b0;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state18)) begin
-        LinearRegression_stubMap_data_second_data_barrel_s_address0 = tmp_85_cast_fu_3063_p1;
-    end else if ((((ap_predicate_op805_call_state29 == 1'b1) & (1'b1 == ap_CS_fsm_state29)) | ((ap_predicate_op431_call_state17 == 1'b1) & (1'b1 == ap_CS_fsm_state17)))) begin
-        LinearRegression_stubMap_data_second_data_barrel_s_address0 = grp_push_back_1_fu_2701_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_barrel_s_address0;
-    end else if ((1'b1 == ap_CS_fsm_state32)) begin
-        LinearRegression_stubMap_data_second_data_barrel_s_address0 = grp_erase_fu_2631_arrayHLS_Stub_data_barrel_s_address0;
+    if ((1'b1 == ap_CS_fsm_state17)) begin
+        LinearRegression_stubMap_data_second_data_barrel_s_address0 = tmp_28_cast_fu_3028_p1;
+    end else if ((((tmp_12_reg_4438 == 1'd0) & (1'b1 == ap_CS_fsm_state28)) | ((tmp_5_reg_3338 == 1'd0) & (1'b1 == ap_CS_fsm_state16)))) begin
+        LinearRegression_stubMap_data_second_data_barrel_s_address0 = grp_push_back_1_fu_2680_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_barrel_s_address0;
+    end else if ((1'b1 == ap_CS_fsm_state31)) begin
+        LinearRegression_stubMap_data_second_data_barrel_s_address0 = grp_erase_fu_2610_arrayHLS_Stub_data_barrel_s_address0;
     end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        LinearRegression_stubMap_data_second_data_barrel_s_address0 = grp_findLargestResidual_fu_2571_LinearRegression_stubMap_data_second_data_barrel_s_address0;
-    end else if ((1'b1 == ap_CS_fsm_state34)) begin
-        LinearRegression_stubMap_data_second_data_barrel_s_address0 = grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_barrel_s_address0;
+        LinearRegression_stubMap_data_second_data_barrel_s_address0 = grp_findLargestResidual_fu_2550_LinearRegression_stubMap_data_second_data_barrel_s_address0;
+    end else if ((1'b1 == ap_CS_fsm_state33)) begin
+        LinearRegression_stubMap_data_second_data_barrel_s_address0 = grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_barrel_s_address0;
     end else begin
         LinearRegression_stubMap_data_second_data_barrel_s_address0 = 'bx;
     end
 end
 
 always @ (*) begin
-    if ((((ap_predicate_op805_call_state29 == 1'b1) & (1'b1 == ap_CS_fsm_state29)) | ((ap_predicate_op431_call_state17 == 1'b1) & (1'b1 == ap_CS_fsm_state17)))) begin
-        LinearRegression_stubMap_data_second_data_barrel_s_address1 = grp_push_back_1_fu_2701_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_barrel_s_address1;
+    if ((((tmp_12_reg_4438 == 1'd0) & (1'b1 == ap_CS_fsm_state28)) | ((tmp_5_reg_3338 == 1'd0) & (1'b1 == ap_CS_fsm_state16)))) begin
+        LinearRegression_stubMap_data_second_data_barrel_s_address1 = grp_push_back_1_fu_2680_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_barrel_s_address1;
     end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        LinearRegression_stubMap_data_second_data_barrel_s_address1 = grp_findLargestResidual_fu_2571_LinearRegression_stubMap_data_second_data_barrel_s_address1;
-    end else if ((1'b1 == ap_CS_fsm_state34)) begin
-        LinearRegression_stubMap_data_second_data_barrel_s_address1 = grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_barrel_s_address1;
+        LinearRegression_stubMap_data_second_data_barrel_s_address1 = grp_findLargestResidual_fu_2550_LinearRegression_stubMap_data_second_data_barrel_s_address1;
+    end else if ((1'b1 == ap_CS_fsm_state33)) begin
+        LinearRegression_stubMap_data_second_data_barrel_s_address1 = grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_barrel_s_address1;
     end else begin
         LinearRegression_stubMap_data_second_data_barrel_s_address1 = 'bx;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state18)) begin
+    if ((1'b1 == ap_CS_fsm_state17)) begin
         LinearRegression_stubMap_data_second_data_barrel_s_ce0 = 1'b1;
-    end else if ((((ap_predicate_op805_call_state29 == 1'b1) & (1'b1 == ap_CS_fsm_state29)) | ((ap_predicate_op431_call_state17 == 1'b1) & (1'b1 == ap_CS_fsm_state17)))) begin
-        LinearRegression_stubMap_data_second_data_barrel_s_ce0 = grp_push_back_1_fu_2701_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_barrel_s_ce0;
-    end else if ((1'b1 == ap_CS_fsm_state32)) begin
-        LinearRegression_stubMap_data_second_data_barrel_s_ce0 = grp_erase_fu_2631_arrayHLS_Stub_data_barrel_s_ce0;
+    end else if ((((tmp_12_reg_4438 == 1'd0) & (1'b1 == ap_CS_fsm_state28)) | ((tmp_5_reg_3338 == 1'd0) & (1'b1 == ap_CS_fsm_state16)))) begin
+        LinearRegression_stubMap_data_second_data_barrel_s_ce0 = grp_push_back_1_fu_2680_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_barrel_s_ce0;
+    end else if ((1'b1 == ap_CS_fsm_state31)) begin
+        LinearRegression_stubMap_data_second_data_barrel_s_ce0 = grp_erase_fu_2610_arrayHLS_Stub_data_barrel_s_ce0;
     end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        LinearRegression_stubMap_data_second_data_barrel_s_ce0 = grp_findLargestResidual_fu_2571_LinearRegression_stubMap_data_second_data_barrel_s_ce0;
-    end else if ((1'b1 == ap_CS_fsm_state34)) begin
-        LinearRegression_stubMap_data_second_data_barrel_s_ce0 = grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_barrel_s_ce0;
+        LinearRegression_stubMap_data_second_data_barrel_s_ce0 = grp_findLargestResidual_fu_2550_LinearRegression_stubMap_data_second_data_barrel_s_ce0;
+    end else if ((1'b1 == ap_CS_fsm_state33)) begin
+        LinearRegression_stubMap_data_second_data_barrel_s_ce0 = grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_barrel_s_ce0;
     end else begin
         LinearRegression_stubMap_data_second_data_barrel_s_ce0 = 1'b0;
     end
 end
 
 always @ (*) begin
-    if ((((ap_predicate_op805_call_state29 == 1'b1) & (1'b1 == ap_CS_fsm_state29)) | ((ap_predicate_op431_call_state17 == 1'b1) & (1'b1 == ap_CS_fsm_state17)))) begin
-        LinearRegression_stubMap_data_second_data_barrel_s_ce1 = grp_push_back_1_fu_2701_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_barrel_s_ce1;
+    if ((((tmp_12_reg_4438 == 1'd0) & (1'b1 == ap_CS_fsm_state28)) | ((tmp_5_reg_3338 == 1'd0) & (1'b1 == ap_CS_fsm_state16)))) begin
+        LinearRegression_stubMap_data_second_data_barrel_s_ce1 = grp_push_back_1_fu_2680_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_barrel_s_ce1;
     end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        LinearRegression_stubMap_data_second_data_barrel_s_ce1 = grp_findLargestResidual_fu_2571_LinearRegression_stubMap_data_second_data_barrel_s_ce1;
-    end else if ((1'b1 == ap_CS_fsm_state34)) begin
-        LinearRegression_stubMap_data_second_data_barrel_s_ce1 = grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_barrel_s_ce1;
+        LinearRegression_stubMap_data_second_data_barrel_s_ce1 = grp_findLargestResidual_fu_2550_LinearRegression_stubMap_data_second_data_barrel_s_ce1;
+    end else if ((1'b1 == ap_CS_fsm_state33)) begin
+        LinearRegression_stubMap_data_second_data_barrel_s_ce1 = grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_barrel_s_ce1;
     end else begin
         LinearRegression_stubMap_data_second_data_barrel_s_ce1 = 1'b0;
     end
 end
 
 always @ (*) begin
-    if ((((ap_predicate_op805_call_state29 == 1'b1) & (1'b1 == ap_CS_fsm_state29)) | ((ap_predicate_op431_call_state17 == 1'b1) & (1'b1 == ap_CS_fsm_state17)))) begin
-        LinearRegression_stubMap_data_second_data_barrel_s_d0 = grp_push_back_1_fu_2701_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_barrel_s_d0;
-    end else if ((1'b1 == ap_CS_fsm_state32)) begin
-        LinearRegression_stubMap_data_second_data_barrel_s_d0 = grp_erase_fu_2631_arrayHLS_Stub_data_barrel_s_d0;
+    if ((((tmp_12_reg_4438 == 1'd0) & (1'b1 == ap_CS_fsm_state28)) | ((tmp_5_reg_3338 == 1'd0) & (1'b1 == ap_CS_fsm_state16)))) begin
+        LinearRegression_stubMap_data_second_data_barrel_s_d0 = grp_push_back_1_fu_2680_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_barrel_s_d0;
+    end else if ((1'b1 == ap_CS_fsm_state31)) begin
+        LinearRegression_stubMap_data_second_data_barrel_s_d0 = grp_erase_fu_2610_arrayHLS_Stub_data_barrel_s_d0;
     end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        LinearRegression_stubMap_data_second_data_barrel_s_d0 = grp_findLargestResidual_fu_2571_LinearRegression_stubMap_data_second_data_barrel_s_d0;
-    end else if ((1'b1 == ap_CS_fsm_state34)) begin
-        LinearRegression_stubMap_data_second_data_barrel_s_d0 = grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_barrel_s_d0;
+        LinearRegression_stubMap_data_second_data_barrel_s_d0 = grp_findLargestResidual_fu_2550_LinearRegression_stubMap_data_second_data_barrel_s_d0;
+    end else if ((1'b1 == ap_CS_fsm_state33)) begin
+        LinearRegression_stubMap_data_second_data_barrel_s_d0 = grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_barrel_s_d0;
     end else begin
         LinearRegression_stubMap_data_second_data_barrel_s_d0 = 'bx;
     end
 end
 
 always @ (*) begin
-    if ((((ap_predicate_op805_call_state29 == 1'b1) & (1'b1 == ap_CS_fsm_state29)) | ((ap_predicate_op431_call_state17 == 1'b1) & (1'b1 == ap_CS_fsm_state17)))) begin
-        LinearRegression_stubMap_data_second_data_barrel_s_d1 = grp_push_back_1_fu_2701_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_barrel_s_d1;
+    if ((((tmp_12_reg_4438 == 1'd0) & (1'b1 == ap_CS_fsm_state28)) | ((tmp_5_reg_3338 == 1'd0) & (1'b1 == ap_CS_fsm_state16)))) begin
+        LinearRegression_stubMap_data_second_data_barrel_s_d1 = grp_push_back_1_fu_2680_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_barrel_s_d1;
     end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        LinearRegression_stubMap_data_second_data_barrel_s_d1 = grp_findLargestResidual_fu_2571_LinearRegression_stubMap_data_second_data_barrel_s_d1;
-    end else if ((1'b1 == ap_CS_fsm_state34)) begin
-        LinearRegression_stubMap_data_second_data_barrel_s_d1 = grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_barrel_s_d1;
+        LinearRegression_stubMap_data_second_data_barrel_s_d1 = grp_findLargestResidual_fu_2550_LinearRegression_stubMap_data_second_data_barrel_s_d1;
+    end else if ((1'b1 == ap_CS_fsm_state33)) begin
+        LinearRegression_stubMap_data_second_data_barrel_s_d1 = grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_barrel_s_d1;
     end else begin
         LinearRegression_stubMap_data_second_data_barrel_s_d1 = 'bx;
     end
 end
 
 always @ (*) begin
-    if ((((ap_predicate_op805_call_state29 == 1'b1) & (1'b1 == ap_CS_fsm_state29)) | ((ap_predicate_op431_call_state17 == 1'b1) & (1'b1 == ap_CS_fsm_state17)))) begin
-        LinearRegression_stubMap_data_second_data_barrel_s_we0 = grp_push_back_1_fu_2701_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_barrel_s_we0;
-    end else if ((1'b1 == ap_CS_fsm_state32)) begin
-        LinearRegression_stubMap_data_second_data_barrel_s_we0 = grp_erase_fu_2631_arrayHLS_Stub_data_barrel_s_we0;
+    if ((((tmp_12_reg_4438 == 1'd0) & (1'b1 == ap_CS_fsm_state28)) | ((tmp_5_reg_3338 == 1'd0) & (1'b1 == ap_CS_fsm_state16)))) begin
+        LinearRegression_stubMap_data_second_data_barrel_s_we0 = grp_push_back_1_fu_2680_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_barrel_s_we0;
+    end else if ((1'b1 == ap_CS_fsm_state31)) begin
+        LinearRegression_stubMap_data_second_data_barrel_s_we0 = grp_erase_fu_2610_arrayHLS_Stub_data_barrel_s_we0;
     end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        LinearRegression_stubMap_data_second_data_barrel_s_we0 = grp_findLargestResidual_fu_2571_LinearRegression_stubMap_data_second_data_barrel_s_we0;
-    end else if ((1'b1 == ap_CS_fsm_state34)) begin
-        LinearRegression_stubMap_data_second_data_barrel_s_we0 = grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_barrel_s_we0;
+        LinearRegression_stubMap_data_second_data_barrel_s_we0 = grp_findLargestResidual_fu_2550_LinearRegression_stubMap_data_second_data_barrel_s_we0;
+    end else if ((1'b1 == ap_CS_fsm_state33)) begin
+        LinearRegression_stubMap_data_second_data_barrel_s_we0 = grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_barrel_s_we0;
     end else begin
         LinearRegression_stubMap_data_second_data_barrel_s_we0 = 1'b0;
     end
 end
 
 always @ (*) begin
-    if ((((ap_predicate_op805_call_state29 == 1'b1) & (1'b1 == ap_CS_fsm_state29)) | ((ap_predicate_op431_call_state17 == 1'b1) & (1'b1 == ap_CS_fsm_state17)))) begin
-        LinearRegression_stubMap_data_second_data_barrel_s_we1 = grp_push_back_1_fu_2701_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_barrel_s_we1;
+    if ((((tmp_12_reg_4438 == 1'd0) & (1'b1 == ap_CS_fsm_state28)) | ((tmp_5_reg_3338 == 1'd0) & (1'b1 == ap_CS_fsm_state16)))) begin
+        LinearRegression_stubMap_data_second_data_barrel_s_we1 = grp_push_back_1_fu_2680_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_barrel_s_we1;
     end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        LinearRegression_stubMap_data_second_data_barrel_s_we1 = grp_findLargestResidual_fu_2571_LinearRegression_stubMap_data_second_data_barrel_s_we1;
-    end else if ((1'b1 == ap_CS_fsm_state34)) begin
-        LinearRegression_stubMap_data_second_data_barrel_s_we1 = grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_barrel_s_we1;
+        LinearRegression_stubMap_data_second_data_barrel_s_we1 = grp_findLargestResidual_fu_2550_LinearRegression_stubMap_data_second_data_barrel_s_we1;
+    end else if ((1'b1 == ap_CS_fsm_state33)) begin
+        LinearRegression_stubMap_data_second_data_barrel_s_we1 = grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_barrel_s_we1;
     end else begin
         LinearRegression_stubMap_data_second_data_barrel_s_we1 = 1'b0;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state18)) begin
-        LinearRegression_stubMap_data_second_data_layerId_s_address0 = tmp_85_cast_fu_3063_p1;
-    end else if ((((ap_predicate_op805_call_state29 == 1'b1) & (1'b1 == ap_CS_fsm_state29)) | ((ap_predicate_op431_call_state17 == 1'b1) & (1'b1 == ap_CS_fsm_state17)))) begin
-        LinearRegression_stubMap_data_second_data_layerId_s_address0 = grp_push_back_1_fu_2701_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_layerId_s_address0;
-    end else if ((1'b1 == ap_CS_fsm_state32)) begin
-        LinearRegression_stubMap_data_second_data_layerId_s_address0 = grp_erase_fu_2631_arrayHLS_Stub_data_layerId_s_address0;
+    if ((1'b1 == ap_CS_fsm_state17)) begin
+        LinearRegression_stubMap_data_second_data_layerId_s_address0 = tmp_28_cast_fu_3028_p1;
+    end else if ((((tmp_12_reg_4438 == 1'd0) & (1'b1 == ap_CS_fsm_state28)) | ((tmp_5_reg_3338 == 1'd0) & (1'b1 == ap_CS_fsm_state16)))) begin
+        LinearRegression_stubMap_data_second_data_layerId_s_address0 = grp_push_back_1_fu_2680_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_layerId_s_address0;
+    end else if ((1'b1 == ap_CS_fsm_state31)) begin
+        LinearRegression_stubMap_data_second_data_layerId_s_address0 = grp_erase_fu_2610_arrayHLS_Stub_data_layerId_s_address0;
     end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        LinearRegression_stubMap_data_second_data_layerId_s_address0 = grp_findLargestResidual_fu_2571_LinearRegression_stubMap_data_second_data_layerId_s_address0;
-    end else if ((1'b1 == ap_CS_fsm_state34)) begin
-        LinearRegression_stubMap_data_second_data_layerId_s_address0 = grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_layerId_s_address0;
+        LinearRegression_stubMap_data_second_data_layerId_s_address0 = grp_findLargestResidual_fu_2550_LinearRegression_stubMap_data_second_data_layerId_s_address0;
+    end else if ((1'b1 == ap_CS_fsm_state33)) begin
+        LinearRegression_stubMap_data_second_data_layerId_s_address0 = grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_layerId_s_address0;
     end else begin
         LinearRegression_stubMap_data_second_data_layerId_s_address0 = 'bx;
     end
 end
 
 always @ (*) begin
-    if ((((ap_predicate_op805_call_state29 == 1'b1) & (1'b1 == ap_CS_fsm_state29)) | ((ap_predicate_op431_call_state17 == 1'b1) & (1'b1 == ap_CS_fsm_state17)))) begin
-        LinearRegression_stubMap_data_second_data_layerId_s_address1 = grp_push_back_1_fu_2701_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_layerId_s_address1;
+    if ((((tmp_12_reg_4438 == 1'd0) & (1'b1 == ap_CS_fsm_state28)) | ((tmp_5_reg_3338 == 1'd0) & (1'b1 == ap_CS_fsm_state16)))) begin
+        LinearRegression_stubMap_data_second_data_layerId_s_address1 = grp_push_back_1_fu_2680_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_layerId_s_address1;
     end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        LinearRegression_stubMap_data_second_data_layerId_s_address1 = grp_findLargestResidual_fu_2571_LinearRegression_stubMap_data_second_data_layerId_s_address1;
-    end else if ((1'b1 == ap_CS_fsm_state34)) begin
-        LinearRegression_stubMap_data_second_data_layerId_s_address1 = grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_layerId_s_address1;
+        LinearRegression_stubMap_data_second_data_layerId_s_address1 = grp_findLargestResidual_fu_2550_LinearRegression_stubMap_data_second_data_layerId_s_address1;
+    end else if ((1'b1 == ap_CS_fsm_state33)) begin
+        LinearRegression_stubMap_data_second_data_layerId_s_address1 = grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_layerId_s_address1;
     end else begin
         LinearRegression_stubMap_data_second_data_layerId_s_address1 = 'bx;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state18)) begin
+    if ((1'b1 == ap_CS_fsm_state17)) begin
         LinearRegression_stubMap_data_second_data_layerId_s_ce0 = 1'b1;
-    end else if ((((ap_predicate_op805_call_state29 == 1'b1) & (1'b1 == ap_CS_fsm_state29)) | ((ap_predicate_op431_call_state17 == 1'b1) & (1'b1 == ap_CS_fsm_state17)))) begin
-        LinearRegression_stubMap_data_second_data_layerId_s_ce0 = grp_push_back_1_fu_2701_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_layerId_s_ce0;
-    end else if ((1'b1 == ap_CS_fsm_state32)) begin
-        LinearRegression_stubMap_data_second_data_layerId_s_ce0 = grp_erase_fu_2631_arrayHLS_Stub_data_layerId_s_ce0;
+    end else if ((((tmp_12_reg_4438 == 1'd0) & (1'b1 == ap_CS_fsm_state28)) | ((tmp_5_reg_3338 == 1'd0) & (1'b1 == ap_CS_fsm_state16)))) begin
+        LinearRegression_stubMap_data_second_data_layerId_s_ce0 = grp_push_back_1_fu_2680_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_layerId_s_ce0;
+    end else if ((1'b1 == ap_CS_fsm_state31)) begin
+        LinearRegression_stubMap_data_second_data_layerId_s_ce0 = grp_erase_fu_2610_arrayHLS_Stub_data_layerId_s_ce0;
     end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        LinearRegression_stubMap_data_second_data_layerId_s_ce0 = grp_findLargestResidual_fu_2571_LinearRegression_stubMap_data_second_data_layerId_s_ce0;
-    end else if ((1'b1 == ap_CS_fsm_state34)) begin
-        LinearRegression_stubMap_data_second_data_layerId_s_ce0 = grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_layerId_s_ce0;
+        LinearRegression_stubMap_data_second_data_layerId_s_ce0 = grp_findLargestResidual_fu_2550_LinearRegression_stubMap_data_second_data_layerId_s_ce0;
+    end else if ((1'b1 == ap_CS_fsm_state33)) begin
+        LinearRegression_stubMap_data_second_data_layerId_s_ce0 = grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_layerId_s_ce0;
     end else begin
         LinearRegression_stubMap_data_second_data_layerId_s_ce0 = 1'b0;
     end
 end
 
 always @ (*) begin
-    if ((((ap_predicate_op805_call_state29 == 1'b1) & (1'b1 == ap_CS_fsm_state29)) | ((ap_predicate_op431_call_state17 == 1'b1) & (1'b1 == ap_CS_fsm_state17)))) begin
-        LinearRegression_stubMap_data_second_data_layerId_s_ce1 = grp_push_back_1_fu_2701_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_layerId_s_ce1;
+    if ((((tmp_12_reg_4438 == 1'd0) & (1'b1 == ap_CS_fsm_state28)) | ((tmp_5_reg_3338 == 1'd0) & (1'b1 == ap_CS_fsm_state16)))) begin
+        LinearRegression_stubMap_data_second_data_layerId_s_ce1 = grp_push_back_1_fu_2680_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_layerId_s_ce1;
     end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        LinearRegression_stubMap_data_second_data_layerId_s_ce1 = grp_findLargestResidual_fu_2571_LinearRegression_stubMap_data_second_data_layerId_s_ce1;
-    end else if ((1'b1 == ap_CS_fsm_state34)) begin
-        LinearRegression_stubMap_data_second_data_layerId_s_ce1 = grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_layerId_s_ce1;
+        LinearRegression_stubMap_data_second_data_layerId_s_ce1 = grp_findLargestResidual_fu_2550_LinearRegression_stubMap_data_second_data_layerId_s_ce1;
+    end else if ((1'b1 == ap_CS_fsm_state33)) begin
+        LinearRegression_stubMap_data_second_data_layerId_s_ce1 = grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_layerId_s_ce1;
     end else begin
         LinearRegression_stubMap_data_second_data_layerId_s_ce1 = 1'b0;
     end
 end
 
 always @ (*) begin
-    if ((((ap_predicate_op805_call_state29 == 1'b1) & (1'b1 == ap_CS_fsm_state29)) | ((ap_predicate_op431_call_state17 == 1'b1) & (1'b1 == ap_CS_fsm_state17)))) begin
-        LinearRegression_stubMap_data_second_data_layerId_s_d0 = grp_push_back_1_fu_2701_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_layerId_s_d0;
-    end else if ((1'b1 == ap_CS_fsm_state32)) begin
-        LinearRegression_stubMap_data_second_data_layerId_s_d0 = grp_erase_fu_2631_arrayHLS_Stub_data_layerId_s_d0;
+    if ((((tmp_12_reg_4438 == 1'd0) & (1'b1 == ap_CS_fsm_state28)) | ((tmp_5_reg_3338 == 1'd0) & (1'b1 == ap_CS_fsm_state16)))) begin
+        LinearRegression_stubMap_data_second_data_layerId_s_d0 = grp_push_back_1_fu_2680_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_layerId_s_d0;
+    end else if ((1'b1 == ap_CS_fsm_state31)) begin
+        LinearRegression_stubMap_data_second_data_layerId_s_d0 = grp_erase_fu_2610_arrayHLS_Stub_data_layerId_s_d0;
     end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        LinearRegression_stubMap_data_second_data_layerId_s_d0 = grp_findLargestResidual_fu_2571_LinearRegression_stubMap_data_second_data_layerId_s_d0;
-    end else if ((1'b1 == ap_CS_fsm_state34)) begin
-        LinearRegression_stubMap_data_second_data_layerId_s_d0 = grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_layerId_s_d0;
+        LinearRegression_stubMap_data_second_data_layerId_s_d0 = grp_findLargestResidual_fu_2550_LinearRegression_stubMap_data_second_data_layerId_s_d0;
+    end else if ((1'b1 == ap_CS_fsm_state33)) begin
+        LinearRegression_stubMap_data_second_data_layerId_s_d0 = grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_layerId_s_d0;
     end else begin
         LinearRegression_stubMap_data_second_data_layerId_s_d0 = 'bx;
     end
 end
 
 always @ (*) begin
-    if ((((ap_predicate_op805_call_state29 == 1'b1) & (1'b1 == ap_CS_fsm_state29)) | ((ap_predicate_op431_call_state17 == 1'b1) & (1'b1 == ap_CS_fsm_state17)))) begin
-        LinearRegression_stubMap_data_second_data_layerId_s_d1 = grp_push_back_1_fu_2701_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_layerId_s_d1;
+    if ((((tmp_12_reg_4438 == 1'd0) & (1'b1 == ap_CS_fsm_state28)) | ((tmp_5_reg_3338 == 1'd0) & (1'b1 == ap_CS_fsm_state16)))) begin
+        LinearRegression_stubMap_data_second_data_layerId_s_d1 = grp_push_back_1_fu_2680_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_layerId_s_d1;
     end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        LinearRegression_stubMap_data_second_data_layerId_s_d1 = grp_findLargestResidual_fu_2571_LinearRegression_stubMap_data_second_data_layerId_s_d1;
-    end else if ((1'b1 == ap_CS_fsm_state34)) begin
-        LinearRegression_stubMap_data_second_data_layerId_s_d1 = grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_layerId_s_d1;
+        LinearRegression_stubMap_data_second_data_layerId_s_d1 = grp_findLargestResidual_fu_2550_LinearRegression_stubMap_data_second_data_layerId_s_d1;
+    end else if ((1'b1 == ap_CS_fsm_state33)) begin
+        LinearRegression_stubMap_data_second_data_layerId_s_d1 = grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_layerId_s_d1;
     end else begin
         LinearRegression_stubMap_data_second_data_layerId_s_d1 = 'bx;
     end
 end
 
 always @ (*) begin
-    if ((((ap_predicate_op805_call_state29 == 1'b1) & (1'b1 == ap_CS_fsm_state29)) | ((ap_predicate_op431_call_state17 == 1'b1) & (1'b1 == ap_CS_fsm_state17)))) begin
-        LinearRegression_stubMap_data_second_data_layerId_s_we0 = grp_push_back_1_fu_2701_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_layerId_s_we0;
-    end else if ((1'b1 == ap_CS_fsm_state32)) begin
-        LinearRegression_stubMap_data_second_data_layerId_s_we0 = grp_erase_fu_2631_arrayHLS_Stub_data_layerId_s_we0;
+    if ((((tmp_12_reg_4438 == 1'd0) & (1'b1 == ap_CS_fsm_state28)) | ((tmp_5_reg_3338 == 1'd0) & (1'b1 == ap_CS_fsm_state16)))) begin
+        LinearRegression_stubMap_data_second_data_layerId_s_we0 = grp_push_back_1_fu_2680_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_layerId_s_we0;
+    end else if ((1'b1 == ap_CS_fsm_state31)) begin
+        LinearRegression_stubMap_data_second_data_layerId_s_we0 = grp_erase_fu_2610_arrayHLS_Stub_data_layerId_s_we0;
     end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        LinearRegression_stubMap_data_second_data_layerId_s_we0 = grp_findLargestResidual_fu_2571_LinearRegression_stubMap_data_second_data_layerId_s_we0;
-    end else if ((1'b1 == ap_CS_fsm_state34)) begin
-        LinearRegression_stubMap_data_second_data_layerId_s_we0 = grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_layerId_s_we0;
+        LinearRegression_stubMap_data_second_data_layerId_s_we0 = grp_findLargestResidual_fu_2550_LinearRegression_stubMap_data_second_data_layerId_s_we0;
+    end else if ((1'b1 == ap_CS_fsm_state33)) begin
+        LinearRegression_stubMap_data_second_data_layerId_s_we0 = grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_layerId_s_we0;
     end else begin
         LinearRegression_stubMap_data_second_data_layerId_s_we0 = 1'b0;
     end
 end
 
 always @ (*) begin
-    if ((((ap_predicate_op805_call_state29 == 1'b1) & (1'b1 == ap_CS_fsm_state29)) | ((ap_predicate_op431_call_state17 == 1'b1) & (1'b1 == ap_CS_fsm_state17)))) begin
-        LinearRegression_stubMap_data_second_data_layerId_s_we1 = grp_push_back_1_fu_2701_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_layerId_s_we1;
+    if ((((tmp_12_reg_4438 == 1'd0) & (1'b1 == ap_CS_fsm_state28)) | ((tmp_5_reg_3338 == 1'd0) & (1'b1 == ap_CS_fsm_state16)))) begin
+        LinearRegression_stubMap_data_second_data_layerId_s_we1 = grp_push_back_1_fu_2680_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_layerId_s_we1;
     end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        LinearRegression_stubMap_data_second_data_layerId_s_we1 = grp_findLargestResidual_fu_2571_LinearRegression_stubMap_data_second_data_layerId_s_we1;
-    end else if ((1'b1 == ap_CS_fsm_state34)) begin
-        LinearRegression_stubMap_data_second_data_layerId_s_we1 = grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_layerId_s_we1;
+        LinearRegression_stubMap_data_second_data_layerId_s_we1 = grp_findLargestResidual_fu_2550_LinearRegression_stubMap_data_second_data_layerId_s_we1;
+    end else if ((1'b1 == ap_CS_fsm_state33)) begin
+        LinearRegression_stubMap_data_second_data_layerId_s_we1 = grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_layerId_s_we1;
     end else begin
         LinearRegression_stubMap_data_second_data_layerId_s_we1 = 1'b0;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state18)) begin
-        LinearRegression_stubMap_data_second_data_phi_s_address0 = tmp_85_cast_fu_3063_p1;
-    end else if ((((ap_predicate_op805_call_state29 == 1'b1) & (1'b1 == ap_CS_fsm_state29)) | ((ap_predicate_op431_call_state17 == 1'b1) & (1'b1 == ap_CS_fsm_state17)))) begin
-        LinearRegression_stubMap_data_second_data_phi_s_address0 = grp_push_back_1_fu_2701_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_phi_s_address0;
-    end else if ((1'b1 == ap_CS_fsm_state32)) begin
-        LinearRegression_stubMap_data_second_data_phi_s_address0 = grp_erase_fu_2631_arrayHLS_Stub_data_phi_s_address0;
+    if ((1'b1 == ap_CS_fsm_state17)) begin
+        LinearRegression_stubMap_data_second_data_phi_s_address0 = tmp_28_cast_fu_3028_p1;
+    end else if ((((tmp_12_reg_4438 == 1'd0) & (1'b1 == ap_CS_fsm_state28)) | ((tmp_5_reg_3338 == 1'd0) & (1'b1 == ap_CS_fsm_state16)))) begin
+        LinearRegression_stubMap_data_second_data_phi_s_address0 = grp_push_back_1_fu_2680_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_phi_s_address0;
+    end else if ((1'b1 == ap_CS_fsm_state31)) begin
+        LinearRegression_stubMap_data_second_data_phi_s_address0 = grp_erase_fu_2610_arrayHLS_Stub_data_phi_s_address0;
     end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        LinearRegression_stubMap_data_second_data_phi_s_address0 = grp_findLargestResidual_fu_2571_LinearRegression_stubMap_data_second_data_phi_s_address0;
-    end else if ((1'b1 == ap_CS_fsm_state34)) begin
-        LinearRegression_stubMap_data_second_data_phi_s_address0 = grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_phi_s_address0;
+        LinearRegression_stubMap_data_second_data_phi_s_address0 = grp_findLargestResidual_fu_2550_LinearRegression_stubMap_data_second_data_phi_s_address0;
+    end else if ((1'b1 == ap_CS_fsm_state33)) begin
+        LinearRegression_stubMap_data_second_data_phi_s_address0 = grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_phi_s_address0;
     end else begin
         LinearRegression_stubMap_data_second_data_phi_s_address0 = 'bx;
     end
 end
 
 always @ (*) begin
-    if ((((ap_predicate_op805_call_state29 == 1'b1) & (1'b1 == ap_CS_fsm_state29)) | ((ap_predicate_op431_call_state17 == 1'b1) & (1'b1 == ap_CS_fsm_state17)))) begin
-        LinearRegression_stubMap_data_second_data_phi_s_address1 = grp_push_back_1_fu_2701_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_phi_s_address1;
+    if ((((tmp_12_reg_4438 == 1'd0) & (1'b1 == ap_CS_fsm_state28)) | ((tmp_5_reg_3338 == 1'd0) & (1'b1 == ap_CS_fsm_state16)))) begin
+        LinearRegression_stubMap_data_second_data_phi_s_address1 = grp_push_back_1_fu_2680_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_phi_s_address1;
     end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        LinearRegression_stubMap_data_second_data_phi_s_address1 = grp_findLargestResidual_fu_2571_LinearRegression_stubMap_data_second_data_phi_s_address1;
-    end else if ((1'b1 == ap_CS_fsm_state34)) begin
-        LinearRegression_stubMap_data_second_data_phi_s_address1 = grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_phi_s_address1;
+        LinearRegression_stubMap_data_second_data_phi_s_address1 = grp_findLargestResidual_fu_2550_LinearRegression_stubMap_data_second_data_phi_s_address1;
+    end else if ((1'b1 == ap_CS_fsm_state33)) begin
+        LinearRegression_stubMap_data_second_data_phi_s_address1 = grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_phi_s_address1;
     end else begin
         LinearRegression_stubMap_data_second_data_phi_s_address1 = 'bx;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state18)) begin
+    if ((1'b1 == ap_CS_fsm_state17)) begin
         LinearRegression_stubMap_data_second_data_phi_s_ce0 = 1'b1;
-    end else if ((((ap_predicate_op805_call_state29 == 1'b1) & (1'b1 == ap_CS_fsm_state29)) | ((ap_predicate_op431_call_state17 == 1'b1) & (1'b1 == ap_CS_fsm_state17)))) begin
-        LinearRegression_stubMap_data_second_data_phi_s_ce0 = grp_push_back_1_fu_2701_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_phi_s_ce0;
-    end else if ((1'b1 == ap_CS_fsm_state32)) begin
-        LinearRegression_stubMap_data_second_data_phi_s_ce0 = grp_erase_fu_2631_arrayHLS_Stub_data_phi_s_ce0;
+    end else if ((((tmp_12_reg_4438 == 1'd0) & (1'b1 == ap_CS_fsm_state28)) | ((tmp_5_reg_3338 == 1'd0) & (1'b1 == ap_CS_fsm_state16)))) begin
+        LinearRegression_stubMap_data_second_data_phi_s_ce0 = grp_push_back_1_fu_2680_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_phi_s_ce0;
+    end else if ((1'b1 == ap_CS_fsm_state31)) begin
+        LinearRegression_stubMap_data_second_data_phi_s_ce0 = grp_erase_fu_2610_arrayHLS_Stub_data_phi_s_ce0;
     end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        LinearRegression_stubMap_data_second_data_phi_s_ce0 = grp_findLargestResidual_fu_2571_LinearRegression_stubMap_data_second_data_phi_s_ce0;
-    end else if ((1'b1 == ap_CS_fsm_state34)) begin
-        LinearRegression_stubMap_data_second_data_phi_s_ce0 = grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_phi_s_ce0;
+        LinearRegression_stubMap_data_second_data_phi_s_ce0 = grp_findLargestResidual_fu_2550_LinearRegression_stubMap_data_second_data_phi_s_ce0;
+    end else if ((1'b1 == ap_CS_fsm_state33)) begin
+        LinearRegression_stubMap_data_second_data_phi_s_ce0 = grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_phi_s_ce0;
     end else begin
         LinearRegression_stubMap_data_second_data_phi_s_ce0 = 1'b0;
     end
 end
 
 always @ (*) begin
-    if ((((ap_predicate_op805_call_state29 == 1'b1) & (1'b1 == ap_CS_fsm_state29)) | ((ap_predicate_op431_call_state17 == 1'b1) & (1'b1 == ap_CS_fsm_state17)))) begin
-        LinearRegression_stubMap_data_second_data_phi_s_ce1 = grp_push_back_1_fu_2701_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_phi_s_ce1;
+    if ((((tmp_12_reg_4438 == 1'd0) & (1'b1 == ap_CS_fsm_state28)) | ((tmp_5_reg_3338 == 1'd0) & (1'b1 == ap_CS_fsm_state16)))) begin
+        LinearRegression_stubMap_data_second_data_phi_s_ce1 = grp_push_back_1_fu_2680_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_phi_s_ce1;
     end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        LinearRegression_stubMap_data_second_data_phi_s_ce1 = grp_findLargestResidual_fu_2571_LinearRegression_stubMap_data_second_data_phi_s_ce1;
-    end else if ((1'b1 == ap_CS_fsm_state34)) begin
-        LinearRegression_stubMap_data_second_data_phi_s_ce1 = grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_phi_s_ce1;
+        LinearRegression_stubMap_data_second_data_phi_s_ce1 = grp_findLargestResidual_fu_2550_LinearRegression_stubMap_data_second_data_phi_s_ce1;
+    end else if ((1'b1 == ap_CS_fsm_state33)) begin
+        LinearRegression_stubMap_data_second_data_phi_s_ce1 = grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_phi_s_ce1;
     end else begin
         LinearRegression_stubMap_data_second_data_phi_s_ce1 = 1'b0;
     end
 end
 
 always @ (*) begin
-    if ((((ap_predicate_op805_call_state29 == 1'b1) & (1'b1 == ap_CS_fsm_state29)) | ((ap_predicate_op431_call_state17 == 1'b1) & (1'b1 == ap_CS_fsm_state17)))) begin
-        LinearRegression_stubMap_data_second_data_phi_s_d0 = grp_push_back_1_fu_2701_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_phi_s_d0;
-    end else if ((1'b1 == ap_CS_fsm_state32)) begin
-        LinearRegression_stubMap_data_second_data_phi_s_d0 = grp_erase_fu_2631_arrayHLS_Stub_data_phi_s_d0;
+    if ((((tmp_12_reg_4438 == 1'd0) & (1'b1 == ap_CS_fsm_state28)) | ((tmp_5_reg_3338 == 1'd0) & (1'b1 == ap_CS_fsm_state16)))) begin
+        LinearRegression_stubMap_data_second_data_phi_s_d0 = grp_push_back_1_fu_2680_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_phi_s_d0;
+    end else if ((1'b1 == ap_CS_fsm_state31)) begin
+        LinearRegression_stubMap_data_second_data_phi_s_d0 = grp_erase_fu_2610_arrayHLS_Stub_data_phi_s_d0;
     end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        LinearRegression_stubMap_data_second_data_phi_s_d0 = grp_findLargestResidual_fu_2571_LinearRegression_stubMap_data_second_data_phi_s_d0;
-    end else if ((1'b1 == ap_CS_fsm_state34)) begin
-        LinearRegression_stubMap_data_second_data_phi_s_d0 = grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_phi_s_d0;
+        LinearRegression_stubMap_data_second_data_phi_s_d0 = grp_findLargestResidual_fu_2550_LinearRegression_stubMap_data_second_data_phi_s_d0;
+    end else if ((1'b1 == ap_CS_fsm_state33)) begin
+        LinearRegression_stubMap_data_second_data_phi_s_d0 = grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_phi_s_d0;
     end else begin
         LinearRegression_stubMap_data_second_data_phi_s_d0 = 'bx;
     end
 end
 
 always @ (*) begin
-    if ((((ap_predicate_op805_call_state29 == 1'b1) & (1'b1 == ap_CS_fsm_state29)) | ((ap_predicate_op431_call_state17 == 1'b1) & (1'b1 == ap_CS_fsm_state17)))) begin
-        LinearRegression_stubMap_data_second_data_phi_s_d1 = grp_push_back_1_fu_2701_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_phi_s_d1;
+    if ((((tmp_12_reg_4438 == 1'd0) & (1'b1 == ap_CS_fsm_state28)) | ((tmp_5_reg_3338 == 1'd0) & (1'b1 == ap_CS_fsm_state16)))) begin
+        LinearRegression_stubMap_data_second_data_phi_s_d1 = grp_push_back_1_fu_2680_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_phi_s_d1;
     end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        LinearRegression_stubMap_data_second_data_phi_s_d1 = grp_findLargestResidual_fu_2571_LinearRegression_stubMap_data_second_data_phi_s_d1;
-    end else if ((1'b1 == ap_CS_fsm_state34)) begin
-        LinearRegression_stubMap_data_second_data_phi_s_d1 = grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_phi_s_d1;
+        LinearRegression_stubMap_data_second_data_phi_s_d1 = grp_findLargestResidual_fu_2550_LinearRegression_stubMap_data_second_data_phi_s_d1;
+    end else if ((1'b1 == ap_CS_fsm_state33)) begin
+        LinearRegression_stubMap_data_second_data_phi_s_d1 = grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_phi_s_d1;
     end else begin
         LinearRegression_stubMap_data_second_data_phi_s_d1 = 'bx;
     end
 end
 
 always @ (*) begin
-    if ((((ap_predicate_op805_call_state29 == 1'b1) & (1'b1 == ap_CS_fsm_state29)) | ((ap_predicate_op431_call_state17 == 1'b1) & (1'b1 == ap_CS_fsm_state17)))) begin
-        LinearRegression_stubMap_data_second_data_phi_s_we0 = grp_push_back_1_fu_2701_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_phi_s_we0;
-    end else if ((1'b1 == ap_CS_fsm_state32)) begin
-        LinearRegression_stubMap_data_second_data_phi_s_we0 = grp_erase_fu_2631_arrayHLS_Stub_data_phi_s_we0;
+    if ((((tmp_12_reg_4438 == 1'd0) & (1'b1 == ap_CS_fsm_state28)) | ((tmp_5_reg_3338 == 1'd0) & (1'b1 == ap_CS_fsm_state16)))) begin
+        LinearRegression_stubMap_data_second_data_phi_s_we0 = grp_push_back_1_fu_2680_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_phi_s_we0;
+    end else if ((1'b1 == ap_CS_fsm_state31)) begin
+        LinearRegression_stubMap_data_second_data_phi_s_we0 = grp_erase_fu_2610_arrayHLS_Stub_data_phi_s_we0;
     end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        LinearRegression_stubMap_data_second_data_phi_s_we0 = grp_findLargestResidual_fu_2571_LinearRegression_stubMap_data_second_data_phi_s_we0;
-    end else if ((1'b1 == ap_CS_fsm_state34)) begin
-        LinearRegression_stubMap_data_second_data_phi_s_we0 = grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_phi_s_we0;
+        LinearRegression_stubMap_data_second_data_phi_s_we0 = grp_findLargestResidual_fu_2550_LinearRegression_stubMap_data_second_data_phi_s_we0;
+    end else if ((1'b1 == ap_CS_fsm_state33)) begin
+        LinearRegression_stubMap_data_second_data_phi_s_we0 = grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_phi_s_we0;
     end else begin
         LinearRegression_stubMap_data_second_data_phi_s_we0 = 1'b0;
     end
 end
 
 always @ (*) begin
-    if ((((ap_predicate_op805_call_state29 == 1'b1) & (1'b1 == ap_CS_fsm_state29)) | ((ap_predicate_op431_call_state17 == 1'b1) & (1'b1 == ap_CS_fsm_state17)))) begin
-        LinearRegression_stubMap_data_second_data_phi_s_we1 = grp_push_back_1_fu_2701_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_phi_s_we1;
+    if ((((tmp_12_reg_4438 == 1'd0) & (1'b1 == ap_CS_fsm_state28)) | ((tmp_5_reg_3338 == 1'd0) & (1'b1 == ap_CS_fsm_state16)))) begin
+        LinearRegression_stubMap_data_second_data_phi_s_we1 = grp_push_back_1_fu_2680_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_phi_s_we1;
     end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        LinearRegression_stubMap_data_second_data_phi_s_we1 = grp_findLargestResidual_fu_2571_LinearRegression_stubMap_data_second_data_phi_s_we1;
-    end else if ((1'b1 == ap_CS_fsm_state34)) begin
-        LinearRegression_stubMap_data_second_data_phi_s_we1 = grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_phi_s_we1;
+        LinearRegression_stubMap_data_second_data_phi_s_we1 = grp_findLargestResidual_fu_2550_LinearRegression_stubMap_data_second_data_phi_s_we1;
+    end else if ((1'b1 == ap_CS_fsm_state33)) begin
+        LinearRegression_stubMap_data_second_data_phi_s_we1 = grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_phi_s_we1;
     end else begin
         LinearRegression_stubMap_data_second_data_phi_s_we1 = 1'b0;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state18)) begin
-        LinearRegression_stubMap_data_second_data_psModule_s_address0 = tmp_85_cast_fu_3063_p1;
-    end else if ((((ap_predicate_op805_call_state29 == 1'b1) & (1'b1 == ap_CS_fsm_state29)) | ((ap_predicate_op431_call_state17 == 1'b1) & (1'b1 == ap_CS_fsm_state17)))) begin
-        LinearRegression_stubMap_data_second_data_psModule_s_address0 = grp_push_back_1_fu_2701_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_psModule_s_address0;
-    end else if ((1'b1 == ap_CS_fsm_state32)) begin
-        LinearRegression_stubMap_data_second_data_psModule_s_address0 = grp_erase_fu_2631_arrayHLS_Stub_data_psModule_s_address0;
+    if ((1'b1 == ap_CS_fsm_state17)) begin
+        LinearRegression_stubMap_data_second_data_psModule_s_address0 = tmp_28_cast_fu_3028_p1;
+    end else if ((((tmp_12_reg_4438 == 1'd0) & (1'b1 == ap_CS_fsm_state28)) | ((tmp_5_reg_3338 == 1'd0) & (1'b1 == ap_CS_fsm_state16)))) begin
+        LinearRegression_stubMap_data_second_data_psModule_s_address0 = grp_push_back_1_fu_2680_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_psModule_s_address0;
+    end else if ((1'b1 == ap_CS_fsm_state31)) begin
+        LinearRegression_stubMap_data_second_data_psModule_s_address0 = grp_erase_fu_2610_arrayHLS_Stub_data_psModule_s_address0;
     end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        LinearRegression_stubMap_data_second_data_psModule_s_address0 = grp_findLargestResidual_fu_2571_LinearRegression_stubMap_data_second_data_psModule_s_address0;
-    end else if ((1'b1 == ap_CS_fsm_state34)) begin
-        LinearRegression_stubMap_data_second_data_psModule_s_address0 = grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_psModule_s_address0;
+        LinearRegression_stubMap_data_second_data_psModule_s_address0 = grp_findLargestResidual_fu_2550_LinearRegression_stubMap_data_second_data_psModule_s_address0;
+    end else if ((1'b1 == ap_CS_fsm_state33)) begin
+        LinearRegression_stubMap_data_second_data_psModule_s_address0 = grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_psModule_s_address0;
     end else begin
         LinearRegression_stubMap_data_second_data_psModule_s_address0 = 'bx;
     end
 end
 
 always @ (*) begin
-    if ((((ap_predicate_op805_call_state29 == 1'b1) & (1'b1 == ap_CS_fsm_state29)) | ((ap_predicate_op431_call_state17 == 1'b1) & (1'b1 == ap_CS_fsm_state17)))) begin
-        LinearRegression_stubMap_data_second_data_psModule_s_address1 = grp_push_back_1_fu_2701_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_psModule_s_address1;
+    if ((((tmp_12_reg_4438 == 1'd0) & (1'b1 == ap_CS_fsm_state28)) | ((tmp_5_reg_3338 == 1'd0) & (1'b1 == ap_CS_fsm_state16)))) begin
+        LinearRegression_stubMap_data_second_data_psModule_s_address1 = grp_push_back_1_fu_2680_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_psModule_s_address1;
     end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        LinearRegression_stubMap_data_second_data_psModule_s_address1 = grp_findLargestResidual_fu_2571_LinearRegression_stubMap_data_second_data_psModule_s_address1;
-    end else if ((1'b1 == ap_CS_fsm_state34)) begin
-        LinearRegression_stubMap_data_second_data_psModule_s_address1 = grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_psModule_s_address1;
+        LinearRegression_stubMap_data_second_data_psModule_s_address1 = grp_findLargestResidual_fu_2550_LinearRegression_stubMap_data_second_data_psModule_s_address1;
+    end else if ((1'b1 == ap_CS_fsm_state33)) begin
+        LinearRegression_stubMap_data_second_data_psModule_s_address1 = grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_psModule_s_address1;
     end else begin
         LinearRegression_stubMap_data_second_data_psModule_s_address1 = 'bx;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state18)) begin
+    if ((1'b1 == ap_CS_fsm_state17)) begin
         LinearRegression_stubMap_data_second_data_psModule_s_ce0 = 1'b1;
-    end else if ((((ap_predicate_op805_call_state29 == 1'b1) & (1'b1 == ap_CS_fsm_state29)) | ((ap_predicate_op431_call_state17 == 1'b1) & (1'b1 == ap_CS_fsm_state17)))) begin
-        LinearRegression_stubMap_data_second_data_psModule_s_ce0 = grp_push_back_1_fu_2701_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_psModule_s_ce0;
-    end else if ((1'b1 == ap_CS_fsm_state32)) begin
-        LinearRegression_stubMap_data_second_data_psModule_s_ce0 = grp_erase_fu_2631_arrayHLS_Stub_data_psModule_s_ce0;
+    end else if ((((tmp_12_reg_4438 == 1'd0) & (1'b1 == ap_CS_fsm_state28)) | ((tmp_5_reg_3338 == 1'd0) & (1'b1 == ap_CS_fsm_state16)))) begin
+        LinearRegression_stubMap_data_second_data_psModule_s_ce0 = grp_push_back_1_fu_2680_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_psModule_s_ce0;
+    end else if ((1'b1 == ap_CS_fsm_state31)) begin
+        LinearRegression_stubMap_data_second_data_psModule_s_ce0 = grp_erase_fu_2610_arrayHLS_Stub_data_psModule_s_ce0;
     end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        LinearRegression_stubMap_data_second_data_psModule_s_ce0 = grp_findLargestResidual_fu_2571_LinearRegression_stubMap_data_second_data_psModule_s_ce0;
-    end else if ((1'b1 == ap_CS_fsm_state34)) begin
-        LinearRegression_stubMap_data_second_data_psModule_s_ce0 = grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_psModule_s_ce0;
+        LinearRegression_stubMap_data_second_data_psModule_s_ce0 = grp_findLargestResidual_fu_2550_LinearRegression_stubMap_data_second_data_psModule_s_ce0;
+    end else if ((1'b1 == ap_CS_fsm_state33)) begin
+        LinearRegression_stubMap_data_second_data_psModule_s_ce0 = grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_psModule_s_ce0;
     end else begin
         LinearRegression_stubMap_data_second_data_psModule_s_ce0 = 1'b0;
     end
 end
 
 always @ (*) begin
-    if ((((ap_predicate_op805_call_state29 == 1'b1) & (1'b1 == ap_CS_fsm_state29)) | ((ap_predicate_op431_call_state17 == 1'b1) & (1'b1 == ap_CS_fsm_state17)))) begin
-        LinearRegression_stubMap_data_second_data_psModule_s_ce1 = grp_push_back_1_fu_2701_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_psModule_s_ce1;
+    if ((((tmp_12_reg_4438 == 1'd0) & (1'b1 == ap_CS_fsm_state28)) | ((tmp_5_reg_3338 == 1'd0) & (1'b1 == ap_CS_fsm_state16)))) begin
+        LinearRegression_stubMap_data_second_data_psModule_s_ce1 = grp_push_back_1_fu_2680_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_psModule_s_ce1;
     end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        LinearRegression_stubMap_data_second_data_psModule_s_ce1 = grp_findLargestResidual_fu_2571_LinearRegression_stubMap_data_second_data_psModule_s_ce1;
-    end else if ((1'b1 == ap_CS_fsm_state34)) begin
-        LinearRegression_stubMap_data_second_data_psModule_s_ce1 = grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_psModule_s_ce1;
+        LinearRegression_stubMap_data_second_data_psModule_s_ce1 = grp_findLargestResidual_fu_2550_LinearRegression_stubMap_data_second_data_psModule_s_ce1;
+    end else if ((1'b1 == ap_CS_fsm_state33)) begin
+        LinearRegression_stubMap_data_second_data_psModule_s_ce1 = grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_psModule_s_ce1;
     end else begin
         LinearRegression_stubMap_data_second_data_psModule_s_ce1 = 1'b0;
     end
 end
 
 always @ (*) begin
-    if ((((ap_predicate_op805_call_state29 == 1'b1) & (1'b1 == ap_CS_fsm_state29)) | ((ap_predicate_op431_call_state17 == 1'b1) & (1'b1 == ap_CS_fsm_state17)))) begin
-        LinearRegression_stubMap_data_second_data_psModule_s_d0 = grp_push_back_1_fu_2701_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_psModule_s_d0;
-    end else if ((1'b1 == ap_CS_fsm_state32)) begin
-        LinearRegression_stubMap_data_second_data_psModule_s_d0 = grp_erase_fu_2631_arrayHLS_Stub_data_psModule_s_d0;
+    if ((((tmp_12_reg_4438 == 1'd0) & (1'b1 == ap_CS_fsm_state28)) | ((tmp_5_reg_3338 == 1'd0) & (1'b1 == ap_CS_fsm_state16)))) begin
+        LinearRegression_stubMap_data_second_data_psModule_s_d0 = grp_push_back_1_fu_2680_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_psModule_s_d0;
+    end else if ((1'b1 == ap_CS_fsm_state31)) begin
+        LinearRegression_stubMap_data_second_data_psModule_s_d0 = grp_erase_fu_2610_arrayHLS_Stub_data_psModule_s_d0;
     end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        LinearRegression_stubMap_data_second_data_psModule_s_d0 = grp_findLargestResidual_fu_2571_LinearRegression_stubMap_data_second_data_psModule_s_d0;
-    end else if ((1'b1 == ap_CS_fsm_state34)) begin
-        LinearRegression_stubMap_data_second_data_psModule_s_d0 = grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_psModule_s_d0;
+        LinearRegression_stubMap_data_second_data_psModule_s_d0 = grp_findLargestResidual_fu_2550_LinearRegression_stubMap_data_second_data_psModule_s_d0;
+    end else if ((1'b1 == ap_CS_fsm_state33)) begin
+        LinearRegression_stubMap_data_second_data_psModule_s_d0 = grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_psModule_s_d0;
     end else begin
         LinearRegression_stubMap_data_second_data_psModule_s_d0 = 'bx;
     end
 end
 
 always @ (*) begin
-    if ((((ap_predicate_op805_call_state29 == 1'b1) & (1'b1 == ap_CS_fsm_state29)) | ((ap_predicate_op431_call_state17 == 1'b1) & (1'b1 == ap_CS_fsm_state17)))) begin
-        LinearRegression_stubMap_data_second_data_psModule_s_d1 = grp_push_back_1_fu_2701_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_psModule_s_d1;
+    if ((((tmp_12_reg_4438 == 1'd0) & (1'b1 == ap_CS_fsm_state28)) | ((tmp_5_reg_3338 == 1'd0) & (1'b1 == ap_CS_fsm_state16)))) begin
+        LinearRegression_stubMap_data_second_data_psModule_s_d1 = grp_push_back_1_fu_2680_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_psModule_s_d1;
     end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        LinearRegression_stubMap_data_second_data_psModule_s_d1 = grp_findLargestResidual_fu_2571_LinearRegression_stubMap_data_second_data_psModule_s_d1;
-    end else if ((1'b1 == ap_CS_fsm_state34)) begin
-        LinearRegression_stubMap_data_second_data_psModule_s_d1 = grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_psModule_s_d1;
+        LinearRegression_stubMap_data_second_data_psModule_s_d1 = grp_findLargestResidual_fu_2550_LinearRegression_stubMap_data_second_data_psModule_s_d1;
+    end else if ((1'b1 == ap_CS_fsm_state33)) begin
+        LinearRegression_stubMap_data_second_data_psModule_s_d1 = grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_psModule_s_d1;
     end else begin
         LinearRegression_stubMap_data_second_data_psModule_s_d1 = 'bx;
     end
 end
 
 always @ (*) begin
-    if ((((ap_predicate_op805_call_state29 == 1'b1) & (1'b1 == ap_CS_fsm_state29)) | ((ap_predicate_op431_call_state17 == 1'b1) & (1'b1 == ap_CS_fsm_state17)))) begin
-        LinearRegression_stubMap_data_second_data_psModule_s_we0 = grp_push_back_1_fu_2701_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_psModule_s_we0;
-    end else if ((1'b1 == ap_CS_fsm_state32)) begin
-        LinearRegression_stubMap_data_second_data_psModule_s_we0 = grp_erase_fu_2631_arrayHLS_Stub_data_psModule_s_we0;
+    if ((((tmp_12_reg_4438 == 1'd0) & (1'b1 == ap_CS_fsm_state28)) | ((tmp_5_reg_3338 == 1'd0) & (1'b1 == ap_CS_fsm_state16)))) begin
+        LinearRegression_stubMap_data_second_data_psModule_s_we0 = grp_push_back_1_fu_2680_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_psModule_s_we0;
+    end else if ((1'b1 == ap_CS_fsm_state31)) begin
+        LinearRegression_stubMap_data_second_data_psModule_s_we0 = grp_erase_fu_2610_arrayHLS_Stub_data_psModule_s_we0;
     end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        LinearRegression_stubMap_data_second_data_psModule_s_we0 = grp_findLargestResidual_fu_2571_LinearRegression_stubMap_data_second_data_psModule_s_we0;
-    end else if ((1'b1 == ap_CS_fsm_state34)) begin
-        LinearRegression_stubMap_data_second_data_psModule_s_we0 = grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_psModule_s_we0;
+        LinearRegression_stubMap_data_second_data_psModule_s_we0 = grp_findLargestResidual_fu_2550_LinearRegression_stubMap_data_second_data_psModule_s_we0;
+    end else if ((1'b1 == ap_CS_fsm_state33)) begin
+        LinearRegression_stubMap_data_second_data_psModule_s_we0 = grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_psModule_s_we0;
     end else begin
         LinearRegression_stubMap_data_second_data_psModule_s_we0 = 1'b0;
     end
 end
 
 always @ (*) begin
-    if ((((ap_predicate_op805_call_state29 == 1'b1) & (1'b1 == ap_CS_fsm_state29)) | ((ap_predicate_op431_call_state17 == 1'b1) & (1'b1 == ap_CS_fsm_state17)))) begin
-        LinearRegression_stubMap_data_second_data_psModule_s_we1 = grp_push_back_1_fu_2701_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_psModule_s_we1;
+    if ((((tmp_12_reg_4438 == 1'd0) & (1'b1 == ap_CS_fsm_state28)) | ((tmp_5_reg_3338 == 1'd0) & (1'b1 == ap_CS_fsm_state16)))) begin
+        LinearRegression_stubMap_data_second_data_psModule_s_we1 = grp_push_back_1_fu_2680_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_psModule_s_we1;
     end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        LinearRegression_stubMap_data_second_data_psModule_s_we1 = grp_findLargestResidual_fu_2571_LinearRegression_stubMap_data_second_data_psModule_s_we1;
-    end else if ((1'b1 == ap_CS_fsm_state34)) begin
-        LinearRegression_stubMap_data_second_data_psModule_s_we1 = grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_psModule_s_we1;
+        LinearRegression_stubMap_data_second_data_psModule_s_we1 = grp_findLargestResidual_fu_2550_LinearRegression_stubMap_data_second_data_psModule_s_we1;
+    end else if ((1'b1 == ap_CS_fsm_state33)) begin
+        LinearRegression_stubMap_data_second_data_psModule_s_we1 = grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_psModule_s_we1;
     end else begin
         LinearRegression_stubMap_data_second_data_psModule_s_we1 = 1'b0;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state18)) begin
-        LinearRegression_stubMap_data_second_data_r_s_address0 = tmp_85_cast_fu_3063_p1;
-    end else if ((((ap_predicate_op805_call_state29 == 1'b1) & (1'b1 == ap_CS_fsm_state29)) | ((ap_predicate_op431_call_state17 == 1'b1) & (1'b1 == ap_CS_fsm_state17)))) begin
-        LinearRegression_stubMap_data_second_data_r_s_address0 = grp_push_back_1_fu_2701_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_r_s_address0;
-    end else if ((1'b1 == ap_CS_fsm_state32)) begin
-        LinearRegression_stubMap_data_second_data_r_s_address0 = grp_erase_fu_2631_arrayHLS_Stub_data_r_s_address0;
+    if ((1'b1 == ap_CS_fsm_state17)) begin
+        LinearRegression_stubMap_data_second_data_r_s_address0 = tmp_28_cast_fu_3028_p1;
+    end else if ((((tmp_12_reg_4438 == 1'd0) & (1'b1 == ap_CS_fsm_state28)) | ((tmp_5_reg_3338 == 1'd0) & (1'b1 == ap_CS_fsm_state16)))) begin
+        LinearRegression_stubMap_data_second_data_r_s_address0 = grp_push_back_1_fu_2680_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_r_s_address0;
+    end else if ((1'b1 == ap_CS_fsm_state31)) begin
+        LinearRegression_stubMap_data_second_data_r_s_address0 = grp_erase_fu_2610_arrayHLS_Stub_data_r_s_address0;
     end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        LinearRegression_stubMap_data_second_data_r_s_address0 = grp_findLargestResidual_fu_2571_LinearRegression_stubMap_data_second_data_r_s_address0;
-    end else if ((1'b1 == ap_CS_fsm_state34)) begin
-        LinearRegression_stubMap_data_second_data_r_s_address0 = grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_r_s_address0;
+        LinearRegression_stubMap_data_second_data_r_s_address0 = grp_findLargestResidual_fu_2550_LinearRegression_stubMap_data_second_data_r_s_address0;
+    end else if ((1'b1 == ap_CS_fsm_state33)) begin
+        LinearRegression_stubMap_data_second_data_r_s_address0 = grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_r_s_address0;
     end else begin
         LinearRegression_stubMap_data_second_data_r_s_address0 = 'bx;
     end
 end
 
 always @ (*) begin
-    if ((((ap_predicate_op805_call_state29 == 1'b1) & (1'b1 == ap_CS_fsm_state29)) | ((ap_predicate_op431_call_state17 == 1'b1) & (1'b1 == ap_CS_fsm_state17)))) begin
-        LinearRegression_stubMap_data_second_data_r_s_address1 = grp_push_back_1_fu_2701_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_r_s_address1;
+    if ((((tmp_12_reg_4438 == 1'd0) & (1'b1 == ap_CS_fsm_state28)) | ((tmp_5_reg_3338 == 1'd0) & (1'b1 == ap_CS_fsm_state16)))) begin
+        LinearRegression_stubMap_data_second_data_r_s_address1 = grp_push_back_1_fu_2680_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_r_s_address1;
     end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        LinearRegression_stubMap_data_second_data_r_s_address1 = grp_findLargestResidual_fu_2571_LinearRegression_stubMap_data_second_data_r_s_address1;
-    end else if ((1'b1 == ap_CS_fsm_state34)) begin
-        LinearRegression_stubMap_data_second_data_r_s_address1 = grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_r_s_address1;
+        LinearRegression_stubMap_data_second_data_r_s_address1 = grp_findLargestResidual_fu_2550_LinearRegression_stubMap_data_second_data_r_s_address1;
+    end else if ((1'b1 == ap_CS_fsm_state33)) begin
+        LinearRegression_stubMap_data_second_data_r_s_address1 = grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_r_s_address1;
     end else begin
         LinearRegression_stubMap_data_second_data_r_s_address1 = 'bx;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state18)) begin
+    if ((1'b1 == ap_CS_fsm_state17)) begin
         LinearRegression_stubMap_data_second_data_r_s_ce0 = 1'b1;
-    end else if ((((ap_predicate_op805_call_state29 == 1'b1) & (1'b1 == ap_CS_fsm_state29)) | ((ap_predicate_op431_call_state17 == 1'b1) & (1'b1 == ap_CS_fsm_state17)))) begin
-        LinearRegression_stubMap_data_second_data_r_s_ce0 = grp_push_back_1_fu_2701_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_r_s_ce0;
-    end else if ((1'b1 == ap_CS_fsm_state32)) begin
-        LinearRegression_stubMap_data_second_data_r_s_ce0 = grp_erase_fu_2631_arrayHLS_Stub_data_r_s_ce0;
+    end else if ((((tmp_12_reg_4438 == 1'd0) & (1'b1 == ap_CS_fsm_state28)) | ((tmp_5_reg_3338 == 1'd0) & (1'b1 == ap_CS_fsm_state16)))) begin
+        LinearRegression_stubMap_data_second_data_r_s_ce0 = grp_push_back_1_fu_2680_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_r_s_ce0;
+    end else if ((1'b1 == ap_CS_fsm_state31)) begin
+        LinearRegression_stubMap_data_second_data_r_s_ce0 = grp_erase_fu_2610_arrayHLS_Stub_data_r_s_ce0;
     end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        LinearRegression_stubMap_data_second_data_r_s_ce0 = grp_findLargestResidual_fu_2571_LinearRegression_stubMap_data_second_data_r_s_ce0;
-    end else if ((1'b1 == ap_CS_fsm_state34)) begin
-        LinearRegression_stubMap_data_second_data_r_s_ce0 = grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_r_s_ce0;
+        LinearRegression_stubMap_data_second_data_r_s_ce0 = grp_findLargestResidual_fu_2550_LinearRegression_stubMap_data_second_data_r_s_ce0;
+    end else if ((1'b1 == ap_CS_fsm_state33)) begin
+        LinearRegression_stubMap_data_second_data_r_s_ce0 = grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_r_s_ce0;
     end else begin
         LinearRegression_stubMap_data_second_data_r_s_ce0 = 1'b0;
     end
 end
 
 always @ (*) begin
-    if ((((ap_predicate_op805_call_state29 == 1'b1) & (1'b1 == ap_CS_fsm_state29)) | ((ap_predicate_op431_call_state17 == 1'b1) & (1'b1 == ap_CS_fsm_state17)))) begin
-        LinearRegression_stubMap_data_second_data_r_s_ce1 = grp_push_back_1_fu_2701_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_r_s_ce1;
+    if ((((tmp_12_reg_4438 == 1'd0) & (1'b1 == ap_CS_fsm_state28)) | ((tmp_5_reg_3338 == 1'd0) & (1'b1 == ap_CS_fsm_state16)))) begin
+        LinearRegression_stubMap_data_second_data_r_s_ce1 = grp_push_back_1_fu_2680_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_r_s_ce1;
     end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        LinearRegression_stubMap_data_second_data_r_s_ce1 = grp_findLargestResidual_fu_2571_LinearRegression_stubMap_data_second_data_r_s_ce1;
-    end else if ((1'b1 == ap_CS_fsm_state34)) begin
-        LinearRegression_stubMap_data_second_data_r_s_ce1 = grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_r_s_ce1;
+        LinearRegression_stubMap_data_second_data_r_s_ce1 = grp_findLargestResidual_fu_2550_LinearRegression_stubMap_data_second_data_r_s_ce1;
+    end else if ((1'b1 == ap_CS_fsm_state33)) begin
+        LinearRegression_stubMap_data_second_data_r_s_ce1 = grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_r_s_ce1;
     end else begin
         LinearRegression_stubMap_data_second_data_r_s_ce1 = 1'b0;
     end
 end
 
 always @ (*) begin
-    if ((((ap_predicate_op805_call_state29 == 1'b1) & (1'b1 == ap_CS_fsm_state29)) | ((ap_predicate_op431_call_state17 == 1'b1) & (1'b1 == ap_CS_fsm_state17)))) begin
-        LinearRegression_stubMap_data_second_data_r_s_d0 = grp_push_back_1_fu_2701_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_r_s_d0;
-    end else if ((1'b1 == ap_CS_fsm_state32)) begin
-        LinearRegression_stubMap_data_second_data_r_s_d0 = grp_erase_fu_2631_arrayHLS_Stub_data_r_s_d0;
+    if ((((tmp_12_reg_4438 == 1'd0) & (1'b1 == ap_CS_fsm_state28)) | ((tmp_5_reg_3338 == 1'd0) & (1'b1 == ap_CS_fsm_state16)))) begin
+        LinearRegression_stubMap_data_second_data_r_s_d0 = grp_push_back_1_fu_2680_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_r_s_d0;
+    end else if ((1'b1 == ap_CS_fsm_state31)) begin
+        LinearRegression_stubMap_data_second_data_r_s_d0 = grp_erase_fu_2610_arrayHLS_Stub_data_r_s_d0;
     end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        LinearRegression_stubMap_data_second_data_r_s_d0 = grp_findLargestResidual_fu_2571_LinearRegression_stubMap_data_second_data_r_s_d0;
-    end else if ((1'b1 == ap_CS_fsm_state34)) begin
-        LinearRegression_stubMap_data_second_data_r_s_d0 = grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_r_s_d0;
+        LinearRegression_stubMap_data_second_data_r_s_d0 = grp_findLargestResidual_fu_2550_LinearRegression_stubMap_data_second_data_r_s_d0;
+    end else if ((1'b1 == ap_CS_fsm_state33)) begin
+        LinearRegression_stubMap_data_second_data_r_s_d0 = grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_r_s_d0;
     end else begin
         LinearRegression_stubMap_data_second_data_r_s_d0 = 'bx;
     end
 end
 
 always @ (*) begin
-    if ((((ap_predicate_op805_call_state29 == 1'b1) & (1'b1 == ap_CS_fsm_state29)) | ((ap_predicate_op431_call_state17 == 1'b1) & (1'b1 == ap_CS_fsm_state17)))) begin
-        LinearRegression_stubMap_data_second_data_r_s_d1 = grp_push_back_1_fu_2701_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_r_s_d1;
+    if ((((tmp_12_reg_4438 == 1'd0) & (1'b1 == ap_CS_fsm_state28)) | ((tmp_5_reg_3338 == 1'd0) & (1'b1 == ap_CS_fsm_state16)))) begin
+        LinearRegression_stubMap_data_second_data_r_s_d1 = grp_push_back_1_fu_2680_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_r_s_d1;
     end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        LinearRegression_stubMap_data_second_data_r_s_d1 = grp_findLargestResidual_fu_2571_LinearRegression_stubMap_data_second_data_r_s_d1;
-    end else if ((1'b1 == ap_CS_fsm_state34)) begin
-        LinearRegression_stubMap_data_second_data_r_s_d1 = grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_r_s_d1;
+        LinearRegression_stubMap_data_second_data_r_s_d1 = grp_findLargestResidual_fu_2550_LinearRegression_stubMap_data_second_data_r_s_d1;
+    end else if ((1'b1 == ap_CS_fsm_state33)) begin
+        LinearRegression_stubMap_data_second_data_r_s_d1 = grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_r_s_d1;
     end else begin
         LinearRegression_stubMap_data_second_data_r_s_d1 = 'bx;
     end
 end
 
 always @ (*) begin
-    if ((((ap_predicate_op805_call_state29 == 1'b1) & (1'b1 == ap_CS_fsm_state29)) | ((ap_predicate_op431_call_state17 == 1'b1) & (1'b1 == ap_CS_fsm_state17)))) begin
-        LinearRegression_stubMap_data_second_data_r_s_we0 = grp_push_back_1_fu_2701_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_r_s_we0;
-    end else if ((1'b1 == ap_CS_fsm_state32)) begin
-        LinearRegression_stubMap_data_second_data_r_s_we0 = grp_erase_fu_2631_arrayHLS_Stub_data_r_s_we0;
+    if ((((tmp_12_reg_4438 == 1'd0) & (1'b1 == ap_CS_fsm_state28)) | ((tmp_5_reg_3338 == 1'd0) & (1'b1 == ap_CS_fsm_state16)))) begin
+        LinearRegression_stubMap_data_second_data_r_s_we0 = grp_push_back_1_fu_2680_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_r_s_we0;
+    end else if ((1'b1 == ap_CS_fsm_state31)) begin
+        LinearRegression_stubMap_data_second_data_r_s_we0 = grp_erase_fu_2610_arrayHLS_Stub_data_r_s_we0;
     end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        LinearRegression_stubMap_data_second_data_r_s_we0 = grp_findLargestResidual_fu_2571_LinearRegression_stubMap_data_second_data_r_s_we0;
-    end else if ((1'b1 == ap_CS_fsm_state34)) begin
-        LinearRegression_stubMap_data_second_data_r_s_we0 = grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_r_s_we0;
+        LinearRegression_stubMap_data_second_data_r_s_we0 = grp_findLargestResidual_fu_2550_LinearRegression_stubMap_data_second_data_r_s_we0;
+    end else if ((1'b1 == ap_CS_fsm_state33)) begin
+        LinearRegression_stubMap_data_second_data_r_s_we0 = grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_r_s_we0;
     end else begin
         LinearRegression_stubMap_data_second_data_r_s_we0 = 1'b0;
     end
 end
 
 always @ (*) begin
-    if ((((ap_predicate_op805_call_state29 == 1'b1) & (1'b1 == ap_CS_fsm_state29)) | ((ap_predicate_op431_call_state17 == 1'b1) & (1'b1 == ap_CS_fsm_state17)))) begin
-        LinearRegression_stubMap_data_second_data_r_s_we1 = grp_push_back_1_fu_2701_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_r_s_we1;
+    if ((((tmp_12_reg_4438 == 1'd0) & (1'b1 == ap_CS_fsm_state28)) | ((tmp_5_reg_3338 == 1'd0) & (1'b1 == ap_CS_fsm_state16)))) begin
+        LinearRegression_stubMap_data_second_data_r_s_we1 = grp_push_back_1_fu_2680_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_r_s_we1;
     end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        LinearRegression_stubMap_data_second_data_r_s_we1 = grp_findLargestResidual_fu_2571_LinearRegression_stubMap_data_second_data_r_s_we1;
-    end else if ((1'b1 == ap_CS_fsm_state34)) begin
-        LinearRegression_stubMap_data_second_data_r_s_we1 = grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_r_s_we1;
+        LinearRegression_stubMap_data_second_data_r_s_we1 = grp_findLargestResidual_fu_2550_LinearRegression_stubMap_data_second_data_r_s_we1;
+    end else if ((1'b1 == ap_CS_fsm_state33)) begin
+        LinearRegression_stubMap_data_second_data_r_s_we1 = grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_r_s_we1;
     end else begin
         LinearRegression_stubMap_data_second_data_r_s_we1 = 1'b0;
     end
 end
 
 always @ (*) begin
-    if ((((ap_predicate_op805_call_state29 == 1'b1) & (1'b1 == ap_CS_fsm_state29)) | ((ap_predicate_op431_call_state17 == 1'b1) & (1'b1 == ap_CS_fsm_state17)))) begin
-        LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_address0 = grp_push_back_1_fu_2701_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofPhi_s_address0;
-    end else if ((1'b1 == ap_CS_fsm_state32)) begin
-        LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_address0 = grp_erase_fu_2631_arrayHLS_Stub_data_settings_chosenRofPhi_s_address0;
+    if ((((tmp_12_reg_4438 == 1'd0) & (1'b1 == ap_CS_fsm_state28)) | ((tmp_5_reg_3338 == 1'd0) & (1'b1 == ap_CS_fsm_state16)))) begin
+        LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_address0 = grp_push_back_1_fu_2680_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofPhi_s_address0;
+    end else if ((1'b1 == ap_CS_fsm_state31)) begin
+        LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_address0 = grp_erase_fu_2610_arrayHLS_Stub_data_settings_chosenRofPhi_s_address0;
     end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_address0 = grp_findLargestResidual_fu_2571_LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_address0;
-    end else if ((1'b1 == ap_CS_fsm_state34)) begin
-        LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_address0 = grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofPhi_s_address0;
+        LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_address0 = grp_findLargestResidual_fu_2550_LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_address0;
+    end else if ((1'b1 == ap_CS_fsm_state33)) begin
+        LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_address0 = grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofPhi_s_address0;
     end else begin
         LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_address0 = 'bx;
     end
 end
 
 always @ (*) begin
-    if ((((ap_predicate_op805_call_state29 == 1'b1) & (1'b1 == ap_CS_fsm_state29)) | ((ap_predicate_op431_call_state17 == 1'b1) & (1'b1 == ap_CS_fsm_state17)))) begin
-        LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_address1 = grp_push_back_1_fu_2701_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofPhi_s_address1;
+    if ((((tmp_12_reg_4438 == 1'd0) & (1'b1 == ap_CS_fsm_state28)) | ((tmp_5_reg_3338 == 1'd0) & (1'b1 == ap_CS_fsm_state16)))) begin
+        LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_address1 = grp_push_back_1_fu_2680_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofPhi_s_address1;
     end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_address1 = grp_findLargestResidual_fu_2571_LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_address1;
-    end else if ((1'b1 == ap_CS_fsm_state34)) begin
-        LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_address1 = grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofPhi_s_address1;
+        LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_address1 = grp_findLargestResidual_fu_2550_LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_address1;
+    end else if ((1'b1 == ap_CS_fsm_state33)) begin
+        LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_address1 = grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofPhi_s_address1;
     end else begin
         LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_address1 = 'bx;
     end
 end
 
 always @ (*) begin
-    if ((((ap_predicate_op805_call_state29 == 1'b1) & (1'b1 == ap_CS_fsm_state29)) | ((ap_predicate_op431_call_state17 == 1'b1) & (1'b1 == ap_CS_fsm_state17)))) begin
-        LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_ce0 = grp_push_back_1_fu_2701_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofPhi_s_ce0;
-    end else if ((1'b1 == ap_CS_fsm_state32)) begin
-        LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_ce0 = grp_erase_fu_2631_arrayHLS_Stub_data_settings_chosenRofPhi_s_ce0;
+    if ((((tmp_12_reg_4438 == 1'd0) & (1'b1 == ap_CS_fsm_state28)) | ((tmp_5_reg_3338 == 1'd0) & (1'b1 == ap_CS_fsm_state16)))) begin
+        LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_ce0 = grp_push_back_1_fu_2680_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofPhi_s_ce0;
+    end else if ((1'b1 == ap_CS_fsm_state31)) begin
+        LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_ce0 = grp_erase_fu_2610_arrayHLS_Stub_data_settings_chosenRofPhi_s_ce0;
     end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_ce0 = grp_findLargestResidual_fu_2571_LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_ce0;
-    end else if ((1'b1 == ap_CS_fsm_state34)) begin
-        LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_ce0 = grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofPhi_s_ce0;
+        LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_ce0 = grp_findLargestResidual_fu_2550_LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_ce0;
+    end else if ((1'b1 == ap_CS_fsm_state33)) begin
+        LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_ce0 = grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofPhi_s_ce0;
     end else begin
         LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_ce0 = 1'b0;
     end
 end
 
 always @ (*) begin
-    if ((((ap_predicate_op805_call_state29 == 1'b1) & (1'b1 == ap_CS_fsm_state29)) | ((ap_predicate_op431_call_state17 == 1'b1) & (1'b1 == ap_CS_fsm_state17)))) begin
-        LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_ce1 = grp_push_back_1_fu_2701_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofPhi_s_ce1;
+    if ((((tmp_12_reg_4438 == 1'd0) & (1'b1 == ap_CS_fsm_state28)) | ((tmp_5_reg_3338 == 1'd0) & (1'b1 == ap_CS_fsm_state16)))) begin
+        LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_ce1 = grp_push_back_1_fu_2680_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofPhi_s_ce1;
     end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_ce1 = grp_findLargestResidual_fu_2571_LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_ce1;
-    end else if ((1'b1 == ap_CS_fsm_state34)) begin
-        LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_ce1 = grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofPhi_s_ce1;
+        LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_ce1 = grp_findLargestResidual_fu_2550_LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_ce1;
+    end else if ((1'b1 == ap_CS_fsm_state33)) begin
+        LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_ce1 = grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofPhi_s_ce1;
     end else begin
         LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_ce1 = 1'b0;
     end
 end
 
 always @ (*) begin
-    if ((((ap_predicate_op805_call_state29 == 1'b1) & (1'b1 == ap_CS_fsm_state29)) | ((ap_predicate_op431_call_state17 == 1'b1) & (1'b1 == ap_CS_fsm_state17)))) begin
-        LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_d0 = grp_push_back_1_fu_2701_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofPhi_s_d0;
-    end else if ((1'b1 == ap_CS_fsm_state32)) begin
-        LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_d0 = grp_erase_fu_2631_arrayHLS_Stub_data_settings_chosenRofPhi_s_d0;
+    if ((((tmp_12_reg_4438 == 1'd0) & (1'b1 == ap_CS_fsm_state28)) | ((tmp_5_reg_3338 == 1'd0) & (1'b1 == ap_CS_fsm_state16)))) begin
+        LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_d0 = grp_push_back_1_fu_2680_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofPhi_s_d0;
+    end else if ((1'b1 == ap_CS_fsm_state31)) begin
+        LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_d0 = grp_erase_fu_2610_arrayHLS_Stub_data_settings_chosenRofPhi_s_d0;
     end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_d0 = grp_findLargestResidual_fu_2571_LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_d0;
-    end else if ((1'b1 == ap_CS_fsm_state34)) begin
-        LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_d0 = grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofPhi_s_d0;
+        LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_d0 = grp_findLargestResidual_fu_2550_LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_d0;
+    end else if ((1'b1 == ap_CS_fsm_state33)) begin
+        LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_d0 = grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofPhi_s_d0;
     end else begin
         LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_d0 = 'bx;
     end
 end
 
 always @ (*) begin
-    if ((((ap_predicate_op805_call_state29 == 1'b1) & (1'b1 == ap_CS_fsm_state29)) | ((ap_predicate_op431_call_state17 == 1'b1) & (1'b1 == ap_CS_fsm_state17)))) begin
-        LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_d1 = grp_push_back_1_fu_2701_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofPhi_s_d1;
+    if ((((tmp_12_reg_4438 == 1'd0) & (1'b1 == ap_CS_fsm_state28)) | ((tmp_5_reg_3338 == 1'd0) & (1'b1 == ap_CS_fsm_state16)))) begin
+        LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_d1 = grp_push_back_1_fu_2680_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofPhi_s_d1;
     end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_d1 = grp_findLargestResidual_fu_2571_LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_d1;
-    end else if ((1'b1 == ap_CS_fsm_state34)) begin
-        LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_d1 = grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofPhi_s_d1;
+        LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_d1 = grp_findLargestResidual_fu_2550_LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_d1;
+    end else if ((1'b1 == ap_CS_fsm_state33)) begin
+        LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_d1 = grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofPhi_s_d1;
     end else begin
         LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_d1 = 'bx;
     end
 end
 
 always @ (*) begin
-    if ((((ap_predicate_op805_call_state29 == 1'b1) & (1'b1 == ap_CS_fsm_state29)) | ((ap_predicate_op431_call_state17 == 1'b1) & (1'b1 == ap_CS_fsm_state17)))) begin
-        LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_we0 = grp_push_back_1_fu_2701_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofPhi_s_we0;
-    end else if ((1'b1 == ap_CS_fsm_state32)) begin
-        LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_we0 = grp_erase_fu_2631_arrayHLS_Stub_data_settings_chosenRofPhi_s_we0;
+    if ((((tmp_12_reg_4438 == 1'd0) & (1'b1 == ap_CS_fsm_state28)) | ((tmp_5_reg_3338 == 1'd0) & (1'b1 == ap_CS_fsm_state16)))) begin
+        LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_we0 = grp_push_back_1_fu_2680_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofPhi_s_we0;
+    end else if ((1'b1 == ap_CS_fsm_state31)) begin
+        LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_we0 = grp_erase_fu_2610_arrayHLS_Stub_data_settings_chosenRofPhi_s_we0;
     end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_we0 = grp_findLargestResidual_fu_2571_LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_we0;
-    end else if ((1'b1 == ap_CS_fsm_state34)) begin
-        LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_we0 = grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofPhi_s_we0;
+        LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_we0 = grp_findLargestResidual_fu_2550_LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_we0;
+    end else if ((1'b1 == ap_CS_fsm_state33)) begin
+        LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_we0 = grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofPhi_s_we0;
     end else begin
         LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_we0 = 1'b0;
     end
 end
 
 always @ (*) begin
-    if ((((ap_predicate_op805_call_state29 == 1'b1) & (1'b1 == ap_CS_fsm_state29)) | ((ap_predicate_op431_call_state17 == 1'b1) & (1'b1 == ap_CS_fsm_state17)))) begin
-        LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_we1 = grp_push_back_1_fu_2701_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofPhi_s_we1;
+    if ((((tmp_12_reg_4438 == 1'd0) & (1'b1 == ap_CS_fsm_state28)) | ((tmp_5_reg_3338 == 1'd0) & (1'b1 == ap_CS_fsm_state16)))) begin
+        LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_we1 = grp_push_back_1_fu_2680_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofPhi_s_we1;
     end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_we1 = grp_findLargestResidual_fu_2571_LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_we1;
-    end else if ((1'b1 == ap_CS_fsm_state34)) begin
-        LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_we1 = grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofPhi_s_we1;
+        LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_we1 = grp_findLargestResidual_fu_2550_LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_we1;
+    end else if ((1'b1 == ap_CS_fsm_state33)) begin
+        LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_we1 = grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofPhi_s_we1;
     end else begin
         LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_we1 = 1'b0;
     end
 end
 
 always @ (*) begin
-    if ((((ap_predicate_op805_call_state29 == 1'b1) & (1'b1 == ap_CS_fsm_state29)) | ((ap_predicate_op431_call_state17 == 1'b1) & (1'b1 == ap_CS_fsm_state17)))) begin
-        LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_address0 = grp_push_back_1_fu_2701_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofZ_s_address0;
-    end else if ((1'b1 == ap_CS_fsm_state32)) begin
-        LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_address0 = grp_erase_fu_2631_arrayHLS_Stub_data_settings_chosenRofZ_s_address0;
+    if ((((tmp_12_reg_4438 == 1'd0) & (1'b1 == ap_CS_fsm_state28)) | ((tmp_5_reg_3338 == 1'd0) & (1'b1 == ap_CS_fsm_state16)))) begin
+        LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_address0 = grp_push_back_1_fu_2680_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofZ_s_address0;
+    end else if ((1'b1 == ap_CS_fsm_state31)) begin
+        LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_address0 = grp_erase_fu_2610_arrayHLS_Stub_data_settings_chosenRofZ_s_address0;
     end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_address0 = grp_findLargestResidual_fu_2571_LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_address0;
-    end else if ((1'b1 == ap_CS_fsm_state34)) begin
-        LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_address0 = grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofZ_s_address0;
+        LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_address0 = grp_findLargestResidual_fu_2550_LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_address0;
+    end else if ((1'b1 == ap_CS_fsm_state33)) begin
+        LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_address0 = grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofZ_s_address0;
     end else begin
         LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_address0 = 'bx;
     end
 end
 
 always @ (*) begin
-    if ((((ap_predicate_op805_call_state29 == 1'b1) & (1'b1 == ap_CS_fsm_state29)) | ((ap_predicate_op431_call_state17 == 1'b1) & (1'b1 == ap_CS_fsm_state17)))) begin
-        LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_address1 = grp_push_back_1_fu_2701_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofZ_s_address1;
+    if ((((tmp_12_reg_4438 == 1'd0) & (1'b1 == ap_CS_fsm_state28)) | ((tmp_5_reg_3338 == 1'd0) & (1'b1 == ap_CS_fsm_state16)))) begin
+        LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_address1 = grp_push_back_1_fu_2680_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofZ_s_address1;
     end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_address1 = grp_findLargestResidual_fu_2571_LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_address1;
-    end else if ((1'b1 == ap_CS_fsm_state34)) begin
-        LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_address1 = grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofZ_s_address1;
+        LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_address1 = grp_findLargestResidual_fu_2550_LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_address1;
+    end else if ((1'b1 == ap_CS_fsm_state33)) begin
+        LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_address1 = grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofZ_s_address1;
     end else begin
         LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_address1 = 'bx;
     end
 end
 
 always @ (*) begin
-    if ((((ap_predicate_op805_call_state29 == 1'b1) & (1'b1 == ap_CS_fsm_state29)) | ((ap_predicate_op431_call_state17 == 1'b1) & (1'b1 == ap_CS_fsm_state17)))) begin
-        LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_ce0 = grp_push_back_1_fu_2701_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofZ_s_ce0;
-    end else if ((1'b1 == ap_CS_fsm_state32)) begin
-        LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_ce0 = grp_erase_fu_2631_arrayHLS_Stub_data_settings_chosenRofZ_s_ce0;
+    if ((((tmp_12_reg_4438 == 1'd0) & (1'b1 == ap_CS_fsm_state28)) | ((tmp_5_reg_3338 == 1'd0) & (1'b1 == ap_CS_fsm_state16)))) begin
+        LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_ce0 = grp_push_back_1_fu_2680_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofZ_s_ce0;
+    end else if ((1'b1 == ap_CS_fsm_state31)) begin
+        LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_ce0 = grp_erase_fu_2610_arrayHLS_Stub_data_settings_chosenRofZ_s_ce0;
     end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_ce0 = grp_findLargestResidual_fu_2571_LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_ce0;
-    end else if ((1'b1 == ap_CS_fsm_state34)) begin
-        LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_ce0 = grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofZ_s_ce0;
+        LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_ce0 = grp_findLargestResidual_fu_2550_LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_ce0;
+    end else if ((1'b1 == ap_CS_fsm_state33)) begin
+        LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_ce0 = grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofZ_s_ce0;
     end else begin
         LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_ce0 = 1'b0;
     end
 end
 
 always @ (*) begin
-    if ((((ap_predicate_op805_call_state29 == 1'b1) & (1'b1 == ap_CS_fsm_state29)) | ((ap_predicate_op431_call_state17 == 1'b1) & (1'b1 == ap_CS_fsm_state17)))) begin
-        LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_ce1 = grp_push_back_1_fu_2701_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofZ_s_ce1;
+    if ((((tmp_12_reg_4438 == 1'd0) & (1'b1 == ap_CS_fsm_state28)) | ((tmp_5_reg_3338 == 1'd0) & (1'b1 == ap_CS_fsm_state16)))) begin
+        LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_ce1 = grp_push_back_1_fu_2680_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofZ_s_ce1;
     end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_ce1 = grp_findLargestResidual_fu_2571_LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_ce1;
-    end else if ((1'b1 == ap_CS_fsm_state34)) begin
-        LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_ce1 = grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofZ_s_ce1;
+        LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_ce1 = grp_findLargestResidual_fu_2550_LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_ce1;
+    end else if ((1'b1 == ap_CS_fsm_state33)) begin
+        LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_ce1 = grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofZ_s_ce1;
     end else begin
         LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_ce1 = 1'b0;
     end
 end
 
 always @ (*) begin
-    if ((((ap_predicate_op805_call_state29 == 1'b1) & (1'b1 == ap_CS_fsm_state29)) | ((ap_predicate_op431_call_state17 == 1'b1) & (1'b1 == ap_CS_fsm_state17)))) begin
-        LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_d0 = grp_push_back_1_fu_2701_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofZ_s_d0;
-    end else if ((1'b1 == ap_CS_fsm_state32)) begin
-        LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_d0 = grp_erase_fu_2631_arrayHLS_Stub_data_settings_chosenRofZ_s_d0;
+    if ((((tmp_12_reg_4438 == 1'd0) & (1'b1 == ap_CS_fsm_state28)) | ((tmp_5_reg_3338 == 1'd0) & (1'b1 == ap_CS_fsm_state16)))) begin
+        LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_d0 = grp_push_back_1_fu_2680_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofZ_s_d0;
+    end else if ((1'b1 == ap_CS_fsm_state31)) begin
+        LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_d0 = grp_erase_fu_2610_arrayHLS_Stub_data_settings_chosenRofZ_s_d0;
     end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_d0 = grp_findLargestResidual_fu_2571_LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_d0;
-    end else if ((1'b1 == ap_CS_fsm_state34)) begin
-        LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_d0 = grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofZ_s_d0;
+        LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_d0 = grp_findLargestResidual_fu_2550_LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_d0;
+    end else if ((1'b1 == ap_CS_fsm_state33)) begin
+        LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_d0 = grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofZ_s_d0;
     end else begin
         LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_d0 = 'bx;
     end
 end
 
 always @ (*) begin
-    if ((((ap_predicate_op805_call_state29 == 1'b1) & (1'b1 == ap_CS_fsm_state29)) | ((ap_predicate_op431_call_state17 == 1'b1) & (1'b1 == ap_CS_fsm_state17)))) begin
-        LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_d1 = grp_push_back_1_fu_2701_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofZ_s_d1;
+    if ((((tmp_12_reg_4438 == 1'd0) & (1'b1 == ap_CS_fsm_state28)) | ((tmp_5_reg_3338 == 1'd0) & (1'b1 == ap_CS_fsm_state16)))) begin
+        LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_d1 = grp_push_back_1_fu_2680_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofZ_s_d1;
     end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_d1 = grp_findLargestResidual_fu_2571_LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_d1;
-    end else if ((1'b1 == ap_CS_fsm_state34)) begin
-        LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_d1 = grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofZ_s_d1;
+        LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_d1 = grp_findLargestResidual_fu_2550_LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_d1;
+    end else if ((1'b1 == ap_CS_fsm_state33)) begin
+        LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_d1 = grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofZ_s_d1;
     end else begin
         LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_d1 = 'bx;
     end
 end
 
 always @ (*) begin
-    if ((((ap_predicate_op805_call_state29 == 1'b1) & (1'b1 == ap_CS_fsm_state29)) | ((ap_predicate_op431_call_state17 == 1'b1) & (1'b1 == ap_CS_fsm_state17)))) begin
-        LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_we0 = grp_push_back_1_fu_2701_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofZ_s_we0;
-    end else if ((1'b1 == ap_CS_fsm_state32)) begin
-        LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_we0 = grp_erase_fu_2631_arrayHLS_Stub_data_settings_chosenRofZ_s_we0;
+    if ((((tmp_12_reg_4438 == 1'd0) & (1'b1 == ap_CS_fsm_state28)) | ((tmp_5_reg_3338 == 1'd0) & (1'b1 == ap_CS_fsm_state16)))) begin
+        LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_we0 = grp_push_back_1_fu_2680_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofZ_s_we0;
+    end else if ((1'b1 == ap_CS_fsm_state31)) begin
+        LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_we0 = grp_erase_fu_2610_arrayHLS_Stub_data_settings_chosenRofZ_s_we0;
     end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_we0 = grp_findLargestResidual_fu_2571_LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_we0;
-    end else if ((1'b1 == ap_CS_fsm_state34)) begin
-        LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_we0 = grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofZ_s_we0;
+        LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_we0 = grp_findLargestResidual_fu_2550_LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_we0;
+    end else if ((1'b1 == ap_CS_fsm_state33)) begin
+        LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_we0 = grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofZ_s_we0;
     end else begin
         LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_we0 = 1'b0;
     end
 end
 
 always @ (*) begin
-    if ((((ap_predicate_op805_call_state29 == 1'b1) & (1'b1 == ap_CS_fsm_state29)) | ((ap_predicate_op431_call_state17 == 1'b1) & (1'b1 == ap_CS_fsm_state17)))) begin
-        LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_we1 = grp_push_back_1_fu_2701_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofZ_s_we1;
+    if ((((tmp_12_reg_4438 == 1'd0) & (1'b1 == ap_CS_fsm_state28)) | ((tmp_5_reg_3338 == 1'd0) & (1'b1 == ap_CS_fsm_state16)))) begin
+        LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_we1 = grp_push_back_1_fu_2680_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofZ_s_we1;
     end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_we1 = grp_findLargestResidual_fu_2571_LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_we1;
-    end else if ((1'b1 == ap_CS_fsm_state34)) begin
-        LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_we1 = grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofZ_s_we1;
+        LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_we1 = grp_findLargestResidual_fu_2550_LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_we1;
+    end else if ((1'b1 == ap_CS_fsm_state33)) begin
+        LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_we1 = grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofZ_s_we1;
     end else begin
         LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_we1 = 1'b0;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state32)) begin
-        LinearRegression_stubMap_data_second_data_settings_etaRegions_s_address0 = grp_erase_fu_2631_arrayHLS_Stub_data_settings_etaRegions_s_address0;
-    end else if ((1'b1 == ap_CS_fsm_state34)) begin
-        LinearRegression_stubMap_data_second_data_settings_etaRegions_s_address0 = grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_etaRegions_s_address0;
-    end else begin
-        LinearRegression_stubMap_data_second_data_settings_etaRegions_s_address0 = 'bx;
-    end
-end
-
-always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state32)) begin
-        LinearRegression_stubMap_data_second_data_settings_etaRegions_s_address1 = grp_erase_fu_2631_arrayHLS_Stub_data_settings_etaRegions_s_address1;
-    end else if ((1'b1 == ap_CS_fsm_state34)) begin
-        LinearRegression_stubMap_data_second_data_settings_etaRegions_s_address1 = grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_etaRegions_s_address1;
-    end else begin
-        LinearRegression_stubMap_data_second_data_settings_etaRegions_s_address1 = 'bx;
-    end
-end
-
-always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state32)) begin
-        LinearRegression_stubMap_data_second_data_settings_etaRegions_s_ce0 = grp_erase_fu_2631_arrayHLS_Stub_data_settings_etaRegions_s_ce0;
-    end else if ((1'b1 == ap_CS_fsm_state34)) begin
-        LinearRegression_stubMap_data_second_data_settings_etaRegions_s_ce0 = grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_etaRegions_s_ce0;
-    end else begin
-        LinearRegression_stubMap_data_second_data_settings_etaRegions_s_ce0 = 1'b0;
-    end
-end
-
-always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state32)) begin
-        LinearRegression_stubMap_data_second_data_settings_etaRegions_s_ce1 = grp_erase_fu_2631_arrayHLS_Stub_data_settings_etaRegions_s_ce1;
-    end else if ((1'b1 == ap_CS_fsm_state34)) begin
-        LinearRegression_stubMap_data_second_data_settings_etaRegions_s_ce1 = grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_etaRegions_s_ce1;
-    end else begin
-        LinearRegression_stubMap_data_second_data_settings_etaRegions_s_ce1 = 1'b0;
-    end
-end
-
-always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state32)) begin
-        LinearRegression_stubMap_data_second_data_settings_etaRegions_s_d0 = grp_erase_fu_2631_arrayHLS_Stub_data_settings_etaRegions_s_d0;
-    end else if ((1'b1 == ap_CS_fsm_state34)) begin
-        LinearRegression_stubMap_data_second_data_settings_etaRegions_s_d0 = grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_etaRegions_s_d0;
-    end else begin
-        LinearRegression_stubMap_data_second_data_settings_etaRegions_s_d0 = 'bx;
-    end
-end
-
-always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state32)) begin
-        LinearRegression_stubMap_data_second_data_settings_etaRegions_s_d1 = grp_erase_fu_2631_arrayHLS_Stub_data_settings_etaRegions_s_d1;
-    end else if ((1'b1 == ap_CS_fsm_state34)) begin
-        LinearRegression_stubMap_data_second_data_settings_etaRegions_s_d1 = grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_etaRegions_s_d1;
-    end else begin
-        LinearRegression_stubMap_data_second_data_settings_etaRegions_s_d1 = 'bx;
-    end
-end
-
-always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state32)) begin
-        LinearRegression_stubMap_data_second_data_settings_etaRegions_s_we0 = grp_erase_fu_2631_arrayHLS_Stub_data_settings_etaRegions_s_we0;
-    end else if ((1'b1 == ap_CS_fsm_state34)) begin
-        LinearRegression_stubMap_data_second_data_settings_etaRegions_s_we0 = grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_etaRegions_s_we0;
-    end else begin
-        LinearRegression_stubMap_data_second_data_settings_etaRegions_s_we0 = 1'b0;
-    end
-end
-
-always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state32)) begin
-        LinearRegression_stubMap_data_second_data_settings_etaRegions_s_we1 = grp_erase_fu_2631_arrayHLS_Stub_data_settings_etaRegions_s_we1;
-    end else if ((1'b1 == ap_CS_fsm_state34)) begin
-        LinearRegression_stubMap_data_second_data_settings_etaRegions_s_we1 = grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_etaRegions_s_we1;
-    end else begin
-        LinearRegression_stubMap_data_second_data_settings_etaRegions_s_we1 = 1'b0;
-    end
-end
-
-always @ (*) begin
-    if ((((ap_predicate_op805_call_state29 == 1'b1) & (1'b1 == ap_CS_fsm_state29)) | ((ap_predicate_op431_call_state17 == 1'b1) & (1'b1 == ap_CS_fsm_state17)))) begin
-        LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_address0 = grp_push_back_1_fu_2701_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minNumMatchLayers_s_address0;
-    end else if ((1'b1 == ap_CS_fsm_state32)) begin
-        LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_address0 = grp_erase_fu_2631_arrayHLS_Stub_data_settings_minNumMatchLayers_s_address0;
+    if ((((tmp_12_reg_4438 == 1'd0) & (1'b1 == ap_CS_fsm_state28)) | ((tmp_5_reg_3338 == 1'd0) & (1'b1 == ap_CS_fsm_state16)))) begin
+        LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_address0 = grp_push_back_1_fu_2680_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minNumMatchLayers_s_address0;
+    end else if ((1'b1 == ap_CS_fsm_state31)) begin
+        LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_address0 = grp_erase_fu_2610_arrayHLS_Stub_data_settings_minNumMatchLayers_s_address0;
     end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_address0 = grp_findLargestResidual_fu_2571_LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_address0;
-    end else if ((1'b1 == ap_CS_fsm_state34)) begin
-        LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_address0 = grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minNumMatchLayers_s_address0;
+        LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_address0 = grp_findLargestResidual_fu_2550_LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_address0;
+    end else if ((1'b1 == ap_CS_fsm_state33)) begin
+        LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_address0 = grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minNumMatchLayers_s_address0;
     end else begin
         LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_address0 = 'bx;
     end
 end
 
 always @ (*) begin
-    if ((((ap_predicate_op805_call_state29 == 1'b1) & (1'b1 == ap_CS_fsm_state29)) | ((ap_predicate_op431_call_state17 == 1'b1) & (1'b1 == ap_CS_fsm_state17)))) begin
-        LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_address1 = grp_push_back_1_fu_2701_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minNumMatchLayers_s_address1;
+    if ((((tmp_12_reg_4438 == 1'd0) & (1'b1 == ap_CS_fsm_state28)) | ((tmp_5_reg_3338 == 1'd0) & (1'b1 == ap_CS_fsm_state16)))) begin
+        LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_address1 = grp_push_back_1_fu_2680_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minNumMatchLayers_s_address1;
     end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_address1 = grp_findLargestResidual_fu_2571_LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_address1;
-    end else if ((1'b1 == ap_CS_fsm_state34)) begin
-        LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_address1 = grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minNumMatchLayers_s_address1;
+        LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_address1 = grp_findLargestResidual_fu_2550_LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_address1;
+    end else if ((1'b1 == ap_CS_fsm_state33)) begin
+        LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_address1 = grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minNumMatchLayers_s_address1;
     end else begin
         LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_address1 = 'bx;
     end
 end
 
 always @ (*) begin
-    if ((((ap_predicate_op805_call_state29 == 1'b1) & (1'b1 == ap_CS_fsm_state29)) | ((ap_predicate_op431_call_state17 == 1'b1) & (1'b1 == ap_CS_fsm_state17)))) begin
-        LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_ce0 = grp_push_back_1_fu_2701_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minNumMatchLayers_s_ce0;
-    end else if ((1'b1 == ap_CS_fsm_state32)) begin
-        LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_ce0 = grp_erase_fu_2631_arrayHLS_Stub_data_settings_minNumMatchLayers_s_ce0;
+    if ((((tmp_12_reg_4438 == 1'd0) & (1'b1 == ap_CS_fsm_state28)) | ((tmp_5_reg_3338 == 1'd0) & (1'b1 == ap_CS_fsm_state16)))) begin
+        LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_ce0 = grp_push_back_1_fu_2680_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minNumMatchLayers_s_ce0;
+    end else if ((1'b1 == ap_CS_fsm_state31)) begin
+        LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_ce0 = grp_erase_fu_2610_arrayHLS_Stub_data_settings_minNumMatchLayers_s_ce0;
     end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_ce0 = grp_findLargestResidual_fu_2571_LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_ce0;
-    end else if ((1'b1 == ap_CS_fsm_state34)) begin
-        LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_ce0 = grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minNumMatchLayers_s_ce0;
+        LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_ce0 = grp_findLargestResidual_fu_2550_LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_ce0;
+    end else if ((1'b1 == ap_CS_fsm_state33)) begin
+        LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_ce0 = grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minNumMatchLayers_s_ce0;
     end else begin
         LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_ce0 = 1'b0;
     end
 end
 
 always @ (*) begin
-    if ((((ap_predicate_op805_call_state29 == 1'b1) & (1'b1 == ap_CS_fsm_state29)) | ((ap_predicate_op431_call_state17 == 1'b1) & (1'b1 == ap_CS_fsm_state17)))) begin
-        LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_ce1 = grp_push_back_1_fu_2701_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minNumMatchLayers_s_ce1;
+    if ((((tmp_12_reg_4438 == 1'd0) & (1'b1 == ap_CS_fsm_state28)) | ((tmp_5_reg_3338 == 1'd0) & (1'b1 == ap_CS_fsm_state16)))) begin
+        LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_ce1 = grp_push_back_1_fu_2680_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minNumMatchLayers_s_ce1;
     end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_ce1 = grp_findLargestResidual_fu_2571_LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_ce1;
-    end else if ((1'b1 == ap_CS_fsm_state34)) begin
-        LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_ce1 = grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minNumMatchLayers_s_ce1;
+        LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_ce1 = grp_findLargestResidual_fu_2550_LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_ce1;
+    end else if ((1'b1 == ap_CS_fsm_state33)) begin
+        LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_ce1 = grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minNumMatchLayers_s_ce1;
     end else begin
         LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_ce1 = 1'b0;
     end
 end
 
 always @ (*) begin
-    if ((((ap_predicate_op805_call_state29 == 1'b1) & (1'b1 == ap_CS_fsm_state29)) | ((ap_predicate_op431_call_state17 == 1'b1) & (1'b1 == ap_CS_fsm_state17)))) begin
-        LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_d0 = grp_push_back_1_fu_2701_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minNumMatchLayers_s_d0;
-    end else if ((1'b1 == ap_CS_fsm_state32)) begin
-        LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_d0 = grp_erase_fu_2631_arrayHLS_Stub_data_settings_minNumMatchLayers_s_d0;
+    if ((((tmp_12_reg_4438 == 1'd0) & (1'b1 == ap_CS_fsm_state28)) | ((tmp_5_reg_3338 == 1'd0) & (1'b1 == ap_CS_fsm_state16)))) begin
+        LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_d0 = grp_push_back_1_fu_2680_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minNumMatchLayers_s_d0;
+    end else if ((1'b1 == ap_CS_fsm_state31)) begin
+        LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_d0 = grp_erase_fu_2610_arrayHLS_Stub_data_settings_minNumMatchLayers_s_d0;
     end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_d0 = grp_findLargestResidual_fu_2571_LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_d0;
-    end else if ((1'b1 == ap_CS_fsm_state34)) begin
-        LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_d0 = grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minNumMatchLayers_s_d0;
+        LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_d0 = grp_findLargestResidual_fu_2550_LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_d0;
+    end else if ((1'b1 == ap_CS_fsm_state33)) begin
+        LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_d0 = grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minNumMatchLayers_s_d0;
     end else begin
         LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_d0 = 'bx;
     end
 end
 
 always @ (*) begin
-    if ((((ap_predicate_op805_call_state29 == 1'b1) & (1'b1 == ap_CS_fsm_state29)) | ((ap_predicate_op431_call_state17 == 1'b1) & (1'b1 == ap_CS_fsm_state17)))) begin
-        LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_d1 = grp_push_back_1_fu_2701_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minNumMatchLayers_s_d1;
+    if ((((tmp_12_reg_4438 == 1'd0) & (1'b1 == ap_CS_fsm_state28)) | ((tmp_5_reg_3338 == 1'd0) & (1'b1 == ap_CS_fsm_state16)))) begin
+        LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_d1 = grp_push_back_1_fu_2680_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minNumMatchLayers_s_d1;
     end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_d1 = grp_findLargestResidual_fu_2571_LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_d1;
-    end else if ((1'b1 == ap_CS_fsm_state34)) begin
-        LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_d1 = grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minNumMatchLayers_s_d1;
+        LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_d1 = grp_findLargestResidual_fu_2550_LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_d1;
+    end else if ((1'b1 == ap_CS_fsm_state33)) begin
+        LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_d1 = grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minNumMatchLayers_s_d1;
     end else begin
         LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_d1 = 'bx;
     end
 end
 
 always @ (*) begin
-    if ((((ap_predicate_op805_call_state29 == 1'b1) & (1'b1 == ap_CS_fsm_state29)) | ((ap_predicate_op431_call_state17 == 1'b1) & (1'b1 == ap_CS_fsm_state17)))) begin
-        LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_we0 = grp_push_back_1_fu_2701_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minNumMatchLayers_s_we0;
-    end else if ((1'b1 == ap_CS_fsm_state32)) begin
-        LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_we0 = grp_erase_fu_2631_arrayHLS_Stub_data_settings_minNumMatchLayers_s_we0;
+    if ((((tmp_12_reg_4438 == 1'd0) & (1'b1 == ap_CS_fsm_state28)) | ((tmp_5_reg_3338 == 1'd0) & (1'b1 == ap_CS_fsm_state16)))) begin
+        LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_we0 = grp_push_back_1_fu_2680_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minNumMatchLayers_s_we0;
+    end else if ((1'b1 == ap_CS_fsm_state31)) begin
+        LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_we0 = grp_erase_fu_2610_arrayHLS_Stub_data_settings_minNumMatchLayers_s_we0;
     end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_we0 = grp_findLargestResidual_fu_2571_LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_we0;
-    end else if ((1'b1 == ap_CS_fsm_state34)) begin
-        LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_we0 = grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minNumMatchLayers_s_we0;
+        LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_we0 = grp_findLargestResidual_fu_2550_LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_we0;
+    end else if ((1'b1 == ap_CS_fsm_state33)) begin
+        LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_we0 = grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minNumMatchLayers_s_we0;
     end else begin
         LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_we0 = 1'b0;
     end
 end
 
 always @ (*) begin
-    if ((((ap_predicate_op805_call_state29 == 1'b1) & (1'b1 == ap_CS_fsm_state29)) | ((ap_predicate_op431_call_state17 == 1'b1) & (1'b1 == ap_CS_fsm_state17)))) begin
-        LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_we1 = grp_push_back_1_fu_2701_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minNumMatchLayers_s_we1;
+    if ((((tmp_12_reg_4438 == 1'd0) & (1'b1 == ap_CS_fsm_state28)) | ((tmp_5_reg_3338 == 1'd0) & (1'b1 == ap_CS_fsm_state16)))) begin
+        LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_we1 = grp_push_back_1_fu_2680_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minNumMatchLayers_s_we1;
     end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_we1 = grp_findLargestResidual_fu_2571_LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_we1;
-    end else if ((1'b1 == ap_CS_fsm_state34)) begin
-        LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_we1 = grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minNumMatchLayers_s_we1;
+        LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_we1 = grp_findLargestResidual_fu_2550_LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_we1;
+    end else if ((1'b1 == ap_CS_fsm_state33)) begin
+        LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_we1 = grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minNumMatchLayers_s_we1;
     end else begin
         LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_we1 = 1'b0;
     end
 end
 
 always @ (*) begin
-    if ((((ap_predicate_op805_call_state29 == 1'b1) & (1'b1 == ap_CS_fsm_state29)) | ((ap_predicate_op431_call_state17 == 1'b1) & (1'b1 == ap_CS_fsm_state17)))) begin
-        LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_address0 = grp_push_back_1_fu_2701_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minPSLayers_s_address0;
-    end else if ((1'b1 == ap_CS_fsm_state32)) begin
-        LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_address0 = grp_erase_fu_2631_arrayHLS_Stub_data_settings_minPSLayers_s_address0;
+    if ((((tmp_12_reg_4438 == 1'd0) & (1'b1 == ap_CS_fsm_state28)) | ((tmp_5_reg_3338 == 1'd0) & (1'b1 == ap_CS_fsm_state16)))) begin
+        LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_address0 = grp_push_back_1_fu_2680_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minPSLayers_s_address0;
+    end else if ((1'b1 == ap_CS_fsm_state31)) begin
+        LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_address0 = grp_erase_fu_2610_arrayHLS_Stub_data_settings_minPSLayers_s_address0;
     end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_address0 = grp_findLargestResidual_fu_2571_LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_address0;
-    end else if ((1'b1 == ap_CS_fsm_state34)) begin
-        LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_address0 = grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minPSLayers_s_address0;
+        LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_address0 = grp_findLargestResidual_fu_2550_LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_address0;
+    end else if ((1'b1 == ap_CS_fsm_state33)) begin
+        LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_address0 = grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minPSLayers_s_address0;
     end else begin
         LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_address0 = 'bx;
     end
 end
 
 always @ (*) begin
-    if ((((ap_predicate_op805_call_state29 == 1'b1) & (1'b1 == ap_CS_fsm_state29)) | ((ap_predicate_op431_call_state17 == 1'b1) & (1'b1 == ap_CS_fsm_state17)))) begin
-        LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_address1 = grp_push_back_1_fu_2701_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minPSLayers_s_address1;
+    if ((((tmp_12_reg_4438 == 1'd0) & (1'b1 == ap_CS_fsm_state28)) | ((tmp_5_reg_3338 == 1'd0) & (1'b1 == ap_CS_fsm_state16)))) begin
+        LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_address1 = grp_push_back_1_fu_2680_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minPSLayers_s_address1;
     end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_address1 = grp_findLargestResidual_fu_2571_LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_address1;
-    end else if ((1'b1 == ap_CS_fsm_state34)) begin
-        LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_address1 = grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minPSLayers_s_address1;
+        LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_address1 = grp_findLargestResidual_fu_2550_LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_address1;
+    end else if ((1'b1 == ap_CS_fsm_state33)) begin
+        LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_address1 = grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minPSLayers_s_address1;
     end else begin
         LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_address1 = 'bx;
     end
 end
 
 always @ (*) begin
-    if ((((ap_predicate_op805_call_state29 == 1'b1) & (1'b1 == ap_CS_fsm_state29)) | ((ap_predicate_op431_call_state17 == 1'b1) & (1'b1 == ap_CS_fsm_state17)))) begin
-        LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_ce0 = grp_push_back_1_fu_2701_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minPSLayers_s_ce0;
-    end else if ((1'b1 == ap_CS_fsm_state32)) begin
-        LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_ce0 = grp_erase_fu_2631_arrayHLS_Stub_data_settings_minPSLayers_s_ce0;
+    if ((((tmp_12_reg_4438 == 1'd0) & (1'b1 == ap_CS_fsm_state28)) | ((tmp_5_reg_3338 == 1'd0) & (1'b1 == ap_CS_fsm_state16)))) begin
+        LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_ce0 = grp_push_back_1_fu_2680_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minPSLayers_s_ce0;
+    end else if ((1'b1 == ap_CS_fsm_state31)) begin
+        LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_ce0 = grp_erase_fu_2610_arrayHLS_Stub_data_settings_minPSLayers_s_ce0;
     end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_ce0 = grp_findLargestResidual_fu_2571_LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_ce0;
-    end else if ((1'b1 == ap_CS_fsm_state34)) begin
-        LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_ce0 = grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minPSLayers_s_ce0;
+        LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_ce0 = grp_findLargestResidual_fu_2550_LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_ce0;
+    end else if ((1'b1 == ap_CS_fsm_state33)) begin
+        LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_ce0 = grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minPSLayers_s_ce0;
     end else begin
         LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_ce0 = 1'b0;
     end
 end
 
 always @ (*) begin
-    if ((((ap_predicate_op805_call_state29 == 1'b1) & (1'b1 == ap_CS_fsm_state29)) | ((ap_predicate_op431_call_state17 == 1'b1) & (1'b1 == ap_CS_fsm_state17)))) begin
-        LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_ce1 = grp_push_back_1_fu_2701_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minPSLayers_s_ce1;
+    if ((((tmp_12_reg_4438 == 1'd0) & (1'b1 == ap_CS_fsm_state28)) | ((tmp_5_reg_3338 == 1'd0) & (1'b1 == ap_CS_fsm_state16)))) begin
+        LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_ce1 = grp_push_back_1_fu_2680_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minPSLayers_s_ce1;
     end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_ce1 = grp_findLargestResidual_fu_2571_LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_ce1;
-    end else if ((1'b1 == ap_CS_fsm_state34)) begin
-        LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_ce1 = grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minPSLayers_s_ce1;
+        LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_ce1 = grp_findLargestResidual_fu_2550_LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_ce1;
+    end else if ((1'b1 == ap_CS_fsm_state33)) begin
+        LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_ce1 = grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minPSLayers_s_ce1;
     end else begin
         LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_ce1 = 1'b0;
     end
 end
 
 always @ (*) begin
-    if ((((ap_predicate_op805_call_state29 == 1'b1) & (1'b1 == ap_CS_fsm_state29)) | ((ap_predicate_op431_call_state17 == 1'b1) & (1'b1 == ap_CS_fsm_state17)))) begin
-        LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_d0 = grp_push_back_1_fu_2701_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minPSLayers_s_d0;
-    end else if ((1'b1 == ap_CS_fsm_state32)) begin
-        LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_d0 = grp_erase_fu_2631_arrayHLS_Stub_data_settings_minPSLayers_s_d0;
+    if ((((tmp_12_reg_4438 == 1'd0) & (1'b1 == ap_CS_fsm_state28)) | ((tmp_5_reg_3338 == 1'd0) & (1'b1 == ap_CS_fsm_state16)))) begin
+        LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_d0 = grp_push_back_1_fu_2680_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minPSLayers_s_d0;
+    end else if ((1'b1 == ap_CS_fsm_state31)) begin
+        LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_d0 = grp_erase_fu_2610_arrayHLS_Stub_data_settings_minPSLayers_s_d0;
     end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_d0 = grp_findLargestResidual_fu_2571_LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_d0;
-    end else if ((1'b1 == ap_CS_fsm_state34)) begin
-        LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_d0 = grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minPSLayers_s_d0;
+        LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_d0 = grp_findLargestResidual_fu_2550_LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_d0;
+    end else if ((1'b1 == ap_CS_fsm_state33)) begin
+        LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_d0 = grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minPSLayers_s_d0;
     end else begin
         LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_d0 = 'bx;
     end
 end
 
 always @ (*) begin
-    if ((((ap_predicate_op805_call_state29 == 1'b1) & (1'b1 == ap_CS_fsm_state29)) | ((ap_predicate_op431_call_state17 == 1'b1) & (1'b1 == ap_CS_fsm_state17)))) begin
-        LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_d1 = grp_push_back_1_fu_2701_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minPSLayers_s_d1;
+    if ((((tmp_12_reg_4438 == 1'd0) & (1'b1 == ap_CS_fsm_state28)) | ((tmp_5_reg_3338 == 1'd0) & (1'b1 == ap_CS_fsm_state16)))) begin
+        LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_d1 = grp_push_back_1_fu_2680_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minPSLayers_s_d1;
     end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_d1 = grp_findLargestResidual_fu_2571_LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_d1;
-    end else if ((1'b1 == ap_CS_fsm_state34)) begin
-        LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_d1 = grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minPSLayers_s_d1;
+        LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_d1 = grp_findLargestResidual_fu_2550_LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_d1;
+    end else if ((1'b1 == ap_CS_fsm_state33)) begin
+        LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_d1 = grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minPSLayers_s_d1;
     end else begin
         LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_d1 = 'bx;
     end
 end
 
 always @ (*) begin
-    if ((((ap_predicate_op805_call_state29 == 1'b1) & (1'b1 == ap_CS_fsm_state29)) | ((ap_predicate_op431_call_state17 == 1'b1) & (1'b1 == ap_CS_fsm_state17)))) begin
-        LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_we0 = grp_push_back_1_fu_2701_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minPSLayers_s_we0;
-    end else if ((1'b1 == ap_CS_fsm_state32)) begin
-        LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_we0 = grp_erase_fu_2631_arrayHLS_Stub_data_settings_minPSLayers_s_we0;
+    if ((((tmp_12_reg_4438 == 1'd0) & (1'b1 == ap_CS_fsm_state28)) | ((tmp_5_reg_3338 == 1'd0) & (1'b1 == ap_CS_fsm_state16)))) begin
+        LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_we0 = grp_push_back_1_fu_2680_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minPSLayers_s_we0;
+    end else if ((1'b1 == ap_CS_fsm_state31)) begin
+        LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_we0 = grp_erase_fu_2610_arrayHLS_Stub_data_settings_minPSLayers_s_we0;
     end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_we0 = grp_findLargestResidual_fu_2571_LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_we0;
-    end else if ((1'b1 == ap_CS_fsm_state34)) begin
-        LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_we0 = grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minPSLayers_s_we0;
+        LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_we0 = grp_findLargestResidual_fu_2550_LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_we0;
+    end else if ((1'b1 == ap_CS_fsm_state33)) begin
+        LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_we0 = grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minPSLayers_s_we0;
     end else begin
         LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_we0 = 1'b0;
     end
 end
 
 always @ (*) begin
-    if ((((ap_predicate_op805_call_state29 == 1'b1) & (1'b1 == ap_CS_fsm_state29)) | ((ap_predicate_op431_call_state17 == 1'b1) & (1'b1 == ap_CS_fsm_state17)))) begin
-        LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_we1 = grp_push_back_1_fu_2701_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minPSLayers_s_we1;
+    if ((((tmp_12_reg_4438 == 1'd0) & (1'b1 == ap_CS_fsm_state28)) | ((tmp_5_reg_3338 == 1'd0) & (1'b1 == ap_CS_fsm_state16)))) begin
+        LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_we1 = grp_push_back_1_fu_2680_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minPSLayers_s_we1;
     end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_we1 = grp_findLargestResidual_fu_2571_LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_we1;
-    end else if ((1'b1 == ap_CS_fsm_state34)) begin
-        LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_we1 = grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minPSLayers_s_we1;
+        LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_we1 = grp_findLargestResidual_fu_2550_LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_we1;
+    end else if ((1'b1 == ap_CS_fsm_state33)) begin
+        LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_we1 = grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minPSLayers_s_we1;
     end else begin
         LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_we1 = 1'b0;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state18)) begin
-        LinearRegression_stubMap_data_second_data_z_s_address0 = tmp_85_cast_fu_3063_p1;
-    end else if ((((ap_predicate_op805_call_state29 == 1'b1) & (1'b1 == ap_CS_fsm_state29)) | ((ap_predicate_op431_call_state17 == 1'b1) & (1'b1 == ap_CS_fsm_state17)))) begin
-        LinearRegression_stubMap_data_second_data_z_s_address0 = grp_push_back_1_fu_2701_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_z_s_address0;
-    end else if ((1'b1 == ap_CS_fsm_state32)) begin
-        LinearRegression_stubMap_data_second_data_z_s_address0 = grp_erase_fu_2631_arrayHLS_Stub_data_z_s_address0;
+    if ((1'b1 == ap_CS_fsm_state31)) begin
+        LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_address0 = grp_erase_fu_2610_arrayHLS_Stub_data_settings_sinh_etaRegions_s_address0;
+    end else if ((1'b1 == ap_CS_fsm_state33)) begin
+        LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_address0 = grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_sinh_etaRegions_s_address0;
+    end else begin
+        LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_address0 = 'bx;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state31)) begin
+        LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_address1 = grp_erase_fu_2610_arrayHLS_Stub_data_settings_sinh_etaRegions_s_address1;
+    end else if ((1'b1 == ap_CS_fsm_state33)) begin
+        LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_address1 = grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_sinh_etaRegions_s_address1;
+    end else begin
+        LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_address1 = 'bx;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state31)) begin
+        LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_ce0 = grp_erase_fu_2610_arrayHLS_Stub_data_settings_sinh_etaRegions_s_ce0;
+    end else if ((1'b1 == ap_CS_fsm_state33)) begin
+        LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_ce0 = grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_sinh_etaRegions_s_ce0;
+    end else begin
+        LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_ce0 = 1'b0;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state31)) begin
+        LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_ce1 = grp_erase_fu_2610_arrayHLS_Stub_data_settings_sinh_etaRegions_s_ce1;
+    end else if ((1'b1 == ap_CS_fsm_state33)) begin
+        LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_ce1 = grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_sinh_etaRegions_s_ce1;
+    end else begin
+        LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_ce1 = 1'b0;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state31)) begin
+        LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_d0 = grp_erase_fu_2610_arrayHLS_Stub_data_settings_sinh_etaRegions_s_d0;
+    end else if ((1'b1 == ap_CS_fsm_state33)) begin
+        LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_d0 = grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_sinh_etaRegions_s_d0;
+    end else begin
+        LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_d0 = 'bx;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state31)) begin
+        LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_d1 = grp_erase_fu_2610_arrayHLS_Stub_data_settings_sinh_etaRegions_s_d1;
+    end else if ((1'b1 == ap_CS_fsm_state33)) begin
+        LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_d1 = grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_sinh_etaRegions_s_d1;
+    end else begin
+        LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_d1 = 'bx;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state31)) begin
+        LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_we0 = grp_erase_fu_2610_arrayHLS_Stub_data_settings_sinh_etaRegions_s_we0;
+    end else if ((1'b1 == ap_CS_fsm_state33)) begin
+        LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_we0 = grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_sinh_etaRegions_s_we0;
+    end else begin
+        LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_we0 = 1'b0;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state31)) begin
+        LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_we1 = grp_erase_fu_2610_arrayHLS_Stub_data_settings_sinh_etaRegions_s_we1;
+    end else if ((1'b1 == ap_CS_fsm_state33)) begin
+        LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_we1 = grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_sinh_etaRegions_s_we1;
+    end else begin
+        LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_we1 = 1'b0;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state17)) begin
+        LinearRegression_stubMap_data_second_data_z_s_address0 = tmp_28_cast_fu_3028_p1;
+    end else if ((((tmp_12_reg_4438 == 1'd0) & (1'b1 == ap_CS_fsm_state28)) | ((tmp_5_reg_3338 == 1'd0) & (1'b1 == ap_CS_fsm_state16)))) begin
+        LinearRegression_stubMap_data_second_data_z_s_address0 = grp_push_back_1_fu_2680_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_z_s_address0;
+    end else if ((1'b1 == ap_CS_fsm_state31)) begin
+        LinearRegression_stubMap_data_second_data_z_s_address0 = grp_erase_fu_2610_arrayHLS_Stub_data_z_s_address0;
     end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        LinearRegression_stubMap_data_second_data_z_s_address0 = grp_findLargestResidual_fu_2571_LinearRegression_stubMap_data_second_data_z_s_address0;
-    end else if ((1'b1 == ap_CS_fsm_state34)) begin
-        LinearRegression_stubMap_data_second_data_z_s_address0 = grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_z_s_address0;
+        LinearRegression_stubMap_data_second_data_z_s_address0 = grp_findLargestResidual_fu_2550_LinearRegression_stubMap_data_second_data_z_s_address0;
+    end else if ((1'b1 == ap_CS_fsm_state33)) begin
+        LinearRegression_stubMap_data_second_data_z_s_address0 = grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_z_s_address0;
     end else begin
         LinearRegression_stubMap_data_second_data_z_s_address0 = 'bx;
     end
 end
 
 always @ (*) begin
-    if ((((ap_predicate_op805_call_state29 == 1'b1) & (1'b1 == ap_CS_fsm_state29)) | ((ap_predicate_op431_call_state17 == 1'b1) & (1'b1 == ap_CS_fsm_state17)))) begin
-        LinearRegression_stubMap_data_second_data_z_s_address1 = grp_push_back_1_fu_2701_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_z_s_address1;
+    if ((((tmp_12_reg_4438 == 1'd0) & (1'b1 == ap_CS_fsm_state28)) | ((tmp_5_reg_3338 == 1'd0) & (1'b1 == ap_CS_fsm_state16)))) begin
+        LinearRegression_stubMap_data_second_data_z_s_address1 = grp_push_back_1_fu_2680_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_z_s_address1;
     end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        LinearRegression_stubMap_data_second_data_z_s_address1 = grp_findLargestResidual_fu_2571_LinearRegression_stubMap_data_second_data_z_s_address1;
-    end else if ((1'b1 == ap_CS_fsm_state34)) begin
-        LinearRegression_stubMap_data_second_data_z_s_address1 = grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_z_s_address1;
+        LinearRegression_stubMap_data_second_data_z_s_address1 = grp_findLargestResidual_fu_2550_LinearRegression_stubMap_data_second_data_z_s_address1;
+    end else if ((1'b1 == ap_CS_fsm_state33)) begin
+        LinearRegression_stubMap_data_second_data_z_s_address1 = grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_z_s_address1;
     end else begin
         LinearRegression_stubMap_data_second_data_z_s_address1 = 'bx;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state18)) begin
+    if ((1'b1 == ap_CS_fsm_state17)) begin
         LinearRegression_stubMap_data_second_data_z_s_ce0 = 1'b1;
-    end else if ((((ap_predicate_op805_call_state29 == 1'b1) & (1'b1 == ap_CS_fsm_state29)) | ((ap_predicate_op431_call_state17 == 1'b1) & (1'b1 == ap_CS_fsm_state17)))) begin
-        LinearRegression_stubMap_data_second_data_z_s_ce0 = grp_push_back_1_fu_2701_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_z_s_ce0;
-    end else if ((1'b1 == ap_CS_fsm_state32)) begin
-        LinearRegression_stubMap_data_second_data_z_s_ce0 = grp_erase_fu_2631_arrayHLS_Stub_data_z_s_ce0;
+    end else if ((((tmp_12_reg_4438 == 1'd0) & (1'b1 == ap_CS_fsm_state28)) | ((tmp_5_reg_3338 == 1'd0) & (1'b1 == ap_CS_fsm_state16)))) begin
+        LinearRegression_stubMap_data_second_data_z_s_ce0 = grp_push_back_1_fu_2680_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_z_s_ce0;
+    end else if ((1'b1 == ap_CS_fsm_state31)) begin
+        LinearRegression_stubMap_data_second_data_z_s_ce0 = grp_erase_fu_2610_arrayHLS_Stub_data_z_s_ce0;
     end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        LinearRegression_stubMap_data_second_data_z_s_ce0 = grp_findLargestResidual_fu_2571_LinearRegression_stubMap_data_second_data_z_s_ce0;
-    end else if ((1'b1 == ap_CS_fsm_state34)) begin
-        LinearRegression_stubMap_data_second_data_z_s_ce0 = grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_z_s_ce0;
+        LinearRegression_stubMap_data_second_data_z_s_ce0 = grp_findLargestResidual_fu_2550_LinearRegression_stubMap_data_second_data_z_s_ce0;
+    end else if ((1'b1 == ap_CS_fsm_state33)) begin
+        LinearRegression_stubMap_data_second_data_z_s_ce0 = grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_z_s_ce0;
     end else begin
         LinearRegression_stubMap_data_second_data_z_s_ce0 = 1'b0;
     end
 end
 
 always @ (*) begin
-    if ((((ap_predicate_op805_call_state29 == 1'b1) & (1'b1 == ap_CS_fsm_state29)) | ((ap_predicate_op431_call_state17 == 1'b1) & (1'b1 == ap_CS_fsm_state17)))) begin
-        LinearRegression_stubMap_data_second_data_z_s_ce1 = grp_push_back_1_fu_2701_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_z_s_ce1;
+    if ((((tmp_12_reg_4438 == 1'd0) & (1'b1 == ap_CS_fsm_state28)) | ((tmp_5_reg_3338 == 1'd0) & (1'b1 == ap_CS_fsm_state16)))) begin
+        LinearRegression_stubMap_data_second_data_z_s_ce1 = grp_push_back_1_fu_2680_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_z_s_ce1;
     end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        LinearRegression_stubMap_data_second_data_z_s_ce1 = grp_findLargestResidual_fu_2571_LinearRegression_stubMap_data_second_data_z_s_ce1;
-    end else if ((1'b1 == ap_CS_fsm_state34)) begin
-        LinearRegression_stubMap_data_second_data_z_s_ce1 = grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_z_s_ce1;
+        LinearRegression_stubMap_data_second_data_z_s_ce1 = grp_findLargestResidual_fu_2550_LinearRegression_stubMap_data_second_data_z_s_ce1;
+    end else if ((1'b1 == ap_CS_fsm_state33)) begin
+        LinearRegression_stubMap_data_second_data_z_s_ce1 = grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_z_s_ce1;
     end else begin
         LinearRegression_stubMap_data_second_data_z_s_ce1 = 1'b0;
     end
 end
 
 always @ (*) begin
-    if ((((ap_predicate_op805_call_state29 == 1'b1) & (1'b1 == ap_CS_fsm_state29)) | ((ap_predicate_op431_call_state17 == 1'b1) & (1'b1 == ap_CS_fsm_state17)))) begin
-        LinearRegression_stubMap_data_second_data_z_s_d0 = grp_push_back_1_fu_2701_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_z_s_d0;
-    end else if ((1'b1 == ap_CS_fsm_state32)) begin
-        LinearRegression_stubMap_data_second_data_z_s_d0 = grp_erase_fu_2631_arrayHLS_Stub_data_z_s_d0;
+    if ((((tmp_12_reg_4438 == 1'd0) & (1'b1 == ap_CS_fsm_state28)) | ((tmp_5_reg_3338 == 1'd0) & (1'b1 == ap_CS_fsm_state16)))) begin
+        LinearRegression_stubMap_data_second_data_z_s_d0 = grp_push_back_1_fu_2680_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_z_s_d0;
+    end else if ((1'b1 == ap_CS_fsm_state31)) begin
+        LinearRegression_stubMap_data_second_data_z_s_d0 = grp_erase_fu_2610_arrayHLS_Stub_data_z_s_d0;
     end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        LinearRegression_stubMap_data_second_data_z_s_d0 = grp_findLargestResidual_fu_2571_LinearRegression_stubMap_data_second_data_z_s_d0;
-    end else if ((1'b1 == ap_CS_fsm_state34)) begin
-        LinearRegression_stubMap_data_second_data_z_s_d0 = grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_z_s_d0;
+        LinearRegression_stubMap_data_second_data_z_s_d0 = grp_findLargestResidual_fu_2550_LinearRegression_stubMap_data_second_data_z_s_d0;
+    end else if ((1'b1 == ap_CS_fsm_state33)) begin
+        LinearRegression_stubMap_data_second_data_z_s_d0 = grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_z_s_d0;
     end else begin
         LinearRegression_stubMap_data_second_data_z_s_d0 = 'bx;
     end
 end
 
 always @ (*) begin
-    if ((((ap_predicate_op805_call_state29 == 1'b1) & (1'b1 == ap_CS_fsm_state29)) | ((ap_predicate_op431_call_state17 == 1'b1) & (1'b1 == ap_CS_fsm_state17)))) begin
-        LinearRegression_stubMap_data_second_data_z_s_d1 = grp_push_back_1_fu_2701_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_z_s_d1;
+    if ((((tmp_12_reg_4438 == 1'd0) & (1'b1 == ap_CS_fsm_state28)) | ((tmp_5_reg_3338 == 1'd0) & (1'b1 == ap_CS_fsm_state16)))) begin
+        LinearRegression_stubMap_data_second_data_z_s_d1 = grp_push_back_1_fu_2680_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_z_s_d1;
     end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        LinearRegression_stubMap_data_second_data_z_s_d1 = grp_findLargestResidual_fu_2571_LinearRegression_stubMap_data_second_data_z_s_d1;
-    end else if ((1'b1 == ap_CS_fsm_state34)) begin
-        LinearRegression_stubMap_data_second_data_z_s_d1 = grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_z_s_d1;
+        LinearRegression_stubMap_data_second_data_z_s_d1 = grp_findLargestResidual_fu_2550_LinearRegression_stubMap_data_second_data_z_s_d1;
+    end else if ((1'b1 == ap_CS_fsm_state33)) begin
+        LinearRegression_stubMap_data_second_data_z_s_d1 = grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_z_s_d1;
     end else begin
         LinearRegression_stubMap_data_second_data_z_s_d1 = 'bx;
     end
 end
 
 always @ (*) begin
-    if ((((ap_predicate_op805_call_state29 == 1'b1) & (1'b1 == ap_CS_fsm_state29)) | ((ap_predicate_op431_call_state17 == 1'b1) & (1'b1 == ap_CS_fsm_state17)))) begin
-        LinearRegression_stubMap_data_second_data_z_s_we0 = grp_push_back_1_fu_2701_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_z_s_we0;
-    end else if ((1'b1 == ap_CS_fsm_state32)) begin
-        LinearRegression_stubMap_data_second_data_z_s_we0 = grp_erase_fu_2631_arrayHLS_Stub_data_z_s_we0;
+    if ((((tmp_12_reg_4438 == 1'd0) & (1'b1 == ap_CS_fsm_state28)) | ((tmp_5_reg_3338 == 1'd0) & (1'b1 == ap_CS_fsm_state16)))) begin
+        LinearRegression_stubMap_data_second_data_z_s_we0 = grp_push_back_1_fu_2680_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_z_s_we0;
+    end else if ((1'b1 == ap_CS_fsm_state31)) begin
+        LinearRegression_stubMap_data_second_data_z_s_we0 = grp_erase_fu_2610_arrayHLS_Stub_data_z_s_we0;
     end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        LinearRegression_stubMap_data_second_data_z_s_we0 = grp_findLargestResidual_fu_2571_LinearRegression_stubMap_data_second_data_z_s_we0;
-    end else if ((1'b1 == ap_CS_fsm_state34)) begin
-        LinearRegression_stubMap_data_second_data_z_s_we0 = grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_z_s_we0;
+        LinearRegression_stubMap_data_second_data_z_s_we0 = grp_findLargestResidual_fu_2550_LinearRegression_stubMap_data_second_data_z_s_we0;
+    end else if ((1'b1 == ap_CS_fsm_state33)) begin
+        LinearRegression_stubMap_data_second_data_z_s_we0 = grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_z_s_we0;
     end else begin
         LinearRegression_stubMap_data_second_data_z_s_we0 = 1'b0;
     end
 end
 
 always @ (*) begin
-    if ((((ap_predicate_op805_call_state29 == 1'b1) & (1'b1 == ap_CS_fsm_state29)) | ((ap_predicate_op431_call_state17 == 1'b1) & (1'b1 == ap_CS_fsm_state17)))) begin
-        LinearRegression_stubMap_data_second_data_z_s_we1 = grp_push_back_1_fu_2701_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_z_s_we1;
+    if ((((tmp_12_reg_4438 == 1'd0) & (1'b1 == ap_CS_fsm_state28)) | ((tmp_5_reg_3338 == 1'd0) & (1'b1 == ap_CS_fsm_state16)))) begin
+        LinearRegression_stubMap_data_second_data_z_s_we1 = grp_push_back_1_fu_2680_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_z_s_we1;
     end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        LinearRegression_stubMap_data_second_data_z_s_we1 = grp_findLargestResidual_fu_2571_LinearRegression_stubMap_data_second_data_z_s_we1;
-    end else if ((1'b1 == ap_CS_fsm_state34)) begin
-        LinearRegression_stubMap_data_second_data_z_s_we1 = grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_z_s_we1;
+        LinearRegression_stubMap_data_second_data_z_s_we1 = grp_findLargestResidual_fu_2550_LinearRegression_stubMap_data_second_data_z_s_we1;
+    end else if ((1'b1 == ap_CS_fsm_state33)) begin
+        LinearRegression_stubMap_data_second_data_z_s_we1 = grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_z_s_we1;
     end else begin
         LinearRegression_stubMap_data_second_data_z_s_we1 = 1'b0;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state32)) begin
-        LinearRegression_stubMap_data_second_size_s_address0 = LinearRegression_stu_15_reg_5520;
-    end else if ((1'b1 == ap_CS_fsm_state30)) begin
-        LinearRegression_stubMap_data_second_size_s_address0 = p_pn_i_fu_3116_p1;
-    end else if ((((ap_predicate_op805_call_state29 == 1'b1) & (1'b1 == ap_CS_fsm_state29)) | ((ap_predicate_op431_call_state17 == 1'b1) & (1'b1 == ap_CS_fsm_state17)))) begin
-        LinearRegression_stubMap_data_second_size_s_address0 = grp_push_back_1_fu_2701_mapHLS_unsigned_int_arrayHLS_Stub_data_second_size_s_address0;
+    if ((1'b1 == ap_CS_fsm_state31)) begin
+        LinearRegression_stubMap_data_second_size_s_address0 = LinearRegression_stu_15_reg_5463;
+    end else if ((1'b1 == ap_CS_fsm_state29)) begin
+        LinearRegression_stubMap_data_second_size_s_address0 = p_pn_i_fu_3081_p1;
+    end else if ((((tmp_12_reg_4438 == 1'd0) & (1'b1 == ap_CS_fsm_state28)) | ((tmp_5_reg_3338 == 1'd0) & (1'b1 == ap_CS_fsm_state16)))) begin
+        LinearRegression_stubMap_data_second_size_s_address0 = grp_push_back_1_fu_2680_mapHLS_unsigned_int_arrayHLS_Stub_data_second_size_s_address0;
     end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        LinearRegression_stubMap_data_second_size_s_address0 = grp_findLargestResidual_fu_2571_LinearRegression_stubMap_data_second_size_s_address0;
-    end else if ((1'b1 == ap_CS_fsm_state34)) begin
-        LinearRegression_stubMap_data_second_size_s_address0 = grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_second_size_s_address0;
+        LinearRegression_stubMap_data_second_size_s_address0 = grp_findLargestResidual_fu_2550_LinearRegression_stubMap_data_second_size_s_address0;
+    end else if ((1'b1 == ap_CS_fsm_state33)) begin
+        LinearRegression_stubMap_data_second_size_s_address0 = grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_second_size_s_address0;
     end else begin
         LinearRegression_stubMap_data_second_size_s_address0 = 'bx;
     end
 end
 
 always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state30) | ((1'b1 == ap_CS_fsm_state32) & (1'b0 == ap_block_state32_on_subcall_done)))) begin
+    if (((1'b1 == ap_CS_fsm_state29) | ((1'b1 == ap_CS_fsm_state31) & (1'b0 == ap_block_state31_on_subcall_done)))) begin
         LinearRegression_stubMap_data_second_size_s_ce0 = 1'b1;
-    end else if ((((ap_predicate_op805_call_state29 == 1'b1) & (1'b1 == ap_CS_fsm_state29)) | ((ap_predicate_op431_call_state17 == 1'b1) & (1'b1 == ap_CS_fsm_state17)))) begin
-        LinearRegression_stubMap_data_second_size_s_ce0 = grp_push_back_1_fu_2701_mapHLS_unsigned_int_arrayHLS_Stub_data_second_size_s_ce0;
+    end else if ((((tmp_12_reg_4438 == 1'd0) & (1'b1 == ap_CS_fsm_state28)) | ((tmp_5_reg_3338 == 1'd0) & (1'b1 == ap_CS_fsm_state16)))) begin
+        LinearRegression_stubMap_data_second_size_s_ce0 = grp_push_back_1_fu_2680_mapHLS_unsigned_int_arrayHLS_Stub_data_second_size_s_ce0;
     end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        LinearRegression_stubMap_data_second_size_s_ce0 = grp_findLargestResidual_fu_2571_LinearRegression_stubMap_data_second_size_s_ce0;
-    end else if ((1'b1 == ap_CS_fsm_state34)) begin
-        LinearRegression_stubMap_data_second_size_s_ce0 = grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_second_size_s_ce0;
+        LinearRegression_stubMap_data_second_size_s_ce0 = grp_findLargestResidual_fu_2550_LinearRegression_stubMap_data_second_size_s_ce0;
+    end else if ((1'b1 == ap_CS_fsm_state33)) begin
+        LinearRegression_stubMap_data_second_size_s_ce0 = grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_second_size_s_ce0;
     end else begin
         LinearRegression_stubMap_data_second_size_s_ce0 = 1'b0;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state32)) begin
-        LinearRegression_stubMap_data_second_size_s_d0 = grp_erase_fu_2631_ap_return;
-    end else if ((((ap_predicate_op805_call_state29 == 1'b1) & (1'b1 == ap_CS_fsm_state29)) | ((ap_predicate_op431_call_state17 == 1'b1) & (1'b1 == ap_CS_fsm_state17)))) begin
-        LinearRegression_stubMap_data_second_size_s_d0 = grp_push_back_1_fu_2701_mapHLS_unsigned_int_arrayHLS_Stub_data_second_size_s_d0;
+    if ((1'b1 == ap_CS_fsm_state31)) begin
+        LinearRegression_stubMap_data_second_size_s_d0 = grp_erase_fu_2610_ap_return;
+    end else if ((((tmp_12_reg_4438 == 1'd0) & (1'b1 == ap_CS_fsm_state28)) | ((tmp_5_reg_3338 == 1'd0) & (1'b1 == ap_CS_fsm_state16)))) begin
+        LinearRegression_stubMap_data_second_size_s_d0 = grp_push_back_1_fu_2680_mapHLS_unsigned_int_arrayHLS_Stub_data_second_size_s_d0;
     end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        LinearRegression_stubMap_data_second_size_s_d0 = grp_findLargestResidual_fu_2571_LinearRegression_stubMap_data_second_size_s_d0;
-    end else if ((1'b1 == ap_CS_fsm_state34)) begin
-        LinearRegression_stubMap_data_second_size_s_d0 = grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_second_size_s_d0;
+        LinearRegression_stubMap_data_second_size_s_d0 = grp_findLargestResidual_fu_2550_LinearRegression_stubMap_data_second_size_s_d0;
+    end else if ((1'b1 == ap_CS_fsm_state33)) begin
+        LinearRegression_stubMap_data_second_size_s_d0 = grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_second_size_s_d0;
     end else begin
         LinearRegression_stubMap_data_second_size_s_d0 = 'bx;
     end
 end
 
 always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state32) & (1'b0 == ap_block_state32_on_subcall_done))) begin
+    if (((1'b1 == ap_CS_fsm_state31) & (1'b0 == ap_block_state31_on_subcall_done))) begin
         LinearRegression_stubMap_data_second_size_s_we0 = 1'b1;
-    end else if ((((ap_predicate_op805_call_state29 == 1'b1) & (1'b1 == ap_CS_fsm_state29)) | ((ap_predicate_op431_call_state17 == 1'b1) & (1'b1 == ap_CS_fsm_state17)))) begin
-        LinearRegression_stubMap_data_second_size_s_we0 = grp_push_back_1_fu_2701_mapHLS_unsigned_int_arrayHLS_Stub_data_second_size_s_we0;
+    end else if ((((tmp_12_reg_4438 == 1'd0) & (1'b1 == ap_CS_fsm_state28)) | ((tmp_5_reg_3338 == 1'd0) & (1'b1 == ap_CS_fsm_state16)))) begin
+        LinearRegression_stubMap_data_second_size_s_we0 = grp_push_back_1_fu_2680_mapHLS_unsigned_int_arrayHLS_Stub_data_second_size_s_we0;
     end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        LinearRegression_stubMap_data_second_size_s_we0 = grp_findLargestResidual_fu_2571_LinearRegression_stubMap_data_second_size_s_we0;
-    end else if ((1'b1 == ap_CS_fsm_state34)) begin
-        LinearRegression_stubMap_data_second_size_s_we0 = grp_clean_fu_2538_mapHLS_unsigned_int_arrayHLS_Stub_data_second_size_s_we0;
+        LinearRegression_stubMap_data_second_size_s_we0 = grp_findLargestResidual_fu_2550_LinearRegression_stubMap_data_second_size_s_we0;
+    end else if ((1'b1 == ap_CS_fsm_state33)) begin
+        LinearRegression_stubMap_data_second_size_s_we0 = grp_clean_fu_2517_mapHLS_unsigned_int_arrayHLS_Stub_data_second_size_s_we0;
     end else begin
         LinearRegression_stubMap_data_second_size_s_we0 = 1'b0;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state32)) begin
-        LinearRegression_stubs_data_barrel_s_address0 = grp_erase_1_fu_2668_arrayHLS_Stub_data_barrel_s_address0;
+    if ((1'b1 == ap_CS_fsm_state31)) begin
+        LinearRegression_stubs_data_barrel_s_address0 = grp_erase_1_fu_2647_arrayHLS_Stub_data_barrel_s_address0;
     end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        LinearRegression_stubs_data_barrel_s_address0 = grp_findLargestResidual_fu_2571_LinearRegression_stubs_data_barrel_s_address0;
+        LinearRegression_stubs_data_barrel_s_address0 = grp_findLargestResidual_fu_2550_LinearRegression_stubs_data_barrel_s_address0;
     end else begin
         LinearRegression_stubs_data_barrel_s_address0 = 'bx;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state32)) begin
-        LinearRegression_stubs_data_barrel_s_ce0 = grp_erase_1_fu_2668_arrayHLS_Stub_data_barrel_s_ce0;
+    if ((1'b1 == ap_CS_fsm_state31)) begin
+        LinearRegression_stubs_data_barrel_s_ce0 = grp_erase_1_fu_2647_arrayHLS_Stub_data_barrel_s_ce0;
     end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        LinearRegression_stubs_data_barrel_s_ce0 = grp_findLargestResidual_fu_2571_LinearRegression_stubs_data_barrel_s_ce0;
+        LinearRegression_stubs_data_barrel_s_ce0 = grp_findLargestResidual_fu_2550_LinearRegression_stubs_data_barrel_s_ce0;
     end else begin
         LinearRegression_stubs_data_barrel_s_ce0 = 1'b0;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state32)) begin
-        LinearRegression_stubs_data_barrel_s_we0 = grp_erase_1_fu_2668_arrayHLS_Stub_data_barrel_s_we0;
+    if ((1'b1 == ap_CS_fsm_state31)) begin
+        LinearRegression_stubs_data_barrel_s_we0 = grp_erase_1_fu_2647_arrayHLS_Stub_data_barrel_s_we0;
     end else begin
         LinearRegression_stubs_data_barrel_s_we0 = 1'b0;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state32)) begin
-        LinearRegression_stubs_data_layerId_s_address0 = grp_erase_1_fu_2668_arrayHLS_Stub_data_layerId_s_address0;
+    if ((1'b1 == ap_CS_fsm_state31)) begin
+        LinearRegression_stubs_data_layerId_s_address0 = grp_erase_1_fu_2647_arrayHLS_Stub_data_layerId_s_address0;
     end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        LinearRegression_stubs_data_layerId_s_address0 = grp_findLargestResidual_fu_2571_LinearRegression_stubs_data_layerId_s_address0;
+        LinearRegression_stubs_data_layerId_s_address0 = grp_findLargestResidual_fu_2550_LinearRegression_stubs_data_layerId_s_address0;
     end else begin
         LinearRegression_stubs_data_layerId_s_address0 = 'bx;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state32)) begin
-        LinearRegression_stubs_data_layerId_s_ce0 = grp_erase_1_fu_2668_arrayHLS_Stub_data_layerId_s_ce0;
+    if ((1'b1 == ap_CS_fsm_state31)) begin
+        LinearRegression_stubs_data_layerId_s_ce0 = grp_erase_1_fu_2647_arrayHLS_Stub_data_layerId_s_ce0;
     end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        LinearRegression_stubs_data_layerId_s_ce0 = grp_findLargestResidual_fu_2571_LinearRegression_stubs_data_layerId_s_ce0;
+        LinearRegression_stubs_data_layerId_s_ce0 = grp_findLargestResidual_fu_2550_LinearRegression_stubs_data_layerId_s_ce0;
     end else begin
         LinearRegression_stubs_data_layerId_s_ce0 = 1'b0;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state32)) begin
-        LinearRegression_stubs_data_layerId_s_we0 = grp_erase_1_fu_2668_arrayHLS_Stub_data_layerId_s_we0;
+    if ((1'b1 == ap_CS_fsm_state31)) begin
+        LinearRegression_stubs_data_layerId_s_we0 = grp_erase_1_fu_2647_arrayHLS_Stub_data_layerId_s_we0;
     end else begin
         LinearRegression_stubs_data_layerId_s_we0 = 1'b0;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state32)) begin
-        LinearRegression_stubs_data_psModule_s_address0 = grp_erase_1_fu_2668_arrayHLS_Stub_data_psModule_s_address0;
+    if ((1'b1 == ap_CS_fsm_state31)) begin
+        LinearRegression_stubs_data_psModule_s_address0 = grp_erase_1_fu_2647_arrayHLS_Stub_data_psModule_s_address0;
     end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        LinearRegression_stubs_data_psModule_s_address0 = grp_findLargestResidual_fu_2571_LinearRegression_stubs_data_psModule_s_address0;
+        LinearRegression_stubs_data_psModule_s_address0 = grp_findLargestResidual_fu_2550_LinearRegression_stubs_data_psModule_s_address0;
     end else begin
         LinearRegression_stubs_data_psModule_s_address0 = 'bx;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state32)) begin
-        LinearRegression_stubs_data_psModule_s_ce0 = grp_erase_1_fu_2668_arrayHLS_Stub_data_psModule_s_ce0;
+    if ((1'b1 == ap_CS_fsm_state31)) begin
+        LinearRegression_stubs_data_psModule_s_ce0 = grp_erase_1_fu_2647_arrayHLS_Stub_data_psModule_s_ce0;
     end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        LinearRegression_stubs_data_psModule_s_ce0 = grp_findLargestResidual_fu_2571_LinearRegression_stubs_data_psModule_s_ce0;
+        LinearRegression_stubs_data_psModule_s_ce0 = grp_findLargestResidual_fu_2550_LinearRegression_stubs_data_psModule_s_ce0;
     end else begin
         LinearRegression_stubs_data_psModule_s_ce0 = 1'b0;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state32)) begin
-        LinearRegression_stubs_data_psModule_s_we0 = grp_erase_1_fu_2668_arrayHLS_Stub_data_psModule_s_we0;
+    if ((1'b1 == ap_CS_fsm_state31)) begin
+        LinearRegression_stubs_data_psModule_s_we0 = grp_erase_1_fu_2647_arrayHLS_Stub_data_psModule_s_we0;
     end else begin
         LinearRegression_stubs_data_psModule_s_we0 = 1'b0;
     end
 end
 
 always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state39) | ((ap_start == 1'b0) & (1'b1 == ap_CS_fsm_state1)))) begin
+    if (((1'b1 == ap_CS_fsm_state36) | ((ap_start == 1'b0) & (1'b1 == ap_CS_fsm_state1)))) begin
         ap_done = 1'b1;
     end else begin
         ap_done = 1'b0;
@@ -4846,47 +4765,47 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((tmp_s_reg_3383 == 1'd0) & (1'b1 == ap_CS_fsm_state39))) begin
-        ap_phi_mux_LinearRegression_lay_9_phi_fu_2519_p4 = LinearRegression_lay_6_reg_2489;
+    if (((tmp_s_reg_3334 == 1'd0) & (1'b1 == ap_CS_fsm_state36))) begin
+        ap_phi_mux_LinearRegression_lay_7_phi_fu_2498_p4 = LinearRegression_lay_4_reg_2468;
     end else begin
-        ap_phi_mux_LinearRegression_lay_9_phi_fu_2519_p4 = LinearRegression_lay_9_reg_2516;
+        ap_phi_mux_LinearRegression_lay_7_phi_fu_2498_p4 = LinearRegression_lay_7_reg_2495;
     end
 end
 
 always @ (*) begin
-    if (((tmp_s_reg_3383 == 1'd0) & (1'b1 == ap_CS_fsm_state39))) begin
-        ap_phi_mux_LinearRegression_stu_1_phi_fu_2501_p4 = call_ret4_reg_5536;
+    if (((tmp_s_reg_3334 == 1'd0) & (1'b1 == ap_CS_fsm_state36))) begin
+        ap_phi_mux_LinearRegression_stu_1_phi_fu_2480_p4 = call_ret4_reg_5479;
     end else begin
-        ap_phi_mux_LinearRegression_stu_1_phi_fu_2501_p4 = LinearRegression_stu_1_reg_2498;
+        ap_phi_mux_LinearRegression_stu_1_phi_fu_2480_p4 = LinearRegression_stu_1_reg_2477;
     end
 end
 
 always @ (*) begin
-    if (((tmp_s_reg_3383 == 1'd0) & (1'b1 == ap_CS_fsm_state39))) begin
-        ap_phi_mux_LinearRegression_stu_2_phi_fu_2510_p4 = call_ret2_reg_5541;
+    if (((tmp_s_reg_3334 == 1'd0) & (1'b1 == ap_CS_fsm_state36))) begin
+        ap_phi_mux_LinearRegression_stu_2_phi_fu_2489_p4 = call_ret3_reg_5484;
     end else begin
-        ap_phi_mux_LinearRegression_stu_2_phi_fu_2510_p4 = LinearRegression_stu_2_reg_2507;
+        ap_phi_mux_LinearRegression_stu_2_phi_fu_2489_p4 = LinearRegression_stu_2_reg_2486;
     end
 end
 
 always @ (*) begin
-    if (((tmp_s_reg_3383 == 1'd0) & (1'b1 == ap_CS_fsm_state39))) begin
-        ap_phi_mux_p_0_phi_fu_2530_p4 = 1'd0;
+    if (((tmp_s_reg_3334 == 1'd0) & (1'b1 == ap_CS_fsm_state36))) begin
+        ap_phi_mux_p_0_phi_fu_2509_p4 = 1'd0;
     end else begin
-        ap_phi_mux_p_0_phi_fu_2530_p4 = p_0_reg_2526;
+        ap_phi_mux_p_0_phi_fu_2509_p4 = p_0_reg_2505;
     end
 end
 
 always @ (*) begin
-    if (((grp_fu_2895_p2 == 1'd1) & (tmp_77_reg_5563 == 1'd1) & (tmp_i1_35_reg_5546 == 1'd1) & (1'b1 == ap_CS_fsm_state38))) begin
-        ap_phi_mux_p_pn_in_i2_phi_fu_2482_p4 = i_0_i1_reg_2467;
+    if (((tmp_22_fu_3179_p2 == 1'd1) & (tmp_20_reg_5489 == 1'd1) & (1'b1 == ap_CS_fsm_state35))) begin
+        ap_phi_mux_p_pn_in_i2_phi_fu_2461_p4 = i_0_i2_reg_2446;
     end else begin
-        ap_phi_mux_p_pn_in_i2_phi_fu_2482_p4 = p_pn_in_i2_reg_2479;
+        ap_phi_mux_p_pn_in_i2_phi_fu_2461_p4 = p_pn_in_i2_reg_2458;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state39)) begin
+    if ((1'b1 == ap_CS_fsm_state36)) begin
         ap_ready = 1'b1;
     end else begin
         ap_ready = 1'b0;
@@ -4894,113 +4813,113 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state39)) begin
-        ap_return_0 = ap_phi_mux_p_0_phi_fu_2530_p4;
+    if ((1'b1 == ap_CS_fsm_state36)) begin
+        ap_return_0 = ap_phi_mux_p_0_phi_fu_2509_p4;
     end else begin
         ap_return_0 = ap_return_0_preg;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state39)) begin
-        ap_return_1 = LinearRegression_val_reg_3378;
+    if ((1'b1 == ap_CS_fsm_state36)) begin
+        ap_return_1 = LinearRegression_val_reg_3329;
     end else begin
         ap_return_1 = ap_return_1_preg;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state39)) begin
-        ap_return_2 = ap_phi_mux_LinearRegression_stu_1_phi_fu_2501_p4;
+    if ((1'b1 == ap_CS_fsm_state36)) begin
+        ap_return_2 = ap_phi_mux_LinearRegression_stu_1_phi_fu_2480_p4;
     end else begin
         ap_return_2 = ap_return_2_preg;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state39)) begin
-        ap_return_3 = residData_phi_read_a_reg_3319;
+    if ((1'b1 == ap_CS_fsm_state36)) begin
+        ap_return_3 = residData_phi_read_a_reg_3273;
     end else begin
         ap_return_3 = ap_return_3_preg;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state39)) begin
-        ap_return_4 = residData_z_read_ass_reg_3325;
+    if ((1'b1 == ap_CS_fsm_state36)) begin
+        ap_return_4 = residData_z_read_ass_reg_3279;
     end else begin
         ap_return_4 = ap_return_4_preg;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state39)) begin
-        ap_return_5 = LinearRegression_lar_reg_3331;
+    if ((1'b1 == ap_CS_fsm_state36)) begin
+        ap_return_5 = LinearRegression_lar_reg_3285;
     end else begin
         ap_return_5 = ap_return_5_preg;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state39)) begin
-        ap_return_6 = idx_assign_reg_3340;
+    if ((1'b1 == ap_CS_fsm_state36)) begin
+        ap_return_6 = idx_assign_reg_3293;
     end else begin
         ap_return_6 = ap_return_6_preg;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state39)) begin
-        ap_return_7 = LinearRegression_lar_1_reg_3346;
+    if ((1'b1 == ap_CS_fsm_state36)) begin
+        ap_return_7 = LinearRegression_lar_1_reg_3299;
     end else begin
         ap_return_7 = ap_return_7_preg;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state39)) begin
-        ap_return_8 = ap_phi_mux_LinearRegression_stu_2_phi_fu_2510_p4;
+    if ((1'b1 == ap_CS_fsm_state36)) begin
+        ap_return_8 = ap_phi_mux_LinearRegression_stu_2_phi_fu_2489_p4;
     end else begin
         ap_return_8 = ap_return_8_preg;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state39)) begin
-        ap_return_9 = ap_phi_mux_LinearRegression_lay_9_phi_fu_2519_p4;
+    if ((1'b1 == ap_CS_fsm_state36)) begin
+        ap_return_9 = ap_phi_mux_LinearRegression_lay_7_phi_fu_2498_p4;
     end else begin
         ap_return_9 = ap_return_9_preg;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state27)) begin
+    if ((1'b1 == ap_CS_fsm_state26)) begin
         b_data_barrel_assi_1_address0 = 64'd9;
-    end else if ((1'b1 == ap_CS_fsm_state26)) begin
-        b_data_barrel_assi_1_address0 = 64'd7;
     end else if ((1'b1 == ap_CS_fsm_state25)) begin
-        b_data_barrel_assi_1_address0 = 64'd5;
+        b_data_barrel_assi_1_address0 = 64'd7;
     end else if ((1'b1 == ap_CS_fsm_state24)) begin
-        b_data_barrel_assi_1_address0 = 64'd3;
+        b_data_barrel_assi_1_address0 = 64'd5;
     end else if ((1'b1 == ap_CS_fsm_state23)) begin
-        b_data_barrel_assi_1_address0 = 64'd0;
+        b_data_barrel_assi_1_address0 = 64'd3;
     end else if ((1'b1 == ap_CS_fsm_state22)) begin
-        b_data_barrel_assi_1_address0 = tmp_74_fu_3096_p1;
+        b_data_barrel_assi_1_address0 = 64'd0;
+    end else if ((1'b1 == ap_CS_fsm_state21)) begin
+        b_data_barrel_assi_1_address0 = tmp_17_fu_3061_p1;
     end else begin
         b_data_barrel_assi_1_address0 = 'bx;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state27)) begin
+    if ((1'b1 == ap_CS_fsm_state26)) begin
         b_data_barrel_assi_1_address1 = 64'd8;
-    end else if ((1'b1 == ap_CS_fsm_state26)) begin
-        b_data_barrel_assi_1_address1 = 64'd6;
     end else if ((1'b1 == ap_CS_fsm_state25)) begin
-        b_data_barrel_assi_1_address1 = 64'd4;
+        b_data_barrel_assi_1_address1 = 64'd6;
     end else if ((1'b1 == ap_CS_fsm_state24)) begin
-        b_data_barrel_assi_1_address1 = 64'd2;
+        b_data_barrel_assi_1_address1 = 64'd4;
     end else if ((1'b1 == ap_CS_fsm_state23)) begin
+        b_data_barrel_assi_1_address1 = 64'd2;
+    end else if ((1'b1 == ap_CS_fsm_state22)) begin
         b_data_barrel_assi_1_address1 = 64'd1;
     end else begin
         b_data_barrel_assi_1_address1 = 'bx;
@@ -5008,7 +4927,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state24) | (1'b1 == ap_CS_fsm_state23) | (1'b1 == ap_CS_fsm_state22) | (1'b1 == ap_CS_fsm_state27) | (1'b1 == ap_CS_fsm_state26) | (1'b1 == ap_CS_fsm_state25))) begin
+    if (((1'b1 == ap_CS_fsm_state23) | (1'b1 == ap_CS_fsm_state22) | (1'b1 == ap_CS_fsm_state21) | (1'b1 == ap_CS_fsm_state26) | (1'b1 == ap_CS_fsm_state25) | (1'b1 == ap_CS_fsm_state24))) begin
         b_data_barrel_assi_1_ce0 = 1'b1;
     end else begin
         b_data_barrel_assi_1_ce0 = 1'b0;
@@ -5016,7 +4935,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state24) | (1'b1 == ap_CS_fsm_state23) | (1'b1 == ap_CS_fsm_state27) | (1'b1 == ap_CS_fsm_state26) | (1'b1 == ap_CS_fsm_state25))) begin
+    if (((1'b1 == ap_CS_fsm_state23) | (1'b1 == ap_CS_fsm_state22) | (1'b1 == ap_CS_fsm_state26) | (1'b1 == ap_CS_fsm_state25) | (1'b1 == ap_CS_fsm_state24))) begin
         b_data_barrel_assi_1_ce1 = 1'b1;
     end else begin
         b_data_barrel_assi_1_ce1 = 1'b0;
@@ -5024,7 +4943,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state22)) begin
+    if ((1'b1 == ap_CS_fsm_state21)) begin
         b_data_barrel_assi_1_we0 = 1'b1;
     end else begin
         b_data_barrel_assi_1_we0 = 1'b0;
@@ -5032,33 +4951,33 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state15)) begin
+    if ((1'b1 == ap_CS_fsm_state14)) begin
         b_data_barrel_assi_address0 = 64'd9;
-    end else if ((1'b1 == ap_CS_fsm_state14)) begin
-        b_data_barrel_assi_address0 = 64'd7;
     end else if ((1'b1 == ap_CS_fsm_state13)) begin
-        b_data_barrel_assi_address0 = 64'd5;
+        b_data_barrel_assi_address0 = 64'd7;
     end else if ((1'b1 == ap_CS_fsm_state12)) begin
-        b_data_barrel_assi_address0 = 64'd3;
+        b_data_barrel_assi_address0 = 64'd5;
     end else if ((1'b1 == ap_CS_fsm_state11)) begin
-        b_data_barrel_assi_address0 = 64'd0;
+        b_data_barrel_assi_address0 = 64'd3;
     end else if ((1'b1 == ap_CS_fsm_state10)) begin
-        b_data_barrel_assi_address0 = tmp_65_fu_3004_p1;
+        b_data_barrel_assi_address0 = 64'd0;
+    end else if ((1'b1 == ap_CS_fsm_state9)) begin
+        b_data_barrel_assi_address0 = tmp_4_fu_2969_p1;
     end else begin
         b_data_barrel_assi_address0 = 'bx;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state15)) begin
+    if ((1'b1 == ap_CS_fsm_state14)) begin
         b_data_barrel_assi_address1 = 64'd8;
-    end else if ((1'b1 == ap_CS_fsm_state14)) begin
-        b_data_barrel_assi_address1 = 64'd6;
     end else if ((1'b1 == ap_CS_fsm_state13)) begin
-        b_data_barrel_assi_address1 = 64'd4;
+        b_data_barrel_assi_address1 = 64'd6;
     end else if ((1'b1 == ap_CS_fsm_state12)) begin
-        b_data_barrel_assi_address1 = 64'd2;
+        b_data_barrel_assi_address1 = 64'd4;
     end else if ((1'b1 == ap_CS_fsm_state11)) begin
+        b_data_barrel_assi_address1 = 64'd2;
+    end else if ((1'b1 == ap_CS_fsm_state10)) begin
         b_data_barrel_assi_address1 = 64'd1;
     end else begin
         b_data_barrel_assi_address1 = 'bx;
@@ -5066,7 +4985,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state15) | (1'b1 == ap_CS_fsm_state14) | (1'b1 == ap_CS_fsm_state13) | (1'b1 == ap_CS_fsm_state12) | (1'b1 == ap_CS_fsm_state11) | (1'b1 == ap_CS_fsm_state10))) begin
+    if (((1'b1 == ap_CS_fsm_state14) | (1'b1 == ap_CS_fsm_state13) | (1'b1 == ap_CS_fsm_state12) | (1'b1 == ap_CS_fsm_state11) | (1'b1 == ap_CS_fsm_state10) | (1'b1 == ap_CS_fsm_state9))) begin
         b_data_barrel_assi_ce0 = 1'b1;
     end else begin
         b_data_barrel_assi_ce0 = 1'b0;
@@ -5074,7 +4993,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state15) | (1'b1 == ap_CS_fsm_state14) | (1'b1 == ap_CS_fsm_state13) | (1'b1 == ap_CS_fsm_state12) | (1'b1 == ap_CS_fsm_state11))) begin
+    if (((1'b1 == ap_CS_fsm_state14) | (1'b1 == ap_CS_fsm_state13) | (1'b1 == ap_CS_fsm_state12) | (1'b1 == ap_CS_fsm_state11) | (1'b1 == ap_CS_fsm_state10))) begin
         b_data_barrel_assi_ce1 = 1'b1;
     end else begin
         b_data_barrel_assi_ce1 = 1'b0;
@@ -5082,7 +5001,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state10)) begin
+    if ((1'b1 == ap_CS_fsm_state9)) begin
         b_data_barrel_assi_we0 = 1'b1;
     end else begin
         b_data_barrel_assi_we0 = 1'b0;
@@ -5090,33 +5009,33 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state27)) begin
+    if ((1'b1 == ap_CS_fsm_state26)) begin
         b_data_layerId_ass_1_address0 = 64'd9;
-    end else if ((1'b1 == ap_CS_fsm_state26)) begin
-        b_data_layerId_ass_1_address0 = 64'd7;
     end else if ((1'b1 == ap_CS_fsm_state25)) begin
-        b_data_layerId_ass_1_address0 = 64'd5;
+        b_data_layerId_ass_1_address0 = 64'd7;
     end else if ((1'b1 == ap_CS_fsm_state24)) begin
-        b_data_layerId_ass_1_address0 = 64'd3;
+        b_data_layerId_ass_1_address0 = 64'd5;
     end else if ((1'b1 == ap_CS_fsm_state23)) begin
-        b_data_layerId_ass_1_address0 = 64'd0;
+        b_data_layerId_ass_1_address0 = 64'd3;
     end else if ((1'b1 == ap_CS_fsm_state22)) begin
-        b_data_layerId_ass_1_address0 = tmp_74_fu_3096_p1;
+        b_data_layerId_ass_1_address0 = 64'd0;
+    end else if ((1'b1 == ap_CS_fsm_state21)) begin
+        b_data_layerId_ass_1_address0 = tmp_17_fu_3061_p1;
     end else begin
         b_data_layerId_ass_1_address0 = 'bx;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state27)) begin
+    if ((1'b1 == ap_CS_fsm_state26)) begin
         b_data_layerId_ass_1_address1 = 64'd8;
-    end else if ((1'b1 == ap_CS_fsm_state26)) begin
-        b_data_layerId_ass_1_address1 = 64'd6;
     end else if ((1'b1 == ap_CS_fsm_state25)) begin
-        b_data_layerId_ass_1_address1 = 64'd4;
+        b_data_layerId_ass_1_address1 = 64'd6;
     end else if ((1'b1 == ap_CS_fsm_state24)) begin
-        b_data_layerId_ass_1_address1 = 64'd2;
+        b_data_layerId_ass_1_address1 = 64'd4;
     end else if ((1'b1 == ap_CS_fsm_state23)) begin
+        b_data_layerId_ass_1_address1 = 64'd2;
+    end else if ((1'b1 == ap_CS_fsm_state22)) begin
         b_data_layerId_ass_1_address1 = 64'd1;
     end else begin
         b_data_layerId_ass_1_address1 = 'bx;
@@ -5124,7 +5043,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state24) | (1'b1 == ap_CS_fsm_state23) | (1'b1 == ap_CS_fsm_state22) | (1'b1 == ap_CS_fsm_state27) | (1'b1 == ap_CS_fsm_state26) | (1'b1 == ap_CS_fsm_state25))) begin
+    if (((1'b1 == ap_CS_fsm_state23) | (1'b1 == ap_CS_fsm_state22) | (1'b1 == ap_CS_fsm_state21) | (1'b1 == ap_CS_fsm_state26) | (1'b1 == ap_CS_fsm_state25) | (1'b1 == ap_CS_fsm_state24))) begin
         b_data_layerId_ass_1_ce0 = 1'b1;
     end else begin
         b_data_layerId_ass_1_ce0 = 1'b0;
@@ -5132,7 +5051,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state24) | (1'b1 == ap_CS_fsm_state23) | (1'b1 == ap_CS_fsm_state27) | (1'b1 == ap_CS_fsm_state26) | (1'b1 == ap_CS_fsm_state25))) begin
+    if (((1'b1 == ap_CS_fsm_state23) | (1'b1 == ap_CS_fsm_state22) | (1'b1 == ap_CS_fsm_state26) | (1'b1 == ap_CS_fsm_state25) | (1'b1 == ap_CS_fsm_state24))) begin
         b_data_layerId_ass_1_ce1 = 1'b1;
     end else begin
         b_data_layerId_ass_1_ce1 = 1'b0;
@@ -5140,7 +5059,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state22)) begin
+    if ((1'b1 == ap_CS_fsm_state21)) begin
         b_data_layerId_ass_1_we0 = 1'b1;
     end else begin
         b_data_layerId_ass_1_we0 = 1'b0;
@@ -5148,33 +5067,33 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state15)) begin
+    if ((1'b1 == ap_CS_fsm_state14)) begin
         b_data_layerId_ass_address0 = 64'd9;
-    end else if ((1'b1 == ap_CS_fsm_state14)) begin
-        b_data_layerId_ass_address0 = 64'd7;
     end else if ((1'b1 == ap_CS_fsm_state13)) begin
-        b_data_layerId_ass_address0 = 64'd5;
+        b_data_layerId_ass_address0 = 64'd7;
     end else if ((1'b1 == ap_CS_fsm_state12)) begin
-        b_data_layerId_ass_address0 = 64'd3;
+        b_data_layerId_ass_address0 = 64'd5;
     end else if ((1'b1 == ap_CS_fsm_state11)) begin
-        b_data_layerId_ass_address0 = 64'd0;
+        b_data_layerId_ass_address0 = 64'd3;
     end else if ((1'b1 == ap_CS_fsm_state10)) begin
-        b_data_layerId_ass_address0 = tmp_65_fu_3004_p1;
+        b_data_layerId_ass_address0 = 64'd0;
+    end else if ((1'b1 == ap_CS_fsm_state9)) begin
+        b_data_layerId_ass_address0 = tmp_4_fu_2969_p1;
     end else begin
         b_data_layerId_ass_address0 = 'bx;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state15)) begin
+    if ((1'b1 == ap_CS_fsm_state14)) begin
         b_data_layerId_ass_address1 = 64'd8;
-    end else if ((1'b1 == ap_CS_fsm_state14)) begin
-        b_data_layerId_ass_address1 = 64'd6;
     end else if ((1'b1 == ap_CS_fsm_state13)) begin
-        b_data_layerId_ass_address1 = 64'd4;
+        b_data_layerId_ass_address1 = 64'd6;
     end else if ((1'b1 == ap_CS_fsm_state12)) begin
-        b_data_layerId_ass_address1 = 64'd2;
+        b_data_layerId_ass_address1 = 64'd4;
     end else if ((1'b1 == ap_CS_fsm_state11)) begin
+        b_data_layerId_ass_address1 = 64'd2;
+    end else if ((1'b1 == ap_CS_fsm_state10)) begin
         b_data_layerId_ass_address1 = 64'd1;
     end else begin
         b_data_layerId_ass_address1 = 'bx;
@@ -5182,7 +5101,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state15) | (1'b1 == ap_CS_fsm_state14) | (1'b1 == ap_CS_fsm_state13) | (1'b1 == ap_CS_fsm_state12) | (1'b1 == ap_CS_fsm_state11) | (1'b1 == ap_CS_fsm_state10))) begin
+    if (((1'b1 == ap_CS_fsm_state14) | (1'b1 == ap_CS_fsm_state13) | (1'b1 == ap_CS_fsm_state12) | (1'b1 == ap_CS_fsm_state11) | (1'b1 == ap_CS_fsm_state10) | (1'b1 == ap_CS_fsm_state9))) begin
         b_data_layerId_ass_ce0 = 1'b1;
     end else begin
         b_data_layerId_ass_ce0 = 1'b0;
@@ -5190,7 +5109,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state15) | (1'b1 == ap_CS_fsm_state14) | (1'b1 == ap_CS_fsm_state13) | (1'b1 == ap_CS_fsm_state12) | (1'b1 == ap_CS_fsm_state11))) begin
+    if (((1'b1 == ap_CS_fsm_state14) | (1'b1 == ap_CS_fsm_state13) | (1'b1 == ap_CS_fsm_state12) | (1'b1 == ap_CS_fsm_state11) | (1'b1 == ap_CS_fsm_state10))) begin
         b_data_layerId_ass_ce1 = 1'b1;
     end else begin
         b_data_layerId_ass_ce1 = 1'b0;
@@ -5198,7 +5117,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state10)) begin
+    if ((1'b1 == ap_CS_fsm_state9)) begin
         b_data_layerId_ass_we0 = 1'b1;
     end else begin
         b_data_layerId_ass_we0 = 1'b0;
@@ -5206,33 +5125,33 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state27)) begin
+    if ((1'b1 == ap_CS_fsm_state26)) begin
         b_data_phi_assign_1_address0 = 64'd9;
-    end else if ((1'b1 == ap_CS_fsm_state26)) begin
-        b_data_phi_assign_1_address0 = 64'd7;
     end else if ((1'b1 == ap_CS_fsm_state25)) begin
-        b_data_phi_assign_1_address0 = 64'd5;
+        b_data_phi_assign_1_address0 = 64'd7;
     end else if ((1'b1 == ap_CS_fsm_state24)) begin
-        b_data_phi_assign_1_address0 = 64'd3;
+        b_data_phi_assign_1_address0 = 64'd5;
     end else if ((1'b1 == ap_CS_fsm_state23)) begin
-        b_data_phi_assign_1_address0 = 64'd0;
+        b_data_phi_assign_1_address0 = 64'd3;
     end else if ((1'b1 == ap_CS_fsm_state22)) begin
-        b_data_phi_assign_1_address0 = tmp_74_fu_3096_p1;
+        b_data_phi_assign_1_address0 = 64'd0;
+    end else if ((1'b1 == ap_CS_fsm_state21)) begin
+        b_data_phi_assign_1_address0 = tmp_17_fu_3061_p1;
     end else begin
         b_data_phi_assign_1_address0 = 'bx;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state27)) begin
+    if ((1'b1 == ap_CS_fsm_state26)) begin
         b_data_phi_assign_1_address1 = 64'd8;
-    end else if ((1'b1 == ap_CS_fsm_state26)) begin
-        b_data_phi_assign_1_address1 = 64'd6;
     end else if ((1'b1 == ap_CS_fsm_state25)) begin
-        b_data_phi_assign_1_address1 = 64'd4;
+        b_data_phi_assign_1_address1 = 64'd6;
     end else if ((1'b1 == ap_CS_fsm_state24)) begin
-        b_data_phi_assign_1_address1 = 64'd2;
+        b_data_phi_assign_1_address1 = 64'd4;
     end else if ((1'b1 == ap_CS_fsm_state23)) begin
+        b_data_phi_assign_1_address1 = 64'd2;
+    end else if ((1'b1 == ap_CS_fsm_state22)) begin
         b_data_phi_assign_1_address1 = 64'd1;
     end else begin
         b_data_phi_assign_1_address1 = 'bx;
@@ -5240,7 +5159,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state24) | (1'b1 == ap_CS_fsm_state23) | (1'b1 == ap_CS_fsm_state22) | (1'b1 == ap_CS_fsm_state27) | (1'b1 == ap_CS_fsm_state26) | (1'b1 == ap_CS_fsm_state25))) begin
+    if (((1'b1 == ap_CS_fsm_state23) | (1'b1 == ap_CS_fsm_state22) | (1'b1 == ap_CS_fsm_state21) | (1'b1 == ap_CS_fsm_state26) | (1'b1 == ap_CS_fsm_state25) | (1'b1 == ap_CS_fsm_state24))) begin
         b_data_phi_assign_1_ce0 = 1'b1;
     end else begin
         b_data_phi_assign_1_ce0 = 1'b0;
@@ -5248,7 +5167,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state24) | (1'b1 == ap_CS_fsm_state23) | (1'b1 == ap_CS_fsm_state27) | (1'b1 == ap_CS_fsm_state26) | (1'b1 == ap_CS_fsm_state25))) begin
+    if (((1'b1 == ap_CS_fsm_state23) | (1'b1 == ap_CS_fsm_state22) | (1'b1 == ap_CS_fsm_state26) | (1'b1 == ap_CS_fsm_state25) | (1'b1 == ap_CS_fsm_state24))) begin
         b_data_phi_assign_1_ce1 = 1'b1;
     end else begin
         b_data_phi_assign_1_ce1 = 1'b0;
@@ -5256,7 +5175,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state22)) begin
+    if ((1'b1 == ap_CS_fsm_state21)) begin
         b_data_phi_assign_1_we0 = 1'b1;
     end else begin
         b_data_phi_assign_1_we0 = 1'b0;
@@ -5264,33 +5183,33 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state15)) begin
+    if ((1'b1 == ap_CS_fsm_state14)) begin
         b_data_phi_assign_address0 = 64'd9;
-    end else if ((1'b1 == ap_CS_fsm_state14)) begin
-        b_data_phi_assign_address0 = 64'd7;
     end else if ((1'b1 == ap_CS_fsm_state13)) begin
-        b_data_phi_assign_address0 = 64'd5;
+        b_data_phi_assign_address0 = 64'd7;
     end else if ((1'b1 == ap_CS_fsm_state12)) begin
-        b_data_phi_assign_address0 = 64'd3;
+        b_data_phi_assign_address0 = 64'd5;
     end else if ((1'b1 == ap_CS_fsm_state11)) begin
-        b_data_phi_assign_address0 = 64'd0;
+        b_data_phi_assign_address0 = 64'd3;
     end else if ((1'b1 == ap_CS_fsm_state10)) begin
-        b_data_phi_assign_address0 = tmp_65_fu_3004_p1;
+        b_data_phi_assign_address0 = 64'd0;
+    end else if ((1'b1 == ap_CS_fsm_state9)) begin
+        b_data_phi_assign_address0 = tmp_4_fu_2969_p1;
     end else begin
         b_data_phi_assign_address0 = 'bx;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state15)) begin
+    if ((1'b1 == ap_CS_fsm_state14)) begin
         b_data_phi_assign_address1 = 64'd8;
-    end else if ((1'b1 == ap_CS_fsm_state14)) begin
-        b_data_phi_assign_address1 = 64'd6;
     end else if ((1'b1 == ap_CS_fsm_state13)) begin
-        b_data_phi_assign_address1 = 64'd4;
+        b_data_phi_assign_address1 = 64'd6;
     end else if ((1'b1 == ap_CS_fsm_state12)) begin
-        b_data_phi_assign_address1 = 64'd2;
+        b_data_phi_assign_address1 = 64'd4;
     end else if ((1'b1 == ap_CS_fsm_state11)) begin
+        b_data_phi_assign_address1 = 64'd2;
+    end else if ((1'b1 == ap_CS_fsm_state10)) begin
         b_data_phi_assign_address1 = 64'd1;
     end else begin
         b_data_phi_assign_address1 = 'bx;
@@ -5298,7 +5217,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state15) | (1'b1 == ap_CS_fsm_state14) | (1'b1 == ap_CS_fsm_state13) | (1'b1 == ap_CS_fsm_state12) | (1'b1 == ap_CS_fsm_state11) | (1'b1 == ap_CS_fsm_state10))) begin
+    if (((1'b1 == ap_CS_fsm_state14) | (1'b1 == ap_CS_fsm_state13) | (1'b1 == ap_CS_fsm_state12) | (1'b1 == ap_CS_fsm_state11) | (1'b1 == ap_CS_fsm_state10) | (1'b1 == ap_CS_fsm_state9))) begin
         b_data_phi_assign_ce0 = 1'b1;
     end else begin
         b_data_phi_assign_ce0 = 1'b0;
@@ -5306,7 +5225,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state15) | (1'b1 == ap_CS_fsm_state14) | (1'b1 == ap_CS_fsm_state13) | (1'b1 == ap_CS_fsm_state12) | (1'b1 == ap_CS_fsm_state11))) begin
+    if (((1'b1 == ap_CS_fsm_state14) | (1'b1 == ap_CS_fsm_state13) | (1'b1 == ap_CS_fsm_state12) | (1'b1 == ap_CS_fsm_state11) | (1'b1 == ap_CS_fsm_state10))) begin
         b_data_phi_assign_ce1 = 1'b1;
     end else begin
         b_data_phi_assign_ce1 = 1'b0;
@@ -5314,7 +5233,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state10)) begin
+    if ((1'b1 == ap_CS_fsm_state9)) begin
         b_data_phi_assign_we0 = 1'b1;
     end else begin
         b_data_phi_assign_we0 = 1'b0;
@@ -5322,33 +5241,33 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state27)) begin
+    if ((1'b1 == ap_CS_fsm_state26)) begin
         b_data_psModule_as_1_address0 = 64'd9;
-    end else if ((1'b1 == ap_CS_fsm_state26)) begin
-        b_data_psModule_as_1_address0 = 64'd7;
     end else if ((1'b1 == ap_CS_fsm_state25)) begin
-        b_data_psModule_as_1_address0 = 64'd5;
+        b_data_psModule_as_1_address0 = 64'd7;
     end else if ((1'b1 == ap_CS_fsm_state24)) begin
-        b_data_psModule_as_1_address0 = 64'd3;
+        b_data_psModule_as_1_address0 = 64'd5;
     end else if ((1'b1 == ap_CS_fsm_state23)) begin
-        b_data_psModule_as_1_address0 = 64'd0;
+        b_data_psModule_as_1_address0 = 64'd3;
     end else if ((1'b1 == ap_CS_fsm_state22)) begin
-        b_data_psModule_as_1_address0 = tmp_74_fu_3096_p1;
+        b_data_psModule_as_1_address0 = 64'd0;
+    end else if ((1'b1 == ap_CS_fsm_state21)) begin
+        b_data_psModule_as_1_address0 = tmp_17_fu_3061_p1;
     end else begin
         b_data_psModule_as_1_address0 = 'bx;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state27)) begin
+    if ((1'b1 == ap_CS_fsm_state26)) begin
         b_data_psModule_as_1_address1 = 64'd8;
-    end else if ((1'b1 == ap_CS_fsm_state26)) begin
-        b_data_psModule_as_1_address1 = 64'd6;
     end else if ((1'b1 == ap_CS_fsm_state25)) begin
-        b_data_psModule_as_1_address1 = 64'd4;
+        b_data_psModule_as_1_address1 = 64'd6;
     end else if ((1'b1 == ap_CS_fsm_state24)) begin
-        b_data_psModule_as_1_address1 = 64'd2;
+        b_data_psModule_as_1_address1 = 64'd4;
     end else if ((1'b1 == ap_CS_fsm_state23)) begin
+        b_data_psModule_as_1_address1 = 64'd2;
+    end else if ((1'b1 == ap_CS_fsm_state22)) begin
         b_data_psModule_as_1_address1 = 64'd1;
     end else begin
         b_data_psModule_as_1_address1 = 'bx;
@@ -5356,7 +5275,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state24) | (1'b1 == ap_CS_fsm_state23) | (1'b1 == ap_CS_fsm_state22) | (1'b1 == ap_CS_fsm_state27) | (1'b1 == ap_CS_fsm_state26) | (1'b1 == ap_CS_fsm_state25))) begin
+    if (((1'b1 == ap_CS_fsm_state23) | (1'b1 == ap_CS_fsm_state22) | (1'b1 == ap_CS_fsm_state21) | (1'b1 == ap_CS_fsm_state26) | (1'b1 == ap_CS_fsm_state25) | (1'b1 == ap_CS_fsm_state24))) begin
         b_data_psModule_as_1_ce0 = 1'b1;
     end else begin
         b_data_psModule_as_1_ce0 = 1'b0;
@@ -5364,7 +5283,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state24) | (1'b1 == ap_CS_fsm_state23) | (1'b1 == ap_CS_fsm_state27) | (1'b1 == ap_CS_fsm_state26) | (1'b1 == ap_CS_fsm_state25))) begin
+    if (((1'b1 == ap_CS_fsm_state23) | (1'b1 == ap_CS_fsm_state22) | (1'b1 == ap_CS_fsm_state26) | (1'b1 == ap_CS_fsm_state25) | (1'b1 == ap_CS_fsm_state24))) begin
         b_data_psModule_as_1_ce1 = 1'b1;
     end else begin
         b_data_psModule_as_1_ce1 = 1'b0;
@@ -5372,7 +5291,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state22)) begin
+    if ((1'b1 == ap_CS_fsm_state21)) begin
         b_data_psModule_as_1_we0 = 1'b1;
     end else begin
         b_data_psModule_as_1_we0 = 1'b0;
@@ -5380,33 +5299,33 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state15)) begin
+    if ((1'b1 == ap_CS_fsm_state14)) begin
         b_data_psModule_as_address0 = 64'd9;
-    end else if ((1'b1 == ap_CS_fsm_state14)) begin
-        b_data_psModule_as_address0 = 64'd7;
     end else if ((1'b1 == ap_CS_fsm_state13)) begin
-        b_data_psModule_as_address0 = 64'd5;
+        b_data_psModule_as_address0 = 64'd7;
     end else if ((1'b1 == ap_CS_fsm_state12)) begin
-        b_data_psModule_as_address0 = 64'd3;
+        b_data_psModule_as_address0 = 64'd5;
     end else if ((1'b1 == ap_CS_fsm_state11)) begin
-        b_data_psModule_as_address0 = 64'd0;
+        b_data_psModule_as_address0 = 64'd3;
     end else if ((1'b1 == ap_CS_fsm_state10)) begin
-        b_data_psModule_as_address0 = tmp_65_fu_3004_p1;
+        b_data_psModule_as_address0 = 64'd0;
+    end else if ((1'b1 == ap_CS_fsm_state9)) begin
+        b_data_psModule_as_address0 = tmp_4_fu_2969_p1;
     end else begin
         b_data_psModule_as_address0 = 'bx;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state15)) begin
+    if ((1'b1 == ap_CS_fsm_state14)) begin
         b_data_psModule_as_address1 = 64'd8;
-    end else if ((1'b1 == ap_CS_fsm_state14)) begin
-        b_data_psModule_as_address1 = 64'd6;
     end else if ((1'b1 == ap_CS_fsm_state13)) begin
-        b_data_psModule_as_address1 = 64'd4;
+        b_data_psModule_as_address1 = 64'd6;
     end else if ((1'b1 == ap_CS_fsm_state12)) begin
-        b_data_psModule_as_address1 = 64'd2;
+        b_data_psModule_as_address1 = 64'd4;
     end else if ((1'b1 == ap_CS_fsm_state11)) begin
+        b_data_psModule_as_address1 = 64'd2;
+    end else if ((1'b1 == ap_CS_fsm_state10)) begin
         b_data_psModule_as_address1 = 64'd1;
     end else begin
         b_data_psModule_as_address1 = 'bx;
@@ -5414,7 +5333,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state15) | (1'b1 == ap_CS_fsm_state14) | (1'b1 == ap_CS_fsm_state13) | (1'b1 == ap_CS_fsm_state12) | (1'b1 == ap_CS_fsm_state11) | (1'b1 == ap_CS_fsm_state10))) begin
+    if (((1'b1 == ap_CS_fsm_state14) | (1'b1 == ap_CS_fsm_state13) | (1'b1 == ap_CS_fsm_state12) | (1'b1 == ap_CS_fsm_state11) | (1'b1 == ap_CS_fsm_state10) | (1'b1 == ap_CS_fsm_state9))) begin
         b_data_psModule_as_ce0 = 1'b1;
     end else begin
         b_data_psModule_as_ce0 = 1'b0;
@@ -5422,7 +5341,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state15) | (1'b1 == ap_CS_fsm_state14) | (1'b1 == ap_CS_fsm_state13) | (1'b1 == ap_CS_fsm_state12) | (1'b1 == ap_CS_fsm_state11))) begin
+    if (((1'b1 == ap_CS_fsm_state14) | (1'b1 == ap_CS_fsm_state13) | (1'b1 == ap_CS_fsm_state12) | (1'b1 == ap_CS_fsm_state11) | (1'b1 == ap_CS_fsm_state10))) begin
         b_data_psModule_as_ce1 = 1'b1;
     end else begin
         b_data_psModule_as_ce1 = 1'b0;
@@ -5430,7 +5349,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state10)) begin
+    if ((1'b1 == ap_CS_fsm_state9)) begin
         b_data_psModule_as_we0 = 1'b1;
     end else begin
         b_data_psModule_as_we0 = 1'b0;
@@ -5438,33 +5357,33 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state27)) begin
+    if ((1'b1 == ap_CS_fsm_state26)) begin
         b_data_r_assign_1_address0 = 64'd9;
-    end else if ((1'b1 == ap_CS_fsm_state26)) begin
-        b_data_r_assign_1_address0 = 64'd7;
     end else if ((1'b1 == ap_CS_fsm_state25)) begin
-        b_data_r_assign_1_address0 = 64'd5;
+        b_data_r_assign_1_address0 = 64'd7;
     end else if ((1'b1 == ap_CS_fsm_state24)) begin
-        b_data_r_assign_1_address0 = 64'd3;
+        b_data_r_assign_1_address0 = 64'd5;
     end else if ((1'b1 == ap_CS_fsm_state23)) begin
-        b_data_r_assign_1_address0 = 64'd0;
+        b_data_r_assign_1_address0 = 64'd3;
     end else if ((1'b1 == ap_CS_fsm_state22)) begin
-        b_data_r_assign_1_address0 = tmp_74_fu_3096_p1;
+        b_data_r_assign_1_address0 = 64'd0;
+    end else if ((1'b1 == ap_CS_fsm_state21)) begin
+        b_data_r_assign_1_address0 = tmp_17_fu_3061_p1;
     end else begin
         b_data_r_assign_1_address0 = 'bx;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state27)) begin
+    if ((1'b1 == ap_CS_fsm_state26)) begin
         b_data_r_assign_1_address1 = 64'd8;
-    end else if ((1'b1 == ap_CS_fsm_state26)) begin
-        b_data_r_assign_1_address1 = 64'd6;
     end else if ((1'b1 == ap_CS_fsm_state25)) begin
-        b_data_r_assign_1_address1 = 64'd4;
+        b_data_r_assign_1_address1 = 64'd6;
     end else if ((1'b1 == ap_CS_fsm_state24)) begin
-        b_data_r_assign_1_address1 = 64'd2;
+        b_data_r_assign_1_address1 = 64'd4;
     end else if ((1'b1 == ap_CS_fsm_state23)) begin
+        b_data_r_assign_1_address1 = 64'd2;
+    end else if ((1'b1 == ap_CS_fsm_state22)) begin
         b_data_r_assign_1_address1 = 64'd1;
     end else begin
         b_data_r_assign_1_address1 = 'bx;
@@ -5472,7 +5391,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state24) | (1'b1 == ap_CS_fsm_state23) | (1'b1 == ap_CS_fsm_state22) | (1'b1 == ap_CS_fsm_state27) | (1'b1 == ap_CS_fsm_state26) | (1'b1 == ap_CS_fsm_state25))) begin
+    if (((1'b1 == ap_CS_fsm_state23) | (1'b1 == ap_CS_fsm_state22) | (1'b1 == ap_CS_fsm_state21) | (1'b1 == ap_CS_fsm_state26) | (1'b1 == ap_CS_fsm_state25) | (1'b1 == ap_CS_fsm_state24))) begin
         b_data_r_assign_1_ce0 = 1'b1;
     end else begin
         b_data_r_assign_1_ce0 = 1'b0;
@@ -5480,7 +5399,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state24) | (1'b1 == ap_CS_fsm_state23) | (1'b1 == ap_CS_fsm_state27) | (1'b1 == ap_CS_fsm_state26) | (1'b1 == ap_CS_fsm_state25))) begin
+    if (((1'b1 == ap_CS_fsm_state23) | (1'b1 == ap_CS_fsm_state22) | (1'b1 == ap_CS_fsm_state26) | (1'b1 == ap_CS_fsm_state25) | (1'b1 == ap_CS_fsm_state24))) begin
         b_data_r_assign_1_ce1 = 1'b1;
     end else begin
         b_data_r_assign_1_ce1 = 1'b0;
@@ -5488,7 +5407,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state22)) begin
+    if ((1'b1 == ap_CS_fsm_state21)) begin
         b_data_r_assign_1_we0 = 1'b1;
     end else begin
         b_data_r_assign_1_we0 = 1'b0;
@@ -5496,33 +5415,33 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state15)) begin
+    if ((1'b1 == ap_CS_fsm_state14)) begin
         b_data_r_assign_address0 = 64'd9;
-    end else if ((1'b1 == ap_CS_fsm_state14)) begin
-        b_data_r_assign_address0 = 64'd7;
     end else if ((1'b1 == ap_CS_fsm_state13)) begin
-        b_data_r_assign_address0 = 64'd5;
+        b_data_r_assign_address0 = 64'd7;
     end else if ((1'b1 == ap_CS_fsm_state12)) begin
-        b_data_r_assign_address0 = 64'd3;
+        b_data_r_assign_address0 = 64'd5;
     end else if ((1'b1 == ap_CS_fsm_state11)) begin
-        b_data_r_assign_address0 = 64'd0;
+        b_data_r_assign_address0 = 64'd3;
     end else if ((1'b1 == ap_CS_fsm_state10)) begin
-        b_data_r_assign_address0 = tmp_65_fu_3004_p1;
+        b_data_r_assign_address0 = 64'd0;
+    end else if ((1'b1 == ap_CS_fsm_state9)) begin
+        b_data_r_assign_address0 = tmp_4_fu_2969_p1;
     end else begin
         b_data_r_assign_address0 = 'bx;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state15)) begin
+    if ((1'b1 == ap_CS_fsm_state14)) begin
         b_data_r_assign_address1 = 64'd8;
-    end else if ((1'b1 == ap_CS_fsm_state14)) begin
-        b_data_r_assign_address1 = 64'd6;
     end else if ((1'b1 == ap_CS_fsm_state13)) begin
-        b_data_r_assign_address1 = 64'd4;
+        b_data_r_assign_address1 = 64'd6;
     end else if ((1'b1 == ap_CS_fsm_state12)) begin
-        b_data_r_assign_address1 = 64'd2;
+        b_data_r_assign_address1 = 64'd4;
     end else if ((1'b1 == ap_CS_fsm_state11)) begin
+        b_data_r_assign_address1 = 64'd2;
+    end else if ((1'b1 == ap_CS_fsm_state10)) begin
         b_data_r_assign_address1 = 64'd1;
     end else begin
         b_data_r_assign_address1 = 'bx;
@@ -5530,7 +5449,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state15) | (1'b1 == ap_CS_fsm_state14) | (1'b1 == ap_CS_fsm_state13) | (1'b1 == ap_CS_fsm_state12) | (1'b1 == ap_CS_fsm_state11) | (1'b1 == ap_CS_fsm_state10))) begin
+    if (((1'b1 == ap_CS_fsm_state14) | (1'b1 == ap_CS_fsm_state13) | (1'b1 == ap_CS_fsm_state12) | (1'b1 == ap_CS_fsm_state11) | (1'b1 == ap_CS_fsm_state10) | (1'b1 == ap_CS_fsm_state9))) begin
         b_data_r_assign_ce0 = 1'b1;
     end else begin
         b_data_r_assign_ce0 = 1'b0;
@@ -5538,7 +5457,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state15) | (1'b1 == ap_CS_fsm_state14) | (1'b1 == ap_CS_fsm_state13) | (1'b1 == ap_CS_fsm_state12) | (1'b1 == ap_CS_fsm_state11))) begin
+    if (((1'b1 == ap_CS_fsm_state14) | (1'b1 == ap_CS_fsm_state13) | (1'b1 == ap_CS_fsm_state12) | (1'b1 == ap_CS_fsm_state11) | (1'b1 == ap_CS_fsm_state10))) begin
         b_data_r_assign_ce1 = 1'b1;
     end else begin
         b_data_r_assign_ce1 = 1'b0;
@@ -5546,7 +5465,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state10)) begin
+    if ((1'b1 == ap_CS_fsm_state9)) begin
         b_data_r_assign_we0 = 1'b1;
     end else begin
         b_data_r_assign_we0 = 1'b0;
@@ -5554,33 +5473,33 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state15)) begin
+    if ((1'b1 == ap_CS_fsm_state14)) begin
         b_data_settings_ch_1_address0 = 64'd9;
-    end else if ((1'b1 == ap_CS_fsm_state14)) begin
-        b_data_settings_ch_1_address0 = 64'd7;
     end else if ((1'b1 == ap_CS_fsm_state13)) begin
-        b_data_settings_ch_1_address0 = 64'd5;
+        b_data_settings_ch_1_address0 = 64'd7;
     end else if ((1'b1 == ap_CS_fsm_state12)) begin
-        b_data_settings_ch_1_address0 = 64'd3;
+        b_data_settings_ch_1_address0 = 64'd5;
     end else if ((1'b1 == ap_CS_fsm_state11)) begin
-        b_data_settings_ch_1_address0 = 64'd0;
+        b_data_settings_ch_1_address0 = 64'd3;
     end else if ((1'b1 == ap_CS_fsm_state10)) begin
-        b_data_settings_ch_1_address0 = tmp_65_fu_3004_p1;
+        b_data_settings_ch_1_address0 = 64'd0;
+    end else if ((1'b1 == ap_CS_fsm_state9)) begin
+        b_data_settings_ch_1_address0 = tmp_4_fu_2969_p1;
     end else begin
         b_data_settings_ch_1_address0 = 'bx;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state15)) begin
+    if ((1'b1 == ap_CS_fsm_state14)) begin
         b_data_settings_ch_1_address1 = 64'd8;
-    end else if ((1'b1 == ap_CS_fsm_state14)) begin
-        b_data_settings_ch_1_address1 = 64'd6;
     end else if ((1'b1 == ap_CS_fsm_state13)) begin
-        b_data_settings_ch_1_address1 = 64'd4;
+        b_data_settings_ch_1_address1 = 64'd6;
     end else if ((1'b1 == ap_CS_fsm_state12)) begin
-        b_data_settings_ch_1_address1 = 64'd2;
+        b_data_settings_ch_1_address1 = 64'd4;
     end else if ((1'b1 == ap_CS_fsm_state11)) begin
+        b_data_settings_ch_1_address1 = 64'd2;
+    end else if ((1'b1 == ap_CS_fsm_state10)) begin
         b_data_settings_ch_1_address1 = 64'd1;
     end else begin
         b_data_settings_ch_1_address1 = 'bx;
@@ -5588,7 +5507,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state15) | (1'b1 == ap_CS_fsm_state14) | (1'b1 == ap_CS_fsm_state13) | (1'b1 == ap_CS_fsm_state12) | (1'b1 == ap_CS_fsm_state11) | (1'b1 == ap_CS_fsm_state10))) begin
+    if (((1'b1 == ap_CS_fsm_state14) | (1'b1 == ap_CS_fsm_state13) | (1'b1 == ap_CS_fsm_state12) | (1'b1 == ap_CS_fsm_state11) | (1'b1 == ap_CS_fsm_state10) | (1'b1 == ap_CS_fsm_state9))) begin
         b_data_settings_ch_1_ce0 = 1'b1;
     end else begin
         b_data_settings_ch_1_ce0 = 1'b0;
@@ -5596,7 +5515,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state15) | (1'b1 == ap_CS_fsm_state14) | (1'b1 == ap_CS_fsm_state13) | (1'b1 == ap_CS_fsm_state12) | (1'b1 == ap_CS_fsm_state11))) begin
+    if (((1'b1 == ap_CS_fsm_state14) | (1'b1 == ap_CS_fsm_state13) | (1'b1 == ap_CS_fsm_state12) | (1'b1 == ap_CS_fsm_state11) | (1'b1 == ap_CS_fsm_state10))) begin
         b_data_settings_ch_1_ce1 = 1'b1;
     end else begin
         b_data_settings_ch_1_ce1 = 1'b0;
@@ -5604,7 +5523,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state10)) begin
+    if ((1'b1 == ap_CS_fsm_state9)) begin
         b_data_settings_ch_1_we0 = 1'b1;
     end else begin
         b_data_settings_ch_1_we0 = 1'b0;
@@ -5612,33 +5531,33 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state27)) begin
+    if ((1'b1 == ap_CS_fsm_state26)) begin
         b_data_settings_ch_2_address0 = 64'd9;
-    end else if ((1'b1 == ap_CS_fsm_state26)) begin
-        b_data_settings_ch_2_address0 = 64'd7;
     end else if ((1'b1 == ap_CS_fsm_state25)) begin
-        b_data_settings_ch_2_address0 = 64'd5;
+        b_data_settings_ch_2_address0 = 64'd7;
     end else if ((1'b1 == ap_CS_fsm_state24)) begin
-        b_data_settings_ch_2_address0 = 64'd3;
+        b_data_settings_ch_2_address0 = 64'd5;
     end else if ((1'b1 == ap_CS_fsm_state23)) begin
-        b_data_settings_ch_2_address0 = 64'd0;
+        b_data_settings_ch_2_address0 = 64'd3;
     end else if ((1'b1 == ap_CS_fsm_state22)) begin
-        b_data_settings_ch_2_address0 = tmp_74_fu_3096_p1;
+        b_data_settings_ch_2_address0 = 64'd0;
+    end else if ((1'b1 == ap_CS_fsm_state21)) begin
+        b_data_settings_ch_2_address0 = tmp_17_fu_3061_p1;
     end else begin
         b_data_settings_ch_2_address0 = 'bx;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state27)) begin
+    if ((1'b1 == ap_CS_fsm_state26)) begin
         b_data_settings_ch_2_address1 = 64'd8;
-    end else if ((1'b1 == ap_CS_fsm_state26)) begin
-        b_data_settings_ch_2_address1 = 64'd6;
     end else if ((1'b1 == ap_CS_fsm_state25)) begin
-        b_data_settings_ch_2_address1 = 64'd4;
+        b_data_settings_ch_2_address1 = 64'd6;
     end else if ((1'b1 == ap_CS_fsm_state24)) begin
-        b_data_settings_ch_2_address1 = 64'd2;
+        b_data_settings_ch_2_address1 = 64'd4;
     end else if ((1'b1 == ap_CS_fsm_state23)) begin
+        b_data_settings_ch_2_address1 = 64'd2;
+    end else if ((1'b1 == ap_CS_fsm_state22)) begin
         b_data_settings_ch_2_address1 = 64'd1;
     end else begin
         b_data_settings_ch_2_address1 = 'bx;
@@ -5646,7 +5565,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state24) | (1'b1 == ap_CS_fsm_state23) | (1'b1 == ap_CS_fsm_state22) | (1'b1 == ap_CS_fsm_state27) | (1'b1 == ap_CS_fsm_state26) | (1'b1 == ap_CS_fsm_state25))) begin
+    if (((1'b1 == ap_CS_fsm_state23) | (1'b1 == ap_CS_fsm_state22) | (1'b1 == ap_CS_fsm_state21) | (1'b1 == ap_CS_fsm_state26) | (1'b1 == ap_CS_fsm_state25) | (1'b1 == ap_CS_fsm_state24))) begin
         b_data_settings_ch_2_ce0 = 1'b1;
     end else begin
         b_data_settings_ch_2_ce0 = 1'b0;
@@ -5654,7 +5573,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state24) | (1'b1 == ap_CS_fsm_state23) | (1'b1 == ap_CS_fsm_state27) | (1'b1 == ap_CS_fsm_state26) | (1'b1 == ap_CS_fsm_state25))) begin
+    if (((1'b1 == ap_CS_fsm_state23) | (1'b1 == ap_CS_fsm_state22) | (1'b1 == ap_CS_fsm_state26) | (1'b1 == ap_CS_fsm_state25) | (1'b1 == ap_CS_fsm_state24))) begin
         b_data_settings_ch_2_ce1 = 1'b1;
     end else begin
         b_data_settings_ch_2_ce1 = 1'b0;
@@ -5662,7 +5581,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state22)) begin
+    if ((1'b1 == ap_CS_fsm_state21)) begin
         b_data_settings_ch_2_we0 = 1'b1;
     end else begin
         b_data_settings_ch_2_we0 = 1'b0;
@@ -5670,33 +5589,33 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state27)) begin
+    if ((1'b1 == ap_CS_fsm_state26)) begin
         b_data_settings_ch_3_address0 = 64'd9;
-    end else if ((1'b1 == ap_CS_fsm_state26)) begin
-        b_data_settings_ch_3_address0 = 64'd7;
     end else if ((1'b1 == ap_CS_fsm_state25)) begin
-        b_data_settings_ch_3_address0 = 64'd5;
+        b_data_settings_ch_3_address0 = 64'd7;
     end else if ((1'b1 == ap_CS_fsm_state24)) begin
-        b_data_settings_ch_3_address0 = 64'd3;
+        b_data_settings_ch_3_address0 = 64'd5;
     end else if ((1'b1 == ap_CS_fsm_state23)) begin
-        b_data_settings_ch_3_address0 = 64'd0;
+        b_data_settings_ch_3_address0 = 64'd3;
     end else if ((1'b1 == ap_CS_fsm_state22)) begin
-        b_data_settings_ch_3_address0 = tmp_74_fu_3096_p1;
+        b_data_settings_ch_3_address0 = 64'd0;
+    end else if ((1'b1 == ap_CS_fsm_state21)) begin
+        b_data_settings_ch_3_address0 = tmp_17_fu_3061_p1;
     end else begin
         b_data_settings_ch_3_address0 = 'bx;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state27)) begin
+    if ((1'b1 == ap_CS_fsm_state26)) begin
         b_data_settings_ch_3_address1 = 64'd8;
-    end else if ((1'b1 == ap_CS_fsm_state26)) begin
-        b_data_settings_ch_3_address1 = 64'd6;
     end else if ((1'b1 == ap_CS_fsm_state25)) begin
-        b_data_settings_ch_3_address1 = 64'd4;
+        b_data_settings_ch_3_address1 = 64'd6;
     end else if ((1'b1 == ap_CS_fsm_state24)) begin
-        b_data_settings_ch_3_address1 = 64'd2;
+        b_data_settings_ch_3_address1 = 64'd4;
     end else if ((1'b1 == ap_CS_fsm_state23)) begin
+        b_data_settings_ch_3_address1 = 64'd2;
+    end else if ((1'b1 == ap_CS_fsm_state22)) begin
         b_data_settings_ch_3_address1 = 64'd1;
     end else begin
         b_data_settings_ch_3_address1 = 'bx;
@@ -5704,7 +5623,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state24) | (1'b1 == ap_CS_fsm_state23) | (1'b1 == ap_CS_fsm_state22) | (1'b1 == ap_CS_fsm_state27) | (1'b1 == ap_CS_fsm_state26) | (1'b1 == ap_CS_fsm_state25))) begin
+    if (((1'b1 == ap_CS_fsm_state23) | (1'b1 == ap_CS_fsm_state22) | (1'b1 == ap_CS_fsm_state21) | (1'b1 == ap_CS_fsm_state26) | (1'b1 == ap_CS_fsm_state25) | (1'b1 == ap_CS_fsm_state24))) begin
         b_data_settings_ch_3_ce0 = 1'b1;
     end else begin
         b_data_settings_ch_3_ce0 = 1'b0;
@@ -5712,7 +5631,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state24) | (1'b1 == ap_CS_fsm_state23) | (1'b1 == ap_CS_fsm_state27) | (1'b1 == ap_CS_fsm_state26) | (1'b1 == ap_CS_fsm_state25))) begin
+    if (((1'b1 == ap_CS_fsm_state23) | (1'b1 == ap_CS_fsm_state22) | (1'b1 == ap_CS_fsm_state26) | (1'b1 == ap_CS_fsm_state25) | (1'b1 == ap_CS_fsm_state24))) begin
         b_data_settings_ch_3_ce1 = 1'b1;
     end else begin
         b_data_settings_ch_3_ce1 = 1'b0;
@@ -5720,7 +5639,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state22)) begin
+    if ((1'b1 == ap_CS_fsm_state21)) begin
         b_data_settings_ch_3_we0 = 1'b1;
     end else begin
         b_data_settings_ch_3_we0 = 1'b0;
@@ -5728,33 +5647,33 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state15)) begin
+    if ((1'b1 == ap_CS_fsm_state14)) begin
         b_data_settings_ch_address0 = 64'd9;
-    end else if ((1'b1 == ap_CS_fsm_state14)) begin
-        b_data_settings_ch_address0 = 64'd7;
     end else if ((1'b1 == ap_CS_fsm_state13)) begin
-        b_data_settings_ch_address0 = 64'd5;
+        b_data_settings_ch_address0 = 64'd7;
     end else if ((1'b1 == ap_CS_fsm_state12)) begin
-        b_data_settings_ch_address0 = 64'd3;
+        b_data_settings_ch_address0 = 64'd5;
     end else if ((1'b1 == ap_CS_fsm_state11)) begin
-        b_data_settings_ch_address0 = 64'd0;
+        b_data_settings_ch_address0 = 64'd3;
     end else if ((1'b1 == ap_CS_fsm_state10)) begin
-        b_data_settings_ch_address0 = tmp_65_fu_3004_p1;
+        b_data_settings_ch_address0 = 64'd0;
+    end else if ((1'b1 == ap_CS_fsm_state9)) begin
+        b_data_settings_ch_address0 = tmp_4_fu_2969_p1;
     end else begin
         b_data_settings_ch_address0 = 'bx;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state15)) begin
+    if ((1'b1 == ap_CS_fsm_state14)) begin
         b_data_settings_ch_address1 = 64'd8;
-    end else if ((1'b1 == ap_CS_fsm_state14)) begin
-        b_data_settings_ch_address1 = 64'd6;
     end else if ((1'b1 == ap_CS_fsm_state13)) begin
-        b_data_settings_ch_address1 = 64'd4;
+        b_data_settings_ch_address1 = 64'd6;
     end else if ((1'b1 == ap_CS_fsm_state12)) begin
-        b_data_settings_ch_address1 = 64'd2;
+        b_data_settings_ch_address1 = 64'd4;
     end else if ((1'b1 == ap_CS_fsm_state11)) begin
+        b_data_settings_ch_address1 = 64'd2;
+    end else if ((1'b1 == ap_CS_fsm_state10)) begin
         b_data_settings_ch_address1 = 64'd1;
     end else begin
         b_data_settings_ch_address1 = 'bx;
@@ -5762,7 +5681,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state15) | (1'b1 == ap_CS_fsm_state14) | (1'b1 == ap_CS_fsm_state13) | (1'b1 == ap_CS_fsm_state12) | (1'b1 == ap_CS_fsm_state11) | (1'b1 == ap_CS_fsm_state10))) begin
+    if (((1'b1 == ap_CS_fsm_state14) | (1'b1 == ap_CS_fsm_state13) | (1'b1 == ap_CS_fsm_state12) | (1'b1 == ap_CS_fsm_state11) | (1'b1 == ap_CS_fsm_state10) | (1'b1 == ap_CS_fsm_state9))) begin
         b_data_settings_ch_ce0 = 1'b1;
     end else begin
         b_data_settings_ch_ce0 = 1'b0;
@@ -5770,7 +5689,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state15) | (1'b1 == ap_CS_fsm_state14) | (1'b1 == ap_CS_fsm_state13) | (1'b1 == ap_CS_fsm_state12) | (1'b1 == ap_CS_fsm_state11))) begin
+    if (((1'b1 == ap_CS_fsm_state14) | (1'b1 == ap_CS_fsm_state13) | (1'b1 == ap_CS_fsm_state12) | (1'b1 == ap_CS_fsm_state11) | (1'b1 == ap_CS_fsm_state10))) begin
         b_data_settings_ch_ce1 = 1'b1;
     end else begin
         b_data_settings_ch_ce1 = 1'b0;
@@ -5778,7 +5697,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state10)) begin
+    if ((1'b1 == ap_CS_fsm_state9)) begin
         b_data_settings_ch_we0 = 1'b1;
     end else begin
         b_data_settings_ch_we0 = 1'b0;
@@ -5786,33 +5705,33 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state15)) begin
+    if ((1'b1 == ap_CS_fsm_state14)) begin
         b_data_settings_mi_1_address0 = 64'd9;
-    end else if ((1'b1 == ap_CS_fsm_state14)) begin
-        b_data_settings_mi_1_address0 = 64'd7;
     end else if ((1'b1 == ap_CS_fsm_state13)) begin
-        b_data_settings_mi_1_address0 = 64'd5;
+        b_data_settings_mi_1_address0 = 64'd7;
     end else if ((1'b1 == ap_CS_fsm_state12)) begin
-        b_data_settings_mi_1_address0 = 64'd3;
+        b_data_settings_mi_1_address0 = 64'd5;
     end else if ((1'b1 == ap_CS_fsm_state11)) begin
-        b_data_settings_mi_1_address0 = 64'd0;
+        b_data_settings_mi_1_address0 = 64'd3;
     end else if ((1'b1 == ap_CS_fsm_state10)) begin
-        b_data_settings_mi_1_address0 = tmp_65_fu_3004_p1;
+        b_data_settings_mi_1_address0 = 64'd0;
+    end else if ((1'b1 == ap_CS_fsm_state9)) begin
+        b_data_settings_mi_1_address0 = tmp_4_fu_2969_p1;
     end else begin
         b_data_settings_mi_1_address0 = 'bx;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state15)) begin
+    if ((1'b1 == ap_CS_fsm_state14)) begin
         b_data_settings_mi_1_address1 = 64'd8;
-    end else if ((1'b1 == ap_CS_fsm_state14)) begin
-        b_data_settings_mi_1_address1 = 64'd6;
     end else if ((1'b1 == ap_CS_fsm_state13)) begin
-        b_data_settings_mi_1_address1 = 64'd4;
+        b_data_settings_mi_1_address1 = 64'd6;
     end else if ((1'b1 == ap_CS_fsm_state12)) begin
-        b_data_settings_mi_1_address1 = 64'd2;
+        b_data_settings_mi_1_address1 = 64'd4;
     end else if ((1'b1 == ap_CS_fsm_state11)) begin
+        b_data_settings_mi_1_address1 = 64'd2;
+    end else if ((1'b1 == ap_CS_fsm_state10)) begin
         b_data_settings_mi_1_address1 = 64'd1;
     end else begin
         b_data_settings_mi_1_address1 = 'bx;
@@ -5820,7 +5739,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state15) | (1'b1 == ap_CS_fsm_state14) | (1'b1 == ap_CS_fsm_state13) | (1'b1 == ap_CS_fsm_state12) | (1'b1 == ap_CS_fsm_state11) | (1'b1 == ap_CS_fsm_state10))) begin
+    if (((1'b1 == ap_CS_fsm_state14) | (1'b1 == ap_CS_fsm_state13) | (1'b1 == ap_CS_fsm_state12) | (1'b1 == ap_CS_fsm_state11) | (1'b1 == ap_CS_fsm_state10) | (1'b1 == ap_CS_fsm_state9))) begin
         b_data_settings_mi_1_ce0 = 1'b1;
     end else begin
         b_data_settings_mi_1_ce0 = 1'b0;
@@ -5828,7 +5747,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state15) | (1'b1 == ap_CS_fsm_state14) | (1'b1 == ap_CS_fsm_state13) | (1'b1 == ap_CS_fsm_state12) | (1'b1 == ap_CS_fsm_state11))) begin
+    if (((1'b1 == ap_CS_fsm_state14) | (1'b1 == ap_CS_fsm_state13) | (1'b1 == ap_CS_fsm_state12) | (1'b1 == ap_CS_fsm_state11) | (1'b1 == ap_CS_fsm_state10))) begin
         b_data_settings_mi_1_ce1 = 1'b1;
     end else begin
         b_data_settings_mi_1_ce1 = 1'b0;
@@ -5836,7 +5755,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state10)) begin
+    if ((1'b1 == ap_CS_fsm_state9)) begin
         b_data_settings_mi_1_we0 = 1'b1;
     end else begin
         b_data_settings_mi_1_we0 = 1'b0;
@@ -5844,33 +5763,33 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state27)) begin
+    if ((1'b1 == ap_CS_fsm_state26)) begin
         b_data_settings_mi_2_address0 = 64'd9;
-    end else if ((1'b1 == ap_CS_fsm_state26)) begin
-        b_data_settings_mi_2_address0 = 64'd7;
     end else if ((1'b1 == ap_CS_fsm_state25)) begin
-        b_data_settings_mi_2_address0 = 64'd5;
+        b_data_settings_mi_2_address0 = 64'd7;
     end else if ((1'b1 == ap_CS_fsm_state24)) begin
-        b_data_settings_mi_2_address0 = 64'd3;
+        b_data_settings_mi_2_address0 = 64'd5;
     end else if ((1'b1 == ap_CS_fsm_state23)) begin
-        b_data_settings_mi_2_address0 = 64'd0;
+        b_data_settings_mi_2_address0 = 64'd3;
     end else if ((1'b1 == ap_CS_fsm_state22)) begin
-        b_data_settings_mi_2_address0 = tmp_74_fu_3096_p1;
+        b_data_settings_mi_2_address0 = 64'd0;
+    end else if ((1'b1 == ap_CS_fsm_state21)) begin
+        b_data_settings_mi_2_address0 = tmp_17_fu_3061_p1;
     end else begin
         b_data_settings_mi_2_address0 = 'bx;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state27)) begin
+    if ((1'b1 == ap_CS_fsm_state26)) begin
         b_data_settings_mi_2_address1 = 64'd8;
-    end else if ((1'b1 == ap_CS_fsm_state26)) begin
-        b_data_settings_mi_2_address1 = 64'd6;
     end else if ((1'b1 == ap_CS_fsm_state25)) begin
-        b_data_settings_mi_2_address1 = 64'd4;
+        b_data_settings_mi_2_address1 = 64'd6;
     end else if ((1'b1 == ap_CS_fsm_state24)) begin
-        b_data_settings_mi_2_address1 = 64'd2;
+        b_data_settings_mi_2_address1 = 64'd4;
     end else if ((1'b1 == ap_CS_fsm_state23)) begin
+        b_data_settings_mi_2_address1 = 64'd2;
+    end else if ((1'b1 == ap_CS_fsm_state22)) begin
         b_data_settings_mi_2_address1 = 64'd1;
     end else begin
         b_data_settings_mi_2_address1 = 'bx;
@@ -5878,7 +5797,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state24) | (1'b1 == ap_CS_fsm_state23) | (1'b1 == ap_CS_fsm_state22) | (1'b1 == ap_CS_fsm_state27) | (1'b1 == ap_CS_fsm_state26) | (1'b1 == ap_CS_fsm_state25))) begin
+    if (((1'b1 == ap_CS_fsm_state23) | (1'b1 == ap_CS_fsm_state22) | (1'b1 == ap_CS_fsm_state21) | (1'b1 == ap_CS_fsm_state26) | (1'b1 == ap_CS_fsm_state25) | (1'b1 == ap_CS_fsm_state24))) begin
         b_data_settings_mi_2_ce0 = 1'b1;
     end else begin
         b_data_settings_mi_2_ce0 = 1'b0;
@@ -5886,7 +5805,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state24) | (1'b1 == ap_CS_fsm_state23) | (1'b1 == ap_CS_fsm_state27) | (1'b1 == ap_CS_fsm_state26) | (1'b1 == ap_CS_fsm_state25))) begin
+    if (((1'b1 == ap_CS_fsm_state23) | (1'b1 == ap_CS_fsm_state22) | (1'b1 == ap_CS_fsm_state26) | (1'b1 == ap_CS_fsm_state25) | (1'b1 == ap_CS_fsm_state24))) begin
         b_data_settings_mi_2_ce1 = 1'b1;
     end else begin
         b_data_settings_mi_2_ce1 = 1'b0;
@@ -5894,7 +5813,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state22)) begin
+    if ((1'b1 == ap_CS_fsm_state21)) begin
         b_data_settings_mi_2_we0 = 1'b1;
     end else begin
         b_data_settings_mi_2_we0 = 1'b0;
@@ -5902,33 +5821,33 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state27)) begin
+    if ((1'b1 == ap_CS_fsm_state26)) begin
         b_data_settings_mi_3_address0 = 64'd9;
-    end else if ((1'b1 == ap_CS_fsm_state26)) begin
-        b_data_settings_mi_3_address0 = 64'd7;
     end else if ((1'b1 == ap_CS_fsm_state25)) begin
-        b_data_settings_mi_3_address0 = 64'd5;
+        b_data_settings_mi_3_address0 = 64'd7;
     end else if ((1'b1 == ap_CS_fsm_state24)) begin
-        b_data_settings_mi_3_address0 = 64'd3;
+        b_data_settings_mi_3_address0 = 64'd5;
     end else if ((1'b1 == ap_CS_fsm_state23)) begin
-        b_data_settings_mi_3_address0 = 64'd0;
+        b_data_settings_mi_3_address0 = 64'd3;
     end else if ((1'b1 == ap_CS_fsm_state22)) begin
-        b_data_settings_mi_3_address0 = tmp_74_fu_3096_p1;
+        b_data_settings_mi_3_address0 = 64'd0;
+    end else if ((1'b1 == ap_CS_fsm_state21)) begin
+        b_data_settings_mi_3_address0 = tmp_17_fu_3061_p1;
     end else begin
         b_data_settings_mi_3_address0 = 'bx;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state27)) begin
+    if ((1'b1 == ap_CS_fsm_state26)) begin
         b_data_settings_mi_3_address1 = 64'd8;
-    end else if ((1'b1 == ap_CS_fsm_state26)) begin
-        b_data_settings_mi_3_address1 = 64'd6;
     end else if ((1'b1 == ap_CS_fsm_state25)) begin
-        b_data_settings_mi_3_address1 = 64'd4;
+        b_data_settings_mi_3_address1 = 64'd6;
     end else if ((1'b1 == ap_CS_fsm_state24)) begin
-        b_data_settings_mi_3_address1 = 64'd2;
+        b_data_settings_mi_3_address1 = 64'd4;
     end else if ((1'b1 == ap_CS_fsm_state23)) begin
+        b_data_settings_mi_3_address1 = 64'd2;
+    end else if ((1'b1 == ap_CS_fsm_state22)) begin
         b_data_settings_mi_3_address1 = 64'd1;
     end else begin
         b_data_settings_mi_3_address1 = 'bx;
@@ -5936,7 +5855,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state24) | (1'b1 == ap_CS_fsm_state23) | (1'b1 == ap_CS_fsm_state22) | (1'b1 == ap_CS_fsm_state27) | (1'b1 == ap_CS_fsm_state26) | (1'b1 == ap_CS_fsm_state25))) begin
+    if (((1'b1 == ap_CS_fsm_state23) | (1'b1 == ap_CS_fsm_state22) | (1'b1 == ap_CS_fsm_state21) | (1'b1 == ap_CS_fsm_state26) | (1'b1 == ap_CS_fsm_state25) | (1'b1 == ap_CS_fsm_state24))) begin
         b_data_settings_mi_3_ce0 = 1'b1;
     end else begin
         b_data_settings_mi_3_ce0 = 1'b0;
@@ -5944,7 +5863,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state24) | (1'b1 == ap_CS_fsm_state23) | (1'b1 == ap_CS_fsm_state27) | (1'b1 == ap_CS_fsm_state26) | (1'b1 == ap_CS_fsm_state25))) begin
+    if (((1'b1 == ap_CS_fsm_state23) | (1'b1 == ap_CS_fsm_state22) | (1'b1 == ap_CS_fsm_state26) | (1'b1 == ap_CS_fsm_state25) | (1'b1 == ap_CS_fsm_state24))) begin
         b_data_settings_mi_3_ce1 = 1'b1;
     end else begin
         b_data_settings_mi_3_ce1 = 1'b0;
@@ -5952,7 +5871,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state22)) begin
+    if ((1'b1 == ap_CS_fsm_state21)) begin
         b_data_settings_mi_3_we0 = 1'b1;
     end else begin
         b_data_settings_mi_3_we0 = 1'b0;
@@ -5960,33 +5879,33 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state15)) begin
+    if ((1'b1 == ap_CS_fsm_state14)) begin
         b_data_settings_mi_address0 = 64'd9;
-    end else if ((1'b1 == ap_CS_fsm_state14)) begin
-        b_data_settings_mi_address0 = 64'd7;
     end else if ((1'b1 == ap_CS_fsm_state13)) begin
-        b_data_settings_mi_address0 = 64'd5;
+        b_data_settings_mi_address0 = 64'd7;
     end else if ((1'b1 == ap_CS_fsm_state12)) begin
-        b_data_settings_mi_address0 = 64'd3;
+        b_data_settings_mi_address0 = 64'd5;
     end else if ((1'b1 == ap_CS_fsm_state11)) begin
-        b_data_settings_mi_address0 = 64'd0;
+        b_data_settings_mi_address0 = 64'd3;
     end else if ((1'b1 == ap_CS_fsm_state10)) begin
-        b_data_settings_mi_address0 = tmp_65_fu_3004_p1;
+        b_data_settings_mi_address0 = 64'd0;
+    end else if ((1'b1 == ap_CS_fsm_state9)) begin
+        b_data_settings_mi_address0 = tmp_4_fu_2969_p1;
     end else begin
         b_data_settings_mi_address0 = 'bx;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state15)) begin
+    if ((1'b1 == ap_CS_fsm_state14)) begin
         b_data_settings_mi_address1 = 64'd8;
-    end else if ((1'b1 == ap_CS_fsm_state14)) begin
-        b_data_settings_mi_address1 = 64'd6;
     end else if ((1'b1 == ap_CS_fsm_state13)) begin
-        b_data_settings_mi_address1 = 64'd4;
+        b_data_settings_mi_address1 = 64'd6;
     end else if ((1'b1 == ap_CS_fsm_state12)) begin
-        b_data_settings_mi_address1 = 64'd2;
+        b_data_settings_mi_address1 = 64'd4;
     end else if ((1'b1 == ap_CS_fsm_state11)) begin
+        b_data_settings_mi_address1 = 64'd2;
+    end else if ((1'b1 == ap_CS_fsm_state10)) begin
         b_data_settings_mi_address1 = 64'd1;
     end else begin
         b_data_settings_mi_address1 = 'bx;
@@ -5994,7 +5913,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state15) | (1'b1 == ap_CS_fsm_state14) | (1'b1 == ap_CS_fsm_state13) | (1'b1 == ap_CS_fsm_state12) | (1'b1 == ap_CS_fsm_state11) | (1'b1 == ap_CS_fsm_state10))) begin
+    if (((1'b1 == ap_CS_fsm_state14) | (1'b1 == ap_CS_fsm_state13) | (1'b1 == ap_CS_fsm_state12) | (1'b1 == ap_CS_fsm_state11) | (1'b1 == ap_CS_fsm_state10) | (1'b1 == ap_CS_fsm_state9))) begin
         b_data_settings_mi_ce0 = 1'b1;
     end else begin
         b_data_settings_mi_ce0 = 1'b0;
@@ -6002,7 +5921,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state15) | (1'b1 == ap_CS_fsm_state14) | (1'b1 == ap_CS_fsm_state13) | (1'b1 == ap_CS_fsm_state12) | (1'b1 == ap_CS_fsm_state11))) begin
+    if (((1'b1 == ap_CS_fsm_state14) | (1'b1 == ap_CS_fsm_state13) | (1'b1 == ap_CS_fsm_state12) | (1'b1 == ap_CS_fsm_state11) | (1'b1 == ap_CS_fsm_state10))) begin
         b_data_settings_mi_ce1 = 1'b1;
     end else begin
         b_data_settings_mi_ce1 = 1'b0;
@@ -6010,7 +5929,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state10)) begin
+    if ((1'b1 == ap_CS_fsm_state9)) begin
         b_data_settings_mi_we0 = 1'b1;
     end else begin
         b_data_settings_mi_we0 = 1'b0;
@@ -6018,33 +5937,33 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state27)) begin
+    if ((1'b1 == ap_CS_fsm_state26)) begin
         b_data_z_assign_1_address0 = 64'd9;
-    end else if ((1'b1 == ap_CS_fsm_state26)) begin
-        b_data_z_assign_1_address0 = 64'd7;
     end else if ((1'b1 == ap_CS_fsm_state25)) begin
-        b_data_z_assign_1_address0 = 64'd5;
+        b_data_z_assign_1_address0 = 64'd7;
     end else if ((1'b1 == ap_CS_fsm_state24)) begin
-        b_data_z_assign_1_address0 = 64'd3;
+        b_data_z_assign_1_address0 = 64'd5;
     end else if ((1'b1 == ap_CS_fsm_state23)) begin
-        b_data_z_assign_1_address0 = 64'd0;
+        b_data_z_assign_1_address0 = 64'd3;
     end else if ((1'b1 == ap_CS_fsm_state22)) begin
-        b_data_z_assign_1_address0 = tmp_74_fu_3096_p1;
+        b_data_z_assign_1_address0 = 64'd0;
+    end else if ((1'b1 == ap_CS_fsm_state21)) begin
+        b_data_z_assign_1_address0 = tmp_17_fu_3061_p1;
     end else begin
         b_data_z_assign_1_address0 = 'bx;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state27)) begin
+    if ((1'b1 == ap_CS_fsm_state26)) begin
         b_data_z_assign_1_address1 = 64'd8;
-    end else if ((1'b1 == ap_CS_fsm_state26)) begin
-        b_data_z_assign_1_address1 = 64'd6;
     end else if ((1'b1 == ap_CS_fsm_state25)) begin
-        b_data_z_assign_1_address1 = 64'd4;
+        b_data_z_assign_1_address1 = 64'd6;
     end else if ((1'b1 == ap_CS_fsm_state24)) begin
-        b_data_z_assign_1_address1 = 64'd2;
+        b_data_z_assign_1_address1 = 64'd4;
     end else if ((1'b1 == ap_CS_fsm_state23)) begin
+        b_data_z_assign_1_address1 = 64'd2;
+    end else if ((1'b1 == ap_CS_fsm_state22)) begin
         b_data_z_assign_1_address1 = 64'd1;
     end else begin
         b_data_z_assign_1_address1 = 'bx;
@@ -6052,7 +5971,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state24) | (1'b1 == ap_CS_fsm_state23) | (1'b1 == ap_CS_fsm_state22) | (1'b1 == ap_CS_fsm_state27) | (1'b1 == ap_CS_fsm_state26) | (1'b1 == ap_CS_fsm_state25))) begin
+    if (((1'b1 == ap_CS_fsm_state23) | (1'b1 == ap_CS_fsm_state22) | (1'b1 == ap_CS_fsm_state21) | (1'b1 == ap_CS_fsm_state26) | (1'b1 == ap_CS_fsm_state25) | (1'b1 == ap_CS_fsm_state24))) begin
         b_data_z_assign_1_ce0 = 1'b1;
     end else begin
         b_data_z_assign_1_ce0 = 1'b0;
@@ -6060,7 +5979,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state24) | (1'b1 == ap_CS_fsm_state23) | (1'b1 == ap_CS_fsm_state27) | (1'b1 == ap_CS_fsm_state26) | (1'b1 == ap_CS_fsm_state25))) begin
+    if (((1'b1 == ap_CS_fsm_state23) | (1'b1 == ap_CS_fsm_state22) | (1'b1 == ap_CS_fsm_state26) | (1'b1 == ap_CS_fsm_state25) | (1'b1 == ap_CS_fsm_state24))) begin
         b_data_z_assign_1_ce1 = 1'b1;
     end else begin
         b_data_z_assign_1_ce1 = 1'b0;
@@ -6068,7 +5987,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state22)) begin
+    if ((1'b1 == ap_CS_fsm_state21)) begin
         b_data_z_assign_1_we0 = 1'b1;
     end else begin
         b_data_z_assign_1_we0 = 1'b0;
@@ -6076,33 +5995,33 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state15)) begin
+    if ((1'b1 == ap_CS_fsm_state14)) begin
         b_data_z_assign_address0 = 64'd9;
-    end else if ((1'b1 == ap_CS_fsm_state14)) begin
-        b_data_z_assign_address0 = 64'd7;
     end else if ((1'b1 == ap_CS_fsm_state13)) begin
-        b_data_z_assign_address0 = 64'd5;
+        b_data_z_assign_address0 = 64'd7;
     end else if ((1'b1 == ap_CS_fsm_state12)) begin
-        b_data_z_assign_address0 = 64'd3;
+        b_data_z_assign_address0 = 64'd5;
     end else if ((1'b1 == ap_CS_fsm_state11)) begin
-        b_data_z_assign_address0 = 64'd0;
+        b_data_z_assign_address0 = 64'd3;
     end else if ((1'b1 == ap_CS_fsm_state10)) begin
-        b_data_z_assign_address0 = tmp_65_fu_3004_p1;
+        b_data_z_assign_address0 = 64'd0;
+    end else if ((1'b1 == ap_CS_fsm_state9)) begin
+        b_data_z_assign_address0 = tmp_4_fu_2969_p1;
     end else begin
         b_data_z_assign_address0 = 'bx;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state15)) begin
+    if ((1'b1 == ap_CS_fsm_state14)) begin
         b_data_z_assign_address1 = 64'd8;
-    end else if ((1'b1 == ap_CS_fsm_state14)) begin
-        b_data_z_assign_address1 = 64'd6;
     end else if ((1'b1 == ap_CS_fsm_state13)) begin
-        b_data_z_assign_address1 = 64'd4;
+        b_data_z_assign_address1 = 64'd6;
     end else if ((1'b1 == ap_CS_fsm_state12)) begin
-        b_data_z_assign_address1 = 64'd2;
+        b_data_z_assign_address1 = 64'd4;
     end else if ((1'b1 == ap_CS_fsm_state11)) begin
+        b_data_z_assign_address1 = 64'd2;
+    end else if ((1'b1 == ap_CS_fsm_state10)) begin
         b_data_z_assign_address1 = 64'd1;
     end else begin
         b_data_z_assign_address1 = 'bx;
@@ -6110,7 +6029,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state15) | (1'b1 == ap_CS_fsm_state14) | (1'b1 == ap_CS_fsm_state13) | (1'b1 == ap_CS_fsm_state12) | (1'b1 == ap_CS_fsm_state11) | (1'b1 == ap_CS_fsm_state10))) begin
+    if (((1'b1 == ap_CS_fsm_state14) | (1'b1 == ap_CS_fsm_state13) | (1'b1 == ap_CS_fsm_state12) | (1'b1 == ap_CS_fsm_state11) | (1'b1 == ap_CS_fsm_state10) | (1'b1 == ap_CS_fsm_state9))) begin
         b_data_z_assign_ce0 = 1'b1;
     end else begin
         b_data_z_assign_ce0 = 1'b0;
@@ -6118,7 +6037,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state15) | (1'b1 == ap_CS_fsm_state14) | (1'b1 == ap_CS_fsm_state13) | (1'b1 == ap_CS_fsm_state12) | (1'b1 == ap_CS_fsm_state11))) begin
+    if (((1'b1 == ap_CS_fsm_state14) | (1'b1 == ap_CS_fsm_state13) | (1'b1 == ap_CS_fsm_state12) | (1'b1 == ap_CS_fsm_state11) | (1'b1 == ap_CS_fsm_state10))) begin
         b_data_z_assign_ce1 = 1'b1;
     end else begin
         b_data_z_assign_ce1 = 1'b0;
@@ -6126,7 +6045,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state10)) begin
+    if ((1'b1 == ap_CS_fsm_state9)) begin
         b_data_z_assign_we0 = 1'b1;
     end else begin
         b_data_z_assign_we0 = 1'b0;
@@ -6134,1030 +6053,1020 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state5) | (1'b1 == ap_CS_fsm_state4) | (1'b1 == ap_CS_fsm_state3) | ((grp_findLargestResidual_fu_2571_ap_done == 1'b1) & (1'b1 == ap_CS_fsm_state2)))) begin
-        grp_fu_2881_ce = 1'b1;
+    if (((1'b1 == ap_CS_fsm_state5) | (1'b1 == ap_CS_fsm_state4) | (1'b1 == ap_CS_fsm_state3) | ((grp_findLargestResidual_fu_2550_ap_done == 1'b1) & (1'b1 == ap_CS_fsm_state2)))) begin
+        grp_fu_2851_ce = 1'b1;
     end else begin
-        grp_fu_2881_ce = 1'b0;
+        grp_fu_2851_ce = 1'b0;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state19)) begin
-        grp_has_key_fu_2872_mapHLS_unsigned_int_arrayHLS_Stub_size_read = temp_1_reg_2390;
-    end else if ((1'b1 == ap_CS_fsm_state7)) begin
-        grp_has_key_fu_2872_mapHLS_unsigned_int_arrayHLS_Stub_size_read = temp_reg_3351;
+    if (((tmp_12_reg_4438 == 1'd0) & (1'b1 == ap_CS_fsm_state28))) begin
+        grp_push_back_1_fu_2680_mapHLS_unsigned_int_arrayHLS_Stub_size_read = temp_1_reg_2390;
+    end else if (((tmp_5_reg_3338 == 1'd0) & (1'b1 == ap_CS_fsm_state16))) begin
+        grp_push_back_1_fu_2680_mapHLS_unsigned_int_arrayHLS_Stub_size_read = temp_reg_3304;
     end else begin
-        grp_has_key_fu_2872_mapHLS_unsigned_int_arrayHLS_Stub_size_read = 'bx;
+        grp_push_back_1_fu_2680_mapHLS_unsigned_int_arrayHLS_Stub_size_read = 'bx;
     end
 end
 
 always @ (*) begin
-    if (((ap_predicate_op805_call_state29 == 1'b1) & (1'b1 == ap_CS_fsm_state29))) begin
-        grp_push_back_1_fu_2701_mapHLS_unsigned_int_arrayHLS_Stub_size_read = temp_1_reg_2390;
-    end else if (((ap_predicate_op431_call_state17 == 1'b1) & (1'b1 == ap_CS_fsm_state17))) begin
-        grp_push_back_1_fu_2701_mapHLS_unsigned_int_arrayHLS_Stub_size_read = temp_reg_3351;
+    if (((tmp_12_reg_4438 == 1'd0) & (1'b1 == ap_CS_fsm_state28))) begin
+        grp_push_back_1_fu_2680_p_read1 = b_data_settings_ch_49_reg_4563;
+    end else if (((tmp_5_reg_3338 == 1'd0) & (1'b1 == ap_CS_fsm_state16))) begin
+        grp_push_back_1_fu_2680_p_read1 = b_data_settings_ch_7_reg_3463;
     end else begin
-        grp_push_back_1_fu_2701_mapHLS_unsigned_int_arrayHLS_Stub_size_read = 'bx;
+        grp_push_back_1_fu_2680_p_read1 = 'bx;
     end
 end
 
 always @ (*) begin
-    if (((ap_predicate_op805_call_state29 == 1'b1) & (1'b1 == ap_CS_fsm_state29))) begin
-        grp_push_back_1_fu_2701_p_read1 = b_data_settings_ch_49_reg_4620;
-    end else if (((ap_predicate_op431_call_state17 == 1'b1) & (1'b1 == ap_CS_fsm_state17))) begin
-        grp_push_back_1_fu_2701_p_read1 = b_data_settings_ch_7_reg_3516;
+    if (((tmp_12_reg_4438 == 1'd0) & (1'b1 == ap_CS_fsm_state28))) begin
+        grp_push_back_1_fu_2680_p_read10 = b_data_settings_ch_81_reg_5363;
+    end else if (((tmp_5_reg_3338 == 1'd0) & (1'b1 == ap_CS_fsm_state16))) begin
+        grp_push_back_1_fu_2680_p_read10 = b_data_settings_ch_39_reg_4263;
     end else begin
-        grp_push_back_1_fu_2701_p_read1 = 'bx;
+        grp_push_back_1_fu_2680_p_read10 = 'bx;
     end
 end
 
 always @ (*) begin
-    if (((ap_predicate_op805_call_state29 == 1'b1) & (1'b1 == ap_CS_fsm_state29))) begin
-        grp_push_back_1_fu_2701_p_read10 = b_data_settings_ch_81_reg_5420;
-    end else if (((ap_predicate_op431_call_state17 == 1'b1) & (1'b1 == ap_CS_fsm_state17))) begin
-        grp_push_back_1_fu_2701_p_read10 = b_data_settings_ch_39_reg_4316;
+    if (((tmp_12_reg_4438 == 1'd0) & (1'b1 == ap_CS_fsm_state28))) begin
+        grp_push_back_1_fu_2680_p_read11 = b_data_settings_ch_85_reg_5413;
+    end else if (((tmp_5_reg_3338 == 1'd0) & (1'b1 == ap_CS_fsm_state16))) begin
+        grp_push_back_1_fu_2680_p_read11 = b_data_settings_ch_43_reg_4313;
     end else begin
-        grp_push_back_1_fu_2701_p_read10 = 'bx;
+        grp_push_back_1_fu_2680_p_read11 = 'bx;
     end
 end
 
 always @ (*) begin
-    if (((ap_predicate_op805_call_state29 == 1'b1) & (1'b1 == ap_CS_fsm_state29))) begin
-        grp_push_back_1_fu_2701_p_read11 = b_data_settings_ch_85_reg_5470;
-    end else if (((ap_predicate_op431_call_state17 == 1'b1) & (1'b1 == ap_CS_fsm_state17))) begin
-        grp_push_back_1_fu_2701_p_read11 = b_data_settings_ch_43_reg_4366;
+    if (((tmp_12_reg_4438 == 1'd0) & (1'b1 == ap_CS_fsm_state28))) begin
+        grp_push_back_1_fu_2680_p_read12 = b_data_settings_ch_51_reg_4568;
+    end else if (((tmp_5_reg_3338 == 1'd0) & (1'b1 == ap_CS_fsm_state16))) begin
+        grp_push_back_1_fu_2680_p_read12 = b_data_settings_ch_9_reg_3468;
     end else begin
-        grp_push_back_1_fu_2701_p_read11 = 'bx;
+        grp_push_back_1_fu_2680_p_read12 = 'bx;
     end
 end
 
 always @ (*) begin
-    if (((ap_predicate_op805_call_state29 == 1'b1) & (1'b1 == ap_CS_fsm_state29))) begin
-        grp_push_back_1_fu_2701_p_read12 = b_data_settings_ch_51_reg_4625;
-    end else if (((ap_predicate_op431_call_state17 == 1'b1) & (1'b1 == ap_CS_fsm_state17))) begin
-        grp_push_back_1_fu_2701_p_read12 = b_data_settings_ch_9_reg_3521;
+    if (((tmp_12_reg_4438 == 1'd0) & (1'b1 == ap_CS_fsm_state28))) begin
+        grp_push_back_1_fu_2680_p_read13 = b_data_settings_ch_55_reg_4618;
+    end else if (((tmp_5_reg_3338 == 1'd0) & (1'b1 == ap_CS_fsm_state16))) begin
+        grp_push_back_1_fu_2680_p_read13 = b_data_settings_ch_13_reg_3518;
     end else begin
-        grp_push_back_1_fu_2701_p_read12 = 'bx;
+        grp_push_back_1_fu_2680_p_read13 = 'bx;
     end
 end
 
 always @ (*) begin
-    if (((ap_predicate_op805_call_state29 == 1'b1) & (1'b1 == ap_CS_fsm_state29))) begin
-        grp_push_back_1_fu_2701_p_read13 = b_data_settings_ch_55_reg_4675;
-    end else if (((ap_predicate_op431_call_state17 == 1'b1) & (1'b1 == ap_CS_fsm_state17))) begin
-        grp_push_back_1_fu_2701_p_read13 = b_data_settings_ch_13_reg_3571;
+    if (((tmp_12_reg_4438 == 1'd0) & (1'b1 == ap_CS_fsm_state28))) begin
+        grp_push_back_1_fu_2680_p_read14 = b_data_settings_ch_59_reg_4768;
+    end else if (((tmp_5_reg_3338 == 1'd0) & (1'b1 == ap_CS_fsm_state16))) begin
+        grp_push_back_1_fu_2680_p_read14 = b_data_settings_ch_17_reg_3668;
     end else begin
-        grp_push_back_1_fu_2701_p_read13 = 'bx;
+        grp_push_back_1_fu_2680_p_read14 = 'bx;
     end
 end
 
 always @ (*) begin
-    if (((ap_predicate_op805_call_state29 == 1'b1) & (1'b1 == ap_CS_fsm_state29))) begin
-        grp_push_back_1_fu_2701_p_read14 = b_data_settings_ch_59_reg_4825;
-    end else if (((ap_predicate_op431_call_state17 == 1'b1) & (1'b1 == ap_CS_fsm_state17))) begin
-        grp_push_back_1_fu_2701_p_read14 = b_data_settings_ch_17_reg_3721;
+    if (((tmp_12_reg_4438 == 1'd0) & (1'b1 == ap_CS_fsm_state28))) begin
+        grp_push_back_1_fu_2680_p_read15 = b_data_settings_ch_63_reg_4818;
+    end else if (((tmp_5_reg_3338 == 1'd0) & (1'b1 == ap_CS_fsm_state16))) begin
+        grp_push_back_1_fu_2680_p_read15 = b_data_settings_ch_21_reg_3718;
     end else begin
-        grp_push_back_1_fu_2701_p_read14 = 'bx;
+        grp_push_back_1_fu_2680_p_read15 = 'bx;
     end
 end
 
 always @ (*) begin
-    if (((ap_predicate_op805_call_state29 == 1'b1) & (1'b1 == ap_CS_fsm_state29))) begin
-        grp_push_back_1_fu_2701_p_read15 = b_data_settings_ch_63_reg_4875;
-    end else if (((ap_predicate_op431_call_state17 == 1'b1) & (1'b1 == ap_CS_fsm_state17))) begin
-        grp_push_back_1_fu_2701_p_read15 = b_data_settings_ch_21_reg_3771;
+    if (((tmp_12_reg_4438 == 1'd0) & (1'b1 == ap_CS_fsm_state28))) begin
+        grp_push_back_1_fu_2680_p_read16 = b_data_settings_ch_67_reg_4968;
+    end else if (((tmp_5_reg_3338 == 1'd0) & (1'b1 == ap_CS_fsm_state16))) begin
+        grp_push_back_1_fu_2680_p_read16 = b_data_settings_ch_25_reg_3868;
     end else begin
-        grp_push_back_1_fu_2701_p_read15 = 'bx;
+        grp_push_back_1_fu_2680_p_read16 = 'bx;
     end
 end
 
 always @ (*) begin
-    if (((ap_predicate_op805_call_state29 == 1'b1) & (1'b1 == ap_CS_fsm_state29))) begin
-        grp_push_back_1_fu_2701_p_read16 = b_data_settings_ch_67_reg_5025;
-    end else if (((ap_predicate_op431_call_state17 == 1'b1) & (1'b1 == ap_CS_fsm_state17))) begin
-        grp_push_back_1_fu_2701_p_read16 = b_data_settings_ch_25_reg_3921;
+    if (((tmp_12_reg_4438 == 1'd0) & (1'b1 == ap_CS_fsm_state28))) begin
+        grp_push_back_1_fu_2680_p_read17 = b_data_settings_ch_71_reg_5018;
+    end else if (((tmp_5_reg_3338 == 1'd0) & (1'b1 == ap_CS_fsm_state16))) begin
+        grp_push_back_1_fu_2680_p_read17 = b_data_settings_ch_29_reg_3918;
     end else begin
-        grp_push_back_1_fu_2701_p_read16 = 'bx;
+        grp_push_back_1_fu_2680_p_read17 = 'bx;
     end
 end
 
 always @ (*) begin
-    if (((ap_predicate_op805_call_state29 == 1'b1) & (1'b1 == ap_CS_fsm_state29))) begin
-        grp_push_back_1_fu_2701_p_read17 = b_data_settings_ch_71_reg_5075;
-    end else if (((ap_predicate_op431_call_state17 == 1'b1) & (1'b1 == ap_CS_fsm_state17))) begin
-        grp_push_back_1_fu_2701_p_read17 = b_data_settings_ch_29_reg_3971;
+    if (((tmp_12_reg_4438 == 1'd0) & (1'b1 == ap_CS_fsm_state28))) begin
+        grp_push_back_1_fu_2680_p_read18 = b_data_settings_ch_75_reg_5168;
+    end else if (((tmp_5_reg_3338 == 1'd0) & (1'b1 == ap_CS_fsm_state16))) begin
+        grp_push_back_1_fu_2680_p_read18 = b_data_settings_ch_33_reg_4068;
     end else begin
-        grp_push_back_1_fu_2701_p_read17 = 'bx;
+        grp_push_back_1_fu_2680_p_read18 = 'bx;
     end
 end
 
 always @ (*) begin
-    if (((ap_predicate_op805_call_state29 == 1'b1) & (1'b1 == ap_CS_fsm_state29))) begin
-        grp_push_back_1_fu_2701_p_read18 = b_data_settings_ch_75_reg_5225;
-    end else if (((ap_predicate_op431_call_state17 == 1'b1) & (1'b1 == ap_CS_fsm_state17))) begin
-        grp_push_back_1_fu_2701_p_read18 = b_data_settings_ch_33_reg_4121;
+    if (((tmp_12_reg_4438 == 1'd0) & (1'b1 == ap_CS_fsm_state28))) begin
+        grp_push_back_1_fu_2680_p_read19 = b_data_settings_ch_79_reg_5218;
+    end else if (((tmp_5_reg_3338 == 1'd0) & (1'b1 == ap_CS_fsm_state16))) begin
+        grp_push_back_1_fu_2680_p_read19 = b_data_settings_ch_37_reg_4118;
     end else begin
-        grp_push_back_1_fu_2701_p_read18 = 'bx;
+        grp_push_back_1_fu_2680_p_read19 = 'bx;
     end
 end
 
 always @ (*) begin
-    if (((ap_predicate_op805_call_state29 == 1'b1) & (1'b1 == ap_CS_fsm_state29))) begin
-        grp_push_back_1_fu_2701_p_read19 = b_data_settings_ch_79_reg_5275;
-    end else if (((ap_predicate_op431_call_state17 == 1'b1) & (1'b1 == ap_CS_fsm_state17))) begin
-        grp_push_back_1_fu_2701_p_read19 = b_data_settings_ch_37_reg_4171;
+    if (((tmp_12_reg_4438 == 1'd0) & (1'b1 == ap_CS_fsm_state28))) begin
+        grp_push_back_1_fu_2680_p_read20 = b_data_settings_ch_83_reg_5368;
+    end else if (((tmp_5_reg_3338 == 1'd0) & (1'b1 == ap_CS_fsm_state16))) begin
+        grp_push_back_1_fu_2680_p_read20 = b_data_settings_ch_41_reg_4268;
     end else begin
-        grp_push_back_1_fu_2701_p_read19 = 'bx;
+        grp_push_back_1_fu_2680_p_read20 = 'bx;
     end
 end
 
 always @ (*) begin
-    if (((ap_predicate_op805_call_state29 == 1'b1) & (1'b1 == ap_CS_fsm_state29))) begin
-        grp_push_back_1_fu_2701_p_read20 = b_data_settings_ch_83_reg_5425;
-    end else if (((ap_predicate_op431_call_state17 == 1'b1) & (1'b1 == ap_CS_fsm_state17))) begin
-        grp_push_back_1_fu_2701_p_read20 = b_data_settings_ch_41_reg_4321;
+    if (((tmp_12_reg_4438 == 1'd0) & (1'b1 == ap_CS_fsm_state28))) begin
+        grp_push_back_1_fu_2680_p_read21 = b_data_settings_ch_87_reg_5418;
+    end else if (((tmp_5_reg_3338 == 1'd0) & (1'b1 == ap_CS_fsm_state16))) begin
+        grp_push_back_1_fu_2680_p_read21 = b_data_settings_ch_45_reg_4318;
     end else begin
-        grp_push_back_1_fu_2701_p_read20 = 'bx;
+        grp_push_back_1_fu_2680_p_read21 = 'bx;
     end
 end
 
 always @ (*) begin
-    if (((ap_predicate_op805_call_state29 == 1'b1) & (1'b1 == ap_CS_fsm_state29))) begin
-        grp_push_back_1_fu_2701_p_read21 = b_data_settings_ch_87_reg_5475;
-    end else if (((ap_predicate_op431_call_state17 == 1'b1) & (1'b1 == ap_CS_fsm_state17))) begin
-        grp_push_back_1_fu_2701_p_read21 = b_data_settings_ch_45_reg_4371;
+    if (((tmp_12_reg_4438 == 1'd0) & (1'b1 == ap_CS_fsm_state28))) begin
+        grp_push_back_1_fu_2680_p_read212 = b_data_settings_mi_49_reg_4573;
+    end else if (((tmp_5_reg_3338 == 1'd0) & (1'b1 == ap_CS_fsm_state16))) begin
+        grp_push_back_1_fu_2680_p_read212 = b_data_settings_mi_7_reg_3473;
     end else begin
-        grp_push_back_1_fu_2701_p_read21 = 'bx;
+        grp_push_back_1_fu_2680_p_read212 = 'bx;
     end
 end
 
 always @ (*) begin
-    if (((ap_predicate_op805_call_state29 == 1'b1) & (1'b1 == ap_CS_fsm_state29))) begin
-        grp_push_back_1_fu_2701_p_read212 = b_data_settings_mi_49_reg_4630;
-    end else if (((ap_predicate_op431_call_state17 == 1'b1) & (1'b1 == ap_CS_fsm_state17))) begin
-        grp_push_back_1_fu_2701_p_read212 = b_data_settings_mi_7_reg_3526;
+    if (((tmp_12_reg_4438 == 1'd0) & (1'b1 == ap_CS_fsm_state28))) begin
+        grp_push_back_1_fu_2680_p_read213 = b_data_settings_mi_53_reg_4623;
+    end else if (((tmp_5_reg_3338 == 1'd0) & (1'b1 == ap_CS_fsm_state16))) begin
+        grp_push_back_1_fu_2680_p_read213 = b_data_settings_mi_11_reg_3523;
     end else begin
-        grp_push_back_1_fu_2701_p_read212 = 'bx;
+        grp_push_back_1_fu_2680_p_read213 = 'bx;
     end
 end
 
 always @ (*) begin
-    if (((ap_predicate_op805_call_state29 == 1'b1) & (1'b1 == ap_CS_fsm_state29))) begin
-        grp_push_back_1_fu_2701_p_read213 = b_data_settings_mi_53_reg_4680;
-    end else if (((ap_predicate_op431_call_state17 == 1'b1) & (1'b1 == ap_CS_fsm_state17))) begin
-        grp_push_back_1_fu_2701_p_read213 = b_data_settings_mi_11_reg_3576;
+    if (((tmp_12_reg_4438 == 1'd0) & (1'b1 == ap_CS_fsm_state28))) begin
+        grp_push_back_1_fu_2680_p_read214 = b_data_settings_mi_57_reg_4773;
+    end else if (((tmp_5_reg_3338 == 1'd0) & (1'b1 == ap_CS_fsm_state16))) begin
+        grp_push_back_1_fu_2680_p_read214 = b_data_settings_mi_15_reg_3673;
     end else begin
-        grp_push_back_1_fu_2701_p_read213 = 'bx;
+        grp_push_back_1_fu_2680_p_read214 = 'bx;
     end
 end
 
 always @ (*) begin
-    if (((ap_predicate_op805_call_state29 == 1'b1) & (1'b1 == ap_CS_fsm_state29))) begin
-        grp_push_back_1_fu_2701_p_read214 = b_data_settings_mi_57_reg_4830;
-    end else if (((ap_predicate_op431_call_state17 == 1'b1) & (1'b1 == ap_CS_fsm_state17))) begin
-        grp_push_back_1_fu_2701_p_read214 = b_data_settings_mi_15_reg_3726;
+    if (((tmp_12_reg_4438 == 1'd0) & (1'b1 == ap_CS_fsm_state28))) begin
+        grp_push_back_1_fu_2680_p_read215 = b_data_settings_mi_61_reg_4823;
+    end else if (((tmp_5_reg_3338 == 1'd0) & (1'b1 == ap_CS_fsm_state16))) begin
+        grp_push_back_1_fu_2680_p_read215 = b_data_settings_mi_19_reg_3723;
     end else begin
-        grp_push_back_1_fu_2701_p_read214 = 'bx;
+        grp_push_back_1_fu_2680_p_read215 = 'bx;
     end
 end
 
 always @ (*) begin
-    if (((ap_predicate_op805_call_state29 == 1'b1) & (1'b1 == ap_CS_fsm_state29))) begin
-        grp_push_back_1_fu_2701_p_read215 = b_data_settings_mi_61_reg_4880;
-    end else if (((ap_predicate_op431_call_state17 == 1'b1) & (1'b1 == ap_CS_fsm_state17))) begin
-        grp_push_back_1_fu_2701_p_read215 = b_data_settings_mi_19_reg_3776;
+    if (((tmp_12_reg_4438 == 1'd0) & (1'b1 == ap_CS_fsm_state28))) begin
+        grp_push_back_1_fu_2680_p_read216 = b_data_settings_mi_65_reg_4973;
+    end else if (((tmp_5_reg_3338 == 1'd0) & (1'b1 == ap_CS_fsm_state16))) begin
+        grp_push_back_1_fu_2680_p_read216 = b_data_settings_mi_23_reg_3873;
     end else begin
-        grp_push_back_1_fu_2701_p_read215 = 'bx;
+        grp_push_back_1_fu_2680_p_read216 = 'bx;
     end
 end
 
 always @ (*) begin
-    if (((ap_predicate_op805_call_state29 == 1'b1) & (1'b1 == ap_CS_fsm_state29))) begin
-        grp_push_back_1_fu_2701_p_read216 = b_data_settings_mi_65_reg_5030;
-    end else if (((ap_predicate_op431_call_state17 == 1'b1) & (1'b1 == ap_CS_fsm_state17))) begin
-        grp_push_back_1_fu_2701_p_read216 = b_data_settings_mi_23_reg_3926;
+    if (((tmp_12_reg_4438 == 1'd0) & (1'b1 == ap_CS_fsm_state28))) begin
+        grp_push_back_1_fu_2680_p_read217 = b_data_settings_mi_69_reg_5023;
+    end else if (((tmp_5_reg_3338 == 1'd0) & (1'b1 == ap_CS_fsm_state16))) begin
+        grp_push_back_1_fu_2680_p_read217 = b_data_settings_mi_27_reg_3923;
     end else begin
-        grp_push_back_1_fu_2701_p_read216 = 'bx;
+        grp_push_back_1_fu_2680_p_read217 = 'bx;
     end
 end
 
 always @ (*) begin
-    if (((ap_predicate_op805_call_state29 == 1'b1) & (1'b1 == ap_CS_fsm_state29))) begin
-        grp_push_back_1_fu_2701_p_read217 = b_data_settings_mi_69_reg_5080;
-    end else if (((ap_predicate_op431_call_state17 == 1'b1) & (1'b1 == ap_CS_fsm_state17))) begin
-        grp_push_back_1_fu_2701_p_read217 = b_data_settings_mi_27_reg_3976;
+    if (((tmp_12_reg_4438 == 1'd0) & (1'b1 == ap_CS_fsm_state28))) begin
+        grp_push_back_1_fu_2680_p_read218 = b_data_settings_mi_73_reg_5173;
+    end else if (((tmp_5_reg_3338 == 1'd0) & (1'b1 == ap_CS_fsm_state16))) begin
+        grp_push_back_1_fu_2680_p_read218 = b_data_settings_mi_31_reg_4073;
     end else begin
-        grp_push_back_1_fu_2701_p_read217 = 'bx;
+        grp_push_back_1_fu_2680_p_read218 = 'bx;
     end
 end
 
 always @ (*) begin
-    if (((ap_predicate_op805_call_state29 == 1'b1) & (1'b1 == ap_CS_fsm_state29))) begin
-        grp_push_back_1_fu_2701_p_read218 = b_data_settings_mi_73_reg_5230;
-    end else if (((ap_predicate_op431_call_state17 == 1'b1) & (1'b1 == ap_CS_fsm_state17))) begin
-        grp_push_back_1_fu_2701_p_read218 = b_data_settings_mi_31_reg_4126;
+    if (((tmp_12_reg_4438 == 1'd0) & (1'b1 == ap_CS_fsm_state28))) begin
+        grp_push_back_1_fu_2680_p_read219 = b_data_settings_mi_77_reg_5223;
+    end else if (((tmp_5_reg_3338 == 1'd0) & (1'b1 == ap_CS_fsm_state16))) begin
+        grp_push_back_1_fu_2680_p_read219 = b_data_settings_mi_35_reg_4123;
     end else begin
-        grp_push_back_1_fu_2701_p_read218 = 'bx;
+        grp_push_back_1_fu_2680_p_read219 = 'bx;
     end
 end
 
 always @ (*) begin
-    if (((ap_predicate_op805_call_state29 == 1'b1) & (1'b1 == ap_CS_fsm_state29))) begin
-        grp_push_back_1_fu_2701_p_read219 = b_data_settings_mi_77_reg_5280;
-    end else if (((ap_predicate_op431_call_state17 == 1'b1) & (1'b1 == ap_CS_fsm_state17))) begin
-        grp_push_back_1_fu_2701_p_read219 = b_data_settings_mi_35_reg_4176;
+    if (((tmp_12_reg_4438 == 1'd0) & (1'b1 == ap_CS_fsm_state28))) begin
+        grp_push_back_1_fu_2680_p_read220 = b_data_settings_mi_81_reg_5373;
+    end else if (((tmp_5_reg_3338 == 1'd0) & (1'b1 == ap_CS_fsm_state16))) begin
+        grp_push_back_1_fu_2680_p_read220 = b_data_settings_mi_39_reg_4273;
     end else begin
-        grp_push_back_1_fu_2701_p_read219 = 'bx;
+        grp_push_back_1_fu_2680_p_read220 = 'bx;
     end
 end
 
 always @ (*) begin
-    if (((ap_predicate_op805_call_state29 == 1'b1) & (1'b1 == ap_CS_fsm_state29))) begin
-        grp_push_back_1_fu_2701_p_read220 = b_data_settings_mi_81_reg_5430;
-    end else if (((ap_predicate_op431_call_state17 == 1'b1) & (1'b1 == ap_CS_fsm_state17))) begin
-        grp_push_back_1_fu_2701_p_read220 = b_data_settings_mi_39_reg_4326;
+    if (((tmp_12_reg_4438 == 1'd0) & (1'b1 == ap_CS_fsm_state28))) begin
+        grp_push_back_1_fu_2680_p_read221 = b_data_settings_mi_85_reg_5423;
+    end else if (((tmp_5_reg_3338 == 1'd0) & (1'b1 == ap_CS_fsm_state16))) begin
+        grp_push_back_1_fu_2680_p_read221 = b_data_settings_mi_43_reg_4323;
     end else begin
-        grp_push_back_1_fu_2701_p_read220 = 'bx;
+        grp_push_back_1_fu_2680_p_read221 = 'bx;
     end
 end
 
 always @ (*) begin
-    if (((ap_predicate_op805_call_state29 == 1'b1) & (1'b1 == ap_CS_fsm_state29))) begin
-        grp_push_back_1_fu_2701_p_read221 = b_data_settings_mi_85_reg_5480;
-    end else if (((ap_predicate_op431_call_state17 == 1'b1) & (1'b1 == ap_CS_fsm_state17))) begin
-        grp_push_back_1_fu_2701_p_read221 = b_data_settings_mi_43_reg_4376;
+    if (((tmp_12_reg_4438 == 1'd0) & (1'b1 == ap_CS_fsm_state28))) begin
+        grp_push_back_1_fu_2680_p_read222 = b_data_settings_mi_51_reg_4578;
+    end else if (((tmp_5_reg_3338 == 1'd0) & (1'b1 == ap_CS_fsm_state16))) begin
+        grp_push_back_1_fu_2680_p_read222 = b_data_settings_mi_9_reg_3478;
     end else begin
-        grp_push_back_1_fu_2701_p_read221 = 'bx;
+        grp_push_back_1_fu_2680_p_read222 = 'bx;
     end
 end
 
 always @ (*) begin
-    if (((ap_predicate_op805_call_state29 == 1'b1) & (1'b1 == ap_CS_fsm_state29))) begin
-        grp_push_back_1_fu_2701_p_read222 = b_data_settings_mi_51_reg_4635;
-    end else if (((ap_predicate_op431_call_state17 == 1'b1) & (1'b1 == ap_CS_fsm_state17))) begin
-        grp_push_back_1_fu_2701_p_read222 = b_data_settings_mi_9_reg_3531;
+    if (((tmp_12_reg_4438 == 1'd0) & (1'b1 == ap_CS_fsm_state28))) begin
+        grp_push_back_1_fu_2680_p_read223 = b_data_settings_mi_55_reg_4628;
+    end else if (((tmp_5_reg_3338 == 1'd0) & (1'b1 == ap_CS_fsm_state16))) begin
+        grp_push_back_1_fu_2680_p_read223 = b_data_settings_mi_13_reg_3528;
     end else begin
-        grp_push_back_1_fu_2701_p_read222 = 'bx;
+        grp_push_back_1_fu_2680_p_read223 = 'bx;
     end
 end
 
 always @ (*) begin
-    if (((ap_predicate_op805_call_state29 == 1'b1) & (1'b1 == ap_CS_fsm_state29))) begin
-        grp_push_back_1_fu_2701_p_read223 = b_data_settings_mi_55_reg_4685;
-    end else if (((ap_predicate_op431_call_state17 == 1'b1) & (1'b1 == ap_CS_fsm_state17))) begin
-        grp_push_back_1_fu_2701_p_read223 = b_data_settings_mi_13_reg_3581;
+    if (((tmp_12_reg_4438 == 1'd0) & (1'b1 == ap_CS_fsm_state28))) begin
+        grp_push_back_1_fu_2680_p_read224 = b_data_settings_mi_59_reg_4778;
+    end else if (((tmp_5_reg_3338 == 1'd0) & (1'b1 == ap_CS_fsm_state16))) begin
+        grp_push_back_1_fu_2680_p_read224 = b_data_settings_mi_17_reg_3678;
     end else begin
-        grp_push_back_1_fu_2701_p_read223 = 'bx;
+        grp_push_back_1_fu_2680_p_read224 = 'bx;
     end
 end
 
 always @ (*) begin
-    if (((ap_predicate_op805_call_state29 == 1'b1) & (1'b1 == ap_CS_fsm_state29))) begin
-        grp_push_back_1_fu_2701_p_read224 = b_data_settings_mi_59_reg_4835;
-    end else if (((ap_predicate_op431_call_state17 == 1'b1) & (1'b1 == ap_CS_fsm_state17))) begin
-        grp_push_back_1_fu_2701_p_read224 = b_data_settings_mi_17_reg_3731;
+    if (((tmp_12_reg_4438 == 1'd0) & (1'b1 == ap_CS_fsm_state28))) begin
+        grp_push_back_1_fu_2680_p_read225 = b_data_settings_mi_63_reg_4828;
+    end else if (((tmp_5_reg_3338 == 1'd0) & (1'b1 == ap_CS_fsm_state16))) begin
+        grp_push_back_1_fu_2680_p_read225 = b_data_settings_mi_21_reg_3728;
     end else begin
-        grp_push_back_1_fu_2701_p_read224 = 'bx;
+        grp_push_back_1_fu_2680_p_read225 = 'bx;
     end
 end
 
 always @ (*) begin
-    if (((ap_predicate_op805_call_state29 == 1'b1) & (1'b1 == ap_CS_fsm_state29))) begin
-        grp_push_back_1_fu_2701_p_read225 = b_data_settings_mi_63_reg_4885;
-    end else if (((ap_predicate_op431_call_state17 == 1'b1) & (1'b1 == ap_CS_fsm_state17))) begin
-        grp_push_back_1_fu_2701_p_read225 = b_data_settings_mi_21_reg_3781;
+    if (((tmp_12_reg_4438 == 1'd0) & (1'b1 == ap_CS_fsm_state28))) begin
+        grp_push_back_1_fu_2680_p_read226 = b_data_settings_mi_67_reg_4978;
+    end else if (((tmp_5_reg_3338 == 1'd0) & (1'b1 == ap_CS_fsm_state16))) begin
+        grp_push_back_1_fu_2680_p_read226 = b_data_settings_mi_25_reg_3878;
     end else begin
-        grp_push_back_1_fu_2701_p_read225 = 'bx;
+        grp_push_back_1_fu_2680_p_read226 = 'bx;
     end
 end
 
 always @ (*) begin
-    if (((ap_predicate_op805_call_state29 == 1'b1) & (1'b1 == ap_CS_fsm_state29))) begin
-        grp_push_back_1_fu_2701_p_read226 = b_data_settings_mi_67_reg_5035;
-    end else if (((ap_predicate_op431_call_state17 == 1'b1) & (1'b1 == ap_CS_fsm_state17))) begin
-        grp_push_back_1_fu_2701_p_read226 = b_data_settings_mi_25_reg_3931;
+    if (((tmp_12_reg_4438 == 1'd0) & (1'b1 == ap_CS_fsm_state28))) begin
+        grp_push_back_1_fu_2680_p_read227 = b_data_settings_mi_71_reg_5028;
+    end else if (((tmp_5_reg_3338 == 1'd0) & (1'b1 == ap_CS_fsm_state16))) begin
+        grp_push_back_1_fu_2680_p_read227 = b_data_settings_mi_29_reg_3928;
     end else begin
-        grp_push_back_1_fu_2701_p_read226 = 'bx;
+        grp_push_back_1_fu_2680_p_read227 = 'bx;
     end
 end
 
 always @ (*) begin
-    if (((ap_predicate_op805_call_state29 == 1'b1) & (1'b1 == ap_CS_fsm_state29))) begin
-        grp_push_back_1_fu_2701_p_read227 = b_data_settings_mi_71_reg_5085;
-    end else if (((ap_predicate_op431_call_state17 == 1'b1) & (1'b1 == ap_CS_fsm_state17))) begin
-        grp_push_back_1_fu_2701_p_read227 = b_data_settings_mi_29_reg_3981;
+    if (((tmp_12_reg_4438 == 1'd0) & (1'b1 == ap_CS_fsm_state28))) begin
+        grp_push_back_1_fu_2680_p_read228 = b_data_settings_mi_75_reg_5178;
+    end else if (((tmp_5_reg_3338 == 1'd0) & (1'b1 == ap_CS_fsm_state16))) begin
+        grp_push_back_1_fu_2680_p_read228 = b_data_settings_mi_33_reg_4078;
     end else begin
-        grp_push_back_1_fu_2701_p_read227 = 'bx;
+        grp_push_back_1_fu_2680_p_read228 = 'bx;
     end
 end
 
 always @ (*) begin
-    if (((ap_predicate_op805_call_state29 == 1'b1) & (1'b1 == ap_CS_fsm_state29))) begin
-        grp_push_back_1_fu_2701_p_read228 = b_data_settings_mi_75_reg_5235;
-    end else if (((ap_predicate_op431_call_state17 == 1'b1) & (1'b1 == ap_CS_fsm_state17))) begin
-        grp_push_back_1_fu_2701_p_read228 = b_data_settings_mi_33_reg_4131;
+    if (((tmp_12_reg_4438 == 1'd0) & (1'b1 == ap_CS_fsm_state28))) begin
+        grp_push_back_1_fu_2680_p_read229 = b_data_settings_mi_79_reg_5228;
+    end else if (((tmp_5_reg_3338 == 1'd0) & (1'b1 == ap_CS_fsm_state16))) begin
+        grp_push_back_1_fu_2680_p_read229 = b_data_settings_mi_37_reg_4128;
     end else begin
-        grp_push_back_1_fu_2701_p_read228 = 'bx;
+        grp_push_back_1_fu_2680_p_read229 = 'bx;
     end
 end
 
 always @ (*) begin
-    if (((ap_predicate_op805_call_state29 == 1'b1) & (1'b1 == ap_CS_fsm_state29))) begin
-        grp_push_back_1_fu_2701_p_read229 = b_data_settings_mi_79_reg_5285;
-    end else if (((ap_predicate_op431_call_state17 == 1'b1) & (1'b1 == ap_CS_fsm_state17))) begin
-        grp_push_back_1_fu_2701_p_read229 = b_data_settings_mi_37_reg_4181;
+    if (((tmp_12_reg_4438 == 1'd0) & (1'b1 == ap_CS_fsm_state28))) begin
+        grp_push_back_1_fu_2680_p_read230 = b_data_settings_mi_83_reg_5378;
+    end else if (((tmp_5_reg_3338 == 1'd0) & (1'b1 == ap_CS_fsm_state16))) begin
+        grp_push_back_1_fu_2680_p_read230 = b_data_settings_mi_41_reg_4278;
     end else begin
-        grp_push_back_1_fu_2701_p_read229 = 'bx;
+        grp_push_back_1_fu_2680_p_read230 = 'bx;
     end
 end
 
 always @ (*) begin
-    if (((ap_predicate_op805_call_state29 == 1'b1) & (1'b1 == ap_CS_fsm_state29))) begin
-        grp_push_back_1_fu_2701_p_read230 = b_data_settings_mi_83_reg_5435;
-    end else if (((ap_predicate_op431_call_state17 == 1'b1) & (1'b1 == ap_CS_fsm_state17))) begin
-        grp_push_back_1_fu_2701_p_read230 = b_data_settings_mi_41_reg_4331;
+    if (((tmp_12_reg_4438 == 1'd0) & (1'b1 == ap_CS_fsm_state28))) begin
+        grp_push_back_1_fu_2680_p_read231 = b_data_settings_mi_87_reg_5428;
+    end else if (((tmp_5_reg_3338 == 1'd0) & (1'b1 == ap_CS_fsm_state16))) begin
+        grp_push_back_1_fu_2680_p_read231 = b_data_settings_mi_45_reg_4328;
     end else begin
-        grp_push_back_1_fu_2701_p_read230 = 'bx;
+        grp_push_back_1_fu_2680_p_read231 = 'bx;
     end
 end
 
 always @ (*) begin
-    if (((ap_predicate_op805_call_state29 == 1'b1) & (1'b1 == ap_CS_fsm_state29))) begin
-        grp_push_back_1_fu_2701_p_read231 = b_data_settings_mi_87_reg_5485;
-    end else if (((ap_predicate_op431_call_state17 == 1'b1) & (1'b1 == ap_CS_fsm_state17))) begin
-        grp_push_back_1_fu_2701_p_read231 = b_data_settings_mi_45_reg_4381;
+    if (((tmp_12_reg_4438 == 1'd0) & (1'b1 == ap_CS_fsm_state28))) begin
+        grp_push_back_1_fu_2680_p_read232 = b_data_r_assign_1_2_reg_4583;
+    end else if (((tmp_5_reg_3338 == 1'd0) & (1'b1 == ap_CS_fsm_state16))) begin
+        grp_push_back_1_fu_2680_p_read232 = b_data_r_assign_lo_reg_3483;
     end else begin
-        grp_push_back_1_fu_2701_p_read231 = 'bx;
+        grp_push_back_1_fu_2680_p_read232 = 'bx;
     end
 end
 
 always @ (*) begin
-    if (((ap_predicate_op805_call_state29 == 1'b1) & (1'b1 == ap_CS_fsm_state29))) begin
-        grp_push_back_1_fu_2701_p_read232 = b_data_r_assign_1_2_reg_4640;
-    end else if (((ap_predicate_op431_call_state17 == 1'b1) & (1'b1 == ap_CS_fsm_state17))) begin
-        grp_push_back_1_fu_2701_p_read232 = b_data_r_assign_lo_reg_3536;
+    if (((tmp_12_reg_4438 == 1'd0) & (1'b1 == ap_CS_fsm_state28))) begin
+        grp_push_back_1_fu_2680_p_read233 = b_data_r_assign_1_4_reg_4633;
+    end else if (((tmp_5_reg_3338 == 1'd0) & (1'b1 == ap_CS_fsm_state16))) begin
+        grp_push_back_1_fu_2680_p_read233 = b_data_r_assign_lo_1_reg_3533;
     end else begin
-        grp_push_back_1_fu_2701_p_read232 = 'bx;
+        grp_push_back_1_fu_2680_p_read233 = 'bx;
     end
 end
 
 always @ (*) begin
-    if (((ap_predicate_op805_call_state29 == 1'b1) & (1'b1 == ap_CS_fsm_state29))) begin
-        grp_push_back_1_fu_2701_p_read233 = b_data_r_assign_1_4_reg_4690;
-    end else if (((ap_predicate_op431_call_state17 == 1'b1) & (1'b1 == ap_CS_fsm_state17))) begin
-        grp_push_back_1_fu_2701_p_read233 = b_data_r_assign_lo_1_reg_3586;
+    if (((tmp_12_reg_4438 == 1'd0) & (1'b1 == ap_CS_fsm_state28))) begin
+        grp_push_back_1_fu_2680_p_read234 = b_data_r_assign_1_6_reg_4783;
+    end else if (((tmp_5_reg_3338 == 1'd0) & (1'b1 == ap_CS_fsm_state16))) begin
+        grp_push_back_1_fu_2680_p_read234 = b_data_r_assign_lo_2_reg_3683;
     end else begin
-        grp_push_back_1_fu_2701_p_read233 = 'bx;
+        grp_push_back_1_fu_2680_p_read234 = 'bx;
     end
 end
 
 always @ (*) begin
-    if (((ap_predicate_op805_call_state29 == 1'b1) & (1'b1 == ap_CS_fsm_state29))) begin
-        grp_push_back_1_fu_2701_p_read234 = b_data_r_assign_1_6_reg_4840;
-    end else if (((ap_predicate_op431_call_state17 == 1'b1) & (1'b1 == ap_CS_fsm_state17))) begin
-        grp_push_back_1_fu_2701_p_read234 = b_data_r_assign_lo_2_reg_3736;
+    if (((tmp_12_reg_4438 == 1'd0) & (1'b1 == ap_CS_fsm_state28))) begin
+        grp_push_back_1_fu_2680_p_read235 = b_data_r_assign_1_8_reg_4833;
+    end else if (((tmp_5_reg_3338 == 1'd0) & (1'b1 == ap_CS_fsm_state16))) begin
+        grp_push_back_1_fu_2680_p_read235 = b_data_r_assign_lo_3_reg_3733;
     end else begin
-        grp_push_back_1_fu_2701_p_read234 = 'bx;
+        grp_push_back_1_fu_2680_p_read235 = 'bx;
     end
 end
 
 always @ (*) begin
-    if (((ap_predicate_op805_call_state29 == 1'b1) & (1'b1 == ap_CS_fsm_state29))) begin
-        grp_push_back_1_fu_2701_p_read235 = b_data_r_assign_1_8_reg_4890;
-    end else if (((ap_predicate_op431_call_state17 == 1'b1) & (1'b1 == ap_CS_fsm_state17))) begin
-        grp_push_back_1_fu_2701_p_read235 = b_data_r_assign_lo_3_reg_3786;
+    if (((tmp_12_reg_4438 == 1'd0) & (1'b1 == ap_CS_fsm_state28))) begin
+        grp_push_back_1_fu_2680_p_read236 = b_data_r_assign_1_10_reg_4983;
+    end else if (((tmp_5_reg_3338 == 1'd0) & (1'b1 == ap_CS_fsm_state16))) begin
+        grp_push_back_1_fu_2680_p_read236 = b_data_r_assign_lo_4_reg_3883;
     end else begin
-        grp_push_back_1_fu_2701_p_read235 = 'bx;
+        grp_push_back_1_fu_2680_p_read236 = 'bx;
     end
 end
 
 always @ (*) begin
-    if (((ap_predicate_op805_call_state29 == 1'b1) & (1'b1 == ap_CS_fsm_state29))) begin
-        grp_push_back_1_fu_2701_p_read236 = b_data_r_assign_1_10_reg_5040;
-    end else if (((ap_predicate_op431_call_state17 == 1'b1) & (1'b1 == ap_CS_fsm_state17))) begin
-        grp_push_back_1_fu_2701_p_read236 = b_data_r_assign_lo_4_reg_3936;
+    if (((tmp_12_reg_4438 == 1'd0) & (1'b1 == ap_CS_fsm_state28))) begin
+        grp_push_back_1_fu_2680_p_read237 = b_data_r_assign_1_12_reg_5033;
+    end else if (((tmp_5_reg_3338 == 1'd0) & (1'b1 == ap_CS_fsm_state16))) begin
+        grp_push_back_1_fu_2680_p_read237 = b_data_r_assign_lo_5_reg_3933;
     end else begin
-        grp_push_back_1_fu_2701_p_read236 = 'bx;
+        grp_push_back_1_fu_2680_p_read237 = 'bx;
     end
 end
 
 always @ (*) begin
-    if (((ap_predicate_op805_call_state29 == 1'b1) & (1'b1 == ap_CS_fsm_state29))) begin
-        grp_push_back_1_fu_2701_p_read237 = b_data_r_assign_1_12_reg_5090;
-    end else if (((ap_predicate_op431_call_state17 == 1'b1) & (1'b1 == ap_CS_fsm_state17))) begin
-        grp_push_back_1_fu_2701_p_read237 = b_data_r_assign_lo_5_reg_3986;
+    if (((tmp_12_reg_4438 == 1'd0) & (1'b1 == ap_CS_fsm_state28))) begin
+        grp_push_back_1_fu_2680_p_read238 = b_data_r_assign_1_14_reg_5183;
+    end else if (((tmp_5_reg_3338 == 1'd0) & (1'b1 == ap_CS_fsm_state16))) begin
+        grp_push_back_1_fu_2680_p_read238 = b_data_r_assign_lo_6_reg_4083;
     end else begin
-        grp_push_back_1_fu_2701_p_read237 = 'bx;
+        grp_push_back_1_fu_2680_p_read238 = 'bx;
     end
 end
 
 always @ (*) begin
-    if (((ap_predicate_op805_call_state29 == 1'b1) & (1'b1 == ap_CS_fsm_state29))) begin
-        grp_push_back_1_fu_2701_p_read238 = b_data_r_assign_1_14_reg_5240;
-    end else if (((ap_predicate_op431_call_state17 == 1'b1) & (1'b1 == ap_CS_fsm_state17))) begin
-        grp_push_back_1_fu_2701_p_read238 = b_data_r_assign_lo_6_reg_4136;
+    if (((tmp_12_reg_4438 == 1'd0) & (1'b1 == ap_CS_fsm_state28))) begin
+        grp_push_back_1_fu_2680_p_read239 = b_data_r_assign_1_16_reg_5233;
+    end else if (((tmp_5_reg_3338 == 1'd0) & (1'b1 == ap_CS_fsm_state16))) begin
+        grp_push_back_1_fu_2680_p_read239 = b_data_r_assign_lo_7_reg_4133;
     end else begin
-        grp_push_back_1_fu_2701_p_read238 = 'bx;
+        grp_push_back_1_fu_2680_p_read239 = 'bx;
     end
 end
 
 always @ (*) begin
-    if (((ap_predicate_op805_call_state29 == 1'b1) & (1'b1 == ap_CS_fsm_state29))) begin
-        grp_push_back_1_fu_2701_p_read239 = b_data_r_assign_1_16_reg_5290;
-    end else if (((ap_predicate_op431_call_state17 == 1'b1) & (1'b1 == ap_CS_fsm_state17))) begin
-        grp_push_back_1_fu_2701_p_read239 = b_data_r_assign_lo_7_reg_4186;
+    if (((tmp_12_reg_4438 == 1'd0) & (1'b1 == ap_CS_fsm_state28))) begin
+        grp_push_back_1_fu_2680_p_read240 = b_data_r_assign_1_18_reg_5383;
+    end else if (((tmp_5_reg_3338 == 1'd0) & (1'b1 == ap_CS_fsm_state16))) begin
+        grp_push_back_1_fu_2680_p_read240 = b_data_r_assign_lo_8_reg_4283;
     end else begin
-        grp_push_back_1_fu_2701_p_read239 = 'bx;
+        grp_push_back_1_fu_2680_p_read240 = 'bx;
     end
 end
 
 always @ (*) begin
-    if (((ap_predicate_op805_call_state29 == 1'b1) & (1'b1 == ap_CS_fsm_state29))) begin
-        grp_push_back_1_fu_2701_p_read240 = b_data_r_assign_1_18_reg_5440;
-    end else if (((ap_predicate_op431_call_state17 == 1'b1) & (1'b1 == ap_CS_fsm_state17))) begin
-        grp_push_back_1_fu_2701_p_read240 = b_data_r_assign_lo_8_reg_4336;
+    if (((tmp_12_reg_4438 == 1'd0) & (1'b1 == ap_CS_fsm_state28))) begin
+        grp_push_back_1_fu_2680_p_read241 = b_data_r_assign_1_20_reg_5433;
+    end else if (((tmp_5_reg_3338 == 1'd0) & (1'b1 == ap_CS_fsm_state16))) begin
+        grp_push_back_1_fu_2680_p_read241 = b_data_r_assign_lo_9_reg_4333;
     end else begin
-        grp_push_back_1_fu_2701_p_read240 = 'bx;
+        grp_push_back_1_fu_2680_p_read241 = 'bx;
     end
 end
 
 always @ (*) begin
-    if (((ap_predicate_op805_call_state29 == 1'b1) & (1'b1 == ap_CS_fsm_state29))) begin
-        grp_push_back_1_fu_2701_p_read241 = b_data_r_assign_1_20_reg_5490;
-    end else if (((ap_predicate_op431_call_state17 == 1'b1) & (1'b1 == ap_CS_fsm_state17))) begin
-        grp_push_back_1_fu_2701_p_read241 = b_data_r_assign_lo_9_reg_4386;
+    if (((tmp_12_reg_4438 == 1'd0) & (1'b1 == ap_CS_fsm_state28))) begin
+        grp_push_back_1_fu_2680_p_read242 = b_data_phi_assign_23_reg_4588;
+    end else if (((tmp_5_reg_3338 == 1'd0) & (1'b1 == ap_CS_fsm_state16))) begin
+        grp_push_back_1_fu_2680_p_read242 = b_data_phi_assign_2_reg_3488;
     end else begin
-        grp_push_back_1_fu_2701_p_read241 = 'bx;
+        grp_push_back_1_fu_2680_p_read242 = 'bx;
     end
 end
 
 always @ (*) begin
-    if (((ap_predicate_op805_call_state29 == 1'b1) & (1'b1 == ap_CS_fsm_state29))) begin
-        grp_push_back_1_fu_2701_p_read242 = b_data_phi_assign_23_reg_4645;
-    end else if (((ap_predicate_op431_call_state17 == 1'b1) & (1'b1 == ap_CS_fsm_state17))) begin
-        grp_push_back_1_fu_2701_p_read242 = b_data_phi_assign_2_reg_3541;
+    if (((tmp_12_reg_4438 == 1'd0) & (1'b1 == ap_CS_fsm_state28))) begin
+        grp_push_back_1_fu_2680_p_read243 = b_data_phi_assign_25_reg_4638;
+    end else if (((tmp_5_reg_3338 == 1'd0) & (1'b1 == ap_CS_fsm_state16))) begin
+        grp_push_back_1_fu_2680_p_read243 = b_data_phi_assign_4_reg_3538;
     end else begin
-        grp_push_back_1_fu_2701_p_read242 = 'bx;
+        grp_push_back_1_fu_2680_p_read243 = 'bx;
     end
 end
 
 always @ (*) begin
-    if (((ap_predicate_op805_call_state29 == 1'b1) & (1'b1 == ap_CS_fsm_state29))) begin
-        grp_push_back_1_fu_2701_p_read243 = b_data_phi_assign_25_reg_4695;
-    end else if (((ap_predicate_op431_call_state17 == 1'b1) & (1'b1 == ap_CS_fsm_state17))) begin
-        grp_push_back_1_fu_2701_p_read243 = b_data_phi_assign_4_reg_3591;
+    if (((tmp_12_reg_4438 == 1'd0) & (1'b1 == ap_CS_fsm_state28))) begin
+        grp_push_back_1_fu_2680_p_read244 = b_data_phi_assign_27_reg_4788;
+    end else if (((tmp_5_reg_3338 == 1'd0) & (1'b1 == ap_CS_fsm_state16))) begin
+        grp_push_back_1_fu_2680_p_read244 = b_data_phi_assign_6_reg_3688;
     end else begin
-        grp_push_back_1_fu_2701_p_read243 = 'bx;
+        grp_push_back_1_fu_2680_p_read244 = 'bx;
     end
 end
 
 always @ (*) begin
-    if (((ap_predicate_op805_call_state29 == 1'b1) & (1'b1 == ap_CS_fsm_state29))) begin
-        grp_push_back_1_fu_2701_p_read244 = b_data_phi_assign_27_reg_4845;
-    end else if (((ap_predicate_op431_call_state17 == 1'b1) & (1'b1 == ap_CS_fsm_state17))) begin
-        grp_push_back_1_fu_2701_p_read244 = b_data_phi_assign_6_reg_3741;
+    if (((tmp_12_reg_4438 == 1'd0) & (1'b1 == ap_CS_fsm_state28))) begin
+        grp_push_back_1_fu_2680_p_read245 = b_data_phi_assign_29_reg_4838;
+    end else if (((tmp_5_reg_3338 == 1'd0) & (1'b1 == ap_CS_fsm_state16))) begin
+        grp_push_back_1_fu_2680_p_read245 = b_data_phi_assign_8_reg_3738;
     end else begin
-        grp_push_back_1_fu_2701_p_read244 = 'bx;
+        grp_push_back_1_fu_2680_p_read245 = 'bx;
     end
 end
 
 always @ (*) begin
-    if (((ap_predicate_op805_call_state29 == 1'b1) & (1'b1 == ap_CS_fsm_state29))) begin
-        grp_push_back_1_fu_2701_p_read245 = b_data_phi_assign_29_reg_4895;
-    end else if (((ap_predicate_op431_call_state17 == 1'b1) & (1'b1 == ap_CS_fsm_state17))) begin
-        grp_push_back_1_fu_2701_p_read245 = b_data_phi_assign_8_reg_3791;
+    if (((tmp_12_reg_4438 == 1'd0) & (1'b1 == ap_CS_fsm_state28))) begin
+        grp_push_back_1_fu_2680_p_read246 = b_data_phi_assign_31_reg_4988;
+    end else if (((tmp_5_reg_3338 == 1'd0) & (1'b1 == ap_CS_fsm_state16))) begin
+        grp_push_back_1_fu_2680_p_read246 = b_data_phi_assign_10_reg_3888;
     end else begin
-        grp_push_back_1_fu_2701_p_read245 = 'bx;
+        grp_push_back_1_fu_2680_p_read246 = 'bx;
     end
 end
 
 always @ (*) begin
-    if (((ap_predicate_op805_call_state29 == 1'b1) & (1'b1 == ap_CS_fsm_state29))) begin
-        grp_push_back_1_fu_2701_p_read246 = b_data_phi_assign_31_reg_5045;
-    end else if (((ap_predicate_op431_call_state17 == 1'b1) & (1'b1 == ap_CS_fsm_state17))) begin
-        grp_push_back_1_fu_2701_p_read246 = b_data_phi_assign_10_reg_3941;
+    if (((tmp_12_reg_4438 == 1'd0) & (1'b1 == ap_CS_fsm_state28))) begin
+        grp_push_back_1_fu_2680_p_read247 = b_data_phi_assign_33_reg_5038;
+    end else if (((tmp_5_reg_3338 == 1'd0) & (1'b1 == ap_CS_fsm_state16))) begin
+        grp_push_back_1_fu_2680_p_read247 = b_data_phi_assign_12_reg_3938;
     end else begin
-        grp_push_back_1_fu_2701_p_read246 = 'bx;
+        grp_push_back_1_fu_2680_p_read247 = 'bx;
     end
 end
 
 always @ (*) begin
-    if (((ap_predicate_op805_call_state29 == 1'b1) & (1'b1 == ap_CS_fsm_state29))) begin
-        grp_push_back_1_fu_2701_p_read247 = b_data_phi_assign_33_reg_5095;
-    end else if (((ap_predicate_op431_call_state17 == 1'b1) & (1'b1 == ap_CS_fsm_state17))) begin
-        grp_push_back_1_fu_2701_p_read247 = b_data_phi_assign_12_reg_3991;
+    if (((tmp_12_reg_4438 == 1'd0) & (1'b1 == ap_CS_fsm_state28))) begin
+        grp_push_back_1_fu_2680_p_read248 = b_data_phi_assign_35_reg_5188;
+    end else if (((tmp_5_reg_3338 == 1'd0) & (1'b1 == ap_CS_fsm_state16))) begin
+        grp_push_back_1_fu_2680_p_read248 = b_data_phi_assign_14_reg_4088;
     end else begin
-        grp_push_back_1_fu_2701_p_read247 = 'bx;
+        grp_push_back_1_fu_2680_p_read248 = 'bx;
     end
 end
 
 always @ (*) begin
-    if (((ap_predicate_op805_call_state29 == 1'b1) & (1'b1 == ap_CS_fsm_state29))) begin
-        grp_push_back_1_fu_2701_p_read248 = b_data_phi_assign_35_reg_5245;
-    end else if (((ap_predicate_op431_call_state17 == 1'b1) & (1'b1 == ap_CS_fsm_state17))) begin
-        grp_push_back_1_fu_2701_p_read248 = b_data_phi_assign_14_reg_4141;
+    if (((tmp_12_reg_4438 == 1'd0) & (1'b1 == ap_CS_fsm_state28))) begin
+        grp_push_back_1_fu_2680_p_read249 = b_data_phi_assign_37_reg_5238;
+    end else if (((tmp_5_reg_3338 == 1'd0) & (1'b1 == ap_CS_fsm_state16))) begin
+        grp_push_back_1_fu_2680_p_read249 = b_data_phi_assign_16_reg_4138;
     end else begin
-        grp_push_back_1_fu_2701_p_read248 = 'bx;
+        grp_push_back_1_fu_2680_p_read249 = 'bx;
     end
 end
 
 always @ (*) begin
-    if (((ap_predicate_op805_call_state29 == 1'b1) & (1'b1 == ap_CS_fsm_state29))) begin
-        grp_push_back_1_fu_2701_p_read249 = b_data_phi_assign_37_reg_5295;
-    end else if (((ap_predicate_op431_call_state17 == 1'b1) & (1'b1 == ap_CS_fsm_state17))) begin
-        grp_push_back_1_fu_2701_p_read249 = b_data_phi_assign_16_reg_4191;
+    if (((tmp_12_reg_4438 == 1'd0) & (1'b1 == ap_CS_fsm_state28))) begin
+        grp_push_back_1_fu_2680_p_read250 = b_data_phi_assign_39_reg_5388;
+    end else if (((tmp_5_reg_3338 == 1'd0) & (1'b1 == ap_CS_fsm_state16))) begin
+        grp_push_back_1_fu_2680_p_read250 = b_data_phi_assign_18_reg_4288;
     end else begin
-        grp_push_back_1_fu_2701_p_read249 = 'bx;
+        grp_push_back_1_fu_2680_p_read250 = 'bx;
     end
 end
 
 always @ (*) begin
-    if (((ap_predicate_op805_call_state29 == 1'b1) & (1'b1 == ap_CS_fsm_state29))) begin
-        grp_push_back_1_fu_2701_p_read250 = b_data_phi_assign_39_reg_5445;
-    end else if (((ap_predicate_op431_call_state17 == 1'b1) & (1'b1 == ap_CS_fsm_state17))) begin
-        grp_push_back_1_fu_2701_p_read250 = b_data_phi_assign_18_reg_4341;
+    if (((tmp_12_reg_4438 == 1'd0) & (1'b1 == ap_CS_fsm_state28))) begin
+        grp_push_back_1_fu_2680_p_read251 = b_data_phi_assign_41_reg_5438;
+    end else if (((tmp_5_reg_3338 == 1'd0) & (1'b1 == ap_CS_fsm_state16))) begin
+        grp_push_back_1_fu_2680_p_read251 = b_data_phi_assign_20_reg_4338;
     end else begin
-        grp_push_back_1_fu_2701_p_read250 = 'bx;
+        grp_push_back_1_fu_2680_p_read251 = 'bx;
     end
 end
 
 always @ (*) begin
-    if (((ap_predicate_op805_call_state29 == 1'b1) & (1'b1 == ap_CS_fsm_state29))) begin
-        grp_push_back_1_fu_2701_p_read251 = b_data_phi_assign_41_reg_5495;
-    end else if (((ap_predicate_op431_call_state17 == 1'b1) & (1'b1 == ap_CS_fsm_state17))) begin
-        grp_push_back_1_fu_2701_p_read251 = b_data_phi_assign_20_reg_4391;
+    if (((tmp_12_reg_4438 == 1'd0) & (1'b1 == ap_CS_fsm_state28))) begin
+        grp_push_back_1_fu_2680_p_read252 = b_data_z_assign_1_2_reg_4593;
+    end else if (((tmp_5_reg_3338 == 1'd0) & (1'b1 == ap_CS_fsm_state16))) begin
+        grp_push_back_1_fu_2680_p_read252 = b_data_z_assign_lo_reg_3493;
     end else begin
-        grp_push_back_1_fu_2701_p_read251 = 'bx;
+        grp_push_back_1_fu_2680_p_read252 = 'bx;
     end
 end
 
 always @ (*) begin
-    if (((ap_predicate_op805_call_state29 == 1'b1) & (1'b1 == ap_CS_fsm_state29))) begin
-        grp_push_back_1_fu_2701_p_read252 = b_data_z_assign_1_2_reg_4650;
-    end else if (((ap_predicate_op431_call_state17 == 1'b1) & (1'b1 == ap_CS_fsm_state17))) begin
-        grp_push_back_1_fu_2701_p_read252 = b_data_z_assign_lo_reg_3546;
+    if (((tmp_12_reg_4438 == 1'd0) & (1'b1 == ap_CS_fsm_state28))) begin
+        grp_push_back_1_fu_2680_p_read253 = b_data_z_assign_1_4_reg_4643;
+    end else if (((tmp_5_reg_3338 == 1'd0) & (1'b1 == ap_CS_fsm_state16))) begin
+        grp_push_back_1_fu_2680_p_read253 = b_data_z_assign_lo_1_reg_3543;
     end else begin
-        grp_push_back_1_fu_2701_p_read252 = 'bx;
+        grp_push_back_1_fu_2680_p_read253 = 'bx;
     end
 end
 
 always @ (*) begin
-    if (((ap_predicate_op805_call_state29 == 1'b1) & (1'b1 == ap_CS_fsm_state29))) begin
-        grp_push_back_1_fu_2701_p_read253 = b_data_z_assign_1_4_reg_4700;
-    end else if (((ap_predicate_op431_call_state17 == 1'b1) & (1'b1 == ap_CS_fsm_state17))) begin
-        grp_push_back_1_fu_2701_p_read253 = b_data_z_assign_lo_1_reg_3596;
+    if (((tmp_12_reg_4438 == 1'd0) & (1'b1 == ap_CS_fsm_state28))) begin
+        grp_push_back_1_fu_2680_p_read254 = b_data_z_assign_1_6_reg_4793;
+    end else if (((tmp_5_reg_3338 == 1'd0) & (1'b1 == ap_CS_fsm_state16))) begin
+        grp_push_back_1_fu_2680_p_read254 = b_data_z_assign_lo_2_reg_3693;
     end else begin
-        grp_push_back_1_fu_2701_p_read253 = 'bx;
+        grp_push_back_1_fu_2680_p_read254 = 'bx;
     end
 end
 
 always @ (*) begin
-    if (((ap_predicate_op805_call_state29 == 1'b1) & (1'b1 == ap_CS_fsm_state29))) begin
-        grp_push_back_1_fu_2701_p_read254 = b_data_z_assign_1_6_reg_4850;
-    end else if (((ap_predicate_op431_call_state17 == 1'b1) & (1'b1 == ap_CS_fsm_state17))) begin
-        grp_push_back_1_fu_2701_p_read254 = b_data_z_assign_lo_2_reg_3746;
+    if (((tmp_12_reg_4438 == 1'd0) & (1'b1 == ap_CS_fsm_state28))) begin
+        grp_push_back_1_fu_2680_p_read255 = b_data_z_assign_1_8_reg_4843;
+    end else if (((tmp_5_reg_3338 == 1'd0) & (1'b1 == ap_CS_fsm_state16))) begin
+        grp_push_back_1_fu_2680_p_read255 = b_data_z_assign_lo_3_reg_3743;
     end else begin
-        grp_push_back_1_fu_2701_p_read254 = 'bx;
+        grp_push_back_1_fu_2680_p_read255 = 'bx;
     end
 end
 
 always @ (*) begin
-    if (((ap_predicate_op805_call_state29 == 1'b1) & (1'b1 == ap_CS_fsm_state29))) begin
-        grp_push_back_1_fu_2701_p_read255 = b_data_z_assign_1_8_reg_4900;
-    end else if (((ap_predicate_op431_call_state17 == 1'b1) & (1'b1 == ap_CS_fsm_state17))) begin
-        grp_push_back_1_fu_2701_p_read255 = b_data_z_assign_lo_3_reg_3796;
+    if (((tmp_12_reg_4438 == 1'd0) & (1'b1 == ap_CS_fsm_state28))) begin
+        grp_push_back_1_fu_2680_p_read256 = b_data_z_assign_1_10_reg_4993;
+    end else if (((tmp_5_reg_3338 == 1'd0) & (1'b1 == ap_CS_fsm_state16))) begin
+        grp_push_back_1_fu_2680_p_read256 = b_data_z_assign_lo_4_reg_3893;
     end else begin
-        grp_push_back_1_fu_2701_p_read255 = 'bx;
+        grp_push_back_1_fu_2680_p_read256 = 'bx;
     end
 end
 
 always @ (*) begin
-    if (((ap_predicate_op805_call_state29 == 1'b1) & (1'b1 == ap_CS_fsm_state29))) begin
-        grp_push_back_1_fu_2701_p_read256 = b_data_z_assign_1_10_reg_5050;
-    end else if (((ap_predicate_op431_call_state17 == 1'b1) & (1'b1 == ap_CS_fsm_state17))) begin
-        grp_push_back_1_fu_2701_p_read256 = b_data_z_assign_lo_4_reg_3946;
+    if (((tmp_12_reg_4438 == 1'd0) & (1'b1 == ap_CS_fsm_state28))) begin
+        grp_push_back_1_fu_2680_p_read257 = b_data_z_assign_1_12_reg_5043;
+    end else if (((tmp_5_reg_3338 == 1'd0) & (1'b1 == ap_CS_fsm_state16))) begin
+        grp_push_back_1_fu_2680_p_read257 = b_data_z_assign_lo_5_reg_3943;
     end else begin
-        grp_push_back_1_fu_2701_p_read256 = 'bx;
+        grp_push_back_1_fu_2680_p_read257 = 'bx;
     end
 end
 
 always @ (*) begin
-    if (((ap_predicate_op805_call_state29 == 1'b1) & (1'b1 == ap_CS_fsm_state29))) begin
-        grp_push_back_1_fu_2701_p_read257 = b_data_z_assign_1_12_reg_5100;
-    end else if (((ap_predicate_op431_call_state17 == 1'b1) & (1'b1 == ap_CS_fsm_state17))) begin
-        grp_push_back_1_fu_2701_p_read257 = b_data_z_assign_lo_5_reg_3996;
+    if (((tmp_12_reg_4438 == 1'd0) & (1'b1 == ap_CS_fsm_state28))) begin
+        grp_push_back_1_fu_2680_p_read258 = b_data_z_assign_1_14_reg_5193;
+    end else if (((tmp_5_reg_3338 == 1'd0) & (1'b1 == ap_CS_fsm_state16))) begin
+        grp_push_back_1_fu_2680_p_read258 = b_data_z_assign_lo_6_reg_4093;
     end else begin
-        grp_push_back_1_fu_2701_p_read257 = 'bx;
+        grp_push_back_1_fu_2680_p_read258 = 'bx;
     end
 end
 
 always @ (*) begin
-    if (((ap_predicate_op805_call_state29 == 1'b1) & (1'b1 == ap_CS_fsm_state29))) begin
-        grp_push_back_1_fu_2701_p_read258 = b_data_z_assign_1_14_reg_5250;
-    end else if (((ap_predicate_op431_call_state17 == 1'b1) & (1'b1 == ap_CS_fsm_state17))) begin
-        grp_push_back_1_fu_2701_p_read258 = b_data_z_assign_lo_6_reg_4146;
+    if (((tmp_12_reg_4438 == 1'd0) & (1'b1 == ap_CS_fsm_state28))) begin
+        grp_push_back_1_fu_2680_p_read259 = b_data_z_assign_1_16_reg_5243;
+    end else if (((tmp_5_reg_3338 == 1'd0) & (1'b1 == ap_CS_fsm_state16))) begin
+        grp_push_back_1_fu_2680_p_read259 = b_data_z_assign_lo_7_reg_4143;
     end else begin
-        grp_push_back_1_fu_2701_p_read258 = 'bx;
+        grp_push_back_1_fu_2680_p_read259 = 'bx;
     end
 end
 
 always @ (*) begin
-    if (((ap_predicate_op805_call_state29 == 1'b1) & (1'b1 == ap_CS_fsm_state29))) begin
-        grp_push_back_1_fu_2701_p_read259 = b_data_z_assign_1_16_reg_5300;
-    end else if (((ap_predicate_op431_call_state17 == 1'b1) & (1'b1 == ap_CS_fsm_state17))) begin
-        grp_push_back_1_fu_2701_p_read259 = b_data_z_assign_lo_7_reg_4196;
+    if (((tmp_12_reg_4438 == 1'd0) & (1'b1 == ap_CS_fsm_state28))) begin
+        grp_push_back_1_fu_2680_p_read260 = b_data_z_assign_1_18_reg_5393;
+    end else if (((tmp_5_reg_3338 == 1'd0) & (1'b1 == ap_CS_fsm_state16))) begin
+        grp_push_back_1_fu_2680_p_read260 = b_data_z_assign_lo_8_reg_4293;
     end else begin
-        grp_push_back_1_fu_2701_p_read259 = 'bx;
+        grp_push_back_1_fu_2680_p_read260 = 'bx;
     end
 end
 
 always @ (*) begin
-    if (((ap_predicate_op805_call_state29 == 1'b1) & (1'b1 == ap_CS_fsm_state29))) begin
-        grp_push_back_1_fu_2701_p_read260 = b_data_z_assign_1_18_reg_5450;
-    end else if (((ap_predicate_op431_call_state17 == 1'b1) & (1'b1 == ap_CS_fsm_state17))) begin
-        grp_push_back_1_fu_2701_p_read260 = b_data_z_assign_lo_8_reg_4346;
+    if (((tmp_12_reg_4438 == 1'd0) & (1'b1 == ap_CS_fsm_state28))) begin
+        grp_push_back_1_fu_2680_p_read261 = b_data_z_assign_1_20_reg_5443;
+    end else if (((tmp_5_reg_3338 == 1'd0) & (1'b1 == ap_CS_fsm_state16))) begin
+        grp_push_back_1_fu_2680_p_read261 = b_data_z_assign_lo_9_reg_4343;
     end else begin
-        grp_push_back_1_fu_2701_p_read260 = 'bx;
+        grp_push_back_1_fu_2680_p_read261 = 'bx;
     end
 end
 
 always @ (*) begin
-    if (((ap_predicate_op805_call_state29 == 1'b1) & (1'b1 == ap_CS_fsm_state29))) begin
-        grp_push_back_1_fu_2701_p_read261 = b_data_z_assign_1_20_reg_5500;
-    end else if (((ap_predicate_op431_call_state17 == 1'b1) & (1'b1 == ap_CS_fsm_state17))) begin
-        grp_push_back_1_fu_2701_p_read261 = b_data_z_assign_lo_9_reg_4396;
+    if (((tmp_12_reg_4438 == 1'd0) & (1'b1 == ap_CS_fsm_state28))) begin
+        grp_push_back_1_fu_2680_p_read262 = b_data_layerId_ass_25_reg_4598;
+    end else if (((tmp_5_reg_3338 == 1'd0) & (1'b1 == ap_CS_fsm_state16))) begin
+        grp_push_back_1_fu_2680_p_read262 = b_data_layerId_ass_4_reg_3498;
     end else begin
-        grp_push_back_1_fu_2701_p_read261 = 'bx;
+        grp_push_back_1_fu_2680_p_read262 = 'bx;
     end
 end
 
 always @ (*) begin
-    if (((ap_predicate_op805_call_state29 == 1'b1) & (1'b1 == ap_CS_fsm_state29))) begin
-        grp_push_back_1_fu_2701_p_read262 = b_data_layerId_ass_25_reg_4655;
-    end else if (((ap_predicate_op431_call_state17 == 1'b1) & (1'b1 == ap_CS_fsm_state17))) begin
-        grp_push_back_1_fu_2701_p_read262 = b_data_layerId_ass_4_reg_3551;
+    if (((tmp_12_reg_4438 == 1'd0) & (1'b1 == ap_CS_fsm_state28))) begin
+        grp_push_back_1_fu_2680_p_read263 = b_data_layerId_ass_27_reg_4648;
+    end else if (((tmp_5_reg_3338 == 1'd0) & (1'b1 == ap_CS_fsm_state16))) begin
+        grp_push_back_1_fu_2680_p_read263 = b_data_layerId_ass_6_reg_3548;
     end else begin
-        grp_push_back_1_fu_2701_p_read262 = 'bx;
+        grp_push_back_1_fu_2680_p_read263 = 'bx;
     end
 end
 
 always @ (*) begin
-    if (((ap_predicate_op805_call_state29 == 1'b1) & (1'b1 == ap_CS_fsm_state29))) begin
-        grp_push_back_1_fu_2701_p_read263 = b_data_layerId_ass_27_reg_4705;
-    end else if (((ap_predicate_op431_call_state17 == 1'b1) & (1'b1 == ap_CS_fsm_state17))) begin
-        grp_push_back_1_fu_2701_p_read263 = b_data_layerId_ass_6_reg_3601;
+    if (((tmp_12_reg_4438 == 1'd0) & (1'b1 == ap_CS_fsm_state28))) begin
+        grp_push_back_1_fu_2680_p_read264 = b_data_layerId_ass_29_reg_4798;
+    end else if (((tmp_5_reg_3338 == 1'd0) & (1'b1 == ap_CS_fsm_state16))) begin
+        grp_push_back_1_fu_2680_p_read264 = b_data_layerId_ass_8_reg_3698;
     end else begin
-        grp_push_back_1_fu_2701_p_read263 = 'bx;
+        grp_push_back_1_fu_2680_p_read264 = 'bx;
     end
 end
 
 always @ (*) begin
-    if (((ap_predicate_op805_call_state29 == 1'b1) & (1'b1 == ap_CS_fsm_state29))) begin
-        grp_push_back_1_fu_2701_p_read264 = b_data_layerId_ass_29_reg_4855;
-    end else if (((ap_predicate_op431_call_state17 == 1'b1) & (1'b1 == ap_CS_fsm_state17))) begin
-        grp_push_back_1_fu_2701_p_read264 = b_data_layerId_ass_8_reg_3751;
+    if (((tmp_12_reg_4438 == 1'd0) & (1'b1 == ap_CS_fsm_state28))) begin
+        grp_push_back_1_fu_2680_p_read265 = b_data_layerId_ass_31_reg_4848;
+    end else if (((tmp_5_reg_3338 == 1'd0) & (1'b1 == ap_CS_fsm_state16))) begin
+        grp_push_back_1_fu_2680_p_read265 = b_data_layerId_ass_10_reg_3748;
     end else begin
-        grp_push_back_1_fu_2701_p_read264 = 'bx;
+        grp_push_back_1_fu_2680_p_read265 = 'bx;
     end
 end
 
 always @ (*) begin
-    if (((ap_predicate_op805_call_state29 == 1'b1) & (1'b1 == ap_CS_fsm_state29))) begin
-        grp_push_back_1_fu_2701_p_read265 = b_data_layerId_ass_31_reg_4905;
-    end else if (((ap_predicate_op431_call_state17 == 1'b1) & (1'b1 == ap_CS_fsm_state17))) begin
-        grp_push_back_1_fu_2701_p_read265 = b_data_layerId_ass_10_reg_3801;
+    if (((tmp_12_reg_4438 == 1'd0) & (1'b1 == ap_CS_fsm_state28))) begin
+        grp_push_back_1_fu_2680_p_read266 = b_data_layerId_ass_33_reg_4998;
+    end else if (((tmp_5_reg_3338 == 1'd0) & (1'b1 == ap_CS_fsm_state16))) begin
+        grp_push_back_1_fu_2680_p_read266 = b_data_layerId_ass_12_reg_3898;
     end else begin
-        grp_push_back_1_fu_2701_p_read265 = 'bx;
+        grp_push_back_1_fu_2680_p_read266 = 'bx;
     end
 end
 
 always @ (*) begin
-    if (((ap_predicate_op805_call_state29 == 1'b1) & (1'b1 == ap_CS_fsm_state29))) begin
-        grp_push_back_1_fu_2701_p_read266 = b_data_layerId_ass_33_reg_5055;
-    end else if (((ap_predicate_op431_call_state17 == 1'b1) & (1'b1 == ap_CS_fsm_state17))) begin
-        grp_push_back_1_fu_2701_p_read266 = b_data_layerId_ass_12_reg_3951;
+    if (((tmp_12_reg_4438 == 1'd0) & (1'b1 == ap_CS_fsm_state28))) begin
+        grp_push_back_1_fu_2680_p_read267 = b_data_layerId_ass_35_reg_5048;
+    end else if (((tmp_5_reg_3338 == 1'd0) & (1'b1 == ap_CS_fsm_state16))) begin
+        grp_push_back_1_fu_2680_p_read267 = b_data_layerId_ass_14_reg_3948;
     end else begin
-        grp_push_back_1_fu_2701_p_read266 = 'bx;
+        grp_push_back_1_fu_2680_p_read267 = 'bx;
     end
 end
 
 always @ (*) begin
-    if (((ap_predicate_op805_call_state29 == 1'b1) & (1'b1 == ap_CS_fsm_state29))) begin
-        grp_push_back_1_fu_2701_p_read267 = b_data_layerId_ass_35_reg_5105;
-    end else if (((ap_predicate_op431_call_state17 == 1'b1) & (1'b1 == ap_CS_fsm_state17))) begin
-        grp_push_back_1_fu_2701_p_read267 = b_data_layerId_ass_14_reg_4001;
+    if (((tmp_12_reg_4438 == 1'd0) & (1'b1 == ap_CS_fsm_state28))) begin
+        grp_push_back_1_fu_2680_p_read268 = b_data_layerId_ass_37_reg_5198;
+    end else if (((tmp_5_reg_3338 == 1'd0) & (1'b1 == ap_CS_fsm_state16))) begin
+        grp_push_back_1_fu_2680_p_read268 = b_data_layerId_ass_16_reg_4098;
     end else begin
-        grp_push_back_1_fu_2701_p_read267 = 'bx;
+        grp_push_back_1_fu_2680_p_read268 = 'bx;
     end
 end
 
 always @ (*) begin
-    if (((ap_predicate_op805_call_state29 == 1'b1) & (1'b1 == ap_CS_fsm_state29))) begin
-        grp_push_back_1_fu_2701_p_read268 = b_data_layerId_ass_37_reg_5255;
-    end else if (((ap_predicate_op431_call_state17 == 1'b1) & (1'b1 == ap_CS_fsm_state17))) begin
-        grp_push_back_1_fu_2701_p_read268 = b_data_layerId_ass_16_reg_4151;
+    if (((tmp_12_reg_4438 == 1'd0) & (1'b1 == ap_CS_fsm_state28))) begin
+        grp_push_back_1_fu_2680_p_read269 = b_data_layerId_ass_39_reg_5248;
+    end else if (((tmp_5_reg_3338 == 1'd0) & (1'b1 == ap_CS_fsm_state16))) begin
+        grp_push_back_1_fu_2680_p_read269 = b_data_layerId_ass_18_reg_4148;
     end else begin
-        grp_push_back_1_fu_2701_p_read268 = 'bx;
+        grp_push_back_1_fu_2680_p_read269 = 'bx;
     end
 end
 
 always @ (*) begin
-    if (((ap_predicate_op805_call_state29 == 1'b1) & (1'b1 == ap_CS_fsm_state29))) begin
-        grp_push_back_1_fu_2701_p_read269 = b_data_layerId_ass_39_reg_5305;
-    end else if (((ap_predicate_op431_call_state17 == 1'b1) & (1'b1 == ap_CS_fsm_state17))) begin
-        grp_push_back_1_fu_2701_p_read269 = b_data_layerId_ass_18_reg_4201;
+    if (((tmp_12_reg_4438 == 1'd0) & (1'b1 == ap_CS_fsm_state28))) begin
+        grp_push_back_1_fu_2680_p_read270 = b_data_layerId_ass_41_reg_5398;
+    end else if (((tmp_5_reg_3338 == 1'd0) & (1'b1 == ap_CS_fsm_state16))) begin
+        grp_push_back_1_fu_2680_p_read270 = b_data_layerId_ass_20_reg_4298;
     end else begin
-        grp_push_back_1_fu_2701_p_read269 = 'bx;
+        grp_push_back_1_fu_2680_p_read270 = 'bx;
     end
 end
 
 always @ (*) begin
-    if (((ap_predicate_op805_call_state29 == 1'b1) & (1'b1 == ap_CS_fsm_state29))) begin
-        grp_push_back_1_fu_2701_p_read270 = b_data_layerId_ass_41_reg_5455;
-    end else if (((ap_predicate_op431_call_state17 == 1'b1) & (1'b1 == ap_CS_fsm_state17))) begin
-        grp_push_back_1_fu_2701_p_read270 = b_data_layerId_ass_20_reg_4351;
+    if (((tmp_12_reg_4438 == 1'd0) & (1'b1 == ap_CS_fsm_state28))) begin
+        grp_push_back_1_fu_2680_p_read271 = b_data_layerId_ass_43_reg_5448;
+    end else if (((tmp_5_reg_3338 == 1'd0) & (1'b1 == ap_CS_fsm_state16))) begin
+        grp_push_back_1_fu_2680_p_read271 = b_data_layerId_ass_22_reg_4348;
     end else begin
-        grp_push_back_1_fu_2701_p_read270 = 'bx;
+        grp_push_back_1_fu_2680_p_read271 = 'bx;
     end
 end
 
 always @ (*) begin
-    if (((ap_predicate_op805_call_state29 == 1'b1) & (1'b1 == ap_CS_fsm_state29))) begin
-        grp_push_back_1_fu_2701_p_read271 = b_data_layerId_ass_43_reg_5505;
-    end else if (((ap_predicate_op431_call_state17 == 1'b1) & (1'b1 == ap_CS_fsm_state17))) begin
-        grp_push_back_1_fu_2701_p_read271 = b_data_layerId_ass_22_reg_4401;
+    if (((tmp_12_reg_4438 == 1'd0) & (1'b1 == ap_CS_fsm_state28))) begin
+        grp_push_back_1_fu_2680_p_read272 = b_data_psModule_as_25_reg_4603;
+    end else if (((tmp_5_reg_3338 == 1'd0) & (1'b1 == ap_CS_fsm_state16))) begin
+        grp_push_back_1_fu_2680_p_read272 = b_data_psModule_as_4_reg_3503;
     end else begin
-        grp_push_back_1_fu_2701_p_read271 = 'bx;
+        grp_push_back_1_fu_2680_p_read272 = 'bx;
     end
 end
 
 always @ (*) begin
-    if (((ap_predicate_op805_call_state29 == 1'b1) & (1'b1 == ap_CS_fsm_state29))) begin
-        grp_push_back_1_fu_2701_p_read272 = b_data_psModule_as_25_reg_4660;
-    end else if (((ap_predicate_op431_call_state17 == 1'b1) & (1'b1 == ap_CS_fsm_state17))) begin
-        grp_push_back_1_fu_2701_p_read272 = b_data_psModule_as_4_reg_3556;
+    if (((tmp_12_reg_4438 == 1'd0) & (1'b1 == ap_CS_fsm_state28))) begin
+        grp_push_back_1_fu_2680_p_read273 = b_data_psModule_as_27_reg_4653;
+    end else if (((tmp_5_reg_3338 == 1'd0) & (1'b1 == ap_CS_fsm_state16))) begin
+        grp_push_back_1_fu_2680_p_read273 = b_data_psModule_as_6_reg_3553;
     end else begin
-        grp_push_back_1_fu_2701_p_read272 = 'bx;
+        grp_push_back_1_fu_2680_p_read273 = 'bx;
     end
 end
 
 always @ (*) begin
-    if (((ap_predicate_op805_call_state29 == 1'b1) & (1'b1 == ap_CS_fsm_state29))) begin
-        grp_push_back_1_fu_2701_p_read273 = b_data_psModule_as_27_reg_4710;
-    end else if (((ap_predicate_op431_call_state17 == 1'b1) & (1'b1 == ap_CS_fsm_state17))) begin
-        grp_push_back_1_fu_2701_p_read273 = b_data_psModule_as_6_reg_3606;
+    if (((tmp_12_reg_4438 == 1'd0) & (1'b1 == ap_CS_fsm_state28))) begin
+        grp_push_back_1_fu_2680_p_read274 = b_data_psModule_as_29_reg_4803;
+    end else if (((tmp_5_reg_3338 == 1'd0) & (1'b1 == ap_CS_fsm_state16))) begin
+        grp_push_back_1_fu_2680_p_read274 = b_data_psModule_as_8_reg_3703;
     end else begin
-        grp_push_back_1_fu_2701_p_read273 = 'bx;
+        grp_push_back_1_fu_2680_p_read274 = 'bx;
     end
 end
 
 always @ (*) begin
-    if (((ap_predicate_op805_call_state29 == 1'b1) & (1'b1 == ap_CS_fsm_state29))) begin
-        grp_push_back_1_fu_2701_p_read274 = b_data_psModule_as_29_reg_4860;
-    end else if (((ap_predicate_op431_call_state17 == 1'b1) & (1'b1 == ap_CS_fsm_state17))) begin
-        grp_push_back_1_fu_2701_p_read274 = b_data_psModule_as_8_reg_3756;
+    if (((tmp_12_reg_4438 == 1'd0) & (1'b1 == ap_CS_fsm_state28))) begin
+        grp_push_back_1_fu_2680_p_read275 = b_data_psModule_as_31_reg_4853;
+    end else if (((tmp_5_reg_3338 == 1'd0) & (1'b1 == ap_CS_fsm_state16))) begin
+        grp_push_back_1_fu_2680_p_read275 = b_data_psModule_as_10_reg_3753;
     end else begin
-        grp_push_back_1_fu_2701_p_read274 = 'bx;
+        grp_push_back_1_fu_2680_p_read275 = 'bx;
     end
 end
 
 always @ (*) begin
-    if (((ap_predicate_op805_call_state29 == 1'b1) & (1'b1 == ap_CS_fsm_state29))) begin
-        grp_push_back_1_fu_2701_p_read275 = b_data_psModule_as_31_reg_4910;
-    end else if (((ap_predicate_op431_call_state17 == 1'b1) & (1'b1 == ap_CS_fsm_state17))) begin
-        grp_push_back_1_fu_2701_p_read275 = b_data_psModule_as_10_reg_3806;
+    if (((tmp_12_reg_4438 == 1'd0) & (1'b1 == ap_CS_fsm_state28))) begin
+        grp_push_back_1_fu_2680_p_read276 = b_data_psModule_as_33_reg_5003;
+    end else if (((tmp_5_reg_3338 == 1'd0) & (1'b1 == ap_CS_fsm_state16))) begin
+        grp_push_back_1_fu_2680_p_read276 = b_data_psModule_as_12_reg_3903;
     end else begin
-        grp_push_back_1_fu_2701_p_read275 = 'bx;
+        grp_push_back_1_fu_2680_p_read276 = 'bx;
     end
 end
 
 always @ (*) begin
-    if (((ap_predicate_op805_call_state29 == 1'b1) & (1'b1 == ap_CS_fsm_state29))) begin
-        grp_push_back_1_fu_2701_p_read276 = b_data_psModule_as_33_reg_5060;
-    end else if (((ap_predicate_op431_call_state17 == 1'b1) & (1'b1 == ap_CS_fsm_state17))) begin
-        grp_push_back_1_fu_2701_p_read276 = b_data_psModule_as_12_reg_3956;
+    if (((tmp_12_reg_4438 == 1'd0) & (1'b1 == ap_CS_fsm_state28))) begin
+        grp_push_back_1_fu_2680_p_read277 = b_data_psModule_as_35_reg_5053;
+    end else if (((tmp_5_reg_3338 == 1'd0) & (1'b1 == ap_CS_fsm_state16))) begin
+        grp_push_back_1_fu_2680_p_read277 = b_data_psModule_as_14_reg_3953;
     end else begin
-        grp_push_back_1_fu_2701_p_read276 = 'bx;
+        grp_push_back_1_fu_2680_p_read277 = 'bx;
     end
 end
 
 always @ (*) begin
-    if (((ap_predicate_op805_call_state29 == 1'b1) & (1'b1 == ap_CS_fsm_state29))) begin
-        grp_push_back_1_fu_2701_p_read277 = b_data_psModule_as_35_reg_5110;
-    end else if (((ap_predicate_op431_call_state17 == 1'b1) & (1'b1 == ap_CS_fsm_state17))) begin
-        grp_push_back_1_fu_2701_p_read277 = b_data_psModule_as_14_reg_4006;
+    if (((tmp_12_reg_4438 == 1'd0) & (1'b1 == ap_CS_fsm_state28))) begin
+        grp_push_back_1_fu_2680_p_read278 = b_data_psModule_as_37_reg_5203;
+    end else if (((tmp_5_reg_3338 == 1'd0) & (1'b1 == ap_CS_fsm_state16))) begin
+        grp_push_back_1_fu_2680_p_read278 = b_data_psModule_as_16_reg_4103;
     end else begin
-        grp_push_back_1_fu_2701_p_read277 = 'bx;
+        grp_push_back_1_fu_2680_p_read278 = 'bx;
     end
 end
 
 always @ (*) begin
-    if (((ap_predicate_op805_call_state29 == 1'b1) & (1'b1 == ap_CS_fsm_state29))) begin
-        grp_push_back_1_fu_2701_p_read278 = b_data_psModule_as_37_reg_5260;
-    end else if (((ap_predicate_op431_call_state17 == 1'b1) & (1'b1 == ap_CS_fsm_state17))) begin
-        grp_push_back_1_fu_2701_p_read278 = b_data_psModule_as_16_reg_4156;
+    if (((tmp_12_reg_4438 == 1'd0) & (1'b1 == ap_CS_fsm_state28))) begin
+        grp_push_back_1_fu_2680_p_read279 = b_data_psModule_as_39_reg_5253;
+    end else if (((tmp_5_reg_3338 == 1'd0) & (1'b1 == ap_CS_fsm_state16))) begin
+        grp_push_back_1_fu_2680_p_read279 = b_data_psModule_as_18_reg_4153;
     end else begin
-        grp_push_back_1_fu_2701_p_read278 = 'bx;
+        grp_push_back_1_fu_2680_p_read279 = 'bx;
     end
 end
 
 always @ (*) begin
-    if (((ap_predicate_op805_call_state29 == 1'b1) & (1'b1 == ap_CS_fsm_state29))) begin
-        grp_push_back_1_fu_2701_p_read279 = b_data_psModule_as_39_reg_5310;
-    end else if (((ap_predicate_op431_call_state17 == 1'b1) & (1'b1 == ap_CS_fsm_state17))) begin
-        grp_push_back_1_fu_2701_p_read279 = b_data_psModule_as_18_reg_4206;
+    if (((tmp_12_reg_4438 == 1'd0) & (1'b1 == ap_CS_fsm_state28))) begin
+        grp_push_back_1_fu_2680_p_read280 = b_data_psModule_as_41_reg_5403;
+    end else if (((tmp_5_reg_3338 == 1'd0) & (1'b1 == ap_CS_fsm_state16))) begin
+        grp_push_back_1_fu_2680_p_read280 = b_data_psModule_as_20_reg_4303;
     end else begin
-        grp_push_back_1_fu_2701_p_read279 = 'bx;
+        grp_push_back_1_fu_2680_p_read280 = 'bx;
     end
 end
 
 always @ (*) begin
-    if (((ap_predicate_op805_call_state29 == 1'b1) & (1'b1 == ap_CS_fsm_state29))) begin
-        grp_push_back_1_fu_2701_p_read280 = b_data_psModule_as_41_reg_5460;
-    end else if (((ap_predicate_op431_call_state17 == 1'b1) & (1'b1 == ap_CS_fsm_state17))) begin
-        grp_push_back_1_fu_2701_p_read280 = b_data_psModule_as_20_reg_4356;
+    if (((tmp_12_reg_4438 == 1'd0) & (1'b1 == ap_CS_fsm_state28))) begin
+        grp_push_back_1_fu_2680_p_read281 = b_data_psModule_as_43_reg_5453;
+    end else if (((tmp_5_reg_3338 == 1'd0) & (1'b1 == ap_CS_fsm_state16))) begin
+        grp_push_back_1_fu_2680_p_read281 = b_data_psModule_as_22_reg_4353;
     end else begin
-        grp_push_back_1_fu_2701_p_read280 = 'bx;
+        grp_push_back_1_fu_2680_p_read281 = 'bx;
     end
 end
 
 always @ (*) begin
-    if (((ap_predicate_op805_call_state29 == 1'b1) & (1'b1 == ap_CS_fsm_state29))) begin
-        grp_push_back_1_fu_2701_p_read281 = b_data_psModule_as_43_reg_5510;
-    end else if (((ap_predicate_op431_call_state17 == 1'b1) & (1'b1 == ap_CS_fsm_state17))) begin
-        grp_push_back_1_fu_2701_p_read281 = b_data_psModule_as_22_reg_4406;
+    if (((tmp_12_reg_4438 == 1'd0) & (1'b1 == ap_CS_fsm_state28))) begin
+        grp_push_back_1_fu_2680_p_read282 = b_data_barrel_assi_25_reg_4608;
+    end else if (((tmp_5_reg_3338 == 1'd0) & (1'b1 == ap_CS_fsm_state16))) begin
+        grp_push_back_1_fu_2680_p_read282 = b_data_barrel_assi_4_reg_3508;
     end else begin
-        grp_push_back_1_fu_2701_p_read281 = 'bx;
+        grp_push_back_1_fu_2680_p_read282 = 'bx;
     end
 end
 
 always @ (*) begin
-    if (((ap_predicate_op805_call_state29 == 1'b1) & (1'b1 == ap_CS_fsm_state29))) begin
-        grp_push_back_1_fu_2701_p_read282 = b_data_barrel_assi_25_reg_4665;
-    end else if (((ap_predicate_op431_call_state17 == 1'b1) & (1'b1 == ap_CS_fsm_state17))) begin
-        grp_push_back_1_fu_2701_p_read282 = b_data_barrel_assi_4_reg_3561;
+    if (((tmp_12_reg_4438 == 1'd0) & (1'b1 == ap_CS_fsm_state28))) begin
+        grp_push_back_1_fu_2680_p_read283 = b_data_barrel_assi_27_reg_4658;
+    end else if (((tmp_5_reg_3338 == 1'd0) & (1'b1 == ap_CS_fsm_state16))) begin
+        grp_push_back_1_fu_2680_p_read283 = b_data_barrel_assi_6_reg_3558;
     end else begin
-        grp_push_back_1_fu_2701_p_read282 = 'bx;
+        grp_push_back_1_fu_2680_p_read283 = 'bx;
     end
 end
 
 always @ (*) begin
-    if (((ap_predicate_op805_call_state29 == 1'b1) & (1'b1 == ap_CS_fsm_state29))) begin
-        grp_push_back_1_fu_2701_p_read283 = b_data_barrel_assi_27_reg_4715;
-    end else if (((ap_predicate_op431_call_state17 == 1'b1) & (1'b1 == ap_CS_fsm_state17))) begin
-        grp_push_back_1_fu_2701_p_read283 = b_data_barrel_assi_6_reg_3611;
+    if (((tmp_12_reg_4438 == 1'd0) & (1'b1 == ap_CS_fsm_state28))) begin
+        grp_push_back_1_fu_2680_p_read284 = b_data_barrel_assi_29_reg_4808;
+    end else if (((tmp_5_reg_3338 == 1'd0) & (1'b1 == ap_CS_fsm_state16))) begin
+        grp_push_back_1_fu_2680_p_read284 = b_data_barrel_assi_8_reg_3708;
     end else begin
-        grp_push_back_1_fu_2701_p_read283 = 'bx;
+        grp_push_back_1_fu_2680_p_read284 = 'bx;
     end
 end
 
 always @ (*) begin
-    if (((ap_predicate_op805_call_state29 == 1'b1) & (1'b1 == ap_CS_fsm_state29))) begin
-        grp_push_back_1_fu_2701_p_read284 = b_data_barrel_assi_29_reg_4865;
-    end else if (((ap_predicate_op431_call_state17 == 1'b1) & (1'b1 == ap_CS_fsm_state17))) begin
-        grp_push_back_1_fu_2701_p_read284 = b_data_barrel_assi_8_reg_3761;
+    if (((tmp_12_reg_4438 == 1'd0) & (1'b1 == ap_CS_fsm_state28))) begin
+        grp_push_back_1_fu_2680_p_read285 = b_data_barrel_assi_31_reg_4858;
+    end else if (((tmp_5_reg_3338 == 1'd0) & (1'b1 == ap_CS_fsm_state16))) begin
+        grp_push_back_1_fu_2680_p_read285 = b_data_barrel_assi_10_reg_3758;
     end else begin
-        grp_push_back_1_fu_2701_p_read284 = 'bx;
+        grp_push_back_1_fu_2680_p_read285 = 'bx;
     end
 end
 
 always @ (*) begin
-    if (((ap_predicate_op805_call_state29 == 1'b1) & (1'b1 == ap_CS_fsm_state29))) begin
-        grp_push_back_1_fu_2701_p_read285 = b_data_barrel_assi_31_reg_4915;
-    end else if (((ap_predicate_op431_call_state17 == 1'b1) & (1'b1 == ap_CS_fsm_state17))) begin
-        grp_push_back_1_fu_2701_p_read285 = b_data_barrel_assi_10_reg_3811;
+    if (((tmp_12_reg_4438 == 1'd0) & (1'b1 == ap_CS_fsm_state28))) begin
+        grp_push_back_1_fu_2680_p_read286 = b_data_barrel_assi_33_reg_5008;
+    end else if (((tmp_5_reg_3338 == 1'd0) & (1'b1 == ap_CS_fsm_state16))) begin
+        grp_push_back_1_fu_2680_p_read286 = b_data_barrel_assi_12_reg_3908;
     end else begin
-        grp_push_back_1_fu_2701_p_read285 = 'bx;
+        grp_push_back_1_fu_2680_p_read286 = 'bx;
     end
 end
 
 always @ (*) begin
-    if (((ap_predicate_op805_call_state29 == 1'b1) & (1'b1 == ap_CS_fsm_state29))) begin
-        grp_push_back_1_fu_2701_p_read286 = b_data_barrel_assi_33_reg_5065;
-    end else if (((ap_predicate_op431_call_state17 == 1'b1) & (1'b1 == ap_CS_fsm_state17))) begin
-        grp_push_back_1_fu_2701_p_read286 = b_data_barrel_assi_12_reg_3961;
+    if (((tmp_12_reg_4438 == 1'd0) & (1'b1 == ap_CS_fsm_state28))) begin
+        grp_push_back_1_fu_2680_p_read287 = b_data_barrel_assi_35_reg_5058;
+    end else if (((tmp_5_reg_3338 == 1'd0) & (1'b1 == ap_CS_fsm_state16))) begin
+        grp_push_back_1_fu_2680_p_read287 = b_data_barrel_assi_14_reg_3958;
     end else begin
-        grp_push_back_1_fu_2701_p_read286 = 'bx;
+        grp_push_back_1_fu_2680_p_read287 = 'bx;
     end
 end
 
 always @ (*) begin
-    if (((ap_predicate_op805_call_state29 == 1'b1) & (1'b1 == ap_CS_fsm_state29))) begin
-        grp_push_back_1_fu_2701_p_read287 = b_data_barrel_assi_35_reg_5115;
-    end else if (((ap_predicate_op431_call_state17 == 1'b1) & (1'b1 == ap_CS_fsm_state17))) begin
-        grp_push_back_1_fu_2701_p_read287 = b_data_barrel_assi_14_reg_4011;
+    if (((tmp_12_reg_4438 == 1'd0) & (1'b1 == ap_CS_fsm_state28))) begin
+        grp_push_back_1_fu_2680_p_read288 = b_data_barrel_assi_37_reg_5208;
+    end else if (((tmp_5_reg_3338 == 1'd0) & (1'b1 == ap_CS_fsm_state16))) begin
+        grp_push_back_1_fu_2680_p_read288 = b_data_barrel_assi_16_reg_4108;
     end else begin
-        grp_push_back_1_fu_2701_p_read287 = 'bx;
+        grp_push_back_1_fu_2680_p_read288 = 'bx;
     end
 end
 
 always @ (*) begin
-    if (((ap_predicate_op805_call_state29 == 1'b1) & (1'b1 == ap_CS_fsm_state29))) begin
-        grp_push_back_1_fu_2701_p_read288 = b_data_barrel_assi_37_reg_5265;
-    end else if (((ap_predicate_op431_call_state17 == 1'b1) & (1'b1 == ap_CS_fsm_state17))) begin
-        grp_push_back_1_fu_2701_p_read288 = b_data_barrel_assi_16_reg_4161;
+    if (((tmp_12_reg_4438 == 1'd0) & (1'b1 == ap_CS_fsm_state28))) begin
+        grp_push_back_1_fu_2680_p_read289 = b_data_barrel_assi_39_reg_5258;
+    end else if (((tmp_5_reg_3338 == 1'd0) & (1'b1 == ap_CS_fsm_state16))) begin
+        grp_push_back_1_fu_2680_p_read289 = b_data_barrel_assi_18_reg_4158;
     end else begin
-        grp_push_back_1_fu_2701_p_read288 = 'bx;
+        grp_push_back_1_fu_2680_p_read289 = 'bx;
     end
 end
 
 always @ (*) begin
-    if (((ap_predicate_op805_call_state29 == 1'b1) & (1'b1 == ap_CS_fsm_state29))) begin
-        grp_push_back_1_fu_2701_p_read289 = b_data_barrel_assi_39_reg_5315;
-    end else if (((ap_predicate_op431_call_state17 == 1'b1) & (1'b1 == ap_CS_fsm_state17))) begin
-        grp_push_back_1_fu_2701_p_read289 = b_data_barrel_assi_18_reg_4211;
+    if (((tmp_12_reg_4438 == 1'd0) & (1'b1 == ap_CS_fsm_state28))) begin
+        grp_push_back_1_fu_2680_p_read290 = b_data_barrel_assi_41_reg_5408;
+    end else if (((tmp_5_reg_3338 == 1'd0) & (1'b1 == ap_CS_fsm_state16))) begin
+        grp_push_back_1_fu_2680_p_read290 = b_data_barrel_assi_20_reg_4308;
     end else begin
-        grp_push_back_1_fu_2701_p_read289 = 'bx;
+        grp_push_back_1_fu_2680_p_read290 = 'bx;
     end
 end
 
 always @ (*) begin
-    if (((ap_predicate_op805_call_state29 == 1'b1) & (1'b1 == ap_CS_fsm_state29))) begin
-        grp_push_back_1_fu_2701_p_read290 = b_data_barrel_assi_41_reg_5465;
-    end else if (((ap_predicate_op431_call_state17 == 1'b1) & (1'b1 == ap_CS_fsm_state17))) begin
-        grp_push_back_1_fu_2701_p_read290 = b_data_barrel_assi_20_reg_4361;
+    if (((tmp_12_reg_4438 == 1'd0) & (1'b1 == ap_CS_fsm_state28))) begin
+        grp_push_back_1_fu_2680_p_read291 = b_data_barrel_assi_43_reg_5458;
+    end else if (((tmp_5_reg_3338 == 1'd0) & (1'b1 == ap_CS_fsm_state16))) begin
+        grp_push_back_1_fu_2680_p_read291 = b_data_barrel_assi_22_reg_4358;
     end else begin
-        grp_push_back_1_fu_2701_p_read290 = 'bx;
+        grp_push_back_1_fu_2680_p_read291 = 'bx;
     end
 end
 
 always @ (*) begin
-    if (((ap_predicate_op805_call_state29 == 1'b1) & (1'b1 == ap_CS_fsm_state29))) begin
-        grp_push_back_1_fu_2701_p_read291 = b_data_barrel_assi_43_reg_5515;
-    end else if (((ap_predicate_op431_call_state17 == 1'b1) & (1'b1 == ap_CS_fsm_state17))) begin
-        grp_push_back_1_fu_2701_p_read291 = b_data_barrel_assi_22_reg_4411;
+    if (((tmp_12_reg_4438 == 1'd0) & (1'b1 == ap_CS_fsm_state28))) begin
+        grp_push_back_1_fu_2680_p_read3 = b_data_settings_ch_53_reg_4613;
+    end else if (((tmp_5_reg_3338 == 1'd0) & (1'b1 == ap_CS_fsm_state16))) begin
+        grp_push_back_1_fu_2680_p_read3 = b_data_settings_ch_11_reg_3513;
     end else begin
-        grp_push_back_1_fu_2701_p_read291 = 'bx;
+        grp_push_back_1_fu_2680_p_read3 = 'bx;
     end
 end
 
 always @ (*) begin
-    if (((ap_predicate_op805_call_state29 == 1'b1) & (1'b1 == ap_CS_fsm_state29))) begin
-        grp_push_back_1_fu_2701_p_read3 = b_data_settings_ch_53_reg_4670;
-    end else if (((ap_predicate_op431_call_state17 == 1'b1) & (1'b1 == ap_CS_fsm_state17))) begin
-        grp_push_back_1_fu_2701_p_read3 = b_data_settings_ch_11_reg_3566;
+    if (((tmp_12_reg_4438 == 1'd0) & (1'b1 == ap_CS_fsm_state28))) begin
+        grp_push_back_1_fu_2680_p_read4 = b_data_settings_ch_57_reg_4763;
+    end else if (((tmp_5_reg_3338 == 1'd0) & (1'b1 == ap_CS_fsm_state16))) begin
+        grp_push_back_1_fu_2680_p_read4 = b_data_settings_ch_15_reg_3663;
     end else begin
-        grp_push_back_1_fu_2701_p_read3 = 'bx;
+        grp_push_back_1_fu_2680_p_read4 = 'bx;
     end
 end
 
 always @ (*) begin
-    if (((ap_predicate_op805_call_state29 == 1'b1) & (1'b1 == ap_CS_fsm_state29))) begin
-        grp_push_back_1_fu_2701_p_read4 = b_data_settings_ch_57_reg_4820;
-    end else if (((ap_predicate_op431_call_state17 == 1'b1) & (1'b1 == ap_CS_fsm_state17))) begin
-        grp_push_back_1_fu_2701_p_read4 = b_data_settings_ch_15_reg_3716;
+    if (((tmp_12_reg_4438 == 1'd0) & (1'b1 == ap_CS_fsm_state28))) begin
+        grp_push_back_1_fu_2680_p_read5 = b_data_settings_ch_61_reg_4813;
+    end else if (((tmp_5_reg_3338 == 1'd0) & (1'b1 == ap_CS_fsm_state16))) begin
+        grp_push_back_1_fu_2680_p_read5 = b_data_settings_ch_19_reg_3713;
     end else begin
-        grp_push_back_1_fu_2701_p_read4 = 'bx;
+        grp_push_back_1_fu_2680_p_read5 = 'bx;
     end
 end
 
 always @ (*) begin
-    if (((ap_predicate_op805_call_state29 == 1'b1) & (1'b1 == ap_CS_fsm_state29))) begin
-        grp_push_back_1_fu_2701_p_read5 = b_data_settings_ch_61_reg_4870;
-    end else if (((ap_predicate_op431_call_state17 == 1'b1) & (1'b1 == ap_CS_fsm_state17))) begin
-        grp_push_back_1_fu_2701_p_read5 = b_data_settings_ch_19_reg_3766;
+    if (((tmp_12_reg_4438 == 1'd0) & (1'b1 == ap_CS_fsm_state28))) begin
+        grp_push_back_1_fu_2680_p_read6 = b_data_settings_ch_65_reg_4963;
+    end else if (((tmp_5_reg_3338 == 1'd0) & (1'b1 == ap_CS_fsm_state16))) begin
+        grp_push_back_1_fu_2680_p_read6 = b_data_settings_ch_23_reg_3863;
     end else begin
-        grp_push_back_1_fu_2701_p_read5 = 'bx;
+        grp_push_back_1_fu_2680_p_read6 = 'bx;
     end
 end
 
 always @ (*) begin
-    if (((ap_predicate_op805_call_state29 == 1'b1) & (1'b1 == ap_CS_fsm_state29))) begin
-        grp_push_back_1_fu_2701_p_read6 = b_data_settings_ch_65_reg_5020;
-    end else if (((ap_predicate_op431_call_state17 == 1'b1) & (1'b1 == ap_CS_fsm_state17))) begin
-        grp_push_back_1_fu_2701_p_read6 = b_data_settings_ch_23_reg_3916;
+    if (((tmp_12_reg_4438 == 1'd0) & (1'b1 == ap_CS_fsm_state28))) begin
+        grp_push_back_1_fu_2680_p_read7 = b_data_settings_ch_69_reg_5013;
+    end else if (((tmp_5_reg_3338 == 1'd0) & (1'b1 == ap_CS_fsm_state16))) begin
+        grp_push_back_1_fu_2680_p_read7 = b_data_settings_ch_27_reg_3913;
     end else begin
-        grp_push_back_1_fu_2701_p_read6 = 'bx;
+        grp_push_back_1_fu_2680_p_read7 = 'bx;
     end
 end
 
 always @ (*) begin
-    if (((ap_predicate_op805_call_state29 == 1'b1) & (1'b1 == ap_CS_fsm_state29))) begin
-        grp_push_back_1_fu_2701_p_read7 = b_data_settings_ch_69_reg_5070;
-    end else if (((ap_predicate_op431_call_state17 == 1'b1) & (1'b1 == ap_CS_fsm_state17))) begin
-        grp_push_back_1_fu_2701_p_read7 = b_data_settings_ch_27_reg_3966;
+    if (((tmp_12_reg_4438 == 1'd0) & (1'b1 == ap_CS_fsm_state28))) begin
+        grp_push_back_1_fu_2680_p_read8 = b_data_settings_ch_73_reg_5163;
+    end else if (((tmp_5_reg_3338 == 1'd0) & (1'b1 == ap_CS_fsm_state16))) begin
+        grp_push_back_1_fu_2680_p_read8 = b_data_settings_ch_31_reg_4063;
     end else begin
-        grp_push_back_1_fu_2701_p_read7 = 'bx;
+        grp_push_back_1_fu_2680_p_read8 = 'bx;
     end
 end
 
 always @ (*) begin
-    if (((ap_predicate_op805_call_state29 == 1'b1) & (1'b1 == ap_CS_fsm_state29))) begin
-        grp_push_back_1_fu_2701_p_read8 = b_data_settings_ch_73_reg_5220;
-    end else if (((ap_predicate_op431_call_state17 == 1'b1) & (1'b1 == ap_CS_fsm_state17))) begin
-        grp_push_back_1_fu_2701_p_read8 = b_data_settings_ch_31_reg_4116;
+    if (((tmp_12_reg_4438 == 1'd0) & (1'b1 == ap_CS_fsm_state28))) begin
+        grp_push_back_1_fu_2680_p_read9 = b_data_settings_ch_77_reg_5213;
+    end else if (((tmp_5_reg_3338 == 1'd0) & (1'b1 == ap_CS_fsm_state16))) begin
+        grp_push_back_1_fu_2680_p_read9 = b_data_settings_ch_35_reg_4113;
     end else begin
-        grp_push_back_1_fu_2701_p_read8 = 'bx;
-    end
-end
-
-always @ (*) begin
-    if (((ap_predicate_op805_call_state29 == 1'b1) & (1'b1 == ap_CS_fsm_state29))) begin
-        grp_push_back_1_fu_2701_p_read9 = b_data_settings_ch_77_reg_5270;
-    end else if (((ap_predicate_op431_call_state17 == 1'b1) & (1'b1 == ap_CS_fsm_state17))) begin
-        grp_push_back_1_fu_2701_p_read9 = b_data_settings_ch_35_reg_4166;
-    end else begin
-        grp_push_back_1_fu_2701_p_read9 = 'bx;
+        grp_push_back_1_fu_2680_p_read9 = 'bx;
     end
 end
 
@@ -7171,7 +7080,7 @@ always @ (*) begin
             end
         end
         ap_ST_fsm_state2 : begin
-            if (((grp_findLargestResidual_fu_2571_ap_done == 1'b1) & (1'b1 == ap_CS_fsm_state2))) begin
+            if (((grp_findLargestResidual_fu_2550_ap_done == 1'b1) & (1'b1 == ap_CS_fsm_state2))) begin
                 ap_NS_fsm = ap_ST_fsm_state3;
             end else begin
                 ap_NS_fsm = ap_ST_fsm_state2;
@@ -7187,39 +7096,35 @@ always @ (*) begin
             ap_NS_fsm = ap_ST_fsm_state6;
         end
         ap_ST_fsm_state6 : begin
-            if (((tmp_s_fu_2977_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state6))) begin
-                ap_NS_fsm = ap_ST_fsm_state39;
-            end else begin
+            if (((tmp_s_fu_2942_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state6))) begin
                 ap_NS_fsm = ap_ST_fsm_state7;
+            end else begin
+                ap_NS_fsm = ap_ST_fsm_state36;
             end
         end
         ap_ST_fsm_state7 : begin
-            if (((grp_has_key_fu_2872_ap_done == 1'b1) & (1'b1 == ap_CS_fsm_state7))) begin
+            if (((tmp_5_fu_2947_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state7))) begin
+                ap_NS_fsm = ap_ST_fsm_state9;
+            end else begin
                 ap_NS_fsm = ap_ST_fsm_state8;
+            end
+        end
+        ap_ST_fsm_state8 : begin
+            if (((grp_fu_2860_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state8))) begin
+                ap_NS_fsm = ap_ST_fsm_state16;
             end else begin
                 ap_NS_fsm = ap_ST_fsm_state7;
             end
         end
-        ap_ST_fsm_state8 : begin
-            if (((1'b1 == ap_CS_fsm_state8) & ((tmp_60_fu_2982_p2 == 1'd0) | (tmp_59_reg_3387 == 1'd0)))) begin
+        ap_ST_fsm_state9 : begin
+            if (((tmp_10_fu_2983_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state9))) begin
                 ap_NS_fsm = ap_ST_fsm_state10;
             end else begin
                 ap_NS_fsm = ap_ST_fsm_state9;
             end
         end
-        ap_ST_fsm_state9 : begin
-            if (((grp_fu_2890_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state9))) begin
-                ap_NS_fsm = ap_ST_fsm_state17;
-            end else begin
-                ap_NS_fsm = ap_ST_fsm_state8;
-            end
-        end
         ap_ST_fsm_state10 : begin
-            if (((tmp_66_fu_3018_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state10))) begin
-                ap_NS_fsm = ap_ST_fsm_state11;
-            end else begin
-                ap_NS_fsm = ap_ST_fsm_state10;
-            end
+            ap_NS_fsm = ap_ST_fsm_state11;
         end
         ap_ST_fsm_state11 : begin
             ap_NS_fsm = ap_ST_fsm_state12;
@@ -7237,45 +7142,41 @@ always @ (*) begin
             ap_NS_fsm = ap_ST_fsm_state16;
         end
         ap_ST_fsm_state16 : begin
-            ap_NS_fsm = ap_ST_fsm_state17;
+            if (((1'b0 == ap_block_state16_on_subcall_done) & (1'b1 == ap_CS_fsm_state16))) begin
+                ap_NS_fsm = ap_ST_fsm_state17;
+            end else begin
+                ap_NS_fsm = ap_ST_fsm_state16;
+            end
         end
         ap_ST_fsm_state17 : begin
-            if (((1'b0 == ap_block_state17_on_subcall_done) & (1'b1 == ap_CS_fsm_state17))) begin
-                ap_NS_fsm = ap_ST_fsm_state18;
-            end else begin
-                ap_NS_fsm = ap_ST_fsm_state17;
-            end
+            ap_NS_fsm = ap_ST_fsm_state18;
         end
         ap_ST_fsm_state18 : begin
             ap_NS_fsm = ap_ST_fsm_state19;
         end
         ap_ST_fsm_state19 : begin
-            if (((grp_has_key_fu_2872_ap_done == 1'b1) & (1'b1 == ap_CS_fsm_state19))) begin
+            if (((tmp_12_fu_3038_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state19))) begin
+                ap_NS_fsm = ap_ST_fsm_state21;
+            end else begin
                 ap_NS_fsm = ap_ST_fsm_state20;
+            end
+        end
+        ap_ST_fsm_state20 : begin
+            if (((grp_fu_2860_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state20))) begin
+                ap_NS_fsm = ap_ST_fsm_state28;
             end else begin
                 ap_NS_fsm = ap_ST_fsm_state19;
             end
         end
-        ap_ST_fsm_state20 : begin
-            if (((1'b1 == ap_CS_fsm_state20) & ((tmp_69_fu_3073_p2 == 1'd0) | (tmp_68_reg_4491 == 1'd0)))) begin
+        ap_ST_fsm_state21 : begin
+            if (((tmp_18_fu_3075_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state21))) begin
                 ap_NS_fsm = ap_ST_fsm_state22;
             end else begin
                 ap_NS_fsm = ap_ST_fsm_state21;
             end
         end
-        ap_ST_fsm_state21 : begin
-            if (((grp_fu_2890_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state21))) begin
-                ap_NS_fsm = ap_ST_fsm_state29;
-            end else begin
-                ap_NS_fsm = ap_ST_fsm_state20;
-            end
-        end
         ap_ST_fsm_state22 : begin
-            if (((tmp_75_fu_3110_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state22))) begin
-                ap_NS_fsm = ap_ST_fsm_state23;
-            end else begin
-                ap_NS_fsm = ap_ST_fsm_state22;
-            end
+            ap_NS_fsm = ap_ST_fsm_state23;
         end
         ap_ST_fsm_state23 : begin
             ap_NS_fsm = ap_ST_fsm_state24;
@@ -7293,63 +7194,46 @@ always @ (*) begin
             ap_NS_fsm = ap_ST_fsm_state28;
         end
         ap_ST_fsm_state28 : begin
-            ap_NS_fsm = ap_ST_fsm_state29;
+            if (((1'b0 == ap_block_state28_on_subcall_done) & (1'b1 == ap_CS_fsm_state28))) begin
+                ap_NS_fsm = ap_ST_fsm_state29;
+            end else begin
+                ap_NS_fsm = ap_ST_fsm_state28;
+            end
         end
         ap_ST_fsm_state29 : begin
-            if (((1'b0 == ap_block_state29_on_subcall_done) & (1'b1 == ap_CS_fsm_state29))) begin
-                ap_NS_fsm = ap_ST_fsm_state30;
-            end else begin
-                ap_NS_fsm = ap_ST_fsm_state29;
-            end
+            ap_NS_fsm = ap_ST_fsm_state30;
         end
         ap_ST_fsm_state30 : begin
             ap_NS_fsm = ap_ST_fsm_state31;
         end
         ap_ST_fsm_state31 : begin
-            ap_NS_fsm = ap_ST_fsm_state32;
-        end
-        ap_ST_fsm_state32 : begin
-            if (((1'b1 == ap_CS_fsm_state32) & (1'b0 == ap_block_state32_on_subcall_done))) begin
-                ap_NS_fsm = ap_ST_fsm_state33;
-            end else begin
+            if (((1'b1 == ap_CS_fsm_state31) & (1'b0 == ap_block_state31_on_subcall_done))) begin
                 ap_NS_fsm = ap_ST_fsm_state32;
+            end else begin
+                ap_NS_fsm = ap_ST_fsm_state31;
             end
         end
+        ap_ST_fsm_state32 : begin
+            ap_NS_fsm = ap_ST_fsm_state33;
+        end
         ap_ST_fsm_state33 : begin
-            ap_NS_fsm = ap_ST_fsm_state34;
+            if (((1'b1 == ap_CS_fsm_state33) & (grp_clean_fu_2517_ap_done == 1'b1))) begin
+                ap_NS_fsm = ap_ST_fsm_state34;
+            end else begin
+                ap_NS_fsm = ap_ST_fsm_state33;
+            end
         end
         ap_ST_fsm_state34 : begin
-            if (((1'b1 == ap_CS_fsm_state34) & (grp_clean_fu_2538_ap_done == 1'b1))) begin
-                ap_NS_fsm = ap_ST_fsm_state35;
+            ap_NS_fsm = ap_ST_fsm_state35;
+        end
+        ap_ST_fsm_state35 : begin
+            if (((1'b1 == ap_CS_fsm_state35) & ((tmp_22_fu_3179_p2 == 1'd1) | (tmp_20_reg_5489 == 1'd0)))) begin
+                ap_NS_fsm = ap_ST_fsm_state36;
             end else begin
                 ap_NS_fsm = ap_ST_fsm_state34;
             end
         end
-        ap_ST_fsm_state35 : begin
-            if (((tmp_i1_35_fu_3188_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state35))) begin
-                ap_NS_fsm = ap_ST_fsm_state37;
-            end else begin
-                ap_NS_fsm = ap_ST_fsm_state36;
-            end
-        end
         ap_ST_fsm_state36 : begin
-            if (((grp_fu_2895_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state36))) begin
-                ap_NS_fsm = ap_ST_fsm_state37;
-            end else begin
-                ap_NS_fsm = ap_ST_fsm_state35;
-            end
-        end
-        ap_ST_fsm_state37 : begin
-            ap_NS_fsm = ap_ST_fsm_state38;
-        end
-        ap_ST_fsm_state38 : begin
-            if (((1'b1 == ap_CS_fsm_state38) & ((tmp_i1_35_reg_5546 == 1'd0) | ((grp_fu_2895_p2 == 1'd1) | (tmp_77_reg_5563 == 1'd0))))) begin
-                ap_NS_fsm = ap_ST_fsm_state39;
-            end else begin
-                ap_NS_fsm = ap_ST_fsm_state37;
-            end
-        end
-        ap_ST_fsm_state39 : begin
             ap_NS_fsm = ap_ST_fsm_state1;
         end
         default : begin
@@ -7358,113 +7242,113 @@ always @ (*) begin
     endcase
 end
 
-assign LinearRegression_residuals_data_first_address0 = grp_findLargestResidual_fu_2571_LinearRegression_residuals_data_first_address0;
+assign LinearRegression_residuals_data_first_address0 = grp_findLargestResidual_fu_2550_LinearRegression_residuals_data_first_address0;
 
-assign LinearRegression_residuals_data_first_ce0 = grp_findLargestResidual_fu_2571_LinearRegression_residuals_data_first_ce0;
+assign LinearRegression_residuals_data_first_ce0 = grp_findLargestResidual_fu_2550_LinearRegression_residuals_data_first_ce0;
 
-assign LinearRegression_residuals_data_second_data_layerId_address0 = grp_findLargestResidual_fu_2571_LinearRegression_residuals_data_second_data_layerId_address0;
+assign LinearRegression_residuals_data_second_data_layerId_address0 = grp_findLargestResidual_fu_2550_LinearRegression_residuals_data_second_data_layerId_address0;
 
-assign LinearRegression_residuals_data_second_data_layerId_ce0 = grp_findLargestResidual_fu_2571_LinearRegression_residuals_data_second_data_layerId_ce0;
+assign LinearRegression_residuals_data_second_data_layerId_ce0 = grp_findLargestResidual_fu_2550_LinearRegression_residuals_data_second_data_layerId_ce0;
 
-assign LinearRegression_residuals_data_second_data_phi_address0 = grp_findLargestResidual_fu_2571_LinearRegression_residuals_data_second_data_phi_address0;
+assign LinearRegression_residuals_data_second_data_phi_address0 = grp_findLargestResidual_fu_2550_LinearRegression_residuals_data_second_data_phi_address0;
 
-assign LinearRegression_residuals_data_second_data_phi_ce0 = grp_findLargestResidual_fu_2571_LinearRegression_residuals_data_second_data_phi_ce0;
+assign LinearRegression_residuals_data_second_data_phi_ce0 = grp_findLargestResidual_fu_2550_LinearRegression_residuals_data_second_data_phi_ce0;
 
-assign LinearRegression_residuals_data_second_data_ps_address0 = grp_findLargestResidual_fu_2571_LinearRegression_residuals_data_second_data_ps_address0;
+assign LinearRegression_residuals_data_second_data_ps_address0 = grp_findLargestResidual_fu_2550_LinearRegression_residuals_data_second_data_ps_address0;
 
-assign LinearRegression_residuals_data_second_data_ps_ce0 = grp_findLargestResidual_fu_2571_LinearRegression_residuals_data_second_data_ps_ce0;
+assign LinearRegression_residuals_data_second_data_ps_ce0 = grp_findLargestResidual_fu_2550_LinearRegression_residuals_data_second_data_ps_ce0;
 
-assign LinearRegression_residuals_data_second_data_stubId_address0 = grp_findLargestResidual_fu_2571_LinearRegression_residuals_data_second_data_stubId_address0;
+assign LinearRegression_residuals_data_second_data_stubId_address0 = grp_findLargestResidual_fu_2550_LinearRegression_residuals_data_second_data_stubId_address0;
 
-assign LinearRegression_residuals_data_second_data_stubId_ce0 = grp_findLargestResidual_fu_2571_LinearRegression_residuals_data_second_data_stubId_ce0;
+assign LinearRegression_residuals_data_second_data_stubId_ce0 = grp_findLargestResidual_fu_2550_LinearRegression_residuals_data_second_data_stubId_ce0;
 
-assign LinearRegression_residuals_data_second_data_z_address0 = grp_findLargestResidual_fu_2571_LinearRegression_residuals_data_second_data_z_address0;
+assign LinearRegression_residuals_data_second_data_z_address0 = grp_findLargestResidual_fu_2550_LinearRegression_residuals_data_second_data_z_address0;
 
-assign LinearRegression_residuals_data_second_data_z_ce0 = grp_findLargestResidual_fu_2571_LinearRegression_residuals_data_second_data_z_ce0;
+assign LinearRegression_residuals_data_second_data_z_ce0 = grp_findLargestResidual_fu_2550_LinearRegression_residuals_data_second_data_z_ce0;
 
-assign LinearRegression_residuals_data_second_size_s_address0 = grp_findLargestResidual_fu_2571_LinearRegression_residuals_data_second_size_s_address0;
+assign LinearRegression_residuals_data_second_size_s_address0 = grp_findLargestResidual_fu_2550_LinearRegression_residuals_data_second_size_s_address0;
 
-assign LinearRegression_residuals_data_second_size_s_ce0 = grp_findLargestResidual_fu_2571_LinearRegression_residuals_data_second_size_s_ce0;
+assign LinearRegression_residuals_data_second_size_s_ce0 = grp_findLargestResidual_fu_2550_LinearRegression_residuals_data_second_size_s_ce0;
 
-assign LinearRegression_stubs_data_barrel_s_d0 = grp_erase_1_fu_2668_arrayHLS_Stub_data_barrel_s_d0;
+assign LinearRegression_stubs_data_barrel_s_d0 = grp_erase_1_fu_2647_arrayHLS_Stub_data_barrel_s_d0;
 
-assign LinearRegression_stubs_data_layerId_s_d0 = grp_erase_1_fu_2668_arrayHLS_Stub_data_layerId_s_d0;
+assign LinearRegression_stubs_data_layerId_s_d0 = grp_erase_1_fu_2647_arrayHLS_Stub_data_layerId_s_d0;
 
-assign LinearRegression_stubs_data_phi_s_address0 = grp_erase_1_fu_2668_arrayHLS_Stub_data_phi_s_address0;
+assign LinearRegression_stubs_data_phi_s_address0 = grp_erase_1_fu_2647_arrayHLS_Stub_data_phi_s_address0;
 
-assign LinearRegression_stubs_data_phi_s_ce0 = grp_erase_1_fu_2668_arrayHLS_Stub_data_phi_s_ce0;
+assign LinearRegression_stubs_data_phi_s_ce0 = grp_erase_1_fu_2647_arrayHLS_Stub_data_phi_s_ce0;
 
-assign LinearRegression_stubs_data_phi_s_d0 = grp_erase_1_fu_2668_arrayHLS_Stub_data_phi_s_d0;
+assign LinearRegression_stubs_data_phi_s_d0 = grp_erase_1_fu_2647_arrayHLS_Stub_data_phi_s_d0;
 
-assign LinearRegression_stubs_data_phi_s_we0 = grp_erase_1_fu_2668_arrayHLS_Stub_data_phi_s_we0;
+assign LinearRegression_stubs_data_phi_s_we0 = grp_erase_1_fu_2647_arrayHLS_Stub_data_phi_s_we0;
 
-assign LinearRegression_stubs_data_psModule_s_d0 = grp_erase_1_fu_2668_arrayHLS_Stub_data_psModule_s_d0;
+assign LinearRegression_stubs_data_psModule_s_d0 = grp_erase_1_fu_2647_arrayHLS_Stub_data_psModule_s_d0;
 
-assign LinearRegression_stubs_data_r_s_address0 = grp_erase_1_fu_2668_arrayHLS_Stub_data_r_s_address0;
+assign LinearRegression_stubs_data_r_s_address0 = grp_erase_1_fu_2647_arrayHLS_Stub_data_r_s_address0;
 
-assign LinearRegression_stubs_data_r_s_ce0 = grp_erase_1_fu_2668_arrayHLS_Stub_data_r_s_ce0;
+assign LinearRegression_stubs_data_r_s_ce0 = grp_erase_1_fu_2647_arrayHLS_Stub_data_r_s_ce0;
 
-assign LinearRegression_stubs_data_r_s_d0 = grp_erase_1_fu_2668_arrayHLS_Stub_data_r_s_d0;
+assign LinearRegression_stubs_data_r_s_d0 = grp_erase_1_fu_2647_arrayHLS_Stub_data_r_s_d0;
 
-assign LinearRegression_stubs_data_r_s_we0 = grp_erase_1_fu_2668_arrayHLS_Stub_data_r_s_we0;
+assign LinearRegression_stubs_data_r_s_we0 = grp_erase_1_fu_2647_arrayHLS_Stub_data_r_s_we0;
 
-assign LinearRegression_stubs_data_settings_chosenRofPhi_s_address0 = grp_erase_1_fu_2668_arrayHLS_Stub_data_settings_chosenRofPhi_s_address0;
+assign LinearRegression_stubs_data_settings_chosenRofPhi_s_address0 = grp_erase_1_fu_2647_arrayHLS_Stub_data_settings_chosenRofPhi_s_address0;
 
-assign LinearRegression_stubs_data_settings_chosenRofPhi_s_ce0 = grp_erase_1_fu_2668_arrayHLS_Stub_data_settings_chosenRofPhi_s_ce0;
+assign LinearRegression_stubs_data_settings_chosenRofPhi_s_ce0 = grp_erase_1_fu_2647_arrayHLS_Stub_data_settings_chosenRofPhi_s_ce0;
 
-assign LinearRegression_stubs_data_settings_chosenRofPhi_s_d0 = grp_erase_1_fu_2668_arrayHLS_Stub_data_settings_chosenRofPhi_s_d0;
+assign LinearRegression_stubs_data_settings_chosenRofPhi_s_d0 = grp_erase_1_fu_2647_arrayHLS_Stub_data_settings_chosenRofPhi_s_d0;
 
-assign LinearRegression_stubs_data_settings_chosenRofPhi_s_we0 = grp_erase_1_fu_2668_arrayHLS_Stub_data_settings_chosenRofPhi_s_we0;
+assign LinearRegression_stubs_data_settings_chosenRofPhi_s_we0 = grp_erase_1_fu_2647_arrayHLS_Stub_data_settings_chosenRofPhi_s_we0;
 
-assign LinearRegression_stubs_data_settings_chosenRofZ_s_address0 = grp_erase_1_fu_2668_arrayHLS_Stub_data_settings_chosenRofZ_s_address0;
+assign LinearRegression_stubs_data_settings_chosenRofZ_s_address0 = grp_erase_1_fu_2647_arrayHLS_Stub_data_settings_chosenRofZ_s_address0;
 
-assign LinearRegression_stubs_data_settings_chosenRofZ_s_ce0 = grp_erase_1_fu_2668_arrayHLS_Stub_data_settings_chosenRofZ_s_ce0;
+assign LinearRegression_stubs_data_settings_chosenRofZ_s_ce0 = grp_erase_1_fu_2647_arrayHLS_Stub_data_settings_chosenRofZ_s_ce0;
 
-assign LinearRegression_stubs_data_settings_chosenRofZ_s_d0 = grp_erase_1_fu_2668_arrayHLS_Stub_data_settings_chosenRofZ_s_d0;
+assign LinearRegression_stubs_data_settings_chosenRofZ_s_d0 = grp_erase_1_fu_2647_arrayHLS_Stub_data_settings_chosenRofZ_s_d0;
 
-assign LinearRegression_stubs_data_settings_chosenRofZ_s_we0 = grp_erase_1_fu_2668_arrayHLS_Stub_data_settings_chosenRofZ_s_we0;
+assign LinearRegression_stubs_data_settings_chosenRofZ_s_we0 = grp_erase_1_fu_2647_arrayHLS_Stub_data_settings_chosenRofZ_s_we0;
 
-assign LinearRegression_stubs_data_settings_etaRegions_s_address0 = grp_erase_1_fu_2668_arrayHLS_Stub_data_settings_etaRegions_s_address0;
+assign LinearRegression_stubs_data_settings_minNumMatchLayers_s_address0 = grp_erase_1_fu_2647_arrayHLS_Stub_data_settings_minNumMatchLayers_s_address0;
 
-assign LinearRegression_stubs_data_settings_etaRegions_s_address1 = grp_erase_1_fu_2668_arrayHLS_Stub_data_settings_etaRegions_s_address1;
+assign LinearRegression_stubs_data_settings_minNumMatchLayers_s_ce0 = grp_erase_1_fu_2647_arrayHLS_Stub_data_settings_minNumMatchLayers_s_ce0;
 
-assign LinearRegression_stubs_data_settings_etaRegions_s_ce0 = grp_erase_1_fu_2668_arrayHLS_Stub_data_settings_etaRegions_s_ce0;
+assign LinearRegression_stubs_data_settings_minNumMatchLayers_s_d0 = grp_erase_1_fu_2647_arrayHLS_Stub_data_settings_minNumMatchLayers_s_d0;
 
-assign LinearRegression_stubs_data_settings_etaRegions_s_ce1 = grp_erase_1_fu_2668_arrayHLS_Stub_data_settings_etaRegions_s_ce1;
+assign LinearRegression_stubs_data_settings_minNumMatchLayers_s_we0 = grp_erase_1_fu_2647_arrayHLS_Stub_data_settings_minNumMatchLayers_s_we0;
 
-assign LinearRegression_stubs_data_settings_etaRegions_s_d0 = grp_erase_1_fu_2668_arrayHLS_Stub_data_settings_etaRegions_s_d0;
+assign LinearRegression_stubs_data_settings_minPSLayers_s_address0 = grp_erase_1_fu_2647_arrayHLS_Stub_data_settings_minPSLayers_s_address0;
 
-assign LinearRegression_stubs_data_settings_etaRegions_s_d1 = grp_erase_1_fu_2668_arrayHLS_Stub_data_settings_etaRegions_s_d1;
+assign LinearRegression_stubs_data_settings_minPSLayers_s_ce0 = grp_erase_1_fu_2647_arrayHLS_Stub_data_settings_minPSLayers_s_ce0;
 
-assign LinearRegression_stubs_data_settings_etaRegions_s_we0 = grp_erase_1_fu_2668_arrayHLS_Stub_data_settings_etaRegions_s_we0;
+assign LinearRegression_stubs_data_settings_minPSLayers_s_d0 = grp_erase_1_fu_2647_arrayHLS_Stub_data_settings_minPSLayers_s_d0;
 
-assign LinearRegression_stubs_data_settings_etaRegions_s_we1 = grp_erase_1_fu_2668_arrayHLS_Stub_data_settings_etaRegions_s_we1;
+assign LinearRegression_stubs_data_settings_minPSLayers_s_we0 = grp_erase_1_fu_2647_arrayHLS_Stub_data_settings_minPSLayers_s_we0;
 
-assign LinearRegression_stubs_data_settings_minNumMatchLayers_s_address0 = grp_erase_1_fu_2668_arrayHLS_Stub_data_settings_minNumMatchLayers_s_address0;
+assign LinearRegression_stubs_data_settings_sinh_etaRegions_s_address0 = grp_erase_1_fu_2647_arrayHLS_Stub_data_settings_sinh_etaRegions_s_address0;
 
-assign LinearRegression_stubs_data_settings_minNumMatchLayers_s_ce0 = grp_erase_1_fu_2668_arrayHLS_Stub_data_settings_minNumMatchLayers_s_ce0;
+assign LinearRegression_stubs_data_settings_sinh_etaRegions_s_address1 = grp_erase_1_fu_2647_arrayHLS_Stub_data_settings_sinh_etaRegions_s_address1;
 
-assign LinearRegression_stubs_data_settings_minNumMatchLayers_s_d0 = grp_erase_1_fu_2668_arrayHLS_Stub_data_settings_minNumMatchLayers_s_d0;
+assign LinearRegression_stubs_data_settings_sinh_etaRegions_s_ce0 = grp_erase_1_fu_2647_arrayHLS_Stub_data_settings_sinh_etaRegions_s_ce0;
 
-assign LinearRegression_stubs_data_settings_minNumMatchLayers_s_we0 = grp_erase_1_fu_2668_arrayHLS_Stub_data_settings_minNumMatchLayers_s_we0;
+assign LinearRegression_stubs_data_settings_sinh_etaRegions_s_ce1 = grp_erase_1_fu_2647_arrayHLS_Stub_data_settings_sinh_etaRegions_s_ce1;
 
-assign LinearRegression_stubs_data_settings_minPSLayers_s_address0 = grp_erase_1_fu_2668_arrayHLS_Stub_data_settings_minPSLayers_s_address0;
+assign LinearRegression_stubs_data_settings_sinh_etaRegions_s_d0 = grp_erase_1_fu_2647_arrayHLS_Stub_data_settings_sinh_etaRegions_s_d0;
 
-assign LinearRegression_stubs_data_settings_minPSLayers_s_ce0 = grp_erase_1_fu_2668_arrayHLS_Stub_data_settings_minPSLayers_s_ce0;
+assign LinearRegression_stubs_data_settings_sinh_etaRegions_s_d1 = grp_erase_1_fu_2647_arrayHLS_Stub_data_settings_sinh_etaRegions_s_d1;
 
-assign LinearRegression_stubs_data_settings_minPSLayers_s_d0 = grp_erase_1_fu_2668_arrayHLS_Stub_data_settings_minPSLayers_s_d0;
+assign LinearRegression_stubs_data_settings_sinh_etaRegions_s_we0 = grp_erase_1_fu_2647_arrayHLS_Stub_data_settings_sinh_etaRegions_s_we0;
 
-assign LinearRegression_stubs_data_settings_minPSLayers_s_we0 = grp_erase_1_fu_2668_arrayHLS_Stub_data_settings_minPSLayers_s_we0;
+assign LinearRegression_stubs_data_settings_sinh_etaRegions_s_we1 = grp_erase_1_fu_2647_arrayHLS_Stub_data_settings_sinh_etaRegions_s_we1;
 
-assign LinearRegression_stubs_data_z_s_address0 = grp_erase_1_fu_2668_arrayHLS_Stub_data_z_s_address0;
+assign LinearRegression_stubs_data_z_s_address0 = grp_erase_1_fu_2647_arrayHLS_Stub_data_z_s_address0;
 
-assign LinearRegression_stubs_data_z_s_ce0 = grp_erase_1_fu_2668_arrayHLS_Stub_data_z_s_ce0;
+assign LinearRegression_stubs_data_z_s_ce0 = grp_erase_1_fu_2647_arrayHLS_Stub_data_z_s_ce0;
 
-assign LinearRegression_stubs_data_z_s_d0 = grp_erase_1_fu_2668_arrayHLS_Stub_data_z_s_d0;
+assign LinearRegression_stubs_data_z_s_d0 = grp_erase_1_fu_2647_arrayHLS_Stub_data_z_s_d0;
 
-assign LinearRegression_stubs_data_z_s_we0 = grp_erase_1_fu_2668_arrayHLS_Stub_data_z_s_we0;
+assign LinearRegression_stubs_data_z_s_we0 = grp_erase_1_fu_2647_arrayHLS_Stub_data_z_s_we0;
 
-assign LinearRegression_val_fu_2971_p2 = (tmp_58_fu_2885_p2 & tmp_57_fu_2965_p2);
+assign LinearRegression_val_fu_2936_p2 = (tmp_3_fu_2855_p2 & tmp_2_fu_2930_p2);
 
 assign ap_CS_fsm_state1 = ap_CS_fsm[32'd0];
 
@@ -7526,12 +7410,6 @@ assign ap_CS_fsm_state35 = ap_CS_fsm[32'd34];
 
 assign ap_CS_fsm_state36 = ap_CS_fsm[32'd35];
 
-assign ap_CS_fsm_state37 = ap_CS_fsm[32'd36];
-
-assign ap_CS_fsm_state38 = ap_CS_fsm[32'd37];
-
-assign ap_CS_fsm_state39 = ap_CS_fsm[32'd38];
-
 assign ap_CS_fsm_state4 = ap_CS_fsm[32'd3];
 
 assign ap_CS_fsm_state5 = ap_CS_fsm[32'd4];
@@ -7545,147 +7423,131 @@ assign ap_CS_fsm_state8 = ap_CS_fsm[32'd7];
 assign ap_CS_fsm_state9 = ap_CS_fsm[32'd8];
 
 always @ (*) begin
-    ap_block_state17_on_subcall_done = ((ap_predicate_op431_call_state17 == 1'b1) & (grp_push_back_1_fu_2701_ap_done == 1'b0));
+    ap_block_state16_on_subcall_done = ((tmp_5_reg_3338 == 1'd0) & (grp_push_back_1_fu_2680_ap_done == 1'b0));
 end
 
 always @ (*) begin
-    ap_block_state29_on_subcall_done = ((ap_predicate_op805_call_state29 == 1'b1) & (grp_push_back_1_fu_2701_ap_done == 1'b0));
+    ap_block_state28_on_subcall_done = ((tmp_12_reg_4438 == 1'd0) & (grp_push_back_1_fu_2680_ap_done == 1'b0));
 end
 
 always @ (*) begin
-    ap_block_state32_on_subcall_done = ((grp_erase_1_fu_2668_ap_done == 1'b0) | (grp_erase_fu_2631_ap_done == 1'b0));
+    ap_block_state31_on_subcall_done = ((grp_erase_1_fu_2647_ap_done == 1'b0) | (grp_erase_fu_2610_ap_done == 1'b0));
 end
 
-always @ (*) begin
-    ap_predicate_op431_call_state17 = ((tmp_59_reg_3387 == 1'd0) | (tmp_60_reg_3391 == 1'd0));
-end
+assign brmerge3_i_fu_3106_p2 = (tmp_36_not_i_fu_3096_p2 | stub_psModule_read_s_fu_3101_p2);
 
-always @ (*) begin
-    ap_predicate_op805_call_state29 = ((tmp_68_reg_4491 == 1'd0) | (tmp_69_reg_4495 == 1'd0));
-end
+assign brmerge_i_fu_3091_p2 = (tmp_not_i_fu_3086_p2 | stub_psModule_s_reg_4422);
 
-assign brmerge3_i_fu_3141_p2 = (tmp_111_not_i_fu_3131_p2 | stub_psModule_read_s_fu_3136_p2);
+assign grp_clean_fu_2517_ap_start = grp_clean_fu_2517_ap_start_reg;
 
-assign brmerge_i_fu_3126_p2 = (tmp_not_i_fu_3121_p2 | stub_psModule_s_reg_4475);
+assign grp_erase_1_fu_2647_ap_start = grp_erase_1_fu_2647_ap_start_reg;
 
-assign grp_clean_fu_2538_ap_start = grp_clean_fu_2538_ap_start_reg;
+assign grp_erase_1_fu_2647_value_barrel_read = stub_barrel_s_reg_4430;
 
-assign grp_erase_1_fu_2668_ap_start = grp_erase_1_fu_2668_ap_start_reg;
+assign grp_erase_1_fu_2647_value_psModule_read = stub_psModule_s_reg_4422;
 
-assign grp_erase_1_fu_2668_value_barrel_read = stub_barrel_s_reg_4483;
+assign grp_erase_fu_2610_ap_start = grp_erase_fu_2610_ap_start_reg;
 
-assign grp_erase_1_fu_2668_value_psModule_read = stub_psModule_s_reg_4475;
+assign grp_erase_fu_2610_value_barrel_read = stub_barrel_s_reg_4430;
 
-assign grp_erase_fu_2631_ap_start = grp_erase_fu_2631_ap_start_reg;
+assign grp_erase_fu_2610_value_psModule_read = stub_psModule_s_reg_4422;
 
-assign grp_erase_fu_2631_value_barrel_read = stub_barrel_s_reg_4483;
+assign grp_findLargestResidual_fu_2550_ap_start = grp_findLargestResidual_fu_2550_ap_start_reg;
 
-assign grp_erase_fu_2631_value_psModule_read = stub_psModule_s_reg_4475;
+assign grp_fu_2860_p2 = ((LinearRegression_stubMap_data_first_q0 == LinearRegression_lar_reg_3285) ? 1'b1 : 1'b0);
 
-assign grp_findLargestResidual_fu_2571_ap_start = grp_findLargestResidual_fu_2571_ap_start_reg;
+assign grp_push_back_1_fu_2680_ap_start = grp_push_back_1_fu_2680_ap_start_reg;
 
-assign grp_fu_2890_p2 = ((LinearRegression_stubMap_data_first_q0 == LinearRegression_lar_reg_3331) ? 1'b1 : 1'b0);
+assign i_1_fu_3044_p2 = (i_0_i_reg_2400 + 32'd1);
 
-assign grp_fu_2895_p2 = ((LinearRegression_layerPopulation_data_first_q0 == idx_read_assign_reg_5530) ? 1'b1 : 1'b0);
+assign i_2_fu_3158_p2 = (i_0_i2_reg_2446 + 32'd1);
 
-assign grp_has_key_fu_2872_ap_start = grp_has_key_fu_2872_ap_start_reg;
+assign i_fu_2952_p2 = (i_0_i1_reg_2357 + 32'd1);
 
-assign grp_push_back_1_fu_2701_ap_start = grp_push_back_1_fu_2701_ap_start_reg;
+assign mapHLS_size_write_a_fu_3174_p2 = (temp_2_reg_3313 + 32'd1);
 
-assign i_1_fu_3079_p2 = (i_0_i_reg_2410 + 32'd1);
+assign notlhs_fu_2918_p2 = ((tmp_fu_2904_p4 != 8'd255) ? 1'b1 : 1'b0);
 
-assign i_2_fu_3193_p2 = (i_i_reg_2456 + 32'd1);
+assign notrhs_fu_2924_p2 = ((tmp_11_fu_2914_p1 == 23'd0) ? 1'b1 : 1'b0);
 
-assign i_3_fu_3209_p2 = (i_0_i1_reg_2467 + 32'd1);
+assign p_pn_i2_fu_3184_p1 = ap_phi_mux_p_pn_in_i2_phi_fu_2461_p4;
 
-assign i_fu_2987_p2 = (i_0_i2_reg_2367 + 32'd1);
+assign p_pn_i_fu_3081_p1 = p_pn_in_i_reg_2434;
 
-assign idx_read_assign_fu_3180_p3 = ((sel_tmp5_demorgan_i_fu_3175_p2[0:0] === 1'b1) ? sel_tmp2_i_fu_3168_p3 : tmp_i1_fu_3147_p2);
+assign p_shl1_cast_fu_3005_p3 = {{tmp_25_fu_3001_p1}, {1'd0}};
 
-assign mapHLS_size_write_a_fu_3225_p2 = (temp_2_reg_3361 + 32'd1);
+assign p_shl_cast_fu_2993_p3 = {{tmp_24_fu_2989_p1}, {3'd0}};
 
-assign notlhs_fu_2953_p2 = ((tmp_fu_2939_p4 != 8'd255) ? 1'b1 : 1'b0);
+assign sel_tmp1_i_fu_3128_p2 = (stub_barrel_s_reg_4430 | sel_tmp_i_fu_3122_p2);
 
-assign notrhs_fu_2959_p2 = ((tmp_86_fu_2949_p1 == 23'd0) ? 1'b1 : 1'b0);
+assign sel_tmp2_i_fu_3133_p3 = ((sel_tmp1_i_fu_3128_p2[0:0] === 1'b1) ? stub_layerId_s_reg_4411 : tmp_17_i_fu_3117_p2);
 
-assign p_pn_i2_fu_3230_p1 = ap_phi_mux_p_pn_in_i2_phi_fu_2482_p4;
+assign sel_tmp5_demorgan_i_fu_3140_p2 = (stub_barrel_s_reg_4430 | brmerge_i_fu_3091_p2);
 
-assign p_pn_i_fu_3116_p1 = p_pn_in_i_reg_2444;
+assign sel_tmp_i_fu_3122_p2 = (brmerge_i_fu_3091_p2 & brmerge3_i_fu_3106_p2);
 
-assign p_shl8_cast_fu_3040_p3 = {{tmp_88_fu_3036_p1}, {1'd0}};
+assign stub_psModule_read_s_fu_3101_p2 = (stub_psModule_s_reg_4422 ^ 1'd1);
 
-assign p_shl_cast_fu_3028_p3 = {{tmp_87_fu_3024_p1}, {3'd0}};
+assign tmp_10_fu_2983_p2 = ((tmp_8_reg_2369 == 4'd9) ? 1'b1 : 1'b0);
 
-assign sel_tmp1_i_fu_3163_p2 = (stub_barrel_s_reg_4483 | sel_tmp_i_fu_3157_p2);
+assign tmp_11_fu_2914_p1 = tmp_i_to_int_fu_2901_p1[22:0];
 
-assign sel_tmp2_i_fu_3168_p3 = ((sel_tmp1_i_fu_3163_p2[0:0] === 1'b1) ? stub_layerId_s_reg_4464 : tmp_93_i_fu_3152_p2);
+assign tmp_12_fu_3038_p2 = ((i_0_i_reg_2400 < temp_1_reg_2390) ? 1'b1 : 1'b0);
 
-assign sel_tmp5_demorgan_i_fu_3175_p2 = (stub_barrel_s_reg_4483 | brmerge_i_fu_3126_p2);
+assign tmp_13_fu_3050_p1 = i_0_i_reg_2400;
 
-assign sel_tmp_i_fu_3157_p2 = (brmerge_i_fu_3126_p2 & brmerge3_i_fu_3141_p2);
+assign tmp_16_fu_3055_p2 = (tmp_15_reg_2412 + 4'd1);
 
-assign stub_psModule_read_s_fu_3136_p2 = (stub_psModule_s_reg_4475 ^ 1'd1);
+assign tmp_17_fu_3061_p1 = tmp_15_reg_2412;
 
-assign tmp_111_not_i_fu_3131_p2 = ((stub_layerId_s_reg_4464 < 32'd21) ? 1'b1 : 1'b0);
+assign tmp_17_i_fu_3117_p2 = ($signed(stub_layerId_s_reg_4411) + $signed(32'd4294967286));
 
-assign tmp_57_fu_2965_p2 = (notrhs_fu_2959_p2 | notlhs_fu_2953_p2);
+assign tmp_18_fu_3075_p2 = ((tmp_15_reg_2412 == 4'd9) ? 1'b1 : 1'b0);
 
-assign tmp_60_fu_2982_p2 = ((i_0_i2_reg_2367 < temp_reg_3351) ? 1'b1 : 1'b0);
+assign tmp_20_fu_3153_p2 = ((i_0_i2_reg_2446 < temp_2_reg_3313) ? 1'b1 : 1'b0);
 
-assign tmp_61_fu_2993_p1 = i_0_i2_reg_2367;
+assign tmp_21_fu_3164_p1 = i_0_i2_reg_2446;
 
-assign tmp_64_fu_2998_p2 = (tmp_63_reg_2379 + 4'd1);
+assign tmp_22_fu_3179_p2 = ((LinearRegression_layerPopulation_data_first_q0 == value_first_read_ass_reg_5473) ? 1'b1 : 1'b0);
 
-assign tmp_65_fu_3004_p1 = tmp_63_reg_2379;
+assign tmp_23_fu_3189_p2 = ($signed(LinearRegression_layerPopulation_data_second_q0) + $signed(32'd4294967295));
 
-assign tmp_66_fu_3018_p2 = ((tmp_63_reg_2379 == 4'd9) ? 1'b1 : 1'b0);
+assign tmp_24_fu_2989_p1 = p_pn_in_i1_reg_2380[6:0];
 
-assign tmp_69_fu_3073_p2 = ((i_0_i_reg_2410 < temp_1_reg_2390) ? 1'b1 : 1'b0);
+assign tmp_25_fu_3001_p1 = p_pn_in_i1_reg_2380[8:0];
 
-assign tmp_70_fu_3085_p1 = i_0_i_reg_2410;
+assign tmp_26_fu_3013_p2 = (p_shl_cast_fu_2993_p3 + p_shl1_cast_fu_3005_p3);
 
-assign tmp_73_fu_3090_p2 = (tmp_72_reg_2422 + 4'd1);
+assign tmp_27_fu_3019_p1 = idx_assign_reg_3293[9:0];
 
-assign tmp_74_fu_3096_p1 = tmp_72_reg_2422;
+assign tmp_28_cast_fu_3028_p1 = tmp_28_fu_3022_p2;
 
-assign tmp_75_fu_3110_p2 = ((tmp_72_reg_2422 == 4'd9) ? 1'b1 : 1'b0);
+assign tmp_28_fu_3022_p2 = (tmp_27_fu_3019_p1 + tmp_26_fu_3013_p2);
 
-assign tmp_77_fu_3204_p2 = ((i_0_i1_reg_2467 < temp_2_reg_3361) ? 1'b1 : 1'b0);
+assign tmp_2_fu_2930_p2 = (notrhs_fu_2924_p2 | notlhs_fu_2918_p2);
 
-assign tmp_78_fu_3215_p1 = i_0_i1_reg_2467;
+assign tmp_36_not_i_fu_3096_p2 = ((stub_layerId_s_reg_4411 < 32'd21) ? 1'b1 : 1'b0);
 
-assign tmp_80_fu_3235_p2 = ($signed(LinearRegression_layerPopulation_data_second_q0) + $signed(32'd4294967295));
+assign tmp_4_fu_2969_p1 = tmp_8_reg_2369;
 
-assign tmp_81_fu_3048_p2 = (p_shl_cast_fu_3028_p3 + p_shl8_cast_fu_3040_p3);
+assign tmp_5_fu_2947_p2 = ((i_0_i1_reg_2357 < temp_reg_3304) ? 1'b1 : 1'b0);
 
-assign tmp_82_fu_3057_p2 = (tmp_89_fu_3054_p1 + tmp_81_fu_3048_p2);
+assign tmp_6_fu_2958_p1 = i_0_i1_reg_2357;
 
-assign tmp_85_cast_fu_3063_p1 = tmp_82_fu_3057_p2;
+assign tmp_9_fu_2963_p2 = (tmp_8_reg_2369 + 4'd1);
 
-assign tmp_86_fu_2949_p1 = tmp_i_to_int_fu_2936_p1[22:0];
+assign tmp_fu_2904_p4 = {{tmp_i_to_int_fu_2901_p1[30:23]}};
 
-assign tmp_87_fu_3024_p1 = p_pn_in_i1_reg_2400[6:0];
+assign tmp_i1_fu_3169_p1 = temp_2_reg_3313;
 
-assign tmp_88_fu_3036_p1 = p_pn_in_i1_reg_2400[8:0];
+assign tmp_i_7_fu_3112_p2 = (stub_layerId_s_reg_4411 + 32'd10);
 
-assign tmp_89_fu_3054_p1 = idx_assign_reg_3340[9:0];
+assign tmp_i_to_int_fu_2901_p1 = tmp_i_reg_3323;
 
-assign tmp_93_i_fu_3152_p2 = ($signed(stub_layerId_s_reg_4464) + $signed(32'd4294967286));
+assign tmp_not_i_fu_3086_p2 = ((stub_layerId_s_reg_4411 > 32'd19) ? 1'b1 : 1'b0);
 
-assign tmp_fu_2939_p4 = {{tmp_i_to_int_fu_2936_p1[30:23]}};
+assign tmp_s_fu_2942_p2 = ((LinearRegression_stubs_size_read == 32'd4) ? 1'b1 : 1'b0);
 
-assign tmp_i1_35_fu_3188_p2 = ((i_i_reg_2456 < temp_2_reg_3361) ? 1'b1 : 1'b0);
-
-assign tmp_i1_fu_3147_p2 = (stub_layerId_s_reg_4464 + 32'd10);
-
-assign tmp_i2_fu_3220_p1 = temp_2_reg_3361;
-
-assign tmp_i_36_fu_3199_p1 = i_i_reg_2456;
-
-assign tmp_i_to_int_fu_2936_p1 = tmp_i_reg_3372;
-
-assign tmp_not_i_fu_3121_p2 = ((stub_layerId_s_reg_4464 > 32'd19) ? 1'b1 : 1'b0);
-
-assign tmp_s_fu_2977_p2 = ((LinearRegression_stubs_size_read == 32'd4) ? 1'b1 : 1'b0);
+assign value_first_read_ass_fu_3145_p3 = ((sel_tmp5_demorgan_i_fu_3140_p2[0:0] === 1'b1) ? sel_tmp2_i_fu_3133_p3 : tmp_i_7_fu_3112_p2);
 
 endmodule //killLargestResidual

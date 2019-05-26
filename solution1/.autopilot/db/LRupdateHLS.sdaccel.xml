@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'LRupdateHLS'" level="0">
-<item name = "Date">Tue May 21 18:45:14 2019
+<item name = "Date">Thu May 23 17:57:59 2019
 </item>
 <item name = "Version">2018.3 (Build 2405991 on Thu Dec 06 23:56:15 MST 2018)</item>
 <item name = "Project">lr_standaloneHLS</item>
@@ -29,7 +29,7 @@
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="7">Instance, Module, min, max, min, max, Type</keys>
-<column name="grp_fit_fu_365">fit, ?, ?, ?, ?, none</column>
+<column name="grp_fit_fu_363">fit, ?, ?, ?, ?, none</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
@@ -48,21 +48,21 @@
 <column name="DSP">-, -, -, -</column>
 <column name="Expression">-, -, -, -</column>
 <column name="FIFO">-, -, -, -</column>
-<column name="Instance">4, 124, 43432, 75800</column>
+<column name="Instance">0, 112, 40070, 65492</column>
 <column name="Memory">-, -, -, -</column>
 <column name="Multiplexer">-, -, -, 15</column>
 <column name="Register">-, -, 3, -</column>
 <specialColumn name="Available SLR">2160, 2760, 663360, 331680</specialColumn>
-<specialColumn name="Utilization SLR (%)">~0, 4, 6, 22</specialColumn>
+<specialColumn name="Utilization SLR (%)">0, 4, 6, 19</specialColumn>
 <specialColumn name="Available">4320, 5520, 1326720, 663360</specialColumn>
-<specialColumn name="Utilization (%)">~0, 2, 3, 11</specialColumn>
+<specialColumn name="Utilization (%)">0, 2, 3, 9</specialColumn>
 </table>
 </item>
 <item name = "Detail">
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="1">
 <keys size="6">Instance, Module, BRAM_18K, DSP48E, FF, LUT</keys>
-<column name="grp_fit_fu_365">fit, 4, 124, 43432, 75800</column>
+<column name="grp_fit_fu_363">fit, 0, 112, 40070, 65492</column>
 </table>
 </item>
 <item name = "DSP48"><table name="" hasTotal="0">
@@ -89,7 +89,7 @@
 <item name = "Register"><table name="" hasTotal="1">
 <keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
 <column name="ap_CS_fsm">2, 0, 2, 0</column>
-<column name="grp_fit_fu_365_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_fit_fu_363_ap_start_reg">1, 0, 1, 0</column>
 </table>
 </item>
 </section>
@@ -122,12 +122,12 @@
 <column name="l1track3D_stubs_data_settings_chosenRofZ_s_address1">out, 4, ap_memory, l1track3D_stubs_data_settings_chosenRofZ_s, array</column>
 <column name="l1track3D_stubs_data_settings_chosenRofZ_s_ce1">out, 1, ap_memory, l1track3D_stubs_data_settings_chosenRofZ_s, array</column>
 <column name="l1track3D_stubs_data_settings_chosenRofZ_s_q1">in, 32, ap_memory, l1track3D_stubs_data_settings_chosenRofZ_s, array</column>
-<column name="l1track3D_stubs_data_settings_etaRegions_s_address0">out, 8, ap_memory, l1track3D_stubs_data_settings_etaRegions_s, array</column>
-<column name="l1track3D_stubs_data_settings_etaRegions_s_ce0">out, 1, ap_memory, l1track3D_stubs_data_settings_etaRegions_s, array</column>
-<column name="l1track3D_stubs_data_settings_etaRegions_s_q0">in, 32, ap_memory, l1track3D_stubs_data_settings_etaRegions_s, array</column>
-<column name="l1track3D_stubs_data_settings_etaRegions_s_address1">out, 8, ap_memory, l1track3D_stubs_data_settings_etaRegions_s, array</column>
-<column name="l1track3D_stubs_data_settings_etaRegions_s_ce1">out, 1, ap_memory, l1track3D_stubs_data_settings_etaRegions_s, array</column>
-<column name="l1track3D_stubs_data_settings_etaRegions_s_q1">in, 32, ap_memory, l1track3D_stubs_data_settings_etaRegions_s, array</column>
+<column name="l1track3D_stubs_data_settings_sinh_etaRegions_s_address0">out, 8, ap_memory, l1track3D_stubs_data_settings_sinh_etaRegions_s, array</column>
+<column name="l1track3D_stubs_data_settings_sinh_etaRegions_s_ce0">out, 1, ap_memory, l1track3D_stubs_data_settings_sinh_etaRegions_s, array</column>
+<column name="l1track3D_stubs_data_settings_sinh_etaRegions_s_q0">in, 32, ap_memory, l1track3D_stubs_data_settings_sinh_etaRegions_s, array</column>
+<column name="l1track3D_stubs_data_settings_sinh_etaRegions_s_address1">out, 8, ap_memory, l1track3D_stubs_data_settings_sinh_etaRegions_s, array</column>
+<column name="l1track3D_stubs_data_settings_sinh_etaRegions_s_ce1">out, 1, ap_memory, l1track3D_stubs_data_settings_sinh_etaRegions_s, array</column>
+<column name="l1track3D_stubs_data_settings_sinh_etaRegions_s_q1">in, 32, ap_memory, l1track3D_stubs_data_settings_sinh_etaRegions_s, array</column>
 <column name="l1track3D_stubs_data_settings_minNumMatchLayers_s_address0">out, 4, ap_memory, l1track3D_stubs_data_settings_minNumMatchLayers_s, array</column>
 <column name="l1track3D_stubs_data_settings_minNumMatchLayers_s_ce0">out, 1, ap_memory, l1track3D_stubs_data_settings_minNumMatchLayers_s, array</column>
 <column name="l1track3D_stubs_data_settings_minNumMatchLayers_s_q0">in, 32, ap_memory, l1track3D_stubs_data_settings_minNumMatchLayers_s, array</column>
@@ -178,9 +178,12 @@
 <column name="l1track3D_stubs_data_barrel_s_q1">in, 1, ap_memory, l1track3D_stubs_data_barrel_s, array</column>
 <column name="linearRegression_settings_chosenRofPhi_s">in, 32, ap_none, linearRegression_settings_chosenRofPhi_s, pointer</column>
 <column name="linearRegression_settings_chosenRofZ_s">in, 32, ap_none, linearRegression_settings_chosenRofZ_s, pointer</column>
-<column name="linearRegression_settings_etaRegions_s_address0">out, 5, ap_memory, linearRegression_settings_etaRegions_s, array</column>
-<column name="linearRegression_settings_etaRegions_s_ce0">out, 1, ap_memory, linearRegression_settings_etaRegions_s, array</column>
-<column name="linearRegression_settings_etaRegions_s_q0">in, 32, ap_memory, linearRegression_settings_etaRegions_s, array</column>
+<column name="linearRegression_settings_sinh_etaRegions_s_address0">out, 5, ap_memory, linearRegression_settings_sinh_etaRegions_s, array</column>
+<column name="linearRegression_settings_sinh_etaRegions_s_ce0">out, 1, ap_memory, linearRegression_settings_sinh_etaRegions_s, array</column>
+<column name="linearRegression_settings_sinh_etaRegions_s_q0">in, 32, ap_memory, linearRegression_settings_sinh_etaRegions_s, array</column>
+<column name="linearRegression_settings_sinh_etaRegions_s_address1">out, 5, ap_memory, linearRegression_settings_sinh_etaRegions_s, array</column>
+<column name="linearRegression_settings_sinh_etaRegions_s_ce1">out, 1, ap_memory, linearRegression_settings_sinh_etaRegions_s, array</column>
+<column name="linearRegression_settings_sinh_etaRegions_s_q1">in, 32, ap_memory, linearRegression_settings_sinh_etaRegions_s, array</column>
 <column name="linearRegression_settings_minNumMatchLayers_s">in, 32, ap_none, linearRegression_settings_minNumMatchLayers_s, pointer</column>
 <column name="linearRegression_settings_minPSLayers_s">in, 32, ap_none, linearRegression_settings_minPSLayers_s, pointer</column>
 <column name="linearRegression_iPhiSec_s">out, 32, ap_vld, linearRegression_iPhiSec_s, pointer</column>
@@ -229,16 +232,16 @@
 <column name="linearRegression_stubs_data_settings_chosenRofZ_s_ce1">out, 1, ap_memory, linearRegression_stubs_data_settings_chosenRofZ_s, array</column>
 <column name="linearRegression_stubs_data_settings_chosenRofZ_s_we1">out, 1, ap_memory, linearRegression_stubs_data_settings_chosenRofZ_s, array</column>
 <column name="linearRegression_stubs_data_settings_chosenRofZ_s_d1">out, 32, ap_memory, linearRegression_stubs_data_settings_chosenRofZ_s, array</column>
-<column name="linearRegression_stubs_data_settings_etaRegions_s_address0">out, 8, ap_memory, linearRegression_stubs_data_settings_etaRegions_s, array</column>
-<column name="linearRegression_stubs_data_settings_etaRegions_s_ce0">out, 1, ap_memory, linearRegression_stubs_data_settings_etaRegions_s, array</column>
-<column name="linearRegression_stubs_data_settings_etaRegions_s_we0">out, 1, ap_memory, linearRegression_stubs_data_settings_etaRegions_s, array</column>
-<column name="linearRegression_stubs_data_settings_etaRegions_s_d0">out, 32, ap_memory, linearRegression_stubs_data_settings_etaRegions_s, array</column>
-<column name="linearRegression_stubs_data_settings_etaRegions_s_q0">in, 32, ap_memory, linearRegression_stubs_data_settings_etaRegions_s, array</column>
-<column name="linearRegression_stubs_data_settings_etaRegions_s_address1">out, 8, ap_memory, linearRegression_stubs_data_settings_etaRegions_s, array</column>
-<column name="linearRegression_stubs_data_settings_etaRegions_s_ce1">out, 1, ap_memory, linearRegression_stubs_data_settings_etaRegions_s, array</column>
-<column name="linearRegression_stubs_data_settings_etaRegions_s_we1">out, 1, ap_memory, linearRegression_stubs_data_settings_etaRegions_s, array</column>
-<column name="linearRegression_stubs_data_settings_etaRegions_s_d1">out, 32, ap_memory, linearRegression_stubs_data_settings_etaRegions_s, array</column>
-<column name="linearRegression_stubs_data_settings_etaRegions_s_q1">in, 32, ap_memory, linearRegression_stubs_data_settings_etaRegions_s, array</column>
+<column name="linearRegression_stubs_data_settings_sinh_etaRegions_s_address0">out, 8, ap_memory, linearRegression_stubs_data_settings_sinh_etaRegions_s, array</column>
+<column name="linearRegression_stubs_data_settings_sinh_etaRegions_s_ce0">out, 1, ap_memory, linearRegression_stubs_data_settings_sinh_etaRegions_s, array</column>
+<column name="linearRegression_stubs_data_settings_sinh_etaRegions_s_we0">out, 1, ap_memory, linearRegression_stubs_data_settings_sinh_etaRegions_s, array</column>
+<column name="linearRegression_stubs_data_settings_sinh_etaRegions_s_d0">out, 32, ap_memory, linearRegression_stubs_data_settings_sinh_etaRegions_s, array</column>
+<column name="linearRegression_stubs_data_settings_sinh_etaRegions_s_q0">in, 32, ap_memory, linearRegression_stubs_data_settings_sinh_etaRegions_s, array</column>
+<column name="linearRegression_stubs_data_settings_sinh_etaRegions_s_address1">out, 8, ap_memory, linearRegression_stubs_data_settings_sinh_etaRegions_s, array</column>
+<column name="linearRegression_stubs_data_settings_sinh_etaRegions_s_ce1">out, 1, ap_memory, linearRegression_stubs_data_settings_sinh_etaRegions_s, array</column>
+<column name="linearRegression_stubs_data_settings_sinh_etaRegions_s_we1">out, 1, ap_memory, linearRegression_stubs_data_settings_sinh_etaRegions_s, array</column>
+<column name="linearRegression_stubs_data_settings_sinh_etaRegions_s_d1">out, 32, ap_memory, linearRegression_stubs_data_settings_sinh_etaRegions_s, array</column>
+<column name="linearRegression_stubs_data_settings_sinh_etaRegions_s_q1">in, 32, ap_memory, linearRegression_stubs_data_settings_sinh_etaRegions_s, array</column>
 <column name="linearRegression_stubs_data_settings_minNumMatchLayers_s_address0">out, 4, ap_memory, linearRegression_stubs_data_settings_minNumMatchLayers_s, array</column>
 <column name="linearRegression_stubs_data_settings_minNumMatchLayers_s_ce0">out, 1, ap_memory, linearRegression_stubs_data_settings_minNumMatchLayers_s, array</column>
 <column name="linearRegression_stubs_data_settings_minNumMatchLayers_s_we0">out, 1, ap_memory, linearRegression_stubs_data_settings_minNumMatchLayers_s, array</column>
@@ -349,16 +352,16 @@
 <column name="linearRegression_stubMap_data_second_data_settings_chosenRofZ_s_we1">out, 1, ap_memory, linearRegression_stubMap_data_second_data_settings_chosenRofZ_s, array</column>
 <column name="linearRegression_stubMap_data_second_data_settings_chosenRofZ_s_d1">out, 32, ap_memory, linearRegression_stubMap_data_second_data_settings_chosenRofZ_s, array</column>
 <column name="linearRegression_stubMap_data_second_data_settings_chosenRofZ_s_q1">in, 32, ap_memory, linearRegression_stubMap_data_second_data_settings_chosenRofZ_s, array</column>
-<column name="linearRegression_stubMap_data_second_data_settings_etaRegions_s_address0">out, 13, ap_memory, linearRegression_stubMap_data_second_data_settings_etaRegions_s, array</column>
-<column name="linearRegression_stubMap_data_second_data_settings_etaRegions_s_ce0">out, 1, ap_memory, linearRegression_stubMap_data_second_data_settings_etaRegions_s, array</column>
-<column name="linearRegression_stubMap_data_second_data_settings_etaRegions_s_we0">out, 1, ap_memory, linearRegression_stubMap_data_second_data_settings_etaRegions_s, array</column>
-<column name="linearRegression_stubMap_data_second_data_settings_etaRegions_s_d0">out, 32, ap_memory, linearRegression_stubMap_data_second_data_settings_etaRegions_s, array</column>
-<column name="linearRegression_stubMap_data_second_data_settings_etaRegions_s_q0">in, 32, ap_memory, linearRegression_stubMap_data_second_data_settings_etaRegions_s, array</column>
-<column name="linearRegression_stubMap_data_second_data_settings_etaRegions_s_address1">out, 13, ap_memory, linearRegression_stubMap_data_second_data_settings_etaRegions_s, array</column>
-<column name="linearRegression_stubMap_data_second_data_settings_etaRegions_s_ce1">out, 1, ap_memory, linearRegression_stubMap_data_second_data_settings_etaRegions_s, array</column>
-<column name="linearRegression_stubMap_data_second_data_settings_etaRegions_s_we1">out, 1, ap_memory, linearRegression_stubMap_data_second_data_settings_etaRegions_s, array</column>
-<column name="linearRegression_stubMap_data_second_data_settings_etaRegions_s_d1">out, 32, ap_memory, linearRegression_stubMap_data_second_data_settings_etaRegions_s, array</column>
-<column name="linearRegression_stubMap_data_second_data_settings_etaRegions_s_q1">in, 32, ap_memory, linearRegression_stubMap_data_second_data_settings_etaRegions_s, array</column>
+<column name="linearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_address0">out, 13, ap_memory, linearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s, array</column>
+<column name="linearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_ce0">out, 1, ap_memory, linearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s, array</column>
+<column name="linearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_we0">out, 1, ap_memory, linearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s, array</column>
+<column name="linearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_d0">out, 32, ap_memory, linearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s, array</column>
+<column name="linearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_q0">in, 32, ap_memory, linearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s, array</column>
+<column name="linearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_address1">out, 13, ap_memory, linearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s, array</column>
+<column name="linearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_ce1">out, 1, ap_memory, linearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s, array</column>
+<column name="linearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_we1">out, 1, ap_memory, linearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s, array</column>
+<column name="linearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_d1">out, 32, ap_memory, linearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s, array</column>
+<column name="linearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_q1">in, 32, ap_memory, linearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s, array</column>
 <column name="linearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_address0">out, 9, ap_memory, linearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s, array</column>
 <column name="linearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_ce0">out, 1, ap_memory, linearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s, array</column>
 <column name="linearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_we0">out, 1, ap_memory, linearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s, array</column>

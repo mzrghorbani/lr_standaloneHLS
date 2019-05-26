@@ -147,7 +147,7 @@ set Interface03101 "wire"
 set DataType03101 "float"
 set Port03101 [list $PortName03101 $Interface03101 $DataType03101 $Pointer03101 $Dims03101 $Const03101 $Volatile03101 $ArrayOpt03101]
 lappend structMem0310 $Port03101
-set PortName03102 "etaRegions_"
+set PortName03102 "sinh_etaRegions_"
 set BitWidth03102 "608"
 set ArrayOpt03102 ""
 set Const03102 "0"
@@ -305,7 +305,7 @@ set Interface03ta001 "wire"
 set DataType03ta001 "float"
 set Port03ta001 [list $PortName03ta001 $Interface03ta001 $DataType03ta001 $Pointer03ta001 $Dims03ta001 $Const03ta001 $Volatile03ta001 $ArrayOpt03ta001]
 lappend structMem03ta00 $Port03ta001
-set PortName03ta002 "etaRegions_"
+set PortName03ta002 "sinh_etaRegions_"
 set BitWidth03ta002 "608"
 set ArrayOpt03ta002 ""
 set Const03ta002 "0"
@@ -482,7 +482,7 @@ set Interface101 "wire"
 set DataType101 "float"
 set Port101 [list $PortName101 $Interface101 $DataType101 $Pointer101 $Dims101 $Const101 $Volatile101 $ArrayOpt101]
 lappend structMem10 $Port101
-set PortName102 "etaRegions_"
+set PortName102 "sinh_etaRegions_"
 set BitWidth102 "608"
 set ArrayOpt102 ""
 set Const102 "0"
@@ -757,7 +757,7 @@ set Interface16101 "wire"
 set DataType16101 "float"
 set Port16101 [list $PortName16101 $Interface16101 $DataType16101 $Pointer16101 $Dims16101 $Const16101 $Volatile16101 $ArrayOpt16101]
 lappend structMem1610 $Port16101
-set PortName16102 "etaRegions_"
+set PortName16102 "sinh_etaRegions_"
 set BitWidth16102 "608"
 set ArrayOpt16102 ""
 set Const16102 "0"
@@ -915,7 +915,7 @@ set Interface16ta001 "wire"
 set DataType16ta001 "float"
 set Port16ta001 [list $PortName16ta001 $Interface16ta001 $DataType16ta001 $Pointer16ta001 $Dims16ta001 $Const16ta001 $Volatile16ta001 $ArrayOpt16ta001]
 lappend structMem16ta00 $Port16ta001
-set PortName16ta002 "etaRegions_"
+set PortName16ta002 "sinh_etaRegions_"
 set BitWidth16ta002 "608"
 set ArrayOpt16ta002 ""
 set Const16ta002 "0"
@@ -1163,7 +1163,7 @@ set Interface1811101 "wire"
 set DataType1811101 "float"
 set Port1811101 [list $PortName1811101 $Interface1811101 $DataType1811101 $Pointer1811101 $Dims1811101 $Const1811101 $Volatile1811101 $ArrayOpt1811101]
 lappend structMem181110 $Port1811101
-set PortName1811102 "etaRegions_"
+set PortName1811102 "sinh_etaRegions_"
 set BitWidth1811102 "608"
 set ArrayOpt1811102 ""
 set Const1811102 "0"
@@ -1321,7 +1321,7 @@ set Interface1811ta001 "wire"
 set DataType1811ta001 "float"
 set Port1811ta001 [list $PortName1811ta001 $Interface1811ta001 $DataType1811ta001 $Pointer1811ta001 $Dims1811ta001 $Const1811ta001 $Volatile1811ta001 $ArrayOpt1811ta001]
 lappend structMem1811ta00 $Port1811ta001
-set PortName1811ta002 "etaRegions_"
+set PortName1811ta002 "sinh_etaRegions_"
 set BitWidth1811ta002 "608"
 set ArrayOpt1811ta002 ""
 set Const1811ta002 "0"
@@ -1506,7 +1506,7 @@ set Interface181ta1101 "wire"
 set DataType181ta1101 "float"
 set Port181ta1101 [list $PortName181ta1101 $Interface181ta1101 $DataType181ta1101 $Pointer181ta1101 $Dims181ta1101 $Const181ta1101 $Volatile181ta1101 $ArrayOpt181ta1101]
 lappend structMem181ta110 $Port181ta1101
-set PortName181ta1102 "etaRegions_"
+set PortName181ta1102 "sinh_etaRegions_"
 set BitWidth181ta1102 "608"
 set ArrayOpt181ta1102 ""
 set Const181ta1102 "0"
@@ -1664,7 +1664,7 @@ set Interface181ta1ta001 "wire"
 set DataType181ta1ta001 "float"
 set Port181ta1ta001 [list $PortName181ta1ta001 $Interface181ta1ta001 $DataType181ta1ta001 $Pointer181ta1ta001 $Dims181ta1ta001 $Const181ta1ta001 $Volatile181ta1ta001 $ArrayOpt181ta1ta001]
 lappend structMem181ta1ta00 $Port181ta1ta001
-set PortName181ta1ta002 "etaRegions_"
+set PortName181ta1ta002 "sinh_etaRegions_"
 set BitWidth181ta1ta002 "608"
 set ArrayOpt181ta1ta002 ""
 set Const181ta1ta002 "0"
@@ -1853,7 +1853,7 @@ set Interface18ta1101 "wire"
 set DataType18ta1101 "float"
 set Port18ta1101 [list $PortName18ta1101 $Interface18ta1101 $DataType18ta1101 $Pointer18ta1101 $Dims18ta1101 $Const18ta1101 $Volatile18ta1101 $ArrayOpt18ta1101]
 lappend structMem18ta110 $Port18ta1101
-set PortName18ta1102 "etaRegions_"
+set PortName18ta1102 "sinh_etaRegions_"
 set BitWidth18ta1102 "608"
 set ArrayOpt18ta1102 ""
 set Const18ta1102 "0"
@@ -2011,7 +2011,7 @@ set Interface18ta1ta001 "wire"
 set DataType18ta1ta001 "float"
 set Port18ta1ta001 [list $PortName18ta1ta001 $Interface18ta1ta001 $DataType18ta1ta001 $Pointer18ta1ta001 $Dims18ta1ta001 $Const18ta1ta001 $Volatile18ta1ta001 $ArrayOpt18ta1ta001]
 lappend structMem18ta1ta00 $Port18ta1ta001
-set PortName18ta1ta002 "etaRegions_"
+set PortName18ta1ta002 "sinh_etaRegions_"
 set BitWidth18ta1ta002 "608"
 set ArrayOpt18ta1ta002 ""
 set Const18ta1ta002 "0"

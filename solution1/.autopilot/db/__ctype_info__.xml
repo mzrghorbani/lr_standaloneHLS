@@ -70,7 +70,7 @@
 <InvalidType>0</InvalidType>
 </RtlPorts>
 <RtlPorts>
-<name>l1track3D_stubs_data_settings_etaRegions_s</name>
+<name>l1track3D_stubs_data_settings_sinh_etaRegions_s</name>
 <CType>
 <TypeName>float</TypeName>
 <TypeWidth>32</TypeWidth>
@@ -180,7 +180,7 @@
 <InvalidType>0</InvalidType>
 </RtlPorts>
 <RtlPorts>
-<name>linearRegression_settings_etaRegions_s</name>
+<name>linearRegression_settings_sinh_etaRegions_s</name>
 <CType>
 <TypeName>float</TypeName>
 <TypeWidth>32</TypeWidth>
@@ -350,7 +350,7 @@
 <InvalidType>0</InvalidType>
 </RtlPorts>
 <RtlPorts>
-<name>linearRegression_stubs_data_settings_etaRegions_s</name>
+<name>linearRegression_stubs_data_settings_sinh_etaRegions_s</name>
 <CType>
 <TypeName>float</TypeName>
 <TypeWidth>32</TypeWidth>
@@ -500,7 +500,7 @@
 <InvalidType>0</InvalidType>
 </RtlPorts>
 <RtlPorts>
-<name>linearRegression_stubMap_data_second_data_settings_etaRegions_s</name>
+<name>linearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s</name>
 <CType>
 <TypeName>float</TypeName>
 <TypeWidth>32</TypeWidth>

@@ -1,3 +1,17 @@
-{
-  
-}
+{"sourceFile": [{
+      "name": "",
+      "directive": [
+        {
+          "functionName": "mapHLS::has_key",
+          "label": "has_key_label1",
+          "functionLabel": "",
+          "pragma": {"name": "LOOP_TRIPCOUNT"}
+        },
+        {
+          "functionName": "mapHLS::operator []",
+          "label": "operator []_label2",
+          "functionLabel": "",
+          "pragma": {"name": "LOOP_TRIPCOUNT"}
+        }
+      ]
+    }]}

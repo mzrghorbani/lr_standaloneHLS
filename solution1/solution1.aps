@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <solution AutoPilot="com.autoesl.autopilot.solution">
   <name>
-    <value/>
+    <value string="solution1"/>
   </name>
   <project>
-    <value/>
+    <value string="lr_standaloneHLS"/>
   </project>
   <checksum>
     <value string="false"/>
@@ -23,14 +23,17 @@
     <clock name="default" period="10"/>
   </clockList>
   <config>
-            
+                
+    
     <config_compile blackbox=""/>
-            
+                
+    
     <schedule model="LRupdateHLS"/>
-        
+            
+  
   </config>
   <UIConfigurations>
-    <UIAutosynConf boardInfo="Kintex UltraScale KCU1500 Acceleration Development Board (xcku115-flvb2104-2-e) " hideTrivialOp="true" isBasedOnBoard="true" isSolutionDirty="false" isStopAskAgain="false" showDetailDesignViewer="false">
+    <UIAutosynConf boardInfo="Kintex UltraScale KCU1500 Acceleration Development Board (xcku115-flvb2104-2-e) " hideTrivialOp="true" isBasedOnBoard="true" isSolutionDirty="true" isStopAskAgain="false" showDetailDesignViewer="false">
       <Platform>xilinx/kintexu/kintexu</Platform>
       <Platform>xilinx/kintexu/kintexu_fpv7</Platform>
       <customLibs/>

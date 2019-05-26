@@ -166,453 +166,6 @@ extern "C" {
 
 
 
-
-
-
-template<typename T>
-inline T minHLS(T a, T b) {
-    if (b < a)
-        return (b);
-    return (a);
-}
-
-template<typename T>
-inline T maxHLS(T a, T b) {
-    if (b > a)
-        return (b);
-    return (a);
-}
-
-template<typename T>
-inline T absHLS(T a) {
-    if (a < 0)
-        return (-a);
-    return (a);
-}
-
-template<typename T>
-T reduceRangeHLS(T x) {
-    const T o2pi = 0.159154943;
-    if (absHLS(x) <= T(3.141592653589))
-        return (x);
-    T n = x * o2pi;
-    return (x - n * T(6.283185307));
-}
-
-template<typename T>
-T deltaPhiHLS(T phi1, T phi2) {
-    return (reduceRangeHLS(phi1 - phi2));
-}
-
-
-template<typename T1, typename T2>
-class pairHLS {
-public:
-    T1 first;
-    T2 second;
-
-    pairHLS() {}
-
-    pairHLS(const T1 &a, const T2 &b) : first(a), second(b) {}
-
-    pairHLS &operator=(const pairHLS &p) {
-        first = p.first;
-        second = p.second;
-        return (*this);
-    }
-};
-
-template<typename T1, typename T2>
-inline pairHLS<T1, T2> make_pairHLS(T1 x, T2 y) {
-    return (pairHLS<T1, T2>(x, y));
-}
-
-
-template<typename T>
-class arrayHLS {
-
-public:
-    unsigned int size_;
-    T data_[10];
-
-public:
-    arrayHLS() : size_(0) {}
-
-    ~arrayHLS() {}
-
-    void push_back(const T &value) {
-        data_[size_] = value;
-        size_++;
-    }
-
-    void erase(const T &value) {
-        for (unsigned int i = 0; i < size_; ++i) {
-            if (data_[i] == value) {
-                for (unsigned int j = i; j < size_; ++j) {
-                    data_[j] = data_[j + 1];
-                }
-            }
-        }
-        size_--;
-    }
-
-    T &operator[](unsigned int idx) {
-        return (data_[idx]);
-    }
-
-    const T &operator[](const unsigned int &idx) const {
-        return (data_[idx]);
-    }
-
-    unsigned int size() const {
-        return (size_);
-    }
-
-    void clear() {
-        size_ = 0;
-    }
-
-    bool empty() const {
-        return (begin() == end());
-    }
-
-    T *begin() {
-        return (&data_[0]);
-    }
-
-    const T *begin() const {
-        return (&data_[0]);
-    }
-
-    T *end() {
-        return (&data_[size_]);
-    }
-
-    const T *end() const {
-        return (&data_[size_]);
-    }
-};
-
-
-template<typename key, typename T>
-class mapHLS {
-
-public:
-    unsigned int size_;
-    pairHLS<unsigned int, T> data_[30];
-
-public:
-    mapHLS() : size_(0) {}
-
-    ~mapHLS() {}
-
-    void push_back(const pairHLS<key, T> &value) {
-        data_[size_] = value;
-        size_++;
-    }
-
-    bool has_key(const unsigned int &idx) {
-        for (unsigned int i = 0; i < size_; ++i) {
-            if (data_[i].first == idx) {
-                return (true);
-            }
-        }
-        return (false);
-    }
-
-    T &operator[](const unsigned int &idx) {
-        if (has_key(idx)) {
-            for (unsigned int i = 0; i < size_; ++i) {
-                if (data_[i].first == idx) {
-                    return (data_[i].second);
-                }
-            }
-        }
-        unsigned int temp = size_;
-        push_back(pairHLS<unsigned int, T>(idx, T()));
-        return (data_[temp].second);
-    }
-
-    void clean(const unsigned int &idx) {
-        for (unsigned int i = 0; i < size_; ++i) {
-            if (data_[i].first == idx) {
-                if (data_[i].second[0] == data_[i].second[1]) {
-                    for (unsigned int j = i; j < size_; ++j) {
-                        data_[j] = data_[j + 1];
-                    }
-                    size_--;
-                }
-            }
-        }
-    }
-
-    unsigned int size() const {
-        return (size_);
-    }
-
-    void clear() {
-        size_ = 0;
-    }
-
-    bool empty() const {
-        return (begin() == end());
-    }
-
-    pairHLS<unsigned int, T> *begin() {
-        return (&data_[0]);
-    }
-
-    const pairHLS<unsigned int, T> *begin() const {
-        return (&data_[0]);
-    }
-
-    pairHLS<unsigned int, T> *end() {
-        return (&data_[size_]);
-    }
-
-    const pairHLS<unsigned int, T> *end() const {
-        return (&data_[size_]);
-    }
-};
-# 5 "lr_standaloneHLS/.settings/L1track3D.h" 2
-# 1 "lr_standaloneHLS/.settings/Stub.h" 1
-
-
-
-# 1 "lr_standaloneHLS/.settings/Settings.h" 1
-
-
-
-class Settings {
-public:
-
-    Settings() : chosenRofPhi_(0.), chosenRofZ_(0.), minNumMatchLayers_(0), minPSLayers_(0) {}
-
-    ~Settings() {}
-
-    bool operator==(const Settings &settings) const {
-        return (Settings::chosenRofZ_ == settings.chosenRofZ_ &&
-                Settings::minNumMatchLayers_ == settings.minNumMatchLayers_ &&
-                Settings::minPSLayers_ == settings.minPSLayers_);
-    }
-
-    float chosenRofPhi() const { return (chosenRofPhi_); }
-
-    void setChosenRofPhi_(float chosenRofPhi) {
-        Settings::chosenRofPhi_ = chosenRofPhi;
-    }
-
-    float chosenRofZ() const { return (chosenRofZ_); }
-
-    void setChosenRofZ_(float chosenRofZ) {
-        Settings::chosenRofZ_ = chosenRofZ;
-    }
-
-    unsigned int minNumMatchLayers() const { return (minNumMatchLayers_); }
-
-    void setMinNumMatchLayers_(unsigned int minNumMatchLayers) {
-        Settings::minNumMatchLayers_ = minNumMatchLayers;
-    }
-
-    unsigned int minPSLayers() const { return (minPSLayers_); }
-
-    void setMinPSLayers_(unsigned int minPSLayers) {
-        Settings::minPSLayers_ = minPSLayers;
-    }
-
-    float invPtToDphi() const {
-        const float a = 0.00449685;
-        return (a);
-    }
-
-    const float *etaRegions() const {
-        return (etaRegions_);
-    }
-
-    void setEtaRegions(const float *etaRegions) {
-        for (int i = 0; i < 19; i++)
-            Settings::etaRegions_[i] = etaRegions[i];
-    }
-
-private:
-    float chosenRofPhi_;
-    float chosenRofZ_;
-    float etaRegions_[19];
-    unsigned int minNumMatchLayers_;
-    unsigned int minPSLayers_;
-};
-# 5 "lr_standaloneHLS/.settings/Stub.h" 2
-
-class Stub {
-
-public:
-
-    Stub() : r_(0.), phi_(0.), z_(0.), layerId_(0), psModule_(false), barrel_(false) {}
-
-    Stub(const Settings &settings) :
-            settings_(settings), r_(0.), phi_(0.), z_(0.), layerId_(0), psModule_(false), barrel_(false) {}
-
-    ~Stub() {}
-
-    bool operator==(const Stub &stub) const {
-        return (Stub::r_ == stub.r_ && Stub::phi_ == stub.phi_ &&
-                Stub::z_ == stub.z_ && Stub::layerId_ == stub.layerId_ && Stub::psModule_ == stub.psModule_ &&
-                Stub::barrel_ == stub.barrel_);
-    }
-
-    float r() const { return (r_); }
-
-    void setr(float r) { Stub::r_ = r; }
-
-    float phi() const { return (phi_); }
-
-    void setphi(float phi) { Stub::phi_ = phi; }
-
-    float z() const { return (z_); }
-
-    void setz(float z) { Stub::z_ = z; }
-
-    unsigned int layerId() const { return (layerId_); }
-
-    void setlayerId(unsigned int layerId) { Stub::layerId_ = layerId; }
-
-    bool psModule() const { return (psModule_); }
-
-    void setpsModule(bool psModule) { Stub::psModule_ = psModule; }
-
-    bool barrel() const { return (barrel_); }
-
-    void setbarrel(bool barrel) { Stub::barrel_ = barrel; }
-
-private:
-    Settings settings_;
-    float r_;
-    float phi_;
-    float z_;
-    unsigned int layerId_;
-    bool psModule_;
-    bool barrel_;
-};
-# 6 "lr_standaloneHLS/.settings/L1track3D.h" 2
-
-class L1track3D {
-
-public:
-    L1track3D() : iPhiSec_(0), iEtaReg_(0) {}
-
-    ~L1track3D() {}
-
-
-    const arrayHLS<Stub> &getStubs() const { return (stubs_); }
-
-
-    void setStubs(const arrayHLS<Stub> &stubs) { L1track3D::stubs_ = stubs; }
-
-    pairHLS<float, float> getHelixRphi() const {
-        return (helixRphi_);
-    }
-
-    void sethelixRphi_(pairHLS<float, float> &helixRphi) {
-        L1track3D::helixRphi_ = helixRphi;
-    }
-
-    unsigned int iPhiSec() const { return (iPhiSec_); }
-
-    void setIPhiSec_(unsigned int iPhiSec) { L1track3D::iPhiSec_ = iPhiSec; }
-
-    unsigned int iEtaReg() const { return (iEtaReg_); }
-
-    void setIEtaReg_(unsigned int iEtaReg) { L1track3D::iEtaReg_ = iEtaReg; }
-
-private:
-    unsigned int iPhiSec_;
-    unsigned int iEtaReg_;
-    pairHLS<float, float> helixRphi_;
-    arrayHLS<Stub> stubs_;
-};
-# 9 "lr_standaloneHLS/.settings/LRupdateHLS.h" 2
-# 1 "lr_standaloneHLS/.settings/LinearRegression.h" 1
-
-
-
-
-
-
-# 1 "lr_standaloneHLS/.settings/L1fittedTrack.h" 1
-
-
-
-
-
-
-
-
-class L1fittedTrack {
-
-public:
-    L1fittedTrack() : qOverPt_(0.f), d0_(0.f), phi0_(0.f), z0_(0.f), tanLambda_(0.f), chi2_(0.f), nHelixParam_(0.f),
-                      accepted_(false) {}
-
-    L1fittedTrack(const Settings &settings, const L1track3D &l1track3D,
-                  const arrayHLS<Stub> &stubs, float qOverPt, float d0, float phi0,
-                  float z0, float tanLambda, float chi2, unsigned int nHelixParam, bool accepted = true) :
-            settings_(settings), l1track3D_(l1track3D), stubs_(stubs),
-            qOverPt_(qOverPt), d0_(d0), phi0_(phi0), z0_(z0), tanLambda_(tanLambda),
-            chi2_(chi2), nHelixParam_(nHelixParam), accepted_(accepted) {
-
-        if (!accepted) stubs_.clear();
-    }
-
-
-
-
-
-    ~L1fittedTrack() {}
-
-
-    float qOverPt() const { return (qOverPt_); }
-
-    float invPt() const { return (absHLS(qOverPt_)); }
-
-    float d0() const { return (d0_); }
-
-    float phi0() const { return (phi0_); }
-
-    float z0() const { return (z0_); }
-
-    float tanLambda() const { return (tanLambda_); }
-
-    float chi2() const { return (chi2_); }
-
-    float nHelixParam() const { return (nHelixParam_); }
-
-    bool accepted() const { return (accepted_); }
-
-private:
-    Settings settings_;
-    L1track3D l1track3D_;
-    arrayHLS<Stub> stubs_;
-    float qOverPt_;
-    float d0_;
-    float phi0_;
-    float z0_;
-    float tanLambda_;
-    float chi2_;
-    float nHelixParam_;
-    bool accepted_;
-
-
-
-};
-# 8 "lr_standaloneHLS/.settings/LinearRegression.h" 2
-# 1 "lr_standaloneHLS/.settings/LRstructsHLS.h" 1
-
-
-
-
-
-
-
 # 1 "/home/eepgmmg1/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/cmath" 1 3
 # 41 "/home/eepgmmg1/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/cmath" 3
 # 41 "/home/eepgmmg1/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/cmath" 3
@@ -2636,7 +2189,488 @@ namespace std __attribute__ ((__visibility__ ("default")))
 
 
 }
-# 9 "lr_standaloneHLS/.settings/LRstructsHLS.h" 2
+# 6 "lr_standaloneHLS/.settings/LRutilityHLS.h" 2
+
+
+
+
+template<typename T>
+inline T minHLS(T a, T b) {
+    if (b < a)
+        return (b);
+    return (a);
+}
+
+template<typename T>
+inline T maxHLS(T a, T b) {
+    if (b > a)
+        return (b);
+    return (a);
+}
+
+template<typename T>
+inline T absHLS(T a) {
+    if (a < 0)
+        return (-a);
+    return (a);
+}
+
+template<typename T>
+inline T sinhHLS(T x) {
+ const T ex = 2.718281828459;
+ return ((pow(ex, x)-pow(ex, -x)) / 2);
+}
+
+template<typename T>
+inline T reduceRangeHLS(T x) {
+    const T o2pi = 0.159154943;
+    if (absHLS(x) <= T(3.141592653589))
+        return (x);
+    const T n = x * o2pi;
+    return (x - n * T(6.283185307));
+}
+
+template<typename T>
+inline T deltaPhiHLS(T phi1, T phi2) {
+    return (reduceRangeHLS(phi1 - phi2));
+}
+
+
+template<typename T1, typename T2>
+class pairHLS {
+public:
+    T1 first;
+    T2 second;
+
+    pairHLS() {}
+
+    pairHLS(const T1 &a, const T2 &b) : first(a), second(b) {}
+
+    pairHLS &operator=(const pairHLS &p) {
+        first = p.first;
+        second = p.second;
+        return (*this);
+    }
+};
+
+template<typename T1, typename T2>
+inline pairHLS<T1, T2> make_pairHLS(T1 x, T2 y) {
+    return (pairHLS<T1, T2>(x, y));
+}
+
+
+template<typename T>
+class arrayHLS {
+
+public:
+    unsigned int size_;
+    T data_[10];
+
+public:
+    arrayHLS() : size_(0) {}
+
+    ~arrayHLS() {}
+
+    void push_back(const T &value) {
+        data_[size_] = value;
+        size_++;
+    }
+
+    void erase(const T &value) {
+        for(unsigned int i = 0; i < size_; ++i) {
+            if (data_[i] == value) {
+                for (unsigned int j = i; j < size_; ++j) {
+                    data_[j] = data_[j + 1];
+                }
+            }
+        }
+        size_--;
+    }
+
+    T &operator[](unsigned int idx) {
+        return (data_[idx]);
+    }
+
+    const T &operator[](const unsigned int &idx) const {
+        return (data_[idx]);
+    }
+
+    unsigned int size() const {
+        return (size_);
+    }
+
+    void clear() {
+        size_ = 0;
+    }
+
+    bool empty() const {
+        return (begin() == end());
+    }
+
+    T *begin() {
+        return (&data_[0]);
+    }
+
+    const T *begin() const {
+        return (&data_[0]);
+    }
+
+    T *end() {
+        return (&data_[size_]);
+    }
+
+    const T *end() const {
+        return (&data_[size_]);
+    }
+};
+
+
+template<typename key, typename T>
+class mapHLS {
+
+public:
+    unsigned int size_;
+    pairHLS<unsigned int, T> data_[30];
+
+public:
+    mapHLS() : size_(0) {}
+
+    ~mapHLS() {}
+
+    void push_back(const pairHLS<key, T> &value) {
+        data_[size_] = value;
+        size_++;
+    }
+
+    bool has_key(const unsigned int &idx) {
+        for (unsigned int i = 0; i < size_; ++i) {
+            if (data_[i].first == idx) {
+                return (true);
+            }
+        }
+        return (false);
+    }
+
+    T &operator[](const unsigned int &idx) {
+
+            for (unsigned int i = 0; i < size_; ++i) {
+                if (data_[i].first == idx) {
+                    return (data_[i].second);
+                }
+            }
+
+        unsigned int temp = size_;
+        push_back(pairHLS<unsigned int, T>(idx, T()));
+        return (data_[temp].second);
+    }
+
+    void clean(const unsigned int &idx) {
+        for (unsigned int i = 0; i < size_; ++i) {
+            if (data_[i].first == idx) {
+                if (data_[i].second[0] == data_[i].second[1]) {
+                    for (unsigned int j = i; j < size_; ++j) {
+                        data_[j] = data_[j + 1];
+                    }
+                    size_--;
+                }
+            }
+        }
+    }
+
+    unsigned int size() const {
+        return (size_);
+    }
+
+    void clear() {
+        size_ = 0;
+    }
+
+    bool empty() const {
+        return (begin() == end());
+    }
+
+    pairHLS<unsigned int, T> *begin() {
+        return (&data_[0]);
+    }
+
+    const pairHLS<unsigned int, T> *begin() const {
+        return (&data_[0]);
+    }
+
+    pairHLS<unsigned int, T> *end() {
+        return (&data_[size_]);
+    }
+
+    const pairHLS<unsigned int, T> *end() const {
+        return (&data_[size_]);
+    }
+};
+# 5 "lr_standaloneHLS/.settings/L1track3D.h" 2
+# 1 "lr_standaloneHLS/.settings/Stub.h" 1
+
+
+
+# 1 "lr_standaloneHLS/.settings/Settings.h" 1
+
+
+
+class Settings {
+public:
+
+    Settings() : chosenRofPhi_(0.), chosenRofZ_(0.), minNumMatchLayers_(0), minPSLayers_(0) {}
+
+    ~Settings() {}
+
+    bool operator==(const Settings &settings) const {
+        return (Settings::chosenRofZ_ == settings.chosenRofZ_ &&
+                Settings::minNumMatchLayers_ == settings.minNumMatchLayers_ &&
+                Settings::minPSLayers_ == settings.minPSLayers_);
+    }
+
+    float chosenRofPhi() const { return (chosenRofPhi_); }
+
+    void setChosenRofPhi_(float chosenRofPhi) {
+        Settings::chosenRofPhi_ = chosenRofPhi;
+    }
+
+    float chosenRofZ() const { return (chosenRofZ_); }
+
+    void setChosenRofZ_(float chosenRofZ) {
+        Settings::chosenRofZ_ = chosenRofZ;
+    }
+
+    unsigned int minNumMatchLayers() const { return (minNumMatchLayers_); }
+
+    void setMinNumMatchLayers_(unsigned int minNumMatchLayers) {
+        Settings::minNumMatchLayers_ = minNumMatchLayers;
+    }
+
+    unsigned int minPSLayers() const { return (minPSLayers_); }
+
+    void setMinPSLayers_(unsigned int minPSLayers) {
+        Settings::minPSLayers_ = minPSLayers;
+    }
+
+    float invPtToDphi() const {
+        const float a = 0.00449685;
+        return (a);
+    }
+
+    const float *sinh_etaRegions_div2() const {
+        return (sinh_etaRegions_);
+    }
+
+    void setSinh_EtaRegions(const float *etaRegions) {
+        for (int i = 0; i < 19; i++)
+            Settings::sinh_etaRegions_[i] = etaRegions[i];
+    }
+
+private:
+    float chosenRofPhi_;
+    float chosenRofZ_;
+    float sinh_etaRegions_[19];
+    unsigned int minNumMatchLayers_;
+    unsigned int minPSLayers_;
+};
+# 5 "lr_standaloneHLS/.settings/Stub.h" 2
+
+class Stub {
+
+public:
+
+    Stub() : r_(0.), phi_(0.), z_(0.), layerId_(0), psModule_(false), barrel_(false) {}
+
+    Stub(const Settings &settings) :
+            settings_(settings), r_(0.), phi_(0.), z_(0.), layerId_(0), psModule_(false), barrel_(false) {}
+
+    ~Stub() {}
+
+    bool operator==(const Stub &stub) const {
+        return (Stub::r_ == stub.r_ && Stub::phi_ == stub.phi_ &&
+                Stub::z_ == stub.z_ && Stub::layerId_ == stub.layerId_ && Stub::psModule_ == stub.psModule_ &&
+                Stub::barrel_ == stub.barrel_);
+    }
+
+    float r() const { return (r_); }
+
+    void setr(float r) { Stub::r_ = r; }
+
+    float phi() const { return (phi_); }
+
+    void setphi(float phi) { Stub::phi_ = phi; }
+
+    float z() const { return (z_); }
+
+    void setz(float z) { Stub::z_ = z; }
+
+    unsigned int layerId() const { return (layerId_); }
+
+    void setlayerId(unsigned int layerId) { Stub::layerId_ = layerId; }
+
+    bool psModule() const { return (psModule_); }
+
+    void setpsModule(bool psModule) { Stub::psModule_ = psModule; }
+
+    bool barrel() const { return (barrel_); }
+
+    void setbarrel(bool barrel) { Stub::barrel_ = barrel; }
+
+private:
+    Settings settings_;
+    float r_;
+    float phi_;
+    float z_;
+    unsigned int layerId_;
+    bool psModule_;
+    bool barrel_;
+};
+# 6 "lr_standaloneHLS/.settings/L1track3D.h" 2
+
+class L1track3D {
+
+public:
+    L1track3D() : iPhiSec_(0), iEtaReg_(0) {}
+
+    ~L1track3D() {}
+
+
+    const arrayHLS<Stub> &getStubs() const { return (stubs_); }
+
+
+    void setStubs(const arrayHLS<Stub> &stubs) { L1track3D::stubs_ = stubs; }
+
+    pairHLS<float, float> getHelixRphi() const {
+        return (helixRphi_);
+    }
+
+    void sethelixRphi_(pairHLS<float, float> &helixRphi) {
+        L1track3D::helixRphi_ = helixRphi;
+    }
+
+    unsigned int iPhiSec() const { return (iPhiSec_); }
+
+    void setIPhiSec_(unsigned int iPhiSec) { L1track3D::iPhiSec_ = iPhiSec; }
+
+    unsigned int iEtaReg() const { return (iEtaReg_); }
+
+    void setIEtaReg_(unsigned int iEtaReg) { L1track3D::iEtaReg_ = iEtaReg; }
+
+private:
+    unsigned int iPhiSec_;
+    unsigned int iEtaReg_;
+    pairHLS<float, float> helixRphi_;
+    arrayHLS<Stub> stubs_;
+};
+# 9 "lr_standaloneHLS/.settings/LRupdateHLS.h" 2
+# 1 "lr_standaloneHLS/.settings/LinearRegression.h" 1
+
+
+
+# 1 "lr_standaloneHLS/.settings/LRutilityHLS.h" 1
+
+
+
+
+# 1 "/home/eepgmmg1/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/cmath" 1 3
+# 41 "/home/eepgmmg1/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/cmath" 3
+# 41 "/home/eepgmmg1/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/cmath" 3
+# 6 "lr_standaloneHLS/.settings/LRutilityHLS.h" 2
+# 5 "lr_standaloneHLS/.settings/LinearRegression.h" 2
+
+
+# 1 "lr_standaloneHLS/.settings/L1fittedTrack.h" 1
+
+
+
+
+
+
+# 1 "lr_standaloneHLS/.settings/LRutilityHLS.h" 1
+
+
+
+
+# 1 "/home/eepgmmg1/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/cmath" 1 3
+# 41 "/home/eepgmmg1/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/cmath" 3
+# 41 "/home/eepgmmg1/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/cmath" 3
+# 6 "lr_standaloneHLS/.settings/LRutilityHLS.h" 2
+# 8 "lr_standaloneHLS/.settings/L1fittedTrack.h" 2
+
+class L1fittedTrack {
+
+public:
+    L1fittedTrack() : qOverPt_(0.f), d0_(0.f), phi0_(0.f), z0_(0.f), tanLambda_(0.f), chi2_(0.f), nHelixParam_(0.f),
+                      accepted_(false) {}
+
+    L1fittedTrack(const Settings &settings, const L1track3D &l1track3D,
+                  const arrayHLS<Stub> &stubs, float qOverPt, float d0, float phi0,
+                  float z0, float tanLambda, float chi2, unsigned int nHelixParam, bool accepted = true) :
+            settings_(settings), l1track3D_(l1track3D), stubs_(stubs),
+            qOverPt_(qOverPt), d0_(d0), phi0_(phi0), z0_(z0), tanLambda_(tanLambda),
+            chi2_(chi2), nHelixParam_(nHelixParam), accepted_(accepted) {
+
+        if (!accepted) stubs_.clear();
+    }
+
+
+
+
+
+    ~L1fittedTrack() {}
+
+
+    float qOverPt() const { return (qOverPt_); }
+
+    float invPt() const { return (absHLS(qOverPt_)); }
+
+    float d0() const { return (d0_); }
+
+    float phi0() const { return (phi0_); }
+
+    float z0() const { return (z0_); }
+
+    float tanLambda() const { return (tanLambda_); }
+
+    float chi2() const { return (chi2_); }
+
+    float nHelixParam() const { return (nHelixParam_); }
+
+    bool accepted() const { return (accepted_); }
+
+private:
+    Settings settings_;
+    L1track3D l1track3D_;
+    arrayHLS<Stub> stubs_;
+    float qOverPt_;
+    float d0_;
+    float phi0_;
+    float z0_;
+    float tanLambda_;
+    float chi2_;
+    float nHelixParam_;
+    bool accepted_;
+
+
+
+};
+# 8 "lr_standaloneHLS/.settings/LinearRegression.h" 2
+# 1 "lr_standaloneHLS/.settings/LRstructsHLS.h" 1
+
+
+
+# 1 "lr_standaloneHLS/.settings/LRutilityHLS.h" 1
+
+
+
+
+# 1 "/home/eepgmmg1/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/cmath" 1 3
+# 41 "/home/eepgmmg1/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/cmath" 3
+# 41 "/home/eepgmmg1/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/cmath" 3
+# 6 "lr_standaloneHLS/.settings/LRutilityHLS.h" 2
+# 5 "lr_standaloneHLS/.settings/LRstructsHLS.h" 2
+
+
+
 
 class candData {
 public:
@@ -2680,7 +2714,8 @@ public:
         const pairHLS<float, float> &helixRPhi = l1track3D.getHelixRphi();
         qOverPt = helixRPhi.first * settings.invPtToDphi();
         phiT = deltaPhiHLS(helixRPhi.second + qOverPt * settings.chosenRofPhi(), 0.f);
-        cotTheta = (sinhf(settings.etaRegions()[iEtaReg]) + sinhf(settings.etaRegions()[iEtaReg + 1])) / 2.;
+
+        cotTheta = (settings.sinh_etaRegions_div2()[iEtaReg] + settings.sinh_etaRegions_div2()[iEtaReg + 1]);
         zT = cotTheta * settings.chosenRofZ();
     }
 };
@@ -2801,8 +2836,8 @@ class LinearRegression {
 public:
     LinearRegression() : iPhiSec_(0), iEtaReg_(0), nIterations_(0), valid_(false) {}
 
-    LinearRegression(const Settings &settings) : settings_(settings), iPhiSec_(0), iEtaReg_(0), nIterations_(0),
-                                                 valid_(false) {}
+    LinearRegression(const Settings &settings) :
+     settings_(settings), iPhiSec_(0), iEtaReg_(0), nIterations_(0), valid_(false) {}
 
     ~LinearRegression() {}
 

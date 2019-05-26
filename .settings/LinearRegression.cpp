@@ -110,7 +110,7 @@ void LinearRegression::calcHelix() {
                 }
             }
             stubData layerPos = layerMinPos + layerMaxPos;
-            layerPos /= 2.;
+            layerPos /= 2.f;
             phiSums += make_pairHLS(layerPos.RPhi, layerPos.Phi);
             if (ps) {
                 zSums += make_pairHLS(layerPos.RZ, layerPos.Z);

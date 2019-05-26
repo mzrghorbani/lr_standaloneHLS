@@ -21,17 +21,17 @@ int main() {
     settings.setChosenRofZ_(chosenRofZ);
     settings.setMinNumMatchLayers_(minNumMatchLayers);
     settings.setMinPSLayers_(minPSLayers);
-    float etaArr[19] =
-            {-2.4f, -2.16f, -1.95f, -1.7f, -1.43f, -1.16f, -0.89f, -0.61f, -0.31f, 0.f, 0.31f, 0.61f, 0.89f, 1.16f,
-             1.43f, 1.7f, 1.95f, 2.16f, 2.4f};
-    settings.setEtaRegions(etaArr);
+    float sinh_eta_div2[19] = {-2.733114607f, -2.138953134f, -1.721603377f, -1.322815967f, -0.984847567f, -0.719111774f, -0.506118475f, -0.324270132f, -0.157494539f, 0.f, 0.157494539, 0.324270132f, 0.506118475f, 0.719111774f, 0.984847567f, 1.322815967f, 1.721603377f, 2.138953134f, 2.733114607f};
+//{-2.4f, -2.16f, -1.95f, -1.7f, -1.43f, -1.16f, -0.89f, -0.61f, -0.31f, 0.f, 0.31f, 0.61f, 0.89f, 1.16f, 1.43f, 1.7f, 1.95f, 2.16f, 2.4f};
+//{-5.4662292136761f, -4.2779062687127f, -3.4432067545014f, -2.6456319338372f, -1.9696951348398f, -1.4382235476168f, -1.0122369492688f, -0.64854026485357f, -0.31498907895394f, 0.0, 0.31498907895394f, 0.64854026485357f, 1.0122369492688f, 1.4382235476168f, 1.9696951348398f, 2.6456319338372f, 3.4432067545014f, 4.2779062687127f, 5.4662292136761f};
+    settings.setSinh_EtaRegions(sinh_eta_div2);
 
     arrayHLS<Stub> stubs;
 
     Stub s1(settings);
-    float r = 1.f;
-    float phi = 1.f;
-    float z = 1.f;
+    float r = 25.5577;
+    float phi = -2.8180;
+    float z = -86.1199;
     unsigned int layerId = 1;
     bool psModule = true;
     bool barrel = true;
@@ -44,9 +44,9 @@ int main() {
     stubs.push_back(s1);
 
     Stub s2(settings);
-    r = 2.f;
-    phi = 2.f;
-    z = 2.f;
+    r = 54.6793;
+    phi = -2.8418;
+    z = -187.3670;
     layerId = 13;
     psModule = true;
     barrel = false;
@@ -59,12 +59,12 @@ int main() {
     stubs.push_back(s2);
 
     Stub s3(settings);
-    r = 3.f;
-    phi = 3.f;
-    z = 3.f;
+    r = 35.1066;
+    phi = -2.8268;
+    z = -119.1911;
     layerId = 2;
     psModule = true;
-    barrel = false;
+    barrel = true;
     s3.setr(r);
     s3.setphi(phi);
     s3.setz(z);
@@ -74,9 +74,9 @@ int main() {
     stubs.push_back(s3);
 
     Stub s4(settings);
-    r = 4.f;
-    phi = 4.f;
-    z = 4.f;
+    r = 75.7278;
+    phi = -2.8590;
+    z = -265.8300;
     layerId = 15;
     psModule = false;
     barrel = false;
@@ -89,9 +89,9 @@ int main() {
     stubs.push_back(s4);
 
     Stub s5(settings);
-    r = 5.f;
-    phi = 5.f;
-    z = 5.f;
+    r = 40.5840;
+    phi = -2.8320;
+    z = -152.9730;
     layerId = 12;
     psModule = true;
     barrel = false;
@@ -104,12 +104,12 @@ int main() {
     stubs.push_back(s5);
 
     Stub s6(settings);
-    r = 6.f;
-    phi = 6.f;
-    z = 6.f;
-    layerId = 14;
+    r = 25.5577;
+    phi = -2.8180;
+    z = -86.1199;
+    layerId = 1;
     psModule = true;
-    barrel = false;
+    barrel = true;
     s6.setr(r);
     s6.setphi(phi);
     s6.setz(z);
@@ -119,11 +119,11 @@ int main() {
     stubs.push_back(s6);
 
     Stub s7(settings);
-    r = 7.f;
-    phi = 7.f;
-    z = 7.f;
-    layerId = 15;
-    psModule = false;
+    r = 54.6793;
+    phi = -2.8418;
+    z = -187.3670;
+    layerId = 13;
+    psModule = true;
     barrel = false;
     s7.setr(r);
     s7.setphi(phi);
@@ -134,12 +134,12 @@ int main() {
     stubs.push_back(s7);
 
     Stub s8(settings);
-    r = 8.f;
-    phi = 8.f;
-    z = 8.f;
-    layerId = 5;
-    psModule = false;
-    barrel = false;
+    r = 35.1066;
+    phi = -2.8268;
+    z = -119.1911;
+    layerId = 2;
+    psModule = true;
+    barrel = true;
     s8.setr(r);
     s8.setphi(phi);
     s8.setz(z);
@@ -147,6 +147,22 @@ int main() {
     s8.setpsModule(psModule);
     s8.setbarrel(barrel);
     stubs.push_back(s8);
+
+    Stub s9(settings);
+    r = 65.2018;
+    phi = -2.8496;
+    z = -220.7890;
+    layerId = 15;
+    psModule = false;
+    barrel = false;
+    s9.setr(r);
+    s9.setphi(phi);
+    s9.setz(z);
+    s9.setlayerId(layerId);
+    s9.setpsModule(psModule);
+    s9.setbarrel(barrel);
+    stubs.push_back(s9);
+
 
     L1track3D l1track3D;
     pairHLS<float, float> helixRphi(0.1389f, -2.8012f);

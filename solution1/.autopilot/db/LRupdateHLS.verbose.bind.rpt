@@ -3,7 +3,7 @@
 ================================================================
 == Vivado HLS Report for 'LRupdateHLS'
 ================================================================
-* Date:           Tue May 21 18:44:29 2019
+* Date:           Thu May 23 17:57:20 2019
 
 * Version:        2018.3 (Build 2405991 on Thu Dec 06 23:56:15 MST 2018)
 * Project:        lr_standaloneHLS
@@ -38,7 +38,7 @@
         |                |       |  Latency  |  Interval | Pipeline|
         |    Instance    | Module| min | max | min | max |   Type  |
         +----------------+-------+-----+-----+-----+-----+---------+
-        |grp_fit_fu_365  |fit    |    ?|    ?|    ?|    ?|   none  |
+        |grp_fit_fu_363  |fit    |    ?|    ?|    ?|    ?|   none  |
         +----------------+-------+-----+-----+-----+-----+---------+
 
         * Loop: 
@@ -97,86 +97,86 @@ ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%linearRegression_LRP_2 = call floa
 ST_1 : Operation 15 [1/1] (0.00ns)   --->   "%linearRegression_LRP_3 = call float @_ssdm_op_Read.ap_auto.floatP(float* %linearRegression_LRParameter_zT)" [lr_standaloneHLS/.settings/LRupdateHLS.cpp:9]   --->   Operation 15 'read' 'linearRegression_LRP_3' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 16 [1/1] (0.00ns)   --->   "%linearRegression_stu = call i32 @_ssdm_op_Read.ap_auto.i32P(i32* %linearRegression_stubMap_size_s)" [lr_standaloneHLS/.settings/LRupdateHLS.cpp:9]   --->   Operation 16 'read' 'linearRegression_stu' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 17 [1/1] (0.00ns)   --->   "%linearRegression_lay = call i32 @_ssdm_op_Read.ap_auto.i32P(i32* %linearRegression_layerPopulation_size_s)" [lr_standaloneHLS/.settings/LRupdateHLS.cpp:9]   --->   Operation 17 'read' 'linearRegression_lay' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 18 [2/2] (8.41ns)   --->   "%call_ret1 = call fastcc { i32, i32, i32, i1, float, float, float, float, i32, float, float, float, float, i32, i32 } @fit(float %linearRegression_set_2, float %linearRegression_set_3, [19 x float]* %linearRegression_settings_etaRegions_s, i32 %linearRegression_set, i32 %linearRegression_set_1, float %linearRegression_LRP, float %linearRegression_LRP_1, float %linearRegression_LRP_2, float %linearRegression_LRP_3, [10 x float]* %linearRegression_stubs_data_settings_chosenRofPhi_s, [10 x float]* %linearRegression_stubs_data_settings_chosenRofZ_s, [190 x float]* %linearRegression_stubs_data_settings_etaRegions_s, [10 x i32]* %linearRegression_stubs_data_settings_minNumMatchLayers_s, [10 x i32]* %linearRegression_stubs_data_settings_minPSLayers_s, [10 x float]* %linearRegression_stubs_data_r_s, [10 x float]* %linearRegression_stubs_data_phi_s, [10 x float]* %linearRegression_stubs_data_z_s, [10 x i32]* %linearRegression_stubs_data_layerId_s, [10 x i1]* %linearRegression_stubs_data_psModule_s, [10 x i1]* %linearRegression_stubs_data_barrel_s, i32 %linearRegression_stu, [30 x i32]* %linearRegression_stubMap_data_first, [30 x i32]* %linearRegression_stubMap_data_second_size_s, [300 x float]* %linearRegression_stubMap_data_second_data_settings_chosenRofPhi_s, [300 x float]* %linearRegression_stubMap_data_second_data_settings_chosenRofZ_s, [5700 x float]* %linearRegression_stubMap_data_second_data_settings_etaRegions_s, [300 x i32]* %linearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s, [300 x i32]* %linearRegression_stubMap_data_second_data_settings_minPSLayers_s, [300 x float]* %linearRegression_stubMap_data_second_data_r_s, [300 x float]* %linearRegression_stubMap_data_second_data_phi_s, [300 x float]* %linearRegression_stubMap_data_second_data_z_s, [300 x i32]* %linearRegression_stubMap_data_second_data_layerId_s, [300 x i1]* %linearRegression_stubMap_data_second_data_psModule_s, [300 x i1]* %linearRegression_stubMap_data_second_data_barrel_s, i32 %linearRegression_lay, [30 x i32]* %linearRegression_layerPopulation_data_first, [30 x i32]* %linearRegression_layerPopulation_data_second, i32* %linearRegression_residuals_size_s, [30 x i32]* %linearRegression_residuals_data_first, [30 x i32]* %linearRegression_residuals_data_second_size_s, [300 x float]* %linearRegression_residuals_data_second_data_phi, [300 x float]* %linearRegression_residuals_data_second_data_z, [300 x i32]* %linearRegression_residuals_data_second_data_layerId, [300 x i32]* %linearRegression_residuals_data_second_data_stubId, [300 x i1]* %linearRegression_residuals_data_second_data_ps, float* %linearRegression_largestResid_phi, float* %linearRegression_largestResid_z, i32* %linearRegression_largestResid_layerId, i32* %linearRegression_largestResid_stubId, i1* %linearRegression_largestResid_ps, i32 %l1track3D_iPhiSec_r, i32 %l1track3D_iEtaReg_r, float %l1track3D_helixRphi_s, float %l1track3D_helixRphi_3, i32 %l1track3D_stubs_siz, [10 x float]* %l1track3D_stubs_data_settings_chosenRofPhi_s, [10 x float]* %l1track3D_stubs_data_settings_chosenRofZ_s, [190 x float]* %l1track3D_stubs_data_settings_etaRegions_s, [10 x i32]* %l1track3D_stubs_data_settings_minNumMatchLayers_s, [10 x i32]* %l1track3D_stubs_data_settings_minPSLayers_s, [10 x float]* %l1track3D_stubs_data_r_s, [10 x float]* %l1track3D_stubs_data_phi_s, [10 x float]* %l1track3D_stubs_data_z_s, [10 x i32]* %l1track3D_stubs_data_layerId_s, [10 x i1]* %l1track3D_stubs_data_psModule_s, [10 x i1]* %l1track3D_stubs_data_barrel_s)" [lr_standaloneHLS/.settings/LRupdateHLS.cpp:9]   --->   Operation 18 'call' 'call_ret1' <Predicate = true> <Delay = 8.41> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_1 : Operation 18 [2/2] (8.41ns)   --->   "%call_ret1 = call fastcc { i32, i32, i32, i1, float, float, float, float, i32, float, float, float, float, i32, i32 } @fit(float %linearRegression_set_2, float %linearRegression_set_3, [19 x float]* %linearRegression_settings_sinh_etaRegions_s, i32 %linearRegression_set, i32 %linearRegression_set_1, float %linearRegression_LRP, float %linearRegression_LRP_1, float %linearRegression_LRP_2, float %linearRegression_LRP_3, [10 x float]* %linearRegression_stubs_data_settings_chosenRofPhi_s, [10 x float]* %linearRegression_stubs_data_settings_chosenRofZ_s, [190 x float]* %linearRegression_stubs_data_settings_sinh_etaRegions_s, [10 x i32]* %linearRegression_stubs_data_settings_minNumMatchLayers_s, [10 x i32]* %linearRegression_stubs_data_settings_minPSLayers_s, [10 x float]* %linearRegression_stubs_data_r_s, [10 x float]* %linearRegression_stubs_data_phi_s, [10 x float]* %linearRegression_stubs_data_z_s, [10 x i32]* %linearRegression_stubs_data_layerId_s, [10 x i1]* %linearRegression_stubs_data_psModule_s, [10 x i1]* %linearRegression_stubs_data_barrel_s, i32 %linearRegression_stu, [30 x i32]* %linearRegression_stubMap_data_first, [30 x i32]* %linearRegression_stubMap_data_second_size_s, [300 x float]* %linearRegression_stubMap_data_second_data_settings_chosenRofPhi_s, [300 x float]* %linearRegression_stubMap_data_second_data_settings_chosenRofZ_s, [5700 x float]* %linearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s, [300 x i32]* %linearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s, [300 x i32]* %linearRegression_stubMap_data_second_data_settings_minPSLayers_s, [300 x float]* %linearRegression_stubMap_data_second_data_r_s, [300 x float]* %linearRegression_stubMap_data_second_data_phi_s, [300 x float]* %linearRegression_stubMap_data_second_data_z_s, [300 x i32]* %linearRegression_stubMap_data_second_data_layerId_s, [300 x i1]* %linearRegression_stubMap_data_second_data_psModule_s, [300 x i1]* %linearRegression_stubMap_data_second_data_barrel_s, i32 %linearRegression_lay, [30 x i32]* %linearRegression_layerPopulation_data_first, [30 x i32]* %linearRegression_layerPopulation_data_second, i32* %linearRegression_residuals_size_s, [30 x i32]* %linearRegression_residuals_data_first, [30 x i32]* %linearRegression_residuals_data_second_size_s, [300 x float]* %linearRegression_residuals_data_second_data_phi, [300 x float]* %linearRegression_residuals_data_second_data_z, [300 x i32]* %linearRegression_residuals_data_second_data_layerId, [300 x i32]* %linearRegression_residuals_data_second_data_stubId, [300 x i1]* %linearRegression_residuals_data_second_data_ps, float* %linearRegression_largestResid_phi, float* %linearRegression_largestResid_z, i32* %linearRegression_largestResid_layerId, i32* %linearRegression_largestResid_stubId, i1* %linearRegression_largestResid_ps, i32 %l1track3D_iPhiSec_r, i32 %l1track3D_iEtaReg_r, float %l1track3D_helixRphi_s, float %l1track3D_helixRphi_3, i32 %l1track3D_stubs_siz, [10 x float]* %l1track3D_stubs_data_settings_chosenRofPhi_s, [10 x float]* %l1track3D_stubs_data_settings_chosenRofZ_s, [190 x float]* %l1track3D_stubs_data_settings_sinh_etaRegions_s, [10 x i32]* %l1track3D_stubs_data_settings_minNumMatchLayers_s, [10 x i32]* %l1track3D_stubs_data_settings_minPSLayers_s, [10 x float]* %l1track3D_stubs_data_r_s, [10 x float]* %l1track3D_stubs_data_phi_s, [10 x float]* %l1track3D_stubs_data_z_s, [10 x i32]* %l1track3D_stubs_data_layerId_s, [10 x i1]* %l1track3D_stubs_data_psModule_s, [10 x i1]* %l1track3D_stubs_data_barrel_s)" [lr_standaloneHLS/.settings/LRupdateHLS.cpp:9]   --->   Operation 18 'call' 'call_ret1' <Predicate = true> <Delay = 8.41> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 
 State 2 <SV = 1> <Delay = 8.27>
-ST_2 : Operation 19 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i32* %l1track3D_iPhiSec_s), !map !122"   --->   Operation 19 'specbitsmap' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 20 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i32* %l1track3D_iEtaReg_s), !map !126"   --->   Operation 20 'specbitsmap' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 21 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(float* %l1track3D_helixRphi_first), !map !130"   --->   Operation 21 'specbitsmap' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 22 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(float* %l1track3D_helixRphi_second), !map !134"   --->   Operation 22 'specbitsmap' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 23 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i32* %l1track3D_stubs_size_s), !map !138"   --->   Operation 23 'specbitsmap' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 24 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap([10 x float]* %l1track3D_stubs_data_settings_chosenRofPhi_s), !map !142"   --->   Operation 24 'specbitsmap' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 25 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap([10 x float]* %l1track3D_stubs_data_settings_chosenRofZ_s), !map !148"   --->   Operation 25 'specbitsmap' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 26 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap([190 x float]* %l1track3D_stubs_data_settings_etaRegions_s), !map !152"   --->   Operation 26 'specbitsmap' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 27 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap([10 x i32]* %l1track3D_stubs_data_settings_minNumMatchLayers_s), !map !158"   --->   Operation 27 'specbitsmap' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 28 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap([10 x i32]* %l1track3D_stubs_data_settings_minPSLayers_s), !map !162"   --->   Operation 28 'specbitsmap' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 29 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap([10 x float]* %l1track3D_stubs_data_r_s), !map !166"   --->   Operation 29 'specbitsmap' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 30 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap([10 x float]* %l1track3D_stubs_data_phi_s), !map !170"   --->   Operation 30 'specbitsmap' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 31 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap([10 x float]* %l1track3D_stubs_data_z_s), !map !174"   --->   Operation 31 'specbitsmap' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 32 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap([10 x i32]* %l1track3D_stubs_data_layerId_s), !map !178"   --->   Operation 32 'specbitsmap' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 33 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap([10 x i1]* %l1track3D_stubs_data_psModule_s), !map !182"   --->   Operation 33 'specbitsmap' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 34 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap([10 x i1]* %l1track3D_stubs_data_barrel_s), !map !186"   --->   Operation 34 'specbitsmap' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 35 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(float* %linearRegression_settings_chosenRofPhi_s), !map !190"   --->   Operation 35 'specbitsmap' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 36 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(float* %linearRegression_settings_chosenRofZ_s), !map !194"   --->   Operation 36 'specbitsmap' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 37 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap([19 x float]* %linearRegression_settings_etaRegions_s), !map !198"   --->   Operation 37 'specbitsmap' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 38 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i32* %linearRegression_settings_minNumMatchLayers_s), !map !203"   --->   Operation 38 'specbitsmap' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 39 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i32* %linearRegression_settings_minPSLayers_s), !map !207"   --->   Operation 39 'specbitsmap' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 40 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i32* %linearRegression_iPhiSec_s), !map !211"   --->   Operation 40 'specbitsmap' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 41 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i32* %linearRegression_iEtaReg_s), !map !215"   --->   Operation 41 'specbitsmap' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 42 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i32* %linearRegression_nIterations_s), !map !219"   --->   Operation 42 'specbitsmap' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 43 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(float* %linearRegression_HTParameter_qOverPt), !map !223"   --->   Operation 43 'specbitsmap' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 44 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(float* %linearRegression_HTParameter_phiT), !map !227"   --->   Operation 44 'specbitsmap' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 45 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(float* %linearRegression_HTParameter_cotTheta), !map !231"   --->   Operation 45 'specbitsmap' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 46 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(float* %linearRegression_HTParameter_zT), !map !235"   --->   Operation 46 'specbitsmap' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 47 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(float* %linearRegression_LRParameter_qOverPt), !map !239"   --->   Operation 47 'specbitsmap' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 48 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(float* %linearRegression_LRParameter_phiT), !map !243"   --->   Operation 48 'specbitsmap' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 49 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(float* %linearRegression_LRParameter_cotTheta), !map !247"   --->   Operation 49 'specbitsmap' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 50 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(float* %linearRegression_LRParameter_zT), !map !251"   --->   Operation 50 'specbitsmap' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 51 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i32* %linearRegression_stubs_size_s), !map !255"   --->   Operation 51 'specbitsmap' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 52 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap([10 x float]* %linearRegression_stubs_data_settings_chosenRofPhi_s), !map !259"   --->   Operation 52 'specbitsmap' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 53 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap([10 x float]* %linearRegression_stubs_data_settings_chosenRofZ_s), !map !263"   --->   Operation 53 'specbitsmap' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 54 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap([190 x float]* %linearRegression_stubs_data_settings_etaRegions_s), !map !267"   --->   Operation 54 'specbitsmap' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 55 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap([10 x i32]* %linearRegression_stubs_data_settings_minNumMatchLayers_s), !map !271"   --->   Operation 55 'specbitsmap' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 56 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap([10 x i32]* %linearRegression_stubs_data_settings_minPSLayers_s), !map !275"   --->   Operation 56 'specbitsmap' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 57 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap([10 x float]* %linearRegression_stubs_data_r_s), !map !279"   --->   Operation 57 'specbitsmap' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 58 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap([10 x float]* %linearRegression_stubs_data_phi_s), !map !283"   --->   Operation 58 'specbitsmap' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 59 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap([10 x float]* %linearRegression_stubs_data_z_s), !map !287"   --->   Operation 59 'specbitsmap' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 60 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap([10 x i32]* %linearRegression_stubs_data_layerId_s), !map !291"   --->   Operation 60 'specbitsmap' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 61 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap([10 x i1]* %linearRegression_stubs_data_psModule_s), !map !295"   --->   Operation 61 'specbitsmap' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 62 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap([10 x i1]* %linearRegression_stubs_data_barrel_s), !map !299"   --->   Operation 62 'specbitsmap' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 63 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i1* %linearRegression_valid_s), !map !303"   --->   Operation 63 'specbitsmap' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 64 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i32* %linearRegression_stubMap_size_s), !map !307"   --->   Operation 64 'specbitsmap' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 65 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap([30 x i32]* %linearRegression_stubMap_data_first), !map !311"   --->   Operation 65 'specbitsmap' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 66 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap([30 x i32]* %linearRegression_stubMap_data_second_size_s), !map !317"   --->   Operation 66 'specbitsmap' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 67 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap([300 x float]* %linearRegression_stubMap_data_second_data_settings_chosenRofPhi_s), !map !321"   --->   Operation 67 'specbitsmap' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 68 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap([300 x float]* %linearRegression_stubMap_data_second_data_settings_chosenRofZ_s), !map !326"   --->   Operation 68 'specbitsmap' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 69 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap([5700 x float]* %linearRegression_stubMap_data_second_data_settings_etaRegions_s), !map !330"   --->   Operation 69 'specbitsmap' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 70 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap([300 x i32]* %linearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s), !map !335"   --->   Operation 70 'specbitsmap' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 71 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap([300 x i32]* %linearRegression_stubMap_data_second_data_settings_minPSLayers_s), !map !339"   --->   Operation 71 'specbitsmap' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 72 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap([300 x float]* %linearRegression_stubMap_data_second_data_r_s), !map !343"   --->   Operation 72 'specbitsmap' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 73 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap([300 x float]* %linearRegression_stubMap_data_second_data_phi_s), !map !347"   --->   Operation 73 'specbitsmap' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 74 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap([300 x float]* %linearRegression_stubMap_data_second_data_z_s), !map !351"   --->   Operation 74 'specbitsmap' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 75 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap([300 x i32]* %linearRegression_stubMap_data_second_data_layerId_s), !map !355"   --->   Operation 75 'specbitsmap' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 76 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap([300 x i1]* %linearRegression_stubMap_data_second_data_psModule_s), !map !359"   --->   Operation 76 'specbitsmap' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 77 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap([300 x i1]* %linearRegression_stubMap_data_second_data_barrel_s), !map !363"   --->   Operation 77 'specbitsmap' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 78 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i32* %linearRegression_layerPopulation_size_s), !map !367"   --->   Operation 78 'specbitsmap' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 79 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap([30 x i32]* %linearRegression_layerPopulation_data_first), !map !371"   --->   Operation 79 'specbitsmap' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 80 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap([30 x i32]* %linearRegression_layerPopulation_data_second), !map !375"   --->   Operation 80 'specbitsmap' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 81 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i32* %linearRegression_residuals_size_s), !map !379"   --->   Operation 81 'specbitsmap' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 82 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap([30 x i32]* %linearRegression_residuals_data_first), !map !383"   --->   Operation 82 'specbitsmap' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 83 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap([30 x i32]* %linearRegression_residuals_data_second_size_s), !map !387"   --->   Operation 83 'specbitsmap' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 84 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap([300 x float]* %linearRegression_residuals_data_second_data_phi), !map !391"   --->   Operation 84 'specbitsmap' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 85 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap([300 x float]* %linearRegression_residuals_data_second_data_z), !map !395"   --->   Operation 85 'specbitsmap' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 86 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap([300 x i32]* %linearRegression_residuals_data_second_data_layerId), !map !399"   --->   Operation 86 'specbitsmap' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 87 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap([300 x i32]* %linearRegression_residuals_data_second_data_stubId), !map !403"   --->   Operation 87 'specbitsmap' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 88 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap([300 x i1]* %linearRegression_residuals_data_second_data_ps), !map !407"   --->   Operation 88 'specbitsmap' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 89 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(float* %linearRegression_largestResid_phi), !map !411"   --->   Operation 89 'specbitsmap' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 90 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(float* %linearRegression_largestResid_z), !map !415"   --->   Operation 90 'specbitsmap' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 91 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i32* %linearRegression_largestResid_layerId), !map !419"   --->   Operation 91 'specbitsmap' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 92 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i32* %linearRegression_largestResid_stubId), !map !423"   --->   Operation 92 'specbitsmap' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 93 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i1* %linearRegression_largestResid_ps), !map !427"   --->   Operation 93 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 19 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i32* %l1track3D_iPhiSec_s), !map !115"   --->   Operation 19 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 20 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i32* %l1track3D_iEtaReg_s), !map !121"   --->   Operation 20 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 21 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(float* %l1track3D_helixRphi_first), !map !125"   --->   Operation 21 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 22 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(float* %l1track3D_helixRphi_second), !map !129"   --->   Operation 22 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 23 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i32* %l1track3D_stubs_size_s), !map !133"   --->   Operation 23 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 24 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap([10 x float]* %l1track3D_stubs_data_settings_chosenRofPhi_s), !map !137"   --->   Operation 24 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 25 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap([10 x float]* %l1track3D_stubs_data_settings_chosenRofZ_s), !map !143"   --->   Operation 25 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 26 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap([190 x float]* %l1track3D_stubs_data_settings_sinh_etaRegions_s), !map !147"   --->   Operation 26 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 27 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap([10 x i32]* %l1track3D_stubs_data_settings_minNumMatchLayers_s), !map !153"   --->   Operation 27 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 28 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap([10 x i32]* %l1track3D_stubs_data_settings_minPSLayers_s), !map !157"   --->   Operation 28 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 29 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap([10 x float]* %l1track3D_stubs_data_r_s), !map !161"   --->   Operation 29 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 30 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap([10 x float]* %l1track3D_stubs_data_phi_s), !map !165"   --->   Operation 30 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 31 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap([10 x float]* %l1track3D_stubs_data_z_s), !map !169"   --->   Operation 31 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 32 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap([10 x i32]* %l1track3D_stubs_data_layerId_s), !map !173"   --->   Operation 32 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 33 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap([10 x i1]* %l1track3D_stubs_data_psModule_s), !map !177"   --->   Operation 33 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 34 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap([10 x i1]* %l1track3D_stubs_data_barrel_s), !map !181"   --->   Operation 34 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 35 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(float* %linearRegression_settings_chosenRofPhi_s), !map !185"   --->   Operation 35 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 36 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(float* %linearRegression_settings_chosenRofZ_s), !map !189"   --->   Operation 36 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 37 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap([19 x float]* %linearRegression_settings_sinh_etaRegions_s), !map !193"   --->   Operation 37 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 38 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i32* %linearRegression_settings_minNumMatchLayers_s), !map !198"   --->   Operation 38 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 39 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i32* %linearRegression_settings_minPSLayers_s), !map !202"   --->   Operation 39 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 40 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i32* %linearRegression_iPhiSec_s), !map !206"   --->   Operation 40 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 41 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i32* %linearRegression_iEtaReg_s), !map !210"   --->   Operation 41 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 42 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i32* %linearRegression_nIterations_s), !map !214"   --->   Operation 42 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 43 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(float* %linearRegression_HTParameter_qOverPt), !map !218"   --->   Operation 43 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 44 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(float* %linearRegression_HTParameter_phiT), !map !222"   --->   Operation 44 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 45 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(float* %linearRegression_HTParameter_cotTheta), !map !226"   --->   Operation 45 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 46 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(float* %linearRegression_HTParameter_zT), !map !230"   --->   Operation 46 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 47 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(float* %linearRegression_LRParameter_qOverPt), !map !234"   --->   Operation 47 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 48 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(float* %linearRegression_LRParameter_phiT), !map !238"   --->   Operation 48 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 49 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(float* %linearRegression_LRParameter_cotTheta), !map !242"   --->   Operation 49 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 50 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(float* %linearRegression_LRParameter_zT), !map !246"   --->   Operation 50 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 51 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i32* %linearRegression_stubs_size_s), !map !250"   --->   Operation 51 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 52 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap([10 x float]* %linearRegression_stubs_data_settings_chosenRofPhi_s), !map !254"   --->   Operation 52 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 53 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap([10 x float]* %linearRegression_stubs_data_settings_chosenRofZ_s), !map !258"   --->   Operation 53 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 54 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap([190 x float]* %linearRegression_stubs_data_settings_sinh_etaRegions_s), !map !262"   --->   Operation 54 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 55 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap([10 x i32]* %linearRegression_stubs_data_settings_minNumMatchLayers_s), !map !266"   --->   Operation 55 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 56 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap([10 x i32]* %linearRegression_stubs_data_settings_minPSLayers_s), !map !270"   --->   Operation 56 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 57 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap([10 x float]* %linearRegression_stubs_data_r_s), !map !274"   --->   Operation 57 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 58 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap([10 x float]* %linearRegression_stubs_data_phi_s), !map !278"   --->   Operation 58 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 59 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap([10 x float]* %linearRegression_stubs_data_z_s), !map !282"   --->   Operation 59 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 60 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap([10 x i32]* %linearRegression_stubs_data_layerId_s), !map !286"   --->   Operation 60 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 61 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap([10 x i1]* %linearRegression_stubs_data_psModule_s), !map !290"   --->   Operation 61 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 62 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap([10 x i1]* %linearRegression_stubs_data_barrel_s), !map !294"   --->   Operation 62 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 63 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i1* %linearRegression_valid_s), !map !298"   --->   Operation 63 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 64 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i32* %linearRegression_stubMap_size_s), !map !302"   --->   Operation 64 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 65 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap([30 x i32]* %linearRegression_stubMap_data_first), !map !306"   --->   Operation 65 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 66 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap([30 x i32]* %linearRegression_stubMap_data_second_size_s), !map !312"   --->   Operation 66 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 67 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap([300 x float]* %linearRegression_stubMap_data_second_data_settings_chosenRofPhi_s), !map !316"   --->   Operation 67 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 68 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap([300 x float]* %linearRegression_stubMap_data_second_data_settings_chosenRofZ_s), !map !321"   --->   Operation 68 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 69 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap([5700 x float]* %linearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s), !map !325"   --->   Operation 69 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 70 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap([300 x i32]* %linearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s), !map !330"   --->   Operation 70 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 71 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap([300 x i32]* %linearRegression_stubMap_data_second_data_settings_minPSLayers_s), !map !334"   --->   Operation 71 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 72 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap([300 x float]* %linearRegression_stubMap_data_second_data_r_s), !map !338"   --->   Operation 72 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 73 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap([300 x float]* %linearRegression_stubMap_data_second_data_phi_s), !map !342"   --->   Operation 73 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 74 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap([300 x float]* %linearRegression_stubMap_data_second_data_z_s), !map !346"   --->   Operation 74 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 75 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap([300 x i32]* %linearRegression_stubMap_data_second_data_layerId_s), !map !350"   --->   Operation 75 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 76 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap([300 x i1]* %linearRegression_stubMap_data_second_data_psModule_s), !map !354"   --->   Operation 76 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 77 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap([300 x i1]* %linearRegression_stubMap_data_second_data_barrel_s), !map !358"   --->   Operation 77 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 78 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i32* %linearRegression_layerPopulation_size_s), !map !362"   --->   Operation 78 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 79 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap([30 x i32]* %linearRegression_layerPopulation_data_first), !map !366"   --->   Operation 79 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 80 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap([30 x i32]* %linearRegression_layerPopulation_data_second), !map !370"   --->   Operation 80 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 81 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i32* %linearRegression_residuals_size_s), !map !374"   --->   Operation 81 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 82 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap([30 x i32]* %linearRegression_residuals_data_first), !map !378"   --->   Operation 82 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 83 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap([30 x i32]* %linearRegression_residuals_data_second_size_s), !map !382"   --->   Operation 83 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 84 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap([300 x float]* %linearRegression_residuals_data_second_data_phi), !map !386"   --->   Operation 84 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 85 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap([300 x float]* %linearRegression_residuals_data_second_data_z), !map !390"   --->   Operation 85 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 86 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap([300 x i32]* %linearRegression_residuals_data_second_data_layerId), !map !394"   --->   Operation 86 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 87 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap([300 x i32]* %linearRegression_residuals_data_second_data_stubId), !map !398"   --->   Operation 87 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 88 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap([300 x i1]* %linearRegression_residuals_data_second_data_ps), !map !402"   --->   Operation 88 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 89 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(float* %linearRegression_largestResid_phi), !map !406"   --->   Operation 89 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 90 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(float* %linearRegression_largestResid_z), !map !410"   --->   Operation 90 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 91 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i32* %linearRegression_largestResid_layerId), !map !414"   --->   Operation 91 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 92 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i32* %linearRegression_largestResid_stubId), !map !418"   --->   Operation 92 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 93 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i1* %linearRegression_largestResid_ps), !map !422"   --->   Operation 93 'specbitsmap' <Predicate = true> <Delay = 0.00>
 ST_2 : Operation 94 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecTopModule([12 x i8]* @LRupdateHLS_str) nounwind"   --->   Operation 94 'spectopmodule' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 95 [1/2] (8.27ns)   --->   "%call_ret1 = call fastcc { i32, i32, i32, i1, float, float, float, float, i32, float, float, float, float, i32, i32 } @fit(float %linearRegression_set_2, float %linearRegression_set_3, [19 x float]* %linearRegression_settings_etaRegions_s, i32 %linearRegression_set, i32 %linearRegression_set_1, float %linearRegression_LRP, float %linearRegression_LRP_1, float %linearRegression_LRP_2, float %linearRegression_LRP_3, [10 x float]* %linearRegression_stubs_data_settings_chosenRofPhi_s, [10 x float]* %linearRegression_stubs_data_settings_chosenRofZ_s, [190 x float]* %linearRegression_stubs_data_settings_etaRegions_s, [10 x i32]* %linearRegression_stubs_data_settings_minNumMatchLayers_s, [10 x i32]* %linearRegression_stubs_data_settings_minPSLayers_s, [10 x float]* %linearRegression_stubs_data_r_s, [10 x float]* %linearRegression_stubs_data_phi_s, [10 x float]* %linearRegression_stubs_data_z_s, [10 x i32]* %linearRegression_stubs_data_layerId_s, [10 x i1]* %linearRegression_stubs_data_psModule_s, [10 x i1]* %linearRegression_stubs_data_barrel_s, i32 %linearRegression_stu, [30 x i32]* %linearRegression_stubMap_data_first, [30 x i32]* %linearRegression_stubMap_data_second_size_s, [300 x float]* %linearRegression_stubMap_data_second_data_settings_chosenRofPhi_s, [300 x float]* %linearRegression_stubMap_data_second_data_settings_chosenRofZ_s, [5700 x float]* %linearRegression_stubMap_data_second_data_settings_etaRegions_s, [300 x i32]* %linearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s, [300 x i32]* %linearRegression_stubMap_data_second_data_settings_minPSLayers_s, [300 x float]* %linearRegression_stubMap_data_second_data_r_s, [300 x float]* %linearRegression_stubMap_data_second_data_phi_s, [300 x float]* %linearRegression_stubMap_data_second_data_z_s, [300 x i32]* %linearRegression_stubMap_data_second_data_layerId_s, [300 x i1]* %linearRegression_stubMap_data_second_data_psModule_s, [300 x i1]* %linearRegression_stubMap_data_second_data_barrel_s, i32 %linearRegression_lay, [30 x i32]* %linearRegression_layerPopulation_data_first, [30 x i32]* %linearRegression_layerPopulation_data_second, i32* %linearRegression_residuals_size_s, [30 x i32]* %linearRegression_residuals_data_first, [30 x i32]* %linearRegression_residuals_data_second_size_s, [300 x float]* %linearRegression_residuals_data_second_data_phi, [300 x float]* %linearRegression_residuals_data_second_data_z, [300 x i32]* %linearRegression_residuals_data_second_data_layerId, [300 x i32]* %linearRegression_residuals_data_second_data_stubId, [300 x i1]* %linearRegression_residuals_data_second_data_ps, float* %linearRegression_largestResid_phi, float* %linearRegression_largestResid_z, i32* %linearRegression_largestResid_layerId, i32* %linearRegression_largestResid_stubId, i1* %linearRegression_largestResid_ps, i32 %l1track3D_iPhiSec_r, i32 %l1track3D_iEtaReg_r, float %l1track3D_helixRphi_s, float %l1track3D_helixRphi_3, i32 %l1track3D_stubs_siz, [10 x float]* %l1track3D_stubs_data_settings_chosenRofPhi_s, [10 x float]* %l1track3D_stubs_data_settings_chosenRofZ_s, [190 x float]* %l1track3D_stubs_data_settings_etaRegions_s, [10 x i32]* %l1track3D_stubs_data_settings_minNumMatchLayers_s, [10 x i32]* %l1track3D_stubs_data_settings_minPSLayers_s, [10 x float]* %l1track3D_stubs_data_r_s, [10 x float]* %l1track3D_stubs_data_phi_s, [10 x float]* %l1track3D_stubs_data_z_s, [10 x i32]* %l1track3D_stubs_data_layerId_s, [10 x i1]* %l1track3D_stubs_data_psModule_s, [10 x i1]* %l1track3D_stubs_data_barrel_s)" [lr_standaloneHLS/.settings/LRupdateHLS.cpp:9]   --->   Operation 95 'call' 'call_ret1' <Predicate = true> <Delay = 8.27> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_2 : Operation 95 [1/2] (8.27ns)   --->   "%call_ret1 = call fastcc { i32, i32, i32, i1, float, float, float, float, i32, float, float, float, float, i32, i32 } @fit(float %linearRegression_set_2, float %linearRegression_set_3, [19 x float]* %linearRegression_settings_sinh_etaRegions_s, i32 %linearRegression_set, i32 %linearRegression_set_1, float %linearRegression_LRP, float %linearRegression_LRP_1, float %linearRegression_LRP_2, float %linearRegression_LRP_3, [10 x float]* %linearRegression_stubs_data_settings_chosenRofPhi_s, [10 x float]* %linearRegression_stubs_data_settings_chosenRofZ_s, [190 x float]* %linearRegression_stubs_data_settings_sinh_etaRegions_s, [10 x i32]* %linearRegression_stubs_data_settings_minNumMatchLayers_s, [10 x i32]* %linearRegression_stubs_data_settings_minPSLayers_s, [10 x float]* %linearRegression_stubs_data_r_s, [10 x float]* %linearRegression_stubs_data_phi_s, [10 x float]* %linearRegression_stubs_data_z_s, [10 x i32]* %linearRegression_stubs_data_layerId_s, [10 x i1]* %linearRegression_stubs_data_psModule_s, [10 x i1]* %linearRegression_stubs_data_barrel_s, i32 %linearRegression_stu, [30 x i32]* %linearRegression_stubMap_data_first, [30 x i32]* %linearRegression_stubMap_data_second_size_s, [300 x float]* %linearRegression_stubMap_data_second_data_settings_chosenRofPhi_s, [300 x float]* %linearRegression_stubMap_data_second_data_settings_chosenRofZ_s, [5700 x float]* %linearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s, [300 x i32]* %linearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s, [300 x i32]* %linearRegression_stubMap_data_second_data_settings_minPSLayers_s, [300 x float]* %linearRegression_stubMap_data_second_data_r_s, [300 x float]* %linearRegression_stubMap_data_second_data_phi_s, [300 x float]* %linearRegression_stubMap_data_second_data_z_s, [300 x i32]* %linearRegression_stubMap_data_second_data_layerId_s, [300 x i1]* %linearRegression_stubMap_data_second_data_psModule_s, [300 x i1]* %linearRegression_stubMap_data_second_data_barrel_s, i32 %linearRegression_lay, [30 x i32]* %linearRegression_layerPopulation_data_first, [30 x i32]* %linearRegression_layerPopulation_data_second, i32* %linearRegression_residuals_size_s, [30 x i32]* %linearRegression_residuals_data_first, [30 x i32]* %linearRegression_residuals_data_second_size_s, [300 x float]* %linearRegression_residuals_data_second_data_phi, [300 x float]* %linearRegression_residuals_data_second_data_z, [300 x i32]* %linearRegression_residuals_data_second_data_layerId, [300 x i32]* %linearRegression_residuals_data_second_data_stubId, [300 x i1]* %linearRegression_residuals_data_second_data_ps, float* %linearRegression_largestResid_phi, float* %linearRegression_largestResid_z, i32* %linearRegression_largestResid_layerId, i32* %linearRegression_largestResid_stubId, i1* %linearRegression_largestResid_ps, i32 %l1track3D_iPhiSec_r, i32 %l1track3D_iEtaReg_r, float %l1track3D_helixRphi_s, float %l1track3D_helixRphi_3, i32 %l1track3D_stubs_siz, [10 x float]* %l1track3D_stubs_data_settings_chosenRofPhi_s, [10 x float]* %l1track3D_stubs_data_settings_chosenRofZ_s, [190 x float]* %l1track3D_stubs_data_settings_sinh_etaRegions_s, [10 x i32]* %l1track3D_stubs_data_settings_minNumMatchLayers_s, [10 x i32]* %l1track3D_stubs_data_settings_minPSLayers_s, [10 x float]* %l1track3D_stubs_data_r_s, [10 x float]* %l1track3D_stubs_data_phi_s, [10 x float]* %l1track3D_stubs_data_z_s, [10 x i32]* %l1track3D_stubs_data_layerId_s, [10 x i1]* %l1track3D_stubs_data_psModule_s, [10 x i1]* %l1track3D_stubs_data_barrel_s)" [lr_standaloneHLS/.settings/LRupdateHLS.cpp:9]   --->   Operation 95 'call' 'call_ret1' <Predicate = true> <Delay = 8.27> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 ST_2 : Operation 96 [1/1] (0.00ns)   --->   "%newret = extractvalue { i32, i32, i32, i1, float, float, float, float, i32, float, float, float, float, i32, i32 } %call_ret1, 0" [lr_standaloneHLS/.settings/LRupdateHLS.cpp:9]   --->   Operation 96 'extractvalue' 'newret' <Predicate = true> <Delay = 0.00>
 ST_2 : Operation 97 [1/1] (0.00ns)   --->   "%newret19 = extractvalue { i32, i32, i32, i1, float, float, float, float, i32, float, float, float, float, i32, i32 } %call_ret1, 1" [lr_standaloneHLS/.settings/LRupdateHLS.cpp:9]   --->   Operation 97 'extractvalue' 'newret19' <Predicate = true> <Delay = 0.00>
 ST_2 : Operation 98 [1/1] (0.00ns)   --->   "%newret20 = extractvalue { i32, i32, i32, i1, float, float, float, float, i32, float, float, float, float, i32, i32 } %call_ret1, 2" [lr_standaloneHLS/.settings/LRupdateHLS.cpp:9]   --->   Operation 98 'extractvalue' 'newret20' <Predicate = true> <Delay = 0.00>
@@ -228,7 +228,7 @@ Port [ l1track3D_helixRphi_second]:  wired=1; compound=0; hidden=0; nouse=0; glo
 Port [ l1track3D_stubs_size_s]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; pingpong=0; private_global=0; IO mode=ap_none:ce=0
 Port [ l1track3D_stubs_data_settings_chosenRofPhi_s]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=1; pingpong=0; private_global=0; MemPort=[11]; IO mode=ap_memory:ce=0
 Port [ l1track3D_stubs_data_settings_chosenRofZ_s]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=1; pingpong=0; private_global=0; MemPort=[11]; IO mode=ap_memory:ce=0
-Port [ l1track3D_stubs_data_settings_etaRegions_s]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=1; pingpong=0; private_global=0; MemPort=[11]; IO mode=ap_memory:ce=0
+Port [ l1track3D_stubs_data_settings_sinh_etaRegions_s]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=1; pingpong=0; private_global=0; MemPort=[11]; IO mode=ap_memory:ce=0
 Port [ l1track3D_stubs_data_settings_minNumMatchLayers_s]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=1; pingpong=0; private_global=0; MemPort=[11]; IO mode=ap_memory:ce=0
 Port [ l1track3D_stubs_data_settings_minPSLayers_s]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=1; pingpong=0; private_global=0; MemPort=[11]; IO mode=ap_memory:ce=0
 Port [ l1track3D_stubs_data_r_s]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=1; pingpong=0; private_global=0; MemPort=[11]; IO mode=ap_memory:ce=0
@@ -239,7 +239,7 @@ Port [ l1track3D_stubs_data_psModule_s]:  wired=1; compound=1; hidden=0; nouse=0
 Port [ l1track3D_stubs_data_barrel_s]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=1; pingpong=0; private_global=0; MemPort=[11]; IO mode=ap_memory:ce=0
 Port [ linearRegression_settings_chosenRofPhi_s]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; pingpong=0; private_global=0; IO mode=ap_none:ce=0
 Port [ linearRegression_settings_chosenRofZ_s]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; pingpong=0; private_global=0; IO mode=ap_none:ce=0
-Port [ linearRegression_settings_etaRegions_s]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=1; pingpong=0; private_global=0; MemPort=[13]; IO mode=ap_memory:ce=0
+Port [ linearRegression_settings_sinh_etaRegions_s]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=1; pingpong=0; private_global=0; MemPort=[11]; IO mode=ap_memory:ce=0
 Port [ linearRegression_settings_minNumMatchLayers_s]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; pingpong=0; private_global=0; IO mode=ap_none:ce=0
 Port [ linearRegression_settings_minPSLayers_s]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; pingpong=0; private_global=0; IO mode=ap_none:ce=0
 Port [ linearRegression_iPhiSec_s]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=1; type=0; pingpong=0; private_global=0; IO mode=ap_vld:ce=0
@@ -256,7 +256,7 @@ Port [ linearRegression_LRParameter_zT]:  wired=1; compound=0; hidden=0; nouse=0
 Port [ linearRegression_stubs_size_s]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=1; type=0; pingpong=0; private_global=0; IO mode=ap_vld:ce=0
 Port [ linearRegression_stubs_data_settings_chosenRofPhi_s]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=2; type=1; pingpong=0; private_global=0; MemPort=[20]; IO mode=ap_memory:ce=0
 Port [ linearRegression_stubs_data_settings_chosenRofZ_s]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=2; type=1; pingpong=0; private_global=0; MemPort=[20]; IO mode=ap_memory:ce=0
-Port [ linearRegression_stubs_data_settings_etaRegions_s]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=2; type=1; pingpong=0; private_global=0; MemPort=[22]; IO mode=ap_memory:ce=0
+Port [ linearRegression_stubs_data_settings_sinh_etaRegions_s]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=2; type=1; pingpong=0; private_global=0; MemPort=[22]; IO mode=ap_memory:ce=0
 Port [ linearRegression_stubs_data_settings_minNumMatchLayers_s]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=2; type=1; pingpong=0; private_global=0; MemPort=[20]; IO mode=ap_memory:ce=0
 Port [ linearRegression_stubs_data_settings_minPSLayers_s]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=2; type=1; pingpong=0; private_global=0; MemPort=[20]; IO mode=ap_memory:ce=0
 Port [ linearRegression_stubs_data_r_s]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=2; type=1; pingpong=0; private_global=0; MemPort=[20]; IO mode=ap_memory:ce=0
@@ -271,7 +271,7 @@ Port [ linearRegression_stubMap_data_first]:  wired=1; compound=1; hidden=0; nou
 Port [ linearRegression_stubMap_data_second_size_s]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=2; type=1; pingpong=0; private_global=0; MemPort=[23]; IO mode=ap_memory:ce=0
 Port [ linearRegression_stubMap_data_second_data_settings_chosenRofPhi_s]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=2; type=1; pingpong=0; private_global=0; MemPort=[22]; IO mode=ap_memory:ce=0
 Port [ linearRegression_stubMap_data_second_data_settings_chosenRofZ_s]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=2; type=1; pingpong=0; private_global=0; MemPort=[22]; IO mode=ap_memory:ce=0
-Port [ linearRegression_stubMap_data_second_data_settings_etaRegions_s]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=2; type=1; pingpong=0; private_global=0; MemPort=[22]; IO mode=ap_memory:ce=0
+Port [ linearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=2; type=1; pingpong=0; private_global=0; MemPort=[22]; IO mode=ap_memory:ce=0
 Port [ linearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=2; type=1; pingpong=0; private_global=0; MemPort=[22]; IO mode=ap_memory:ce=0
 Port [ linearRegression_stubMap_data_second_data_settings_minPSLayers_s]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=2; type=1; pingpong=0; private_global=0; MemPort=[22]; IO mode=ap_memory:ce=0
 Port [ linearRegression_stubMap_data_second_data_r_s]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=2; type=1; pingpong=0; private_global=0; MemPort=[22]; IO mode=ap_memory:ce=0
@@ -296,7 +296,6 @@ Port [ linearRegression_largestResid_z]:  wired=1; compound=0; hidden=0; nouse=0
 Port [ linearRegression_largestResid_layerId]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=1; type=0; pingpong=0; private_global=0; IO mode=ap_vld:ce=0
 Port [ linearRegression_largestResid_stubId]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=1; type=0; pingpong=0; private_global=0; IO mode=ap_vld:ce=0
 Port [ linearRegression_largestResid_ps]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=1; type=0; pingpong=0; private_global=0; IO mode=ap_vld:ce=0
-Port [ cordic_hyperb_table_s]:  wired=0; compound=1; hidden=1; nouse=1; global=1; static=1; extern=0; dir=0; type=1; pingpong=0; private_global=0; linkage=7; visibility=0; MemPort=[1]; IO mode=ap_memory:ce=0
 ---------------- STG Properties END ------------------
 
 ---------------- Datapath Model BEGIN ----------------
@@ -496,12 +495,12 @@ StgValue_126           (ret          ) [ 000]
 </bind>
 </comp>
 
-<comp id="14" class="1000" name="l1track3D_stubs_data_settings_etaRegions_s">
+<comp id="14" class="1000" name="l1track3D_stubs_data_settings_sinh_etaRegions_s">
 <pin_list>
 <pin id="15" dir="1" index="0" bw="1" slack="0"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="l1track3D_stubs_data_settings_etaRegions_s"/><MemPortTyVec>1 1 </MemPortTyVec>
+<StgValue><ssdm name="l1track3D_stubs_data_settings_sinh_etaRegions_s"/><MemPortTyVec>1 1 </MemPortTyVec>
 </StgValue>
 </bind>
 </comp>
@@ -604,12 +603,12 @@ StgValue_126           (ret          ) [ 000]
 </bind>
 </comp>
 
-<comp id="36" class="1000" name="linearRegression_settings_etaRegions_s">
+<comp id="36" class="1000" name="linearRegression_settings_sinh_etaRegions_s">
 <pin_list>
 <pin id="37" dir="1" index="0" bw="1" slack="0"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="linearRegression_settings_etaRegions_s"/><MemPortTyVec>1 3 </MemPortTyVec>
+<StgValue><ssdm name="linearRegression_settings_sinh_etaRegions_s"/><MemPortTyVec>1 1 </MemPortTyVec>
 </StgValue>
 </bind>
 </comp>
@@ -760,12 +759,12 @@ StgValue_126           (ret          ) [ 000]
 </bind>
 </comp>
 
-<comp id="70" class="1000" name="linearRegression_stubs_data_settings_etaRegions_s">
+<comp id="70" class="1000" name="linearRegression_stubs_data_settings_sinh_etaRegions_s">
 <pin_list>
 <pin id="71" dir="1" index="0" bw="1" slack="0"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="linearRegression_stubs_data_settings_etaRegions_s"/><MemPortTyVec>2 2 </MemPortTyVec>
+<StgValue><ssdm name="linearRegression_stubs_data_settings_sinh_etaRegions_s"/><MemPortTyVec>2 2 </MemPortTyVec>
 </StgValue>
 </bind>
 </comp>
@@ -908,12 +907,12 @@ StgValue_126           (ret          ) [ 000]
 </bind>
 </comp>
 
-<comp id="100" class="1000" name="linearRegression_stubMap_data_second_data_settings_etaRegions_s">
+<comp id="100" class="1000" name="linearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s">
 <pin_list>
 <pin id="101" dir="1" index="0" bw="1" slack="0"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="linearRegression_stubMap_data_second_data_settings_etaRegions_s"/><MemPortTyVec>2 2 </MemPortTyVec>
+<StgValue><ssdm name="linearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s"/><MemPortTyVec>2 2 </MemPortTyVec>
 </StgValue>
 </bind>
 </comp>
@@ -1151,13 +1150,12 @@ StgValue_126           (ret          ) [ 000]
 </bind>
 </comp>
 
-<comp id="150" class="1000" name="cordic_hyperb_table_s">
+<comp id="150" class="1001" name="const_150">
 <pin_list>
 <pin id="151" dir="1" index="0" bw="1" slack="0"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="cordic_hyperb_table_s"/><MemPortTyVec>1 </MemPortTyVec>
-</StgValue>
+<StgValue><ssdm name="_ssdm_op_Read.ap_auto.i32P"/></StgValue>
 </bind>
 </comp>
 
@@ -1166,7 +1164,7 @@ StgValue_126           (ret          ) [ 000]
 <pin id="153" dir="1" index="0" bw="1" slack="0"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="_ssdm_op_Read.ap_auto.i32P"/></StgValue>
+<StgValue><ssdm name="_ssdm_op_Read.ap_auto.floatP"/></StgValue>
 </bind>
 </comp>
 
@@ -1175,16 +1173,16 @@ StgValue_126           (ret          ) [ 000]
 <pin id="155" dir="1" index="0" bw="1" slack="0"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="_ssdm_op_Read.ap_auto.floatP"/></StgValue>
+<StgValue><ssdm name="fit"/></StgValue>
 </bind>
 </comp>
 
 <comp id="156" class="1001" name="const_156">
 <pin_list>
-<pin id="157" dir="1" index="0" bw="1" slack="0"/>
+<pin id="157" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="fit"/></StgValue>
+<StgValue><ssdm name="_ssdm_op_SpecBitsMap"/></StgValue>
 </bind>
 </comp>
 
@@ -1193,7 +1191,7 @@ StgValue_126           (ret          ) [ 000]
 <pin id="159" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="_ssdm_op_SpecBitsMap"/></StgValue>
+<StgValue><ssdm name="_ssdm_op_SpecTopModule"/></StgValue>
 </bind>
 </comp>
 
@@ -1202,16 +1200,16 @@ StgValue_126           (ret          ) [ 000]
 <pin id="161" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="_ssdm_op_SpecTopModule"/></StgValue>
+<StgValue><ssdm name="LRupdateHLS_str"/></StgValue>
 </bind>
 </comp>
 
 <comp id="162" class="1001" name="const_162">
 <pin_list>
-<pin id="163" dir="1" index="0" bw="1" slack="2147483647"/>
+<pin id="163" dir="1" index="0" bw="1" slack="0"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="LRupdateHLS_str"/></StgValue>
+<StgValue><ssdm name="_ssdm_op_Write.ap_auto.i32P"/></StgValue>
 </bind>
 </comp>
 
@@ -1220,7 +1218,7 @@ StgValue_126           (ret          ) [ 000]
 <pin id="165" dir="1" index="0" bw="1" slack="0"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="_ssdm_op_Write.ap_auto.i32P"/></StgValue>
+<StgValue><ssdm name="_ssdm_op_Write.ap_auto.floatP"/></StgValue>
 </bind>
 </comp>
 
@@ -1229,24 +1227,15 @@ StgValue_126           (ret          ) [ 000]
 <pin id="167" dir="1" index="0" bw="1" slack="0"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="_ssdm_op_Write.ap_auto.floatP"/></StgValue>
-</bind>
-</comp>
-
-<comp id="168" class="1001" name="const_168">
-<pin_list>
-<pin id="169" dir="1" index="0" bw="1" slack="0"/>
-</pin_list>
-<bind>
 <StgValue><ssdm name="_ssdm_op_Write.ap_auto.i1P"/></StgValue>
 </bind>
 </comp>
 
-<comp id="170" class="1004" name="linearRegression_set_read_fu_170">
+<comp id="168" class="1004" name="linearRegression_set_read_fu_168">
 <pin_list>
-<pin id="171" dir="0" index="0" bw="32" slack="0"/>
-<pin id="172" dir="0" index="1" bw="32" slack="0"/>
-<pin id="173" dir="1" index="2" bw="32" slack="0"/>
+<pin id="169" dir="0" index="0" bw="32" slack="0"/>
+<pin id="170" dir="0" index="1" bw="32" slack="0"/>
+<pin id="171" dir="1" index="2" bw="32" slack="0"/>
 </pin_list>
 <bind>
 <opcode="read(1150) " fcode="read"/>
@@ -1254,11 +1243,11 @@ StgValue_126           (ret          ) [ 000]
 </bind>
 </comp>
 
-<comp id="176" class="1004" name="linearRegression_set_1_read_fu_176">
+<comp id="174" class="1004" name="linearRegression_set_1_read_fu_174">
 <pin_list>
-<pin id="177" dir="0" index="0" bw="32" slack="0"/>
-<pin id="178" dir="0" index="1" bw="32" slack="0"/>
-<pin id="179" dir="1" index="2" bw="32" slack="0"/>
+<pin id="175" dir="0" index="0" bw="32" slack="0"/>
+<pin id="176" dir="0" index="1" bw="32" slack="0"/>
+<pin id="177" dir="1" index="2" bw="32" slack="0"/>
 </pin_list>
 <bind>
 <opcode="read(1150) " fcode="read"/>
@@ -1266,11 +1255,11 @@ StgValue_126           (ret          ) [ 000]
 </bind>
 </comp>
 
-<comp id="182" class="1004" name="l1track3D_iPhiSec_r_read_fu_182">
+<comp id="180" class="1004" name="l1track3D_iPhiSec_r_read_fu_180">
 <pin_list>
-<pin id="183" dir="0" index="0" bw="32" slack="0"/>
-<pin id="184" dir="0" index="1" bw="32" slack="0"/>
-<pin id="185" dir="1" index="2" bw="32" slack="0"/>
+<pin id="181" dir="0" index="0" bw="32" slack="0"/>
+<pin id="182" dir="0" index="1" bw="32" slack="0"/>
+<pin id="183" dir="1" index="2" bw="32" slack="0"/>
 </pin_list>
 <bind>
 <opcode="read(1150) " fcode="read"/>
@@ -1278,11 +1267,11 @@ StgValue_126           (ret          ) [ 000]
 </bind>
 </comp>
 
-<comp id="188" class="1004" name="l1track3D_iEtaReg_r_read_fu_188">
+<comp id="186" class="1004" name="l1track3D_iEtaReg_r_read_fu_186">
 <pin_list>
-<pin id="189" dir="0" index="0" bw="32" slack="0"/>
-<pin id="190" dir="0" index="1" bw="32" slack="0"/>
-<pin id="191" dir="1" index="2" bw="32" slack="0"/>
+<pin id="187" dir="0" index="0" bw="32" slack="0"/>
+<pin id="188" dir="0" index="1" bw="32" slack="0"/>
+<pin id="189" dir="1" index="2" bw="32" slack="0"/>
 </pin_list>
 <bind>
 <opcode="read(1150) " fcode="read"/>
@@ -1290,11 +1279,11 @@ StgValue_126           (ret          ) [ 000]
 </bind>
 </comp>
 
-<comp id="194" class="1004" name="l1track3D_helixRphi_s_read_fu_194">
+<comp id="192" class="1004" name="l1track3D_helixRphi_s_read_fu_192">
 <pin_list>
-<pin id="195" dir="0" index="0" bw="32" slack="0"/>
-<pin id="196" dir="0" index="1" bw="32" slack="0"/>
-<pin id="197" dir="1" index="2" bw="32" slack="0"/>
+<pin id="193" dir="0" index="0" bw="32" slack="0"/>
+<pin id="194" dir="0" index="1" bw="32" slack="0"/>
+<pin id="195" dir="1" index="2" bw="32" slack="0"/>
 </pin_list>
 <bind>
 <opcode="read(1150) " fcode="read"/>
@@ -1302,11 +1291,11 @@ StgValue_126           (ret          ) [ 000]
 </bind>
 </comp>
 
-<comp id="200" class="1004" name="l1track3D_helixRphi_3_read_fu_200">
+<comp id="198" class="1004" name="l1track3D_helixRphi_3_read_fu_198">
 <pin_list>
-<pin id="201" dir="0" index="0" bw="32" slack="0"/>
-<pin id="202" dir="0" index="1" bw="32" slack="0"/>
-<pin id="203" dir="1" index="2" bw="32" slack="0"/>
+<pin id="199" dir="0" index="0" bw="32" slack="0"/>
+<pin id="200" dir="0" index="1" bw="32" slack="0"/>
+<pin id="201" dir="1" index="2" bw="32" slack="0"/>
 </pin_list>
 <bind>
 <opcode="read(1150) " fcode="read"/>
@@ -1314,11 +1303,11 @@ StgValue_126           (ret          ) [ 000]
 </bind>
 </comp>
 
-<comp id="206" class="1004" name="l1track3D_stubs_siz_read_fu_206">
+<comp id="204" class="1004" name="l1track3D_stubs_siz_read_fu_204">
 <pin_list>
-<pin id="207" dir="0" index="0" bw="32" slack="0"/>
-<pin id="208" dir="0" index="1" bw="32" slack="0"/>
-<pin id="209" dir="1" index="2" bw="32" slack="0"/>
+<pin id="205" dir="0" index="0" bw="32" slack="0"/>
+<pin id="206" dir="0" index="1" bw="32" slack="0"/>
+<pin id="207" dir="1" index="2" bw="32" slack="0"/>
 </pin_list>
 <bind>
 <opcode="read(1150) " fcode="read"/>
@@ -1326,11 +1315,11 @@ StgValue_126           (ret          ) [ 000]
 </bind>
 </comp>
 
-<comp id="212" class="1004" name="linearRegression_set_2_read_fu_212">
+<comp id="210" class="1004" name="linearRegression_set_2_read_fu_210">
 <pin_list>
-<pin id="213" dir="0" index="0" bw="32" slack="0"/>
-<pin id="214" dir="0" index="1" bw="32" slack="0"/>
-<pin id="215" dir="1" index="2" bw="32" slack="0"/>
+<pin id="211" dir="0" index="0" bw="32" slack="0"/>
+<pin id="212" dir="0" index="1" bw="32" slack="0"/>
+<pin id="213" dir="1" index="2" bw="32" slack="0"/>
 </pin_list>
 <bind>
 <opcode="read(1150) " fcode="read"/>
@@ -1338,11 +1327,11 @@ StgValue_126           (ret          ) [ 000]
 </bind>
 </comp>
 
-<comp id="218" class="1004" name="linearRegression_set_3_read_fu_218">
+<comp id="216" class="1004" name="linearRegression_set_3_read_fu_216">
 <pin_list>
-<pin id="219" dir="0" index="0" bw="32" slack="0"/>
-<pin id="220" dir="0" index="1" bw="32" slack="0"/>
-<pin id="221" dir="1" index="2" bw="32" slack="0"/>
+<pin id="217" dir="0" index="0" bw="32" slack="0"/>
+<pin id="218" dir="0" index="1" bw="32" slack="0"/>
+<pin id="219" dir="1" index="2" bw="32" slack="0"/>
 </pin_list>
 <bind>
 <opcode="read(1150) " fcode="read"/>
@@ -1350,11 +1339,11 @@ StgValue_126           (ret          ) [ 000]
 </bind>
 </comp>
 
-<comp id="224" class="1004" name="linearRegression_LRP_read_fu_224">
+<comp id="222" class="1004" name="linearRegression_LRP_read_fu_222">
 <pin_list>
-<pin id="225" dir="0" index="0" bw="32" slack="0"/>
-<pin id="226" dir="0" index="1" bw="32" slack="0"/>
-<pin id="227" dir="1" index="2" bw="32" slack="0"/>
+<pin id="223" dir="0" index="0" bw="32" slack="0"/>
+<pin id="224" dir="0" index="1" bw="32" slack="0"/>
+<pin id="225" dir="1" index="2" bw="32" slack="0"/>
 </pin_list>
 <bind>
 <opcode="read(1150) " fcode="read"/>
@@ -1362,11 +1351,11 @@ StgValue_126           (ret          ) [ 000]
 </bind>
 </comp>
 
-<comp id="230" class="1004" name="linearRegression_LRP_1_read_fu_230">
+<comp id="228" class="1004" name="linearRegression_LRP_1_read_fu_228">
 <pin_list>
-<pin id="231" dir="0" index="0" bw="32" slack="0"/>
-<pin id="232" dir="0" index="1" bw="32" slack="0"/>
-<pin id="233" dir="1" index="2" bw="32" slack="0"/>
+<pin id="229" dir="0" index="0" bw="32" slack="0"/>
+<pin id="230" dir="0" index="1" bw="32" slack="0"/>
+<pin id="231" dir="1" index="2" bw="32" slack="0"/>
 </pin_list>
 <bind>
 <opcode="read(1150) " fcode="read"/>
@@ -1374,11 +1363,11 @@ StgValue_126           (ret          ) [ 000]
 </bind>
 </comp>
 
-<comp id="236" class="1004" name="linearRegression_LRP_2_read_fu_236">
+<comp id="234" class="1004" name="linearRegression_LRP_2_read_fu_234">
 <pin_list>
-<pin id="237" dir="0" index="0" bw="32" slack="0"/>
-<pin id="238" dir="0" index="1" bw="32" slack="0"/>
-<pin id="239" dir="1" index="2" bw="32" slack="0"/>
+<pin id="235" dir="0" index="0" bw="32" slack="0"/>
+<pin id="236" dir="0" index="1" bw="32" slack="0"/>
+<pin id="237" dir="1" index="2" bw="32" slack="0"/>
 </pin_list>
 <bind>
 <opcode="read(1150) " fcode="read"/>
@@ -1386,11 +1375,11 @@ StgValue_126           (ret          ) [ 000]
 </bind>
 </comp>
 
-<comp id="242" class="1004" name="linearRegression_LRP_3_read_fu_242">
+<comp id="240" class="1004" name="linearRegression_LRP_3_read_fu_240">
 <pin_list>
-<pin id="243" dir="0" index="0" bw="32" slack="0"/>
-<pin id="244" dir="0" index="1" bw="32" slack="0"/>
-<pin id="245" dir="1" index="2" bw="32" slack="0"/>
+<pin id="241" dir="0" index="0" bw="32" slack="0"/>
+<pin id="242" dir="0" index="1" bw="32" slack="0"/>
+<pin id="243" dir="1" index="2" bw="32" slack="0"/>
 </pin_list>
 <bind>
 <opcode="read(1150) " fcode="read"/>
@@ -1398,11 +1387,11 @@ StgValue_126           (ret          ) [ 000]
 </bind>
 </comp>
 
-<comp id="248" class="1004" name="linearRegression_stu_read_fu_248">
+<comp id="246" class="1004" name="linearRegression_stu_read_fu_246">
 <pin_list>
-<pin id="249" dir="0" index="0" bw="32" slack="0"/>
-<pin id="250" dir="0" index="1" bw="32" slack="0"/>
-<pin id="251" dir="1" index="2" bw="32" slack="0"/>
+<pin id="247" dir="0" index="0" bw="32" slack="0"/>
+<pin id="248" dir="0" index="1" bw="32" slack="0"/>
+<pin id="249" dir="1" index="2" bw="32" slack="0"/>
 </pin_list>
 <bind>
 <opcode="read(1150) " fcode="read"/>
@@ -1410,11 +1399,11 @@ StgValue_126           (ret          ) [ 000]
 </bind>
 </comp>
 
-<comp id="254" class="1004" name="linearRegression_lay_read_fu_254">
+<comp id="252" class="1004" name="linearRegression_lay_read_fu_252">
 <pin_list>
-<pin id="255" dir="0" index="0" bw="32" slack="0"/>
-<pin id="256" dir="0" index="1" bw="32" slack="0"/>
-<pin id="257" dir="1" index="2" bw="32" slack="0"/>
+<pin id="253" dir="0" index="0" bw="32" slack="0"/>
+<pin id="254" dir="0" index="1" bw="32" slack="0"/>
+<pin id="255" dir="1" index="2" bw="32" slack="0"/>
 </pin_list>
 <bind>
 <opcode="read(1150) " fcode="read"/>
@@ -1422,12 +1411,12 @@ StgValue_126           (ret          ) [ 000]
 </bind>
 </comp>
 
-<comp id="260" class="1004" name="StgValue_111_write_fu_260">
+<comp id="258" class="1004" name="StgValue_111_write_fu_258">
 <pin_list>
-<pin id="261" dir="0" index="0" bw="0" slack="0"/>
-<pin id="262" dir="0" index="1" bw="32" slack="0"/>
-<pin id="263" dir="0" index="2" bw="32" slack="0"/>
-<pin id="264" dir="1" index="3" bw="0" slack="2147483647"/>
+<pin id="259" dir="0" index="0" bw="0" slack="0"/>
+<pin id="260" dir="0" index="1" bw="32" slack="0"/>
+<pin id="261" dir="0" index="2" bw="32" slack="0"/>
+<pin id="262" dir="1" index="3" bw="0" slack="2147483647"/>
 </pin_list>
 <bind>
 <opcode="write(1151) " fcode="write"/>
@@ -1435,12 +1424,12 @@ StgValue_126           (ret          ) [ 000]
 </bind>
 </comp>
 
-<comp id="267" class="1004" name="StgValue_112_write_fu_267">
+<comp id="265" class="1004" name="StgValue_112_write_fu_265">
 <pin_list>
-<pin id="268" dir="0" index="0" bw="0" slack="0"/>
-<pin id="269" dir="0" index="1" bw="32" slack="0"/>
-<pin id="270" dir="0" index="2" bw="32" slack="0"/>
-<pin id="271" dir="1" index="3" bw="0" slack="2147483647"/>
+<pin id="266" dir="0" index="0" bw="0" slack="0"/>
+<pin id="267" dir="0" index="1" bw="32" slack="0"/>
+<pin id="268" dir="0" index="2" bw="32" slack="0"/>
+<pin id="269" dir="1" index="3" bw="0" slack="2147483647"/>
 </pin_list>
 <bind>
 <opcode="write(1151) " fcode="write"/>
@@ -1448,12 +1437,12 @@ StgValue_126           (ret          ) [ 000]
 </bind>
 </comp>
 
-<comp id="274" class="1004" name="StgValue_113_write_fu_274">
+<comp id="272" class="1004" name="StgValue_113_write_fu_272">
 <pin_list>
-<pin id="275" dir="0" index="0" bw="0" slack="0"/>
-<pin id="276" dir="0" index="1" bw="32" slack="0"/>
-<pin id="277" dir="0" index="2" bw="32" slack="0"/>
-<pin id="278" dir="1" index="3" bw="0" slack="2147483647"/>
+<pin id="273" dir="0" index="0" bw="0" slack="0"/>
+<pin id="274" dir="0" index="1" bw="32" slack="0"/>
+<pin id="275" dir="0" index="2" bw="32" slack="0"/>
+<pin id="276" dir="1" index="3" bw="0" slack="2147483647"/>
 </pin_list>
 <bind>
 <opcode="write(1151) " fcode="write"/>
@@ -1461,12 +1450,12 @@ StgValue_126           (ret          ) [ 000]
 </bind>
 </comp>
 
-<comp id="281" class="1004" name="StgValue_114_write_fu_281">
+<comp id="279" class="1004" name="StgValue_114_write_fu_279">
 <pin_list>
-<pin id="282" dir="0" index="0" bw="0" slack="0"/>
-<pin id="283" dir="0" index="1" bw="32" slack="0"/>
-<pin id="284" dir="0" index="2" bw="32" slack="0"/>
-<pin id="285" dir="1" index="3" bw="0" slack="2147483647"/>
+<pin id="280" dir="0" index="0" bw="0" slack="0"/>
+<pin id="281" dir="0" index="1" bw="32" slack="0"/>
+<pin id="282" dir="0" index="2" bw="32" slack="0"/>
+<pin id="283" dir="1" index="3" bw="0" slack="2147483647"/>
 </pin_list>
 <bind>
 <opcode="write(1151) " fcode="write"/>
@@ -1474,12 +1463,12 @@ StgValue_126           (ret          ) [ 000]
 </bind>
 </comp>
 
-<comp id="288" class="1004" name="StgValue_115_write_fu_288">
+<comp id="286" class="1004" name="StgValue_115_write_fu_286">
 <pin_list>
-<pin id="289" dir="0" index="0" bw="0" slack="0"/>
-<pin id="290" dir="0" index="1" bw="32" slack="0"/>
-<pin id="291" dir="0" index="2" bw="32" slack="0"/>
-<pin id="292" dir="1" index="3" bw="0" slack="2147483647"/>
+<pin id="287" dir="0" index="0" bw="0" slack="0"/>
+<pin id="288" dir="0" index="1" bw="32" slack="0"/>
+<pin id="289" dir="0" index="2" bw="32" slack="0"/>
+<pin id="290" dir="1" index="3" bw="0" slack="2147483647"/>
 </pin_list>
 <bind>
 <opcode="write(1151) " fcode="write"/>
@@ -1487,12 +1476,12 @@ StgValue_126           (ret          ) [ 000]
 </bind>
 </comp>
 
-<comp id="295" class="1004" name="StgValue_116_write_fu_295">
+<comp id="293" class="1004" name="StgValue_116_write_fu_293">
 <pin_list>
-<pin id="296" dir="0" index="0" bw="0" slack="0"/>
-<pin id="297" dir="0" index="1" bw="32" slack="0"/>
-<pin id="298" dir="0" index="2" bw="32" slack="0"/>
-<pin id="299" dir="1" index="3" bw="0" slack="2147483647"/>
+<pin id="294" dir="0" index="0" bw="0" slack="0"/>
+<pin id="295" dir="0" index="1" bw="32" slack="0"/>
+<pin id="296" dir="0" index="2" bw="32" slack="0"/>
+<pin id="297" dir="1" index="3" bw="0" slack="2147483647"/>
 </pin_list>
 <bind>
 <opcode="write(1151) " fcode="write"/>
@@ -1500,12 +1489,12 @@ StgValue_126           (ret          ) [ 000]
 </bind>
 </comp>
 
-<comp id="302" class="1004" name="StgValue_117_write_fu_302">
+<comp id="300" class="1004" name="StgValue_117_write_fu_300">
 <pin_list>
-<pin id="303" dir="0" index="0" bw="0" slack="0"/>
-<pin id="304" dir="0" index="1" bw="32" slack="0"/>
-<pin id="305" dir="0" index="2" bw="32" slack="0"/>
-<pin id="306" dir="1" index="3" bw="0" slack="2147483647"/>
+<pin id="301" dir="0" index="0" bw="0" slack="0"/>
+<pin id="302" dir="0" index="1" bw="32" slack="0"/>
+<pin id="303" dir="0" index="2" bw="32" slack="0"/>
+<pin id="304" dir="1" index="3" bw="0" slack="2147483647"/>
 </pin_list>
 <bind>
 <opcode="write(1151) " fcode="write"/>
@@ -1513,12 +1502,12 @@ StgValue_126           (ret          ) [ 000]
 </bind>
 </comp>
 
-<comp id="309" class="1004" name="StgValue_118_write_fu_309">
+<comp id="307" class="1004" name="StgValue_118_write_fu_307">
 <pin_list>
-<pin id="310" dir="0" index="0" bw="0" slack="0"/>
-<pin id="311" dir="0" index="1" bw="32" slack="0"/>
-<pin id="312" dir="0" index="2" bw="32" slack="0"/>
-<pin id="313" dir="1" index="3" bw="0" slack="2147483647"/>
+<pin id="308" dir="0" index="0" bw="0" slack="0"/>
+<pin id="309" dir="0" index="1" bw="32" slack="0"/>
+<pin id="310" dir="0" index="2" bw="32" slack="0"/>
+<pin id="311" dir="1" index="3" bw="0" slack="2147483647"/>
 </pin_list>
 <bind>
 <opcode="write(1151) " fcode="write"/>
@@ -1526,12 +1515,12 @@ StgValue_126           (ret          ) [ 000]
 </bind>
 </comp>
 
-<comp id="316" class="1004" name="StgValue_119_write_fu_316">
+<comp id="314" class="1004" name="StgValue_119_write_fu_314">
 <pin_list>
-<pin id="317" dir="0" index="0" bw="0" slack="0"/>
-<pin id="318" dir="0" index="1" bw="32" slack="0"/>
-<pin id="319" dir="0" index="2" bw="32" slack="0"/>
-<pin id="320" dir="1" index="3" bw="0" slack="2147483647"/>
+<pin id="315" dir="0" index="0" bw="0" slack="0"/>
+<pin id="316" dir="0" index="1" bw="32" slack="0"/>
+<pin id="317" dir="0" index="2" bw="32" slack="0"/>
+<pin id="318" dir="1" index="3" bw="0" slack="2147483647"/>
 </pin_list>
 <bind>
 <opcode="write(1151) " fcode="write"/>
@@ -1539,12 +1528,12 @@ StgValue_126           (ret          ) [ 000]
 </bind>
 </comp>
 
-<comp id="323" class="1004" name="StgValue_120_write_fu_323">
+<comp id="321" class="1004" name="StgValue_120_write_fu_321">
 <pin_list>
-<pin id="324" dir="0" index="0" bw="0" slack="0"/>
-<pin id="325" dir="0" index="1" bw="32" slack="0"/>
-<pin id="326" dir="0" index="2" bw="32" slack="0"/>
-<pin id="327" dir="1" index="3" bw="0" slack="2147483647"/>
+<pin id="322" dir="0" index="0" bw="0" slack="0"/>
+<pin id="323" dir="0" index="1" bw="32" slack="0"/>
+<pin id="324" dir="0" index="2" bw="32" slack="0"/>
+<pin id="325" dir="1" index="3" bw="0" slack="2147483647"/>
 </pin_list>
 <bind>
 <opcode="write(1151) " fcode="write"/>
@@ -1552,12 +1541,12 @@ StgValue_126           (ret          ) [ 000]
 </bind>
 </comp>
 
-<comp id="330" class="1004" name="StgValue_121_write_fu_330">
+<comp id="328" class="1004" name="StgValue_121_write_fu_328">
 <pin_list>
-<pin id="331" dir="0" index="0" bw="0" slack="0"/>
-<pin id="332" dir="0" index="1" bw="32" slack="0"/>
-<pin id="333" dir="0" index="2" bw="32" slack="0"/>
-<pin id="334" dir="1" index="3" bw="0" slack="2147483647"/>
+<pin id="329" dir="0" index="0" bw="0" slack="0"/>
+<pin id="330" dir="0" index="1" bw="32" slack="0"/>
+<pin id="331" dir="0" index="2" bw="32" slack="0"/>
+<pin id="332" dir="1" index="3" bw="0" slack="2147483647"/>
 </pin_list>
 <bind>
 <opcode="write(1151) " fcode="write"/>
@@ -1565,12 +1554,12 @@ StgValue_126           (ret          ) [ 000]
 </bind>
 </comp>
 
-<comp id="337" class="1004" name="StgValue_122_write_fu_337">
+<comp id="335" class="1004" name="StgValue_122_write_fu_335">
 <pin_list>
-<pin id="338" dir="0" index="0" bw="0" slack="0"/>
-<pin id="339" dir="0" index="1" bw="32" slack="0"/>
-<pin id="340" dir="0" index="2" bw="32" slack="0"/>
-<pin id="341" dir="1" index="3" bw="0" slack="2147483647"/>
+<pin id="336" dir="0" index="0" bw="0" slack="0"/>
+<pin id="337" dir="0" index="1" bw="32" slack="0"/>
+<pin id="338" dir="0" index="2" bw="32" slack="0"/>
+<pin id="339" dir="1" index="3" bw="0" slack="2147483647"/>
 </pin_list>
 <bind>
 <opcode="write(1151) " fcode="write"/>
@@ -1578,12 +1567,12 @@ StgValue_126           (ret          ) [ 000]
 </bind>
 </comp>
 
-<comp id="344" class="1004" name="StgValue_123_write_fu_344">
+<comp id="342" class="1004" name="StgValue_123_write_fu_342">
 <pin_list>
-<pin id="345" dir="0" index="0" bw="0" slack="0"/>
-<pin id="346" dir="0" index="1" bw="32" slack="0"/>
-<pin id="347" dir="0" index="2" bw="32" slack="0"/>
-<pin id="348" dir="1" index="3" bw="0" slack="2147483647"/>
+<pin id="343" dir="0" index="0" bw="0" slack="0"/>
+<pin id="344" dir="0" index="1" bw="32" slack="0"/>
+<pin id="345" dir="0" index="2" bw="32" slack="0"/>
+<pin id="346" dir="1" index="3" bw="0" slack="2147483647"/>
 </pin_list>
 <bind>
 <opcode="write(1151) " fcode="write"/>
@@ -1591,12 +1580,12 @@ StgValue_126           (ret          ) [ 000]
 </bind>
 </comp>
 
-<comp id="351" class="1004" name="StgValue_124_write_fu_351">
+<comp id="349" class="1004" name="StgValue_124_write_fu_349">
 <pin_list>
-<pin id="352" dir="0" index="0" bw="0" slack="0"/>
-<pin id="353" dir="0" index="1" bw="32" slack="0"/>
-<pin id="354" dir="0" index="2" bw="32" slack="0"/>
-<pin id="355" dir="1" index="3" bw="0" slack="2147483647"/>
+<pin id="350" dir="0" index="0" bw="0" slack="0"/>
+<pin id="351" dir="0" index="1" bw="32" slack="0"/>
+<pin id="352" dir="0" index="2" bw="32" slack="0"/>
+<pin id="353" dir="1" index="3" bw="0" slack="2147483647"/>
 </pin_list>
 <bind>
 <opcode="write(1151) " fcode="write"/>
@@ -1604,12 +1593,12 @@ StgValue_126           (ret          ) [ 000]
 </bind>
 </comp>
 
-<comp id="358" class="1004" name="StgValue_125_write_fu_358">
+<comp id="356" class="1004" name="StgValue_125_write_fu_356">
 <pin_list>
-<pin id="359" dir="0" index="0" bw="0" slack="0"/>
-<pin id="360" dir="0" index="1" bw="1" slack="0"/>
-<pin id="361" dir="0" index="2" bw="1" slack="0"/>
-<pin id="362" dir="1" index="3" bw="0" slack="2147483647"/>
+<pin id="357" dir="0" index="0" bw="0" slack="0"/>
+<pin id="358" dir="0" index="1" bw="1" slack="0"/>
+<pin id="359" dir="0" index="2" bw="1" slack="0"/>
+<pin id="360" dir="1" index="3" bw="0" slack="2147483647"/>
 </pin_list>
 <bind>
 <opcode="write(1151) " fcode="write"/>
@@ -1617,77 +1606,76 @@ StgValue_126           (ret          ) [ 000]
 </bind>
 </comp>
 
-<comp id="365" class="1004" name="grp_fit_fu_365">
+<comp id="363" class="1004" name="grp_fit_fu_363">
 <pin_list>
-<pin id="366" dir="0" index="0" bw="449" slack="0"/>
-<pin id="367" dir="0" index="1" bw="32" slack="0"/>
-<pin id="368" dir="0" index="2" bw="32" slack="0"/>
-<pin id="369" dir="0" index="3" bw="32" slack="0"/>
-<pin id="370" dir="0" index="4" bw="32" slack="0"/>
-<pin id="371" dir="0" index="5" bw="32" slack="0"/>
-<pin id="372" dir="0" index="6" bw="32" slack="0"/>
-<pin id="373" dir="0" index="7" bw="32" slack="0"/>
-<pin id="374" dir="0" index="8" bw="32" slack="0"/>
-<pin id="375" dir="0" index="9" bw="32" slack="0"/>
-<pin id="376" dir="0" index="10" bw="32" slack="0"/>
-<pin id="377" dir="0" index="11" bw="32" slack="0"/>
-<pin id="378" dir="0" index="12" bw="32" slack="0"/>
-<pin id="379" dir="0" index="13" bw="32" slack="0"/>
-<pin id="380" dir="0" index="14" bw="32" slack="0"/>
-<pin id="381" dir="0" index="15" bw="32" slack="0"/>
-<pin id="382" dir="0" index="16" bw="32" slack="0"/>
-<pin id="383" dir="0" index="17" bw="32" slack="0"/>
-<pin id="384" dir="0" index="18" bw="32" slack="0"/>
-<pin id="385" dir="0" index="19" bw="1" slack="0"/>
-<pin id="386" dir="0" index="20" bw="1" slack="0"/>
-<pin id="387" dir="0" index="21" bw="32" slack="0"/>
-<pin id="388" dir="0" index="22" bw="32" slack="0"/>
-<pin id="389" dir="0" index="23" bw="32" slack="0"/>
-<pin id="390" dir="0" index="24" bw="32" slack="0"/>
-<pin id="391" dir="0" index="25" bw="32" slack="0"/>
-<pin id="392" dir="0" index="26" bw="32" slack="0"/>
-<pin id="393" dir="0" index="27" bw="32" slack="0"/>
-<pin id="394" dir="0" index="28" bw="32" slack="0"/>
-<pin id="395" dir="0" index="29" bw="32" slack="0"/>
-<pin id="396" dir="0" index="30" bw="32" slack="0"/>
-<pin id="397" dir="0" index="31" bw="32" slack="0"/>
-<pin id="398" dir="0" index="32" bw="32" slack="0"/>
-<pin id="399" dir="0" index="33" bw="1" slack="0"/>
-<pin id="400" dir="0" index="34" bw="1" slack="0"/>
-<pin id="401" dir="0" index="35" bw="32" slack="0"/>
-<pin id="402" dir="0" index="36" bw="32" slack="0"/>
-<pin id="403" dir="0" index="37" bw="32" slack="0"/>
-<pin id="404" dir="0" index="38" bw="32" slack="0"/>
-<pin id="405" dir="0" index="39" bw="32" slack="0"/>
-<pin id="406" dir="0" index="40" bw="32" slack="0"/>
-<pin id="407" dir="0" index="41" bw="32" slack="0"/>
-<pin id="408" dir="0" index="42" bw="32" slack="0"/>
-<pin id="409" dir="0" index="43" bw="32" slack="0"/>
-<pin id="410" dir="0" index="44" bw="32" slack="0"/>
-<pin id="411" dir="0" index="45" bw="1" slack="0"/>
-<pin id="412" dir="0" index="46" bw="32" slack="0"/>
-<pin id="413" dir="0" index="47" bw="32" slack="0"/>
-<pin id="414" dir="0" index="48" bw="32" slack="0"/>
-<pin id="415" dir="0" index="49" bw="32" slack="0"/>
-<pin id="416" dir="0" index="50" bw="1" slack="0"/>
-<pin id="417" dir="0" index="51" bw="32" slack="0"/>
-<pin id="418" dir="0" index="52" bw="32" slack="0"/>
-<pin id="419" dir="0" index="53" bw="32" slack="0"/>
-<pin id="420" dir="0" index="54" bw="32" slack="0"/>
-<pin id="421" dir="0" index="55" bw="32" slack="0"/>
-<pin id="422" dir="0" index="56" bw="32" slack="0"/>
-<pin id="423" dir="0" index="57" bw="32" slack="0"/>
-<pin id="424" dir="0" index="58" bw="32" slack="0"/>
-<pin id="425" dir="0" index="59" bw="32" slack="0"/>
-<pin id="426" dir="0" index="60" bw="32" slack="0"/>
-<pin id="427" dir="0" index="61" bw="32" slack="0"/>
-<pin id="428" dir="0" index="62" bw="32" slack="0"/>
-<pin id="429" dir="0" index="63" bw="32" slack="0"/>
-<pin id="430" dir="0" index="64" bw="32" slack="0"/>
-<pin id="431" dir="0" index="65" bw="1" slack="0"/>
-<pin id="432" dir="0" index="66" bw="1" slack="0"/>
-<pin id="433" dir="0" index="67" bw="124" slack="0"/>
-<pin id="434" dir="1" index="68" bw="449" slack="0"/>
+<pin id="364" dir="0" index="0" bw="449" slack="0"/>
+<pin id="365" dir="0" index="1" bw="32" slack="0"/>
+<pin id="366" dir="0" index="2" bw="32" slack="0"/>
+<pin id="367" dir="0" index="3" bw="32" slack="0"/>
+<pin id="368" dir="0" index="4" bw="32" slack="0"/>
+<pin id="369" dir="0" index="5" bw="32" slack="0"/>
+<pin id="370" dir="0" index="6" bw="32" slack="0"/>
+<pin id="371" dir="0" index="7" bw="32" slack="0"/>
+<pin id="372" dir="0" index="8" bw="32" slack="0"/>
+<pin id="373" dir="0" index="9" bw="32" slack="0"/>
+<pin id="374" dir="0" index="10" bw="32" slack="0"/>
+<pin id="375" dir="0" index="11" bw="32" slack="0"/>
+<pin id="376" dir="0" index="12" bw="32" slack="0"/>
+<pin id="377" dir="0" index="13" bw="32" slack="0"/>
+<pin id="378" dir="0" index="14" bw="32" slack="0"/>
+<pin id="379" dir="0" index="15" bw="32" slack="0"/>
+<pin id="380" dir="0" index="16" bw="32" slack="0"/>
+<pin id="381" dir="0" index="17" bw="32" slack="0"/>
+<pin id="382" dir="0" index="18" bw="32" slack="0"/>
+<pin id="383" dir="0" index="19" bw="1" slack="0"/>
+<pin id="384" dir="0" index="20" bw="1" slack="0"/>
+<pin id="385" dir="0" index="21" bw="32" slack="0"/>
+<pin id="386" dir="0" index="22" bw="32" slack="0"/>
+<pin id="387" dir="0" index="23" bw="32" slack="0"/>
+<pin id="388" dir="0" index="24" bw="32" slack="0"/>
+<pin id="389" dir="0" index="25" bw="32" slack="0"/>
+<pin id="390" dir="0" index="26" bw="32" slack="0"/>
+<pin id="391" dir="0" index="27" bw="32" slack="0"/>
+<pin id="392" dir="0" index="28" bw="32" slack="0"/>
+<pin id="393" dir="0" index="29" bw="32" slack="0"/>
+<pin id="394" dir="0" index="30" bw="32" slack="0"/>
+<pin id="395" dir="0" index="31" bw="32" slack="0"/>
+<pin id="396" dir="0" index="32" bw="32" slack="0"/>
+<pin id="397" dir="0" index="33" bw="1" slack="0"/>
+<pin id="398" dir="0" index="34" bw="1" slack="0"/>
+<pin id="399" dir="0" index="35" bw="32" slack="0"/>
+<pin id="400" dir="0" index="36" bw="32" slack="0"/>
+<pin id="401" dir="0" index="37" bw="32" slack="0"/>
+<pin id="402" dir="0" index="38" bw="32" slack="0"/>
+<pin id="403" dir="0" index="39" bw="32" slack="0"/>
+<pin id="404" dir="0" index="40" bw="32" slack="0"/>
+<pin id="405" dir="0" index="41" bw="32" slack="0"/>
+<pin id="406" dir="0" index="42" bw="32" slack="0"/>
+<pin id="407" dir="0" index="43" bw="32" slack="0"/>
+<pin id="408" dir="0" index="44" bw="32" slack="0"/>
+<pin id="409" dir="0" index="45" bw="1" slack="0"/>
+<pin id="410" dir="0" index="46" bw="32" slack="0"/>
+<pin id="411" dir="0" index="47" bw="32" slack="0"/>
+<pin id="412" dir="0" index="48" bw="32" slack="0"/>
+<pin id="413" dir="0" index="49" bw="32" slack="0"/>
+<pin id="414" dir="0" index="50" bw="1" slack="0"/>
+<pin id="415" dir="0" index="51" bw="32" slack="0"/>
+<pin id="416" dir="0" index="52" bw="32" slack="0"/>
+<pin id="417" dir="0" index="53" bw="32" slack="0"/>
+<pin id="418" dir="0" index="54" bw="32" slack="0"/>
+<pin id="419" dir="0" index="55" bw="32" slack="0"/>
+<pin id="420" dir="0" index="56" bw="32" slack="0"/>
+<pin id="421" dir="0" index="57" bw="32" slack="0"/>
+<pin id="422" dir="0" index="58" bw="32" slack="0"/>
+<pin id="423" dir="0" index="59" bw="32" slack="0"/>
+<pin id="424" dir="0" index="60" bw="32" slack="0"/>
+<pin id="425" dir="0" index="61" bw="32" slack="0"/>
+<pin id="426" dir="0" index="62" bw="32" slack="0"/>
+<pin id="427" dir="0" index="63" bw="32" slack="0"/>
+<pin id="428" dir="0" index="64" bw="32" slack="0"/>
+<pin id="429" dir="0" index="65" bw="1" slack="0"/>
+<pin id="430" dir="0" index="66" bw="1" slack="0"/>
+<pin id="431" dir="1" index="67" bw="449" slack="0"/>
 </pin_list>
 <bind>
 <opcode="call(48) " fcode="call"/>
@@ -1695,10 +1683,10 @@ StgValue_126           (ret          ) [ 000]
 </bind>
 </comp>
 
-<comp id="503" class="1004" name="newret_fu_503">
+<comp id="499" class="1004" name="newret_fu_499">
 <pin_list>
-<pin id="504" dir="0" index="0" bw="449" slack="0"/>
-<pin id="505" dir="1" index="1" bw="32" slack="0"/>
+<pin id="500" dir="0" index="0" bw="449" slack="0"/>
+<pin id="501" dir="1" index="1" bw="32" slack="0"/>
 </pin_list>
 <bind>
 <opcode="extractvalue(56) " fcode="extractvalue"/>
@@ -1706,10 +1694,10 @@ StgValue_126           (ret          ) [ 000]
 </bind>
 </comp>
 
-<comp id="508" class="1004" name="newret19_fu_508">
+<comp id="504" class="1004" name="newret19_fu_504">
 <pin_list>
-<pin id="509" dir="0" index="0" bw="449" slack="0"/>
-<pin id="510" dir="1" index="1" bw="32" slack="0"/>
+<pin id="505" dir="0" index="0" bw="449" slack="0"/>
+<pin id="506" dir="1" index="1" bw="32" slack="0"/>
 </pin_list>
 <bind>
 <opcode="extractvalue(56) " fcode="extractvalue"/>
@@ -1717,10 +1705,10 @@ StgValue_126           (ret          ) [ 000]
 </bind>
 </comp>
 
-<comp id="513" class="1004" name="newret20_fu_513">
+<comp id="509" class="1004" name="newret20_fu_509">
 <pin_list>
-<pin id="514" dir="0" index="0" bw="449" slack="0"/>
-<pin id="515" dir="1" index="1" bw="32" slack="0"/>
+<pin id="510" dir="0" index="0" bw="449" slack="0"/>
+<pin id="511" dir="1" index="1" bw="32" slack="0"/>
 </pin_list>
 <bind>
 <opcode="extractvalue(56) " fcode="extractvalue"/>
@@ -1728,10 +1716,10 @@ StgValue_126           (ret          ) [ 000]
 </bind>
 </comp>
 
-<comp id="518" class="1004" name="newret21_fu_518">
+<comp id="514" class="1004" name="newret21_fu_514">
 <pin_list>
-<pin id="519" dir="0" index="0" bw="449" slack="0"/>
-<pin id="520" dir="1" index="1" bw="1" slack="0"/>
+<pin id="515" dir="0" index="0" bw="449" slack="0"/>
+<pin id="516" dir="1" index="1" bw="1" slack="0"/>
 </pin_list>
 <bind>
 <opcode="extractvalue(56) " fcode="extractvalue"/>
@@ -1739,10 +1727,10 @@ StgValue_126           (ret          ) [ 000]
 </bind>
 </comp>
 
-<comp id="523" class="1004" name="newret22_fu_523">
+<comp id="519" class="1004" name="newret22_fu_519">
 <pin_list>
-<pin id="524" dir="0" index="0" bw="449" slack="0"/>
-<pin id="525" dir="1" index="1" bw="32" slack="0"/>
+<pin id="520" dir="0" index="0" bw="449" slack="0"/>
+<pin id="521" dir="1" index="1" bw="32" slack="0"/>
 </pin_list>
 <bind>
 <opcode="extractvalue(56) " fcode="extractvalue"/>
@@ -1750,10 +1738,10 @@ StgValue_126           (ret          ) [ 000]
 </bind>
 </comp>
 
-<comp id="528" class="1004" name="newret23_fu_528">
+<comp id="524" class="1004" name="newret23_fu_524">
 <pin_list>
-<pin id="529" dir="0" index="0" bw="449" slack="0"/>
-<pin id="530" dir="1" index="1" bw="32" slack="0"/>
+<pin id="525" dir="0" index="0" bw="449" slack="0"/>
+<pin id="526" dir="1" index="1" bw="32" slack="0"/>
 </pin_list>
 <bind>
 <opcode="extractvalue(56) " fcode="extractvalue"/>
@@ -1761,10 +1749,10 @@ StgValue_126           (ret          ) [ 000]
 </bind>
 </comp>
 
-<comp id="533" class="1004" name="newret24_fu_533">
+<comp id="529" class="1004" name="newret24_fu_529">
 <pin_list>
-<pin id="534" dir="0" index="0" bw="449" slack="0"/>
-<pin id="535" dir="1" index="1" bw="32" slack="0"/>
+<pin id="530" dir="0" index="0" bw="449" slack="0"/>
+<pin id="531" dir="1" index="1" bw="32" slack="0"/>
 </pin_list>
 <bind>
 <opcode="extractvalue(56) " fcode="extractvalue"/>
@@ -1772,10 +1760,10 @@ StgValue_126           (ret          ) [ 000]
 </bind>
 </comp>
 
-<comp id="538" class="1004" name="newret25_fu_538">
+<comp id="534" class="1004" name="newret25_fu_534">
 <pin_list>
-<pin id="539" dir="0" index="0" bw="449" slack="0"/>
-<pin id="540" dir="1" index="1" bw="32" slack="0"/>
+<pin id="535" dir="0" index="0" bw="449" slack="0"/>
+<pin id="536" dir="1" index="1" bw="32" slack="0"/>
 </pin_list>
 <bind>
 <opcode="extractvalue(56) " fcode="extractvalue"/>
@@ -1783,10 +1771,10 @@ StgValue_126           (ret          ) [ 000]
 </bind>
 </comp>
 
-<comp id="543" class="1004" name="newret26_fu_543">
+<comp id="539" class="1004" name="newret26_fu_539">
 <pin_list>
-<pin id="544" dir="0" index="0" bw="449" slack="0"/>
-<pin id="545" dir="1" index="1" bw="32" slack="0"/>
+<pin id="540" dir="0" index="0" bw="449" slack="0"/>
+<pin id="541" dir="1" index="1" bw="32" slack="0"/>
 </pin_list>
 <bind>
 <opcode="extractvalue(56) " fcode="extractvalue"/>
@@ -1794,10 +1782,10 @@ StgValue_126           (ret          ) [ 000]
 </bind>
 </comp>
 
-<comp id="548" class="1004" name="newret27_fu_548">
+<comp id="544" class="1004" name="newret27_fu_544">
 <pin_list>
-<pin id="549" dir="0" index="0" bw="449" slack="0"/>
-<pin id="550" dir="1" index="1" bw="32" slack="0"/>
+<pin id="545" dir="0" index="0" bw="449" slack="0"/>
+<pin id="546" dir="1" index="1" bw="32" slack="0"/>
 </pin_list>
 <bind>
 <opcode="extractvalue(56) " fcode="extractvalue"/>
@@ -1805,10 +1793,10 @@ StgValue_126           (ret          ) [ 000]
 </bind>
 </comp>
 
-<comp id="553" class="1004" name="newret28_fu_553">
+<comp id="549" class="1004" name="newret28_fu_549">
 <pin_list>
-<pin id="554" dir="0" index="0" bw="449" slack="0"/>
-<pin id="555" dir="1" index="1" bw="32" slack="0"/>
+<pin id="550" dir="0" index="0" bw="449" slack="0"/>
+<pin id="551" dir="1" index="1" bw="32" slack="0"/>
 </pin_list>
 <bind>
 <opcode="extractvalue(56) " fcode="extractvalue"/>
@@ -1816,10 +1804,10 @@ StgValue_126           (ret          ) [ 000]
 </bind>
 </comp>
 
-<comp id="558" class="1004" name="newret29_fu_558">
+<comp id="554" class="1004" name="newret29_fu_554">
 <pin_list>
-<pin id="559" dir="0" index="0" bw="449" slack="0"/>
-<pin id="560" dir="1" index="1" bw="32" slack="0"/>
+<pin id="555" dir="0" index="0" bw="449" slack="0"/>
+<pin id="556" dir="1" index="1" bw="32" slack="0"/>
 </pin_list>
 <bind>
 <opcode="extractvalue(56) " fcode="extractvalue"/>
@@ -1827,10 +1815,10 @@ StgValue_126           (ret          ) [ 000]
 </bind>
 </comp>
 
-<comp id="563" class="1004" name="newret30_fu_563">
+<comp id="559" class="1004" name="newret30_fu_559">
 <pin_list>
-<pin id="564" dir="0" index="0" bw="449" slack="0"/>
-<pin id="565" dir="1" index="1" bw="32" slack="0"/>
+<pin id="560" dir="0" index="0" bw="449" slack="0"/>
+<pin id="561" dir="1" index="1" bw="32" slack="0"/>
 </pin_list>
 <bind>
 <opcode="extractvalue(56) " fcode="extractvalue"/>
@@ -1838,10 +1826,10 @@ StgValue_126           (ret          ) [ 000]
 </bind>
 </comp>
 
-<comp id="568" class="1004" name="newret31_fu_568">
+<comp id="564" class="1004" name="newret31_fu_564">
 <pin_list>
-<pin id="569" dir="0" index="0" bw="449" slack="0"/>
-<pin id="570" dir="1" index="1" bw="32" slack="0"/>
+<pin id="565" dir="0" index="0" bw="449" slack="0"/>
+<pin id="566" dir="1" index="1" bw="32" slack="0"/>
 </pin_list>
 <bind>
 <opcode="extractvalue(56) " fcode="extractvalue"/>
@@ -1849,10 +1837,10 @@ StgValue_126           (ret          ) [ 000]
 </bind>
 </comp>
 
-<comp id="573" class="1004" name="newret32_fu_573">
+<comp id="569" class="1004" name="newret32_fu_569">
 <pin_list>
-<pin id="574" dir="0" index="0" bw="449" slack="0"/>
-<pin id="575" dir="1" index="1" bw="32" slack="0"/>
+<pin id="570" dir="0" index="0" bw="449" slack="0"/>
+<pin id="571" dir="1" index="1" bw="32" slack="0"/>
 </pin_list>
 <bind>
 <opcode="extractvalue(56) " fcode="extractvalue"/>
@@ -1860,150 +1848,150 @@ StgValue_126           (ret          ) [ 000]
 </bind>
 </comp>
 
-<comp id="578" class="1005" name="linearRegression_set_reg_578">
+<comp id="574" class="1005" name="linearRegression_set_reg_574">
 <pin_list>
-<pin id="579" dir="0" index="0" bw="32" slack="1"/>
-<pin id="580" dir="1" index="1" bw="32" slack="1"/>
+<pin id="575" dir="0" index="0" bw="32" slack="1"/>
+<pin id="576" dir="1" index="1" bw="32" slack="1"/>
 </pin_list>
 <bind>
 <opset="linearRegression_set "/>
 </bind>
 </comp>
 
-<comp id="583" class="1005" name="linearRegression_set_1_reg_583">
+<comp id="579" class="1005" name="linearRegression_set_1_reg_579">
 <pin_list>
-<pin id="584" dir="0" index="0" bw="32" slack="1"/>
-<pin id="585" dir="1" index="1" bw="32" slack="1"/>
+<pin id="580" dir="0" index="0" bw="32" slack="1"/>
+<pin id="581" dir="1" index="1" bw="32" slack="1"/>
 </pin_list>
 <bind>
 <opset="linearRegression_set_1 "/>
 </bind>
 </comp>
 
-<comp id="588" class="1005" name="l1track3D_iPhiSec_r_reg_588">
+<comp id="584" class="1005" name="l1track3D_iPhiSec_r_reg_584">
 <pin_list>
-<pin id="589" dir="0" index="0" bw="32" slack="1"/>
-<pin id="590" dir="1" index="1" bw="32" slack="1"/>
+<pin id="585" dir="0" index="0" bw="32" slack="1"/>
+<pin id="586" dir="1" index="1" bw="32" slack="1"/>
 </pin_list>
 <bind>
 <opset="l1track3D_iPhiSec_r "/>
 </bind>
 </comp>
 
-<comp id="593" class="1005" name="l1track3D_iEtaReg_r_reg_593">
+<comp id="589" class="1005" name="l1track3D_iEtaReg_r_reg_589">
 <pin_list>
-<pin id="594" dir="0" index="0" bw="32" slack="1"/>
-<pin id="595" dir="1" index="1" bw="32" slack="1"/>
+<pin id="590" dir="0" index="0" bw="32" slack="1"/>
+<pin id="591" dir="1" index="1" bw="32" slack="1"/>
 </pin_list>
 <bind>
 <opset="l1track3D_iEtaReg_r "/>
 </bind>
 </comp>
 
-<comp id="598" class="1005" name="l1track3D_helixRphi_s_reg_598">
+<comp id="594" class="1005" name="l1track3D_helixRphi_s_reg_594">
 <pin_list>
-<pin id="599" dir="0" index="0" bw="32" slack="1"/>
-<pin id="600" dir="1" index="1" bw="32" slack="1"/>
+<pin id="595" dir="0" index="0" bw="32" slack="1"/>
+<pin id="596" dir="1" index="1" bw="32" slack="1"/>
 </pin_list>
 <bind>
 <opset="l1track3D_helixRphi_s "/>
 </bind>
 </comp>
 
-<comp id="603" class="1005" name="l1track3D_helixRphi_3_reg_603">
+<comp id="599" class="1005" name="l1track3D_helixRphi_3_reg_599">
 <pin_list>
-<pin id="604" dir="0" index="0" bw="32" slack="1"/>
-<pin id="605" dir="1" index="1" bw="32" slack="1"/>
+<pin id="600" dir="0" index="0" bw="32" slack="1"/>
+<pin id="601" dir="1" index="1" bw="32" slack="1"/>
 </pin_list>
 <bind>
 <opset="l1track3D_helixRphi_3 "/>
 </bind>
 </comp>
 
-<comp id="608" class="1005" name="l1track3D_stubs_siz_reg_608">
+<comp id="604" class="1005" name="l1track3D_stubs_siz_reg_604">
 <pin_list>
-<pin id="609" dir="0" index="0" bw="32" slack="1"/>
-<pin id="610" dir="1" index="1" bw="32" slack="1"/>
+<pin id="605" dir="0" index="0" bw="32" slack="1"/>
+<pin id="606" dir="1" index="1" bw="32" slack="1"/>
 </pin_list>
 <bind>
 <opset="l1track3D_stubs_siz "/>
 </bind>
 </comp>
 
-<comp id="613" class="1005" name="linearRegression_set_2_reg_613">
+<comp id="609" class="1005" name="linearRegression_set_2_reg_609">
 <pin_list>
-<pin id="614" dir="0" index="0" bw="32" slack="1"/>
-<pin id="615" dir="1" index="1" bw="32" slack="1"/>
+<pin id="610" dir="0" index="0" bw="32" slack="1"/>
+<pin id="611" dir="1" index="1" bw="32" slack="1"/>
 </pin_list>
 <bind>
 <opset="linearRegression_set_2 "/>
 </bind>
 </comp>
 
-<comp id="618" class="1005" name="linearRegression_set_3_reg_618">
+<comp id="614" class="1005" name="linearRegression_set_3_reg_614">
 <pin_list>
-<pin id="619" dir="0" index="0" bw="32" slack="1"/>
-<pin id="620" dir="1" index="1" bw="32" slack="1"/>
+<pin id="615" dir="0" index="0" bw="32" slack="1"/>
+<pin id="616" dir="1" index="1" bw="32" slack="1"/>
 </pin_list>
 <bind>
 <opset="linearRegression_set_3 "/>
 </bind>
 </comp>
 
-<comp id="623" class="1005" name="linearRegression_LRP_reg_623">
+<comp id="619" class="1005" name="linearRegression_LRP_reg_619">
 <pin_list>
-<pin id="624" dir="0" index="0" bw="32" slack="1"/>
-<pin id="625" dir="1" index="1" bw="32" slack="1"/>
+<pin id="620" dir="0" index="0" bw="32" slack="1"/>
+<pin id="621" dir="1" index="1" bw="32" slack="1"/>
 </pin_list>
 <bind>
 <opset="linearRegression_LRP "/>
 </bind>
 </comp>
 
-<comp id="628" class="1005" name="linearRegression_LRP_1_reg_628">
+<comp id="624" class="1005" name="linearRegression_LRP_1_reg_624">
 <pin_list>
-<pin id="629" dir="0" index="0" bw="32" slack="1"/>
-<pin id="630" dir="1" index="1" bw="32" slack="1"/>
+<pin id="625" dir="0" index="0" bw="32" slack="1"/>
+<pin id="626" dir="1" index="1" bw="32" slack="1"/>
 </pin_list>
 <bind>
 <opset="linearRegression_LRP_1 "/>
 </bind>
 </comp>
 
-<comp id="633" class="1005" name="linearRegression_LRP_2_reg_633">
+<comp id="629" class="1005" name="linearRegression_LRP_2_reg_629">
 <pin_list>
-<pin id="634" dir="0" index="0" bw="32" slack="1"/>
-<pin id="635" dir="1" index="1" bw="32" slack="1"/>
+<pin id="630" dir="0" index="0" bw="32" slack="1"/>
+<pin id="631" dir="1" index="1" bw="32" slack="1"/>
 </pin_list>
 <bind>
 <opset="linearRegression_LRP_2 "/>
 </bind>
 </comp>
 
-<comp id="638" class="1005" name="linearRegression_LRP_3_reg_638">
+<comp id="634" class="1005" name="linearRegression_LRP_3_reg_634">
 <pin_list>
-<pin id="639" dir="0" index="0" bw="32" slack="1"/>
-<pin id="640" dir="1" index="1" bw="32" slack="1"/>
+<pin id="635" dir="0" index="0" bw="32" slack="1"/>
+<pin id="636" dir="1" index="1" bw="32" slack="1"/>
 </pin_list>
 <bind>
 <opset="linearRegression_LRP_3 "/>
 </bind>
 </comp>
 
-<comp id="643" class="1005" name="linearRegression_stu_reg_643">
+<comp id="639" class="1005" name="linearRegression_stu_reg_639">
 <pin_list>
-<pin id="644" dir="0" index="0" bw="32" slack="1"/>
-<pin id="645" dir="1" index="1" bw="32" slack="1"/>
+<pin id="640" dir="0" index="0" bw="32" slack="1"/>
+<pin id="641" dir="1" index="1" bw="32" slack="1"/>
 </pin_list>
 <bind>
 <opset="linearRegression_stu "/>
 </bind>
 </comp>
 
-<comp id="648" class="1005" name="linearRegression_lay_reg_648">
+<comp id="644" class="1005" name="linearRegression_lay_reg_644">
 <pin_list>
-<pin id="649" dir="0" index="0" bw="32" slack="1"/>
-<pin id="650" dir="1" index="1" bw="32" slack="1"/>
+<pin id="645" dir="0" index="0" bw="32" slack="1"/>
+<pin id="646" dir="1" index="1" bw="32" slack="1"/>
 </pin_list>
 <bind>
 <opset="linearRegression_lay "/>
@@ -2013,381 +2001,379 @@ StgValue_126           (ret          ) [ 000]
 </comp_list>
 
 <net_list>
-<net id="174"><net_src comp="152" pin="0"/><net_sink comp="170" pin=0"/></net>
+<net id="172"><net_src comp="150" pin="0"/><net_sink comp="168" pin=0"/></net>
 
-<net id="175"><net_src comp="38" pin="0"/><net_sink comp="170" pin=1"/></net>
+<net id="173"><net_src comp="38" pin="0"/><net_sink comp="168" pin=1"/></net>
 
-<net id="180"><net_src comp="152" pin="0"/><net_sink comp="176" pin=0"/></net>
+<net id="178"><net_src comp="150" pin="0"/><net_sink comp="174" pin=0"/></net>
 
-<net id="181"><net_src comp="40" pin="0"/><net_sink comp="176" pin=1"/></net>
+<net id="179"><net_src comp="40" pin="0"/><net_sink comp="174" pin=1"/></net>
 
-<net id="186"><net_src comp="152" pin="0"/><net_sink comp="182" pin=0"/></net>
+<net id="184"><net_src comp="150" pin="0"/><net_sink comp="180" pin=0"/></net>
 
-<net id="187"><net_src comp="0" pin="0"/><net_sink comp="182" pin=1"/></net>
+<net id="185"><net_src comp="0" pin="0"/><net_sink comp="180" pin=1"/></net>
 
-<net id="192"><net_src comp="152" pin="0"/><net_sink comp="188" pin=0"/></net>
+<net id="190"><net_src comp="150" pin="0"/><net_sink comp="186" pin=0"/></net>
 
-<net id="193"><net_src comp="2" pin="0"/><net_sink comp="188" pin=1"/></net>
+<net id="191"><net_src comp="2" pin="0"/><net_sink comp="186" pin=1"/></net>
 
-<net id="198"><net_src comp="154" pin="0"/><net_sink comp="194" pin=0"/></net>
+<net id="196"><net_src comp="152" pin="0"/><net_sink comp="192" pin=0"/></net>
 
-<net id="199"><net_src comp="4" pin="0"/><net_sink comp="194" pin=1"/></net>
+<net id="197"><net_src comp="4" pin="0"/><net_sink comp="192" pin=1"/></net>
 
-<net id="204"><net_src comp="154" pin="0"/><net_sink comp="200" pin=0"/></net>
+<net id="202"><net_src comp="152" pin="0"/><net_sink comp="198" pin=0"/></net>
 
-<net id="205"><net_src comp="6" pin="0"/><net_sink comp="200" pin=1"/></net>
+<net id="203"><net_src comp="6" pin="0"/><net_sink comp="198" pin=1"/></net>
 
-<net id="210"><net_src comp="152" pin="0"/><net_sink comp="206" pin=0"/></net>
+<net id="208"><net_src comp="150" pin="0"/><net_sink comp="204" pin=0"/></net>
 
-<net id="211"><net_src comp="8" pin="0"/><net_sink comp="206" pin=1"/></net>
+<net id="209"><net_src comp="8" pin="0"/><net_sink comp="204" pin=1"/></net>
 
-<net id="216"><net_src comp="154" pin="0"/><net_sink comp="212" pin=0"/></net>
+<net id="214"><net_src comp="152" pin="0"/><net_sink comp="210" pin=0"/></net>
 
-<net id="217"><net_src comp="32" pin="0"/><net_sink comp="212" pin=1"/></net>
+<net id="215"><net_src comp="32" pin="0"/><net_sink comp="210" pin=1"/></net>
 
-<net id="222"><net_src comp="154" pin="0"/><net_sink comp="218" pin=0"/></net>
+<net id="220"><net_src comp="152" pin="0"/><net_sink comp="216" pin=0"/></net>
 
-<net id="223"><net_src comp="34" pin="0"/><net_sink comp="218" pin=1"/></net>
+<net id="221"><net_src comp="34" pin="0"/><net_sink comp="216" pin=1"/></net>
 
-<net id="228"><net_src comp="154" pin="0"/><net_sink comp="224" pin=0"/></net>
+<net id="226"><net_src comp="152" pin="0"/><net_sink comp="222" pin=0"/></net>
 
-<net id="229"><net_src comp="56" pin="0"/><net_sink comp="224" pin=1"/></net>
+<net id="227"><net_src comp="56" pin="0"/><net_sink comp="222" pin=1"/></net>
 
-<net id="234"><net_src comp="154" pin="0"/><net_sink comp="230" pin=0"/></net>
+<net id="232"><net_src comp="152" pin="0"/><net_sink comp="228" pin=0"/></net>
 
-<net id="235"><net_src comp="58" pin="0"/><net_sink comp="230" pin=1"/></net>
+<net id="233"><net_src comp="58" pin="0"/><net_sink comp="228" pin=1"/></net>
 
-<net id="240"><net_src comp="154" pin="0"/><net_sink comp="236" pin=0"/></net>
+<net id="238"><net_src comp="152" pin="0"/><net_sink comp="234" pin=0"/></net>
 
-<net id="241"><net_src comp="60" pin="0"/><net_sink comp="236" pin=1"/></net>
+<net id="239"><net_src comp="60" pin="0"/><net_sink comp="234" pin=1"/></net>
 
-<net id="246"><net_src comp="154" pin="0"/><net_sink comp="242" pin=0"/></net>
+<net id="244"><net_src comp="152" pin="0"/><net_sink comp="240" pin=0"/></net>
 
-<net id="247"><net_src comp="62" pin="0"/><net_sink comp="242" pin=1"/></net>
+<net id="245"><net_src comp="62" pin="0"/><net_sink comp="240" pin=1"/></net>
 
-<net id="252"><net_src comp="152" pin="0"/><net_sink comp="248" pin=0"/></net>
+<net id="250"><net_src comp="150" pin="0"/><net_sink comp="246" pin=0"/></net>
 
-<net id="253"><net_src comp="90" pin="0"/><net_sink comp="248" pin=1"/></net>
+<net id="251"><net_src comp="90" pin="0"/><net_sink comp="246" pin=1"/></net>
 
-<net id="258"><net_src comp="152" pin="0"/><net_sink comp="254" pin=0"/></net>
+<net id="256"><net_src comp="150" pin="0"/><net_sink comp="252" pin=0"/></net>
 
-<net id="259"><net_src comp="118" pin="0"/><net_sink comp="254" pin=1"/></net>
+<net id="257"><net_src comp="118" pin="0"/><net_sink comp="252" pin=1"/></net>
 
-<net id="265"><net_src comp="164" pin="0"/><net_sink comp="260" pin=0"/></net>
+<net id="263"><net_src comp="162" pin="0"/><net_sink comp="258" pin=0"/></net>
 
-<net id="266"><net_src comp="90" pin="0"/><net_sink comp="260" pin=1"/></net>
+<net id="264"><net_src comp="90" pin="0"/><net_sink comp="258" pin=1"/></net>
 
-<net id="272"><net_src comp="164" pin="0"/><net_sink comp="267" pin=0"/></net>
+<net id="270"><net_src comp="162" pin="0"/><net_sink comp="265" pin=0"/></net>
 
-<net id="273"><net_src comp="118" pin="0"/><net_sink comp="267" pin=1"/></net>
+<net id="271"><net_src comp="118" pin="0"/><net_sink comp="265" pin=1"/></net>
 
-<net id="279"><net_src comp="166" pin="0"/><net_sink comp="274" pin=0"/></net>
+<net id="277"><net_src comp="164" pin="0"/><net_sink comp="272" pin=0"/></net>
 
-<net id="280"><net_src comp="56" pin="0"/><net_sink comp="274" pin=1"/></net>
+<net id="278"><net_src comp="56" pin="0"/><net_sink comp="272" pin=1"/></net>
 
-<net id="286"><net_src comp="166" pin="0"/><net_sink comp="281" pin=0"/></net>
+<net id="284"><net_src comp="164" pin="0"/><net_sink comp="279" pin=0"/></net>
 
-<net id="287"><net_src comp="58" pin="0"/><net_sink comp="281" pin=1"/></net>
+<net id="285"><net_src comp="58" pin="0"/><net_sink comp="279" pin=1"/></net>
 
-<net id="293"><net_src comp="166" pin="0"/><net_sink comp="288" pin=0"/></net>
+<net id="291"><net_src comp="164" pin="0"/><net_sink comp="286" pin=0"/></net>
 
-<net id="294"><net_src comp="60" pin="0"/><net_sink comp="288" pin=1"/></net>
+<net id="292"><net_src comp="60" pin="0"/><net_sink comp="286" pin=1"/></net>
 
-<net id="300"><net_src comp="166" pin="0"/><net_sink comp="295" pin=0"/></net>
+<net id="298"><net_src comp="164" pin="0"/><net_sink comp="293" pin=0"/></net>
 
-<net id="301"><net_src comp="62" pin="0"/><net_sink comp="295" pin=1"/></net>
+<net id="299"><net_src comp="62" pin="0"/><net_sink comp="293" pin=1"/></net>
 
-<net id="307"><net_src comp="164" pin="0"/><net_sink comp="302" pin=0"/></net>
+<net id="305"><net_src comp="162" pin="0"/><net_sink comp="300" pin=0"/></net>
 
-<net id="308"><net_src comp="64" pin="0"/><net_sink comp="302" pin=1"/></net>
+<net id="306"><net_src comp="64" pin="0"/><net_sink comp="300" pin=1"/></net>
 
-<net id="314"><net_src comp="166" pin="0"/><net_sink comp="309" pin=0"/></net>
+<net id="312"><net_src comp="164" pin="0"/><net_sink comp="307" pin=0"/></net>
 
-<net id="315"><net_src comp="48" pin="0"/><net_sink comp="309" pin=1"/></net>
+<net id="313"><net_src comp="48" pin="0"/><net_sink comp="307" pin=1"/></net>
 
-<net id="321"><net_src comp="166" pin="0"/><net_sink comp="316" pin=0"/></net>
+<net id="319"><net_src comp="164" pin="0"/><net_sink comp="314" pin=0"/></net>
 
-<net id="322"><net_src comp="50" pin="0"/><net_sink comp="316" pin=1"/></net>
+<net id="320"><net_src comp="50" pin="0"/><net_sink comp="314" pin=1"/></net>
 
-<net id="328"><net_src comp="166" pin="0"/><net_sink comp="323" pin=0"/></net>
+<net id="326"><net_src comp="164" pin="0"/><net_sink comp="321" pin=0"/></net>
 
-<net id="329"><net_src comp="52" pin="0"/><net_sink comp="323" pin=1"/></net>
+<net id="327"><net_src comp="52" pin="0"/><net_sink comp="321" pin=1"/></net>
 
-<net id="335"><net_src comp="166" pin="0"/><net_sink comp="330" pin=0"/></net>
+<net id="333"><net_src comp="164" pin="0"/><net_sink comp="328" pin=0"/></net>
 
-<net id="336"><net_src comp="54" pin="0"/><net_sink comp="330" pin=1"/></net>
+<net id="334"><net_src comp="54" pin="0"/><net_sink comp="328" pin=1"/></net>
 
-<net id="342"><net_src comp="164" pin="0"/><net_sink comp="337" pin=0"/></net>
+<net id="340"><net_src comp="162" pin="0"/><net_sink comp="335" pin=0"/></net>
 
-<net id="343"><net_src comp="42" pin="0"/><net_sink comp="337" pin=1"/></net>
+<net id="341"><net_src comp="42" pin="0"/><net_sink comp="335" pin=1"/></net>
 
-<net id="349"><net_src comp="164" pin="0"/><net_sink comp="344" pin=0"/></net>
+<net id="347"><net_src comp="162" pin="0"/><net_sink comp="342" pin=0"/></net>
 
-<net id="350"><net_src comp="44" pin="0"/><net_sink comp="344" pin=1"/></net>
+<net id="348"><net_src comp="44" pin="0"/><net_sink comp="342" pin=1"/></net>
 
-<net id="356"><net_src comp="164" pin="0"/><net_sink comp="351" pin=0"/></net>
+<net id="354"><net_src comp="162" pin="0"/><net_sink comp="349" pin=0"/></net>
 
-<net id="357"><net_src comp="46" pin="0"/><net_sink comp="351" pin=1"/></net>
+<net id="355"><net_src comp="46" pin="0"/><net_sink comp="349" pin=1"/></net>
 
-<net id="363"><net_src comp="168" pin="0"/><net_sink comp="358" pin=0"/></net>
+<net id="361"><net_src comp="166" pin="0"/><net_sink comp="356" pin=0"/></net>
 
-<net id="364"><net_src comp="88" pin="0"/><net_sink comp="358" pin=1"/></net>
+<net id="362"><net_src comp="88" pin="0"/><net_sink comp="356" pin=1"/></net>
 
-<net id="435"><net_src comp="156" pin="0"/><net_sink comp="365" pin=0"/></net>
+<net id="432"><net_src comp="154" pin="0"/><net_sink comp="363" pin=0"/></net>
 
-<net id="436"><net_src comp="212" pin="2"/><net_sink comp="365" pin=1"/></net>
+<net id="433"><net_src comp="210" pin="2"/><net_sink comp="363" pin=1"/></net>
 
-<net id="437"><net_src comp="218" pin="2"/><net_sink comp="365" pin=2"/></net>
+<net id="434"><net_src comp="216" pin="2"/><net_sink comp="363" pin=2"/></net>
 
-<net id="438"><net_src comp="36" pin="0"/><net_sink comp="365" pin=3"/></net>
+<net id="435"><net_src comp="36" pin="0"/><net_sink comp="363" pin=3"/></net>
 
-<net id="439"><net_src comp="170" pin="2"/><net_sink comp="365" pin=4"/></net>
+<net id="436"><net_src comp="168" pin="2"/><net_sink comp="363" pin=4"/></net>
 
-<net id="440"><net_src comp="176" pin="2"/><net_sink comp="365" pin=5"/></net>
+<net id="437"><net_src comp="174" pin="2"/><net_sink comp="363" pin=5"/></net>
 
-<net id="441"><net_src comp="224" pin="2"/><net_sink comp="365" pin=6"/></net>
+<net id="438"><net_src comp="222" pin="2"/><net_sink comp="363" pin=6"/></net>
 
-<net id="442"><net_src comp="230" pin="2"/><net_sink comp="365" pin=7"/></net>
+<net id="439"><net_src comp="228" pin="2"/><net_sink comp="363" pin=7"/></net>
 
-<net id="443"><net_src comp="236" pin="2"/><net_sink comp="365" pin=8"/></net>
+<net id="440"><net_src comp="234" pin="2"/><net_sink comp="363" pin=8"/></net>
 
-<net id="444"><net_src comp="242" pin="2"/><net_sink comp="365" pin=9"/></net>
+<net id="441"><net_src comp="240" pin="2"/><net_sink comp="363" pin=9"/></net>
 
-<net id="445"><net_src comp="66" pin="0"/><net_sink comp="365" pin=10"/></net>
+<net id="442"><net_src comp="66" pin="0"/><net_sink comp="363" pin=10"/></net>
 
-<net id="446"><net_src comp="68" pin="0"/><net_sink comp="365" pin=11"/></net>
+<net id="443"><net_src comp="68" pin="0"/><net_sink comp="363" pin=11"/></net>
 
-<net id="447"><net_src comp="70" pin="0"/><net_sink comp="365" pin=12"/></net>
+<net id="444"><net_src comp="70" pin="0"/><net_sink comp="363" pin=12"/></net>
 
-<net id="448"><net_src comp="72" pin="0"/><net_sink comp="365" pin=13"/></net>
+<net id="445"><net_src comp="72" pin="0"/><net_sink comp="363" pin=13"/></net>
 
-<net id="449"><net_src comp="74" pin="0"/><net_sink comp="365" pin=14"/></net>
+<net id="446"><net_src comp="74" pin="0"/><net_sink comp="363" pin=14"/></net>
 
-<net id="450"><net_src comp="76" pin="0"/><net_sink comp="365" pin=15"/></net>
+<net id="447"><net_src comp="76" pin="0"/><net_sink comp="363" pin=15"/></net>
 
-<net id="451"><net_src comp="78" pin="0"/><net_sink comp="365" pin=16"/></net>
+<net id="448"><net_src comp="78" pin="0"/><net_sink comp="363" pin=16"/></net>
 
-<net id="452"><net_src comp="80" pin="0"/><net_sink comp="365" pin=17"/></net>
+<net id="449"><net_src comp="80" pin="0"/><net_sink comp="363" pin=17"/></net>
 
-<net id="453"><net_src comp="82" pin="0"/><net_sink comp="365" pin=18"/></net>
+<net id="450"><net_src comp="82" pin="0"/><net_sink comp="363" pin=18"/></net>
 
-<net id="454"><net_src comp="84" pin="0"/><net_sink comp="365" pin=19"/></net>
+<net id="451"><net_src comp="84" pin="0"/><net_sink comp="363" pin=19"/></net>
 
-<net id="455"><net_src comp="86" pin="0"/><net_sink comp="365" pin=20"/></net>
+<net id="452"><net_src comp="86" pin="0"/><net_sink comp="363" pin=20"/></net>
 
-<net id="456"><net_src comp="248" pin="2"/><net_sink comp="365" pin=21"/></net>
+<net id="453"><net_src comp="246" pin="2"/><net_sink comp="363" pin=21"/></net>
 
-<net id="457"><net_src comp="92" pin="0"/><net_sink comp="365" pin=22"/></net>
+<net id="454"><net_src comp="92" pin="0"/><net_sink comp="363" pin=22"/></net>
 
-<net id="458"><net_src comp="94" pin="0"/><net_sink comp="365" pin=23"/></net>
+<net id="455"><net_src comp="94" pin="0"/><net_sink comp="363" pin=23"/></net>
 
-<net id="459"><net_src comp="96" pin="0"/><net_sink comp="365" pin=24"/></net>
+<net id="456"><net_src comp="96" pin="0"/><net_sink comp="363" pin=24"/></net>
 
-<net id="460"><net_src comp="98" pin="0"/><net_sink comp="365" pin=25"/></net>
+<net id="457"><net_src comp="98" pin="0"/><net_sink comp="363" pin=25"/></net>
 
-<net id="461"><net_src comp="100" pin="0"/><net_sink comp="365" pin=26"/></net>
+<net id="458"><net_src comp="100" pin="0"/><net_sink comp="363" pin=26"/></net>
 
-<net id="462"><net_src comp="102" pin="0"/><net_sink comp="365" pin=27"/></net>
+<net id="459"><net_src comp="102" pin="0"/><net_sink comp="363" pin=27"/></net>
 
-<net id="463"><net_src comp="104" pin="0"/><net_sink comp="365" pin=28"/></net>
+<net id="460"><net_src comp="104" pin="0"/><net_sink comp="363" pin=28"/></net>
 
-<net id="464"><net_src comp="106" pin="0"/><net_sink comp="365" pin=29"/></net>
+<net id="461"><net_src comp="106" pin="0"/><net_sink comp="363" pin=29"/></net>
 
-<net id="465"><net_src comp="108" pin="0"/><net_sink comp="365" pin=30"/></net>
+<net id="462"><net_src comp="108" pin="0"/><net_sink comp="363" pin=30"/></net>
 
-<net id="466"><net_src comp="110" pin="0"/><net_sink comp="365" pin=31"/></net>
+<net id="463"><net_src comp="110" pin="0"/><net_sink comp="363" pin=31"/></net>
 
-<net id="467"><net_src comp="112" pin="0"/><net_sink comp="365" pin=32"/></net>
+<net id="464"><net_src comp="112" pin="0"/><net_sink comp="363" pin=32"/></net>
 
-<net id="468"><net_src comp="114" pin="0"/><net_sink comp="365" pin=33"/></net>
+<net id="465"><net_src comp="114" pin="0"/><net_sink comp="363" pin=33"/></net>
 
-<net id="469"><net_src comp="116" pin="0"/><net_sink comp="365" pin=34"/></net>
+<net id="466"><net_src comp="116" pin="0"/><net_sink comp="363" pin=34"/></net>
 
-<net id="470"><net_src comp="254" pin="2"/><net_sink comp="365" pin=35"/></net>
+<net id="467"><net_src comp="252" pin="2"/><net_sink comp="363" pin=35"/></net>
 
-<net id="471"><net_src comp="120" pin="0"/><net_sink comp="365" pin=36"/></net>
+<net id="468"><net_src comp="120" pin="0"/><net_sink comp="363" pin=36"/></net>
 
-<net id="472"><net_src comp="122" pin="0"/><net_sink comp="365" pin=37"/></net>
+<net id="469"><net_src comp="122" pin="0"/><net_sink comp="363" pin=37"/></net>
 
-<net id="473"><net_src comp="124" pin="0"/><net_sink comp="365" pin=38"/></net>
+<net id="470"><net_src comp="124" pin="0"/><net_sink comp="363" pin=38"/></net>
 
-<net id="474"><net_src comp="126" pin="0"/><net_sink comp="365" pin=39"/></net>
+<net id="471"><net_src comp="126" pin="0"/><net_sink comp="363" pin=39"/></net>
 
-<net id="475"><net_src comp="128" pin="0"/><net_sink comp="365" pin=40"/></net>
+<net id="472"><net_src comp="128" pin="0"/><net_sink comp="363" pin=40"/></net>
 
-<net id="476"><net_src comp="130" pin="0"/><net_sink comp="365" pin=41"/></net>
+<net id="473"><net_src comp="130" pin="0"/><net_sink comp="363" pin=41"/></net>
 
-<net id="477"><net_src comp="132" pin="0"/><net_sink comp="365" pin=42"/></net>
+<net id="474"><net_src comp="132" pin="0"/><net_sink comp="363" pin=42"/></net>
 
-<net id="478"><net_src comp="134" pin="0"/><net_sink comp="365" pin=43"/></net>
+<net id="475"><net_src comp="134" pin="0"/><net_sink comp="363" pin=43"/></net>
 
-<net id="479"><net_src comp="136" pin="0"/><net_sink comp="365" pin=44"/></net>
+<net id="476"><net_src comp="136" pin="0"/><net_sink comp="363" pin=44"/></net>
 
-<net id="480"><net_src comp="138" pin="0"/><net_sink comp="365" pin=45"/></net>
+<net id="477"><net_src comp="138" pin="0"/><net_sink comp="363" pin=45"/></net>
 
-<net id="481"><net_src comp="140" pin="0"/><net_sink comp="365" pin=46"/></net>
+<net id="478"><net_src comp="140" pin="0"/><net_sink comp="363" pin=46"/></net>
 
-<net id="482"><net_src comp="142" pin="0"/><net_sink comp="365" pin=47"/></net>
+<net id="479"><net_src comp="142" pin="0"/><net_sink comp="363" pin=47"/></net>
 
-<net id="483"><net_src comp="144" pin="0"/><net_sink comp="365" pin=48"/></net>
+<net id="480"><net_src comp="144" pin="0"/><net_sink comp="363" pin=48"/></net>
 
-<net id="484"><net_src comp="146" pin="0"/><net_sink comp="365" pin=49"/></net>
+<net id="481"><net_src comp="146" pin="0"/><net_sink comp="363" pin=49"/></net>
 
-<net id="485"><net_src comp="148" pin="0"/><net_sink comp="365" pin=50"/></net>
+<net id="482"><net_src comp="148" pin="0"/><net_sink comp="363" pin=50"/></net>
 
-<net id="486"><net_src comp="182" pin="2"/><net_sink comp="365" pin=51"/></net>
+<net id="483"><net_src comp="180" pin="2"/><net_sink comp="363" pin=51"/></net>
 
-<net id="487"><net_src comp="188" pin="2"/><net_sink comp="365" pin=52"/></net>
+<net id="484"><net_src comp="186" pin="2"/><net_sink comp="363" pin=52"/></net>
 
-<net id="488"><net_src comp="194" pin="2"/><net_sink comp="365" pin=53"/></net>
+<net id="485"><net_src comp="192" pin="2"/><net_sink comp="363" pin=53"/></net>
 
-<net id="489"><net_src comp="200" pin="2"/><net_sink comp="365" pin=54"/></net>
+<net id="486"><net_src comp="198" pin="2"/><net_sink comp="363" pin=54"/></net>
 
-<net id="490"><net_src comp="206" pin="2"/><net_sink comp="365" pin=55"/></net>
+<net id="487"><net_src comp="204" pin="2"/><net_sink comp="363" pin=55"/></net>
 
-<net id="491"><net_src comp="10" pin="0"/><net_sink comp="365" pin=56"/></net>
+<net id="488"><net_src comp="10" pin="0"/><net_sink comp="363" pin=56"/></net>
 
-<net id="492"><net_src comp="12" pin="0"/><net_sink comp="365" pin=57"/></net>
+<net id="489"><net_src comp="12" pin="0"/><net_sink comp="363" pin=57"/></net>
 
-<net id="493"><net_src comp="14" pin="0"/><net_sink comp="365" pin=58"/></net>
+<net id="490"><net_src comp="14" pin="0"/><net_sink comp="363" pin=58"/></net>
 
-<net id="494"><net_src comp="16" pin="0"/><net_sink comp="365" pin=59"/></net>
+<net id="491"><net_src comp="16" pin="0"/><net_sink comp="363" pin=59"/></net>
 
-<net id="495"><net_src comp="18" pin="0"/><net_sink comp="365" pin=60"/></net>
+<net id="492"><net_src comp="18" pin="0"/><net_sink comp="363" pin=60"/></net>
 
-<net id="496"><net_src comp="20" pin="0"/><net_sink comp="365" pin=61"/></net>
+<net id="493"><net_src comp="20" pin="0"/><net_sink comp="363" pin=61"/></net>
 
-<net id="497"><net_src comp="22" pin="0"/><net_sink comp="365" pin=62"/></net>
+<net id="494"><net_src comp="22" pin="0"/><net_sink comp="363" pin=62"/></net>
 
-<net id="498"><net_src comp="24" pin="0"/><net_sink comp="365" pin=63"/></net>
+<net id="495"><net_src comp="24" pin="0"/><net_sink comp="363" pin=63"/></net>
 
-<net id="499"><net_src comp="26" pin="0"/><net_sink comp="365" pin=64"/></net>
+<net id="496"><net_src comp="26" pin="0"/><net_sink comp="363" pin=64"/></net>
 
-<net id="500"><net_src comp="28" pin="0"/><net_sink comp="365" pin=65"/></net>
+<net id="497"><net_src comp="28" pin="0"/><net_sink comp="363" pin=65"/></net>
 
-<net id="501"><net_src comp="30" pin="0"/><net_sink comp="365" pin=66"/></net>
+<net id="498"><net_src comp="30" pin="0"/><net_sink comp="363" pin=66"/></net>
 
-<net id="502"><net_src comp="150" pin="0"/><net_sink comp="365" pin=67"/></net>
+<net id="502"><net_src comp="363" pin="67"/><net_sink comp="499" pin=0"/></net>
 
-<net id="506"><net_src comp="365" pin="68"/><net_sink comp="503" pin=0"/></net>
+<net id="503"><net_src comp="499" pin="1"/><net_sink comp="335" pin=2"/></net>
 
-<net id="507"><net_src comp="503" pin="1"/><net_sink comp="337" pin=2"/></net>
+<net id="507"><net_src comp="363" pin="67"/><net_sink comp="504" pin=0"/></net>
 
-<net id="511"><net_src comp="365" pin="68"/><net_sink comp="508" pin=0"/></net>
+<net id="508"><net_src comp="504" pin="1"/><net_sink comp="342" pin=2"/></net>
 
-<net id="512"><net_src comp="508" pin="1"/><net_sink comp="344" pin=2"/></net>
+<net id="512"><net_src comp="363" pin="67"/><net_sink comp="509" pin=0"/></net>
 
-<net id="516"><net_src comp="365" pin="68"/><net_sink comp="513" pin=0"/></net>
+<net id="513"><net_src comp="509" pin="1"/><net_sink comp="349" pin=2"/></net>
 
-<net id="517"><net_src comp="513" pin="1"/><net_sink comp="351" pin=2"/></net>
+<net id="517"><net_src comp="363" pin="67"/><net_sink comp="514" pin=0"/></net>
 
-<net id="521"><net_src comp="365" pin="68"/><net_sink comp="518" pin=0"/></net>
+<net id="518"><net_src comp="514" pin="1"/><net_sink comp="356" pin=2"/></net>
 
-<net id="522"><net_src comp="518" pin="1"/><net_sink comp="358" pin=2"/></net>
+<net id="522"><net_src comp="363" pin="67"/><net_sink comp="519" pin=0"/></net>
 
-<net id="526"><net_src comp="365" pin="68"/><net_sink comp="523" pin=0"/></net>
+<net id="523"><net_src comp="519" pin="1"/><net_sink comp="307" pin=2"/></net>
 
-<net id="527"><net_src comp="523" pin="1"/><net_sink comp="309" pin=2"/></net>
+<net id="527"><net_src comp="363" pin="67"/><net_sink comp="524" pin=0"/></net>
 
-<net id="531"><net_src comp="365" pin="68"/><net_sink comp="528" pin=0"/></net>
+<net id="528"><net_src comp="524" pin="1"/><net_sink comp="314" pin=2"/></net>
 
-<net id="532"><net_src comp="528" pin="1"/><net_sink comp="316" pin=2"/></net>
+<net id="532"><net_src comp="363" pin="67"/><net_sink comp="529" pin=0"/></net>
 
-<net id="536"><net_src comp="365" pin="68"/><net_sink comp="533" pin=0"/></net>
+<net id="533"><net_src comp="529" pin="1"/><net_sink comp="321" pin=2"/></net>
 
-<net id="537"><net_src comp="533" pin="1"/><net_sink comp="323" pin=2"/></net>
+<net id="537"><net_src comp="363" pin="67"/><net_sink comp="534" pin=0"/></net>
 
-<net id="541"><net_src comp="365" pin="68"/><net_sink comp="538" pin=0"/></net>
+<net id="538"><net_src comp="534" pin="1"/><net_sink comp="328" pin=2"/></net>
 
-<net id="542"><net_src comp="538" pin="1"/><net_sink comp="330" pin=2"/></net>
+<net id="542"><net_src comp="363" pin="67"/><net_sink comp="539" pin=0"/></net>
 
-<net id="546"><net_src comp="365" pin="68"/><net_sink comp="543" pin=0"/></net>
+<net id="543"><net_src comp="539" pin="1"/><net_sink comp="300" pin=2"/></net>
 
-<net id="547"><net_src comp="543" pin="1"/><net_sink comp="302" pin=2"/></net>
+<net id="547"><net_src comp="363" pin="67"/><net_sink comp="544" pin=0"/></net>
 
-<net id="551"><net_src comp="365" pin="68"/><net_sink comp="548" pin=0"/></net>
+<net id="548"><net_src comp="544" pin="1"/><net_sink comp="272" pin=2"/></net>
 
-<net id="552"><net_src comp="548" pin="1"/><net_sink comp="274" pin=2"/></net>
+<net id="552"><net_src comp="363" pin="67"/><net_sink comp="549" pin=0"/></net>
 
-<net id="556"><net_src comp="365" pin="68"/><net_sink comp="553" pin=0"/></net>
+<net id="553"><net_src comp="549" pin="1"/><net_sink comp="279" pin=2"/></net>
 
-<net id="557"><net_src comp="553" pin="1"/><net_sink comp="281" pin=2"/></net>
+<net id="557"><net_src comp="363" pin="67"/><net_sink comp="554" pin=0"/></net>
 
-<net id="561"><net_src comp="365" pin="68"/><net_sink comp="558" pin=0"/></net>
+<net id="558"><net_src comp="554" pin="1"/><net_sink comp="286" pin=2"/></net>
 
-<net id="562"><net_src comp="558" pin="1"/><net_sink comp="288" pin=2"/></net>
+<net id="562"><net_src comp="363" pin="67"/><net_sink comp="559" pin=0"/></net>
 
-<net id="566"><net_src comp="365" pin="68"/><net_sink comp="563" pin=0"/></net>
+<net id="563"><net_src comp="559" pin="1"/><net_sink comp="293" pin=2"/></net>
 
-<net id="567"><net_src comp="563" pin="1"/><net_sink comp="295" pin=2"/></net>
+<net id="567"><net_src comp="363" pin="67"/><net_sink comp="564" pin=0"/></net>
 
-<net id="571"><net_src comp="365" pin="68"/><net_sink comp="568" pin=0"/></net>
+<net id="568"><net_src comp="564" pin="1"/><net_sink comp="258" pin=2"/></net>
 
-<net id="572"><net_src comp="568" pin="1"/><net_sink comp="260" pin=2"/></net>
+<net id="572"><net_src comp="363" pin="67"/><net_sink comp="569" pin=0"/></net>
 
-<net id="576"><net_src comp="365" pin="68"/><net_sink comp="573" pin=0"/></net>
+<net id="573"><net_src comp="569" pin="1"/><net_sink comp="265" pin=2"/></net>
 
-<net id="577"><net_src comp="573" pin="1"/><net_sink comp="267" pin=2"/></net>
+<net id="577"><net_src comp="168" pin="2"/><net_sink comp="574" pin=0"/></net>
 
-<net id="581"><net_src comp="170" pin="2"/><net_sink comp="578" pin=0"/></net>
+<net id="578"><net_src comp="574" pin="1"/><net_sink comp="363" pin=4"/></net>
 
-<net id="582"><net_src comp="578" pin="1"/><net_sink comp="365" pin=4"/></net>
+<net id="582"><net_src comp="174" pin="2"/><net_sink comp="579" pin=0"/></net>
 
-<net id="586"><net_src comp="176" pin="2"/><net_sink comp="583" pin=0"/></net>
+<net id="583"><net_src comp="579" pin="1"/><net_sink comp="363" pin=5"/></net>
 
-<net id="587"><net_src comp="583" pin="1"/><net_sink comp="365" pin=5"/></net>
+<net id="587"><net_src comp="180" pin="2"/><net_sink comp="584" pin=0"/></net>
 
-<net id="591"><net_src comp="182" pin="2"/><net_sink comp="588" pin=0"/></net>
+<net id="588"><net_src comp="584" pin="1"/><net_sink comp="363" pin=51"/></net>
 
-<net id="592"><net_src comp="588" pin="1"/><net_sink comp="365" pin=51"/></net>
+<net id="592"><net_src comp="186" pin="2"/><net_sink comp="589" pin=0"/></net>
 
-<net id="596"><net_src comp="188" pin="2"/><net_sink comp="593" pin=0"/></net>
+<net id="593"><net_src comp="589" pin="1"/><net_sink comp="363" pin=52"/></net>
 
-<net id="597"><net_src comp="593" pin="1"/><net_sink comp="365" pin=52"/></net>
+<net id="597"><net_src comp="192" pin="2"/><net_sink comp="594" pin=0"/></net>
 
-<net id="601"><net_src comp="194" pin="2"/><net_sink comp="598" pin=0"/></net>
+<net id="598"><net_src comp="594" pin="1"/><net_sink comp="363" pin=53"/></net>
 
-<net id="602"><net_src comp="598" pin="1"/><net_sink comp="365" pin=53"/></net>
+<net id="602"><net_src comp="198" pin="2"/><net_sink comp="599" pin=0"/></net>
 
-<net id="606"><net_src comp="200" pin="2"/><net_sink comp="603" pin=0"/></net>
+<net id="603"><net_src comp="599" pin="1"/><net_sink comp="363" pin=54"/></net>
 
-<net id="607"><net_src comp="603" pin="1"/><net_sink comp="365" pin=54"/></net>
+<net id="607"><net_src comp="204" pin="2"/><net_sink comp="604" pin=0"/></net>
 
-<net id="611"><net_src comp="206" pin="2"/><net_sink comp="608" pin=0"/></net>
+<net id="608"><net_src comp="604" pin="1"/><net_sink comp="363" pin=55"/></net>
 
-<net id="612"><net_src comp="608" pin="1"/><net_sink comp="365" pin=55"/></net>
+<net id="612"><net_src comp="210" pin="2"/><net_sink comp="609" pin=0"/></net>
 
-<net id="616"><net_src comp="212" pin="2"/><net_sink comp="613" pin=0"/></net>
+<net id="613"><net_src comp="609" pin="1"/><net_sink comp="363" pin=1"/></net>
 
-<net id="617"><net_src comp="613" pin="1"/><net_sink comp="365" pin=1"/></net>
+<net id="617"><net_src comp="216" pin="2"/><net_sink comp="614" pin=0"/></net>
 
-<net id="621"><net_src comp="218" pin="2"/><net_sink comp="618" pin=0"/></net>
+<net id="618"><net_src comp="614" pin="1"/><net_sink comp="363" pin=2"/></net>
 
-<net id="622"><net_src comp="618" pin="1"/><net_sink comp="365" pin=2"/></net>
+<net id="622"><net_src comp="222" pin="2"/><net_sink comp="619" pin=0"/></net>
 
-<net id="626"><net_src comp="224" pin="2"/><net_sink comp="623" pin=0"/></net>
+<net id="623"><net_src comp="619" pin="1"/><net_sink comp="363" pin=6"/></net>
 
-<net id="627"><net_src comp="623" pin="1"/><net_sink comp="365" pin=6"/></net>
+<net id="627"><net_src comp="228" pin="2"/><net_sink comp="624" pin=0"/></net>
 
-<net id="631"><net_src comp="230" pin="2"/><net_sink comp="628" pin=0"/></net>
+<net id="628"><net_src comp="624" pin="1"/><net_sink comp="363" pin=7"/></net>
 
-<net id="632"><net_src comp="628" pin="1"/><net_sink comp="365" pin=7"/></net>
+<net id="632"><net_src comp="234" pin="2"/><net_sink comp="629" pin=0"/></net>
 
-<net id="636"><net_src comp="236" pin="2"/><net_sink comp="633" pin=0"/></net>
+<net id="633"><net_src comp="629" pin="1"/><net_sink comp="363" pin=8"/></net>
 
-<net id="637"><net_src comp="633" pin="1"/><net_sink comp="365" pin=8"/></net>
+<net id="637"><net_src comp="240" pin="2"/><net_sink comp="634" pin=0"/></net>
 
-<net id="641"><net_src comp="242" pin="2"/><net_sink comp="638" pin=0"/></net>
+<net id="638"><net_src comp="634" pin="1"/><net_sink comp="363" pin=9"/></net>
 
-<net id="642"><net_src comp="638" pin="1"/><net_sink comp="365" pin=9"/></net>
+<net id="642"><net_src comp="246" pin="2"/><net_sink comp="639" pin=0"/></net>
 
-<net id="646"><net_src comp="248" pin="2"/><net_sink comp="643" pin=0"/></net>
+<net id="643"><net_src comp="639" pin="1"/><net_sink comp="363" pin=21"/></net>
 
-<net id="647"><net_src comp="643" pin="1"/><net_sink comp="365" pin=21"/></net>
+<net id="647"><net_src comp="252" pin="2"/><net_sink comp="644" pin=0"/></net>
 
-<net id="651"><net_src comp="254" pin="2"/><net_sink comp="648" pin=0"/></net>
-
-<net id="652"><net_src comp="648" pin="1"/><net_sink comp="365" pin=35"/></net>
+<net id="648"><net_src comp="644" pin="1"/><net_sink comp="363" pin=35"/></net>
 
 </net_list>
 
@@ -2410,7 +2396,7 @@ StgValue_126           (ret          ) [ 000]
 	Port: linearRegression_stubs_size_s | {2 }
 	Port: linearRegression_stubs_data_settings_chosenRofPhi_s | {1 2 }
 	Port: linearRegression_stubs_data_settings_chosenRofZ_s | {1 2 }
-	Port: linearRegression_stubs_data_settings_etaRegions_s | {1 2 }
+	Port: linearRegression_stubs_data_settings_sinh_etaRegions_s | {1 2 }
 	Port: linearRegression_stubs_data_settings_minNumMatchLayers_s | {1 2 }
 	Port: linearRegression_stubs_data_settings_minPSLayers_s | {1 2 }
 	Port: linearRegression_stubs_data_r_s | {1 2 }
@@ -2425,7 +2411,7 @@ StgValue_126           (ret          ) [ 000]
 	Port: linearRegression_stubMap_data_second_size_s | {1 2 }
 	Port: linearRegression_stubMap_data_second_data_settings_chosenRofPhi_s | {1 2 }
 	Port: linearRegression_stubMap_data_second_data_settings_chosenRofZ_s | {1 2 }
-	Port: linearRegression_stubMap_data_second_data_settings_etaRegions_s | {1 2 }
+	Port: linearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s | {1 2 }
 	Port: linearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s | {1 2 }
 	Port: linearRegression_stubMap_data_second_data_settings_minPSLayers_s | {1 2 }
 	Port: linearRegression_stubMap_data_second_data_r_s | {1 2 }
@@ -2458,7 +2444,7 @@ StgValue_126           (ret          ) [ 000]
 	Port: LRupdateHLS : l1track3D_stubs_size_s | {1 }
 	Port: LRupdateHLS : l1track3D_stubs_data_settings_chosenRofPhi_s | {1 2 }
 	Port: LRupdateHLS : l1track3D_stubs_data_settings_chosenRofZ_s | {1 2 }
-	Port: LRupdateHLS : l1track3D_stubs_data_settings_etaRegions_s | {1 2 }
+	Port: LRupdateHLS : l1track3D_stubs_data_settings_sinh_etaRegions_s | {1 2 }
 	Port: LRupdateHLS : l1track3D_stubs_data_settings_minNumMatchLayers_s | {1 2 }
 	Port: LRupdateHLS : l1track3D_stubs_data_settings_minPSLayers_s | {1 2 }
 	Port: LRupdateHLS : l1track3D_stubs_data_r_s | {1 2 }
@@ -2469,7 +2455,7 @@ StgValue_126           (ret          ) [ 000]
 	Port: LRupdateHLS : l1track3D_stubs_data_barrel_s | {1 2 }
 	Port: LRupdateHLS : linearRegression_settings_chosenRofPhi_s | {1 }
 	Port: LRupdateHLS : linearRegression_settings_chosenRofZ_s | {1 }
-	Port: LRupdateHLS : linearRegression_settings_etaRegions_s | {1 2 }
+	Port: LRupdateHLS : linearRegression_settings_sinh_etaRegions_s | {1 2 }
 	Port: LRupdateHLS : linearRegression_settings_minNumMatchLayers_s | {1 }
 	Port: LRupdateHLS : linearRegression_settings_minPSLayers_s | {1 }
 	Port: LRupdateHLS : linearRegression_LRParameter_qOverPt | {1 }
@@ -2478,7 +2464,7 @@ StgValue_126           (ret          ) [ 000]
 	Port: LRupdateHLS : linearRegression_LRParameter_zT | {1 }
 	Port: LRupdateHLS : linearRegression_stubs_data_settings_chosenRofPhi_s | {1 2 }
 	Port: LRupdateHLS : linearRegression_stubs_data_settings_chosenRofZ_s | {1 2 }
-	Port: LRupdateHLS : linearRegression_stubs_data_settings_etaRegions_s | {1 2 }
+	Port: LRupdateHLS : linearRegression_stubs_data_settings_sinh_etaRegions_s | {1 2 }
 	Port: LRupdateHLS : linearRegression_stubs_data_settings_minNumMatchLayers_s | {1 2 }
 	Port: LRupdateHLS : linearRegression_stubs_data_settings_minPSLayers_s | {1 2 }
 	Port: LRupdateHLS : linearRegression_stubs_data_r_s | {1 2 }
@@ -2492,7 +2478,7 @@ StgValue_126           (ret          ) [ 000]
 	Port: LRupdateHLS : linearRegression_stubMap_data_second_size_s | {1 2 }
 	Port: LRupdateHLS : linearRegression_stubMap_data_second_data_settings_chosenRofPhi_s | {1 2 }
 	Port: LRupdateHLS : linearRegression_stubMap_data_second_data_settings_chosenRofZ_s | {1 2 }
-	Port: LRupdateHLS : linearRegression_stubMap_data_second_data_settings_etaRegions_s | {1 2 }
+	Port: LRupdateHLS : linearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s | {1 2 }
 	Port: LRupdateHLS : linearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s | {1 2 }
 	Port: LRupdateHLS : linearRegression_stubMap_data_second_data_settings_minPSLayers_s | {1 2 }
 	Port: LRupdateHLS : linearRegression_stubMap_data_second_data_r_s | {1 2 }
@@ -2511,7 +2497,6 @@ StgValue_126           (ret          ) [ 000]
 	Port: LRupdateHLS : linearRegression_residuals_data_second_data_layerId | {1 2 }
 	Port: LRupdateHLS : linearRegression_residuals_data_second_data_stubId | {1 2 }
 	Port: LRupdateHLS : linearRegression_residuals_data_second_data_ps | {1 2 }
-	Port: LRupdateHLS : cordic_hyperb_table_s | {1 2 }
   - Chain level:
 	State 1
 	State 2
@@ -2555,87 +2540,81 @@ StgValue_126           (ret          ) [ 000]
 |----------|------------------------------------|---------|---------|---------|---------|---------|
 | Operation|           Functional Unit          |   BRAM  |  DSP48E |  Delay  |    FF   |   LUT   |
 |----------|------------------------------------|---------|---------|---------|---------|---------|
-|   call   |           grp_fit_fu_365           |    0    |   124   | 708.797 |  53510  |  63719  |
+|   call   |           grp_fit_fu_363           |    0    |   112   | 687.542 |  49293  |  55571  |
 |----------|------------------------------------|---------|---------|---------|---------|---------|
-|          |  linearRegression_set_read_fu_170  |    0    |    0    |    0    |    0    |    0    |
-|          | linearRegression_set_1_read_fu_176 |    0    |    0    |    0    |    0    |    0    |
-|          |   l1track3D_iPhiSec_r_read_fu_182  |    0    |    0    |    0    |    0    |    0    |
-|          |   l1track3D_iEtaReg_r_read_fu_188  |    0    |    0    |    0    |    0    |    0    |
-|          |  l1track3D_helixRphi_s_read_fu_194 |    0    |    0    |    0    |    0    |    0    |
-|          |  l1track3D_helixRphi_3_read_fu_200 |    0    |    0    |    0    |    0    |    0    |
-|          |   l1track3D_stubs_siz_read_fu_206  |    0    |    0    |    0    |    0    |    0    |
-|   read   | linearRegression_set_2_read_fu_212 |    0    |    0    |    0    |    0    |    0    |
-|          | linearRegression_set_3_read_fu_218 |    0    |    0    |    0    |    0    |    0    |
-|          |  linearRegression_LRP_read_fu_224  |    0    |    0    |    0    |    0    |    0    |
-|          | linearRegression_LRP_1_read_fu_230 |    0    |    0    |    0    |    0    |    0    |
-|          | linearRegression_LRP_2_read_fu_236 |    0    |    0    |    0    |    0    |    0    |
-|          | linearRegression_LRP_3_read_fu_242 |    0    |    0    |    0    |    0    |    0    |
-|          |  linearRegression_stu_read_fu_248  |    0    |    0    |    0    |    0    |    0    |
-|          |  linearRegression_lay_read_fu_254  |    0    |    0    |    0    |    0    |    0    |
+|          |  linearRegression_set_read_fu_168  |    0    |    0    |    0    |    0    |    0    |
+|          | linearRegression_set_1_read_fu_174 |    0    |    0    |    0    |    0    |    0    |
+|          |   l1track3D_iPhiSec_r_read_fu_180  |    0    |    0    |    0    |    0    |    0    |
+|          |   l1track3D_iEtaReg_r_read_fu_186  |    0    |    0    |    0    |    0    |    0    |
+|          |  l1track3D_helixRphi_s_read_fu_192 |    0    |    0    |    0    |    0    |    0    |
+|          |  l1track3D_helixRphi_3_read_fu_198 |    0    |    0    |    0    |    0    |    0    |
+|          |   l1track3D_stubs_siz_read_fu_204  |    0    |    0    |    0    |    0    |    0    |
+|   read   | linearRegression_set_2_read_fu_210 |    0    |    0    |    0    |    0    |    0    |
+|          | linearRegression_set_3_read_fu_216 |    0    |    0    |    0    |    0    |    0    |
+|          |  linearRegression_LRP_read_fu_222  |    0    |    0    |    0    |    0    |    0    |
+|          | linearRegression_LRP_1_read_fu_228 |    0    |    0    |    0    |    0    |    0    |
+|          | linearRegression_LRP_2_read_fu_234 |    0    |    0    |    0    |    0    |    0    |
+|          | linearRegression_LRP_3_read_fu_240 |    0    |    0    |    0    |    0    |    0    |
+|          |  linearRegression_stu_read_fu_246  |    0    |    0    |    0    |    0    |    0    |
+|          |  linearRegression_lay_read_fu_252  |    0    |    0    |    0    |    0    |    0    |
 |----------|------------------------------------|---------|---------|---------|---------|---------|
-|          |      StgValue_111_write_fu_260     |    0    |    0    |    0    |    0    |    0    |
-|          |      StgValue_112_write_fu_267     |    0    |    0    |    0    |    0    |    0    |
-|          |      StgValue_113_write_fu_274     |    0    |    0    |    0    |    0    |    0    |
-|          |      StgValue_114_write_fu_281     |    0    |    0    |    0    |    0    |    0    |
-|          |      StgValue_115_write_fu_288     |    0    |    0    |    0    |    0    |    0    |
-|          |      StgValue_116_write_fu_295     |    0    |    0    |    0    |    0    |    0    |
-|          |      StgValue_117_write_fu_302     |    0    |    0    |    0    |    0    |    0    |
-|   write  |      StgValue_118_write_fu_309     |    0    |    0    |    0    |    0    |    0    |
-|          |      StgValue_119_write_fu_316     |    0    |    0    |    0    |    0    |    0    |
-|          |      StgValue_120_write_fu_323     |    0    |    0    |    0    |    0    |    0    |
-|          |      StgValue_121_write_fu_330     |    0    |    0    |    0    |    0    |    0    |
-|          |      StgValue_122_write_fu_337     |    0    |    0    |    0    |    0    |    0    |
-|          |      StgValue_123_write_fu_344     |    0    |    0    |    0    |    0    |    0    |
-|          |      StgValue_124_write_fu_351     |    0    |    0    |    0    |    0    |    0    |
-|          |      StgValue_125_write_fu_358     |    0    |    0    |    0    |    0    |    0    |
+|          |      StgValue_111_write_fu_258     |    0    |    0    |    0    |    0    |    0    |
+|          |      StgValue_112_write_fu_265     |    0    |    0    |    0    |    0    |    0    |
+|          |      StgValue_113_write_fu_272     |    0    |    0    |    0    |    0    |    0    |
+|          |      StgValue_114_write_fu_279     |    0    |    0    |    0    |    0    |    0    |
+|          |      StgValue_115_write_fu_286     |    0    |    0    |    0    |    0    |    0    |
+|          |      StgValue_116_write_fu_293     |    0    |    0    |    0    |    0    |    0    |
+|          |      StgValue_117_write_fu_300     |    0    |    0    |    0    |    0    |    0    |
+|   write  |      StgValue_118_write_fu_307     |    0    |    0    |    0    |    0    |    0    |
+|          |      StgValue_119_write_fu_314     |    0    |    0    |    0    |    0    |    0    |
+|          |      StgValue_120_write_fu_321     |    0    |    0    |    0    |    0    |    0    |
+|          |      StgValue_121_write_fu_328     |    0    |    0    |    0    |    0    |    0    |
+|          |      StgValue_122_write_fu_335     |    0    |    0    |    0    |    0    |    0    |
+|          |      StgValue_123_write_fu_342     |    0    |    0    |    0    |    0    |    0    |
+|          |      StgValue_124_write_fu_349     |    0    |    0    |    0    |    0    |    0    |
+|          |      StgValue_125_write_fu_356     |    0    |    0    |    0    |    0    |    0    |
 |----------|------------------------------------|---------|---------|---------|---------|---------|
-|          |            newret_fu_503           |    0    |    0    |    0    |    0    |    0    |
-|          |           newret19_fu_508          |    0    |    0    |    0    |    0    |    0    |
-|          |           newret20_fu_513          |    0    |    0    |    0    |    0    |    0    |
-|          |           newret21_fu_518          |    0    |    0    |    0    |    0    |    0    |
-|          |           newret22_fu_523          |    0    |    0    |    0    |    0    |    0    |
-|          |           newret23_fu_528          |    0    |    0    |    0    |    0    |    0    |
-|          |           newret24_fu_533          |    0    |    0    |    0    |    0    |    0    |
-|extractvalue|           newret25_fu_538          |    0    |    0    |    0    |    0    |    0    |
-|          |           newret26_fu_543          |    0    |    0    |    0    |    0    |    0    |
-|          |           newret27_fu_548          |    0    |    0    |    0    |    0    |    0    |
-|          |           newret28_fu_553          |    0    |    0    |    0    |    0    |    0    |
-|          |           newret29_fu_558          |    0    |    0    |    0    |    0    |    0    |
-|          |           newret30_fu_563          |    0    |    0    |    0    |    0    |    0    |
-|          |           newret31_fu_568          |    0    |    0    |    0    |    0    |    0    |
-|          |           newret32_fu_573          |    0    |    0    |    0    |    0    |    0    |
+|          |            newret_fu_499           |    0    |    0    |    0    |    0    |    0    |
+|          |           newret19_fu_504          |    0    |    0    |    0    |    0    |    0    |
+|          |           newret20_fu_509          |    0    |    0    |    0    |    0    |    0    |
+|          |           newret21_fu_514          |    0    |    0    |    0    |    0    |    0    |
+|          |           newret22_fu_519          |    0    |    0    |    0    |    0    |    0    |
+|          |           newret23_fu_524          |    0    |    0    |    0    |    0    |    0    |
+|          |           newret24_fu_529          |    0    |    0    |    0    |    0    |    0    |
+|extractvalue|           newret25_fu_534          |    0    |    0    |    0    |    0    |    0    |
+|          |           newret26_fu_539          |    0    |    0    |    0    |    0    |    0    |
+|          |           newret27_fu_544          |    0    |    0    |    0    |    0    |    0    |
+|          |           newret28_fu_549          |    0    |    0    |    0    |    0    |    0    |
+|          |           newret29_fu_554          |    0    |    0    |    0    |    0    |    0    |
+|          |           newret30_fu_559          |    0    |    0    |    0    |    0    |    0    |
+|          |           newret31_fu_564          |    0    |    0    |    0    |    0    |    0    |
+|          |           newret32_fu_569          |    0    |    0    |    0    |    0    |    0    |
 |----------|------------------------------------|---------|---------|---------|---------|---------|
-|   Total  |                                    |    0    |   124   | 708.797 |  53510  |  63719  |
+|   Total  |                                    |    0    |   112   | 687.542 |  49293  |  55571  |
 |----------|------------------------------------|---------|---------|---------|---------|---------|
 
 Memories:
-+---------------------+--------+--------+--------+
-|                     |  BRAM  |   FF   |   LUT  |
-+---------------------+--------+--------+--------+
-|cordic_hyperb_table_s|    4   |    0   |    0   |
-+---------------------+--------+--------+--------+
-|        Total        |    4   |    0   |    0   |
-+---------------------+--------+--------+--------+
+N/A
 
 * Register list:
 +------------------------------+--------+
 |                              |   FF   |
 +------------------------------+--------+
-| l1track3D_helixRphi_3_reg_603|   32   |
-| l1track3D_helixRphi_s_reg_598|   32   |
-|  l1track3D_iEtaReg_r_reg_593 |   32   |
-|  l1track3D_iPhiSec_r_reg_588 |   32   |
-|  l1track3D_stubs_siz_reg_608 |   32   |
-|linearRegression_LRP_1_reg_628|   32   |
-|linearRegression_LRP_2_reg_633|   32   |
-|linearRegression_LRP_3_reg_638|   32   |
-| linearRegression_LRP_reg_623 |   32   |
-| linearRegression_lay_reg_648 |   32   |
-|linearRegression_set_1_reg_583|   32   |
-|linearRegression_set_2_reg_613|   32   |
-|linearRegression_set_3_reg_618|   32   |
-| linearRegression_set_reg_578 |   32   |
-| linearRegression_stu_reg_643 |   32   |
+| l1track3D_helixRphi_3_reg_599|   32   |
+| l1track3D_helixRphi_s_reg_594|   32   |
+|  l1track3D_iEtaReg_r_reg_589 |   32   |
+|  l1track3D_iPhiSec_r_reg_584 |   32   |
+|  l1track3D_stubs_siz_reg_604 |   32   |
+|linearRegression_LRP_1_reg_624|   32   |
+|linearRegression_LRP_2_reg_629|   32   |
+|linearRegression_LRP_3_reg_634|   32   |
+| linearRegression_LRP_reg_619 |   32   |
+| linearRegression_lay_reg_644 |   32   |
+|linearRegression_set_1_reg_579|   32   |
+|linearRegression_set_2_reg_609|   32   |
+|linearRegression_set_3_reg_614|   32   |
+| linearRegression_set_reg_574 |   32   |
+| linearRegression_stu_reg_639 |   32   |
 +------------------------------+--------+
 |             Total            |   480  |
 +------------------------------+--------+
@@ -2644,21 +2623,21 @@ Memories:
 |----------------|------|------|------|--------||---------||---------|
 |      Comp      |  Pin | Size |  BW  | S x BW ||  Delay  ||   LUT   |
 |----------------|------|------|------|--------||---------||---------|
-| grp_fit_fu_365 |  p1  |   2  |  32  |   64   ||    9    |
-| grp_fit_fu_365 |  p2  |   2  |  32  |   64   ||    9    |
-| grp_fit_fu_365 |  p4  |   2  |  32  |   64   ||    9    |
-| grp_fit_fu_365 |  p5  |   2  |  32  |   64   ||    9    |
-| grp_fit_fu_365 |  p6  |   2  |  32  |   64   ||    9    |
-| grp_fit_fu_365 |  p7  |   2  |  32  |   64   ||    9    |
-| grp_fit_fu_365 |  p8  |   2  |  32  |   64   ||    9    |
-| grp_fit_fu_365 |  p9  |   2  |  32  |   64   ||    9    |
-| grp_fit_fu_365 |  p21 |   2  |  32  |   64   ||    9    |
-| grp_fit_fu_365 |  p35 |   2  |  32  |   64   ||    9    |
-| grp_fit_fu_365 |  p51 |   2  |  32  |   64   ||    9    |
-| grp_fit_fu_365 |  p52 |   2  |  32  |   64   ||    9    |
-| grp_fit_fu_365 |  p53 |   2  |  32  |   64   ||    9    |
-| grp_fit_fu_365 |  p54 |   2  |  32  |   64   ||    9    |
-| grp_fit_fu_365 |  p55 |   2  |  32  |   64   ||    9    |
+| grp_fit_fu_363 |  p1  |   2  |  32  |   64   ||    9    |
+| grp_fit_fu_363 |  p2  |   2  |  32  |   64   ||    9    |
+| grp_fit_fu_363 |  p4  |   2  |  32  |   64   ||    9    |
+| grp_fit_fu_363 |  p5  |   2  |  32  |   64   ||    9    |
+| grp_fit_fu_363 |  p6  |   2  |  32  |   64   ||    9    |
+| grp_fit_fu_363 |  p7  |   2  |  32  |   64   ||    9    |
+| grp_fit_fu_363 |  p8  |   2  |  32  |   64   ||    9    |
+| grp_fit_fu_363 |  p9  |   2  |  32  |   64   ||    9    |
+| grp_fit_fu_363 |  p21 |   2  |  32  |   64   ||    9    |
+| grp_fit_fu_363 |  p35 |   2  |  32  |   64   ||    9    |
+| grp_fit_fu_363 |  p51 |   2  |  32  |   64   ||    9    |
+| grp_fit_fu_363 |  p52 |   2  |  32  |   64   ||    9    |
+| grp_fit_fu_363 |  p53 |   2  |  32  |   64   ||    9    |
+| grp_fit_fu_363 |  p54 |   2  |  32  |   64   ||    9    |
+| grp_fit_fu_363 |  p55 |   2  |  32  |   64   ||    9    |
 |----------------|------|------|------|--------||---------||---------|
 |      Total     |      |      |      |   960  ||  12.525 ||   135   |
 |----------------|------|------|------|--------||---------||---------|
@@ -2669,10 +2648,10 @@ Memories:
 +-----------+--------+--------+--------+--------+--------+
 |           |  BRAM  | DSP48E |  Delay |   FF   |   LUT  |
 +-----------+--------+--------+--------+--------+--------+
-|  Function |    0   |   124  |   708  |  53510 |  63719 |
-|   Memory  |    4   |    -   |    -   |    0   |    0   |
+|  Function |    0   |   112  |   687  |  49293 |  55571 |
+|   Memory  |    -   |    -   |    -   |    -   |    -   |
 |Multiplexer|    -   |    -   |   12   |    -   |   135  |
 |  Register |    -   |    -   |    -   |   480  |    -   |
 +-----------+--------+--------+--------+--------+--------+
-|   Total   |    4   |   124  |   721  |  53990 |  63854 |
+|   Total   |    0   |   112  |   700  |  49773 |  55706 |
 +-----------+--------+--------+--------+--------+--------+

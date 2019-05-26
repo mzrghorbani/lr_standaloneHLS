@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'calcHelix'" level="0">
-<item name = "Date">Tue May 21 18:44:43 2019
+<item name = "Date">Thu May 23 17:57:31 2019
 </item>
 <item name = "Version">2018.3 (Build 2405991 on Thu Dec 06 23:56:15 MST 2018)</item>
 <item name = "Project">lr_standaloneHLS</item>
@@ -65,34 +65,34 @@
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="1">
 <keys size="6">Instance, Module, BRAM_18K, DSP48E, FF, LUT</keys>
-<column name="LRupdateHLS_faddfsub_32ns_32ns_32_4_full_dsp_1_U197">LRupdateHLS_faddfsub_32ns_32ns_32_4_full_dsp_1, 0, 2, 227, 214</column>
-<column name="LRupdateHLS_faddfsub_32ns_32ns_32_4_full_dsp_1_U198">LRupdateHLS_faddfsub_32ns_32ns_32_4_full_dsp_1, 0, 2, 227, 214</column>
-<column name="LRupdateHLS_fcmp_32ns_32ns_1_1_1_U221">LRupdateHLS_fcmp_32ns_32ns_1_1_1, 0, 0, 66, 72</column>
-<column name="LRupdateHLS_fcmp_32ns_32ns_1_1_1_U222">LRupdateHLS_fcmp_32ns_32ns_1_1_1, 0, 0, 66, 72</column>
-<column name="LRupdateHLS_fcmp_32ns_32ns_1_1_1_U223">LRupdateHLS_fcmp_32ns_32ns_1_1_1, 0, 0, 66, 72</column>
-<column name="LRupdateHLS_fcmp_32ns_32ns_1_1_1_U224">LRupdateHLS_fcmp_32ns_32ns_1_1_1, 0, 0, 66, 72</column>
-<column name="LRupdateHLS_fdiv_32ns_32ns_32_8_1_U215">LRupdateHLS_fdiv_32ns_32ns_32_8_1, 0, 0, 363, 802</column>
-<column name="LRupdateHLS_fdiv_32ns_32ns_32_8_1_U216">LRupdateHLS_fdiv_32ns_32ns_32_8_1, 0, 0, 363, 802</column>
-<column name="LRupdateHLS_fdiv_32ns_32ns_32_8_1_U217">LRupdateHLS_fdiv_32ns_32ns_32_8_1, 0, 0, 363, 802</column>
-<column name="LRupdateHLS_fdiv_32ns_32ns_32_8_1_U218">LRupdateHLS_fdiv_32ns_32ns_32_8_1, 0, 0, 363, 802</column>
+<column name="LRupdateHLS_faddfsub_32ns_32ns_32_4_full_dsp_1_U187">LRupdateHLS_faddfsub_32ns_32ns_32_4_full_dsp_1, 0, 2, 227, 214</column>
+<column name="LRupdateHLS_faddfsub_32ns_32ns_32_4_full_dsp_1_U188">LRupdateHLS_faddfsub_32ns_32ns_32_4_full_dsp_1, 0, 2, 227, 214</column>
+<column name="LRupdateHLS_fcmp_32ns_32ns_1_1_1_U211">LRupdateHLS_fcmp_32ns_32ns_1_1_1, 0, 0, 66, 72</column>
+<column name="LRupdateHLS_fcmp_32ns_32ns_1_1_1_U212">LRupdateHLS_fcmp_32ns_32ns_1_1_1, 0, 0, 66, 72</column>
+<column name="LRupdateHLS_fcmp_32ns_32ns_1_1_1_U213">LRupdateHLS_fcmp_32ns_32ns_1_1_1, 0, 0, 66, 72</column>
+<column name="LRupdateHLS_fcmp_32ns_32ns_1_1_1_U214">LRupdateHLS_fcmp_32ns_32ns_1_1_1, 0, 0, 66, 72</column>
+<column name="LRupdateHLS_fdiv_32ns_32ns_32_8_1_U205">LRupdateHLS_fdiv_32ns_32ns_32_8_1, 0, 0, 363, 802</column>
+<column name="LRupdateHLS_fdiv_32ns_32ns_32_8_1_U206">LRupdateHLS_fdiv_32ns_32ns_32_8_1, 0, 0, 363, 802</column>
+<column name="LRupdateHLS_fdiv_32ns_32ns_32_8_1_U207">LRupdateHLS_fdiv_32ns_32ns_32_8_1, 0, 0, 363, 802</column>
+<column name="LRupdateHLS_fdiv_32ns_32ns_32_8_1_U208">LRupdateHLS_fdiv_32ns_32ns_32_8_1, 0, 0, 363, 802</column>
+<column name="LRupdateHLS_fmul_32ns_32ns_32_2_max_dsp_1_U193">LRupdateHLS_fmul_32ns_32ns_32_2_max_dsp_1, 0, 3, 128, 135</column>
+<column name="LRupdateHLS_fmul_32ns_32ns_32_2_max_dsp_1_U194">LRupdateHLS_fmul_32ns_32ns_32_2_max_dsp_1, 0, 3, 128, 135</column>
+<column name="LRupdateHLS_fmul_32ns_32ns_32_2_max_dsp_1_U195">LRupdateHLS_fmul_32ns_32ns_32_2_max_dsp_1, 0, 3, 128, 135</column>
+<column name="LRupdateHLS_fmul_32ns_32ns_32_2_max_dsp_1_U196">LRupdateHLS_fmul_32ns_32ns_32_2_max_dsp_1, 0, 3, 128, 135</column>
+<column name="LRupdateHLS_fmul_32ns_32ns_32_2_max_dsp_1_U197">LRupdateHLS_fmul_32ns_32ns_32_2_max_dsp_1, 0, 3, 128, 135</column>
+<column name="LRupdateHLS_fmul_32ns_32ns_32_2_max_dsp_1_U198">LRupdateHLS_fmul_32ns_32ns_32_2_max_dsp_1, 0, 3, 128, 135</column>
+<column name="LRupdateHLS_fmul_32ns_32ns_32_2_max_dsp_1_U199">LRupdateHLS_fmul_32ns_32ns_32_2_max_dsp_1, 0, 3, 128, 135</column>
+<column name="LRupdateHLS_fmul_32ns_32ns_32_2_max_dsp_1_U200">LRupdateHLS_fmul_32ns_32ns_32_2_max_dsp_1, 0, 3, 128, 135</column>
+<column name="LRupdateHLS_fmul_32ns_32ns_32_2_max_dsp_1_U201">LRupdateHLS_fmul_32ns_32ns_32_2_max_dsp_1, 0, 3, 128, 135</column>
+<column name="LRupdateHLS_fmul_32ns_32ns_32_2_max_dsp_1_U202">LRupdateHLS_fmul_32ns_32ns_32_2_max_dsp_1, 0, 3, 128, 135</column>
 <column name="LRupdateHLS_fmul_32ns_32ns_32_2_max_dsp_1_U203">LRupdateHLS_fmul_32ns_32ns_32_2_max_dsp_1, 0, 3, 128, 135</column>
 <column name="LRupdateHLS_fmul_32ns_32ns_32_2_max_dsp_1_U204">LRupdateHLS_fmul_32ns_32ns_32_2_max_dsp_1, 0, 3, 128, 135</column>
-<column name="LRupdateHLS_fmul_32ns_32ns_32_2_max_dsp_1_U205">LRupdateHLS_fmul_32ns_32ns_32_2_max_dsp_1, 0, 3, 128, 135</column>
-<column name="LRupdateHLS_fmul_32ns_32ns_32_2_max_dsp_1_U206">LRupdateHLS_fmul_32ns_32ns_32_2_max_dsp_1, 0, 3, 128, 135</column>
-<column name="LRupdateHLS_fmul_32ns_32ns_32_2_max_dsp_1_U207">LRupdateHLS_fmul_32ns_32ns_32_2_max_dsp_1, 0, 3, 128, 135</column>
-<column name="LRupdateHLS_fmul_32ns_32ns_32_2_max_dsp_1_U208">LRupdateHLS_fmul_32ns_32ns_32_2_max_dsp_1, 0, 3, 128, 135</column>
-<column name="LRupdateHLS_fmul_32ns_32ns_32_2_max_dsp_1_U209">LRupdateHLS_fmul_32ns_32ns_32_2_max_dsp_1, 0, 3, 128, 135</column>
-<column name="LRupdateHLS_fmul_32ns_32ns_32_2_max_dsp_1_U210">LRupdateHLS_fmul_32ns_32ns_32_2_max_dsp_1, 0, 3, 128, 135</column>
-<column name="LRupdateHLS_fmul_32ns_32ns_32_2_max_dsp_1_U211">LRupdateHLS_fmul_32ns_32ns_32_2_max_dsp_1, 0, 3, 128, 135</column>
-<column name="LRupdateHLS_fmul_32ns_32ns_32_2_max_dsp_1_U212">LRupdateHLS_fmul_32ns_32ns_32_2_max_dsp_1, 0, 3, 128, 135</column>
-<column name="LRupdateHLS_fmul_32ns_32ns_32_2_max_dsp_1_U213">LRupdateHLS_fmul_32ns_32ns_32_2_max_dsp_1, 0, 3, 128, 135</column>
-<column name="LRupdateHLS_fmul_32ns_32ns_32_2_max_dsp_1_U214">LRupdateHLS_fmul_32ns_32ns_32_2_max_dsp_1, 0, 3, 128, 135</column>
-<column name="LRupdateHLS_fsub_32ns_32ns_32_4_full_dsp_1_U199">LRupdateHLS_fsub_32ns_32ns_32_4_full_dsp_1, 0, 2, 227, 214</column>
-<column name="LRupdateHLS_fsub_32ns_32ns_32_4_full_dsp_1_U200">LRupdateHLS_fsub_32ns_32ns_32_4_full_dsp_1, 0, 2, 227, 214</column>
-<column name="LRupdateHLS_fsub_32ns_32ns_32_4_full_dsp_1_U201">LRupdateHLS_fsub_32ns_32ns_32_4_full_dsp_1, 0, 2, 227, 214</column>
-<column name="LRupdateHLS_fsub_32ns_32ns_32_4_full_dsp_1_U202">LRupdateHLS_fsub_32ns_32ns_32_4_full_dsp_1, 0, 2, 227, 214</column>
-<column name="LRupdateHLS_uitofp_32ns_32_3_1_U219">LRupdateHLS_uitofp_32ns_32_3_1, 0, 0, 128, 341</column>
-<column name="LRupdateHLS_uitofp_32ns_32_3_1_U220">LRupdateHLS_uitofp_32ns_32_3_1, 0, 0, 128, 341</column>
+<column name="LRupdateHLS_fsub_32ns_32ns_32_4_full_dsp_1_U189">LRupdateHLS_fsub_32ns_32ns_32_4_full_dsp_1, 0, 2, 227, 214</column>
+<column name="LRupdateHLS_fsub_32ns_32ns_32_4_full_dsp_1_U190">LRupdateHLS_fsub_32ns_32ns_32_4_full_dsp_1, 0, 2, 227, 214</column>
+<column name="LRupdateHLS_fsub_32ns_32ns_32_4_full_dsp_1_U191">LRupdateHLS_fsub_32ns_32ns_32_4_full_dsp_1, 0, 2, 227, 214</column>
+<column name="LRupdateHLS_fsub_32ns_32ns_32_4_full_dsp_1_U192">LRupdateHLS_fsub_32ns_32ns_32_4_full_dsp_1, 0, 2, 227, 214</column>
+<column name="LRupdateHLS_uitofp_32ns_32_3_1_U209">LRupdateHLS_uitofp_32ns_32_3_1, 0, 0, 128, 341</column>
+<column name="LRupdateHLS_uitofp_32ns_32_3_1_U210">LRupdateHLS_uitofp_32ns_32_3_1, 0, 0, 128, 341</column>
 </table>
 </item>
 <item name = "DSP48"><table name="" hasTotal="0">
@@ -112,27 +112,27 @@
 <column name="p_rec1_fu_743_p2">+, 0, 0, 39, 1, 32</column>
 <column name="p_rec_fu_777_p2">+, 0, 0, 39, 1, 32</column>
 <column name="phiSums_n_fu_1526_p2">+, 0, 0, 39, 32, 1</column>
-<column name="tmp_638_fu_732_p2">+, 0, 0, 17, 10, 10</column>
-<column name="tmp_639_fu_759_p2">+, 0, 0, 17, 10, 10</column>
+<column name="tmp_581_fu_732_p2">+, 0, 0, 17, 10, 10</column>
+<column name="tmp_582_fu_759_p2">+, 0, 0, 17, 10, 10</column>
 <column name="zSums_n_fu_1557_p2">+, 0, 0, 39, 32, 1</column>
-<column name="tmp_205_fu_1296_p2">and, 0, 0, 2, 1, 1</column>
-<column name="tmp_210_fu_1357_p2">and, 0, 0, 2, 1, 1</column>
-<column name="tmp_217_fu_855_p2">and, 0, 0, 2, 1, 1</column>
-<column name="tmp_219_fu_861_p2">and, 0, 0, 2, 1, 1</column>
-<column name="tmp_226_fu_1442_p2">and, 0, 0, 2, 1, 1</column>
-<column name="tmp_228_fu_1448_p2">and, 0, 0, 2, 1, 1</column>
-<column name="tmp_235_fu_947_p2">and, 0, 0, 2, 1, 1</column>
-<column name="tmp_237_fu_953_p2">and, 0, 0, 2, 1, 1</column>
-<column name="tmp_244_fu_1165_p2">and, 0, 0, 2, 1, 1</column>
-<column name="tmp_246_fu_1171_p2">and, 0, 0, 2, 1, 1</column>
-<column name="tmp_250_fu_1003_p2">and, 0, 0, 2, 1, 1</column>
-<column name="tmp_252_fu_1009_p2">and, 0, 0, 2, 1, 1</column>
-<column name="tmp_256_fu_1497_p2">and, 0, 0, 2, 1, 1</column>
-<column name="tmp_258_fu_1503_p2">and, 0, 0, 2, 1, 1</column>
-<column name="tmp_262_fu_1059_p2">and, 0, 0, 2, 1, 1</column>
-<column name="tmp_264_fu_1065_p2">and, 0, 0, 2, 1, 1</column>
-<column name="tmp_268_fu_1221_p2">and, 0, 0, 2, 1, 1</column>
-<column name="tmp_270_fu_1227_p2">and, 0, 0, 2, 1, 1</column>
+<column name="tmp_135_fu_1296_p2">and, 0, 0, 2, 1, 1</column>
+<column name="tmp_140_fu_1357_p2">and, 0, 0, 2, 1, 1</column>
+<column name="tmp_147_fu_855_p2">and, 0, 0, 2, 1, 1</column>
+<column name="tmp_149_fu_861_p2">and, 0, 0, 2, 1, 1</column>
+<column name="tmp_156_fu_1442_p2">and, 0, 0, 2, 1, 1</column>
+<column name="tmp_158_fu_1448_p2">and, 0, 0, 2, 1, 1</column>
+<column name="tmp_165_fu_947_p2">and, 0, 0, 2, 1, 1</column>
+<column name="tmp_167_fu_953_p2">and, 0, 0, 2, 1, 1</column>
+<column name="tmp_174_fu_1165_p2">and, 0, 0, 2, 1, 1</column>
+<column name="tmp_176_fu_1171_p2">and, 0, 0, 2, 1, 1</column>
+<column name="tmp_180_fu_1003_p2">and, 0, 0, 2, 1, 1</column>
+<column name="tmp_182_fu_1009_p2">and, 0, 0, 2, 1, 1</column>
+<column name="tmp_186_fu_1497_p2">and, 0, 0, 2, 1, 1</column>
+<column name="tmp_188_fu_1503_p2">and, 0, 0, 2, 1, 1</column>
+<column name="tmp_192_fu_1059_p2">and, 0, 0, 2, 1, 1</column>
+<column name="tmp_194_fu_1065_p2">and, 0, 0, 2, 1, 1</column>
+<column name="tmp_198_fu_1221_p2">and, 0, 0, 2, 1, 1</column>
+<column name="tmp_200_fu_1227_p2">and, 0, 0, 2, 1, 1</column>
 <column name="notlhs10_fu_985_p2">icmp, 0, 0, 11, 8, 2</column>
 <column name="notlhs11_fu_1479_p2">icmp, 0, 0, 11, 8, 2</column>
 <column name="notlhs12_fu_1041_p2">icmp, 0, 0, 11, 8, 2</column>
@@ -161,24 +161,24 @@
 <column name="notrhs8_fu_935_p2">icmp, 0, 0, 20, 23, 1</column>
 <column name="notrhs9_fu_1345_p2">icmp, 0, 0, 20, 23, 1</column>
 <column name="notrhs_fu_1284_p2">icmp, 0, 0, 20, 23, 1</column>
-<column name="tmp_168_fu_772_p2">icmp, 0, 0, 20, 32, 32</column>
+<column name="tmp_81_fu_772_p2">icmp, 0, 0, 20, 32, 32</column>
 <column name="tmp_i_fu_749_p2">icmp, 0, 0, 20, 32, 1</column>
 <column name="tmp_s_fu_738_p2">icmp, 0, 0, 20, 32, 32</column>
 <column name="ps_1_fu_1255_p2">or, 0, 0, 2, 1, 1</column>
-<column name="tmp_203_fu_1290_p2">or, 0, 0, 2, 1, 1</column>
-<column name="tmp_208_fu_1351_p2">or, 0, 0, 2, 1, 1</column>
-<column name="tmp_215_fu_831_p2">or, 0, 0, 2, 1, 1</column>
-<column name="tmp_216_fu_849_p2">or, 0, 0, 2, 1, 1</column>
-<column name="tmp_224_fu_1418_p2">or, 0, 0, 2, 1, 1</column>
-<column name="tmp_225_fu_1436_p2">or, 0, 0, 2, 1, 1</column>
-<column name="tmp_233_fu_923_p2">or, 0, 0, 2, 1, 1</column>
-<column name="tmp_234_fu_941_p2">or, 0, 0, 2, 1, 1</column>
-<column name="tmp_242_fu_1141_p2">or, 0, 0, 2, 1, 1</column>
-<column name="tmp_243_fu_1159_p2">or, 0, 0, 2, 1, 1</column>
-<column name="tmp_249_fu_997_p2">or, 0, 0, 2, 1, 1</column>
-<column name="tmp_255_fu_1491_p2">or, 0, 0, 2, 1, 1</column>
-<column name="tmp_261_fu_1053_p2">or, 0, 0, 2, 1, 1</column>
-<column name="tmp_267_fu_1215_p2">or, 0, 0, 2, 1, 1</column>
+<column name="tmp_133_fu_1290_p2">or, 0, 0, 2, 1, 1</column>
+<column name="tmp_138_fu_1351_p2">or, 0, 0, 2, 1, 1</column>
+<column name="tmp_145_fu_831_p2">or, 0, 0, 2, 1, 1</column>
+<column name="tmp_146_fu_849_p2">or, 0, 0, 2, 1, 1</column>
+<column name="tmp_154_fu_1418_p2">or, 0, 0, 2, 1, 1</column>
+<column name="tmp_155_fu_1436_p2">or, 0, 0, 2, 1, 1</column>
+<column name="tmp_163_fu_923_p2">or, 0, 0, 2, 1, 1</column>
+<column name="tmp_164_fu_941_p2">or, 0, 0, 2, 1, 1</column>
+<column name="tmp_172_fu_1141_p2">or, 0, 0, 2, 1, 1</column>
+<column name="tmp_173_fu_1159_p2">or, 0, 0, 2, 1, 1</column>
+<column name="tmp_179_fu_997_p2">or, 0, 0, 2, 1, 1</column>
+<column name="tmp_185_fu_1491_p2">or, 0, 0, 2, 1, 1</column>
+<column name="tmp_191_fu_1053_p2">or, 0, 0, 2, 1, 1</column>
+<column name="tmp_197_fu_1215_p2">or, 0, 0, 2, 1, 1</column>
 <column name="layerMaxPos_Phi_fu_1509_p3">select, 0, 0, 32, 1, 32</column>
 <column name="layerMaxPos_RPhi_fu_1015_p3">select, 0, 0, 32, 1, 32</column>
 <column name="layerMaxPos_RZ_1_fu_1079_p3">select, 0, 0, 32, 1, 32</column>
@@ -247,8 +247,8 @@
 </item>
 <item name = "Register"><table name="" hasTotal="1">
 <keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
-<column name="LinearRegression_stu_430_reg_1735">32, 0, 32, 0</column>
-<column name="LinearRegression_stu_438_reg_1788">1, 0, 1, 0</column>
+<column name="LinearRegression_stu_426_reg_1735">32, 0, 32, 0</column>
+<column name="LinearRegression_stu_434_reg_1788">1, 0, 1, 0</column>
 <column name="ap_CS_fsm">55, 0, 55, 0</column>
 <column name="ap_return_0_preg">32, 0, 32, 0</column>
 <column name="ap_return_1_preg">32, 0, 32, 0</column>
@@ -299,17 +299,17 @@
 <column name="tmp_3_i1_reg_1928">32, 0, 32, 0</column>
 <column name="tmp_3_i_reg_1898">32, 0, 32, 0</column>
 <column name="tmp_4_i1_reg_1938">32, 0, 32, 0</column>
+<column name="tmp_581_reg_1707">9, 0, 10, 1</column>
 <column name="tmp_5_i1_reg_1866">32, 0, 32, 0</column>
 <column name="tmp_5_i_reg_1856">32, 0, 32, 0</column>
-<column name="tmp_638_reg_1707">9, 0, 10, 1</column>
 <column name="tmp_7_i1_reg_1903">32, 0, 32, 0</column>
 <column name="tmp_8_i1_reg_1908">32, 0, 32, 0</column>
 <column name="tmp_9_i1_reg_1913">32, 0, 32, 0</column>
 <column name="tmp_9_i_reg_1883">32, 0, 32, 0</column>
-<column name="tmp_i2_reg_1871">32, 0, 32, 0</column>
-<column name="tmp_i3_reg_1877">32, 0, 32, 0</column>
-<column name="tmp_i5_reg_1918">32, 0, 32, 0</column>
-<column name="tmp_i_43_reg_1888">32, 0, 32, 0</column>
+<column name="tmp_i3_reg_1918">32, 0, 32, 0</column>
+<column name="tmp_i7_reg_1871">32, 0, 32, 0</column>
+<column name="tmp_i8_reg_1877">32, 0, 32, 0</column>
+<column name="tmp_i_13_reg_1888">32, 0, 32, 0</column>
 <column name="tmp_i_reg_1740">1, 0, 1, 0</column>
 </table>
 </item>

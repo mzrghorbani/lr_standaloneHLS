@@ -43,19 +43,19 @@ public:
         return (a);
     }
 
-    const float *etaRegions() const {
-        return (etaRegions_);
+    const float *sinh_etaRegions_div2() const {
+        return (sinh_etaRegions_);
     }
 
-    void setEtaRegions(const float *etaRegions) {
+    void setSinh_EtaRegions(const float *etaRegions) {
         for (int i = 0; i < 19; i++)
-            Settings::etaRegions_[i] = etaRegions[i];
+            Settings::sinh_etaRegions_[i] = etaRegions[i];
     }
 
 private:
     float chosenRofPhi_;
     float chosenRofZ_;
-    float etaRegions_[19];
+    float sinh_etaRegions_[19];
     unsigned int minNumMatchLayers_;
     unsigned int minPSLayers_;
 };

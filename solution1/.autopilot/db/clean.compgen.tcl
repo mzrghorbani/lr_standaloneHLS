@@ -1,6 +1,6 @@
 # This script segment is generated automatically by AutoPilot
 
-set id 398
+set id 386
 set name LRupdateHLS_mul_mul_9ns_14s_14_1_1
 set corename simcore_mul
 set op mul
@@ -87,7 +87,7 @@ if {${::AESL::PGuard_autoexp_gen}} {
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 420 \
+    id 408 \
     name mapHLS_unsigned_int_arrayHLS_Stub_data_first \
     reset_level 1 \
     sync_rst true \
@@ -106,7 +106,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 421 \
+    id 409 \
     name mapHLS_unsigned_int_arrayHLS_Stub_data_second_size_s \
     reset_level 1 \
     sync_rst true \
@@ -125,7 +125,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 422 \
+    id 410 \
     name mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofPhi_s \
     reset_level 1 \
     sync_rst true \
@@ -144,7 +144,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 423 \
+    id 411 \
     name mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofZ_s \
     reset_level 1 \
     sync_rst true \
@@ -163,17 +163,17 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 424 \
-    name mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_etaRegions_s \
+    id 412 \
+    name mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_sinh_etaRegions_s \
     reset_level 1 \
     sync_rst true \
     dir IO \
-    corename mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_etaRegions_s \
+    corename mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_sinh_etaRegions_s \
     op interface \
-    ports { mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_etaRegions_s_address0 { O 13 vector } mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_etaRegions_s_ce0 { O 1 bit } mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_etaRegions_s_we0 { O 1 bit } mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_etaRegions_s_d0 { O 32 vector } mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_etaRegions_s_q0 { I 32 vector } mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_etaRegions_s_address1 { O 13 vector } mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_etaRegions_s_ce1 { O 1 bit } mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_etaRegions_s_we1 { O 1 bit } mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_etaRegions_s_d1 { O 32 vector } mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_etaRegions_s_q1 { I 32 vector } } \
+    ports { mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_sinh_etaRegions_s_address0 { O 13 vector } mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_sinh_etaRegions_s_ce0 { O 1 bit } mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_sinh_etaRegions_s_we0 { O 1 bit } mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_sinh_etaRegions_s_d0 { O 32 vector } mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_sinh_etaRegions_s_q0 { I 32 vector } mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_sinh_etaRegions_s_address1 { O 13 vector } mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_sinh_etaRegions_s_ce1 { O 1 bit } mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_sinh_etaRegions_s_we1 { O 1 bit } mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_sinh_etaRegions_s_d1 { O 32 vector } mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_sinh_etaRegions_s_q1 { I 32 vector } } \
 } "
 } else {
-puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_etaRegions_s'"
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_sinh_etaRegions_s'"
 }
 }
 
@@ -182,7 +182,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 425 \
+    id 413 \
     name mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minNumMatchLayers_s \
     reset_level 1 \
     sync_rst true \
@@ -201,7 +201,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 426 \
+    id 414 \
     name mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minPSLayers_s \
     reset_level 1 \
     sync_rst true \
@@ -220,7 +220,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 427 \
+    id 415 \
     name mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_r_s \
     reset_level 1 \
     sync_rst true \
@@ -239,7 +239,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 428 \
+    id 416 \
     name mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_phi_s \
     reset_level 1 \
     sync_rst true \
@@ -258,7 +258,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 429 \
+    id 417 \
     name mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_z_s \
     reset_level 1 \
     sync_rst true \
@@ -277,7 +277,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 430 \
+    id 418 \
     name mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_layerId_s \
     reset_level 1 \
     sync_rst true \
@@ -296,7 +296,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 431 \
+    id 419 \
     name mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_psModule_s \
     reset_level 1 \
     sync_rst true \
@@ -315,7 +315,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 432 \
+    id 420 \
     name mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_barrel_s \
     reset_level 1 \
     sync_rst true \
@@ -333,7 +333,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 419 \
+    id 407 \
     name mapHLS_unsigned_int_arrayHLS_Stub_size_read \
     type other \
     dir I \
@@ -348,7 +348,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 433 \
+    id 421 \
     name idx_read \
     type other \
     dir I \

@@ -11,8 +11,8 @@ class LinearRegression {
 public:
     LinearRegression() : iPhiSec_(0), iEtaReg_(0), nIterations_(0), valid_(false) {}
 
-    LinearRegression(const Settings &settings) : settings_(settings), iPhiSec_(0), iEtaReg_(0), nIterations_(0),
-                                                 valid_(false) {}
+    LinearRegression(const Settings &settings) :
+    	settings_(settings), iPhiSec_(0), iEtaReg_(0), nIterations_(0), valid_(false) {}
 
     ~LinearRegression() {}
 

@@ -25,7 +25,7 @@
 
 <trans id="67" from="3" to="4">
 <condition id="-1">
-<or_exp><and_exp><literal name="tmp_138" val="0"/>
+<or_exp><and_exp><literal name="tmp_51" val="0"/>
 </and_exp></or_exp>
 </condition>
 </trans>
@@ -226,10 +226,10 @@ meminst:6  %empty = call i32 (...)* @_ssdm_op_SpecLoopName([19 x i8]* @memset_fo
 
 <Node id="18" bw="32" op_0_bw="32" op_1_bw="64" op_2_bw="64" op_3_bw="64">
 <![CDATA[
-meminst:7  %empty_40 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 30, i64 30, i64 30)
+meminst:7  %empty_10 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 30, i64 30, i64 30)
 
 ]]></Node>
-<StgValue><ssdm name="empty_40"/></StgValue>
+<StgValue><ssdm name="empty_10"/></StgValue>
 </operation>
 
 <operation id="18" st_id="2" stage="1" lat="1">
@@ -383,10 +383,10 @@ meminst:8  br i1 %tmp_s, label %1, label %meminst
 
 <Node id="30" bw="4" op_0_bw="1" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-._crit_edge2:4  %stubs_data_barrel_s_41 = getelementptr [10 x i1]* %stubs_data_barrel_s, i64 0, i64 %p_begin_0_rec_cast
+._crit_edge2:4  %stubs_data_barrel_s_11 = getelementptr [10 x i1]* %stubs_data_barrel_s, i64 0, i64 %p_begin_0_rec_cast
 
 ]]></Node>
-<StgValue><ssdm name="stubs_data_barrel_s_41"/></StgValue>
+<StgValue><ssdm name="stubs_data_barrel_s_11"/></StgValue>
 </operation>
 
 <operation id="28" st_id="3" stage="1" lat="1">
@@ -398,10 +398,10 @@ meminst:8  br i1 %tmp_s, label %1, label %meminst
 
 <Node id="31" bw="1" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-._crit_edge2:5  %tmp_138 = icmp eq i32 %p_begin_0_rec, %stubs_size_read_1
+._crit_edge2:5  %tmp_51 = icmp eq i32 %p_begin_0_rec, %stubs_size_read_1
 
 ]]></Node>
-<StgValue><ssdm name="tmp_138"/></StgValue>
+<StgValue><ssdm name="tmp_51"/></StgValue>
 </operation>
 
 <operation id="29" st_id="3" stage="1" lat="1">
@@ -428,7 +428,7 @@ meminst:8  br i1 %tmp_s, label %1, label %meminst
 
 <Node id="33" bw="0" op_0_bw="1" op_1_bw="0" op_2_bw="0">
 <![CDATA[
-._crit_edge2:7  br i1 %tmp_138, label %4, label %2
+._crit_edge2:7  br i1 %tmp_51, label %4, label %2
 
 ]]></Node>
 <StgValue><ssdm name=""/></StgValue>
@@ -438,7 +438,7 @@ meminst:8  br i1 %tmp_s, label %1, label %meminst
 <core>RAM</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
-<or_exp><and_exp><literal name="tmp_138" val="0"/>
+<or_exp><and_exp><literal name="tmp_51" val="0"/>
 </and_exp></or_exp>
 </condition>
 
@@ -454,7 +454,7 @@ meminst:8  br i1 %tmp_s, label %1, label %meminst
 <core>RAM</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
-<or_exp><and_exp><literal name="tmp_138" val="0"/>
+<or_exp><and_exp><literal name="tmp_51" val="0"/>
 </and_exp></or_exp>
 </condition>
 
@@ -470,13 +470,13 @@ meminst:8  br i1 %tmp_s, label %1, label %meminst
 <core>RAM</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
-<or_exp><and_exp><literal name="tmp_138" val="0"/>
+<or_exp><and_exp><literal name="tmp_51" val="0"/>
 </and_exp></or_exp>
 </condition>
 
 <Node id="37" bw="1" op_0_bw="4">
 <![CDATA[
-:2  %stubs_data_barrel_1 = load i1* %stubs_data_barrel_s_41, align 1
+:2  %stubs_data_barrel_1 = load i1* %stubs_data_barrel_s_11, align 1
 
 ]]></Node>
 <StgValue><ssdm name="stubs_data_barrel_1"/></StgValue>
@@ -486,7 +486,7 @@ meminst:8  br i1 %tmp_s, label %1, label %meminst
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
-<or_exp><and_exp><literal name="tmp_138" val="1"/>
+<or_exp><and_exp><literal name="tmp_51" val="1"/>
 </and_exp></or_exp>
 </condition>
 
@@ -502,7 +502,7 @@ meminst:8  br i1 %tmp_s, label %1, label %meminst
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
-<or_exp><and_exp><literal name="tmp_138" val="1"/>
+<or_exp><and_exp><literal name="tmp_51" val="1"/>
 </and_exp></or_exp>
 </condition>
 
@@ -556,7 +556,7 @@ meminst:8  br i1 %tmp_s, label %1, label %meminst
 
 <Node id="37" bw="1" op_0_bw="4">
 <![CDATA[
-:2  %stubs_data_barrel_1 = load i1* %stubs_data_barrel_s_41, align 1
+:2  %stubs_data_barrel_1 = load i1* %stubs_data_barrel_s_11, align 1
 
 ]]></Node>
 <StgValue><ssdm name="stubs_data_barrel_1"/></StgValue>
@@ -601,10 +601,10 @@ meminst:8  br i1 %tmp_s, label %1, label %meminst
 
 <Node id="40" bw="1" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-:5  %tmp_111_not_i = icmp ult i32 %layerId, 21
+:5  %tmp_36_not_i = icmp ult i32 %layerId, 21
 
 ]]></Node>
-<StgValue><ssdm name="tmp_111_not_i"/></StgValue>
+<StgValue><ssdm name="tmp_36_not_i"/></StgValue>
 </operation>
 
 <operation id="42" st_id="4" stage="1" lat="1">
@@ -631,7 +631,7 @@ meminst:8  br i1 %tmp_s, label %1, label %meminst
 
 <Node id="42" bw="1" op_0_bw="1" op_1_bw="1">
 <![CDATA[
-:7  %brmerge3_i = or i1 %tmp_111_not_i, %stub_psModule_read_s
+:7  %brmerge3_i = or i1 %tmp_36_not_i, %stub_psModule_read_s
 
 ]]></Node>
 <StgValue><ssdm name="brmerge3_i"/></StgValue>
@@ -661,10 +661,10 @@ meminst:8  br i1 %tmp_s, label %1, label %meminst
 
 <Node id="44" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-:9  %tmp_93_i = add i32 %layerId, -10
+:9  %tmp_17_i = add i32 %layerId, -10
 
 ]]></Node>
-<StgValue><ssdm name="tmp_93_i"/></StgValue>
+<StgValue><ssdm name="tmp_17_i"/></StgValue>
 </operation>
 
 <operation id="46" st_id="4" stage="1" lat="1">
@@ -706,7 +706,7 @@ meminst:8  br i1 %tmp_s, label %1, label %meminst
 
 <Node id="47" bw="32" op_0_bw="1" op_1_bw="32" op_2_bw="32">
 <![CDATA[
-:12  %sel_tmp2_i = select i1 %sel_tmp1_i, i32 %layerId, i32 %tmp_93_i
+:12  %sel_tmp2_i = select i1 %sel_tmp1_i, i32 %layerId, i32 %tmp_17_i
 
 ]]></Node>
 <StgValue><ssdm name="sel_tmp2_i"/></StgValue>
@@ -782,10 +782,10 @@ meminst:8  br i1 %tmp_s, label %1, label %meminst
 
 <Node id="53" bw="64" op_0_bw="32">
 <![CDATA[
-._crit_edge:0  %tmp_139 = zext i32 %p_0_i to i64
+._crit_edge:0  %tmp_52 = zext i32 %p_0_i to i64
 
 ]]></Node>
-<StgValue><ssdm name="tmp_139"/></StgValue>
+<StgValue><ssdm name="tmp_52"/></StgValue>
 </operation>
 
 <operation id="54" st_id="4" stage="1" lat="1">
@@ -798,7 +798,7 @@ meminst:8  br i1 %tmp_s, label %1, label %meminst
 
 <Node id="54" bw="5" op_0_bw="1" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-._crit_edge:1  %foundLayers_addr_1 = getelementptr inbounds [30 x i1]* %foundLayers, i64 0, i64 %tmp_139
+._crit_edge:1  %foundLayers_addr_1 = getelementptr inbounds [30 x i1]* %foundLayers, i64 0, i64 %tmp_52
 
 ]]></Node>
 <StgValue><ssdm name="foundLayers_addr_1"/></StgValue>

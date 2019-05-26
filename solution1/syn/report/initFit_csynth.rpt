@@ -3,7 +3,7 @@
 ================================================================
 == Vivado HLS Report for 'initFit'
 ================================================================
-* Date:           Tue May 21 18:44:38 2019
+* Date:           Thu May 23 17:57:26 2019
 
 * Version:        2018.3 (Build 2405991 on Thu Dec 06 23:56:15 MST 2018)
 * Project:        lr_standaloneHLS
@@ -20,7 +20,7 @@
     +--------+-------+----------+------------+
     |  Clock | Target| Estimated| Uncertainty|
     +--------+-------+----------+------------+
-    |ap_clk  |  10.00|     9.121|        1.25|
+    |ap_clk  |  10.00|     9.071|        1.25|
     +--------+-------+----------+------------+
 
 + Latency (clock cycles): 
@@ -34,14 +34,13 @@
 
     + Detail: 
         * Instance: 
-        +----------------------------------+----------------------+-----+-----+-----+-----+---------+
-        |                                  |                      |  Latency  |  Interval | Pipeline|
-        |             Instance             |        Module        | min | max | min | max |   Type  |
-        +----------------------------------+----------------------+-----+-----+-----+-----+---------+
-        |grp_sinh_cosh_range_redu_fu_7846  |sinh_cosh_range_redu  |    1|  134|    1|  134|   none  |
-        |grp_push_back_1_fu_7854           |push_back_1           |    4|    4|    4|    4|   none  |
-        |grp_countStubLayers_fu_8004       |countStubLayers       |    ?|    ?|    ?|    ?|   none  |
-        +----------------------------------+----------------------+-----+-----+-----+-----+---------+
+        +-----------------------------+-----------------+-----+-----+-----+-----+---------+
+        |                             |                 |  Latency  |  Interval | Pipeline|
+        |           Instance          |      Module     | min | max | min | max |   Type  |
+        +-----------------------------+-----------------+-----+-----+-----+-----+---------+
+        |grp_push_back_1_fu_7806      |push_back_1      |    4|    4|    4|    4|   none  |
+        |grp_countStubLayers_fu_7956  |countStubLayers  |    ?|    ?|    ?|    ?|   none  |
+        +-----------------------------+-----------------+-----+-----+-----+-----+---------+
 
         * Loop: 
         +-------------+-----+-----+----------+-----------+-----------+------+----------+
@@ -50,10 +49,8 @@
         +-------------+-----+-----+----------+-----------+-----------+------+----------+
         |- Loop 1     |    ?|    ?|         ?|          -|          -|     ?|    no    |
         | + Loop 1.1  |    ?|    ?|         2|          -|          -|     ?|    no    |
-        | + Loop 1.2  |    ?|    ?|         2|          -|          -|     ?|    no    |
-        | + Loop 1.3  |    9|    9|         1|          -|          -|    10|    no    |
-        | + Loop 1.4  |    ?|    ?|         2|          -|          -|     ?|    no    |
-        | + Loop 1.5  |    ?|    ?|         2|          -|          -|     ?|    no    |
+        | + Loop 1.2  |    9|    9|         1|          -|          -|    10|    no    |
+        | + Loop 1.3  |    ?|    ?|         2|          -|          -|     ?|    no    |
         +-------------+-----+-----+----------+-----------+-----------+------+----------+
 
 
@@ -66,45 +63,44 @@
 |         Name        | BRAM_18K| DSP48E|    FF   |   LUT  |
 +---------------------+---------+-------+---------+--------+
 |DSP                  |        -|      1|        -|       -|
-|Expression           |        -|      -|        0|    1873|
+|Expression           |        -|      -|        0|    1751|
 |FIFO                 |        -|      -|        -|       -|
-|Instance             |        4|     17|     3374|   12107|
+|Instance             |        0|      5|      616|    2467|
 |Memory               |        0|      -|      330|      30|
-|Multiplexer          |        -|      -|        -|    5878|
-|Register             |        -|      -|     3323|       -|
+|Multiplexer          |        -|      -|        -|    5811|
+|Register             |        -|      -|     3060|       -|
 +---------------------+---------+-------+---------+--------+
-|Total                |        4|     18|     7027|   19888|
+|Total                |        0|      6|     4006|   10059|
 +---------------------+---------+-------+---------+--------+
 |Available SLR        |     2160|   2760|   663360|  331680|
 +---------------------+---------+-------+---------+--------+
-|Utilization SLR (%)  |    ~0   |   ~0  |        1|       5|
+|Utilization SLR (%)  |        0|   ~0  |    ~0   |       3|
 +---------------------+---------+-------+---------+--------+
 |Available            |     4320|   5520|  1326720|  663360|
 +---------------------+---------+-------+---------+--------+
-|Utilization (%)      |    ~0   |   ~0  |    ~0   |       2|
+|Utilization (%)      |        0|   ~0  |    ~0   |       1|
 +---------------------+---------+-------+---------+--------+
 
 + Detail: 
     * Instance: 
-    +-----------------------------------------------------+------------------------------------------------+---------+-------+------+------+
-    |                       Instance                      |                     Module                     | BRAM_18K| DSP48E|  FF  |  LUT |
-    +-----------------------------------------------------+------------------------------------------------+---------+-------+------+------+
-    |LRupdateHLS_faddfsub_32ns_32ns_32_4_full_dsp_1_U134  |LRupdateHLS_faddfsub_32ns_32ns_32_4_full_dsp_1  |        0|      2|   227|   214|
-    |LRupdateHLS_fcmp_32ns_32ns_1_1_1_U136                |LRupdateHLS_fcmp_32ns_32ns_1_1_1                |        0|      0|    66|    72|
-    |LRupdateHLS_fcmp_32ns_32ns_1_1_1_U137                |LRupdateHLS_fcmp_32ns_32ns_1_1_1                |        0|      0|    66|    72|
-    |LRupdateHLS_fmul_32ns_32ns_32_2_max_dsp_1_U135       |LRupdateHLS_fmul_32ns_32ns_32_2_max_dsp_1       |        0|      3|   128|   135|
-    |grp_countStubLayers_fu_8004                          |countStubLayers                                 |        0|      0|   115|   419|
-    |grp_push_back_1_fu_7854                              |push_back_1                                     |        0|      0|    14|  1555|
-    |grp_sinh_cosh_range_redu_fu_7846                     |sinh_cosh_range_redu                            |        4|     12|  2758|  9640|
-    +-----------------------------------------------------+------------------------------------------------+---------+-------+------+------+
-    |Total                                                |                                                |        4|     17|  3374| 12107|
-    +-----------------------------------------------------+------------------------------------------------+---------+-------+------+------+
+    +-----------------------------------------------------+------------------------------------------------+---------+-------+-----+------+
+    |                       Instance                      |                     Module                     | BRAM_18K| DSP48E|  FF |  LUT |
+    +-----------------------------------------------------+------------------------------------------------+---------+-------+-----+------+
+    |LRupdateHLS_faddfsub_32ns_32ns_32_4_full_dsp_1_U121  |LRupdateHLS_faddfsub_32ns_32ns_32_4_full_dsp_1  |        0|      2|  227|   214|
+    |LRupdateHLS_fcmp_32ns_32ns_1_1_1_U123                |LRupdateHLS_fcmp_32ns_32ns_1_1_1                |        0|      0|   66|    72|
+    |LRupdateHLS_fcmp_32ns_32ns_1_1_1_U124                |LRupdateHLS_fcmp_32ns_32ns_1_1_1                |        0|      0|   66|    72|
+    |LRupdateHLS_fmul_32ns_32ns_32_2_max_dsp_1_U122       |LRupdateHLS_fmul_32ns_32ns_32_2_max_dsp_1       |        0|      3|  128|   135|
+    |grp_countStubLayers_fu_7956                          |countStubLayers                                 |        0|      0|  115|   419|
+    |grp_push_back_1_fu_7806                              |push_back_1                                     |        0|      0|   14|  1555|
+    +-----------------------------------------------------+------------------------------------------------+---------+-------+-----+------+
+    |Total                                                |                                                |        0|      5|  616|  2467|
+    +-----------------------------------------------------+------------------------------------------------+---------+-------+-----+------+
 
     * DSP48: 
     +-----------------------------------------+------------------------------------+-----------+
     |                 Instance                |               Module               | Expression|
     +-----------------------------------------+------------------------------------+-----------+
-    |LRupdateHLS_mul_mul_6ns_14s_14_1_1_U138  |LRupdateHLS_mul_mul_6ns_14s_14_1_1  |  i0 * i1  |
+    |LRupdateHLS_mul_mul_6ns_14s_14_1_1_U125  |LRupdateHLS_mul_mul_6ns_14s_14_1_1  |  i0 * i1  |
     +-----------------------------------------+------------------------------------+-----------+
 
     * Memory: 
@@ -132,121 +128,114 @@
     +-----------------------------------+----------+-------+---+----+------------+------------+
     |           Variable Name           | Operation| DSP48E| FF| LUT| Bitwidth P0| Bitwidth P1|
     +-----------------------------------+----------+-------+---+----+------------+------------+
-    |arrayHLS_size_write_fu_8683_p2     |     +    |      0|  0|  39|           1|          32|
-    |i_4_fu_8554_p2                     |     +    |      0|  0|  39|          32|           1|
-    |i_5_fu_8937_p2                     |     +    |      0|  0|  39|          32|           1|
-    |i_6_fu_8953_p2                     |     +    |      0|  0|  39|          32|           1|
-    |i_fu_8570_p2                       |     +    |      0|  0|  39|          32|           1|
-    |mapHLS_size_write_a_fu_8969_p2     |     +    |      0|  0|  39|          32|           1|
-    |next_mul_fu_8244_p2                |     +    |      0|  0|  44|           5|          37|
-    |p_rec_fu_8467_p2                   |     +    |      0|  0|  39|           1|          32|
-    |tmp_100_fu_8374_p2                 |     +    |      0|  0|  16|           4|           9|
-    |tmp_101_fu_8385_p2                 |     +    |      0|  0|  16|           4|           9|
-    |tmp_102_fu_8396_p2                 |     +    |      0|  0|  16|           4|           9|
-    |tmp_103_fu_8407_p2                 |     +    |      0|  0|  16|           4|           9|
-    |tmp_104_fu_8418_p2                 |     +    |      0|  0|  16|           4|           9|
-    |tmp_105_fu_8429_p2                 |     +    |      0|  0|  16|           5|           9|
-    |tmp_106_fu_8440_p2                 |     +    |      0|  0|  16|           5|           9|
-    |tmp_107_fu_8451_p2                 |     +    |      0|  0|  16|           5|           9|
-    |tmp_112_fu_8581_p2                 |     +    |      0|  0|  12|           4|           1|
-    |tmp_115_fu_8639_p2                 |     +    |      0|  0|  22|          14|          14|
-    |tmp_121_fu_8984_p2                 |     +    |      0|  0|  39|          32|           1|
-    |tmp_122_fu_8649_p2                 |     +    |      0|  0|  22|          14|          14|
-    |tmp_124_fu_8673_p2                 |     +    |      0|  0|  21|           1|          14|
-    |tmp_125_fu_8762_p2                 |     +    |      0|  0|  21|           2|          14|
-    |tmp_126_fu_8772_p2                 |     +    |      0|  0|  21|           2|          14|
-    |tmp_127_fu_8782_p2                 |     +    |      0|  0|  21|           3|          14|
-    |tmp_128_fu_8792_p2                 |     +    |      0|  0|  21|           3|          14|
-    |tmp_129_fu_8802_p2                 |     +    |      0|  0|  21|           3|          14|
-    |tmp_130_fu_8812_p2                 |     +    |      0|  0|  21|           3|          14|
-    |tmp_131_fu_8822_p2                 |     +    |      0|  0|  21|           4|          14|
-    |tmp_132_fu_8832_p2                 |     +    |      0|  0|  21|           4|          14|
-    |tmp_133_fu_8842_p2                 |     +    |      0|  0|  21|           4|          14|
-    |tmp_134_fu_8852_p2                 |     +    |      0|  0|  21|           4|          14|
-    |tmp_135_fu_8862_p2                 |     +    |      0|  0|  21|           4|          14|
-    |tmp_136_fu_8872_p2                 |     +    |      0|  0|  21|           4|          14|
-    |tmp_137_fu_8882_p2                 |     +    |      0|  0|  21|           4|          14|
-    |tmp_138_fu_8892_p2                 |     +    |      0|  0|  21|           4|          14|
-    |tmp_139_fu_8902_p2                 |     +    |      0|  0|  21|           5|          14|
-    |tmp_140_fu_8912_p2                 |     +    |      0|  0|  21|           5|          14|
-    |tmp_141_fu_8922_p2                 |     +    |      0|  0|  21|           5|          14|
-    |tmp_80_i_fu_8072_p2                |     +    |      0|  0|  39|           1|          32|
-    |tmp_89_fu_8264_p2                  |     +    |      0|  0|  16|           1|           9|
-    |tmp_91_fu_8275_p2                  |     +    |      0|  0|  16|           2|           9|
-    |tmp_92_fu_8286_p2                  |     +    |      0|  0|  16|           2|           9|
-    |tmp_93_fu_8297_p2                  |     +    |      0|  0|  16|           3|           9|
-    |tmp_93_i1_fu_8724_p2               |     +    |      0|  0|  39|           5|          32|
-    |tmp_93_i_fu_8509_p2                |     +    |      0|  0|  39|          32|           5|
-    |tmp_94_fu_8308_p2                  |     +    |      0|  0|  16|           3|           9|
-    |tmp_95_fu_8319_p2                  |     +    |      0|  0|  16|           3|           9|
-    |tmp_96_fu_8330_p2                  |     +    |      0|  0|  16|           3|           9|
-    |tmp_97_fu_8341_p2                  |     +    |      0|  0|  16|           4|           9|
-    |tmp_98_fu_8352_p2                  |     +    |      0|  0|  16|           4|           9|
-    |tmp_99_fu_8363_p2                  |     +    |      0|  0|  16|           4|           9|
-    |tmp_i2_fu_8503_p2                  |     +    |      0|  0|  39|          32|           4|
-    |tmp_i3_38_fu_8718_p2               |     +    |      0|  0|  39|           4|          32|
-    |LinearRegression_val_fu_8105_p2    |    and   |      0|  0|   2|           1|           1|
-    |ap_block_state110_on_subcall_done  |    and   |      0|  0|   2|           1|           1|
-    |sel_tmp_i1_fu_8730_p2              |    and   |      0|  0|   2|           1|           1|
-    |sel_tmp_i_fu_8515_p2               |    and   |      0|  0|   2|           1|           1|
-    |tmp_84_fu_8146_p2                  |    and   |      0|  0|   2|           1|           1|
-    |tmp_88_fu_8206_p2                  |    and   |      0|  0|   2|           1|           1|
-    |grp_fu_8045_p2                     |   icmp   |      0|  0|  20|          32|          32|
-    |grp_fu_8050_p2                     |   icmp   |      0|  0|  20|          32|          32|
-    |notlhs1_fu_8188_p2                 |   icmp   |      0|  0|  11|           8|           2|
-    |notlhs_fu_8128_p2                  |   icmp   |      0|  0|  11|           8|           2|
-    |notrhs6_fu_8194_p2                 |   icmp   |      0|  0|  20|          23|           1|
-    |notrhs_fu_8134_p2                  |   icmp   |      0|  0|  20|          23|           1|
-    |tmp_108_fu_8565_p2                 |   icmp   |      0|  0|  20|          32|          32|
-    |tmp_111_not_i9_fu_8701_p2          |   icmp   |      0|  0|  20|          32|           5|
-    |tmp_111_not_i_fu_8485_p2           |   icmp   |      0|  0|  20|          32|           5|
-    |tmp_114_fu_8601_p2                 |   icmp   |      0|  0|   9|           4|           4|
-    |tmp_118_fu_8948_p2                 |   icmp   |      0|  0|  20|          32|          32|
-    |tmp_i3_fu_8549_p2                  |   icmp   |      0|  0|  20|          32|          32|
-    |tmp_i4_fu_8932_p2                  |   icmp   |      0|  0|  20|          32|          32|
-    |tmp_not_i7_fu_8690_p2              |   icmp   |      0|  0|  20|          32|           5|
-    |tmp_not_i_fu_8473_p2               |   icmp   |      0|  0|  20|          32|           5|
-    |tmp_s_fu_8462_p2                   |   icmp   |      0|  0|  20|          32|          32|
-    |ult1_fu_8093_p2                    |   icmp   |      0|  0|  20|          32|          32|
-    |ult_fu_8082_p2                     |   icmp   |      0|  0|  20|          32|          32|
-    |ap_block_state86_on_subcall_done   |    or    |      0|  0|   2|           1|           1|
-    |ap_predicate_op2125_call_state110  |    or    |      0|  0|   2|           1|           1|
-    |brmerge3_i1_fu_8712_p2             |    or    |      0|  0|   2|           1|           1|
-    |brmerge3_i_fu_8497_p2              |    or    |      0|  0|   2|           1|           1|
-    |brmerge_i8_fu_8696_p2              |    or    |      0|  0|   2|           1|           1|
-    |brmerge_i_fu_8479_p2               |    or    |      0|  0|   2|           1|           1|
-    |sel_tmp1_i1_fu_8736_p2             |    or    |      0|  0|   2|           1|           1|
-    |sel_tmp1_i_fu_8521_p2              |    or    |      0|  0|   2|           1|           1|
-    |sel_tmp5_demorgan_i1_fu_8749_p2    |    or    |      0|  0|   2|           1|           1|
-    |sel_tmp5_demorgan_i_fu_8535_p2     |    or    |      0|  0|   2|           1|           1|
-    |tmp_82_fu_8140_p2                  |    or    |      0|  0|   2|           1|           1|
-    |tmp_86_fu_8200_p2                  |    or    |      0|  0|   2|           1|           1|
-    |candData_phiT_write_s_fu_8212_p3   |  select  |      0|  0|  32|           1|          32|
-    |idx_read_assign_2_fu_8754_p3       |  select  |      0|  0|  32|           1|          32|
-    |idx_read_assign_fu_8541_p3         |  select  |      0|  0|  32|           1|          32|
-    |p_0_i_i_i_i_fu_8162_p3             |  select  |      0|  0|  32|           1|          32|
-    |sel_tmp2_i1_fu_8741_p3             |  select  |      0|  0|  32|           1|          32|
-    |sel_tmp2_i_fu_8527_p3              |  select  |      0|  0|  32|           1|          32|
-    |rev2_fu_8099_p2                    |    xor   |      0|  0|   2|           1|           2|
-    |rev_fu_8088_p2                     |    xor   |      0|  0|   2|           1|           2|
-    |stub_psModule_read_1_fu_8707_p2    |    xor   |      0|  0|   2|           2|           1|
-    |stub_psModule_read_s_fu_8491_p2    |    xor   |      0|  0|   2|           2|           1|
-    |tmp_neg_i_i_i_i_fu_8152_p2         |    xor   |      0|  0|  33|          32|          33|
+    |arrayHLS_size_write_fu_8611_p2     |     +    |      0|  0|  39|           1|          32|
+    |i_3_fu_8865_p2                     |     +    |      0|  0|  39|          32|           1|
+    |i_fu_8493_p2                       |     +    |      0|  0|  39|          32|           1|
+    |mapHLS_size_write_a_fu_8881_p2     |     +    |      0|  0|  39|          32|           1|
+    |next_mul_fu_8183_p2                |     +    |      0|  0|  44|           5|          37|
+    |p_rec_fu_8406_p2                   |     +    |      0|  0|  39|           1|          32|
+    |tmp_15_i_fu_8010_p2                |     +    |      0|  0|  39|           1|          32|
+    |tmp_17_i8_fu_8652_p2               |     +    |      0|  0|  39|           5|          32|
+    |tmp_17_i_fu_8448_p2                |     +    |      0|  0|  39|          32|           5|
+    |tmp_28_fu_8509_p2                  |     +    |      0|  0|  12|           4|           1|
+    |tmp_34_fu_8901_p2                  |     +    |      0|  0|  39|          32|           1|
+    |tmp_45_fu_8203_p2                  |     +    |      0|  0|  16|           1|           9|
+    |tmp_46_fu_8214_p2                  |     +    |      0|  0|  16|           2|           9|
+    |tmp_47_fu_8225_p2                  |     +    |      0|  0|  16|           2|           9|
+    |tmp_48_fu_8236_p2                  |     +    |      0|  0|  16|           3|           9|
+    |tmp_49_fu_8247_p2                  |     +    |      0|  0|  16|           3|           9|
+    |tmp_50_fu_8258_p2                  |     +    |      0|  0|  16|           3|           9|
+    |tmp_51_fu_8269_p2                  |     +    |      0|  0|  16|           3|           9|
+    |tmp_52_fu_8280_p2                  |     +    |      0|  0|  16|           4|           9|
+    |tmp_53_fu_8291_p2                  |     +    |      0|  0|  16|           4|           9|
+    |tmp_54_fu_8302_p2                  |     +    |      0|  0|  16|           4|           9|
+    |tmp_55_fu_8313_p2                  |     +    |      0|  0|  16|           4|           9|
+    |tmp_56_fu_8324_p2                  |     +    |      0|  0|  16|           4|           9|
+    |tmp_57_fu_8335_p2                  |     +    |      0|  0|  16|           4|           9|
+    |tmp_58_fu_8346_p2                  |     +    |      0|  0|  16|           4|           9|
+    |tmp_59_fu_8357_p2                  |     +    |      0|  0|  16|           4|           9|
+    |tmp_60_fu_8368_p2                  |     +    |      0|  0|  16|           5|           9|
+    |tmp_61_fu_8379_p2                  |     +    |      0|  0|  16|           5|           9|
+    |tmp_62_fu_8390_p2                  |     +    |      0|  0|  16|           5|           9|
+    |tmp_65_fu_8567_p2                  |     +    |      0|  0|  22|          14|          14|
+    |tmp_66_fu_8577_p2                  |     +    |      0|  0|  22|          14|          14|
+    |tmp_68_fu_8601_p2                  |     +    |      0|  0|  21|           1|          14|
+    |tmp_69_fu_8690_p2                  |     +    |      0|  0|  21|           2|          14|
+    |tmp_70_fu_8700_p2                  |     +    |      0|  0|  21|           2|          14|
+    |tmp_71_fu_8710_p2                  |     +    |      0|  0|  21|           3|          14|
+    |tmp_72_fu_8720_p2                  |     +    |      0|  0|  21|           3|          14|
+    |tmp_73_fu_8730_p2                  |     +    |      0|  0|  21|           3|          14|
+    |tmp_74_fu_8740_p2                  |     +    |      0|  0|  21|           3|          14|
+    |tmp_75_fu_8750_p2                  |     +    |      0|  0|  21|           4|          14|
+    |tmp_76_fu_8760_p2                  |     +    |      0|  0|  21|           4|          14|
+    |tmp_77_fu_8770_p2                  |     +    |      0|  0|  21|           4|          14|
+    |tmp_78_fu_8780_p2                  |     +    |      0|  0|  21|           4|          14|
+    |tmp_79_fu_8790_p2                  |     +    |      0|  0|  21|           4|          14|
+    |tmp_80_fu_8800_p2                  |     +    |      0|  0|  21|           4|          14|
+    |tmp_81_fu_8810_p2                  |     +    |      0|  0|  21|           4|          14|
+    |tmp_82_fu_8820_p2                  |     +    |      0|  0|  21|           4|          14|
+    |tmp_83_fu_8830_p2                  |     +    |      0|  0|  21|           5|          14|
+    |tmp_84_fu_8840_p2                  |     +    |      0|  0|  21|           5|          14|
+    |tmp_85_fu_8850_p2                  |     +    |      0|  0|  21|           5|          14|
+    |tmp_i7_fu_8646_p2                  |     +    |      0|  0|  39|           4|          32|
+    |tmp_i_8_fu_8442_p2                 |     +    |      0|  0|  39|          32|           4|
+    |LinearRegression_val_fu_8152_p2    |    and   |      0|  0|   2|           1|           1|
+    |ap_block_state108_on_subcall_done  |    and   |      0|  0|   2|           1|           1|
+    |sel_tmp_i9_fu_8658_p2              |    and   |      0|  0|   2|           1|           1|
+    |sel_tmp_i_fu_8454_p2               |    and   |      0|  0|   2|           1|           1|
+    |tmp_38_fu_8062_p2                  |    and   |      0|  0|   2|           1|           1|
+    |tmp_43_fu_8122_p2                  |    and   |      0|  0|   2|           1|           1|
+    |notlhs1_fu_8104_p2                 |   icmp   |      0|  0|  11|           8|           2|
+    |notlhs_fu_8044_p2                  |   icmp   |      0|  0|  11|           8|           2|
+    |notrhs6_fu_8110_p2                 |   icmp   |      0|  0|  20|          23|           1|
+    |notrhs_fu_8050_p2                  |   icmp   |      0|  0|  20|          23|           1|
+    |tmp_24_fu_8488_p2                  |   icmp   |      0|  0|  20|          32|          32|
+    |tmp_26_fu_8504_p2                  |   icmp   |      0|  0|  20|          32|          32|
+    |tmp_30_fu_8529_p2                  |   icmp   |      0|  0|   9|           4|           4|
+    |tmp_31_fu_8860_p2                  |   icmp   |      0|  0|  20|          32|          32|
+    |tmp_33_fu_8891_p2                  |   icmp   |      0|  0|  20|          32|          32|
+    |tmp_36_not_i4_fu_8629_p2           |   icmp   |      0|  0|  20|          32|           5|
+    |tmp_36_not_i_fu_8424_p2            |   icmp   |      0|  0|  20|          32|           5|
+    |tmp_not_i2_fu_8618_p2              |   icmp   |      0|  0|  20|          32|           5|
+    |tmp_not_i_fu_8412_p2               |   icmp   |      0|  0|  20|          32|           5|
+    |tmp_s_fu_8401_p2                   |   icmp   |      0|  0|  20|          32|          32|
+    |ult1_fu_8140_p2                    |   icmp   |      0|  0|  20|          32|          32|
+    |ult_fu_8021_p2                     |   icmp   |      0|  0|  20|          32|          32|
+    |brmerge3_i6_fu_8640_p2             |    or    |      0|  0|   2|           1|           1|
+    |brmerge3_i_fu_8436_p2              |    or    |      0|  0|   2|           1|           1|
+    |brmerge_i3_fu_8624_p2              |    or    |      0|  0|   2|           1|           1|
+    |brmerge_i_fu_8418_p2               |    or    |      0|  0|   2|           1|           1|
+    |sel_tmp1_i1_fu_8664_p2             |    or    |      0|  0|   2|           1|           1|
+    |sel_tmp1_i_fu_8460_p2              |    or    |      0|  0|   2|           1|           1|
+    |sel_tmp5_demorgan_i1_fu_8677_p2    |    or    |      0|  0|   2|           1|           1|
+    |sel_tmp5_demorgan_i_fu_8474_p2     |    or    |      0|  0|   2|           1|           1|
+    |tmp_36_fu_8056_p2                  |    or    |      0|  0|   2|           1|           1|
+    |tmp_41_fu_8116_p2                  |    or    |      0|  0|   2|           1|           1|
+    |candData_phiT_write_s_fu_8128_p3   |  select  |      0|  0|  32|           1|          32|
+    |p_0_i_fu_8480_p3                   |  select  |      0|  0|  32|           1|          32|
+    |p_0_i_i_i_i_fu_8078_p3             |  select  |      0|  0|  32|           1|          32|
+    |sel_tmp2_i1_fu_8669_p3             |  select  |      0|  0|  32|           1|          32|
+    |sel_tmp2_i_fu_8466_p3              |  select  |      0|  0|  32|           1|          32|
+    |value_first_read_ass_fu_8682_p3    |  select  |      0|  0|  32|           1|          32|
+    |rev1_fu_8146_p2                    |    xor   |      0|  0|   2|           1|           2|
+    |rev_fu_8135_p2                     |    xor   |      0|  0|   2|           1|           2|
+    |stub_psModule_read_1_fu_8635_p2    |    xor   |      0|  0|   2|           2|           1|
+    |stub_psModule_read_s_fu_8430_p2    |    xor   |      0|  0|   2|           2|           1|
+    |tmp_neg_i_i_i_i_fu_8068_p2         |    xor   |      0|  0|  33|          32|          33|
     +-----------------------------------+----------+-------+---+----+------------+------------+
-    |Total                              |          |      0|  0|1873|         977|        1222|
+    |Total                              |          |      0|  0|1751|         847|        1154|
     +-----------------------------------+----------+-------+---+----+------------+------------+
 
     * Multiplexer: 
     +---------------------------------------------------------------------------------+-----+-----------+-----+-----------+
     |                                       Name                                      | LUT | Input Size| Bits| Total Bits|
     +---------------------------------------------------------------------------------+-----+-----------+-----+-----------+
-    |LinearRegression_lay_19_reg_7837                                                 |    9|          2|   32|         64|
-    |LinearRegression_layerPopulation_data_first_address0                             |   21|          4|    5|         20|
+    |LinearRegression_lay_15_reg_7797                                                 |    9|          2|   32|         64|
+    |LinearRegression_layerPopulation_data_first_address0                             |   15|          3|    5|         15|
     |LinearRegression_layerPopulation_data_second_address0                            |   21|          4|    5|         20|
     |LinearRegression_layerPopulation_data_second_d0                                  |   15|          3|   32|         96|
-    |LinearRegression_settings_etaRegions_s_address0                                  |   15|          3|    5|         15|
-    |LinearRegression_stu_401_reg_7828                                                |    9|          2|   32|         64|
-    |LinearRegression_stubMap_data_first_address0                                     |   21|          4|    5|         20|
+    |LinearRegression_stu_399_reg_7788                                                |    9|          2|   32|         64|
+    |LinearRegression_stubMap_data_first_address0                                     |   15|          3|    5|         15|
     |LinearRegression_stubMap_data_first_ce0                                          |   15|          3|    1|          3|
     |LinearRegression_stubMap_data_first_we0                                          |    9|          2|    1|          2|
     |LinearRegression_stubMap_data_second_data_barrel_s_address0                      |   15|          3|    9|         27|
@@ -291,8 +280,6 @@
     |LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_d0               |   15|          3|   32|         96|
     |LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_we0              |   15|          3|    1|          3|
     |LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_we1              |    9|          2|    1|          2|
-    |LinearRegression_stubMap_data_second_data_settings_etaRegions_s_address0         |   50|         11|   13|        143|
-    |LinearRegression_stubMap_data_second_data_settings_etaRegions_s_address1         |   47|         10|   13|        130|
     |LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_address0  |   15|          3|    9|         27|
     |LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_ce0       |   15|          3|    1|          3|
     |LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_ce1       |    9|          2|    1|          2|
@@ -305,6 +292,8 @@
     |LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_d0              |   15|          3|   32|         96|
     |LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_we0             |   15|          3|    1|          3|
     |LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_we1             |    9|          2|    1|          2|
+    |LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_address0    |   50|         11|   13|        143|
+    |LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_address1    |   47|         10|   13|        130|
     |LinearRegression_stubMap_data_second_data_z_s_address0                           |   15|          3|    9|         27|
     |LinearRegression_stubMap_data_second_data_z_s_ce0                                |   15|          3|    1|          3|
     |LinearRegression_stubMap_data_second_data_z_s_ce1                                |    9|          2|    1|          2|
@@ -332,16 +321,16 @@
     |LinearRegression_stubs_data_settings_chosenRofPhi_s_address1                     |   33|          6|    4|         24|
     |LinearRegression_stubs_data_settings_chosenRofZ_s_address0                       |   38|          7|    4|         28|
     |LinearRegression_stubs_data_settings_chosenRofZ_s_address1                       |   33|          6|    4|         24|
-    |LinearRegression_stubs_data_settings_etaRegions_s_address0                       |  465|        106|    8|        848|
-    |LinearRegression_stubs_data_settings_etaRegions_s_address1                       |  461|        105|    8|        840|
     |LinearRegression_stubs_data_settings_minNumMatchLayers_s_address0                |   38|          7|    4|         28|
     |LinearRegression_stubs_data_settings_minNumMatchLayers_s_address1                |   33|          6|    4|         24|
     |LinearRegression_stubs_data_settings_minPSLayers_s_address0                      |   38|          7|    4|         28|
     |LinearRegression_stubs_data_settings_minPSLayers_s_address1                      |   33|          6|    4|         24|
+    |LinearRegression_stubs_data_settings_sinh_etaRegions_s_address0                  |  465|        106|    8|        848|
+    |LinearRegression_stubs_data_settings_sinh_etaRegions_s_address1                  |  461|        105|    8|        840|
     |LinearRegression_stubs_data_z_s_address0                                         |   38|          7|    4|         28|
     |LinearRegression_stubs_data_z_s_address1                                         |   33|          6|    4|         24|
-    |ap_NS_fsm                                                                        |  545|        128|    1|        128|
-    |ap_phi_mux_p_pn_in_i6_phi_fu_7821_p4                                             |    9|          2|   32|         64|
+    |ap_NS_fsm                                                                        |  533|        124|    1|        124|
+    |ap_phi_mux_p_pn_in_i2_phi_fu_7781_p4                                             |    9|          2|   32|         64|
     |ap_return_0                                                                      |    9|          2|   32|         64|
     |ap_return_1                                                                      |    9|          2|   32|         64|
     |ap_return_2                                                                      |    9|          2|    1|          2|
@@ -372,16 +361,14 @@
     |b_data_settings_mi_address1                                                      |   33|          6|    4|         24|
     |b_data_z_assign_address0                                                         |   38|          7|    4|         28|
     |b_data_z_assign_address1                                                         |   33|          6|    4|         24|
-    |grp_countStubLayers_fu_8004_onlySeed                                             |   15|          3|    1|          3|
-    |grp_fu_8019_opcode                                                               |   15|          3|    2|          6|
-    |grp_fu_8019_p0                                                                   |   21|          4|   32|        128|
-    |grp_fu_8019_p1                                                                   |   21|          4|   32|        128|
-    |grp_fu_8024_p0                                                                   |   38|          7|   32|        224|
-    |grp_fu_8024_p1                                                                   |   38|          7|   32|        224|
-    |i_0_i2_reg_7806                                                                  |    9|          2|   32|         64|
-    |i_0_i_reg_7762                                                                   |    9|          2|   32|         64|
-    |i_i1_reg_7795                                                                    |    9|          2|   32|         64|
-    |i_i_reg_7751                                                                     |    9|          2|   32|         64|
+    |grp_countStubLayers_fu_7956_onlySeed                                             |   15|          3|    1|          3|
+    |grp_fu_7971_opcode                                                               |   15|          3|    2|          6|
+    |grp_fu_7971_p0                                                                   |   21|          4|   32|        128|
+    |grp_fu_7971_p1                                                                   |   21|          4|   32|        128|
+    |grp_fu_7978_p0                                                                   |   33|          6|   32|        192|
+    |grp_fu_7978_p1                                                                   |   33|          6|   32|        192|
+    |i_0_i1_reg_7766                                                                  |    9|          2|   32|         64|
+    |i_0_i_reg_7733                                                                   |    9|          2|   32|         64|
     |l1track3D_stubs_data_barrel_s_address0                                           |   33|          6|    4|         24|
     |l1track3D_stubs_data_barrel_s_address1                                           |   33|          6|    4|         24|
     |l1track3D_stubs_data_layerId_s_address0                                          |   33|          6|    4|         24|
@@ -396,220 +383,209 @@
     |l1track3D_stubs_data_settings_chosenRofPhi_s_address1                            |   33|          6|    4|         24|
     |l1track3D_stubs_data_settings_chosenRofZ_s_address0                              |   33|          6|    4|         24|
     |l1track3D_stubs_data_settings_chosenRofZ_s_address1                              |   33|          6|    4|         24|
-    |l1track3D_stubs_data_settings_etaRegions_s_address0                              |  417|         96|    8|        768|
-    |l1track3D_stubs_data_settings_etaRegions_s_address1                              |  417|         96|    8|        768|
     |l1track3D_stubs_data_settings_minNumMatchLayers_s_address0                       |   33|          6|    4|         24|
     |l1track3D_stubs_data_settings_minNumMatchLayers_s_address1                       |   33|          6|    4|         24|
     |l1track3D_stubs_data_settings_minPSLayers_s_address0                             |   33|          6|    4|         24|
     |l1track3D_stubs_data_settings_minPSLayers_s_address1                             |   33|          6|    4|         24|
+    |l1track3D_stubs_data_settings_sinh_etaRegions_s_address0                         |  417|         96|    8|        768|
+    |l1track3D_stubs_data_settings_sinh_etaRegions_s_address1                         |  417|         96|    8|        768|
     |l1track3D_stubs_data_z_s_address0                                                |   33|          6|    4|         24|
     |l1track3D_stubs_data_z_s_address1                                                |   33|          6|    4|         24|
-    |p_begin_0_rec_reg_7729                                                           |    9|          2|   32|         64|
-    |p_pn_in_i6_reg_7818                                                              |    9|          2|   32|         64|
-    |p_pn_in_i_reg_7785                                                               |    9|          2|   32|         64|
-    |phi_mul_reg_7740                                                                 |    9|          2|   37|         74|
-    |temp_3_fu_684                                                                    |    9|          2|   32|         64|
-    |temp_fu_688                                                                      |    9|          2|   32|         64|
-    |tmp_111_reg_7774                                                                 |    9|          2|    4|          8|
+    |p_begin_0_rec_reg_7711                                                           |    9|          2|   32|         64|
+    |p_pn_in_i2_reg_7778                                                              |    9|          2|   32|         64|
+    |p_pn_in_i_reg_7756                                                               |    9|          2|   32|         64|
+    |phi_mul_reg_7722                                                                 |    9|          2|   37|         74|
+    |temp_3_fu_678                                                                    |    9|          2|   32|         64|
+    |temp_fu_682                                                                      |    9|          2|   32|         64|
+    |tmp_27_reg_7745                                                                  |    9|          2|    4|          8|
     +---------------------------------------------------------------------------------+-----+-----------+-----+-----------+
-    |Total                                                                            | 5878|       1219| 1628|       8761|
+    |Total                                                                            | 5811|       1204| 1559|       8540|
     +---------------------------------------------------------------------------------+-----+-----------+-----+-----------+
 
     * Register: 
-    +-----------------------------------------------+-----+----+-----+-----------+
-    |                      Name                     |  FF | LUT| Bits| Const Bits|
-    +-----------------------------------------------+-----+----+-----+-----------+
-    |LinearRegression_lay_17_reg_11944              |    5|   0|    5|          0|
-    |LinearRegression_lay_19_reg_7837               |   32|   0|   32|          0|
-    |LinearRegression_stu_307_reg_11150             |    8|   0|    8|          0|
-    |LinearRegression_stu_308_reg_11155             |    8|   0|    8|          0|
-    |LinearRegression_stu_309_reg_11160             |    8|   0|    8|          0|
-    |LinearRegression_stu_310_reg_11165             |    8|   0|    8|          0|
-    |LinearRegression_stu_311_reg_11170             |    8|   0|    8|          0|
-    |LinearRegression_stu_312_reg_11175             |    8|   0|    8|          0|
-    |LinearRegression_stu_313_reg_11180             |    8|   0|    8|          0|
-    |LinearRegression_stu_314_reg_11185             |    8|   0|    8|          0|
-    |LinearRegression_stu_315_reg_11190             |    8|   0|    8|          0|
-    |LinearRegression_stu_316_reg_11195             |    8|   0|    8|          0|
-    |LinearRegression_stu_317_reg_11200             |    8|   0|    8|          0|
-    |LinearRegression_stu_318_reg_11205             |    8|   0|    8|          0|
-    |LinearRegression_stu_319_reg_11210             |    8|   0|    8|          0|
-    |LinearRegression_stu_320_reg_11215             |    8|   0|    8|          0|
-    |LinearRegression_stu_321_reg_11220             |    8|   0|    8|          0|
-    |LinearRegression_stu_322_reg_11225             |    8|   0|    8|          0|
-    |LinearRegression_stu_323_reg_11230             |    8|   0|    8|          0|
-    |LinearRegression_stu_324_reg_11235             |    8|   0|    8|          0|
-    |LinearRegression_stu_325_reg_11240             |    8|   0|    8|          0|
-    |LinearRegression_stu_326_reg_11245             |    4|   0|    4|          0|
-    |LinearRegression_stu_327_reg_11250             |    4|   0|    4|          0|
-    |LinearRegression_stu_328_reg_11255             |    4|   0|    4|          0|
-    |LinearRegression_stu_329_reg_11260             |    4|   0|    4|          0|
-    |LinearRegression_stu_330_reg_11265             |    4|   0|    4|          0|
-    |LinearRegression_stu_331_reg_11270             |    4|   0|    4|          0|
-    |LinearRegression_stu_332_reg_11275             |    4|   0|    4|          0|
-    |LinearRegression_stu_333_reg_11280             |    4|   0|    4|          0|
-    |LinearRegression_stu_334_reg_11286             |    4|   0|    4|          0|
-    |LinearRegression_stu_335_reg_11292             |    4|   0|    4|          0|
-    |LinearRegression_stu_342_reg_11864             |    5|   0|    5|          0|
-    |LinearRegression_stu_351_reg_11869             |    1|   0|    1|          0|
-    |LinearRegression_stu_352_reg_11876             |    1|   0|    1|          0|
-    |LinearRegression_stu_401_reg_7828              |   32|   0|   32|          0|
-    |LinearRegression_val_reg_10151                 |    1|   0|    1|          0|
-    |ap_CS_fsm                                      |  127|   0|  127|          0|
-    |ap_return_0_preg                               |   32|   0|   32|          0|
-    |ap_return_1_preg                               |   32|   0|   32|          0|
-    |ap_return_2_preg                               |    1|   0|    1|          0|
-    |ap_return_3_preg                               |   32|   0|   32|          0|
-    |ap_return_4_preg                               |   32|   0|   32|          0|
-    |ap_return_5_preg                               |   32|   0|   32|          0|
-    |ap_return_6_preg                               |   32|   0|   32|          0|
-    |ap_return_7_preg                               |   32|   0|   32|          0|
-    |ap_return_8_preg                               |   32|   0|   32|          0|
-    |ap_return_9_preg                               |   32|   0|   32|          0|
-    |b_data_barrel_assi_55_reg_11399                |    1|   0|    1|          0|
-    |b_data_barrel_assi_56_reg_11449                |    1|   0|    1|          0|
-    |b_data_barrel_assi_57_reg_11499                |    1|   0|    1|          0|
-    |b_data_barrel_assi_58_reg_11549                |    1|   0|    1|          0|
-    |b_data_barrel_assi_59_reg_11599                |    1|   0|    1|          0|
-    |b_data_barrel_assi_60_reg_11649                |    1|   0|    1|          0|
-    |b_data_barrel_assi_61_reg_11699                |    1|   0|    1|          0|
-    |b_data_barrel_assi_62_reg_11749                |    1|   0|    1|          0|
-    |b_data_barrel_assi_63_reg_11799                |    1|   0|    1|          0|
-    |b_data_barrel_assi_64_reg_11849                |    1|   0|    1|          0|
-    |b_data_layerId_ass_55_reg_11389                |    1|   0|    1|          0|
-    |b_data_layerId_ass_56_reg_11439                |    1|   0|    1|          0|
-    |b_data_layerId_ass_57_reg_11489                |    1|   0|    1|          0|
-    |b_data_layerId_ass_58_reg_11539                |    1|   0|    1|          0|
-    |b_data_layerId_ass_59_reg_11589                |    1|   0|    1|          0|
-    |b_data_layerId_ass_60_reg_11639                |    1|   0|    1|          0|
-    |b_data_layerId_ass_61_reg_11689                |    1|   0|    1|          0|
-    |b_data_layerId_ass_62_reg_11739                |    1|   0|    1|          0|
-    |b_data_layerId_ass_63_reg_11789                |    1|   0|    1|          0|
-    |b_data_layerId_ass_64_reg_11839                |    1|   0|    1|          0|
-    |b_data_phi_assign_52_reg_11379                 |   32|   0|   32|          0|
-    |b_data_phi_assign_53_reg_11429                 |   32|   0|   32|          0|
-    |b_data_phi_assign_54_reg_11479                 |   32|   0|   32|          0|
-    |b_data_phi_assign_55_reg_11529                 |   32|   0|   32|          0|
-    |b_data_phi_assign_56_reg_11579                 |   32|   0|   32|          0|
-    |b_data_phi_assign_57_reg_11629                 |   32|   0|   32|          0|
-    |b_data_phi_assign_58_reg_11679                 |   32|   0|   32|          0|
-    |b_data_phi_assign_59_reg_11729                 |   32|   0|   32|          0|
-    |b_data_phi_assign_60_reg_11779                 |   32|   0|   32|          0|
-    |b_data_phi_assign_61_reg_11829                 |   32|   0|   32|          0|
-    |b_data_psModule_as_55_reg_11394                |    1|   0|    1|          0|
-    |b_data_psModule_as_56_reg_11444                |    1|   0|    1|          0|
-    |b_data_psModule_as_57_reg_11494                |    1|   0|    1|          0|
-    |b_data_psModule_as_58_reg_11544                |    1|   0|    1|          0|
-    |b_data_psModule_as_59_reg_11594                |    1|   0|    1|          0|
-    |b_data_psModule_as_60_reg_11644                |    1|   0|    1|          0|
-    |b_data_psModule_as_61_reg_11694                |    1|   0|    1|          0|
-    |b_data_psModule_as_62_reg_11744                |    1|   0|    1|          0|
-    |b_data_psModule_as_63_reg_11794                |    1|   0|    1|          0|
-    |b_data_psModule_as_64_reg_11844                |    1|   0|    1|          0|
-    |b_data_r_assign_lo_10_reg_11424                |   32|   0|   32|          0|
-    |b_data_r_assign_lo_11_reg_11474                |   32|   0|   32|          0|
-    |b_data_r_assign_lo_12_reg_11524                |   32|   0|   32|          0|
-    |b_data_r_assign_lo_13_reg_11574                |   32|   0|   32|          0|
-    |b_data_r_assign_lo_14_reg_11624                |   32|   0|   32|          0|
-    |b_data_r_assign_lo_15_reg_11674                |   32|   0|   32|          0|
-    |b_data_r_assign_lo_16_reg_11724                |   32|   0|   32|          0|
-    |b_data_r_assign_lo_17_reg_11774                |   32|   0|   32|          0|
-    |b_data_r_assign_lo_18_reg_11824                |   32|   0|   32|          0|
-    |b_data_r_assign_lo_reg_11374                   |   32|   0|   32|          0|
-    |b_data_settings_ch_111_reg_11354               |   32|   0|   32|          0|
-    |b_data_settings_ch_112_reg_11359               |   32|   0|   32|          0|
-    |b_data_settings_ch_113_reg_11404               |   32|   0|   32|          0|
-    |b_data_settings_ch_114_reg_11409               |   32|   0|   32|          0|
-    |b_data_settings_ch_115_reg_11454               |   32|   0|   32|          0|
-    |b_data_settings_ch_116_reg_11459               |   32|   0|   32|          0|
-    |b_data_settings_ch_117_reg_11504               |   32|   0|   32|          0|
-    |b_data_settings_ch_118_reg_11509               |   32|   0|   32|          0|
-    |b_data_settings_ch_119_reg_11554               |   32|   0|   32|          0|
-    |b_data_settings_ch_120_reg_11559               |   32|   0|   32|          0|
-    |b_data_settings_ch_121_reg_11604               |   32|   0|   32|          0|
-    |b_data_settings_ch_122_reg_11609               |   32|   0|   32|          0|
-    |b_data_settings_ch_123_reg_11654               |   32|   0|   32|          0|
-    |b_data_settings_ch_124_reg_11659               |   32|   0|   32|          0|
-    |b_data_settings_ch_125_reg_11704               |   32|   0|   32|          0|
-    |b_data_settings_ch_126_reg_11709               |   32|   0|   32|          0|
-    |b_data_settings_ch_127_reg_11754               |   32|   0|   32|          0|
-    |b_data_settings_ch_128_reg_11759               |   32|   0|   32|          0|
-    |b_data_settings_ch_129_reg_11804               |   32|   0|   32|          0|
-    |b_data_settings_ch_130_reg_11809               |   32|   0|   32|          0|
-    |b_data_settings_mi_111_reg_11364               |    1|   0|    1|          0|
-    |b_data_settings_mi_112_reg_11369               |    1|   0|    1|          0|
-    |b_data_settings_mi_113_reg_11414               |    1|   0|    1|          0|
-    |b_data_settings_mi_114_reg_11419               |    1|   0|    1|          0|
-    |b_data_settings_mi_115_reg_11464               |    1|   0|    1|          0|
-    |b_data_settings_mi_116_reg_11469               |    1|   0|    1|          0|
-    |b_data_settings_mi_117_reg_11514               |    1|   0|    1|          0|
-    |b_data_settings_mi_118_reg_11519               |    1|   0|    1|          0|
-    |b_data_settings_mi_119_reg_11564               |    1|   0|    1|          0|
-    |b_data_settings_mi_120_reg_11569               |    1|   0|    1|          0|
-    |b_data_settings_mi_121_reg_11614               |    1|   0|    1|          0|
-    |b_data_settings_mi_122_reg_11619               |    1|   0|    1|          0|
-    |b_data_settings_mi_123_reg_11664               |    1|   0|    1|          0|
-    |b_data_settings_mi_124_reg_11669               |    1|   0|    1|          0|
-    |b_data_settings_mi_125_reg_11714               |    1|   0|    1|          0|
-    |b_data_settings_mi_126_reg_11719               |    1|   0|    1|          0|
-    |b_data_settings_mi_127_reg_11764               |    1|   0|    1|          0|
-    |b_data_settings_mi_128_reg_11769               |    1|   0|    1|          0|
-    |b_data_settings_mi_129_reg_11814               |    1|   0|    1|          0|
-    |b_data_settings_mi_130_reg_11819               |    1|   0|    1|          0|
-    |b_data_z_assign_lo_10_reg_11434                |   32|   0|   32|          0|
-    |b_data_z_assign_lo_11_reg_11484                |   32|   0|   32|          0|
-    |b_data_z_assign_lo_12_reg_11534                |   32|   0|   32|          0|
-    |b_data_z_assign_lo_13_reg_11584                |   32|   0|   32|          0|
-    |b_data_z_assign_lo_14_reg_11634                |   32|   0|   32|          0|
-    |b_data_z_assign_lo_15_reg_11684                |   32|   0|   32|          0|
-    |b_data_z_assign_lo_16_reg_11734                |   32|   0|   32|          0|
-    |b_data_z_assign_lo_17_reg_11784                |   32|   0|   32|          0|
-    |b_data_z_assign_lo_18_reg_11834                |   32|   0|   32|          0|
-    |b_data_z_assign_lo_reg_11384                   |   32|   0|   32|          0|
-    |candData_cotTheta_wr_reg_10431                 |   32|   0|   32|          0|
-    |candData_phiT_write_s_reg_10607                |   32|   0|   32|          0|
-    |candData_qOverPt_wri_reg_9967                  |   32|   0|   32|          0|
-    |grp_countStubLayers_fu_8004_ap_start_reg       |    1|   0|    1|          0|
-    |grp_push_back_1_fu_7854_ap_start_reg           |    1|   0|    1|          0|
-    |grp_sinh_cosh_range_redu_fu_7846_ap_start_reg  |    1|   0|    1|          0|
-    |i_0_i2_reg_7806                                |   32|   0|   32|          0|
-    |i_0_i_reg_7762                                 |   32|   0|   32|          0|
-    |i_4_reg_11316                                  |   32|   0|   32|          0|
-    |i_5_reg_11914                                  |   32|   0|   32|          0|
-    |i_6_reg_11931                                  |   32|   0|   32|          0|
-    |i_i1_reg_7795                                  |   32|   0|   32|          0|
-    |i_i_reg_7751                                   |   32|   0|   32|          0|
-    |i_reg_11333                                    |   32|   0|   32|          0|
-    |idx_read_assign_2_reg_11904                    |   32|   0|   32|          0|
-    |idx_read_assign_reg_11306                      |   32|   0|   32|          0|
-    |next_mul_reg_11145                             |   37|   0|   37|          0|
-    |p_begin_0_rec_reg_7729                         |   32|   0|   32|          0|
-    |p_pn_in_i6_reg_7818                            |   32|   0|   32|          0|
-    |p_pn_in_i_reg_7785                             |   32|   0|   32|          0|
-    |p_rec_reg_11301                                |   32|   0|   32|          0|
-    |phi1_assign_reg_10136                          |   32|   0|   32|          0|
-    |phi_mul_reg_7740                               |   37|   0|   37|          0|
-    |reg_8055                                       |   32|   0|   32|          0|
-    |reg_8062                                       |   32|   0|   32|          0|
-    |s_out_1_reg_10146                              |   32|   0|   32|          0|
-    |s_out_reg_10101                                |   32|   0|   32|          0|
-    |temp_3_fu_684                                  |   32|   0|   32|          0|
-    |temp_4_reg_11136                               |   32|   0|   32|          0|
-    |temp_5_reg_11126                               |   32|   0|   32|          0|
-    |temp_fu_688                                    |   32|   0|   32|          0|
-    |tmp_108_reg_11329                              |    1|   0|    1|          0|
-    |tmp_111_reg_7774                               |    4|   0|    4|          0|
-    |tmp_118_reg_11927                              |    1|   0|    1|          0|
-    |tmp_123_reg_11883                              |   14|   0|   14|          0|
-    |tmp_143_reg_11854                              |   11|   0|   11|          0|
-    |tmp_144_reg_11859                              |   13|   0|   13|          0|
-    |tmp_83_i_reg_10266                             |   32|   0|   32|          0|
-    |tmp_i3_reg_11312                               |    1|   0|    1|          0|
-    |tmp_i4_reg_11910                               |    1|   0|    1|          0|
-    |ult_reg_10111                                  |    1|   0|    1|          0|
-    +-----------------------------------------------+-----+----+-----+-----------+
-    |Total                                          | 3323|   0| 3323|          0|
-    +-----------------------------------------------+-----+----+-----+-----------+
+    +------------------------------------------+-----+----+-----+-----------+
+    |                   Name                   |  FF | LUT| Bits| Const Bits|
+    +------------------------------------------+-----+----+-----+-----------+
+    |LinearRegression_lay_13_reg_11819         |    5|   0|    5|          0|
+    |LinearRegression_lay_15_reg_7797          |   32|   0|   32|          0|
+    |LinearRegression_stu_307_reg_11059        |    8|   0|    8|          0|
+    |LinearRegression_stu_308_reg_11064        |    8|   0|    8|          0|
+    |LinearRegression_stu_309_reg_11069        |    8|   0|    8|          0|
+    |LinearRegression_stu_310_reg_11074        |    8|   0|    8|          0|
+    |LinearRegression_stu_311_reg_11079        |    8|   0|    8|          0|
+    |LinearRegression_stu_312_reg_11084        |    8|   0|    8|          0|
+    |LinearRegression_stu_313_reg_11089        |    8|   0|    8|          0|
+    |LinearRegression_stu_314_reg_11094        |    8|   0|    8|          0|
+    |LinearRegression_stu_315_reg_11099        |    8|   0|    8|          0|
+    |LinearRegression_stu_316_reg_11104        |    8|   0|    8|          0|
+    |LinearRegression_stu_317_reg_11109        |    8|   0|    8|          0|
+    |LinearRegression_stu_318_reg_11114        |    8|   0|    8|          0|
+    |LinearRegression_stu_319_reg_11119        |    8|   0|    8|          0|
+    |LinearRegression_stu_320_reg_11124        |    8|   0|    8|          0|
+    |LinearRegression_stu_321_reg_11129        |    8|   0|    8|          0|
+    |LinearRegression_stu_322_reg_11134        |    8|   0|    8|          0|
+    |LinearRegression_stu_323_reg_11139        |    8|   0|    8|          0|
+    |LinearRegression_stu_324_reg_11144        |    8|   0|    8|          0|
+    |LinearRegression_stu_325_reg_11149        |    8|   0|    8|          0|
+    |LinearRegression_stu_326_reg_11154        |    4|   0|    4|          0|
+    |LinearRegression_stu_327_reg_11159        |    4|   0|    4|          0|
+    |LinearRegression_stu_328_reg_11164        |    4|   0|    4|          0|
+    |LinearRegression_stu_329_reg_11169        |    4|   0|    4|          0|
+    |LinearRegression_stu_330_reg_11174        |    4|   0|    4|          0|
+    |LinearRegression_stu_331_reg_11179        |    4|   0|    4|          0|
+    |LinearRegression_stu_332_reg_11184        |    4|   0|    4|          0|
+    |LinearRegression_stu_333_reg_11189        |    4|   0|    4|          0|
+    |LinearRegression_stu_334_reg_11195        |    4|   0|    4|          0|
+    |LinearRegression_stu_335_reg_11201        |    4|   0|    4|          0|
+    |LinearRegression_stu_340_reg_11756        |    5|   0|    5|          0|
+    |LinearRegression_stu_349_reg_11761        |    1|   0|    1|          0|
+    |LinearRegression_stu_350_reg_11768        |    1|   0|    1|          0|
+    |LinearRegression_stu_399_reg_7788         |   32|   0|   32|          0|
+    |LinearRegression_val_reg_10518            |    1|   0|    1|          0|
+    |ap_CS_fsm                                 |  123|   0|  123|          0|
+    |ap_return_0_preg                          |   32|   0|   32|          0|
+    |ap_return_1_preg                          |   32|   0|   32|          0|
+    |ap_return_2_preg                          |    1|   0|    1|          0|
+    |ap_return_3_preg                          |   32|   0|   32|          0|
+    |ap_return_4_preg                          |   32|   0|   32|          0|
+    |ap_return_5_preg                          |   32|   0|   32|          0|
+    |ap_return_6_preg                          |   32|   0|   32|          0|
+    |ap_return_7_preg                          |   32|   0|   32|          0|
+    |ap_return_8_preg                          |   32|   0|   32|          0|
+    |ap_return_9_preg                          |   32|   0|   32|          0|
+    |b_data_barrel_assi_55_reg_11291           |    1|   0|    1|          0|
+    |b_data_barrel_assi_56_reg_11341           |    1|   0|    1|          0|
+    |b_data_barrel_assi_57_reg_11391           |    1|   0|    1|          0|
+    |b_data_barrel_assi_58_reg_11441           |    1|   0|    1|          0|
+    |b_data_barrel_assi_59_reg_11491           |    1|   0|    1|          0|
+    |b_data_barrel_assi_60_reg_11541           |    1|   0|    1|          0|
+    |b_data_barrel_assi_61_reg_11591           |    1|   0|    1|          0|
+    |b_data_barrel_assi_62_reg_11641           |    1|   0|    1|          0|
+    |b_data_barrel_assi_63_reg_11691           |    1|   0|    1|          0|
+    |b_data_barrel_assi_64_reg_11741           |    1|   0|    1|          0|
+    |b_data_layerId_ass_55_reg_11281           |    1|   0|    1|          0|
+    |b_data_layerId_ass_56_reg_11331           |    1|   0|    1|          0|
+    |b_data_layerId_ass_57_reg_11381           |    1|   0|    1|          0|
+    |b_data_layerId_ass_58_reg_11431           |    1|   0|    1|          0|
+    |b_data_layerId_ass_59_reg_11481           |    1|   0|    1|          0|
+    |b_data_layerId_ass_60_reg_11531           |    1|   0|    1|          0|
+    |b_data_layerId_ass_61_reg_11581           |    1|   0|    1|          0|
+    |b_data_layerId_ass_62_reg_11631           |    1|   0|    1|          0|
+    |b_data_layerId_ass_63_reg_11681           |    1|   0|    1|          0|
+    |b_data_layerId_ass_64_reg_11731           |    1|   0|    1|          0|
+    |b_data_phi_assign_52_reg_11271            |   32|   0|   32|          0|
+    |b_data_phi_assign_53_reg_11321            |   32|   0|   32|          0|
+    |b_data_phi_assign_54_reg_11371            |   32|   0|   32|          0|
+    |b_data_phi_assign_55_reg_11421            |   32|   0|   32|          0|
+    |b_data_phi_assign_56_reg_11471            |   32|   0|   32|          0|
+    |b_data_phi_assign_57_reg_11521            |   32|   0|   32|          0|
+    |b_data_phi_assign_58_reg_11571            |   32|   0|   32|          0|
+    |b_data_phi_assign_59_reg_11621            |   32|   0|   32|          0|
+    |b_data_phi_assign_60_reg_11671            |   32|   0|   32|          0|
+    |b_data_phi_assign_61_reg_11721            |   32|   0|   32|          0|
+    |b_data_psModule_as_55_reg_11286           |    1|   0|    1|          0|
+    |b_data_psModule_as_56_reg_11336           |    1|   0|    1|          0|
+    |b_data_psModule_as_57_reg_11386           |    1|   0|    1|          0|
+    |b_data_psModule_as_58_reg_11436           |    1|   0|    1|          0|
+    |b_data_psModule_as_59_reg_11486           |    1|   0|    1|          0|
+    |b_data_psModule_as_60_reg_11536           |    1|   0|    1|          0|
+    |b_data_psModule_as_61_reg_11586           |    1|   0|    1|          0|
+    |b_data_psModule_as_62_reg_11636           |    1|   0|    1|          0|
+    |b_data_psModule_as_63_reg_11686           |    1|   0|    1|          0|
+    |b_data_psModule_as_64_reg_11736           |    1|   0|    1|          0|
+    |b_data_r_assign_lo_10_reg_11316           |   32|   0|   32|          0|
+    |b_data_r_assign_lo_11_reg_11366           |   32|   0|   32|          0|
+    |b_data_r_assign_lo_12_reg_11416           |   32|   0|   32|          0|
+    |b_data_r_assign_lo_13_reg_11466           |   32|   0|   32|          0|
+    |b_data_r_assign_lo_14_reg_11516           |   32|   0|   32|          0|
+    |b_data_r_assign_lo_15_reg_11566           |   32|   0|   32|          0|
+    |b_data_r_assign_lo_16_reg_11616           |   32|   0|   32|          0|
+    |b_data_r_assign_lo_17_reg_11666           |   32|   0|   32|          0|
+    |b_data_r_assign_lo_18_reg_11716           |   32|   0|   32|          0|
+    |b_data_r_assign_lo_reg_11266              |   32|   0|   32|          0|
+    |b_data_settings_ch_111_reg_11246          |   32|   0|   32|          0|
+    |b_data_settings_ch_112_reg_11251          |   32|   0|   32|          0|
+    |b_data_settings_ch_113_reg_11296          |   32|   0|   32|          0|
+    |b_data_settings_ch_114_reg_11301          |   32|   0|   32|          0|
+    |b_data_settings_ch_115_reg_11346          |   32|   0|   32|          0|
+    |b_data_settings_ch_116_reg_11351          |   32|   0|   32|          0|
+    |b_data_settings_ch_117_reg_11396          |   32|   0|   32|          0|
+    |b_data_settings_ch_118_reg_11401          |   32|   0|   32|          0|
+    |b_data_settings_ch_119_reg_11446          |   32|   0|   32|          0|
+    |b_data_settings_ch_120_reg_11451          |   32|   0|   32|          0|
+    |b_data_settings_ch_121_reg_11496          |   32|   0|   32|          0|
+    |b_data_settings_ch_122_reg_11501          |   32|   0|   32|          0|
+    |b_data_settings_ch_123_reg_11546          |   32|   0|   32|          0|
+    |b_data_settings_ch_124_reg_11551          |   32|   0|   32|          0|
+    |b_data_settings_ch_125_reg_11596          |   32|   0|   32|          0|
+    |b_data_settings_ch_126_reg_11601          |   32|   0|   32|          0|
+    |b_data_settings_ch_127_reg_11646          |   32|   0|   32|          0|
+    |b_data_settings_ch_128_reg_11651          |   32|   0|   32|          0|
+    |b_data_settings_ch_129_reg_11696          |   32|   0|   32|          0|
+    |b_data_settings_ch_130_reg_11701          |   32|   0|   32|          0|
+    |b_data_settings_mi_111_reg_11256          |    1|   0|    1|          0|
+    |b_data_settings_mi_112_reg_11261          |    1|   0|    1|          0|
+    |b_data_settings_mi_113_reg_11306          |    1|   0|    1|          0|
+    |b_data_settings_mi_114_reg_11311          |    1|   0|    1|          0|
+    |b_data_settings_mi_115_reg_11356          |    1|   0|    1|          0|
+    |b_data_settings_mi_116_reg_11361          |    1|   0|    1|          0|
+    |b_data_settings_mi_117_reg_11406          |    1|   0|    1|          0|
+    |b_data_settings_mi_118_reg_11411          |    1|   0|    1|          0|
+    |b_data_settings_mi_119_reg_11456          |    1|   0|    1|          0|
+    |b_data_settings_mi_120_reg_11461          |    1|   0|    1|          0|
+    |b_data_settings_mi_121_reg_11506          |    1|   0|    1|          0|
+    |b_data_settings_mi_122_reg_11511          |    1|   0|    1|          0|
+    |b_data_settings_mi_123_reg_11556          |    1|   0|    1|          0|
+    |b_data_settings_mi_124_reg_11561          |    1|   0|    1|          0|
+    |b_data_settings_mi_125_reg_11606          |    1|   0|    1|          0|
+    |b_data_settings_mi_126_reg_11611          |    1|   0|    1|          0|
+    |b_data_settings_mi_127_reg_11656          |    1|   0|    1|          0|
+    |b_data_settings_mi_128_reg_11661          |    1|   0|    1|          0|
+    |b_data_settings_mi_129_reg_11706          |    1|   0|    1|          0|
+    |b_data_settings_mi_130_reg_11711          |    1|   0|    1|          0|
+    |b_data_z_assign_lo_10_reg_11326           |   32|   0|   32|          0|
+    |b_data_z_assign_lo_11_reg_11376           |   32|   0|   32|          0|
+    |b_data_z_assign_lo_12_reg_11426           |   32|   0|   32|          0|
+    |b_data_z_assign_lo_13_reg_11476           |   32|   0|   32|          0|
+    |b_data_z_assign_lo_14_reg_11526           |   32|   0|   32|          0|
+    |b_data_z_assign_lo_15_reg_11576           |   32|   0|   32|          0|
+    |b_data_z_assign_lo_16_reg_11626           |   32|   0|   32|          0|
+    |b_data_z_assign_lo_17_reg_11676           |   32|   0|   32|          0|
+    |b_data_z_assign_lo_18_reg_11726           |   32|   0|   32|          0|
+    |b_data_z_assign_lo_reg_11276              |   32|   0|   32|          0|
+    |candData_cotTheta_wr_reg_10332            |   32|   0|   32|          0|
+    |candData_phiT_write_s_reg_10513           |   32|   0|   32|          0|
+    |candData_qOverPt_wri_reg_9794             |   32|   0|   32|          0|
+    |grp_countStubLayers_fu_7956_ap_start_reg  |    1|   0|    1|          0|
+    |grp_push_back_1_fu_7806_ap_start_reg      |    1|   0|    1|          0|
+    |i_0_i1_reg_7766                           |   32|   0|   32|          0|
+    |i_0_i_reg_7733                            |   32|   0|   32|          0|
+    |i_3_reg_11806                             |   32|   0|   32|          0|
+    |i_reg_11225                               |   32|   0|   32|          0|
+    |next_mul_reg_11054                        |   37|   0|   37|          0|
+    |p_0_i_reg_11215                           |   32|   0|   32|          0|
+    |p_begin_0_rec_reg_7711                    |   32|   0|   32|          0|
+    |p_pn_in_i2_reg_7778                       |   32|   0|   32|          0|
+    |p_pn_in_i_reg_7756                        |   32|   0|   32|          0|
+    |p_rec_reg_11210                           |   32|   0|   32|          0|
+    |phi1_assign_reg_9900                      |   32|   0|   32|          0|
+    |phi_mul_reg_7722                          |   37|   0|   37|          0|
+    |reg_7998                                  |   32|   0|   32|          0|
+    |temp_3_fu_678                             |   32|   0|   32|          0|
+    |temp_4_reg_11046                          |   32|   0|   32|          0|
+    |temp_5_reg_11037                          |   32|   0|   32|          0|
+    |temp_fu_682                               |   32|   0|   32|          0|
+    |tmp_24_reg_11221                          |    1|   0|    1|          0|
+    |tmp_27_reg_7745                           |    4|   0|    4|          0|
+    |tmp_31_reg_11802                          |    1|   0|    1|          0|
+    |tmp_63_reg_11746                          |   11|   0|   11|          0|
+    |tmp_64_reg_11751                          |   13|   0|   13|          0|
+    |tmp_67_reg_11775                          |   14|   0|   14|          0|
+    |ult_reg_10408                             |    1|   0|    1|          0|
+    |value_first_read_ass_reg_11796            |   32|   0|   32|          0|
+    +------------------------------------------+-----+----+-----+-----------+
+    |Total                                     | 3060|   0| 3060|          0|
+    +------------------------------------------+-----+----+-----+-----------+
 
 
 
@@ -638,9 +614,12 @@
 |ap_return_9                                                                      | out |   32| ap_ctrl_hs |                                 initFit                                | return value |
 |LinearRegression_settings_chosenRofPhi_read                                      |  in |   32|   ap_none  |               LinearRegression_settings_chosenRofPhi_read              |    scalar    |
 |LinearRegression_settings_chosenRofZ_read                                        |  in |   32|   ap_none  |                LinearRegression_settings_chosenRofZ_read               |    scalar    |
-|LinearRegression_settings_etaRegions_s_address0                                  | out |    5|  ap_memory |                 LinearRegression_settings_etaRegions_s                 |     array    |
-|LinearRegression_settings_etaRegions_s_ce0                                       | out |    1|  ap_memory |                 LinearRegression_settings_etaRegions_s                 |     array    |
-|LinearRegression_settings_etaRegions_s_q0                                        |  in |   32|  ap_memory |                 LinearRegression_settings_etaRegions_s                 |     array    |
+|LinearRegression_settings_sinh_etaRegions_s_address0                             | out |    5|  ap_memory |               LinearRegression_settings_sinh_etaRegions_s              |     array    |
+|LinearRegression_settings_sinh_etaRegions_s_ce0                                  | out |    1|  ap_memory |               LinearRegression_settings_sinh_etaRegions_s              |     array    |
+|LinearRegression_settings_sinh_etaRegions_s_q0                                   |  in |   32|  ap_memory |               LinearRegression_settings_sinh_etaRegions_s              |     array    |
+|LinearRegression_settings_sinh_etaRegions_s_address1                             | out |    5|  ap_memory |               LinearRegression_settings_sinh_etaRegions_s              |     array    |
+|LinearRegression_settings_sinh_etaRegions_s_ce1                                  | out |    1|  ap_memory |               LinearRegression_settings_sinh_etaRegions_s              |     array    |
+|LinearRegression_settings_sinh_etaRegions_s_q1                                   |  in |   32|  ap_memory |               LinearRegression_settings_sinh_etaRegions_s              |     array    |
 |LinearRegression_settings_minNumMatchLayers_read                                 |  in |   32|   ap_none  |            LinearRegression_settings_minNumMatchLayers_read            |    scalar    |
 |LinearRegression_settings_minPSLayers_read                                       |  in |   32|   ap_none  |               LinearRegression_settings_minPSLayers_read               |    scalar    |
 |LinearRegression_stubs_data_settings_chosenRofPhi_s_address0                     | out |    4|  ap_memory |           LinearRegression_stubs_data_settings_chosenRofPhi_s          |     array    |
@@ -661,16 +640,16 @@
 |LinearRegression_stubs_data_settings_chosenRofZ_s_ce1                            | out |    1|  ap_memory |            LinearRegression_stubs_data_settings_chosenRofZ_s           |     array    |
 |LinearRegression_stubs_data_settings_chosenRofZ_s_we1                            | out |    1|  ap_memory |            LinearRegression_stubs_data_settings_chosenRofZ_s           |     array    |
 |LinearRegression_stubs_data_settings_chosenRofZ_s_d1                             | out |   32|  ap_memory |            LinearRegression_stubs_data_settings_chosenRofZ_s           |     array    |
-|LinearRegression_stubs_data_settings_etaRegions_s_address0                       | out |    8|  ap_memory |            LinearRegression_stubs_data_settings_etaRegions_s           |     array    |
-|LinearRegression_stubs_data_settings_etaRegions_s_ce0                            | out |    1|  ap_memory |            LinearRegression_stubs_data_settings_etaRegions_s           |     array    |
-|LinearRegression_stubs_data_settings_etaRegions_s_we0                            | out |    1|  ap_memory |            LinearRegression_stubs_data_settings_etaRegions_s           |     array    |
-|LinearRegression_stubs_data_settings_etaRegions_s_d0                             | out |   32|  ap_memory |            LinearRegression_stubs_data_settings_etaRegions_s           |     array    |
-|LinearRegression_stubs_data_settings_etaRegions_s_q0                             |  in |   32|  ap_memory |            LinearRegression_stubs_data_settings_etaRegions_s           |     array    |
-|LinearRegression_stubs_data_settings_etaRegions_s_address1                       | out |    8|  ap_memory |            LinearRegression_stubs_data_settings_etaRegions_s           |     array    |
-|LinearRegression_stubs_data_settings_etaRegions_s_ce1                            | out |    1|  ap_memory |            LinearRegression_stubs_data_settings_etaRegions_s           |     array    |
-|LinearRegression_stubs_data_settings_etaRegions_s_we1                            | out |    1|  ap_memory |            LinearRegression_stubs_data_settings_etaRegions_s           |     array    |
-|LinearRegression_stubs_data_settings_etaRegions_s_d1                             | out |   32|  ap_memory |            LinearRegression_stubs_data_settings_etaRegions_s           |     array    |
-|LinearRegression_stubs_data_settings_etaRegions_s_q1                             |  in |   32|  ap_memory |            LinearRegression_stubs_data_settings_etaRegions_s           |     array    |
+|LinearRegression_stubs_data_settings_sinh_etaRegions_s_address0                  | out |    8|  ap_memory |         LinearRegression_stubs_data_settings_sinh_etaRegions_s         |     array    |
+|LinearRegression_stubs_data_settings_sinh_etaRegions_s_ce0                       | out |    1|  ap_memory |         LinearRegression_stubs_data_settings_sinh_etaRegions_s         |     array    |
+|LinearRegression_stubs_data_settings_sinh_etaRegions_s_we0                       | out |    1|  ap_memory |         LinearRegression_stubs_data_settings_sinh_etaRegions_s         |     array    |
+|LinearRegression_stubs_data_settings_sinh_etaRegions_s_d0                        | out |   32|  ap_memory |         LinearRegression_stubs_data_settings_sinh_etaRegions_s         |     array    |
+|LinearRegression_stubs_data_settings_sinh_etaRegions_s_q0                        |  in |   32|  ap_memory |         LinearRegression_stubs_data_settings_sinh_etaRegions_s         |     array    |
+|LinearRegression_stubs_data_settings_sinh_etaRegions_s_address1                  | out |    8|  ap_memory |         LinearRegression_stubs_data_settings_sinh_etaRegions_s         |     array    |
+|LinearRegression_stubs_data_settings_sinh_etaRegions_s_ce1                       | out |    1|  ap_memory |         LinearRegression_stubs_data_settings_sinh_etaRegions_s         |     array    |
+|LinearRegression_stubs_data_settings_sinh_etaRegions_s_we1                       | out |    1|  ap_memory |         LinearRegression_stubs_data_settings_sinh_etaRegions_s         |     array    |
+|LinearRegression_stubs_data_settings_sinh_etaRegions_s_d1                        | out |   32|  ap_memory |         LinearRegression_stubs_data_settings_sinh_etaRegions_s         |     array    |
+|LinearRegression_stubs_data_settings_sinh_etaRegions_s_q1                        |  in |   32|  ap_memory |         LinearRegression_stubs_data_settings_sinh_etaRegions_s         |     array    |
 |LinearRegression_stubs_data_settings_minNumMatchLayers_s_address0                | out |    4|  ap_memory |        LinearRegression_stubs_data_settings_minNumMatchLayers_s        |     array    |
 |LinearRegression_stubs_data_settings_minNumMatchLayers_s_ce0                     | out |    1|  ap_memory |        LinearRegression_stubs_data_settings_minNumMatchLayers_s        |     array    |
 |LinearRegression_stubs_data_settings_minNumMatchLayers_s_we0                     | out |    1|  ap_memory |        LinearRegression_stubs_data_settings_minNumMatchLayers_s        |     array    |
@@ -773,14 +752,14 @@
 |LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_ce1              | out |    1|  ap_memory |     LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s    |     array    |
 |LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_we1              | out |    1|  ap_memory |     LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s    |     array    |
 |LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_d1               | out |   32|  ap_memory |     LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s    |     array    |
-|LinearRegression_stubMap_data_second_data_settings_etaRegions_s_address0         | out |   13|  ap_memory |     LinearRegression_stubMap_data_second_data_settings_etaRegions_s    |     array    |
-|LinearRegression_stubMap_data_second_data_settings_etaRegions_s_ce0              | out |    1|  ap_memory |     LinearRegression_stubMap_data_second_data_settings_etaRegions_s    |     array    |
-|LinearRegression_stubMap_data_second_data_settings_etaRegions_s_we0              | out |    1|  ap_memory |     LinearRegression_stubMap_data_second_data_settings_etaRegions_s    |     array    |
-|LinearRegression_stubMap_data_second_data_settings_etaRegions_s_d0               | out |   32|  ap_memory |     LinearRegression_stubMap_data_second_data_settings_etaRegions_s    |     array    |
-|LinearRegression_stubMap_data_second_data_settings_etaRegions_s_address1         | out |   13|  ap_memory |     LinearRegression_stubMap_data_second_data_settings_etaRegions_s    |     array    |
-|LinearRegression_stubMap_data_second_data_settings_etaRegions_s_ce1              | out |    1|  ap_memory |     LinearRegression_stubMap_data_second_data_settings_etaRegions_s    |     array    |
-|LinearRegression_stubMap_data_second_data_settings_etaRegions_s_we1              | out |    1|  ap_memory |     LinearRegression_stubMap_data_second_data_settings_etaRegions_s    |     array    |
-|LinearRegression_stubMap_data_second_data_settings_etaRegions_s_d1               | out |   32|  ap_memory |     LinearRegression_stubMap_data_second_data_settings_etaRegions_s    |     array    |
+|LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_address0    | out |   13|  ap_memory |  LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s  |     array    |
+|LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_ce0         | out |    1|  ap_memory |  LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s  |     array    |
+|LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_we0         | out |    1|  ap_memory |  LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s  |     array    |
+|LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_d0          | out |   32|  ap_memory |  LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s  |     array    |
+|LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_address1    | out |   13|  ap_memory |  LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s  |     array    |
+|LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_ce1         | out |    1|  ap_memory |  LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s  |     array    |
+|LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_we1         | out |    1|  ap_memory |  LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s  |     array    |
+|LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_d1          | out |   32|  ap_memory |  LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s  |     array    |
 |LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_address0  | out |    9|  ap_memory | LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s |     array    |
 |LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_ce0       | out |    1|  ap_memory | LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s |     array    |
 |LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_we0       | out |    1|  ap_memory | LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s |     array    |
@@ -885,12 +864,12 @@
 |l1track3D_stubs_data_settings_chosenRofZ_s_address1                              | out |    4|  ap_memory |               l1track3D_stubs_data_settings_chosenRofZ_s               |     array    |
 |l1track3D_stubs_data_settings_chosenRofZ_s_ce1                                   | out |    1|  ap_memory |               l1track3D_stubs_data_settings_chosenRofZ_s               |     array    |
 |l1track3D_stubs_data_settings_chosenRofZ_s_q1                                    |  in |   32|  ap_memory |               l1track3D_stubs_data_settings_chosenRofZ_s               |     array    |
-|l1track3D_stubs_data_settings_etaRegions_s_address0                              | out |    8|  ap_memory |               l1track3D_stubs_data_settings_etaRegions_s               |     array    |
-|l1track3D_stubs_data_settings_etaRegions_s_ce0                                   | out |    1|  ap_memory |               l1track3D_stubs_data_settings_etaRegions_s               |     array    |
-|l1track3D_stubs_data_settings_etaRegions_s_q0                                    |  in |   32|  ap_memory |               l1track3D_stubs_data_settings_etaRegions_s               |     array    |
-|l1track3D_stubs_data_settings_etaRegions_s_address1                              | out |    8|  ap_memory |               l1track3D_stubs_data_settings_etaRegions_s               |     array    |
-|l1track3D_stubs_data_settings_etaRegions_s_ce1                                   | out |    1|  ap_memory |               l1track3D_stubs_data_settings_etaRegions_s               |     array    |
-|l1track3D_stubs_data_settings_etaRegions_s_q1                                    |  in |   32|  ap_memory |               l1track3D_stubs_data_settings_etaRegions_s               |     array    |
+|l1track3D_stubs_data_settings_sinh_etaRegions_s_address0                         | out |    8|  ap_memory |             l1track3D_stubs_data_settings_sinh_etaRegions_s            |     array    |
+|l1track3D_stubs_data_settings_sinh_etaRegions_s_ce0                              | out |    1|  ap_memory |             l1track3D_stubs_data_settings_sinh_etaRegions_s            |     array    |
+|l1track3D_stubs_data_settings_sinh_etaRegions_s_q0                               |  in |   32|  ap_memory |             l1track3D_stubs_data_settings_sinh_etaRegions_s            |     array    |
+|l1track3D_stubs_data_settings_sinh_etaRegions_s_address1                         | out |    8|  ap_memory |             l1track3D_stubs_data_settings_sinh_etaRegions_s            |     array    |
+|l1track3D_stubs_data_settings_sinh_etaRegions_s_ce1                              | out |    1|  ap_memory |             l1track3D_stubs_data_settings_sinh_etaRegions_s            |     array    |
+|l1track3D_stubs_data_settings_sinh_etaRegions_s_q1                               |  in |   32|  ap_memory |             l1track3D_stubs_data_settings_sinh_etaRegions_s            |     array    |
 |l1track3D_stubs_data_settings_minNumMatchLayers_s_address0                       | out |    4|  ap_memory |            l1track3D_stubs_data_settings_minNumMatchLayers_s           |     array    |
 |l1track3D_stubs_data_settings_minNumMatchLayers_s_ce0                            | out |    1|  ap_memory |            l1track3D_stubs_data_settings_minNumMatchLayers_s           |     array    |
 |l1track3D_stubs_data_settings_minNumMatchLayers_s_q0                             |  in |   32|  ap_memory |            l1track3D_stubs_data_settings_minNumMatchLayers_s           |     array    |

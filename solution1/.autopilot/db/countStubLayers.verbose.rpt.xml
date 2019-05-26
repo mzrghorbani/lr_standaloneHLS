@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'countStubLayers'" level="0">
-<item name = "Date">Tue May 21 18:44:36 2019
+<item name = "Date">Thu May 23 17:57:24 2019
 </item>
 <item name = "Version">2018.3 (Build 2405991 on Thu Dec 06 23:56:15 MST 2018)</item>
 <item name = "Project">lr_standaloneHLS</item>
@@ -85,11 +85,11 @@
 <column name="indvarinc_fu_153_p2">+, 0, 0, 15, 5, 1</column>
 <column name="nLayers_1_fu_284_p2">+, 0, 0, 39, 32, 1</column>
 <column name="p_rec_fu_192_p2">+, 0, 0, 39, 32, 1</column>
-<column name="tmp_93_i_fu_234_p2">+, 0, 0, 39, 32, 5</column>
+<column name="tmp_17_i_fu_234_p2">+, 0, 0, 39, 32, 5</column>
 <column name="tmp_i_fu_228_p2">+, 0, 0, 39, 32, 4</column>
 <column name="sel_tmp_i_fu_240_p2">and, 0, 0, 2, 1, 1</column>
-<column name="tmp_111_not_i_fu_210_p2">icmp, 0, 0, 20, 32, 5</column>
-<column name="tmp_138_fu_187_p2">icmp, 0, 0, 20, 32, 32</column>
+<column name="tmp_36_not_i_fu_210_p2">icmp, 0, 0, 20, 32, 5</column>
+<column name="tmp_51_fu_187_p2">icmp, 0, 0, 20, 32, 32</column>
 <column name="tmp_not_i_fu_198_p2">icmp, 0, 0, 20, 32, 5</column>
 <column name="tmp_s_fu_164_p2">icmp, 0, 0, 11, 5, 3</column>
 <column name="brmerge3_i_fu_222_p2">or, 0, 0, 2, 1, 1</column>

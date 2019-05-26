@@ -87,19 +87,19 @@ architecture behav of countStubLayers is
     attribute fsm_encoding of ap_CS_fsm_state5 : signal is "none";
     signal tmp_fu_159_p1 : STD_LOGIC_VECTOR (63 downto 0);
     signal p_begin_0_rec_cast_fu_180_p1 : STD_LOGIC_VECTOR (63 downto 0);
-    signal tmp_139_fu_279_p1 : STD_LOGIC_VECTOR (63 downto 0);
+    signal tmp_52_fu_279_p1 : STD_LOGIC_VECTOR (63 downto 0);
     signal nLayers_fu_52 : STD_LOGIC_VECTOR (31 downto 0);
     signal nLayers_1_fu_284_p2 : STD_LOGIC_VECTOR (31 downto 0);
-    signal tmp_138_fu_187_p2 : STD_LOGIC_VECTOR (0 downto 0);
+    signal tmp_51_fu_187_p2 : STD_LOGIC_VECTOR (0 downto 0);
     signal onlySeed_not_fu_170_p0 : STD_LOGIC_VECTOR (0 downto 0);
     signal tmp_not_i_fu_198_p2 : STD_LOGIC_VECTOR (0 downto 0);
-    signal tmp_111_not_i_fu_210_p2 : STD_LOGIC_VECTOR (0 downto 0);
+    signal tmp_36_not_i_fu_210_p2 : STD_LOGIC_VECTOR (0 downto 0);
     signal stub_psModule_read_s_fu_216_p2 : STD_LOGIC_VECTOR (0 downto 0);
     signal brmerge_i_fu_204_p2 : STD_LOGIC_VECTOR (0 downto 0);
     signal brmerge3_i_fu_222_p2 : STD_LOGIC_VECTOR (0 downto 0);
     signal sel_tmp_i_fu_240_p2 : STD_LOGIC_VECTOR (0 downto 0);
     signal sel_tmp1_i_fu_246_p2 : STD_LOGIC_VECTOR (0 downto 0);
-    signal tmp_93_i_fu_234_p2 : STD_LOGIC_VECTOR (31 downto 0);
+    signal tmp_17_i_fu_234_p2 : STD_LOGIC_VECTOR (31 downto 0);
     signal sel_tmp5_demorgan_i_fu_260_p2 : STD_LOGIC_VECTOR (0 downto 0);
     signal sel_tmp2_i_fu_252_p3 : STD_LOGIC_VECTOR (31 downto 0);
     signal tmp_i_fu_228_p2 : STD_LOGIC_VECTOR (31 downto 0);
@@ -198,7 +198,7 @@ begin
     begin
         if (ap_clk'event and ap_clk = '1') then
             if (((brmerge_fu_274_p2 = ap_const_lv1_1) and (ap_const_logic_1 = ap_CS_fsm_state4))) then
-                foundLayers_addr_1_reg_352 <= tmp_139_fu_279_p1(5 - 1 downto 0);
+                foundLayers_addr_1_reg_352 <= tmp_52_fu_279_p1(5 - 1 downto 0);
             end if;
         end if;
     end process;
@@ -219,7 +219,7 @@ begin
         end if;
     end process;
 
-    ap_NS_fsm_assign_proc : process (ap_start, ap_CS_fsm, ap_CS_fsm_state1, ap_CS_fsm_state2, tmp_s_fu_164_p2, ap_CS_fsm_state3, tmp_138_fu_187_p2)
+    ap_NS_fsm_assign_proc : process (ap_start, ap_CS_fsm, ap_CS_fsm_state1, ap_CS_fsm_state2, tmp_s_fu_164_p2, ap_CS_fsm_state3, tmp_51_fu_187_p2)
     begin
         case ap_CS_fsm is
             when ap_ST_fsm_state1 => 
@@ -235,7 +235,7 @@ begin
                     ap_NS_fsm <= ap_ST_fsm_state2;
                 end if;
             when ap_ST_fsm_state3 => 
-                if (((tmp_138_fu_187_p2 = ap_const_lv1_1) and (ap_const_logic_1 = ap_CS_fsm_state3))) then
+                if (((tmp_51_fu_187_p2 = ap_const_lv1_1) and (ap_const_logic_1 = ap_CS_fsm_state3))) then
                     ap_NS_fsm <= ap_ST_fsm_state1;
                 else
                     ap_NS_fsm <= ap_ST_fsm_state4;
@@ -254,9 +254,9 @@ begin
     ap_CS_fsm_state4 <= ap_CS_fsm(3);
     ap_CS_fsm_state5 <= ap_CS_fsm(4);
 
-    ap_done_assign_proc : process(ap_start, ap_CS_fsm_state1, ap_CS_fsm_state3, tmp_138_fu_187_p2)
+    ap_done_assign_proc : process(ap_start, ap_CS_fsm_state1, ap_CS_fsm_state3, tmp_51_fu_187_p2)
     begin
-        if ((((tmp_138_fu_187_p2 = ap_const_lv1_1) and (ap_const_logic_1 = ap_CS_fsm_state3)) or ((ap_start = ap_const_logic_0) and (ap_const_logic_1 = ap_CS_fsm_state1)))) then 
+        if ((((tmp_51_fu_187_p2 = ap_const_lv1_1) and (ap_const_logic_1 = ap_CS_fsm_state3)) or ((ap_start = ap_const_logic_0) and (ap_const_logic_1 = ap_CS_fsm_state1)))) then 
             ap_done <= ap_const_logic_1;
         else 
             ap_done <= ap_const_logic_0;
@@ -274,9 +274,9 @@ begin
     end process;
 
 
-    ap_ready_assign_proc : process(ap_CS_fsm_state3, tmp_138_fu_187_p2)
+    ap_ready_assign_proc : process(ap_CS_fsm_state3, tmp_51_fu_187_p2)
     begin
-        if (((tmp_138_fu_187_p2 = ap_const_lv1_1) and (ap_const_logic_1 = ap_CS_fsm_state3))) then 
+        if (((tmp_51_fu_187_p2 = ap_const_lv1_1) and (ap_const_logic_1 = ap_CS_fsm_state3))) then 
             ap_ready <= ap_const_logic_1;
         else 
             ap_ready <= ap_const_logic_0;
@@ -284,16 +284,16 @@ begin
     end process;
 
     ap_return <= nLayers_fu_52;
-    brmerge3_i_fu_222_p2 <= (tmp_111_not_i_fu_210_p2 or stub_psModule_read_s_fu_216_p2);
+    brmerge3_i_fu_222_p2 <= (tmp_36_not_i_fu_210_p2 or stub_psModule_read_s_fu_216_p2);
     brmerge_fu_274_p2 <= (stubs_data_psModule_s_q0 or onlySeed_not_reg_320);
     brmerge_i_fu_204_p2 <= (tmp_not_i_fu_198_p2 or stubs_data_psModule_s_q0);
 
-    foundLayers_address0_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state4, foundLayers_addr_1_reg_352, ap_CS_fsm_state5, tmp_fu_159_p1, tmp_139_fu_279_p1)
+    foundLayers_address0_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state4, foundLayers_addr_1_reg_352, ap_CS_fsm_state5, tmp_fu_159_p1, tmp_52_fu_279_p1)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state5)) then 
             foundLayers_address0 <= foundLayers_addr_1_reg_352;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state4)) then 
-            foundLayers_address0 <= tmp_139_fu_279_p1(5 - 1 downto 0);
+            foundLayers_address0 <= tmp_52_fu_279_p1(5 - 1 downto 0);
         elsif ((ap_const_logic_1 = ap_CS_fsm_state2)) then 
             foundLayers_address0 <= tmp_fu_159_p1(5 - 1 downto 0);
         else 
@@ -345,7 +345,7 @@ begin
     sel_tmp1_i_fu_246_p2 <= (stubs_data_barrel_s_q0 or sel_tmp_i_fu_240_p2);
     sel_tmp2_i_fu_252_p3 <= 
         stubs_data_layerId_s_q0 when (sel_tmp1_i_fu_246_p2(0) = '1') else 
-        tmp_93_i_fu_234_p2;
+        tmp_17_i_fu_234_p2;
     sel_tmp5_demorgan_i_fu_260_p2 <= (stubs_data_barrel_s_q0 or brmerge_i_fu_204_p2);
     sel_tmp_i_fu_240_p2 <= (brmerge_i_fu_204_p2 and brmerge3_i_fu_222_p2);
     stub_psModule_read_s_fu_216_p2 <= (stubs_data_psModule_s_q0 xor ap_const_lv1_1);
@@ -382,10 +382,10 @@ begin
         end if; 
     end process;
 
-    tmp_111_not_i_fu_210_p2 <= "1" when (unsigned(stubs_data_layerId_s_q0) < unsigned(ap_const_lv32_15)) else "0";
-    tmp_138_fu_187_p2 <= "1" when (p_begin_0_rec_reg_139 = stubs_size_read) else "0";
-    tmp_139_fu_279_p1 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(p_0_i_fu_266_p3),64));
-    tmp_93_i_fu_234_p2 <= std_logic_vector(unsigned(stubs_data_layerId_s_q0) + unsigned(ap_const_lv32_FFFFFFF6));
+    tmp_17_i_fu_234_p2 <= std_logic_vector(unsigned(stubs_data_layerId_s_q0) + unsigned(ap_const_lv32_FFFFFFF6));
+    tmp_36_not_i_fu_210_p2 <= "1" when (unsigned(stubs_data_layerId_s_q0) < unsigned(ap_const_lv32_15)) else "0";
+    tmp_51_fu_187_p2 <= "1" when (p_begin_0_rec_reg_139 = stubs_size_read) else "0";
+    tmp_52_fu_279_p1 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(p_0_i_fu_266_p3),64));
     tmp_fu_159_p1 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(invdar_reg_128),64));
     tmp_i_fu_228_p2 <= std_logic_vector(unsigned(stubs_data_layerId_s_q0) + unsigned(ap_const_lv32_A));
     tmp_not_i_fu_198_p2 <= "1" when (unsigned(stubs_data_layerId_s_q0) > unsigned(ap_const_lv32_13)) else "0";

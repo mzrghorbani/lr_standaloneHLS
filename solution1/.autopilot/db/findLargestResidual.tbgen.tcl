@@ -390,57 +390,57 @@ set RtlHierarchyInfo {[
 		"InDataflowNetwork" : "0",
 		"HasNonBlockingOperation" : "0",
 		"WaitState" : [
-			{"State" : "ap_ST_fsm_state20", "FSM" : "ap_CS_fsm", "SubInstance" : "grp_push_back_1_fu_1562"},
-			{"State" : "ap_ST_fsm_state3", "FSM" : "ap_CS_fsm", "SubInstance" : "grp_countStubLayers_fu_1712"},
-			{"State" : "ap_ST_fsm_state5", "FSM" : "ap_CS_fsm", "SubInstance" : "grp_countStubLayers_fu_1712"}],
+			{"State" : "ap_ST_fsm_state18", "FSM" : "ap_CS_fsm", "SubInstance" : "grp_push_back_1_fu_1524"},
+			{"State" : "ap_ST_fsm_state3", "FSM" : "ap_CS_fsm", "SubInstance" : "grp_countStubLayers_fu_1674"},
+			{"State" : "ap_ST_fsm_state5", "FSM" : "ap_CS_fsm", "SubInstance" : "grp_countStubLayers_fu_1674"}],
 		"Port" : [
 			{"Name" : "LinearRegression_stubs_size_read", "Type" : "None", "Direction" : "I"},
 			{"Name" : "LinearRegression_stubs_data_layerId_s", "Type" : "Memory", "Direction" : "I",
 				"SubConnect" : [
-					{"ID" : "12", "SubInstance" : "grp_countStubLayers_fu_1712", "Port" : "stubs_data_layerId_s"}]},
+					{"ID" : "12", "SubInstance" : "grp_countStubLayers_fu_1674", "Port" : "stubs_data_layerId_s"}]},
 			{"Name" : "LinearRegression_stubs_data_psModule_s", "Type" : "Memory", "Direction" : "I",
 				"SubConnect" : [
-					{"ID" : "12", "SubInstance" : "grp_countStubLayers_fu_1712", "Port" : "stubs_data_psModule_s"}]},
+					{"ID" : "12", "SubInstance" : "grp_countStubLayers_fu_1674", "Port" : "stubs_data_psModule_s"}]},
 			{"Name" : "LinearRegression_stubs_data_barrel_s", "Type" : "Memory", "Direction" : "I",
 				"SubConnect" : [
-					{"ID" : "12", "SubInstance" : "grp_countStubLayers_fu_1712", "Port" : "stubs_data_barrel_s"}]},
+					{"ID" : "12", "SubInstance" : "grp_countStubLayers_fu_1674", "Port" : "stubs_data_barrel_s"}]},
 			{"Name" : "LinearRegression_stubMap_size_read", "Type" : "None", "Direction" : "I"},
 			{"Name" : "LinearRegression_stubMap_data_first", "Type" : "Memory", "Direction" : "IO",
 				"SubConnect" : [
-					{"ID" : "11", "SubInstance" : "grp_push_back_1_fu_1562", "Port" : "mapHLS_unsigned_int_arrayHLS_Stub_data_first"}]},
+					{"ID" : "11", "SubInstance" : "grp_push_back_1_fu_1524", "Port" : "mapHLS_unsigned_int_arrayHLS_Stub_data_first"}]},
 			{"Name" : "LinearRegression_stubMap_data_second_size_s", "Type" : "Memory", "Direction" : "O",
 				"SubConnect" : [
-					{"ID" : "11", "SubInstance" : "grp_push_back_1_fu_1562", "Port" : "mapHLS_unsigned_int_arrayHLS_Stub_data_second_size_s"}]},
+					{"ID" : "11", "SubInstance" : "grp_push_back_1_fu_1524", "Port" : "mapHLS_unsigned_int_arrayHLS_Stub_data_second_size_s"}]},
 			{"Name" : "LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s", "Type" : "Memory", "Direction" : "O",
 				"SubConnect" : [
-					{"ID" : "11", "SubInstance" : "grp_push_back_1_fu_1562", "Port" : "mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofPhi_s"}]},
+					{"ID" : "11", "SubInstance" : "grp_push_back_1_fu_1524", "Port" : "mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofPhi_s"}]},
 			{"Name" : "LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s", "Type" : "Memory", "Direction" : "O",
 				"SubConnect" : [
-					{"ID" : "11", "SubInstance" : "grp_push_back_1_fu_1562", "Port" : "mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofZ_s"}]},
+					{"ID" : "11", "SubInstance" : "grp_push_back_1_fu_1524", "Port" : "mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_chosenRofZ_s"}]},
 			{"Name" : "LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s", "Type" : "Memory", "Direction" : "O",
 				"SubConnect" : [
-					{"ID" : "11", "SubInstance" : "grp_push_back_1_fu_1562", "Port" : "mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minNumMatchLayers_s"}]},
+					{"ID" : "11", "SubInstance" : "grp_push_back_1_fu_1524", "Port" : "mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minNumMatchLayers_s"}]},
 			{"Name" : "LinearRegression_stubMap_data_second_data_settings_minPSLayers_s", "Type" : "Memory", "Direction" : "O",
 				"SubConnect" : [
-					{"ID" : "11", "SubInstance" : "grp_push_back_1_fu_1562", "Port" : "mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minPSLayers_s"}]},
+					{"ID" : "11", "SubInstance" : "grp_push_back_1_fu_1524", "Port" : "mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_settings_minPSLayers_s"}]},
 			{"Name" : "LinearRegression_stubMap_data_second_data_r_s", "Type" : "Memory", "Direction" : "O",
 				"SubConnect" : [
-					{"ID" : "11", "SubInstance" : "grp_push_back_1_fu_1562", "Port" : "mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_r_s"}]},
+					{"ID" : "11", "SubInstance" : "grp_push_back_1_fu_1524", "Port" : "mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_r_s"}]},
 			{"Name" : "LinearRegression_stubMap_data_second_data_phi_s", "Type" : "Memory", "Direction" : "O",
 				"SubConnect" : [
-					{"ID" : "11", "SubInstance" : "grp_push_back_1_fu_1562", "Port" : "mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_phi_s"}]},
+					{"ID" : "11", "SubInstance" : "grp_push_back_1_fu_1524", "Port" : "mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_phi_s"}]},
 			{"Name" : "LinearRegression_stubMap_data_second_data_z_s", "Type" : "Memory", "Direction" : "O",
 				"SubConnect" : [
-					{"ID" : "11", "SubInstance" : "grp_push_back_1_fu_1562", "Port" : "mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_z_s"}]},
+					{"ID" : "11", "SubInstance" : "grp_push_back_1_fu_1524", "Port" : "mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_z_s"}]},
 			{"Name" : "LinearRegression_stubMap_data_second_data_layerId_s", "Type" : "Memory", "Direction" : "IO",
 				"SubConnect" : [
-					{"ID" : "11", "SubInstance" : "grp_push_back_1_fu_1562", "Port" : "mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_layerId_s"}]},
+					{"ID" : "11", "SubInstance" : "grp_push_back_1_fu_1524", "Port" : "mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_layerId_s"}]},
 			{"Name" : "LinearRegression_stubMap_data_second_data_psModule_s", "Type" : "Memory", "Direction" : "IO",
 				"SubConnect" : [
-					{"ID" : "11", "SubInstance" : "grp_push_back_1_fu_1562", "Port" : "mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_psModule_s"}]},
+					{"ID" : "11", "SubInstance" : "grp_push_back_1_fu_1524", "Port" : "mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_psModule_s"}]},
 			{"Name" : "LinearRegression_stubMap_data_second_data_barrel_s", "Type" : "Memory", "Direction" : "IO",
 				"SubConnect" : [
-					{"ID" : "11", "SubInstance" : "grp_push_back_1_fu_1562", "Port" : "mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_barrel_s"}]},
+					{"ID" : "11", "SubInstance" : "grp_push_back_1_fu_1524", "Port" : "mapHLS_unsigned_int_arrayHLS_Stub_data_second_data_barrel_s"}]},
 			{"Name" : "LinearRegression_layerPopulation_size_read", "Type" : "None", "Direction" : "I"},
 			{"Name" : "LinearRegression_layerPopulation_data_first", "Type" : "Memory", "Direction" : "IO"},
 			{"Name" : "LinearRegression_layerPopulation_data_second", "Type" : "Memory", "Direction" : "IO"},
@@ -462,7 +462,7 @@ set RtlHierarchyInfo {[
 	{"ID" : "8", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.b_data_layerId_ass_U", "Parent" : "0"},
 	{"ID" : "9", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.b_data_psModule_as_U", "Parent" : "0"},
 	{"ID" : "10", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.b_data_barrel_assi_U", "Parent" : "0"},
-	{"ID" : "11", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.grp_push_back_1_fu_1562", "Parent" : "0",
+	{"ID" : "11", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.grp_push_back_1_fu_1524", "Parent" : "0",
 		"CDFG" : "push_back_1",
 		"Protocol" : "ap_ctrl_hs",
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1",
@@ -590,7 +590,7 @@ set RtlHierarchyInfo {[
 			{"Name" : "p_read289", "Type" : "None", "Direction" : "I"},
 			{"Name" : "p_read290", "Type" : "None", "Direction" : "I"},
 			{"Name" : "p_read291", "Type" : "None", "Direction" : "I"}]},
-	{"ID" : "12", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.grp_countStubLayers_fu_1712", "Parent" : "0", "Child" : ["13"],
+	{"ID" : "12", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.grp_countStubLayers_fu_1674", "Parent" : "0", "Child" : ["13"],
 		"CDFG" : "countStubLayers",
 		"Protocol" : "ap_ctrl_hs",
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1",
@@ -609,10 +609,10 @@ set RtlHierarchyInfo {[
 			{"Name" : "stubs_data_psModule_s", "Type" : "Memory", "Direction" : "I"},
 			{"Name" : "stubs_data_barrel_s", "Type" : "Memory", "Direction" : "I"},
 			{"Name" : "onlySeed", "Type" : "None", "Direction" : "I"}]},
-	{"ID" : "13", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_countStubLayers_fu_1712.foundLayers_U", "Parent" : "12"},
-	{"ID" : "14", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.LRupdateHLS_fadd_32ns_32ns_32_4_full_dsp_1_U341", "Parent" : "0"},
-	{"ID" : "15", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.LRupdateHLS_fadd_32ns_32ns_32_4_full_dsp_1_U342", "Parent" : "0"},
-	{"ID" : "16", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.LRupdateHLS_fcmp_32ns_32ns_1_1_1_U343", "Parent" : "0"}]}
+	{"ID" : "13", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_countStubLayers_fu_1674.foundLayers_U", "Parent" : "12"},
+	{"ID" : "14", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.LRupdateHLS_fadd_32ns_32ns_32_4_full_dsp_1_U331", "Parent" : "0"},
+	{"ID" : "15", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.LRupdateHLS_fadd_32ns_32ns_32_4_full_dsp_1_U332", "Parent" : "0"},
+	{"ID" : "16", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.LRupdateHLS_fcmp_32ns_32ns_1_1_1_U333", "Parent" : "0"}]}
 
 
 set ArgLastReadFirstWriteLatency {
@@ -622,7 +622,7 @@ set ArgLastReadFirstWriteLatency {
 		LinearRegression_stubs_data_psModule_s {Type I LastRead 2 FirstWrite -1}
 		LinearRegression_stubs_data_barrel_s {Type I LastRead 2 FirstWrite -1}
 		LinearRegression_stubMap_size_read {Type I LastRead 0 FirstWrite -1}
-		LinearRegression_stubMap_data_first {Type IO LastRead 10 FirstWrite 4}
+		LinearRegression_stubMap_data_first {Type IO LastRead 8 FirstWrite 4}
 		LinearRegression_stubMap_data_second_size_s {Type O LastRead -1 FirstWrite 4}
 		LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s {Type O LastRead -1 FirstWrite 0}
 		LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s {Type O LastRead -1 FirstWrite 0}
@@ -631,20 +631,20 @@ set ArgLastReadFirstWriteLatency {
 		LinearRegression_stubMap_data_second_data_r_s {Type O LastRead -1 FirstWrite 0}
 		LinearRegression_stubMap_data_second_data_phi_s {Type O LastRead -1 FirstWrite 0}
 		LinearRegression_stubMap_data_second_data_z_s {Type O LastRead -1 FirstWrite 0}
-		LinearRegression_stubMap_data_second_data_layerId_s {Type IO LastRead 19 FirstWrite 0}
-		LinearRegression_stubMap_data_second_data_psModule_s {Type IO LastRead 19 FirstWrite 0}
-		LinearRegression_stubMap_data_second_data_barrel_s {Type IO LastRead 19 FirstWrite 0}
+		LinearRegression_stubMap_data_second_data_layerId_s {Type IO LastRead 17 FirstWrite 0}
+		LinearRegression_stubMap_data_second_data_psModule_s {Type IO LastRead 17 FirstWrite 0}
+		LinearRegression_stubMap_data_second_data_barrel_s {Type IO LastRead 17 FirstWrite 0}
 		LinearRegression_layerPopulation_size_read {Type I LastRead 0 FirstWrite -1}
-		LinearRegression_layerPopulation_data_first {Type IO LastRead 23 FirstWrite 23}
-		LinearRegression_layerPopulation_data_second {Type IO LastRead 24 FirstWrite 23}
+		LinearRegression_layerPopulation_data_first {Type IO LastRead 19 FirstWrite 19}
+		LinearRegression_layerPopulation_data_second {Type IO LastRead 20 FirstWrite 19}
 		LinearRegression_residuals_size_read {Type I LastRead 0 FirstWrite -1}
 		LinearRegression_residuals_data_first {Type I LastRead 6 FirstWrite -1}
 		LinearRegression_residuals_data_second_size_s {Type I LastRead 1 FirstWrite -1}
-		LinearRegression_residuals_data_second_data_phi {Type I LastRead 25 FirstWrite -1}
-		LinearRegression_residuals_data_second_data_z {Type I LastRead 25 FirstWrite -1}
-		LinearRegression_residuals_data_second_data_layerId {Type I LastRead 30 FirstWrite -1}
-		LinearRegression_residuals_data_second_data_stubId {Type I LastRead 30 FirstWrite -1}
-		LinearRegression_residuals_data_second_data_ps {Type I LastRead 30 FirstWrite -1}}
+		LinearRegression_residuals_data_second_data_phi {Type I LastRead 21 FirstWrite -1}
+		LinearRegression_residuals_data_second_data_z {Type I LastRead 21 FirstWrite -1}
+		LinearRegression_residuals_data_second_data_layerId {Type I LastRead 26 FirstWrite -1}
+		LinearRegression_residuals_data_second_data_stubId {Type I LastRead 26 FirstWrite -1}
+		LinearRegression_residuals_data_second_data_ps {Type I LastRead 26 FirstWrite -1}}
 	push_back_1 {
 		mapHLS_unsigned_int_arrayHLS_Stub_size_read {Type I LastRead 0 FirstWrite -1}
 		mapHLS_unsigned_int_arrayHLS_Stub_data_first {Type O LastRead -1 FirstWrite 4}

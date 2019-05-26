@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'killLargestResidual'" level="0">
-<item name = "Date">Tue May 21 18:44:09 2019
+<item name = "Date">Thu May 23 17:57:02 2019
 </item>
 <item name = "Version">2018.3 (Build 2405991 on Thu Dec 06 23:56:15 MST 2018)</item>
 <item name = "Project">lr_standaloneHLS</item>
@@ -40,7 +40,6 @@
 <column name="- Loop 3">?, ?, 2, -, -, ?, no</column>
 <column name="- Loop 4">9, 9, 1, -, -, 10, no</column>
 <column name="- Loop 5">?, ?, 2, -, -, ?, no</column>
-<column name="- Loop 6">?, ?, 2, -, -, ?, no</column>
 </table>
 </item>
 </section>

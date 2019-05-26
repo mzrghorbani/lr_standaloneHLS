@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'fit'" level="0">
-<item name = "Date">Tue May 21 18:44:23 2019
+<item name = "Date">Thu May 23 17:57:15 2019
 </item>
 <item name = "Version">2018.3 (Build 2405991 on Thu Dec 06 23:56:15 MST 2018)</item>
 <item name = "Project">lr_standaloneHLS</item>
@@ -31,10 +31,10 @@
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="7">Instance, Module, min, max, min, max, Type</keys>
-<column name="grp_killLargestResidual_fu_447">killLargestResidual, ?, ?, ?, ?, none</column>
-<column name="grp_initFit_fu_524">initFit, ?, ?, ?, ?, none</column>
-<column name="grp_calcHelix_fu_640">calcHelix, ?, ?, ?, ?, none</column>
-<column name="grp_calcResidual_fu_662">calcResidual, ?, ?, ?, ?, none</column>
+<column name="grp_killLargestResidual_fu_445">killLargestResidual, ?, ?, ?, ?, none</column>
+<column name="grp_calcHelix_fu_522">calcHelix, ?, ?, ?, ?, none</column>
+<column name="grp_initFit_fu_544">initFit, ?, ?, ?, ?, none</column>
+<column name="grp_calcResidual_fu_658">calcResidual, ?, ?, ?, ?, none</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">

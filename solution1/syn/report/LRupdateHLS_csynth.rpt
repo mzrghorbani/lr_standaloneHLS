@@ -3,7 +3,7 @@
 ================================================================
 == Vivado HLS Report for 'LRupdateHLS'
 ================================================================
-* Date:           Tue May 21 18:45:14 2019
+* Date:           Thu May 23 17:57:59 2019
 
 * Version:        2018.3 (Build 2405991 on Thu Dec 06 23:56:15 MST 2018)
 * Project:        lr_standaloneHLS
@@ -38,7 +38,7 @@
         |                |       |  Latency  |  Interval | Pipeline|
         |    Instance    | Module| min | max | min | max |   Type  |
         +----------------+-------+-----+-----+-----+-----+---------+
-        |grp_fit_fu_365  |fit    |    ?|    ?|    ?|    ?|   none  |
+        |grp_fit_fu_363  |fit    |    ?|    ?|    ?|    ?|   none  |
         +----------------+-------+-----+-----+-----+-----+---------+
 
         * Loop: 
@@ -56,20 +56,20 @@
 |DSP                  |        -|      -|        -|       -|
 |Expression           |        -|      -|        -|       -|
 |FIFO                 |        -|      -|        -|       -|
-|Instance             |        4|    124|    43432|   75800|
+|Instance             |        0|    112|    40070|   65492|
 |Memory               |        -|      -|        -|       -|
 |Multiplexer          |        -|      -|        -|      15|
 |Register             |        -|      -|        3|       -|
 +---------------------+---------+-------+---------+--------+
-|Total                |        4|    124|    43435|   75815|
+|Total                |        0|    112|    40073|   65507|
 +---------------------+---------+-------+---------+--------+
 |Available SLR        |     2160|   2760|   663360|  331680|
 +---------------------+---------+-------+---------+--------+
-|Utilization SLR (%)  |    ~0   |      4|        6|      22|
+|Utilization SLR (%)  |        0|      4|        6|      19|
 +---------------------+---------+-------+---------+--------+
 |Available            |     4320|   5520|  1326720|  663360|
 +---------------------+---------+-------+---------+--------+
-|Utilization (%)      |    ~0   |      2|        3|      11|
+|Utilization (%)      |        0|      2|        3|       9|
 +---------------------+---------+-------+---------+--------+
 
 + Detail: 
@@ -77,9 +77,9 @@
     +----------------+-------+---------+-------+-------+-------+
     |    Instance    | Module| BRAM_18K| DSP48E|   FF  |  LUT  |
     +----------------+-------+---------+-------+-------+-------+
-    |grp_fit_fu_365  |fit    |        4|    124|  43432|  75800|
+    |grp_fit_fu_363  |fit    |        0|    112|  40070|  65492|
     +----------------+-------+---------+-------+-------+-------+
-    |Total           |       |        4|    124|  43432|  75800|
+    |Total           |       |        0|    112|  40070|  65492|
     +----------------+-------+---------+-------+-------+-------+
 
     * DSP48: 
@@ -108,7 +108,7 @@
     |             Name            | FF| LUT| Bits| Const Bits|
     +-----------------------------+---+----+-----+-----------+
     |ap_CS_fsm                    |  2|   0|    2|          0|
-    |grp_fit_fu_365_ap_start_reg  |  1|   0|    1|          0|
+    |grp_fit_fu_363_ap_start_reg  |  1|   0|    1|          0|
     +-----------------------------+---+----+-----+-----------+
     |Total                        |  3|   0|    3|          0|
     +-----------------------------+---+----+-----+-----------+
@@ -145,12 +145,12 @@
 |l1track3D_stubs_data_settings_chosenRofZ_s_address1                              | out |    4|  ap_memory |               l1track3D_stubs_data_settings_chosenRofZ_s               |     array    |
 |l1track3D_stubs_data_settings_chosenRofZ_s_ce1                                   | out |    1|  ap_memory |               l1track3D_stubs_data_settings_chosenRofZ_s               |     array    |
 |l1track3D_stubs_data_settings_chosenRofZ_s_q1                                    |  in |   32|  ap_memory |               l1track3D_stubs_data_settings_chosenRofZ_s               |     array    |
-|l1track3D_stubs_data_settings_etaRegions_s_address0                              | out |    8|  ap_memory |               l1track3D_stubs_data_settings_etaRegions_s               |     array    |
-|l1track3D_stubs_data_settings_etaRegions_s_ce0                                   | out |    1|  ap_memory |               l1track3D_stubs_data_settings_etaRegions_s               |     array    |
-|l1track3D_stubs_data_settings_etaRegions_s_q0                                    |  in |   32|  ap_memory |               l1track3D_stubs_data_settings_etaRegions_s               |     array    |
-|l1track3D_stubs_data_settings_etaRegions_s_address1                              | out |    8|  ap_memory |               l1track3D_stubs_data_settings_etaRegions_s               |     array    |
-|l1track3D_stubs_data_settings_etaRegions_s_ce1                                   | out |    1|  ap_memory |               l1track3D_stubs_data_settings_etaRegions_s               |     array    |
-|l1track3D_stubs_data_settings_etaRegions_s_q1                                    |  in |   32|  ap_memory |               l1track3D_stubs_data_settings_etaRegions_s               |     array    |
+|l1track3D_stubs_data_settings_sinh_etaRegions_s_address0                         | out |    8|  ap_memory |             l1track3D_stubs_data_settings_sinh_etaRegions_s            |     array    |
+|l1track3D_stubs_data_settings_sinh_etaRegions_s_ce0                              | out |    1|  ap_memory |             l1track3D_stubs_data_settings_sinh_etaRegions_s            |     array    |
+|l1track3D_stubs_data_settings_sinh_etaRegions_s_q0                               |  in |   32|  ap_memory |             l1track3D_stubs_data_settings_sinh_etaRegions_s            |     array    |
+|l1track3D_stubs_data_settings_sinh_etaRegions_s_address1                         | out |    8|  ap_memory |             l1track3D_stubs_data_settings_sinh_etaRegions_s            |     array    |
+|l1track3D_stubs_data_settings_sinh_etaRegions_s_ce1                              | out |    1|  ap_memory |             l1track3D_stubs_data_settings_sinh_etaRegions_s            |     array    |
+|l1track3D_stubs_data_settings_sinh_etaRegions_s_q1                               |  in |   32|  ap_memory |             l1track3D_stubs_data_settings_sinh_etaRegions_s            |     array    |
 |l1track3D_stubs_data_settings_minNumMatchLayers_s_address0                       | out |    4|  ap_memory |            l1track3D_stubs_data_settings_minNumMatchLayers_s           |     array    |
 |l1track3D_stubs_data_settings_minNumMatchLayers_s_ce0                            | out |    1|  ap_memory |            l1track3D_stubs_data_settings_minNumMatchLayers_s           |     array    |
 |l1track3D_stubs_data_settings_minNumMatchLayers_s_q0                             |  in |   32|  ap_memory |            l1track3D_stubs_data_settings_minNumMatchLayers_s           |     array    |
@@ -201,9 +201,12 @@
 |l1track3D_stubs_data_barrel_s_q1                                                 |  in |    1|  ap_memory |                      l1track3D_stubs_data_barrel_s                     |     array    |
 |linearRegression_settings_chosenRofPhi_s                                         |  in |   32|   ap_none  |                linearRegression_settings_chosenRofPhi_s                |    pointer   |
 |linearRegression_settings_chosenRofZ_s                                           |  in |   32|   ap_none  |                 linearRegression_settings_chosenRofZ_s                 |    pointer   |
-|linearRegression_settings_etaRegions_s_address0                                  | out |    5|  ap_memory |                 linearRegression_settings_etaRegions_s                 |     array    |
-|linearRegression_settings_etaRegions_s_ce0                                       | out |    1|  ap_memory |                 linearRegression_settings_etaRegions_s                 |     array    |
-|linearRegression_settings_etaRegions_s_q0                                        |  in |   32|  ap_memory |                 linearRegression_settings_etaRegions_s                 |     array    |
+|linearRegression_settings_sinh_etaRegions_s_address0                             | out |    5|  ap_memory |               linearRegression_settings_sinh_etaRegions_s              |     array    |
+|linearRegression_settings_sinh_etaRegions_s_ce0                                  | out |    1|  ap_memory |               linearRegression_settings_sinh_etaRegions_s              |     array    |
+|linearRegression_settings_sinh_etaRegions_s_q0                                   |  in |   32|  ap_memory |               linearRegression_settings_sinh_etaRegions_s              |     array    |
+|linearRegression_settings_sinh_etaRegions_s_address1                             | out |    5|  ap_memory |               linearRegression_settings_sinh_etaRegions_s              |     array    |
+|linearRegression_settings_sinh_etaRegions_s_ce1                                  | out |    1|  ap_memory |               linearRegression_settings_sinh_etaRegions_s              |     array    |
+|linearRegression_settings_sinh_etaRegions_s_q1                                   |  in |   32|  ap_memory |               linearRegression_settings_sinh_etaRegions_s              |     array    |
 |linearRegression_settings_minNumMatchLayers_s                                    |  in |   32|   ap_none  |              linearRegression_settings_minNumMatchLayers_s             |    pointer   |
 |linearRegression_settings_minPSLayers_s                                          |  in |   32|   ap_none  |                 linearRegression_settings_minPSLayers_s                |    pointer   |
 |linearRegression_iPhiSec_s                                                       | out |   32|   ap_vld   |                       linearRegression_iPhiSec_s                       |    pointer   |
@@ -252,16 +255,16 @@
 |linearRegression_stubs_data_settings_chosenRofZ_s_ce1                            | out |    1|  ap_memory |            linearRegression_stubs_data_settings_chosenRofZ_s           |     array    |
 |linearRegression_stubs_data_settings_chosenRofZ_s_we1                            | out |    1|  ap_memory |            linearRegression_stubs_data_settings_chosenRofZ_s           |     array    |
 |linearRegression_stubs_data_settings_chosenRofZ_s_d1                             | out |   32|  ap_memory |            linearRegression_stubs_data_settings_chosenRofZ_s           |     array    |
-|linearRegression_stubs_data_settings_etaRegions_s_address0                       | out |    8|  ap_memory |            linearRegression_stubs_data_settings_etaRegions_s           |     array    |
-|linearRegression_stubs_data_settings_etaRegions_s_ce0                            | out |    1|  ap_memory |            linearRegression_stubs_data_settings_etaRegions_s           |     array    |
-|linearRegression_stubs_data_settings_etaRegions_s_we0                            | out |    1|  ap_memory |            linearRegression_stubs_data_settings_etaRegions_s           |     array    |
-|linearRegression_stubs_data_settings_etaRegions_s_d0                             | out |   32|  ap_memory |            linearRegression_stubs_data_settings_etaRegions_s           |     array    |
-|linearRegression_stubs_data_settings_etaRegions_s_q0                             |  in |   32|  ap_memory |            linearRegression_stubs_data_settings_etaRegions_s           |     array    |
-|linearRegression_stubs_data_settings_etaRegions_s_address1                       | out |    8|  ap_memory |            linearRegression_stubs_data_settings_etaRegions_s           |     array    |
-|linearRegression_stubs_data_settings_etaRegions_s_ce1                            | out |    1|  ap_memory |            linearRegression_stubs_data_settings_etaRegions_s           |     array    |
-|linearRegression_stubs_data_settings_etaRegions_s_we1                            | out |    1|  ap_memory |            linearRegression_stubs_data_settings_etaRegions_s           |     array    |
-|linearRegression_stubs_data_settings_etaRegions_s_d1                             | out |   32|  ap_memory |            linearRegression_stubs_data_settings_etaRegions_s           |     array    |
-|linearRegression_stubs_data_settings_etaRegions_s_q1                             |  in |   32|  ap_memory |            linearRegression_stubs_data_settings_etaRegions_s           |     array    |
+|linearRegression_stubs_data_settings_sinh_etaRegions_s_address0                  | out |    8|  ap_memory |         linearRegression_stubs_data_settings_sinh_etaRegions_s         |     array    |
+|linearRegression_stubs_data_settings_sinh_etaRegions_s_ce0                       | out |    1|  ap_memory |         linearRegression_stubs_data_settings_sinh_etaRegions_s         |     array    |
+|linearRegression_stubs_data_settings_sinh_etaRegions_s_we0                       | out |    1|  ap_memory |         linearRegression_stubs_data_settings_sinh_etaRegions_s         |     array    |
+|linearRegression_stubs_data_settings_sinh_etaRegions_s_d0                        | out |   32|  ap_memory |         linearRegression_stubs_data_settings_sinh_etaRegions_s         |     array    |
+|linearRegression_stubs_data_settings_sinh_etaRegions_s_q0                        |  in |   32|  ap_memory |         linearRegression_stubs_data_settings_sinh_etaRegions_s         |     array    |
+|linearRegression_stubs_data_settings_sinh_etaRegions_s_address1                  | out |    8|  ap_memory |         linearRegression_stubs_data_settings_sinh_etaRegions_s         |     array    |
+|linearRegression_stubs_data_settings_sinh_etaRegions_s_ce1                       | out |    1|  ap_memory |         linearRegression_stubs_data_settings_sinh_etaRegions_s         |     array    |
+|linearRegression_stubs_data_settings_sinh_etaRegions_s_we1                       | out |    1|  ap_memory |         linearRegression_stubs_data_settings_sinh_etaRegions_s         |     array    |
+|linearRegression_stubs_data_settings_sinh_etaRegions_s_d1                        | out |   32|  ap_memory |         linearRegression_stubs_data_settings_sinh_etaRegions_s         |     array    |
+|linearRegression_stubs_data_settings_sinh_etaRegions_s_q1                        |  in |   32|  ap_memory |         linearRegression_stubs_data_settings_sinh_etaRegions_s         |     array    |
 |linearRegression_stubs_data_settings_minNumMatchLayers_s_address0                | out |    4|  ap_memory |        linearRegression_stubs_data_settings_minNumMatchLayers_s        |     array    |
 |linearRegression_stubs_data_settings_minNumMatchLayers_s_ce0                     | out |    1|  ap_memory |        linearRegression_stubs_data_settings_minNumMatchLayers_s        |     array    |
 |linearRegression_stubs_data_settings_minNumMatchLayers_s_we0                     | out |    1|  ap_memory |        linearRegression_stubs_data_settings_minNumMatchLayers_s        |     array    |
@@ -372,16 +375,16 @@
 |linearRegression_stubMap_data_second_data_settings_chosenRofZ_s_we1              | out |    1|  ap_memory |     linearRegression_stubMap_data_second_data_settings_chosenRofZ_s    |     array    |
 |linearRegression_stubMap_data_second_data_settings_chosenRofZ_s_d1               | out |   32|  ap_memory |     linearRegression_stubMap_data_second_data_settings_chosenRofZ_s    |     array    |
 |linearRegression_stubMap_data_second_data_settings_chosenRofZ_s_q1               |  in |   32|  ap_memory |     linearRegression_stubMap_data_second_data_settings_chosenRofZ_s    |     array    |
-|linearRegression_stubMap_data_second_data_settings_etaRegions_s_address0         | out |   13|  ap_memory |     linearRegression_stubMap_data_second_data_settings_etaRegions_s    |     array    |
-|linearRegression_stubMap_data_second_data_settings_etaRegions_s_ce0              | out |    1|  ap_memory |     linearRegression_stubMap_data_second_data_settings_etaRegions_s    |     array    |
-|linearRegression_stubMap_data_second_data_settings_etaRegions_s_we0              | out |    1|  ap_memory |     linearRegression_stubMap_data_second_data_settings_etaRegions_s    |     array    |
-|linearRegression_stubMap_data_second_data_settings_etaRegions_s_d0               | out |   32|  ap_memory |     linearRegression_stubMap_data_second_data_settings_etaRegions_s    |     array    |
-|linearRegression_stubMap_data_second_data_settings_etaRegions_s_q0               |  in |   32|  ap_memory |     linearRegression_stubMap_data_second_data_settings_etaRegions_s    |     array    |
-|linearRegression_stubMap_data_second_data_settings_etaRegions_s_address1         | out |   13|  ap_memory |     linearRegression_stubMap_data_second_data_settings_etaRegions_s    |     array    |
-|linearRegression_stubMap_data_second_data_settings_etaRegions_s_ce1              | out |    1|  ap_memory |     linearRegression_stubMap_data_second_data_settings_etaRegions_s    |     array    |
-|linearRegression_stubMap_data_second_data_settings_etaRegions_s_we1              | out |    1|  ap_memory |     linearRegression_stubMap_data_second_data_settings_etaRegions_s    |     array    |
-|linearRegression_stubMap_data_second_data_settings_etaRegions_s_d1               | out |   32|  ap_memory |     linearRegression_stubMap_data_second_data_settings_etaRegions_s    |     array    |
-|linearRegression_stubMap_data_second_data_settings_etaRegions_s_q1               |  in |   32|  ap_memory |     linearRegression_stubMap_data_second_data_settings_etaRegions_s    |     array    |
+|linearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_address0    | out |   13|  ap_memory |  linearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s  |     array    |
+|linearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_ce0         | out |    1|  ap_memory |  linearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s  |     array    |
+|linearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_we0         | out |    1|  ap_memory |  linearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s  |     array    |
+|linearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_d0          | out |   32|  ap_memory |  linearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s  |     array    |
+|linearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_q0          |  in |   32|  ap_memory |  linearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s  |     array    |
+|linearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_address1    | out |   13|  ap_memory |  linearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s  |     array    |
+|linearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_ce1         | out |    1|  ap_memory |  linearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s  |     array    |
+|linearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_we1         | out |    1|  ap_memory |  linearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s  |     array    |
+|linearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_d1          | out |   32|  ap_memory |  linearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s  |     array    |
+|linearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_q1          |  in |   32|  ap_memory |  linearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s  |     array    |
 |linearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_address0  | out |    9|  ap_memory | linearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s |     array    |
 |linearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_ce0       | out |    1|  ap_memory | linearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s |     array    |
 |linearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_we0       | out |    1|  ap_memory | linearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s |     array    |

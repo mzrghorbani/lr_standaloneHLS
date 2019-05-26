@@ -1,5 +1,5 @@
 // ==============================================================
-// File generated on Tue May 21 18:45:20 BST 2019
+// File generated on Thu May 23 17:58:04 BST 2019
 // Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
 // SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
 // IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
@@ -10,7 +10,7 @@
 
 module LRupdateHLS_faddfsub_32ns_32ns_32_4_full_dsp_1
 #(parameter
-    ID         = 3,
+    ID         = 121,
     NUM_STAGE  = 4,
     din0_WIDTH = 32,
     din1_WIDTH = 32,

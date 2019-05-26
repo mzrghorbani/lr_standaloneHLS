@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'killLargestResidual'" level="0">
-<item name = "Date">Tue May 21 18:44:13 2019
+<item name = "Date">Thu May 23 17:57:07 2019
 </item>
 <item name = "Version">2018.3 (Build 2405991 on Thu Dec 06 23:56:15 MST 2018)</item>
 <item name = "Project">lr_standaloneHLS</item>
@@ -31,12 +31,11 @@
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="7">Instance, Module, min, max, min, max, Type</keys>
-<column name="grp_clean_fu_2538">clean, ?, ?, ?, ?, none</column>
-<column name="grp_findLargestResidual_fu_2571">findLargestResidual, ?, ?, ?, ?, none</column>
-<column name="grp_erase_fu_2631">erase, ?, ?, ?, ?, none</column>
-<column name="grp_erase_1_fu_2668">erase_1, ?, ?, ?, ?, none</column>
-<column name="grp_push_back_1_fu_2701">push_back_1, 4, 4, 4, 4, none</column>
-<column name="grp_has_key_fu_2872">has_key, ?, ?, ?, ?, none</column>
+<column name="grp_clean_fu_2517">clean, ?, ?, ?, ?, none</column>
+<column name="grp_findLargestResidual_fu_2550">findLargestResidual, ?, ?, ?, ?, none</column>
+<column name="grp_erase_fu_2610">erase, ?, ?, ?, ?, none</column>
+<column name="grp_erase_1_fu_2647">erase_1, ?, ?, ?, ?, none</column>
+<column name="grp_push_back_1_fu_2680">push_back_1, 4, 4, 4, 4, none</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
@@ -46,7 +45,6 @@
 <column name="- Loop 3">?, ?, 2, -, -, ?, no</column>
 <column name="- Loop 4">9, 9, 1, -, -, 10, no</column>
 <column name="- Loop 5">?, ?, 2, -, -, ?, no</column>
-<column name="- Loop 6">?, ?, 2, -, -, ?, no</column>
 </table>
 </item>
 </section>

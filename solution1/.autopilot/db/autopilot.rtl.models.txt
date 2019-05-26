@@ -1,9 +1,7 @@
+countStubLayers_foundLayers
 LRupdateHLS_faddfsub_32ns_32ns_32_4_full_dsp_1
-LRupdateHLS_fadd_32ns_32ns_32_4_full_dsp_1
 LRupdateHLS_fmul_32ns_32ns_32_2_max_dsp_1
 LRupdateHLS_fcmp_32ns_32ns_1_1_1
-sinh_cosh_range_redu_cordic_hyperb_table_s
-countStubLayers_foundLayers
 LRupdateHLS_mul_mul_6ns_14s_14_1_1
 initFit_b_data_settings_ch
 initFit_b_data_settings_mi
@@ -13,10 +11,8 @@ LRupdateHLS_uitofp_32ns_32_3_1
 LRupdateHLS_fptrunc_64ns_32_1_1
 LRupdateHLS_fpext_32ns_64_1_1
 LRupdateHLS_ddiv_64ns_64ns_64_17_1
+LRupdateHLS_fadd_32ns_32ns_32_4_full_dsp_1
 LRupdateHLS_mul_mul_9ns_14s_14_1_1
-big_mult_v3small
-big_mult_v3small_1
-sinh_cosh_range_redu
 countStubLayers
 push_back_1
 initFit
@@ -24,7 +20,6 @@ calcHelix
 push_back
 calcResidual
 findLargestResidual
-has_key
 erase
 clean
 erase_1

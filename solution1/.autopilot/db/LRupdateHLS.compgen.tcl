@@ -11,7 +11,7 @@ if {${::AESL::PGuard_autoexp_gen}} {
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 570 \
+    id 558 \
     name l1track3D_stubs_data_settings_chosenRofPhi_s \
     reset_level 1 \
     sync_rst true \
@@ -30,7 +30,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 571 \
+    id 559 \
     name l1track3D_stubs_data_settings_chosenRofZ_s \
     reset_level 1 \
     sync_rst true \
@@ -49,17 +49,17 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 572 \
-    name l1track3D_stubs_data_settings_etaRegions_s \
+    id 560 \
+    name l1track3D_stubs_data_settings_sinh_etaRegions_s \
     reset_level 1 \
     sync_rst true \
     dir I \
-    corename l1track3D_stubs_data_settings_etaRegions_s \
+    corename l1track3D_stubs_data_settings_sinh_etaRegions_s \
     op interface \
-    ports { l1track3D_stubs_data_settings_etaRegions_s_address0 { O 8 vector } l1track3D_stubs_data_settings_etaRegions_s_ce0 { O 1 bit } l1track3D_stubs_data_settings_etaRegions_s_q0 { I 32 vector } l1track3D_stubs_data_settings_etaRegions_s_address1 { O 8 vector } l1track3D_stubs_data_settings_etaRegions_s_ce1 { O 1 bit } l1track3D_stubs_data_settings_etaRegions_s_q1 { I 32 vector } } \
+    ports { l1track3D_stubs_data_settings_sinh_etaRegions_s_address0 { O 8 vector } l1track3D_stubs_data_settings_sinh_etaRegions_s_ce0 { O 1 bit } l1track3D_stubs_data_settings_sinh_etaRegions_s_q0 { I 32 vector } l1track3D_stubs_data_settings_sinh_etaRegions_s_address1 { O 8 vector } l1track3D_stubs_data_settings_sinh_etaRegions_s_ce1 { O 1 bit } l1track3D_stubs_data_settings_sinh_etaRegions_s_q1 { I 32 vector } } \
 } "
 } else {
-puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'l1track3D_stubs_data_settings_etaRegions_s'"
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'l1track3D_stubs_data_settings_sinh_etaRegions_s'"
 }
 }
 
@@ -68,7 +68,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 573 \
+    id 561 \
     name l1track3D_stubs_data_settings_minNumMatchLayers_s \
     reset_level 1 \
     sync_rst true \
@@ -87,7 +87,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 574 \
+    id 562 \
     name l1track3D_stubs_data_settings_minPSLayers_s \
     reset_level 1 \
     sync_rst true \
@@ -106,7 +106,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 575 \
+    id 563 \
     name l1track3D_stubs_data_r_s \
     reset_level 1 \
     sync_rst true \
@@ -125,7 +125,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 576 \
+    id 564 \
     name l1track3D_stubs_data_phi_s \
     reset_level 1 \
     sync_rst true \
@@ -144,7 +144,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 577 \
+    id 565 \
     name l1track3D_stubs_data_z_s \
     reset_level 1 \
     sync_rst true \
@@ -163,7 +163,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 578 \
+    id 566 \
     name l1track3D_stubs_data_layerId_s \
     reset_level 1 \
     sync_rst true \
@@ -182,7 +182,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 579 \
+    id 567 \
     name l1track3D_stubs_data_psModule_s \
     reset_level 1 \
     sync_rst true \
@@ -201,7 +201,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 580 \
+    id 568 \
     name l1track3D_stubs_data_barrel_s \
     reset_level 1 \
     sync_rst true \
@@ -220,17 +220,17 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 583 \
-    name linearRegression_settings_etaRegions_s \
+    id 571 \
+    name linearRegression_settings_sinh_etaRegions_s \
     reset_level 1 \
     sync_rst true \
     dir I \
-    corename linearRegression_settings_etaRegions_s \
+    corename linearRegression_settings_sinh_etaRegions_s \
     op interface \
-    ports { linearRegression_settings_etaRegions_s_address0 { O 5 vector } linearRegression_settings_etaRegions_s_ce0 { O 1 bit } linearRegression_settings_etaRegions_s_q0 { I 32 vector } } \
+    ports { linearRegression_settings_sinh_etaRegions_s_address0 { O 5 vector } linearRegression_settings_sinh_etaRegions_s_ce0 { O 1 bit } linearRegression_settings_sinh_etaRegions_s_q0 { I 32 vector } linearRegression_settings_sinh_etaRegions_s_address1 { O 5 vector } linearRegression_settings_sinh_etaRegions_s_ce1 { O 1 bit } linearRegression_settings_sinh_etaRegions_s_q1 { I 32 vector } } \
 } "
 } else {
-puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'linearRegression_settings_etaRegions_s'"
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'linearRegression_settings_sinh_etaRegions_s'"
 }
 }
 
@@ -239,7 +239,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 598 \
+    id 586 \
     name linearRegression_stubs_data_settings_chosenRofPhi_s \
     reset_level 1 \
     sync_rst true \
@@ -258,7 +258,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 599 \
+    id 587 \
     name linearRegression_stubs_data_settings_chosenRofZ_s \
     reset_level 1 \
     sync_rst true \
@@ -277,17 +277,17 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 600 \
-    name linearRegression_stubs_data_settings_etaRegions_s \
+    id 588 \
+    name linearRegression_stubs_data_settings_sinh_etaRegions_s \
     reset_level 1 \
     sync_rst true \
     dir IO \
-    corename linearRegression_stubs_data_settings_etaRegions_s \
+    corename linearRegression_stubs_data_settings_sinh_etaRegions_s \
     op interface \
-    ports { linearRegression_stubs_data_settings_etaRegions_s_address0 { O 8 vector } linearRegression_stubs_data_settings_etaRegions_s_ce0 { O 1 bit } linearRegression_stubs_data_settings_etaRegions_s_we0 { O 1 bit } linearRegression_stubs_data_settings_etaRegions_s_d0 { O 32 vector } linearRegression_stubs_data_settings_etaRegions_s_q0 { I 32 vector } linearRegression_stubs_data_settings_etaRegions_s_address1 { O 8 vector } linearRegression_stubs_data_settings_etaRegions_s_ce1 { O 1 bit } linearRegression_stubs_data_settings_etaRegions_s_we1 { O 1 bit } linearRegression_stubs_data_settings_etaRegions_s_d1 { O 32 vector } linearRegression_stubs_data_settings_etaRegions_s_q1 { I 32 vector } } \
+    ports { linearRegression_stubs_data_settings_sinh_etaRegions_s_address0 { O 8 vector } linearRegression_stubs_data_settings_sinh_etaRegions_s_ce0 { O 1 bit } linearRegression_stubs_data_settings_sinh_etaRegions_s_we0 { O 1 bit } linearRegression_stubs_data_settings_sinh_etaRegions_s_d0 { O 32 vector } linearRegression_stubs_data_settings_sinh_etaRegions_s_q0 { I 32 vector } linearRegression_stubs_data_settings_sinh_etaRegions_s_address1 { O 8 vector } linearRegression_stubs_data_settings_sinh_etaRegions_s_ce1 { O 1 bit } linearRegression_stubs_data_settings_sinh_etaRegions_s_we1 { O 1 bit } linearRegression_stubs_data_settings_sinh_etaRegions_s_d1 { O 32 vector } linearRegression_stubs_data_settings_sinh_etaRegions_s_q1 { I 32 vector } } \
 } "
 } else {
-puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'linearRegression_stubs_data_settings_etaRegions_s'"
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'linearRegression_stubs_data_settings_sinh_etaRegions_s'"
 }
 }
 
@@ -296,7 +296,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 601 \
+    id 589 \
     name linearRegression_stubs_data_settings_minNumMatchLayers_s \
     reset_level 1 \
     sync_rst true \
@@ -315,7 +315,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 602 \
+    id 590 \
     name linearRegression_stubs_data_settings_minPSLayers_s \
     reset_level 1 \
     sync_rst true \
@@ -334,7 +334,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 603 \
+    id 591 \
     name linearRegression_stubs_data_r_s \
     reset_level 1 \
     sync_rst true \
@@ -353,7 +353,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 604 \
+    id 592 \
     name linearRegression_stubs_data_phi_s \
     reset_level 1 \
     sync_rst true \
@@ -372,7 +372,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 605 \
+    id 593 \
     name linearRegression_stubs_data_z_s \
     reset_level 1 \
     sync_rst true \
@@ -391,7 +391,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 606 \
+    id 594 \
     name linearRegression_stubs_data_layerId_s \
     reset_level 1 \
     sync_rst true \
@@ -410,7 +410,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 607 \
+    id 595 \
     name linearRegression_stubs_data_psModule_s \
     reset_level 1 \
     sync_rst true \
@@ -429,7 +429,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 608 \
+    id 596 \
     name linearRegression_stubs_data_barrel_s \
     reset_level 1 \
     sync_rst true \
@@ -448,7 +448,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 611 \
+    id 599 \
     name linearRegression_stubMap_data_first \
     reset_level 1 \
     sync_rst true \
@@ -467,7 +467,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 612 \
+    id 600 \
     name linearRegression_stubMap_data_second_size_s \
     reset_level 1 \
     sync_rst true \
@@ -486,7 +486,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 613 \
+    id 601 \
     name linearRegression_stubMap_data_second_data_settings_chosenRofPhi_s \
     reset_level 1 \
     sync_rst true \
@@ -505,7 +505,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 614 \
+    id 602 \
     name linearRegression_stubMap_data_second_data_settings_chosenRofZ_s \
     reset_level 1 \
     sync_rst true \
@@ -524,17 +524,17 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 615 \
-    name linearRegression_stubMap_data_second_data_settings_etaRegions_s \
+    id 603 \
+    name linearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s \
     reset_level 1 \
     sync_rst true \
     dir IO \
-    corename linearRegression_stubMap_data_second_data_settings_etaRegions_s \
+    corename linearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s \
     op interface \
-    ports { linearRegression_stubMap_data_second_data_settings_etaRegions_s_address0 { O 13 vector } linearRegression_stubMap_data_second_data_settings_etaRegions_s_ce0 { O 1 bit } linearRegression_stubMap_data_second_data_settings_etaRegions_s_we0 { O 1 bit } linearRegression_stubMap_data_second_data_settings_etaRegions_s_d0 { O 32 vector } linearRegression_stubMap_data_second_data_settings_etaRegions_s_q0 { I 32 vector } linearRegression_stubMap_data_second_data_settings_etaRegions_s_address1 { O 13 vector } linearRegression_stubMap_data_second_data_settings_etaRegions_s_ce1 { O 1 bit } linearRegression_stubMap_data_second_data_settings_etaRegions_s_we1 { O 1 bit } linearRegression_stubMap_data_second_data_settings_etaRegions_s_d1 { O 32 vector } linearRegression_stubMap_data_second_data_settings_etaRegions_s_q1 { I 32 vector } } \
+    ports { linearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_address0 { O 13 vector } linearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_ce0 { O 1 bit } linearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_we0 { O 1 bit } linearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_d0 { O 32 vector } linearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_q0 { I 32 vector } linearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_address1 { O 13 vector } linearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_ce1 { O 1 bit } linearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_we1 { O 1 bit } linearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_d1 { O 32 vector } linearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_q1 { I 32 vector } } \
 } "
 } else {
-puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'linearRegression_stubMap_data_second_data_settings_etaRegions_s'"
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'linearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s'"
 }
 }
 
@@ -543,7 +543,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 616 \
+    id 604 \
     name linearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s \
     reset_level 1 \
     sync_rst true \
@@ -562,7 +562,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 617 \
+    id 605 \
     name linearRegression_stubMap_data_second_data_settings_minPSLayers_s \
     reset_level 1 \
     sync_rst true \
@@ -581,7 +581,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 618 \
+    id 606 \
     name linearRegression_stubMap_data_second_data_r_s \
     reset_level 1 \
     sync_rst true \
@@ -600,7 +600,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 619 \
+    id 607 \
     name linearRegression_stubMap_data_second_data_phi_s \
     reset_level 1 \
     sync_rst true \
@@ -619,7 +619,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 620 \
+    id 608 \
     name linearRegression_stubMap_data_second_data_z_s \
     reset_level 1 \
     sync_rst true \
@@ -638,7 +638,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 621 \
+    id 609 \
     name linearRegression_stubMap_data_second_data_layerId_s \
     reset_level 1 \
     sync_rst true \
@@ -657,7 +657,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 622 \
+    id 610 \
     name linearRegression_stubMap_data_second_data_psModule_s \
     reset_level 1 \
     sync_rst true \
@@ -676,7 +676,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 623 \
+    id 611 \
     name linearRegression_stubMap_data_second_data_barrel_s \
     reset_level 1 \
     sync_rst true \
@@ -695,7 +695,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 625 \
+    id 613 \
     name linearRegression_layerPopulation_data_first \
     reset_level 1 \
     sync_rst true \
@@ -714,7 +714,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 626 \
+    id 614 \
     name linearRegression_layerPopulation_data_second \
     reset_level 1 \
     sync_rst true \
@@ -733,7 +733,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 628 \
+    id 616 \
     name linearRegression_residuals_data_first \
     reset_level 1 \
     sync_rst true \
@@ -752,7 +752,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 629 \
+    id 617 \
     name linearRegression_residuals_data_second_size_s \
     reset_level 1 \
     sync_rst true \
@@ -771,7 +771,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 630 \
+    id 618 \
     name linearRegression_residuals_data_second_data_phi \
     reset_level 1 \
     sync_rst true \
@@ -790,7 +790,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 631 \
+    id 619 \
     name linearRegression_residuals_data_second_data_z \
     reset_level 1 \
     sync_rst true \
@@ -809,7 +809,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 632 \
+    id 620 \
     name linearRegression_residuals_data_second_data_layerId \
     reset_level 1 \
     sync_rst true \
@@ -828,7 +828,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 633 \
+    id 621 \
     name linearRegression_residuals_data_second_data_stubId \
     reset_level 1 \
     sync_rst true \
@@ -847,7 +847,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 634 \
+    id 622 \
     name linearRegression_residuals_data_second_data_ps \
     reset_level 1 \
     sync_rst true \
@@ -865,7 +865,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 565 \
+    id 553 \
     name l1track3D_iPhiSec_s \
     type other \
     dir I \
@@ -880,7 +880,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 566 \
+    id 554 \
     name l1track3D_iEtaReg_s \
     type other \
     dir I \
@@ -895,7 +895,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 567 \
+    id 555 \
     name l1track3D_helixRphi_first \
     type other \
     dir I \
@@ -910,7 +910,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 568 \
+    id 556 \
     name l1track3D_helixRphi_second \
     type other \
     dir I \
@@ -925,7 +925,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 569 \
+    id 557 \
     name l1track3D_stubs_size_s \
     type other \
     dir I \
@@ -940,7 +940,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 581 \
+    id 569 \
     name linearRegression_settings_chosenRofPhi_s \
     type other \
     dir I \
@@ -955,7 +955,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 582 \
+    id 570 \
     name linearRegression_settings_chosenRofZ_s \
     type other \
     dir I \
@@ -970,7 +970,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 584 \
+    id 572 \
     name linearRegression_settings_minNumMatchLayers_s \
     type other \
     dir I \
@@ -985,7 +985,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 585 \
+    id 573 \
     name linearRegression_settings_minPSLayers_s \
     type other \
     dir I \
@@ -1000,7 +1000,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 586 \
+    id 574 \
     name linearRegression_iPhiSec_s \
     type other \
     dir O \
@@ -1015,7 +1015,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 587 \
+    id 575 \
     name linearRegression_iEtaReg_s \
     type other \
     dir O \
@@ -1030,7 +1030,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 588 \
+    id 576 \
     name linearRegression_nIterations_s \
     type other \
     dir O \
@@ -1045,7 +1045,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 589 \
+    id 577 \
     name linearRegression_HTParameter_qOverPt \
     type other \
     dir O \
@@ -1060,7 +1060,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 590 \
+    id 578 \
     name linearRegression_HTParameter_phiT \
     type other \
     dir O \
@@ -1075,7 +1075,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 591 \
+    id 579 \
     name linearRegression_HTParameter_cotTheta \
     type other \
     dir O \
@@ -1090,7 +1090,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 592 \
+    id 580 \
     name linearRegression_HTParameter_zT \
     type other \
     dir O \
@@ -1105,7 +1105,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 593 \
+    id 581 \
     name linearRegression_LRParameter_qOverPt \
     type other \
     dir IO \
@@ -1120,7 +1120,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 594 \
+    id 582 \
     name linearRegression_LRParameter_phiT \
     type other \
     dir IO \
@@ -1135,7 +1135,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 595 \
+    id 583 \
     name linearRegression_LRParameter_cotTheta \
     type other \
     dir IO \
@@ -1150,7 +1150,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 596 \
+    id 584 \
     name linearRegression_LRParameter_zT \
     type other \
     dir IO \
@@ -1165,7 +1165,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 597 \
+    id 585 \
     name linearRegression_stubs_size_s \
     type other \
     dir O \
@@ -1180,7 +1180,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 609 \
+    id 597 \
     name linearRegression_valid_s \
     type other \
     dir O \
@@ -1195,7 +1195,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 610 \
+    id 598 \
     name linearRegression_stubMap_size_s \
     type other \
     dir IO \
@@ -1210,7 +1210,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 624 \
+    id 612 \
     name linearRegression_layerPopulation_size_s \
     type other \
     dir IO \
@@ -1225,7 +1225,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 627 \
+    id 615 \
     name linearRegression_residuals_size_s \
     type other \
     dir O \
@@ -1240,7 +1240,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 635 \
+    id 623 \
     name linearRegression_largestResid_phi \
     type other \
     dir O \
@@ -1255,7 +1255,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 636 \
+    id 624 \
     name linearRegression_largestResid_z \
     type other \
     dir O \
@@ -1270,7 +1270,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 637 \
+    id 625 \
     name linearRegression_largestResid_layerId \
     type other \
     dir O \
@@ -1285,7 +1285,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 638 \
+    id 626 \
     name linearRegression_largestResid_stubId \
     type other \
     dir O \
@@ -1300,7 +1300,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 639 \
+    id 627 \
     name linearRegression_largestResid_ps \
     type other \
     dir O \

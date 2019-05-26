@@ -19,9 +19,12 @@ port (
     ap_ready : OUT STD_LOGIC;
     LinearRegression_settings_chosenRofPhi_read : IN STD_LOGIC_VECTOR (31 downto 0);
     LinearRegression_settings_chosenRofZ_read : IN STD_LOGIC_VECTOR (31 downto 0);
-    LinearRegression_settings_etaRegions_s_address0 : OUT STD_LOGIC_VECTOR (4 downto 0);
-    LinearRegression_settings_etaRegions_s_ce0 : OUT STD_LOGIC;
-    LinearRegression_settings_etaRegions_s_q0 : IN STD_LOGIC_VECTOR (31 downto 0);
+    LinearRegression_settings_sinh_etaRegions_s_address0 : OUT STD_LOGIC_VECTOR (4 downto 0);
+    LinearRegression_settings_sinh_etaRegions_s_ce0 : OUT STD_LOGIC;
+    LinearRegression_settings_sinh_etaRegions_s_q0 : IN STD_LOGIC_VECTOR (31 downto 0);
+    LinearRegression_settings_sinh_etaRegions_s_address1 : OUT STD_LOGIC_VECTOR (4 downto 0);
+    LinearRegression_settings_sinh_etaRegions_s_ce1 : OUT STD_LOGIC;
+    LinearRegression_settings_sinh_etaRegions_s_q1 : IN STD_LOGIC_VECTOR (31 downto 0);
     LinearRegression_settings_minNumMatchLayers_read : IN STD_LOGIC_VECTOR (31 downto 0);
     LinearRegression_settings_minPSLayers_read : IN STD_LOGIC_VECTOR (31 downto 0);
     LinearRegression_LRParameter_qOverPt_read : IN STD_LOGIC_VECTOR (31 downto 0);
@@ -46,16 +49,16 @@ port (
     LinearRegression_stubs_data_settings_chosenRofZ_s_ce1 : OUT STD_LOGIC;
     LinearRegression_stubs_data_settings_chosenRofZ_s_we1 : OUT STD_LOGIC;
     LinearRegression_stubs_data_settings_chosenRofZ_s_d1 : OUT STD_LOGIC_VECTOR (31 downto 0);
-    LinearRegression_stubs_data_settings_etaRegions_s_address0 : OUT STD_LOGIC_VECTOR (7 downto 0);
-    LinearRegression_stubs_data_settings_etaRegions_s_ce0 : OUT STD_LOGIC;
-    LinearRegression_stubs_data_settings_etaRegions_s_we0 : OUT STD_LOGIC;
-    LinearRegression_stubs_data_settings_etaRegions_s_d0 : OUT STD_LOGIC_VECTOR (31 downto 0);
-    LinearRegression_stubs_data_settings_etaRegions_s_q0 : IN STD_LOGIC_VECTOR (31 downto 0);
-    LinearRegression_stubs_data_settings_etaRegions_s_address1 : OUT STD_LOGIC_VECTOR (7 downto 0);
-    LinearRegression_stubs_data_settings_etaRegions_s_ce1 : OUT STD_LOGIC;
-    LinearRegression_stubs_data_settings_etaRegions_s_we1 : OUT STD_LOGIC;
-    LinearRegression_stubs_data_settings_etaRegions_s_d1 : OUT STD_LOGIC_VECTOR (31 downto 0);
-    LinearRegression_stubs_data_settings_etaRegions_s_q1 : IN STD_LOGIC_VECTOR (31 downto 0);
+    LinearRegression_stubs_data_settings_sinh_etaRegions_s_address0 : OUT STD_LOGIC_VECTOR (7 downto 0);
+    LinearRegression_stubs_data_settings_sinh_etaRegions_s_ce0 : OUT STD_LOGIC;
+    LinearRegression_stubs_data_settings_sinh_etaRegions_s_we0 : OUT STD_LOGIC;
+    LinearRegression_stubs_data_settings_sinh_etaRegions_s_d0 : OUT STD_LOGIC_VECTOR (31 downto 0);
+    LinearRegression_stubs_data_settings_sinh_etaRegions_s_q0 : IN STD_LOGIC_VECTOR (31 downto 0);
+    LinearRegression_stubs_data_settings_sinh_etaRegions_s_address1 : OUT STD_LOGIC_VECTOR (7 downto 0);
+    LinearRegression_stubs_data_settings_sinh_etaRegions_s_ce1 : OUT STD_LOGIC;
+    LinearRegression_stubs_data_settings_sinh_etaRegions_s_we1 : OUT STD_LOGIC;
+    LinearRegression_stubs_data_settings_sinh_etaRegions_s_d1 : OUT STD_LOGIC_VECTOR (31 downto 0);
+    LinearRegression_stubs_data_settings_sinh_etaRegions_s_q1 : IN STD_LOGIC_VECTOR (31 downto 0);
     LinearRegression_stubs_data_settings_minNumMatchLayers_s_address0 : OUT STD_LOGIC_VECTOR (3 downto 0);
     LinearRegression_stubs_data_settings_minNumMatchLayers_s_ce0 : OUT STD_LOGIC;
     LinearRegression_stubs_data_settings_minNumMatchLayers_s_we0 : OUT STD_LOGIC;
@@ -162,16 +165,16 @@ port (
     LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_we1 : OUT STD_LOGIC;
     LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_d1 : OUT STD_LOGIC_VECTOR (31 downto 0);
     LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_q1 : IN STD_LOGIC_VECTOR (31 downto 0);
-    LinearRegression_stubMap_data_second_data_settings_etaRegions_s_address0 : OUT STD_LOGIC_VECTOR (12 downto 0);
-    LinearRegression_stubMap_data_second_data_settings_etaRegions_s_ce0 : OUT STD_LOGIC;
-    LinearRegression_stubMap_data_second_data_settings_etaRegions_s_we0 : OUT STD_LOGIC;
-    LinearRegression_stubMap_data_second_data_settings_etaRegions_s_d0 : OUT STD_LOGIC_VECTOR (31 downto 0);
-    LinearRegression_stubMap_data_second_data_settings_etaRegions_s_q0 : IN STD_LOGIC_VECTOR (31 downto 0);
-    LinearRegression_stubMap_data_second_data_settings_etaRegions_s_address1 : OUT STD_LOGIC_VECTOR (12 downto 0);
-    LinearRegression_stubMap_data_second_data_settings_etaRegions_s_ce1 : OUT STD_LOGIC;
-    LinearRegression_stubMap_data_second_data_settings_etaRegions_s_we1 : OUT STD_LOGIC;
-    LinearRegression_stubMap_data_second_data_settings_etaRegions_s_d1 : OUT STD_LOGIC_VECTOR (31 downto 0);
-    LinearRegression_stubMap_data_second_data_settings_etaRegions_s_q1 : IN STD_LOGIC_VECTOR (31 downto 0);
+    LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_address0 : OUT STD_LOGIC_VECTOR (12 downto 0);
+    LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_ce0 : OUT STD_LOGIC;
+    LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_we0 : OUT STD_LOGIC;
+    LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_d0 : OUT STD_LOGIC_VECTOR (31 downto 0);
+    LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_q0 : IN STD_LOGIC_VECTOR (31 downto 0);
+    LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_address1 : OUT STD_LOGIC_VECTOR (12 downto 0);
+    LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_ce1 : OUT STD_LOGIC;
+    LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_we1 : OUT STD_LOGIC;
+    LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_d1 : OUT STD_LOGIC_VECTOR (31 downto 0);
+    LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_q1 : IN STD_LOGIC_VECTOR (31 downto 0);
     LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_address0 : OUT STD_LOGIC_VECTOR (8 downto 0);
     LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_ce0 : OUT STD_LOGIC;
     LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_we0 : OUT STD_LOGIC;
@@ -347,12 +350,12 @@ port (
     l1track3D_stubs_data_settings_chosenRofZ_s_address1 : OUT STD_LOGIC_VECTOR (3 downto 0);
     l1track3D_stubs_data_settings_chosenRofZ_s_ce1 : OUT STD_LOGIC;
     l1track3D_stubs_data_settings_chosenRofZ_s_q1 : IN STD_LOGIC_VECTOR (31 downto 0);
-    l1track3D_stubs_data_settings_etaRegions_s_address0 : OUT STD_LOGIC_VECTOR (7 downto 0);
-    l1track3D_stubs_data_settings_etaRegions_s_ce0 : OUT STD_LOGIC;
-    l1track3D_stubs_data_settings_etaRegions_s_q0 : IN STD_LOGIC_VECTOR (31 downto 0);
-    l1track3D_stubs_data_settings_etaRegions_s_address1 : OUT STD_LOGIC_VECTOR (7 downto 0);
-    l1track3D_stubs_data_settings_etaRegions_s_ce1 : OUT STD_LOGIC;
-    l1track3D_stubs_data_settings_etaRegions_s_q1 : IN STD_LOGIC_VECTOR (31 downto 0);
+    l1track3D_stubs_data_settings_sinh_etaRegions_s_address0 : OUT STD_LOGIC_VECTOR (7 downto 0);
+    l1track3D_stubs_data_settings_sinh_etaRegions_s_ce0 : OUT STD_LOGIC;
+    l1track3D_stubs_data_settings_sinh_etaRegions_s_q0 : IN STD_LOGIC_VECTOR (31 downto 0);
+    l1track3D_stubs_data_settings_sinh_etaRegions_s_address1 : OUT STD_LOGIC_VECTOR (7 downto 0);
+    l1track3D_stubs_data_settings_sinh_etaRegions_s_ce1 : OUT STD_LOGIC;
+    l1track3D_stubs_data_settings_sinh_etaRegions_s_q1 : IN STD_LOGIC_VECTOR (31 downto 0);
     l1track3D_stubs_data_settings_minNumMatchLayers_s_address0 : OUT STD_LOGIC_VECTOR (3 downto 0);
     l1track3D_stubs_data_settings_minNumMatchLayers_s_ce0 : OUT STD_LOGIC;
     l1track3D_stubs_data_settings_minNumMatchLayers_s_q0 : IN STD_LOGIC_VECTOR (31 downto 0);
@@ -560,8 +563,8 @@ architecture behav of fit is
     attribute fsm_encoding of ap_CS_fsm : signal is "none";
     signal ap_CS_fsm_state1 : STD_LOGIC;
     attribute fsm_encoding of ap_CS_fsm_state1 : signal is "none";
-    signal grp_fu_706_p2 : STD_LOGIC_VECTOR (31 downto 0);
-    signal reg_742 : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_fu_702_p2 : STD_LOGIC_VECTOR (31 downto 0);
+    signal reg_738 : STD_LOGIC_VECTOR (31 downto 0);
     signal ap_CS_fsm_state5 : STD_LOGIC;
     attribute fsm_encoding of ap_CS_fsm_state5 : signal is "none";
     signal ap_CS_fsm_state17 : STD_LOGIC;
@@ -570,8 +573,8 @@ architecture behav of fit is
     attribute fsm_encoding of ap_CS_fsm_state34 : signal is "none";
     signal ap_CS_fsm_state46 : STD_LOGIC;
     attribute fsm_encoding of ap_CS_fsm_state46 : signal is "none";
-    signal grp_fu_715_p2 : STD_LOGIC_VECTOR (31 downto 0);
-    signal reg_749 : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_fu_711_p2 : STD_LOGIC_VECTOR (31 downto 0);
+    signal reg_745 : STD_LOGIC_VECTOR (31 downto 0);
     signal ap_CS_fsm_state7 : STD_LOGIC;
     attribute fsm_encoding of ap_CS_fsm_state7 : signal is "none";
     signal ap_CS_fsm_state9 : STD_LOGIC;
@@ -592,620 +595,622 @@ architecture behav of fit is
     attribute fsm_encoding of ap_CS_fsm_state48 : signal is "none";
     signal ap_CS_fsm_state50 : STD_LOGIC;
     attribute fsm_encoding of ap_CS_fsm_state50 : signal is "none";
-    signal reg_755 : STD_LOGIC_VECTOR (31 downto 0);
+    signal reg_751 : STD_LOGIC_VECTOR (31 downto 0);
     signal ap_CS_fsm_state11 : STD_LOGIC;
     attribute fsm_encoding of ap_CS_fsm_state11 : signal is "none";
-    signal grp_fu_711_p2 : STD_LOGIC_VECTOR (31 downto 0);
-    signal reg_762 : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_fu_721_p2 : STD_LOGIC_VECTOR (31 downto 0);
-    signal reg_768 : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_fu_707_p2 : STD_LOGIC_VECTOR (31 downto 0);
+    signal reg_758 : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_fu_717_p2 : STD_LOGIC_VECTOR (31 downto 0);
+    signal reg_764 : STD_LOGIC_VECTOR (31 downto 0);
     signal ap_CS_fsm_state2 : STD_LOGIC;
     attribute fsm_encoding of ap_CS_fsm_state2 : signal is "none";
-    signal grp_initFit_fu_524_ap_ready : STD_LOGIC;
-    signal grp_initFit_fu_524_ap_done : STD_LOGIC;
-    signal LinearRegression_iPh_reg_1488 : STD_LOGIC_VECTOR (31 downto 0);
-    signal LinearRegression_iEt_reg_1493 : STD_LOGIC_VECTOR (31 downto 0);
-    signal LinearRegression_HTP_reg_1501 : STD_LOGIC_VECTOR (31 downto 0);
-    signal LinearRegression_HTP_1_reg_1510 : STD_LOGIC_VECTOR (31 downto 0);
-    signal LinearRegression_HTP_2_reg_1519 : STD_LOGIC_VECTOR (31 downto 0);
-    signal LinearRegression_HTP_3_reg_1528 : STD_LOGIC_VECTOR (31 downto 0);
-    signal newret3_reg_1537 : STD_LOGIC_VECTOR (31 downto 0);
-    signal newret5_reg_1543 : STD_LOGIC_VECTOR (31 downto 0);
-    signal newret7_reg_1549 : STD_LOGIC_VECTOR (31 downto 0);
-    signal fitTrk_tanLambda_s_reg_1555 : STD_LOGIC_VECTOR (31 downto 0);
-    signal candData_phiT_write_s_fu_917_p3 : STD_LOGIC_VECTOR (31 downto 0);
-    signal candData_phiT_write_s_reg_1561 : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_fu_731_p2 : STD_LOGIC_VECTOR (0 downto 0);
-    signal tmp_133_reg_1566 : STD_LOGIC_VECTOR (0 downto 0);
+    signal grp_initFit_fu_544_ap_ready : STD_LOGIC;
+    signal grp_initFit_fu_544_ap_done : STD_LOGIC;
+    signal LinearRegression_iPh_reg_1484 : STD_LOGIC_VECTOR (31 downto 0);
+    signal LinearRegression_iEt_reg_1489 : STD_LOGIC_VECTOR (31 downto 0);
+    signal LinearRegression_HTP_reg_1497 : STD_LOGIC_VECTOR (31 downto 0);
+    signal LinearRegression_HTP_1_reg_1506 : STD_LOGIC_VECTOR (31 downto 0);
+    signal LinearRegression_HTP_2_reg_1515 : STD_LOGIC_VECTOR (31 downto 0);
+    signal LinearRegression_HTP_3_reg_1524 : STD_LOGIC_VECTOR (31 downto 0);
+    signal newret3_reg_1533 : STD_LOGIC_VECTOR (31 downto 0);
+    signal newret5_reg_1539 : STD_LOGIC_VECTOR (31 downto 0);
+    signal newret7_reg_1545 : STD_LOGIC_VECTOR (31 downto 0);
+    signal fitTrk_tanLambda_s_reg_1551 : STD_LOGIC_VECTOR (31 downto 0);
+    signal candData_phiT_write_s_fu_913_p3 : STD_LOGIC_VECTOR (31 downto 0);
+    signal candData_phiT_write_s_reg_1557 : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_fu_727_p2 : STD_LOGIC_VECTOR (0 downto 0);
+    signal tmp_55_reg_1562 : STD_LOGIC_VECTOR (0 downto 0);
     signal ap_CS_fsm_state24 : STD_LOGIC;
     attribute fsm_encoding of ap_CS_fsm_state24 : signal is "none";
-    signal fitTrk_phi0_s_fu_1027_p3 : STD_LOGIC_VECTOR (31 downto 0);
+    signal fitTrk_phi0_s_fu_1023_p3 : STD_LOGIC_VECTOR (31 downto 0);
     signal ap_CS_fsm_state25 : STD_LOGIC;
     attribute fsm_encoding of ap_CS_fsm_state25 : signal is "none";
-    signal LinearRegression_LRP_reg_1576 : STD_LOGIC_VECTOR (31 downto 0);
+    signal LinearRegression_LRP_reg_1572 : STD_LOGIC_VECTOR (31 downto 0);
     signal ap_CS_fsm_state27 : STD_LOGIC;
     attribute fsm_encoding of ap_CS_fsm_state27 : signal is "none";
-    signal grp_calcHelix_fu_640_ap_ready : STD_LOGIC;
-    signal grp_calcHelix_fu_640_ap_done : STD_LOGIC;
-    signal LinearRegression_LRP_1_reg_1582 : STD_LOGIC_VECTOR (31 downto 0);
-    signal LinearRegression_LRP_2_reg_1588 : STD_LOGIC_VECTOR (31 downto 0);
-    signal LinearRegression_LRP_3_reg_1594 : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_calcResidual_fu_662_ap_return : STD_LOGIC_VECTOR (31 downto 0);
-    signal call_ret6_reg_1600 : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_calcHelix_fu_522_ap_ready : STD_LOGIC;
+    signal grp_calcHelix_fu_522_ap_done : STD_LOGIC;
+    signal LinearRegression_LRP_1_reg_1578 : STD_LOGIC_VECTOR (31 downto 0);
+    signal LinearRegression_LRP_2_reg_1584 : STD_LOGIC_VECTOR (31 downto 0);
+    signal LinearRegression_LRP_3_reg_1590 : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_calcResidual_fu_658_ap_return : STD_LOGIC_VECTOR (31 downto 0);
+    signal call_ret6_reg_1596 : STD_LOGIC_VECTOR (31 downto 0);
     signal ap_CS_fsm_state29 : STD_LOGIC;
     attribute fsm_encoding of ap_CS_fsm_state29 : signal is "none";
-    signal grp_calcResidual_fu_662_ap_ready : STD_LOGIC;
-    signal grp_calcResidual_fu_662_ap_done : STD_LOGIC;
-    signal LinearRegression_nIt_1_fu_1051_p2 : STD_LOGIC_VECTOR (31 downto 0);
-    signal LinearRegression_nIt_1_reg_1606 : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_calcResidual_fu_658_ap_ready : STD_LOGIC;
+    signal grp_calcResidual_fu_658_ap_done : STD_LOGIC;
+    signal LinearRegression_nIt_1_fu_1047_p2 : STD_LOGIC_VECTOR (31 downto 0);
+    signal LinearRegression_nIt_1_reg_1602 : STD_LOGIC_VECTOR (31 downto 0);
     signal ap_CS_fsm_state31 : STD_LOGIC;
     attribute fsm_encoding of ap_CS_fsm_state31 : signal is "none";
-    signal grp_killLargestResidual_fu_447_ap_ready : STD_LOGIC;
-    signal grp_killLargestResidual_fu_447_ap_done : STD_LOGIC;
-    signal LinearRegression_val_reg_1615 : STD_LOGIC_VECTOR (0 downto 0);
-    signal LinearRegression_stu_3_reg_1620 : STD_LOGIC_VECTOR (31 downto 0);
-    signal LinearRegression_stu_4_reg_1626 : STD_LOGIC_VECTOR (31 downto 0);
-    signal LinearRegression_lay_21_reg_1632 : STD_LOGIC_VECTOR (31 downto 0);
-    signal fitTrk_tanLambda_1_reg_1638 : STD_LOGIC_VECTOR (31 downto 0);
-    signal candData_qOverPt_wri_1_reg_1644 : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_killLargestResidual_fu_445_ap_ready : STD_LOGIC;
+    signal grp_killLargestResidual_fu_445_ap_done : STD_LOGIC;
+    signal LinearRegression_val_reg_1611 : STD_LOGIC_VECTOR (0 downto 0);
+    signal LinearRegression_stu_3_reg_1616 : STD_LOGIC_VECTOR (31 downto 0);
+    signal LinearRegression_stu_4_reg_1622 : STD_LOGIC_VECTOR (31 downto 0);
+    signal LinearRegression_lay_17_reg_1628 : STD_LOGIC_VECTOR (31 downto 0);
+    signal fitTrk_tanLambda_1_reg_1634 : STD_LOGIC_VECTOR (31 downto 0);
+    signal candData_qOverPt_wri_1_reg_1640 : STD_LOGIC_VECTOR (31 downto 0);
     signal ap_CS_fsm_state40 : STD_LOGIC;
     attribute fsm_encoding of ap_CS_fsm_state40 : signal is "none";
-    signal fitTrk_z0_1_reg_1650 : STD_LOGIC_VECTOR (31 downto 0);
-    signal candData_phiT_write_1_fu_1205_p3 : STD_LOGIC_VECTOR (31 downto 0);
-    signal candData_phiT_write_1_reg_1655 : STD_LOGIC_VECTOR (31 downto 0);
-    signal tmp_152_reg_1660 : STD_LOGIC_VECTOR (0 downto 0);
+    signal fitTrk_z0_1_reg_1646 : STD_LOGIC_VECTOR (31 downto 0);
+    signal candData_phiT_write_1_fu_1201_p3 : STD_LOGIC_VECTOR (31 downto 0);
+    signal candData_phiT_write_1_reg_1651 : STD_LOGIC_VECTOR (31 downto 0);
+    signal tmp_75_reg_1656 : STD_LOGIC_VECTOR (0 downto 0);
     signal ap_CS_fsm_state53 : STD_LOGIC;
     attribute fsm_encoding of ap_CS_fsm_state53 : signal is "none";
-    signal fitTrk_phi0_1_fu_1315_p3 : STD_LOGIC_VECTOR (31 downto 0);
+    signal fitTrk_phi0_1_fu_1311_p3 : STD_LOGIC_VECTOR (31 downto 0);
     signal ap_CS_fsm_state54 : STD_LOGIC;
     attribute fsm_encoding of ap_CS_fsm_state54 : signal is "none";
-    signal grp_killLargestResidual_fu_447_ap_start : STD_LOGIC;
-    signal grp_killLargestResidual_fu_447_ap_idle : STD_LOGIC;
-    signal grp_killLargestResidual_fu_447_LinearRegression_stubs_data_settings_chosenRofPhi_s_address0 : STD_LOGIC_VECTOR (3 downto 0);
-    signal grp_killLargestResidual_fu_447_LinearRegression_stubs_data_settings_chosenRofPhi_s_ce0 : STD_LOGIC;
-    signal grp_killLargestResidual_fu_447_LinearRegression_stubs_data_settings_chosenRofPhi_s_we0 : STD_LOGIC;
-    signal grp_killLargestResidual_fu_447_LinearRegression_stubs_data_settings_chosenRofPhi_s_d0 : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_killLargestResidual_fu_447_LinearRegression_stubs_data_settings_chosenRofZ_s_address0 : STD_LOGIC_VECTOR (3 downto 0);
-    signal grp_killLargestResidual_fu_447_LinearRegression_stubs_data_settings_chosenRofZ_s_ce0 : STD_LOGIC;
-    signal grp_killLargestResidual_fu_447_LinearRegression_stubs_data_settings_chosenRofZ_s_we0 : STD_LOGIC;
-    signal grp_killLargestResidual_fu_447_LinearRegression_stubs_data_settings_chosenRofZ_s_d0 : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_killLargestResidual_fu_447_LinearRegression_stubs_data_settings_etaRegions_s_address0 : STD_LOGIC_VECTOR (7 downto 0);
-    signal grp_killLargestResidual_fu_447_LinearRegression_stubs_data_settings_etaRegions_s_ce0 : STD_LOGIC;
-    signal grp_killLargestResidual_fu_447_LinearRegression_stubs_data_settings_etaRegions_s_we0 : STD_LOGIC;
-    signal grp_killLargestResidual_fu_447_LinearRegression_stubs_data_settings_etaRegions_s_d0 : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_killLargestResidual_fu_447_LinearRegression_stubs_data_settings_etaRegions_s_address1 : STD_LOGIC_VECTOR (7 downto 0);
-    signal grp_killLargestResidual_fu_447_LinearRegression_stubs_data_settings_etaRegions_s_ce1 : STD_LOGIC;
-    signal grp_killLargestResidual_fu_447_LinearRegression_stubs_data_settings_etaRegions_s_we1 : STD_LOGIC;
-    signal grp_killLargestResidual_fu_447_LinearRegression_stubs_data_settings_etaRegions_s_d1 : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_killLargestResidual_fu_447_LinearRegression_stubs_data_settings_minNumMatchLayers_s_address0 : STD_LOGIC_VECTOR (3 downto 0);
-    signal grp_killLargestResidual_fu_447_LinearRegression_stubs_data_settings_minNumMatchLayers_s_ce0 : STD_LOGIC;
-    signal grp_killLargestResidual_fu_447_LinearRegression_stubs_data_settings_minNumMatchLayers_s_we0 : STD_LOGIC;
-    signal grp_killLargestResidual_fu_447_LinearRegression_stubs_data_settings_minNumMatchLayers_s_d0 : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_killLargestResidual_fu_447_LinearRegression_stubs_data_settings_minPSLayers_s_address0 : STD_LOGIC_VECTOR (3 downto 0);
-    signal grp_killLargestResidual_fu_447_LinearRegression_stubs_data_settings_minPSLayers_s_ce0 : STD_LOGIC;
-    signal grp_killLargestResidual_fu_447_LinearRegression_stubs_data_settings_minPSLayers_s_we0 : STD_LOGIC;
-    signal grp_killLargestResidual_fu_447_LinearRegression_stubs_data_settings_minPSLayers_s_d0 : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_killLargestResidual_fu_447_LinearRegression_stubs_data_r_s_address0 : STD_LOGIC_VECTOR (3 downto 0);
-    signal grp_killLargestResidual_fu_447_LinearRegression_stubs_data_r_s_ce0 : STD_LOGIC;
-    signal grp_killLargestResidual_fu_447_LinearRegression_stubs_data_r_s_we0 : STD_LOGIC;
-    signal grp_killLargestResidual_fu_447_LinearRegression_stubs_data_r_s_d0 : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_killLargestResidual_fu_447_LinearRegression_stubs_data_phi_s_address0 : STD_LOGIC_VECTOR (3 downto 0);
-    signal grp_killLargestResidual_fu_447_LinearRegression_stubs_data_phi_s_ce0 : STD_LOGIC;
-    signal grp_killLargestResidual_fu_447_LinearRegression_stubs_data_phi_s_we0 : STD_LOGIC;
-    signal grp_killLargestResidual_fu_447_LinearRegression_stubs_data_phi_s_d0 : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_killLargestResidual_fu_447_LinearRegression_stubs_data_z_s_address0 : STD_LOGIC_VECTOR (3 downto 0);
-    signal grp_killLargestResidual_fu_447_LinearRegression_stubs_data_z_s_ce0 : STD_LOGIC;
-    signal grp_killLargestResidual_fu_447_LinearRegression_stubs_data_z_s_we0 : STD_LOGIC;
-    signal grp_killLargestResidual_fu_447_LinearRegression_stubs_data_z_s_d0 : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_killLargestResidual_fu_447_LinearRegression_stubs_data_layerId_s_address0 : STD_LOGIC_VECTOR (3 downto 0);
-    signal grp_killLargestResidual_fu_447_LinearRegression_stubs_data_layerId_s_ce0 : STD_LOGIC;
-    signal grp_killLargestResidual_fu_447_LinearRegression_stubs_data_layerId_s_we0 : STD_LOGIC;
-    signal grp_killLargestResidual_fu_447_LinearRegression_stubs_data_layerId_s_d0 : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_killLargestResidual_fu_447_LinearRegression_stubs_data_psModule_s_address0 : STD_LOGIC_VECTOR (3 downto 0);
-    signal grp_killLargestResidual_fu_447_LinearRegression_stubs_data_psModule_s_ce0 : STD_LOGIC;
-    signal grp_killLargestResidual_fu_447_LinearRegression_stubs_data_psModule_s_we0 : STD_LOGIC;
-    signal grp_killLargestResidual_fu_447_LinearRegression_stubs_data_psModule_s_d0 : STD_LOGIC_VECTOR (0 downto 0);
-    signal grp_killLargestResidual_fu_447_LinearRegression_stubs_data_barrel_s_address0 : STD_LOGIC_VECTOR (3 downto 0);
-    signal grp_killLargestResidual_fu_447_LinearRegression_stubs_data_barrel_s_ce0 : STD_LOGIC;
-    signal grp_killLargestResidual_fu_447_LinearRegression_stubs_data_barrel_s_we0 : STD_LOGIC;
-    signal grp_killLargestResidual_fu_447_LinearRegression_stubs_data_barrel_s_d0 : STD_LOGIC_VECTOR (0 downto 0);
-    signal grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_first_address0 : STD_LOGIC_VECTOR (4 downto 0);
-    signal grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_first_ce0 : STD_LOGIC;
-    signal grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_first_we0 : STD_LOGIC;
-    signal grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_first_d0 : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_size_s_address0 : STD_LOGIC_VECTOR (4 downto 0);
-    signal grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_size_s_ce0 : STD_LOGIC;
-    signal grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_size_s_we0 : STD_LOGIC;
-    signal grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_size_s_d0 : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_address0 : STD_LOGIC_VECTOR (8 downto 0);
-    signal grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_ce0 : STD_LOGIC;
-    signal grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_we0 : STD_LOGIC;
-    signal grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_d0 : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_address1 : STD_LOGIC_VECTOR (8 downto 0);
-    signal grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_ce1 : STD_LOGIC;
-    signal grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_we1 : STD_LOGIC;
-    signal grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_d1 : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_address0 : STD_LOGIC_VECTOR (8 downto 0);
-    signal grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_ce0 : STD_LOGIC;
-    signal grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_we0 : STD_LOGIC;
-    signal grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_d0 : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_address1 : STD_LOGIC_VECTOR (8 downto 0);
-    signal grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_ce1 : STD_LOGIC;
-    signal grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_we1 : STD_LOGIC;
-    signal grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_d1 : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_settings_etaRegions_s_address0 : STD_LOGIC_VECTOR (12 downto 0);
-    signal grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_settings_etaRegions_s_ce0 : STD_LOGIC;
-    signal grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_settings_etaRegions_s_we0 : STD_LOGIC;
-    signal grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_settings_etaRegions_s_d0 : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_settings_etaRegions_s_address1 : STD_LOGIC_VECTOR (12 downto 0);
-    signal grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_settings_etaRegions_s_ce1 : STD_LOGIC;
-    signal grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_settings_etaRegions_s_we1 : STD_LOGIC;
-    signal grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_settings_etaRegions_s_d1 : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_address0 : STD_LOGIC_VECTOR (8 downto 0);
-    signal grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_ce0 : STD_LOGIC;
-    signal grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_we0 : STD_LOGIC;
-    signal grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_d0 : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_address1 : STD_LOGIC_VECTOR (8 downto 0);
-    signal grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_ce1 : STD_LOGIC;
-    signal grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_we1 : STD_LOGIC;
-    signal grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_d1 : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_address0 : STD_LOGIC_VECTOR (8 downto 0);
-    signal grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_ce0 : STD_LOGIC;
-    signal grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_we0 : STD_LOGIC;
-    signal grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_d0 : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_address1 : STD_LOGIC_VECTOR (8 downto 0);
-    signal grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_ce1 : STD_LOGIC;
-    signal grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_we1 : STD_LOGIC;
-    signal grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_d1 : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_r_s_address0 : STD_LOGIC_VECTOR (8 downto 0);
-    signal grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_r_s_ce0 : STD_LOGIC;
-    signal grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_r_s_we0 : STD_LOGIC;
-    signal grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_r_s_d0 : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_r_s_address1 : STD_LOGIC_VECTOR (8 downto 0);
-    signal grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_r_s_ce1 : STD_LOGIC;
-    signal grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_r_s_we1 : STD_LOGIC;
-    signal grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_r_s_d1 : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_phi_s_address0 : STD_LOGIC_VECTOR (8 downto 0);
-    signal grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_phi_s_ce0 : STD_LOGIC;
-    signal grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_phi_s_we0 : STD_LOGIC;
-    signal grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_phi_s_d0 : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_phi_s_address1 : STD_LOGIC_VECTOR (8 downto 0);
-    signal grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_phi_s_ce1 : STD_LOGIC;
-    signal grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_phi_s_we1 : STD_LOGIC;
-    signal grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_phi_s_d1 : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_z_s_address0 : STD_LOGIC_VECTOR (8 downto 0);
-    signal grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_z_s_ce0 : STD_LOGIC;
-    signal grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_z_s_we0 : STD_LOGIC;
-    signal grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_z_s_d0 : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_z_s_address1 : STD_LOGIC_VECTOR (8 downto 0);
-    signal grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_z_s_ce1 : STD_LOGIC;
-    signal grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_z_s_we1 : STD_LOGIC;
-    signal grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_z_s_d1 : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_layerId_s_address0 : STD_LOGIC_VECTOR (8 downto 0);
-    signal grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_layerId_s_ce0 : STD_LOGIC;
-    signal grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_layerId_s_we0 : STD_LOGIC;
-    signal grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_layerId_s_d0 : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_layerId_s_address1 : STD_LOGIC_VECTOR (8 downto 0);
-    signal grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_layerId_s_ce1 : STD_LOGIC;
-    signal grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_layerId_s_we1 : STD_LOGIC;
-    signal grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_layerId_s_d1 : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_psModule_s_address0 : STD_LOGIC_VECTOR (8 downto 0);
-    signal grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_psModule_s_ce0 : STD_LOGIC;
-    signal grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_psModule_s_we0 : STD_LOGIC;
-    signal grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_psModule_s_d0 : STD_LOGIC_VECTOR (0 downto 0);
-    signal grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_psModule_s_address1 : STD_LOGIC_VECTOR (8 downto 0);
-    signal grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_psModule_s_ce1 : STD_LOGIC;
-    signal grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_psModule_s_we1 : STD_LOGIC;
-    signal grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_psModule_s_d1 : STD_LOGIC_VECTOR (0 downto 0);
-    signal grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_barrel_s_address0 : STD_LOGIC_VECTOR (8 downto 0);
-    signal grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_barrel_s_ce0 : STD_LOGIC;
-    signal grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_barrel_s_we0 : STD_LOGIC;
-    signal grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_barrel_s_d0 : STD_LOGIC_VECTOR (0 downto 0);
-    signal grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_barrel_s_address1 : STD_LOGIC_VECTOR (8 downto 0);
-    signal grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_barrel_s_ce1 : STD_LOGIC;
-    signal grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_barrel_s_we1 : STD_LOGIC;
-    signal grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_barrel_s_d1 : STD_LOGIC_VECTOR (0 downto 0);
-    signal grp_killLargestResidual_fu_447_LinearRegression_layerPopulation_data_first_address0 : STD_LOGIC_VECTOR (4 downto 0);
-    signal grp_killLargestResidual_fu_447_LinearRegression_layerPopulation_data_first_ce0 : STD_LOGIC;
-    signal grp_killLargestResidual_fu_447_LinearRegression_layerPopulation_data_first_we0 : STD_LOGIC;
-    signal grp_killLargestResidual_fu_447_LinearRegression_layerPopulation_data_first_d0 : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_killLargestResidual_fu_447_LinearRegression_layerPopulation_data_second_address0 : STD_LOGIC_VECTOR (4 downto 0);
-    signal grp_killLargestResidual_fu_447_LinearRegression_layerPopulation_data_second_ce0 : STD_LOGIC;
-    signal grp_killLargestResidual_fu_447_LinearRegression_layerPopulation_data_second_we0 : STD_LOGIC;
-    signal grp_killLargestResidual_fu_447_LinearRegression_layerPopulation_data_second_d0 : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_killLargestResidual_fu_447_LinearRegression_residuals_data_first_address0 : STD_LOGIC_VECTOR (4 downto 0);
-    signal grp_killLargestResidual_fu_447_LinearRegression_residuals_data_first_ce0 : STD_LOGIC;
-    signal grp_killLargestResidual_fu_447_LinearRegression_residuals_data_second_size_s_address0 : STD_LOGIC_VECTOR (4 downto 0);
-    signal grp_killLargestResidual_fu_447_LinearRegression_residuals_data_second_size_s_ce0 : STD_LOGIC;
-    signal grp_killLargestResidual_fu_447_LinearRegression_residuals_data_second_data_phi_address0 : STD_LOGIC_VECTOR (8 downto 0);
-    signal grp_killLargestResidual_fu_447_LinearRegression_residuals_data_second_data_phi_ce0 : STD_LOGIC;
-    signal grp_killLargestResidual_fu_447_LinearRegression_residuals_data_second_data_z_address0 : STD_LOGIC_VECTOR (8 downto 0);
-    signal grp_killLargestResidual_fu_447_LinearRegression_residuals_data_second_data_z_ce0 : STD_LOGIC;
-    signal grp_killLargestResidual_fu_447_LinearRegression_residuals_data_second_data_layerId_address0 : STD_LOGIC_VECTOR (8 downto 0);
-    signal grp_killLargestResidual_fu_447_LinearRegression_residuals_data_second_data_layerId_ce0 : STD_LOGIC;
-    signal grp_killLargestResidual_fu_447_LinearRegression_residuals_data_second_data_stubId_address0 : STD_LOGIC_VECTOR (8 downto 0);
-    signal grp_killLargestResidual_fu_447_LinearRegression_residuals_data_second_data_stubId_ce0 : STD_LOGIC;
-    signal grp_killLargestResidual_fu_447_LinearRegression_residuals_data_second_data_ps_address0 : STD_LOGIC_VECTOR (8 downto 0);
-    signal grp_killLargestResidual_fu_447_LinearRegression_residuals_data_second_data_ps_ce0 : STD_LOGIC;
-    signal grp_killLargestResidual_fu_447_ap_return_0 : STD_LOGIC_VECTOR (0 downto 0);
-    signal grp_killLargestResidual_fu_447_ap_return_1 : STD_LOGIC_VECTOR (0 downto 0);
-    signal grp_killLargestResidual_fu_447_ap_return_2 : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_killLargestResidual_fu_447_ap_return_3 : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_killLargestResidual_fu_447_ap_return_4 : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_killLargestResidual_fu_447_ap_return_5 : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_killLargestResidual_fu_447_ap_return_6 : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_killLargestResidual_fu_447_ap_return_7 : STD_LOGIC_VECTOR (0 downto 0);
-    signal grp_killLargestResidual_fu_447_ap_return_8 : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_killLargestResidual_fu_447_ap_return_9 : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_initFit_fu_524_ap_start : STD_LOGIC;
-    signal grp_initFit_fu_524_ap_idle : STD_LOGIC;
-    signal grp_initFit_fu_524_LinearRegression_settings_etaRegions_s_address0 : STD_LOGIC_VECTOR (4 downto 0);
-    signal grp_initFit_fu_524_LinearRegression_settings_etaRegions_s_ce0 : STD_LOGIC;
-    signal grp_initFit_fu_524_LinearRegression_stubs_data_settings_chosenRofPhi_s_address0 : STD_LOGIC_VECTOR (3 downto 0);
-    signal grp_initFit_fu_524_LinearRegression_stubs_data_settings_chosenRofPhi_s_ce0 : STD_LOGIC;
-    signal grp_initFit_fu_524_LinearRegression_stubs_data_settings_chosenRofPhi_s_we0 : STD_LOGIC;
-    signal grp_initFit_fu_524_LinearRegression_stubs_data_settings_chosenRofPhi_s_d0 : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_initFit_fu_524_LinearRegression_stubs_data_settings_chosenRofPhi_s_address1 : STD_LOGIC_VECTOR (3 downto 0);
-    signal grp_initFit_fu_524_LinearRegression_stubs_data_settings_chosenRofPhi_s_ce1 : STD_LOGIC;
-    signal grp_initFit_fu_524_LinearRegression_stubs_data_settings_chosenRofPhi_s_we1 : STD_LOGIC;
-    signal grp_initFit_fu_524_LinearRegression_stubs_data_settings_chosenRofPhi_s_d1 : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_initFit_fu_524_LinearRegression_stubs_data_settings_chosenRofZ_s_address0 : STD_LOGIC_VECTOR (3 downto 0);
-    signal grp_initFit_fu_524_LinearRegression_stubs_data_settings_chosenRofZ_s_ce0 : STD_LOGIC;
-    signal grp_initFit_fu_524_LinearRegression_stubs_data_settings_chosenRofZ_s_we0 : STD_LOGIC;
-    signal grp_initFit_fu_524_LinearRegression_stubs_data_settings_chosenRofZ_s_d0 : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_initFit_fu_524_LinearRegression_stubs_data_settings_chosenRofZ_s_address1 : STD_LOGIC_VECTOR (3 downto 0);
-    signal grp_initFit_fu_524_LinearRegression_stubs_data_settings_chosenRofZ_s_ce1 : STD_LOGIC;
-    signal grp_initFit_fu_524_LinearRegression_stubs_data_settings_chosenRofZ_s_we1 : STD_LOGIC;
-    signal grp_initFit_fu_524_LinearRegression_stubs_data_settings_chosenRofZ_s_d1 : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_initFit_fu_524_LinearRegression_stubs_data_settings_etaRegions_s_address0 : STD_LOGIC_VECTOR (7 downto 0);
-    signal grp_initFit_fu_524_LinearRegression_stubs_data_settings_etaRegions_s_ce0 : STD_LOGIC;
-    signal grp_initFit_fu_524_LinearRegression_stubs_data_settings_etaRegions_s_we0 : STD_LOGIC;
-    signal grp_initFit_fu_524_LinearRegression_stubs_data_settings_etaRegions_s_d0 : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_initFit_fu_524_LinearRegression_stubs_data_settings_etaRegions_s_address1 : STD_LOGIC_VECTOR (7 downto 0);
-    signal grp_initFit_fu_524_LinearRegression_stubs_data_settings_etaRegions_s_ce1 : STD_LOGIC;
-    signal grp_initFit_fu_524_LinearRegression_stubs_data_settings_etaRegions_s_we1 : STD_LOGIC;
-    signal grp_initFit_fu_524_LinearRegression_stubs_data_settings_etaRegions_s_d1 : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_initFit_fu_524_LinearRegression_stubs_data_settings_minNumMatchLayers_s_address0 : STD_LOGIC_VECTOR (3 downto 0);
-    signal grp_initFit_fu_524_LinearRegression_stubs_data_settings_minNumMatchLayers_s_ce0 : STD_LOGIC;
-    signal grp_initFit_fu_524_LinearRegression_stubs_data_settings_minNumMatchLayers_s_we0 : STD_LOGIC;
-    signal grp_initFit_fu_524_LinearRegression_stubs_data_settings_minNumMatchLayers_s_d0 : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_initFit_fu_524_LinearRegression_stubs_data_settings_minNumMatchLayers_s_address1 : STD_LOGIC_VECTOR (3 downto 0);
-    signal grp_initFit_fu_524_LinearRegression_stubs_data_settings_minNumMatchLayers_s_ce1 : STD_LOGIC;
-    signal grp_initFit_fu_524_LinearRegression_stubs_data_settings_minNumMatchLayers_s_we1 : STD_LOGIC;
-    signal grp_initFit_fu_524_LinearRegression_stubs_data_settings_minNumMatchLayers_s_d1 : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_initFit_fu_524_LinearRegression_stubs_data_settings_minPSLayers_s_address0 : STD_LOGIC_VECTOR (3 downto 0);
-    signal grp_initFit_fu_524_LinearRegression_stubs_data_settings_minPSLayers_s_ce0 : STD_LOGIC;
-    signal grp_initFit_fu_524_LinearRegression_stubs_data_settings_minPSLayers_s_we0 : STD_LOGIC;
-    signal grp_initFit_fu_524_LinearRegression_stubs_data_settings_minPSLayers_s_d0 : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_initFit_fu_524_LinearRegression_stubs_data_settings_minPSLayers_s_address1 : STD_LOGIC_VECTOR (3 downto 0);
-    signal grp_initFit_fu_524_LinearRegression_stubs_data_settings_minPSLayers_s_ce1 : STD_LOGIC;
-    signal grp_initFit_fu_524_LinearRegression_stubs_data_settings_minPSLayers_s_we1 : STD_LOGIC;
-    signal grp_initFit_fu_524_LinearRegression_stubs_data_settings_minPSLayers_s_d1 : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_initFit_fu_524_LinearRegression_stubs_data_r_s_address0 : STD_LOGIC_VECTOR (3 downto 0);
-    signal grp_initFit_fu_524_LinearRegression_stubs_data_r_s_ce0 : STD_LOGIC;
-    signal grp_initFit_fu_524_LinearRegression_stubs_data_r_s_we0 : STD_LOGIC;
-    signal grp_initFit_fu_524_LinearRegression_stubs_data_r_s_d0 : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_initFit_fu_524_LinearRegression_stubs_data_r_s_address1 : STD_LOGIC_VECTOR (3 downto 0);
-    signal grp_initFit_fu_524_LinearRegression_stubs_data_r_s_ce1 : STD_LOGIC;
-    signal grp_initFit_fu_524_LinearRegression_stubs_data_r_s_we1 : STD_LOGIC;
-    signal grp_initFit_fu_524_LinearRegression_stubs_data_r_s_d1 : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_initFit_fu_524_LinearRegression_stubs_data_phi_s_address0 : STD_LOGIC_VECTOR (3 downto 0);
-    signal grp_initFit_fu_524_LinearRegression_stubs_data_phi_s_ce0 : STD_LOGIC;
-    signal grp_initFit_fu_524_LinearRegression_stubs_data_phi_s_we0 : STD_LOGIC;
-    signal grp_initFit_fu_524_LinearRegression_stubs_data_phi_s_d0 : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_initFit_fu_524_LinearRegression_stubs_data_phi_s_address1 : STD_LOGIC_VECTOR (3 downto 0);
-    signal grp_initFit_fu_524_LinearRegression_stubs_data_phi_s_ce1 : STD_LOGIC;
-    signal grp_initFit_fu_524_LinearRegression_stubs_data_phi_s_we1 : STD_LOGIC;
-    signal grp_initFit_fu_524_LinearRegression_stubs_data_phi_s_d1 : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_initFit_fu_524_LinearRegression_stubs_data_z_s_address0 : STD_LOGIC_VECTOR (3 downto 0);
-    signal grp_initFit_fu_524_LinearRegression_stubs_data_z_s_ce0 : STD_LOGIC;
-    signal grp_initFit_fu_524_LinearRegression_stubs_data_z_s_we0 : STD_LOGIC;
-    signal grp_initFit_fu_524_LinearRegression_stubs_data_z_s_d0 : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_initFit_fu_524_LinearRegression_stubs_data_z_s_address1 : STD_LOGIC_VECTOR (3 downto 0);
-    signal grp_initFit_fu_524_LinearRegression_stubs_data_z_s_ce1 : STD_LOGIC;
-    signal grp_initFit_fu_524_LinearRegression_stubs_data_z_s_we1 : STD_LOGIC;
-    signal grp_initFit_fu_524_LinearRegression_stubs_data_z_s_d1 : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_initFit_fu_524_LinearRegression_stubs_data_layerId_s_address0 : STD_LOGIC_VECTOR (3 downto 0);
-    signal grp_initFit_fu_524_LinearRegression_stubs_data_layerId_s_ce0 : STD_LOGIC;
-    signal grp_initFit_fu_524_LinearRegression_stubs_data_layerId_s_we0 : STD_LOGIC;
-    signal grp_initFit_fu_524_LinearRegression_stubs_data_layerId_s_d0 : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_initFit_fu_524_LinearRegression_stubs_data_layerId_s_address1 : STD_LOGIC_VECTOR (3 downto 0);
-    signal grp_initFit_fu_524_LinearRegression_stubs_data_layerId_s_ce1 : STD_LOGIC;
-    signal grp_initFit_fu_524_LinearRegression_stubs_data_layerId_s_we1 : STD_LOGIC;
-    signal grp_initFit_fu_524_LinearRegression_stubs_data_layerId_s_d1 : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_initFit_fu_524_LinearRegression_stubs_data_psModule_s_address0 : STD_LOGIC_VECTOR (3 downto 0);
-    signal grp_initFit_fu_524_LinearRegression_stubs_data_psModule_s_ce0 : STD_LOGIC;
-    signal grp_initFit_fu_524_LinearRegression_stubs_data_psModule_s_we0 : STD_LOGIC;
-    signal grp_initFit_fu_524_LinearRegression_stubs_data_psModule_s_d0 : STD_LOGIC_VECTOR (0 downto 0);
-    signal grp_initFit_fu_524_LinearRegression_stubs_data_psModule_s_address1 : STD_LOGIC_VECTOR (3 downto 0);
-    signal grp_initFit_fu_524_LinearRegression_stubs_data_psModule_s_ce1 : STD_LOGIC;
-    signal grp_initFit_fu_524_LinearRegression_stubs_data_psModule_s_we1 : STD_LOGIC;
-    signal grp_initFit_fu_524_LinearRegression_stubs_data_psModule_s_d1 : STD_LOGIC_VECTOR (0 downto 0);
-    signal grp_initFit_fu_524_LinearRegression_stubs_data_barrel_s_address0 : STD_LOGIC_VECTOR (3 downto 0);
-    signal grp_initFit_fu_524_LinearRegression_stubs_data_barrel_s_ce0 : STD_LOGIC;
-    signal grp_initFit_fu_524_LinearRegression_stubs_data_barrel_s_we0 : STD_LOGIC;
-    signal grp_initFit_fu_524_LinearRegression_stubs_data_barrel_s_d0 : STD_LOGIC_VECTOR (0 downto 0);
-    signal grp_initFit_fu_524_LinearRegression_stubs_data_barrel_s_address1 : STD_LOGIC_VECTOR (3 downto 0);
-    signal grp_initFit_fu_524_LinearRegression_stubs_data_barrel_s_ce1 : STD_LOGIC;
-    signal grp_initFit_fu_524_LinearRegression_stubs_data_barrel_s_we1 : STD_LOGIC;
-    signal grp_initFit_fu_524_LinearRegression_stubs_data_barrel_s_d1 : STD_LOGIC_VECTOR (0 downto 0);
-    signal grp_initFit_fu_524_LinearRegression_stubMap_data_first_address0 : STD_LOGIC_VECTOR (4 downto 0);
-    signal grp_initFit_fu_524_LinearRegression_stubMap_data_first_ce0 : STD_LOGIC;
-    signal grp_initFit_fu_524_LinearRegression_stubMap_data_first_we0 : STD_LOGIC;
-    signal grp_initFit_fu_524_LinearRegression_stubMap_data_first_d0 : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_initFit_fu_524_LinearRegression_stubMap_data_second_size_s_address0 : STD_LOGIC_VECTOR (4 downto 0);
-    signal grp_initFit_fu_524_LinearRegression_stubMap_data_second_size_s_ce0 : STD_LOGIC;
-    signal grp_initFit_fu_524_LinearRegression_stubMap_data_second_size_s_we0 : STD_LOGIC;
-    signal grp_initFit_fu_524_LinearRegression_stubMap_data_second_size_s_d0 : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_address0 : STD_LOGIC_VECTOR (8 downto 0);
-    signal grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_ce0 : STD_LOGIC;
-    signal grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_we0 : STD_LOGIC;
-    signal grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_d0 : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_address1 : STD_LOGIC_VECTOR (8 downto 0);
-    signal grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_ce1 : STD_LOGIC;
-    signal grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_we1 : STD_LOGIC;
-    signal grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_d1 : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_address0 : STD_LOGIC_VECTOR (8 downto 0);
-    signal grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_ce0 : STD_LOGIC;
-    signal grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_we0 : STD_LOGIC;
-    signal grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_d0 : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_address1 : STD_LOGIC_VECTOR (8 downto 0);
-    signal grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_ce1 : STD_LOGIC;
-    signal grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_we1 : STD_LOGIC;
-    signal grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_d1 : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_settings_etaRegions_s_address0 : STD_LOGIC_VECTOR (12 downto 0);
-    signal grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_settings_etaRegions_s_ce0 : STD_LOGIC;
-    signal grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_settings_etaRegions_s_we0 : STD_LOGIC;
-    signal grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_settings_etaRegions_s_d0 : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_settings_etaRegions_s_address1 : STD_LOGIC_VECTOR (12 downto 0);
-    signal grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_settings_etaRegions_s_ce1 : STD_LOGIC;
-    signal grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_settings_etaRegions_s_we1 : STD_LOGIC;
-    signal grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_settings_etaRegions_s_d1 : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_address0 : STD_LOGIC_VECTOR (8 downto 0);
-    signal grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_ce0 : STD_LOGIC;
-    signal grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_we0 : STD_LOGIC;
-    signal grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_d0 : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_address1 : STD_LOGIC_VECTOR (8 downto 0);
-    signal grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_ce1 : STD_LOGIC;
-    signal grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_we1 : STD_LOGIC;
-    signal grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_d1 : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_address0 : STD_LOGIC_VECTOR (8 downto 0);
-    signal grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_ce0 : STD_LOGIC;
-    signal grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_we0 : STD_LOGIC;
-    signal grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_d0 : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_address1 : STD_LOGIC_VECTOR (8 downto 0);
-    signal grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_ce1 : STD_LOGIC;
-    signal grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_we1 : STD_LOGIC;
-    signal grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_d1 : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_r_s_address0 : STD_LOGIC_VECTOR (8 downto 0);
-    signal grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_r_s_ce0 : STD_LOGIC;
-    signal grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_r_s_we0 : STD_LOGIC;
-    signal grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_r_s_d0 : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_r_s_address1 : STD_LOGIC_VECTOR (8 downto 0);
-    signal grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_r_s_ce1 : STD_LOGIC;
-    signal grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_r_s_we1 : STD_LOGIC;
-    signal grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_r_s_d1 : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_phi_s_address0 : STD_LOGIC_VECTOR (8 downto 0);
-    signal grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_phi_s_ce0 : STD_LOGIC;
-    signal grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_phi_s_we0 : STD_LOGIC;
-    signal grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_phi_s_d0 : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_phi_s_address1 : STD_LOGIC_VECTOR (8 downto 0);
-    signal grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_phi_s_ce1 : STD_LOGIC;
-    signal grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_phi_s_we1 : STD_LOGIC;
-    signal grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_phi_s_d1 : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_z_s_address0 : STD_LOGIC_VECTOR (8 downto 0);
-    signal grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_z_s_ce0 : STD_LOGIC;
-    signal grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_z_s_we0 : STD_LOGIC;
-    signal grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_z_s_d0 : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_z_s_address1 : STD_LOGIC_VECTOR (8 downto 0);
-    signal grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_z_s_ce1 : STD_LOGIC;
-    signal grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_z_s_we1 : STD_LOGIC;
-    signal grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_z_s_d1 : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_layerId_s_address0 : STD_LOGIC_VECTOR (8 downto 0);
-    signal grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_layerId_s_ce0 : STD_LOGIC;
-    signal grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_layerId_s_we0 : STD_LOGIC;
-    signal grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_layerId_s_d0 : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_layerId_s_address1 : STD_LOGIC_VECTOR (8 downto 0);
-    signal grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_layerId_s_ce1 : STD_LOGIC;
-    signal grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_layerId_s_we1 : STD_LOGIC;
-    signal grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_layerId_s_d1 : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_psModule_s_address0 : STD_LOGIC_VECTOR (8 downto 0);
-    signal grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_psModule_s_ce0 : STD_LOGIC;
-    signal grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_psModule_s_we0 : STD_LOGIC;
-    signal grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_psModule_s_d0 : STD_LOGIC_VECTOR (0 downto 0);
-    signal grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_psModule_s_address1 : STD_LOGIC_VECTOR (8 downto 0);
-    signal grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_psModule_s_ce1 : STD_LOGIC;
-    signal grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_psModule_s_we1 : STD_LOGIC;
-    signal grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_psModule_s_d1 : STD_LOGIC_VECTOR (0 downto 0);
-    signal grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_barrel_s_address0 : STD_LOGIC_VECTOR (8 downto 0);
-    signal grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_barrel_s_ce0 : STD_LOGIC;
-    signal grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_barrel_s_we0 : STD_LOGIC;
-    signal grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_barrel_s_d0 : STD_LOGIC_VECTOR (0 downto 0);
-    signal grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_barrel_s_address1 : STD_LOGIC_VECTOR (8 downto 0);
-    signal grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_barrel_s_ce1 : STD_LOGIC;
-    signal grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_barrel_s_we1 : STD_LOGIC;
-    signal grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_barrel_s_d1 : STD_LOGIC_VECTOR (0 downto 0);
-    signal grp_initFit_fu_524_LinearRegression_layerPopulation_data_first_address0 : STD_LOGIC_VECTOR (4 downto 0);
-    signal grp_initFit_fu_524_LinearRegression_layerPopulation_data_first_ce0 : STD_LOGIC;
-    signal grp_initFit_fu_524_LinearRegression_layerPopulation_data_first_we0 : STD_LOGIC;
-    signal grp_initFit_fu_524_LinearRegression_layerPopulation_data_first_d0 : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_initFit_fu_524_LinearRegression_layerPopulation_data_second_address0 : STD_LOGIC_VECTOR (4 downto 0);
-    signal grp_initFit_fu_524_LinearRegression_layerPopulation_data_second_ce0 : STD_LOGIC;
-    signal grp_initFit_fu_524_LinearRegression_layerPopulation_data_second_we0 : STD_LOGIC;
-    signal grp_initFit_fu_524_LinearRegression_layerPopulation_data_second_d0 : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_initFit_fu_524_LinearRegression_residuals_size_s : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_initFit_fu_524_LinearRegression_residuals_size_s_ap_vld : STD_LOGIC;
-    signal grp_initFit_fu_524_LinearRegression_largestResid_phi : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_initFit_fu_524_LinearRegression_largestResid_phi_ap_vld : STD_LOGIC;
-    signal grp_initFit_fu_524_LinearRegression_largestResid_z : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_initFit_fu_524_LinearRegression_largestResid_z_ap_vld : STD_LOGIC;
-    signal grp_initFit_fu_524_LinearRegression_largestResid_layerId : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_initFit_fu_524_LinearRegression_largestResid_layerId_ap_vld : STD_LOGIC;
-    signal grp_initFit_fu_524_LinearRegression_largestResid_stubId : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_initFit_fu_524_LinearRegression_largestResid_stubId_ap_vld : STD_LOGIC;
-    signal grp_initFit_fu_524_LinearRegression_largestResid_ps : STD_LOGIC;
-    signal grp_initFit_fu_524_LinearRegression_largestResid_ps_ap_vld : STD_LOGIC;
-    signal grp_initFit_fu_524_l1track3D_stubs_data_settings_chosenRofPhi_s_address0 : STD_LOGIC_VECTOR (3 downto 0);
-    signal grp_initFit_fu_524_l1track3D_stubs_data_settings_chosenRofPhi_s_ce0 : STD_LOGIC;
-    signal grp_initFit_fu_524_l1track3D_stubs_data_settings_chosenRofPhi_s_address1 : STD_LOGIC_VECTOR (3 downto 0);
-    signal grp_initFit_fu_524_l1track3D_stubs_data_settings_chosenRofPhi_s_ce1 : STD_LOGIC;
-    signal grp_initFit_fu_524_l1track3D_stubs_data_settings_chosenRofZ_s_address0 : STD_LOGIC_VECTOR (3 downto 0);
-    signal grp_initFit_fu_524_l1track3D_stubs_data_settings_chosenRofZ_s_ce0 : STD_LOGIC;
-    signal grp_initFit_fu_524_l1track3D_stubs_data_settings_chosenRofZ_s_address1 : STD_LOGIC_VECTOR (3 downto 0);
-    signal grp_initFit_fu_524_l1track3D_stubs_data_settings_chosenRofZ_s_ce1 : STD_LOGIC;
-    signal grp_initFit_fu_524_l1track3D_stubs_data_settings_etaRegions_s_address0 : STD_LOGIC_VECTOR (7 downto 0);
-    signal grp_initFit_fu_524_l1track3D_stubs_data_settings_etaRegions_s_ce0 : STD_LOGIC;
-    signal grp_initFit_fu_524_l1track3D_stubs_data_settings_etaRegions_s_address1 : STD_LOGIC_VECTOR (7 downto 0);
-    signal grp_initFit_fu_524_l1track3D_stubs_data_settings_etaRegions_s_ce1 : STD_LOGIC;
-    signal grp_initFit_fu_524_l1track3D_stubs_data_settings_minNumMatchLayers_s_address0 : STD_LOGIC_VECTOR (3 downto 0);
-    signal grp_initFit_fu_524_l1track3D_stubs_data_settings_minNumMatchLayers_s_ce0 : STD_LOGIC;
-    signal grp_initFit_fu_524_l1track3D_stubs_data_settings_minNumMatchLayers_s_address1 : STD_LOGIC_VECTOR (3 downto 0);
-    signal grp_initFit_fu_524_l1track3D_stubs_data_settings_minNumMatchLayers_s_ce1 : STD_LOGIC;
-    signal grp_initFit_fu_524_l1track3D_stubs_data_settings_minPSLayers_s_address0 : STD_LOGIC_VECTOR (3 downto 0);
-    signal grp_initFit_fu_524_l1track3D_stubs_data_settings_minPSLayers_s_ce0 : STD_LOGIC;
-    signal grp_initFit_fu_524_l1track3D_stubs_data_settings_minPSLayers_s_address1 : STD_LOGIC_VECTOR (3 downto 0);
-    signal grp_initFit_fu_524_l1track3D_stubs_data_settings_minPSLayers_s_ce1 : STD_LOGIC;
-    signal grp_initFit_fu_524_l1track3D_stubs_data_r_s_address0 : STD_LOGIC_VECTOR (3 downto 0);
-    signal grp_initFit_fu_524_l1track3D_stubs_data_r_s_ce0 : STD_LOGIC;
-    signal grp_initFit_fu_524_l1track3D_stubs_data_r_s_address1 : STD_LOGIC_VECTOR (3 downto 0);
-    signal grp_initFit_fu_524_l1track3D_stubs_data_r_s_ce1 : STD_LOGIC;
-    signal grp_initFit_fu_524_l1track3D_stubs_data_phi_s_address0 : STD_LOGIC_VECTOR (3 downto 0);
-    signal grp_initFit_fu_524_l1track3D_stubs_data_phi_s_ce0 : STD_LOGIC;
-    signal grp_initFit_fu_524_l1track3D_stubs_data_phi_s_address1 : STD_LOGIC_VECTOR (3 downto 0);
-    signal grp_initFit_fu_524_l1track3D_stubs_data_phi_s_ce1 : STD_LOGIC;
-    signal grp_initFit_fu_524_l1track3D_stubs_data_z_s_address0 : STD_LOGIC_VECTOR (3 downto 0);
-    signal grp_initFit_fu_524_l1track3D_stubs_data_z_s_ce0 : STD_LOGIC;
-    signal grp_initFit_fu_524_l1track3D_stubs_data_z_s_address1 : STD_LOGIC_VECTOR (3 downto 0);
-    signal grp_initFit_fu_524_l1track3D_stubs_data_z_s_ce1 : STD_LOGIC;
-    signal grp_initFit_fu_524_l1track3D_stubs_data_layerId_s_address0 : STD_LOGIC_VECTOR (3 downto 0);
-    signal grp_initFit_fu_524_l1track3D_stubs_data_layerId_s_ce0 : STD_LOGIC;
-    signal grp_initFit_fu_524_l1track3D_stubs_data_layerId_s_address1 : STD_LOGIC_VECTOR (3 downto 0);
-    signal grp_initFit_fu_524_l1track3D_stubs_data_layerId_s_ce1 : STD_LOGIC;
-    signal grp_initFit_fu_524_l1track3D_stubs_data_psModule_s_address0 : STD_LOGIC_VECTOR (3 downto 0);
-    signal grp_initFit_fu_524_l1track3D_stubs_data_psModule_s_ce0 : STD_LOGIC;
-    signal grp_initFit_fu_524_l1track3D_stubs_data_psModule_s_address1 : STD_LOGIC_VECTOR (3 downto 0);
-    signal grp_initFit_fu_524_l1track3D_stubs_data_psModule_s_ce1 : STD_LOGIC;
-    signal grp_initFit_fu_524_l1track3D_stubs_data_barrel_s_address0 : STD_LOGIC_VECTOR (3 downto 0);
-    signal grp_initFit_fu_524_l1track3D_stubs_data_barrel_s_ce0 : STD_LOGIC;
-    signal grp_initFit_fu_524_l1track3D_stubs_data_barrel_s_address1 : STD_LOGIC_VECTOR (3 downto 0);
-    signal grp_initFit_fu_524_l1track3D_stubs_data_barrel_s_ce1 : STD_LOGIC;
-    signal grp_initFit_fu_524_ap_return_0 : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_initFit_fu_524_ap_return_1 : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_initFit_fu_524_ap_return_2 : STD_LOGIC_VECTOR (0 downto 0);
-    signal grp_initFit_fu_524_ap_return_3 : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_initFit_fu_524_ap_return_4 : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_initFit_fu_524_ap_return_5 : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_initFit_fu_524_ap_return_6 : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_initFit_fu_524_ap_return_7 : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_initFit_fu_524_ap_return_8 : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_initFit_fu_524_ap_return_9 : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_calcHelix_fu_640_ap_start : STD_LOGIC;
-    signal grp_calcHelix_fu_640_ap_idle : STD_LOGIC;
-    signal grp_calcHelix_fu_640_LinearRegression_stubMap_data_second_size_s_address0 : STD_LOGIC_VECTOR (4 downto 0);
-    signal grp_calcHelix_fu_640_LinearRegression_stubMap_data_second_size_s_ce0 : STD_LOGIC;
-    signal grp_calcHelix_fu_640_LinearRegression_stubMap_data_second_data_r_s_address0 : STD_LOGIC_VECTOR (8 downto 0);
-    signal grp_calcHelix_fu_640_LinearRegression_stubMap_data_second_data_r_s_ce0 : STD_LOGIC;
-    signal grp_calcHelix_fu_640_LinearRegression_stubMap_data_second_data_phi_s_address0 : STD_LOGIC_VECTOR (8 downto 0);
-    signal grp_calcHelix_fu_640_LinearRegression_stubMap_data_second_data_phi_s_ce0 : STD_LOGIC;
-    signal grp_calcHelix_fu_640_LinearRegression_stubMap_data_second_data_z_s_address0 : STD_LOGIC_VECTOR (8 downto 0);
-    signal grp_calcHelix_fu_640_LinearRegression_stubMap_data_second_data_z_s_ce0 : STD_LOGIC;
-    signal grp_calcHelix_fu_640_LinearRegression_stubMap_data_second_data_psModule_s_address0 : STD_LOGIC_VECTOR (8 downto 0);
-    signal grp_calcHelix_fu_640_LinearRegression_stubMap_data_second_data_psModule_s_ce0 : STD_LOGIC;
-    signal grp_calcHelix_fu_640_ap_return_0 : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_calcHelix_fu_640_ap_return_1 : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_calcHelix_fu_640_ap_return_2 : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_calcHelix_fu_640_ap_return_3 : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_calcResidual_fu_662_ap_start : STD_LOGIC;
-    signal grp_calcResidual_fu_662_ap_idle : STD_LOGIC;
-    signal grp_calcResidual_fu_662_LinearRegression_stubMap_data_first_address0 : STD_LOGIC_VECTOR (4 downto 0);
-    signal grp_calcResidual_fu_662_LinearRegression_stubMap_data_first_ce0 : STD_LOGIC;
-    signal grp_calcResidual_fu_662_LinearRegression_stubMap_data_second_size_s_address0 : STD_LOGIC_VECTOR (4 downto 0);
-    signal grp_calcResidual_fu_662_LinearRegression_stubMap_data_second_size_s_ce0 : STD_LOGIC;
-    signal grp_calcResidual_fu_662_LinearRegression_stubMap_data_second_data_r_s_address0 : STD_LOGIC_VECTOR (8 downto 0);
-    signal grp_calcResidual_fu_662_LinearRegression_stubMap_data_second_data_r_s_ce0 : STD_LOGIC;
-    signal grp_calcResidual_fu_662_LinearRegression_stubMap_data_second_data_phi_s_address0 : STD_LOGIC_VECTOR (8 downto 0);
-    signal grp_calcResidual_fu_662_LinearRegression_stubMap_data_second_data_phi_s_ce0 : STD_LOGIC;
-    signal grp_calcResidual_fu_662_LinearRegression_stubMap_data_second_data_z_s_address0 : STD_LOGIC_VECTOR (8 downto 0);
-    signal grp_calcResidual_fu_662_LinearRegression_stubMap_data_second_data_z_s_ce0 : STD_LOGIC;
-    signal grp_calcResidual_fu_662_LinearRegression_stubMap_data_second_data_psModule_s_address0 : STD_LOGIC_VECTOR (8 downto 0);
-    signal grp_calcResidual_fu_662_LinearRegression_stubMap_data_second_data_psModule_s_ce0 : STD_LOGIC;
-    signal grp_calcResidual_fu_662_LinearRegression_stubMap_data_second_data_barrel_s_address0 : STD_LOGIC_VECTOR (8 downto 0);
-    signal grp_calcResidual_fu_662_LinearRegression_stubMap_data_second_data_barrel_s_ce0 : STD_LOGIC;
-    signal grp_calcResidual_fu_662_LinearRegression_residuals_data_first_address0 : STD_LOGIC_VECTOR (4 downto 0);
-    signal grp_calcResidual_fu_662_LinearRegression_residuals_data_first_ce0 : STD_LOGIC;
-    signal grp_calcResidual_fu_662_LinearRegression_residuals_data_first_we0 : STD_LOGIC;
-    signal grp_calcResidual_fu_662_LinearRegression_residuals_data_first_d0 : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_calcResidual_fu_662_LinearRegression_residuals_data_second_size_s_address0 : STD_LOGIC_VECTOR (4 downto 0);
-    signal grp_calcResidual_fu_662_LinearRegression_residuals_data_second_size_s_ce0 : STD_LOGIC;
-    signal grp_calcResidual_fu_662_LinearRegression_residuals_data_second_size_s_we0 : STD_LOGIC;
-    signal grp_calcResidual_fu_662_LinearRegression_residuals_data_second_size_s_d0 : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_calcResidual_fu_662_LinearRegression_residuals_data_second_data_phi_address0 : STD_LOGIC_VECTOR (8 downto 0);
-    signal grp_calcResidual_fu_662_LinearRegression_residuals_data_second_data_phi_ce0 : STD_LOGIC;
-    signal grp_calcResidual_fu_662_LinearRegression_residuals_data_second_data_phi_we0 : STD_LOGIC;
-    signal grp_calcResidual_fu_662_LinearRegression_residuals_data_second_data_phi_d0 : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_calcResidual_fu_662_LinearRegression_residuals_data_second_data_phi_address1 : STD_LOGIC_VECTOR (8 downto 0);
-    signal grp_calcResidual_fu_662_LinearRegression_residuals_data_second_data_phi_ce1 : STD_LOGIC;
-    signal grp_calcResidual_fu_662_LinearRegression_residuals_data_second_data_phi_we1 : STD_LOGIC;
-    signal grp_calcResidual_fu_662_LinearRegression_residuals_data_second_data_phi_d1 : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_calcResidual_fu_662_LinearRegression_residuals_data_second_data_z_address0 : STD_LOGIC_VECTOR (8 downto 0);
-    signal grp_calcResidual_fu_662_LinearRegression_residuals_data_second_data_z_ce0 : STD_LOGIC;
-    signal grp_calcResidual_fu_662_LinearRegression_residuals_data_second_data_z_we0 : STD_LOGIC;
-    signal grp_calcResidual_fu_662_LinearRegression_residuals_data_second_data_z_d0 : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_calcResidual_fu_662_LinearRegression_residuals_data_second_data_z_address1 : STD_LOGIC_VECTOR (8 downto 0);
-    signal grp_calcResidual_fu_662_LinearRegression_residuals_data_second_data_z_ce1 : STD_LOGIC;
-    signal grp_calcResidual_fu_662_LinearRegression_residuals_data_second_data_z_we1 : STD_LOGIC;
-    signal grp_calcResidual_fu_662_LinearRegression_residuals_data_second_data_z_d1 : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_calcResidual_fu_662_LinearRegression_residuals_data_second_data_layerId_address0 : STD_LOGIC_VECTOR (8 downto 0);
-    signal grp_calcResidual_fu_662_LinearRegression_residuals_data_second_data_layerId_ce0 : STD_LOGIC;
-    signal grp_calcResidual_fu_662_LinearRegression_residuals_data_second_data_layerId_we0 : STD_LOGIC;
-    signal grp_calcResidual_fu_662_LinearRegression_residuals_data_second_data_layerId_d0 : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_calcResidual_fu_662_LinearRegression_residuals_data_second_data_layerId_address1 : STD_LOGIC_VECTOR (8 downto 0);
-    signal grp_calcResidual_fu_662_LinearRegression_residuals_data_second_data_layerId_ce1 : STD_LOGIC;
-    signal grp_calcResidual_fu_662_LinearRegression_residuals_data_second_data_layerId_we1 : STD_LOGIC;
-    signal grp_calcResidual_fu_662_LinearRegression_residuals_data_second_data_layerId_d1 : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_calcResidual_fu_662_LinearRegression_residuals_data_second_data_stubId_address0 : STD_LOGIC_VECTOR (8 downto 0);
-    signal grp_calcResidual_fu_662_LinearRegression_residuals_data_second_data_stubId_ce0 : STD_LOGIC;
-    signal grp_calcResidual_fu_662_LinearRegression_residuals_data_second_data_stubId_we0 : STD_LOGIC;
-    signal grp_calcResidual_fu_662_LinearRegression_residuals_data_second_data_stubId_d0 : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_calcResidual_fu_662_LinearRegression_residuals_data_second_data_stubId_address1 : STD_LOGIC_VECTOR (8 downto 0);
-    signal grp_calcResidual_fu_662_LinearRegression_residuals_data_second_data_stubId_ce1 : STD_LOGIC;
-    signal grp_calcResidual_fu_662_LinearRegression_residuals_data_second_data_stubId_we1 : STD_LOGIC;
-    signal grp_calcResidual_fu_662_LinearRegression_residuals_data_second_data_stubId_d1 : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_calcResidual_fu_662_LinearRegression_residuals_data_second_data_ps_address0 : STD_LOGIC_VECTOR (8 downto 0);
-    signal grp_calcResidual_fu_662_LinearRegression_residuals_data_second_data_ps_ce0 : STD_LOGIC;
-    signal grp_calcResidual_fu_662_LinearRegression_residuals_data_second_data_ps_we0 : STD_LOGIC;
-    signal grp_calcResidual_fu_662_LinearRegression_residuals_data_second_data_ps_d0 : STD_LOGIC_VECTOR (0 downto 0);
-    signal grp_calcResidual_fu_662_LinearRegression_residuals_data_second_data_ps_address1 : STD_LOGIC_VECTOR (8 downto 0);
-    signal grp_calcResidual_fu_662_LinearRegression_residuals_data_second_data_ps_ce1 : STD_LOGIC;
-    signal grp_calcResidual_fu_662_LinearRegression_residuals_data_second_data_ps_we1 : STD_LOGIC;
-    signal grp_calcResidual_fu_662_LinearRegression_residuals_data_second_data_ps_d1 : STD_LOGIC_VECTOR (0 downto 0);
-    signal LinearRegression_stu_403_reg_314 : STD_LOGIC_VECTOR (31 downto 0);
-    signal nothingToKill_fu_1057_p1 : STD_LOGIC_VECTOR (0 downto 0);
-    signal newret1_fu_781_p1 : STD_LOGIC_VECTOR (0 downto 0);
-    signal LinearRegression_stu_reg_324 : STD_LOGIC_VECTOR (31 downto 0);
-    signal LinearRegression_lay_reg_334 : STD_LOGIC_VECTOR (31 downto 0);
-    signal LinearRegression_nIt_reg_344 : STD_LOGIC_VECTOR (31 downto 0);
-    signal LinearRegression_stu_5_reg_355 : STD_LOGIC_VECTOR (31 downto 0);
-    signal LinearRegression_LRP_4_reg_365 : STD_LOGIC_VECTOR (31 downto 0);
-    signal LinearRegression_LRP_5_reg_375 : STD_LOGIC_VECTOR (31 downto 0);
-    signal LinearRegression_LRP_6_reg_385 : STD_LOGIC_VECTOR (31 downto 0);
-    signal LinearRegression_LRP_7_reg_395 : STD_LOGIC_VECTOR (31 downto 0);
-    signal LinearRegression_stu_6_reg_405 : STD_LOGIC_VECTOR (31 downto 0);
-    signal LinearRegression_lay_1_reg_415 : STD_LOGIC_VECTOR (31 downto 0);
-    signal LinearRegression_nIt_2_reg_425 : STD_LOGIC_VECTOR (31 downto 0);
-    signal LinearRegression_val_1_reg_436 : STD_LOGIC_VECTOR (0 downto 0);
-    signal grp_killLargestResidual_fu_447_ap_start_reg : STD_LOGIC := '0';
+    signal grp_killLargestResidual_fu_445_ap_start : STD_LOGIC;
+    signal grp_killLargestResidual_fu_445_ap_idle : STD_LOGIC;
+    signal grp_killLargestResidual_fu_445_LinearRegression_stubs_data_settings_chosenRofPhi_s_address0 : STD_LOGIC_VECTOR (3 downto 0);
+    signal grp_killLargestResidual_fu_445_LinearRegression_stubs_data_settings_chosenRofPhi_s_ce0 : STD_LOGIC;
+    signal grp_killLargestResidual_fu_445_LinearRegression_stubs_data_settings_chosenRofPhi_s_we0 : STD_LOGIC;
+    signal grp_killLargestResidual_fu_445_LinearRegression_stubs_data_settings_chosenRofPhi_s_d0 : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_killLargestResidual_fu_445_LinearRegression_stubs_data_settings_chosenRofZ_s_address0 : STD_LOGIC_VECTOR (3 downto 0);
+    signal grp_killLargestResidual_fu_445_LinearRegression_stubs_data_settings_chosenRofZ_s_ce0 : STD_LOGIC;
+    signal grp_killLargestResidual_fu_445_LinearRegression_stubs_data_settings_chosenRofZ_s_we0 : STD_LOGIC;
+    signal grp_killLargestResidual_fu_445_LinearRegression_stubs_data_settings_chosenRofZ_s_d0 : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_killLargestResidual_fu_445_LinearRegression_stubs_data_settings_sinh_etaRegions_s_address0 : STD_LOGIC_VECTOR (7 downto 0);
+    signal grp_killLargestResidual_fu_445_LinearRegression_stubs_data_settings_sinh_etaRegions_s_ce0 : STD_LOGIC;
+    signal grp_killLargestResidual_fu_445_LinearRegression_stubs_data_settings_sinh_etaRegions_s_we0 : STD_LOGIC;
+    signal grp_killLargestResidual_fu_445_LinearRegression_stubs_data_settings_sinh_etaRegions_s_d0 : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_killLargestResidual_fu_445_LinearRegression_stubs_data_settings_sinh_etaRegions_s_address1 : STD_LOGIC_VECTOR (7 downto 0);
+    signal grp_killLargestResidual_fu_445_LinearRegression_stubs_data_settings_sinh_etaRegions_s_ce1 : STD_LOGIC;
+    signal grp_killLargestResidual_fu_445_LinearRegression_stubs_data_settings_sinh_etaRegions_s_we1 : STD_LOGIC;
+    signal grp_killLargestResidual_fu_445_LinearRegression_stubs_data_settings_sinh_etaRegions_s_d1 : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_killLargestResidual_fu_445_LinearRegression_stubs_data_settings_minNumMatchLayers_s_address0 : STD_LOGIC_VECTOR (3 downto 0);
+    signal grp_killLargestResidual_fu_445_LinearRegression_stubs_data_settings_minNumMatchLayers_s_ce0 : STD_LOGIC;
+    signal grp_killLargestResidual_fu_445_LinearRegression_stubs_data_settings_minNumMatchLayers_s_we0 : STD_LOGIC;
+    signal grp_killLargestResidual_fu_445_LinearRegression_stubs_data_settings_minNumMatchLayers_s_d0 : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_killLargestResidual_fu_445_LinearRegression_stubs_data_settings_minPSLayers_s_address0 : STD_LOGIC_VECTOR (3 downto 0);
+    signal grp_killLargestResidual_fu_445_LinearRegression_stubs_data_settings_minPSLayers_s_ce0 : STD_LOGIC;
+    signal grp_killLargestResidual_fu_445_LinearRegression_stubs_data_settings_minPSLayers_s_we0 : STD_LOGIC;
+    signal grp_killLargestResidual_fu_445_LinearRegression_stubs_data_settings_minPSLayers_s_d0 : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_killLargestResidual_fu_445_LinearRegression_stubs_data_r_s_address0 : STD_LOGIC_VECTOR (3 downto 0);
+    signal grp_killLargestResidual_fu_445_LinearRegression_stubs_data_r_s_ce0 : STD_LOGIC;
+    signal grp_killLargestResidual_fu_445_LinearRegression_stubs_data_r_s_we0 : STD_LOGIC;
+    signal grp_killLargestResidual_fu_445_LinearRegression_stubs_data_r_s_d0 : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_killLargestResidual_fu_445_LinearRegression_stubs_data_phi_s_address0 : STD_LOGIC_VECTOR (3 downto 0);
+    signal grp_killLargestResidual_fu_445_LinearRegression_stubs_data_phi_s_ce0 : STD_LOGIC;
+    signal grp_killLargestResidual_fu_445_LinearRegression_stubs_data_phi_s_we0 : STD_LOGIC;
+    signal grp_killLargestResidual_fu_445_LinearRegression_stubs_data_phi_s_d0 : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_killLargestResidual_fu_445_LinearRegression_stubs_data_z_s_address0 : STD_LOGIC_VECTOR (3 downto 0);
+    signal grp_killLargestResidual_fu_445_LinearRegression_stubs_data_z_s_ce0 : STD_LOGIC;
+    signal grp_killLargestResidual_fu_445_LinearRegression_stubs_data_z_s_we0 : STD_LOGIC;
+    signal grp_killLargestResidual_fu_445_LinearRegression_stubs_data_z_s_d0 : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_killLargestResidual_fu_445_LinearRegression_stubs_data_layerId_s_address0 : STD_LOGIC_VECTOR (3 downto 0);
+    signal grp_killLargestResidual_fu_445_LinearRegression_stubs_data_layerId_s_ce0 : STD_LOGIC;
+    signal grp_killLargestResidual_fu_445_LinearRegression_stubs_data_layerId_s_we0 : STD_LOGIC;
+    signal grp_killLargestResidual_fu_445_LinearRegression_stubs_data_layerId_s_d0 : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_killLargestResidual_fu_445_LinearRegression_stubs_data_psModule_s_address0 : STD_LOGIC_VECTOR (3 downto 0);
+    signal grp_killLargestResidual_fu_445_LinearRegression_stubs_data_psModule_s_ce0 : STD_LOGIC;
+    signal grp_killLargestResidual_fu_445_LinearRegression_stubs_data_psModule_s_we0 : STD_LOGIC;
+    signal grp_killLargestResidual_fu_445_LinearRegression_stubs_data_psModule_s_d0 : STD_LOGIC_VECTOR (0 downto 0);
+    signal grp_killLargestResidual_fu_445_LinearRegression_stubs_data_barrel_s_address0 : STD_LOGIC_VECTOR (3 downto 0);
+    signal grp_killLargestResidual_fu_445_LinearRegression_stubs_data_barrel_s_ce0 : STD_LOGIC;
+    signal grp_killLargestResidual_fu_445_LinearRegression_stubs_data_barrel_s_we0 : STD_LOGIC;
+    signal grp_killLargestResidual_fu_445_LinearRegression_stubs_data_barrel_s_d0 : STD_LOGIC_VECTOR (0 downto 0);
+    signal grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_first_address0 : STD_LOGIC_VECTOR (4 downto 0);
+    signal grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_first_ce0 : STD_LOGIC;
+    signal grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_first_we0 : STD_LOGIC;
+    signal grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_first_d0 : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_size_s_address0 : STD_LOGIC_VECTOR (4 downto 0);
+    signal grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_size_s_ce0 : STD_LOGIC;
+    signal grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_size_s_we0 : STD_LOGIC;
+    signal grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_size_s_d0 : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_address0 : STD_LOGIC_VECTOR (8 downto 0);
+    signal grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_ce0 : STD_LOGIC;
+    signal grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_we0 : STD_LOGIC;
+    signal grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_d0 : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_address1 : STD_LOGIC_VECTOR (8 downto 0);
+    signal grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_ce1 : STD_LOGIC;
+    signal grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_we1 : STD_LOGIC;
+    signal grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_d1 : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_address0 : STD_LOGIC_VECTOR (8 downto 0);
+    signal grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_ce0 : STD_LOGIC;
+    signal grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_we0 : STD_LOGIC;
+    signal grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_d0 : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_address1 : STD_LOGIC_VECTOR (8 downto 0);
+    signal grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_ce1 : STD_LOGIC;
+    signal grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_we1 : STD_LOGIC;
+    signal grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_d1 : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_address0 : STD_LOGIC_VECTOR (12 downto 0);
+    signal grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_ce0 : STD_LOGIC;
+    signal grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_we0 : STD_LOGIC;
+    signal grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_d0 : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_address1 : STD_LOGIC_VECTOR (12 downto 0);
+    signal grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_ce1 : STD_LOGIC;
+    signal grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_we1 : STD_LOGIC;
+    signal grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_d1 : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_address0 : STD_LOGIC_VECTOR (8 downto 0);
+    signal grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_ce0 : STD_LOGIC;
+    signal grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_we0 : STD_LOGIC;
+    signal grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_d0 : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_address1 : STD_LOGIC_VECTOR (8 downto 0);
+    signal grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_ce1 : STD_LOGIC;
+    signal grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_we1 : STD_LOGIC;
+    signal grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_d1 : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_address0 : STD_LOGIC_VECTOR (8 downto 0);
+    signal grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_ce0 : STD_LOGIC;
+    signal grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_we0 : STD_LOGIC;
+    signal grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_d0 : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_address1 : STD_LOGIC_VECTOR (8 downto 0);
+    signal grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_ce1 : STD_LOGIC;
+    signal grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_we1 : STD_LOGIC;
+    signal grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_d1 : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_r_s_address0 : STD_LOGIC_VECTOR (8 downto 0);
+    signal grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_r_s_ce0 : STD_LOGIC;
+    signal grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_r_s_we0 : STD_LOGIC;
+    signal grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_r_s_d0 : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_r_s_address1 : STD_LOGIC_VECTOR (8 downto 0);
+    signal grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_r_s_ce1 : STD_LOGIC;
+    signal grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_r_s_we1 : STD_LOGIC;
+    signal grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_r_s_d1 : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_phi_s_address0 : STD_LOGIC_VECTOR (8 downto 0);
+    signal grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_phi_s_ce0 : STD_LOGIC;
+    signal grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_phi_s_we0 : STD_LOGIC;
+    signal grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_phi_s_d0 : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_phi_s_address1 : STD_LOGIC_VECTOR (8 downto 0);
+    signal grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_phi_s_ce1 : STD_LOGIC;
+    signal grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_phi_s_we1 : STD_LOGIC;
+    signal grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_phi_s_d1 : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_z_s_address0 : STD_LOGIC_VECTOR (8 downto 0);
+    signal grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_z_s_ce0 : STD_LOGIC;
+    signal grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_z_s_we0 : STD_LOGIC;
+    signal grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_z_s_d0 : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_z_s_address1 : STD_LOGIC_VECTOR (8 downto 0);
+    signal grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_z_s_ce1 : STD_LOGIC;
+    signal grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_z_s_we1 : STD_LOGIC;
+    signal grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_z_s_d1 : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_layerId_s_address0 : STD_LOGIC_VECTOR (8 downto 0);
+    signal grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_layerId_s_ce0 : STD_LOGIC;
+    signal grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_layerId_s_we0 : STD_LOGIC;
+    signal grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_layerId_s_d0 : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_layerId_s_address1 : STD_LOGIC_VECTOR (8 downto 0);
+    signal grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_layerId_s_ce1 : STD_LOGIC;
+    signal grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_layerId_s_we1 : STD_LOGIC;
+    signal grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_layerId_s_d1 : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_psModule_s_address0 : STD_LOGIC_VECTOR (8 downto 0);
+    signal grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_psModule_s_ce0 : STD_LOGIC;
+    signal grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_psModule_s_we0 : STD_LOGIC;
+    signal grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_psModule_s_d0 : STD_LOGIC_VECTOR (0 downto 0);
+    signal grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_psModule_s_address1 : STD_LOGIC_VECTOR (8 downto 0);
+    signal grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_psModule_s_ce1 : STD_LOGIC;
+    signal grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_psModule_s_we1 : STD_LOGIC;
+    signal grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_psModule_s_d1 : STD_LOGIC_VECTOR (0 downto 0);
+    signal grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_barrel_s_address0 : STD_LOGIC_VECTOR (8 downto 0);
+    signal grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_barrel_s_ce0 : STD_LOGIC;
+    signal grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_barrel_s_we0 : STD_LOGIC;
+    signal grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_barrel_s_d0 : STD_LOGIC_VECTOR (0 downto 0);
+    signal grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_barrel_s_address1 : STD_LOGIC_VECTOR (8 downto 0);
+    signal grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_barrel_s_ce1 : STD_LOGIC;
+    signal grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_barrel_s_we1 : STD_LOGIC;
+    signal grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_barrel_s_d1 : STD_LOGIC_VECTOR (0 downto 0);
+    signal grp_killLargestResidual_fu_445_LinearRegression_layerPopulation_data_first_address0 : STD_LOGIC_VECTOR (4 downto 0);
+    signal grp_killLargestResidual_fu_445_LinearRegression_layerPopulation_data_first_ce0 : STD_LOGIC;
+    signal grp_killLargestResidual_fu_445_LinearRegression_layerPopulation_data_first_we0 : STD_LOGIC;
+    signal grp_killLargestResidual_fu_445_LinearRegression_layerPopulation_data_first_d0 : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_killLargestResidual_fu_445_LinearRegression_layerPopulation_data_second_address0 : STD_LOGIC_VECTOR (4 downto 0);
+    signal grp_killLargestResidual_fu_445_LinearRegression_layerPopulation_data_second_ce0 : STD_LOGIC;
+    signal grp_killLargestResidual_fu_445_LinearRegression_layerPopulation_data_second_we0 : STD_LOGIC;
+    signal grp_killLargestResidual_fu_445_LinearRegression_layerPopulation_data_second_d0 : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_killLargestResidual_fu_445_LinearRegression_residuals_data_first_address0 : STD_LOGIC_VECTOR (4 downto 0);
+    signal grp_killLargestResidual_fu_445_LinearRegression_residuals_data_first_ce0 : STD_LOGIC;
+    signal grp_killLargestResidual_fu_445_LinearRegression_residuals_data_second_size_s_address0 : STD_LOGIC_VECTOR (4 downto 0);
+    signal grp_killLargestResidual_fu_445_LinearRegression_residuals_data_second_size_s_ce0 : STD_LOGIC;
+    signal grp_killLargestResidual_fu_445_LinearRegression_residuals_data_second_data_phi_address0 : STD_LOGIC_VECTOR (8 downto 0);
+    signal grp_killLargestResidual_fu_445_LinearRegression_residuals_data_second_data_phi_ce0 : STD_LOGIC;
+    signal grp_killLargestResidual_fu_445_LinearRegression_residuals_data_second_data_z_address0 : STD_LOGIC_VECTOR (8 downto 0);
+    signal grp_killLargestResidual_fu_445_LinearRegression_residuals_data_second_data_z_ce0 : STD_LOGIC;
+    signal grp_killLargestResidual_fu_445_LinearRegression_residuals_data_second_data_layerId_address0 : STD_LOGIC_VECTOR (8 downto 0);
+    signal grp_killLargestResidual_fu_445_LinearRegression_residuals_data_second_data_layerId_ce0 : STD_LOGIC;
+    signal grp_killLargestResidual_fu_445_LinearRegression_residuals_data_second_data_stubId_address0 : STD_LOGIC_VECTOR (8 downto 0);
+    signal grp_killLargestResidual_fu_445_LinearRegression_residuals_data_second_data_stubId_ce0 : STD_LOGIC;
+    signal grp_killLargestResidual_fu_445_LinearRegression_residuals_data_second_data_ps_address0 : STD_LOGIC_VECTOR (8 downto 0);
+    signal grp_killLargestResidual_fu_445_LinearRegression_residuals_data_second_data_ps_ce0 : STD_LOGIC;
+    signal grp_killLargestResidual_fu_445_ap_return_0 : STD_LOGIC_VECTOR (0 downto 0);
+    signal grp_killLargestResidual_fu_445_ap_return_1 : STD_LOGIC_VECTOR (0 downto 0);
+    signal grp_killLargestResidual_fu_445_ap_return_2 : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_killLargestResidual_fu_445_ap_return_3 : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_killLargestResidual_fu_445_ap_return_4 : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_killLargestResidual_fu_445_ap_return_5 : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_killLargestResidual_fu_445_ap_return_6 : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_killLargestResidual_fu_445_ap_return_7 : STD_LOGIC_VECTOR (0 downto 0);
+    signal grp_killLargestResidual_fu_445_ap_return_8 : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_killLargestResidual_fu_445_ap_return_9 : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_calcHelix_fu_522_ap_start : STD_LOGIC;
+    signal grp_calcHelix_fu_522_ap_idle : STD_LOGIC;
+    signal grp_calcHelix_fu_522_LinearRegression_stubMap_data_second_size_s_address0 : STD_LOGIC_VECTOR (4 downto 0);
+    signal grp_calcHelix_fu_522_LinearRegression_stubMap_data_second_size_s_ce0 : STD_LOGIC;
+    signal grp_calcHelix_fu_522_LinearRegression_stubMap_data_second_data_r_s_address0 : STD_LOGIC_VECTOR (8 downto 0);
+    signal grp_calcHelix_fu_522_LinearRegression_stubMap_data_second_data_r_s_ce0 : STD_LOGIC;
+    signal grp_calcHelix_fu_522_LinearRegression_stubMap_data_second_data_phi_s_address0 : STD_LOGIC_VECTOR (8 downto 0);
+    signal grp_calcHelix_fu_522_LinearRegression_stubMap_data_second_data_phi_s_ce0 : STD_LOGIC;
+    signal grp_calcHelix_fu_522_LinearRegression_stubMap_data_second_data_z_s_address0 : STD_LOGIC_VECTOR (8 downto 0);
+    signal grp_calcHelix_fu_522_LinearRegression_stubMap_data_second_data_z_s_ce0 : STD_LOGIC;
+    signal grp_calcHelix_fu_522_LinearRegression_stubMap_data_second_data_psModule_s_address0 : STD_LOGIC_VECTOR (8 downto 0);
+    signal grp_calcHelix_fu_522_LinearRegression_stubMap_data_second_data_psModule_s_ce0 : STD_LOGIC;
+    signal grp_calcHelix_fu_522_ap_return_0 : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_calcHelix_fu_522_ap_return_1 : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_calcHelix_fu_522_ap_return_2 : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_calcHelix_fu_522_ap_return_3 : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_initFit_fu_544_ap_start : STD_LOGIC;
+    signal grp_initFit_fu_544_ap_idle : STD_LOGIC;
+    signal grp_initFit_fu_544_LinearRegression_settings_sinh_etaRegions_s_address0 : STD_LOGIC_VECTOR (4 downto 0);
+    signal grp_initFit_fu_544_LinearRegression_settings_sinh_etaRegions_s_ce0 : STD_LOGIC;
+    signal grp_initFit_fu_544_LinearRegression_settings_sinh_etaRegions_s_address1 : STD_LOGIC_VECTOR (4 downto 0);
+    signal grp_initFit_fu_544_LinearRegression_settings_sinh_etaRegions_s_ce1 : STD_LOGIC;
+    signal grp_initFit_fu_544_LinearRegression_stubs_data_settings_chosenRofPhi_s_address0 : STD_LOGIC_VECTOR (3 downto 0);
+    signal grp_initFit_fu_544_LinearRegression_stubs_data_settings_chosenRofPhi_s_ce0 : STD_LOGIC;
+    signal grp_initFit_fu_544_LinearRegression_stubs_data_settings_chosenRofPhi_s_we0 : STD_LOGIC;
+    signal grp_initFit_fu_544_LinearRegression_stubs_data_settings_chosenRofPhi_s_d0 : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_initFit_fu_544_LinearRegression_stubs_data_settings_chosenRofPhi_s_address1 : STD_LOGIC_VECTOR (3 downto 0);
+    signal grp_initFit_fu_544_LinearRegression_stubs_data_settings_chosenRofPhi_s_ce1 : STD_LOGIC;
+    signal grp_initFit_fu_544_LinearRegression_stubs_data_settings_chosenRofPhi_s_we1 : STD_LOGIC;
+    signal grp_initFit_fu_544_LinearRegression_stubs_data_settings_chosenRofPhi_s_d1 : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_initFit_fu_544_LinearRegression_stubs_data_settings_chosenRofZ_s_address0 : STD_LOGIC_VECTOR (3 downto 0);
+    signal grp_initFit_fu_544_LinearRegression_stubs_data_settings_chosenRofZ_s_ce0 : STD_LOGIC;
+    signal grp_initFit_fu_544_LinearRegression_stubs_data_settings_chosenRofZ_s_we0 : STD_LOGIC;
+    signal grp_initFit_fu_544_LinearRegression_stubs_data_settings_chosenRofZ_s_d0 : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_initFit_fu_544_LinearRegression_stubs_data_settings_chosenRofZ_s_address1 : STD_LOGIC_VECTOR (3 downto 0);
+    signal grp_initFit_fu_544_LinearRegression_stubs_data_settings_chosenRofZ_s_ce1 : STD_LOGIC;
+    signal grp_initFit_fu_544_LinearRegression_stubs_data_settings_chosenRofZ_s_we1 : STD_LOGIC;
+    signal grp_initFit_fu_544_LinearRegression_stubs_data_settings_chosenRofZ_s_d1 : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_initFit_fu_544_LinearRegression_stubs_data_settings_sinh_etaRegions_s_address0 : STD_LOGIC_VECTOR (7 downto 0);
+    signal grp_initFit_fu_544_LinearRegression_stubs_data_settings_sinh_etaRegions_s_ce0 : STD_LOGIC;
+    signal grp_initFit_fu_544_LinearRegression_stubs_data_settings_sinh_etaRegions_s_we0 : STD_LOGIC;
+    signal grp_initFit_fu_544_LinearRegression_stubs_data_settings_sinh_etaRegions_s_d0 : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_initFit_fu_544_LinearRegression_stubs_data_settings_sinh_etaRegions_s_address1 : STD_LOGIC_VECTOR (7 downto 0);
+    signal grp_initFit_fu_544_LinearRegression_stubs_data_settings_sinh_etaRegions_s_ce1 : STD_LOGIC;
+    signal grp_initFit_fu_544_LinearRegression_stubs_data_settings_sinh_etaRegions_s_we1 : STD_LOGIC;
+    signal grp_initFit_fu_544_LinearRegression_stubs_data_settings_sinh_etaRegions_s_d1 : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_initFit_fu_544_LinearRegression_stubs_data_settings_minNumMatchLayers_s_address0 : STD_LOGIC_VECTOR (3 downto 0);
+    signal grp_initFit_fu_544_LinearRegression_stubs_data_settings_minNumMatchLayers_s_ce0 : STD_LOGIC;
+    signal grp_initFit_fu_544_LinearRegression_stubs_data_settings_minNumMatchLayers_s_we0 : STD_LOGIC;
+    signal grp_initFit_fu_544_LinearRegression_stubs_data_settings_minNumMatchLayers_s_d0 : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_initFit_fu_544_LinearRegression_stubs_data_settings_minNumMatchLayers_s_address1 : STD_LOGIC_VECTOR (3 downto 0);
+    signal grp_initFit_fu_544_LinearRegression_stubs_data_settings_minNumMatchLayers_s_ce1 : STD_LOGIC;
+    signal grp_initFit_fu_544_LinearRegression_stubs_data_settings_minNumMatchLayers_s_we1 : STD_LOGIC;
+    signal grp_initFit_fu_544_LinearRegression_stubs_data_settings_minNumMatchLayers_s_d1 : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_initFit_fu_544_LinearRegression_stubs_data_settings_minPSLayers_s_address0 : STD_LOGIC_VECTOR (3 downto 0);
+    signal grp_initFit_fu_544_LinearRegression_stubs_data_settings_minPSLayers_s_ce0 : STD_LOGIC;
+    signal grp_initFit_fu_544_LinearRegression_stubs_data_settings_minPSLayers_s_we0 : STD_LOGIC;
+    signal grp_initFit_fu_544_LinearRegression_stubs_data_settings_minPSLayers_s_d0 : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_initFit_fu_544_LinearRegression_stubs_data_settings_minPSLayers_s_address1 : STD_LOGIC_VECTOR (3 downto 0);
+    signal grp_initFit_fu_544_LinearRegression_stubs_data_settings_minPSLayers_s_ce1 : STD_LOGIC;
+    signal grp_initFit_fu_544_LinearRegression_stubs_data_settings_minPSLayers_s_we1 : STD_LOGIC;
+    signal grp_initFit_fu_544_LinearRegression_stubs_data_settings_minPSLayers_s_d1 : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_initFit_fu_544_LinearRegression_stubs_data_r_s_address0 : STD_LOGIC_VECTOR (3 downto 0);
+    signal grp_initFit_fu_544_LinearRegression_stubs_data_r_s_ce0 : STD_LOGIC;
+    signal grp_initFit_fu_544_LinearRegression_stubs_data_r_s_we0 : STD_LOGIC;
+    signal grp_initFit_fu_544_LinearRegression_stubs_data_r_s_d0 : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_initFit_fu_544_LinearRegression_stubs_data_r_s_address1 : STD_LOGIC_VECTOR (3 downto 0);
+    signal grp_initFit_fu_544_LinearRegression_stubs_data_r_s_ce1 : STD_LOGIC;
+    signal grp_initFit_fu_544_LinearRegression_stubs_data_r_s_we1 : STD_LOGIC;
+    signal grp_initFit_fu_544_LinearRegression_stubs_data_r_s_d1 : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_initFit_fu_544_LinearRegression_stubs_data_phi_s_address0 : STD_LOGIC_VECTOR (3 downto 0);
+    signal grp_initFit_fu_544_LinearRegression_stubs_data_phi_s_ce0 : STD_LOGIC;
+    signal grp_initFit_fu_544_LinearRegression_stubs_data_phi_s_we0 : STD_LOGIC;
+    signal grp_initFit_fu_544_LinearRegression_stubs_data_phi_s_d0 : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_initFit_fu_544_LinearRegression_stubs_data_phi_s_address1 : STD_LOGIC_VECTOR (3 downto 0);
+    signal grp_initFit_fu_544_LinearRegression_stubs_data_phi_s_ce1 : STD_LOGIC;
+    signal grp_initFit_fu_544_LinearRegression_stubs_data_phi_s_we1 : STD_LOGIC;
+    signal grp_initFit_fu_544_LinearRegression_stubs_data_phi_s_d1 : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_initFit_fu_544_LinearRegression_stubs_data_z_s_address0 : STD_LOGIC_VECTOR (3 downto 0);
+    signal grp_initFit_fu_544_LinearRegression_stubs_data_z_s_ce0 : STD_LOGIC;
+    signal grp_initFit_fu_544_LinearRegression_stubs_data_z_s_we0 : STD_LOGIC;
+    signal grp_initFit_fu_544_LinearRegression_stubs_data_z_s_d0 : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_initFit_fu_544_LinearRegression_stubs_data_z_s_address1 : STD_LOGIC_VECTOR (3 downto 0);
+    signal grp_initFit_fu_544_LinearRegression_stubs_data_z_s_ce1 : STD_LOGIC;
+    signal grp_initFit_fu_544_LinearRegression_stubs_data_z_s_we1 : STD_LOGIC;
+    signal grp_initFit_fu_544_LinearRegression_stubs_data_z_s_d1 : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_initFit_fu_544_LinearRegression_stubs_data_layerId_s_address0 : STD_LOGIC_VECTOR (3 downto 0);
+    signal grp_initFit_fu_544_LinearRegression_stubs_data_layerId_s_ce0 : STD_LOGIC;
+    signal grp_initFit_fu_544_LinearRegression_stubs_data_layerId_s_we0 : STD_LOGIC;
+    signal grp_initFit_fu_544_LinearRegression_stubs_data_layerId_s_d0 : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_initFit_fu_544_LinearRegression_stubs_data_layerId_s_address1 : STD_LOGIC_VECTOR (3 downto 0);
+    signal grp_initFit_fu_544_LinearRegression_stubs_data_layerId_s_ce1 : STD_LOGIC;
+    signal grp_initFit_fu_544_LinearRegression_stubs_data_layerId_s_we1 : STD_LOGIC;
+    signal grp_initFit_fu_544_LinearRegression_stubs_data_layerId_s_d1 : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_initFit_fu_544_LinearRegression_stubs_data_psModule_s_address0 : STD_LOGIC_VECTOR (3 downto 0);
+    signal grp_initFit_fu_544_LinearRegression_stubs_data_psModule_s_ce0 : STD_LOGIC;
+    signal grp_initFit_fu_544_LinearRegression_stubs_data_psModule_s_we0 : STD_LOGIC;
+    signal grp_initFit_fu_544_LinearRegression_stubs_data_psModule_s_d0 : STD_LOGIC_VECTOR (0 downto 0);
+    signal grp_initFit_fu_544_LinearRegression_stubs_data_psModule_s_address1 : STD_LOGIC_VECTOR (3 downto 0);
+    signal grp_initFit_fu_544_LinearRegression_stubs_data_psModule_s_ce1 : STD_LOGIC;
+    signal grp_initFit_fu_544_LinearRegression_stubs_data_psModule_s_we1 : STD_LOGIC;
+    signal grp_initFit_fu_544_LinearRegression_stubs_data_psModule_s_d1 : STD_LOGIC_VECTOR (0 downto 0);
+    signal grp_initFit_fu_544_LinearRegression_stubs_data_barrel_s_address0 : STD_LOGIC_VECTOR (3 downto 0);
+    signal grp_initFit_fu_544_LinearRegression_stubs_data_barrel_s_ce0 : STD_LOGIC;
+    signal grp_initFit_fu_544_LinearRegression_stubs_data_barrel_s_we0 : STD_LOGIC;
+    signal grp_initFit_fu_544_LinearRegression_stubs_data_barrel_s_d0 : STD_LOGIC_VECTOR (0 downto 0);
+    signal grp_initFit_fu_544_LinearRegression_stubs_data_barrel_s_address1 : STD_LOGIC_VECTOR (3 downto 0);
+    signal grp_initFit_fu_544_LinearRegression_stubs_data_barrel_s_ce1 : STD_LOGIC;
+    signal grp_initFit_fu_544_LinearRegression_stubs_data_barrel_s_we1 : STD_LOGIC;
+    signal grp_initFit_fu_544_LinearRegression_stubs_data_barrel_s_d1 : STD_LOGIC_VECTOR (0 downto 0);
+    signal grp_initFit_fu_544_LinearRegression_stubMap_data_first_address0 : STD_LOGIC_VECTOR (4 downto 0);
+    signal grp_initFit_fu_544_LinearRegression_stubMap_data_first_ce0 : STD_LOGIC;
+    signal grp_initFit_fu_544_LinearRegression_stubMap_data_first_we0 : STD_LOGIC;
+    signal grp_initFit_fu_544_LinearRegression_stubMap_data_first_d0 : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_initFit_fu_544_LinearRegression_stubMap_data_second_size_s_address0 : STD_LOGIC_VECTOR (4 downto 0);
+    signal grp_initFit_fu_544_LinearRegression_stubMap_data_second_size_s_ce0 : STD_LOGIC;
+    signal grp_initFit_fu_544_LinearRegression_stubMap_data_second_size_s_we0 : STD_LOGIC;
+    signal grp_initFit_fu_544_LinearRegression_stubMap_data_second_size_s_d0 : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_address0 : STD_LOGIC_VECTOR (8 downto 0);
+    signal grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_ce0 : STD_LOGIC;
+    signal grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_we0 : STD_LOGIC;
+    signal grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_d0 : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_address1 : STD_LOGIC_VECTOR (8 downto 0);
+    signal grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_ce1 : STD_LOGIC;
+    signal grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_we1 : STD_LOGIC;
+    signal grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_d1 : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_address0 : STD_LOGIC_VECTOR (8 downto 0);
+    signal grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_ce0 : STD_LOGIC;
+    signal grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_we0 : STD_LOGIC;
+    signal grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_d0 : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_address1 : STD_LOGIC_VECTOR (8 downto 0);
+    signal grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_ce1 : STD_LOGIC;
+    signal grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_we1 : STD_LOGIC;
+    signal grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_d1 : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_address0 : STD_LOGIC_VECTOR (12 downto 0);
+    signal grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_ce0 : STD_LOGIC;
+    signal grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_we0 : STD_LOGIC;
+    signal grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_d0 : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_address1 : STD_LOGIC_VECTOR (12 downto 0);
+    signal grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_ce1 : STD_LOGIC;
+    signal grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_we1 : STD_LOGIC;
+    signal grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_d1 : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_address0 : STD_LOGIC_VECTOR (8 downto 0);
+    signal grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_ce0 : STD_LOGIC;
+    signal grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_we0 : STD_LOGIC;
+    signal grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_d0 : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_address1 : STD_LOGIC_VECTOR (8 downto 0);
+    signal grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_ce1 : STD_LOGIC;
+    signal grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_we1 : STD_LOGIC;
+    signal grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_d1 : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_address0 : STD_LOGIC_VECTOR (8 downto 0);
+    signal grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_ce0 : STD_LOGIC;
+    signal grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_we0 : STD_LOGIC;
+    signal grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_d0 : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_address1 : STD_LOGIC_VECTOR (8 downto 0);
+    signal grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_ce1 : STD_LOGIC;
+    signal grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_we1 : STD_LOGIC;
+    signal grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_d1 : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_r_s_address0 : STD_LOGIC_VECTOR (8 downto 0);
+    signal grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_r_s_ce0 : STD_LOGIC;
+    signal grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_r_s_we0 : STD_LOGIC;
+    signal grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_r_s_d0 : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_r_s_address1 : STD_LOGIC_VECTOR (8 downto 0);
+    signal grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_r_s_ce1 : STD_LOGIC;
+    signal grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_r_s_we1 : STD_LOGIC;
+    signal grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_r_s_d1 : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_phi_s_address0 : STD_LOGIC_VECTOR (8 downto 0);
+    signal grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_phi_s_ce0 : STD_LOGIC;
+    signal grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_phi_s_we0 : STD_LOGIC;
+    signal grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_phi_s_d0 : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_phi_s_address1 : STD_LOGIC_VECTOR (8 downto 0);
+    signal grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_phi_s_ce1 : STD_LOGIC;
+    signal grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_phi_s_we1 : STD_LOGIC;
+    signal grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_phi_s_d1 : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_z_s_address0 : STD_LOGIC_VECTOR (8 downto 0);
+    signal grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_z_s_ce0 : STD_LOGIC;
+    signal grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_z_s_we0 : STD_LOGIC;
+    signal grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_z_s_d0 : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_z_s_address1 : STD_LOGIC_VECTOR (8 downto 0);
+    signal grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_z_s_ce1 : STD_LOGIC;
+    signal grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_z_s_we1 : STD_LOGIC;
+    signal grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_z_s_d1 : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_layerId_s_address0 : STD_LOGIC_VECTOR (8 downto 0);
+    signal grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_layerId_s_ce0 : STD_LOGIC;
+    signal grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_layerId_s_we0 : STD_LOGIC;
+    signal grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_layerId_s_d0 : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_layerId_s_address1 : STD_LOGIC_VECTOR (8 downto 0);
+    signal grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_layerId_s_ce1 : STD_LOGIC;
+    signal grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_layerId_s_we1 : STD_LOGIC;
+    signal grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_layerId_s_d1 : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_psModule_s_address0 : STD_LOGIC_VECTOR (8 downto 0);
+    signal grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_psModule_s_ce0 : STD_LOGIC;
+    signal grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_psModule_s_we0 : STD_LOGIC;
+    signal grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_psModule_s_d0 : STD_LOGIC_VECTOR (0 downto 0);
+    signal grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_psModule_s_address1 : STD_LOGIC_VECTOR (8 downto 0);
+    signal grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_psModule_s_ce1 : STD_LOGIC;
+    signal grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_psModule_s_we1 : STD_LOGIC;
+    signal grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_psModule_s_d1 : STD_LOGIC_VECTOR (0 downto 0);
+    signal grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_barrel_s_address0 : STD_LOGIC_VECTOR (8 downto 0);
+    signal grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_barrel_s_ce0 : STD_LOGIC;
+    signal grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_barrel_s_we0 : STD_LOGIC;
+    signal grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_barrel_s_d0 : STD_LOGIC_VECTOR (0 downto 0);
+    signal grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_barrel_s_address1 : STD_LOGIC_VECTOR (8 downto 0);
+    signal grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_barrel_s_ce1 : STD_LOGIC;
+    signal grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_barrel_s_we1 : STD_LOGIC;
+    signal grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_barrel_s_d1 : STD_LOGIC_VECTOR (0 downto 0);
+    signal grp_initFit_fu_544_LinearRegression_layerPopulation_data_first_address0 : STD_LOGIC_VECTOR (4 downto 0);
+    signal grp_initFit_fu_544_LinearRegression_layerPopulation_data_first_ce0 : STD_LOGIC;
+    signal grp_initFit_fu_544_LinearRegression_layerPopulation_data_first_we0 : STD_LOGIC;
+    signal grp_initFit_fu_544_LinearRegression_layerPopulation_data_first_d0 : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_initFit_fu_544_LinearRegression_layerPopulation_data_second_address0 : STD_LOGIC_VECTOR (4 downto 0);
+    signal grp_initFit_fu_544_LinearRegression_layerPopulation_data_second_ce0 : STD_LOGIC;
+    signal grp_initFit_fu_544_LinearRegression_layerPopulation_data_second_we0 : STD_LOGIC;
+    signal grp_initFit_fu_544_LinearRegression_layerPopulation_data_second_d0 : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_initFit_fu_544_LinearRegression_residuals_size_s : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_initFit_fu_544_LinearRegression_residuals_size_s_ap_vld : STD_LOGIC;
+    signal grp_initFit_fu_544_LinearRegression_largestResid_phi : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_initFit_fu_544_LinearRegression_largestResid_phi_ap_vld : STD_LOGIC;
+    signal grp_initFit_fu_544_LinearRegression_largestResid_z : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_initFit_fu_544_LinearRegression_largestResid_z_ap_vld : STD_LOGIC;
+    signal grp_initFit_fu_544_LinearRegression_largestResid_layerId : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_initFit_fu_544_LinearRegression_largestResid_layerId_ap_vld : STD_LOGIC;
+    signal grp_initFit_fu_544_LinearRegression_largestResid_stubId : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_initFit_fu_544_LinearRegression_largestResid_stubId_ap_vld : STD_LOGIC;
+    signal grp_initFit_fu_544_LinearRegression_largestResid_ps : STD_LOGIC;
+    signal grp_initFit_fu_544_LinearRegression_largestResid_ps_ap_vld : STD_LOGIC;
+    signal grp_initFit_fu_544_l1track3D_stubs_data_settings_chosenRofPhi_s_address0 : STD_LOGIC_VECTOR (3 downto 0);
+    signal grp_initFit_fu_544_l1track3D_stubs_data_settings_chosenRofPhi_s_ce0 : STD_LOGIC;
+    signal grp_initFit_fu_544_l1track3D_stubs_data_settings_chosenRofPhi_s_address1 : STD_LOGIC_VECTOR (3 downto 0);
+    signal grp_initFit_fu_544_l1track3D_stubs_data_settings_chosenRofPhi_s_ce1 : STD_LOGIC;
+    signal grp_initFit_fu_544_l1track3D_stubs_data_settings_chosenRofZ_s_address0 : STD_LOGIC_VECTOR (3 downto 0);
+    signal grp_initFit_fu_544_l1track3D_stubs_data_settings_chosenRofZ_s_ce0 : STD_LOGIC;
+    signal grp_initFit_fu_544_l1track3D_stubs_data_settings_chosenRofZ_s_address1 : STD_LOGIC_VECTOR (3 downto 0);
+    signal grp_initFit_fu_544_l1track3D_stubs_data_settings_chosenRofZ_s_ce1 : STD_LOGIC;
+    signal grp_initFit_fu_544_l1track3D_stubs_data_settings_sinh_etaRegions_s_address0 : STD_LOGIC_VECTOR (7 downto 0);
+    signal grp_initFit_fu_544_l1track3D_stubs_data_settings_sinh_etaRegions_s_ce0 : STD_LOGIC;
+    signal grp_initFit_fu_544_l1track3D_stubs_data_settings_sinh_etaRegions_s_address1 : STD_LOGIC_VECTOR (7 downto 0);
+    signal grp_initFit_fu_544_l1track3D_stubs_data_settings_sinh_etaRegions_s_ce1 : STD_LOGIC;
+    signal grp_initFit_fu_544_l1track3D_stubs_data_settings_minNumMatchLayers_s_address0 : STD_LOGIC_VECTOR (3 downto 0);
+    signal grp_initFit_fu_544_l1track3D_stubs_data_settings_minNumMatchLayers_s_ce0 : STD_LOGIC;
+    signal grp_initFit_fu_544_l1track3D_stubs_data_settings_minNumMatchLayers_s_address1 : STD_LOGIC_VECTOR (3 downto 0);
+    signal grp_initFit_fu_544_l1track3D_stubs_data_settings_minNumMatchLayers_s_ce1 : STD_LOGIC;
+    signal grp_initFit_fu_544_l1track3D_stubs_data_settings_minPSLayers_s_address0 : STD_LOGIC_VECTOR (3 downto 0);
+    signal grp_initFit_fu_544_l1track3D_stubs_data_settings_minPSLayers_s_ce0 : STD_LOGIC;
+    signal grp_initFit_fu_544_l1track3D_stubs_data_settings_minPSLayers_s_address1 : STD_LOGIC_VECTOR (3 downto 0);
+    signal grp_initFit_fu_544_l1track3D_stubs_data_settings_minPSLayers_s_ce1 : STD_LOGIC;
+    signal grp_initFit_fu_544_l1track3D_stubs_data_r_s_address0 : STD_LOGIC_VECTOR (3 downto 0);
+    signal grp_initFit_fu_544_l1track3D_stubs_data_r_s_ce0 : STD_LOGIC;
+    signal grp_initFit_fu_544_l1track3D_stubs_data_r_s_address1 : STD_LOGIC_VECTOR (3 downto 0);
+    signal grp_initFit_fu_544_l1track3D_stubs_data_r_s_ce1 : STD_LOGIC;
+    signal grp_initFit_fu_544_l1track3D_stubs_data_phi_s_address0 : STD_LOGIC_VECTOR (3 downto 0);
+    signal grp_initFit_fu_544_l1track3D_stubs_data_phi_s_ce0 : STD_LOGIC;
+    signal grp_initFit_fu_544_l1track3D_stubs_data_phi_s_address1 : STD_LOGIC_VECTOR (3 downto 0);
+    signal grp_initFit_fu_544_l1track3D_stubs_data_phi_s_ce1 : STD_LOGIC;
+    signal grp_initFit_fu_544_l1track3D_stubs_data_z_s_address0 : STD_LOGIC_VECTOR (3 downto 0);
+    signal grp_initFit_fu_544_l1track3D_stubs_data_z_s_ce0 : STD_LOGIC;
+    signal grp_initFit_fu_544_l1track3D_stubs_data_z_s_address1 : STD_LOGIC_VECTOR (3 downto 0);
+    signal grp_initFit_fu_544_l1track3D_stubs_data_z_s_ce1 : STD_LOGIC;
+    signal grp_initFit_fu_544_l1track3D_stubs_data_layerId_s_address0 : STD_LOGIC_VECTOR (3 downto 0);
+    signal grp_initFit_fu_544_l1track3D_stubs_data_layerId_s_ce0 : STD_LOGIC;
+    signal grp_initFit_fu_544_l1track3D_stubs_data_layerId_s_address1 : STD_LOGIC_VECTOR (3 downto 0);
+    signal grp_initFit_fu_544_l1track3D_stubs_data_layerId_s_ce1 : STD_LOGIC;
+    signal grp_initFit_fu_544_l1track3D_stubs_data_psModule_s_address0 : STD_LOGIC_VECTOR (3 downto 0);
+    signal grp_initFit_fu_544_l1track3D_stubs_data_psModule_s_ce0 : STD_LOGIC;
+    signal grp_initFit_fu_544_l1track3D_stubs_data_psModule_s_address1 : STD_LOGIC_VECTOR (3 downto 0);
+    signal grp_initFit_fu_544_l1track3D_stubs_data_psModule_s_ce1 : STD_LOGIC;
+    signal grp_initFit_fu_544_l1track3D_stubs_data_barrel_s_address0 : STD_LOGIC_VECTOR (3 downto 0);
+    signal grp_initFit_fu_544_l1track3D_stubs_data_barrel_s_ce0 : STD_LOGIC;
+    signal grp_initFit_fu_544_l1track3D_stubs_data_barrel_s_address1 : STD_LOGIC_VECTOR (3 downto 0);
+    signal grp_initFit_fu_544_l1track3D_stubs_data_barrel_s_ce1 : STD_LOGIC;
+    signal grp_initFit_fu_544_ap_return_0 : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_initFit_fu_544_ap_return_1 : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_initFit_fu_544_ap_return_2 : STD_LOGIC_VECTOR (0 downto 0);
+    signal grp_initFit_fu_544_ap_return_3 : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_initFit_fu_544_ap_return_4 : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_initFit_fu_544_ap_return_5 : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_initFit_fu_544_ap_return_6 : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_initFit_fu_544_ap_return_7 : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_initFit_fu_544_ap_return_8 : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_initFit_fu_544_ap_return_9 : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_calcResidual_fu_658_ap_start : STD_LOGIC;
+    signal grp_calcResidual_fu_658_ap_idle : STD_LOGIC;
+    signal grp_calcResidual_fu_658_LinearRegression_stubMap_data_first_address0 : STD_LOGIC_VECTOR (4 downto 0);
+    signal grp_calcResidual_fu_658_LinearRegression_stubMap_data_first_ce0 : STD_LOGIC;
+    signal grp_calcResidual_fu_658_LinearRegression_stubMap_data_second_size_s_address0 : STD_LOGIC_VECTOR (4 downto 0);
+    signal grp_calcResidual_fu_658_LinearRegression_stubMap_data_second_size_s_ce0 : STD_LOGIC;
+    signal grp_calcResidual_fu_658_LinearRegression_stubMap_data_second_data_r_s_address0 : STD_LOGIC_VECTOR (8 downto 0);
+    signal grp_calcResidual_fu_658_LinearRegression_stubMap_data_second_data_r_s_ce0 : STD_LOGIC;
+    signal grp_calcResidual_fu_658_LinearRegression_stubMap_data_second_data_phi_s_address0 : STD_LOGIC_VECTOR (8 downto 0);
+    signal grp_calcResidual_fu_658_LinearRegression_stubMap_data_second_data_phi_s_ce0 : STD_LOGIC;
+    signal grp_calcResidual_fu_658_LinearRegression_stubMap_data_second_data_z_s_address0 : STD_LOGIC_VECTOR (8 downto 0);
+    signal grp_calcResidual_fu_658_LinearRegression_stubMap_data_second_data_z_s_ce0 : STD_LOGIC;
+    signal grp_calcResidual_fu_658_LinearRegression_stubMap_data_second_data_psModule_s_address0 : STD_LOGIC_VECTOR (8 downto 0);
+    signal grp_calcResidual_fu_658_LinearRegression_stubMap_data_second_data_psModule_s_ce0 : STD_LOGIC;
+    signal grp_calcResidual_fu_658_LinearRegression_stubMap_data_second_data_barrel_s_address0 : STD_LOGIC_VECTOR (8 downto 0);
+    signal grp_calcResidual_fu_658_LinearRegression_stubMap_data_second_data_barrel_s_ce0 : STD_LOGIC;
+    signal grp_calcResidual_fu_658_LinearRegression_residuals_data_first_address0 : STD_LOGIC_VECTOR (4 downto 0);
+    signal grp_calcResidual_fu_658_LinearRegression_residuals_data_first_ce0 : STD_LOGIC;
+    signal grp_calcResidual_fu_658_LinearRegression_residuals_data_first_we0 : STD_LOGIC;
+    signal grp_calcResidual_fu_658_LinearRegression_residuals_data_first_d0 : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_calcResidual_fu_658_LinearRegression_residuals_data_second_size_s_address0 : STD_LOGIC_VECTOR (4 downto 0);
+    signal grp_calcResidual_fu_658_LinearRegression_residuals_data_second_size_s_ce0 : STD_LOGIC;
+    signal grp_calcResidual_fu_658_LinearRegression_residuals_data_second_size_s_we0 : STD_LOGIC;
+    signal grp_calcResidual_fu_658_LinearRegression_residuals_data_second_size_s_d0 : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_calcResidual_fu_658_LinearRegression_residuals_data_second_data_phi_address0 : STD_LOGIC_VECTOR (8 downto 0);
+    signal grp_calcResidual_fu_658_LinearRegression_residuals_data_second_data_phi_ce0 : STD_LOGIC;
+    signal grp_calcResidual_fu_658_LinearRegression_residuals_data_second_data_phi_we0 : STD_LOGIC;
+    signal grp_calcResidual_fu_658_LinearRegression_residuals_data_second_data_phi_d0 : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_calcResidual_fu_658_LinearRegression_residuals_data_second_data_phi_address1 : STD_LOGIC_VECTOR (8 downto 0);
+    signal grp_calcResidual_fu_658_LinearRegression_residuals_data_second_data_phi_ce1 : STD_LOGIC;
+    signal grp_calcResidual_fu_658_LinearRegression_residuals_data_second_data_phi_we1 : STD_LOGIC;
+    signal grp_calcResidual_fu_658_LinearRegression_residuals_data_second_data_phi_d1 : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_calcResidual_fu_658_LinearRegression_residuals_data_second_data_z_address0 : STD_LOGIC_VECTOR (8 downto 0);
+    signal grp_calcResidual_fu_658_LinearRegression_residuals_data_second_data_z_ce0 : STD_LOGIC;
+    signal grp_calcResidual_fu_658_LinearRegression_residuals_data_second_data_z_we0 : STD_LOGIC;
+    signal grp_calcResidual_fu_658_LinearRegression_residuals_data_second_data_z_d0 : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_calcResidual_fu_658_LinearRegression_residuals_data_second_data_z_address1 : STD_LOGIC_VECTOR (8 downto 0);
+    signal grp_calcResidual_fu_658_LinearRegression_residuals_data_second_data_z_ce1 : STD_LOGIC;
+    signal grp_calcResidual_fu_658_LinearRegression_residuals_data_second_data_z_we1 : STD_LOGIC;
+    signal grp_calcResidual_fu_658_LinearRegression_residuals_data_second_data_z_d1 : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_calcResidual_fu_658_LinearRegression_residuals_data_second_data_layerId_address0 : STD_LOGIC_VECTOR (8 downto 0);
+    signal grp_calcResidual_fu_658_LinearRegression_residuals_data_second_data_layerId_ce0 : STD_LOGIC;
+    signal grp_calcResidual_fu_658_LinearRegression_residuals_data_second_data_layerId_we0 : STD_LOGIC;
+    signal grp_calcResidual_fu_658_LinearRegression_residuals_data_second_data_layerId_d0 : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_calcResidual_fu_658_LinearRegression_residuals_data_second_data_layerId_address1 : STD_LOGIC_VECTOR (8 downto 0);
+    signal grp_calcResidual_fu_658_LinearRegression_residuals_data_second_data_layerId_ce1 : STD_LOGIC;
+    signal grp_calcResidual_fu_658_LinearRegression_residuals_data_second_data_layerId_we1 : STD_LOGIC;
+    signal grp_calcResidual_fu_658_LinearRegression_residuals_data_second_data_layerId_d1 : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_calcResidual_fu_658_LinearRegression_residuals_data_second_data_stubId_address0 : STD_LOGIC_VECTOR (8 downto 0);
+    signal grp_calcResidual_fu_658_LinearRegression_residuals_data_second_data_stubId_ce0 : STD_LOGIC;
+    signal grp_calcResidual_fu_658_LinearRegression_residuals_data_second_data_stubId_we0 : STD_LOGIC;
+    signal grp_calcResidual_fu_658_LinearRegression_residuals_data_second_data_stubId_d0 : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_calcResidual_fu_658_LinearRegression_residuals_data_second_data_stubId_address1 : STD_LOGIC_VECTOR (8 downto 0);
+    signal grp_calcResidual_fu_658_LinearRegression_residuals_data_second_data_stubId_ce1 : STD_LOGIC;
+    signal grp_calcResidual_fu_658_LinearRegression_residuals_data_second_data_stubId_we1 : STD_LOGIC;
+    signal grp_calcResidual_fu_658_LinearRegression_residuals_data_second_data_stubId_d1 : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_calcResidual_fu_658_LinearRegression_residuals_data_second_data_ps_address0 : STD_LOGIC_VECTOR (8 downto 0);
+    signal grp_calcResidual_fu_658_LinearRegression_residuals_data_second_data_ps_ce0 : STD_LOGIC;
+    signal grp_calcResidual_fu_658_LinearRegression_residuals_data_second_data_ps_we0 : STD_LOGIC;
+    signal grp_calcResidual_fu_658_LinearRegression_residuals_data_second_data_ps_d0 : STD_LOGIC_VECTOR (0 downto 0);
+    signal grp_calcResidual_fu_658_LinearRegression_residuals_data_second_data_ps_address1 : STD_LOGIC_VECTOR (8 downto 0);
+    signal grp_calcResidual_fu_658_LinearRegression_residuals_data_second_data_ps_ce1 : STD_LOGIC;
+    signal grp_calcResidual_fu_658_LinearRegression_residuals_data_second_data_ps_we1 : STD_LOGIC;
+    signal grp_calcResidual_fu_658_LinearRegression_residuals_data_second_data_ps_d1 : STD_LOGIC_VECTOR (0 downto 0);
+    signal LinearRegression_stu_401_reg_312 : STD_LOGIC_VECTOR (31 downto 0);
+    signal nothingToKill_fu_1053_p1 : STD_LOGIC_VECTOR (0 downto 0);
+    signal newret1_fu_777_p1 : STD_LOGIC_VECTOR (0 downto 0);
+    signal LinearRegression_stu_reg_322 : STD_LOGIC_VECTOR (31 downto 0);
+    signal LinearRegression_lay_reg_332 : STD_LOGIC_VECTOR (31 downto 0);
+    signal LinearRegression_nIt_reg_342 : STD_LOGIC_VECTOR (31 downto 0);
+    signal LinearRegression_stu_5_reg_353 : STD_LOGIC_VECTOR (31 downto 0);
+    signal LinearRegression_LRP_4_reg_363 : STD_LOGIC_VECTOR (31 downto 0);
+    signal LinearRegression_LRP_5_reg_373 : STD_LOGIC_VECTOR (31 downto 0);
+    signal LinearRegression_LRP_6_reg_383 : STD_LOGIC_VECTOR (31 downto 0);
+    signal LinearRegression_LRP_7_reg_393 : STD_LOGIC_VECTOR (31 downto 0);
+    signal LinearRegression_stu_6_reg_403 : STD_LOGIC_VECTOR (31 downto 0);
+    signal LinearRegression_lay_1_reg_413 : STD_LOGIC_VECTOR (31 downto 0);
+    signal LinearRegression_nIt_2_reg_423 : STD_LOGIC_VECTOR (31 downto 0);
+    signal LinearRegression_val_1_reg_434 : STD_LOGIC_VECTOR (0 downto 0);
+    signal grp_killLargestResidual_fu_445_ap_start_reg : STD_LOGIC := '0';
     signal ap_CS_fsm_state30 : STD_LOGIC;
     attribute fsm_encoding of ap_CS_fsm_state30 : signal is "none";
-    signal grp_initFit_fu_524_ap_start_reg : STD_LOGIC := '0';
-    signal grp_calcHelix_fu_640_ap_start_reg : STD_LOGIC := '0';
+    signal grp_calcHelix_fu_522_ap_start_reg : STD_LOGIC := '0';
     signal ap_CS_fsm_state26 : STD_LOGIC;
     attribute fsm_encoding of ap_CS_fsm_state26 : signal is "none";
-    signal grp_calcResidual_fu_662_ap_start_reg : STD_LOGIC := '0';
+    signal grp_initFit_fu_544_ap_start_reg : STD_LOGIC := '0';
+    signal grp_calcResidual_fu_658_ap_start_reg : STD_LOGIC := '0';
     signal ap_CS_fsm_state28 : STD_LOGIC;
     attribute fsm_encoding of ap_CS_fsm_state28 : signal is "none";
-    signal grp_fu_706_p0 : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_fu_706_p1 : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_fu_702_p0 : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_fu_702_p1 : STD_LOGIC_VECTOR (31 downto 0);
     signal ap_CS_fsm_state8 : STD_LOGIC;
     attribute fsm_encoding of ap_CS_fsm_state8 : signal is "none";
     signal ap_CS_fsm_state10 : STD_LOGIC;
@@ -1224,10 +1229,10 @@ architecture behav of fit is
     attribute fsm_encoding of ap_CS_fsm_state43 : signal is "none";
     signal ap_CS_fsm_state51 : STD_LOGIC;
     attribute fsm_encoding of ap_CS_fsm_state51 : signal is "none";
+    signal grp_fu_707_p0 : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_fu_707_p1 : STD_LOGIC_VECTOR (31 downto 0);
     signal grp_fu_711_p0 : STD_LOGIC_VECTOR (31 downto 0);
     signal grp_fu_711_p1 : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_fu_715_p0 : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_fu_715_p1 : STD_LOGIC_VECTOR (31 downto 0);
     signal ap_CS_fsm_state6 : STD_LOGIC;
     attribute fsm_encoding of ap_CS_fsm_state6 : signal is "none";
     signal ap_CS_fsm_state12 : STD_LOGIC;
@@ -1244,86 +1249,86 @@ architecture behav of fit is
     attribute fsm_encoding of ap_CS_fsm_state47 : signal is "none";
     signal ap_CS_fsm_state49 : STD_LOGIC;
     attribute fsm_encoding of ap_CS_fsm_state49 : signal is "none";
-    signal grp_fu_721_p0 : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_fu_717_p0 : STD_LOGIC_VECTOR (31 downto 0);
     signal ap_CS_fsm_state55 : STD_LOGIC;
     attribute fsm_encoding of ap_CS_fsm_state55 : signal is "none";
-    signal grp_fu_731_p0 : STD_LOGIC_VECTOR (31 downto 0);
-    signal p_0_i_i_i_i1_i_fu_976_p3 : STD_LOGIC_VECTOR (31 downto 0);
-    signal p_0_i_i_i_i1_i1_fu_1264_p3 : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_fu_731_p1 : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_fu_736_p0 : STD_LOGIC_VECTOR (31 downto 0);
-    signal p_0_i_i_i_i_i_fu_866_p3 : STD_LOGIC_VECTOR (31 downto 0);
-    signal p_0_i_i_i_i_i7_fu_1154_p3 : STD_LOGIC_VECTOR (31 downto 0);
-    signal phi1_assign_i_to_int_fu_814_p1 : STD_LOGIC_VECTOR (31 downto 0);
-    signal tmp_fu_818_p4 : STD_LOGIC_VECTOR (7 downto 0);
-    signal tmp_146_fu_828_p1 : STD_LOGIC_VECTOR (22 downto 0);
-    signal notrhs_fu_838_p2 : STD_LOGIC_VECTOR (0 downto 0);
-    signal notlhs_fu_832_p2 : STD_LOGIC_VECTOR (0 downto 0);
-    signal tmp_122_fu_844_p2 : STD_LOGIC_VECTOR (0 downto 0);
-    signal tmp_neg_i_i_i_i_i_fu_856_p2 : STD_LOGIC_VECTOR (31 downto 0);
-    signal tmp_124_fu_850_p2 : STD_LOGIC_VECTOR (0 downto 0);
-    signal tmp_i_i_i_i_i_fu_862_p1 : STD_LOGIC_VECTOR (31 downto 0);
-    signal p_0_i_i_i_i_i_to_int_fu_875_p1 : STD_LOGIC_VECTOR (31 downto 0);
-    signal tmp_125_fu_879_p4 : STD_LOGIC_VECTOR (7 downto 0);
-    signal tmp_151_fu_889_p1 : STD_LOGIC_VECTOR (22 downto 0);
-    signal notrhs7_fu_899_p2 : STD_LOGIC_VECTOR (0 downto 0);
-    signal notlhs2_fu_893_p2 : STD_LOGIC_VECTOR (0 downto 0);
-    signal tmp_127_fu_905_p2 : STD_LOGIC_VECTOR (0 downto 0);
-    signal grp_fu_736_p2 : STD_LOGIC_VECTOR (0 downto 0);
-    signal tmp_129_fu_911_p2 : STD_LOGIC_VECTOR (0 downto 0);
-    signal phi1_assign_1_i_to_i_fu_925_p1 : STD_LOGIC_VECTOR (31 downto 0);
-    signal tmp_130_fu_929_p4 : STD_LOGIC_VECTOR (7 downto 0);
-    signal tmp_156_fu_939_p1 : STD_LOGIC_VECTOR (22 downto 0);
-    signal notrhs8_fu_949_p2 : STD_LOGIC_VECTOR (0 downto 0);
-    signal notlhs3_fu_943_p2 : STD_LOGIC_VECTOR (0 downto 0);
-    signal tmp_132_fu_955_p2 : STD_LOGIC_VECTOR (0 downto 0);
-    signal tmp_neg_i_i_i_i1_i_fu_966_p2 : STD_LOGIC_VECTOR (31 downto 0);
-    signal tmp_134_fu_961_p2 : STD_LOGIC_VECTOR (0 downto 0);
-    signal tmp_i_i_i_i1_i_fu_972_p1 : STD_LOGIC_VECTOR (31 downto 0);
-    signal p_0_i_i_i_i1_i_to_int_fu_985_p1 : STD_LOGIC_VECTOR (31 downto 0);
-    signal tmp_135_fu_989_p4 : STD_LOGIC_VECTOR (7 downto 0);
-    signal tmp_160_fu_999_p1 : STD_LOGIC_VECTOR (22 downto 0);
-    signal notrhs9_fu_1009_p2 : STD_LOGIC_VECTOR (0 downto 0);
-    signal notlhs4_fu_1003_p2 : STD_LOGIC_VECTOR (0 downto 0);
-    signal tmp_137_fu_1015_p2 : STD_LOGIC_VECTOR (0 downto 0);
-    signal tmp_139_fu_1021_p2 : STD_LOGIC_VECTOR (0 downto 0);
-    signal phi1_assign_i2_to_in_fu_1102_p1 : STD_LOGIC_VECTOR (31 downto 0);
-    signal tmp_140_fu_1106_p4 : STD_LOGIC_VECTOR (7 downto 0);
-    signal tmp_161_fu_1116_p1 : STD_LOGIC_VECTOR (22 downto 0);
-    signal notrhs1_fu_1126_p2 : STD_LOGIC_VECTOR (0 downto 0);
-    signal notlhs5_fu_1120_p2 : STD_LOGIC_VECTOR (0 downto 0);
-    signal tmp_s_fu_1132_p2 : STD_LOGIC_VECTOR (0 downto 0);
-    signal tmp_neg_i_i_i_i_i5_fu_1144_p2 : STD_LOGIC_VECTOR (31 downto 0);
-    signal tmp_143_fu_1138_p2 : STD_LOGIC_VECTOR (0 downto 0);
-    signal tmp_i_i_i_i_i6_fu_1150_p1 : STD_LOGIC_VECTOR (31 downto 0);
-    signal p_0_i_i_i_i_i7_to_int_fu_1163_p1 : STD_LOGIC_VECTOR (31 downto 0);
-    signal tmp_144_fu_1167_p4 : STD_LOGIC_VECTOR (7 downto 0);
-    signal tmp_162_fu_1177_p1 : STD_LOGIC_VECTOR (22 downto 0);
-    signal notrhs2_fu_1187_p2 : STD_LOGIC_VECTOR (0 downto 0);
-    signal notlhs6_fu_1181_p2 : STD_LOGIC_VECTOR (0 downto 0);
-    signal tmp_145_fu_1193_p2 : STD_LOGIC_VECTOR (0 downto 0);
-    signal tmp_148_fu_1199_p2 : STD_LOGIC_VECTOR (0 downto 0);
-    signal phi1_assign_1_i16_to_fu_1213_p1 : STD_LOGIC_VECTOR (31 downto 0);
-    signal tmp_149_fu_1217_p4 : STD_LOGIC_VECTOR (7 downto 0);
-    signal tmp_163_fu_1227_p1 : STD_LOGIC_VECTOR (22 downto 0);
-    signal notrhs3_fu_1237_p2 : STD_LOGIC_VECTOR (0 downto 0);
-    signal notlhs7_fu_1231_p2 : STD_LOGIC_VECTOR (0 downto 0);
-    signal tmp_150_fu_1243_p2 : STD_LOGIC_VECTOR (0 downto 0);
-    signal tmp_neg_i_i_i_i1_i1_fu_1254_p2 : STD_LOGIC_VECTOR (31 downto 0);
-    signal tmp_153_fu_1249_p2 : STD_LOGIC_VECTOR (0 downto 0);
-    signal tmp_i_i_i_i1_i1_fu_1260_p1 : STD_LOGIC_VECTOR (31 downto 0);
-    signal p_0_i_i_i_i1_i21_to_i_fu_1273_p1 : STD_LOGIC_VECTOR (31 downto 0);
-    signal tmp_154_fu_1277_p4 : STD_LOGIC_VECTOR (7 downto 0);
-    signal tmp_164_fu_1287_p1 : STD_LOGIC_VECTOR (22 downto 0);
-    signal notrhs4_fu_1297_p2 : STD_LOGIC_VECTOR (0 downto 0);
-    signal notlhs8_fu_1291_p2 : STD_LOGIC_VECTOR (0 downto 0);
-    signal tmp_155_fu_1303_p2 : STD_LOGIC_VECTOR (0 downto 0);
-    signal tmp_158_fu_1309_p2 : STD_LOGIC_VECTOR (0 downto 0);
+    signal grp_fu_727_p0 : STD_LOGIC_VECTOR (31 downto 0);
+    signal p_0_i_i_i_i1_i_fu_972_p3 : STD_LOGIC_VECTOR (31 downto 0);
+    signal p_0_i_i_i_i1_i1_fu_1260_p3 : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_fu_727_p1 : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_fu_732_p0 : STD_LOGIC_VECTOR (31 downto 0);
+    signal p_0_i_i_i_i_i_fu_862_p3 : STD_LOGIC_VECTOR (31 downto 0);
+    signal p_0_i_i_i_i_i7_fu_1150_p3 : STD_LOGIC_VECTOR (31 downto 0);
+    signal phi1_assign_i_to_int_fu_810_p1 : STD_LOGIC_VECTOR (31 downto 0);
+    signal tmp_fu_814_p4 : STD_LOGIC_VECTOR (7 downto 0);
+    signal tmp_87_fu_824_p1 : STD_LOGIC_VECTOR (22 downto 0);
+    signal notrhs_fu_834_p2 : STD_LOGIC_VECTOR (0 downto 0);
+    signal notlhs_fu_828_p2 : STD_LOGIC_VECTOR (0 downto 0);
+    signal tmp_44_fu_840_p2 : STD_LOGIC_VECTOR (0 downto 0);
+    signal tmp_neg_i_i_i_i_i_fu_852_p2 : STD_LOGIC_VECTOR (31 downto 0);
+    signal tmp_46_fu_846_p2 : STD_LOGIC_VECTOR (0 downto 0);
+    signal tmp_i_i_i_i_i_fu_858_p1 : STD_LOGIC_VECTOR (31 downto 0);
+    signal p_0_i_i_i_i_i_to_int_fu_871_p1 : STD_LOGIC_VECTOR (31 downto 0);
+    signal tmp_47_fu_875_p4 : STD_LOGIC_VECTOR (7 downto 0);
+    signal tmp_88_fu_885_p1 : STD_LOGIC_VECTOR (22 downto 0);
+    signal notrhs7_fu_895_p2 : STD_LOGIC_VECTOR (0 downto 0);
+    signal notlhs2_fu_889_p2 : STD_LOGIC_VECTOR (0 downto 0);
+    signal tmp_49_fu_901_p2 : STD_LOGIC_VECTOR (0 downto 0);
+    signal grp_fu_732_p2 : STD_LOGIC_VECTOR (0 downto 0);
+    signal tmp_51_fu_907_p2 : STD_LOGIC_VECTOR (0 downto 0);
+    signal phi1_assign_1_i_to_i_fu_921_p1 : STD_LOGIC_VECTOR (31 downto 0);
+    signal tmp_52_fu_925_p4 : STD_LOGIC_VECTOR (7 downto 0);
+    signal tmp_89_fu_935_p1 : STD_LOGIC_VECTOR (22 downto 0);
+    signal notrhs8_fu_945_p2 : STD_LOGIC_VECTOR (0 downto 0);
+    signal notlhs3_fu_939_p2 : STD_LOGIC_VECTOR (0 downto 0);
+    signal tmp_54_fu_951_p2 : STD_LOGIC_VECTOR (0 downto 0);
+    signal tmp_neg_i_i_i_i1_i_fu_962_p2 : STD_LOGIC_VECTOR (31 downto 0);
+    signal tmp_56_fu_957_p2 : STD_LOGIC_VECTOR (0 downto 0);
+    signal tmp_i_i_i_i1_i_fu_968_p1 : STD_LOGIC_VECTOR (31 downto 0);
+    signal p_0_i_i_i_i1_i_to_int_fu_981_p1 : STD_LOGIC_VECTOR (31 downto 0);
+    signal tmp_57_fu_985_p4 : STD_LOGIC_VECTOR (7 downto 0);
+    signal tmp_90_fu_995_p1 : STD_LOGIC_VECTOR (22 downto 0);
+    signal notrhs9_fu_1005_p2 : STD_LOGIC_VECTOR (0 downto 0);
+    signal notlhs4_fu_999_p2 : STD_LOGIC_VECTOR (0 downto 0);
+    signal tmp_59_fu_1011_p2 : STD_LOGIC_VECTOR (0 downto 0);
+    signal tmp_61_fu_1017_p2 : STD_LOGIC_VECTOR (0 downto 0);
+    signal phi1_assign_i2_to_in_fu_1098_p1 : STD_LOGIC_VECTOR (31 downto 0);
+    signal tmp_62_fu_1102_p4 : STD_LOGIC_VECTOR (7 downto 0);
+    signal tmp_91_fu_1112_p1 : STD_LOGIC_VECTOR (22 downto 0);
+    signal notrhs1_fu_1122_p2 : STD_LOGIC_VECTOR (0 downto 0);
+    signal notlhs5_fu_1116_p2 : STD_LOGIC_VECTOR (0 downto 0);
+    signal tmp_64_fu_1128_p2 : STD_LOGIC_VECTOR (0 downto 0);
+    signal tmp_neg_i_i_i_i_i5_fu_1140_p2 : STD_LOGIC_VECTOR (31 downto 0);
+    signal tmp_66_fu_1134_p2 : STD_LOGIC_VECTOR (0 downto 0);
+    signal tmp_i_i_i_i_i6_fu_1146_p1 : STD_LOGIC_VECTOR (31 downto 0);
+    signal p_0_i_i_i_i_i7_to_int_fu_1159_p1 : STD_LOGIC_VECTOR (31 downto 0);
+    signal tmp_67_fu_1163_p4 : STD_LOGIC_VECTOR (7 downto 0);
+    signal tmp_92_fu_1173_p1 : STD_LOGIC_VECTOR (22 downto 0);
+    signal notrhs2_fu_1183_p2 : STD_LOGIC_VECTOR (0 downto 0);
+    signal notlhs6_fu_1177_p2 : STD_LOGIC_VECTOR (0 downto 0);
+    signal tmp_69_fu_1189_p2 : STD_LOGIC_VECTOR (0 downto 0);
+    signal tmp_71_fu_1195_p2 : STD_LOGIC_VECTOR (0 downto 0);
+    signal phi1_assign_1_i16_to_fu_1209_p1 : STD_LOGIC_VECTOR (31 downto 0);
+    signal tmp_72_fu_1213_p4 : STD_LOGIC_VECTOR (7 downto 0);
+    signal tmp_93_fu_1223_p1 : STD_LOGIC_VECTOR (22 downto 0);
+    signal notrhs3_fu_1233_p2 : STD_LOGIC_VECTOR (0 downto 0);
+    signal notlhs7_fu_1227_p2 : STD_LOGIC_VECTOR (0 downto 0);
+    signal tmp_74_fu_1239_p2 : STD_LOGIC_VECTOR (0 downto 0);
+    signal tmp_neg_i_i_i_i1_i1_fu_1250_p2 : STD_LOGIC_VECTOR (31 downto 0);
+    signal tmp_76_fu_1245_p2 : STD_LOGIC_VECTOR (0 downto 0);
+    signal tmp_i_i_i_i1_i1_fu_1256_p1 : STD_LOGIC_VECTOR (31 downto 0);
+    signal p_0_i_i_i_i1_i21_to_i_fu_1269_p1 : STD_LOGIC_VECTOR (31 downto 0);
+    signal tmp_77_fu_1273_p4 : STD_LOGIC_VECTOR (7 downto 0);
+    signal tmp_94_fu_1283_p1 : STD_LOGIC_VECTOR (22 downto 0);
+    signal notrhs4_fu_1293_p2 : STD_LOGIC_VECTOR (0 downto 0);
+    signal notlhs8_fu_1287_p2 : STD_LOGIC_VECTOR (0 downto 0);
+    signal tmp_79_fu_1299_p2 : STD_LOGIC_VECTOR (0 downto 0);
+    signal tmp_81_fu_1305_p2 : STD_LOGIC_VECTOR (0 downto 0);
     signal ap_CS_fsm_state62 : STD_LOGIC;
     attribute fsm_encoding of ap_CS_fsm_state62 : signal is "none";
-    signal grp_fu_725_p2 : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_fu_706_opcode : STD_LOGIC_VECTOR (1 downto 0);
-    signal grp_fu_706_ce : STD_LOGIC;
+    signal grp_fu_721_p2 : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_fu_702_opcode : STD_LOGIC_VECTOR (1 downto 0);
+    signal grp_fu_702_ce : STD_LOGIC;
     signal ap_CS_fsm_state15 : STD_LOGIC;
     attribute fsm_encoding of ap_CS_fsm_state15 : signal is "none";
     signal ap_CS_fsm_state16 : STD_LOGIC;
@@ -1342,9 +1347,9 @@ architecture behav of fit is
     attribute fsm_encoding of ap_CS_fsm_state60 : signal is "none";
     signal ap_CS_fsm_state61 : STD_LOGIC;
     attribute fsm_encoding of ap_CS_fsm_state61 : signal is "none";
-    signal grp_fu_711_opcode : STD_LOGIC_VECTOR (1 downto 0);
-    signal grp_fu_711_ce : STD_LOGIC;
-    signal grp_fu_731_opcode : STD_LOGIC_VECTOR (4 downto 0);
+    signal grp_fu_707_opcode : STD_LOGIC_VECTOR (1 downto 0);
+    signal grp_fu_707_ce : STD_LOGIC;
+    signal grp_fu_727_opcode : STD_LOGIC_VECTOR (4 downto 0);
     signal ap_return_0_preg : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000000000";
     signal ap_return_1_preg : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000000000";
     signal ap_return_2_preg : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000000000";
@@ -1381,16 +1386,16 @@ architecture behav of fit is
         LinearRegression_stubs_data_settings_chosenRofZ_s_we0 : OUT STD_LOGIC;
         LinearRegression_stubs_data_settings_chosenRofZ_s_d0 : OUT STD_LOGIC_VECTOR (31 downto 0);
         LinearRegression_stubs_data_settings_chosenRofZ_s_q0 : IN STD_LOGIC_VECTOR (31 downto 0);
-        LinearRegression_stubs_data_settings_etaRegions_s_address0 : OUT STD_LOGIC_VECTOR (7 downto 0);
-        LinearRegression_stubs_data_settings_etaRegions_s_ce0 : OUT STD_LOGIC;
-        LinearRegression_stubs_data_settings_etaRegions_s_we0 : OUT STD_LOGIC;
-        LinearRegression_stubs_data_settings_etaRegions_s_d0 : OUT STD_LOGIC_VECTOR (31 downto 0);
-        LinearRegression_stubs_data_settings_etaRegions_s_q0 : IN STD_LOGIC_VECTOR (31 downto 0);
-        LinearRegression_stubs_data_settings_etaRegions_s_address1 : OUT STD_LOGIC_VECTOR (7 downto 0);
-        LinearRegression_stubs_data_settings_etaRegions_s_ce1 : OUT STD_LOGIC;
-        LinearRegression_stubs_data_settings_etaRegions_s_we1 : OUT STD_LOGIC;
-        LinearRegression_stubs_data_settings_etaRegions_s_d1 : OUT STD_LOGIC_VECTOR (31 downto 0);
-        LinearRegression_stubs_data_settings_etaRegions_s_q1 : IN STD_LOGIC_VECTOR (31 downto 0);
+        LinearRegression_stubs_data_settings_sinh_etaRegions_s_address0 : OUT STD_LOGIC_VECTOR (7 downto 0);
+        LinearRegression_stubs_data_settings_sinh_etaRegions_s_ce0 : OUT STD_LOGIC;
+        LinearRegression_stubs_data_settings_sinh_etaRegions_s_we0 : OUT STD_LOGIC;
+        LinearRegression_stubs_data_settings_sinh_etaRegions_s_d0 : OUT STD_LOGIC_VECTOR (31 downto 0);
+        LinearRegression_stubs_data_settings_sinh_etaRegions_s_q0 : IN STD_LOGIC_VECTOR (31 downto 0);
+        LinearRegression_stubs_data_settings_sinh_etaRegions_s_address1 : OUT STD_LOGIC_VECTOR (7 downto 0);
+        LinearRegression_stubs_data_settings_sinh_etaRegions_s_ce1 : OUT STD_LOGIC;
+        LinearRegression_stubs_data_settings_sinh_etaRegions_s_we1 : OUT STD_LOGIC;
+        LinearRegression_stubs_data_settings_sinh_etaRegions_s_d1 : OUT STD_LOGIC_VECTOR (31 downto 0);
+        LinearRegression_stubs_data_settings_sinh_etaRegions_s_q1 : IN STD_LOGIC_VECTOR (31 downto 0);
         LinearRegression_stubs_data_settings_minNumMatchLayers_s_address0 : OUT STD_LOGIC_VECTOR (3 downto 0);
         LinearRegression_stubs_data_settings_minNumMatchLayers_s_ce0 : OUT STD_LOGIC;
         LinearRegression_stubs_data_settings_minNumMatchLayers_s_we0 : OUT STD_LOGIC;
@@ -1462,16 +1467,16 @@ architecture behav of fit is
         LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_we1 : OUT STD_LOGIC;
         LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_d1 : OUT STD_LOGIC_VECTOR (31 downto 0);
         LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_q1 : IN STD_LOGIC_VECTOR (31 downto 0);
-        LinearRegression_stubMap_data_second_data_settings_etaRegions_s_address0 : OUT STD_LOGIC_VECTOR (12 downto 0);
-        LinearRegression_stubMap_data_second_data_settings_etaRegions_s_ce0 : OUT STD_LOGIC;
-        LinearRegression_stubMap_data_second_data_settings_etaRegions_s_we0 : OUT STD_LOGIC;
-        LinearRegression_stubMap_data_second_data_settings_etaRegions_s_d0 : OUT STD_LOGIC_VECTOR (31 downto 0);
-        LinearRegression_stubMap_data_second_data_settings_etaRegions_s_q0 : IN STD_LOGIC_VECTOR (31 downto 0);
-        LinearRegression_stubMap_data_second_data_settings_etaRegions_s_address1 : OUT STD_LOGIC_VECTOR (12 downto 0);
-        LinearRegression_stubMap_data_second_data_settings_etaRegions_s_ce1 : OUT STD_LOGIC;
-        LinearRegression_stubMap_data_second_data_settings_etaRegions_s_we1 : OUT STD_LOGIC;
-        LinearRegression_stubMap_data_second_data_settings_etaRegions_s_d1 : OUT STD_LOGIC_VECTOR (31 downto 0);
-        LinearRegression_stubMap_data_second_data_settings_etaRegions_s_q1 : IN STD_LOGIC_VECTOR (31 downto 0);
+        LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_address0 : OUT STD_LOGIC_VECTOR (12 downto 0);
+        LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_ce0 : OUT STD_LOGIC;
+        LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_we0 : OUT STD_LOGIC;
+        LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_d0 : OUT STD_LOGIC_VECTOR (31 downto 0);
+        LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_q0 : IN STD_LOGIC_VECTOR (31 downto 0);
+        LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_address1 : OUT STD_LOGIC_VECTOR (12 downto 0);
+        LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_ce1 : OUT STD_LOGIC;
+        LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_we1 : OUT STD_LOGIC;
+        LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_d1 : OUT STD_LOGIC_VECTOR (31 downto 0);
+        LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_q1 : IN STD_LOGIC_VECTOR (31 downto 0);
         LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_address0 : OUT STD_LOGIC_VECTOR (8 downto 0);
         LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_ce0 : OUT STD_LOGIC;
         LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_we0 : OUT STD_LOGIC;
@@ -1598,6 +1603,43 @@ architecture behav of fit is
     end component;
 
 
+    component calcHelix IS
+    port (
+        ap_clk : IN STD_LOGIC;
+        ap_rst : IN STD_LOGIC;
+        ap_start : IN STD_LOGIC;
+        ap_done : OUT STD_LOGIC;
+        ap_idle : OUT STD_LOGIC;
+        ap_ready : OUT STD_LOGIC;
+        LinearRegression_settings_chosenRofPhi_read : IN STD_LOGIC_VECTOR (31 downto 0);
+        LinearRegression_settings_chosenRofZ_read : IN STD_LOGIC_VECTOR (31 downto 0);
+        LinearRegression_HTParameter_qOverPt_read : IN STD_LOGIC_VECTOR (31 downto 0);
+        LinearRegression_HTParameter_phiT_read : IN STD_LOGIC_VECTOR (31 downto 0);
+        LinearRegression_HTParameter_cotTheta_read : IN STD_LOGIC_VECTOR (31 downto 0);
+        LinearRegression_HTParameter_zT_read : IN STD_LOGIC_VECTOR (31 downto 0);
+        LinearRegression_stubMap_size_read : IN STD_LOGIC_VECTOR (31 downto 0);
+        LinearRegression_stubMap_data_second_size_s_address0 : OUT STD_LOGIC_VECTOR (4 downto 0);
+        LinearRegression_stubMap_data_second_size_s_ce0 : OUT STD_LOGIC;
+        LinearRegression_stubMap_data_second_size_s_q0 : IN STD_LOGIC_VECTOR (31 downto 0);
+        LinearRegression_stubMap_data_second_data_r_s_address0 : OUT STD_LOGIC_VECTOR (8 downto 0);
+        LinearRegression_stubMap_data_second_data_r_s_ce0 : OUT STD_LOGIC;
+        LinearRegression_stubMap_data_second_data_r_s_q0 : IN STD_LOGIC_VECTOR (31 downto 0);
+        LinearRegression_stubMap_data_second_data_phi_s_address0 : OUT STD_LOGIC_VECTOR (8 downto 0);
+        LinearRegression_stubMap_data_second_data_phi_s_ce0 : OUT STD_LOGIC;
+        LinearRegression_stubMap_data_second_data_phi_s_q0 : IN STD_LOGIC_VECTOR (31 downto 0);
+        LinearRegression_stubMap_data_second_data_z_s_address0 : OUT STD_LOGIC_VECTOR (8 downto 0);
+        LinearRegression_stubMap_data_second_data_z_s_ce0 : OUT STD_LOGIC;
+        LinearRegression_stubMap_data_second_data_z_s_q0 : IN STD_LOGIC_VECTOR (31 downto 0);
+        LinearRegression_stubMap_data_second_data_psModule_s_address0 : OUT STD_LOGIC_VECTOR (8 downto 0);
+        LinearRegression_stubMap_data_second_data_psModule_s_ce0 : OUT STD_LOGIC;
+        LinearRegression_stubMap_data_second_data_psModule_s_q0 : IN STD_LOGIC_VECTOR (0 downto 0);
+        ap_return_0 : OUT STD_LOGIC_VECTOR (31 downto 0);
+        ap_return_1 : OUT STD_LOGIC_VECTOR (31 downto 0);
+        ap_return_2 : OUT STD_LOGIC_VECTOR (31 downto 0);
+        ap_return_3 : OUT STD_LOGIC_VECTOR (31 downto 0) );
+    end component;
+
+
     component initFit IS
     port (
         ap_clk : IN STD_LOGIC;
@@ -1608,9 +1650,12 @@ architecture behav of fit is
         ap_ready : OUT STD_LOGIC;
         LinearRegression_settings_chosenRofPhi_read : IN STD_LOGIC_VECTOR (31 downto 0);
         LinearRegression_settings_chosenRofZ_read : IN STD_LOGIC_VECTOR (31 downto 0);
-        LinearRegression_settings_etaRegions_s_address0 : OUT STD_LOGIC_VECTOR (4 downto 0);
-        LinearRegression_settings_etaRegions_s_ce0 : OUT STD_LOGIC;
-        LinearRegression_settings_etaRegions_s_q0 : IN STD_LOGIC_VECTOR (31 downto 0);
+        LinearRegression_settings_sinh_etaRegions_s_address0 : OUT STD_LOGIC_VECTOR (4 downto 0);
+        LinearRegression_settings_sinh_etaRegions_s_ce0 : OUT STD_LOGIC;
+        LinearRegression_settings_sinh_etaRegions_s_q0 : IN STD_LOGIC_VECTOR (31 downto 0);
+        LinearRegression_settings_sinh_etaRegions_s_address1 : OUT STD_LOGIC_VECTOR (4 downto 0);
+        LinearRegression_settings_sinh_etaRegions_s_ce1 : OUT STD_LOGIC;
+        LinearRegression_settings_sinh_etaRegions_s_q1 : IN STD_LOGIC_VECTOR (31 downto 0);
         LinearRegression_settings_minNumMatchLayers_read : IN STD_LOGIC_VECTOR (31 downto 0);
         LinearRegression_settings_minPSLayers_read : IN STD_LOGIC_VECTOR (31 downto 0);
         LinearRegression_stubs_data_settings_chosenRofPhi_s_address0 : OUT STD_LOGIC_VECTOR (3 downto 0);
@@ -1631,16 +1676,16 @@ architecture behav of fit is
         LinearRegression_stubs_data_settings_chosenRofZ_s_ce1 : OUT STD_LOGIC;
         LinearRegression_stubs_data_settings_chosenRofZ_s_we1 : OUT STD_LOGIC;
         LinearRegression_stubs_data_settings_chosenRofZ_s_d1 : OUT STD_LOGIC_VECTOR (31 downto 0);
-        LinearRegression_stubs_data_settings_etaRegions_s_address0 : OUT STD_LOGIC_VECTOR (7 downto 0);
-        LinearRegression_stubs_data_settings_etaRegions_s_ce0 : OUT STD_LOGIC;
-        LinearRegression_stubs_data_settings_etaRegions_s_we0 : OUT STD_LOGIC;
-        LinearRegression_stubs_data_settings_etaRegions_s_d0 : OUT STD_LOGIC_VECTOR (31 downto 0);
-        LinearRegression_stubs_data_settings_etaRegions_s_q0 : IN STD_LOGIC_VECTOR (31 downto 0);
-        LinearRegression_stubs_data_settings_etaRegions_s_address1 : OUT STD_LOGIC_VECTOR (7 downto 0);
-        LinearRegression_stubs_data_settings_etaRegions_s_ce1 : OUT STD_LOGIC;
-        LinearRegression_stubs_data_settings_etaRegions_s_we1 : OUT STD_LOGIC;
-        LinearRegression_stubs_data_settings_etaRegions_s_d1 : OUT STD_LOGIC_VECTOR (31 downto 0);
-        LinearRegression_stubs_data_settings_etaRegions_s_q1 : IN STD_LOGIC_VECTOR (31 downto 0);
+        LinearRegression_stubs_data_settings_sinh_etaRegions_s_address0 : OUT STD_LOGIC_VECTOR (7 downto 0);
+        LinearRegression_stubs_data_settings_sinh_etaRegions_s_ce0 : OUT STD_LOGIC;
+        LinearRegression_stubs_data_settings_sinh_etaRegions_s_we0 : OUT STD_LOGIC;
+        LinearRegression_stubs_data_settings_sinh_etaRegions_s_d0 : OUT STD_LOGIC_VECTOR (31 downto 0);
+        LinearRegression_stubs_data_settings_sinh_etaRegions_s_q0 : IN STD_LOGIC_VECTOR (31 downto 0);
+        LinearRegression_stubs_data_settings_sinh_etaRegions_s_address1 : OUT STD_LOGIC_VECTOR (7 downto 0);
+        LinearRegression_stubs_data_settings_sinh_etaRegions_s_ce1 : OUT STD_LOGIC;
+        LinearRegression_stubs_data_settings_sinh_etaRegions_s_we1 : OUT STD_LOGIC;
+        LinearRegression_stubs_data_settings_sinh_etaRegions_s_d1 : OUT STD_LOGIC_VECTOR (31 downto 0);
+        LinearRegression_stubs_data_settings_sinh_etaRegions_s_q1 : IN STD_LOGIC_VECTOR (31 downto 0);
         LinearRegression_stubs_data_settings_minNumMatchLayers_s_address0 : OUT STD_LOGIC_VECTOR (3 downto 0);
         LinearRegression_stubs_data_settings_minNumMatchLayers_s_ce0 : OUT STD_LOGIC;
         LinearRegression_stubs_data_settings_minNumMatchLayers_s_we0 : OUT STD_LOGIC;
@@ -1743,14 +1788,14 @@ architecture behav of fit is
         LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_ce1 : OUT STD_LOGIC;
         LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_we1 : OUT STD_LOGIC;
         LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_d1 : OUT STD_LOGIC_VECTOR (31 downto 0);
-        LinearRegression_stubMap_data_second_data_settings_etaRegions_s_address0 : OUT STD_LOGIC_VECTOR (12 downto 0);
-        LinearRegression_stubMap_data_second_data_settings_etaRegions_s_ce0 : OUT STD_LOGIC;
-        LinearRegression_stubMap_data_second_data_settings_etaRegions_s_we0 : OUT STD_LOGIC;
-        LinearRegression_stubMap_data_second_data_settings_etaRegions_s_d0 : OUT STD_LOGIC_VECTOR (31 downto 0);
-        LinearRegression_stubMap_data_second_data_settings_etaRegions_s_address1 : OUT STD_LOGIC_VECTOR (12 downto 0);
-        LinearRegression_stubMap_data_second_data_settings_etaRegions_s_ce1 : OUT STD_LOGIC;
-        LinearRegression_stubMap_data_second_data_settings_etaRegions_s_we1 : OUT STD_LOGIC;
-        LinearRegression_stubMap_data_second_data_settings_etaRegions_s_d1 : OUT STD_LOGIC_VECTOR (31 downto 0);
+        LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_address0 : OUT STD_LOGIC_VECTOR (12 downto 0);
+        LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_ce0 : OUT STD_LOGIC;
+        LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_we0 : OUT STD_LOGIC;
+        LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_d0 : OUT STD_LOGIC_VECTOR (31 downto 0);
+        LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_address1 : OUT STD_LOGIC_VECTOR (12 downto 0);
+        LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_ce1 : OUT STD_LOGIC;
+        LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_we1 : OUT STD_LOGIC;
+        LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_d1 : OUT STD_LOGIC_VECTOR (31 downto 0);
         LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_address0 : OUT STD_LOGIC_VECTOR (8 downto 0);
         LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_ce0 : OUT STD_LOGIC;
         LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_we0 : OUT STD_LOGIC;
@@ -1855,12 +1900,12 @@ architecture behav of fit is
         l1track3D_stubs_data_settings_chosenRofZ_s_address1 : OUT STD_LOGIC_VECTOR (3 downto 0);
         l1track3D_stubs_data_settings_chosenRofZ_s_ce1 : OUT STD_LOGIC;
         l1track3D_stubs_data_settings_chosenRofZ_s_q1 : IN STD_LOGIC_VECTOR (31 downto 0);
-        l1track3D_stubs_data_settings_etaRegions_s_address0 : OUT STD_LOGIC_VECTOR (7 downto 0);
-        l1track3D_stubs_data_settings_etaRegions_s_ce0 : OUT STD_LOGIC;
-        l1track3D_stubs_data_settings_etaRegions_s_q0 : IN STD_LOGIC_VECTOR (31 downto 0);
-        l1track3D_stubs_data_settings_etaRegions_s_address1 : OUT STD_LOGIC_VECTOR (7 downto 0);
-        l1track3D_stubs_data_settings_etaRegions_s_ce1 : OUT STD_LOGIC;
-        l1track3D_stubs_data_settings_etaRegions_s_q1 : IN STD_LOGIC_VECTOR (31 downto 0);
+        l1track3D_stubs_data_settings_sinh_etaRegions_s_address0 : OUT STD_LOGIC_VECTOR (7 downto 0);
+        l1track3D_stubs_data_settings_sinh_etaRegions_s_ce0 : OUT STD_LOGIC;
+        l1track3D_stubs_data_settings_sinh_etaRegions_s_q0 : IN STD_LOGIC_VECTOR (31 downto 0);
+        l1track3D_stubs_data_settings_sinh_etaRegions_s_address1 : OUT STD_LOGIC_VECTOR (7 downto 0);
+        l1track3D_stubs_data_settings_sinh_etaRegions_s_ce1 : OUT STD_LOGIC;
+        l1track3D_stubs_data_settings_sinh_etaRegions_s_q1 : IN STD_LOGIC_VECTOR (31 downto 0);
         l1track3D_stubs_data_settings_minNumMatchLayers_s_address0 : OUT STD_LOGIC_VECTOR (3 downto 0);
         l1track3D_stubs_data_settings_minNumMatchLayers_s_ce0 : OUT STD_LOGIC;
         l1track3D_stubs_data_settings_minNumMatchLayers_s_q0 : IN STD_LOGIC_VECTOR (31 downto 0);
@@ -1919,43 +1964,6 @@ architecture behav of fit is
         ap_return_7 : OUT STD_LOGIC_VECTOR (31 downto 0);
         ap_return_8 : OUT STD_LOGIC_VECTOR (31 downto 0);
         ap_return_9 : OUT STD_LOGIC_VECTOR (31 downto 0) );
-    end component;
-
-
-    component calcHelix IS
-    port (
-        ap_clk : IN STD_LOGIC;
-        ap_rst : IN STD_LOGIC;
-        ap_start : IN STD_LOGIC;
-        ap_done : OUT STD_LOGIC;
-        ap_idle : OUT STD_LOGIC;
-        ap_ready : OUT STD_LOGIC;
-        LinearRegression_settings_chosenRofPhi_read : IN STD_LOGIC_VECTOR (31 downto 0);
-        LinearRegression_settings_chosenRofZ_read : IN STD_LOGIC_VECTOR (31 downto 0);
-        LinearRegression_HTParameter_qOverPt_read : IN STD_LOGIC_VECTOR (31 downto 0);
-        LinearRegression_HTParameter_phiT_read : IN STD_LOGIC_VECTOR (31 downto 0);
-        LinearRegression_HTParameter_cotTheta_read : IN STD_LOGIC_VECTOR (31 downto 0);
-        LinearRegression_HTParameter_zT_read : IN STD_LOGIC_VECTOR (31 downto 0);
-        LinearRegression_stubMap_size_read : IN STD_LOGIC_VECTOR (31 downto 0);
-        LinearRegression_stubMap_data_second_size_s_address0 : OUT STD_LOGIC_VECTOR (4 downto 0);
-        LinearRegression_stubMap_data_second_size_s_ce0 : OUT STD_LOGIC;
-        LinearRegression_stubMap_data_second_size_s_q0 : IN STD_LOGIC_VECTOR (31 downto 0);
-        LinearRegression_stubMap_data_second_data_r_s_address0 : OUT STD_LOGIC_VECTOR (8 downto 0);
-        LinearRegression_stubMap_data_second_data_r_s_ce0 : OUT STD_LOGIC;
-        LinearRegression_stubMap_data_second_data_r_s_q0 : IN STD_LOGIC_VECTOR (31 downto 0);
-        LinearRegression_stubMap_data_second_data_phi_s_address0 : OUT STD_LOGIC_VECTOR (8 downto 0);
-        LinearRegression_stubMap_data_second_data_phi_s_ce0 : OUT STD_LOGIC;
-        LinearRegression_stubMap_data_second_data_phi_s_q0 : IN STD_LOGIC_VECTOR (31 downto 0);
-        LinearRegression_stubMap_data_second_data_z_s_address0 : OUT STD_LOGIC_VECTOR (8 downto 0);
-        LinearRegression_stubMap_data_second_data_z_s_ce0 : OUT STD_LOGIC;
-        LinearRegression_stubMap_data_second_data_z_s_q0 : IN STD_LOGIC_VECTOR (31 downto 0);
-        LinearRegression_stubMap_data_second_data_psModule_s_address0 : OUT STD_LOGIC_VECTOR (8 downto 0);
-        LinearRegression_stubMap_data_second_data_psModule_s_ce0 : OUT STD_LOGIC;
-        LinearRegression_stubMap_data_second_data_psModule_s_q0 : IN STD_LOGIC_VECTOR (0 downto 0);
-        ap_return_0 : OUT STD_LOGIC_VECTOR (31 downto 0);
-        ap_return_1 : OUT STD_LOGIC_VECTOR (31 downto 0);
-        ap_return_2 : OUT STD_LOGIC_VECTOR (31 downto 0);
-        ap_return_3 : OUT STD_LOGIC_VECTOR (31 downto 0) );
     end component;
 
 
@@ -2122,690 +2130,693 @@ architecture behav of fit is
 
 
 begin
-    grp_killLargestResidual_fu_447 : component killLargestResidual
+    grp_killLargestResidual_fu_445 : component killLargestResidual
     port map (
         ap_clk => ap_clk,
         ap_rst => ap_rst,
-        ap_start => grp_killLargestResidual_fu_447_ap_start,
-        ap_done => grp_killLargestResidual_fu_447_ap_done,
-        ap_idle => grp_killLargestResidual_fu_447_ap_idle,
-        ap_ready => grp_killLargestResidual_fu_447_ap_ready,
-        LinearRegression_stubs_size_read => LinearRegression_stu_reg_324,
-        LinearRegression_stubs_data_settings_chosenRofPhi_s_address0 => grp_killLargestResidual_fu_447_LinearRegression_stubs_data_settings_chosenRofPhi_s_address0,
-        LinearRegression_stubs_data_settings_chosenRofPhi_s_ce0 => grp_killLargestResidual_fu_447_LinearRegression_stubs_data_settings_chosenRofPhi_s_ce0,
-        LinearRegression_stubs_data_settings_chosenRofPhi_s_we0 => grp_killLargestResidual_fu_447_LinearRegression_stubs_data_settings_chosenRofPhi_s_we0,
-        LinearRegression_stubs_data_settings_chosenRofPhi_s_d0 => grp_killLargestResidual_fu_447_LinearRegression_stubs_data_settings_chosenRofPhi_s_d0,
+        ap_start => grp_killLargestResidual_fu_445_ap_start,
+        ap_done => grp_killLargestResidual_fu_445_ap_done,
+        ap_idle => grp_killLargestResidual_fu_445_ap_idle,
+        ap_ready => grp_killLargestResidual_fu_445_ap_ready,
+        LinearRegression_stubs_size_read => LinearRegression_stu_reg_322,
+        LinearRegression_stubs_data_settings_chosenRofPhi_s_address0 => grp_killLargestResidual_fu_445_LinearRegression_stubs_data_settings_chosenRofPhi_s_address0,
+        LinearRegression_stubs_data_settings_chosenRofPhi_s_ce0 => grp_killLargestResidual_fu_445_LinearRegression_stubs_data_settings_chosenRofPhi_s_ce0,
+        LinearRegression_stubs_data_settings_chosenRofPhi_s_we0 => grp_killLargestResidual_fu_445_LinearRegression_stubs_data_settings_chosenRofPhi_s_we0,
+        LinearRegression_stubs_data_settings_chosenRofPhi_s_d0 => grp_killLargestResidual_fu_445_LinearRegression_stubs_data_settings_chosenRofPhi_s_d0,
         LinearRegression_stubs_data_settings_chosenRofPhi_s_q0 => LinearRegression_stubs_data_settings_chosenRofPhi_s_q0,
-        LinearRegression_stubs_data_settings_chosenRofZ_s_address0 => grp_killLargestResidual_fu_447_LinearRegression_stubs_data_settings_chosenRofZ_s_address0,
-        LinearRegression_stubs_data_settings_chosenRofZ_s_ce0 => grp_killLargestResidual_fu_447_LinearRegression_stubs_data_settings_chosenRofZ_s_ce0,
-        LinearRegression_stubs_data_settings_chosenRofZ_s_we0 => grp_killLargestResidual_fu_447_LinearRegression_stubs_data_settings_chosenRofZ_s_we0,
-        LinearRegression_stubs_data_settings_chosenRofZ_s_d0 => grp_killLargestResidual_fu_447_LinearRegression_stubs_data_settings_chosenRofZ_s_d0,
+        LinearRegression_stubs_data_settings_chosenRofZ_s_address0 => grp_killLargestResidual_fu_445_LinearRegression_stubs_data_settings_chosenRofZ_s_address0,
+        LinearRegression_stubs_data_settings_chosenRofZ_s_ce0 => grp_killLargestResidual_fu_445_LinearRegression_stubs_data_settings_chosenRofZ_s_ce0,
+        LinearRegression_stubs_data_settings_chosenRofZ_s_we0 => grp_killLargestResidual_fu_445_LinearRegression_stubs_data_settings_chosenRofZ_s_we0,
+        LinearRegression_stubs_data_settings_chosenRofZ_s_d0 => grp_killLargestResidual_fu_445_LinearRegression_stubs_data_settings_chosenRofZ_s_d0,
         LinearRegression_stubs_data_settings_chosenRofZ_s_q0 => LinearRegression_stubs_data_settings_chosenRofZ_s_q0,
-        LinearRegression_stubs_data_settings_etaRegions_s_address0 => grp_killLargestResidual_fu_447_LinearRegression_stubs_data_settings_etaRegions_s_address0,
-        LinearRegression_stubs_data_settings_etaRegions_s_ce0 => grp_killLargestResidual_fu_447_LinearRegression_stubs_data_settings_etaRegions_s_ce0,
-        LinearRegression_stubs_data_settings_etaRegions_s_we0 => grp_killLargestResidual_fu_447_LinearRegression_stubs_data_settings_etaRegions_s_we0,
-        LinearRegression_stubs_data_settings_etaRegions_s_d0 => grp_killLargestResidual_fu_447_LinearRegression_stubs_data_settings_etaRegions_s_d0,
-        LinearRegression_stubs_data_settings_etaRegions_s_q0 => LinearRegression_stubs_data_settings_etaRegions_s_q0,
-        LinearRegression_stubs_data_settings_etaRegions_s_address1 => grp_killLargestResidual_fu_447_LinearRegression_stubs_data_settings_etaRegions_s_address1,
-        LinearRegression_stubs_data_settings_etaRegions_s_ce1 => grp_killLargestResidual_fu_447_LinearRegression_stubs_data_settings_etaRegions_s_ce1,
-        LinearRegression_stubs_data_settings_etaRegions_s_we1 => grp_killLargestResidual_fu_447_LinearRegression_stubs_data_settings_etaRegions_s_we1,
-        LinearRegression_stubs_data_settings_etaRegions_s_d1 => grp_killLargestResidual_fu_447_LinearRegression_stubs_data_settings_etaRegions_s_d1,
-        LinearRegression_stubs_data_settings_etaRegions_s_q1 => LinearRegression_stubs_data_settings_etaRegions_s_q1,
-        LinearRegression_stubs_data_settings_minNumMatchLayers_s_address0 => grp_killLargestResidual_fu_447_LinearRegression_stubs_data_settings_minNumMatchLayers_s_address0,
-        LinearRegression_stubs_data_settings_minNumMatchLayers_s_ce0 => grp_killLargestResidual_fu_447_LinearRegression_stubs_data_settings_minNumMatchLayers_s_ce0,
-        LinearRegression_stubs_data_settings_minNumMatchLayers_s_we0 => grp_killLargestResidual_fu_447_LinearRegression_stubs_data_settings_minNumMatchLayers_s_we0,
-        LinearRegression_stubs_data_settings_minNumMatchLayers_s_d0 => grp_killLargestResidual_fu_447_LinearRegression_stubs_data_settings_minNumMatchLayers_s_d0,
+        LinearRegression_stubs_data_settings_sinh_etaRegions_s_address0 => grp_killLargestResidual_fu_445_LinearRegression_stubs_data_settings_sinh_etaRegions_s_address0,
+        LinearRegression_stubs_data_settings_sinh_etaRegions_s_ce0 => grp_killLargestResidual_fu_445_LinearRegression_stubs_data_settings_sinh_etaRegions_s_ce0,
+        LinearRegression_stubs_data_settings_sinh_etaRegions_s_we0 => grp_killLargestResidual_fu_445_LinearRegression_stubs_data_settings_sinh_etaRegions_s_we0,
+        LinearRegression_stubs_data_settings_sinh_etaRegions_s_d0 => grp_killLargestResidual_fu_445_LinearRegression_stubs_data_settings_sinh_etaRegions_s_d0,
+        LinearRegression_stubs_data_settings_sinh_etaRegions_s_q0 => LinearRegression_stubs_data_settings_sinh_etaRegions_s_q0,
+        LinearRegression_stubs_data_settings_sinh_etaRegions_s_address1 => grp_killLargestResidual_fu_445_LinearRegression_stubs_data_settings_sinh_etaRegions_s_address1,
+        LinearRegression_stubs_data_settings_sinh_etaRegions_s_ce1 => grp_killLargestResidual_fu_445_LinearRegression_stubs_data_settings_sinh_etaRegions_s_ce1,
+        LinearRegression_stubs_data_settings_sinh_etaRegions_s_we1 => grp_killLargestResidual_fu_445_LinearRegression_stubs_data_settings_sinh_etaRegions_s_we1,
+        LinearRegression_stubs_data_settings_sinh_etaRegions_s_d1 => grp_killLargestResidual_fu_445_LinearRegression_stubs_data_settings_sinh_etaRegions_s_d1,
+        LinearRegression_stubs_data_settings_sinh_etaRegions_s_q1 => LinearRegression_stubs_data_settings_sinh_etaRegions_s_q1,
+        LinearRegression_stubs_data_settings_minNumMatchLayers_s_address0 => grp_killLargestResidual_fu_445_LinearRegression_stubs_data_settings_minNumMatchLayers_s_address0,
+        LinearRegression_stubs_data_settings_minNumMatchLayers_s_ce0 => grp_killLargestResidual_fu_445_LinearRegression_stubs_data_settings_minNumMatchLayers_s_ce0,
+        LinearRegression_stubs_data_settings_minNumMatchLayers_s_we0 => grp_killLargestResidual_fu_445_LinearRegression_stubs_data_settings_minNumMatchLayers_s_we0,
+        LinearRegression_stubs_data_settings_minNumMatchLayers_s_d0 => grp_killLargestResidual_fu_445_LinearRegression_stubs_data_settings_minNumMatchLayers_s_d0,
         LinearRegression_stubs_data_settings_minNumMatchLayers_s_q0 => LinearRegression_stubs_data_settings_minNumMatchLayers_s_q0,
-        LinearRegression_stubs_data_settings_minPSLayers_s_address0 => grp_killLargestResidual_fu_447_LinearRegression_stubs_data_settings_minPSLayers_s_address0,
-        LinearRegression_stubs_data_settings_minPSLayers_s_ce0 => grp_killLargestResidual_fu_447_LinearRegression_stubs_data_settings_minPSLayers_s_ce0,
-        LinearRegression_stubs_data_settings_minPSLayers_s_we0 => grp_killLargestResidual_fu_447_LinearRegression_stubs_data_settings_minPSLayers_s_we0,
-        LinearRegression_stubs_data_settings_minPSLayers_s_d0 => grp_killLargestResidual_fu_447_LinearRegression_stubs_data_settings_minPSLayers_s_d0,
+        LinearRegression_stubs_data_settings_minPSLayers_s_address0 => grp_killLargestResidual_fu_445_LinearRegression_stubs_data_settings_minPSLayers_s_address0,
+        LinearRegression_stubs_data_settings_minPSLayers_s_ce0 => grp_killLargestResidual_fu_445_LinearRegression_stubs_data_settings_minPSLayers_s_ce0,
+        LinearRegression_stubs_data_settings_minPSLayers_s_we0 => grp_killLargestResidual_fu_445_LinearRegression_stubs_data_settings_minPSLayers_s_we0,
+        LinearRegression_stubs_data_settings_minPSLayers_s_d0 => grp_killLargestResidual_fu_445_LinearRegression_stubs_data_settings_minPSLayers_s_d0,
         LinearRegression_stubs_data_settings_minPSLayers_s_q0 => LinearRegression_stubs_data_settings_minPSLayers_s_q0,
-        LinearRegression_stubs_data_r_s_address0 => grp_killLargestResidual_fu_447_LinearRegression_stubs_data_r_s_address0,
-        LinearRegression_stubs_data_r_s_ce0 => grp_killLargestResidual_fu_447_LinearRegression_stubs_data_r_s_ce0,
-        LinearRegression_stubs_data_r_s_we0 => grp_killLargestResidual_fu_447_LinearRegression_stubs_data_r_s_we0,
-        LinearRegression_stubs_data_r_s_d0 => grp_killLargestResidual_fu_447_LinearRegression_stubs_data_r_s_d0,
+        LinearRegression_stubs_data_r_s_address0 => grp_killLargestResidual_fu_445_LinearRegression_stubs_data_r_s_address0,
+        LinearRegression_stubs_data_r_s_ce0 => grp_killLargestResidual_fu_445_LinearRegression_stubs_data_r_s_ce0,
+        LinearRegression_stubs_data_r_s_we0 => grp_killLargestResidual_fu_445_LinearRegression_stubs_data_r_s_we0,
+        LinearRegression_stubs_data_r_s_d0 => grp_killLargestResidual_fu_445_LinearRegression_stubs_data_r_s_d0,
         LinearRegression_stubs_data_r_s_q0 => LinearRegression_stubs_data_r_s_q0,
-        LinearRegression_stubs_data_phi_s_address0 => grp_killLargestResidual_fu_447_LinearRegression_stubs_data_phi_s_address0,
-        LinearRegression_stubs_data_phi_s_ce0 => grp_killLargestResidual_fu_447_LinearRegression_stubs_data_phi_s_ce0,
-        LinearRegression_stubs_data_phi_s_we0 => grp_killLargestResidual_fu_447_LinearRegression_stubs_data_phi_s_we0,
-        LinearRegression_stubs_data_phi_s_d0 => grp_killLargestResidual_fu_447_LinearRegression_stubs_data_phi_s_d0,
+        LinearRegression_stubs_data_phi_s_address0 => grp_killLargestResidual_fu_445_LinearRegression_stubs_data_phi_s_address0,
+        LinearRegression_stubs_data_phi_s_ce0 => grp_killLargestResidual_fu_445_LinearRegression_stubs_data_phi_s_ce0,
+        LinearRegression_stubs_data_phi_s_we0 => grp_killLargestResidual_fu_445_LinearRegression_stubs_data_phi_s_we0,
+        LinearRegression_stubs_data_phi_s_d0 => grp_killLargestResidual_fu_445_LinearRegression_stubs_data_phi_s_d0,
         LinearRegression_stubs_data_phi_s_q0 => LinearRegression_stubs_data_phi_s_q0,
-        LinearRegression_stubs_data_z_s_address0 => grp_killLargestResidual_fu_447_LinearRegression_stubs_data_z_s_address0,
-        LinearRegression_stubs_data_z_s_ce0 => grp_killLargestResidual_fu_447_LinearRegression_stubs_data_z_s_ce0,
-        LinearRegression_stubs_data_z_s_we0 => grp_killLargestResidual_fu_447_LinearRegression_stubs_data_z_s_we0,
-        LinearRegression_stubs_data_z_s_d0 => grp_killLargestResidual_fu_447_LinearRegression_stubs_data_z_s_d0,
+        LinearRegression_stubs_data_z_s_address0 => grp_killLargestResidual_fu_445_LinearRegression_stubs_data_z_s_address0,
+        LinearRegression_stubs_data_z_s_ce0 => grp_killLargestResidual_fu_445_LinearRegression_stubs_data_z_s_ce0,
+        LinearRegression_stubs_data_z_s_we0 => grp_killLargestResidual_fu_445_LinearRegression_stubs_data_z_s_we0,
+        LinearRegression_stubs_data_z_s_d0 => grp_killLargestResidual_fu_445_LinearRegression_stubs_data_z_s_d0,
         LinearRegression_stubs_data_z_s_q0 => LinearRegression_stubs_data_z_s_q0,
-        LinearRegression_stubs_data_layerId_s_address0 => grp_killLargestResidual_fu_447_LinearRegression_stubs_data_layerId_s_address0,
-        LinearRegression_stubs_data_layerId_s_ce0 => grp_killLargestResidual_fu_447_LinearRegression_stubs_data_layerId_s_ce0,
-        LinearRegression_stubs_data_layerId_s_we0 => grp_killLargestResidual_fu_447_LinearRegression_stubs_data_layerId_s_we0,
-        LinearRegression_stubs_data_layerId_s_d0 => grp_killLargestResidual_fu_447_LinearRegression_stubs_data_layerId_s_d0,
+        LinearRegression_stubs_data_layerId_s_address0 => grp_killLargestResidual_fu_445_LinearRegression_stubs_data_layerId_s_address0,
+        LinearRegression_stubs_data_layerId_s_ce0 => grp_killLargestResidual_fu_445_LinearRegression_stubs_data_layerId_s_ce0,
+        LinearRegression_stubs_data_layerId_s_we0 => grp_killLargestResidual_fu_445_LinearRegression_stubs_data_layerId_s_we0,
+        LinearRegression_stubs_data_layerId_s_d0 => grp_killLargestResidual_fu_445_LinearRegression_stubs_data_layerId_s_d0,
         LinearRegression_stubs_data_layerId_s_q0 => LinearRegression_stubs_data_layerId_s_q0,
-        LinearRegression_stubs_data_psModule_s_address0 => grp_killLargestResidual_fu_447_LinearRegression_stubs_data_psModule_s_address0,
-        LinearRegression_stubs_data_psModule_s_ce0 => grp_killLargestResidual_fu_447_LinearRegression_stubs_data_psModule_s_ce0,
-        LinearRegression_stubs_data_psModule_s_we0 => grp_killLargestResidual_fu_447_LinearRegression_stubs_data_psModule_s_we0,
-        LinearRegression_stubs_data_psModule_s_d0 => grp_killLargestResidual_fu_447_LinearRegression_stubs_data_psModule_s_d0,
+        LinearRegression_stubs_data_psModule_s_address0 => grp_killLargestResidual_fu_445_LinearRegression_stubs_data_psModule_s_address0,
+        LinearRegression_stubs_data_psModule_s_ce0 => grp_killLargestResidual_fu_445_LinearRegression_stubs_data_psModule_s_ce0,
+        LinearRegression_stubs_data_psModule_s_we0 => grp_killLargestResidual_fu_445_LinearRegression_stubs_data_psModule_s_we0,
+        LinearRegression_stubs_data_psModule_s_d0 => grp_killLargestResidual_fu_445_LinearRegression_stubs_data_psModule_s_d0,
         LinearRegression_stubs_data_psModule_s_q0 => LinearRegression_stubs_data_psModule_s_q0,
-        LinearRegression_stubs_data_barrel_s_address0 => grp_killLargestResidual_fu_447_LinearRegression_stubs_data_barrel_s_address0,
-        LinearRegression_stubs_data_barrel_s_ce0 => grp_killLargestResidual_fu_447_LinearRegression_stubs_data_barrel_s_ce0,
-        LinearRegression_stubs_data_barrel_s_we0 => grp_killLargestResidual_fu_447_LinearRegression_stubs_data_barrel_s_we0,
-        LinearRegression_stubs_data_barrel_s_d0 => grp_killLargestResidual_fu_447_LinearRegression_stubs_data_barrel_s_d0,
+        LinearRegression_stubs_data_barrel_s_address0 => grp_killLargestResidual_fu_445_LinearRegression_stubs_data_barrel_s_address0,
+        LinearRegression_stubs_data_barrel_s_ce0 => grp_killLargestResidual_fu_445_LinearRegression_stubs_data_barrel_s_ce0,
+        LinearRegression_stubs_data_barrel_s_we0 => grp_killLargestResidual_fu_445_LinearRegression_stubs_data_barrel_s_we0,
+        LinearRegression_stubs_data_barrel_s_d0 => grp_killLargestResidual_fu_445_LinearRegression_stubs_data_barrel_s_d0,
         LinearRegression_stubs_data_barrel_s_q0 => LinearRegression_stubs_data_barrel_s_q0,
-        LinearRegression_stubMap_size_read => LinearRegression_stu_403_reg_314,
-        LinearRegression_stubMap_data_first_address0 => grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_first_address0,
-        LinearRegression_stubMap_data_first_ce0 => grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_first_ce0,
-        LinearRegression_stubMap_data_first_we0 => grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_first_we0,
-        LinearRegression_stubMap_data_first_d0 => grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_first_d0,
+        LinearRegression_stubMap_size_read => LinearRegression_stu_401_reg_312,
+        LinearRegression_stubMap_data_first_address0 => grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_first_address0,
+        LinearRegression_stubMap_data_first_ce0 => grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_first_ce0,
+        LinearRegression_stubMap_data_first_we0 => grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_first_we0,
+        LinearRegression_stubMap_data_first_d0 => grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_first_d0,
         LinearRegression_stubMap_data_first_q0 => LinearRegression_stubMap_data_first_q0,
-        LinearRegression_stubMap_data_second_size_s_address0 => grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_size_s_address0,
-        LinearRegression_stubMap_data_second_size_s_ce0 => grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_size_s_ce0,
-        LinearRegression_stubMap_data_second_size_s_we0 => grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_size_s_we0,
-        LinearRegression_stubMap_data_second_size_s_d0 => grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_size_s_d0,
+        LinearRegression_stubMap_data_second_size_s_address0 => grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_size_s_address0,
+        LinearRegression_stubMap_data_second_size_s_ce0 => grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_size_s_ce0,
+        LinearRegression_stubMap_data_second_size_s_we0 => grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_size_s_we0,
+        LinearRegression_stubMap_data_second_size_s_d0 => grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_size_s_d0,
         LinearRegression_stubMap_data_second_size_s_q0 => LinearRegression_stubMap_data_second_size_s_q0,
-        LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_address0 => grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_address0,
-        LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_ce0 => grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_ce0,
-        LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_we0 => grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_we0,
-        LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_d0 => grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_d0,
+        LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_address0 => grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_address0,
+        LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_ce0 => grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_ce0,
+        LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_we0 => grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_we0,
+        LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_d0 => grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_d0,
         LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_q0 => LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_q0,
-        LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_address1 => grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_address1,
-        LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_ce1 => grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_ce1,
-        LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_we1 => grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_we1,
-        LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_d1 => grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_d1,
+        LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_address1 => grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_address1,
+        LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_ce1 => grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_ce1,
+        LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_we1 => grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_we1,
+        LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_d1 => grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_d1,
         LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_q1 => LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_q1,
-        LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_address0 => grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_address0,
-        LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_ce0 => grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_ce0,
-        LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_we0 => grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_we0,
-        LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_d0 => grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_d0,
+        LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_address0 => grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_address0,
+        LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_ce0 => grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_ce0,
+        LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_we0 => grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_we0,
+        LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_d0 => grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_d0,
         LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_q0 => LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_q0,
-        LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_address1 => grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_address1,
-        LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_ce1 => grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_ce1,
-        LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_we1 => grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_we1,
-        LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_d1 => grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_d1,
+        LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_address1 => grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_address1,
+        LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_ce1 => grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_ce1,
+        LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_we1 => grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_we1,
+        LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_d1 => grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_d1,
         LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_q1 => LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_q1,
-        LinearRegression_stubMap_data_second_data_settings_etaRegions_s_address0 => grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_settings_etaRegions_s_address0,
-        LinearRegression_stubMap_data_second_data_settings_etaRegions_s_ce0 => grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_settings_etaRegions_s_ce0,
-        LinearRegression_stubMap_data_second_data_settings_etaRegions_s_we0 => grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_settings_etaRegions_s_we0,
-        LinearRegression_stubMap_data_second_data_settings_etaRegions_s_d0 => grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_settings_etaRegions_s_d0,
-        LinearRegression_stubMap_data_second_data_settings_etaRegions_s_q0 => LinearRegression_stubMap_data_second_data_settings_etaRegions_s_q0,
-        LinearRegression_stubMap_data_second_data_settings_etaRegions_s_address1 => grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_settings_etaRegions_s_address1,
-        LinearRegression_stubMap_data_second_data_settings_etaRegions_s_ce1 => grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_settings_etaRegions_s_ce1,
-        LinearRegression_stubMap_data_second_data_settings_etaRegions_s_we1 => grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_settings_etaRegions_s_we1,
-        LinearRegression_stubMap_data_second_data_settings_etaRegions_s_d1 => grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_settings_etaRegions_s_d1,
-        LinearRegression_stubMap_data_second_data_settings_etaRegions_s_q1 => LinearRegression_stubMap_data_second_data_settings_etaRegions_s_q1,
-        LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_address0 => grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_address0,
-        LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_ce0 => grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_ce0,
-        LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_we0 => grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_we0,
-        LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_d0 => grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_d0,
+        LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_address0 => grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_address0,
+        LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_ce0 => grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_ce0,
+        LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_we0 => grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_we0,
+        LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_d0 => grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_d0,
+        LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_q0 => LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_q0,
+        LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_address1 => grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_address1,
+        LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_ce1 => grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_ce1,
+        LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_we1 => grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_we1,
+        LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_d1 => grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_d1,
+        LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_q1 => LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_q1,
+        LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_address0 => grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_address0,
+        LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_ce0 => grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_ce0,
+        LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_we0 => grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_we0,
+        LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_d0 => grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_d0,
         LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_q0 => LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_q0,
-        LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_address1 => grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_address1,
-        LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_ce1 => grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_ce1,
-        LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_we1 => grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_we1,
-        LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_d1 => grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_d1,
+        LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_address1 => grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_address1,
+        LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_ce1 => grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_ce1,
+        LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_we1 => grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_we1,
+        LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_d1 => grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_d1,
         LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_q1 => LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_q1,
-        LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_address0 => grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_address0,
-        LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_ce0 => grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_ce0,
-        LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_we0 => grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_we0,
-        LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_d0 => grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_d0,
+        LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_address0 => grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_address0,
+        LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_ce0 => grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_ce0,
+        LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_we0 => grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_we0,
+        LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_d0 => grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_d0,
         LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_q0 => LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_q0,
-        LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_address1 => grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_address1,
-        LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_ce1 => grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_ce1,
-        LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_we1 => grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_we1,
-        LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_d1 => grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_d1,
+        LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_address1 => grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_address1,
+        LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_ce1 => grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_ce1,
+        LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_we1 => grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_we1,
+        LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_d1 => grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_d1,
         LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_q1 => LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_q1,
-        LinearRegression_stubMap_data_second_data_r_s_address0 => grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_r_s_address0,
-        LinearRegression_stubMap_data_second_data_r_s_ce0 => grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_r_s_ce0,
-        LinearRegression_stubMap_data_second_data_r_s_we0 => grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_r_s_we0,
-        LinearRegression_stubMap_data_second_data_r_s_d0 => grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_r_s_d0,
+        LinearRegression_stubMap_data_second_data_r_s_address0 => grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_r_s_address0,
+        LinearRegression_stubMap_data_second_data_r_s_ce0 => grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_r_s_ce0,
+        LinearRegression_stubMap_data_second_data_r_s_we0 => grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_r_s_we0,
+        LinearRegression_stubMap_data_second_data_r_s_d0 => grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_r_s_d0,
         LinearRegression_stubMap_data_second_data_r_s_q0 => LinearRegression_stubMap_data_second_data_r_s_q0,
-        LinearRegression_stubMap_data_second_data_r_s_address1 => grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_r_s_address1,
-        LinearRegression_stubMap_data_second_data_r_s_ce1 => grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_r_s_ce1,
-        LinearRegression_stubMap_data_second_data_r_s_we1 => grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_r_s_we1,
-        LinearRegression_stubMap_data_second_data_r_s_d1 => grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_r_s_d1,
+        LinearRegression_stubMap_data_second_data_r_s_address1 => grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_r_s_address1,
+        LinearRegression_stubMap_data_second_data_r_s_ce1 => grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_r_s_ce1,
+        LinearRegression_stubMap_data_second_data_r_s_we1 => grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_r_s_we1,
+        LinearRegression_stubMap_data_second_data_r_s_d1 => grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_r_s_d1,
         LinearRegression_stubMap_data_second_data_r_s_q1 => LinearRegression_stubMap_data_second_data_r_s_q1,
-        LinearRegression_stubMap_data_second_data_phi_s_address0 => grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_phi_s_address0,
-        LinearRegression_stubMap_data_second_data_phi_s_ce0 => grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_phi_s_ce0,
-        LinearRegression_stubMap_data_second_data_phi_s_we0 => grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_phi_s_we0,
-        LinearRegression_stubMap_data_second_data_phi_s_d0 => grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_phi_s_d0,
+        LinearRegression_stubMap_data_second_data_phi_s_address0 => grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_phi_s_address0,
+        LinearRegression_stubMap_data_second_data_phi_s_ce0 => grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_phi_s_ce0,
+        LinearRegression_stubMap_data_second_data_phi_s_we0 => grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_phi_s_we0,
+        LinearRegression_stubMap_data_second_data_phi_s_d0 => grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_phi_s_d0,
         LinearRegression_stubMap_data_second_data_phi_s_q0 => LinearRegression_stubMap_data_second_data_phi_s_q0,
-        LinearRegression_stubMap_data_second_data_phi_s_address1 => grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_phi_s_address1,
-        LinearRegression_stubMap_data_second_data_phi_s_ce1 => grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_phi_s_ce1,
-        LinearRegression_stubMap_data_second_data_phi_s_we1 => grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_phi_s_we1,
-        LinearRegression_stubMap_data_second_data_phi_s_d1 => grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_phi_s_d1,
+        LinearRegression_stubMap_data_second_data_phi_s_address1 => grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_phi_s_address1,
+        LinearRegression_stubMap_data_second_data_phi_s_ce1 => grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_phi_s_ce1,
+        LinearRegression_stubMap_data_second_data_phi_s_we1 => grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_phi_s_we1,
+        LinearRegression_stubMap_data_second_data_phi_s_d1 => grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_phi_s_d1,
         LinearRegression_stubMap_data_second_data_phi_s_q1 => LinearRegression_stubMap_data_second_data_phi_s_q1,
-        LinearRegression_stubMap_data_second_data_z_s_address0 => grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_z_s_address0,
-        LinearRegression_stubMap_data_second_data_z_s_ce0 => grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_z_s_ce0,
-        LinearRegression_stubMap_data_second_data_z_s_we0 => grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_z_s_we0,
-        LinearRegression_stubMap_data_second_data_z_s_d0 => grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_z_s_d0,
+        LinearRegression_stubMap_data_second_data_z_s_address0 => grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_z_s_address0,
+        LinearRegression_stubMap_data_second_data_z_s_ce0 => grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_z_s_ce0,
+        LinearRegression_stubMap_data_second_data_z_s_we0 => grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_z_s_we0,
+        LinearRegression_stubMap_data_second_data_z_s_d0 => grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_z_s_d0,
         LinearRegression_stubMap_data_second_data_z_s_q0 => LinearRegression_stubMap_data_second_data_z_s_q0,
-        LinearRegression_stubMap_data_second_data_z_s_address1 => grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_z_s_address1,
-        LinearRegression_stubMap_data_second_data_z_s_ce1 => grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_z_s_ce1,
-        LinearRegression_stubMap_data_second_data_z_s_we1 => grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_z_s_we1,
-        LinearRegression_stubMap_data_second_data_z_s_d1 => grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_z_s_d1,
+        LinearRegression_stubMap_data_second_data_z_s_address1 => grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_z_s_address1,
+        LinearRegression_stubMap_data_second_data_z_s_ce1 => grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_z_s_ce1,
+        LinearRegression_stubMap_data_second_data_z_s_we1 => grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_z_s_we1,
+        LinearRegression_stubMap_data_second_data_z_s_d1 => grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_z_s_d1,
         LinearRegression_stubMap_data_second_data_z_s_q1 => LinearRegression_stubMap_data_second_data_z_s_q1,
-        LinearRegression_stubMap_data_second_data_layerId_s_address0 => grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_layerId_s_address0,
-        LinearRegression_stubMap_data_second_data_layerId_s_ce0 => grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_layerId_s_ce0,
-        LinearRegression_stubMap_data_second_data_layerId_s_we0 => grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_layerId_s_we0,
-        LinearRegression_stubMap_data_second_data_layerId_s_d0 => grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_layerId_s_d0,
+        LinearRegression_stubMap_data_second_data_layerId_s_address0 => grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_layerId_s_address0,
+        LinearRegression_stubMap_data_second_data_layerId_s_ce0 => grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_layerId_s_ce0,
+        LinearRegression_stubMap_data_second_data_layerId_s_we0 => grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_layerId_s_we0,
+        LinearRegression_stubMap_data_second_data_layerId_s_d0 => grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_layerId_s_d0,
         LinearRegression_stubMap_data_second_data_layerId_s_q0 => LinearRegression_stubMap_data_second_data_layerId_s_q0,
-        LinearRegression_stubMap_data_second_data_layerId_s_address1 => grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_layerId_s_address1,
-        LinearRegression_stubMap_data_second_data_layerId_s_ce1 => grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_layerId_s_ce1,
-        LinearRegression_stubMap_data_second_data_layerId_s_we1 => grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_layerId_s_we1,
-        LinearRegression_stubMap_data_second_data_layerId_s_d1 => grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_layerId_s_d1,
+        LinearRegression_stubMap_data_second_data_layerId_s_address1 => grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_layerId_s_address1,
+        LinearRegression_stubMap_data_second_data_layerId_s_ce1 => grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_layerId_s_ce1,
+        LinearRegression_stubMap_data_second_data_layerId_s_we1 => grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_layerId_s_we1,
+        LinearRegression_stubMap_data_second_data_layerId_s_d1 => grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_layerId_s_d1,
         LinearRegression_stubMap_data_second_data_layerId_s_q1 => LinearRegression_stubMap_data_second_data_layerId_s_q1,
-        LinearRegression_stubMap_data_second_data_psModule_s_address0 => grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_psModule_s_address0,
-        LinearRegression_stubMap_data_second_data_psModule_s_ce0 => grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_psModule_s_ce0,
-        LinearRegression_stubMap_data_second_data_psModule_s_we0 => grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_psModule_s_we0,
-        LinearRegression_stubMap_data_second_data_psModule_s_d0 => grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_psModule_s_d0,
+        LinearRegression_stubMap_data_second_data_psModule_s_address0 => grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_psModule_s_address0,
+        LinearRegression_stubMap_data_second_data_psModule_s_ce0 => grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_psModule_s_ce0,
+        LinearRegression_stubMap_data_second_data_psModule_s_we0 => grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_psModule_s_we0,
+        LinearRegression_stubMap_data_second_data_psModule_s_d0 => grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_psModule_s_d0,
         LinearRegression_stubMap_data_second_data_psModule_s_q0 => LinearRegression_stubMap_data_second_data_psModule_s_q0,
-        LinearRegression_stubMap_data_second_data_psModule_s_address1 => grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_psModule_s_address1,
-        LinearRegression_stubMap_data_second_data_psModule_s_ce1 => grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_psModule_s_ce1,
-        LinearRegression_stubMap_data_second_data_psModule_s_we1 => grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_psModule_s_we1,
-        LinearRegression_stubMap_data_second_data_psModule_s_d1 => grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_psModule_s_d1,
+        LinearRegression_stubMap_data_second_data_psModule_s_address1 => grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_psModule_s_address1,
+        LinearRegression_stubMap_data_second_data_psModule_s_ce1 => grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_psModule_s_ce1,
+        LinearRegression_stubMap_data_second_data_psModule_s_we1 => grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_psModule_s_we1,
+        LinearRegression_stubMap_data_second_data_psModule_s_d1 => grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_psModule_s_d1,
         LinearRegression_stubMap_data_second_data_psModule_s_q1 => LinearRegression_stubMap_data_second_data_psModule_s_q1,
-        LinearRegression_stubMap_data_second_data_barrel_s_address0 => grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_barrel_s_address0,
-        LinearRegression_stubMap_data_second_data_barrel_s_ce0 => grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_barrel_s_ce0,
-        LinearRegression_stubMap_data_second_data_barrel_s_we0 => grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_barrel_s_we0,
-        LinearRegression_stubMap_data_second_data_barrel_s_d0 => grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_barrel_s_d0,
+        LinearRegression_stubMap_data_second_data_barrel_s_address0 => grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_barrel_s_address0,
+        LinearRegression_stubMap_data_second_data_barrel_s_ce0 => grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_barrel_s_ce0,
+        LinearRegression_stubMap_data_second_data_barrel_s_we0 => grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_barrel_s_we0,
+        LinearRegression_stubMap_data_second_data_barrel_s_d0 => grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_barrel_s_d0,
         LinearRegression_stubMap_data_second_data_barrel_s_q0 => LinearRegression_stubMap_data_second_data_barrel_s_q0,
-        LinearRegression_stubMap_data_second_data_barrel_s_address1 => grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_barrel_s_address1,
-        LinearRegression_stubMap_data_second_data_barrel_s_ce1 => grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_barrel_s_ce1,
-        LinearRegression_stubMap_data_second_data_barrel_s_we1 => grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_barrel_s_we1,
-        LinearRegression_stubMap_data_second_data_barrel_s_d1 => grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_barrel_s_d1,
+        LinearRegression_stubMap_data_second_data_barrel_s_address1 => grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_barrel_s_address1,
+        LinearRegression_stubMap_data_second_data_barrel_s_ce1 => grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_barrel_s_ce1,
+        LinearRegression_stubMap_data_second_data_barrel_s_we1 => grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_barrel_s_we1,
+        LinearRegression_stubMap_data_second_data_barrel_s_d1 => grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_barrel_s_d1,
         LinearRegression_stubMap_data_second_data_barrel_s_q1 => LinearRegression_stubMap_data_second_data_barrel_s_q1,
-        LinearRegression_layerPopulation_size_read => LinearRegression_lay_reg_334,
-        LinearRegression_layerPopulation_data_first_address0 => grp_killLargestResidual_fu_447_LinearRegression_layerPopulation_data_first_address0,
-        LinearRegression_layerPopulation_data_first_ce0 => grp_killLargestResidual_fu_447_LinearRegression_layerPopulation_data_first_ce0,
-        LinearRegression_layerPopulation_data_first_we0 => grp_killLargestResidual_fu_447_LinearRegression_layerPopulation_data_first_we0,
-        LinearRegression_layerPopulation_data_first_d0 => grp_killLargestResidual_fu_447_LinearRegression_layerPopulation_data_first_d0,
+        LinearRegression_layerPopulation_size_read => LinearRegression_lay_reg_332,
+        LinearRegression_layerPopulation_data_first_address0 => grp_killLargestResidual_fu_445_LinearRegression_layerPopulation_data_first_address0,
+        LinearRegression_layerPopulation_data_first_ce0 => grp_killLargestResidual_fu_445_LinearRegression_layerPopulation_data_first_ce0,
+        LinearRegression_layerPopulation_data_first_we0 => grp_killLargestResidual_fu_445_LinearRegression_layerPopulation_data_first_we0,
+        LinearRegression_layerPopulation_data_first_d0 => grp_killLargestResidual_fu_445_LinearRegression_layerPopulation_data_first_d0,
         LinearRegression_layerPopulation_data_first_q0 => LinearRegression_layerPopulation_data_first_q0,
-        LinearRegression_layerPopulation_data_second_address0 => grp_killLargestResidual_fu_447_LinearRegression_layerPopulation_data_second_address0,
-        LinearRegression_layerPopulation_data_second_ce0 => grp_killLargestResidual_fu_447_LinearRegression_layerPopulation_data_second_ce0,
-        LinearRegression_layerPopulation_data_second_we0 => grp_killLargestResidual_fu_447_LinearRegression_layerPopulation_data_second_we0,
-        LinearRegression_layerPopulation_data_second_d0 => grp_killLargestResidual_fu_447_LinearRegression_layerPopulation_data_second_d0,
+        LinearRegression_layerPopulation_data_second_address0 => grp_killLargestResidual_fu_445_LinearRegression_layerPopulation_data_second_address0,
+        LinearRegression_layerPopulation_data_second_ce0 => grp_killLargestResidual_fu_445_LinearRegression_layerPopulation_data_second_ce0,
+        LinearRegression_layerPopulation_data_second_we0 => grp_killLargestResidual_fu_445_LinearRegression_layerPopulation_data_second_we0,
+        LinearRegression_layerPopulation_data_second_d0 => grp_killLargestResidual_fu_445_LinearRegression_layerPopulation_data_second_d0,
         LinearRegression_layerPopulation_data_second_q0 => LinearRegression_layerPopulation_data_second_q0,
-        LinearRegression_residuals_size_read => call_ret6_reg_1600,
-        LinearRegression_residuals_data_first_address0 => grp_killLargestResidual_fu_447_LinearRegression_residuals_data_first_address0,
-        LinearRegression_residuals_data_first_ce0 => grp_killLargestResidual_fu_447_LinearRegression_residuals_data_first_ce0,
+        LinearRegression_residuals_size_read => call_ret6_reg_1596,
+        LinearRegression_residuals_data_first_address0 => grp_killLargestResidual_fu_445_LinearRegression_residuals_data_first_address0,
+        LinearRegression_residuals_data_first_ce0 => grp_killLargestResidual_fu_445_LinearRegression_residuals_data_first_ce0,
         LinearRegression_residuals_data_first_q0 => LinearRegression_residuals_data_first_q0,
-        LinearRegression_residuals_data_second_size_s_address0 => grp_killLargestResidual_fu_447_LinearRegression_residuals_data_second_size_s_address0,
-        LinearRegression_residuals_data_second_size_s_ce0 => grp_killLargestResidual_fu_447_LinearRegression_residuals_data_second_size_s_ce0,
+        LinearRegression_residuals_data_second_size_s_address0 => grp_killLargestResidual_fu_445_LinearRegression_residuals_data_second_size_s_address0,
+        LinearRegression_residuals_data_second_size_s_ce0 => grp_killLargestResidual_fu_445_LinearRegression_residuals_data_second_size_s_ce0,
         LinearRegression_residuals_data_second_size_s_q0 => LinearRegression_residuals_data_second_size_s_q0,
-        LinearRegression_residuals_data_second_data_phi_address0 => grp_killLargestResidual_fu_447_LinearRegression_residuals_data_second_data_phi_address0,
-        LinearRegression_residuals_data_second_data_phi_ce0 => grp_killLargestResidual_fu_447_LinearRegression_residuals_data_second_data_phi_ce0,
+        LinearRegression_residuals_data_second_data_phi_address0 => grp_killLargestResidual_fu_445_LinearRegression_residuals_data_second_data_phi_address0,
+        LinearRegression_residuals_data_second_data_phi_ce0 => grp_killLargestResidual_fu_445_LinearRegression_residuals_data_second_data_phi_ce0,
         LinearRegression_residuals_data_second_data_phi_q0 => LinearRegression_residuals_data_second_data_phi_q0,
-        LinearRegression_residuals_data_second_data_z_address0 => grp_killLargestResidual_fu_447_LinearRegression_residuals_data_second_data_z_address0,
-        LinearRegression_residuals_data_second_data_z_ce0 => grp_killLargestResidual_fu_447_LinearRegression_residuals_data_second_data_z_ce0,
+        LinearRegression_residuals_data_second_data_z_address0 => grp_killLargestResidual_fu_445_LinearRegression_residuals_data_second_data_z_address0,
+        LinearRegression_residuals_data_second_data_z_ce0 => grp_killLargestResidual_fu_445_LinearRegression_residuals_data_second_data_z_ce0,
         LinearRegression_residuals_data_second_data_z_q0 => LinearRegression_residuals_data_second_data_z_q0,
-        LinearRegression_residuals_data_second_data_layerId_address0 => grp_killLargestResidual_fu_447_LinearRegression_residuals_data_second_data_layerId_address0,
-        LinearRegression_residuals_data_second_data_layerId_ce0 => grp_killLargestResidual_fu_447_LinearRegression_residuals_data_second_data_layerId_ce0,
+        LinearRegression_residuals_data_second_data_layerId_address0 => grp_killLargestResidual_fu_445_LinearRegression_residuals_data_second_data_layerId_address0,
+        LinearRegression_residuals_data_second_data_layerId_ce0 => grp_killLargestResidual_fu_445_LinearRegression_residuals_data_second_data_layerId_ce0,
         LinearRegression_residuals_data_second_data_layerId_q0 => LinearRegression_residuals_data_second_data_layerId_q0,
-        LinearRegression_residuals_data_second_data_stubId_address0 => grp_killLargestResidual_fu_447_LinearRegression_residuals_data_second_data_stubId_address0,
-        LinearRegression_residuals_data_second_data_stubId_ce0 => grp_killLargestResidual_fu_447_LinearRegression_residuals_data_second_data_stubId_ce0,
+        LinearRegression_residuals_data_second_data_stubId_address0 => grp_killLargestResidual_fu_445_LinearRegression_residuals_data_second_data_stubId_address0,
+        LinearRegression_residuals_data_second_data_stubId_ce0 => grp_killLargestResidual_fu_445_LinearRegression_residuals_data_second_data_stubId_ce0,
         LinearRegression_residuals_data_second_data_stubId_q0 => LinearRegression_residuals_data_second_data_stubId_q0,
-        LinearRegression_residuals_data_second_data_ps_address0 => grp_killLargestResidual_fu_447_LinearRegression_residuals_data_second_data_ps_address0,
-        LinearRegression_residuals_data_second_data_ps_ce0 => grp_killLargestResidual_fu_447_LinearRegression_residuals_data_second_data_ps_ce0,
+        LinearRegression_residuals_data_second_data_ps_address0 => grp_killLargestResidual_fu_445_LinearRegression_residuals_data_second_data_ps_address0,
+        LinearRegression_residuals_data_second_data_ps_ce0 => grp_killLargestResidual_fu_445_LinearRegression_residuals_data_second_data_ps_ce0,
         LinearRegression_residuals_data_second_data_ps_q0 => LinearRegression_residuals_data_second_data_ps_q0,
-        ap_return_0 => grp_killLargestResidual_fu_447_ap_return_0,
-        ap_return_1 => grp_killLargestResidual_fu_447_ap_return_1,
-        ap_return_2 => grp_killLargestResidual_fu_447_ap_return_2,
-        ap_return_3 => grp_killLargestResidual_fu_447_ap_return_3,
-        ap_return_4 => grp_killLargestResidual_fu_447_ap_return_4,
-        ap_return_5 => grp_killLargestResidual_fu_447_ap_return_5,
-        ap_return_6 => grp_killLargestResidual_fu_447_ap_return_6,
-        ap_return_7 => grp_killLargestResidual_fu_447_ap_return_7,
-        ap_return_8 => grp_killLargestResidual_fu_447_ap_return_8,
-        ap_return_9 => grp_killLargestResidual_fu_447_ap_return_9);
+        ap_return_0 => grp_killLargestResidual_fu_445_ap_return_0,
+        ap_return_1 => grp_killLargestResidual_fu_445_ap_return_1,
+        ap_return_2 => grp_killLargestResidual_fu_445_ap_return_2,
+        ap_return_3 => grp_killLargestResidual_fu_445_ap_return_3,
+        ap_return_4 => grp_killLargestResidual_fu_445_ap_return_4,
+        ap_return_5 => grp_killLargestResidual_fu_445_ap_return_5,
+        ap_return_6 => grp_killLargestResidual_fu_445_ap_return_6,
+        ap_return_7 => grp_killLargestResidual_fu_445_ap_return_7,
+        ap_return_8 => grp_killLargestResidual_fu_445_ap_return_8,
+        ap_return_9 => grp_killLargestResidual_fu_445_ap_return_9);
 
-    grp_initFit_fu_524 : component initFit
+    grp_calcHelix_fu_522 : component calcHelix
     port map (
         ap_clk => ap_clk,
         ap_rst => ap_rst,
-        ap_start => grp_initFit_fu_524_ap_start,
-        ap_done => grp_initFit_fu_524_ap_done,
-        ap_idle => grp_initFit_fu_524_ap_idle,
-        ap_ready => grp_initFit_fu_524_ap_ready,
+        ap_start => grp_calcHelix_fu_522_ap_start,
+        ap_done => grp_calcHelix_fu_522_ap_done,
+        ap_idle => grp_calcHelix_fu_522_ap_idle,
+        ap_ready => grp_calcHelix_fu_522_ap_ready,
         LinearRegression_settings_chosenRofPhi_read => LinearRegression_settings_chosenRofPhi_read,
         LinearRegression_settings_chosenRofZ_read => LinearRegression_settings_chosenRofZ_read,
-        LinearRegression_settings_etaRegions_s_address0 => grp_initFit_fu_524_LinearRegression_settings_etaRegions_s_address0,
-        LinearRegression_settings_etaRegions_s_ce0 => grp_initFit_fu_524_LinearRegression_settings_etaRegions_s_ce0,
-        LinearRegression_settings_etaRegions_s_q0 => LinearRegression_settings_etaRegions_s_q0,
+        LinearRegression_HTParameter_qOverPt_read => LinearRegression_HTP_reg_1497,
+        LinearRegression_HTParameter_phiT_read => LinearRegression_HTP_1_reg_1506,
+        LinearRegression_HTParameter_cotTheta_read => LinearRegression_HTP_2_reg_1515,
+        LinearRegression_HTParameter_zT_read => LinearRegression_HTP_3_reg_1524,
+        LinearRegression_stubMap_size_read => LinearRegression_stu_401_reg_312,
+        LinearRegression_stubMap_data_second_size_s_address0 => grp_calcHelix_fu_522_LinearRegression_stubMap_data_second_size_s_address0,
+        LinearRegression_stubMap_data_second_size_s_ce0 => grp_calcHelix_fu_522_LinearRegression_stubMap_data_second_size_s_ce0,
+        LinearRegression_stubMap_data_second_size_s_q0 => LinearRegression_stubMap_data_second_size_s_q0,
+        LinearRegression_stubMap_data_second_data_r_s_address0 => grp_calcHelix_fu_522_LinearRegression_stubMap_data_second_data_r_s_address0,
+        LinearRegression_stubMap_data_second_data_r_s_ce0 => grp_calcHelix_fu_522_LinearRegression_stubMap_data_second_data_r_s_ce0,
+        LinearRegression_stubMap_data_second_data_r_s_q0 => LinearRegression_stubMap_data_second_data_r_s_q0,
+        LinearRegression_stubMap_data_second_data_phi_s_address0 => grp_calcHelix_fu_522_LinearRegression_stubMap_data_second_data_phi_s_address0,
+        LinearRegression_stubMap_data_second_data_phi_s_ce0 => grp_calcHelix_fu_522_LinearRegression_stubMap_data_second_data_phi_s_ce0,
+        LinearRegression_stubMap_data_second_data_phi_s_q0 => LinearRegression_stubMap_data_second_data_phi_s_q0,
+        LinearRegression_stubMap_data_second_data_z_s_address0 => grp_calcHelix_fu_522_LinearRegression_stubMap_data_second_data_z_s_address0,
+        LinearRegression_stubMap_data_second_data_z_s_ce0 => grp_calcHelix_fu_522_LinearRegression_stubMap_data_second_data_z_s_ce0,
+        LinearRegression_stubMap_data_second_data_z_s_q0 => LinearRegression_stubMap_data_second_data_z_s_q0,
+        LinearRegression_stubMap_data_second_data_psModule_s_address0 => grp_calcHelix_fu_522_LinearRegression_stubMap_data_second_data_psModule_s_address0,
+        LinearRegression_stubMap_data_second_data_psModule_s_ce0 => grp_calcHelix_fu_522_LinearRegression_stubMap_data_second_data_psModule_s_ce0,
+        LinearRegression_stubMap_data_second_data_psModule_s_q0 => LinearRegression_stubMap_data_second_data_psModule_s_q0,
+        ap_return_0 => grp_calcHelix_fu_522_ap_return_0,
+        ap_return_1 => grp_calcHelix_fu_522_ap_return_1,
+        ap_return_2 => grp_calcHelix_fu_522_ap_return_2,
+        ap_return_3 => grp_calcHelix_fu_522_ap_return_3);
+
+    grp_initFit_fu_544 : component initFit
+    port map (
+        ap_clk => ap_clk,
+        ap_rst => ap_rst,
+        ap_start => grp_initFit_fu_544_ap_start,
+        ap_done => grp_initFit_fu_544_ap_done,
+        ap_idle => grp_initFit_fu_544_ap_idle,
+        ap_ready => grp_initFit_fu_544_ap_ready,
+        LinearRegression_settings_chosenRofPhi_read => LinearRegression_settings_chosenRofPhi_read,
+        LinearRegression_settings_chosenRofZ_read => LinearRegression_settings_chosenRofZ_read,
+        LinearRegression_settings_sinh_etaRegions_s_address0 => grp_initFit_fu_544_LinearRegression_settings_sinh_etaRegions_s_address0,
+        LinearRegression_settings_sinh_etaRegions_s_ce0 => grp_initFit_fu_544_LinearRegression_settings_sinh_etaRegions_s_ce0,
+        LinearRegression_settings_sinh_etaRegions_s_q0 => LinearRegression_settings_sinh_etaRegions_s_q0,
+        LinearRegression_settings_sinh_etaRegions_s_address1 => grp_initFit_fu_544_LinearRegression_settings_sinh_etaRegions_s_address1,
+        LinearRegression_settings_sinh_etaRegions_s_ce1 => grp_initFit_fu_544_LinearRegression_settings_sinh_etaRegions_s_ce1,
+        LinearRegression_settings_sinh_etaRegions_s_q1 => LinearRegression_settings_sinh_etaRegions_s_q1,
         LinearRegression_settings_minNumMatchLayers_read => LinearRegression_settings_minNumMatchLayers_read,
         LinearRegression_settings_minPSLayers_read => LinearRegression_settings_minPSLayers_read,
-        LinearRegression_stubs_data_settings_chosenRofPhi_s_address0 => grp_initFit_fu_524_LinearRegression_stubs_data_settings_chosenRofPhi_s_address0,
-        LinearRegression_stubs_data_settings_chosenRofPhi_s_ce0 => grp_initFit_fu_524_LinearRegression_stubs_data_settings_chosenRofPhi_s_ce0,
-        LinearRegression_stubs_data_settings_chosenRofPhi_s_we0 => grp_initFit_fu_524_LinearRegression_stubs_data_settings_chosenRofPhi_s_we0,
-        LinearRegression_stubs_data_settings_chosenRofPhi_s_d0 => grp_initFit_fu_524_LinearRegression_stubs_data_settings_chosenRofPhi_s_d0,
+        LinearRegression_stubs_data_settings_chosenRofPhi_s_address0 => grp_initFit_fu_544_LinearRegression_stubs_data_settings_chosenRofPhi_s_address0,
+        LinearRegression_stubs_data_settings_chosenRofPhi_s_ce0 => grp_initFit_fu_544_LinearRegression_stubs_data_settings_chosenRofPhi_s_ce0,
+        LinearRegression_stubs_data_settings_chosenRofPhi_s_we0 => grp_initFit_fu_544_LinearRegression_stubs_data_settings_chosenRofPhi_s_we0,
+        LinearRegression_stubs_data_settings_chosenRofPhi_s_d0 => grp_initFit_fu_544_LinearRegression_stubs_data_settings_chosenRofPhi_s_d0,
         LinearRegression_stubs_data_settings_chosenRofPhi_s_q0 => LinearRegression_stubs_data_settings_chosenRofPhi_s_q0,
-        LinearRegression_stubs_data_settings_chosenRofPhi_s_address1 => grp_initFit_fu_524_LinearRegression_stubs_data_settings_chosenRofPhi_s_address1,
-        LinearRegression_stubs_data_settings_chosenRofPhi_s_ce1 => grp_initFit_fu_524_LinearRegression_stubs_data_settings_chosenRofPhi_s_ce1,
-        LinearRegression_stubs_data_settings_chosenRofPhi_s_we1 => grp_initFit_fu_524_LinearRegression_stubs_data_settings_chosenRofPhi_s_we1,
-        LinearRegression_stubs_data_settings_chosenRofPhi_s_d1 => grp_initFit_fu_524_LinearRegression_stubs_data_settings_chosenRofPhi_s_d1,
-        LinearRegression_stubs_data_settings_chosenRofZ_s_address0 => grp_initFit_fu_524_LinearRegression_stubs_data_settings_chosenRofZ_s_address0,
-        LinearRegression_stubs_data_settings_chosenRofZ_s_ce0 => grp_initFit_fu_524_LinearRegression_stubs_data_settings_chosenRofZ_s_ce0,
-        LinearRegression_stubs_data_settings_chosenRofZ_s_we0 => grp_initFit_fu_524_LinearRegression_stubs_data_settings_chosenRofZ_s_we0,
-        LinearRegression_stubs_data_settings_chosenRofZ_s_d0 => grp_initFit_fu_524_LinearRegression_stubs_data_settings_chosenRofZ_s_d0,
+        LinearRegression_stubs_data_settings_chosenRofPhi_s_address1 => grp_initFit_fu_544_LinearRegression_stubs_data_settings_chosenRofPhi_s_address1,
+        LinearRegression_stubs_data_settings_chosenRofPhi_s_ce1 => grp_initFit_fu_544_LinearRegression_stubs_data_settings_chosenRofPhi_s_ce1,
+        LinearRegression_stubs_data_settings_chosenRofPhi_s_we1 => grp_initFit_fu_544_LinearRegression_stubs_data_settings_chosenRofPhi_s_we1,
+        LinearRegression_stubs_data_settings_chosenRofPhi_s_d1 => grp_initFit_fu_544_LinearRegression_stubs_data_settings_chosenRofPhi_s_d1,
+        LinearRegression_stubs_data_settings_chosenRofZ_s_address0 => grp_initFit_fu_544_LinearRegression_stubs_data_settings_chosenRofZ_s_address0,
+        LinearRegression_stubs_data_settings_chosenRofZ_s_ce0 => grp_initFit_fu_544_LinearRegression_stubs_data_settings_chosenRofZ_s_ce0,
+        LinearRegression_stubs_data_settings_chosenRofZ_s_we0 => grp_initFit_fu_544_LinearRegression_stubs_data_settings_chosenRofZ_s_we0,
+        LinearRegression_stubs_data_settings_chosenRofZ_s_d0 => grp_initFit_fu_544_LinearRegression_stubs_data_settings_chosenRofZ_s_d0,
         LinearRegression_stubs_data_settings_chosenRofZ_s_q0 => LinearRegression_stubs_data_settings_chosenRofZ_s_q0,
-        LinearRegression_stubs_data_settings_chosenRofZ_s_address1 => grp_initFit_fu_524_LinearRegression_stubs_data_settings_chosenRofZ_s_address1,
-        LinearRegression_stubs_data_settings_chosenRofZ_s_ce1 => grp_initFit_fu_524_LinearRegression_stubs_data_settings_chosenRofZ_s_ce1,
-        LinearRegression_stubs_data_settings_chosenRofZ_s_we1 => grp_initFit_fu_524_LinearRegression_stubs_data_settings_chosenRofZ_s_we1,
-        LinearRegression_stubs_data_settings_chosenRofZ_s_d1 => grp_initFit_fu_524_LinearRegression_stubs_data_settings_chosenRofZ_s_d1,
-        LinearRegression_stubs_data_settings_etaRegions_s_address0 => grp_initFit_fu_524_LinearRegression_stubs_data_settings_etaRegions_s_address0,
-        LinearRegression_stubs_data_settings_etaRegions_s_ce0 => grp_initFit_fu_524_LinearRegression_stubs_data_settings_etaRegions_s_ce0,
-        LinearRegression_stubs_data_settings_etaRegions_s_we0 => grp_initFit_fu_524_LinearRegression_stubs_data_settings_etaRegions_s_we0,
-        LinearRegression_stubs_data_settings_etaRegions_s_d0 => grp_initFit_fu_524_LinearRegression_stubs_data_settings_etaRegions_s_d0,
-        LinearRegression_stubs_data_settings_etaRegions_s_q0 => LinearRegression_stubs_data_settings_etaRegions_s_q0,
-        LinearRegression_stubs_data_settings_etaRegions_s_address1 => grp_initFit_fu_524_LinearRegression_stubs_data_settings_etaRegions_s_address1,
-        LinearRegression_stubs_data_settings_etaRegions_s_ce1 => grp_initFit_fu_524_LinearRegression_stubs_data_settings_etaRegions_s_ce1,
-        LinearRegression_stubs_data_settings_etaRegions_s_we1 => grp_initFit_fu_524_LinearRegression_stubs_data_settings_etaRegions_s_we1,
-        LinearRegression_stubs_data_settings_etaRegions_s_d1 => grp_initFit_fu_524_LinearRegression_stubs_data_settings_etaRegions_s_d1,
-        LinearRegression_stubs_data_settings_etaRegions_s_q1 => LinearRegression_stubs_data_settings_etaRegions_s_q1,
-        LinearRegression_stubs_data_settings_minNumMatchLayers_s_address0 => grp_initFit_fu_524_LinearRegression_stubs_data_settings_minNumMatchLayers_s_address0,
-        LinearRegression_stubs_data_settings_minNumMatchLayers_s_ce0 => grp_initFit_fu_524_LinearRegression_stubs_data_settings_minNumMatchLayers_s_ce0,
-        LinearRegression_stubs_data_settings_minNumMatchLayers_s_we0 => grp_initFit_fu_524_LinearRegression_stubs_data_settings_minNumMatchLayers_s_we0,
-        LinearRegression_stubs_data_settings_minNumMatchLayers_s_d0 => grp_initFit_fu_524_LinearRegression_stubs_data_settings_minNumMatchLayers_s_d0,
+        LinearRegression_stubs_data_settings_chosenRofZ_s_address1 => grp_initFit_fu_544_LinearRegression_stubs_data_settings_chosenRofZ_s_address1,
+        LinearRegression_stubs_data_settings_chosenRofZ_s_ce1 => grp_initFit_fu_544_LinearRegression_stubs_data_settings_chosenRofZ_s_ce1,
+        LinearRegression_stubs_data_settings_chosenRofZ_s_we1 => grp_initFit_fu_544_LinearRegression_stubs_data_settings_chosenRofZ_s_we1,
+        LinearRegression_stubs_data_settings_chosenRofZ_s_d1 => grp_initFit_fu_544_LinearRegression_stubs_data_settings_chosenRofZ_s_d1,
+        LinearRegression_stubs_data_settings_sinh_etaRegions_s_address0 => grp_initFit_fu_544_LinearRegression_stubs_data_settings_sinh_etaRegions_s_address0,
+        LinearRegression_stubs_data_settings_sinh_etaRegions_s_ce0 => grp_initFit_fu_544_LinearRegression_stubs_data_settings_sinh_etaRegions_s_ce0,
+        LinearRegression_stubs_data_settings_sinh_etaRegions_s_we0 => grp_initFit_fu_544_LinearRegression_stubs_data_settings_sinh_etaRegions_s_we0,
+        LinearRegression_stubs_data_settings_sinh_etaRegions_s_d0 => grp_initFit_fu_544_LinearRegression_stubs_data_settings_sinh_etaRegions_s_d0,
+        LinearRegression_stubs_data_settings_sinh_etaRegions_s_q0 => LinearRegression_stubs_data_settings_sinh_etaRegions_s_q0,
+        LinearRegression_stubs_data_settings_sinh_etaRegions_s_address1 => grp_initFit_fu_544_LinearRegression_stubs_data_settings_sinh_etaRegions_s_address1,
+        LinearRegression_stubs_data_settings_sinh_etaRegions_s_ce1 => grp_initFit_fu_544_LinearRegression_stubs_data_settings_sinh_etaRegions_s_ce1,
+        LinearRegression_stubs_data_settings_sinh_etaRegions_s_we1 => grp_initFit_fu_544_LinearRegression_stubs_data_settings_sinh_etaRegions_s_we1,
+        LinearRegression_stubs_data_settings_sinh_etaRegions_s_d1 => grp_initFit_fu_544_LinearRegression_stubs_data_settings_sinh_etaRegions_s_d1,
+        LinearRegression_stubs_data_settings_sinh_etaRegions_s_q1 => LinearRegression_stubs_data_settings_sinh_etaRegions_s_q1,
+        LinearRegression_stubs_data_settings_minNumMatchLayers_s_address0 => grp_initFit_fu_544_LinearRegression_stubs_data_settings_minNumMatchLayers_s_address0,
+        LinearRegression_stubs_data_settings_minNumMatchLayers_s_ce0 => grp_initFit_fu_544_LinearRegression_stubs_data_settings_minNumMatchLayers_s_ce0,
+        LinearRegression_stubs_data_settings_minNumMatchLayers_s_we0 => grp_initFit_fu_544_LinearRegression_stubs_data_settings_minNumMatchLayers_s_we0,
+        LinearRegression_stubs_data_settings_minNumMatchLayers_s_d0 => grp_initFit_fu_544_LinearRegression_stubs_data_settings_minNumMatchLayers_s_d0,
         LinearRegression_stubs_data_settings_minNumMatchLayers_s_q0 => LinearRegression_stubs_data_settings_minNumMatchLayers_s_q0,
-        LinearRegression_stubs_data_settings_minNumMatchLayers_s_address1 => grp_initFit_fu_524_LinearRegression_stubs_data_settings_minNumMatchLayers_s_address1,
-        LinearRegression_stubs_data_settings_minNumMatchLayers_s_ce1 => grp_initFit_fu_524_LinearRegression_stubs_data_settings_minNumMatchLayers_s_ce1,
-        LinearRegression_stubs_data_settings_minNumMatchLayers_s_we1 => grp_initFit_fu_524_LinearRegression_stubs_data_settings_minNumMatchLayers_s_we1,
-        LinearRegression_stubs_data_settings_minNumMatchLayers_s_d1 => grp_initFit_fu_524_LinearRegression_stubs_data_settings_minNumMatchLayers_s_d1,
-        LinearRegression_stubs_data_settings_minPSLayers_s_address0 => grp_initFit_fu_524_LinearRegression_stubs_data_settings_minPSLayers_s_address0,
-        LinearRegression_stubs_data_settings_minPSLayers_s_ce0 => grp_initFit_fu_524_LinearRegression_stubs_data_settings_minPSLayers_s_ce0,
-        LinearRegression_stubs_data_settings_minPSLayers_s_we0 => grp_initFit_fu_524_LinearRegression_stubs_data_settings_minPSLayers_s_we0,
-        LinearRegression_stubs_data_settings_minPSLayers_s_d0 => grp_initFit_fu_524_LinearRegression_stubs_data_settings_minPSLayers_s_d0,
+        LinearRegression_stubs_data_settings_minNumMatchLayers_s_address1 => grp_initFit_fu_544_LinearRegression_stubs_data_settings_minNumMatchLayers_s_address1,
+        LinearRegression_stubs_data_settings_minNumMatchLayers_s_ce1 => grp_initFit_fu_544_LinearRegression_stubs_data_settings_minNumMatchLayers_s_ce1,
+        LinearRegression_stubs_data_settings_minNumMatchLayers_s_we1 => grp_initFit_fu_544_LinearRegression_stubs_data_settings_minNumMatchLayers_s_we1,
+        LinearRegression_stubs_data_settings_minNumMatchLayers_s_d1 => grp_initFit_fu_544_LinearRegression_stubs_data_settings_minNumMatchLayers_s_d1,
+        LinearRegression_stubs_data_settings_minPSLayers_s_address0 => grp_initFit_fu_544_LinearRegression_stubs_data_settings_minPSLayers_s_address0,
+        LinearRegression_stubs_data_settings_minPSLayers_s_ce0 => grp_initFit_fu_544_LinearRegression_stubs_data_settings_minPSLayers_s_ce0,
+        LinearRegression_stubs_data_settings_minPSLayers_s_we0 => grp_initFit_fu_544_LinearRegression_stubs_data_settings_minPSLayers_s_we0,
+        LinearRegression_stubs_data_settings_minPSLayers_s_d0 => grp_initFit_fu_544_LinearRegression_stubs_data_settings_minPSLayers_s_d0,
         LinearRegression_stubs_data_settings_minPSLayers_s_q0 => LinearRegression_stubs_data_settings_minPSLayers_s_q0,
-        LinearRegression_stubs_data_settings_minPSLayers_s_address1 => grp_initFit_fu_524_LinearRegression_stubs_data_settings_minPSLayers_s_address1,
-        LinearRegression_stubs_data_settings_minPSLayers_s_ce1 => grp_initFit_fu_524_LinearRegression_stubs_data_settings_minPSLayers_s_ce1,
-        LinearRegression_stubs_data_settings_minPSLayers_s_we1 => grp_initFit_fu_524_LinearRegression_stubs_data_settings_minPSLayers_s_we1,
-        LinearRegression_stubs_data_settings_minPSLayers_s_d1 => grp_initFit_fu_524_LinearRegression_stubs_data_settings_minPSLayers_s_d1,
-        LinearRegression_stubs_data_r_s_address0 => grp_initFit_fu_524_LinearRegression_stubs_data_r_s_address0,
-        LinearRegression_stubs_data_r_s_ce0 => grp_initFit_fu_524_LinearRegression_stubs_data_r_s_ce0,
-        LinearRegression_stubs_data_r_s_we0 => grp_initFit_fu_524_LinearRegression_stubs_data_r_s_we0,
-        LinearRegression_stubs_data_r_s_d0 => grp_initFit_fu_524_LinearRegression_stubs_data_r_s_d0,
+        LinearRegression_stubs_data_settings_minPSLayers_s_address1 => grp_initFit_fu_544_LinearRegression_stubs_data_settings_minPSLayers_s_address1,
+        LinearRegression_stubs_data_settings_minPSLayers_s_ce1 => grp_initFit_fu_544_LinearRegression_stubs_data_settings_minPSLayers_s_ce1,
+        LinearRegression_stubs_data_settings_minPSLayers_s_we1 => grp_initFit_fu_544_LinearRegression_stubs_data_settings_minPSLayers_s_we1,
+        LinearRegression_stubs_data_settings_minPSLayers_s_d1 => grp_initFit_fu_544_LinearRegression_stubs_data_settings_minPSLayers_s_d1,
+        LinearRegression_stubs_data_r_s_address0 => grp_initFit_fu_544_LinearRegression_stubs_data_r_s_address0,
+        LinearRegression_stubs_data_r_s_ce0 => grp_initFit_fu_544_LinearRegression_stubs_data_r_s_ce0,
+        LinearRegression_stubs_data_r_s_we0 => grp_initFit_fu_544_LinearRegression_stubs_data_r_s_we0,
+        LinearRegression_stubs_data_r_s_d0 => grp_initFit_fu_544_LinearRegression_stubs_data_r_s_d0,
         LinearRegression_stubs_data_r_s_q0 => LinearRegression_stubs_data_r_s_q0,
-        LinearRegression_stubs_data_r_s_address1 => grp_initFit_fu_524_LinearRegression_stubs_data_r_s_address1,
-        LinearRegression_stubs_data_r_s_ce1 => grp_initFit_fu_524_LinearRegression_stubs_data_r_s_ce1,
-        LinearRegression_stubs_data_r_s_we1 => grp_initFit_fu_524_LinearRegression_stubs_data_r_s_we1,
-        LinearRegression_stubs_data_r_s_d1 => grp_initFit_fu_524_LinearRegression_stubs_data_r_s_d1,
-        LinearRegression_stubs_data_phi_s_address0 => grp_initFit_fu_524_LinearRegression_stubs_data_phi_s_address0,
-        LinearRegression_stubs_data_phi_s_ce0 => grp_initFit_fu_524_LinearRegression_stubs_data_phi_s_ce0,
-        LinearRegression_stubs_data_phi_s_we0 => grp_initFit_fu_524_LinearRegression_stubs_data_phi_s_we0,
-        LinearRegression_stubs_data_phi_s_d0 => grp_initFit_fu_524_LinearRegression_stubs_data_phi_s_d0,
+        LinearRegression_stubs_data_r_s_address1 => grp_initFit_fu_544_LinearRegression_stubs_data_r_s_address1,
+        LinearRegression_stubs_data_r_s_ce1 => grp_initFit_fu_544_LinearRegression_stubs_data_r_s_ce1,
+        LinearRegression_stubs_data_r_s_we1 => grp_initFit_fu_544_LinearRegression_stubs_data_r_s_we1,
+        LinearRegression_stubs_data_r_s_d1 => grp_initFit_fu_544_LinearRegression_stubs_data_r_s_d1,
+        LinearRegression_stubs_data_phi_s_address0 => grp_initFit_fu_544_LinearRegression_stubs_data_phi_s_address0,
+        LinearRegression_stubs_data_phi_s_ce0 => grp_initFit_fu_544_LinearRegression_stubs_data_phi_s_ce0,
+        LinearRegression_stubs_data_phi_s_we0 => grp_initFit_fu_544_LinearRegression_stubs_data_phi_s_we0,
+        LinearRegression_stubs_data_phi_s_d0 => grp_initFit_fu_544_LinearRegression_stubs_data_phi_s_d0,
         LinearRegression_stubs_data_phi_s_q0 => LinearRegression_stubs_data_phi_s_q0,
-        LinearRegression_stubs_data_phi_s_address1 => grp_initFit_fu_524_LinearRegression_stubs_data_phi_s_address1,
-        LinearRegression_stubs_data_phi_s_ce1 => grp_initFit_fu_524_LinearRegression_stubs_data_phi_s_ce1,
-        LinearRegression_stubs_data_phi_s_we1 => grp_initFit_fu_524_LinearRegression_stubs_data_phi_s_we1,
-        LinearRegression_stubs_data_phi_s_d1 => grp_initFit_fu_524_LinearRegression_stubs_data_phi_s_d1,
-        LinearRegression_stubs_data_z_s_address0 => grp_initFit_fu_524_LinearRegression_stubs_data_z_s_address0,
-        LinearRegression_stubs_data_z_s_ce0 => grp_initFit_fu_524_LinearRegression_stubs_data_z_s_ce0,
-        LinearRegression_stubs_data_z_s_we0 => grp_initFit_fu_524_LinearRegression_stubs_data_z_s_we0,
-        LinearRegression_stubs_data_z_s_d0 => grp_initFit_fu_524_LinearRegression_stubs_data_z_s_d0,
+        LinearRegression_stubs_data_phi_s_address1 => grp_initFit_fu_544_LinearRegression_stubs_data_phi_s_address1,
+        LinearRegression_stubs_data_phi_s_ce1 => grp_initFit_fu_544_LinearRegression_stubs_data_phi_s_ce1,
+        LinearRegression_stubs_data_phi_s_we1 => grp_initFit_fu_544_LinearRegression_stubs_data_phi_s_we1,
+        LinearRegression_stubs_data_phi_s_d1 => grp_initFit_fu_544_LinearRegression_stubs_data_phi_s_d1,
+        LinearRegression_stubs_data_z_s_address0 => grp_initFit_fu_544_LinearRegression_stubs_data_z_s_address0,
+        LinearRegression_stubs_data_z_s_ce0 => grp_initFit_fu_544_LinearRegression_stubs_data_z_s_ce0,
+        LinearRegression_stubs_data_z_s_we0 => grp_initFit_fu_544_LinearRegression_stubs_data_z_s_we0,
+        LinearRegression_stubs_data_z_s_d0 => grp_initFit_fu_544_LinearRegression_stubs_data_z_s_d0,
         LinearRegression_stubs_data_z_s_q0 => LinearRegression_stubs_data_z_s_q0,
-        LinearRegression_stubs_data_z_s_address1 => grp_initFit_fu_524_LinearRegression_stubs_data_z_s_address1,
-        LinearRegression_stubs_data_z_s_ce1 => grp_initFit_fu_524_LinearRegression_stubs_data_z_s_ce1,
-        LinearRegression_stubs_data_z_s_we1 => grp_initFit_fu_524_LinearRegression_stubs_data_z_s_we1,
-        LinearRegression_stubs_data_z_s_d1 => grp_initFit_fu_524_LinearRegression_stubs_data_z_s_d1,
-        LinearRegression_stubs_data_layerId_s_address0 => grp_initFit_fu_524_LinearRegression_stubs_data_layerId_s_address0,
-        LinearRegression_stubs_data_layerId_s_ce0 => grp_initFit_fu_524_LinearRegression_stubs_data_layerId_s_ce0,
-        LinearRegression_stubs_data_layerId_s_we0 => grp_initFit_fu_524_LinearRegression_stubs_data_layerId_s_we0,
-        LinearRegression_stubs_data_layerId_s_d0 => grp_initFit_fu_524_LinearRegression_stubs_data_layerId_s_d0,
+        LinearRegression_stubs_data_z_s_address1 => grp_initFit_fu_544_LinearRegression_stubs_data_z_s_address1,
+        LinearRegression_stubs_data_z_s_ce1 => grp_initFit_fu_544_LinearRegression_stubs_data_z_s_ce1,
+        LinearRegression_stubs_data_z_s_we1 => grp_initFit_fu_544_LinearRegression_stubs_data_z_s_we1,
+        LinearRegression_stubs_data_z_s_d1 => grp_initFit_fu_544_LinearRegression_stubs_data_z_s_d1,
+        LinearRegression_stubs_data_layerId_s_address0 => grp_initFit_fu_544_LinearRegression_stubs_data_layerId_s_address0,
+        LinearRegression_stubs_data_layerId_s_ce0 => grp_initFit_fu_544_LinearRegression_stubs_data_layerId_s_ce0,
+        LinearRegression_stubs_data_layerId_s_we0 => grp_initFit_fu_544_LinearRegression_stubs_data_layerId_s_we0,
+        LinearRegression_stubs_data_layerId_s_d0 => grp_initFit_fu_544_LinearRegression_stubs_data_layerId_s_d0,
         LinearRegression_stubs_data_layerId_s_q0 => LinearRegression_stubs_data_layerId_s_q0,
-        LinearRegression_stubs_data_layerId_s_address1 => grp_initFit_fu_524_LinearRegression_stubs_data_layerId_s_address1,
-        LinearRegression_stubs_data_layerId_s_ce1 => grp_initFit_fu_524_LinearRegression_stubs_data_layerId_s_ce1,
-        LinearRegression_stubs_data_layerId_s_we1 => grp_initFit_fu_524_LinearRegression_stubs_data_layerId_s_we1,
-        LinearRegression_stubs_data_layerId_s_d1 => grp_initFit_fu_524_LinearRegression_stubs_data_layerId_s_d1,
+        LinearRegression_stubs_data_layerId_s_address1 => grp_initFit_fu_544_LinearRegression_stubs_data_layerId_s_address1,
+        LinearRegression_stubs_data_layerId_s_ce1 => grp_initFit_fu_544_LinearRegression_stubs_data_layerId_s_ce1,
+        LinearRegression_stubs_data_layerId_s_we1 => grp_initFit_fu_544_LinearRegression_stubs_data_layerId_s_we1,
+        LinearRegression_stubs_data_layerId_s_d1 => grp_initFit_fu_544_LinearRegression_stubs_data_layerId_s_d1,
         LinearRegression_stubs_data_layerId_s_q1 => LinearRegression_stubs_data_layerId_s_q1,
-        LinearRegression_stubs_data_psModule_s_address0 => grp_initFit_fu_524_LinearRegression_stubs_data_psModule_s_address0,
-        LinearRegression_stubs_data_psModule_s_ce0 => grp_initFit_fu_524_LinearRegression_stubs_data_psModule_s_ce0,
-        LinearRegression_stubs_data_psModule_s_we0 => grp_initFit_fu_524_LinearRegression_stubs_data_psModule_s_we0,
-        LinearRegression_stubs_data_psModule_s_d0 => grp_initFit_fu_524_LinearRegression_stubs_data_psModule_s_d0,
+        LinearRegression_stubs_data_psModule_s_address0 => grp_initFit_fu_544_LinearRegression_stubs_data_psModule_s_address0,
+        LinearRegression_stubs_data_psModule_s_ce0 => grp_initFit_fu_544_LinearRegression_stubs_data_psModule_s_ce0,
+        LinearRegression_stubs_data_psModule_s_we0 => grp_initFit_fu_544_LinearRegression_stubs_data_psModule_s_we0,
+        LinearRegression_stubs_data_psModule_s_d0 => grp_initFit_fu_544_LinearRegression_stubs_data_psModule_s_d0,
         LinearRegression_stubs_data_psModule_s_q0 => LinearRegression_stubs_data_psModule_s_q0,
-        LinearRegression_stubs_data_psModule_s_address1 => grp_initFit_fu_524_LinearRegression_stubs_data_psModule_s_address1,
-        LinearRegression_stubs_data_psModule_s_ce1 => grp_initFit_fu_524_LinearRegression_stubs_data_psModule_s_ce1,
-        LinearRegression_stubs_data_psModule_s_we1 => grp_initFit_fu_524_LinearRegression_stubs_data_psModule_s_we1,
-        LinearRegression_stubs_data_psModule_s_d1 => grp_initFit_fu_524_LinearRegression_stubs_data_psModule_s_d1,
+        LinearRegression_stubs_data_psModule_s_address1 => grp_initFit_fu_544_LinearRegression_stubs_data_psModule_s_address1,
+        LinearRegression_stubs_data_psModule_s_ce1 => grp_initFit_fu_544_LinearRegression_stubs_data_psModule_s_ce1,
+        LinearRegression_stubs_data_psModule_s_we1 => grp_initFit_fu_544_LinearRegression_stubs_data_psModule_s_we1,
+        LinearRegression_stubs_data_psModule_s_d1 => grp_initFit_fu_544_LinearRegression_stubs_data_psModule_s_d1,
         LinearRegression_stubs_data_psModule_s_q1 => LinearRegression_stubs_data_psModule_s_q1,
-        LinearRegression_stubs_data_barrel_s_address0 => grp_initFit_fu_524_LinearRegression_stubs_data_barrel_s_address0,
-        LinearRegression_stubs_data_barrel_s_ce0 => grp_initFit_fu_524_LinearRegression_stubs_data_barrel_s_ce0,
-        LinearRegression_stubs_data_barrel_s_we0 => grp_initFit_fu_524_LinearRegression_stubs_data_barrel_s_we0,
-        LinearRegression_stubs_data_barrel_s_d0 => grp_initFit_fu_524_LinearRegression_stubs_data_barrel_s_d0,
+        LinearRegression_stubs_data_barrel_s_address0 => grp_initFit_fu_544_LinearRegression_stubs_data_barrel_s_address0,
+        LinearRegression_stubs_data_barrel_s_ce0 => grp_initFit_fu_544_LinearRegression_stubs_data_barrel_s_ce0,
+        LinearRegression_stubs_data_barrel_s_we0 => grp_initFit_fu_544_LinearRegression_stubs_data_barrel_s_we0,
+        LinearRegression_stubs_data_barrel_s_d0 => grp_initFit_fu_544_LinearRegression_stubs_data_barrel_s_d0,
         LinearRegression_stubs_data_barrel_s_q0 => LinearRegression_stubs_data_barrel_s_q0,
-        LinearRegression_stubs_data_barrel_s_address1 => grp_initFit_fu_524_LinearRegression_stubs_data_barrel_s_address1,
-        LinearRegression_stubs_data_barrel_s_ce1 => grp_initFit_fu_524_LinearRegression_stubs_data_barrel_s_ce1,
-        LinearRegression_stubs_data_barrel_s_we1 => grp_initFit_fu_524_LinearRegression_stubs_data_barrel_s_we1,
-        LinearRegression_stubs_data_barrel_s_d1 => grp_initFit_fu_524_LinearRegression_stubs_data_barrel_s_d1,
+        LinearRegression_stubs_data_barrel_s_address1 => grp_initFit_fu_544_LinearRegression_stubs_data_barrel_s_address1,
+        LinearRegression_stubs_data_barrel_s_ce1 => grp_initFit_fu_544_LinearRegression_stubs_data_barrel_s_ce1,
+        LinearRegression_stubs_data_barrel_s_we1 => grp_initFit_fu_544_LinearRegression_stubs_data_barrel_s_we1,
+        LinearRegression_stubs_data_barrel_s_d1 => grp_initFit_fu_544_LinearRegression_stubs_data_barrel_s_d1,
         LinearRegression_stubs_data_barrel_s_q1 => LinearRegression_stubs_data_barrel_s_q1,
         LinearRegression_stubMap_size_read => LinearRegression_stubMap_size_read,
-        LinearRegression_stubMap_data_first_address0 => grp_initFit_fu_524_LinearRegression_stubMap_data_first_address0,
-        LinearRegression_stubMap_data_first_ce0 => grp_initFit_fu_524_LinearRegression_stubMap_data_first_ce0,
-        LinearRegression_stubMap_data_first_we0 => grp_initFit_fu_524_LinearRegression_stubMap_data_first_we0,
-        LinearRegression_stubMap_data_first_d0 => grp_initFit_fu_524_LinearRegression_stubMap_data_first_d0,
+        LinearRegression_stubMap_data_first_address0 => grp_initFit_fu_544_LinearRegression_stubMap_data_first_address0,
+        LinearRegression_stubMap_data_first_ce0 => grp_initFit_fu_544_LinearRegression_stubMap_data_first_ce0,
+        LinearRegression_stubMap_data_first_we0 => grp_initFit_fu_544_LinearRegression_stubMap_data_first_we0,
+        LinearRegression_stubMap_data_first_d0 => grp_initFit_fu_544_LinearRegression_stubMap_data_first_d0,
         LinearRegression_stubMap_data_first_q0 => LinearRegression_stubMap_data_first_q0,
-        LinearRegression_stubMap_data_second_size_s_address0 => grp_initFit_fu_524_LinearRegression_stubMap_data_second_size_s_address0,
-        LinearRegression_stubMap_data_second_size_s_ce0 => grp_initFit_fu_524_LinearRegression_stubMap_data_second_size_s_ce0,
-        LinearRegression_stubMap_data_second_size_s_we0 => grp_initFit_fu_524_LinearRegression_stubMap_data_second_size_s_we0,
-        LinearRegression_stubMap_data_second_size_s_d0 => grp_initFit_fu_524_LinearRegression_stubMap_data_second_size_s_d0,
+        LinearRegression_stubMap_data_second_size_s_address0 => grp_initFit_fu_544_LinearRegression_stubMap_data_second_size_s_address0,
+        LinearRegression_stubMap_data_second_size_s_ce0 => grp_initFit_fu_544_LinearRegression_stubMap_data_second_size_s_ce0,
+        LinearRegression_stubMap_data_second_size_s_we0 => grp_initFit_fu_544_LinearRegression_stubMap_data_second_size_s_we0,
+        LinearRegression_stubMap_data_second_size_s_d0 => grp_initFit_fu_544_LinearRegression_stubMap_data_second_size_s_d0,
         LinearRegression_stubMap_data_second_size_s_q0 => LinearRegression_stubMap_data_second_size_s_q0,
-        LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_address0 => grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_address0,
-        LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_ce0 => grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_ce0,
-        LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_we0 => grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_we0,
-        LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_d0 => grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_d0,
-        LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_address1 => grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_address1,
-        LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_ce1 => grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_ce1,
-        LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_we1 => grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_we1,
-        LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_d1 => grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_d1,
-        LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_address0 => grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_address0,
-        LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_ce0 => grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_ce0,
-        LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_we0 => grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_we0,
-        LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_d0 => grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_d0,
-        LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_address1 => grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_address1,
-        LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_ce1 => grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_ce1,
-        LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_we1 => grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_we1,
-        LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_d1 => grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_d1,
-        LinearRegression_stubMap_data_second_data_settings_etaRegions_s_address0 => grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_settings_etaRegions_s_address0,
-        LinearRegression_stubMap_data_second_data_settings_etaRegions_s_ce0 => grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_settings_etaRegions_s_ce0,
-        LinearRegression_stubMap_data_second_data_settings_etaRegions_s_we0 => grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_settings_etaRegions_s_we0,
-        LinearRegression_stubMap_data_second_data_settings_etaRegions_s_d0 => grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_settings_etaRegions_s_d0,
-        LinearRegression_stubMap_data_second_data_settings_etaRegions_s_address1 => grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_settings_etaRegions_s_address1,
-        LinearRegression_stubMap_data_second_data_settings_etaRegions_s_ce1 => grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_settings_etaRegions_s_ce1,
-        LinearRegression_stubMap_data_second_data_settings_etaRegions_s_we1 => grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_settings_etaRegions_s_we1,
-        LinearRegression_stubMap_data_second_data_settings_etaRegions_s_d1 => grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_settings_etaRegions_s_d1,
-        LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_address0 => grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_address0,
-        LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_ce0 => grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_ce0,
-        LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_we0 => grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_we0,
-        LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_d0 => grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_d0,
-        LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_address1 => grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_address1,
-        LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_ce1 => grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_ce1,
-        LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_we1 => grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_we1,
-        LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_d1 => grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_d1,
-        LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_address0 => grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_address0,
-        LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_ce0 => grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_ce0,
-        LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_we0 => grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_we0,
-        LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_d0 => grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_d0,
-        LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_address1 => grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_address1,
-        LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_ce1 => grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_ce1,
-        LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_we1 => grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_we1,
-        LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_d1 => grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_d1,
-        LinearRegression_stubMap_data_second_data_r_s_address0 => grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_r_s_address0,
-        LinearRegression_stubMap_data_second_data_r_s_ce0 => grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_r_s_ce0,
-        LinearRegression_stubMap_data_second_data_r_s_we0 => grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_r_s_we0,
-        LinearRegression_stubMap_data_second_data_r_s_d0 => grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_r_s_d0,
-        LinearRegression_stubMap_data_second_data_r_s_address1 => grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_r_s_address1,
-        LinearRegression_stubMap_data_second_data_r_s_ce1 => grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_r_s_ce1,
-        LinearRegression_stubMap_data_second_data_r_s_we1 => grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_r_s_we1,
-        LinearRegression_stubMap_data_second_data_r_s_d1 => grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_r_s_d1,
-        LinearRegression_stubMap_data_second_data_phi_s_address0 => grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_phi_s_address0,
-        LinearRegression_stubMap_data_second_data_phi_s_ce0 => grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_phi_s_ce0,
-        LinearRegression_stubMap_data_second_data_phi_s_we0 => grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_phi_s_we0,
-        LinearRegression_stubMap_data_second_data_phi_s_d0 => grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_phi_s_d0,
-        LinearRegression_stubMap_data_second_data_phi_s_address1 => grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_phi_s_address1,
-        LinearRegression_stubMap_data_second_data_phi_s_ce1 => grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_phi_s_ce1,
-        LinearRegression_stubMap_data_second_data_phi_s_we1 => grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_phi_s_we1,
-        LinearRegression_stubMap_data_second_data_phi_s_d1 => grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_phi_s_d1,
-        LinearRegression_stubMap_data_second_data_z_s_address0 => grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_z_s_address0,
-        LinearRegression_stubMap_data_second_data_z_s_ce0 => grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_z_s_ce0,
-        LinearRegression_stubMap_data_second_data_z_s_we0 => grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_z_s_we0,
-        LinearRegression_stubMap_data_second_data_z_s_d0 => grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_z_s_d0,
-        LinearRegression_stubMap_data_second_data_z_s_address1 => grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_z_s_address1,
-        LinearRegression_stubMap_data_second_data_z_s_ce1 => grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_z_s_ce1,
-        LinearRegression_stubMap_data_second_data_z_s_we1 => grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_z_s_we1,
-        LinearRegression_stubMap_data_second_data_z_s_d1 => grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_z_s_d1,
-        LinearRegression_stubMap_data_second_data_layerId_s_address0 => grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_layerId_s_address0,
-        LinearRegression_stubMap_data_second_data_layerId_s_ce0 => grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_layerId_s_ce0,
-        LinearRegression_stubMap_data_second_data_layerId_s_we0 => grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_layerId_s_we0,
-        LinearRegression_stubMap_data_second_data_layerId_s_d0 => grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_layerId_s_d0,
-        LinearRegression_stubMap_data_second_data_layerId_s_address1 => grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_layerId_s_address1,
-        LinearRegression_stubMap_data_second_data_layerId_s_ce1 => grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_layerId_s_ce1,
-        LinearRegression_stubMap_data_second_data_layerId_s_we1 => grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_layerId_s_we1,
-        LinearRegression_stubMap_data_second_data_layerId_s_d1 => grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_layerId_s_d1,
-        LinearRegression_stubMap_data_second_data_psModule_s_address0 => grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_psModule_s_address0,
-        LinearRegression_stubMap_data_second_data_psModule_s_ce0 => grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_psModule_s_ce0,
-        LinearRegression_stubMap_data_second_data_psModule_s_we0 => grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_psModule_s_we0,
-        LinearRegression_stubMap_data_second_data_psModule_s_d0 => grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_psModule_s_d0,
-        LinearRegression_stubMap_data_second_data_psModule_s_address1 => grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_psModule_s_address1,
-        LinearRegression_stubMap_data_second_data_psModule_s_ce1 => grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_psModule_s_ce1,
-        LinearRegression_stubMap_data_second_data_psModule_s_we1 => grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_psModule_s_we1,
-        LinearRegression_stubMap_data_second_data_psModule_s_d1 => grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_psModule_s_d1,
-        LinearRegression_stubMap_data_second_data_barrel_s_address0 => grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_barrel_s_address0,
-        LinearRegression_stubMap_data_second_data_barrel_s_ce0 => grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_barrel_s_ce0,
-        LinearRegression_stubMap_data_second_data_barrel_s_we0 => grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_barrel_s_we0,
-        LinearRegression_stubMap_data_second_data_barrel_s_d0 => grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_barrel_s_d0,
-        LinearRegression_stubMap_data_second_data_barrel_s_address1 => grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_barrel_s_address1,
-        LinearRegression_stubMap_data_second_data_barrel_s_ce1 => grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_barrel_s_ce1,
-        LinearRegression_stubMap_data_second_data_barrel_s_we1 => grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_barrel_s_we1,
-        LinearRegression_stubMap_data_second_data_barrel_s_d1 => grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_barrel_s_d1,
+        LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_address0 => grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_address0,
+        LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_ce0 => grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_ce0,
+        LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_we0 => grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_we0,
+        LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_d0 => grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_d0,
+        LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_address1 => grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_address1,
+        LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_ce1 => grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_ce1,
+        LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_we1 => grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_we1,
+        LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_d1 => grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_d1,
+        LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_address0 => grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_address0,
+        LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_ce0 => grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_ce0,
+        LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_we0 => grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_we0,
+        LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_d0 => grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_d0,
+        LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_address1 => grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_address1,
+        LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_ce1 => grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_ce1,
+        LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_we1 => grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_we1,
+        LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_d1 => grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_d1,
+        LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_address0 => grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_address0,
+        LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_ce0 => grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_ce0,
+        LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_we0 => grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_we0,
+        LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_d0 => grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_d0,
+        LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_address1 => grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_address1,
+        LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_ce1 => grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_ce1,
+        LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_we1 => grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_we1,
+        LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_d1 => grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_d1,
+        LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_address0 => grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_address0,
+        LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_ce0 => grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_ce0,
+        LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_we0 => grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_we0,
+        LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_d0 => grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_d0,
+        LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_address1 => grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_address1,
+        LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_ce1 => grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_ce1,
+        LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_we1 => grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_we1,
+        LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_d1 => grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_d1,
+        LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_address0 => grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_address0,
+        LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_ce0 => grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_ce0,
+        LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_we0 => grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_we0,
+        LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_d0 => grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_d0,
+        LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_address1 => grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_address1,
+        LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_ce1 => grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_ce1,
+        LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_we1 => grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_we1,
+        LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_d1 => grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_d1,
+        LinearRegression_stubMap_data_second_data_r_s_address0 => grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_r_s_address0,
+        LinearRegression_stubMap_data_second_data_r_s_ce0 => grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_r_s_ce0,
+        LinearRegression_stubMap_data_second_data_r_s_we0 => grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_r_s_we0,
+        LinearRegression_stubMap_data_second_data_r_s_d0 => grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_r_s_d0,
+        LinearRegression_stubMap_data_second_data_r_s_address1 => grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_r_s_address1,
+        LinearRegression_stubMap_data_second_data_r_s_ce1 => grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_r_s_ce1,
+        LinearRegression_stubMap_data_second_data_r_s_we1 => grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_r_s_we1,
+        LinearRegression_stubMap_data_second_data_r_s_d1 => grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_r_s_d1,
+        LinearRegression_stubMap_data_second_data_phi_s_address0 => grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_phi_s_address0,
+        LinearRegression_stubMap_data_second_data_phi_s_ce0 => grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_phi_s_ce0,
+        LinearRegression_stubMap_data_second_data_phi_s_we0 => grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_phi_s_we0,
+        LinearRegression_stubMap_data_second_data_phi_s_d0 => grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_phi_s_d0,
+        LinearRegression_stubMap_data_second_data_phi_s_address1 => grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_phi_s_address1,
+        LinearRegression_stubMap_data_second_data_phi_s_ce1 => grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_phi_s_ce1,
+        LinearRegression_stubMap_data_second_data_phi_s_we1 => grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_phi_s_we1,
+        LinearRegression_stubMap_data_second_data_phi_s_d1 => grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_phi_s_d1,
+        LinearRegression_stubMap_data_second_data_z_s_address0 => grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_z_s_address0,
+        LinearRegression_stubMap_data_second_data_z_s_ce0 => grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_z_s_ce0,
+        LinearRegression_stubMap_data_second_data_z_s_we0 => grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_z_s_we0,
+        LinearRegression_stubMap_data_second_data_z_s_d0 => grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_z_s_d0,
+        LinearRegression_stubMap_data_second_data_z_s_address1 => grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_z_s_address1,
+        LinearRegression_stubMap_data_second_data_z_s_ce1 => grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_z_s_ce1,
+        LinearRegression_stubMap_data_second_data_z_s_we1 => grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_z_s_we1,
+        LinearRegression_stubMap_data_second_data_z_s_d1 => grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_z_s_d1,
+        LinearRegression_stubMap_data_second_data_layerId_s_address0 => grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_layerId_s_address0,
+        LinearRegression_stubMap_data_second_data_layerId_s_ce0 => grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_layerId_s_ce0,
+        LinearRegression_stubMap_data_second_data_layerId_s_we0 => grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_layerId_s_we0,
+        LinearRegression_stubMap_data_second_data_layerId_s_d0 => grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_layerId_s_d0,
+        LinearRegression_stubMap_data_second_data_layerId_s_address1 => grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_layerId_s_address1,
+        LinearRegression_stubMap_data_second_data_layerId_s_ce1 => grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_layerId_s_ce1,
+        LinearRegression_stubMap_data_second_data_layerId_s_we1 => grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_layerId_s_we1,
+        LinearRegression_stubMap_data_second_data_layerId_s_d1 => grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_layerId_s_d1,
+        LinearRegression_stubMap_data_second_data_psModule_s_address0 => grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_psModule_s_address0,
+        LinearRegression_stubMap_data_second_data_psModule_s_ce0 => grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_psModule_s_ce0,
+        LinearRegression_stubMap_data_second_data_psModule_s_we0 => grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_psModule_s_we0,
+        LinearRegression_stubMap_data_second_data_psModule_s_d0 => grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_psModule_s_d0,
+        LinearRegression_stubMap_data_second_data_psModule_s_address1 => grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_psModule_s_address1,
+        LinearRegression_stubMap_data_second_data_psModule_s_ce1 => grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_psModule_s_ce1,
+        LinearRegression_stubMap_data_second_data_psModule_s_we1 => grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_psModule_s_we1,
+        LinearRegression_stubMap_data_second_data_psModule_s_d1 => grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_psModule_s_d1,
+        LinearRegression_stubMap_data_second_data_barrel_s_address0 => grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_barrel_s_address0,
+        LinearRegression_stubMap_data_second_data_barrel_s_ce0 => grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_barrel_s_ce0,
+        LinearRegression_stubMap_data_second_data_barrel_s_we0 => grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_barrel_s_we0,
+        LinearRegression_stubMap_data_second_data_barrel_s_d0 => grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_barrel_s_d0,
+        LinearRegression_stubMap_data_second_data_barrel_s_address1 => grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_barrel_s_address1,
+        LinearRegression_stubMap_data_second_data_barrel_s_ce1 => grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_barrel_s_ce1,
+        LinearRegression_stubMap_data_second_data_barrel_s_we1 => grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_barrel_s_we1,
+        LinearRegression_stubMap_data_second_data_barrel_s_d1 => grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_barrel_s_d1,
         LinearRegression_layerPopulation_size_read => LinearRegression_layerPopulation_size_read,
-        LinearRegression_layerPopulation_data_first_address0 => grp_initFit_fu_524_LinearRegression_layerPopulation_data_first_address0,
-        LinearRegression_layerPopulation_data_first_ce0 => grp_initFit_fu_524_LinearRegression_layerPopulation_data_first_ce0,
-        LinearRegression_layerPopulation_data_first_we0 => grp_initFit_fu_524_LinearRegression_layerPopulation_data_first_we0,
-        LinearRegression_layerPopulation_data_first_d0 => grp_initFit_fu_524_LinearRegression_layerPopulation_data_first_d0,
+        LinearRegression_layerPopulation_data_first_address0 => grp_initFit_fu_544_LinearRegression_layerPopulation_data_first_address0,
+        LinearRegression_layerPopulation_data_first_ce0 => grp_initFit_fu_544_LinearRegression_layerPopulation_data_first_ce0,
+        LinearRegression_layerPopulation_data_first_we0 => grp_initFit_fu_544_LinearRegression_layerPopulation_data_first_we0,
+        LinearRegression_layerPopulation_data_first_d0 => grp_initFit_fu_544_LinearRegression_layerPopulation_data_first_d0,
         LinearRegression_layerPopulation_data_first_q0 => LinearRegression_layerPopulation_data_first_q0,
-        LinearRegression_layerPopulation_data_second_address0 => grp_initFit_fu_524_LinearRegression_layerPopulation_data_second_address0,
-        LinearRegression_layerPopulation_data_second_ce0 => grp_initFit_fu_524_LinearRegression_layerPopulation_data_second_ce0,
-        LinearRegression_layerPopulation_data_second_we0 => grp_initFit_fu_524_LinearRegression_layerPopulation_data_second_we0,
-        LinearRegression_layerPopulation_data_second_d0 => grp_initFit_fu_524_LinearRegression_layerPopulation_data_second_d0,
+        LinearRegression_layerPopulation_data_second_address0 => grp_initFit_fu_544_LinearRegression_layerPopulation_data_second_address0,
+        LinearRegression_layerPopulation_data_second_ce0 => grp_initFit_fu_544_LinearRegression_layerPopulation_data_second_ce0,
+        LinearRegression_layerPopulation_data_second_we0 => grp_initFit_fu_544_LinearRegression_layerPopulation_data_second_we0,
+        LinearRegression_layerPopulation_data_second_d0 => grp_initFit_fu_544_LinearRegression_layerPopulation_data_second_d0,
         LinearRegression_layerPopulation_data_second_q0 => LinearRegression_layerPopulation_data_second_q0,
-        LinearRegression_residuals_size_s => grp_initFit_fu_524_LinearRegression_residuals_size_s,
-        LinearRegression_residuals_size_s_ap_vld => grp_initFit_fu_524_LinearRegression_residuals_size_s_ap_vld,
-        LinearRegression_largestResid_phi => grp_initFit_fu_524_LinearRegression_largestResid_phi,
-        LinearRegression_largestResid_phi_ap_vld => grp_initFit_fu_524_LinearRegression_largestResid_phi_ap_vld,
-        LinearRegression_largestResid_z => grp_initFit_fu_524_LinearRegression_largestResid_z,
-        LinearRegression_largestResid_z_ap_vld => grp_initFit_fu_524_LinearRegression_largestResid_z_ap_vld,
-        LinearRegression_largestResid_layerId => grp_initFit_fu_524_LinearRegression_largestResid_layerId,
-        LinearRegression_largestResid_layerId_ap_vld => grp_initFit_fu_524_LinearRegression_largestResid_layerId_ap_vld,
-        LinearRegression_largestResid_stubId => grp_initFit_fu_524_LinearRegression_largestResid_stubId,
-        LinearRegression_largestResid_stubId_ap_vld => grp_initFit_fu_524_LinearRegression_largestResid_stubId_ap_vld,
-        LinearRegression_largestResid_ps => grp_initFit_fu_524_LinearRegression_largestResid_ps,
-        LinearRegression_largestResid_ps_ap_vld => grp_initFit_fu_524_LinearRegression_largestResid_ps_ap_vld,
+        LinearRegression_residuals_size_s => grp_initFit_fu_544_LinearRegression_residuals_size_s,
+        LinearRegression_residuals_size_s_ap_vld => grp_initFit_fu_544_LinearRegression_residuals_size_s_ap_vld,
+        LinearRegression_largestResid_phi => grp_initFit_fu_544_LinearRegression_largestResid_phi,
+        LinearRegression_largestResid_phi_ap_vld => grp_initFit_fu_544_LinearRegression_largestResid_phi_ap_vld,
+        LinearRegression_largestResid_z => grp_initFit_fu_544_LinearRegression_largestResid_z,
+        LinearRegression_largestResid_z_ap_vld => grp_initFit_fu_544_LinearRegression_largestResid_z_ap_vld,
+        LinearRegression_largestResid_layerId => grp_initFit_fu_544_LinearRegression_largestResid_layerId,
+        LinearRegression_largestResid_layerId_ap_vld => grp_initFit_fu_544_LinearRegression_largestResid_layerId_ap_vld,
+        LinearRegression_largestResid_stubId => grp_initFit_fu_544_LinearRegression_largestResid_stubId,
+        LinearRegression_largestResid_stubId_ap_vld => grp_initFit_fu_544_LinearRegression_largestResid_stubId_ap_vld,
+        LinearRegression_largestResid_ps => grp_initFit_fu_544_LinearRegression_largestResid_ps,
+        LinearRegression_largestResid_ps_ap_vld => grp_initFit_fu_544_LinearRegression_largestResid_ps_ap_vld,
         l1track3D_iPhiSec_read => l1track3D_iPhiSec_read,
         l1track3D_iEtaReg_read => l1track3D_iEtaReg_read,
         l1track3D_helixRphi_first_read => l1track3D_helixRphi_first_read,
         l1track3D_helixRphi_second_read => l1track3D_helixRphi_second_read,
         l1track3D_stubs_size_read => l1track3D_stubs_size_read,
-        l1track3D_stubs_data_settings_chosenRofPhi_s_address0 => grp_initFit_fu_524_l1track3D_stubs_data_settings_chosenRofPhi_s_address0,
-        l1track3D_stubs_data_settings_chosenRofPhi_s_ce0 => grp_initFit_fu_524_l1track3D_stubs_data_settings_chosenRofPhi_s_ce0,
+        l1track3D_stubs_data_settings_chosenRofPhi_s_address0 => grp_initFit_fu_544_l1track3D_stubs_data_settings_chosenRofPhi_s_address0,
+        l1track3D_stubs_data_settings_chosenRofPhi_s_ce0 => grp_initFit_fu_544_l1track3D_stubs_data_settings_chosenRofPhi_s_ce0,
         l1track3D_stubs_data_settings_chosenRofPhi_s_q0 => l1track3D_stubs_data_settings_chosenRofPhi_s_q0,
-        l1track3D_stubs_data_settings_chosenRofPhi_s_address1 => grp_initFit_fu_524_l1track3D_stubs_data_settings_chosenRofPhi_s_address1,
-        l1track3D_stubs_data_settings_chosenRofPhi_s_ce1 => grp_initFit_fu_524_l1track3D_stubs_data_settings_chosenRofPhi_s_ce1,
+        l1track3D_stubs_data_settings_chosenRofPhi_s_address1 => grp_initFit_fu_544_l1track3D_stubs_data_settings_chosenRofPhi_s_address1,
+        l1track3D_stubs_data_settings_chosenRofPhi_s_ce1 => grp_initFit_fu_544_l1track3D_stubs_data_settings_chosenRofPhi_s_ce1,
         l1track3D_stubs_data_settings_chosenRofPhi_s_q1 => l1track3D_stubs_data_settings_chosenRofPhi_s_q1,
-        l1track3D_stubs_data_settings_chosenRofZ_s_address0 => grp_initFit_fu_524_l1track3D_stubs_data_settings_chosenRofZ_s_address0,
-        l1track3D_stubs_data_settings_chosenRofZ_s_ce0 => grp_initFit_fu_524_l1track3D_stubs_data_settings_chosenRofZ_s_ce0,
+        l1track3D_stubs_data_settings_chosenRofZ_s_address0 => grp_initFit_fu_544_l1track3D_stubs_data_settings_chosenRofZ_s_address0,
+        l1track3D_stubs_data_settings_chosenRofZ_s_ce0 => grp_initFit_fu_544_l1track3D_stubs_data_settings_chosenRofZ_s_ce0,
         l1track3D_stubs_data_settings_chosenRofZ_s_q0 => l1track3D_stubs_data_settings_chosenRofZ_s_q0,
-        l1track3D_stubs_data_settings_chosenRofZ_s_address1 => grp_initFit_fu_524_l1track3D_stubs_data_settings_chosenRofZ_s_address1,
-        l1track3D_stubs_data_settings_chosenRofZ_s_ce1 => grp_initFit_fu_524_l1track3D_stubs_data_settings_chosenRofZ_s_ce1,
+        l1track3D_stubs_data_settings_chosenRofZ_s_address1 => grp_initFit_fu_544_l1track3D_stubs_data_settings_chosenRofZ_s_address1,
+        l1track3D_stubs_data_settings_chosenRofZ_s_ce1 => grp_initFit_fu_544_l1track3D_stubs_data_settings_chosenRofZ_s_ce1,
         l1track3D_stubs_data_settings_chosenRofZ_s_q1 => l1track3D_stubs_data_settings_chosenRofZ_s_q1,
-        l1track3D_stubs_data_settings_etaRegions_s_address0 => grp_initFit_fu_524_l1track3D_stubs_data_settings_etaRegions_s_address0,
-        l1track3D_stubs_data_settings_etaRegions_s_ce0 => grp_initFit_fu_524_l1track3D_stubs_data_settings_etaRegions_s_ce0,
-        l1track3D_stubs_data_settings_etaRegions_s_q0 => l1track3D_stubs_data_settings_etaRegions_s_q0,
-        l1track3D_stubs_data_settings_etaRegions_s_address1 => grp_initFit_fu_524_l1track3D_stubs_data_settings_etaRegions_s_address1,
-        l1track3D_stubs_data_settings_etaRegions_s_ce1 => grp_initFit_fu_524_l1track3D_stubs_data_settings_etaRegions_s_ce1,
-        l1track3D_stubs_data_settings_etaRegions_s_q1 => l1track3D_stubs_data_settings_etaRegions_s_q1,
-        l1track3D_stubs_data_settings_minNumMatchLayers_s_address0 => grp_initFit_fu_524_l1track3D_stubs_data_settings_minNumMatchLayers_s_address0,
-        l1track3D_stubs_data_settings_minNumMatchLayers_s_ce0 => grp_initFit_fu_524_l1track3D_stubs_data_settings_minNumMatchLayers_s_ce0,
+        l1track3D_stubs_data_settings_sinh_etaRegions_s_address0 => grp_initFit_fu_544_l1track3D_stubs_data_settings_sinh_etaRegions_s_address0,
+        l1track3D_stubs_data_settings_sinh_etaRegions_s_ce0 => grp_initFit_fu_544_l1track3D_stubs_data_settings_sinh_etaRegions_s_ce0,
+        l1track3D_stubs_data_settings_sinh_etaRegions_s_q0 => l1track3D_stubs_data_settings_sinh_etaRegions_s_q0,
+        l1track3D_stubs_data_settings_sinh_etaRegions_s_address1 => grp_initFit_fu_544_l1track3D_stubs_data_settings_sinh_etaRegions_s_address1,
+        l1track3D_stubs_data_settings_sinh_etaRegions_s_ce1 => grp_initFit_fu_544_l1track3D_stubs_data_settings_sinh_etaRegions_s_ce1,
+        l1track3D_stubs_data_settings_sinh_etaRegions_s_q1 => l1track3D_stubs_data_settings_sinh_etaRegions_s_q1,
+        l1track3D_stubs_data_settings_minNumMatchLayers_s_address0 => grp_initFit_fu_544_l1track3D_stubs_data_settings_minNumMatchLayers_s_address0,
+        l1track3D_stubs_data_settings_minNumMatchLayers_s_ce0 => grp_initFit_fu_544_l1track3D_stubs_data_settings_minNumMatchLayers_s_ce0,
         l1track3D_stubs_data_settings_minNumMatchLayers_s_q0 => l1track3D_stubs_data_settings_minNumMatchLayers_s_q0,
-        l1track3D_stubs_data_settings_minNumMatchLayers_s_address1 => grp_initFit_fu_524_l1track3D_stubs_data_settings_minNumMatchLayers_s_address1,
-        l1track3D_stubs_data_settings_minNumMatchLayers_s_ce1 => grp_initFit_fu_524_l1track3D_stubs_data_settings_minNumMatchLayers_s_ce1,
+        l1track3D_stubs_data_settings_minNumMatchLayers_s_address1 => grp_initFit_fu_544_l1track3D_stubs_data_settings_minNumMatchLayers_s_address1,
+        l1track3D_stubs_data_settings_minNumMatchLayers_s_ce1 => grp_initFit_fu_544_l1track3D_stubs_data_settings_minNumMatchLayers_s_ce1,
         l1track3D_stubs_data_settings_minNumMatchLayers_s_q1 => l1track3D_stubs_data_settings_minNumMatchLayers_s_q1,
-        l1track3D_stubs_data_settings_minPSLayers_s_address0 => grp_initFit_fu_524_l1track3D_stubs_data_settings_minPSLayers_s_address0,
-        l1track3D_stubs_data_settings_minPSLayers_s_ce0 => grp_initFit_fu_524_l1track3D_stubs_data_settings_minPSLayers_s_ce0,
+        l1track3D_stubs_data_settings_minPSLayers_s_address0 => grp_initFit_fu_544_l1track3D_stubs_data_settings_minPSLayers_s_address0,
+        l1track3D_stubs_data_settings_minPSLayers_s_ce0 => grp_initFit_fu_544_l1track3D_stubs_data_settings_minPSLayers_s_ce0,
         l1track3D_stubs_data_settings_minPSLayers_s_q0 => l1track3D_stubs_data_settings_minPSLayers_s_q0,
-        l1track3D_stubs_data_settings_minPSLayers_s_address1 => grp_initFit_fu_524_l1track3D_stubs_data_settings_minPSLayers_s_address1,
-        l1track3D_stubs_data_settings_minPSLayers_s_ce1 => grp_initFit_fu_524_l1track3D_stubs_data_settings_minPSLayers_s_ce1,
+        l1track3D_stubs_data_settings_minPSLayers_s_address1 => grp_initFit_fu_544_l1track3D_stubs_data_settings_minPSLayers_s_address1,
+        l1track3D_stubs_data_settings_minPSLayers_s_ce1 => grp_initFit_fu_544_l1track3D_stubs_data_settings_minPSLayers_s_ce1,
         l1track3D_stubs_data_settings_minPSLayers_s_q1 => l1track3D_stubs_data_settings_minPSLayers_s_q1,
-        l1track3D_stubs_data_r_s_address0 => grp_initFit_fu_524_l1track3D_stubs_data_r_s_address0,
-        l1track3D_stubs_data_r_s_ce0 => grp_initFit_fu_524_l1track3D_stubs_data_r_s_ce0,
+        l1track3D_stubs_data_r_s_address0 => grp_initFit_fu_544_l1track3D_stubs_data_r_s_address0,
+        l1track3D_stubs_data_r_s_ce0 => grp_initFit_fu_544_l1track3D_stubs_data_r_s_ce0,
         l1track3D_stubs_data_r_s_q0 => l1track3D_stubs_data_r_s_q0,
-        l1track3D_stubs_data_r_s_address1 => grp_initFit_fu_524_l1track3D_stubs_data_r_s_address1,
-        l1track3D_stubs_data_r_s_ce1 => grp_initFit_fu_524_l1track3D_stubs_data_r_s_ce1,
+        l1track3D_stubs_data_r_s_address1 => grp_initFit_fu_544_l1track3D_stubs_data_r_s_address1,
+        l1track3D_stubs_data_r_s_ce1 => grp_initFit_fu_544_l1track3D_stubs_data_r_s_ce1,
         l1track3D_stubs_data_r_s_q1 => l1track3D_stubs_data_r_s_q1,
-        l1track3D_stubs_data_phi_s_address0 => grp_initFit_fu_524_l1track3D_stubs_data_phi_s_address0,
-        l1track3D_stubs_data_phi_s_ce0 => grp_initFit_fu_524_l1track3D_stubs_data_phi_s_ce0,
+        l1track3D_stubs_data_phi_s_address0 => grp_initFit_fu_544_l1track3D_stubs_data_phi_s_address0,
+        l1track3D_stubs_data_phi_s_ce0 => grp_initFit_fu_544_l1track3D_stubs_data_phi_s_ce0,
         l1track3D_stubs_data_phi_s_q0 => l1track3D_stubs_data_phi_s_q0,
-        l1track3D_stubs_data_phi_s_address1 => grp_initFit_fu_524_l1track3D_stubs_data_phi_s_address1,
-        l1track3D_stubs_data_phi_s_ce1 => grp_initFit_fu_524_l1track3D_stubs_data_phi_s_ce1,
+        l1track3D_stubs_data_phi_s_address1 => grp_initFit_fu_544_l1track3D_stubs_data_phi_s_address1,
+        l1track3D_stubs_data_phi_s_ce1 => grp_initFit_fu_544_l1track3D_stubs_data_phi_s_ce1,
         l1track3D_stubs_data_phi_s_q1 => l1track3D_stubs_data_phi_s_q1,
-        l1track3D_stubs_data_z_s_address0 => grp_initFit_fu_524_l1track3D_stubs_data_z_s_address0,
-        l1track3D_stubs_data_z_s_ce0 => grp_initFit_fu_524_l1track3D_stubs_data_z_s_ce0,
+        l1track3D_stubs_data_z_s_address0 => grp_initFit_fu_544_l1track3D_stubs_data_z_s_address0,
+        l1track3D_stubs_data_z_s_ce0 => grp_initFit_fu_544_l1track3D_stubs_data_z_s_ce0,
         l1track3D_stubs_data_z_s_q0 => l1track3D_stubs_data_z_s_q0,
-        l1track3D_stubs_data_z_s_address1 => grp_initFit_fu_524_l1track3D_stubs_data_z_s_address1,
-        l1track3D_stubs_data_z_s_ce1 => grp_initFit_fu_524_l1track3D_stubs_data_z_s_ce1,
+        l1track3D_stubs_data_z_s_address1 => grp_initFit_fu_544_l1track3D_stubs_data_z_s_address1,
+        l1track3D_stubs_data_z_s_ce1 => grp_initFit_fu_544_l1track3D_stubs_data_z_s_ce1,
         l1track3D_stubs_data_z_s_q1 => l1track3D_stubs_data_z_s_q1,
-        l1track3D_stubs_data_layerId_s_address0 => grp_initFit_fu_524_l1track3D_stubs_data_layerId_s_address0,
-        l1track3D_stubs_data_layerId_s_ce0 => grp_initFit_fu_524_l1track3D_stubs_data_layerId_s_ce0,
+        l1track3D_stubs_data_layerId_s_address0 => grp_initFit_fu_544_l1track3D_stubs_data_layerId_s_address0,
+        l1track3D_stubs_data_layerId_s_ce0 => grp_initFit_fu_544_l1track3D_stubs_data_layerId_s_ce0,
         l1track3D_stubs_data_layerId_s_q0 => l1track3D_stubs_data_layerId_s_q0,
-        l1track3D_stubs_data_layerId_s_address1 => grp_initFit_fu_524_l1track3D_stubs_data_layerId_s_address1,
-        l1track3D_stubs_data_layerId_s_ce1 => grp_initFit_fu_524_l1track3D_stubs_data_layerId_s_ce1,
+        l1track3D_stubs_data_layerId_s_address1 => grp_initFit_fu_544_l1track3D_stubs_data_layerId_s_address1,
+        l1track3D_stubs_data_layerId_s_ce1 => grp_initFit_fu_544_l1track3D_stubs_data_layerId_s_ce1,
         l1track3D_stubs_data_layerId_s_q1 => l1track3D_stubs_data_layerId_s_q1,
-        l1track3D_stubs_data_psModule_s_address0 => grp_initFit_fu_524_l1track3D_stubs_data_psModule_s_address0,
-        l1track3D_stubs_data_psModule_s_ce0 => grp_initFit_fu_524_l1track3D_stubs_data_psModule_s_ce0,
+        l1track3D_stubs_data_psModule_s_address0 => grp_initFit_fu_544_l1track3D_stubs_data_psModule_s_address0,
+        l1track3D_stubs_data_psModule_s_ce0 => grp_initFit_fu_544_l1track3D_stubs_data_psModule_s_ce0,
         l1track3D_stubs_data_psModule_s_q0 => l1track3D_stubs_data_psModule_s_q0,
-        l1track3D_stubs_data_psModule_s_address1 => grp_initFit_fu_524_l1track3D_stubs_data_psModule_s_address1,
-        l1track3D_stubs_data_psModule_s_ce1 => grp_initFit_fu_524_l1track3D_stubs_data_psModule_s_ce1,
+        l1track3D_stubs_data_psModule_s_address1 => grp_initFit_fu_544_l1track3D_stubs_data_psModule_s_address1,
+        l1track3D_stubs_data_psModule_s_ce1 => grp_initFit_fu_544_l1track3D_stubs_data_psModule_s_ce1,
         l1track3D_stubs_data_psModule_s_q1 => l1track3D_stubs_data_psModule_s_q1,
-        l1track3D_stubs_data_barrel_s_address0 => grp_initFit_fu_524_l1track3D_stubs_data_barrel_s_address0,
-        l1track3D_stubs_data_barrel_s_ce0 => grp_initFit_fu_524_l1track3D_stubs_data_barrel_s_ce0,
+        l1track3D_stubs_data_barrel_s_address0 => grp_initFit_fu_544_l1track3D_stubs_data_barrel_s_address0,
+        l1track3D_stubs_data_barrel_s_ce0 => grp_initFit_fu_544_l1track3D_stubs_data_barrel_s_ce0,
         l1track3D_stubs_data_barrel_s_q0 => l1track3D_stubs_data_barrel_s_q0,
-        l1track3D_stubs_data_barrel_s_address1 => grp_initFit_fu_524_l1track3D_stubs_data_barrel_s_address1,
-        l1track3D_stubs_data_barrel_s_ce1 => grp_initFit_fu_524_l1track3D_stubs_data_barrel_s_ce1,
+        l1track3D_stubs_data_barrel_s_address1 => grp_initFit_fu_544_l1track3D_stubs_data_barrel_s_address1,
+        l1track3D_stubs_data_barrel_s_ce1 => grp_initFit_fu_544_l1track3D_stubs_data_barrel_s_ce1,
         l1track3D_stubs_data_barrel_s_q1 => l1track3D_stubs_data_barrel_s_q1,
-        ap_return_0 => grp_initFit_fu_524_ap_return_0,
-        ap_return_1 => grp_initFit_fu_524_ap_return_1,
-        ap_return_2 => grp_initFit_fu_524_ap_return_2,
-        ap_return_3 => grp_initFit_fu_524_ap_return_3,
-        ap_return_4 => grp_initFit_fu_524_ap_return_4,
-        ap_return_5 => grp_initFit_fu_524_ap_return_5,
-        ap_return_6 => grp_initFit_fu_524_ap_return_6,
-        ap_return_7 => grp_initFit_fu_524_ap_return_7,
-        ap_return_8 => grp_initFit_fu_524_ap_return_8,
-        ap_return_9 => grp_initFit_fu_524_ap_return_9);
+        ap_return_0 => grp_initFit_fu_544_ap_return_0,
+        ap_return_1 => grp_initFit_fu_544_ap_return_1,
+        ap_return_2 => grp_initFit_fu_544_ap_return_2,
+        ap_return_3 => grp_initFit_fu_544_ap_return_3,
+        ap_return_4 => grp_initFit_fu_544_ap_return_4,
+        ap_return_5 => grp_initFit_fu_544_ap_return_5,
+        ap_return_6 => grp_initFit_fu_544_ap_return_6,
+        ap_return_7 => grp_initFit_fu_544_ap_return_7,
+        ap_return_8 => grp_initFit_fu_544_ap_return_8,
+        ap_return_9 => grp_initFit_fu_544_ap_return_9);
 
-    grp_calcHelix_fu_640 : component calcHelix
+    grp_calcResidual_fu_658 : component calcResidual
     port map (
         ap_clk => ap_clk,
         ap_rst => ap_rst,
-        ap_start => grp_calcHelix_fu_640_ap_start,
-        ap_done => grp_calcHelix_fu_640_ap_done,
-        ap_idle => grp_calcHelix_fu_640_ap_idle,
-        ap_ready => grp_calcHelix_fu_640_ap_ready,
+        ap_start => grp_calcResidual_fu_658_ap_start,
+        ap_done => grp_calcResidual_fu_658_ap_done,
+        ap_idle => grp_calcResidual_fu_658_ap_idle,
+        ap_ready => grp_calcResidual_fu_658_ap_ready,
         LinearRegression_settings_chosenRofPhi_read => LinearRegression_settings_chosenRofPhi_read,
         LinearRegression_settings_chosenRofZ_read => LinearRegression_settings_chosenRofZ_read,
-        LinearRegression_HTParameter_qOverPt_read => LinearRegression_HTP_reg_1501,
-        LinearRegression_HTParameter_phiT_read => LinearRegression_HTP_1_reg_1510,
-        LinearRegression_HTParameter_cotTheta_read => LinearRegression_HTP_2_reg_1519,
-        LinearRegression_HTParameter_zT_read => LinearRegression_HTP_3_reg_1528,
-        LinearRegression_stubMap_size_read => LinearRegression_stu_403_reg_314,
-        LinearRegression_stubMap_data_second_size_s_address0 => grp_calcHelix_fu_640_LinearRegression_stubMap_data_second_size_s_address0,
-        LinearRegression_stubMap_data_second_size_s_ce0 => grp_calcHelix_fu_640_LinearRegression_stubMap_data_second_size_s_ce0,
-        LinearRegression_stubMap_data_second_size_s_q0 => LinearRegression_stubMap_data_second_size_s_q0,
-        LinearRegression_stubMap_data_second_data_r_s_address0 => grp_calcHelix_fu_640_LinearRegression_stubMap_data_second_data_r_s_address0,
-        LinearRegression_stubMap_data_second_data_r_s_ce0 => grp_calcHelix_fu_640_LinearRegression_stubMap_data_second_data_r_s_ce0,
-        LinearRegression_stubMap_data_second_data_r_s_q0 => LinearRegression_stubMap_data_second_data_r_s_q0,
-        LinearRegression_stubMap_data_second_data_phi_s_address0 => grp_calcHelix_fu_640_LinearRegression_stubMap_data_second_data_phi_s_address0,
-        LinearRegression_stubMap_data_second_data_phi_s_ce0 => grp_calcHelix_fu_640_LinearRegression_stubMap_data_second_data_phi_s_ce0,
-        LinearRegression_stubMap_data_second_data_phi_s_q0 => LinearRegression_stubMap_data_second_data_phi_s_q0,
-        LinearRegression_stubMap_data_second_data_z_s_address0 => grp_calcHelix_fu_640_LinearRegression_stubMap_data_second_data_z_s_address0,
-        LinearRegression_stubMap_data_second_data_z_s_ce0 => grp_calcHelix_fu_640_LinearRegression_stubMap_data_second_data_z_s_ce0,
-        LinearRegression_stubMap_data_second_data_z_s_q0 => LinearRegression_stubMap_data_second_data_z_s_q0,
-        LinearRegression_stubMap_data_second_data_psModule_s_address0 => grp_calcHelix_fu_640_LinearRegression_stubMap_data_second_data_psModule_s_address0,
-        LinearRegression_stubMap_data_second_data_psModule_s_ce0 => grp_calcHelix_fu_640_LinearRegression_stubMap_data_second_data_psModule_s_ce0,
-        LinearRegression_stubMap_data_second_data_psModule_s_q0 => LinearRegression_stubMap_data_second_data_psModule_s_q0,
-        ap_return_0 => grp_calcHelix_fu_640_ap_return_0,
-        ap_return_1 => grp_calcHelix_fu_640_ap_return_1,
-        ap_return_2 => grp_calcHelix_fu_640_ap_return_2,
-        ap_return_3 => grp_calcHelix_fu_640_ap_return_3);
-
-    grp_calcResidual_fu_662 : component calcResidual
-    port map (
-        ap_clk => ap_clk,
-        ap_rst => ap_rst,
-        ap_start => grp_calcResidual_fu_662_ap_start,
-        ap_done => grp_calcResidual_fu_662_ap_done,
-        ap_idle => grp_calcResidual_fu_662_ap_idle,
-        ap_ready => grp_calcResidual_fu_662_ap_ready,
-        LinearRegression_settings_chosenRofPhi_read => LinearRegression_settings_chosenRofPhi_read,
-        LinearRegression_settings_chosenRofZ_read => LinearRegression_settings_chosenRofZ_read,
-        LinearRegression_HTParameter_qOverPt_read => LinearRegression_HTP_reg_1501,
-        LinearRegression_HTParameter_phiT_read => LinearRegression_HTP_1_reg_1510,
-        LinearRegression_HTParameter_cotTheta_read => LinearRegression_HTP_2_reg_1519,
-        LinearRegression_HTParameter_zT_read => LinearRegression_HTP_3_reg_1528,
-        LinearRegression_LRParameter_qOverPt_read => LinearRegression_LRP_reg_1576,
-        LinearRegression_LRParameter_phiT_read => LinearRegression_LRP_1_reg_1582,
-        LinearRegression_LRParameter_cotTheta_read => LinearRegression_LRP_2_reg_1588,
-        LinearRegression_LRParameter_zT_read => LinearRegression_LRP_3_reg_1594,
-        LinearRegression_stubMap_size_read => LinearRegression_stu_403_reg_314,
-        LinearRegression_stubMap_data_first_address0 => grp_calcResidual_fu_662_LinearRegression_stubMap_data_first_address0,
-        LinearRegression_stubMap_data_first_ce0 => grp_calcResidual_fu_662_LinearRegression_stubMap_data_first_ce0,
+        LinearRegression_HTParameter_qOverPt_read => LinearRegression_HTP_reg_1497,
+        LinearRegression_HTParameter_phiT_read => LinearRegression_HTP_1_reg_1506,
+        LinearRegression_HTParameter_cotTheta_read => LinearRegression_HTP_2_reg_1515,
+        LinearRegression_HTParameter_zT_read => LinearRegression_HTP_3_reg_1524,
+        LinearRegression_LRParameter_qOverPt_read => LinearRegression_LRP_reg_1572,
+        LinearRegression_LRParameter_phiT_read => LinearRegression_LRP_1_reg_1578,
+        LinearRegression_LRParameter_cotTheta_read => LinearRegression_LRP_2_reg_1584,
+        LinearRegression_LRParameter_zT_read => LinearRegression_LRP_3_reg_1590,
+        LinearRegression_stubMap_size_read => LinearRegression_stu_401_reg_312,
+        LinearRegression_stubMap_data_first_address0 => grp_calcResidual_fu_658_LinearRegression_stubMap_data_first_address0,
+        LinearRegression_stubMap_data_first_ce0 => grp_calcResidual_fu_658_LinearRegression_stubMap_data_first_ce0,
         LinearRegression_stubMap_data_first_q0 => LinearRegression_stubMap_data_first_q0,
-        LinearRegression_stubMap_data_second_size_s_address0 => grp_calcResidual_fu_662_LinearRegression_stubMap_data_second_size_s_address0,
-        LinearRegression_stubMap_data_second_size_s_ce0 => grp_calcResidual_fu_662_LinearRegression_stubMap_data_second_size_s_ce0,
+        LinearRegression_stubMap_data_second_size_s_address0 => grp_calcResidual_fu_658_LinearRegression_stubMap_data_second_size_s_address0,
+        LinearRegression_stubMap_data_second_size_s_ce0 => grp_calcResidual_fu_658_LinearRegression_stubMap_data_second_size_s_ce0,
         LinearRegression_stubMap_data_second_size_s_q0 => LinearRegression_stubMap_data_second_size_s_q0,
-        LinearRegression_stubMap_data_second_data_r_s_address0 => grp_calcResidual_fu_662_LinearRegression_stubMap_data_second_data_r_s_address0,
-        LinearRegression_stubMap_data_second_data_r_s_ce0 => grp_calcResidual_fu_662_LinearRegression_stubMap_data_second_data_r_s_ce0,
+        LinearRegression_stubMap_data_second_data_r_s_address0 => grp_calcResidual_fu_658_LinearRegression_stubMap_data_second_data_r_s_address0,
+        LinearRegression_stubMap_data_second_data_r_s_ce0 => grp_calcResidual_fu_658_LinearRegression_stubMap_data_second_data_r_s_ce0,
         LinearRegression_stubMap_data_second_data_r_s_q0 => LinearRegression_stubMap_data_second_data_r_s_q0,
-        LinearRegression_stubMap_data_second_data_phi_s_address0 => grp_calcResidual_fu_662_LinearRegression_stubMap_data_second_data_phi_s_address0,
-        LinearRegression_stubMap_data_second_data_phi_s_ce0 => grp_calcResidual_fu_662_LinearRegression_stubMap_data_second_data_phi_s_ce0,
+        LinearRegression_stubMap_data_second_data_phi_s_address0 => grp_calcResidual_fu_658_LinearRegression_stubMap_data_second_data_phi_s_address0,
+        LinearRegression_stubMap_data_second_data_phi_s_ce0 => grp_calcResidual_fu_658_LinearRegression_stubMap_data_second_data_phi_s_ce0,
         LinearRegression_stubMap_data_second_data_phi_s_q0 => LinearRegression_stubMap_data_second_data_phi_s_q0,
-        LinearRegression_stubMap_data_second_data_z_s_address0 => grp_calcResidual_fu_662_LinearRegression_stubMap_data_second_data_z_s_address0,
-        LinearRegression_stubMap_data_second_data_z_s_ce0 => grp_calcResidual_fu_662_LinearRegression_stubMap_data_second_data_z_s_ce0,
+        LinearRegression_stubMap_data_second_data_z_s_address0 => grp_calcResidual_fu_658_LinearRegression_stubMap_data_second_data_z_s_address0,
+        LinearRegression_stubMap_data_second_data_z_s_ce0 => grp_calcResidual_fu_658_LinearRegression_stubMap_data_second_data_z_s_ce0,
         LinearRegression_stubMap_data_second_data_z_s_q0 => LinearRegression_stubMap_data_second_data_z_s_q0,
-        LinearRegression_stubMap_data_second_data_psModule_s_address0 => grp_calcResidual_fu_662_LinearRegression_stubMap_data_second_data_psModule_s_address0,
-        LinearRegression_stubMap_data_second_data_psModule_s_ce0 => grp_calcResidual_fu_662_LinearRegression_stubMap_data_second_data_psModule_s_ce0,
+        LinearRegression_stubMap_data_second_data_psModule_s_address0 => grp_calcResidual_fu_658_LinearRegression_stubMap_data_second_data_psModule_s_address0,
+        LinearRegression_stubMap_data_second_data_psModule_s_ce0 => grp_calcResidual_fu_658_LinearRegression_stubMap_data_second_data_psModule_s_ce0,
         LinearRegression_stubMap_data_second_data_psModule_s_q0 => LinearRegression_stubMap_data_second_data_psModule_s_q0,
-        LinearRegression_stubMap_data_second_data_barrel_s_address0 => grp_calcResidual_fu_662_LinearRegression_stubMap_data_second_data_barrel_s_address0,
-        LinearRegression_stubMap_data_second_data_barrel_s_ce0 => grp_calcResidual_fu_662_LinearRegression_stubMap_data_second_data_barrel_s_ce0,
+        LinearRegression_stubMap_data_second_data_barrel_s_address0 => grp_calcResidual_fu_658_LinearRegression_stubMap_data_second_data_barrel_s_address0,
+        LinearRegression_stubMap_data_second_data_barrel_s_ce0 => grp_calcResidual_fu_658_LinearRegression_stubMap_data_second_data_barrel_s_ce0,
         LinearRegression_stubMap_data_second_data_barrel_s_q0 => LinearRegression_stubMap_data_second_data_barrel_s_q0,
-        LinearRegression_residuals_data_first_address0 => grp_calcResidual_fu_662_LinearRegression_residuals_data_first_address0,
-        LinearRegression_residuals_data_first_ce0 => grp_calcResidual_fu_662_LinearRegression_residuals_data_first_ce0,
-        LinearRegression_residuals_data_first_we0 => grp_calcResidual_fu_662_LinearRegression_residuals_data_first_we0,
-        LinearRegression_residuals_data_first_d0 => grp_calcResidual_fu_662_LinearRegression_residuals_data_first_d0,
+        LinearRegression_residuals_data_first_address0 => grp_calcResidual_fu_658_LinearRegression_residuals_data_first_address0,
+        LinearRegression_residuals_data_first_ce0 => grp_calcResidual_fu_658_LinearRegression_residuals_data_first_ce0,
+        LinearRegression_residuals_data_first_we0 => grp_calcResidual_fu_658_LinearRegression_residuals_data_first_we0,
+        LinearRegression_residuals_data_first_d0 => grp_calcResidual_fu_658_LinearRegression_residuals_data_first_d0,
         LinearRegression_residuals_data_first_q0 => LinearRegression_residuals_data_first_q0,
-        LinearRegression_residuals_data_second_size_s_address0 => grp_calcResidual_fu_662_LinearRegression_residuals_data_second_size_s_address0,
-        LinearRegression_residuals_data_second_size_s_ce0 => grp_calcResidual_fu_662_LinearRegression_residuals_data_second_size_s_ce0,
-        LinearRegression_residuals_data_second_size_s_we0 => grp_calcResidual_fu_662_LinearRegression_residuals_data_second_size_s_we0,
-        LinearRegression_residuals_data_second_size_s_d0 => grp_calcResidual_fu_662_LinearRegression_residuals_data_second_size_s_d0,
+        LinearRegression_residuals_data_second_size_s_address0 => grp_calcResidual_fu_658_LinearRegression_residuals_data_second_size_s_address0,
+        LinearRegression_residuals_data_second_size_s_ce0 => grp_calcResidual_fu_658_LinearRegression_residuals_data_second_size_s_ce0,
+        LinearRegression_residuals_data_second_size_s_we0 => grp_calcResidual_fu_658_LinearRegression_residuals_data_second_size_s_we0,
+        LinearRegression_residuals_data_second_size_s_d0 => grp_calcResidual_fu_658_LinearRegression_residuals_data_second_size_s_d0,
         LinearRegression_residuals_data_second_size_s_q0 => LinearRegression_residuals_data_second_size_s_q0,
-        LinearRegression_residuals_data_second_data_phi_address0 => grp_calcResidual_fu_662_LinearRegression_residuals_data_second_data_phi_address0,
-        LinearRegression_residuals_data_second_data_phi_ce0 => grp_calcResidual_fu_662_LinearRegression_residuals_data_second_data_phi_ce0,
-        LinearRegression_residuals_data_second_data_phi_we0 => grp_calcResidual_fu_662_LinearRegression_residuals_data_second_data_phi_we0,
-        LinearRegression_residuals_data_second_data_phi_d0 => grp_calcResidual_fu_662_LinearRegression_residuals_data_second_data_phi_d0,
-        LinearRegression_residuals_data_second_data_phi_address1 => grp_calcResidual_fu_662_LinearRegression_residuals_data_second_data_phi_address1,
-        LinearRegression_residuals_data_second_data_phi_ce1 => grp_calcResidual_fu_662_LinearRegression_residuals_data_second_data_phi_ce1,
-        LinearRegression_residuals_data_second_data_phi_we1 => grp_calcResidual_fu_662_LinearRegression_residuals_data_second_data_phi_we1,
-        LinearRegression_residuals_data_second_data_phi_d1 => grp_calcResidual_fu_662_LinearRegression_residuals_data_second_data_phi_d1,
-        LinearRegression_residuals_data_second_data_z_address0 => grp_calcResidual_fu_662_LinearRegression_residuals_data_second_data_z_address0,
-        LinearRegression_residuals_data_second_data_z_ce0 => grp_calcResidual_fu_662_LinearRegression_residuals_data_second_data_z_ce0,
-        LinearRegression_residuals_data_second_data_z_we0 => grp_calcResidual_fu_662_LinearRegression_residuals_data_second_data_z_we0,
-        LinearRegression_residuals_data_second_data_z_d0 => grp_calcResidual_fu_662_LinearRegression_residuals_data_second_data_z_d0,
-        LinearRegression_residuals_data_second_data_z_address1 => grp_calcResidual_fu_662_LinearRegression_residuals_data_second_data_z_address1,
-        LinearRegression_residuals_data_second_data_z_ce1 => grp_calcResidual_fu_662_LinearRegression_residuals_data_second_data_z_ce1,
-        LinearRegression_residuals_data_second_data_z_we1 => grp_calcResidual_fu_662_LinearRegression_residuals_data_second_data_z_we1,
-        LinearRegression_residuals_data_second_data_z_d1 => grp_calcResidual_fu_662_LinearRegression_residuals_data_second_data_z_d1,
-        LinearRegression_residuals_data_second_data_layerId_address0 => grp_calcResidual_fu_662_LinearRegression_residuals_data_second_data_layerId_address0,
-        LinearRegression_residuals_data_second_data_layerId_ce0 => grp_calcResidual_fu_662_LinearRegression_residuals_data_second_data_layerId_ce0,
-        LinearRegression_residuals_data_second_data_layerId_we0 => grp_calcResidual_fu_662_LinearRegression_residuals_data_second_data_layerId_we0,
-        LinearRegression_residuals_data_second_data_layerId_d0 => grp_calcResidual_fu_662_LinearRegression_residuals_data_second_data_layerId_d0,
-        LinearRegression_residuals_data_second_data_layerId_address1 => grp_calcResidual_fu_662_LinearRegression_residuals_data_second_data_layerId_address1,
-        LinearRegression_residuals_data_second_data_layerId_ce1 => grp_calcResidual_fu_662_LinearRegression_residuals_data_second_data_layerId_ce1,
-        LinearRegression_residuals_data_second_data_layerId_we1 => grp_calcResidual_fu_662_LinearRegression_residuals_data_second_data_layerId_we1,
-        LinearRegression_residuals_data_second_data_layerId_d1 => grp_calcResidual_fu_662_LinearRegression_residuals_data_second_data_layerId_d1,
-        LinearRegression_residuals_data_second_data_stubId_address0 => grp_calcResidual_fu_662_LinearRegression_residuals_data_second_data_stubId_address0,
-        LinearRegression_residuals_data_second_data_stubId_ce0 => grp_calcResidual_fu_662_LinearRegression_residuals_data_second_data_stubId_ce0,
-        LinearRegression_residuals_data_second_data_stubId_we0 => grp_calcResidual_fu_662_LinearRegression_residuals_data_second_data_stubId_we0,
-        LinearRegression_residuals_data_second_data_stubId_d0 => grp_calcResidual_fu_662_LinearRegression_residuals_data_second_data_stubId_d0,
-        LinearRegression_residuals_data_second_data_stubId_address1 => grp_calcResidual_fu_662_LinearRegression_residuals_data_second_data_stubId_address1,
-        LinearRegression_residuals_data_second_data_stubId_ce1 => grp_calcResidual_fu_662_LinearRegression_residuals_data_second_data_stubId_ce1,
-        LinearRegression_residuals_data_second_data_stubId_we1 => grp_calcResidual_fu_662_LinearRegression_residuals_data_second_data_stubId_we1,
-        LinearRegression_residuals_data_second_data_stubId_d1 => grp_calcResidual_fu_662_LinearRegression_residuals_data_second_data_stubId_d1,
-        LinearRegression_residuals_data_second_data_ps_address0 => grp_calcResidual_fu_662_LinearRegression_residuals_data_second_data_ps_address0,
-        LinearRegression_residuals_data_second_data_ps_ce0 => grp_calcResidual_fu_662_LinearRegression_residuals_data_second_data_ps_ce0,
-        LinearRegression_residuals_data_second_data_ps_we0 => grp_calcResidual_fu_662_LinearRegression_residuals_data_second_data_ps_we0,
-        LinearRegression_residuals_data_second_data_ps_d0 => grp_calcResidual_fu_662_LinearRegression_residuals_data_second_data_ps_d0,
-        LinearRegression_residuals_data_second_data_ps_address1 => grp_calcResidual_fu_662_LinearRegression_residuals_data_second_data_ps_address1,
-        LinearRegression_residuals_data_second_data_ps_ce1 => grp_calcResidual_fu_662_LinearRegression_residuals_data_second_data_ps_ce1,
-        LinearRegression_residuals_data_second_data_ps_we1 => grp_calcResidual_fu_662_LinearRegression_residuals_data_second_data_ps_we1,
-        LinearRegression_residuals_data_second_data_ps_d1 => grp_calcResidual_fu_662_LinearRegression_residuals_data_second_data_ps_d1,
-        ap_return => grp_calcResidual_fu_662_ap_return);
+        LinearRegression_residuals_data_second_data_phi_address0 => grp_calcResidual_fu_658_LinearRegression_residuals_data_second_data_phi_address0,
+        LinearRegression_residuals_data_second_data_phi_ce0 => grp_calcResidual_fu_658_LinearRegression_residuals_data_second_data_phi_ce0,
+        LinearRegression_residuals_data_second_data_phi_we0 => grp_calcResidual_fu_658_LinearRegression_residuals_data_second_data_phi_we0,
+        LinearRegression_residuals_data_second_data_phi_d0 => grp_calcResidual_fu_658_LinearRegression_residuals_data_second_data_phi_d0,
+        LinearRegression_residuals_data_second_data_phi_address1 => grp_calcResidual_fu_658_LinearRegression_residuals_data_second_data_phi_address1,
+        LinearRegression_residuals_data_second_data_phi_ce1 => grp_calcResidual_fu_658_LinearRegression_residuals_data_second_data_phi_ce1,
+        LinearRegression_residuals_data_second_data_phi_we1 => grp_calcResidual_fu_658_LinearRegression_residuals_data_second_data_phi_we1,
+        LinearRegression_residuals_data_second_data_phi_d1 => grp_calcResidual_fu_658_LinearRegression_residuals_data_second_data_phi_d1,
+        LinearRegression_residuals_data_second_data_z_address0 => grp_calcResidual_fu_658_LinearRegression_residuals_data_second_data_z_address0,
+        LinearRegression_residuals_data_second_data_z_ce0 => grp_calcResidual_fu_658_LinearRegression_residuals_data_second_data_z_ce0,
+        LinearRegression_residuals_data_second_data_z_we0 => grp_calcResidual_fu_658_LinearRegression_residuals_data_second_data_z_we0,
+        LinearRegression_residuals_data_second_data_z_d0 => grp_calcResidual_fu_658_LinearRegression_residuals_data_second_data_z_d0,
+        LinearRegression_residuals_data_second_data_z_address1 => grp_calcResidual_fu_658_LinearRegression_residuals_data_second_data_z_address1,
+        LinearRegression_residuals_data_second_data_z_ce1 => grp_calcResidual_fu_658_LinearRegression_residuals_data_second_data_z_ce1,
+        LinearRegression_residuals_data_second_data_z_we1 => grp_calcResidual_fu_658_LinearRegression_residuals_data_second_data_z_we1,
+        LinearRegression_residuals_data_second_data_z_d1 => grp_calcResidual_fu_658_LinearRegression_residuals_data_second_data_z_d1,
+        LinearRegression_residuals_data_second_data_layerId_address0 => grp_calcResidual_fu_658_LinearRegression_residuals_data_second_data_layerId_address0,
+        LinearRegression_residuals_data_second_data_layerId_ce0 => grp_calcResidual_fu_658_LinearRegression_residuals_data_second_data_layerId_ce0,
+        LinearRegression_residuals_data_second_data_layerId_we0 => grp_calcResidual_fu_658_LinearRegression_residuals_data_second_data_layerId_we0,
+        LinearRegression_residuals_data_second_data_layerId_d0 => grp_calcResidual_fu_658_LinearRegression_residuals_data_second_data_layerId_d0,
+        LinearRegression_residuals_data_second_data_layerId_address1 => grp_calcResidual_fu_658_LinearRegression_residuals_data_second_data_layerId_address1,
+        LinearRegression_residuals_data_second_data_layerId_ce1 => grp_calcResidual_fu_658_LinearRegression_residuals_data_second_data_layerId_ce1,
+        LinearRegression_residuals_data_second_data_layerId_we1 => grp_calcResidual_fu_658_LinearRegression_residuals_data_second_data_layerId_we1,
+        LinearRegression_residuals_data_second_data_layerId_d1 => grp_calcResidual_fu_658_LinearRegression_residuals_data_second_data_layerId_d1,
+        LinearRegression_residuals_data_second_data_stubId_address0 => grp_calcResidual_fu_658_LinearRegression_residuals_data_second_data_stubId_address0,
+        LinearRegression_residuals_data_second_data_stubId_ce0 => grp_calcResidual_fu_658_LinearRegression_residuals_data_second_data_stubId_ce0,
+        LinearRegression_residuals_data_second_data_stubId_we0 => grp_calcResidual_fu_658_LinearRegression_residuals_data_second_data_stubId_we0,
+        LinearRegression_residuals_data_second_data_stubId_d0 => grp_calcResidual_fu_658_LinearRegression_residuals_data_second_data_stubId_d0,
+        LinearRegression_residuals_data_second_data_stubId_address1 => grp_calcResidual_fu_658_LinearRegression_residuals_data_second_data_stubId_address1,
+        LinearRegression_residuals_data_second_data_stubId_ce1 => grp_calcResidual_fu_658_LinearRegression_residuals_data_second_data_stubId_ce1,
+        LinearRegression_residuals_data_second_data_stubId_we1 => grp_calcResidual_fu_658_LinearRegression_residuals_data_second_data_stubId_we1,
+        LinearRegression_residuals_data_second_data_stubId_d1 => grp_calcResidual_fu_658_LinearRegression_residuals_data_second_data_stubId_d1,
+        LinearRegression_residuals_data_second_data_ps_address0 => grp_calcResidual_fu_658_LinearRegression_residuals_data_second_data_ps_address0,
+        LinearRegression_residuals_data_second_data_ps_ce0 => grp_calcResidual_fu_658_LinearRegression_residuals_data_second_data_ps_ce0,
+        LinearRegression_residuals_data_second_data_ps_we0 => grp_calcResidual_fu_658_LinearRegression_residuals_data_second_data_ps_we0,
+        LinearRegression_residuals_data_second_data_ps_d0 => grp_calcResidual_fu_658_LinearRegression_residuals_data_second_data_ps_d0,
+        LinearRegression_residuals_data_second_data_ps_address1 => grp_calcResidual_fu_658_LinearRegression_residuals_data_second_data_ps_address1,
+        LinearRegression_residuals_data_second_data_ps_ce1 => grp_calcResidual_fu_658_LinearRegression_residuals_data_second_data_ps_ce1,
+        LinearRegression_residuals_data_second_data_ps_we1 => grp_calcResidual_fu_658_LinearRegression_residuals_data_second_data_ps_we1,
+        LinearRegression_residuals_data_second_data_ps_d1 => grp_calcResidual_fu_658_LinearRegression_residuals_data_second_data_ps_d1,
+        ap_return => grp_calcResidual_fu_658_ap_return);
 
-    LRupdateHLS_faddfsub_32ns_32ns_32_4_full_dsp_1_U492 : component LRupdateHLS_faddfsub_32ns_32ns_32_4_full_dsp_1
+    LRupdateHLS_faddfsub_32ns_32ns_32_4_full_dsp_1_U480 : component LRupdateHLS_faddfsub_32ns_32ns_32_4_full_dsp_1
     generic map (
         ID => 1,
         NUM_STAGE => 4,
@@ -2815,16 +2826,32 @@ begin
     port map (
         clk => ap_clk,
         reset => ap_rst,
-        din0 => grp_fu_706_p0,
-        din1 => grp_fu_706_p1,
-        opcode => grp_fu_706_opcode,
-        ce => grp_fu_706_ce,
-        dout => grp_fu_706_p2);
+        din0 => grp_fu_702_p0,
+        din1 => grp_fu_702_p1,
+        opcode => grp_fu_702_opcode,
+        ce => grp_fu_702_ce,
+        dout => grp_fu_702_p2);
 
-    LRupdateHLS_faddfsub_32ns_32ns_32_4_full_dsp_1_U493 : component LRupdateHLS_faddfsub_32ns_32ns_32_4_full_dsp_1
+    LRupdateHLS_faddfsub_32ns_32ns_32_4_full_dsp_1_U481 : component LRupdateHLS_faddfsub_32ns_32ns_32_4_full_dsp_1
     generic map (
         ID => 1,
         NUM_STAGE => 4,
+        din0_WIDTH => 32,
+        din1_WIDTH => 32,
+        dout_WIDTH => 32)
+    port map (
+        clk => ap_clk,
+        reset => ap_rst,
+        din0 => grp_fu_707_p0,
+        din1 => grp_fu_707_p1,
+        opcode => grp_fu_707_opcode,
+        ce => grp_fu_707_ce,
+        dout => grp_fu_707_p2);
+
+    LRupdateHLS_fmul_32ns_32ns_32_2_max_dsp_1_U482 : component LRupdateHLS_fmul_32ns_32ns_32_2_max_dsp_1
+    generic map (
+        ID => 1,
+        NUM_STAGE => 2,
         din0_WIDTH => 32,
         din1_WIDTH => 32,
         dout_WIDTH => 32)
@@ -2833,11 +2860,10 @@ begin
         reset => ap_rst,
         din0 => grp_fu_711_p0,
         din1 => grp_fu_711_p1,
-        opcode => grp_fu_711_opcode,
-        ce => grp_fu_711_ce,
+        ce => ap_const_logic_1,
         dout => grp_fu_711_p2);
 
-    LRupdateHLS_fmul_32ns_32ns_32_2_max_dsp_1_U494 : component LRupdateHLS_fmul_32ns_32ns_32_2_max_dsp_1
+    LRupdateHLS_fmul_32ns_32ns_32_2_max_dsp_1_U483 : component LRupdateHLS_fmul_32ns_32ns_32_2_max_dsp_1
     generic map (
         ID => 1,
         NUM_STAGE => 2,
@@ -2847,27 +2873,12 @@ begin
     port map (
         clk => ap_clk,
         reset => ap_rst,
-        din0 => grp_fu_715_p0,
-        din1 => grp_fu_715_p1,
-        ce => ap_const_logic_1,
-        dout => grp_fu_715_p2);
-
-    LRupdateHLS_fmul_32ns_32ns_32_2_max_dsp_1_U495 : component LRupdateHLS_fmul_32ns_32ns_32_2_max_dsp_1
-    generic map (
-        ID => 1,
-        NUM_STAGE => 2,
-        din0_WIDTH => 32,
-        din1_WIDTH => 32,
-        dout_WIDTH => 32)
-    port map (
-        clk => ap_clk,
-        reset => ap_rst,
-        din0 => grp_fu_721_p0,
+        din0 => grp_fu_717_p0,
         din1 => LinearRegression_settings_chosenRofZ_read,
         ce => ap_const_logic_1,
-        dout => grp_fu_721_p2);
+        dout => grp_fu_717_p2);
 
-    LRupdateHLS_fdiv_32ns_32ns_32_8_1_U496 : component LRupdateHLS_fdiv_32ns_32ns_32_8_1
+    LRupdateHLS_fdiv_32ns_32ns_32_8_1_U484 : component LRupdateHLS_fdiv_32ns_32ns_32_8_1
     generic map (
         ID => 1,
         NUM_STAGE => 8,
@@ -2877,12 +2888,12 @@ begin
     port map (
         clk => ap_clk,
         reset => ap_rst,
-        din0 => LinearRegression_LRP_4_reg_365,
+        din0 => LinearRegression_LRP_4_reg_363,
         din1 => ap_const_lv32_3B935A50,
         ce => ap_const_logic_1,
-        dout => grp_fu_725_p2);
+        dout => grp_fu_721_p2);
 
-    LRupdateHLS_fcmp_32ns_32ns_1_1_1_U497 : component LRupdateHLS_fcmp_32ns_32ns_1_1_1
+    LRupdateHLS_fcmp_32ns_32ns_1_1_1_U485 : component LRupdateHLS_fcmp_32ns_32ns_1_1_1
     generic map (
         ID => 1,
         NUM_STAGE => 1,
@@ -2890,12 +2901,12 @@ begin
         din1_WIDTH => 32,
         dout_WIDTH => 1)
     port map (
-        din0 => grp_fu_731_p0,
-        din1 => grp_fu_731_p1,
-        opcode => grp_fu_731_opcode,
-        dout => grp_fu_731_p2);
+        din0 => grp_fu_727_p0,
+        din1 => grp_fu_727_p1,
+        opcode => grp_fu_727_opcode,
+        dout => grp_fu_727_p2);
 
-    LRupdateHLS_fcmp_32ns_32ns_1_1_1_U498 : component LRupdateHLS_fcmp_32ns_32ns_1_1_1
+    LRupdateHLS_fcmp_32ns_32ns_1_1_1_U486 : component LRupdateHLS_fcmp_32ns_32ns_1_1_1
     generic map (
         ID => 1,
         NUM_STAGE => 1,
@@ -2903,10 +2914,10 @@ begin
         din1_WIDTH => 32,
         dout_WIDTH => 1)
     port map (
-        din0 => grp_fu_736_p0,
+        din0 => grp_fu_732_p0,
         din1 => ap_const_lv32_40490FDB,
         opcode => ap_const_lv5_5,
-        dout => grp_fu_736_p2);
+        dout => grp_fu_732_p2);
 
 
 
@@ -2931,7 +2942,7 @@ begin
                 ap_return_0_preg <= ap_const_lv32_0;
             else
                 if ((ap_const_logic_1 = ap_CS_fsm_state62)) then 
-                    ap_return_0_preg <= LinearRegression_iPh_reg_1488;
+                    ap_return_0_preg <= LinearRegression_iPh_reg_1484;
                 end if; 
             end if;
         end if;
@@ -2945,7 +2956,7 @@ begin
                 ap_return_10_preg <= ap_const_lv32_0;
             else
                 if ((ap_const_logic_1 = ap_CS_fsm_state62)) then 
-                    ap_return_10_preg <= LinearRegression_LRP_5_reg_375;
+                    ap_return_10_preg <= LinearRegression_LRP_5_reg_373;
                 end if; 
             end if;
         end if;
@@ -2959,7 +2970,7 @@ begin
                 ap_return_11_preg <= ap_const_lv32_0;
             else
                 if ((ap_const_logic_1 = ap_CS_fsm_state62)) then 
-                    ap_return_11_preg <= LinearRegression_LRP_6_reg_385;
+                    ap_return_11_preg <= LinearRegression_LRP_6_reg_383;
                 end if; 
             end if;
         end if;
@@ -2973,7 +2984,7 @@ begin
                 ap_return_12_preg <= ap_const_lv32_0;
             else
                 if ((ap_const_logic_1 = ap_CS_fsm_state62)) then 
-                    ap_return_12_preg <= LinearRegression_LRP_7_reg_395;
+                    ap_return_12_preg <= LinearRegression_LRP_7_reg_393;
                 end if; 
             end if;
         end if;
@@ -2987,7 +2998,7 @@ begin
                 ap_return_13_preg <= ap_const_lv32_0;
             else
                 if ((ap_const_logic_1 = ap_CS_fsm_state62)) then 
-                    ap_return_13_preg <= LinearRegression_stu_6_reg_405;
+                    ap_return_13_preg <= LinearRegression_stu_6_reg_403;
                 end if; 
             end if;
         end if;
@@ -3001,7 +3012,7 @@ begin
                 ap_return_14_preg <= ap_const_lv32_0;
             else
                 if ((ap_const_logic_1 = ap_CS_fsm_state62)) then 
-                    ap_return_14_preg <= LinearRegression_lay_1_reg_415;
+                    ap_return_14_preg <= LinearRegression_lay_1_reg_413;
                 end if; 
             end if;
         end if;
@@ -3015,7 +3026,7 @@ begin
                 ap_return_1_preg <= ap_const_lv32_0;
             else
                 if ((ap_const_logic_1 = ap_CS_fsm_state62)) then 
-                    ap_return_1_preg <= LinearRegression_iEt_reg_1493;
+                    ap_return_1_preg <= LinearRegression_iEt_reg_1489;
                 end if; 
             end if;
         end if;
@@ -3029,7 +3040,7 @@ begin
                 ap_return_2_preg <= ap_const_lv32_0;
             else
                 if ((ap_const_logic_1 = ap_CS_fsm_state62)) then 
-                    ap_return_2_preg <= LinearRegression_nIt_2_reg_425;
+                    ap_return_2_preg <= LinearRegression_nIt_2_reg_423;
                 end if; 
             end if;
         end if;
@@ -3043,7 +3054,7 @@ begin
                 ap_return_3_preg <= ap_const_lv1_0;
             else
                 if ((ap_const_logic_1 = ap_CS_fsm_state62)) then 
-                    ap_return_3_preg <= LinearRegression_val_1_reg_436;
+                    ap_return_3_preg <= LinearRegression_val_1_reg_434;
                 end if; 
             end if;
         end if;
@@ -3057,7 +3068,7 @@ begin
                 ap_return_4_preg <= ap_const_lv32_0;
             else
                 if ((ap_const_logic_1 = ap_CS_fsm_state62)) then 
-                    ap_return_4_preg <= LinearRegression_HTP_reg_1501;
+                    ap_return_4_preg <= LinearRegression_HTP_reg_1497;
                 end if; 
             end if;
         end if;
@@ -3071,7 +3082,7 @@ begin
                 ap_return_5_preg <= ap_const_lv32_0;
             else
                 if ((ap_const_logic_1 = ap_CS_fsm_state62)) then 
-                    ap_return_5_preg <= LinearRegression_HTP_1_reg_1510;
+                    ap_return_5_preg <= LinearRegression_HTP_1_reg_1506;
                 end if; 
             end if;
         end if;
@@ -3085,7 +3096,7 @@ begin
                 ap_return_6_preg <= ap_const_lv32_0;
             else
                 if ((ap_const_logic_1 = ap_CS_fsm_state62)) then 
-                    ap_return_6_preg <= LinearRegression_HTP_2_reg_1519;
+                    ap_return_6_preg <= LinearRegression_HTP_2_reg_1515;
                 end if; 
             end if;
         end if;
@@ -3099,7 +3110,7 @@ begin
                 ap_return_7_preg <= ap_const_lv32_0;
             else
                 if ((ap_const_logic_1 = ap_CS_fsm_state62)) then 
-                    ap_return_7_preg <= LinearRegression_HTP_3_reg_1528;
+                    ap_return_7_preg <= LinearRegression_HTP_3_reg_1524;
                 end if; 
             end if;
         end if;
@@ -3113,7 +3124,7 @@ begin
                 ap_return_8_preg <= ap_const_lv32_0;
             else
                 if ((ap_const_logic_1 = ap_CS_fsm_state62)) then 
-                    ap_return_8_preg <= LinearRegression_stu_5_reg_355;
+                    ap_return_8_preg <= LinearRegression_stu_5_reg_353;
                 end if; 
             end if;
         end if;
@@ -3127,263 +3138,263 @@ begin
                 ap_return_9_preg <= ap_const_lv32_0;
             else
                 if ((ap_const_logic_1 = ap_CS_fsm_state62)) then 
-                    ap_return_9_preg <= grp_fu_725_p2;
+                    ap_return_9_preg <= grp_fu_721_p2;
                 end if; 
             end if;
         end if;
     end process;
 
 
-    grp_calcHelix_fu_640_ap_start_reg_assign_proc : process(ap_clk)
+    grp_calcHelix_fu_522_ap_start_reg_assign_proc : process(ap_clk)
     begin
         if (ap_clk'event and ap_clk =  '1') then
             if (ap_rst = '1') then
-                grp_calcHelix_fu_640_ap_start_reg <= ap_const_logic_0;
+                grp_calcHelix_fu_522_ap_start_reg <= ap_const_logic_0;
             else
                 if ((ap_const_logic_1 = ap_CS_fsm_state26)) then 
-                    grp_calcHelix_fu_640_ap_start_reg <= ap_const_logic_1;
-                elsif ((grp_calcHelix_fu_640_ap_ready = ap_const_logic_1)) then 
-                    grp_calcHelix_fu_640_ap_start_reg <= ap_const_logic_0;
+                    grp_calcHelix_fu_522_ap_start_reg <= ap_const_logic_1;
+                elsif ((grp_calcHelix_fu_522_ap_ready = ap_const_logic_1)) then 
+                    grp_calcHelix_fu_522_ap_start_reg <= ap_const_logic_0;
                 end if; 
             end if;
         end if;
     end process;
 
 
-    grp_calcResidual_fu_662_ap_start_reg_assign_proc : process(ap_clk)
+    grp_calcResidual_fu_658_ap_start_reg_assign_proc : process(ap_clk)
     begin
         if (ap_clk'event and ap_clk =  '1') then
             if (ap_rst = '1') then
-                grp_calcResidual_fu_662_ap_start_reg <= ap_const_logic_0;
+                grp_calcResidual_fu_658_ap_start_reg <= ap_const_logic_0;
             else
                 if ((ap_const_logic_1 = ap_CS_fsm_state28)) then 
-                    grp_calcResidual_fu_662_ap_start_reg <= ap_const_logic_1;
-                elsif ((grp_calcResidual_fu_662_ap_ready = ap_const_logic_1)) then 
-                    grp_calcResidual_fu_662_ap_start_reg <= ap_const_logic_0;
+                    grp_calcResidual_fu_658_ap_start_reg <= ap_const_logic_1;
+                elsif ((grp_calcResidual_fu_658_ap_ready = ap_const_logic_1)) then 
+                    grp_calcResidual_fu_658_ap_start_reg <= ap_const_logic_0;
                 end if; 
             end if;
         end if;
     end process;
 
 
-    grp_initFit_fu_524_ap_start_reg_assign_proc : process(ap_clk)
+    grp_initFit_fu_544_ap_start_reg_assign_proc : process(ap_clk)
     begin
         if (ap_clk'event and ap_clk =  '1') then
             if (ap_rst = '1') then
-                grp_initFit_fu_524_ap_start_reg <= ap_const_logic_0;
+                grp_initFit_fu_544_ap_start_reg <= ap_const_logic_0;
             else
                 if (((ap_start = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state1))) then 
-                    grp_initFit_fu_524_ap_start_reg <= ap_const_logic_1;
-                elsif ((grp_initFit_fu_524_ap_ready = ap_const_logic_1)) then 
-                    grp_initFit_fu_524_ap_start_reg <= ap_const_logic_0;
+                    grp_initFit_fu_544_ap_start_reg <= ap_const_logic_1;
+                elsif ((grp_initFit_fu_544_ap_ready = ap_const_logic_1)) then 
+                    grp_initFit_fu_544_ap_start_reg <= ap_const_logic_0;
                 end if; 
             end if;
         end if;
     end process;
 
 
-    grp_killLargestResidual_fu_447_ap_start_reg_assign_proc : process(ap_clk)
+    grp_killLargestResidual_fu_445_ap_start_reg_assign_proc : process(ap_clk)
     begin
         if (ap_clk'event and ap_clk =  '1') then
             if (ap_rst = '1') then
-                grp_killLargestResidual_fu_447_ap_start_reg <= ap_const_logic_0;
+                grp_killLargestResidual_fu_445_ap_start_reg <= ap_const_logic_0;
             else
                 if ((ap_const_logic_1 = ap_CS_fsm_state30)) then 
-                    grp_killLargestResidual_fu_447_ap_start_reg <= ap_const_logic_1;
-                elsif ((grp_killLargestResidual_fu_447_ap_ready = ap_const_logic_1)) then 
-                    grp_killLargestResidual_fu_447_ap_start_reg <= ap_const_logic_0;
+                    grp_killLargestResidual_fu_445_ap_start_reg <= ap_const_logic_1;
+                elsif ((grp_killLargestResidual_fu_445_ap_ready = ap_const_logic_1)) then 
+                    grp_killLargestResidual_fu_445_ap_start_reg <= ap_const_logic_0;
                 end if; 
             end if;
         end if;
     end process;
 
 
-    LinearRegression_LRP_4_reg_365_assign_proc : process (ap_clk)
+    LinearRegression_LRP_4_reg_363_assign_proc : process (ap_clk)
     begin
         if (ap_clk'event and ap_clk = '1') then
             if ((ap_const_logic_1 = ap_CS_fsm_state25)) then 
-                LinearRegression_LRP_4_reg_365 <= reg_755;
+                LinearRegression_LRP_4_reg_363 <= reg_751;
             elsif ((ap_const_logic_1 = ap_CS_fsm_state54)) then 
-                LinearRegression_LRP_4_reg_365 <= candData_qOverPt_wri_1_reg_1644;
+                LinearRegression_LRP_4_reg_363 <= candData_qOverPt_wri_1_reg_1640;
             end if; 
         end if;
     end process;
 
-    LinearRegression_LRP_5_reg_375_assign_proc : process (ap_clk)
+    LinearRegression_LRP_5_reg_373_assign_proc : process (ap_clk)
     begin
         if (ap_clk'event and ap_clk = '1') then
             if ((ap_const_logic_1 = ap_CS_fsm_state25)) then 
-                LinearRegression_LRP_5_reg_375 <= fitTrk_phi0_s_fu_1027_p3;
+                LinearRegression_LRP_5_reg_373 <= fitTrk_phi0_s_fu_1023_p3;
             elsif ((ap_const_logic_1 = ap_CS_fsm_state54)) then 
-                LinearRegression_LRP_5_reg_375 <= fitTrk_phi0_1_fu_1315_p3;
+                LinearRegression_LRP_5_reg_373 <= fitTrk_phi0_1_fu_1311_p3;
             end if; 
         end if;
     end process;
 
-    LinearRegression_LRP_6_reg_385_assign_proc : process (ap_clk)
+    LinearRegression_LRP_6_reg_383_assign_proc : process (ap_clk)
     begin
         if (ap_clk'event and ap_clk = '1') then
             if ((ap_const_logic_1 = ap_CS_fsm_state25)) then 
-                LinearRegression_LRP_6_reg_385 <= fitTrk_tanLambda_s_reg_1555;
+                LinearRegression_LRP_6_reg_383 <= fitTrk_tanLambda_s_reg_1551;
             elsif ((ap_const_logic_1 = ap_CS_fsm_state54)) then 
-                LinearRegression_LRP_6_reg_385 <= fitTrk_tanLambda_1_reg_1638;
+                LinearRegression_LRP_6_reg_383 <= fitTrk_tanLambda_1_reg_1634;
             end if; 
         end if;
     end process;
 
-    LinearRegression_LRP_7_reg_395_assign_proc : process (ap_clk)
+    LinearRegression_LRP_7_reg_393_assign_proc : process (ap_clk)
     begin
         if (ap_clk'event and ap_clk = '1') then
             if ((ap_const_logic_1 = ap_CS_fsm_state25)) then 
-                LinearRegression_LRP_7_reg_395 <= reg_762;
+                LinearRegression_LRP_7_reg_393 <= reg_758;
             elsif ((ap_const_logic_1 = ap_CS_fsm_state54)) then 
-                LinearRegression_LRP_7_reg_395 <= fitTrk_z0_1_reg_1650;
+                LinearRegression_LRP_7_reg_393 <= fitTrk_z0_1_reg_1646;
             end if; 
         end if;
     end process;
 
-    LinearRegression_lay_1_reg_415_assign_proc : process (ap_clk)
+    LinearRegression_lay_1_reg_413_assign_proc : process (ap_clk)
     begin
         if (ap_clk'event and ap_clk = '1') then
             if ((ap_const_logic_1 = ap_CS_fsm_state25)) then 
-                LinearRegression_lay_1_reg_415 <= newret7_reg_1549;
+                LinearRegression_lay_1_reg_413 <= newret7_reg_1545;
             elsif ((ap_const_logic_1 = ap_CS_fsm_state54)) then 
-                LinearRegression_lay_1_reg_415 <= LinearRegression_lay_21_reg_1632;
+                LinearRegression_lay_1_reg_413 <= LinearRegression_lay_17_reg_1628;
             end if; 
         end if;
     end process;
 
-    LinearRegression_lay_reg_334_assign_proc : process (ap_clk)
+    LinearRegression_lay_reg_332_assign_proc : process (ap_clk)
     begin
         if (ap_clk'event and ap_clk = '1') then
-            if (((grp_initFit_fu_524_ap_done = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state2) and (newret1_fu_781_p1 = ap_const_lv1_1))) then 
-                LinearRegression_lay_reg_334 <= grp_initFit_fu_524_ap_return_9;
-            elsif (((grp_killLargestResidual_fu_447_ap_done = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state31) and (nothingToKill_fu_1057_p1 = ap_const_lv1_0))) then 
-                LinearRegression_lay_reg_334 <= grp_killLargestResidual_fu_447_ap_return_9;
+            if (((grp_initFit_fu_544_ap_done = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state2) and (newret1_fu_777_p1 = ap_const_lv1_1))) then 
+                LinearRegression_lay_reg_332 <= grp_initFit_fu_544_ap_return_9;
+            elsif (((grp_killLargestResidual_fu_445_ap_done = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state31) and (nothingToKill_fu_1053_p1 = ap_const_lv1_0))) then 
+                LinearRegression_lay_reg_332 <= grp_killLargestResidual_fu_445_ap_return_9;
             end if; 
         end if;
     end process;
 
-    LinearRegression_nIt_2_reg_425_assign_proc : process (ap_clk)
+    LinearRegression_nIt_2_reg_423_assign_proc : process (ap_clk)
     begin
         if (ap_clk'event and ap_clk = '1') then
             if ((ap_const_logic_1 = ap_CS_fsm_state25)) then 
-                LinearRegression_nIt_2_reg_425 <= ap_const_lv32_0;
+                LinearRegression_nIt_2_reg_423 <= ap_const_lv32_0;
             elsif ((ap_const_logic_1 = ap_CS_fsm_state54)) then 
-                LinearRegression_nIt_2_reg_425 <= LinearRegression_nIt_1_reg_1606;
+                LinearRegression_nIt_2_reg_423 <= LinearRegression_nIt_1_reg_1602;
             end if; 
         end if;
     end process;
 
-    LinearRegression_nIt_reg_344_assign_proc : process (ap_clk)
+    LinearRegression_nIt_reg_342_assign_proc : process (ap_clk)
     begin
         if (ap_clk'event and ap_clk = '1') then
-            if (((grp_initFit_fu_524_ap_done = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state2) and (newret1_fu_781_p1 = ap_const_lv1_1))) then 
-                LinearRegression_nIt_reg_344 <= ap_const_lv32_0;
-            elsif (((grp_killLargestResidual_fu_447_ap_done = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state31) and (nothingToKill_fu_1057_p1 = ap_const_lv1_0))) then 
-                LinearRegression_nIt_reg_344 <= LinearRegression_nIt_1_fu_1051_p2;
+            if (((grp_initFit_fu_544_ap_done = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state2) and (newret1_fu_777_p1 = ap_const_lv1_1))) then 
+                LinearRegression_nIt_reg_342 <= ap_const_lv32_0;
+            elsif (((grp_killLargestResidual_fu_445_ap_done = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state31) and (nothingToKill_fu_1053_p1 = ap_const_lv1_0))) then 
+                LinearRegression_nIt_reg_342 <= LinearRegression_nIt_1_fu_1047_p2;
             end if; 
         end if;
     end process;
 
-    LinearRegression_stu_403_reg_314_assign_proc : process (ap_clk)
+    LinearRegression_stu_401_reg_312_assign_proc : process (ap_clk)
     begin
         if (ap_clk'event and ap_clk = '1') then
-            if (((grp_initFit_fu_524_ap_done = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state2) and (newret1_fu_781_p1 = ap_const_lv1_1))) then 
-                LinearRegression_stu_403_reg_314 <= grp_initFit_fu_524_ap_return_8;
-            elsif (((grp_killLargestResidual_fu_447_ap_done = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state31) and (nothingToKill_fu_1057_p1 = ap_const_lv1_0))) then 
-                LinearRegression_stu_403_reg_314 <= grp_killLargestResidual_fu_447_ap_return_8;
+            if (((grp_initFit_fu_544_ap_done = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state2) and (newret1_fu_777_p1 = ap_const_lv1_1))) then 
+                LinearRegression_stu_401_reg_312 <= grp_initFit_fu_544_ap_return_8;
+            elsif (((grp_killLargestResidual_fu_445_ap_done = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state31) and (nothingToKill_fu_1053_p1 = ap_const_lv1_0))) then 
+                LinearRegression_stu_401_reg_312 <= grp_killLargestResidual_fu_445_ap_return_8;
             end if; 
         end if;
     end process;
 
-    LinearRegression_stu_5_reg_355_assign_proc : process (ap_clk)
+    LinearRegression_stu_5_reg_353_assign_proc : process (ap_clk)
     begin
         if (ap_clk'event and ap_clk = '1') then
             if ((ap_const_logic_1 = ap_CS_fsm_state25)) then 
-                LinearRegression_stu_5_reg_355 <= newret3_reg_1537;
+                LinearRegression_stu_5_reg_353 <= newret3_reg_1533;
             elsif ((ap_const_logic_1 = ap_CS_fsm_state54)) then 
-                LinearRegression_stu_5_reg_355 <= LinearRegression_stu_3_reg_1620;
+                LinearRegression_stu_5_reg_353 <= LinearRegression_stu_3_reg_1616;
             end if; 
         end if;
     end process;
 
-    LinearRegression_stu_6_reg_405_assign_proc : process (ap_clk)
+    LinearRegression_stu_6_reg_403_assign_proc : process (ap_clk)
     begin
         if (ap_clk'event and ap_clk = '1') then
             if ((ap_const_logic_1 = ap_CS_fsm_state25)) then 
-                LinearRegression_stu_6_reg_405 <= newret5_reg_1543;
+                LinearRegression_stu_6_reg_403 <= newret5_reg_1539;
             elsif ((ap_const_logic_1 = ap_CS_fsm_state54)) then 
-                LinearRegression_stu_6_reg_405 <= LinearRegression_stu_4_reg_1626;
+                LinearRegression_stu_6_reg_403 <= LinearRegression_stu_4_reg_1622;
             end if; 
         end if;
     end process;
 
-    LinearRegression_stu_reg_324_assign_proc : process (ap_clk)
+    LinearRegression_stu_reg_322_assign_proc : process (ap_clk)
     begin
         if (ap_clk'event and ap_clk = '1') then
-            if (((grp_initFit_fu_524_ap_done = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state2) and (newret1_fu_781_p1 = ap_const_lv1_1))) then 
-                LinearRegression_stu_reg_324 <= grp_initFit_fu_524_ap_return_7;
-            elsif (((grp_killLargestResidual_fu_447_ap_done = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state31) and (nothingToKill_fu_1057_p1 = ap_const_lv1_0))) then 
-                LinearRegression_stu_reg_324 <= grp_killLargestResidual_fu_447_ap_return_2;
+            if (((grp_initFit_fu_544_ap_done = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state2) and (newret1_fu_777_p1 = ap_const_lv1_1))) then 
+                LinearRegression_stu_reg_322 <= grp_initFit_fu_544_ap_return_7;
+            elsif (((grp_killLargestResidual_fu_445_ap_done = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state31) and (nothingToKill_fu_1053_p1 = ap_const_lv1_0))) then 
+                LinearRegression_stu_reg_322 <= grp_killLargestResidual_fu_445_ap_return_2;
             end if; 
         end if;
     end process;
 
-    LinearRegression_val_1_reg_436_assign_proc : process (ap_clk)
+    LinearRegression_val_1_reg_434_assign_proc : process (ap_clk)
     begin
         if (ap_clk'event and ap_clk = '1') then
             if ((ap_const_logic_1 = ap_CS_fsm_state25)) then 
-                LinearRegression_val_1_reg_436 <= ap_const_lv1_0;
+                LinearRegression_val_1_reg_434 <= ap_const_lv1_0;
             elsif ((ap_const_logic_1 = ap_CS_fsm_state54)) then 
-                LinearRegression_val_1_reg_436 <= LinearRegression_val_reg_1615;
+                LinearRegression_val_1_reg_434 <= LinearRegression_val_reg_1611;
             end if; 
         end if;
     end process;
     process (ap_clk)
     begin
         if (ap_clk'event and ap_clk = '1') then
-            if (((grp_initFit_fu_524_ap_done = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state2))) then
-                LinearRegression_HTP_1_reg_1510 <= grp_initFit_fu_524_ap_return_4;
-                LinearRegression_HTP_2_reg_1519 <= grp_initFit_fu_524_ap_return_5;
-                LinearRegression_HTP_3_reg_1528 <= grp_initFit_fu_524_ap_return_6;
-                LinearRegression_HTP_reg_1501 <= grp_initFit_fu_524_ap_return_3;
-                LinearRegression_iEt_reg_1493 <= grp_initFit_fu_524_ap_return_1;
-                LinearRegression_iPh_reg_1488 <= grp_initFit_fu_524_ap_return_0;
-                newret3_reg_1537 <= grp_initFit_fu_524_ap_return_7;
-                newret5_reg_1543 <= grp_initFit_fu_524_ap_return_8;
-                newret7_reg_1549 <= grp_initFit_fu_524_ap_return_9;
+            if (((grp_initFit_fu_544_ap_done = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state2))) then
+                LinearRegression_HTP_1_reg_1506 <= grp_initFit_fu_544_ap_return_4;
+                LinearRegression_HTP_2_reg_1515 <= grp_initFit_fu_544_ap_return_5;
+                LinearRegression_HTP_3_reg_1524 <= grp_initFit_fu_544_ap_return_6;
+                LinearRegression_HTP_reg_1497 <= grp_initFit_fu_544_ap_return_3;
+                LinearRegression_iEt_reg_1489 <= grp_initFit_fu_544_ap_return_1;
+                LinearRegression_iPh_reg_1484 <= grp_initFit_fu_544_ap_return_0;
+                newret3_reg_1533 <= grp_initFit_fu_544_ap_return_7;
+                newret5_reg_1539 <= grp_initFit_fu_544_ap_return_8;
+                newret7_reg_1545 <= grp_initFit_fu_544_ap_return_9;
             end if;
         end if;
     end process;
     process (ap_clk)
     begin
         if (ap_clk'event and ap_clk = '1') then
-            if (((grp_calcHelix_fu_640_ap_done = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state27))) then
-                LinearRegression_LRP_1_reg_1582 <= grp_calcHelix_fu_640_ap_return_1;
-                LinearRegression_LRP_2_reg_1588 <= grp_calcHelix_fu_640_ap_return_2;
-                LinearRegression_LRP_3_reg_1594 <= grp_calcHelix_fu_640_ap_return_3;
-                LinearRegression_LRP_reg_1576 <= grp_calcHelix_fu_640_ap_return_0;
+            if (((grp_calcHelix_fu_522_ap_done = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state27))) then
+                LinearRegression_LRP_1_reg_1578 <= grp_calcHelix_fu_522_ap_return_1;
+                LinearRegression_LRP_2_reg_1584 <= grp_calcHelix_fu_522_ap_return_2;
+                LinearRegression_LRP_3_reg_1590 <= grp_calcHelix_fu_522_ap_return_3;
+                LinearRegression_LRP_reg_1572 <= grp_calcHelix_fu_522_ap_return_0;
             end if;
         end if;
     end process;
     process (ap_clk)
     begin
         if (ap_clk'event and ap_clk = '1') then
-            if (((grp_killLargestResidual_fu_447_ap_done = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state31))) then
-                LinearRegression_lay_21_reg_1632 <= grp_killLargestResidual_fu_447_ap_return_9;
-                LinearRegression_nIt_1_reg_1606 <= LinearRegression_nIt_1_fu_1051_p2;
-                LinearRegression_stu_3_reg_1620 <= grp_killLargestResidual_fu_447_ap_return_2;
-                LinearRegression_stu_4_reg_1626 <= grp_killLargestResidual_fu_447_ap_return_8;
-                LinearRegression_val_reg_1615 <= grp_killLargestResidual_fu_447_ap_return_1;
+            if (((grp_killLargestResidual_fu_445_ap_done = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state31))) then
+                LinearRegression_lay_17_reg_1628 <= grp_killLargestResidual_fu_445_ap_return_9;
+                LinearRegression_nIt_1_reg_1602 <= LinearRegression_nIt_1_fu_1047_p2;
+                LinearRegression_stu_3_reg_1616 <= grp_killLargestResidual_fu_445_ap_return_2;
+                LinearRegression_stu_4_reg_1622 <= grp_killLargestResidual_fu_445_ap_return_8;
+                LinearRegression_val_reg_1611 <= grp_killLargestResidual_fu_445_ap_return_1;
             end if;
         end if;
     end process;
     process (ap_clk)
     begin
         if (ap_clk'event and ap_clk = '1') then
-            if (((grp_calcResidual_fu_662_ap_done = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state29))) then
-                call_ret6_reg_1600 <= grp_calcResidual_fu_662_ap_return;
+            if (((grp_calcResidual_fu_658_ap_done = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state29))) then
+                call_ret6_reg_1596 <= grp_calcResidual_fu_658_ap_return;
             end if;
         end if;
     end process;
@@ -3391,7 +3402,7 @@ begin
     begin
         if (ap_clk'event and ap_clk = '1') then
             if ((ap_const_logic_1 = ap_CS_fsm_state42)) then
-                candData_phiT_write_1_reg_1655 <= candData_phiT_write_1_fu_1205_p3;
+                candData_phiT_write_1_reg_1651 <= candData_phiT_write_1_fu_1201_p3;
             end if;
         end if;
     end process;
@@ -3399,7 +3410,7 @@ begin
     begin
         if (ap_clk'event and ap_clk = '1') then
             if ((ap_const_logic_1 = ap_CS_fsm_state13)) then
-                candData_phiT_write_s_reg_1561 <= candData_phiT_write_s_fu_917_p3;
+                candData_phiT_write_s_reg_1557 <= candData_phiT_write_s_fu_913_p3;
             end if;
         end if;
     end process;
@@ -3407,8 +3418,8 @@ begin
     begin
         if (ap_clk'event and ap_clk = '1') then
             if ((ap_const_logic_1 = ap_CS_fsm_state40)) then
-                candData_qOverPt_wri_1_reg_1644 <= grp_fu_706_p2;
-                fitTrk_z0_1_reg_1650 <= grp_fu_711_p2;
+                candData_qOverPt_wri_1_reg_1640 <= grp_fu_702_p2;
+                fitTrk_z0_1_reg_1646 <= grp_fu_707_p2;
             end if;
         end if;
     end process;
@@ -3416,7 +3427,7 @@ begin
     begin
         if (ap_clk'event and ap_clk = '1') then
             if ((ap_const_logic_1 = ap_CS_fsm_state34)) then
-                fitTrk_tanLambda_1_reg_1638 <= grp_fu_711_p2;
+                fitTrk_tanLambda_1_reg_1634 <= grp_fu_707_p2;
             end if;
         end if;
     end process;
@@ -3424,7 +3435,7 @@ begin
     begin
         if (ap_clk'event and ap_clk = '1') then
             if ((ap_const_logic_1 = ap_CS_fsm_state11)) then
-                fitTrk_tanLambda_s_reg_1555 <= grp_fu_711_p2;
+                fitTrk_tanLambda_s_reg_1551 <= grp_fu_707_p2;
             end if;
         end if;
     end process;
@@ -3432,7 +3443,7 @@ begin
     begin
         if (ap_clk'event and ap_clk = '1') then
             if (((ap_const_logic_1 = ap_CS_fsm_state46) or (ap_const_logic_1 = ap_CS_fsm_state34) or (ap_const_logic_1 = ap_CS_fsm_state17) or (ap_const_logic_1 = ap_CS_fsm_state5))) then
-                reg_742 <= grp_fu_706_p2;
+                reg_738 <= grp_fu_702_p2;
             end if;
         end if;
     end process;
@@ -3440,7 +3451,7 @@ begin
     begin
         if (ap_clk'event and ap_clk = '1') then
             if (((ap_const_logic_1 = ap_CS_fsm_state50) or (ap_const_logic_1 = ap_CS_fsm_state48) or (ap_const_logic_1 = ap_CS_fsm_state42) or (ap_const_logic_1 = ap_CS_fsm_state38) or (ap_const_logic_1 = ap_CS_fsm_state36) or (ap_const_logic_1 = ap_CS_fsm_state21) or (ap_const_logic_1 = ap_CS_fsm_state19) or (ap_const_logic_1 = ap_CS_fsm_state13) or (ap_const_logic_1 = ap_CS_fsm_state9) or (ap_const_logic_1 = ap_CS_fsm_state7))) then
-                reg_749 <= grp_fu_715_p2;
+                reg_745 <= grp_fu_711_p2;
             end if;
         end if;
     end process;
@@ -3448,7 +3459,7 @@ begin
     begin
         if (ap_clk'event and ap_clk = '1') then
             if (((ap_const_logic_1 = ap_CS_fsm_state11) or (ap_const_logic_1 = ap_CS_fsm_state36))) then
-                reg_755 <= grp_fu_706_p2;
+                reg_751 <= grp_fu_702_p2;
             end if;
         end if;
     end process;
@@ -3456,7 +3467,7 @@ begin
     begin
         if (ap_clk'event and ap_clk = '1') then
             if (((ap_const_logic_1 = ap_CS_fsm_state13) or (ap_const_logic_1 = ap_CS_fsm_state17))) then
-                reg_762 <= grp_fu_711_p2;
+                reg_758 <= grp_fu_707_p2;
             end if;
         end if;
     end process;
@@ -3464,7 +3475,7 @@ begin
     begin
         if (ap_clk'event and ap_clk = '1') then
             if (((ap_const_logic_1 = ap_CS_fsm_state36) or (ap_const_logic_1 = ap_CS_fsm_state13))) then
-                reg_768 <= grp_fu_721_p2;
+                reg_764 <= grp_fu_717_p2;
             end if;
         end if;
     end process;
@@ -3472,7 +3483,7 @@ begin
     begin
         if (ap_clk'event and ap_clk = '1') then
             if ((ap_const_logic_1 = ap_CS_fsm_state24)) then
-                tmp_133_reg_1566 <= grp_fu_731_p2;
+                tmp_55_reg_1562 <= grp_fu_727_p2;
             end if;
         end if;
     end process;
@@ -3480,12 +3491,12 @@ begin
     begin
         if (ap_clk'event and ap_clk = '1') then
             if ((ap_const_logic_1 = ap_CS_fsm_state53)) then
-                tmp_152_reg_1660 <= grp_fu_731_p2;
+                tmp_75_reg_1656 <= grp_fu_727_p2;
             end if;
         end if;
     end process;
 
-    ap_NS_fsm_assign_proc : process (ap_start, ap_CS_fsm, ap_CS_fsm_state1, ap_CS_fsm_state2, grp_initFit_fu_524_ap_done, ap_CS_fsm_state27, grp_calcHelix_fu_640_ap_done, ap_CS_fsm_state29, grp_calcResidual_fu_662_ap_done, ap_CS_fsm_state31, grp_killLargestResidual_fu_447_ap_done, nothingToKill_fu_1057_p1, newret1_fu_781_p1)
+    ap_NS_fsm_assign_proc : process (ap_start, ap_CS_fsm, ap_CS_fsm_state1, ap_CS_fsm_state2, grp_initFit_fu_544_ap_done, ap_CS_fsm_state27, grp_calcHelix_fu_522_ap_done, ap_CS_fsm_state29, grp_calcResidual_fu_658_ap_done, ap_CS_fsm_state31, grp_killLargestResidual_fu_445_ap_done, nothingToKill_fu_1053_p1, newret1_fu_777_p1)
     begin
         case ap_CS_fsm is
             when ap_ST_fsm_state1 => 
@@ -3495,9 +3506,9 @@ begin
                     ap_NS_fsm <= ap_ST_fsm_state1;
                 end if;
             when ap_ST_fsm_state2 => 
-                if (((grp_initFit_fu_524_ap_done = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state2) and (newret1_fu_781_p1 = ap_const_lv1_1))) then
+                if (((grp_initFit_fu_544_ap_done = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state2) and (newret1_fu_777_p1 = ap_const_lv1_1))) then
                     ap_NS_fsm <= ap_ST_fsm_state26;
-                elsif (((grp_initFit_fu_524_ap_done = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state2) and (newret1_fu_781_p1 = ap_const_lv1_0))) then
+                elsif (((grp_initFit_fu_544_ap_done = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state2) and (newret1_fu_777_p1 = ap_const_lv1_0))) then
                     ap_NS_fsm <= ap_ST_fsm_state3;
                 else
                     ap_NS_fsm <= ap_ST_fsm_state2;
@@ -3551,7 +3562,7 @@ begin
             when ap_ST_fsm_state26 => 
                 ap_NS_fsm <= ap_ST_fsm_state27;
             when ap_ST_fsm_state27 => 
-                if (((grp_calcHelix_fu_640_ap_done = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state27))) then
+                if (((grp_calcHelix_fu_522_ap_done = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state27))) then
                     ap_NS_fsm <= ap_ST_fsm_state28;
                 else
                     ap_NS_fsm <= ap_ST_fsm_state27;
@@ -3559,7 +3570,7 @@ begin
             when ap_ST_fsm_state28 => 
                 ap_NS_fsm <= ap_ST_fsm_state29;
             when ap_ST_fsm_state29 => 
-                if (((grp_calcResidual_fu_662_ap_done = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state29))) then
+                if (((grp_calcResidual_fu_658_ap_done = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state29))) then
                     ap_NS_fsm <= ap_ST_fsm_state30;
                 else
                     ap_NS_fsm <= ap_ST_fsm_state29;
@@ -3567,9 +3578,9 @@ begin
             when ap_ST_fsm_state30 => 
                 ap_NS_fsm <= ap_ST_fsm_state31;
             when ap_ST_fsm_state31 => 
-                if (((grp_killLargestResidual_fu_447_ap_done = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state31) and (nothingToKill_fu_1057_p1 = ap_const_lv1_1))) then
+                if (((grp_killLargestResidual_fu_445_ap_done = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state31) and (nothingToKill_fu_1053_p1 = ap_const_lv1_1))) then
                     ap_NS_fsm <= ap_ST_fsm_state32;
-                elsif (((grp_killLargestResidual_fu_447_ap_done = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state31) and (nothingToKill_fu_1057_p1 = ap_const_lv1_0))) then
+                elsif (((grp_killLargestResidual_fu_445_ap_done = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state31) and (nothingToKill_fu_1053_p1 = ap_const_lv1_0))) then
                     ap_NS_fsm <= ap_ST_fsm_state26;
                 else
                     ap_NS_fsm <= ap_ST_fsm_state31;
@@ -3641,2594 +3652,2596 @@ begin
         end case;
     end process;
 
-    LinearRegression_largestResid_layerId_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_447_ap_done, grp_killLargestResidual_fu_447_ap_return_5, grp_initFit_fu_524_LinearRegression_largestResid_layerId, grp_initFit_fu_524_LinearRegression_largestResid_layerId_ap_vld)
+    LinearRegression_largestResid_layerId_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_445_ap_done, grp_killLargestResidual_fu_445_ap_return_5, grp_initFit_fu_544_LinearRegression_largestResid_layerId, grp_initFit_fu_544_LinearRegression_largestResid_layerId_ap_vld)
     begin
-        if (((grp_killLargestResidual_fu_447_ap_done = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state31))) then 
-            LinearRegression_largestResid_layerId <= grp_killLargestResidual_fu_447_ap_return_5;
-        elsif (((ap_const_logic_1 = ap_CS_fsm_state2) and (grp_initFit_fu_524_LinearRegression_largestResid_layerId_ap_vld = ap_const_logic_1))) then 
-            LinearRegression_largestResid_layerId <= grp_initFit_fu_524_LinearRegression_largestResid_layerId;
+        if (((grp_killLargestResidual_fu_445_ap_done = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state31))) then 
+            LinearRegression_largestResid_layerId <= grp_killLargestResidual_fu_445_ap_return_5;
+        elsif (((ap_const_logic_1 = ap_CS_fsm_state2) and (grp_initFit_fu_544_LinearRegression_largestResid_layerId_ap_vld = ap_const_logic_1))) then 
+            LinearRegression_largestResid_layerId <= grp_initFit_fu_544_LinearRegression_largestResid_layerId;
         else 
             LinearRegression_largestResid_layerId <= "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX";
         end if; 
     end process;
 
 
-    LinearRegression_largestResid_layerId_ap_vld_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_447_ap_done, grp_initFit_fu_524_LinearRegression_largestResid_layerId_ap_vld)
+    LinearRegression_largestResid_layerId_ap_vld_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_445_ap_done, grp_initFit_fu_544_LinearRegression_largestResid_layerId_ap_vld)
     begin
-        if (((grp_killLargestResidual_fu_447_ap_done = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state31))) then 
+        if (((grp_killLargestResidual_fu_445_ap_done = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state31))) then 
             LinearRegression_largestResid_layerId_ap_vld <= ap_const_logic_1;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state2)) then 
-            LinearRegression_largestResid_layerId_ap_vld <= grp_initFit_fu_524_LinearRegression_largestResid_layerId_ap_vld;
+            LinearRegression_largestResid_layerId_ap_vld <= grp_initFit_fu_544_LinearRegression_largestResid_layerId_ap_vld;
         else 
             LinearRegression_largestResid_layerId_ap_vld <= ap_const_logic_0;
         end if; 
     end process;
 
 
-    LinearRegression_largestResid_phi_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_447_ap_done, grp_killLargestResidual_fu_447_ap_return_3, grp_initFit_fu_524_LinearRegression_largestResid_phi, grp_initFit_fu_524_LinearRegression_largestResid_phi_ap_vld)
+    LinearRegression_largestResid_phi_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_445_ap_done, grp_killLargestResidual_fu_445_ap_return_3, grp_initFit_fu_544_LinearRegression_largestResid_phi, grp_initFit_fu_544_LinearRegression_largestResid_phi_ap_vld)
     begin
-        if (((grp_killLargestResidual_fu_447_ap_done = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state31))) then 
-            LinearRegression_largestResid_phi <= grp_killLargestResidual_fu_447_ap_return_3;
-        elsif (((ap_const_logic_1 = ap_CS_fsm_state2) and (grp_initFit_fu_524_LinearRegression_largestResid_phi_ap_vld = ap_const_logic_1))) then 
-            LinearRegression_largestResid_phi <= grp_initFit_fu_524_LinearRegression_largestResid_phi;
+        if (((grp_killLargestResidual_fu_445_ap_done = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state31))) then 
+            LinearRegression_largestResid_phi <= grp_killLargestResidual_fu_445_ap_return_3;
+        elsif (((ap_const_logic_1 = ap_CS_fsm_state2) and (grp_initFit_fu_544_LinearRegression_largestResid_phi_ap_vld = ap_const_logic_1))) then 
+            LinearRegression_largestResid_phi <= grp_initFit_fu_544_LinearRegression_largestResid_phi;
         else 
             LinearRegression_largestResid_phi <= "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX";
         end if; 
     end process;
 
 
-    LinearRegression_largestResid_phi_ap_vld_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_447_ap_done, grp_initFit_fu_524_LinearRegression_largestResid_phi_ap_vld)
+    LinearRegression_largestResid_phi_ap_vld_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_445_ap_done, grp_initFit_fu_544_LinearRegression_largestResid_phi_ap_vld)
     begin
-        if (((grp_killLargestResidual_fu_447_ap_done = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state31))) then 
+        if (((grp_killLargestResidual_fu_445_ap_done = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state31))) then 
             LinearRegression_largestResid_phi_ap_vld <= ap_const_logic_1;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state2)) then 
-            LinearRegression_largestResid_phi_ap_vld <= grp_initFit_fu_524_LinearRegression_largestResid_phi_ap_vld;
+            LinearRegression_largestResid_phi_ap_vld <= grp_initFit_fu_544_LinearRegression_largestResid_phi_ap_vld;
         else 
             LinearRegression_largestResid_phi_ap_vld <= ap_const_logic_0;
         end if; 
     end process;
 
 
-    LinearRegression_largestResid_ps_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_447_ap_done, grp_killLargestResidual_fu_447_ap_return_7, grp_initFit_fu_524_LinearRegression_largestResid_ps, grp_initFit_fu_524_LinearRegression_largestResid_ps_ap_vld)
+    LinearRegression_largestResid_ps_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_445_ap_done, grp_killLargestResidual_fu_445_ap_return_7, grp_initFit_fu_544_LinearRegression_largestResid_ps, grp_initFit_fu_544_LinearRegression_largestResid_ps_ap_vld)
     begin
-        if (((grp_killLargestResidual_fu_447_ap_done = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state31))) then 
-            LinearRegression_largestResid_ps <= grp_killLargestResidual_fu_447_ap_return_7(0);
-        elsif (((ap_const_logic_1 = ap_CS_fsm_state2) and (grp_initFit_fu_524_LinearRegression_largestResid_ps_ap_vld = ap_const_logic_1))) then 
-            LinearRegression_largestResid_ps <= grp_initFit_fu_524_LinearRegression_largestResid_ps;
+        if (((grp_killLargestResidual_fu_445_ap_done = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state31))) then 
+            LinearRegression_largestResid_ps <= grp_killLargestResidual_fu_445_ap_return_7(0);
+        elsif (((ap_const_logic_1 = ap_CS_fsm_state2) and (grp_initFit_fu_544_LinearRegression_largestResid_ps_ap_vld = ap_const_logic_1))) then 
+            LinearRegression_largestResid_ps <= grp_initFit_fu_544_LinearRegression_largestResid_ps;
         else 
             LinearRegression_largestResid_ps <= 'X';
         end if; 
     end process;
 
 
-    LinearRegression_largestResid_ps_ap_vld_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_447_ap_done, grp_initFit_fu_524_LinearRegression_largestResid_ps_ap_vld)
+    LinearRegression_largestResid_ps_ap_vld_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_445_ap_done, grp_initFit_fu_544_LinearRegression_largestResid_ps_ap_vld)
     begin
-        if (((grp_killLargestResidual_fu_447_ap_done = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state31))) then 
+        if (((grp_killLargestResidual_fu_445_ap_done = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state31))) then 
             LinearRegression_largestResid_ps_ap_vld <= ap_const_logic_1;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state2)) then 
-            LinearRegression_largestResid_ps_ap_vld <= grp_initFit_fu_524_LinearRegression_largestResid_ps_ap_vld;
+            LinearRegression_largestResid_ps_ap_vld <= grp_initFit_fu_544_LinearRegression_largestResid_ps_ap_vld;
         else 
             LinearRegression_largestResid_ps_ap_vld <= ap_const_logic_0;
         end if; 
     end process;
 
 
-    LinearRegression_largestResid_stubId_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_447_ap_done, grp_killLargestResidual_fu_447_ap_return_6, grp_initFit_fu_524_LinearRegression_largestResid_stubId, grp_initFit_fu_524_LinearRegression_largestResid_stubId_ap_vld)
+    LinearRegression_largestResid_stubId_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_445_ap_done, grp_killLargestResidual_fu_445_ap_return_6, grp_initFit_fu_544_LinearRegression_largestResid_stubId, grp_initFit_fu_544_LinearRegression_largestResid_stubId_ap_vld)
     begin
-        if (((grp_killLargestResidual_fu_447_ap_done = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state31))) then 
-            LinearRegression_largestResid_stubId <= grp_killLargestResidual_fu_447_ap_return_6;
-        elsif (((ap_const_logic_1 = ap_CS_fsm_state2) and (grp_initFit_fu_524_LinearRegression_largestResid_stubId_ap_vld = ap_const_logic_1))) then 
-            LinearRegression_largestResid_stubId <= grp_initFit_fu_524_LinearRegression_largestResid_stubId;
+        if (((grp_killLargestResidual_fu_445_ap_done = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state31))) then 
+            LinearRegression_largestResid_stubId <= grp_killLargestResidual_fu_445_ap_return_6;
+        elsif (((ap_const_logic_1 = ap_CS_fsm_state2) and (grp_initFit_fu_544_LinearRegression_largestResid_stubId_ap_vld = ap_const_logic_1))) then 
+            LinearRegression_largestResid_stubId <= grp_initFit_fu_544_LinearRegression_largestResid_stubId;
         else 
             LinearRegression_largestResid_stubId <= "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX";
         end if; 
     end process;
 
 
-    LinearRegression_largestResid_stubId_ap_vld_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_447_ap_done, grp_initFit_fu_524_LinearRegression_largestResid_stubId_ap_vld)
+    LinearRegression_largestResid_stubId_ap_vld_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_445_ap_done, grp_initFit_fu_544_LinearRegression_largestResid_stubId_ap_vld)
     begin
-        if (((grp_killLargestResidual_fu_447_ap_done = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state31))) then 
+        if (((grp_killLargestResidual_fu_445_ap_done = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state31))) then 
             LinearRegression_largestResid_stubId_ap_vld <= ap_const_logic_1;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state2)) then 
-            LinearRegression_largestResid_stubId_ap_vld <= grp_initFit_fu_524_LinearRegression_largestResid_stubId_ap_vld;
+            LinearRegression_largestResid_stubId_ap_vld <= grp_initFit_fu_544_LinearRegression_largestResid_stubId_ap_vld;
         else 
             LinearRegression_largestResid_stubId_ap_vld <= ap_const_logic_0;
         end if; 
     end process;
 
 
-    LinearRegression_largestResid_z_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_447_ap_done, grp_killLargestResidual_fu_447_ap_return_4, grp_initFit_fu_524_LinearRegression_largestResid_z, grp_initFit_fu_524_LinearRegression_largestResid_z_ap_vld)
+    LinearRegression_largestResid_z_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_445_ap_done, grp_killLargestResidual_fu_445_ap_return_4, grp_initFit_fu_544_LinearRegression_largestResid_z, grp_initFit_fu_544_LinearRegression_largestResid_z_ap_vld)
     begin
-        if (((grp_killLargestResidual_fu_447_ap_done = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state31))) then 
-            LinearRegression_largestResid_z <= grp_killLargestResidual_fu_447_ap_return_4;
-        elsif (((ap_const_logic_1 = ap_CS_fsm_state2) and (grp_initFit_fu_524_LinearRegression_largestResid_z_ap_vld = ap_const_logic_1))) then 
-            LinearRegression_largestResid_z <= grp_initFit_fu_524_LinearRegression_largestResid_z;
+        if (((grp_killLargestResidual_fu_445_ap_done = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state31))) then 
+            LinearRegression_largestResid_z <= grp_killLargestResidual_fu_445_ap_return_4;
+        elsif (((ap_const_logic_1 = ap_CS_fsm_state2) and (grp_initFit_fu_544_LinearRegression_largestResid_z_ap_vld = ap_const_logic_1))) then 
+            LinearRegression_largestResid_z <= grp_initFit_fu_544_LinearRegression_largestResid_z;
         else 
             LinearRegression_largestResid_z <= "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX";
         end if; 
     end process;
 
 
-    LinearRegression_largestResid_z_ap_vld_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_447_ap_done, grp_initFit_fu_524_LinearRegression_largestResid_z_ap_vld)
+    LinearRegression_largestResid_z_ap_vld_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_445_ap_done, grp_initFit_fu_544_LinearRegression_largestResid_z_ap_vld)
     begin
-        if (((grp_killLargestResidual_fu_447_ap_done = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state31))) then 
+        if (((grp_killLargestResidual_fu_445_ap_done = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state31))) then 
             LinearRegression_largestResid_z_ap_vld <= ap_const_logic_1;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state2)) then 
-            LinearRegression_largestResid_z_ap_vld <= grp_initFit_fu_524_LinearRegression_largestResid_z_ap_vld;
+            LinearRegression_largestResid_z_ap_vld <= grp_initFit_fu_544_LinearRegression_largestResid_z_ap_vld;
         else 
             LinearRegression_largestResid_z_ap_vld <= ap_const_logic_0;
         end if; 
     end process;
 
 
-    LinearRegression_layerPopulation_data_first_address0_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_447_LinearRegression_layerPopulation_data_first_address0, grp_initFit_fu_524_LinearRegression_layerPopulation_data_first_address0)
+    LinearRegression_layerPopulation_data_first_address0_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_445_LinearRegression_layerPopulation_data_first_address0, grp_initFit_fu_544_LinearRegression_layerPopulation_data_first_address0)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state2)) then 
-            LinearRegression_layerPopulation_data_first_address0 <= grp_initFit_fu_524_LinearRegression_layerPopulation_data_first_address0;
+            LinearRegression_layerPopulation_data_first_address0 <= grp_initFit_fu_544_LinearRegression_layerPopulation_data_first_address0;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state31)) then 
-            LinearRegression_layerPopulation_data_first_address0 <= grp_killLargestResidual_fu_447_LinearRegression_layerPopulation_data_first_address0;
+            LinearRegression_layerPopulation_data_first_address0 <= grp_killLargestResidual_fu_445_LinearRegression_layerPopulation_data_first_address0;
         else 
             LinearRegression_layerPopulation_data_first_address0 <= "XXXXX";
         end if; 
     end process;
 
 
-    LinearRegression_layerPopulation_data_first_ce0_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_447_LinearRegression_layerPopulation_data_first_ce0, grp_initFit_fu_524_LinearRegression_layerPopulation_data_first_ce0)
+    LinearRegression_layerPopulation_data_first_ce0_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_445_LinearRegression_layerPopulation_data_first_ce0, grp_initFit_fu_544_LinearRegression_layerPopulation_data_first_ce0)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state2)) then 
-            LinearRegression_layerPopulation_data_first_ce0 <= grp_initFit_fu_524_LinearRegression_layerPopulation_data_first_ce0;
+            LinearRegression_layerPopulation_data_first_ce0 <= grp_initFit_fu_544_LinearRegression_layerPopulation_data_first_ce0;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state31)) then 
-            LinearRegression_layerPopulation_data_first_ce0 <= grp_killLargestResidual_fu_447_LinearRegression_layerPopulation_data_first_ce0;
+            LinearRegression_layerPopulation_data_first_ce0 <= grp_killLargestResidual_fu_445_LinearRegression_layerPopulation_data_first_ce0;
         else 
             LinearRegression_layerPopulation_data_first_ce0 <= ap_const_logic_0;
         end if; 
     end process;
 
 
-    LinearRegression_layerPopulation_data_first_d0_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_447_LinearRegression_layerPopulation_data_first_d0, grp_initFit_fu_524_LinearRegression_layerPopulation_data_first_d0)
+    LinearRegression_layerPopulation_data_first_d0_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_445_LinearRegression_layerPopulation_data_first_d0, grp_initFit_fu_544_LinearRegression_layerPopulation_data_first_d0)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state2)) then 
-            LinearRegression_layerPopulation_data_first_d0 <= grp_initFit_fu_524_LinearRegression_layerPopulation_data_first_d0;
+            LinearRegression_layerPopulation_data_first_d0 <= grp_initFit_fu_544_LinearRegression_layerPopulation_data_first_d0;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state31)) then 
-            LinearRegression_layerPopulation_data_first_d0 <= grp_killLargestResidual_fu_447_LinearRegression_layerPopulation_data_first_d0;
+            LinearRegression_layerPopulation_data_first_d0 <= grp_killLargestResidual_fu_445_LinearRegression_layerPopulation_data_first_d0;
         else 
             LinearRegression_layerPopulation_data_first_d0 <= "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX";
         end if; 
     end process;
 
 
-    LinearRegression_layerPopulation_data_first_we0_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_447_LinearRegression_layerPopulation_data_first_we0, grp_initFit_fu_524_LinearRegression_layerPopulation_data_first_we0)
+    LinearRegression_layerPopulation_data_first_we0_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_445_LinearRegression_layerPopulation_data_first_we0, grp_initFit_fu_544_LinearRegression_layerPopulation_data_first_we0)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state2)) then 
-            LinearRegression_layerPopulation_data_first_we0 <= grp_initFit_fu_524_LinearRegression_layerPopulation_data_first_we0;
+            LinearRegression_layerPopulation_data_first_we0 <= grp_initFit_fu_544_LinearRegression_layerPopulation_data_first_we0;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state31)) then 
-            LinearRegression_layerPopulation_data_first_we0 <= grp_killLargestResidual_fu_447_LinearRegression_layerPopulation_data_first_we0;
+            LinearRegression_layerPopulation_data_first_we0 <= grp_killLargestResidual_fu_445_LinearRegression_layerPopulation_data_first_we0;
         else 
             LinearRegression_layerPopulation_data_first_we0 <= ap_const_logic_0;
         end if; 
     end process;
 
 
-    LinearRegression_layerPopulation_data_second_address0_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_447_LinearRegression_layerPopulation_data_second_address0, grp_initFit_fu_524_LinearRegression_layerPopulation_data_second_address0)
+    LinearRegression_layerPopulation_data_second_address0_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_445_LinearRegression_layerPopulation_data_second_address0, grp_initFit_fu_544_LinearRegression_layerPopulation_data_second_address0)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state2)) then 
-            LinearRegression_layerPopulation_data_second_address0 <= grp_initFit_fu_524_LinearRegression_layerPopulation_data_second_address0;
+            LinearRegression_layerPopulation_data_second_address0 <= grp_initFit_fu_544_LinearRegression_layerPopulation_data_second_address0;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state31)) then 
-            LinearRegression_layerPopulation_data_second_address0 <= grp_killLargestResidual_fu_447_LinearRegression_layerPopulation_data_second_address0;
+            LinearRegression_layerPopulation_data_second_address0 <= grp_killLargestResidual_fu_445_LinearRegression_layerPopulation_data_second_address0;
         else 
             LinearRegression_layerPopulation_data_second_address0 <= "XXXXX";
         end if; 
     end process;
 
 
-    LinearRegression_layerPopulation_data_second_ce0_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_447_LinearRegression_layerPopulation_data_second_ce0, grp_initFit_fu_524_LinearRegression_layerPopulation_data_second_ce0)
+    LinearRegression_layerPopulation_data_second_ce0_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_445_LinearRegression_layerPopulation_data_second_ce0, grp_initFit_fu_544_LinearRegression_layerPopulation_data_second_ce0)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state2)) then 
-            LinearRegression_layerPopulation_data_second_ce0 <= grp_initFit_fu_524_LinearRegression_layerPopulation_data_second_ce0;
+            LinearRegression_layerPopulation_data_second_ce0 <= grp_initFit_fu_544_LinearRegression_layerPopulation_data_second_ce0;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state31)) then 
-            LinearRegression_layerPopulation_data_second_ce0 <= grp_killLargestResidual_fu_447_LinearRegression_layerPopulation_data_second_ce0;
+            LinearRegression_layerPopulation_data_second_ce0 <= grp_killLargestResidual_fu_445_LinearRegression_layerPopulation_data_second_ce0;
         else 
             LinearRegression_layerPopulation_data_second_ce0 <= ap_const_logic_0;
         end if; 
     end process;
 
 
-    LinearRegression_layerPopulation_data_second_d0_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_447_LinearRegression_layerPopulation_data_second_d0, grp_initFit_fu_524_LinearRegression_layerPopulation_data_second_d0)
+    LinearRegression_layerPopulation_data_second_d0_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_445_LinearRegression_layerPopulation_data_second_d0, grp_initFit_fu_544_LinearRegression_layerPopulation_data_second_d0)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state2)) then 
-            LinearRegression_layerPopulation_data_second_d0 <= grp_initFit_fu_524_LinearRegression_layerPopulation_data_second_d0;
+            LinearRegression_layerPopulation_data_second_d0 <= grp_initFit_fu_544_LinearRegression_layerPopulation_data_second_d0;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state31)) then 
-            LinearRegression_layerPopulation_data_second_d0 <= grp_killLargestResidual_fu_447_LinearRegression_layerPopulation_data_second_d0;
+            LinearRegression_layerPopulation_data_second_d0 <= grp_killLargestResidual_fu_445_LinearRegression_layerPopulation_data_second_d0;
         else 
             LinearRegression_layerPopulation_data_second_d0 <= "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX";
         end if; 
     end process;
 
 
-    LinearRegression_layerPopulation_data_second_we0_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_447_LinearRegression_layerPopulation_data_second_we0, grp_initFit_fu_524_LinearRegression_layerPopulation_data_second_we0)
+    LinearRegression_layerPopulation_data_second_we0_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_445_LinearRegression_layerPopulation_data_second_we0, grp_initFit_fu_544_LinearRegression_layerPopulation_data_second_we0)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state2)) then 
-            LinearRegression_layerPopulation_data_second_we0 <= grp_initFit_fu_524_LinearRegression_layerPopulation_data_second_we0;
+            LinearRegression_layerPopulation_data_second_we0 <= grp_initFit_fu_544_LinearRegression_layerPopulation_data_second_we0;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state31)) then 
-            LinearRegression_layerPopulation_data_second_we0 <= grp_killLargestResidual_fu_447_LinearRegression_layerPopulation_data_second_we0;
+            LinearRegression_layerPopulation_data_second_we0 <= grp_killLargestResidual_fu_445_LinearRegression_layerPopulation_data_second_we0;
         else 
             LinearRegression_layerPopulation_data_second_we0 <= ap_const_logic_0;
         end if; 
     end process;
 
-    LinearRegression_nIt_1_fu_1051_p2 <= std_logic_vector(unsigned(LinearRegression_nIt_reg_344) + unsigned(ap_const_lv32_1));
+    LinearRegression_nIt_1_fu_1047_p2 <= std_logic_vector(unsigned(LinearRegression_nIt_reg_342) + unsigned(ap_const_lv32_1));
 
-    LinearRegression_residuals_data_first_address0_assign_proc : process(ap_CS_fsm_state29, ap_CS_fsm_state31, grp_killLargestResidual_fu_447_LinearRegression_residuals_data_first_address0, grp_calcResidual_fu_662_LinearRegression_residuals_data_first_address0)
+    LinearRegression_residuals_data_first_address0_assign_proc : process(ap_CS_fsm_state29, ap_CS_fsm_state31, grp_killLargestResidual_fu_445_LinearRegression_residuals_data_first_address0, grp_calcResidual_fu_658_LinearRegression_residuals_data_first_address0)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state29)) then 
-            LinearRegression_residuals_data_first_address0 <= grp_calcResidual_fu_662_LinearRegression_residuals_data_first_address0;
+            LinearRegression_residuals_data_first_address0 <= grp_calcResidual_fu_658_LinearRegression_residuals_data_first_address0;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state31)) then 
-            LinearRegression_residuals_data_first_address0 <= grp_killLargestResidual_fu_447_LinearRegression_residuals_data_first_address0;
+            LinearRegression_residuals_data_first_address0 <= grp_killLargestResidual_fu_445_LinearRegression_residuals_data_first_address0;
         else 
             LinearRegression_residuals_data_first_address0 <= "XXXXX";
         end if; 
     end process;
 
 
-    LinearRegression_residuals_data_first_ce0_assign_proc : process(ap_CS_fsm_state29, ap_CS_fsm_state31, grp_killLargestResidual_fu_447_LinearRegression_residuals_data_first_ce0, grp_calcResidual_fu_662_LinearRegression_residuals_data_first_ce0)
+    LinearRegression_residuals_data_first_ce0_assign_proc : process(ap_CS_fsm_state29, ap_CS_fsm_state31, grp_killLargestResidual_fu_445_LinearRegression_residuals_data_first_ce0, grp_calcResidual_fu_658_LinearRegression_residuals_data_first_ce0)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state29)) then 
-            LinearRegression_residuals_data_first_ce0 <= grp_calcResidual_fu_662_LinearRegression_residuals_data_first_ce0;
+            LinearRegression_residuals_data_first_ce0 <= grp_calcResidual_fu_658_LinearRegression_residuals_data_first_ce0;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state31)) then 
-            LinearRegression_residuals_data_first_ce0 <= grp_killLargestResidual_fu_447_LinearRegression_residuals_data_first_ce0;
+            LinearRegression_residuals_data_first_ce0 <= grp_killLargestResidual_fu_445_LinearRegression_residuals_data_first_ce0;
         else 
             LinearRegression_residuals_data_first_ce0 <= ap_const_logic_0;
         end if; 
     end process;
 
-    LinearRegression_residuals_data_first_d0 <= grp_calcResidual_fu_662_LinearRegression_residuals_data_first_d0;
+    LinearRegression_residuals_data_first_d0 <= grp_calcResidual_fu_658_LinearRegression_residuals_data_first_d0;
 
-    LinearRegression_residuals_data_first_we0_assign_proc : process(ap_CS_fsm_state29, grp_calcResidual_fu_662_LinearRegression_residuals_data_first_we0)
+    LinearRegression_residuals_data_first_we0_assign_proc : process(ap_CS_fsm_state29, grp_calcResidual_fu_658_LinearRegression_residuals_data_first_we0)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state29)) then 
-            LinearRegression_residuals_data_first_we0 <= grp_calcResidual_fu_662_LinearRegression_residuals_data_first_we0;
+            LinearRegression_residuals_data_first_we0 <= grp_calcResidual_fu_658_LinearRegression_residuals_data_first_we0;
         else 
             LinearRegression_residuals_data_first_we0 <= ap_const_logic_0;
         end if; 
     end process;
 
 
-    LinearRegression_residuals_data_second_data_layerId_address0_assign_proc : process(ap_CS_fsm_state29, ap_CS_fsm_state31, grp_killLargestResidual_fu_447_LinearRegression_residuals_data_second_data_layerId_address0, grp_calcResidual_fu_662_LinearRegression_residuals_data_second_data_layerId_address0)
+    LinearRegression_residuals_data_second_data_layerId_address0_assign_proc : process(ap_CS_fsm_state29, ap_CS_fsm_state31, grp_killLargestResidual_fu_445_LinearRegression_residuals_data_second_data_layerId_address0, grp_calcResidual_fu_658_LinearRegression_residuals_data_second_data_layerId_address0)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state29)) then 
-            LinearRegression_residuals_data_second_data_layerId_address0 <= grp_calcResidual_fu_662_LinearRegression_residuals_data_second_data_layerId_address0;
+            LinearRegression_residuals_data_second_data_layerId_address0 <= grp_calcResidual_fu_658_LinearRegression_residuals_data_second_data_layerId_address0;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state31)) then 
-            LinearRegression_residuals_data_second_data_layerId_address0 <= grp_killLargestResidual_fu_447_LinearRegression_residuals_data_second_data_layerId_address0;
+            LinearRegression_residuals_data_second_data_layerId_address0 <= grp_killLargestResidual_fu_445_LinearRegression_residuals_data_second_data_layerId_address0;
         else 
             LinearRegression_residuals_data_second_data_layerId_address0 <= "XXXXXXXXX";
         end if; 
     end process;
 
-    LinearRegression_residuals_data_second_data_layerId_address1 <= grp_calcResidual_fu_662_LinearRegression_residuals_data_second_data_layerId_address1;
+    LinearRegression_residuals_data_second_data_layerId_address1 <= grp_calcResidual_fu_658_LinearRegression_residuals_data_second_data_layerId_address1;
 
-    LinearRegression_residuals_data_second_data_layerId_ce0_assign_proc : process(ap_CS_fsm_state29, ap_CS_fsm_state31, grp_killLargestResidual_fu_447_LinearRegression_residuals_data_second_data_layerId_ce0, grp_calcResidual_fu_662_LinearRegression_residuals_data_second_data_layerId_ce0)
+    LinearRegression_residuals_data_second_data_layerId_ce0_assign_proc : process(ap_CS_fsm_state29, ap_CS_fsm_state31, grp_killLargestResidual_fu_445_LinearRegression_residuals_data_second_data_layerId_ce0, grp_calcResidual_fu_658_LinearRegression_residuals_data_second_data_layerId_ce0)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state29)) then 
-            LinearRegression_residuals_data_second_data_layerId_ce0 <= grp_calcResidual_fu_662_LinearRegression_residuals_data_second_data_layerId_ce0;
+            LinearRegression_residuals_data_second_data_layerId_ce0 <= grp_calcResidual_fu_658_LinearRegression_residuals_data_second_data_layerId_ce0;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state31)) then 
-            LinearRegression_residuals_data_second_data_layerId_ce0 <= grp_killLargestResidual_fu_447_LinearRegression_residuals_data_second_data_layerId_ce0;
+            LinearRegression_residuals_data_second_data_layerId_ce0 <= grp_killLargestResidual_fu_445_LinearRegression_residuals_data_second_data_layerId_ce0;
         else 
             LinearRegression_residuals_data_second_data_layerId_ce0 <= ap_const_logic_0;
         end if; 
     end process;
 
 
-    LinearRegression_residuals_data_second_data_layerId_ce1_assign_proc : process(ap_CS_fsm_state29, grp_calcResidual_fu_662_LinearRegression_residuals_data_second_data_layerId_ce1)
+    LinearRegression_residuals_data_second_data_layerId_ce1_assign_proc : process(ap_CS_fsm_state29, grp_calcResidual_fu_658_LinearRegression_residuals_data_second_data_layerId_ce1)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state29)) then 
-            LinearRegression_residuals_data_second_data_layerId_ce1 <= grp_calcResidual_fu_662_LinearRegression_residuals_data_second_data_layerId_ce1;
+            LinearRegression_residuals_data_second_data_layerId_ce1 <= grp_calcResidual_fu_658_LinearRegression_residuals_data_second_data_layerId_ce1;
         else 
             LinearRegression_residuals_data_second_data_layerId_ce1 <= ap_const_logic_0;
         end if; 
     end process;
 
-    LinearRegression_residuals_data_second_data_layerId_d0 <= grp_calcResidual_fu_662_LinearRegression_residuals_data_second_data_layerId_d0;
-    LinearRegression_residuals_data_second_data_layerId_d1 <= grp_calcResidual_fu_662_LinearRegression_residuals_data_second_data_layerId_d1;
+    LinearRegression_residuals_data_second_data_layerId_d0 <= grp_calcResidual_fu_658_LinearRegression_residuals_data_second_data_layerId_d0;
+    LinearRegression_residuals_data_second_data_layerId_d1 <= grp_calcResidual_fu_658_LinearRegression_residuals_data_second_data_layerId_d1;
 
-    LinearRegression_residuals_data_second_data_layerId_we0_assign_proc : process(ap_CS_fsm_state29, grp_calcResidual_fu_662_LinearRegression_residuals_data_second_data_layerId_we0)
+    LinearRegression_residuals_data_second_data_layerId_we0_assign_proc : process(ap_CS_fsm_state29, grp_calcResidual_fu_658_LinearRegression_residuals_data_second_data_layerId_we0)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state29)) then 
-            LinearRegression_residuals_data_second_data_layerId_we0 <= grp_calcResidual_fu_662_LinearRegression_residuals_data_second_data_layerId_we0;
+            LinearRegression_residuals_data_second_data_layerId_we0 <= grp_calcResidual_fu_658_LinearRegression_residuals_data_second_data_layerId_we0;
         else 
             LinearRegression_residuals_data_second_data_layerId_we0 <= ap_const_logic_0;
         end if; 
     end process;
 
 
-    LinearRegression_residuals_data_second_data_layerId_we1_assign_proc : process(ap_CS_fsm_state29, grp_calcResidual_fu_662_LinearRegression_residuals_data_second_data_layerId_we1)
+    LinearRegression_residuals_data_second_data_layerId_we1_assign_proc : process(ap_CS_fsm_state29, grp_calcResidual_fu_658_LinearRegression_residuals_data_second_data_layerId_we1)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state29)) then 
-            LinearRegression_residuals_data_second_data_layerId_we1 <= grp_calcResidual_fu_662_LinearRegression_residuals_data_second_data_layerId_we1;
+            LinearRegression_residuals_data_second_data_layerId_we1 <= grp_calcResidual_fu_658_LinearRegression_residuals_data_second_data_layerId_we1;
         else 
             LinearRegression_residuals_data_second_data_layerId_we1 <= ap_const_logic_0;
         end if; 
     end process;
 
 
-    LinearRegression_residuals_data_second_data_phi_address0_assign_proc : process(ap_CS_fsm_state29, ap_CS_fsm_state31, grp_killLargestResidual_fu_447_LinearRegression_residuals_data_second_data_phi_address0, grp_calcResidual_fu_662_LinearRegression_residuals_data_second_data_phi_address0)
+    LinearRegression_residuals_data_second_data_phi_address0_assign_proc : process(ap_CS_fsm_state29, ap_CS_fsm_state31, grp_killLargestResidual_fu_445_LinearRegression_residuals_data_second_data_phi_address0, grp_calcResidual_fu_658_LinearRegression_residuals_data_second_data_phi_address0)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state29)) then 
-            LinearRegression_residuals_data_second_data_phi_address0 <= grp_calcResidual_fu_662_LinearRegression_residuals_data_second_data_phi_address0;
+            LinearRegression_residuals_data_second_data_phi_address0 <= grp_calcResidual_fu_658_LinearRegression_residuals_data_second_data_phi_address0;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state31)) then 
-            LinearRegression_residuals_data_second_data_phi_address0 <= grp_killLargestResidual_fu_447_LinearRegression_residuals_data_second_data_phi_address0;
+            LinearRegression_residuals_data_second_data_phi_address0 <= grp_killLargestResidual_fu_445_LinearRegression_residuals_data_second_data_phi_address0;
         else 
             LinearRegression_residuals_data_second_data_phi_address0 <= "XXXXXXXXX";
         end if; 
     end process;
 
-    LinearRegression_residuals_data_second_data_phi_address1 <= grp_calcResidual_fu_662_LinearRegression_residuals_data_second_data_phi_address1;
+    LinearRegression_residuals_data_second_data_phi_address1 <= grp_calcResidual_fu_658_LinearRegression_residuals_data_second_data_phi_address1;
 
-    LinearRegression_residuals_data_second_data_phi_ce0_assign_proc : process(ap_CS_fsm_state29, ap_CS_fsm_state31, grp_killLargestResidual_fu_447_LinearRegression_residuals_data_second_data_phi_ce0, grp_calcResidual_fu_662_LinearRegression_residuals_data_second_data_phi_ce0)
+    LinearRegression_residuals_data_second_data_phi_ce0_assign_proc : process(ap_CS_fsm_state29, ap_CS_fsm_state31, grp_killLargestResidual_fu_445_LinearRegression_residuals_data_second_data_phi_ce0, grp_calcResidual_fu_658_LinearRegression_residuals_data_second_data_phi_ce0)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state29)) then 
-            LinearRegression_residuals_data_second_data_phi_ce0 <= grp_calcResidual_fu_662_LinearRegression_residuals_data_second_data_phi_ce0;
+            LinearRegression_residuals_data_second_data_phi_ce0 <= grp_calcResidual_fu_658_LinearRegression_residuals_data_second_data_phi_ce0;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state31)) then 
-            LinearRegression_residuals_data_second_data_phi_ce0 <= grp_killLargestResidual_fu_447_LinearRegression_residuals_data_second_data_phi_ce0;
+            LinearRegression_residuals_data_second_data_phi_ce0 <= grp_killLargestResidual_fu_445_LinearRegression_residuals_data_second_data_phi_ce0;
         else 
             LinearRegression_residuals_data_second_data_phi_ce0 <= ap_const_logic_0;
         end if; 
     end process;
 
 
-    LinearRegression_residuals_data_second_data_phi_ce1_assign_proc : process(ap_CS_fsm_state29, grp_calcResidual_fu_662_LinearRegression_residuals_data_second_data_phi_ce1)
+    LinearRegression_residuals_data_second_data_phi_ce1_assign_proc : process(ap_CS_fsm_state29, grp_calcResidual_fu_658_LinearRegression_residuals_data_second_data_phi_ce1)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state29)) then 
-            LinearRegression_residuals_data_second_data_phi_ce1 <= grp_calcResidual_fu_662_LinearRegression_residuals_data_second_data_phi_ce1;
+            LinearRegression_residuals_data_second_data_phi_ce1 <= grp_calcResidual_fu_658_LinearRegression_residuals_data_second_data_phi_ce1;
         else 
             LinearRegression_residuals_data_second_data_phi_ce1 <= ap_const_logic_0;
         end if; 
     end process;
 
-    LinearRegression_residuals_data_second_data_phi_d0 <= grp_calcResidual_fu_662_LinearRegression_residuals_data_second_data_phi_d0;
-    LinearRegression_residuals_data_second_data_phi_d1 <= grp_calcResidual_fu_662_LinearRegression_residuals_data_second_data_phi_d1;
+    LinearRegression_residuals_data_second_data_phi_d0 <= grp_calcResidual_fu_658_LinearRegression_residuals_data_second_data_phi_d0;
+    LinearRegression_residuals_data_second_data_phi_d1 <= grp_calcResidual_fu_658_LinearRegression_residuals_data_second_data_phi_d1;
 
-    LinearRegression_residuals_data_second_data_phi_we0_assign_proc : process(ap_CS_fsm_state29, grp_calcResidual_fu_662_LinearRegression_residuals_data_second_data_phi_we0)
+    LinearRegression_residuals_data_second_data_phi_we0_assign_proc : process(ap_CS_fsm_state29, grp_calcResidual_fu_658_LinearRegression_residuals_data_second_data_phi_we0)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state29)) then 
-            LinearRegression_residuals_data_second_data_phi_we0 <= grp_calcResidual_fu_662_LinearRegression_residuals_data_second_data_phi_we0;
+            LinearRegression_residuals_data_second_data_phi_we0 <= grp_calcResidual_fu_658_LinearRegression_residuals_data_second_data_phi_we0;
         else 
             LinearRegression_residuals_data_second_data_phi_we0 <= ap_const_logic_0;
         end if; 
     end process;
 
 
-    LinearRegression_residuals_data_second_data_phi_we1_assign_proc : process(ap_CS_fsm_state29, grp_calcResidual_fu_662_LinearRegression_residuals_data_second_data_phi_we1)
+    LinearRegression_residuals_data_second_data_phi_we1_assign_proc : process(ap_CS_fsm_state29, grp_calcResidual_fu_658_LinearRegression_residuals_data_second_data_phi_we1)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state29)) then 
-            LinearRegression_residuals_data_second_data_phi_we1 <= grp_calcResidual_fu_662_LinearRegression_residuals_data_second_data_phi_we1;
+            LinearRegression_residuals_data_second_data_phi_we1 <= grp_calcResidual_fu_658_LinearRegression_residuals_data_second_data_phi_we1;
         else 
             LinearRegression_residuals_data_second_data_phi_we1 <= ap_const_logic_0;
         end if; 
     end process;
 
 
-    LinearRegression_residuals_data_second_data_ps_address0_assign_proc : process(ap_CS_fsm_state29, ap_CS_fsm_state31, grp_killLargestResidual_fu_447_LinearRegression_residuals_data_second_data_ps_address0, grp_calcResidual_fu_662_LinearRegression_residuals_data_second_data_ps_address0)
+    LinearRegression_residuals_data_second_data_ps_address0_assign_proc : process(ap_CS_fsm_state29, ap_CS_fsm_state31, grp_killLargestResidual_fu_445_LinearRegression_residuals_data_second_data_ps_address0, grp_calcResidual_fu_658_LinearRegression_residuals_data_second_data_ps_address0)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state29)) then 
-            LinearRegression_residuals_data_second_data_ps_address0 <= grp_calcResidual_fu_662_LinearRegression_residuals_data_second_data_ps_address0;
+            LinearRegression_residuals_data_second_data_ps_address0 <= grp_calcResidual_fu_658_LinearRegression_residuals_data_second_data_ps_address0;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state31)) then 
-            LinearRegression_residuals_data_second_data_ps_address0 <= grp_killLargestResidual_fu_447_LinearRegression_residuals_data_second_data_ps_address0;
+            LinearRegression_residuals_data_second_data_ps_address0 <= grp_killLargestResidual_fu_445_LinearRegression_residuals_data_second_data_ps_address0;
         else 
             LinearRegression_residuals_data_second_data_ps_address0 <= "XXXXXXXXX";
         end if; 
     end process;
 
-    LinearRegression_residuals_data_second_data_ps_address1 <= grp_calcResidual_fu_662_LinearRegression_residuals_data_second_data_ps_address1;
+    LinearRegression_residuals_data_second_data_ps_address1 <= grp_calcResidual_fu_658_LinearRegression_residuals_data_second_data_ps_address1;
 
-    LinearRegression_residuals_data_second_data_ps_ce0_assign_proc : process(ap_CS_fsm_state29, ap_CS_fsm_state31, grp_killLargestResidual_fu_447_LinearRegression_residuals_data_second_data_ps_ce0, grp_calcResidual_fu_662_LinearRegression_residuals_data_second_data_ps_ce0)
+    LinearRegression_residuals_data_second_data_ps_ce0_assign_proc : process(ap_CS_fsm_state29, ap_CS_fsm_state31, grp_killLargestResidual_fu_445_LinearRegression_residuals_data_second_data_ps_ce0, grp_calcResidual_fu_658_LinearRegression_residuals_data_second_data_ps_ce0)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state29)) then 
-            LinearRegression_residuals_data_second_data_ps_ce0 <= grp_calcResidual_fu_662_LinearRegression_residuals_data_second_data_ps_ce0;
+            LinearRegression_residuals_data_second_data_ps_ce0 <= grp_calcResidual_fu_658_LinearRegression_residuals_data_second_data_ps_ce0;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state31)) then 
-            LinearRegression_residuals_data_second_data_ps_ce0 <= grp_killLargestResidual_fu_447_LinearRegression_residuals_data_second_data_ps_ce0;
+            LinearRegression_residuals_data_second_data_ps_ce0 <= grp_killLargestResidual_fu_445_LinearRegression_residuals_data_second_data_ps_ce0;
         else 
             LinearRegression_residuals_data_second_data_ps_ce0 <= ap_const_logic_0;
         end if; 
     end process;
 
 
-    LinearRegression_residuals_data_second_data_ps_ce1_assign_proc : process(ap_CS_fsm_state29, grp_calcResidual_fu_662_LinearRegression_residuals_data_second_data_ps_ce1)
+    LinearRegression_residuals_data_second_data_ps_ce1_assign_proc : process(ap_CS_fsm_state29, grp_calcResidual_fu_658_LinearRegression_residuals_data_second_data_ps_ce1)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state29)) then 
-            LinearRegression_residuals_data_second_data_ps_ce1 <= grp_calcResidual_fu_662_LinearRegression_residuals_data_second_data_ps_ce1;
+            LinearRegression_residuals_data_second_data_ps_ce1 <= grp_calcResidual_fu_658_LinearRegression_residuals_data_second_data_ps_ce1;
         else 
             LinearRegression_residuals_data_second_data_ps_ce1 <= ap_const_logic_0;
         end if; 
     end process;
 
-    LinearRegression_residuals_data_second_data_ps_d0 <= grp_calcResidual_fu_662_LinearRegression_residuals_data_second_data_ps_d0;
-    LinearRegression_residuals_data_second_data_ps_d1 <= grp_calcResidual_fu_662_LinearRegression_residuals_data_second_data_ps_d1;
+    LinearRegression_residuals_data_second_data_ps_d0 <= grp_calcResidual_fu_658_LinearRegression_residuals_data_second_data_ps_d0;
+    LinearRegression_residuals_data_second_data_ps_d1 <= grp_calcResidual_fu_658_LinearRegression_residuals_data_second_data_ps_d1;
 
-    LinearRegression_residuals_data_second_data_ps_we0_assign_proc : process(ap_CS_fsm_state29, grp_calcResidual_fu_662_LinearRegression_residuals_data_second_data_ps_we0)
+    LinearRegression_residuals_data_second_data_ps_we0_assign_proc : process(ap_CS_fsm_state29, grp_calcResidual_fu_658_LinearRegression_residuals_data_second_data_ps_we0)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state29)) then 
-            LinearRegression_residuals_data_second_data_ps_we0 <= grp_calcResidual_fu_662_LinearRegression_residuals_data_second_data_ps_we0;
+            LinearRegression_residuals_data_second_data_ps_we0 <= grp_calcResidual_fu_658_LinearRegression_residuals_data_second_data_ps_we0;
         else 
             LinearRegression_residuals_data_second_data_ps_we0 <= ap_const_logic_0;
         end if; 
     end process;
 
 
-    LinearRegression_residuals_data_second_data_ps_we1_assign_proc : process(ap_CS_fsm_state29, grp_calcResidual_fu_662_LinearRegression_residuals_data_second_data_ps_we1)
+    LinearRegression_residuals_data_second_data_ps_we1_assign_proc : process(ap_CS_fsm_state29, grp_calcResidual_fu_658_LinearRegression_residuals_data_second_data_ps_we1)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state29)) then 
-            LinearRegression_residuals_data_second_data_ps_we1 <= grp_calcResidual_fu_662_LinearRegression_residuals_data_second_data_ps_we1;
+            LinearRegression_residuals_data_second_data_ps_we1 <= grp_calcResidual_fu_658_LinearRegression_residuals_data_second_data_ps_we1;
         else 
             LinearRegression_residuals_data_second_data_ps_we1 <= ap_const_logic_0;
         end if; 
     end process;
 
 
-    LinearRegression_residuals_data_second_data_stubId_address0_assign_proc : process(ap_CS_fsm_state29, ap_CS_fsm_state31, grp_killLargestResidual_fu_447_LinearRegression_residuals_data_second_data_stubId_address0, grp_calcResidual_fu_662_LinearRegression_residuals_data_second_data_stubId_address0)
+    LinearRegression_residuals_data_second_data_stubId_address0_assign_proc : process(ap_CS_fsm_state29, ap_CS_fsm_state31, grp_killLargestResidual_fu_445_LinearRegression_residuals_data_second_data_stubId_address0, grp_calcResidual_fu_658_LinearRegression_residuals_data_second_data_stubId_address0)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state29)) then 
-            LinearRegression_residuals_data_second_data_stubId_address0 <= grp_calcResidual_fu_662_LinearRegression_residuals_data_second_data_stubId_address0;
+            LinearRegression_residuals_data_second_data_stubId_address0 <= grp_calcResidual_fu_658_LinearRegression_residuals_data_second_data_stubId_address0;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state31)) then 
-            LinearRegression_residuals_data_second_data_stubId_address0 <= grp_killLargestResidual_fu_447_LinearRegression_residuals_data_second_data_stubId_address0;
+            LinearRegression_residuals_data_second_data_stubId_address0 <= grp_killLargestResidual_fu_445_LinearRegression_residuals_data_second_data_stubId_address0;
         else 
             LinearRegression_residuals_data_second_data_stubId_address0 <= "XXXXXXXXX";
         end if; 
     end process;
 
-    LinearRegression_residuals_data_second_data_stubId_address1 <= grp_calcResidual_fu_662_LinearRegression_residuals_data_second_data_stubId_address1;
+    LinearRegression_residuals_data_second_data_stubId_address1 <= grp_calcResidual_fu_658_LinearRegression_residuals_data_second_data_stubId_address1;
 
-    LinearRegression_residuals_data_second_data_stubId_ce0_assign_proc : process(ap_CS_fsm_state29, ap_CS_fsm_state31, grp_killLargestResidual_fu_447_LinearRegression_residuals_data_second_data_stubId_ce0, grp_calcResidual_fu_662_LinearRegression_residuals_data_second_data_stubId_ce0)
+    LinearRegression_residuals_data_second_data_stubId_ce0_assign_proc : process(ap_CS_fsm_state29, ap_CS_fsm_state31, grp_killLargestResidual_fu_445_LinearRegression_residuals_data_second_data_stubId_ce0, grp_calcResidual_fu_658_LinearRegression_residuals_data_second_data_stubId_ce0)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state29)) then 
-            LinearRegression_residuals_data_second_data_stubId_ce0 <= grp_calcResidual_fu_662_LinearRegression_residuals_data_second_data_stubId_ce0;
+            LinearRegression_residuals_data_second_data_stubId_ce0 <= grp_calcResidual_fu_658_LinearRegression_residuals_data_second_data_stubId_ce0;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state31)) then 
-            LinearRegression_residuals_data_second_data_stubId_ce0 <= grp_killLargestResidual_fu_447_LinearRegression_residuals_data_second_data_stubId_ce0;
+            LinearRegression_residuals_data_second_data_stubId_ce0 <= grp_killLargestResidual_fu_445_LinearRegression_residuals_data_second_data_stubId_ce0;
         else 
             LinearRegression_residuals_data_second_data_stubId_ce0 <= ap_const_logic_0;
         end if; 
     end process;
 
 
-    LinearRegression_residuals_data_second_data_stubId_ce1_assign_proc : process(ap_CS_fsm_state29, grp_calcResidual_fu_662_LinearRegression_residuals_data_second_data_stubId_ce1)
+    LinearRegression_residuals_data_second_data_stubId_ce1_assign_proc : process(ap_CS_fsm_state29, grp_calcResidual_fu_658_LinearRegression_residuals_data_second_data_stubId_ce1)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state29)) then 
-            LinearRegression_residuals_data_second_data_stubId_ce1 <= grp_calcResidual_fu_662_LinearRegression_residuals_data_second_data_stubId_ce1;
+            LinearRegression_residuals_data_second_data_stubId_ce1 <= grp_calcResidual_fu_658_LinearRegression_residuals_data_second_data_stubId_ce1;
         else 
             LinearRegression_residuals_data_second_data_stubId_ce1 <= ap_const_logic_0;
         end if; 
     end process;
 
-    LinearRegression_residuals_data_second_data_stubId_d0 <= grp_calcResidual_fu_662_LinearRegression_residuals_data_second_data_stubId_d0;
-    LinearRegression_residuals_data_second_data_stubId_d1 <= grp_calcResidual_fu_662_LinearRegression_residuals_data_second_data_stubId_d1;
+    LinearRegression_residuals_data_second_data_stubId_d0 <= grp_calcResidual_fu_658_LinearRegression_residuals_data_second_data_stubId_d0;
+    LinearRegression_residuals_data_second_data_stubId_d1 <= grp_calcResidual_fu_658_LinearRegression_residuals_data_second_data_stubId_d1;
 
-    LinearRegression_residuals_data_second_data_stubId_we0_assign_proc : process(ap_CS_fsm_state29, grp_calcResidual_fu_662_LinearRegression_residuals_data_second_data_stubId_we0)
+    LinearRegression_residuals_data_second_data_stubId_we0_assign_proc : process(ap_CS_fsm_state29, grp_calcResidual_fu_658_LinearRegression_residuals_data_second_data_stubId_we0)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state29)) then 
-            LinearRegression_residuals_data_second_data_stubId_we0 <= grp_calcResidual_fu_662_LinearRegression_residuals_data_second_data_stubId_we0;
+            LinearRegression_residuals_data_second_data_stubId_we0 <= grp_calcResidual_fu_658_LinearRegression_residuals_data_second_data_stubId_we0;
         else 
             LinearRegression_residuals_data_second_data_stubId_we0 <= ap_const_logic_0;
         end if; 
     end process;
 
 
-    LinearRegression_residuals_data_second_data_stubId_we1_assign_proc : process(ap_CS_fsm_state29, grp_calcResidual_fu_662_LinearRegression_residuals_data_second_data_stubId_we1)
+    LinearRegression_residuals_data_second_data_stubId_we1_assign_proc : process(ap_CS_fsm_state29, grp_calcResidual_fu_658_LinearRegression_residuals_data_second_data_stubId_we1)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state29)) then 
-            LinearRegression_residuals_data_second_data_stubId_we1 <= grp_calcResidual_fu_662_LinearRegression_residuals_data_second_data_stubId_we1;
+            LinearRegression_residuals_data_second_data_stubId_we1 <= grp_calcResidual_fu_658_LinearRegression_residuals_data_second_data_stubId_we1;
         else 
             LinearRegression_residuals_data_second_data_stubId_we1 <= ap_const_logic_0;
         end if; 
     end process;
 
 
-    LinearRegression_residuals_data_second_data_z_address0_assign_proc : process(ap_CS_fsm_state29, ap_CS_fsm_state31, grp_killLargestResidual_fu_447_LinearRegression_residuals_data_second_data_z_address0, grp_calcResidual_fu_662_LinearRegression_residuals_data_second_data_z_address0)
+    LinearRegression_residuals_data_second_data_z_address0_assign_proc : process(ap_CS_fsm_state29, ap_CS_fsm_state31, grp_killLargestResidual_fu_445_LinearRegression_residuals_data_second_data_z_address0, grp_calcResidual_fu_658_LinearRegression_residuals_data_second_data_z_address0)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state29)) then 
-            LinearRegression_residuals_data_second_data_z_address0 <= grp_calcResidual_fu_662_LinearRegression_residuals_data_second_data_z_address0;
+            LinearRegression_residuals_data_second_data_z_address0 <= grp_calcResidual_fu_658_LinearRegression_residuals_data_second_data_z_address0;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state31)) then 
-            LinearRegression_residuals_data_second_data_z_address0 <= grp_killLargestResidual_fu_447_LinearRegression_residuals_data_second_data_z_address0;
+            LinearRegression_residuals_data_second_data_z_address0 <= grp_killLargestResidual_fu_445_LinearRegression_residuals_data_second_data_z_address0;
         else 
             LinearRegression_residuals_data_second_data_z_address0 <= "XXXXXXXXX";
         end if; 
     end process;
 
-    LinearRegression_residuals_data_second_data_z_address1 <= grp_calcResidual_fu_662_LinearRegression_residuals_data_second_data_z_address1;
+    LinearRegression_residuals_data_second_data_z_address1 <= grp_calcResidual_fu_658_LinearRegression_residuals_data_second_data_z_address1;
 
-    LinearRegression_residuals_data_second_data_z_ce0_assign_proc : process(ap_CS_fsm_state29, ap_CS_fsm_state31, grp_killLargestResidual_fu_447_LinearRegression_residuals_data_second_data_z_ce0, grp_calcResidual_fu_662_LinearRegression_residuals_data_second_data_z_ce0)
+    LinearRegression_residuals_data_second_data_z_ce0_assign_proc : process(ap_CS_fsm_state29, ap_CS_fsm_state31, grp_killLargestResidual_fu_445_LinearRegression_residuals_data_second_data_z_ce0, grp_calcResidual_fu_658_LinearRegression_residuals_data_second_data_z_ce0)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state29)) then 
-            LinearRegression_residuals_data_second_data_z_ce0 <= grp_calcResidual_fu_662_LinearRegression_residuals_data_second_data_z_ce0;
+            LinearRegression_residuals_data_second_data_z_ce0 <= grp_calcResidual_fu_658_LinearRegression_residuals_data_second_data_z_ce0;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state31)) then 
-            LinearRegression_residuals_data_second_data_z_ce0 <= grp_killLargestResidual_fu_447_LinearRegression_residuals_data_second_data_z_ce0;
+            LinearRegression_residuals_data_second_data_z_ce0 <= grp_killLargestResidual_fu_445_LinearRegression_residuals_data_second_data_z_ce0;
         else 
             LinearRegression_residuals_data_second_data_z_ce0 <= ap_const_logic_0;
         end if; 
     end process;
 
 
-    LinearRegression_residuals_data_second_data_z_ce1_assign_proc : process(ap_CS_fsm_state29, grp_calcResidual_fu_662_LinearRegression_residuals_data_second_data_z_ce1)
+    LinearRegression_residuals_data_second_data_z_ce1_assign_proc : process(ap_CS_fsm_state29, grp_calcResidual_fu_658_LinearRegression_residuals_data_second_data_z_ce1)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state29)) then 
-            LinearRegression_residuals_data_second_data_z_ce1 <= grp_calcResidual_fu_662_LinearRegression_residuals_data_second_data_z_ce1;
+            LinearRegression_residuals_data_second_data_z_ce1 <= grp_calcResidual_fu_658_LinearRegression_residuals_data_second_data_z_ce1;
         else 
             LinearRegression_residuals_data_second_data_z_ce1 <= ap_const_logic_0;
         end if; 
     end process;
 
-    LinearRegression_residuals_data_second_data_z_d0 <= grp_calcResidual_fu_662_LinearRegression_residuals_data_second_data_z_d0;
-    LinearRegression_residuals_data_second_data_z_d1 <= grp_calcResidual_fu_662_LinearRegression_residuals_data_second_data_z_d1;
+    LinearRegression_residuals_data_second_data_z_d0 <= grp_calcResidual_fu_658_LinearRegression_residuals_data_second_data_z_d0;
+    LinearRegression_residuals_data_second_data_z_d1 <= grp_calcResidual_fu_658_LinearRegression_residuals_data_second_data_z_d1;
 
-    LinearRegression_residuals_data_second_data_z_we0_assign_proc : process(ap_CS_fsm_state29, grp_calcResidual_fu_662_LinearRegression_residuals_data_second_data_z_we0)
+    LinearRegression_residuals_data_second_data_z_we0_assign_proc : process(ap_CS_fsm_state29, grp_calcResidual_fu_658_LinearRegression_residuals_data_second_data_z_we0)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state29)) then 
-            LinearRegression_residuals_data_second_data_z_we0 <= grp_calcResidual_fu_662_LinearRegression_residuals_data_second_data_z_we0;
+            LinearRegression_residuals_data_second_data_z_we0 <= grp_calcResidual_fu_658_LinearRegression_residuals_data_second_data_z_we0;
         else 
             LinearRegression_residuals_data_second_data_z_we0 <= ap_const_logic_0;
         end if; 
     end process;
 
 
-    LinearRegression_residuals_data_second_data_z_we1_assign_proc : process(ap_CS_fsm_state29, grp_calcResidual_fu_662_LinearRegression_residuals_data_second_data_z_we1)
+    LinearRegression_residuals_data_second_data_z_we1_assign_proc : process(ap_CS_fsm_state29, grp_calcResidual_fu_658_LinearRegression_residuals_data_second_data_z_we1)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state29)) then 
-            LinearRegression_residuals_data_second_data_z_we1 <= grp_calcResidual_fu_662_LinearRegression_residuals_data_second_data_z_we1;
+            LinearRegression_residuals_data_second_data_z_we1 <= grp_calcResidual_fu_658_LinearRegression_residuals_data_second_data_z_we1;
         else 
             LinearRegression_residuals_data_second_data_z_we1 <= ap_const_logic_0;
         end if; 
     end process;
 
 
-    LinearRegression_residuals_data_second_size_s_address0_assign_proc : process(ap_CS_fsm_state29, ap_CS_fsm_state31, grp_killLargestResidual_fu_447_LinearRegression_residuals_data_second_size_s_address0, grp_calcResidual_fu_662_LinearRegression_residuals_data_second_size_s_address0)
+    LinearRegression_residuals_data_second_size_s_address0_assign_proc : process(ap_CS_fsm_state29, ap_CS_fsm_state31, grp_killLargestResidual_fu_445_LinearRegression_residuals_data_second_size_s_address0, grp_calcResidual_fu_658_LinearRegression_residuals_data_second_size_s_address0)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state29)) then 
-            LinearRegression_residuals_data_second_size_s_address0 <= grp_calcResidual_fu_662_LinearRegression_residuals_data_second_size_s_address0;
+            LinearRegression_residuals_data_second_size_s_address0 <= grp_calcResidual_fu_658_LinearRegression_residuals_data_second_size_s_address0;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state31)) then 
-            LinearRegression_residuals_data_second_size_s_address0 <= grp_killLargestResidual_fu_447_LinearRegression_residuals_data_second_size_s_address0;
+            LinearRegression_residuals_data_second_size_s_address0 <= grp_killLargestResidual_fu_445_LinearRegression_residuals_data_second_size_s_address0;
         else 
             LinearRegression_residuals_data_second_size_s_address0 <= "XXXXX";
         end if; 
     end process;
 
 
-    LinearRegression_residuals_data_second_size_s_ce0_assign_proc : process(ap_CS_fsm_state29, ap_CS_fsm_state31, grp_killLargestResidual_fu_447_LinearRegression_residuals_data_second_size_s_ce0, grp_calcResidual_fu_662_LinearRegression_residuals_data_second_size_s_ce0)
+    LinearRegression_residuals_data_second_size_s_ce0_assign_proc : process(ap_CS_fsm_state29, ap_CS_fsm_state31, grp_killLargestResidual_fu_445_LinearRegression_residuals_data_second_size_s_ce0, grp_calcResidual_fu_658_LinearRegression_residuals_data_second_size_s_ce0)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state29)) then 
-            LinearRegression_residuals_data_second_size_s_ce0 <= grp_calcResidual_fu_662_LinearRegression_residuals_data_second_size_s_ce0;
+            LinearRegression_residuals_data_second_size_s_ce0 <= grp_calcResidual_fu_658_LinearRegression_residuals_data_second_size_s_ce0;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state31)) then 
-            LinearRegression_residuals_data_second_size_s_ce0 <= grp_killLargestResidual_fu_447_LinearRegression_residuals_data_second_size_s_ce0;
+            LinearRegression_residuals_data_second_size_s_ce0 <= grp_killLargestResidual_fu_445_LinearRegression_residuals_data_second_size_s_ce0;
         else 
             LinearRegression_residuals_data_second_size_s_ce0 <= ap_const_logic_0;
         end if; 
     end process;
 
-    LinearRegression_residuals_data_second_size_s_d0 <= grp_calcResidual_fu_662_LinearRegression_residuals_data_second_size_s_d0;
+    LinearRegression_residuals_data_second_size_s_d0 <= grp_calcResidual_fu_658_LinearRegression_residuals_data_second_size_s_d0;
 
-    LinearRegression_residuals_data_second_size_s_we0_assign_proc : process(ap_CS_fsm_state29, grp_calcResidual_fu_662_LinearRegression_residuals_data_second_size_s_we0)
+    LinearRegression_residuals_data_second_size_s_we0_assign_proc : process(ap_CS_fsm_state29, grp_calcResidual_fu_658_LinearRegression_residuals_data_second_size_s_we0)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state29)) then 
-            LinearRegression_residuals_data_second_size_s_we0 <= grp_calcResidual_fu_662_LinearRegression_residuals_data_second_size_s_we0;
+            LinearRegression_residuals_data_second_size_s_we0 <= grp_calcResidual_fu_658_LinearRegression_residuals_data_second_size_s_we0;
         else 
             LinearRegression_residuals_data_second_size_s_we0 <= ap_const_logic_0;
         end if; 
     end process;
 
 
-    LinearRegression_residuals_size_s_assign_proc : process(ap_CS_fsm_state2, call_ret6_reg_1600, grp_initFit_fu_524_LinearRegression_residuals_size_s, grp_initFit_fu_524_LinearRegression_residuals_size_s_ap_vld, ap_CS_fsm_state30)
+    LinearRegression_residuals_size_s_assign_proc : process(ap_CS_fsm_state2, call_ret6_reg_1596, grp_initFit_fu_544_LinearRegression_residuals_size_s, grp_initFit_fu_544_LinearRegression_residuals_size_s_ap_vld, ap_CS_fsm_state30)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state30)) then 
-            LinearRegression_residuals_size_s <= call_ret6_reg_1600;
-        elsif (((ap_const_logic_1 = ap_CS_fsm_state2) and (grp_initFit_fu_524_LinearRegression_residuals_size_s_ap_vld = ap_const_logic_1))) then 
-            LinearRegression_residuals_size_s <= grp_initFit_fu_524_LinearRegression_residuals_size_s;
+            LinearRegression_residuals_size_s <= call_ret6_reg_1596;
+        elsif (((ap_const_logic_1 = ap_CS_fsm_state2) and (grp_initFit_fu_544_LinearRegression_residuals_size_s_ap_vld = ap_const_logic_1))) then 
+            LinearRegression_residuals_size_s <= grp_initFit_fu_544_LinearRegression_residuals_size_s;
         else 
             LinearRegression_residuals_size_s <= "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX";
         end if; 
     end process;
 
 
-    LinearRegression_residuals_size_s_ap_vld_assign_proc : process(ap_CS_fsm_state2, grp_initFit_fu_524_LinearRegression_residuals_size_s_ap_vld, ap_CS_fsm_state30)
+    LinearRegression_residuals_size_s_ap_vld_assign_proc : process(ap_CS_fsm_state2, grp_initFit_fu_544_LinearRegression_residuals_size_s_ap_vld, ap_CS_fsm_state30)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state30)) then 
             LinearRegression_residuals_size_s_ap_vld <= ap_const_logic_1;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state2)) then 
-            LinearRegression_residuals_size_s_ap_vld <= grp_initFit_fu_524_LinearRegression_residuals_size_s_ap_vld;
+            LinearRegression_residuals_size_s_ap_vld <= grp_initFit_fu_544_LinearRegression_residuals_size_s_ap_vld;
         else 
             LinearRegression_residuals_size_s_ap_vld <= ap_const_logic_0;
         end if; 
     end process;
 
-    LinearRegression_settings_etaRegions_s_address0 <= grp_initFit_fu_524_LinearRegression_settings_etaRegions_s_address0;
-    LinearRegression_settings_etaRegions_s_ce0 <= grp_initFit_fu_524_LinearRegression_settings_etaRegions_s_ce0;
+    LinearRegression_settings_sinh_etaRegions_s_address0 <= grp_initFit_fu_544_LinearRegression_settings_sinh_etaRegions_s_address0;
+    LinearRegression_settings_sinh_etaRegions_s_address1 <= grp_initFit_fu_544_LinearRegression_settings_sinh_etaRegions_s_address1;
+    LinearRegression_settings_sinh_etaRegions_s_ce0 <= grp_initFit_fu_544_LinearRegression_settings_sinh_etaRegions_s_ce0;
+    LinearRegression_settings_sinh_etaRegions_s_ce1 <= grp_initFit_fu_544_LinearRegression_settings_sinh_etaRegions_s_ce1;
 
-    LinearRegression_stubMap_data_first_address0_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state29, ap_CS_fsm_state31, grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_first_address0, grp_initFit_fu_524_LinearRegression_stubMap_data_first_address0, grp_calcResidual_fu_662_LinearRegression_stubMap_data_first_address0)
+    LinearRegression_stubMap_data_first_address0_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state29, ap_CS_fsm_state31, grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_first_address0, grp_initFit_fu_544_LinearRegression_stubMap_data_first_address0, grp_calcResidual_fu_658_LinearRegression_stubMap_data_first_address0)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state29)) then 
-            LinearRegression_stubMap_data_first_address0 <= grp_calcResidual_fu_662_LinearRegression_stubMap_data_first_address0;
+            LinearRegression_stubMap_data_first_address0 <= grp_calcResidual_fu_658_LinearRegression_stubMap_data_first_address0;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state2)) then 
-            LinearRegression_stubMap_data_first_address0 <= grp_initFit_fu_524_LinearRegression_stubMap_data_first_address0;
+            LinearRegression_stubMap_data_first_address0 <= grp_initFit_fu_544_LinearRegression_stubMap_data_first_address0;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state31)) then 
-            LinearRegression_stubMap_data_first_address0 <= grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_first_address0;
+            LinearRegression_stubMap_data_first_address0 <= grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_first_address0;
         else 
             LinearRegression_stubMap_data_first_address0 <= "XXXXX";
         end if; 
     end process;
 
 
-    LinearRegression_stubMap_data_first_ce0_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state29, ap_CS_fsm_state31, grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_first_ce0, grp_initFit_fu_524_LinearRegression_stubMap_data_first_ce0, grp_calcResidual_fu_662_LinearRegression_stubMap_data_first_ce0)
+    LinearRegression_stubMap_data_first_ce0_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state29, ap_CS_fsm_state31, grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_first_ce0, grp_initFit_fu_544_LinearRegression_stubMap_data_first_ce0, grp_calcResidual_fu_658_LinearRegression_stubMap_data_first_ce0)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state29)) then 
-            LinearRegression_stubMap_data_first_ce0 <= grp_calcResidual_fu_662_LinearRegression_stubMap_data_first_ce0;
+            LinearRegression_stubMap_data_first_ce0 <= grp_calcResidual_fu_658_LinearRegression_stubMap_data_first_ce0;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state2)) then 
-            LinearRegression_stubMap_data_first_ce0 <= grp_initFit_fu_524_LinearRegression_stubMap_data_first_ce0;
+            LinearRegression_stubMap_data_first_ce0 <= grp_initFit_fu_544_LinearRegression_stubMap_data_first_ce0;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state31)) then 
-            LinearRegression_stubMap_data_first_ce0 <= grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_first_ce0;
+            LinearRegression_stubMap_data_first_ce0 <= grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_first_ce0;
         else 
             LinearRegression_stubMap_data_first_ce0 <= ap_const_logic_0;
         end if; 
     end process;
 
 
-    LinearRegression_stubMap_data_first_d0_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_first_d0, grp_initFit_fu_524_LinearRegression_stubMap_data_first_d0)
+    LinearRegression_stubMap_data_first_d0_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_first_d0, grp_initFit_fu_544_LinearRegression_stubMap_data_first_d0)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state2)) then 
-            LinearRegression_stubMap_data_first_d0 <= grp_initFit_fu_524_LinearRegression_stubMap_data_first_d0;
+            LinearRegression_stubMap_data_first_d0 <= grp_initFit_fu_544_LinearRegression_stubMap_data_first_d0;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state31)) then 
-            LinearRegression_stubMap_data_first_d0 <= grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_first_d0;
+            LinearRegression_stubMap_data_first_d0 <= grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_first_d0;
         else 
             LinearRegression_stubMap_data_first_d0 <= "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX";
         end if; 
     end process;
 
 
-    LinearRegression_stubMap_data_first_we0_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_first_we0, grp_initFit_fu_524_LinearRegression_stubMap_data_first_we0)
+    LinearRegression_stubMap_data_first_we0_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_first_we0, grp_initFit_fu_544_LinearRegression_stubMap_data_first_we0)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state2)) then 
-            LinearRegression_stubMap_data_first_we0 <= grp_initFit_fu_524_LinearRegression_stubMap_data_first_we0;
+            LinearRegression_stubMap_data_first_we0 <= grp_initFit_fu_544_LinearRegression_stubMap_data_first_we0;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state31)) then 
-            LinearRegression_stubMap_data_first_we0 <= grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_first_we0;
+            LinearRegression_stubMap_data_first_we0 <= grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_first_we0;
         else 
             LinearRegression_stubMap_data_first_we0 <= ap_const_logic_0;
         end if; 
     end process;
 
 
-    LinearRegression_stubMap_data_second_data_barrel_s_address0_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state29, ap_CS_fsm_state31, grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_barrel_s_address0, grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_barrel_s_address0, grp_calcResidual_fu_662_LinearRegression_stubMap_data_second_data_barrel_s_address0)
+    LinearRegression_stubMap_data_second_data_barrel_s_address0_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state29, ap_CS_fsm_state31, grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_barrel_s_address0, grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_barrel_s_address0, grp_calcResidual_fu_658_LinearRegression_stubMap_data_second_data_barrel_s_address0)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state29)) then 
-            LinearRegression_stubMap_data_second_data_barrel_s_address0 <= grp_calcResidual_fu_662_LinearRegression_stubMap_data_second_data_barrel_s_address0;
+            LinearRegression_stubMap_data_second_data_barrel_s_address0 <= grp_calcResidual_fu_658_LinearRegression_stubMap_data_second_data_barrel_s_address0;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state2)) then 
-            LinearRegression_stubMap_data_second_data_barrel_s_address0 <= grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_barrel_s_address0;
+            LinearRegression_stubMap_data_second_data_barrel_s_address0 <= grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_barrel_s_address0;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state31)) then 
-            LinearRegression_stubMap_data_second_data_barrel_s_address0 <= grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_barrel_s_address0;
+            LinearRegression_stubMap_data_second_data_barrel_s_address0 <= grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_barrel_s_address0;
         else 
             LinearRegression_stubMap_data_second_data_barrel_s_address0 <= "XXXXXXXXX";
         end if; 
     end process;
 
 
-    LinearRegression_stubMap_data_second_data_barrel_s_address1_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_barrel_s_address1, grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_barrel_s_address1)
+    LinearRegression_stubMap_data_second_data_barrel_s_address1_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_barrel_s_address1, grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_barrel_s_address1)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state2)) then 
-            LinearRegression_stubMap_data_second_data_barrel_s_address1 <= grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_barrel_s_address1;
+            LinearRegression_stubMap_data_second_data_barrel_s_address1 <= grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_barrel_s_address1;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state31)) then 
-            LinearRegression_stubMap_data_second_data_barrel_s_address1 <= grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_barrel_s_address1;
+            LinearRegression_stubMap_data_second_data_barrel_s_address1 <= grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_barrel_s_address1;
         else 
             LinearRegression_stubMap_data_second_data_barrel_s_address1 <= "XXXXXXXXX";
         end if; 
     end process;
 
 
-    LinearRegression_stubMap_data_second_data_barrel_s_ce0_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state29, ap_CS_fsm_state31, grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_barrel_s_ce0, grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_barrel_s_ce0, grp_calcResidual_fu_662_LinearRegression_stubMap_data_second_data_barrel_s_ce0)
+    LinearRegression_stubMap_data_second_data_barrel_s_ce0_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state29, ap_CS_fsm_state31, grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_barrel_s_ce0, grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_barrel_s_ce0, grp_calcResidual_fu_658_LinearRegression_stubMap_data_second_data_barrel_s_ce0)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state29)) then 
-            LinearRegression_stubMap_data_second_data_barrel_s_ce0 <= grp_calcResidual_fu_662_LinearRegression_stubMap_data_second_data_barrel_s_ce0;
+            LinearRegression_stubMap_data_second_data_barrel_s_ce0 <= grp_calcResidual_fu_658_LinearRegression_stubMap_data_second_data_barrel_s_ce0;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state2)) then 
-            LinearRegression_stubMap_data_second_data_barrel_s_ce0 <= grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_barrel_s_ce0;
+            LinearRegression_stubMap_data_second_data_barrel_s_ce0 <= grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_barrel_s_ce0;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state31)) then 
-            LinearRegression_stubMap_data_second_data_barrel_s_ce0 <= grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_barrel_s_ce0;
+            LinearRegression_stubMap_data_second_data_barrel_s_ce0 <= grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_barrel_s_ce0;
         else 
             LinearRegression_stubMap_data_second_data_barrel_s_ce0 <= ap_const_logic_0;
         end if; 
     end process;
 
 
-    LinearRegression_stubMap_data_second_data_barrel_s_ce1_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_barrel_s_ce1, grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_barrel_s_ce1)
+    LinearRegression_stubMap_data_second_data_barrel_s_ce1_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_barrel_s_ce1, grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_barrel_s_ce1)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state2)) then 
-            LinearRegression_stubMap_data_second_data_barrel_s_ce1 <= grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_barrel_s_ce1;
+            LinearRegression_stubMap_data_second_data_barrel_s_ce1 <= grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_barrel_s_ce1;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state31)) then 
-            LinearRegression_stubMap_data_second_data_barrel_s_ce1 <= grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_barrel_s_ce1;
+            LinearRegression_stubMap_data_second_data_barrel_s_ce1 <= grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_barrel_s_ce1;
         else 
             LinearRegression_stubMap_data_second_data_barrel_s_ce1 <= ap_const_logic_0;
         end if; 
     end process;
 
 
-    LinearRegression_stubMap_data_second_data_barrel_s_d0_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_barrel_s_d0, grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_barrel_s_d0)
+    LinearRegression_stubMap_data_second_data_barrel_s_d0_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_barrel_s_d0, grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_barrel_s_d0)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state2)) then 
-            LinearRegression_stubMap_data_second_data_barrel_s_d0 <= grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_barrel_s_d0;
+            LinearRegression_stubMap_data_second_data_barrel_s_d0 <= grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_barrel_s_d0;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state31)) then 
-            LinearRegression_stubMap_data_second_data_barrel_s_d0 <= grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_barrel_s_d0;
+            LinearRegression_stubMap_data_second_data_barrel_s_d0 <= grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_barrel_s_d0;
         else 
             LinearRegression_stubMap_data_second_data_barrel_s_d0 <= "X";
         end if; 
     end process;
 
 
-    LinearRegression_stubMap_data_second_data_barrel_s_d1_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_barrel_s_d1, grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_barrel_s_d1)
+    LinearRegression_stubMap_data_second_data_barrel_s_d1_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_barrel_s_d1, grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_barrel_s_d1)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state2)) then 
-            LinearRegression_stubMap_data_second_data_barrel_s_d1 <= grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_barrel_s_d1;
+            LinearRegression_stubMap_data_second_data_barrel_s_d1 <= grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_barrel_s_d1;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state31)) then 
-            LinearRegression_stubMap_data_second_data_barrel_s_d1 <= grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_barrel_s_d1;
+            LinearRegression_stubMap_data_second_data_barrel_s_d1 <= grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_barrel_s_d1;
         else 
             LinearRegression_stubMap_data_second_data_barrel_s_d1 <= "X";
         end if; 
     end process;
 
 
-    LinearRegression_stubMap_data_second_data_barrel_s_we0_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_barrel_s_we0, grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_barrel_s_we0)
+    LinearRegression_stubMap_data_second_data_barrel_s_we0_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_barrel_s_we0, grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_barrel_s_we0)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state2)) then 
-            LinearRegression_stubMap_data_second_data_barrel_s_we0 <= grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_barrel_s_we0;
+            LinearRegression_stubMap_data_second_data_barrel_s_we0 <= grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_barrel_s_we0;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state31)) then 
-            LinearRegression_stubMap_data_second_data_barrel_s_we0 <= grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_barrel_s_we0;
+            LinearRegression_stubMap_data_second_data_barrel_s_we0 <= grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_barrel_s_we0;
         else 
             LinearRegression_stubMap_data_second_data_barrel_s_we0 <= ap_const_logic_0;
         end if; 
     end process;
 
 
-    LinearRegression_stubMap_data_second_data_barrel_s_we1_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_barrel_s_we1, grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_barrel_s_we1)
+    LinearRegression_stubMap_data_second_data_barrel_s_we1_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_barrel_s_we1, grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_barrel_s_we1)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state2)) then 
-            LinearRegression_stubMap_data_second_data_barrel_s_we1 <= grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_barrel_s_we1;
+            LinearRegression_stubMap_data_second_data_barrel_s_we1 <= grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_barrel_s_we1;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state31)) then 
-            LinearRegression_stubMap_data_second_data_barrel_s_we1 <= grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_barrel_s_we1;
+            LinearRegression_stubMap_data_second_data_barrel_s_we1 <= grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_barrel_s_we1;
         else 
             LinearRegression_stubMap_data_second_data_barrel_s_we1 <= ap_const_logic_0;
         end if; 
     end process;
 
 
-    LinearRegression_stubMap_data_second_data_layerId_s_address0_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_layerId_s_address0, grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_layerId_s_address0)
+    LinearRegression_stubMap_data_second_data_layerId_s_address0_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_layerId_s_address0, grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_layerId_s_address0)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state2)) then 
-            LinearRegression_stubMap_data_second_data_layerId_s_address0 <= grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_layerId_s_address0;
+            LinearRegression_stubMap_data_second_data_layerId_s_address0 <= grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_layerId_s_address0;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state31)) then 
-            LinearRegression_stubMap_data_second_data_layerId_s_address0 <= grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_layerId_s_address0;
+            LinearRegression_stubMap_data_second_data_layerId_s_address0 <= grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_layerId_s_address0;
         else 
             LinearRegression_stubMap_data_second_data_layerId_s_address0 <= "XXXXXXXXX";
         end if; 
     end process;
 
 
-    LinearRegression_stubMap_data_second_data_layerId_s_address1_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_layerId_s_address1, grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_layerId_s_address1)
+    LinearRegression_stubMap_data_second_data_layerId_s_address1_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_layerId_s_address1, grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_layerId_s_address1)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state2)) then 
-            LinearRegression_stubMap_data_second_data_layerId_s_address1 <= grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_layerId_s_address1;
+            LinearRegression_stubMap_data_second_data_layerId_s_address1 <= grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_layerId_s_address1;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state31)) then 
-            LinearRegression_stubMap_data_second_data_layerId_s_address1 <= grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_layerId_s_address1;
+            LinearRegression_stubMap_data_second_data_layerId_s_address1 <= grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_layerId_s_address1;
         else 
             LinearRegression_stubMap_data_second_data_layerId_s_address1 <= "XXXXXXXXX";
         end if; 
     end process;
 
 
-    LinearRegression_stubMap_data_second_data_layerId_s_ce0_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_layerId_s_ce0, grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_layerId_s_ce0)
+    LinearRegression_stubMap_data_second_data_layerId_s_ce0_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_layerId_s_ce0, grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_layerId_s_ce0)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state2)) then 
-            LinearRegression_stubMap_data_second_data_layerId_s_ce0 <= grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_layerId_s_ce0;
+            LinearRegression_stubMap_data_second_data_layerId_s_ce0 <= grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_layerId_s_ce0;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state31)) then 
-            LinearRegression_stubMap_data_second_data_layerId_s_ce0 <= grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_layerId_s_ce0;
+            LinearRegression_stubMap_data_second_data_layerId_s_ce0 <= grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_layerId_s_ce0;
         else 
             LinearRegression_stubMap_data_second_data_layerId_s_ce0 <= ap_const_logic_0;
         end if; 
     end process;
 
 
-    LinearRegression_stubMap_data_second_data_layerId_s_ce1_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_layerId_s_ce1, grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_layerId_s_ce1)
+    LinearRegression_stubMap_data_second_data_layerId_s_ce1_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_layerId_s_ce1, grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_layerId_s_ce1)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state2)) then 
-            LinearRegression_stubMap_data_second_data_layerId_s_ce1 <= grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_layerId_s_ce1;
+            LinearRegression_stubMap_data_second_data_layerId_s_ce1 <= grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_layerId_s_ce1;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state31)) then 
-            LinearRegression_stubMap_data_second_data_layerId_s_ce1 <= grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_layerId_s_ce1;
+            LinearRegression_stubMap_data_second_data_layerId_s_ce1 <= grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_layerId_s_ce1;
         else 
             LinearRegression_stubMap_data_second_data_layerId_s_ce1 <= ap_const_logic_0;
         end if; 
     end process;
 
 
-    LinearRegression_stubMap_data_second_data_layerId_s_d0_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_layerId_s_d0, grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_layerId_s_d0)
+    LinearRegression_stubMap_data_second_data_layerId_s_d0_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_layerId_s_d0, grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_layerId_s_d0)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state2)) then 
-            LinearRegression_stubMap_data_second_data_layerId_s_d0 <= grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_layerId_s_d0;
+            LinearRegression_stubMap_data_second_data_layerId_s_d0 <= grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_layerId_s_d0;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state31)) then 
-            LinearRegression_stubMap_data_second_data_layerId_s_d0 <= grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_layerId_s_d0;
+            LinearRegression_stubMap_data_second_data_layerId_s_d0 <= grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_layerId_s_d0;
         else 
             LinearRegression_stubMap_data_second_data_layerId_s_d0 <= "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX";
         end if; 
     end process;
 
 
-    LinearRegression_stubMap_data_second_data_layerId_s_d1_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_layerId_s_d1, grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_layerId_s_d1)
+    LinearRegression_stubMap_data_second_data_layerId_s_d1_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_layerId_s_d1, grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_layerId_s_d1)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state2)) then 
-            LinearRegression_stubMap_data_second_data_layerId_s_d1 <= grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_layerId_s_d1;
+            LinearRegression_stubMap_data_second_data_layerId_s_d1 <= grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_layerId_s_d1;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state31)) then 
-            LinearRegression_stubMap_data_second_data_layerId_s_d1 <= grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_layerId_s_d1;
+            LinearRegression_stubMap_data_second_data_layerId_s_d1 <= grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_layerId_s_d1;
         else 
             LinearRegression_stubMap_data_second_data_layerId_s_d1 <= "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX";
         end if; 
     end process;
 
 
-    LinearRegression_stubMap_data_second_data_layerId_s_we0_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_layerId_s_we0, grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_layerId_s_we0)
+    LinearRegression_stubMap_data_second_data_layerId_s_we0_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_layerId_s_we0, grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_layerId_s_we0)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state2)) then 
-            LinearRegression_stubMap_data_second_data_layerId_s_we0 <= grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_layerId_s_we0;
+            LinearRegression_stubMap_data_second_data_layerId_s_we0 <= grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_layerId_s_we0;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state31)) then 
-            LinearRegression_stubMap_data_second_data_layerId_s_we0 <= grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_layerId_s_we0;
+            LinearRegression_stubMap_data_second_data_layerId_s_we0 <= grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_layerId_s_we0;
         else 
             LinearRegression_stubMap_data_second_data_layerId_s_we0 <= ap_const_logic_0;
         end if; 
     end process;
 
 
-    LinearRegression_stubMap_data_second_data_layerId_s_we1_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_layerId_s_we1, grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_layerId_s_we1)
+    LinearRegression_stubMap_data_second_data_layerId_s_we1_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_layerId_s_we1, grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_layerId_s_we1)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state2)) then 
-            LinearRegression_stubMap_data_second_data_layerId_s_we1 <= grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_layerId_s_we1;
+            LinearRegression_stubMap_data_second_data_layerId_s_we1 <= grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_layerId_s_we1;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state31)) then 
-            LinearRegression_stubMap_data_second_data_layerId_s_we1 <= grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_layerId_s_we1;
+            LinearRegression_stubMap_data_second_data_layerId_s_we1 <= grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_layerId_s_we1;
         else 
             LinearRegression_stubMap_data_second_data_layerId_s_we1 <= ap_const_logic_0;
         end if; 
     end process;
 
 
-    LinearRegression_stubMap_data_second_data_phi_s_address0_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state27, ap_CS_fsm_state29, ap_CS_fsm_state31, grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_phi_s_address0, grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_phi_s_address0, grp_calcHelix_fu_640_LinearRegression_stubMap_data_second_data_phi_s_address0, grp_calcResidual_fu_662_LinearRegression_stubMap_data_second_data_phi_s_address0)
+    LinearRegression_stubMap_data_second_data_phi_s_address0_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state27, ap_CS_fsm_state29, ap_CS_fsm_state31, grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_phi_s_address0, grp_calcHelix_fu_522_LinearRegression_stubMap_data_second_data_phi_s_address0, grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_phi_s_address0, grp_calcResidual_fu_658_LinearRegression_stubMap_data_second_data_phi_s_address0)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state29)) then 
-            LinearRegression_stubMap_data_second_data_phi_s_address0 <= grp_calcResidual_fu_662_LinearRegression_stubMap_data_second_data_phi_s_address0;
-        elsif ((ap_const_logic_1 = ap_CS_fsm_state27)) then 
-            LinearRegression_stubMap_data_second_data_phi_s_address0 <= grp_calcHelix_fu_640_LinearRegression_stubMap_data_second_data_phi_s_address0;
+            LinearRegression_stubMap_data_second_data_phi_s_address0 <= grp_calcResidual_fu_658_LinearRegression_stubMap_data_second_data_phi_s_address0;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state2)) then 
-            LinearRegression_stubMap_data_second_data_phi_s_address0 <= grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_phi_s_address0;
+            LinearRegression_stubMap_data_second_data_phi_s_address0 <= grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_phi_s_address0;
+        elsif ((ap_const_logic_1 = ap_CS_fsm_state27)) then 
+            LinearRegression_stubMap_data_second_data_phi_s_address0 <= grp_calcHelix_fu_522_LinearRegression_stubMap_data_second_data_phi_s_address0;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state31)) then 
-            LinearRegression_stubMap_data_second_data_phi_s_address0 <= grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_phi_s_address0;
+            LinearRegression_stubMap_data_second_data_phi_s_address0 <= grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_phi_s_address0;
         else 
             LinearRegression_stubMap_data_second_data_phi_s_address0 <= "XXXXXXXXX";
         end if; 
     end process;
 
 
-    LinearRegression_stubMap_data_second_data_phi_s_address1_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_phi_s_address1, grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_phi_s_address1)
+    LinearRegression_stubMap_data_second_data_phi_s_address1_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_phi_s_address1, grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_phi_s_address1)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state2)) then 
-            LinearRegression_stubMap_data_second_data_phi_s_address1 <= grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_phi_s_address1;
+            LinearRegression_stubMap_data_second_data_phi_s_address1 <= grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_phi_s_address1;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state31)) then 
-            LinearRegression_stubMap_data_second_data_phi_s_address1 <= grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_phi_s_address1;
+            LinearRegression_stubMap_data_second_data_phi_s_address1 <= grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_phi_s_address1;
         else 
             LinearRegression_stubMap_data_second_data_phi_s_address1 <= "XXXXXXXXX";
         end if; 
     end process;
 
 
-    LinearRegression_stubMap_data_second_data_phi_s_ce0_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state27, ap_CS_fsm_state29, ap_CS_fsm_state31, grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_phi_s_ce0, grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_phi_s_ce0, grp_calcHelix_fu_640_LinearRegression_stubMap_data_second_data_phi_s_ce0, grp_calcResidual_fu_662_LinearRegression_stubMap_data_second_data_phi_s_ce0)
+    LinearRegression_stubMap_data_second_data_phi_s_ce0_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state27, ap_CS_fsm_state29, ap_CS_fsm_state31, grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_phi_s_ce0, grp_calcHelix_fu_522_LinearRegression_stubMap_data_second_data_phi_s_ce0, grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_phi_s_ce0, grp_calcResidual_fu_658_LinearRegression_stubMap_data_second_data_phi_s_ce0)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state29)) then 
-            LinearRegression_stubMap_data_second_data_phi_s_ce0 <= grp_calcResidual_fu_662_LinearRegression_stubMap_data_second_data_phi_s_ce0;
-        elsif ((ap_const_logic_1 = ap_CS_fsm_state27)) then 
-            LinearRegression_stubMap_data_second_data_phi_s_ce0 <= grp_calcHelix_fu_640_LinearRegression_stubMap_data_second_data_phi_s_ce0;
+            LinearRegression_stubMap_data_second_data_phi_s_ce0 <= grp_calcResidual_fu_658_LinearRegression_stubMap_data_second_data_phi_s_ce0;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state2)) then 
-            LinearRegression_stubMap_data_second_data_phi_s_ce0 <= grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_phi_s_ce0;
+            LinearRegression_stubMap_data_second_data_phi_s_ce0 <= grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_phi_s_ce0;
+        elsif ((ap_const_logic_1 = ap_CS_fsm_state27)) then 
+            LinearRegression_stubMap_data_second_data_phi_s_ce0 <= grp_calcHelix_fu_522_LinearRegression_stubMap_data_second_data_phi_s_ce0;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state31)) then 
-            LinearRegression_stubMap_data_second_data_phi_s_ce0 <= grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_phi_s_ce0;
+            LinearRegression_stubMap_data_second_data_phi_s_ce0 <= grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_phi_s_ce0;
         else 
             LinearRegression_stubMap_data_second_data_phi_s_ce0 <= ap_const_logic_0;
         end if; 
     end process;
 
 
-    LinearRegression_stubMap_data_second_data_phi_s_ce1_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_phi_s_ce1, grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_phi_s_ce1)
+    LinearRegression_stubMap_data_second_data_phi_s_ce1_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_phi_s_ce1, grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_phi_s_ce1)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state2)) then 
-            LinearRegression_stubMap_data_second_data_phi_s_ce1 <= grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_phi_s_ce1;
+            LinearRegression_stubMap_data_second_data_phi_s_ce1 <= grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_phi_s_ce1;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state31)) then 
-            LinearRegression_stubMap_data_second_data_phi_s_ce1 <= grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_phi_s_ce1;
+            LinearRegression_stubMap_data_second_data_phi_s_ce1 <= grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_phi_s_ce1;
         else 
             LinearRegression_stubMap_data_second_data_phi_s_ce1 <= ap_const_logic_0;
         end if; 
     end process;
 
 
-    LinearRegression_stubMap_data_second_data_phi_s_d0_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_phi_s_d0, grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_phi_s_d0)
+    LinearRegression_stubMap_data_second_data_phi_s_d0_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_phi_s_d0, grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_phi_s_d0)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state2)) then 
-            LinearRegression_stubMap_data_second_data_phi_s_d0 <= grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_phi_s_d0;
+            LinearRegression_stubMap_data_second_data_phi_s_d0 <= grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_phi_s_d0;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state31)) then 
-            LinearRegression_stubMap_data_second_data_phi_s_d0 <= grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_phi_s_d0;
+            LinearRegression_stubMap_data_second_data_phi_s_d0 <= grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_phi_s_d0;
         else 
             LinearRegression_stubMap_data_second_data_phi_s_d0 <= "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX";
         end if; 
     end process;
 
 
-    LinearRegression_stubMap_data_second_data_phi_s_d1_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_phi_s_d1, grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_phi_s_d1)
+    LinearRegression_stubMap_data_second_data_phi_s_d1_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_phi_s_d1, grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_phi_s_d1)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state2)) then 
-            LinearRegression_stubMap_data_second_data_phi_s_d1 <= grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_phi_s_d1;
+            LinearRegression_stubMap_data_second_data_phi_s_d1 <= grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_phi_s_d1;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state31)) then 
-            LinearRegression_stubMap_data_second_data_phi_s_d1 <= grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_phi_s_d1;
+            LinearRegression_stubMap_data_second_data_phi_s_d1 <= grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_phi_s_d1;
         else 
             LinearRegression_stubMap_data_second_data_phi_s_d1 <= "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX";
         end if; 
     end process;
 
 
-    LinearRegression_stubMap_data_second_data_phi_s_we0_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_phi_s_we0, grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_phi_s_we0)
+    LinearRegression_stubMap_data_second_data_phi_s_we0_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_phi_s_we0, grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_phi_s_we0)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state2)) then 
-            LinearRegression_stubMap_data_second_data_phi_s_we0 <= grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_phi_s_we0;
+            LinearRegression_stubMap_data_second_data_phi_s_we0 <= grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_phi_s_we0;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state31)) then 
-            LinearRegression_stubMap_data_second_data_phi_s_we0 <= grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_phi_s_we0;
+            LinearRegression_stubMap_data_second_data_phi_s_we0 <= grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_phi_s_we0;
         else 
             LinearRegression_stubMap_data_second_data_phi_s_we0 <= ap_const_logic_0;
         end if; 
     end process;
 
 
-    LinearRegression_stubMap_data_second_data_phi_s_we1_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_phi_s_we1, grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_phi_s_we1)
+    LinearRegression_stubMap_data_second_data_phi_s_we1_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_phi_s_we1, grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_phi_s_we1)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state2)) then 
-            LinearRegression_stubMap_data_second_data_phi_s_we1 <= grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_phi_s_we1;
+            LinearRegression_stubMap_data_second_data_phi_s_we1 <= grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_phi_s_we1;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state31)) then 
-            LinearRegression_stubMap_data_second_data_phi_s_we1 <= grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_phi_s_we1;
+            LinearRegression_stubMap_data_second_data_phi_s_we1 <= grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_phi_s_we1;
         else 
             LinearRegression_stubMap_data_second_data_phi_s_we1 <= ap_const_logic_0;
         end if; 
     end process;
 
 
-    LinearRegression_stubMap_data_second_data_psModule_s_address0_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state27, ap_CS_fsm_state29, ap_CS_fsm_state31, grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_psModule_s_address0, grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_psModule_s_address0, grp_calcHelix_fu_640_LinearRegression_stubMap_data_second_data_psModule_s_address0, grp_calcResidual_fu_662_LinearRegression_stubMap_data_second_data_psModule_s_address0)
+    LinearRegression_stubMap_data_second_data_psModule_s_address0_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state27, ap_CS_fsm_state29, ap_CS_fsm_state31, grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_psModule_s_address0, grp_calcHelix_fu_522_LinearRegression_stubMap_data_second_data_psModule_s_address0, grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_psModule_s_address0, grp_calcResidual_fu_658_LinearRegression_stubMap_data_second_data_psModule_s_address0)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state29)) then 
-            LinearRegression_stubMap_data_second_data_psModule_s_address0 <= grp_calcResidual_fu_662_LinearRegression_stubMap_data_second_data_psModule_s_address0;
-        elsif ((ap_const_logic_1 = ap_CS_fsm_state27)) then 
-            LinearRegression_stubMap_data_second_data_psModule_s_address0 <= grp_calcHelix_fu_640_LinearRegression_stubMap_data_second_data_psModule_s_address0;
+            LinearRegression_stubMap_data_second_data_psModule_s_address0 <= grp_calcResidual_fu_658_LinearRegression_stubMap_data_second_data_psModule_s_address0;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state2)) then 
-            LinearRegression_stubMap_data_second_data_psModule_s_address0 <= grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_psModule_s_address0;
+            LinearRegression_stubMap_data_second_data_psModule_s_address0 <= grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_psModule_s_address0;
+        elsif ((ap_const_logic_1 = ap_CS_fsm_state27)) then 
+            LinearRegression_stubMap_data_second_data_psModule_s_address0 <= grp_calcHelix_fu_522_LinearRegression_stubMap_data_second_data_psModule_s_address0;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state31)) then 
-            LinearRegression_stubMap_data_second_data_psModule_s_address0 <= grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_psModule_s_address0;
+            LinearRegression_stubMap_data_second_data_psModule_s_address0 <= grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_psModule_s_address0;
         else 
             LinearRegression_stubMap_data_second_data_psModule_s_address0 <= "XXXXXXXXX";
         end if; 
     end process;
 
 
-    LinearRegression_stubMap_data_second_data_psModule_s_address1_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_psModule_s_address1, grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_psModule_s_address1)
+    LinearRegression_stubMap_data_second_data_psModule_s_address1_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_psModule_s_address1, grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_psModule_s_address1)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state2)) then 
-            LinearRegression_stubMap_data_second_data_psModule_s_address1 <= grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_psModule_s_address1;
+            LinearRegression_stubMap_data_second_data_psModule_s_address1 <= grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_psModule_s_address1;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state31)) then 
-            LinearRegression_stubMap_data_second_data_psModule_s_address1 <= grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_psModule_s_address1;
+            LinearRegression_stubMap_data_second_data_psModule_s_address1 <= grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_psModule_s_address1;
         else 
             LinearRegression_stubMap_data_second_data_psModule_s_address1 <= "XXXXXXXXX";
         end if; 
     end process;
 
 
-    LinearRegression_stubMap_data_second_data_psModule_s_ce0_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state27, ap_CS_fsm_state29, ap_CS_fsm_state31, grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_psModule_s_ce0, grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_psModule_s_ce0, grp_calcHelix_fu_640_LinearRegression_stubMap_data_second_data_psModule_s_ce0, grp_calcResidual_fu_662_LinearRegression_stubMap_data_second_data_psModule_s_ce0)
+    LinearRegression_stubMap_data_second_data_psModule_s_ce0_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state27, ap_CS_fsm_state29, ap_CS_fsm_state31, grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_psModule_s_ce0, grp_calcHelix_fu_522_LinearRegression_stubMap_data_second_data_psModule_s_ce0, grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_psModule_s_ce0, grp_calcResidual_fu_658_LinearRegression_stubMap_data_second_data_psModule_s_ce0)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state29)) then 
-            LinearRegression_stubMap_data_second_data_psModule_s_ce0 <= grp_calcResidual_fu_662_LinearRegression_stubMap_data_second_data_psModule_s_ce0;
-        elsif ((ap_const_logic_1 = ap_CS_fsm_state27)) then 
-            LinearRegression_stubMap_data_second_data_psModule_s_ce0 <= grp_calcHelix_fu_640_LinearRegression_stubMap_data_second_data_psModule_s_ce0;
+            LinearRegression_stubMap_data_second_data_psModule_s_ce0 <= grp_calcResidual_fu_658_LinearRegression_stubMap_data_second_data_psModule_s_ce0;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state2)) then 
-            LinearRegression_stubMap_data_second_data_psModule_s_ce0 <= grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_psModule_s_ce0;
+            LinearRegression_stubMap_data_second_data_psModule_s_ce0 <= grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_psModule_s_ce0;
+        elsif ((ap_const_logic_1 = ap_CS_fsm_state27)) then 
+            LinearRegression_stubMap_data_second_data_psModule_s_ce0 <= grp_calcHelix_fu_522_LinearRegression_stubMap_data_second_data_psModule_s_ce0;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state31)) then 
-            LinearRegression_stubMap_data_second_data_psModule_s_ce0 <= grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_psModule_s_ce0;
+            LinearRegression_stubMap_data_second_data_psModule_s_ce0 <= grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_psModule_s_ce0;
         else 
             LinearRegression_stubMap_data_second_data_psModule_s_ce0 <= ap_const_logic_0;
         end if; 
     end process;
 
 
-    LinearRegression_stubMap_data_second_data_psModule_s_ce1_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_psModule_s_ce1, grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_psModule_s_ce1)
+    LinearRegression_stubMap_data_second_data_psModule_s_ce1_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_psModule_s_ce1, grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_psModule_s_ce1)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state2)) then 
-            LinearRegression_stubMap_data_second_data_psModule_s_ce1 <= grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_psModule_s_ce1;
+            LinearRegression_stubMap_data_second_data_psModule_s_ce1 <= grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_psModule_s_ce1;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state31)) then 
-            LinearRegression_stubMap_data_second_data_psModule_s_ce1 <= grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_psModule_s_ce1;
+            LinearRegression_stubMap_data_second_data_psModule_s_ce1 <= grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_psModule_s_ce1;
         else 
             LinearRegression_stubMap_data_second_data_psModule_s_ce1 <= ap_const_logic_0;
         end if; 
     end process;
 
 
-    LinearRegression_stubMap_data_second_data_psModule_s_d0_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_psModule_s_d0, grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_psModule_s_d0)
+    LinearRegression_stubMap_data_second_data_psModule_s_d0_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_psModule_s_d0, grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_psModule_s_d0)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state2)) then 
-            LinearRegression_stubMap_data_second_data_psModule_s_d0 <= grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_psModule_s_d0;
+            LinearRegression_stubMap_data_second_data_psModule_s_d0 <= grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_psModule_s_d0;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state31)) then 
-            LinearRegression_stubMap_data_second_data_psModule_s_d0 <= grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_psModule_s_d0;
+            LinearRegression_stubMap_data_second_data_psModule_s_d0 <= grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_psModule_s_d0;
         else 
             LinearRegression_stubMap_data_second_data_psModule_s_d0 <= "X";
         end if; 
     end process;
 
 
-    LinearRegression_stubMap_data_second_data_psModule_s_d1_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_psModule_s_d1, grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_psModule_s_d1)
+    LinearRegression_stubMap_data_second_data_psModule_s_d1_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_psModule_s_d1, grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_psModule_s_d1)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state2)) then 
-            LinearRegression_stubMap_data_second_data_psModule_s_d1 <= grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_psModule_s_d1;
+            LinearRegression_stubMap_data_second_data_psModule_s_d1 <= grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_psModule_s_d1;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state31)) then 
-            LinearRegression_stubMap_data_second_data_psModule_s_d1 <= grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_psModule_s_d1;
+            LinearRegression_stubMap_data_second_data_psModule_s_d1 <= grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_psModule_s_d1;
         else 
             LinearRegression_stubMap_data_second_data_psModule_s_d1 <= "X";
         end if; 
     end process;
 
 
-    LinearRegression_stubMap_data_second_data_psModule_s_we0_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_psModule_s_we0, grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_psModule_s_we0)
+    LinearRegression_stubMap_data_second_data_psModule_s_we0_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_psModule_s_we0, grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_psModule_s_we0)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state2)) then 
-            LinearRegression_stubMap_data_second_data_psModule_s_we0 <= grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_psModule_s_we0;
+            LinearRegression_stubMap_data_second_data_psModule_s_we0 <= grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_psModule_s_we0;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state31)) then 
-            LinearRegression_stubMap_data_second_data_psModule_s_we0 <= grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_psModule_s_we0;
+            LinearRegression_stubMap_data_second_data_psModule_s_we0 <= grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_psModule_s_we0;
         else 
             LinearRegression_stubMap_data_second_data_psModule_s_we0 <= ap_const_logic_0;
         end if; 
     end process;
 
 
-    LinearRegression_stubMap_data_second_data_psModule_s_we1_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_psModule_s_we1, grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_psModule_s_we1)
+    LinearRegression_stubMap_data_second_data_psModule_s_we1_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_psModule_s_we1, grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_psModule_s_we1)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state2)) then 
-            LinearRegression_stubMap_data_second_data_psModule_s_we1 <= grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_psModule_s_we1;
+            LinearRegression_stubMap_data_second_data_psModule_s_we1 <= grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_psModule_s_we1;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state31)) then 
-            LinearRegression_stubMap_data_second_data_psModule_s_we1 <= grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_psModule_s_we1;
+            LinearRegression_stubMap_data_second_data_psModule_s_we1 <= grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_psModule_s_we1;
         else 
             LinearRegression_stubMap_data_second_data_psModule_s_we1 <= ap_const_logic_0;
         end if; 
     end process;
 
 
-    LinearRegression_stubMap_data_second_data_r_s_address0_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state27, ap_CS_fsm_state29, ap_CS_fsm_state31, grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_r_s_address0, grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_r_s_address0, grp_calcHelix_fu_640_LinearRegression_stubMap_data_second_data_r_s_address0, grp_calcResidual_fu_662_LinearRegression_stubMap_data_second_data_r_s_address0)
+    LinearRegression_stubMap_data_second_data_r_s_address0_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state27, ap_CS_fsm_state29, ap_CS_fsm_state31, grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_r_s_address0, grp_calcHelix_fu_522_LinearRegression_stubMap_data_second_data_r_s_address0, grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_r_s_address0, grp_calcResidual_fu_658_LinearRegression_stubMap_data_second_data_r_s_address0)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state29)) then 
-            LinearRegression_stubMap_data_second_data_r_s_address0 <= grp_calcResidual_fu_662_LinearRegression_stubMap_data_second_data_r_s_address0;
-        elsif ((ap_const_logic_1 = ap_CS_fsm_state27)) then 
-            LinearRegression_stubMap_data_second_data_r_s_address0 <= grp_calcHelix_fu_640_LinearRegression_stubMap_data_second_data_r_s_address0;
+            LinearRegression_stubMap_data_second_data_r_s_address0 <= grp_calcResidual_fu_658_LinearRegression_stubMap_data_second_data_r_s_address0;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state2)) then 
-            LinearRegression_stubMap_data_second_data_r_s_address0 <= grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_r_s_address0;
+            LinearRegression_stubMap_data_second_data_r_s_address0 <= grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_r_s_address0;
+        elsif ((ap_const_logic_1 = ap_CS_fsm_state27)) then 
+            LinearRegression_stubMap_data_second_data_r_s_address0 <= grp_calcHelix_fu_522_LinearRegression_stubMap_data_second_data_r_s_address0;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state31)) then 
-            LinearRegression_stubMap_data_second_data_r_s_address0 <= grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_r_s_address0;
+            LinearRegression_stubMap_data_second_data_r_s_address0 <= grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_r_s_address0;
         else 
             LinearRegression_stubMap_data_second_data_r_s_address0 <= "XXXXXXXXX";
         end if; 
     end process;
 
 
-    LinearRegression_stubMap_data_second_data_r_s_address1_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_r_s_address1, grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_r_s_address1)
+    LinearRegression_stubMap_data_second_data_r_s_address1_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_r_s_address1, grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_r_s_address1)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state2)) then 
-            LinearRegression_stubMap_data_second_data_r_s_address1 <= grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_r_s_address1;
+            LinearRegression_stubMap_data_second_data_r_s_address1 <= grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_r_s_address1;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state31)) then 
-            LinearRegression_stubMap_data_second_data_r_s_address1 <= grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_r_s_address1;
+            LinearRegression_stubMap_data_second_data_r_s_address1 <= grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_r_s_address1;
         else 
             LinearRegression_stubMap_data_second_data_r_s_address1 <= "XXXXXXXXX";
         end if; 
     end process;
 
 
-    LinearRegression_stubMap_data_second_data_r_s_ce0_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state27, ap_CS_fsm_state29, ap_CS_fsm_state31, grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_r_s_ce0, grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_r_s_ce0, grp_calcHelix_fu_640_LinearRegression_stubMap_data_second_data_r_s_ce0, grp_calcResidual_fu_662_LinearRegression_stubMap_data_second_data_r_s_ce0)
+    LinearRegression_stubMap_data_second_data_r_s_ce0_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state27, ap_CS_fsm_state29, ap_CS_fsm_state31, grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_r_s_ce0, grp_calcHelix_fu_522_LinearRegression_stubMap_data_second_data_r_s_ce0, grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_r_s_ce0, grp_calcResidual_fu_658_LinearRegression_stubMap_data_second_data_r_s_ce0)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state29)) then 
-            LinearRegression_stubMap_data_second_data_r_s_ce0 <= grp_calcResidual_fu_662_LinearRegression_stubMap_data_second_data_r_s_ce0;
-        elsif ((ap_const_logic_1 = ap_CS_fsm_state27)) then 
-            LinearRegression_stubMap_data_second_data_r_s_ce0 <= grp_calcHelix_fu_640_LinearRegression_stubMap_data_second_data_r_s_ce0;
+            LinearRegression_stubMap_data_second_data_r_s_ce0 <= grp_calcResidual_fu_658_LinearRegression_stubMap_data_second_data_r_s_ce0;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state2)) then 
-            LinearRegression_stubMap_data_second_data_r_s_ce0 <= grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_r_s_ce0;
+            LinearRegression_stubMap_data_second_data_r_s_ce0 <= grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_r_s_ce0;
+        elsif ((ap_const_logic_1 = ap_CS_fsm_state27)) then 
+            LinearRegression_stubMap_data_second_data_r_s_ce0 <= grp_calcHelix_fu_522_LinearRegression_stubMap_data_second_data_r_s_ce0;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state31)) then 
-            LinearRegression_stubMap_data_second_data_r_s_ce0 <= grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_r_s_ce0;
+            LinearRegression_stubMap_data_second_data_r_s_ce0 <= grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_r_s_ce0;
         else 
             LinearRegression_stubMap_data_second_data_r_s_ce0 <= ap_const_logic_0;
         end if; 
     end process;
 
 
-    LinearRegression_stubMap_data_second_data_r_s_ce1_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_r_s_ce1, grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_r_s_ce1)
+    LinearRegression_stubMap_data_second_data_r_s_ce1_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_r_s_ce1, grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_r_s_ce1)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state2)) then 
-            LinearRegression_stubMap_data_second_data_r_s_ce1 <= grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_r_s_ce1;
+            LinearRegression_stubMap_data_second_data_r_s_ce1 <= grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_r_s_ce1;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state31)) then 
-            LinearRegression_stubMap_data_second_data_r_s_ce1 <= grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_r_s_ce1;
+            LinearRegression_stubMap_data_second_data_r_s_ce1 <= grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_r_s_ce1;
         else 
             LinearRegression_stubMap_data_second_data_r_s_ce1 <= ap_const_logic_0;
         end if; 
     end process;
 
 
-    LinearRegression_stubMap_data_second_data_r_s_d0_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_r_s_d0, grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_r_s_d0)
+    LinearRegression_stubMap_data_second_data_r_s_d0_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_r_s_d0, grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_r_s_d0)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state2)) then 
-            LinearRegression_stubMap_data_second_data_r_s_d0 <= grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_r_s_d0;
+            LinearRegression_stubMap_data_second_data_r_s_d0 <= grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_r_s_d0;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state31)) then 
-            LinearRegression_stubMap_data_second_data_r_s_d0 <= grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_r_s_d0;
+            LinearRegression_stubMap_data_second_data_r_s_d0 <= grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_r_s_d0;
         else 
             LinearRegression_stubMap_data_second_data_r_s_d0 <= "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX";
         end if; 
     end process;
 
 
-    LinearRegression_stubMap_data_second_data_r_s_d1_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_r_s_d1, grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_r_s_d1)
+    LinearRegression_stubMap_data_second_data_r_s_d1_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_r_s_d1, grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_r_s_d1)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state2)) then 
-            LinearRegression_stubMap_data_second_data_r_s_d1 <= grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_r_s_d1;
+            LinearRegression_stubMap_data_second_data_r_s_d1 <= grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_r_s_d1;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state31)) then 
-            LinearRegression_stubMap_data_second_data_r_s_d1 <= grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_r_s_d1;
+            LinearRegression_stubMap_data_second_data_r_s_d1 <= grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_r_s_d1;
         else 
             LinearRegression_stubMap_data_second_data_r_s_d1 <= "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX";
         end if; 
     end process;
 
 
-    LinearRegression_stubMap_data_second_data_r_s_we0_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_r_s_we0, grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_r_s_we0)
+    LinearRegression_stubMap_data_second_data_r_s_we0_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_r_s_we0, grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_r_s_we0)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state2)) then 
-            LinearRegression_stubMap_data_second_data_r_s_we0 <= grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_r_s_we0;
+            LinearRegression_stubMap_data_second_data_r_s_we0 <= grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_r_s_we0;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state31)) then 
-            LinearRegression_stubMap_data_second_data_r_s_we0 <= grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_r_s_we0;
+            LinearRegression_stubMap_data_second_data_r_s_we0 <= grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_r_s_we0;
         else 
             LinearRegression_stubMap_data_second_data_r_s_we0 <= ap_const_logic_0;
         end if; 
     end process;
 
 
-    LinearRegression_stubMap_data_second_data_r_s_we1_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_r_s_we1, grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_r_s_we1)
+    LinearRegression_stubMap_data_second_data_r_s_we1_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_r_s_we1, grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_r_s_we1)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state2)) then 
-            LinearRegression_stubMap_data_second_data_r_s_we1 <= grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_r_s_we1;
+            LinearRegression_stubMap_data_second_data_r_s_we1 <= grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_r_s_we1;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state31)) then 
-            LinearRegression_stubMap_data_second_data_r_s_we1 <= grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_r_s_we1;
+            LinearRegression_stubMap_data_second_data_r_s_we1 <= grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_r_s_we1;
         else 
             LinearRegression_stubMap_data_second_data_r_s_we1 <= ap_const_logic_0;
         end if; 
     end process;
 
 
-    LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_address0_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_address0, grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_address0)
+    LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_address0_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_address0, grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_address0)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state2)) then 
-            LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_address0 <= grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_address0;
+            LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_address0 <= grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_address0;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state31)) then 
-            LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_address0 <= grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_address0;
+            LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_address0 <= grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_address0;
         else 
             LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_address0 <= "XXXXXXXXX";
         end if; 
     end process;
 
 
-    LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_address1_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_address1, grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_address1)
+    LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_address1_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_address1, grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_address1)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state2)) then 
-            LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_address1 <= grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_address1;
+            LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_address1 <= grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_address1;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state31)) then 
-            LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_address1 <= grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_address1;
+            LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_address1 <= grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_address1;
         else 
             LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_address1 <= "XXXXXXXXX";
         end if; 
     end process;
 
 
-    LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_ce0_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_ce0, grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_ce0)
+    LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_ce0_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_ce0, grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_ce0)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state2)) then 
-            LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_ce0 <= grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_ce0;
+            LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_ce0 <= grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_ce0;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state31)) then 
-            LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_ce0 <= grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_ce0;
+            LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_ce0 <= grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_ce0;
         else 
             LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_ce0 <= ap_const_logic_0;
         end if; 
     end process;
 
 
-    LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_ce1_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_ce1, grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_ce1)
+    LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_ce1_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_ce1, grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_ce1)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state2)) then 
-            LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_ce1 <= grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_ce1;
+            LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_ce1 <= grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_ce1;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state31)) then 
-            LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_ce1 <= grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_ce1;
+            LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_ce1 <= grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_ce1;
         else 
             LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_ce1 <= ap_const_logic_0;
         end if; 
     end process;
 
 
-    LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_d0_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_d0, grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_d0)
+    LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_d0_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_d0, grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_d0)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state2)) then 
-            LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_d0 <= grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_d0;
+            LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_d0 <= grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_d0;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state31)) then 
-            LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_d0 <= grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_d0;
+            LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_d0 <= grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_d0;
         else 
             LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_d0 <= "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX";
         end if; 
     end process;
 
 
-    LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_d1_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_d1, grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_d1)
+    LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_d1_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_d1, grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_d1)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state2)) then 
-            LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_d1 <= grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_d1;
+            LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_d1 <= grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_d1;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state31)) then 
-            LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_d1 <= grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_d1;
+            LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_d1 <= grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_d1;
         else 
             LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_d1 <= "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX";
         end if; 
     end process;
 
 
-    LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_we0_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_we0, grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_we0)
+    LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_we0_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_we0, grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_we0)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state2)) then 
-            LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_we0 <= grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_we0;
+            LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_we0 <= grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_we0;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state31)) then 
-            LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_we0 <= grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_we0;
+            LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_we0 <= grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_we0;
         else 
             LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_we0 <= ap_const_logic_0;
         end if; 
     end process;
 
 
-    LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_we1_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_we1, grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_we1)
+    LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_we1_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_we1, grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_we1)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state2)) then 
-            LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_we1 <= grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_we1;
+            LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_we1 <= grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_we1;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state31)) then 
-            LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_we1 <= grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_we1;
+            LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_we1 <= grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_we1;
         else 
             LinearRegression_stubMap_data_second_data_settings_chosenRofPhi_s_we1 <= ap_const_logic_0;
         end if; 
     end process;
 
 
-    LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_address0_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_address0, grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_address0)
+    LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_address0_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_address0, grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_address0)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state2)) then 
-            LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_address0 <= grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_address0;
+            LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_address0 <= grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_address0;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state31)) then 
-            LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_address0 <= grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_address0;
+            LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_address0 <= grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_address0;
         else 
             LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_address0 <= "XXXXXXXXX";
         end if; 
     end process;
 
 
-    LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_address1_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_address1, grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_address1)
+    LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_address1_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_address1, grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_address1)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state2)) then 
-            LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_address1 <= grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_address1;
+            LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_address1 <= grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_address1;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state31)) then 
-            LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_address1 <= grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_address1;
+            LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_address1 <= grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_address1;
         else 
             LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_address1 <= "XXXXXXXXX";
         end if; 
     end process;
 
 
-    LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_ce0_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_ce0, grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_ce0)
+    LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_ce0_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_ce0, grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_ce0)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state2)) then 
-            LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_ce0 <= grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_ce0;
+            LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_ce0 <= grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_ce0;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state31)) then 
-            LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_ce0 <= grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_ce0;
+            LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_ce0 <= grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_ce0;
         else 
             LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_ce0 <= ap_const_logic_0;
         end if; 
     end process;
 
 
-    LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_ce1_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_ce1, grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_ce1)
+    LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_ce1_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_ce1, grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_ce1)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state2)) then 
-            LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_ce1 <= grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_ce1;
+            LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_ce1 <= grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_ce1;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state31)) then 
-            LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_ce1 <= grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_ce1;
+            LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_ce1 <= grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_ce1;
         else 
             LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_ce1 <= ap_const_logic_0;
         end if; 
     end process;
 
 
-    LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_d0_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_d0, grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_d0)
+    LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_d0_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_d0, grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_d0)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state2)) then 
-            LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_d0 <= grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_d0;
+            LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_d0 <= grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_d0;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state31)) then 
-            LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_d0 <= grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_d0;
+            LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_d0 <= grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_d0;
         else 
             LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_d0 <= "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX";
         end if; 
     end process;
 
 
-    LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_d1_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_d1, grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_d1)
+    LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_d1_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_d1, grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_d1)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state2)) then 
-            LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_d1 <= grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_d1;
+            LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_d1 <= grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_d1;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state31)) then 
-            LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_d1 <= grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_d1;
+            LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_d1 <= grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_d1;
         else 
             LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_d1 <= "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX";
         end if; 
     end process;
 
 
-    LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_we0_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_we0, grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_we0)
+    LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_we0_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_we0, grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_we0)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state2)) then 
-            LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_we0 <= grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_we0;
+            LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_we0 <= grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_we0;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state31)) then 
-            LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_we0 <= grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_we0;
+            LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_we0 <= grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_we0;
         else 
             LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_we0 <= ap_const_logic_0;
         end if; 
     end process;
 
 
-    LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_we1_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_we1, grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_we1)
+    LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_we1_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_we1, grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_we1)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state2)) then 
-            LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_we1 <= grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_we1;
+            LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_we1 <= grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_we1;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state31)) then 
-            LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_we1 <= grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_we1;
+            LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_we1 <= grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_we1;
         else 
             LinearRegression_stubMap_data_second_data_settings_chosenRofZ_s_we1 <= ap_const_logic_0;
         end if; 
     end process;
 
 
-    LinearRegression_stubMap_data_second_data_settings_etaRegions_s_address0_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_settings_etaRegions_s_address0, grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_settings_etaRegions_s_address0)
+    LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_address0_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_address0, grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_address0)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state2)) then 
-            LinearRegression_stubMap_data_second_data_settings_etaRegions_s_address0 <= grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_settings_etaRegions_s_address0;
+            LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_address0 <= grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_address0;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state31)) then 
-            LinearRegression_stubMap_data_second_data_settings_etaRegions_s_address0 <= grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_settings_etaRegions_s_address0;
-        else 
-            LinearRegression_stubMap_data_second_data_settings_etaRegions_s_address0 <= "XXXXXXXXXXXXX";
-        end if; 
-    end process;
-
-
-    LinearRegression_stubMap_data_second_data_settings_etaRegions_s_address1_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_settings_etaRegions_s_address1, grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_settings_etaRegions_s_address1)
-    begin
-        if ((ap_const_logic_1 = ap_CS_fsm_state2)) then 
-            LinearRegression_stubMap_data_second_data_settings_etaRegions_s_address1 <= grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_settings_etaRegions_s_address1;
-        elsif ((ap_const_logic_1 = ap_CS_fsm_state31)) then 
-            LinearRegression_stubMap_data_second_data_settings_etaRegions_s_address1 <= grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_settings_etaRegions_s_address1;
-        else 
-            LinearRegression_stubMap_data_second_data_settings_etaRegions_s_address1 <= "XXXXXXXXXXXXX";
-        end if; 
-    end process;
-
-
-    LinearRegression_stubMap_data_second_data_settings_etaRegions_s_ce0_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_settings_etaRegions_s_ce0, grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_settings_etaRegions_s_ce0)
-    begin
-        if ((ap_const_logic_1 = ap_CS_fsm_state2)) then 
-            LinearRegression_stubMap_data_second_data_settings_etaRegions_s_ce0 <= grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_settings_etaRegions_s_ce0;
-        elsif ((ap_const_logic_1 = ap_CS_fsm_state31)) then 
-            LinearRegression_stubMap_data_second_data_settings_etaRegions_s_ce0 <= grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_settings_etaRegions_s_ce0;
-        else 
-            LinearRegression_stubMap_data_second_data_settings_etaRegions_s_ce0 <= ap_const_logic_0;
-        end if; 
-    end process;
-
-
-    LinearRegression_stubMap_data_second_data_settings_etaRegions_s_ce1_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_settings_etaRegions_s_ce1, grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_settings_etaRegions_s_ce1)
-    begin
-        if ((ap_const_logic_1 = ap_CS_fsm_state2)) then 
-            LinearRegression_stubMap_data_second_data_settings_etaRegions_s_ce1 <= grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_settings_etaRegions_s_ce1;
-        elsif ((ap_const_logic_1 = ap_CS_fsm_state31)) then 
-            LinearRegression_stubMap_data_second_data_settings_etaRegions_s_ce1 <= grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_settings_etaRegions_s_ce1;
-        else 
-            LinearRegression_stubMap_data_second_data_settings_etaRegions_s_ce1 <= ap_const_logic_0;
-        end if; 
-    end process;
-
-
-    LinearRegression_stubMap_data_second_data_settings_etaRegions_s_d0_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_settings_etaRegions_s_d0, grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_settings_etaRegions_s_d0)
-    begin
-        if ((ap_const_logic_1 = ap_CS_fsm_state2)) then 
-            LinearRegression_stubMap_data_second_data_settings_etaRegions_s_d0 <= grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_settings_etaRegions_s_d0;
-        elsif ((ap_const_logic_1 = ap_CS_fsm_state31)) then 
-            LinearRegression_stubMap_data_second_data_settings_etaRegions_s_d0 <= grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_settings_etaRegions_s_d0;
-        else 
-            LinearRegression_stubMap_data_second_data_settings_etaRegions_s_d0 <= "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX";
-        end if; 
-    end process;
-
-
-    LinearRegression_stubMap_data_second_data_settings_etaRegions_s_d1_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_settings_etaRegions_s_d1, grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_settings_etaRegions_s_d1)
-    begin
-        if ((ap_const_logic_1 = ap_CS_fsm_state2)) then 
-            LinearRegression_stubMap_data_second_data_settings_etaRegions_s_d1 <= grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_settings_etaRegions_s_d1;
-        elsif ((ap_const_logic_1 = ap_CS_fsm_state31)) then 
-            LinearRegression_stubMap_data_second_data_settings_etaRegions_s_d1 <= grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_settings_etaRegions_s_d1;
-        else 
-            LinearRegression_stubMap_data_second_data_settings_etaRegions_s_d1 <= "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX";
-        end if; 
-    end process;
-
-
-    LinearRegression_stubMap_data_second_data_settings_etaRegions_s_we0_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_settings_etaRegions_s_we0, grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_settings_etaRegions_s_we0)
-    begin
-        if ((ap_const_logic_1 = ap_CS_fsm_state2)) then 
-            LinearRegression_stubMap_data_second_data_settings_etaRegions_s_we0 <= grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_settings_etaRegions_s_we0;
-        elsif ((ap_const_logic_1 = ap_CS_fsm_state31)) then 
-            LinearRegression_stubMap_data_second_data_settings_etaRegions_s_we0 <= grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_settings_etaRegions_s_we0;
-        else 
-            LinearRegression_stubMap_data_second_data_settings_etaRegions_s_we0 <= ap_const_logic_0;
-        end if; 
-    end process;
-
-
-    LinearRegression_stubMap_data_second_data_settings_etaRegions_s_we1_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_settings_etaRegions_s_we1, grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_settings_etaRegions_s_we1)
-    begin
-        if ((ap_const_logic_1 = ap_CS_fsm_state2)) then 
-            LinearRegression_stubMap_data_second_data_settings_etaRegions_s_we1 <= grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_settings_etaRegions_s_we1;
-        elsif ((ap_const_logic_1 = ap_CS_fsm_state31)) then 
-            LinearRegression_stubMap_data_second_data_settings_etaRegions_s_we1 <= grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_settings_etaRegions_s_we1;
-        else 
-            LinearRegression_stubMap_data_second_data_settings_etaRegions_s_we1 <= ap_const_logic_0;
-        end if; 
-    end process;
-
-
-    LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_address0_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_address0, grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_address0)
-    begin
-        if ((ap_const_logic_1 = ap_CS_fsm_state2)) then 
-            LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_address0 <= grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_address0;
-        elsif ((ap_const_logic_1 = ap_CS_fsm_state31)) then 
-            LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_address0 <= grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_address0;
+            LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_address0 <= grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_address0;
         else 
             LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_address0 <= "XXXXXXXXX";
         end if; 
     end process;
 
 
-    LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_address1_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_address1, grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_address1)
+    LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_address1_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_address1, grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_address1)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state2)) then 
-            LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_address1 <= grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_address1;
+            LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_address1 <= grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_address1;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state31)) then 
-            LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_address1 <= grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_address1;
+            LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_address1 <= grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_address1;
         else 
             LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_address1 <= "XXXXXXXXX";
         end if; 
     end process;
 
 
-    LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_ce0_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_ce0, grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_ce0)
+    LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_ce0_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_ce0, grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_ce0)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state2)) then 
-            LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_ce0 <= grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_ce0;
+            LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_ce0 <= grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_ce0;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state31)) then 
-            LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_ce0 <= grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_ce0;
+            LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_ce0 <= grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_ce0;
         else 
             LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_ce0 <= ap_const_logic_0;
         end if; 
     end process;
 
 
-    LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_ce1_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_ce1, grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_ce1)
+    LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_ce1_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_ce1, grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_ce1)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state2)) then 
-            LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_ce1 <= grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_ce1;
+            LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_ce1 <= grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_ce1;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state31)) then 
-            LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_ce1 <= grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_ce1;
+            LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_ce1 <= grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_ce1;
         else 
             LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_ce1 <= ap_const_logic_0;
         end if; 
     end process;
 
 
-    LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_d0_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_d0, grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_d0)
+    LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_d0_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_d0, grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_d0)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state2)) then 
-            LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_d0 <= grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_d0;
+            LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_d0 <= grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_d0;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state31)) then 
-            LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_d0 <= grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_d0;
+            LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_d0 <= grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_d0;
         else 
             LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_d0 <= "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX";
         end if; 
     end process;
 
 
-    LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_d1_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_d1, grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_d1)
+    LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_d1_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_d1, grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_d1)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state2)) then 
-            LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_d1 <= grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_d1;
+            LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_d1 <= grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_d1;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state31)) then 
-            LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_d1 <= grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_d1;
+            LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_d1 <= grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_d1;
         else 
             LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_d1 <= "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX";
         end if; 
     end process;
 
 
-    LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_we0_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_we0, grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_we0)
+    LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_we0_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_we0, grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_we0)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state2)) then 
-            LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_we0 <= grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_we0;
+            LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_we0 <= grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_we0;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state31)) then 
-            LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_we0 <= grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_we0;
+            LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_we0 <= grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_we0;
         else 
             LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_we0 <= ap_const_logic_0;
         end if; 
     end process;
 
 
-    LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_we1_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_we1, grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_we1)
+    LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_we1_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_we1, grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_we1)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state2)) then 
-            LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_we1 <= grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_we1;
+            LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_we1 <= grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_we1;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state31)) then 
-            LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_we1 <= grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_we1;
+            LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_we1 <= grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_we1;
         else 
             LinearRegression_stubMap_data_second_data_settings_minNumMatchLayers_s_we1 <= ap_const_logic_0;
         end if; 
     end process;
 
 
-    LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_address0_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_address0, grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_address0)
+    LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_address0_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_address0, grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_address0)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state2)) then 
-            LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_address0 <= grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_address0;
+            LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_address0 <= grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_address0;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state31)) then 
-            LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_address0 <= grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_address0;
+            LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_address0 <= grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_address0;
         else 
             LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_address0 <= "XXXXXXXXX";
         end if; 
     end process;
 
 
-    LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_address1_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_address1, grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_address1)
+    LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_address1_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_address1, grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_address1)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state2)) then 
-            LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_address1 <= grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_address1;
+            LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_address1 <= grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_address1;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state31)) then 
-            LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_address1 <= grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_address1;
+            LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_address1 <= grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_address1;
         else 
             LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_address1 <= "XXXXXXXXX";
         end if; 
     end process;
 
 
-    LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_ce0_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_ce0, grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_ce0)
+    LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_ce0_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_ce0, grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_ce0)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state2)) then 
-            LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_ce0 <= grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_ce0;
+            LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_ce0 <= grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_ce0;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state31)) then 
-            LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_ce0 <= grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_ce0;
+            LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_ce0 <= grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_ce0;
         else 
             LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_ce0 <= ap_const_logic_0;
         end if; 
     end process;
 
 
-    LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_ce1_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_ce1, grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_ce1)
+    LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_ce1_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_ce1, grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_ce1)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state2)) then 
-            LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_ce1 <= grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_ce1;
+            LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_ce1 <= grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_ce1;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state31)) then 
-            LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_ce1 <= grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_ce1;
+            LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_ce1 <= grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_ce1;
         else 
             LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_ce1 <= ap_const_logic_0;
         end if; 
     end process;
 
 
-    LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_d0_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_d0, grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_d0)
+    LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_d0_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_d0, grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_d0)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state2)) then 
-            LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_d0 <= grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_d0;
+            LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_d0 <= grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_d0;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state31)) then 
-            LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_d0 <= grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_d0;
+            LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_d0 <= grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_d0;
         else 
             LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_d0 <= "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX";
         end if; 
     end process;
 
 
-    LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_d1_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_d1, grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_d1)
+    LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_d1_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_d1, grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_d1)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state2)) then 
-            LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_d1 <= grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_d1;
+            LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_d1 <= grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_d1;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state31)) then 
-            LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_d1 <= grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_d1;
+            LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_d1 <= grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_d1;
         else 
             LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_d1 <= "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX";
         end if; 
     end process;
 
 
-    LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_we0_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_we0, grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_we0)
+    LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_we0_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_we0, grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_we0)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state2)) then 
-            LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_we0 <= grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_we0;
+            LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_we0 <= grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_we0;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state31)) then 
-            LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_we0 <= grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_we0;
+            LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_we0 <= grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_we0;
         else 
             LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_we0 <= ap_const_logic_0;
         end if; 
     end process;
 
 
-    LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_we1_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_we1, grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_we1)
+    LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_we1_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_we1, grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_we1)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state2)) then 
-            LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_we1 <= grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_we1;
+            LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_we1 <= grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_we1;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state31)) then 
-            LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_we1 <= grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_we1;
+            LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_we1 <= grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_we1;
         else 
             LinearRegression_stubMap_data_second_data_settings_minPSLayers_s_we1 <= ap_const_logic_0;
         end if; 
     end process;
 
 
-    LinearRegression_stubMap_data_second_data_z_s_address0_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state27, ap_CS_fsm_state29, ap_CS_fsm_state31, grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_z_s_address0, grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_z_s_address0, grp_calcHelix_fu_640_LinearRegression_stubMap_data_second_data_z_s_address0, grp_calcResidual_fu_662_LinearRegression_stubMap_data_second_data_z_s_address0)
+    LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_address0_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_address0, grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_address0)
+    begin
+        if ((ap_const_logic_1 = ap_CS_fsm_state2)) then 
+            LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_address0 <= grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_address0;
+        elsif ((ap_const_logic_1 = ap_CS_fsm_state31)) then 
+            LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_address0 <= grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_address0;
+        else 
+            LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_address0 <= "XXXXXXXXXXXXX";
+        end if; 
+    end process;
+
+
+    LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_address1_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_address1, grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_address1)
+    begin
+        if ((ap_const_logic_1 = ap_CS_fsm_state2)) then 
+            LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_address1 <= grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_address1;
+        elsif ((ap_const_logic_1 = ap_CS_fsm_state31)) then 
+            LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_address1 <= grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_address1;
+        else 
+            LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_address1 <= "XXXXXXXXXXXXX";
+        end if; 
+    end process;
+
+
+    LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_ce0_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_ce0, grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_ce0)
+    begin
+        if ((ap_const_logic_1 = ap_CS_fsm_state2)) then 
+            LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_ce0 <= grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_ce0;
+        elsif ((ap_const_logic_1 = ap_CS_fsm_state31)) then 
+            LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_ce0 <= grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_ce0;
+        else 
+            LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_ce0 <= ap_const_logic_0;
+        end if; 
+    end process;
+
+
+    LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_ce1_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_ce1, grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_ce1)
+    begin
+        if ((ap_const_logic_1 = ap_CS_fsm_state2)) then 
+            LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_ce1 <= grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_ce1;
+        elsif ((ap_const_logic_1 = ap_CS_fsm_state31)) then 
+            LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_ce1 <= grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_ce1;
+        else 
+            LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_ce1 <= ap_const_logic_0;
+        end if; 
+    end process;
+
+
+    LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_d0_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_d0, grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_d0)
+    begin
+        if ((ap_const_logic_1 = ap_CS_fsm_state2)) then 
+            LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_d0 <= grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_d0;
+        elsif ((ap_const_logic_1 = ap_CS_fsm_state31)) then 
+            LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_d0 <= grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_d0;
+        else 
+            LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_d0 <= "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX";
+        end if; 
+    end process;
+
+
+    LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_d1_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_d1, grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_d1)
+    begin
+        if ((ap_const_logic_1 = ap_CS_fsm_state2)) then 
+            LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_d1 <= grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_d1;
+        elsif ((ap_const_logic_1 = ap_CS_fsm_state31)) then 
+            LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_d1 <= grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_d1;
+        else 
+            LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_d1 <= "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX";
+        end if; 
+    end process;
+
+
+    LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_we0_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_we0, grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_we0)
+    begin
+        if ((ap_const_logic_1 = ap_CS_fsm_state2)) then 
+            LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_we0 <= grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_we0;
+        elsif ((ap_const_logic_1 = ap_CS_fsm_state31)) then 
+            LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_we0 <= grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_we0;
+        else 
+            LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_we0 <= ap_const_logic_0;
+        end if; 
+    end process;
+
+
+    LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_we1_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_we1, grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_we1)
+    begin
+        if ((ap_const_logic_1 = ap_CS_fsm_state2)) then 
+            LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_we1 <= grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_we1;
+        elsif ((ap_const_logic_1 = ap_CS_fsm_state31)) then 
+            LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_we1 <= grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_we1;
+        else 
+            LinearRegression_stubMap_data_second_data_settings_sinh_etaRegions_s_we1 <= ap_const_logic_0;
+        end if; 
+    end process;
+
+
+    LinearRegression_stubMap_data_second_data_z_s_address0_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state27, ap_CS_fsm_state29, ap_CS_fsm_state31, grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_z_s_address0, grp_calcHelix_fu_522_LinearRegression_stubMap_data_second_data_z_s_address0, grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_z_s_address0, grp_calcResidual_fu_658_LinearRegression_stubMap_data_second_data_z_s_address0)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state29)) then 
-            LinearRegression_stubMap_data_second_data_z_s_address0 <= grp_calcResidual_fu_662_LinearRegression_stubMap_data_second_data_z_s_address0;
-        elsif ((ap_const_logic_1 = ap_CS_fsm_state27)) then 
-            LinearRegression_stubMap_data_second_data_z_s_address0 <= grp_calcHelix_fu_640_LinearRegression_stubMap_data_second_data_z_s_address0;
+            LinearRegression_stubMap_data_second_data_z_s_address0 <= grp_calcResidual_fu_658_LinearRegression_stubMap_data_second_data_z_s_address0;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state2)) then 
-            LinearRegression_stubMap_data_second_data_z_s_address0 <= grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_z_s_address0;
+            LinearRegression_stubMap_data_second_data_z_s_address0 <= grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_z_s_address0;
+        elsif ((ap_const_logic_1 = ap_CS_fsm_state27)) then 
+            LinearRegression_stubMap_data_second_data_z_s_address0 <= grp_calcHelix_fu_522_LinearRegression_stubMap_data_second_data_z_s_address0;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state31)) then 
-            LinearRegression_stubMap_data_second_data_z_s_address0 <= grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_z_s_address0;
+            LinearRegression_stubMap_data_second_data_z_s_address0 <= grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_z_s_address0;
         else 
             LinearRegression_stubMap_data_second_data_z_s_address0 <= "XXXXXXXXX";
         end if; 
     end process;
 
 
-    LinearRegression_stubMap_data_second_data_z_s_address1_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_z_s_address1, grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_z_s_address1)
+    LinearRegression_stubMap_data_second_data_z_s_address1_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_z_s_address1, grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_z_s_address1)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state2)) then 
-            LinearRegression_stubMap_data_second_data_z_s_address1 <= grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_z_s_address1;
+            LinearRegression_stubMap_data_second_data_z_s_address1 <= grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_z_s_address1;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state31)) then 
-            LinearRegression_stubMap_data_second_data_z_s_address1 <= grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_z_s_address1;
+            LinearRegression_stubMap_data_second_data_z_s_address1 <= grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_z_s_address1;
         else 
             LinearRegression_stubMap_data_second_data_z_s_address1 <= "XXXXXXXXX";
         end if; 
     end process;
 
 
-    LinearRegression_stubMap_data_second_data_z_s_ce0_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state27, ap_CS_fsm_state29, ap_CS_fsm_state31, grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_z_s_ce0, grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_z_s_ce0, grp_calcHelix_fu_640_LinearRegression_stubMap_data_second_data_z_s_ce0, grp_calcResidual_fu_662_LinearRegression_stubMap_data_second_data_z_s_ce0)
+    LinearRegression_stubMap_data_second_data_z_s_ce0_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state27, ap_CS_fsm_state29, ap_CS_fsm_state31, grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_z_s_ce0, grp_calcHelix_fu_522_LinearRegression_stubMap_data_second_data_z_s_ce0, grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_z_s_ce0, grp_calcResidual_fu_658_LinearRegression_stubMap_data_second_data_z_s_ce0)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state29)) then 
-            LinearRegression_stubMap_data_second_data_z_s_ce0 <= grp_calcResidual_fu_662_LinearRegression_stubMap_data_second_data_z_s_ce0;
-        elsif ((ap_const_logic_1 = ap_CS_fsm_state27)) then 
-            LinearRegression_stubMap_data_second_data_z_s_ce0 <= grp_calcHelix_fu_640_LinearRegression_stubMap_data_second_data_z_s_ce0;
+            LinearRegression_stubMap_data_second_data_z_s_ce0 <= grp_calcResidual_fu_658_LinearRegression_stubMap_data_second_data_z_s_ce0;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state2)) then 
-            LinearRegression_stubMap_data_second_data_z_s_ce0 <= grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_z_s_ce0;
+            LinearRegression_stubMap_data_second_data_z_s_ce0 <= grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_z_s_ce0;
+        elsif ((ap_const_logic_1 = ap_CS_fsm_state27)) then 
+            LinearRegression_stubMap_data_second_data_z_s_ce0 <= grp_calcHelix_fu_522_LinearRegression_stubMap_data_second_data_z_s_ce0;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state31)) then 
-            LinearRegression_stubMap_data_second_data_z_s_ce0 <= grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_z_s_ce0;
+            LinearRegression_stubMap_data_second_data_z_s_ce0 <= grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_z_s_ce0;
         else 
             LinearRegression_stubMap_data_second_data_z_s_ce0 <= ap_const_logic_0;
         end if; 
     end process;
 
 
-    LinearRegression_stubMap_data_second_data_z_s_ce1_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_z_s_ce1, grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_z_s_ce1)
+    LinearRegression_stubMap_data_second_data_z_s_ce1_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_z_s_ce1, grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_z_s_ce1)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state2)) then 
-            LinearRegression_stubMap_data_second_data_z_s_ce1 <= grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_z_s_ce1;
+            LinearRegression_stubMap_data_second_data_z_s_ce1 <= grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_z_s_ce1;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state31)) then 
-            LinearRegression_stubMap_data_second_data_z_s_ce1 <= grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_z_s_ce1;
+            LinearRegression_stubMap_data_second_data_z_s_ce1 <= grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_z_s_ce1;
         else 
             LinearRegression_stubMap_data_second_data_z_s_ce1 <= ap_const_logic_0;
         end if; 
     end process;
 
 
-    LinearRegression_stubMap_data_second_data_z_s_d0_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_z_s_d0, grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_z_s_d0)
+    LinearRegression_stubMap_data_second_data_z_s_d0_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_z_s_d0, grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_z_s_d0)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state2)) then 
-            LinearRegression_stubMap_data_second_data_z_s_d0 <= grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_z_s_d0;
+            LinearRegression_stubMap_data_second_data_z_s_d0 <= grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_z_s_d0;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state31)) then 
-            LinearRegression_stubMap_data_second_data_z_s_d0 <= grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_z_s_d0;
+            LinearRegression_stubMap_data_second_data_z_s_d0 <= grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_z_s_d0;
         else 
             LinearRegression_stubMap_data_second_data_z_s_d0 <= "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX";
         end if; 
     end process;
 
 
-    LinearRegression_stubMap_data_second_data_z_s_d1_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_z_s_d1, grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_z_s_d1)
+    LinearRegression_stubMap_data_second_data_z_s_d1_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_z_s_d1, grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_z_s_d1)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state2)) then 
-            LinearRegression_stubMap_data_second_data_z_s_d1 <= grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_z_s_d1;
+            LinearRegression_stubMap_data_second_data_z_s_d1 <= grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_z_s_d1;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state31)) then 
-            LinearRegression_stubMap_data_second_data_z_s_d1 <= grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_z_s_d1;
+            LinearRegression_stubMap_data_second_data_z_s_d1 <= grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_z_s_d1;
         else 
             LinearRegression_stubMap_data_second_data_z_s_d1 <= "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX";
         end if; 
     end process;
 
 
-    LinearRegression_stubMap_data_second_data_z_s_we0_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_z_s_we0, grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_z_s_we0)
+    LinearRegression_stubMap_data_second_data_z_s_we0_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_z_s_we0, grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_z_s_we0)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state2)) then 
-            LinearRegression_stubMap_data_second_data_z_s_we0 <= grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_z_s_we0;
+            LinearRegression_stubMap_data_second_data_z_s_we0 <= grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_z_s_we0;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state31)) then 
-            LinearRegression_stubMap_data_second_data_z_s_we0 <= grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_z_s_we0;
+            LinearRegression_stubMap_data_second_data_z_s_we0 <= grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_z_s_we0;
         else 
             LinearRegression_stubMap_data_second_data_z_s_we0 <= ap_const_logic_0;
         end if; 
     end process;
 
 
-    LinearRegression_stubMap_data_second_data_z_s_we1_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_z_s_we1, grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_z_s_we1)
+    LinearRegression_stubMap_data_second_data_z_s_we1_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_z_s_we1, grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_z_s_we1)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state2)) then 
-            LinearRegression_stubMap_data_second_data_z_s_we1 <= grp_initFit_fu_524_LinearRegression_stubMap_data_second_data_z_s_we1;
+            LinearRegression_stubMap_data_second_data_z_s_we1 <= grp_initFit_fu_544_LinearRegression_stubMap_data_second_data_z_s_we1;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state31)) then 
-            LinearRegression_stubMap_data_second_data_z_s_we1 <= grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_data_z_s_we1;
+            LinearRegression_stubMap_data_second_data_z_s_we1 <= grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_data_z_s_we1;
         else 
             LinearRegression_stubMap_data_second_data_z_s_we1 <= ap_const_logic_0;
         end if; 
     end process;
 
 
-    LinearRegression_stubMap_data_second_size_s_address0_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state27, ap_CS_fsm_state29, ap_CS_fsm_state31, grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_size_s_address0, grp_initFit_fu_524_LinearRegression_stubMap_data_second_size_s_address0, grp_calcHelix_fu_640_LinearRegression_stubMap_data_second_size_s_address0, grp_calcResidual_fu_662_LinearRegression_stubMap_data_second_size_s_address0)
+    LinearRegression_stubMap_data_second_size_s_address0_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state27, ap_CS_fsm_state29, ap_CS_fsm_state31, grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_size_s_address0, grp_calcHelix_fu_522_LinearRegression_stubMap_data_second_size_s_address0, grp_initFit_fu_544_LinearRegression_stubMap_data_second_size_s_address0, grp_calcResidual_fu_658_LinearRegression_stubMap_data_second_size_s_address0)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state29)) then 
-            LinearRegression_stubMap_data_second_size_s_address0 <= grp_calcResidual_fu_662_LinearRegression_stubMap_data_second_size_s_address0;
-        elsif ((ap_const_logic_1 = ap_CS_fsm_state27)) then 
-            LinearRegression_stubMap_data_second_size_s_address0 <= grp_calcHelix_fu_640_LinearRegression_stubMap_data_second_size_s_address0;
+            LinearRegression_stubMap_data_second_size_s_address0 <= grp_calcResidual_fu_658_LinearRegression_stubMap_data_second_size_s_address0;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state2)) then 
-            LinearRegression_stubMap_data_second_size_s_address0 <= grp_initFit_fu_524_LinearRegression_stubMap_data_second_size_s_address0;
+            LinearRegression_stubMap_data_second_size_s_address0 <= grp_initFit_fu_544_LinearRegression_stubMap_data_second_size_s_address0;
+        elsif ((ap_const_logic_1 = ap_CS_fsm_state27)) then 
+            LinearRegression_stubMap_data_second_size_s_address0 <= grp_calcHelix_fu_522_LinearRegression_stubMap_data_second_size_s_address0;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state31)) then 
-            LinearRegression_stubMap_data_second_size_s_address0 <= grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_size_s_address0;
+            LinearRegression_stubMap_data_second_size_s_address0 <= grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_size_s_address0;
         else 
             LinearRegression_stubMap_data_second_size_s_address0 <= "XXXXX";
         end if; 
     end process;
 
 
-    LinearRegression_stubMap_data_second_size_s_ce0_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state27, ap_CS_fsm_state29, ap_CS_fsm_state31, grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_size_s_ce0, grp_initFit_fu_524_LinearRegression_stubMap_data_second_size_s_ce0, grp_calcHelix_fu_640_LinearRegression_stubMap_data_second_size_s_ce0, grp_calcResidual_fu_662_LinearRegression_stubMap_data_second_size_s_ce0)
+    LinearRegression_stubMap_data_second_size_s_ce0_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state27, ap_CS_fsm_state29, ap_CS_fsm_state31, grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_size_s_ce0, grp_calcHelix_fu_522_LinearRegression_stubMap_data_second_size_s_ce0, grp_initFit_fu_544_LinearRegression_stubMap_data_second_size_s_ce0, grp_calcResidual_fu_658_LinearRegression_stubMap_data_second_size_s_ce0)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state29)) then 
-            LinearRegression_stubMap_data_second_size_s_ce0 <= grp_calcResidual_fu_662_LinearRegression_stubMap_data_second_size_s_ce0;
-        elsif ((ap_const_logic_1 = ap_CS_fsm_state27)) then 
-            LinearRegression_stubMap_data_second_size_s_ce0 <= grp_calcHelix_fu_640_LinearRegression_stubMap_data_second_size_s_ce0;
+            LinearRegression_stubMap_data_second_size_s_ce0 <= grp_calcResidual_fu_658_LinearRegression_stubMap_data_second_size_s_ce0;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state2)) then 
-            LinearRegression_stubMap_data_second_size_s_ce0 <= grp_initFit_fu_524_LinearRegression_stubMap_data_second_size_s_ce0;
+            LinearRegression_stubMap_data_second_size_s_ce0 <= grp_initFit_fu_544_LinearRegression_stubMap_data_second_size_s_ce0;
+        elsif ((ap_const_logic_1 = ap_CS_fsm_state27)) then 
+            LinearRegression_stubMap_data_second_size_s_ce0 <= grp_calcHelix_fu_522_LinearRegression_stubMap_data_second_size_s_ce0;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state31)) then 
-            LinearRegression_stubMap_data_second_size_s_ce0 <= grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_size_s_ce0;
+            LinearRegression_stubMap_data_second_size_s_ce0 <= grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_size_s_ce0;
         else 
             LinearRegression_stubMap_data_second_size_s_ce0 <= ap_const_logic_0;
         end if; 
     end process;
 
 
-    LinearRegression_stubMap_data_second_size_s_d0_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_size_s_d0, grp_initFit_fu_524_LinearRegression_stubMap_data_second_size_s_d0)
+    LinearRegression_stubMap_data_second_size_s_d0_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_size_s_d0, grp_initFit_fu_544_LinearRegression_stubMap_data_second_size_s_d0)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state2)) then 
-            LinearRegression_stubMap_data_second_size_s_d0 <= grp_initFit_fu_524_LinearRegression_stubMap_data_second_size_s_d0;
+            LinearRegression_stubMap_data_second_size_s_d0 <= grp_initFit_fu_544_LinearRegression_stubMap_data_second_size_s_d0;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state31)) then 
-            LinearRegression_stubMap_data_second_size_s_d0 <= grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_size_s_d0;
+            LinearRegression_stubMap_data_second_size_s_d0 <= grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_size_s_d0;
         else 
             LinearRegression_stubMap_data_second_size_s_d0 <= "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX";
         end if; 
     end process;
 
 
-    LinearRegression_stubMap_data_second_size_s_we0_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_size_s_we0, grp_initFit_fu_524_LinearRegression_stubMap_data_second_size_s_we0)
+    LinearRegression_stubMap_data_second_size_s_we0_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_size_s_we0, grp_initFit_fu_544_LinearRegression_stubMap_data_second_size_s_we0)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state2)) then 
-            LinearRegression_stubMap_data_second_size_s_we0 <= grp_initFit_fu_524_LinearRegression_stubMap_data_second_size_s_we0;
+            LinearRegression_stubMap_data_second_size_s_we0 <= grp_initFit_fu_544_LinearRegression_stubMap_data_second_size_s_we0;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state31)) then 
-            LinearRegression_stubMap_data_second_size_s_we0 <= grp_killLargestResidual_fu_447_LinearRegression_stubMap_data_second_size_s_we0;
+            LinearRegression_stubMap_data_second_size_s_we0 <= grp_killLargestResidual_fu_445_LinearRegression_stubMap_data_second_size_s_we0;
         else 
             LinearRegression_stubMap_data_second_size_s_we0 <= ap_const_logic_0;
         end if; 
     end process;
 
 
-    LinearRegression_stubs_data_barrel_s_address0_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_447_LinearRegression_stubs_data_barrel_s_address0, grp_initFit_fu_524_LinearRegression_stubs_data_barrel_s_address0)
+    LinearRegression_stubs_data_barrel_s_address0_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_445_LinearRegression_stubs_data_barrel_s_address0, grp_initFit_fu_544_LinearRegression_stubs_data_barrel_s_address0)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state2)) then 
-            LinearRegression_stubs_data_barrel_s_address0 <= grp_initFit_fu_524_LinearRegression_stubs_data_barrel_s_address0;
+            LinearRegression_stubs_data_barrel_s_address0 <= grp_initFit_fu_544_LinearRegression_stubs_data_barrel_s_address0;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state31)) then 
-            LinearRegression_stubs_data_barrel_s_address0 <= grp_killLargestResidual_fu_447_LinearRegression_stubs_data_barrel_s_address0;
+            LinearRegression_stubs_data_barrel_s_address0 <= grp_killLargestResidual_fu_445_LinearRegression_stubs_data_barrel_s_address0;
         else 
             LinearRegression_stubs_data_barrel_s_address0 <= "XXXX";
         end if; 
     end process;
 
-    LinearRegression_stubs_data_barrel_s_address1 <= grp_initFit_fu_524_LinearRegression_stubs_data_barrel_s_address1;
+    LinearRegression_stubs_data_barrel_s_address1 <= grp_initFit_fu_544_LinearRegression_stubs_data_barrel_s_address1;
 
-    LinearRegression_stubs_data_barrel_s_ce0_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_447_LinearRegression_stubs_data_barrel_s_ce0, grp_initFit_fu_524_LinearRegression_stubs_data_barrel_s_ce0)
+    LinearRegression_stubs_data_barrel_s_ce0_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_445_LinearRegression_stubs_data_barrel_s_ce0, grp_initFit_fu_544_LinearRegression_stubs_data_barrel_s_ce0)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state2)) then 
-            LinearRegression_stubs_data_barrel_s_ce0 <= grp_initFit_fu_524_LinearRegression_stubs_data_barrel_s_ce0;
+            LinearRegression_stubs_data_barrel_s_ce0 <= grp_initFit_fu_544_LinearRegression_stubs_data_barrel_s_ce0;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state31)) then 
-            LinearRegression_stubs_data_barrel_s_ce0 <= grp_killLargestResidual_fu_447_LinearRegression_stubs_data_barrel_s_ce0;
+            LinearRegression_stubs_data_barrel_s_ce0 <= grp_killLargestResidual_fu_445_LinearRegression_stubs_data_barrel_s_ce0;
         else 
             LinearRegression_stubs_data_barrel_s_ce0 <= ap_const_logic_0;
         end if; 
     end process;
 
 
-    LinearRegression_stubs_data_barrel_s_ce1_assign_proc : process(ap_CS_fsm_state2, grp_initFit_fu_524_LinearRegression_stubs_data_barrel_s_ce1)
+    LinearRegression_stubs_data_barrel_s_ce1_assign_proc : process(ap_CS_fsm_state2, grp_initFit_fu_544_LinearRegression_stubs_data_barrel_s_ce1)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state2)) then 
-            LinearRegression_stubs_data_barrel_s_ce1 <= grp_initFit_fu_524_LinearRegression_stubs_data_barrel_s_ce1;
+            LinearRegression_stubs_data_barrel_s_ce1 <= grp_initFit_fu_544_LinearRegression_stubs_data_barrel_s_ce1;
         else 
             LinearRegression_stubs_data_barrel_s_ce1 <= ap_const_logic_0;
         end if; 
     end process;
 
 
-    LinearRegression_stubs_data_barrel_s_d0_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_447_LinearRegression_stubs_data_barrel_s_d0, grp_initFit_fu_524_LinearRegression_stubs_data_barrel_s_d0)
+    LinearRegression_stubs_data_barrel_s_d0_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_445_LinearRegression_stubs_data_barrel_s_d0, grp_initFit_fu_544_LinearRegression_stubs_data_barrel_s_d0)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state2)) then 
-            LinearRegression_stubs_data_barrel_s_d0 <= grp_initFit_fu_524_LinearRegression_stubs_data_barrel_s_d0;
+            LinearRegression_stubs_data_barrel_s_d0 <= grp_initFit_fu_544_LinearRegression_stubs_data_barrel_s_d0;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state31)) then 
-            LinearRegression_stubs_data_barrel_s_d0 <= grp_killLargestResidual_fu_447_LinearRegression_stubs_data_barrel_s_d0;
+            LinearRegression_stubs_data_barrel_s_d0 <= grp_killLargestResidual_fu_445_LinearRegression_stubs_data_barrel_s_d0;
         else 
             LinearRegression_stubs_data_barrel_s_d0 <= "X";
         end if; 
     end process;
 
-    LinearRegression_stubs_data_barrel_s_d1 <= grp_initFit_fu_524_LinearRegression_stubs_data_barrel_s_d1;
+    LinearRegression_stubs_data_barrel_s_d1 <= grp_initFit_fu_544_LinearRegression_stubs_data_barrel_s_d1;
 
-    LinearRegression_stubs_data_barrel_s_we0_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_447_LinearRegression_stubs_data_barrel_s_we0, grp_initFit_fu_524_LinearRegression_stubs_data_barrel_s_we0)
+    LinearRegression_stubs_data_barrel_s_we0_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_445_LinearRegression_stubs_data_barrel_s_we0, grp_initFit_fu_544_LinearRegression_stubs_data_barrel_s_we0)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state2)) then 
-            LinearRegression_stubs_data_barrel_s_we0 <= grp_initFit_fu_524_LinearRegression_stubs_data_barrel_s_we0;
+            LinearRegression_stubs_data_barrel_s_we0 <= grp_initFit_fu_544_LinearRegression_stubs_data_barrel_s_we0;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state31)) then 
-            LinearRegression_stubs_data_barrel_s_we0 <= grp_killLargestResidual_fu_447_LinearRegression_stubs_data_barrel_s_we0;
+            LinearRegression_stubs_data_barrel_s_we0 <= grp_killLargestResidual_fu_445_LinearRegression_stubs_data_barrel_s_we0;
         else 
             LinearRegression_stubs_data_barrel_s_we0 <= ap_const_logic_0;
         end if; 
     end process;
 
 
-    LinearRegression_stubs_data_barrel_s_we1_assign_proc : process(ap_CS_fsm_state2, grp_initFit_fu_524_LinearRegression_stubs_data_barrel_s_we1)
+    LinearRegression_stubs_data_barrel_s_we1_assign_proc : process(ap_CS_fsm_state2, grp_initFit_fu_544_LinearRegression_stubs_data_barrel_s_we1)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state2)) then 
-            LinearRegression_stubs_data_barrel_s_we1 <= grp_initFit_fu_524_LinearRegression_stubs_data_barrel_s_we1;
+            LinearRegression_stubs_data_barrel_s_we1 <= grp_initFit_fu_544_LinearRegression_stubs_data_barrel_s_we1;
         else 
             LinearRegression_stubs_data_barrel_s_we1 <= ap_const_logic_0;
         end if; 
     end process;
 
 
-    LinearRegression_stubs_data_layerId_s_address0_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_447_LinearRegression_stubs_data_layerId_s_address0, grp_initFit_fu_524_LinearRegression_stubs_data_layerId_s_address0)
+    LinearRegression_stubs_data_layerId_s_address0_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_445_LinearRegression_stubs_data_layerId_s_address0, grp_initFit_fu_544_LinearRegression_stubs_data_layerId_s_address0)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state2)) then 
-            LinearRegression_stubs_data_layerId_s_address0 <= grp_initFit_fu_524_LinearRegression_stubs_data_layerId_s_address0;
+            LinearRegression_stubs_data_layerId_s_address0 <= grp_initFit_fu_544_LinearRegression_stubs_data_layerId_s_address0;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state31)) then 
-            LinearRegression_stubs_data_layerId_s_address0 <= grp_killLargestResidual_fu_447_LinearRegression_stubs_data_layerId_s_address0;
+            LinearRegression_stubs_data_layerId_s_address0 <= grp_killLargestResidual_fu_445_LinearRegression_stubs_data_layerId_s_address0;
         else 
             LinearRegression_stubs_data_layerId_s_address0 <= "XXXX";
         end if; 
     end process;
 
-    LinearRegression_stubs_data_layerId_s_address1 <= grp_initFit_fu_524_LinearRegression_stubs_data_layerId_s_address1;
+    LinearRegression_stubs_data_layerId_s_address1 <= grp_initFit_fu_544_LinearRegression_stubs_data_layerId_s_address1;
 
-    LinearRegression_stubs_data_layerId_s_ce0_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_447_LinearRegression_stubs_data_layerId_s_ce0, grp_initFit_fu_524_LinearRegression_stubs_data_layerId_s_ce0)
+    LinearRegression_stubs_data_layerId_s_ce0_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_445_LinearRegression_stubs_data_layerId_s_ce0, grp_initFit_fu_544_LinearRegression_stubs_data_layerId_s_ce0)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state2)) then 
-            LinearRegression_stubs_data_layerId_s_ce0 <= grp_initFit_fu_524_LinearRegression_stubs_data_layerId_s_ce0;
+            LinearRegression_stubs_data_layerId_s_ce0 <= grp_initFit_fu_544_LinearRegression_stubs_data_layerId_s_ce0;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state31)) then 
-            LinearRegression_stubs_data_layerId_s_ce0 <= grp_killLargestResidual_fu_447_LinearRegression_stubs_data_layerId_s_ce0;
+            LinearRegression_stubs_data_layerId_s_ce0 <= grp_killLargestResidual_fu_445_LinearRegression_stubs_data_layerId_s_ce0;
         else 
             LinearRegression_stubs_data_layerId_s_ce0 <= ap_const_logic_0;
         end if; 
     end process;
 
 
-    LinearRegression_stubs_data_layerId_s_ce1_assign_proc : process(ap_CS_fsm_state2, grp_initFit_fu_524_LinearRegression_stubs_data_layerId_s_ce1)
+    LinearRegression_stubs_data_layerId_s_ce1_assign_proc : process(ap_CS_fsm_state2, grp_initFit_fu_544_LinearRegression_stubs_data_layerId_s_ce1)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state2)) then 
-            LinearRegression_stubs_data_layerId_s_ce1 <= grp_initFit_fu_524_LinearRegression_stubs_data_layerId_s_ce1;
+            LinearRegression_stubs_data_layerId_s_ce1 <= grp_initFit_fu_544_LinearRegression_stubs_data_layerId_s_ce1;
         else 
             LinearRegression_stubs_data_layerId_s_ce1 <= ap_const_logic_0;
         end if; 
     end process;
 
 
-    LinearRegression_stubs_data_layerId_s_d0_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_447_LinearRegression_stubs_data_layerId_s_d0, grp_initFit_fu_524_LinearRegression_stubs_data_layerId_s_d0)
+    LinearRegression_stubs_data_layerId_s_d0_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_445_LinearRegression_stubs_data_layerId_s_d0, grp_initFit_fu_544_LinearRegression_stubs_data_layerId_s_d0)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state2)) then 
-            LinearRegression_stubs_data_layerId_s_d0 <= grp_initFit_fu_524_LinearRegression_stubs_data_layerId_s_d0;
+            LinearRegression_stubs_data_layerId_s_d0 <= grp_initFit_fu_544_LinearRegression_stubs_data_layerId_s_d0;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state31)) then 
-            LinearRegression_stubs_data_layerId_s_d0 <= grp_killLargestResidual_fu_447_LinearRegression_stubs_data_layerId_s_d0;
+            LinearRegression_stubs_data_layerId_s_d0 <= grp_killLargestResidual_fu_445_LinearRegression_stubs_data_layerId_s_d0;
         else 
             LinearRegression_stubs_data_layerId_s_d0 <= "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX";
         end if; 
     end process;
 
-    LinearRegression_stubs_data_layerId_s_d1 <= grp_initFit_fu_524_LinearRegression_stubs_data_layerId_s_d1;
+    LinearRegression_stubs_data_layerId_s_d1 <= grp_initFit_fu_544_LinearRegression_stubs_data_layerId_s_d1;
 
-    LinearRegression_stubs_data_layerId_s_we0_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_447_LinearRegression_stubs_data_layerId_s_we0, grp_initFit_fu_524_LinearRegression_stubs_data_layerId_s_we0)
+    LinearRegression_stubs_data_layerId_s_we0_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_445_LinearRegression_stubs_data_layerId_s_we0, grp_initFit_fu_544_LinearRegression_stubs_data_layerId_s_we0)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state2)) then 
-            LinearRegression_stubs_data_layerId_s_we0 <= grp_initFit_fu_524_LinearRegression_stubs_data_layerId_s_we0;
+            LinearRegression_stubs_data_layerId_s_we0 <= grp_initFit_fu_544_LinearRegression_stubs_data_layerId_s_we0;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state31)) then 
-            LinearRegression_stubs_data_layerId_s_we0 <= grp_killLargestResidual_fu_447_LinearRegression_stubs_data_layerId_s_we0;
+            LinearRegression_stubs_data_layerId_s_we0 <= grp_killLargestResidual_fu_445_LinearRegression_stubs_data_layerId_s_we0;
         else 
             LinearRegression_stubs_data_layerId_s_we0 <= ap_const_logic_0;
         end if; 
     end process;
 
 
-    LinearRegression_stubs_data_layerId_s_we1_assign_proc : process(ap_CS_fsm_state2, grp_initFit_fu_524_LinearRegression_stubs_data_layerId_s_we1)
+    LinearRegression_stubs_data_layerId_s_we1_assign_proc : process(ap_CS_fsm_state2, grp_initFit_fu_544_LinearRegression_stubs_data_layerId_s_we1)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state2)) then 
-            LinearRegression_stubs_data_layerId_s_we1 <= grp_initFit_fu_524_LinearRegression_stubs_data_layerId_s_we1;
+            LinearRegression_stubs_data_layerId_s_we1 <= grp_initFit_fu_544_LinearRegression_stubs_data_layerId_s_we1;
         else 
             LinearRegression_stubs_data_layerId_s_we1 <= ap_const_logic_0;
         end if; 
     end process;
 
 
-    LinearRegression_stubs_data_phi_s_address0_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_447_LinearRegression_stubs_data_phi_s_address0, grp_initFit_fu_524_LinearRegression_stubs_data_phi_s_address0)
+    LinearRegression_stubs_data_phi_s_address0_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_445_LinearRegression_stubs_data_phi_s_address0, grp_initFit_fu_544_LinearRegression_stubs_data_phi_s_address0)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state2)) then 
-            LinearRegression_stubs_data_phi_s_address0 <= grp_initFit_fu_524_LinearRegression_stubs_data_phi_s_address0;
+            LinearRegression_stubs_data_phi_s_address0 <= grp_initFit_fu_544_LinearRegression_stubs_data_phi_s_address0;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state31)) then 
-            LinearRegression_stubs_data_phi_s_address0 <= grp_killLargestResidual_fu_447_LinearRegression_stubs_data_phi_s_address0;
+            LinearRegression_stubs_data_phi_s_address0 <= grp_killLargestResidual_fu_445_LinearRegression_stubs_data_phi_s_address0;
         else 
             LinearRegression_stubs_data_phi_s_address0 <= "XXXX";
         end if; 
     end process;
 
-    LinearRegression_stubs_data_phi_s_address1 <= grp_initFit_fu_524_LinearRegression_stubs_data_phi_s_address1;
+    LinearRegression_stubs_data_phi_s_address1 <= grp_initFit_fu_544_LinearRegression_stubs_data_phi_s_address1;
 
-    LinearRegression_stubs_data_phi_s_ce0_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_447_LinearRegression_stubs_data_phi_s_ce0, grp_initFit_fu_524_LinearRegression_stubs_data_phi_s_ce0)
+    LinearRegression_stubs_data_phi_s_ce0_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_445_LinearRegression_stubs_data_phi_s_ce0, grp_initFit_fu_544_LinearRegression_stubs_data_phi_s_ce0)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state2)) then 
-            LinearRegression_stubs_data_phi_s_ce0 <= grp_initFit_fu_524_LinearRegression_stubs_data_phi_s_ce0;
+            LinearRegression_stubs_data_phi_s_ce0 <= grp_initFit_fu_544_LinearRegression_stubs_data_phi_s_ce0;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state31)) then 
-            LinearRegression_stubs_data_phi_s_ce0 <= grp_killLargestResidual_fu_447_LinearRegression_stubs_data_phi_s_ce0;
+            LinearRegression_stubs_data_phi_s_ce0 <= grp_killLargestResidual_fu_445_LinearRegression_stubs_data_phi_s_ce0;
         else 
             LinearRegression_stubs_data_phi_s_ce0 <= ap_const_logic_0;
         end if; 
     end process;
 
 
-    LinearRegression_stubs_data_phi_s_ce1_assign_proc : process(ap_CS_fsm_state2, grp_initFit_fu_524_LinearRegression_stubs_data_phi_s_ce1)
+    LinearRegression_stubs_data_phi_s_ce1_assign_proc : process(ap_CS_fsm_state2, grp_initFit_fu_544_LinearRegression_stubs_data_phi_s_ce1)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state2)) then 
-            LinearRegression_stubs_data_phi_s_ce1 <= grp_initFit_fu_524_LinearRegression_stubs_data_phi_s_ce1;
+            LinearRegression_stubs_data_phi_s_ce1 <= grp_initFit_fu_544_LinearRegression_stubs_data_phi_s_ce1;
         else 
             LinearRegression_stubs_data_phi_s_ce1 <= ap_const_logic_0;
         end if; 
     end process;
 
 
-    LinearRegression_stubs_data_phi_s_d0_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_447_LinearRegression_stubs_data_phi_s_d0, grp_initFit_fu_524_LinearRegression_stubs_data_phi_s_d0)
+    LinearRegression_stubs_data_phi_s_d0_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_445_LinearRegression_stubs_data_phi_s_d0, grp_initFit_fu_544_LinearRegression_stubs_data_phi_s_d0)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state2)) then 
-            LinearRegression_stubs_data_phi_s_d0 <= grp_initFit_fu_524_LinearRegression_stubs_data_phi_s_d0;
+            LinearRegression_stubs_data_phi_s_d0 <= grp_initFit_fu_544_LinearRegression_stubs_data_phi_s_d0;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state31)) then 
-            LinearRegression_stubs_data_phi_s_d0 <= grp_killLargestResidual_fu_447_LinearRegression_stubs_data_phi_s_d0;
+            LinearRegression_stubs_data_phi_s_d0 <= grp_killLargestResidual_fu_445_LinearRegression_stubs_data_phi_s_d0;
         else 
             LinearRegression_stubs_data_phi_s_d0 <= "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX";
         end if; 
     end process;
 
-    LinearRegression_stubs_data_phi_s_d1 <= grp_initFit_fu_524_LinearRegression_stubs_data_phi_s_d1;
+    LinearRegression_stubs_data_phi_s_d1 <= grp_initFit_fu_544_LinearRegression_stubs_data_phi_s_d1;
 
-    LinearRegression_stubs_data_phi_s_we0_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_447_LinearRegression_stubs_data_phi_s_we0, grp_initFit_fu_524_LinearRegression_stubs_data_phi_s_we0)
+    LinearRegression_stubs_data_phi_s_we0_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_445_LinearRegression_stubs_data_phi_s_we0, grp_initFit_fu_544_LinearRegression_stubs_data_phi_s_we0)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state2)) then 
-            LinearRegression_stubs_data_phi_s_we0 <= grp_initFit_fu_524_LinearRegression_stubs_data_phi_s_we0;
+            LinearRegression_stubs_data_phi_s_we0 <= grp_initFit_fu_544_LinearRegression_stubs_data_phi_s_we0;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state31)) then 
-            LinearRegression_stubs_data_phi_s_we0 <= grp_killLargestResidual_fu_447_LinearRegression_stubs_data_phi_s_we0;
+            LinearRegression_stubs_data_phi_s_we0 <= grp_killLargestResidual_fu_445_LinearRegression_stubs_data_phi_s_we0;
         else 
             LinearRegression_stubs_data_phi_s_we0 <= ap_const_logic_0;
         end if; 
     end process;
 
 
-    LinearRegression_stubs_data_phi_s_we1_assign_proc : process(ap_CS_fsm_state2, grp_initFit_fu_524_LinearRegression_stubs_data_phi_s_we1)
+    LinearRegression_stubs_data_phi_s_we1_assign_proc : process(ap_CS_fsm_state2, grp_initFit_fu_544_LinearRegression_stubs_data_phi_s_we1)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state2)) then 
-            LinearRegression_stubs_data_phi_s_we1 <= grp_initFit_fu_524_LinearRegression_stubs_data_phi_s_we1;
+            LinearRegression_stubs_data_phi_s_we1 <= grp_initFit_fu_544_LinearRegression_stubs_data_phi_s_we1;
         else 
             LinearRegression_stubs_data_phi_s_we1 <= ap_const_logic_0;
         end if; 
     end process;
 
 
-    LinearRegression_stubs_data_psModule_s_address0_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_447_LinearRegression_stubs_data_psModule_s_address0, grp_initFit_fu_524_LinearRegression_stubs_data_psModule_s_address0)
+    LinearRegression_stubs_data_psModule_s_address0_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_445_LinearRegression_stubs_data_psModule_s_address0, grp_initFit_fu_544_LinearRegression_stubs_data_psModule_s_address0)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state2)) then 
-            LinearRegression_stubs_data_psModule_s_address0 <= grp_initFit_fu_524_LinearRegression_stubs_data_psModule_s_address0;
+            LinearRegression_stubs_data_psModule_s_address0 <= grp_initFit_fu_544_LinearRegression_stubs_data_psModule_s_address0;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state31)) then 
-            LinearRegression_stubs_data_psModule_s_address0 <= grp_killLargestResidual_fu_447_LinearRegression_stubs_data_psModule_s_address0;
+            LinearRegression_stubs_data_psModule_s_address0 <= grp_killLargestResidual_fu_445_LinearRegression_stubs_data_psModule_s_address0;
         else 
             LinearRegression_stubs_data_psModule_s_address0 <= "XXXX";
         end if; 
     end process;
 
-    LinearRegression_stubs_data_psModule_s_address1 <= grp_initFit_fu_524_LinearRegression_stubs_data_psModule_s_address1;
+    LinearRegression_stubs_data_psModule_s_address1 <= grp_initFit_fu_544_LinearRegression_stubs_data_psModule_s_address1;
 
-    LinearRegression_stubs_data_psModule_s_ce0_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_447_LinearRegression_stubs_data_psModule_s_ce0, grp_initFit_fu_524_LinearRegression_stubs_data_psModule_s_ce0)
+    LinearRegression_stubs_data_psModule_s_ce0_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_445_LinearRegression_stubs_data_psModule_s_ce0, grp_initFit_fu_544_LinearRegression_stubs_data_psModule_s_ce0)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state2)) then 
-            LinearRegression_stubs_data_psModule_s_ce0 <= grp_initFit_fu_524_LinearRegression_stubs_data_psModule_s_ce0;
+            LinearRegression_stubs_data_psModule_s_ce0 <= grp_initFit_fu_544_LinearRegression_stubs_data_psModule_s_ce0;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state31)) then 
-            LinearRegression_stubs_data_psModule_s_ce0 <= grp_killLargestResidual_fu_447_LinearRegression_stubs_data_psModule_s_ce0;
+            LinearRegression_stubs_data_psModule_s_ce0 <= grp_killLargestResidual_fu_445_LinearRegression_stubs_data_psModule_s_ce0;
         else 
             LinearRegression_stubs_data_psModule_s_ce0 <= ap_const_logic_0;
         end if; 
     end process;
 
 
-    LinearRegression_stubs_data_psModule_s_ce1_assign_proc : process(ap_CS_fsm_state2, grp_initFit_fu_524_LinearRegression_stubs_data_psModule_s_ce1)
+    LinearRegression_stubs_data_psModule_s_ce1_assign_proc : process(ap_CS_fsm_state2, grp_initFit_fu_544_LinearRegression_stubs_data_psModule_s_ce1)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state2)) then 
-            LinearRegression_stubs_data_psModule_s_ce1 <= grp_initFit_fu_524_LinearRegression_stubs_data_psModule_s_ce1;
+            LinearRegression_stubs_data_psModule_s_ce1 <= grp_initFit_fu_544_LinearRegression_stubs_data_psModule_s_ce1;
         else 
             LinearRegression_stubs_data_psModule_s_ce1 <= ap_const_logic_0;
         end if; 
     end process;
 
 
-    LinearRegression_stubs_data_psModule_s_d0_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_447_LinearRegression_stubs_data_psModule_s_d0, grp_initFit_fu_524_LinearRegression_stubs_data_psModule_s_d0)
+    LinearRegression_stubs_data_psModule_s_d0_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_445_LinearRegression_stubs_data_psModule_s_d0, grp_initFit_fu_544_LinearRegression_stubs_data_psModule_s_d0)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state2)) then 
-            LinearRegression_stubs_data_psModule_s_d0 <= grp_initFit_fu_524_LinearRegression_stubs_data_psModule_s_d0;
+            LinearRegression_stubs_data_psModule_s_d0 <= grp_initFit_fu_544_LinearRegression_stubs_data_psModule_s_d0;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state31)) then 
-            LinearRegression_stubs_data_psModule_s_d0 <= grp_killLargestResidual_fu_447_LinearRegression_stubs_data_psModule_s_d0;
+            LinearRegression_stubs_data_psModule_s_d0 <= grp_killLargestResidual_fu_445_LinearRegression_stubs_data_psModule_s_d0;
         else 
             LinearRegression_stubs_data_psModule_s_d0 <= "X";
         end if; 
     end process;
 
-    LinearRegression_stubs_data_psModule_s_d1 <= grp_initFit_fu_524_LinearRegression_stubs_data_psModule_s_d1;
+    LinearRegression_stubs_data_psModule_s_d1 <= grp_initFit_fu_544_LinearRegression_stubs_data_psModule_s_d1;
 
-    LinearRegression_stubs_data_psModule_s_we0_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_447_LinearRegression_stubs_data_psModule_s_we0, grp_initFit_fu_524_LinearRegression_stubs_data_psModule_s_we0)
+    LinearRegression_stubs_data_psModule_s_we0_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_445_LinearRegression_stubs_data_psModule_s_we0, grp_initFit_fu_544_LinearRegression_stubs_data_psModule_s_we0)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state2)) then 
-            LinearRegression_stubs_data_psModule_s_we0 <= grp_initFit_fu_524_LinearRegression_stubs_data_psModule_s_we0;
+            LinearRegression_stubs_data_psModule_s_we0 <= grp_initFit_fu_544_LinearRegression_stubs_data_psModule_s_we0;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state31)) then 
-            LinearRegression_stubs_data_psModule_s_we0 <= grp_killLargestResidual_fu_447_LinearRegression_stubs_data_psModule_s_we0;
+            LinearRegression_stubs_data_psModule_s_we0 <= grp_killLargestResidual_fu_445_LinearRegression_stubs_data_psModule_s_we0;
         else 
             LinearRegression_stubs_data_psModule_s_we0 <= ap_const_logic_0;
         end if; 
     end process;
 
 
-    LinearRegression_stubs_data_psModule_s_we1_assign_proc : process(ap_CS_fsm_state2, grp_initFit_fu_524_LinearRegression_stubs_data_psModule_s_we1)
+    LinearRegression_stubs_data_psModule_s_we1_assign_proc : process(ap_CS_fsm_state2, grp_initFit_fu_544_LinearRegression_stubs_data_psModule_s_we1)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state2)) then 
-            LinearRegression_stubs_data_psModule_s_we1 <= grp_initFit_fu_524_LinearRegression_stubs_data_psModule_s_we1;
+            LinearRegression_stubs_data_psModule_s_we1 <= grp_initFit_fu_544_LinearRegression_stubs_data_psModule_s_we1;
         else 
             LinearRegression_stubs_data_psModule_s_we1 <= ap_const_logic_0;
         end if; 
     end process;
 
 
-    LinearRegression_stubs_data_r_s_address0_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_447_LinearRegression_stubs_data_r_s_address0, grp_initFit_fu_524_LinearRegression_stubs_data_r_s_address0)
+    LinearRegression_stubs_data_r_s_address0_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_445_LinearRegression_stubs_data_r_s_address0, grp_initFit_fu_544_LinearRegression_stubs_data_r_s_address0)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state2)) then 
-            LinearRegression_stubs_data_r_s_address0 <= grp_initFit_fu_524_LinearRegression_stubs_data_r_s_address0;
+            LinearRegression_stubs_data_r_s_address0 <= grp_initFit_fu_544_LinearRegression_stubs_data_r_s_address0;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state31)) then 
-            LinearRegression_stubs_data_r_s_address0 <= grp_killLargestResidual_fu_447_LinearRegression_stubs_data_r_s_address0;
+            LinearRegression_stubs_data_r_s_address0 <= grp_killLargestResidual_fu_445_LinearRegression_stubs_data_r_s_address0;
         else 
             LinearRegression_stubs_data_r_s_address0 <= "XXXX";
         end if; 
     end process;
 
-    LinearRegression_stubs_data_r_s_address1 <= grp_initFit_fu_524_LinearRegression_stubs_data_r_s_address1;
+    LinearRegression_stubs_data_r_s_address1 <= grp_initFit_fu_544_LinearRegression_stubs_data_r_s_address1;
 
-    LinearRegression_stubs_data_r_s_ce0_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_447_LinearRegression_stubs_data_r_s_ce0, grp_initFit_fu_524_LinearRegression_stubs_data_r_s_ce0)
+    LinearRegression_stubs_data_r_s_ce0_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_445_LinearRegression_stubs_data_r_s_ce0, grp_initFit_fu_544_LinearRegression_stubs_data_r_s_ce0)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state2)) then 
-            LinearRegression_stubs_data_r_s_ce0 <= grp_initFit_fu_524_LinearRegression_stubs_data_r_s_ce0;
+            LinearRegression_stubs_data_r_s_ce0 <= grp_initFit_fu_544_LinearRegression_stubs_data_r_s_ce0;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state31)) then 
-            LinearRegression_stubs_data_r_s_ce0 <= grp_killLargestResidual_fu_447_LinearRegression_stubs_data_r_s_ce0;
+            LinearRegression_stubs_data_r_s_ce0 <= grp_killLargestResidual_fu_445_LinearRegression_stubs_data_r_s_ce0;
         else 
             LinearRegression_stubs_data_r_s_ce0 <= ap_const_logic_0;
         end if; 
     end process;
 
 
-    LinearRegression_stubs_data_r_s_ce1_assign_proc : process(ap_CS_fsm_state2, grp_initFit_fu_524_LinearRegression_stubs_data_r_s_ce1)
+    LinearRegression_stubs_data_r_s_ce1_assign_proc : process(ap_CS_fsm_state2, grp_initFit_fu_544_LinearRegression_stubs_data_r_s_ce1)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state2)) then 
-            LinearRegression_stubs_data_r_s_ce1 <= grp_initFit_fu_524_LinearRegression_stubs_data_r_s_ce1;
+            LinearRegression_stubs_data_r_s_ce1 <= grp_initFit_fu_544_LinearRegression_stubs_data_r_s_ce1;
         else 
             LinearRegression_stubs_data_r_s_ce1 <= ap_const_logic_0;
         end if; 
     end process;
 
 
-    LinearRegression_stubs_data_r_s_d0_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_447_LinearRegression_stubs_data_r_s_d0, grp_initFit_fu_524_LinearRegression_stubs_data_r_s_d0)
+    LinearRegression_stubs_data_r_s_d0_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_445_LinearRegression_stubs_data_r_s_d0, grp_initFit_fu_544_LinearRegression_stubs_data_r_s_d0)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state2)) then 
-            LinearRegression_stubs_data_r_s_d0 <= grp_initFit_fu_524_LinearRegression_stubs_data_r_s_d0;
+            LinearRegression_stubs_data_r_s_d0 <= grp_initFit_fu_544_LinearRegression_stubs_data_r_s_d0;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state31)) then 
-            LinearRegression_stubs_data_r_s_d0 <= grp_killLargestResidual_fu_447_LinearRegression_stubs_data_r_s_d0;
+            LinearRegression_stubs_data_r_s_d0 <= grp_killLargestResidual_fu_445_LinearRegression_stubs_data_r_s_d0;
         else 
             LinearRegression_stubs_data_r_s_d0 <= "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX";
         end if; 
     end process;
 
-    LinearRegression_stubs_data_r_s_d1 <= grp_initFit_fu_524_LinearRegression_stubs_data_r_s_d1;
+    LinearRegression_stubs_data_r_s_d1 <= grp_initFit_fu_544_LinearRegression_stubs_data_r_s_d1;
 
-    LinearRegression_stubs_data_r_s_we0_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_447_LinearRegression_stubs_data_r_s_we0, grp_initFit_fu_524_LinearRegression_stubs_data_r_s_we0)
+    LinearRegression_stubs_data_r_s_we0_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_445_LinearRegression_stubs_data_r_s_we0, grp_initFit_fu_544_LinearRegression_stubs_data_r_s_we0)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state2)) then 
-            LinearRegression_stubs_data_r_s_we0 <= grp_initFit_fu_524_LinearRegression_stubs_data_r_s_we0;
+            LinearRegression_stubs_data_r_s_we0 <= grp_initFit_fu_544_LinearRegression_stubs_data_r_s_we0;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state31)) then 
-            LinearRegression_stubs_data_r_s_we0 <= grp_killLargestResidual_fu_447_LinearRegression_stubs_data_r_s_we0;
+            LinearRegression_stubs_data_r_s_we0 <= grp_killLargestResidual_fu_445_LinearRegression_stubs_data_r_s_we0;
         else 
             LinearRegression_stubs_data_r_s_we0 <= ap_const_logic_0;
         end if; 
     end process;
 
 
-    LinearRegression_stubs_data_r_s_we1_assign_proc : process(ap_CS_fsm_state2, grp_initFit_fu_524_LinearRegression_stubs_data_r_s_we1)
+    LinearRegression_stubs_data_r_s_we1_assign_proc : process(ap_CS_fsm_state2, grp_initFit_fu_544_LinearRegression_stubs_data_r_s_we1)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state2)) then 
-            LinearRegression_stubs_data_r_s_we1 <= grp_initFit_fu_524_LinearRegression_stubs_data_r_s_we1;
+            LinearRegression_stubs_data_r_s_we1 <= grp_initFit_fu_544_LinearRegression_stubs_data_r_s_we1;
         else 
             LinearRegression_stubs_data_r_s_we1 <= ap_const_logic_0;
         end if; 
     end process;
 
 
-    LinearRegression_stubs_data_settings_chosenRofPhi_s_address0_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_447_LinearRegression_stubs_data_settings_chosenRofPhi_s_address0, grp_initFit_fu_524_LinearRegression_stubs_data_settings_chosenRofPhi_s_address0)
+    LinearRegression_stubs_data_settings_chosenRofPhi_s_address0_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_445_LinearRegression_stubs_data_settings_chosenRofPhi_s_address0, grp_initFit_fu_544_LinearRegression_stubs_data_settings_chosenRofPhi_s_address0)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state2)) then 
-            LinearRegression_stubs_data_settings_chosenRofPhi_s_address0 <= grp_initFit_fu_524_LinearRegression_stubs_data_settings_chosenRofPhi_s_address0;
+            LinearRegression_stubs_data_settings_chosenRofPhi_s_address0 <= grp_initFit_fu_544_LinearRegression_stubs_data_settings_chosenRofPhi_s_address0;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state31)) then 
-            LinearRegression_stubs_data_settings_chosenRofPhi_s_address0 <= grp_killLargestResidual_fu_447_LinearRegression_stubs_data_settings_chosenRofPhi_s_address0;
+            LinearRegression_stubs_data_settings_chosenRofPhi_s_address0 <= grp_killLargestResidual_fu_445_LinearRegression_stubs_data_settings_chosenRofPhi_s_address0;
         else 
             LinearRegression_stubs_data_settings_chosenRofPhi_s_address0 <= "XXXX";
         end if; 
     end process;
 
-    LinearRegression_stubs_data_settings_chosenRofPhi_s_address1 <= grp_initFit_fu_524_LinearRegression_stubs_data_settings_chosenRofPhi_s_address1;
+    LinearRegression_stubs_data_settings_chosenRofPhi_s_address1 <= grp_initFit_fu_544_LinearRegression_stubs_data_settings_chosenRofPhi_s_address1;
 
-    LinearRegression_stubs_data_settings_chosenRofPhi_s_ce0_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_447_LinearRegression_stubs_data_settings_chosenRofPhi_s_ce0, grp_initFit_fu_524_LinearRegression_stubs_data_settings_chosenRofPhi_s_ce0)
+    LinearRegression_stubs_data_settings_chosenRofPhi_s_ce0_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_445_LinearRegression_stubs_data_settings_chosenRofPhi_s_ce0, grp_initFit_fu_544_LinearRegression_stubs_data_settings_chosenRofPhi_s_ce0)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state2)) then 
-            LinearRegression_stubs_data_settings_chosenRofPhi_s_ce0 <= grp_initFit_fu_524_LinearRegression_stubs_data_settings_chosenRofPhi_s_ce0;
+            LinearRegression_stubs_data_settings_chosenRofPhi_s_ce0 <= grp_initFit_fu_544_LinearRegression_stubs_data_settings_chosenRofPhi_s_ce0;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state31)) then 
-            LinearRegression_stubs_data_settings_chosenRofPhi_s_ce0 <= grp_killLargestResidual_fu_447_LinearRegression_stubs_data_settings_chosenRofPhi_s_ce0;
+            LinearRegression_stubs_data_settings_chosenRofPhi_s_ce0 <= grp_killLargestResidual_fu_445_LinearRegression_stubs_data_settings_chosenRofPhi_s_ce0;
         else 
             LinearRegression_stubs_data_settings_chosenRofPhi_s_ce0 <= ap_const_logic_0;
         end if; 
     end process;
 
 
-    LinearRegression_stubs_data_settings_chosenRofPhi_s_ce1_assign_proc : process(ap_CS_fsm_state2, grp_initFit_fu_524_LinearRegression_stubs_data_settings_chosenRofPhi_s_ce1)
+    LinearRegression_stubs_data_settings_chosenRofPhi_s_ce1_assign_proc : process(ap_CS_fsm_state2, grp_initFit_fu_544_LinearRegression_stubs_data_settings_chosenRofPhi_s_ce1)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state2)) then 
-            LinearRegression_stubs_data_settings_chosenRofPhi_s_ce1 <= grp_initFit_fu_524_LinearRegression_stubs_data_settings_chosenRofPhi_s_ce1;
+            LinearRegression_stubs_data_settings_chosenRofPhi_s_ce1 <= grp_initFit_fu_544_LinearRegression_stubs_data_settings_chosenRofPhi_s_ce1;
         else 
             LinearRegression_stubs_data_settings_chosenRofPhi_s_ce1 <= ap_const_logic_0;
         end if; 
     end process;
 
 
-    LinearRegression_stubs_data_settings_chosenRofPhi_s_d0_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_447_LinearRegression_stubs_data_settings_chosenRofPhi_s_d0, grp_initFit_fu_524_LinearRegression_stubs_data_settings_chosenRofPhi_s_d0)
+    LinearRegression_stubs_data_settings_chosenRofPhi_s_d0_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_445_LinearRegression_stubs_data_settings_chosenRofPhi_s_d0, grp_initFit_fu_544_LinearRegression_stubs_data_settings_chosenRofPhi_s_d0)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state2)) then 
-            LinearRegression_stubs_data_settings_chosenRofPhi_s_d0 <= grp_initFit_fu_524_LinearRegression_stubs_data_settings_chosenRofPhi_s_d0;
+            LinearRegression_stubs_data_settings_chosenRofPhi_s_d0 <= grp_initFit_fu_544_LinearRegression_stubs_data_settings_chosenRofPhi_s_d0;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state31)) then 
-            LinearRegression_stubs_data_settings_chosenRofPhi_s_d0 <= grp_killLargestResidual_fu_447_LinearRegression_stubs_data_settings_chosenRofPhi_s_d0;
+            LinearRegression_stubs_data_settings_chosenRofPhi_s_d0 <= grp_killLargestResidual_fu_445_LinearRegression_stubs_data_settings_chosenRofPhi_s_d0;
         else 
             LinearRegression_stubs_data_settings_chosenRofPhi_s_d0 <= "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX";
         end if; 
     end process;
 
-    LinearRegression_stubs_data_settings_chosenRofPhi_s_d1 <= grp_initFit_fu_524_LinearRegression_stubs_data_settings_chosenRofPhi_s_d1;
+    LinearRegression_stubs_data_settings_chosenRofPhi_s_d1 <= grp_initFit_fu_544_LinearRegression_stubs_data_settings_chosenRofPhi_s_d1;
 
-    LinearRegression_stubs_data_settings_chosenRofPhi_s_we0_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_447_LinearRegression_stubs_data_settings_chosenRofPhi_s_we0, grp_initFit_fu_524_LinearRegression_stubs_data_settings_chosenRofPhi_s_we0)
+    LinearRegression_stubs_data_settings_chosenRofPhi_s_we0_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_445_LinearRegression_stubs_data_settings_chosenRofPhi_s_we0, grp_initFit_fu_544_LinearRegression_stubs_data_settings_chosenRofPhi_s_we0)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state2)) then 
-            LinearRegression_stubs_data_settings_chosenRofPhi_s_we0 <= grp_initFit_fu_524_LinearRegression_stubs_data_settings_chosenRofPhi_s_we0;
+            LinearRegression_stubs_data_settings_chosenRofPhi_s_we0 <= grp_initFit_fu_544_LinearRegression_stubs_data_settings_chosenRofPhi_s_we0;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state31)) then 
-            LinearRegression_stubs_data_settings_chosenRofPhi_s_we0 <= grp_killLargestResidual_fu_447_LinearRegression_stubs_data_settings_chosenRofPhi_s_we0;
+            LinearRegression_stubs_data_settings_chosenRofPhi_s_we0 <= grp_killLargestResidual_fu_445_LinearRegression_stubs_data_settings_chosenRofPhi_s_we0;
         else 
             LinearRegression_stubs_data_settings_chosenRofPhi_s_we0 <= ap_const_logic_0;
         end if; 
     end process;
 
 
-    LinearRegression_stubs_data_settings_chosenRofPhi_s_we1_assign_proc : process(ap_CS_fsm_state2, grp_initFit_fu_524_LinearRegression_stubs_data_settings_chosenRofPhi_s_we1)
+    LinearRegression_stubs_data_settings_chosenRofPhi_s_we1_assign_proc : process(ap_CS_fsm_state2, grp_initFit_fu_544_LinearRegression_stubs_data_settings_chosenRofPhi_s_we1)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state2)) then 
-            LinearRegression_stubs_data_settings_chosenRofPhi_s_we1 <= grp_initFit_fu_524_LinearRegression_stubs_data_settings_chosenRofPhi_s_we1;
+            LinearRegression_stubs_data_settings_chosenRofPhi_s_we1 <= grp_initFit_fu_544_LinearRegression_stubs_data_settings_chosenRofPhi_s_we1;
         else 
             LinearRegression_stubs_data_settings_chosenRofPhi_s_we1 <= ap_const_logic_0;
         end if; 
     end process;
 
 
-    LinearRegression_stubs_data_settings_chosenRofZ_s_address0_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_447_LinearRegression_stubs_data_settings_chosenRofZ_s_address0, grp_initFit_fu_524_LinearRegression_stubs_data_settings_chosenRofZ_s_address0)
+    LinearRegression_stubs_data_settings_chosenRofZ_s_address0_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_445_LinearRegression_stubs_data_settings_chosenRofZ_s_address0, grp_initFit_fu_544_LinearRegression_stubs_data_settings_chosenRofZ_s_address0)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state2)) then 
-            LinearRegression_stubs_data_settings_chosenRofZ_s_address0 <= grp_initFit_fu_524_LinearRegression_stubs_data_settings_chosenRofZ_s_address0;
+            LinearRegression_stubs_data_settings_chosenRofZ_s_address0 <= grp_initFit_fu_544_LinearRegression_stubs_data_settings_chosenRofZ_s_address0;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state31)) then 
-            LinearRegression_stubs_data_settings_chosenRofZ_s_address0 <= grp_killLargestResidual_fu_447_LinearRegression_stubs_data_settings_chosenRofZ_s_address0;
+            LinearRegression_stubs_data_settings_chosenRofZ_s_address0 <= grp_killLargestResidual_fu_445_LinearRegression_stubs_data_settings_chosenRofZ_s_address0;
         else 
             LinearRegression_stubs_data_settings_chosenRofZ_s_address0 <= "XXXX";
         end if; 
     end process;
 
-    LinearRegression_stubs_data_settings_chosenRofZ_s_address1 <= grp_initFit_fu_524_LinearRegression_stubs_data_settings_chosenRofZ_s_address1;
+    LinearRegression_stubs_data_settings_chosenRofZ_s_address1 <= grp_initFit_fu_544_LinearRegression_stubs_data_settings_chosenRofZ_s_address1;
 
-    LinearRegression_stubs_data_settings_chosenRofZ_s_ce0_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_447_LinearRegression_stubs_data_settings_chosenRofZ_s_ce0, grp_initFit_fu_524_LinearRegression_stubs_data_settings_chosenRofZ_s_ce0)
+    LinearRegression_stubs_data_settings_chosenRofZ_s_ce0_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_445_LinearRegression_stubs_data_settings_chosenRofZ_s_ce0, grp_initFit_fu_544_LinearRegression_stubs_data_settings_chosenRofZ_s_ce0)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state2)) then 
-            LinearRegression_stubs_data_settings_chosenRofZ_s_ce0 <= grp_initFit_fu_524_LinearRegression_stubs_data_settings_chosenRofZ_s_ce0;
+            LinearRegression_stubs_data_settings_chosenRofZ_s_ce0 <= grp_initFit_fu_544_LinearRegression_stubs_data_settings_chosenRofZ_s_ce0;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state31)) then 
-            LinearRegression_stubs_data_settings_chosenRofZ_s_ce0 <= grp_killLargestResidual_fu_447_LinearRegression_stubs_data_settings_chosenRofZ_s_ce0;
+            LinearRegression_stubs_data_settings_chosenRofZ_s_ce0 <= grp_killLargestResidual_fu_445_LinearRegression_stubs_data_settings_chosenRofZ_s_ce0;
         else 
             LinearRegression_stubs_data_settings_chosenRofZ_s_ce0 <= ap_const_logic_0;
         end if; 
     end process;
 
 
-    LinearRegression_stubs_data_settings_chosenRofZ_s_ce1_assign_proc : process(ap_CS_fsm_state2, grp_initFit_fu_524_LinearRegression_stubs_data_settings_chosenRofZ_s_ce1)
+    LinearRegression_stubs_data_settings_chosenRofZ_s_ce1_assign_proc : process(ap_CS_fsm_state2, grp_initFit_fu_544_LinearRegression_stubs_data_settings_chosenRofZ_s_ce1)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state2)) then 
-            LinearRegression_stubs_data_settings_chosenRofZ_s_ce1 <= grp_initFit_fu_524_LinearRegression_stubs_data_settings_chosenRofZ_s_ce1;
+            LinearRegression_stubs_data_settings_chosenRofZ_s_ce1 <= grp_initFit_fu_544_LinearRegression_stubs_data_settings_chosenRofZ_s_ce1;
         else 
             LinearRegression_stubs_data_settings_chosenRofZ_s_ce1 <= ap_const_logic_0;
         end if; 
     end process;
 
 
-    LinearRegression_stubs_data_settings_chosenRofZ_s_d0_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_447_LinearRegression_stubs_data_settings_chosenRofZ_s_d0, grp_initFit_fu_524_LinearRegression_stubs_data_settings_chosenRofZ_s_d0)
+    LinearRegression_stubs_data_settings_chosenRofZ_s_d0_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_445_LinearRegression_stubs_data_settings_chosenRofZ_s_d0, grp_initFit_fu_544_LinearRegression_stubs_data_settings_chosenRofZ_s_d0)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state2)) then 
-            LinearRegression_stubs_data_settings_chosenRofZ_s_d0 <= grp_initFit_fu_524_LinearRegression_stubs_data_settings_chosenRofZ_s_d0;
+            LinearRegression_stubs_data_settings_chosenRofZ_s_d0 <= grp_initFit_fu_544_LinearRegression_stubs_data_settings_chosenRofZ_s_d0;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state31)) then 
-            LinearRegression_stubs_data_settings_chosenRofZ_s_d0 <= grp_killLargestResidual_fu_447_LinearRegression_stubs_data_settings_chosenRofZ_s_d0;
+            LinearRegression_stubs_data_settings_chosenRofZ_s_d0 <= grp_killLargestResidual_fu_445_LinearRegression_stubs_data_settings_chosenRofZ_s_d0;
         else 
             LinearRegression_stubs_data_settings_chosenRofZ_s_d0 <= "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX";
         end if; 
     end process;
 
-    LinearRegression_stubs_data_settings_chosenRofZ_s_d1 <= grp_initFit_fu_524_LinearRegression_stubs_data_settings_chosenRofZ_s_d1;
+    LinearRegression_stubs_data_settings_chosenRofZ_s_d1 <= grp_initFit_fu_544_LinearRegression_stubs_data_settings_chosenRofZ_s_d1;
 
-    LinearRegression_stubs_data_settings_chosenRofZ_s_we0_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_447_LinearRegression_stubs_data_settings_chosenRofZ_s_we0, grp_initFit_fu_524_LinearRegression_stubs_data_settings_chosenRofZ_s_we0)
+    LinearRegression_stubs_data_settings_chosenRofZ_s_we0_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_445_LinearRegression_stubs_data_settings_chosenRofZ_s_we0, grp_initFit_fu_544_LinearRegression_stubs_data_settings_chosenRofZ_s_we0)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state2)) then 
-            LinearRegression_stubs_data_settings_chosenRofZ_s_we0 <= grp_initFit_fu_524_LinearRegression_stubs_data_settings_chosenRofZ_s_we0;
+            LinearRegression_stubs_data_settings_chosenRofZ_s_we0 <= grp_initFit_fu_544_LinearRegression_stubs_data_settings_chosenRofZ_s_we0;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state31)) then 
-            LinearRegression_stubs_data_settings_chosenRofZ_s_we0 <= grp_killLargestResidual_fu_447_LinearRegression_stubs_data_settings_chosenRofZ_s_we0;
+            LinearRegression_stubs_data_settings_chosenRofZ_s_we0 <= grp_killLargestResidual_fu_445_LinearRegression_stubs_data_settings_chosenRofZ_s_we0;
         else 
             LinearRegression_stubs_data_settings_chosenRofZ_s_we0 <= ap_const_logic_0;
         end if; 
     end process;
 
 
-    LinearRegression_stubs_data_settings_chosenRofZ_s_we1_assign_proc : process(ap_CS_fsm_state2, grp_initFit_fu_524_LinearRegression_stubs_data_settings_chosenRofZ_s_we1)
+    LinearRegression_stubs_data_settings_chosenRofZ_s_we1_assign_proc : process(ap_CS_fsm_state2, grp_initFit_fu_544_LinearRegression_stubs_data_settings_chosenRofZ_s_we1)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state2)) then 
-            LinearRegression_stubs_data_settings_chosenRofZ_s_we1 <= grp_initFit_fu_524_LinearRegression_stubs_data_settings_chosenRofZ_s_we1;
+            LinearRegression_stubs_data_settings_chosenRofZ_s_we1 <= grp_initFit_fu_544_LinearRegression_stubs_data_settings_chosenRofZ_s_we1;
         else 
             LinearRegression_stubs_data_settings_chosenRofZ_s_we1 <= ap_const_logic_0;
         end if; 
     end process;
 
 
-    LinearRegression_stubs_data_settings_etaRegions_s_address0_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_447_LinearRegression_stubs_data_settings_etaRegions_s_address0, grp_initFit_fu_524_LinearRegression_stubs_data_settings_etaRegions_s_address0)
+    LinearRegression_stubs_data_settings_minNumMatchLayers_s_address0_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_445_LinearRegression_stubs_data_settings_minNumMatchLayers_s_address0, grp_initFit_fu_544_LinearRegression_stubs_data_settings_minNumMatchLayers_s_address0)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state2)) then 
-            LinearRegression_stubs_data_settings_etaRegions_s_address0 <= grp_initFit_fu_524_LinearRegression_stubs_data_settings_etaRegions_s_address0;
+            LinearRegression_stubs_data_settings_minNumMatchLayers_s_address0 <= grp_initFit_fu_544_LinearRegression_stubs_data_settings_minNumMatchLayers_s_address0;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state31)) then 
-            LinearRegression_stubs_data_settings_etaRegions_s_address0 <= grp_killLargestResidual_fu_447_LinearRegression_stubs_data_settings_etaRegions_s_address0;
-        else 
-            LinearRegression_stubs_data_settings_etaRegions_s_address0 <= "XXXXXXXX";
-        end if; 
-    end process;
-
-
-    LinearRegression_stubs_data_settings_etaRegions_s_address1_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_447_LinearRegression_stubs_data_settings_etaRegions_s_address1, grp_initFit_fu_524_LinearRegression_stubs_data_settings_etaRegions_s_address1)
-    begin
-        if ((ap_const_logic_1 = ap_CS_fsm_state2)) then 
-            LinearRegression_stubs_data_settings_etaRegions_s_address1 <= grp_initFit_fu_524_LinearRegression_stubs_data_settings_etaRegions_s_address1;
-        elsif ((ap_const_logic_1 = ap_CS_fsm_state31)) then 
-            LinearRegression_stubs_data_settings_etaRegions_s_address1 <= grp_killLargestResidual_fu_447_LinearRegression_stubs_data_settings_etaRegions_s_address1;
-        else 
-            LinearRegression_stubs_data_settings_etaRegions_s_address1 <= "XXXXXXXX";
-        end if; 
-    end process;
-
-
-    LinearRegression_stubs_data_settings_etaRegions_s_ce0_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_447_LinearRegression_stubs_data_settings_etaRegions_s_ce0, grp_initFit_fu_524_LinearRegression_stubs_data_settings_etaRegions_s_ce0)
-    begin
-        if ((ap_const_logic_1 = ap_CS_fsm_state2)) then 
-            LinearRegression_stubs_data_settings_etaRegions_s_ce0 <= grp_initFit_fu_524_LinearRegression_stubs_data_settings_etaRegions_s_ce0;
-        elsif ((ap_const_logic_1 = ap_CS_fsm_state31)) then 
-            LinearRegression_stubs_data_settings_etaRegions_s_ce0 <= grp_killLargestResidual_fu_447_LinearRegression_stubs_data_settings_etaRegions_s_ce0;
-        else 
-            LinearRegression_stubs_data_settings_etaRegions_s_ce0 <= ap_const_logic_0;
-        end if; 
-    end process;
-
-
-    LinearRegression_stubs_data_settings_etaRegions_s_ce1_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_447_LinearRegression_stubs_data_settings_etaRegions_s_ce1, grp_initFit_fu_524_LinearRegression_stubs_data_settings_etaRegions_s_ce1)
-    begin
-        if ((ap_const_logic_1 = ap_CS_fsm_state2)) then 
-            LinearRegression_stubs_data_settings_etaRegions_s_ce1 <= grp_initFit_fu_524_LinearRegression_stubs_data_settings_etaRegions_s_ce1;
-        elsif ((ap_const_logic_1 = ap_CS_fsm_state31)) then 
-            LinearRegression_stubs_data_settings_etaRegions_s_ce1 <= grp_killLargestResidual_fu_447_LinearRegression_stubs_data_settings_etaRegions_s_ce1;
-        else 
-            LinearRegression_stubs_data_settings_etaRegions_s_ce1 <= ap_const_logic_0;
-        end if; 
-    end process;
-
-
-    LinearRegression_stubs_data_settings_etaRegions_s_d0_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_447_LinearRegression_stubs_data_settings_etaRegions_s_d0, grp_initFit_fu_524_LinearRegression_stubs_data_settings_etaRegions_s_d0)
-    begin
-        if ((ap_const_logic_1 = ap_CS_fsm_state2)) then 
-            LinearRegression_stubs_data_settings_etaRegions_s_d0 <= grp_initFit_fu_524_LinearRegression_stubs_data_settings_etaRegions_s_d0;
-        elsif ((ap_const_logic_1 = ap_CS_fsm_state31)) then 
-            LinearRegression_stubs_data_settings_etaRegions_s_d0 <= grp_killLargestResidual_fu_447_LinearRegression_stubs_data_settings_etaRegions_s_d0;
-        else 
-            LinearRegression_stubs_data_settings_etaRegions_s_d0 <= "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX";
-        end if; 
-    end process;
-
-
-    LinearRegression_stubs_data_settings_etaRegions_s_d1_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_447_LinearRegression_stubs_data_settings_etaRegions_s_d1, grp_initFit_fu_524_LinearRegression_stubs_data_settings_etaRegions_s_d1)
-    begin
-        if ((ap_const_logic_1 = ap_CS_fsm_state2)) then 
-            LinearRegression_stubs_data_settings_etaRegions_s_d1 <= grp_initFit_fu_524_LinearRegression_stubs_data_settings_etaRegions_s_d1;
-        elsif ((ap_const_logic_1 = ap_CS_fsm_state31)) then 
-            LinearRegression_stubs_data_settings_etaRegions_s_d1 <= grp_killLargestResidual_fu_447_LinearRegression_stubs_data_settings_etaRegions_s_d1;
-        else 
-            LinearRegression_stubs_data_settings_etaRegions_s_d1 <= "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX";
-        end if; 
-    end process;
-
-
-    LinearRegression_stubs_data_settings_etaRegions_s_we0_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_447_LinearRegression_stubs_data_settings_etaRegions_s_we0, grp_initFit_fu_524_LinearRegression_stubs_data_settings_etaRegions_s_we0)
-    begin
-        if ((ap_const_logic_1 = ap_CS_fsm_state2)) then 
-            LinearRegression_stubs_data_settings_etaRegions_s_we0 <= grp_initFit_fu_524_LinearRegression_stubs_data_settings_etaRegions_s_we0;
-        elsif ((ap_const_logic_1 = ap_CS_fsm_state31)) then 
-            LinearRegression_stubs_data_settings_etaRegions_s_we0 <= grp_killLargestResidual_fu_447_LinearRegression_stubs_data_settings_etaRegions_s_we0;
-        else 
-            LinearRegression_stubs_data_settings_etaRegions_s_we0 <= ap_const_logic_0;
-        end if; 
-    end process;
-
-
-    LinearRegression_stubs_data_settings_etaRegions_s_we1_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_447_LinearRegression_stubs_data_settings_etaRegions_s_we1, grp_initFit_fu_524_LinearRegression_stubs_data_settings_etaRegions_s_we1)
-    begin
-        if ((ap_const_logic_1 = ap_CS_fsm_state2)) then 
-            LinearRegression_stubs_data_settings_etaRegions_s_we1 <= grp_initFit_fu_524_LinearRegression_stubs_data_settings_etaRegions_s_we1;
-        elsif ((ap_const_logic_1 = ap_CS_fsm_state31)) then 
-            LinearRegression_stubs_data_settings_etaRegions_s_we1 <= grp_killLargestResidual_fu_447_LinearRegression_stubs_data_settings_etaRegions_s_we1;
-        else 
-            LinearRegression_stubs_data_settings_etaRegions_s_we1 <= ap_const_logic_0;
-        end if; 
-    end process;
-
-
-    LinearRegression_stubs_data_settings_minNumMatchLayers_s_address0_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_447_LinearRegression_stubs_data_settings_minNumMatchLayers_s_address0, grp_initFit_fu_524_LinearRegression_stubs_data_settings_minNumMatchLayers_s_address0)
-    begin
-        if ((ap_const_logic_1 = ap_CS_fsm_state2)) then 
-            LinearRegression_stubs_data_settings_minNumMatchLayers_s_address0 <= grp_initFit_fu_524_LinearRegression_stubs_data_settings_minNumMatchLayers_s_address0;
-        elsif ((ap_const_logic_1 = ap_CS_fsm_state31)) then 
-            LinearRegression_stubs_data_settings_minNumMatchLayers_s_address0 <= grp_killLargestResidual_fu_447_LinearRegression_stubs_data_settings_minNumMatchLayers_s_address0;
+            LinearRegression_stubs_data_settings_minNumMatchLayers_s_address0 <= grp_killLargestResidual_fu_445_LinearRegression_stubs_data_settings_minNumMatchLayers_s_address0;
         else 
             LinearRegression_stubs_data_settings_minNumMatchLayers_s_address0 <= "XXXX";
         end if; 
     end process;
 
-    LinearRegression_stubs_data_settings_minNumMatchLayers_s_address1 <= grp_initFit_fu_524_LinearRegression_stubs_data_settings_minNumMatchLayers_s_address1;
+    LinearRegression_stubs_data_settings_minNumMatchLayers_s_address1 <= grp_initFit_fu_544_LinearRegression_stubs_data_settings_minNumMatchLayers_s_address1;
 
-    LinearRegression_stubs_data_settings_minNumMatchLayers_s_ce0_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_447_LinearRegression_stubs_data_settings_minNumMatchLayers_s_ce0, grp_initFit_fu_524_LinearRegression_stubs_data_settings_minNumMatchLayers_s_ce0)
+    LinearRegression_stubs_data_settings_minNumMatchLayers_s_ce0_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_445_LinearRegression_stubs_data_settings_minNumMatchLayers_s_ce0, grp_initFit_fu_544_LinearRegression_stubs_data_settings_minNumMatchLayers_s_ce0)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state2)) then 
-            LinearRegression_stubs_data_settings_minNumMatchLayers_s_ce0 <= grp_initFit_fu_524_LinearRegression_stubs_data_settings_minNumMatchLayers_s_ce0;
+            LinearRegression_stubs_data_settings_minNumMatchLayers_s_ce0 <= grp_initFit_fu_544_LinearRegression_stubs_data_settings_minNumMatchLayers_s_ce0;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state31)) then 
-            LinearRegression_stubs_data_settings_minNumMatchLayers_s_ce0 <= grp_killLargestResidual_fu_447_LinearRegression_stubs_data_settings_minNumMatchLayers_s_ce0;
+            LinearRegression_stubs_data_settings_minNumMatchLayers_s_ce0 <= grp_killLargestResidual_fu_445_LinearRegression_stubs_data_settings_minNumMatchLayers_s_ce0;
         else 
             LinearRegression_stubs_data_settings_minNumMatchLayers_s_ce0 <= ap_const_logic_0;
         end if; 
     end process;
 
 
-    LinearRegression_stubs_data_settings_minNumMatchLayers_s_ce1_assign_proc : process(ap_CS_fsm_state2, grp_initFit_fu_524_LinearRegression_stubs_data_settings_minNumMatchLayers_s_ce1)
+    LinearRegression_stubs_data_settings_minNumMatchLayers_s_ce1_assign_proc : process(ap_CS_fsm_state2, grp_initFit_fu_544_LinearRegression_stubs_data_settings_minNumMatchLayers_s_ce1)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state2)) then 
-            LinearRegression_stubs_data_settings_minNumMatchLayers_s_ce1 <= grp_initFit_fu_524_LinearRegression_stubs_data_settings_minNumMatchLayers_s_ce1;
+            LinearRegression_stubs_data_settings_minNumMatchLayers_s_ce1 <= grp_initFit_fu_544_LinearRegression_stubs_data_settings_minNumMatchLayers_s_ce1;
         else 
             LinearRegression_stubs_data_settings_minNumMatchLayers_s_ce1 <= ap_const_logic_0;
         end if; 
     end process;
 
 
-    LinearRegression_stubs_data_settings_minNumMatchLayers_s_d0_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_447_LinearRegression_stubs_data_settings_minNumMatchLayers_s_d0, grp_initFit_fu_524_LinearRegression_stubs_data_settings_minNumMatchLayers_s_d0)
+    LinearRegression_stubs_data_settings_minNumMatchLayers_s_d0_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_445_LinearRegression_stubs_data_settings_minNumMatchLayers_s_d0, grp_initFit_fu_544_LinearRegression_stubs_data_settings_minNumMatchLayers_s_d0)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state2)) then 
-            LinearRegression_stubs_data_settings_minNumMatchLayers_s_d0 <= grp_initFit_fu_524_LinearRegression_stubs_data_settings_minNumMatchLayers_s_d0;
+            LinearRegression_stubs_data_settings_minNumMatchLayers_s_d0 <= grp_initFit_fu_544_LinearRegression_stubs_data_settings_minNumMatchLayers_s_d0;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state31)) then 
-            LinearRegression_stubs_data_settings_minNumMatchLayers_s_d0 <= grp_killLargestResidual_fu_447_LinearRegression_stubs_data_settings_minNumMatchLayers_s_d0;
+            LinearRegression_stubs_data_settings_minNumMatchLayers_s_d0 <= grp_killLargestResidual_fu_445_LinearRegression_stubs_data_settings_minNumMatchLayers_s_d0;
         else 
             LinearRegression_stubs_data_settings_minNumMatchLayers_s_d0 <= "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX";
         end if; 
     end process;
 
-    LinearRegression_stubs_data_settings_minNumMatchLayers_s_d1 <= grp_initFit_fu_524_LinearRegression_stubs_data_settings_minNumMatchLayers_s_d1;
+    LinearRegression_stubs_data_settings_minNumMatchLayers_s_d1 <= grp_initFit_fu_544_LinearRegression_stubs_data_settings_minNumMatchLayers_s_d1;
 
-    LinearRegression_stubs_data_settings_minNumMatchLayers_s_we0_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_447_LinearRegression_stubs_data_settings_minNumMatchLayers_s_we0, grp_initFit_fu_524_LinearRegression_stubs_data_settings_minNumMatchLayers_s_we0)
+    LinearRegression_stubs_data_settings_minNumMatchLayers_s_we0_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_445_LinearRegression_stubs_data_settings_minNumMatchLayers_s_we0, grp_initFit_fu_544_LinearRegression_stubs_data_settings_minNumMatchLayers_s_we0)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state2)) then 
-            LinearRegression_stubs_data_settings_minNumMatchLayers_s_we0 <= grp_initFit_fu_524_LinearRegression_stubs_data_settings_minNumMatchLayers_s_we0;
+            LinearRegression_stubs_data_settings_minNumMatchLayers_s_we0 <= grp_initFit_fu_544_LinearRegression_stubs_data_settings_minNumMatchLayers_s_we0;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state31)) then 
-            LinearRegression_stubs_data_settings_minNumMatchLayers_s_we0 <= grp_killLargestResidual_fu_447_LinearRegression_stubs_data_settings_minNumMatchLayers_s_we0;
+            LinearRegression_stubs_data_settings_minNumMatchLayers_s_we0 <= grp_killLargestResidual_fu_445_LinearRegression_stubs_data_settings_minNumMatchLayers_s_we0;
         else 
             LinearRegression_stubs_data_settings_minNumMatchLayers_s_we0 <= ap_const_logic_0;
         end if; 
     end process;
 
 
-    LinearRegression_stubs_data_settings_minNumMatchLayers_s_we1_assign_proc : process(ap_CS_fsm_state2, grp_initFit_fu_524_LinearRegression_stubs_data_settings_minNumMatchLayers_s_we1)
+    LinearRegression_stubs_data_settings_minNumMatchLayers_s_we1_assign_proc : process(ap_CS_fsm_state2, grp_initFit_fu_544_LinearRegression_stubs_data_settings_minNumMatchLayers_s_we1)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state2)) then 
-            LinearRegression_stubs_data_settings_minNumMatchLayers_s_we1 <= grp_initFit_fu_524_LinearRegression_stubs_data_settings_minNumMatchLayers_s_we1;
+            LinearRegression_stubs_data_settings_minNumMatchLayers_s_we1 <= grp_initFit_fu_544_LinearRegression_stubs_data_settings_minNumMatchLayers_s_we1;
         else 
             LinearRegression_stubs_data_settings_minNumMatchLayers_s_we1 <= ap_const_logic_0;
         end if; 
     end process;
 
 
-    LinearRegression_stubs_data_settings_minPSLayers_s_address0_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_447_LinearRegression_stubs_data_settings_minPSLayers_s_address0, grp_initFit_fu_524_LinearRegression_stubs_data_settings_minPSLayers_s_address0)
+    LinearRegression_stubs_data_settings_minPSLayers_s_address0_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_445_LinearRegression_stubs_data_settings_minPSLayers_s_address0, grp_initFit_fu_544_LinearRegression_stubs_data_settings_minPSLayers_s_address0)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state2)) then 
-            LinearRegression_stubs_data_settings_minPSLayers_s_address0 <= grp_initFit_fu_524_LinearRegression_stubs_data_settings_minPSLayers_s_address0;
+            LinearRegression_stubs_data_settings_minPSLayers_s_address0 <= grp_initFit_fu_544_LinearRegression_stubs_data_settings_minPSLayers_s_address0;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state31)) then 
-            LinearRegression_stubs_data_settings_minPSLayers_s_address0 <= grp_killLargestResidual_fu_447_LinearRegression_stubs_data_settings_minPSLayers_s_address0;
+            LinearRegression_stubs_data_settings_minPSLayers_s_address0 <= grp_killLargestResidual_fu_445_LinearRegression_stubs_data_settings_minPSLayers_s_address0;
         else 
             LinearRegression_stubs_data_settings_minPSLayers_s_address0 <= "XXXX";
         end if; 
     end process;
 
-    LinearRegression_stubs_data_settings_minPSLayers_s_address1 <= grp_initFit_fu_524_LinearRegression_stubs_data_settings_minPSLayers_s_address1;
+    LinearRegression_stubs_data_settings_minPSLayers_s_address1 <= grp_initFit_fu_544_LinearRegression_stubs_data_settings_minPSLayers_s_address1;
 
-    LinearRegression_stubs_data_settings_minPSLayers_s_ce0_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_447_LinearRegression_stubs_data_settings_minPSLayers_s_ce0, grp_initFit_fu_524_LinearRegression_stubs_data_settings_minPSLayers_s_ce0)
+    LinearRegression_stubs_data_settings_minPSLayers_s_ce0_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_445_LinearRegression_stubs_data_settings_minPSLayers_s_ce0, grp_initFit_fu_544_LinearRegression_stubs_data_settings_minPSLayers_s_ce0)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state2)) then 
-            LinearRegression_stubs_data_settings_minPSLayers_s_ce0 <= grp_initFit_fu_524_LinearRegression_stubs_data_settings_minPSLayers_s_ce0;
+            LinearRegression_stubs_data_settings_minPSLayers_s_ce0 <= grp_initFit_fu_544_LinearRegression_stubs_data_settings_minPSLayers_s_ce0;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state31)) then 
-            LinearRegression_stubs_data_settings_minPSLayers_s_ce0 <= grp_killLargestResidual_fu_447_LinearRegression_stubs_data_settings_minPSLayers_s_ce0;
+            LinearRegression_stubs_data_settings_minPSLayers_s_ce0 <= grp_killLargestResidual_fu_445_LinearRegression_stubs_data_settings_minPSLayers_s_ce0;
         else 
             LinearRegression_stubs_data_settings_minPSLayers_s_ce0 <= ap_const_logic_0;
         end if; 
     end process;
 
 
-    LinearRegression_stubs_data_settings_minPSLayers_s_ce1_assign_proc : process(ap_CS_fsm_state2, grp_initFit_fu_524_LinearRegression_stubs_data_settings_minPSLayers_s_ce1)
+    LinearRegression_stubs_data_settings_minPSLayers_s_ce1_assign_proc : process(ap_CS_fsm_state2, grp_initFit_fu_544_LinearRegression_stubs_data_settings_minPSLayers_s_ce1)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state2)) then 
-            LinearRegression_stubs_data_settings_minPSLayers_s_ce1 <= grp_initFit_fu_524_LinearRegression_stubs_data_settings_minPSLayers_s_ce1;
+            LinearRegression_stubs_data_settings_minPSLayers_s_ce1 <= grp_initFit_fu_544_LinearRegression_stubs_data_settings_minPSLayers_s_ce1;
         else 
             LinearRegression_stubs_data_settings_minPSLayers_s_ce1 <= ap_const_logic_0;
         end if; 
     end process;
 
 
-    LinearRegression_stubs_data_settings_minPSLayers_s_d0_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_447_LinearRegression_stubs_data_settings_minPSLayers_s_d0, grp_initFit_fu_524_LinearRegression_stubs_data_settings_minPSLayers_s_d0)
+    LinearRegression_stubs_data_settings_minPSLayers_s_d0_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_445_LinearRegression_stubs_data_settings_minPSLayers_s_d0, grp_initFit_fu_544_LinearRegression_stubs_data_settings_minPSLayers_s_d0)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state2)) then 
-            LinearRegression_stubs_data_settings_minPSLayers_s_d0 <= grp_initFit_fu_524_LinearRegression_stubs_data_settings_minPSLayers_s_d0;
+            LinearRegression_stubs_data_settings_minPSLayers_s_d0 <= grp_initFit_fu_544_LinearRegression_stubs_data_settings_minPSLayers_s_d0;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state31)) then 
-            LinearRegression_stubs_data_settings_minPSLayers_s_d0 <= grp_killLargestResidual_fu_447_LinearRegression_stubs_data_settings_minPSLayers_s_d0;
+            LinearRegression_stubs_data_settings_minPSLayers_s_d0 <= grp_killLargestResidual_fu_445_LinearRegression_stubs_data_settings_minPSLayers_s_d0;
         else 
             LinearRegression_stubs_data_settings_minPSLayers_s_d0 <= "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX";
         end if; 
     end process;
 
-    LinearRegression_stubs_data_settings_minPSLayers_s_d1 <= grp_initFit_fu_524_LinearRegression_stubs_data_settings_minPSLayers_s_d1;
+    LinearRegression_stubs_data_settings_minPSLayers_s_d1 <= grp_initFit_fu_544_LinearRegression_stubs_data_settings_minPSLayers_s_d1;
 
-    LinearRegression_stubs_data_settings_minPSLayers_s_we0_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_447_LinearRegression_stubs_data_settings_minPSLayers_s_we0, grp_initFit_fu_524_LinearRegression_stubs_data_settings_minPSLayers_s_we0)
+    LinearRegression_stubs_data_settings_minPSLayers_s_we0_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_445_LinearRegression_stubs_data_settings_minPSLayers_s_we0, grp_initFit_fu_544_LinearRegression_stubs_data_settings_minPSLayers_s_we0)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state2)) then 
-            LinearRegression_stubs_data_settings_minPSLayers_s_we0 <= grp_initFit_fu_524_LinearRegression_stubs_data_settings_minPSLayers_s_we0;
+            LinearRegression_stubs_data_settings_minPSLayers_s_we0 <= grp_initFit_fu_544_LinearRegression_stubs_data_settings_minPSLayers_s_we0;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state31)) then 
-            LinearRegression_stubs_data_settings_minPSLayers_s_we0 <= grp_killLargestResidual_fu_447_LinearRegression_stubs_data_settings_minPSLayers_s_we0;
+            LinearRegression_stubs_data_settings_minPSLayers_s_we0 <= grp_killLargestResidual_fu_445_LinearRegression_stubs_data_settings_minPSLayers_s_we0;
         else 
             LinearRegression_stubs_data_settings_minPSLayers_s_we0 <= ap_const_logic_0;
         end if; 
     end process;
 
 
-    LinearRegression_stubs_data_settings_minPSLayers_s_we1_assign_proc : process(ap_CS_fsm_state2, grp_initFit_fu_524_LinearRegression_stubs_data_settings_minPSLayers_s_we1)
+    LinearRegression_stubs_data_settings_minPSLayers_s_we1_assign_proc : process(ap_CS_fsm_state2, grp_initFit_fu_544_LinearRegression_stubs_data_settings_minPSLayers_s_we1)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state2)) then 
-            LinearRegression_stubs_data_settings_minPSLayers_s_we1 <= grp_initFit_fu_524_LinearRegression_stubs_data_settings_minPSLayers_s_we1;
+            LinearRegression_stubs_data_settings_minPSLayers_s_we1 <= grp_initFit_fu_544_LinearRegression_stubs_data_settings_minPSLayers_s_we1;
         else 
             LinearRegression_stubs_data_settings_minPSLayers_s_we1 <= ap_const_logic_0;
         end if; 
     end process;
 
 
-    LinearRegression_stubs_data_z_s_address0_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_447_LinearRegression_stubs_data_z_s_address0, grp_initFit_fu_524_LinearRegression_stubs_data_z_s_address0)
+    LinearRegression_stubs_data_settings_sinh_etaRegions_s_address0_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_445_LinearRegression_stubs_data_settings_sinh_etaRegions_s_address0, grp_initFit_fu_544_LinearRegression_stubs_data_settings_sinh_etaRegions_s_address0)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state2)) then 
-            LinearRegression_stubs_data_z_s_address0 <= grp_initFit_fu_524_LinearRegression_stubs_data_z_s_address0;
+            LinearRegression_stubs_data_settings_sinh_etaRegions_s_address0 <= grp_initFit_fu_544_LinearRegression_stubs_data_settings_sinh_etaRegions_s_address0;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state31)) then 
-            LinearRegression_stubs_data_z_s_address0 <= grp_killLargestResidual_fu_447_LinearRegression_stubs_data_z_s_address0;
+            LinearRegression_stubs_data_settings_sinh_etaRegions_s_address0 <= grp_killLargestResidual_fu_445_LinearRegression_stubs_data_settings_sinh_etaRegions_s_address0;
+        else 
+            LinearRegression_stubs_data_settings_sinh_etaRegions_s_address0 <= "XXXXXXXX";
+        end if; 
+    end process;
+
+
+    LinearRegression_stubs_data_settings_sinh_etaRegions_s_address1_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_445_LinearRegression_stubs_data_settings_sinh_etaRegions_s_address1, grp_initFit_fu_544_LinearRegression_stubs_data_settings_sinh_etaRegions_s_address1)
+    begin
+        if ((ap_const_logic_1 = ap_CS_fsm_state2)) then 
+            LinearRegression_stubs_data_settings_sinh_etaRegions_s_address1 <= grp_initFit_fu_544_LinearRegression_stubs_data_settings_sinh_etaRegions_s_address1;
+        elsif ((ap_const_logic_1 = ap_CS_fsm_state31)) then 
+            LinearRegression_stubs_data_settings_sinh_etaRegions_s_address1 <= grp_killLargestResidual_fu_445_LinearRegression_stubs_data_settings_sinh_etaRegions_s_address1;
+        else 
+            LinearRegression_stubs_data_settings_sinh_etaRegions_s_address1 <= "XXXXXXXX";
+        end if; 
+    end process;
+
+
+    LinearRegression_stubs_data_settings_sinh_etaRegions_s_ce0_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_445_LinearRegression_stubs_data_settings_sinh_etaRegions_s_ce0, grp_initFit_fu_544_LinearRegression_stubs_data_settings_sinh_etaRegions_s_ce0)
+    begin
+        if ((ap_const_logic_1 = ap_CS_fsm_state2)) then 
+            LinearRegression_stubs_data_settings_sinh_etaRegions_s_ce0 <= grp_initFit_fu_544_LinearRegression_stubs_data_settings_sinh_etaRegions_s_ce0;
+        elsif ((ap_const_logic_1 = ap_CS_fsm_state31)) then 
+            LinearRegression_stubs_data_settings_sinh_etaRegions_s_ce0 <= grp_killLargestResidual_fu_445_LinearRegression_stubs_data_settings_sinh_etaRegions_s_ce0;
+        else 
+            LinearRegression_stubs_data_settings_sinh_etaRegions_s_ce0 <= ap_const_logic_0;
+        end if; 
+    end process;
+
+
+    LinearRegression_stubs_data_settings_sinh_etaRegions_s_ce1_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_445_LinearRegression_stubs_data_settings_sinh_etaRegions_s_ce1, grp_initFit_fu_544_LinearRegression_stubs_data_settings_sinh_etaRegions_s_ce1)
+    begin
+        if ((ap_const_logic_1 = ap_CS_fsm_state2)) then 
+            LinearRegression_stubs_data_settings_sinh_etaRegions_s_ce1 <= grp_initFit_fu_544_LinearRegression_stubs_data_settings_sinh_etaRegions_s_ce1;
+        elsif ((ap_const_logic_1 = ap_CS_fsm_state31)) then 
+            LinearRegression_stubs_data_settings_sinh_etaRegions_s_ce1 <= grp_killLargestResidual_fu_445_LinearRegression_stubs_data_settings_sinh_etaRegions_s_ce1;
+        else 
+            LinearRegression_stubs_data_settings_sinh_etaRegions_s_ce1 <= ap_const_logic_0;
+        end if; 
+    end process;
+
+
+    LinearRegression_stubs_data_settings_sinh_etaRegions_s_d0_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_445_LinearRegression_stubs_data_settings_sinh_etaRegions_s_d0, grp_initFit_fu_544_LinearRegression_stubs_data_settings_sinh_etaRegions_s_d0)
+    begin
+        if ((ap_const_logic_1 = ap_CS_fsm_state2)) then 
+            LinearRegression_stubs_data_settings_sinh_etaRegions_s_d0 <= grp_initFit_fu_544_LinearRegression_stubs_data_settings_sinh_etaRegions_s_d0;
+        elsif ((ap_const_logic_1 = ap_CS_fsm_state31)) then 
+            LinearRegression_stubs_data_settings_sinh_etaRegions_s_d0 <= grp_killLargestResidual_fu_445_LinearRegression_stubs_data_settings_sinh_etaRegions_s_d0;
+        else 
+            LinearRegression_stubs_data_settings_sinh_etaRegions_s_d0 <= "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX";
+        end if; 
+    end process;
+
+
+    LinearRegression_stubs_data_settings_sinh_etaRegions_s_d1_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_445_LinearRegression_stubs_data_settings_sinh_etaRegions_s_d1, grp_initFit_fu_544_LinearRegression_stubs_data_settings_sinh_etaRegions_s_d1)
+    begin
+        if ((ap_const_logic_1 = ap_CS_fsm_state2)) then 
+            LinearRegression_stubs_data_settings_sinh_etaRegions_s_d1 <= grp_initFit_fu_544_LinearRegression_stubs_data_settings_sinh_etaRegions_s_d1;
+        elsif ((ap_const_logic_1 = ap_CS_fsm_state31)) then 
+            LinearRegression_stubs_data_settings_sinh_etaRegions_s_d1 <= grp_killLargestResidual_fu_445_LinearRegression_stubs_data_settings_sinh_etaRegions_s_d1;
+        else 
+            LinearRegression_stubs_data_settings_sinh_etaRegions_s_d1 <= "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX";
+        end if; 
+    end process;
+
+
+    LinearRegression_stubs_data_settings_sinh_etaRegions_s_we0_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_445_LinearRegression_stubs_data_settings_sinh_etaRegions_s_we0, grp_initFit_fu_544_LinearRegression_stubs_data_settings_sinh_etaRegions_s_we0)
+    begin
+        if ((ap_const_logic_1 = ap_CS_fsm_state2)) then 
+            LinearRegression_stubs_data_settings_sinh_etaRegions_s_we0 <= grp_initFit_fu_544_LinearRegression_stubs_data_settings_sinh_etaRegions_s_we0;
+        elsif ((ap_const_logic_1 = ap_CS_fsm_state31)) then 
+            LinearRegression_stubs_data_settings_sinh_etaRegions_s_we0 <= grp_killLargestResidual_fu_445_LinearRegression_stubs_data_settings_sinh_etaRegions_s_we0;
+        else 
+            LinearRegression_stubs_data_settings_sinh_etaRegions_s_we0 <= ap_const_logic_0;
+        end if; 
+    end process;
+
+
+    LinearRegression_stubs_data_settings_sinh_etaRegions_s_we1_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_445_LinearRegression_stubs_data_settings_sinh_etaRegions_s_we1, grp_initFit_fu_544_LinearRegression_stubs_data_settings_sinh_etaRegions_s_we1)
+    begin
+        if ((ap_const_logic_1 = ap_CS_fsm_state2)) then 
+            LinearRegression_stubs_data_settings_sinh_etaRegions_s_we1 <= grp_initFit_fu_544_LinearRegression_stubs_data_settings_sinh_etaRegions_s_we1;
+        elsif ((ap_const_logic_1 = ap_CS_fsm_state31)) then 
+            LinearRegression_stubs_data_settings_sinh_etaRegions_s_we1 <= grp_killLargestResidual_fu_445_LinearRegression_stubs_data_settings_sinh_etaRegions_s_we1;
+        else 
+            LinearRegression_stubs_data_settings_sinh_etaRegions_s_we1 <= ap_const_logic_0;
+        end if; 
+    end process;
+
+
+    LinearRegression_stubs_data_z_s_address0_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_445_LinearRegression_stubs_data_z_s_address0, grp_initFit_fu_544_LinearRegression_stubs_data_z_s_address0)
+    begin
+        if ((ap_const_logic_1 = ap_CS_fsm_state2)) then 
+            LinearRegression_stubs_data_z_s_address0 <= grp_initFit_fu_544_LinearRegression_stubs_data_z_s_address0;
+        elsif ((ap_const_logic_1 = ap_CS_fsm_state31)) then 
+            LinearRegression_stubs_data_z_s_address0 <= grp_killLargestResidual_fu_445_LinearRegression_stubs_data_z_s_address0;
         else 
             LinearRegression_stubs_data_z_s_address0 <= "XXXX";
         end if; 
     end process;
 
-    LinearRegression_stubs_data_z_s_address1 <= grp_initFit_fu_524_LinearRegression_stubs_data_z_s_address1;
+    LinearRegression_stubs_data_z_s_address1 <= grp_initFit_fu_544_LinearRegression_stubs_data_z_s_address1;
 
-    LinearRegression_stubs_data_z_s_ce0_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_447_LinearRegression_stubs_data_z_s_ce0, grp_initFit_fu_524_LinearRegression_stubs_data_z_s_ce0)
+    LinearRegression_stubs_data_z_s_ce0_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_445_LinearRegression_stubs_data_z_s_ce0, grp_initFit_fu_544_LinearRegression_stubs_data_z_s_ce0)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state2)) then 
-            LinearRegression_stubs_data_z_s_ce0 <= grp_initFit_fu_524_LinearRegression_stubs_data_z_s_ce0;
+            LinearRegression_stubs_data_z_s_ce0 <= grp_initFit_fu_544_LinearRegression_stubs_data_z_s_ce0;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state31)) then 
-            LinearRegression_stubs_data_z_s_ce0 <= grp_killLargestResidual_fu_447_LinearRegression_stubs_data_z_s_ce0;
+            LinearRegression_stubs_data_z_s_ce0 <= grp_killLargestResidual_fu_445_LinearRegression_stubs_data_z_s_ce0;
         else 
             LinearRegression_stubs_data_z_s_ce0 <= ap_const_logic_0;
         end if; 
     end process;
 
 
-    LinearRegression_stubs_data_z_s_ce1_assign_proc : process(ap_CS_fsm_state2, grp_initFit_fu_524_LinearRegression_stubs_data_z_s_ce1)
+    LinearRegression_stubs_data_z_s_ce1_assign_proc : process(ap_CS_fsm_state2, grp_initFit_fu_544_LinearRegression_stubs_data_z_s_ce1)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state2)) then 
-            LinearRegression_stubs_data_z_s_ce1 <= grp_initFit_fu_524_LinearRegression_stubs_data_z_s_ce1;
+            LinearRegression_stubs_data_z_s_ce1 <= grp_initFit_fu_544_LinearRegression_stubs_data_z_s_ce1;
         else 
             LinearRegression_stubs_data_z_s_ce1 <= ap_const_logic_0;
         end if; 
     end process;
 
 
-    LinearRegression_stubs_data_z_s_d0_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_447_LinearRegression_stubs_data_z_s_d0, grp_initFit_fu_524_LinearRegression_stubs_data_z_s_d0)
+    LinearRegression_stubs_data_z_s_d0_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_445_LinearRegression_stubs_data_z_s_d0, grp_initFit_fu_544_LinearRegression_stubs_data_z_s_d0)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state2)) then 
-            LinearRegression_stubs_data_z_s_d0 <= grp_initFit_fu_524_LinearRegression_stubs_data_z_s_d0;
+            LinearRegression_stubs_data_z_s_d0 <= grp_initFit_fu_544_LinearRegression_stubs_data_z_s_d0;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state31)) then 
-            LinearRegression_stubs_data_z_s_d0 <= grp_killLargestResidual_fu_447_LinearRegression_stubs_data_z_s_d0;
+            LinearRegression_stubs_data_z_s_d0 <= grp_killLargestResidual_fu_445_LinearRegression_stubs_data_z_s_d0;
         else 
             LinearRegression_stubs_data_z_s_d0 <= "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX";
         end if; 
     end process;
 
-    LinearRegression_stubs_data_z_s_d1 <= grp_initFit_fu_524_LinearRegression_stubs_data_z_s_d1;
+    LinearRegression_stubs_data_z_s_d1 <= grp_initFit_fu_544_LinearRegression_stubs_data_z_s_d1;
 
-    LinearRegression_stubs_data_z_s_we0_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_447_LinearRegression_stubs_data_z_s_we0, grp_initFit_fu_524_LinearRegression_stubs_data_z_s_we0)
+    LinearRegression_stubs_data_z_s_we0_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, grp_killLargestResidual_fu_445_LinearRegression_stubs_data_z_s_we0, grp_initFit_fu_544_LinearRegression_stubs_data_z_s_we0)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state2)) then 
-            LinearRegression_stubs_data_z_s_we0 <= grp_initFit_fu_524_LinearRegression_stubs_data_z_s_we0;
+            LinearRegression_stubs_data_z_s_we0 <= grp_initFit_fu_544_LinearRegression_stubs_data_z_s_we0;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state31)) then 
-            LinearRegression_stubs_data_z_s_we0 <= grp_killLargestResidual_fu_447_LinearRegression_stubs_data_z_s_we0;
+            LinearRegression_stubs_data_z_s_we0 <= grp_killLargestResidual_fu_445_LinearRegression_stubs_data_z_s_we0;
         else 
             LinearRegression_stubs_data_z_s_we0 <= ap_const_logic_0;
         end if; 
     end process;
 
 
-    LinearRegression_stubs_data_z_s_we1_assign_proc : process(ap_CS_fsm_state2, grp_initFit_fu_524_LinearRegression_stubs_data_z_s_we1)
+    LinearRegression_stubs_data_z_s_we1_assign_proc : process(ap_CS_fsm_state2, grp_initFit_fu_544_LinearRegression_stubs_data_z_s_we1)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state2)) then 
-            LinearRegression_stubs_data_z_s_we1 <= grp_initFit_fu_524_LinearRegression_stubs_data_z_s_we1;
+            LinearRegression_stubs_data_z_s_we1 <= grp_initFit_fu_544_LinearRegression_stubs_data_z_s_we1;
         else 
             LinearRegression_stubs_data_z_s_we1 <= ap_const_logic_0;
         end if; 
@@ -6321,505 +6334,505 @@ begin
     end process;
 
 
-    ap_return_0_assign_proc : process(LinearRegression_iPh_reg_1488, ap_CS_fsm_state62, ap_return_0_preg)
+    ap_return_0_assign_proc : process(LinearRegression_iPh_reg_1484, ap_CS_fsm_state62, ap_return_0_preg)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state62)) then 
-            ap_return_0 <= LinearRegression_iPh_reg_1488;
+            ap_return_0 <= LinearRegression_iPh_reg_1484;
         else 
             ap_return_0 <= ap_return_0_preg;
         end if; 
     end process;
 
 
-    ap_return_1_assign_proc : process(LinearRegression_iEt_reg_1493, ap_CS_fsm_state62, ap_return_1_preg)
+    ap_return_1_assign_proc : process(LinearRegression_iEt_reg_1489, ap_CS_fsm_state62, ap_return_1_preg)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state62)) then 
-            ap_return_1 <= LinearRegression_iEt_reg_1493;
+            ap_return_1 <= LinearRegression_iEt_reg_1489;
         else 
             ap_return_1 <= ap_return_1_preg;
         end if; 
     end process;
 
 
-    ap_return_10_assign_proc : process(LinearRegression_LRP_5_reg_375, ap_CS_fsm_state62, ap_return_10_preg)
+    ap_return_10_assign_proc : process(LinearRegression_LRP_5_reg_373, ap_CS_fsm_state62, ap_return_10_preg)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state62)) then 
-            ap_return_10 <= LinearRegression_LRP_5_reg_375;
+            ap_return_10 <= LinearRegression_LRP_5_reg_373;
         else 
             ap_return_10 <= ap_return_10_preg;
         end if; 
     end process;
 
 
-    ap_return_11_assign_proc : process(LinearRegression_LRP_6_reg_385, ap_CS_fsm_state62, ap_return_11_preg)
+    ap_return_11_assign_proc : process(LinearRegression_LRP_6_reg_383, ap_CS_fsm_state62, ap_return_11_preg)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state62)) then 
-            ap_return_11 <= LinearRegression_LRP_6_reg_385;
+            ap_return_11 <= LinearRegression_LRP_6_reg_383;
         else 
             ap_return_11 <= ap_return_11_preg;
         end if; 
     end process;
 
 
-    ap_return_12_assign_proc : process(LinearRegression_LRP_7_reg_395, ap_CS_fsm_state62, ap_return_12_preg)
+    ap_return_12_assign_proc : process(LinearRegression_LRP_7_reg_393, ap_CS_fsm_state62, ap_return_12_preg)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state62)) then 
-            ap_return_12 <= LinearRegression_LRP_7_reg_395;
+            ap_return_12 <= LinearRegression_LRP_7_reg_393;
         else 
             ap_return_12 <= ap_return_12_preg;
         end if; 
     end process;
 
 
-    ap_return_13_assign_proc : process(LinearRegression_stu_6_reg_405, ap_CS_fsm_state62, ap_return_13_preg)
+    ap_return_13_assign_proc : process(LinearRegression_stu_6_reg_403, ap_CS_fsm_state62, ap_return_13_preg)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state62)) then 
-            ap_return_13 <= LinearRegression_stu_6_reg_405;
+            ap_return_13 <= LinearRegression_stu_6_reg_403;
         else 
             ap_return_13 <= ap_return_13_preg;
         end if; 
     end process;
 
 
-    ap_return_14_assign_proc : process(LinearRegression_lay_1_reg_415, ap_CS_fsm_state62, ap_return_14_preg)
+    ap_return_14_assign_proc : process(LinearRegression_lay_1_reg_413, ap_CS_fsm_state62, ap_return_14_preg)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state62)) then 
-            ap_return_14 <= LinearRegression_lay_1_reg_415;
+            ap_return_14 <= LinearRegression_lay_1_reg_413;
         else 
             ap_return_14 <= ap_return_14_preg;
         end if; 
     end process;
 
 
-    ap_return_2_assign_proc : process(LinearRegression_nIt_2_reg_425, ap_CS_fsm_state62, ap_return_2_preg)
+    ap_return_2_assign_proc : process(LinearRegression_nIt_2_reg_423, ap_CS_fsm_state62, ap_return_2_preg)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state62)) then 
-            ap_return_2 <= LinearRegression_nIt_2_reg_425;
+            ap_return_2 <= LinearRegression_nIt_2_reg_423;
         else 
             ap_return_2 <= ap_return_2_preg;
         end if; 
     end process;
 
 
-    ap_return_3_assign_proc : process(LinearRegression_val_1_reg_436, ap_CS_fsm_state62, ap_return_3_preg)
+    ap_return_3_assign_proc : process(LinearRegression_val_1_reg_434, ap_CS_fsm_state62, ap_return_3_preg)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state62)) then 
-            ap_return_3 <= LinearRegression_val_1_reg_436;
+            ap_return_3 <= LinearRegression_val_1_reg_434;
         else 
             ap_return_3 <= ap_return_3_preg;
         end if; 
     end process;
 
 
-    ap_return_4_assign_proc : process(LinearRegression_HTP_reg_1501, ap_CS_fsm_state62, ap_return_4_preg)
+    ap_return_4_assign_proc : process(LinearRegression_HTP_reg_1497, ap_CS_fsm_state62, ap_return_4_preg)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state62)) then 
-            ap_return_4 <= LinearRegression_HTP_reg_1501;
+            ap_return_4 <= LinearRegression_HTP_reg_1497;
         else 
             ap_return_4 <= ap_return_4_preg;
         end if; 
     end process;
 
 
-    ap_return_5_assign_proc : process(LinearRegression_HTP_1_reg_1510, ap_CS_fsm_state62, ap_return_5_preg)
+    ap_return_5_assign_proc : process(LinearRegression_HTP_1_reg_1506, ap_CS_fsm_state62, ap_return_5_preg)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state62)) then 
-            ap_return_5 <= LinearRegression_HTP_1_reg_1510;
+            ap_return_5 <= LinearRegression_HTP_1_reg_1506;
         else 
             ap_return_5 <= ap_return_5_preg;
         end if; 
     end process;
 
 
-    ap_return_6_assign_proc : process(LinearRegression_HTP_2_reg_1519, ap_CS_fsm_state62, ap_return_6_preg)
+    ap_return_6_assign_proc : process(LinearRegression_HTP_2_reg_1515, ap_CS_fsm_state62, ap_return_6_preg)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state62)) then 
-            ap_return_6 <= LinearRegression_HTP_2_reg_1519;
+            ap_return_6 <= LinearRegression_HTP_2_reg_1515;
         else 
             ap_return_6 <= ap_return_6_preg;
         end if; 
     end process;
 
 
-    ap_return_7_assign_proc : process(LinearRegression_HTP_3_reg_1528, ap_CS_fsm_state62, ap_return_7_preg)
+    ap_return_7_assign_proc : process(LinearRegression_HTP_3_reg_1524, ap_CS_fsm_state62, ap_return_7_preg)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state62)) then 
-            ap_return_7 <= LinearRegression_HTP_3_reg_1528;
+            ap_return_7 <= LinearRegression_HTP_3_reg_1524;
         else 
             ap_return_7 <= ap_return_7_preg;
         end if; 
     end process;
 
 
-    ap_return_8_assign_proc : process(LinearRegression_stu_5_reg_355, ap_CS_fsm_state62, ap_return_8_preg)
+    ap_return_8_assign_proc : process(LinearRegression_stu_5_reg_353, ap_CS_fsm_state62, ap_return_8_preg)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state62)) then 
-            ap_return_8 <= LinearRegression_stu_5_reg_355;
+            ap_return_8 <= LinearRegression_stu_5_reg_353;
         else 
             ap_return_8 <= ap_return_8_preg;
         end if; 
     end process;
 
 
-    ap_return_9_assign_proc : process(ap_CS_fsm_state62, grp_fu_725_p2, ap_return_9_preg)
+    ap_return_9_assign_proc : process(ap_CS_fsm_state62, grp_fu_721_p2, ap_return_9_preg)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state62)) then 
-            ap_return_9 <= grp_fu_725_p2;
+            ap_return_9 <= grp_fu_721_p2;
         else 
             ap_return_9 <= ap_return_9_preg;
         end if; 
     end process;
 
-    candData_phiT_write_1_fu_1205_p3 <= 
-        reg_742 when (tmp_148_fu_1199_p2(0) = '1') else 
-        grp_fu_706_p2;
-    candData_phiT_write_s_fu_917_p3 <= 
-        reg_742 when (tmp_129_fu_911_p2(0) = '1') else 
-        grp_fu_706_p2;
-    fitTrk_phi0_1_fu_1315_p3 <= 
-        reg_742 when (tmp_158_fu_1309_p2(0) = '1') else 
-        grp_fu_706_p2;
-    fitTrk_phi0_s_fu_1027_p3 <= 
-        reg_742 when (tmp_139_fu_1021_p2(0) = '1') else 
-        grp_fu_706_p2;
-    grp_calcHelix_fu_640_ap_start <= grp_calcHelix_fu_640_ap_start_reg;
-    grp_calcResidual_fu_662_ap_start <= grp_calcResidual_fu_662_ap_start_reg;
+    candData_phiT_write_1_fu_1201_p3 <= 
+        reg_738 when (tmp_71_fu_1195_p2(0) = '1') else 
+        grp_fu_702_p2;
+    candData_phiT_write_s_fu_913_p3 <= 
+        reg_738 when (tmp_51_fu_907_p2(0) = '1') else 
+        grp_fu_702_p2;
+    fitTrk_phi0_1_fu_1311_p3 <= 
+        reg_738 when (tmp_81_fu_1305_p2(0) = '1') else 
+        grp_fu_702_p2;
+    fitTrk_phi0_s_fu_1023_p3 <= 
+        reg_738 when (tmp_61_fu_1017_p2(0) = '1') else 
+        grp_fu_702_p2;
+    grp_calcHelix_fu_522_ap_start <= grp_calcHelix_fu_522_ap_start_reg;
+    grp_calcResidual_fu_658_ap_start <= grp_calcResidual_fu_658_ap_start_reg;
 
-    grp_fu_706_ce_assign_proc : process(ap_CS_fsm_state1, ap_CS_fsm_state7, ap_CS_fsm_state19, ap_CS_fsm_state21, ap_CS_fsm_state48, ap_CS_fsm_state50, ap_CS_fsm_state2, grp_initFit_fu_524_ap_done, ap_CS_fsm_state27, ap_CS_fsm_state29, ap_CS_fsm_state31, grp_killLargestResidual_fu_447_ap_done, ap_CS_fsm_state30, ap_CS_fsm_state26, ap_CS_fsm_state28, ap_CS_fsm_state6, ap_CS_fsm_state18, ap_CS_fsm_state20, ap_CS_fsm_state47, ap_CS_fsm_state49, ap_CS_fsm_state55, ap_CS_fsm_state62, ap_CS_fsm_state56, ap_CS_fsm_state57, ap_CS_fsm_state58, ap_CS_fsm_state59, ap_CS_fsm_state60, ap_CS_fsm_state61)
+    grp_fu_702_ce_assign_proc : process(ap_CS_fsm_state1, ap_CS_fsm_state7, ap_CS_fsm_state19, ap_CS_fsm_state21, ap_CS_fsm_state48, ap_CS_fsm_state50, ap_CS_fsm_state2, grp_initFit_fu_544_ap_done, ap_CS_fsm_state27, ap_CS_fsm_state29, ap_CS_fsm_state31, grp_killLargestResidual_fu_445_ap_done, ap_CS_fsm_state30, ap_CS_fsm_state26, ap_CS_fsm_state28, ap_CS_fsm_state6, ap_CS_fsm_state18, ap_CS_fsm_state20, ap_CS_fsm_state47, ap_CS_fsm_state49, ap_CS_fsm_state55, ap_CS_fsm_state62, ap_CS_fsm_state56, ap_CS_fsm_state57, ap_CS_fsm_state58, ap_CS_fsm_state59, ap_CS_fsm_state60, ap_CS_fsm_state61)
     begin
-        if (((ap_const_logic_1 = ap_CS_fsm_state29) or (ap_const_logic_1 = ap_CS_fsm_state27) or (ap_const_logic_1 = ap_CS_fsm_state1) or (ap_const_logic_1 = ap_CS_fsm_state50) or (ap_const_logic_1 = ap_CS_fsm_state48) or (ap_const_logic_1 = ap_CS_fsm_state21) or (ap_const_logic_1 = ap_CS_fsm_state19) or (ap_const_logic_1 = ap_CS_fsm_state7) or (ap_const_logic_1 = ap_CS_fsm_state61) or (ap_const_logic_1 = ap_CS_fsm_state60) or (ap_const_logic_1 = ap_CS_fsm_state59) or (ap_const_logic_1 = ap_CS_fsm_state58) or (ap_const_logic_1 = ap_CS_fsm_state57) or (ap_const_logic_1 = ap_CS_fsm_state56) or (ap_const_logic_1 = ap_CS_fsm_state62) or (ap_const_logic_1 = ap_CS_fsm_state55) or (ap_const_logic_1 = ap_CS_fsm_state49) or (ap_const_logic_1 = ap_CS_fsm_state47) or (ap_const_logic_1 = ap_CS_fsm_state20) or (ap_const_logic_1 = ap_CS_fsm_state18) or (ap_const_logic_1 = ap_CS_fsm_state6) or (ap_const_logic_1 = ap_CS_fsm_state28) or (ap_const_logic_1 = ap_CS_fsm_state26) or (ap_const_logic_1 = ap_CS_fsm_state30) or ((grp_killLargestResidual_fu_447_ap_done = ap_const_logic_0) and (ap_const_logic_1 = ap_CS_fsm_state31)) or ((grp_initFit_fu_524_ap_done = ap_const_logic_0) and (ap_const_logic_1 = ap_CS_fsm_state2)))) then 
-            grp_fu_706_ce <= ap_const_logic_0;
+        if (((ap_const_logic_1 = ap_CS_fsm_state29) or (ap_const_logic_1 = ap_CS_fsm_state27) or (ap_const_logic_1 = ap_CS_fsm_state1) or (ap_const_logic_1 = ap_CS_fsm_state50) or (ap_const_logic_1 = ap_CS_fsm_state48) or (ap_const_logic_1 = ap_CS_fsm_state21) or (ap_const_logic_1 = ap_CS_fsm_state19) or (ap_const_logic_1 = ap_CS_fsm_state7) or (ap_const_logic_1 = ap_CS_fsm_state61) or (ap_const_logic_1 = ap_CS_fsm_state60) or (ap_const_logic_1 = ap_CS_fsm_state59) or (ap_const_logic_1 = ap_CS_fsm_state58) or (ap_const_logic_1 = ap_CS_fsm_state57) or (ap_const_logic_1 = ap_CS_fsm_state56) or (ap_const_logic_1 = ap_CS_fsm_state62) or (ap_const_logic_1 = ap_CS_fsm_state55) or (ap_const_logic_1 = ap_CS_fsm_state49) or (ap_const_logic_1 = ap_CS_fsm_state47) or (ap_const_logic_1 = ap_CS_fsm_state20) or (ap_const_logic_1 = ap_CS_fsm_state18) or (ap_const_logic_1 = ap_CS_fsm_state6) or (ap_const_logic_1 = ap_CS_fsm_state28) or (ap_const_logic_1 = ap_CS_fsm_state26) or (ap_const_logic_1 = ap_CS_fsm_state30) or ((grp_killLargestResidual_fu_445_ap_done = ap_const_logic_0) and (ap_const_logic_1 = ap_CS_fsm_state31)) or ((grp_initFit_fu_544_ap_done = ap_const_logic_0) and (ap_const_logic_1 = ap_CS_fsm_state2)))) then 
+            grp_fu_702_ce <= ap_const_logic_0;
         else 
-            grp_fu_706_ce <= ap_const_logic_1;
+            grp_fu_702_ce <= ap_const_logic_1;
         end if; 
     end process;
 
 
-    grp_fu_706_opcode_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, nothingToKill_fu_1057_p1, newret1_fu_781_p1, ap_CS_fsm_state8, ap_CS_fsm_state10, ap_CS_fsm_state14, ap_CS_fsm_state22, ap_CS_fsm_state33, ap_CS_fsm_state37, ap_CS_fsm_state39, ap_CS_fsm_state43, ap_CS_fsm_state51)
+    grp_fu_702_opcode_assign_proc : process(ap_CS_fsm_state2, ap_CS_fsm_state31, nothingToKill_fu_1053_p1, newret1_fu_777_p1, ap_CS_fsm_state8, ap_CS_fsm_state10, ap_CS_fsm_state14, ap_CS_fsm_state22, ap_CS_fsm_state33, ap_CS_fsm_state37, ap_CS_fsm_state39, ap_CS_fsm_state43, ap_CS_fsm_state51)
     begin
         if (((ap_const_logic_1 = ap_CS_fsm_state51) or (ap_const_logic_1 = ap_CS_fsm_state43) or (ap_const_logic_1 = ap_CS_fsm_state39) or (ap_const_logic_1 = ap_CS_fsm_state22) or (ap_const_logic_1 = ap_CS_fsm_state14) or (ap_const_logic_1 = ap_CS_fsm_state10))) then 
-            grp_fu_706_opcode <= ap_const_lv2_1;
-        elsif (((ap_const_logic_1 = ap_CS_fsm_state37) or (ap_const_logic_1 = ap_CS_fsm_state33) or (ap_const_logic_1 = ap_CS_fsm_state8) or ((ap_const_logic_1 = ap_CS_fsm_state31) and (nothingToKill_fu_1057_p1 = ap_const_lv1_1)) or ((ap_const_logic_1 = ap_CS_fsm_state2) and (newret1_fu_781_p1 = ap_const_lv1_0)))) then 
-            grp_fu_706_opcode <= ap_const_lv2_0;
+            grp_fu_702_opcode <= ap_const_lv2_1;
+        elsif (((ap_const_logic_1 = ap_CS_fsm_state37) or (ap_const_logic_1 = ap_CS_fsm_state33) or (ap_const_logic_1 = ap_CS_fsm_state8) or ((ap_const_logic_1 = ap_CS_fsm_state31) and (nothingToKill_fu_1053_p1 = ap_const_lv1_1)) or ((ap_const_logic_1 = ap_CS_fsm_state2) and (newret1_fu_777_p1 = ap_const_lv1_0)))) then 
+            grp_fu_702_opcode <= ap_const_lv2_0;
         else 
-            grp_fu_706_opcode <= "XX";
+            grp_fu_702_opcode <= "XX";
         end if; 
     end process;
 
 
-    grp_fu_706_p0_assign_proc : process(reg_742, ap_CS_fsm_state2, LinearRegression_HTP_reg_1501, candData_phiT_write_s_reg_1561, LinearRegression_LRP_reg_1576, LinearRegression_LRP_1_reg_1582, LinearRegression_LRP_3_reg_1594, ap_CS_fsm_state31, candData_phiT_write_1_reg_1655, grp_initFit_fu_524_ap_return_4, ap_CS_fsm_state8, ap_CS_fsm_state10, ap_CS_fsm_state14, ap_CS_fsm_state22, ap_CS_fsm_state33, ap_CS_fsm_state37, ap_CS_fsm_state39, ap_CS_fsm_state43, ap_CS_fsm_state51)
+    grp_fu_702_p0_assign_proc : process(reg_738, ap_CS_fsm_state2, LinearRegression_HTP_reg_1497, candData_phiT_write_s_reg_1557, LinearRegression_LRP_reg_1572, LinearRegression_LRP_1_reg_1578, LinearRegression_LRP_3_reg_1590, ap_CS_fsm_state31, candData_phiT_write_1_reg_1651, grp_initFit_fu_544_ap_return_4, ap_CS_fsm_state8, ap_CS_fsm_state10, ap_CS_fsm_state14, ap_CS_fsm_state22, ap_CS_fsm_state33, ap_CS_fsm_state37, ap_CS_fsm_state39, ap_CS_fsm_state43, ap_CS_fsm_state51)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state43)) then 
-            grp_fu_706_p0 <= candData_phiT_write_1_reg_1655;
+            grp_fu_702_p0 <= candData_phiT_write_1_reg_1651;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state37)) then 
-            grp_fu_706_p0 <= LinearRegression_LRP_reg_1576;
+            grp_fu_702_p0 <= LinearRegression_LRP_reg_1572;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state33)) then 
-            grp_fu_706_p0 <= LinearRegression_LRP_3_reg_1594;
+            grp_fu_702_p0 <= LinearRegression_LRP_3_reg_1590;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state31)) then 
-            grp_fu_706_p0 <= LinearRegression_LRP_1_reg_1582;
+            grp_fu_702_p0 <= LinearRegression_LRP_1_reg_1578;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state14)) then 
-            grp_fu_706_p0 <= candData_phiT_write_s_reg_1561;
+            grp_fu_702_p0 <= candData_phiT_write_s_reg_1557;
         elsif (((ap_const_logic_1 = ap_CS_fsm_state51) or (ap_const_logic_1 = ap_CS_fsm_state39) or (ap_const_logic_1 = ap_CS_fsm_state22) or (ap_const_logic_1 = ap_CS_fsm_state10))) then 
-            grp_fu_706_p0 <= reg_742;
+            grp_fu_702_p0 <= reg_738;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state8)) then 
-            grp_fu_706_p0 <= LinearRegression_HTP_reg_1501;
+            grp_fu_702_p0 <= LinearRegression_HTP_reg_1497;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state2)) then 
-            grp_fu_706_p0 <= grp_initFit_fu_524_ap_return_4;
+            grp_fu_702_p0 <= grp_initFit_fu_544_ap_return_4;
         else 
-            grp_fu_706_p0 <= "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX";
+            grp_fu_702_p0 <= "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX";
         end if; 
     end process;
 
 
-    grp_fu_706_p1_assign_proc : process(LinearRegression_LRParameter_qOverPt_read, LinearRegression_LRParameter_phiT_read, reg_749, ap_CS_fsm_state2, LinearRegression_HTP_reg_1501, LinearRegression_HTP_1_reg_1510, LinearRegression_HTP_3_reg_1528, ap_CS_fsm_state31, ap_CS_fsm_state8, ap_CS_fsm_state10, ap_CS_fsm_state14, ap_CS_fsm_state22, ap_CS_fsm_state33, ap_CS_fsm_state37, ap_CS_fsm_state39, ap_CS_fsm_state43, ap_CS_fsm_state51)
+    grp_fu_702_p1_assign_proc : process(LinearRegression_LRParameter_qOverPt_read, LinearRegression_LRParameter_phiT_read, reg_745, ap_CS_fsm_state2, LinearRegression_HTP_reg_1497, LinearRegression_HTP_1_reg_1506, LinearRegression_HTP_3_reg_1524, ap_CS_fsm_state31, ap_CS_fsm_state8, ap_CS_fsm_state10, ap_CS_fsm_state14, ap_CS_fsm_state22, ap_CS_fsm_state33, ap_CS_fsm_state37, ap_CS_fsm_state39, ap_CS_fsm_state43, ap_CS_fsm_state51)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state37)) then 
-            grp_fu_706_p1 <= LinearRegression_HTP_reg_1501;
+            grp_fu_702_p1 <= LinearRegression_HTP_reg_1497;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state33)) then 
-            grp_fu_706_p1 <= LinearRegression_HTP_3_reg_1528;
+            grp_fu_702_p1 <= LinearRegression_HTP_3_reg_1524;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state31)) then 
-            grp_fu_706_p1 <= LinearRegression_HTP_1_reg_1510;
+            grp_fu_702_p1 <= LinearRegression_HTP_1_reg_1506;
         elsif (((ap_const_logic_1 = ap_CS_fsm_state51) or (ap_const_logic_1 = ap_CS_fsm_state43) or (ap_const_logic_1 = ap_CS_fsm_state39) or (ap_const_logic_1 = ap_CS_fsm_state22) or (ap_const_logic_1 = ap_CS_fsm_state14) or (ap_const_logic_1 = ap_CS_fsm_state10))) then 
-            grp_fu_706_p1 <= reg_749;
+            grp_fu_702_p1 <= reg_745;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state8)) then 
-            grp_fu_706_p1 <= LinearRegression_LRParameter_qOverPt_read;
+            grp_fu_702_p1 <= LinearRegression_LRParameter_qOverPt_read;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state2)) then 
-            grp_fu_706_p1 <= LinearRegression_LRParameter_phiT_read;
+            grp_fu_702_p1 <= LinearRegression_LRParameter_phiT_read;
         else 
-            grp_fu_706_p1 <= "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX";
+            grp_fu_702_p1 <= "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX";
         end if; 
     end process;
 
 
-    grp_fu_711_ce_assign_proc : process(ap_CS_fsm_state17, ap_CS_fsm_state34, ap_CS_fsm_state9, ap_CS_fsm_state13, ap_CS_fsm_state38, ap_CS_fsm_state11, ap_CS_fsm_state31, grp_killLargestResidual_fu_447_ap_done, ap_CS_fsm_state40, ap_CS_fsm_state8, ap_CS_fsm_state10, ap_CS_fsm_state14, ap_CS_fsm_state33, ap_CS_fsm_state37, ap_CS_fsm_state39, ap_CS_fsm_state12, ap_CS_fsm_state15, ap_CS_fsm_state16, ap_CS_fsm_state32)
+    grp_fu_707_ce_assign_proc : process(ap_CS_fsm_state17, ap_CS_fsm_state34, ap_CS_fsm_state9, ap_CS_fsm_state13, ap_CS_fsm_state38, ap_CS_fsm_state11, ap_CS_fsm_state31, grp_killLargestResidual_fu_445_ap_done, ap_CS_fsm_state40, ap_CS_fsm_state8, ap_CS_fsm_state10, ap_CS_fsm_state14, ap_CS_fsm_state33, ap_CS_fsm_state37, ap_CS_fsm_state39, ap_CS_fsm_state12, ap_CS_fsm_state15, ap_CS_fsm_state16, ap_CS_fsm_state32)
     begin
-        if (((ap_const_logic_1 = ap_CS_fsm_state40) or (ap_const_logic_1 = ap_CS_fsm_state11) or (ap_const_logic_1 = ap_CS_fsm_state38) or (ap_const_logic_1 = ap_CS_fsm_state13) or (ap_const_logic_1 = ap_CS_fsm_state9) or (ap_const_logic_1 = ap_CS_fsm_state34) or (ap_const_logic_1 = ap_CS_fsm_state17) or (ap_const_logic_1 = ap_CS_fsm_state32) or (ap_const_logic_1 = ap_CS_fsm_state16) or (ap_const_logic_1 = ap_CS_fsm_state15) or (ap_const_logic_1 = ap_CS_fsm_state12) or (ap_const_logic_1 = ap_CS_fsm_state39) or (ap_const_logic_1 = ap_CS_fsm_state37) or (ap_const_logic_1 = ap_CS_fsm_state33) or (ap_const_logic_1 = ap_CS_fsm_state14) or (ap_const_logic_1 = ap_CS_fsm_state10) or (ap_const_logic_1 = ap_CS_fsm_state8) or ((grp_killLargestResidual_fu_447_ap_done = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state31)))) then 
-            grp_fu_711_ce <= ap_const_logic_1;
+        if (((ap_const_logic_1 = ap_CS_fsm_state40) or (ap_const_logic_1 = ap_CS_fsm_state11) or (ap_const_logic_1 = ap_CS_fsm_state38) or (ap_const_logic_1 = ap_CS_fsm_state13) or (ap_const_logic_1 = ap_CS_fsm_state9) or (ap_const_logic_1 = ap_CS_fsm_state34) or (ap_const_logic_1 = ap_CS_fsm_state17) or (ap_const_logic_1 = ap_CS_fsm_state32) or (ap_const_logic_1 = ap_CS_fsm_state16) or (ap_const_logic_1 = ap_CS_fsm_state15) or (ap_const_logic_1 = ap_CS_fsm_state12) or (ap_const_logic_1 = ap_CS_fsm_state39) or (ap_const_logic_1 = ap_CS_fsm_state37) or (ap_const_logic_1 = ap_CS_fsm_state33) or (ap_const_logic_1 = ap_CS_fsm_state14) or (ap_const_logic_1 = ap_CS_fsm_state10) or (ap_const_logic_1 = ap_CS_fsm_state8) or ((grp_killLargestResidual_fu_445_ap_done = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state31)))) then 
+            grp_fu_707_ce <= ap_const_logic_1;
         else 
-            grp_fu_711_ce <= ap_const_logic_0;
+            grp_fu_707_ce <= ap_const_logic_0;
         end if; 
     end process;
 
 
-    grp_fu_711_opcode_assign_proc : process(ap_CS_fsm_state31, nothingToKill_fu_1057_p1, ap_CS_fsm_state8, ap_CS_fsm_state10, ap_CS_fsm_state14, ap_CS_fsm_state37)
+    grp_fu_707_opcode_assign_proc : process(ap_CS_fsm_state31, nothingToKill_fu_1053_p1, ap_CS_fsm_state8, ap_CS_fsm_state10, ap_CS_fsm_state14, ap_CS_fsm_state37)
     begin
         if (((ap_const_logic_1 = ap_CS_fsm_state37) or (ap_const_logic_1 = ap_CS_fsm_state14))) then 
-            grp_fu_711_opcode <= ap_const_lv2_1;
-        elsif (((ap_const_logic_1 = ap_CS_fsm_state10) or (ap_const_logic_1 = ap_CS_fsm_state8) or ((ap_const_logic_1 = ap_CS_fsm_state31) and (nothingToKill_fu_1057_p1 = ap_const_lv1_1)))) then 
-            grp_fu_711_opcode <= ap_const_lv2_0;
+            grp_fu_707_opcode <= ap_const_lv2_1;
+        elsif (((ap_const_logic_1 = ap_CS_fsm_state10) or (ap_const_logic_1 = ap_CS_fsm_state8) or ((ap_const_logic_1 = ap_CS_fsm_state31) and (nothingToKill_fu_1053_p1 = ap_const_lv1_1)))) then 
+            grp_fu_707_opcode <= ap_const_lv2_0;
         else 
-            grp_fu_711_opcode <= "XX";
+            grp_fu_707_opcode <= "XX";
         end if; 
     end process;
 
 
-    grp_fu_711_p0_assign_proc : process(reg_755, reg_762, LinearRegression_HTP_2_reg_1519, LinearRegression_HTP_3_reg_1528, LinearRegression_LRP_2_reg_1588, ap_CS_fsm_state31, ap_CS_fsm_state8, ap_CS_fsm_state10, ap_CS_fsm_state14, ap_CS_fsm_state37)
+    grp_fu_707_p0_assign_proc : process(reg_751, reg_758, LinearRegression_HTP_2_reg_1515, LinearRegression_HTP_3_reg_1524, LinearRegression_LRP_2_reg_1584, ap_CS_fsm_state31, ap_CS_fsm_state8, ap_CS_fsm_state10, ap_CS_fsm_state14, ap_CS_fsm_state37)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state37)) then 
-            grp_fu_711_p0 <= reg_755;
+            grp_fu_707_p0 <= reg_751;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state31)) then 
-            grp_fu_711_p0 <= LinearRegression_LRP_2_reg_1588;
+            grp_fu_707_p0 <= LinearRegression_LRP_2_reg_1584;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state14)) then 
-            grp_fu_711_p0 <= reg_762;
+            grp_fu_707_p0 <= reg_758;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state10)) then 
-            grp_fu_711_p0 <= LinearRegression_HTP_3_reg_1528;
+            grp_fu_707_p0 <= LinearRegression_HTP_3_reg_1524;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state8)) then 
-            grp_fu_711_p0 <= LinearRegression_HTP_2_reg_1519;
+            grp_fu_707_p0 <= LinearRegression_HTP_2_reg_1515;
+        else 
+            grp_fu_707_p0 <= "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX";
+        end if; 
+    end process;
+
+
+    grp_fu_707_p1_assign_proc : process(LinearRegression_LRParameter_cotTheta_read, LinearRegression_LRParameter_zT_read, reg_764, LinearRegression_HTP_2_reg_1515, ap_CS_fsm_state31, ap_CS_fsm_state8, ap_CS_fsm_state10, ap_CS_fsm_state14, ap_CS_fsm_state37)
+    begin
+        if ((ap_const_logic_1 = ap_CS_fsm_state31)) then 
+            grp_fu_707_p1 <= LinearRegression_HTP_2_reg_1515;
+        elsif (((ap_const_logic_1 = ap_CS_fsm_state37) or (ap_const_logic_1 = ap_CS_fsm_state14))) then 
+            grp_fu_707_p1 <= reg_764;
+        elsif ((ap_const_logic_1 = ap_CS_fsm_state10)) then 
+            grp_fu_707_p1 <= LinearRegression_LRParameter_zT_read;
+        elsif ((ap_const_logic_1 = ap_CS_fsm_state8)) then 
+            grp_fu_707_p1 <= LinearRegression_LRParameter_cotTheta_read;
+        else 
+            grp_fu_707_p1 <= "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX";
+        end if; 
+    end process;
+
+
+    grp_fu_711_p0_assign_proc : process(reg_738, reg_745, reg_751, candData_qOverPt_wri_1_reg_1640, ap_CS_fsm_state8, ap_CS_fsm_state37, ap_CS_fsm_state6, ap_CS_fsm_state12, ap_CS_fsm_state18, ap_CS_fsm_state20, ap_CS_fsm_state35, ap_CS_fsm_state41, ap_CS_fsm_state47, ap_CS_fsm_state49)
+    begin
+        if ((ap_const_logic_1 = ap_CS_fsm_state41)) then 
+            grp_fu_711_p0 <= candData_qOverPt_wri_1_reg_1640;
+        elsif ((ap_const_logic_1 = ap_CS_fsm_state12)) then 
+            grp_fu_711_p0 <= reg_751;
+        elsif (((ap_const_logic_1 = ap_CS_fsm_state49) or (ap_const_logic_1 = ap_CS_fsm_state20) or (ap_const_logic_1 = ap_CS_fsm_state37) or (ap_const_logic_1 = ap_CS_fsm_state8))) then 
+            grp_fu_711_p0 <= reg_745;
+        elsif (((ap_const_logic_1 = ap_CS_fsm_state47) or (ap_const_logic_1 = ap_CS_fsm_state35) or (ap_const_logic_1 = ap_CS_fsm_state18) or (ap_const_logic_1 = ap_CS_fsm_state6))) then 
+            grp_fu_711_p0 <= reg_738;
         else 
             grp_fu_711_p0 <= "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX";
         end if; 
     end process;
 
 
-    grp_fu_711_p1_assign_proc : process(LinearRegression_LRParameter_cotTheta_read, LinearRegression_LRParameter_zT_read, reg_768, LinearRegression_HTP_2_reg_1519, ap_CS_fsm_state31, ap_CS_fsm_state8, ap_CS_fsm_state10, ap_CS_fsm_state14, ap_CS_fsm_state37)
+    grp_fu_711_p1_assign_proc : process(LinearRegression_settings_chosenRofPhi_read, ap_CS_fsm_state8, ap_CS_fsm_state37, ap_CS_fsm_state6, ap_CS_fsm_state12, ap_CS_fsm_state18, ap_CS_fsm_state20, ap_CS_fsm_state35, ap_CS_fsm_state41, ap_CS_fsm_state47, ap_CS_fsm_state49)
     begin
-        if ((ap_const_logic_1 = ap_CS_fsm_state31)) then 
-            grp_fu_711_p1 <= LinearRegression_HTP_2_reg_1519;
-        elsif (((ap_const_logic_1 = ap_CS_fsm_state37) or (ap_const_logic_1 = ap_CS_fsm_state14))) then 
-            grp_fu_711_p1 <= reg_768;
-        elsif ((ap_const_logic_1 = ap_CS_fsm_state10)) then 
-            grp_fu_711_p1 <= LinearRegression_LRParameter_zT_read;
-        elsif ((ap_const_logic_1 = ap_CS_fsm_state8)) then 
-            grp_fu_711_p1 <= LinearRegression_LRParameter_cotTheta_read;
+        if (((ap_const_logic_1 = ap_CS_fsm_state41) or (ap_const_logic_1 = ap_CS_fsm_state12))) then 
+            grp_fu_711_p1 <= LinearRegression_settings_chosenRofPhi_read;
+        elsif (((ap_const_logic_1 = ap_CS_fsm_state49) or (ap_const_logic_1 = ap_CS_fsm_state20) or (ap_const_logic_1 = ap_CS_fsm_state37) or (ap_const_logic_1 = ap_CS_fsm_state8))) then 
+            grp_fu_711_p1 <= ap_const_lv32_40C90FDB;
+        elsif (((ap_const_logic_1 = ap_CS_fsm_state47) or (ap_const_logic_1 = ap_CS_fsm_state35) or (ap_const_logic_1 = ap_CS_fsm_state18) or (ap_const_logic_1 = ap_CS_fsm_state6))) then 
+            grp_fu_711_p1 <= ap_const_lv32_3E22F983;
         else 
             grp_fu_711_p1 <= "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX";
         end if; 
     end process;
 
 
-    grp_fu_715_p0_assign_proc : process(reg_742, reg_749, reg_755, candData_qOverPt_wri_1_reg_1644, ap_CS_fsm_state8, ap_CS_fsm_state37, ap_CS_fsm_state6, ap_CS_fsm_state12, ap_CS_fsm_state18, ap_CS_fsm_state20, ap_CS_fsm_state35, ap_CS_fsm_state41, ap_CS_fsm_state47, ap_CS_fsm_state49)
-    begin
-        if ((ap_const_logic_1 = ap_CS_fsm_state41)) then 
-            grp_fu_715_p0 <= candData_qOverPt_wri_1_reg_1644;
-        elsif ((ap_const_logic_1 = ap_CS_fsm_state12)) then 
-            grp_fu_715_p0 <= reg_755;
-        elsif (((ap_const_logic_1 = ap_CS_fsm_state49) or (ap_const_logic_1 = ap_CS_fsm_state20) or (ap_const_logic_1 = ap_CS_fsm_state37) or (ap_const_logic_1 = ap_CS_fsm_state8))) then 
-            grp_fu_715_p0 <= reg_749;
-        elsif (((ap_const_logic_1 = ap_CS_fsm_state47) or (ap_const_logic_1 = ap_CS_fsm_state35) or (ap_const_logic_1 = ap_CS_fsm_state18) or (ap_const_logic_1 = ap_CS_fsm_state6))) then 
-            grp_fu_715_p0 <= reg_742;
-        else 
-            grp_fu_715_p0 <= "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX";
-        end if; 
-    end process;
-
-
-    grp_fu_715_p1_assign_proc : process(LinearRegression_settings_chosenRofPhi_read, ap_CS_fsm_state8, ap_CS_fsm_state37, ap_CS_fsm_state6, ap_CS_fsm_state12, ap_CS_fsm_state18, ap_CS_fsm_state20, ap_CS_fsm_state35, ap_CS_fsm_state41, ap_CS_fsm_state47, ap_CS_fsm_state49)
-    begin
-        if (((ap_const_logic_1 = ap_CS_fsm_state41) or (ap_const_logic_1 = ap_CS_fsm_state12))) then 
-            grp_fu_715_p1 <= LinearRegression_settings_chosenRofPhi_read;
-        elsif (((ap_const_logic_1 = ap_CS_fsm_state49) or (ap_const_logic_1 = ap_CS_fsm_state20) or (ap_const_logic_1 = ap_CS_fsm_state37) or (ap_const_logic_1 = ap_CS_fsm_state8))) then 
-            grp_fu_715_p1 <= ap_const_lv32_40C90FDB;
-        elsif (((ap_const_logic_1 = ap_CS_fsm_state47) or (ap_const_logic_1 = ap_CS_fsm_state35) or (ap_const_logic_1 = ap_CS_fsm_state18) or (ap_const_logic_1 = ap_CS_fsm_state6))) then 
-            grp_fu_715_p1 <= ap_const_lv32_3E22F983;
-        else 
-            grp_fu_715_p1 <= "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX";
-        end if; 
-    end process;
-
-
-    grp_fu_721_p0_assign_proc : process(fitTrk_tanLambda_s_reg_1555, fitTrk_tanLambda_1_reg_1638, ap_CS_fsm_state12, ap_CS_fsm_state35)
+    grp_fu_717_p0_assign_proc : process(fitTrk_tanLambda_s_reg_1551, fitTrk_tanLambda_1_reg_1634, ap_CS_fsm_state12, ap_CS_fsm_state35)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state35)) then 
-            grp_fu_721_p0 <= fitTrk_tanLambda_1_reg_1638;
+            grp_fu_717_p0 <= fitTrk_tanLambda_1_reg_1634;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state12)) then 
-            grp_fu_721_p0 <= fitTrk_tanLambda_s_reg_1555;
+            grp_fu_717_p0 <= fitTrk_tanLambda_s_reg_1551;
         else 
-            grp_fu_721_p0 <= "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX";
+            grp_fu_717_p0 <= "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX";
         end if; 
     end process;
 
 
-    grp_fu_731_opcode_assign_proc : process(ap_CS_fsm_state13, ap_CS_fsm_state42, ap_CS_fsm_state24, ap_CS_fsm_state25, ap_CS_fsm_state53, ap_CS_fsm_state54)
+    grp_fu_727_opcode_assign_proc : process(ap_CS_fsm_state13, ap_CS_fsm_state42, ap_CS_fsm_state24, ap_CS_fsm_state25, ap_CS_fsm_state53, ap_CS_fsm_state54)
     begin
         if (((ap_const_logic_1 = ap_CS_fsm_state54) or (ap_const_logic_1 = ap_CS_fsm_state25))) then 
-            grp_fu_731_opcode <= ap_const_lv5_5;
+            grp_fu_727_opcode <= ap_const_lv5_5;
         elsif (((ap_const_logic_1 = ap_CS_fsm_state53) or (ap_const_logic_1 = ap_CS_fsm_state24) or (ap_const_logic_1 = ap_CS_fsm_state42) or (ap_const_logic_1 = ap_CS_fsm_state13))) then 
-            grp_fu_731_opcode <= ap_const_lv5_4;
+            grp_fu_727_opcode <= ap_const_lv5_4;
         else 
-            grp_fu_731_opcode <= "XXXXX";
+            grp_fu_727_opcode <= "XXXXX";
         end if; 
     end process;
 
 
-    grp_fu_731_p0_assign_proc : process(reg_742, ap_CS_fsm_state13, ap_CS_fsm_state42, ap_CS_fsm_state24, ap_CS_fsm_state25, ap_CS_fsm_state53, ap_CS_fsm_state54, p_0_i_i_i_i1_i_fu_976_p3, p_0_i_i_i_i1_i1_fu_1264_p3)
+    grp_fu_727_p0_assign_proc : process(reg_738, ap_CS_fsm_state13, ap_CS_fsm_state42, ap_CS_fsm_state24, ap_CS_fsm_state25, ap_CS_fsm_state53, ap_CS_fsm_state54, p_0_i_i_i_i1_i_fu_972_p3, p_0_i_i_i_i1_i1_fu_1260_p3)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state54)) then 
-            grp_fu_731_p0 <= p_0_i_i_i_i1_i1_fu_1264_p3;
+            grp_fu_727_p0 <= p_0_i_i_i_i1_i1_fu_1260_p3;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state25)) then 
-            grp_fu_731_p0 <= p_0_i_i_i_i1_i_fu_976_p3;
+            grp_fu_727_p0 <= p_0_i_i_i_i1_i_fu_972_p3;
         elsif (((ap_const_logic_1 = ap_CS_fsm_state53) or (ap_const_logic_1 = ap_CS_fsm_state24) or (ap_const_logic_1 = ap_CS_fsm_state42) or (ap_const_logic_1 = ap_CS_fsm_state13))) then 
-            grp_fu_731_p0 <= reg_742;
+            grp_fu_727_p0 <= reg_738;
         else 
-            grp_fu_731_p0 <= "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX";
+            grp_fu_727_p0 <= "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX";
         end if; 
     end process;
 
 
-    grp_fu_731_p1_assign_proc : process(ap_CS_fsm_state13, ap_CS_fsm_state42, ap_CS_fsm_state24, ap_CS_fsm_state25, ap_CS_fsm_state53, ap_CS_fsm_state54)
+    grp_fu_727_p1_assign_proc : process(ap_CS_fsm_state13, ap_CS_fsm_state42, ap_CS_fsm_state24, ap_CS_fsm_state25, ap_CS_fsm_state53, ap_CS_fsm_state54)
     begin
         if (((ap_const_logic_1 = ap_CS_fsm_state54) or (ap_const_logic_1 = ap_CS_fsm_state25))) then 
-            grp_fu_731_p1 <= ap_const_lv32_40490FDB;
+            grp_fu_727_p1 <= ap_const_lv32_40490FDB;
         elsif (((ap_const_logic_1 = ap_CS_fsm_state53) or (ap_const_logic_1 = ap_CS_fsm_state24) or (ap_const_logic_1 = ap_CS_fsm_state42) or (ap_const_logic_1 = ap_CS_fsm_state13))) then 
-            grp_fu_731_p1 <= ap_const_lv32_0;
+            grp_fu_727_p1 <= ap_const_lv32_0;
         else 
-            grp_fu_731_p1 <= "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX";
+            grp_fu_727_p1 <= "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX";
         end if; 
     end process;
 
 
-    grp_fu_736_p0_assign_proc : process(ap_CS_fsm_state13, ap_CS_fsm_state42, p_0_i_i_i_i_i_fu_866_p3, p_0_i_i_i_i_i7_fu_1154_p3)
+    grp_fu_732_p0_assign_proc : process(ap_CS_fsm_state13, ap_CS_fsm_state42, p_0_i_i_i_i_i_fu_862_p3, p_0_i_i_i_i_i7_fu_1150_p3)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state42)) then 
-            grp_fu_736_p0 <= p_0_i_i_i_i_i7_fu_1154_p3;
+            grp_fu_732_p0 <= p_0_i_i_i_i_i7_fu_1150_p3;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state13)) then 
-            grp_fu_736_p0 <= p_0_i_i_i_i_i_fu_866_p3;
+            grp_fu_732_p0 <= p_0_i_i_i_i_i_fu_862_p3;
         else 
-            grp_fu_736_p0 <= "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX";
+            grp_fu_732_p0 <= "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX";
         end if; 
     end process;
 
-    grp_initFit_fu_524_ap_start <= grp_initFit_fu_524_ap_start_reg;
-    grp_killLargestResidual_fu_447_ap_start <= grp_killLargestResidual_fu_447_ap_start_reg;
-    l1track3D_stubs_data_barrel_s_address0 <= grp_initFit_fu_524_l1track3D_stubs_data_barrel_s_address0;
-    l1track3D_stubs_data_barrel_s_address1 <= grp_initFit_fu_524_l1track3D_stubs_data_barrel_s_address1;
-    l1track3D_stubs_data_barrel_s_ce0 <= grp_initFit_fu_524_l1track3D_stubs_data_barrel_s_ce0;
-    l1track3D_stubs_data_barrel_s_ce1 <= grp_initFit_fu_524_l1track3D_stubs_data_barrel_s_ce1;
-    l1track3D_stubs_data_layerId_s_address0 <= grp_initFit_fu_524_l1track3D_stubs_data_layerId_s_address0;
-    l1track3D_stubs_data_layerId_s_address1 <= grp_initFit_fu_524_l1track3D_stubs_data_layerId_s_address1;
-    l1track3D_stubs_data_layerId_s_ce0 <= grp_initFit_fu_524_l1track3D_stubs_data_layerId_s_ce0;
-    l1track3D_stubs_data_layerId_s_ce1 <= grp_initFit_fu_524_l1track3D_stubs_data_layerId_s_ce1;
-    l1track3D_stubs_data_phi_s_address0 <= grp_initFit_fu_524_l1track3D_stubs_data_phi_s_address0;
-    l1track3D_stubs_data_phi_s_address1 <= grp_initFit_fu_524_l1track3D_stubs_data_phi_s_address1;
-    l1track3D_stubs_data_phi_s_ce0 <= grp_initFit_fu_524_l1track3D_stubs_data_phi_s_ce0;
-    l1track3D_stubs_data_phi_s_ce1 <= grp_initFit_fu_524_l1track3D_stubs_data_phi_s_ce1;
-    l1track3D_stubs_data_psModule_s_address0 <= grp_initFit_fu_524_l1track3D_stubs_data_psModule_s_address0;
-    l1track3D_stubs_data_psModule_s_address1 <= grp_initFit_fu_524_l1track3D_stubs_data_psModule_s_address1;
-    l1track3D_stubs_data_psModule_s_ce0 <= grp_initFit_fu_524_l1track3D_stubs_data_psModule_s_ce0;
-    l1track3D_stubs_data_psModule_s_ce1 <= grp_initFit_fu_524_l1track3D_stubs_data_psModule_s_ce1;
-    l1track3D_stubs_data_r_s_address0 <= grp_initFit_fu_524_l1track3D_stubs_data_r_s_address0;
-    l1track3D_stubs_data_r_s_address1 <= grp_initFit_fu_524_l1track3D_stubs_data_r_s_address1;
-    l1track3D_stubs_data_r_s_ce0 <= grp_initFit_fu_524_l1track3D_stubs_data_r_s_ce0;
-    l1track3D_stubs_data_r_s_ce1 <= grp_initFit_fu_524_l1track3D_stubs_data_r_s_ce1;
-    l1track3D_stubs_data_settings_chosenRofPhi_s_address0 <= grp_initFit_fu_524_l1track3D_stubs_data_settings_chosenRofPhi_s_address0;
-    l1track3D_stubs_data_settings_chosenRofPhi_s_address1 <= grp_initFit_fu_524_l1track3D_stubs_data_settings_chosenRofPhi_s_address1;
-    l1track3D_stubs_data_settings_chosenRofPhi_s_ce0 <= grp_initFit_fu_524_l1track3D_stubs_data_settings_chosenRofPhi_s_ce0;
-    l1track3D_stubs_data_settings_chosenRofPhi_s_ce1 <= grp_initFit_fu_524_l1track3D_stubs_data_settings_chosenRofPhi_s_ce1;
-    l1track3D_stubs_data_settings_chosenRofZ_s_address0 <= grp_initFit_fu_524_l1track3D_stubs_data_settings_chosenRofZ_s_address0;
-    l1track3D_stubs_data_settings_chosenRofZ_s_address1 <= grp_initFit_fu_524_l1track3D_stubs_data_settings_chosenRofZ_s_address1;
-    l1track3D_stubs_data_settings_chosenRofZ_s_ce0 <= grp_initFit_fu_524_l1track3D_stubs_data_settings_chosenRofZ_s_ce0;
-    l1track3D_stubs_data_settings_chosenRofZ_s_ce1 <= grp_initFit_fu_524_l1track3D_stubs_data_settings_chosenRofZ_s_ce1;
-    l1track3D_stubs_data_settings_etaRegions_s_address0 <= grp_initFit_fu_524_l1track3D_stubs_data_settings_etaRegions_s_address0;
-    l1track3D_stubs_data_settings_etaRegions_s_address1 <= grp_initFit_fu_524_l1track3D_stubs_data_settings_etaRegions_s_address1;
-    l1track3D_stubs_data_settings_etaRegions_s_ce0 <= grp_initFit_fu_524_l1track3D_stubs_data_settings_etaRegions_s_ce0;
-    l1track3D_stubs_data_settings_etaRegions_s_ce1 <= grp_initFit_fu_524_l1track3D_stubs_data_settings_etaRegions_s_ce1;
-    l1track3D_stubs_data_settings_minNumMatchLayers_s_address0 <= grp_initFit_fu_524_l1track3D_stubs_data_settings_minNumMatchLayers_s_address0;
-    l1track3D_stubs_data_settings_minNumMatchLayers_s_address1 <= grp_initFit_fu_524_l1track3D_stubs_data_settings_minNumMatchLayers_s_address1;
-    l1track3D_stubs_data_settings_minNumMatchLayers_s_ce0 <= grp_initFit_fu_524_l1track3D_stubs_data_settings_minNumMatchLayers_s_ce0;
-    l1track3D_stubs_data_settings_minNumMatchLayers_s_ce1 <= grp_initFit_fu_524_l1track3D_stubs_data_settings_minNumMatchLayers_s_ce1;
-    l1track3D_stubs_data_settings_minPSLayers_s_address0 <= grp_initFit_fu_524_l1track3D_stubs_data_settings_minPSLayers_s_address0;
-    l1track3D_stubs_data_settings_minPSLayers_s_address1 <= grp_initFit_fu_524_l1track3D_stubs_data_settings_minPSLayers_s_address1;
-    l1track3D_stubs_data_settings_minPSLayers_s_ce0 <= grp_initFit_fu_524_l1track3D_stubs_data_settings_minPSLayers_s_ce0;
-    l1track3D_stubs_data_settings_minPSLayers_s_ce1 <= grp_initFit_fu_524_l1track3D_stubs_data_settings_minPSLayers_s_ce1;
-    l1track3D_stubs_data_z_s_address0 <= grp_initFit_fu_524_l1track3D_stubs_data_z_s_address0;
-    l1track3D_stubs_data_z_s_address1 <= grp_initFit_fu_524_l1track3D_stubs_data_z_s_address1;
-    l1track3D_stubs_data_z_s_ce0 <= grp_initFit_fu_524_l1track3D_stubs_data_z_s_ce0;
-    l1track3D_stubs_data_z_s_ce1 <= grp_initFit_fu_524_l1track3D_stubs_data_z_s_ce1;
-    newret1_fu_781_p1 <= grp_initFit_fu_524_ap_return_2;
-    nothingToKill_fu_1057_p1 <= grp_killLargestResidual_fu_447_ap_return_0;
-    notlhs2_fu_893_p2 <= "0" when (tmp_125_fu_879_p4 = ap_const_lv8_FF) else "1";
-    notlhs3_fu_943_p2 <= "0" when (tmp_130_fu_929_p4 = ap_const_lv8_FF) else "1";
-    notlhs4_fu_1003_p2 <= "0" when (tmp_135_fu_989_p4 = ap_const_lv8_FF) else "1";
-    notlhs5_fu_1120_p2 <= "0" when (tmp_140_fu_1106_p4 = ap_const_lv8_FF) else "1";
-    notlhs6_fu_1181_p2 <= "0" when (tmp_144_fu_1167_p4 = ap_const_lv8_FF) else "1";
-    notlhs7_fu_1231_p2 <= "0" when (tmp_149_fu_1217_p4 = ap_const_lv8_FF) else "1";
-    notlhs8_fu_1291_p2 <= "0" when (tmp_154_fu_1277_p4 = ap_const_lv8_FF) else "1";
-    notlhs_fu_832_p2 <= "0" when (tmp_fu_818_p4 = ap_const_lv8_FF) else "1";
-    notrhs1_fu_1126_p2 <= "1" when (tmp_161_fu_1116_p1 = ap_const_lv23_0) else "0";
-    notrhs2_fu_1187_p2 <= "1" when (tmp_162_fu_1177_p1 = ap_const_lv23_0) else "0";
-    notrhs3_fu_1237_p2 <= "1" when (tmp_163_fu_1227_p1 = ap_const_lv23_0) else "0";
-    notrhs4_fu_1297_p2 <= "1" when (tmp_164_fu_1287_p1 = ap_const_lv23_0) else "0";
-    notrhs7_fu_899_p2 <= "1" when (tmp_151_fu_889_p1 = ap_const_lv23_0) else "0";
-    notrhs8_fu_949_p2 <= "1" when (tmp_156_fu_939_p1 = ap_const_lv23_0) else "0";
-    notrhs9_fu_1009_p2 <= "1" when (tmp_160_fu_999_p1 = ap_const_lv23_0) else "0";
-    notrhs_fu_838_p2 <= "1" when (tmp_146_fu_828_p1 = ap_const_lv23_0) else "0";
-    p_0_i_i_i_i1_i1_fu_1264_p3 <= 
-        tmp_i_i_i_i1_i1_fu_1260_p1 when (tmp_153_fu_1249_p2(0) = '1') else 
-        reg_742;
-    p_0_i_i_i_i1_i21_to_i_fu_1273_p1 <= p_0_i_i_i_i1_i1_fu_1264_p3;
-    p_0_i_i_i_i1_i_fu_976_p3 <= 
-        tmp_i_i_i_i1_i_fu_972_p1 when (tmp_134_fu_961_p2(0) = '1') else 
-        reg_742;
-    p_0_i_i_i_i1_i_to_int_fu_985_p1 <= p_0_i_i_i_i1_i_fu_976_p3;
-    p_0_i_i_i_i_i7_fu_1154_p3 <= 
-        tmp_i_i_i_i_i6_fu_1150_p1 when (tmp_143_fu_1138_p2(0) = '1') else 
-        reg_742;
-    p_0_i_i_i_i_i7_to_int_fu_1163_p1 <= p_0_i_i_i_i_i7_fu_1154_p3;
-    p_0_i_i_i_i_i_fu_866_p3 <= 
-        tmp_i_i_i_i_i_fu_862_p1 when (tmp_124_fu_850_p2(0) = '1') else 
-        reg_742;
-    p_0_i_i_i_i_i_to_int_fu_875_p1 <= p_0_i_i_i_i_i_fu_866_p3;
-    phi1_assign_1_i16_to_fu_1213_p1 <= reg_742;
-    phi1_assign_1_i_to_i_fu_925_p1 <= reg_742;
-    phi1_assign_i2_to_in_fu_1102_p1 <= reg_742;
-    phi1_assign_i_to_int_fu_814_p1 <= reg_742;
-    tmp_122_fu_844_p2 <= (notrhs_fu_838_p2 or notlhs_fu_832_p2);
-    tmp_124_fu_850_p2 <= (tmp_122_fu_844_p2 and grp_fu_731_p2);
-    tmp_125_fu_879_p4 <= p_0_i_i_i_i_i_to_int_fu_875_p1(30 downto 23);
-    tmp_127_fu_905_p2 <= (notrhs7_fu_899_p2 or notlhs2_fu_893_p2);
-    tmp_129_fu_911_p2 <= (tmp_127_fu_905_p2 and grp_fu_736_p2);
-    tmp_130_fu_929_p4 <= phi1_assign_1_i_to_i_fu_925_p1(30 downto 23);
-    tmp_132_fu_955_p2 <= (notrhs8_fu_949_p2 or notlhs3_fu_943_p2);
-    tmp_134_fu_961_p2 <= (tmp_133_reg_1566 and tmp_132_fu_955_p2);
-    tmp_135_fu_989_p4 <= p_0_i_i_i_i1_i_to_int_fu_985_p1(30 downto 23);
-    tmp_137_fu_1015_p2 <= (notrhs9_fu_1009_p2 or notlhs4_fu_1003_p2);
-    tmp_139_fu_1021_p2 <= (tmp_137_fu_1015_p2 and grp_fu_731_p2);
-    tmp_140_fu_1106_p4 <= phi1_assign_i2_to_in_fu_1102_p1(30 downto 23);
-    tmp_143_fu_1138_p2 <= (tmp_s_fu_1132_p2 and grp_fu_731_p2);
-    tmp_144_fu_1167_p4 <= p_0_i_i_i_i_i7_to_int_fu_1163_p1(30 downto 23);
-    tmp_145_fu_1193_p2 <= (notrhs2_fu_1187_p2 or notlhs6_fu_1181_p2);
-    tmp_146_fu_828_p1 <= phi1_assign_i_to_int_fu_814_p1(23 - 1 downto 0);
-    tmp_148_fu_1199_p2 <= (tmp_145_fu_1193_p2 and grp_fu_736_p2);
-    tmp_149_fu_1217_p4 <= phi1_assign_1_i16_to_fu_1213_p1(30 downto 23);
-    tmp_150_fu_1243_p2 <= (notrhs3_fu_1237_p2 or notlhs7_fu_1231_p2);
-    tmp_151_fu_889_p1 <= p_0_i_i_i_i_i_to_int_fu_875_p1(23 - 1 downto 0);
-    tmp_153_fu_1249_p2 <= (tmp_152_reg_1660 and tmp_150_fu_1243_p2);
-    tmp_154_fu_1277_p4 <= p_0_i_i_i_i1_i21_to_i_fu_1273_p1(30 downto 23);
-    tmp_155_fu_1303_p2 <= (notrhs4_fu_1297_p2 or notlhs8_fu_1291_p2);
-    tmp_156_fu_939_p1 <= phi1_assign_1_i_to_i_fu_925_p1(23 - 1 downto 0);
-    tmp_158_fu_1309_p2 <= (tmp_155_fu_1303_p2 and grp_fu_731_p2);
-    tmp_160_fu_999_p1 <= p_0_i_i_i_i1_i_to_int_fu_985_p1(23 - 1 downto 0);
-    tmp_161_fu_1116_p1 <= phi1_assign_i2_to_in_fu_1102_p1(23 - 1 downto 0);
-    tmp_162_fu_1177_p1 <= p_0_i_i_i_i_i7_to_int_fu_1163_p1(23 - 1 downto 0);
-    tmp_163_fu_1227_p1 <= phi1_assign_1_i16_to_fu_1213_p1(23 - 1 downto 0);
-    tmp_164_fu_1287_p1 <= p_0_i_i_i_i1_i21_to_i_fu_1273_p1(23 - 1 downto 0);
-    tmp_fu_818_p4 <= phi1_assign_i_to_int_fu_814_p1(30 downto 23);
-    tmp_i_i_i_i1_i1_fu_1260_p1 <= tmp_neg_i_i_i_i1_i1_fu_1254_p2;
-    tmp_i_i_i_i1_i_fu_972_p1 <= tmp_neg_i_i_i_i1_i_fu_966_p2;
-    tmp_i_i_i_i_i6_fu_1150_p1 <= tmp_neg_i_i_i_i_i5_fu_1144_p2;
-    tmp_i_i_i_i_i_fu_862_p1 <= tmp_neg_i_i_i_i_i_fu_856_p2;
-    tmp_neg_i_i_i_i1_i1_fu_1254_p2 <= (phi1_assign_1_i16_to_fu_1213_p1 xor ap_const_lv32_80000000);
-    tmp_neg_i_i_i_i1_i_fu_966_p2 <= (phi1_assign_1_i_to_i_fu_925_p1 xor ap_const_lv32_80000000);
-    tmp_neg_i_i_i_i_i5_fu_1144_p2 <= (phi1_assign_i2_to_in_fu_1102_p1 xor ap_const_lv32_80000000);
-    tmp_neg_i_i_i_i_i_fu_856_p2 <= (phi1_assign_i_to_int_fu_814_p1 xor ap_const_lv32_80000000);
-    tmp_s_fu_1132_p2 <= (notrhs1_fu_1126_p2 or notlhs5_fu_1120_p2);
+    grp_initFit_fu_544_ap_start <= grp_initFit_fu_544_ap_start_reg;
+    grp_killLargestResidual_fu_445_ap_start <= grp_killLargestResidual_fu_445_ap_start_reg;
+    l1track3D_stubs_data_barrel_s_address0 <= grp_initFit_fu_544_l1track3D_stubs_data_barrel_s_address0;
+    l1track3D_stubs_data_barrel_s_address1 <= grp_initFit_fu_544_l1track3D_stubs_data_barrel_s_address1;
+    l1track3D_stubs_data_barrel_s_ce0 <= grp_initFit_fu_544_l1track3D_stubs_data_barrel_s_ce0;
+    l1track3D_stubs_data_barrel_s_ce1 <= grp_initFit_fu_544_l1track3D_stubs_data_barrel_s_ce1;
+    l1track3D_stubs_data_layerId_s_address0 <= grp_initFit_fu_544_l1track3D_stubs_data_layerId_s_address0;
+    l1track3D_stubs_data_layerId_s_address1 <= grp_initFit_fu_544_l1track3D_stubs_data_layerId_s_address1;
+    l1track3D_stubs_data_layerId_s_ce0 <= grp_initFit_fu_544_l1track3D_stubs_data_layerId_s_ce0;
+    l1track3D_stubs_data_layerId_s_ce1 <= grp_initFit_fu_544_l1track3D_stubs_data_layerId_s_ce1;
+    l1track3D_stubs_data_phi_s_address0 <= grp_initFit_fu_544_l1track3D_stubs_data_phi_s_address0;
+    l1track3D_stubs_data_phi_s_address1 <= grp_initFit_fu_544_l1track3D_stubs_data_phi_s_address1;
+    l1track3D_stubs_data_phi_s_ce0 <= grp_initFit_fu_544_l1track3D_stubs_data_phi_s_ce0;
+    l1track3D_stubs_data_phi_s_ce1 <= grp_initFit_fu_544_l1track3D_stubs_data_phi_s_ce1;
+    l1track3D_stubs_data_psModule_s_address0 <= grp_initFit_fu_544_l1track3D_stubs_data_psModule_s_address0;
+    l1track3D_stubs_data_psModule_s_address1 <= grp_initFit_fu_544_l1track3D_stubs_data_psModule_s_address1;
+    l1track3D_stubs_data_psModule_s_ce0 <= grp_initFit_fu_544_l1track3D_stubs_data_psModule_s_ce0;
+    l1track3D_stubs_data_psModule_s_ce1 <= grp_initFit_fu_544_l1track3D_stubs_data_psModule_s_ce1;
+    l1track3D_stubs_data_r_s_address0 <= grp_initFit_fu_544_l1track3D_stubs_data_r_s_address0;
+    l1track3D_stubs_data_r_s_address1 <= grp_initFit_fu_544_l1track3D_stubs_data_r_s_address1;
+    l1track3D_stubs_data_r_s_ce0 <= grp_initFit_fu_544_l1track3D_stubs_data_r_s_ce0;
+    l1track3D_stubs_data_r_s_ce1 <= grp_initFit_fu_544_l1track3D_stubs_data_r_s_ce1;
+    l1track3D_stubs_data_settings_chosenRofPhi_s_address0 <= grp_initFit_fu_544_l1track3D_stubs_data_settings_chosenRofPhi_s_address0;
+    l1track3D_stubs_data_settings_chosenRofPhi_s_address1 <= grp_initFit_fu_544_l1track3D_stubs_data_settings_chosenRofPhi_s_address1;
+    l1track3D_stubs_data_settings_chosenRofPhi_s_ce0 <= grp_initFit_fu_544_l1track3D_stubs_data_settings_chosenRofPhi_s_ce0;
+    l1track3D_stubs_data_settings_chosenRofPhi_s_ce1 <= grp_initFit_fu_544_l1track3D_stubs_data_settings_chosenRofPhi_s_ce1;
+    l1track3D_stubs_data_settings_chosenRofZ_s_address0 <= grp_initFit_fu_544_l1track3D_stubs_data_settings_chosenRofZ_s_address0;
+    l1track3D_stubs_data_settings_chosenRofZ_s_address1 <= grp_initFit_fu_544_l1track3D_stubs_data_settings_chosenRofZ_s_address1;
+    l1track3D_stubs_data_settings_chosenRofZ_s_ce0 <= grp_initFit_fu_544_l1track3D_stubs_data_settings_chosenRofZ_s_ce0;
+    l1track3D_stubs_data_settings_chosenRofZ_s_ce1 <= grp_initFit_fu_544_l1track3D_stubs_data_settings_chosenRofZ_s_ce1;
+    l1track3D_stubs_data_settings_minNumMatchLayers_s_address0 <= grp_initFit_fu_544_l1track3D_stubs_data_settings_minNumMatchLayers_s_address0;
+    l1track3D_stubs_data_settings_minNumMatchLayers_s_address1 <= grp_initFit_fu_544_l1track3D_stubs_data_settings_minNumMatchLayers_s_address1;
+    l1track3D_stubs_data_settings_minNumMatchLayers_s_ce0 <= grp_initFit_fu_544_l1track3D_stubs_data_settings_minNumMatchLayers_s_ce0;
+    l1track3D_stubs_data_settings_minNumMatchLayers_s_ce1 <= grp_initFit_fu_544_l1track3D_stubs_data_settings_minNumMatchLayers_s_ce1;
+    l1track3D_stubs_data_settings_minPSLayers_s_address0 <= grp_initFit_fu_544_l1track3D_stubs_data_settings_minPSLayers_s_address0;
+    l1track3D_stubs_data_settings_minPSLayers_s_address1 <= grp_initFit_fu_544_l1track3D_stubs_data_settings_minPSLayers_s_address1;
+    l1track3D_stubs_data_settings_minPSLayers_s_ce0 <= grp_initFit_fu_544_l1track3D_stubs_data_settings_minPSLayers_s_ce0;
+    l1track3D_stubs_data_settings_minPSLayers_s_ce1 <= grp_initFit_fu_544_l1track3D_stubs_data_settings_minPSLayers_s_ce1;
+    l1track3D_stubs_data_settings_sinh_etaRegions_s_address0 <= grp_initFit_fu_544_l1track3D_stubs_data_settings_sinh_etaRegions_s_address0;
+    l1track3D_stubs_data_settings_sinh_etaRegions_s_address1 <= grp_initFit_fu_544_l1track3D_stubs_data_settings_sinh_etaRegions_s_address1;
+    l1track3D_stubs_data_settings_sinh_etaRegions_s_ce0 <= grp_initFit_fu_544_l1track3D_stubs_data_settings_sinh_etaRegions_s_ce0;
+    l1track3D_stubs_data_settings_sinh_etaRegions_s_ce1 <= grp_initFit_fu_544_l1track3D_stubs_data_settings_sinh_etaRegions_s_ce1;
+    l1track3D_stubs_data_z_s_address0 <= grp_initFit_fu_544_l1track3D_stubs_data_z_s_address0;
+    l1track3D_stubs_data_z_s_address1 <= grp_initFit_fu_544_l1track3D_stubs_data_z_s_address1;
+    l1track3D_stubs_data_z_s_ce0 <= grp_initFit_fu_544_l1track3D_stubs_data_z_s_ce0;
+    l1track3D_stubs_data_z_s_ce1 <= grp_initFit_fu_544_l1track3D_stubs_data_z_s_ce1;
+    newret1_fu_777_p1 <= grp_initFit_fu_544_ap_return_2;
+    nothingToKill_fu_1053_p1 <= grp_killLargestResidual_fu_445_ap_return_0;
+    notlhs2_fu_889_p2 <= "0" when (tmp_47_fu_875_p4 = ap_const_lv8_FF) else "1";
+    notlhs3_fu_939_p2 <= "0" when (tmp_52_fu_925_p4 = ap_const_lv8_FF) else "1";
+    notlhs4_fu_999_p2 <= "0" when (tmp_57_fu_985_p4 = ap_const_lv8_FF) else "1";
+    notlhs5_fu_1116_p2 <= "0" when (tmp_62_fu_1102_p4 = ap_const_lv8_FF) else "1";
+    notlhs6_fu_1177_p2 <= "0" when (tmp_67_fu_1163_p4 = ap_const_lv8_FF) else "1";
+    notlhs7_fu_1227_p2 <= "0" when (tmp_72_fu_1213_p4 = ap_const_lv8_FF) else "1";
+    notlhs8_fu_1287_p2 <= "0" when (tmp_77_fu_1273_p4 = ap_const_lv8_FF) else "1";
+    notlhs_fu_828_p2 <= "0" when (tmp_fu_814_p4 = ap_const_lv8_FF) else "1";
+    notrhs1_fu_1122_p2 <= "1" when (tmp_91_fu_1112_p1 = ap_const_lv23_0) else "0";
+    notrhs2_fu_1183_p2 <= "1" when (tmp_92_fu_1173_p1 = ap_const_lv23_0) else "0";
+    notrhs3_fu_1233_p2 <= "1" when (tmp_93_fu_1223_p1 = ap_const_lv23_0) else "0";
+    notrhs4_fu_1293_p2 <= "1" when (tmp_94_fu_1283_p1 = ap_const_lv23_0) else "0";
+    notrhs7_fu_895_p2 <= "1" when (tmp_88_fu_885_p1 = ap_const_lv23_0) else "0";
+    notrhs8_fu_945_p2 <= "1" when (tmp_89_fu_935_p1 = ap_const_lv23_0) else "0";
+    notrhs9_fu_1005_p2 <= "1" when (tmp_90_fu_995_p1 = ap_const_lv23_0) else "0";
+    notrhs_fu_834_p2 <= "1" when (tmp_87_fu_824_p1 = ap_const_lv23_0) else "0";
+    p_0_i_i_i_i1_i1_fu_1260_p3 <= 
+        tmp_i_i_i_i1_i1_fu_1256_p1 when (tmp_76_fu_1245_p2(0) = '1') else 
+        reg_738;
+    p_0_i_i_i_i1_i21_to_i_fu_1269_p1 <= p_0_i_i_i_i1_i1_fu_1260_p3;
+    p_0_i_i_i_i1_i_fu_972_p3 <= 
+        tmp_i_i_i_i1_i_fu_968_p1 when (tmp_56_fu_957_p2(0) = '1') else 
+        reg_738;
+    p_0_i_i_i_i1_i_to_int_fu_981_p1 <= p_0_i_i_i_i1_i_fu_972_p3;
+    p_0_i_i_i_i_i7_fu_1150_p3 <= 
+        tmp_i_i_i_i_i6_fu_1146_p1 when (tmp_66_fu_1134_p2(0) = '1') else 
+        reg_738;
+    p_0_i_i_i_i_i7_to_int_fu_1159_p1 <= p_0_i_i_i_i_i7_fu_1150_p3;
+    p_0_i_i_i_i_i_fu_862_p3 <= 
+        tmp_i_i_i_i_i_fu_858_p1 when (tmp_46_fu_846_p2(0) = '1') else 
+        reg_738;
+    p_0_i_i_i_i_i_to_int_fu_871_p1 <= p_0_i_i_i_i_i_fu_862_p3;
+    phi1_assign_1_i16_to_fu_1209_p1 <= reg_738;
+    phi1_assign_1_i_to_i_fu_921_p1 <= reg_738;
+    phi1_assign_i2_to_in_fu_1098_p1 <= reg_738;
+    phi1_assign_i_to_int_fu_810_p1 <= reg_738;
+    tmp_44_fu_840_p2 <= (notrhs_fu_834_p2 or notlhs_fu_828_p2);
+    tmp_46_fu_846_p2 <= (tmp_44_fu_840_p2 and grp_fu_727_p2);
+    tmp_47_fu_875_p4 <= p_0_i_i_i_i_i_to_int_fu_871_p1(30 downto 23);
+    tmp_49_fu_901_p2 <= (notrhs7_fu_895_p2 or notlhs2_fu_889_p2);
+    tmp_51_fu_907_p2 <= (tmp_49_fu_901_p2 and grp_fu_732_p2);
+    tmp_52_fu_925_p4 <= phi1_assign_1_i_to_i_fu_921_p1(30 downto 23);
+    tmp_54_fu_951_p2 <= (notrhs8_fu_945_p2 or notlhs3_fu_939_p2);
+    tmp_56_fu_957_p2 <= (tmp_55_reg_1562 and tmp_54_fu_951_p2);
+    tmp_57_fu_985_p4 <= p_0_i_i_i_i1_i_to_int_fu_981_p1(30 downto 23);
+    tmp_59_fu_1011_p2 <= (notrhs9_fu_1005_p2 or notlhs4_fu_999_p2);
+    tmp_61_fu_1017_p2 <= (tmp_59_fu_1011_p2 and grp_fu_727_p2);
+    tmp_62_fu_1102_p4 <= phi1_assign_i2_to_in_fu_1098_p1(30 downto 23);
+    tmp_64_fu_1128_p2 <= (notrhs1_fu_1122_p2 or notlhs5_fu_1116_p2);
+    tmp_66_fu_1134_p2 <= (tmp_64_fu_1128_p2 and grp_fu_727_p2);
+    tmp_67_fu_1163_p4 <= p_0_i_i_i_i_i7_to_int_fu_1159_p1(30 downto 23);
+    tmp_69_fu_1189_p2 <= (notrhs2_fu_1183_p2 or notlhs6_fu_1177_p2);
+    tmp_71_fu_1195_p2 <= (tmp_69_fu_1189_p2 and grp_fu_732_p2);
+    tmp_72_fu_1213_p4 <= phi1_assign_1_i16_to_fu_1209_p1(30 downto 23);
+    tmp_74_fu_1239_p2 <= (notrhs3_fu_1233_p2 or notlhs7_fu_1227_p2);
+    tmp_76_fu_1245_p2 <= (tmp_75_reg_1656 and tmp_74_fu_1239_p2);
+    tmp_77_fu_1273_p4 <= p_0_i_i_i_i1_i21_to_i_fu_1269_p1(30 downto 23);
+    tmp_79_fu_1299_p2 <= (notrhs4_fu_1293_p2 or notlhs8_fu_1287_p2);
+    tmp_81_fu_1305_p2 <= (tmp_79_fu_1299_p2 and grp_fu_727_p2);
+    tmp_87_fu_824_p1 <= phi1_assign_i_to_int_fu_810_p1(23 - 1 downto 0);
+    tmp_88_fu_885_p1 <= p_0_i_i_i_i_i_to_int_fu_871_p1(23 - 1 downto 0);
+    tmp_89_fu_935_p1 <= phi1_assign_1_i_to_i_fu_921_p1(23 - 1 downto 0);
+    tmp_90_fu_995_p1 <= p_0_i_i_i_i1_i_to_int_fu_981_p1(23 - 1 downto 0);
+    tmp_91_fu_1112_p1 <= phi1_assign_i2_to_in_fu_1098_p1(23 - 1 downto 0);
+    tmp_92_fu_1173_p1 <= p_0_i_i_i_i_i7_to_int_fu_1159_p1(23 - 1 downto 0);
+    tmp_93_fu_1223_p1 <= phi1_assign_1_i16_to_fu_1209_p1(23 - 1 downto 0);
+    tmp_94_fu_1283_p1 <= p_0_i_i_i_i1_i21_to_i_fu_1269_p1(23 - 1 downto 0);
+    tmp_fu_814_p4 <= phi1_assign_i_to_int_fu_810_p1(30 downto 23);
+    tmp_i_i_i_i1_i1_fu_1256_p1 <= tmp_neg_i_i_i_i1_i1_fu_1250_p2;
+    tmp_i_i_i_i1_i_fu_968_p1 <= tmp_neg_i_i_i_i1_i_fu_962_p2;
+    tmp_i_i_i_i_i6_fu_1146_p1 <= tmp_neg_i_i_i_i_i5_fu_1140_p2;
+    tmp_i_i_i_i_i_fu_858_p1 <= tmp_neg_i_i_i_i_i_fu_852_p2;
+    tmp_neg_i_i_i_i1_i1_fu_1250_p2 <= (phi1_assign_1_i16_to_fu_1209_p1 xor ap_const_lv32_80000000);
+    tmp_neg_i_i_i_i1_i_fu_962_p2 <= (phi1_assign_1_i_to_i_fu_921_p1 xor ap_const_lv32_80000000);
+    tmp_neg_i_i_i_i_i5_fu_1140_p2 <= (phi1_assign_i2_to_in_fu_1098_p1 xor ap_const_lv32_80000000);
+    tmp_neg_i_i_i_i_i_fu_852_p2 <= (phi1_assign_i_to_int_fu_810_p1 xor ap_const_lv32_80000000);
 end behav;
